@@ -1,0 +1,45 @@
+[submodule ".orbitmines/repositories/github.com/orbitmines-archive/OrbitMines"]
+	path = .orbitmines/repositories/github.com/orbitmines-archive/OrbitMines
+	url = git@github.com:orbitmines-archive/OrbitMines.git
+[submodule ".orbitmines/repositories/github.com/orbitmines-archive/OrbitMinesWebsite"]
+	path = .orbitmines/repositories/github.com/orbitmines-archive/OrbitMinesWebsite
+	url = git@github.com:orbitmines-archive/OrbitMinesWebsite.git
+[submodule ".orbitmines/repositories/github.com/orbitmines-archive/OrbitMines_OLD"]
+	path = .orbitmines/repositories/github.com/orbitmines-archive/OrbitMines_OLD
+	url = git@github.com:orbitmines-archive/OrbitMines_OLD.git
+[submodule ".orbitmines/repositories/gitlab.com/orbitmines/website"]
+	path = .orbitmines/repositories/gitlab.com/orbitmines/website
+	url = https://gitlab.com/orbitmines/website.git
+[submodule ".orbitmines/repositories/gitlab.com/orbitmines/server-restarter"]
+	path = .orbitmines/repositories/gitlab.com/orbitmines/server-restarter
+	url = https://gitlab.com/orbitmines/server-restarter.git
+[submodule ".orbitmines/repositories/gitlab.com/orbitmines/error-tracker"]
+	path = .orbitmines/repositories/gitlab.com/orbitmines/error-tracker
+	url = https://gitlab.com/orbitmines/error-tracker.git
+[submodule ".orbitmines/repositories/gitlab.com/orbitmines/space-spigot"]
+	path = .orbitmines/repositories/gitlab.com/orbitmines/space-spigot
+	url = https://gitlab.com/orbitmines/space-spigot.git
+[submodule ".orbitmines/repositories/gitlab.com/orbitmines/global-libraries"]
+	path = .orbitmines/repositories/gitlab.com/orbitmines/global-libraries
+	url = https://gitlab.com/orbitmines/global-libraries.git
+[submodule ".orbitmines/repositories/gitlab.com/orbitmines/spigot-libraries"]
+	path = .orbitmines/repositories/gitlab.com/orbitmines/spigot-libraries
+	url = https://gitlab.com/orbitmines/spigot-libraries.git
+[submodule ".orbitmines/repositories/gitlab.com/orbitmines/servers/kitpvp"]
+	path = .orbitmines/repositories/gitlab.com/orbitmines/servers/kitpvp
+	url = https://gitlab.com/orbitmines/servers/kitpvp.git
+[submodule ".orbitmines/repositories/gitlab.com/orbitmines/servers/survival"]
+	path = .orbitmines/repositories/gitlab.com/orbitmines/servers/survival
+	url = https://gitlab.com/orbitmines/servers/survival.git
+[submodule ".orbitmines/repositories/gitlab.com/orbitmines/servers/bungeecord"]
+	path = .orbitmines/repositories/gitlab.com/orbitmines/servers/bungeecord
+	url = https://gitlab.com/orbitmines/servers/bungeecord.git
+[submodule ".orbitmines/repositories/gitlab.com/orbitmines/servers/build"]
+	path = .orbitmines/repositories/gitlab.com/orbitmines/servers/build
+	url = https://gitlab.com/orbitmines/servers/build.git
+[submodule ".orbitmines/repositories/gitlab.com/orbitmines/servers/hub"]
+	path = .orbitmines/repositories/gitlab.com/orbitmines/servers/hub
+	url = https://gitlab.com/orbitmines/servers/hub.git
+[submodule ".orbitmines/repositories/gitlab.com/orbitmines/servers/prison"]
+	path = .orbitmines/repositories/gitlab.com/orbitmines/servers/prison
+	url = https://gitlab.com/orbitmines/servers/prison.git
