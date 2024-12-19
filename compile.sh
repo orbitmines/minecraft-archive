@@ -2,13 +2,6 @@
 
 cd ./archive
 
-# Entrypoint
-cd ./entrypoint
-mvn clean install
-
-cp ./target/entrypoint-1.0-SNAPSHOT.jar ./../../orbitmines-minecraft-archive.jar
-cd ..
-
 # BungeeCord
 cd ./bungeecord
 mvn clean install

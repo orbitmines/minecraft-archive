@@ -1,0 +1,41 @@
+forge_support: false
+enforce_secure_profile: false
+player_limit: -1
+permissions: {}
+timeout: 30000
+log_commands: false
+network_compression_threshold: 64
+server_connect_timeout: 5000
+online_mode: true
+disabled_commands: []
+servers:
+  some_server:
+    motd: ''
+    address: 127.0.0.1:25595
+    restricted: false
+listeners:
+- query_port: 25564
+  query_enabled: false
+  bind_local_address: true
+  tab_list: GLOBAL_PING
+  ping_passthrough: false
+  force_default_server: false
+  proxy_protocol: false
+  host: 0.0.0.0:25565
+  motd: '&7&lOrbit&8&lMines'
+  priorities:
+  - some_server
+  forced_hosts:
+    some_ip: some_server
+  max_players: 1
+  tab_size: 60
+prevent_proxy_connections: false
+ip_forward: true
+remote_ping_timeout: 5000
+reject_transfers: false
+remote_ping_cache: -1
+connection_throttle: 4000
+stats: 3d332267-cc22-4e1e-bab2-608173d4376c
+connection_throttle_limit: 3
+groups: {}
+log_pings: true
