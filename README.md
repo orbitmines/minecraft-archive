@@ -11,7 +11,7 @@ Archive of OrbitMines' Minecraft Server (2013-2019)
 ## Local Setup
 
 - Install [Git](https://git-scm.com/downloads)
-- Install Java JDK 8 [(Winsows/Mac)](https://www.oracle.com/nl/java/technologies/javase/javase8-archive-downloads.html)
+- Install Java JDK 8 [(Windows/Mac)](https://www.oracle.com/nl/java/technologies/javase/javase8-archive-downloads.html)
 ```
 sudo apt install git openjdk-8-jdk
 ```
