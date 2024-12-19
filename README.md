@@ -15,6 +15,7 @@ Archive of OrbitMines' Minecraft Server (2013-2019)
 ```
 sudo apt install git openjdk-8-jdk
 ```
+- Install [Maven](https://maven.apache.org/install.html)
 
 - Use Git Bash on Windows/Mac (TODO: Test this)
 ```
@@ -26,8 +27,21 @@ git bash
 git clone --recurse-submodules git@github.com:orbitmines/minecraft-archive.git
 ```
 
-- Run setup scripts
 ```
 cd minecraft-archive
-./setup.sh
+```
+
+- Install & compile spigot
+```
+./install-spigot.sh
+```
+
+- (Optional) Compile archive tool
+```
+./compile.sh
+```
+
+- Run
+```
+./run.sh
 ```

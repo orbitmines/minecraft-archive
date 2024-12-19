@@ -1,0 +1,1 @@
+java -jar ./orbitmines-minecraft-archive.jar
