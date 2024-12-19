@@ -1,0 +1,6 @@
+name: archive-spigot
+main: com.orbitmines.archive.minecraft.spigot.Spigot
+authors: [Fadi Shawki]
+version: 1.0.0
+#api-version: 1.13
+commands:

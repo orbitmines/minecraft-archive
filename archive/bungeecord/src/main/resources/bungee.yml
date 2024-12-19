@@ -1,0 +1,4 @@
+name: archive-bungeecord
+main: com.orbitmines.archive.minecraft.bungeecord.BungeeCord
+version: 1.0.0
+author: Fadi Shawki
