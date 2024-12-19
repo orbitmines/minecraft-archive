@@ -10,4 +10,6 @@ Archive of OrbitMines' Minecraft Server (2013-2019)
 
 ## Local Setup
 
-```git clone --recurse-submodules git@github.com:orbitmines/minecraft-archive.git```
+```
+git clone --recurse-submodules git@github.com:orbitmines/minecraft-archive.git
+```
