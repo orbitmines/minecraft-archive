@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.orbitmines.archive.minecraft</groupId>
-    <artifactId>bungeecord</artifactId>
+    <artifactId>archive</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <repositories>
@@ -21,20 +21,11 @@
             <artifactId>lombok</artifactId>
             <version>1.18.34</version>
         </dependency>
-
+        <!-- https://mvnrepository.com/artifact/commons-configuration/commons-configuration -->
         <dependency>
-            <groupId>com.orbitmines</groupId>
-            <artifactId>bungeecord-LATEST</artifactId>
-            <version>LATEST</version>
-            <scope>system</scope>
-            <systemPath>${basedir}/../../.orbitmines/spigot/BungeeCord.jar</systemPath>
-        </dependency>
-
-        <dependency>
-            <groupId>com.orbitmines.archive.minecraft</groupId>
-            <artifactId>archive</artifactId>
-            <version>1.0-SNAPSHOT</version>
-            <scope>compile</scope>
+            <groupId>commons-configuration</groupId>
+            <artifactId>commons-configuration</artifactId>
+            <version>1.10</version>
         </dependency>
     </dependencies>
 

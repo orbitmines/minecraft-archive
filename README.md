@@ -1,5 +1,7 @@
-# minecraft-archive
-Archive of OrbitMines' Minecraft Server (2013-2019)
+# OrbitMines Minecraft Remastered
+An archive and remaster of OrbitMines' Minecraft Server (2013-2019)
+
+---
 
 - [ ] Check for java vulnerabilities
 - [ ] Separate logs into private repo
