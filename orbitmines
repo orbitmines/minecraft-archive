@@ -313,6 +313,9 @@ worker_spigot() {
     local sf=$1 log=$2
     exec >>"$log" 2>&1
     set +e
+
+    export JAVA_HOME="${JAVA_HOME:-$(dirname "$(dirname "$(readlink -f "$(which java)")")")}"
+    mkdir -p "$SPIGOT_DIR"
     cd "$SPIGOT_DIR"
 
     echo "ST:Downloading BungeeCord..." > "$sf"
