@@ -3,11 +3,6 @@ An archive and remaster of OrbitMines' Minecraft Server (2013-2019)
 
 ---
 
-- [ ] Check for java vulnerabilities
-- [ ] check for staff passwords.
-
----
-
 ## Local Setup
 
 - Prerequisites

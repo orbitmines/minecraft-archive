@@ -13,8 +13,8 @@ PLUGINS_DIR="$SCRIPT_DIR/.orbitmines/plugins"
 SERVERS_DIR="$SCRIPT_DIR/.orbitmines/servers"
 REMASTERED_DIR="$SCRIPT_DIR/@orbitmines/minecraft/remastered"
 ARCHIVE_DIR="$SCRIPT_DIR/@orbitmines/minecraft/archive"
-WORLDS_DIR="$ARCHIVE_DIR/worlds-test"
-WORLDS_ZIP="$ARCHIVE_DIR/worlds-test.zip"
+WORLDS_DIR="$ARCHIVE_DIR/worlds"
+WORLDS_ZIP="$ARCHIVE_DIR/worlds.zip"
 WORLDS_URL="https://archive.orbitmines.com/minecraft/worlds.zip"
 WORLDS_EXPECTED_COUNT=461
 WORLDS_ZIP_SIZE=40851743399
@@ -296,8 +296,9 @@ worker_worlds() {
     done
     local rc=0; wait "$upid" || rc=$?
     rm -f "$unzip_out"
-    if ((rc != 0)); then
-        echo "ERR:Extraction failed" > "$sf"; exit 1
+    # unzip: 0=ok, 1=warnings (not fatal), 2+=actual errors
+    if ((rc > 1)); then
+        echo "ERR:Extraction failed (exit $rc)" > "$sf"; exit 1
     fi
     # Zip contains worlds/ subfolder — move to WORLDS_DIR if names differ
     local extracted="$ARCHIVE_DIR/worlds"
@@ -313,9 +314,6 @@ worker_spigot() {
     local sf=$1 log=$2
     exec >>"$log" 2>&1
     set +e
-
-    export JAVA_HOME="${JAVA_HOME:-$(dirname "$(dirname "$(readlink -f "$(which java)")")")}"
-    mkdir -p "$SPIGOT_DIR"
     cd "$SPIGOT_DIR"
 
     echo "ST:Downloading BungeeCord..." > "$sf"
