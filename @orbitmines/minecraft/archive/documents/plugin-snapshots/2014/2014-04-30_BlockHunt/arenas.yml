@@ -1,0 +1,554 @@
+ForestTown:
+  ==: BlockHuntArena
+  hidersWinCommands: []
+  seekersWarp:
+    ==: BlockHuntLocation
+    w: HideAndSeekArena1
+    p: 1.1999882
+    a: 184.94962
+    z: 1.7810558563734014
+    y: 111.0
+    x: 0.38626592144948946
+  seekersWinCommands: []
+  maxPlayers: 24
+  amountSeekersOnStart: 1
+  timeInLobbyUntilStart: 45
+  minPlayers: 3
+  spawnWarp:
+    ==: BlockHuntLocation
+    w: MiniGames
+    p: 1.1999974
+    a: -89.7
+    z: 0.4772765422821976
+    y: 65.0
+    x: 0.557557767058716
+  gameTime: 300
+  pos1:
+    ==: BlockHuntLocation
+    w: HideAndSeekArena1
+    z: -59.0
+    y: 155.0
+    x: -69.0
+  pos2:
+    ==: BlockHuntLocation
+    w: HideAndSeekArena1
+    z: 61.0
+    y: 59.0
+    x: 85.0
+  waitingTimeSeeker: 25
+  timeUntilHidersSword: 60
+  arenaName: ForestTown
+  hidersTokenWin: 30
+  hidersWarp:
+    ==: BlockHuntLocation
+    w: HideAndSeekArena1
+    p: 12.900002
+    a: 1.9496274
+    z: 0.3198192950549663
+    y: 69.0
+    x: 0.6395880994942618
+  seekersTokenWin: 10
+  disguiseBlocks:
+  - ==: org.bukkit.inventory.ItemStack
+    type: JUKEBOX
+  - ==: org.bukkit.inventory.ItemStack
+    type: COBBLE_WALL
+  - ==: org.bukkit.inventory.ItemStack
+    type: BEACON
+  - ==: org.bukkit.inventory.ItemStack
+    type: FENCE
+  - ==: org.bukkit.inventory.ItemStack
+    type: THIN_GLASS
+  - ==: org.bukkit.inventory.ItemStack
+    type: COBBLESTONE
+  - ==: org.bukkit.inventory.ItemStack
+    type: LOG
+  - ==: org.bukkit.inventory.ItemStack
+    type: REDSTONE_LAMP_OFF
+  - ==: org.bukkit.inventory.ItemStack
+    type: WORKBENCH
+  - ==: org.bukkit.inventory.ItemStack
+    type: FURNACE
+  - ==: org.bukkit.inventory.ItemStack
+    type: BEDROCK
+  - ==: org.bukkit.inventory.ItemStack
+    type: STEP
+    damage: 3
+  - ==: org.bukkit.inventory.ItemStack
+    type: PUMPKIN
+  - ==: org.bukkit.inventory.ItemStack
+    type: COBBLESTONE_STAIRS
+  - ==: org.bukkit.inventory.ItemStack
+    type: LEAVES
+  killTokens: 5
+  lobbyWarp:
+    ==: BlockHuntLocation
+    w: HideAndSeekArena1
+    p: 7.6499896
+    a: 2.399627
+    z: -4.277493013412914
+    y: 111.0
+    x: 0.6103308506362847
+  allowedCommands: []
+Island:
+  ==: BlockHuntArena
+  hidersWinCommands: []
+  seekersWarp:
+    ==: BlockHuntLocation
+    w: HideAndSeekArena2
+    p: 8.100028
+    a: 182.40001
+    z: 13.34922912096047
+    y: 118.0
+    x: 8.372674705218625
+  seekersWinCommands: []
+  maxPlayers: 24
+  amountSeekersOnStart: 1
+  timeInLobbyUntilStart: 45
+  minPlayers: 3
+  spawnWarp:
+    ==: BlockHuntLocation
+    w: MiniGames
+    p: 1.1999974
+    a: -89.7
+    z: 0.4772765422821976
+    y: 65.0
+    x: 0.557557767058716
+  gameTime: 300
+  pos1:
+    ==: BlockHuntLocation
+    w: HideAndSeekArena2
+    z: 57.0
+    y: 101.0
+    x: 45.0
+  pos2:
+    ==: BlockHuntLocation
+    w: HideAndSeekArena2
+    z: -34.0
+    y: 36.0
+    x: -35.0
+  waitingTimeSeeker: 25
+  timeUntilHidersSword: 60
+  arenaName: Island
+  hidersTokenWin: 30
+  hidersWarp:
+    ==: BlockHuntLocation
+    w: HideAndSeekArena2
+    p: 9.6
+    a: -178.94987
+    z: 14.311861933887554
+    y: 68.0
+    x: 8.312794471069552
+  seekersTokenWin: 10
+  disguiseBlocks:
+  - ==: org.bukkit.inventory.ItemStack
+    type: BOOKSHELF
+  - ==: org.bukkit.inventory.ItemStack
+    type: FURNACE
+  - ==: org.bukkit.inventory.ItemStack
+    type: GLOWSTONE
+  - ==: org.bukkit.inventory.ItemStack
+    type: SMOOTH_BRICK
+    damage: 1
+  - ==: org.bukkit.inventory.ItemStack
+    type: SMOOTH_BRICK
+  - ==: org.bukkit.inventory.ItemStack
+    type: SMOOTH_BRICK
+    damage: 2
+  - ==: org.bukkit.inventory.ItemStack
+    type: SMOOTH_BRICK
+    damage: 3
+  - ==: org.bukkit.inventory.ItemStack
+    type: RED_ROSE
+  - ==: org.bukkit.inventory.ItemStack
+    type: YELLOW_FLOWER
+  - ==: org.bukkit.inventory.ItemStack
+    type: LOG
+  - ==: org.bukkit.inventory.ItemStack
+    type: QUARTZ_BLOCK
+  - ==: org.bukkit.inventory.ItemStack
+    type: FENCE
+  - ==: org.bukkit.inventory.ItemStack
+    type: REDSTONE_LAMP_OFF
+  - ==: org.bukkit.inventory.ItemStack
+    type: WORKBENCH
+  - ==: org.bukkit.inventory.ItemStack
+    type: LEAVES
+    damage: 3
+  - ==: org.bukkit.inventory.ItemStack
+    type: JUKEBOX
+  - ==: org.bukkit.inventory.ItemStack
+    type: BEACON
+  - ==: org.bukkit.inventory.ItemStack
+    type: BEDROCK
+  killTokens: 5
+  lobbyWarp:
+    ==: BlockHuntLocation
+    w: HideAndSeekArena2
+    p: 2.400024
+    a: -3.8999567
+    z: 8.87899265504824
+    y: 118.0
+    x: 8.401908031131333
+  allowedCommands: []
+Castle:
+  ==: BlockHuntArena
+  hidersWinCommands: []
+  seekersWarp:
+    ==: BlockHuntLocation
+    w: HideAndSeekArena3
+    p: 15.150011
+    a: 358.3496
+    z: 0.4746008954228724
+    y: 117.0
+    x: 0.5113811887641562
+  seekersWinCommands: []
+  maxPlayers: 24
+  amountSeekersOnStart: 1
+  timeInLobbyUntilStart: 45
+  minPlayers: 3
+  spawnWarp:
+    ==: BlockHuntLocation
+    w: MiniGames
+    p: 1.1999974
+    a: -89.7
+    z: 0.4772765422821976
+    y: 65.0
+    x: 0.557557767058716
+  gameTime: 300
+  pos1:
+    ==: BlockHuntLocation
+    w: HideAndSeekArena3
+    z: 58.0
+    y: 145.0
+    x: 61.0
+  pos2:
+    ==: BlockHuntLocation
+    w: HideAndSeekArena3
+    z: -60.0
+    y: 54.0
+    x: -99.0
+  waitingTimeSeeker: 25
+  timeUntilHidersSword: 60
+  arenaName: Castle
+  hidersTokenWin: 30
+  hidersWarp:
+    ==: BlockHuntLocation
+    w: HideAndSeekArena3
+    p: 14.700023
+    a: -92.2503
+    z: 0.6631451179674532
+    y: 65.5
+    x: 0.30000001192092896
+  seekersTokenWin: 10
+  disguiseBlocks:
+  - ==: org.bukkit.inventory.ItemStack
+    type: COBBLE_WALL
+  - ==: org.bukkit.inventory.ItemStack
+    type: SMOOTH_STAIRS
+  - ==: org.bukkit.inventory.ItemStack
+    type: WOOL
+    damage: 11
+  - ==: org.bukkit.inventory.ItemStack
+    type: COBBLESTONE_STAIRS
+  - ==: org.bukkit.inventory.ItemStack
+    type: SMOOTH_BRICK
+  - ==: org.bukkit.inventory.ItemStack
+    type: BEACON
+  - ==: org.bukkit.inventory.ItemStack
+    type: GLOWSTONE
+  killTokens: 5
+  lobbyWarp:
+    ==: BlockHuntLocation
+    w: HideAndSeekArena3
+    p: 8.550013
+    a: 181.49966
+    z: 5.004058152073803
+    y: 117.0
+    x: 0.2580524696795925
+  allowedCommands: []
+LollyPop:
+  ==: BlockHuntArena
+  hidersWinCommands: []
+  seekersWarp:
+    ==: BlockHuntLocation
+    w: HideAndSeekArena4
+    p: 1.9499979
+    a: -90.15007
+    z: 0.44126951628401506
+    y: 107.0
+    x: 0.7145118412568021
+  seekersWinCommands: []
+  maxPlayers: 24
+  amountSeekersOnStart: 1
+  timeInLobbyUntilStart: 45
+  minPlayers: 3
+  spawnWarp:
+    ==: BlockHuntLocation
+    w: MiniGames
+    p: 1.1999974
+    a: -89.7
+    z: 0.4772765422821976
+    y: 65.0
+    x: 0.557557767058716
+  gameTime: 300
+  pos1:
+    ==: BlockHuntLocation
+    w: HideAndSeekArena4
+    z: -31.0
+    y: 126.0
+    x: -40.0
+  pos2:
+    ==: BlockHuntLocation
+    w: HideAndSeekArena4
+    z: 46.0
+    y: 59.0
+    x: 41.0
+  waitingTimeSeeker: 25
+  timeUntilHidersSword: 60
+  arenaName: LollyPop
+  hidersTokenWin: 30
+  hidersWarp:
+    ==: BlockHuntLocation
+    w: HideAndSeekArena4
+    p: 1.0499495
+    a: 271.65
+    z: 0.5108392278700413
+    y: 68.5
+    x: 0.4768199730679302
+  seekersTokenWin: 10
+  disguiseBlocks: []
+  killTokens: 5
+  lobbyWarp:
+    ==: BlockHuntLocation
+    w: HideAndSeekArena4
+    p: -0.8999955
+    a: 89.697754
+    z: 0.6156617871367884
+    y: 107.0
+    x: 0.5195249886362721
+  allowedCommands: []
+Paradise:
+  ==: BlockHuntArena
+  hidersWinCommands: []
+  seekersWarp:
+    ==: BlockHuntLocation
+    w: HideAndSeekArena5
+    p: -0.44999713
+    a: -89.55052
+    z: 0.3651657687367145
+    y: 107.0
+    x: 0.35426197405812365
+  seekersWinCommands: []
+  maxPlayers: 24
+  amountSeekersOnStart: 1
+  timeInLobbyUntilStart: 45
+  minPlayers: 3
+  spawnWarp:
+    ==: BlockHuntLocation
+    w: MiniGames
+    p: 1.1999974
+    a: -89.7
+    z: 0.4772765422821976
+    y: 65.0
+    x: 0.557557767058716
+  gameTime: 300
+  pos1:
+    ==: BlockHuntLocation
+    w: HideAndSeekArena5
+    z: 48.0
+    y: 121.0
+    x: -41.0
+  pos2:
+    ==: BlockHuntLocation
+    w: HideAndSeekArena5
+    z: -51.0
+    y: 58.0
+    x: 46.0
+  waitingTimeSeeker: 25
+  timeUntilHidersSword: 60
+  arenaName: Paradise
+  hidersTokenWin: 30
+  hidersWarp:
+    ==: BlockHuntLocation
+    w: HideAndSeekArena5
+    p: -4.0500307
+    a: -269.40057
+    z: 0.5294542299948664
+    y: 65.0
+    x: 0.3673664609514458
+  seekersTokenWin: 10
+  disguiseBlocks:
+  - ==: org.bukkit.inventory.ItemStack
+    type: GOLD_BLOCK
+  - ==: org.bukkit.inventory.ItemStack
+    type: BEACON
+  - ==: org.bukkit.inventory.ItemStack
+    type: DIAMOND_BLOCK
+  - ==: org.bukkit.inventory.ItemStack
+    type: BEDROCK
+  - ==: org.bukkit.inventory.ItemStack
+    type: TNT
+  killTokens: 5
+  lobbyWarp:
+    ==: BlockHuntLocation
+    w: HideAndSeekArena5
+    p: -0.44999713
+    a: -89.55052
+    z: 0.3651657687367145
+    y: 107.0
+    x: 0.35426197405812365
+  allowedCommands: []
+Haunted:
+  ==: BlockHuntArena
+  hidersWinCommands: []
+  seekersWarp:
+    ==: BlockHuntLocation
+    w: HideAndSeekArena6
+    p: 1.049976
+    a: 0.75019914
+    z: 1.637655848524227
+    y: 131.0
+    x: -2.4880579504948432
+  seekersWinCommands: []
+  maxPlayers: 24
+  amountSeekersOnStart: 1
+  timeInLobbyUntilStart: 45
+  minPlayers: 3
+  spawnWarp:
+    ==: BlockHuntLocation
+    w: MiniGames
+    p: 1.1999974
+    a: -89.7
+    z: 0.4772765422821976
+    y: 65.0
+    x: 0.557557767058716
+  gameTime: 300
+  pos1:
+    ==: BlockHuntLocation
+    w: HideAndSeekArena6
+    z: -47.0
+    y: 54.0
+    x: 29.0
+  pos2:
+    ==: BlockHuntLocation
+    w: HideAndSeekArena6
+    z: 25.0
+    y: 108.0
+    x: -29.0
+  waitingTimeSeeker: 25
+  timeUntilHidersSword: 60
+  arenaName: Haunted
+  hidersTokenWin: 30
+  hidersWarp:
+    ==: BlockHuntLocation
+    w: HideAndSeekArena6
+    p: -3.7500296
+    a: -0.5998585
+    z: -19.413890115697203
+    y: 69.0
+    x: -0.4078026996165727
+  seekersTokenWin: 10
+  disguiseBlocks:
+  - ==: org.bukkit.inventory.ItemStack
+    type: ANVIL
+  - ==: org.bukkit.inventory.ItemStack
+    type: CHEST
+  - ==: org.bukkit.inventory.ItemStack
+    type: FURNACE
+  - ==: org.bukkit.inventory.ItemStack
+    type: PISTON_BASE
+  - ==: org.bukkit.inventory.ItemStack
+    type: WORKBENCH
+  - ==: org.bukkit.inventory.ItemStack
+    type: HAY_BLOCK
+  - ==: org.bukkit.inventory.ItemStack
+    type: BOOKSHELF
+  killTokens: 5
+  lobbyWarp:
+    ==: BlockHuntLocation
+    w: HideAndSeekArena6
+    p: 1.049976
+    a: 0.75019914
+    z: 1.637655848524227
+    y: 131.0
+    x: -2.4880579504948432
+  allowedCommands: []
+Dock:
+  ==: BlockHuntArena
+  hidersWinCommands: []
+  seekersWarp:
+    ==: BlockHuntLocation
+    w: HideAndSeekArena7
+    p: -3.299938
+    a: -89.70002
+    z: 2.582434967715675
+    y: 122.0
+    x: 11.162531983329227
+  seekersWinCommands: []
+  maxPlayers: 24
+  amountSeekersOnStart: 1
+  timeInLobbyUntilStart: 45
+  minPlayers: 3
+  spawnWarp:
+    ==: BlockHuntLocation
+    w: MiniGames
+    p: 1.1999974
+    a: -89.7
+    z: 0.4772765422821976
+    y: 65.0
+    x: 0.557557767058716
+  gameTime: 300
+  pos1:
+    ==: BlockHuntLocation
+    w: HideAndSeekArena7
+    z: 46.0
+    y: 89.0
+    x: -37.0
+  pos2:
+    ==: BlockHuntLocation
+    w: HideAndSeekArena7
+    z: -27.0
+    y: 40.0
+    x: 50.0
+  waitingTimeSeeker: 25
+  timeUntilHidersSword: 60
+  arenaName: Dock
+  hidersTokenWin: 30
+  hidersWarp:
+    ==: BlockHuntLocation
+    w: HideAndSeekArena7
+    p: -6.7499967
+    a: -94.65
+    z: 5.360706734738029
+    y: 65.0
+    x: -11.073735980085091
+  seekersTokenWin: 10
+  disguiseBlocks:
+  - ==: org.bukkit.inventory.ItemStack
+    type: REDSTONE_LAMP_OFF
+  - ==: org.bukkit.inventory.ItemStack
+    type: TNT
+  - ==: org.bukkit.inventory.ItemStack
+    type: WORKBENCH
+  - ==: org.bukkit.inventory.ItemStack
+    type: FURNACE
+  - ==: org.bukkit.inventory.ItemStack
+    type: GOLD_BLOCK
+  - ==: org.bukkit.inventory.ItemStack
+    type: COAL_BLOCK
+  - ==: org.bukkit.inventory.ItemStack
+    type: LEAVES
+    damage: 3
+  - ==: org.bukkit.inventory.ItemStack
+    type: BOOKSHELF
+  killTokens: 5
+  lobbyWarp:
+    ==: BlockHuntLocation
+    w: HideAndSeekArena7
+    p: -3.299938
+    a: -89.70002
+    z: 2.3770532959981034
+    y: 122.0
+    x: 11.16303934516689
+  allowedCommands: []

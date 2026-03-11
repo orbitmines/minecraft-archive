@@ -1,0 +1,65 @@
+ShopName: Sell
+signs:
+  text: '[Sell]'
+  NeedPermissionToCreateSign: true
+shop:
+  Pumpkin:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - type:PUMPKIN
+      - amount:1
+    Reward: 50000
+    MenuItem:
+    - 'type: PUMPKIN'
+    - amount:1
+    - name:&6&L1 Pumpkin
+    - 'lore:&2&LReward: &b50000$'
+    - amount:1
+    InventoryLocation: 2
+    ExtraPermission: ''
+  Beacon:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - type:BEACON
+      - amount:1
+    Reward: 1000000
+    MenuItem:
+    - 'type: BEACON'
+    - amount:1
+    - name:&b&L1 Beacon
+    - 'lore:&2&LReward: &b1000000$'
+    - amount:1
+    InventoryLocation: 4
+    ExtraPermission: ''
+  Melon:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - id:103
+      - amount:1
+    Reward: 75000
+    MenuItem:
+    - 'id:103'
+    - amount:1
+    - name:&A&L1 Melon
+    - 'lore:&2&LReward: &b75000$'
+    - amount:1
+    InventoryLocation: 6
+    ExtraPermission: ''
+  Wart:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - id:372
+      - amount:1
+    Reward: 10000
+    MenuItem:
+    - 'id:372'
+    - amount:1
+    - name:&c&L1 Nether Wart
+    - 'lore:&2&LReward: &b10000$'
+    - amount:1
+    InventoryLocation: 8
+    ExtraPermission: ''

@@ -1,0 +1,6 @@
+global:
+  global: -1
+worlds:
+  SkyBlockWorld: 1
+# Write like on Signs: 1m = 1 Minute, 1d = 1 Day...
+autoClearTime: 0

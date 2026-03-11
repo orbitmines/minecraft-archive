@@ -1,0 +1,72 @@
+leave_1:
+  arenaName: leave
+  location:
+    ==: BlockHuntLocation
+    w: TestWorld
+    z: -3.0
+    y: 98.0
+    x: -12.0
+ForestTown_1:
+  arenaName: ForestTown
+  location:
+    ==: BlockHuntLocation
+    w: TestWorld
+    z: -2.0
+    y: 98.0
+    x: -12.0
+ForestTown_2:
+  arenaName: ForestTown
+  location:
+    ==: BlockHuntLocation
+    w: MiniGames
+    z: -18.0
+    y: 67.0
+    x: -2.0
+Island_1:
+  arenaName: Island
+  location:
+    ==: BlockHuntLocation
+    w: MiniGames
+    z: -18.0
+    y: 67.0
+    x: -1.0
+Castle_1:
+  arenaName: Castle
+  location:
+    ==: BlockHuntLocation
+    w: MiniGames
+    z: -18.0
+    y: 67.0
+    x: 0.0
+LollyPop_1:
+  arenaName: LollyPop
+  location:
+    ==: BlockHuntLocation
+    w: MiniGames
+    z: -18.0
+    y: 67.0
+    x: 1.0
+Paradise_1:
+  arenaName: Paradise
+  location:
+    ==: BlockHuntLocation
+    w: MiniGames
+    z: -18.0
+    y: 67.0
+    x: 2.0
+Haunted_1:
+  arenaName: Haunted
+  location:
+    ==: BlockHuntLocation
+    w: MiniGames
+    z: -18.0
+    y: 66.0
+    x: -2.0
+Dock_1:
+  arenaName: Dock
+  location:
+    ==: BlockHuntLocation
+    w: MiniGames
+    z: -18.0
+    y: 66.0
+    x: -1.0

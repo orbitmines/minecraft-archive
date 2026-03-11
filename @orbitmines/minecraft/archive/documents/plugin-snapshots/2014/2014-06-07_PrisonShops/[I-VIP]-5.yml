@@ -1,0 +1,210 @@
+ShopName: GoldVIP-P5
+signs:
+  text: '[VP-5]'
+  NeedPermissionToCreateSign: true
+shop:
+  Beacon:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - type:BEACON
+      - amount:1
+    Reward: 1100000
+    MenuItem:
+    - 'type: BEACON'
+    - amount:1
+    - name:&b&L1 Beacon
+    - 'lore:&2&LReward: &4&m1000000$&b 1100000$'
+    - amount:1
+    InventoryLocation: 2
+    ExtraPermission: 'vipshop.G'
+  Beacon16:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - type:BEACON
+      - amount:16
+    Reward: 17600000
+    MenuItem:
+    - 'type: BEACON'
+    - amount:16
+    - name:&b&L16 Beacon
+    - 'lore:&2&LReward: &4&m16000000$&b 17600000$'
+    - amount:16
+    InventoryLocation: 11
+    ExtraPermission: 'vipshop.G'
+  Beacon32:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - type:BEACON
+      - amount:32
+    Reward: 35200000
+    MenuItem:
+    - 'type: BEACON'
+    - amount:32
+    - name:&b&L32 Beacon
+    - 'lore:&2&LReward: &4&m32000000$&b 35200000$'
+    - amount:32
+    InventoryLocation: 20
+    ExtraPermission: 'vipshop.G'
+  Beacon64:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - type:BEACON
+      - amount:64
+    Reward: 70400000
+    MenuItem:
+    - 'type: BEACON'
+    - amount:64
+    - name:&b&L64 Beacon
+    - 'lore:&2&LReward: &4&m64000000$&b 70400000$'
+    - amount:64
+    InventoryLocation: 29
+    ExtraPermission: 'vipshop.G'
+  Melon:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - type:MELON_BLOCK
+      - amount:1
+    Reward: 6600
+    MenuItem:
+    - 'type: MELON_BLOCK'
+    - amount:1
+    - name:&a&L1 Melon
+    - 'lore:&2&LReward: &4&m6000$&b 6600$'
+    - amount:1
+    InventoryLocation: 3
+    ExtraPermission: 'vipshop.G'
+  Melon16:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - type:MELON_BLOCK
+      - amount:16
+    Reward: 105600
+    MenuItem:
+    - 'type: MELON_BLOCK'
+    - amount:16
+    - name:&a&L16 Melon
+    - 'lore:&2&LReward: &4&m96000$&b 105600$'
+    - amount:16
+    InventoryLocation: 12
+    ExtraPermission: 'vipshop.G'
+  Melon32:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - type:MELON_BLOCK
+      - amount:32
+    Reward: 211200
+    MenuItem:
+    - 'type: MELON_BLOCK'
+    - amount:32
+    - name:&a&L32 Melon
+    - 'lore:&2&LReward: &4&m192000$&b 211200$'
+    - amount:32
+    InventoryLocation: 21
+    ExtraPermission: 'vipshop.G'
+  Melon64:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - type:MELON_BLOCK
+      - amount:64
+    Reward: 422400
+    MenuItem:
+    - 'type: MELON_BLOCK'
+    - amount:64
+    - name:&a&L64 Melon
+    - 'lore:&2&LReward: &4&m384000$&b 422400$'
+    - amount:64
+    InventoryLocation: 30
+    ExtraPermission: 'vipshop.G'
+  NetherWMelon:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - type:NETHER_STALK
+      - amount:1
+    Reward: 2200
+    MenuItem:
+    - 'type: NETHER_STALK'
+    - amount:1
+    - name:&c&L1 Nether Wart
+    - 'lore:&2&LReward: &4&m2000$&b 2200$'
+    - amount:1
+    InventoryLocation: 4
+    ExtraPermission: 'vipshop.G'
+  NetherWMelon16:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - type:NETHER_STALK
+      - amount:16
+    Reward: 35200
+    MenuItem:
+    - 'type: NETHER_STALK'
+    - amount:16
+    - name:&c&L16 Nether Wart
+    - 'lore:&2&LReward: &4&m32000$&b 35200$'
+    - amount:16
+    InventoryLocation: 13
+    ExtraPermission: 'vipshop.G'
+  NetherWMelon32:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - type:NETHER_STALK
+      - amount:32
+    Reward: 70400
+    MenuItem:
+    - 'type: NETHER_STALK'
+    - amount:32
+    - name:&c&L32 Nether Wart
+    - 'lore:&2&LReward: &4&m64000$&b 70400$'
+    - amount:32
+    InventoryLocation: 22
+    ExtraPermission: 'vipshop.G'
+  NetherW64:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - type:NETHER_STALK
+      - amount:64
+    Reward: 140800
+    MenuItem:
+    - 'type:NETHER_STALK'
+    - amount:64
+    - name:&c&L64 Nether Wart
+    - 'lore:&2&LReward: &4&m128000$&b 140800$'
+    - amount:64
+    InventoryLocation: 31
+    ExtraPermission: 'vipshop.G'
+  PrisonPage4:
+    RewardType: shop
+    PriceType: free
+    Reward: GoldVIP-P4
+    MenuItem:
+    - type:REDSTONE_BLOCK
+    - amount:4
+    - name:&4&L<<< GoldVIP Sell Page 4
+    - lore:&8Open Page 4
+    - amount:4
+    InventoryLocation: 19
+    ExtraPermission: 'vipshop.G'
+  PrisonPage6:
+    RewardType: shop
+    PriceType: free
+    Reward: GoldVIP-P6
+    MenuItem:
+    - type:REDSTONE_BLOCK
+    - amount:6
+    - name:&4&LGoldVIP Sell Page 6 >>>
+    - lore:&8Open Page 6
+    - amount:6
+    InventoryLocation: 27
+    ExtraPermission: 'vipshop.G'
+

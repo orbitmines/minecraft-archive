@@ -1,0 +1,458 @@
+ShopName: GoldVIP-P4
+signs:
+  text: '[VP-4]'
+  NeedPermissionToCreateSign: true
+shop:
+  Redstone:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - type:REDSTONE_BLOCK
+      - amount:1
+    Reward: 1375
+    MenuItem:
+    - 'type: REDSTONE_BLOCK'
+    - amount:1
+    - name:&4&L1 Redstone Block
+    - 'lore:&2&LReward: &4&m1250$&b 1375$'
+    - amount:1
+    InventoryLocation: 2
+    ExtraPermission: 'vipshop.G'
+  Redstone16:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - type:REDSTONE_BLOCK
+      - amount:16
+    Reward: 22000
+    MenuItem:
+    - 'type: REDSTONE_BLOCK'
+    - amount:16
+    - name:&4&L16 Redstone Block
+    - 'lore:&2&LReward: &4&m20000$&b 22000$'
+    - amount:16
+    InventoryLocation: 11
+    ExtraPermission: 'vipshop.G'
+  Redstone32:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - type:REDSTONE_BLOCK
+      - amount:32
+    Reward: 44000
+    MenuItem:
+    - 'type: REDSTONE_BLOCK'
+    - amount:32
+    - name:&4&L32 Redstone Block
+    - 'lore:&2&LReward: &4&m40000$&b 44000$'
+    - amount:32
+    InventoryLocation: 20
+    ExtraPermission: 'vipshop.G'
+  Redstone64:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - type:REDSTONE_BLOCK
+      - amount:64
+    Reward: 88000
+    MenuItem:
+    - 'type: REDSTONE_BLOCK'
+    - amount:64
+    - name:&4&L64 Redstone Block
+    - 'lore:&2&LReward: &4&m80000$&b 88000$'
+    - amount:64
+    InventoryLocation: 29
+    ExtraPermission: 'vipshop.G'
+  Quartz:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - type:QUARTZ
+      - amount:1
+    Reward: 165
+    MenuItem:
+    - 'type: QUARTZ'
+    - amount:1
+    - name:&f&L1 Quartz
+    - 'lore:&2&LReward: &4&m150$&b 165$'
+    - amount:1
+    InventoryLocation: 3
+    ExtraPermission: 'vipshop.G'
+  Quartz16:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - type:QUARTZ
+      - amount:16
+    Reward: 2750
+    MenuItem:
+    - 'type: QUARTZ'
+    - amount:16
+    - name:&f&L16 Quartz
+    - 'lore:&2&LReward: &4&m2500$&b 2750$'
+    - amount:16
+    InventoryLocation: 12
+    ExtraPermission: 'vipshop.G'
+  Quartz32:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - type:QUARTZ
+      - amount:32
+    Reward: 5500
+    MenuItem:
+    - 'type: QUARTZ'
+    - amount:32
+    - name:&f&L32 Quartz
+    - 'lore:&2&LReward: &4&m5000$&b 5500$'
+    - amount:32
+    InventoryLocation: 21
+    ExtraPermission: 'vipshop.G'
+  Quartz64:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - type:QUARTZ
+      - amount:64
+    Reward: 11000
+    MenuItem:
+    - 'type: QUARTZ'
+    - amount:64
+    - name:&f&L64 Quartz
+    - 'lore:&2&LReward: &4&m10000$&b 11000$'
+    - amount:64
+    InventoryLocation: 30
+    ExtraPermission: 'vipshop.G'
+  Quartzb:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - type:QUARTZ_BLOCK
+      - amount:1
+    Reward: 1650
+    MenuItem:
+    - 'type: QUARTZ_BLOCK'
+    - amount:1
+    - name:&f&L1 Quartz Block
+    - 'lore:&2&LReward: &4&m1500$&b 1650$'
+    - amount:1
+    InventoryLocation: 4
+    ExtraPermission: 'vipshop.G'
+  Quartzb16:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - type:QUARTZ_BLOCK
+      - amount:16
+    Reward: 27500
+    MenuItem:
+    - 'type: QUARTZ_BLOCK'
+    - amount:16
+    - name:&f&L16 Quartz Block
+    - 'lore:&2&LReward: &4&m25000$&b 27500$'
+    - amount:16
+    InventoryLocation: 13
+    ExtraPermission: 'vipshop.G'
+  Quartzb32:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - type:QUARTZ_BLOCK
+      - amount:32
+    Reward: 55000
+    MenuItem:
+    - 'type: QUARTZ_BLOCK'
+    - amount:32
+    - name:&f&L32 Quartz Block
+    - 'lore:&2&LReward: &4&m50000$&b 55000$'
+    - amount:32
+    InventoryLocation: 22
+    ExtraPermission: 'vipshop.G'
+  Quartzb64:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - type:QUARTZ_BLOCK
+      - amount:64
+    Reward: 110000
+    MenuItem:
+    - 'type: QUARTZ_BLOCK'
+    - amount:64
+    - name:&f&L64 Quartz Block
+    - 'lore:&2&LReward: &4&m100000$&b 110000$'
+    - amount:64
+    InventoryLocation: 31
+    ExtraPermission: 'vipshop.G'
+  Glowstone:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - type:GLOWSTONE
+      - amount:1
+    Reward: 7734
+    MenuItem:
+    - 'type: GLOWSTONE'
+    - amount:1
+    - name:&6&L1 Glowstone
+    - 'lore:&2&LReward: &4&m7031$&b 7734$'
+    - amount:1
+    InventoryLocation: 5
+    ExtraPermission: 'vipshop.G'
+  Glowstone16:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - type:GLOWSTONE
+      - amount:16
+    Reward: 123750
+    MenuItem:
+    - 'type: GLOWSTONE'
+    - amount:16
+    - name:&6&L16 Glowstone
+    - 'lore:&2&LReward: &4&m112500$&b 123750$'
+    - amount:16
+    InventoryLocation: 14
+    ExtraPermission: 'vipshop.G'
+  Glowstone32:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - type:GLOWSTONE
+      - amount:32
+    Reward: 247500
+    MenuItem:
+    - 'type: GLOWSTONE'
+    - amount:32
+    - name:&6&L32 Glowstone
+    - 'lore:&2&LReward: &4&m225000$&b 247500$'
+    - amount:32
+    InventoryLocation: 23
+    ExtraPermission: 'vipshop.G'
+  Glowstone64:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - type:GLOWSTONE
+      - amount:64
+    Reward: 495000
+    MenuItem:
+    - 'type: GLOWSTONE'
+    - amount:64
+    - name:&6&L64 Glowstone
+    - 'lore:&2&LReward: &4&m450000$&b 495000$'
+    - amount:64
+    InventoryLocation: 32
+    ExtraPermission: 'vipshop.G'
+  Redsand:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - type:SAND
+      - amount:1
+      - durability:1
+    Reward: 11
+    MenuItem:
+    - 'type: SAND'
+    - amount:1
+    - durability:1
+    - name:&c&L1 Red Sand
+    - 'lore:&2&LReward: &4&m10$&b 11$'
+    - amount:1
+    InventoryLocation: 6
+    ExtraPermission: 'vipshop.G'
+  Redsand16:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - type:SAND
+      - amount:16
+      - durability:1
+    Reward: 176
+    MenuItem:
+    - 'type: SAND'
+    - amount:16
+    - durability:1
+    - name:&c&L16 Red Sand
+    - 'lore:&2&LReward: &4&m160$&b 176$'
+    - amount:16
+    InventoryLocation: 15
+    ExtraPermission: 'vipshop.G'
+  Redsand32:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - type:SAND
+      - amount:32
+      - durability:1
+    Reward: 352
+    MenuItem:
+    - 'type: SAND'
+    - amount:32
+    - durability:1
+    - name:&c&L32 Red Sand
+    - 'lore:&2&LReward: &4&m320$&b 352$'
+    - amount:32
+    InventoryLocation: 24
+    ExtraPermission: 'vipshop.G'
+  Redsand64:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - type:SAND
+      - amount:64
+      - durability:1
+    Reward: 704
+    MenuItem:
+    - 'type: SAND'
+    - amount:64
+    - durability:1
+    - name:&c&L64 Red Sand
+    - 'lore:&2&LReward: &4&m640$&b 704$'
+    - amount:64
+    InventoryLocation: 33
+    ExtraPermission: 'vipshop.G'
+  Stone:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - id:4
+      - amount:1
+    Reward: 5
+    MenuItem:
+    - 'id: 4'
+    - amount:1
+    - name:&7&L1 Cobblestone
+    - 'lore:&2&LReward: &4&m5$&b 5$'
+    - amount:1
+    InventoryLocation: 7
+    ExtraPermission: 'vipshop.G'
+  Stone16:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - id:4
+      - amount:16
+    Reward: 95
+    MenuItem:
+    - 'id: 4'
+    - amount:16
+    - name:&7&L16 Cobblestone
+    - 'lore:&2&LReward: &4&m87$&b 95$'
+    - amount:16
+    InventoryLocation: 16
+    ExtraPermission: 'vipshop.G'
+  Stone32:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - id:4
+      - amount:32
+    Reward: 192
+    MenuItem:
+    - 'id: 4'
+    - amount:32
+    - name:&7&L32 Cobblestone
+    - 'lore:&2&LReward: &4&m175$&b 192$'
+    - amount:32
+    InventoryLocation: 25
+    ExtraPermission: 'vipshop.G'
+  Stone64:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - id:4
+      - amount:64
+    Reward: 385
+    MenuItem:
+    - 'id: 4'
+    - amount:64
+    - name:&7&L64 Cobblestone
+    - 'lore:&2&LReward: &4&m350$&b 385$'
+    - amount:64
+    InventoryLocation: 34
+    ExtraPermission: 'vipshop.G'
+  Pumpkin1:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - type:PUMPKIN
+      - amount:1
+    Reward: 4950
+    MenuItem:
+    - 'type: PUMPKIN'
+    - amount:1
+    - name:&6&L1 Pumpkin
+    - 'lore:&2&LReward: &4&m4500$&b 4950$'
+    - amount:1
+    InventoryLocation: 8
+    ExtraPermission: 'vipshop.G'
+  Pumpkin16:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - type:PUMPKIN
+      - amount:16
+    Reward: 79200
+    MenuItem:
+    - 'type: PUMPKIN'
+    - amount:16
+    - name:&6&L16 Pumpkin
+    - 'lore:&2&LReward: &4&m72000$&b 79200$'
+    - amount:16
+    InventoryLocation: 17
+    ExtraPermission: 'vipshop.G'
+  Pumpkin32:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - type:PUMPKIN
+      - amount:32
+    Reward: 158400
+    MenuItem:
+    - 'type: PUMPKIN'
+    - amount:32
+    - name:&6&L32 Pumpkin
+    - 'lore:&2&LReward: &4&m144000$&b 158400$'
+    - amount:32
+    InventoryLocation: 26
+    ExtraPermission: 'vipshop.G'
+  Pumpkin64:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - type:PUMPKIN
+      - amount:64
+    Reward: 316800
+    MenuItem:
+    - 'type: PUMPKIN'
+    - amount:64
+    - name:&6&L64 Pumpkin
+    - 'lore:&2&LReward: &4&m288000$&b 316800$'
+    - amount:64
+    InventoryLocation: 35
+    ExtraPermission: 'vipshop.G'
+  PrisonPage3:
+    RewardType: shop
+    PriceType: free
+    Reward: GoldVIP-P3
+    MenuItem:
+    - type:REDSTONE_BLOCK
+    - amount:3
+    - name:&4&L<<< GoldVIP Sell Page 3
+    - lore:&8Open Page 3
+    - amount:3
+    InventoryLocation: 19
+    ExtraPermission: 'vipshop.G'
+  PrisonPage5:
+    RewardType: shop
+    PriceType: free
+    Reward: GoldVIP-P5
+    MenuItem:
+    - type:REDSTONE_BLOCK
+    - amount:5
+    - name:&4&LGoldVIP Sell Page 5 >>>
+    - lore:&8Open Page 5
+    - amount:5
+    InventoryLocation: 27
+    ExtraPermission: 'vipshop.G'
+

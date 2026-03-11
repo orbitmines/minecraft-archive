@@ -1,0 +1,474 @@
+ShopName: GoldVIP-P2
+signs:
+  text: '[VP-2]'
+  NeedPermissionToCreateSign: true
+shop:
+  Iron:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - type:IRON_BLOCK
+      - amount:1
+    Reward: 514
+    MenuItem:
+    - 'type: IRON_BLOCK'
+    - amount:1
+    - name:&7&L1 Iron Block
+    - 'lore:&2&LReward: &4&m468$&b 514$'
+    - amount:1
+    InventoryLocation: 2
+    ExtraPermission: 'vipshop.G'
+  Iron16:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - type:IRON_BLOCK
+      - amount:16
+    Reward: 8250
+    MenuItem:
+    - 'type: IRON_BLOCK'
+    - amount:16
+    - name:&7&L16 Iron Block
+    - 'lore:&2&LReward: &4&m7500$&b 8250$'
+    - amount:16
+    InventoryLocation: 11
+    ExtraPermission: 'vipshop.G'
+  Iron32:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - type:IRON_BLOCK
+      - amount:32
+    Reward: 16500
+    MenuItem:
+    - 'type: IRON_BLOCK'
+    - amount:32
+    - name:&7&L32 Iron Block
+    - 'lore:&2&LReward: &4&m15000$&b 16500$'
+    - amount:32
+    InventoryLocation: 20
+    ExtraPermission: 'vipshop.G'
+  Iron64:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - type:IRON_BLOCK
+      - amount:64
+    Reward: 33000
+    MenuItem:
+    - 'type: IRON_BLOCK'
+    - amount:64
+    - name:&7&L64 Iron Block
+    - 'lore:&2&LReward: &4&m30000$&b 33000$'
+    - amount:64
+    InventoryLocation: 29
+    ExtraPermission: 'vipshop.G'
+  Coal:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - type:COAL_BLOCK
+      - amount:1
+    Reward: 165
+    MenuItem:
+    - 'type: COAL_BLOCK'
+    - amount:1
+    - name:&8&L1 Coal Block
+    - 'lore:&2&LReward: &4&m150$&b 165$'
+    - amount:1
+    InventoryLocation: 3
+    ExtraPermission: 'vipshop.G'
+  Coal16:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - type:COAL_BLOCK
+      - amount:16
+    Reward: 2750
+    MenuItem:
+    - 'type: COAL_BLOCK'
+    - amount:16
+    - name:&8&L16 Coal Block
+    - 'lore:&2&LReward: &4&m2500$&b 2750$'
+    - amount:16
+    InventoryLocation: 12
+    ExtraPermission: 'vipshop.G'
+  Coal32:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - type:COAL_BLOCK
+      - amount:16
+    Reward: 5500
+    MenuItem:
+    - 'type: COAL_BLOCK'
+    - amount:32
+    - name:&8&L32 Coal Block
+    - 'lore:&2&LReward: &4&m5000$&b 5500$'
+    - amount:32
+    InventoryLocation: 21
+    ExtraPermission: 'vipshop.G'
+  Coal64:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - type:COAL_BLOCK
+      - amount:64
+    Reward: 11000
+    MenuItem:
+    - 'type: COAL_BLOCK'
+    - amount:64
+    - name:&8&L64 Coal Block
+    - 'lore:&2&LReward: &4&m10000$&b 11000$'
+    - amount:64
+    InventoryLocation: 30
+    ExtraPermission: 'vipshop.G'
+  Stone:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - id:24
+      - amount:1
+    Reward: 5
+    MenuItem:
+    - 'id: 24'
+    - amount:1
+    - name:&e&L1 Sandstone
+    - 'lore:&2&LReward: &4&m5$&b 5$'
+    - amount:1
+    InventoryLocation: 4
+    ExtraPermission: 'vipshop.G'
+  Stone16:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - id:24
+      - amount:16
+    Reward: 95
+    MenuItem:
+    - 'id: 24'
+    - amount:16
+    - name:&e&L16 Sandstone
+    - 'lore:&2&LReward: &4&m87$&b 95$'
+    - amount:16
+    InventoryLocation: 13
+    ExtraPermission: 'vipshop.G'
+  Stone32:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - id:24
+      - amount:32
+    Reward: 192
+    MenuItem:
+    - 'id: 24'
+    - amount:32
+    - name:&e&L32 Sandstone
+    - 'lore:&2&LReward: &4&m175$&b 192$'
+    - amount:32
+    InventoryLocation: 22
+    ExtraPermission: 'vipshop.G'
+  Stone64:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - id:24
+      - amount:64
+    Reward: 385
+    MenuItem:
+    - 'id: 24'
+    - amount:64
+    - name:&e&L64 Sandstone
+    - 'lore:&2&LReward: &4&m350$&b 385$'
+    - amount:64
+    InventoryLocation: 31
+    ExtraPermission: 'vipshop.G'
+  WoodLog:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - id:17
+      - amount:1
+    Reward: 42
+    MenuItem:
+    - 'id: 17'
+    - amount:1
+    - name:&6&L1 Oak Log
+    - 'lore:&2&LReward: &4&m39$&b 42$'
+    - amount:1
+    InventoryLocation: 5
+    ExtraPermission: 'vipshop.G'
+  WoodLog16:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - id:17
+      - amount:16
+    Reward: 687
+    MenuItem:
+    - 'id: 17'
+    - amount:16
+    - name:&6&L16 Oak Log
+    - 'lore:&2&LReward: &4&m625$&b 687$'
+    - amount:16
+    InventoryLocation: 14
+    ExtraPermission: 'vipshop.G'
+  WoodLog32:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - id:17
+      - amount:32
+    Reward: 1718
+    MenuItem:
+    - 'id: 17'
+    - amount:32
+    - name:&6&L32 Oak Log
+    - 'lore:&2&LReward: &4&m1250$&b 1718$'
+    - amount:32
+    InventoryLocation: 23
+    ExtraPermission: 'vipshop.G'
+  WoodLog64:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - id:17
+      - amount:64
+    Reward: 2750
+    MenuItem:
+    - 'id: 17'
+    - amount:64
+    - name:&6&L64 Oak Log
+    - 'lore:&2&LReward: &4&m2500$&b 2750$'
+    - amount:64
+    InventoryLocation: 32
+    ExtraPermission: 'vipshop.G'
+  WoodLog2:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - id:17
+      - amount:1
+      - durability:1
+    Reward: 42
+    MenuItem:
+    - 'id: 17'
+    - amount:1
+    - durability:1
+    - name:&6&L1 Spruce Log
+    - 'lore:&2&LReward: &4&m39$&b 42$'
+    - amount:1
+    InventoryLocation: 6
+    ExtraPermission: 'vipshop.G'
+  WoodLog162:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - id:17
+      - amount:16
+      - durability:1
+    Reward: 687
+    MenuItem:
+    - 'id: 17'
+    - amount:16
+    - durability:1
+    - name:&6&L16 Spruce Log
+    - 'lore:&2&LReward: &4&m625$&b 687$'
+    - amount:16
+    InventoryLocation: 15
+    ExtraPermission: 'vipshop.G'
+  WoodLog322:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - id:17
+      - amount:32
+      - durability:1
+    Reward: 1375
+    MenuItem:
+    - 'id: 17'
+    - amount:32
+    - durability:1
+    - name:&6&L32 Spruce Log
+    - 'lore:&2&LReward: &4&m1250$&b 1375$'
+    - amount:32
+    InventoryLocation: 24
+    ExtraPermission: 'vipshop.G'
+  WoodLog642:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - id:17
+      - amount:64
+      - durability:1
+    Reward: 2750
+    MenuItem:
+    - 'id: 17'
+    - amount:64
+    - durability:1
+    - name:&6&L64 Spruce Log
+    - 'lore:&2&LReward: &4&m2500$&b 2750$'
+    - amount:64
+    InventoryLocation: 33
+    ExtraPermission: 'vipshop.G'
+  WoodLog3:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - id:17
+      - amount:1
+      - durability:2
+    Reward: 42
+    MenuItem:
+    - 'id: 17'
+    - amount:1
+    - durability:2
+    - name:&6&L1 Birch Log
+    - 'lore:&2&LReward: &4&m39$&b 42$'
+    - amount:1
+    InventoryLocation: 7
+    ExtraPermission: 'vipshop.G'
+  WoodLog163:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - id:17
+      - amount:16
+      - durability:2
+    Reward: 687
+    MenuItem:
+    - 'id: 17'
+    - amount:16
+    - durability:2
+    - name:&6&L16 Birch Log
+    - 'lore:&2&LReward: &4&m625$&b 687$'
+    - amount:16
+    InventoryLocation: 16
+    ExtraPermission: 'vipshop.G'
+  WoodLog323:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - id:17
+      - amount:32
+      - durability:2
+    Reward: 1375
+    MenuItem:
+    - 'id: 17'
+    - amount:32
+    - durability:2
+    - name:&6&L32 Birch Log
+    - 'lore:&2&LReward: &4&m1250$&b 1375$'
+    - amount:32
+    InventoryLocation: 25
+    ExtraPermission: 'vipshop.G'
+  WoodLog643:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - id:17
+      - amount:64
+      - durability:2
+    Reward: 3125
+    MenuItem:
+    - 'id: 17'
+    - amount:64
+    - durability:2
+    - name:&6&L64 Birch Log
+    - 'lore:&2&LReward: &4&m2500$&b 2750$'
+    - amount:64
+    InventoryLocation: 34
+    ExtraPermission: 'vipshop.G'
+  WoodLog4:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - id:17
+      - amount:1
+      - durability:3
+    Reward: 42
+    MenuItem:
+    - 'id: 17'
+    - amount:1
+    - durability:3
+    - name:&6&L1 Jungle Log
+    - 'lore:&2&LReward: &4&m39$&b 42$'
+    - amount:1
+    InventoryLocation: 8
+    ExtraPermission: 'vipshop.G'
+  WoodLog164:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - id:17
+      - amount:16
+      - durability:3
+    Reward: 687
+    MenuItem:
+    - 'id: 17'
+    - amount:16
+    - durability:3
+    - name:&6&L16 Jungle Log
+    - 'lore:&2&LReward: &4&m625$&b 687$'
+    - amount:16
+    InventoryLocation: 17
+    ExtraPermission: 'vipshop.G'
+  WoodLog324:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - id:17
+      - amount:32
+      - durability:3
+    Reward: 1375
+    MenuItem:
+    - 'id: 17'
+    - amount:32
+    - durability:3
+    - name:&6&L32 Jungle Log
+    - 'lore:&2&LReward: &4&m1250$&b 1375$'
+    - amount:32
+    InventoryLocation: 26
+    ExtraPermission: 'vipshop.G'
+  WoodLog644:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - id:17
+      - amount:64
+      - durability:3
+    Reward: 2750
+    MenuItem:
+    - 'id: 17'
+    - amount:64
+    - durability:3
+    - name:&6&L64 Jungle Log
+    - 'lore:&2&LReward: &4&m2500$&b 2750$'
+    - amount:64
+    InventoryLocation: 35
+    ExtraPermission: 'vipshop.G'
+  PrisonPage1:
+    RewardType: shop
+    PriceType: free
+    Reward: GoldVIP-P1
+    MenuItem:
+    - type:REDSTONE_BLOCK
+    - amount:1
+    - name:&4&L<<< GoldVIP Sell Page 1
+    - lore:&8Open Page 1
+    - amount:1
+    InventoryLocation: 19
+    ExtraPermission: 'vipshop.G'
+  PrisonPage3:
+    RewardType: shop
+    PriceType: free
+    Reward: GoldVIP-P3
+    MenuItem:
+    - type:REDSTONE_BLOCK
+    - amount:3
+    - name:&4&LGoldVIP Sell Page 3 >>>
+    - lore:&8Open Page 3
+    - amount:3
+    InventoryLocation: 27
+    ExtraPermission: 'vipshop.G'
+

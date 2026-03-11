@@ -1,0 +1,8 @@
+bounceback: true
+worlds:
+  skyworld:
+    portalgoesto:
+      NETHER: skyworld_nether
+  skyworld_nether:
+    portalgoesto:
+      NETHER: skyworld

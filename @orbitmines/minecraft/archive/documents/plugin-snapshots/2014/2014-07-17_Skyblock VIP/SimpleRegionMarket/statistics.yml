@@ -1,0 +1,375 @@
+SurvivalShops:
+  global:
+    token:
+      all: 76
+      rent: 58
+      sell: 18
+    price:
+      all: 2742039
+      rent: 2582039
+      sell: 160000
+  users:
+    O_o_Fadi_o_O:
+      buyedtokens:
+        all: 24
+        rent: 21
+        sell: 3
+      selledtokens:
+        all: 76
+        rent: 58
+        sell: 18
+      payedprice:
+        all: 237004
+        rent: 207004
+        sell: 30000
+      earnedprice:
+        all: 2742039
+        rent: 2582039
+        sell: 160000
+    Xzero119:
+      buyedtokens:
+        all: 7
+        sell: 4
+        rent: 3
+      payedprice:
+        all: 40000
+        sell: 20000
+        rent: 20000
+    supermario0001:
+      buyedtokens:
+        all: 1
+        sell: 1
+      payedprice:
+        all: 10000
+        sell: 10000
+    jim5491158:
+      buyedtokens:
+        all: 4
+        rent: 4
+      payedprice:
+        all: 140000
+        rent: 140000
+    kouros22:
+      buyedtokens:
+        all: 1
+        sell: 1
+      payedprice:
+        all: 10000
+        sell: 10000
+    iefke:
+      buyedtokens:
+        all: 3
+        rent: 3
+      payedprice:
+        all: 15032
+        rent: 15032
+    krachtpatsertim:
+      buyedtokens:
+        all: 12
+        sell: 9
+        rent: 3
+      payedprice:
+        all: 1465001
+        sell: 90000
+        rent: 1375001
+    thomasjasper:
+      buyedtokens:
+        all: 2
+        rent: 2
+      payedprice:
+        all: 15000
+        rent: 15000
+    y0up0wn3d:
+      buyedtokens:
+        all: 2
+        rent: 2
+      payedprice:
+        all: 30000
+        rent: 30000
+    eekhoorn2000:
+      buyedtokens:
+        all: 2
+        rent: 2
+      payedprice:
+        all: 15000
+        rent: 15000
+    Rminecraft13:
+      buyedtokens:
+        all: 1
+        rent: 1
+      payedprice:
+        all: 5000
+        rent: 5000
+    RickVG1:
+      buyedtokens:
+        all: 1
+        rent: 1
+      payedprice:
+        all: 1
+        rent: 1
+    rienk222:
+      buyedtokens:
+        all: 2
+        rent: 2
+      payedprice:
+        all: 5001
+        rent: 5001
+    cemre2002:
+      buyedtokens:
+        all: 2
+        rent: 2
+      payedprice:
+        all: 195000
+        rent: 195000
+    TyReed:
+      buyedtokens:
+        all: 1
+        rent: 1
+      payedprice:
+        all: 5000
+        rent: 5000
+    Sickinick:
+      buyedtokens:
+        all: 1
+        rent: 1
+      payedprice:
+        all: 15000
+        rent: 15000
+    jomancool55:
+      buyedtokens:
+        all: 2
+        rent: 2
+      payedprice:
+        all: 55000
+        rent: 55000
+    gwnluca:
+      buyedtokens:
+        all: 1
+        rent: 1
+      payedprice:
+        all: 85000
+        rent: 85000
+    fangergo:
+      buyedtokens:
+        all: 2
+        rent: 2
+      payedprice:
+        all: 40000
+        rent: 40000
+    rickert9:
+      buyedtokens:
+        all: 1
+        rent: 1
+      payedprice:
+        all: 25000
+        rent: 25000
+    robinvdw:
+      buyedtokens:
+        all: 2
+        rent: 2
+      payedprice:
+        all: 295000
+        rent: 295000
+    zotie3:
+      buyedtokens:
+        all: 1
+        rent: 1
+      payedprice:
+        all: 20000
+        rent: 20000
+    timmietim26:
+      buyedtokens:
+        all: 1
+        rent: 1
+      payedprice:
+        all: 20000
+        rent: 20000
+SurvivalWorld_the_end:
+  global:
+    token:
+      all: 39
+      rent: 38
+      sell: 1
+    price:
+      all: 0
+      rent: 0
+      sell: 0
+  users:
+    O_o_Fadi_o_O:
+      buyedtokens:
+        all: 4
+        rent: 3
+        sell: 1
+      selledtokens:
+        all: 39
+        rent: 38
+        sell: 1
+      payedprice:
+        all: 0
+        rent: 0
+        sell: 0
+      earnedprice:
+        all: 0
+        rent: 0
+        sell: 0
+    y0up0wn3d:
+      buyedtokens:
+        all: 1
+        rent: 1
+      payedprice:
+        all: 0
+        rent: 0
+    rickert9:
+      buyedtokens:
+        all: 5
+        rent: 5
+      payedprice:
+        all: 0
+        rent: 0
+    Xzero119:
+      buyedtokens:
+        all: 1
+        rent: 1
+      payedprice:
+        all: 0
+        rent: 0
+    kouros22:
+      buyedtokens:
+        all: 3
+        rent: 3
+      payedprice:
+        all: 0
+        rent: 0
+    jim5491158:
+      buyedtokens:
+        all: 1
+        rent: 1
+      payedprice:
+        all: 0
+        rent: 0
+    marthijn14:
+      buyedtokens:
+        all: 1
+        rent: 1
+      payedprice:
+        all: 0
+        rent: 0
+    cooleromeo:
+      buyedtokens:
+        all: 1
+        rent: 1
+      payedprice:
+        all: 0
+        rent: 0
+    thomasjasper:
+      buyedtokens:
+        all: 1
+        rent: 1
+      payedprice:
+        all: 0
+        rent: 0
+    krachtpatsertim:
+      buyedtokens:
+        all: 2
+        rent: 2
+      payedprice:
+        all: 0
+        rent: 0
+    gwnluca:
+      buyedtokens:
+        all: 1
+        rent: 1
+      payedprice:
+        all: 0
+        rent: 0
+    eekhoorn2000:
+      buyedtokens:
+        all: 1
+        rent: 1
+      payedprice:
+        all: 0
+        rent: 0
+    BajanCanadian5:
+      buyedtokens:
+        all: 1
+        rent: 1
+      payedprice:
+        all: 0
+        rent: 0
+    jomancool55:
+      buyedtokens:
+        all: 1
+        rent: 1
+      payedprice:
+        all: 0
+        rent: 0
+    fangergo:
+      buyedtokens:
+        all: 1
+        rent: 1
+      payedprice:
+        all: 0
+        rent: 0
+    daanms:
+      buyedtokens:
+        all: 1
+        rent: 1
+      payedprice:
+        all: 0
+        rent: 0
+    Sickinick:
+      buyedtokens:
+        all: 5
+        rent: 5
+      payedprice:
+        all: 0
+        rent: 0
+    Wabsickle:
+      buyedtokens:
+        all: 1
+        rent: 1
+      payedprice:
+        all: 0
+        rent: 0
+    NiekVerkuylen:
+      buyedtokens:
+        all: 1
+        rent: 1
+      payedprice:
+        all: 0
+        rent: 0
+    kevinkeijzer2004:
+      buyedtokens:
+        all: 1
+        rent: 1
+      payedprice:
+        all: 0
+        rent: 0
+    sharewoods:
+      buyedtokens:
+        all: 1
+        rent: 1
+      payedprice:
+        all: 0
+        rent: 0
+    zotie3:
+      buyedtokens:
+        all: 2
+        rent: 2
+      payedprice:
+        all: 0
+        rent: 0
+    jasbro69:
+      buyedtokens:
+        all: 1
+        rent: 1
+      payedprice:
+        all: 0
+        rent: 0
+    jason8660:
+      buyedtokens:
+        all: 1
+        rent: 1
+      payedprice:
+        all: 0
+        rent: 0
