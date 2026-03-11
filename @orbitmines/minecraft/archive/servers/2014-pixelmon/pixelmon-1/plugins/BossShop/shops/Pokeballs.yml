@@ -1,0 +1,66 @@
+ShopName: Pokeballs
+signs:
+  text: '[Pokeballs]'
+  NeedPermissionToCreateSign: true
+shop:
+  Pokeball:
+    RewardType: item
+    PriceType: money
+    Price: 25
+    Reward:
+    - 'id: 8256'
+    - amount:1
+    MenuItem:
+    - 'id: 8256'
+    - amount:1
+    - name:&fPoke Ball
+    - 'lore:&c&lPrice: &625$'
+    - amount:1
+    Message: '&2[&aPokeShop&2] &aBought &f1 Poke Ball &afor &625$'
+    InventoryLocation: 2
+    ExtraPermission: ''
+  Greatball:
+    RewardType: item
+    PriceType: money
+    Price: 75
+    Reward:
+    - 'id: 8257'
+    - amount:1
+    MenuItem:
+    - 'id: 8257'
+    - amount:1
+    - name:&fGreat Ball
+    - 'lore:&c&lPrice: &675$'
+    - amount:1
+    Message: '&2[&aPokeShop&2] &aBought &f1 Great Ball &afor &675$'
+    InventoryLocation: 4
+    ExtraPermission: ''
+  Ultraball:
+    RewardType: item
+    PriceType: money
+    Price: 200
+    Reward:
+    - 'id: 8258'
+    - amount:1
+    MenuItem:
+    - 'id: 8258'
+    - amount:1
+    - name:&fUltra Ball
+    - 'lore:&c&lPrice: &6200$'
+    - amount:1
+    Message: '&2[&aPokeShop&2] &aBought &f1 Ultra Ball &afor &6200$'
+    InventoryLocation: 6
+    ExtraPermission: ''
+  Masterball:
+    RewardType: playercommand
+    PriceType: free
+    Reward: ''
+    MenuItem:
+    - 'id: 8259'
+    - amount:1
+    - name:&fMaster Ball
+    - 'lore:&c&lPrice: &62.50 EUR'
+    - amount:1
+    Message: '&2[&aPokeShop&2] &aBuy &f1 Master Ball &aat &6/donate &afor &62.50 EUR'
+    InventoryLocation: 8
+    ExtraPermission: ''

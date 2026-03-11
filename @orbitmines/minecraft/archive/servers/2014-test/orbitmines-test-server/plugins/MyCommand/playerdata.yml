@@ -1,0 +1,4 @@
+#MyCommand PlayerData Database
+playername:
+  Integer: 0
+  String: 'test'

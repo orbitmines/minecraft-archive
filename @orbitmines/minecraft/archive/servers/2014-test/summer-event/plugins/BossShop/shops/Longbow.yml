@@ -1,0 +1,178 @@
+ShopName: Longbow
+signs:
+  text: '[Longbow]'
+  NeedPermissionToCreateSign: true
+shop:
+  LeatherArmorTier2:
+    RewardType: command
+    PriceType: money
+    Price: 100
+    Reward:
+    - 'kit LongbowArmorTier2 %player%'
+    MenuItem:
+    - type:LEATHER_CHESTPLATE
+    - amount:1
+    - enchantment:DURABILITY#30
+    - enchantment:PROTECTION_ENVIRONMENTAL#30
+    - 'name:&c&lLongbow Armor: &b&lTier 2'
+    - 'lore:&bTier 2 : &cLongbow Helmet #&bTier 2 : &cLongbow Chestplate#&bTier 2 : &cLongbow Leggings #&bTier 2 : &cLongbow Boots # #&cPrice: &6100 Points'
+    - amount:1
+    Message: '&8[&c&lLongbow&8] &cYou have bought &fLeather Longbow Armor&c! (&bTier 2&c)'
+    InventoryLocation: 1
+    ExtraPermission: 'shops.longbow'
+  LeatherArmorTier3:
+    RewardType: command
+    PriceType: money
+    Price: 200
+    Reward:
+    - 'kit LongbowArmorTier3 %player%'
+    MenuItem:
+    - type:LEATHER_CHESTPLATE
+    - amount:1
+    - enchantment:DURABILITY#50
+    - enchantment:PROTECTION_ENVIRONMENTAL#2
+    - 'name:&c&lLongbow Armor: &b&lTier 3'
+    - 'lore:&bTier 3 : &cLongbow Helmet #&bTier 3 : &cLongbow Chestplate#&bTier 3 : &cLongbow Leggings #&bTier 3 : &cLongbow Boots # #&cPrice: &6200 Points'
+    - amount:1
+    Message: '&8[&c&lLongbow&8] &cYou have bought &fLeather Longbow Armor&c! (&bTier 3&c)'
+    InventoryLocation: 2
+    ExtraPermission: 'shops.longbow'
+  Steak:
+    RewardType: item
+    PriceType: money
+    Price: 3
+    Reward:
+    - id:364
+    - amount:1
+    MenuItem:
+    - id:364
+    - amount:1
+    - 'lore: #&cPrice: &63 Points'
+    - amount:1
+    Message: '&8[&c&lLongbow&8] &cYou have bought &f1 Steak&c!'
+    InventoryLocation: 9
+    ExtraPermission: 'shops.longbow'
+  Bow1:
+    RewardType: item
+    PriceType: money
+    Price: 25
+    Reward:
+    - type:BOW
+    - amount:1
+    - 'name:&bTier 2 : &cLongbow Bow'
+    - enchantment:DURABILITY#30
+    - enchantment:ARROW_DAMAGE#1
+    MenuItem:
+    - type:BOW
+    - amount:1
+    - enchantment:DURABILITY#30
+    - enchantment:ARROW_DAMAGE#1
+    - 'name:&c&lLongbow Bow: &b&lTier 2'
+    - 'lore: #&cPrice: &625 Points'
+    - amount:1
+    Message: '&8[&c&lLongbow&8] &cYou have bought &f1 Longbow Bow&c! (&bTier 2&c)'
+    InventoryLocation: 3
+    ExtraPermission: 'shops.longbow'
+  Bow2:
+    RewardType: item
+    PriceType: money
+    Price: 50
+    Reward:
+    - type:BOW
+    - amount:1
+    - 'name:&bTier 3 : &cLongbow Bow'
+    - enchantment:DURABILITY#50
+    - enchantment:ARROW_DAMAGE#2
+    MenuItem:
+    - type:BOW
+    - amount:1
+    - enchantment:DURABILITY#50
+    - enchantment:ARROW_DAMAGE#2
+    - 'name:&c&lLongbow Bow: &b&lTier 3'
+    - 'lore: #&cPrice: &650 Points'
+    - amount:1
+    Message: '&8[&c&lLongbow&8] &cYou have bought &f1 Longbow Bow&c! (&bTier 3&c)'
+    InventoryLocation: 4
+    ExtraPermission: 'shops.longbow'
+  Bow3:
+    RewardType: item
+    PriceType: money
+    Price: 100
+    Reward:
+    - type:BOW
+    - amount:1
+    - 'name:&bTier 4 : &cLongbow Bow'
+    - enchantment:DURABILITY#75
+    - enchantment:ARROW_DAMAGE#3
+    MenuItem:
+    - type:BOW
+    - amount:1
+    - enchantment:DURABILITY#75
+    - enchantment:ARROW_DAMAGE#3
+    - 'name:&c&lLongbow Bow: &b&lTier 4'
+    - 'lore: #&cPrice: &6100 Points'
+    - amount:1
+    Message: '&8[&c&lLongbow&8] &cYou have bought &f1 Longbow Bow&c! (&bTier 4&c)'
+    InventoryLocation: 5
+    ExtraPermission: 'shops.longbow'
+  Bow4:
+    RewardType: item
+    PriceType: money
+    Price: 200
+    Reward:
+    - type:BOW
+    - amount:1
+    - 'name:&bTier 5 : &cLongbow Bow'
+    - enchantment:DURABILITY#100
+    - enchantment:ARROW_DAMAGE#4
+    MenuItem:
+    - type:BOW
+    - amount:1
+    - enchantment:DURABILITY#100
+    - enchantment:ARROW_DAMAGE#4
+    - 'name:&c&lLongbow Bow: &b&lTier 5'
+    - 'lore: #&cPrice: &6200 Points'
+    - amount:1
+    Message: '&8[&c&lLongbow&8] &cYou have bought &f1 Longbow Bow&c! (&bTier 5&c)'
+    InventoryLocation: 6
+    ExtraPermission: 'shops.longbow'
+  Bow5:
+    RewardType: item
+    PriceType: money
+    Price: 500
+    Reward:
+    - type:BOW
+    - amount:1
+    - 'name:&bMinigun'
+    - enchantment:DURABILITY#300
+    - enchantment:ARROW_DAMAGE#1
+    MenuItem:
+    - type:BOW
+    - amount:1
+    - enchantment:DURABILITY#300
+    - enchantment:ARROW_DAMAGE#1
+    - 'name:&8[&6&lEpic&8] &bMinigun'
+    - 'lore: #&cPrice: &6500 Points'
+    - amount:1
+    Message: '&8[&c&lLongbow&8] &cYou have bought &f1 Longbow Bow&c! &8[&6&lEpic&8]'
+    InventoryLocation: 7
+    ExtraPermission: 'shops.longbow'
+  StoneSword:
+    RewardType: item
+    PriceType: money
+    Price: 25
+    Reward:
+    - type:STONE_SWORD
+    - amount:1
+    - 'name:&bTier 2 : &cLongbow Sword'
+    - enchantment:DURABILITY#30
+    MenuItem:
+    - type:STONE_SWORD
+    - amount:1
+    - enchantment:DURABILITY#30
+    - 'name:&c&lLongbow Sword: &b&lTier 2'
+    - 'lore: #&cPrice: &625 Points'
+    - amount:1
+    Message: '&8[&c&lLongbow&8] &cYou have bought &f1 Longbow Sword&c! (&bTier 2&c)'
+    InventoryLocation: 8
+    ExtraPermission: 'shops.longbow'

@@ -1,0 +1,59 @@
+Messages:
+  hpadd: Succesfully added player health
+  to: to
+  decrease: You have decreased HP of player
+  noperm: You do not have permission for that command.
+  hpreset: Succesfully reseted HP of player
+  hpset: Succesfully set player max health
+  healed: You have been healed.
+  healedother: You healed player
+  bought: You have bought
+  for: for
+  hpupdate: Updating HP...
+  overlimit: You have reached the maximum limit!
+Health:
+  default: 20
+  newdefault: 20
+  operator: 30
+HPShop:
+  enabled: false
+  hplimit: 30
+  cost: 1000
+  currency: Coins
+Regeneration:
+  enabled: true
+Settings:
+  installed: true
+  joinheal: true
+  alwaysdefault: false
+HPPermissions:
+  permlist:
+  - perm1
+  - perm2
+  - perm3
+  hplist:
+    perm1: 25
+    perm2: 30
+    perm3: 40
+HealthStorage:
+  Players:
+    eekhoorn2000: 20
+    O_o_Fadi_o_O: 20
+    sharewoods: 20
+    Selasie: 20
+    jim5491158: 20
+    knufi360: 60
+    Flim2002: 60
+    RickVG1: 60
+    jomancool55: 60
+    gigantmelvin: 60
+    jasbro69: 60
+    AbbydOnl: 60
+    gwnluca: 60
+    thomasjasper: 60
+    jarischreuder: 60
+    EmjeR: 60
+    Bryan20027: 60
+    prosam123: 60
+    krachtpatsertim: 60
+    marioandbowser30: 60

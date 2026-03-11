@@ -1,0 +1,106 @@
+worlds:
+  world:
+    seed: 27594263
+    environment: NORMAL
+    type: LARGE_BIOMES
+    hidden: true
+    alias:
+      name: ''
+      color: WHITE
+    pvp: false
+    scale: 1.0
+    respawnworld: ''
+    allowweather: true
+    difficulty: EASY
+    animals:
+      spawn: true
+    monsters:
+      spawn: true
+    entryfee:
+      currency: -1
+      price: 0.0
+    hunger: false
+    autoheal: true
+    adjustspawn: true
+    portalform: ALL
+    gamemode: SURVIVAL
+    keepspawninmemory: true
+    spawn:
+      x: 103.30884994661666
+      y: 80.0
+      z: -90.46098605785912
+      pitch: 5.3999925
+      yaw: 90.000725
+      world: world
+    autoload: true
+    bedrespawn: true
+  DIM1:
+    seed: 6193027201454802827
+    environment: THE_END
+    type: NORMAL
+    hidden: false
+    alias:
+      name: ''
+      color: WHITE
+    pvp: true
+    scale: 1.0
+    respawnworld: ''
+    allowweather: true
+    difficulty: EASY
+    animals:
+      spawn: true
+    monsters:
+      spawn: true
+    entryfee:
+      currency: -1
+      price: 0.0
+    hunger: true
+    autoheal: true
+    adjustspawn: true
+    portalform: ALL
+    gamemode: SURVIVAL
+    keepspawninmemory: true
+    spawn:
+      x: 0.0
+      y: 64.0
+      z: 0.0
+      pitch: 0.0
+      yaw: 0.0
+      world: DIM1
+    autoload: true
+    bedrespawn: true
+  DIM-1:
+    seed: 6193027201454802827
+    environment: NETHER
+    type: NORMAL
+    hidden: false
+    alias:
+      name: ''
+      color: WHITE
+    pvp: true
+    scale: 8.0
+    respawnworld: ''
+    allowweather: true
+    difficulty: EASY
+    animals:
+      spawn: true
+    monsters:
+      spawn: true
+    entryfee:
+      currency: -1
+      price: 0.0
+    hunger: true
+    autoheal: true
+    adjustspawn: true
+    portalform: ALL
+    gamemode: SURVIVAL
+    keepspawninmemory: true
+    spawn:
+      x: -7.5
+      y: 65.0
+      z: -3.5
+      pitch: 0.0
+      yaw: 0.0
+      world: DIM-1
+    autoload: true
+    bedrespawn: true

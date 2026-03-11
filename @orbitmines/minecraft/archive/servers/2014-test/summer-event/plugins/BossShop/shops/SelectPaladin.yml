@@ -1,0 +1,75 @@
+ShopName: Kit-Paladin
+signs:
+  text: '[Kit-Paladin]'
+  NeedPermissionToCreateSign: true
+shop:
+  Choose:
+    RewardType: command
+    PriceType: free
+    Reward:
+    - 'manuadd %player% Paladin'
+    - 'mvtp %player% Event'
+    - 'kit Paladin %player%'
+    - 'sudo O_o_Fadi_o_O pwrsay say event &f%player%&c has chosen the &fPaladin Kit&c!'
+    MenuItem:
+    - id:351
+    - amount:1
+    - durability:10
+    - 'name:&bSelect: &aPaladin'
+    InventoryLocation: 1
+    ExtraPermission: 'shops.waiting'
+  Paladin:
+    RewardType: shop
+    PriceType: free
+    Reward: Paladin
+    MenuItem:
+    - type:GOLD_INGOT
+    - amount:1
+    - 'name:&bShop: &aPaladin'
+    - 'lore:&7View the Paladin Shop...'
+    - amount:1
+    InventoryLocation: 9
+    ExtraPermission: 'shops.waiting'
+  Helmet:
+    RewardType: money
+    PriceType: free
+    Reward: 0
+    MenuItem:
+    - id:306
+    - amount:1
+    - 'name:&bTier 1 : &cPaladin Helmet'
+    - enchantment:DURABILITY#10
+    InventoryLocation: 4
+    ExtraPermission: 'shops.waiting'
+  Chestplate:
+    RewardType: money
+    PriceType: free
+    Reward: 0
+    MenuItem:
+    - id:307
+    - amount:1
+    - 'name:&bTier 1 : &cPaladin Chestplate'
+    - enchantment:DURABILITY#10
+    InventoryLocation: 13
+    ExtraPermission: 'shops.waiting'
+  Sword:
+    RewardType: money
+    PriceType: free
+    Reward: 0
+    MenuItem:
+    - id:272
+    - amount:1
+    - 'name:&bTier 1 : &cPaladin Sword'
+    - enchantment:DURABILITY#10
+    InventoryLocation: 6
+    ExtraPermission: 'shops.waiting'
+  Steak:
+    RewardType: money
+    PriceType: free
+    Reward: 0
+    MenuItem:
+    - id:364
+    - amount:5
+    InventoryLocation: 15
+    ExtraPermission: 'shops.waiting'
+

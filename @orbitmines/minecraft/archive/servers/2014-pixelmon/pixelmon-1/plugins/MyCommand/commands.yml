@@ -1,0 +1,182 @@
+# MyCommand  Commands Config File
+# commandsnumber (default 20) it's number of command you want make
+# Don't forget the '/' on runcmd line , example command: /myhelp
+# type accept = text , runcommand , broadcast-text , runcommand-text , runcommand-broadcast-text , perm-broadcast-text , addpermission , addtimer , runconsole , runcommand-perm-broadcast-text , runcommand-random , runasoperator , iconmenu
+# Additional type accept if you use Spoutplugin = spout-text , spout-notification.\n" +
+# runcommand type example -> If command: /l and runcmd: /list,when you type /l mycommand execute /list
+# runcmd support custom argument in game.($arg1,$arg2,$arg3,$arg4,$arg5,$multiargs) Example - runcmd : /time $arg1
+# For Delayed command add $delay$ before the command in runcmd Example : - $delay$/list
+# Set delay time with delaytimer: 5 (5 = seconds)
+# Use the dot . for decimal cost Example = cost : 5.5
+# You can use a custom permission node by placing "permission-node:" field in a command,you also can change the permission error message with "permission-error:"
+# Custom error-message for invalid args ,put "error-message:" line in a command.
+# You can use itemcost : 'ID:AMOUNT' for set a cost with items.
+# http://dev.bukkit.org/server-mods/mycommand/pages/configuration-and-example
+options:
+  commandsnumber: 50
+'1':
+  command: /vote
+  type: runcommand-text
+  text:
+  - '&6-----------------------------------------------------'
+  - '&9Vote for us every day for in game rewards:'
+  - '&9Pixelmon: &63 Poke Balls&9, &62 Great Balls&9 and &650$'
+  - '&9Vote at: &6www.orbitmines.com'
+  - '&6-----------------------------------------------------'
+  runcmd:
+  - '/pwrsay say Vote &6$player&9 used &6/vote&9 to see the Vote Site!'
+'2':
+  command: /plugins
+  type: text
+  text:
+  - '&fPlugins (1): &aOrbitMines Pixelmon'
+'3':
+  command: /pl
+  type: text
+  text:
+  - '&fPlugins (1): &aOrbitMines Pixelmon'
+'4':
+  command: /?
+  type: text
+  text:
+  - '&e--------- &fHelp: Index (1/1) &e--------------------'
+  - '&6OrbitMines Pixelmon: &fOrbitMines Pixelmon Server'
+'5':
+  command: /help
+  type: text
+  text:
+  - '&9&m====================================================='
+  - '&6&l OrbitMines &4&lPixel&f&lmon &6&lHelp Index:'
+  - '&6 /shop &7- Open the Shop'
+  - '&6 /spawn &7- Teleport to Spawn'
+  - '&6 /warplist &7- List of Warps'
+  - '&6 /teleport &7- Open the Teleport Menu'
+  - '&6 /vote &7- Show Vote Information'
+  - '&6 /donate &7- Show Donate Information'
+  - '&9&m====================================================='
+'6':
+  command: /donate
+  type: runcommand-text
+  text:
+  - '&6-----------------------------------------------------'
+  - '&9Donate to get VIP and some cool Stuff!'
+  - '&9Donate at: &6http://shop.orbitmines.com'
+  - '&6-----------------------------------------------------'
+  runcmd:
+  - '/pwrsay say Donate &6$player&9 used &6/donate&9 to see the Donate Site!'
+'7':
+  command: /teleport
+  type: runcommand
+  runcmd:
+  - '/shop Teleport'
+'8':
+  command: /warplist
+  type: text
+  text:
+  - '&9&m====================================================='
+  - '&6&l OrbitMines &4&lPixel&f&lmon &6&lWarp List:'
+  - '&6 /warp Town1 &7- Warp to Town 1'
+  - '&6 /warp Town2 &7- Warp to Town 2'
+  - '&6 /warp Town3 &7- Warp to Town 3'
+  - '&6 /warp Town4 &7- Warp to Town 4'
+  - '&6 /warp Town5 &7- Warp to Town 5'
+  - '&6 /warp Town6 &7- Warp to Town 6'
+  - '&6 /warp Town7 &7- Warp to Town 7'
+  - '&6 /warp Town8 &7- Warp to Town 8'
+  - '&9&m====================================================='
+'9':
+  command: /GetAccesstoTown1Town
+  type: runcommand-text
+  text:
+  - '&2[&aPokeTown&2]&a You now got access to &fTown 1&a!'
+  runcmd:
+  - '/GetAccesstoTown1Town1'
+'10':
+  command: /GetAccesstoTown1Town1
+  type: runconsole
+  runcmd:
+  - '/manuaddp $player essentials.warps.Town1'
+'11':
+  command: /GetAccesstoTown2Town
+  type: runcommand-text
+  text:
+  - '&2[&aPokeTown&2]&a You now got access to &fTown 2&a!'
+  runcmd:
+  - '/GetAccesstoTown2Town2'
+'12':
+  command: /GetAccesstoTown2Town2
+  type: runconsole
+  runcmd:
+  - '/manuaddp $player essentials.warps.Town2'
+'13':
+  command: /GetAccesstoTown3Town
+  type: runcommand-text
+  text:
+  - '&2[&aPokeTown&2]&a You now got access to &fTown 3&a!'
+  runcmd:
+  - '/GetAccesstoTown3Town3'
+'14':
+  command: /GetAccesstoTown3Town3
+  type: runconsole
+  runcmd:
+  - '/manuaddp $player essentials.warps.Town3'
+'15':
+  command: /GetAccesstoTown4Town
+  type: runcommand-text
+  text:
+  - '&2[&aPokeTown&2]&a You now got access to &fTown 4&a!'
+  runcmd:
+  - '/GetAccesstoTown4Town4'
+'16':
+  command: /GetAccesstoTown4Town4
+  type: runconsole
+  runcmd:
+  - '/manuaddp $player essentials.warps.Town4'
+'17':
+  command: /GetAccesstoTown5Town
+  type: runcommand-text
+  text:
+  - '&2[&aPokeTown&2]&a You now got access to &fTown 5&a!'
+  runcmd:
+  - '/GetAccesstoTown5Town5'
+'18':
+  command: /GetAccesstoTown5Town5
+  type: runconsole
+  runcmd:
+  - '/manuaddp $player essentials.warps.Town5'
+'19':
+  command: /GetAccesstoTown6Town
+  type: runcommand-text
+  text:
+  - '&2[&aPokeTown&2]&a You now got access to &fTown 6&a!'
+  runcmd:
+  - '/GetAccesstoTown6Town6'
+'20':
+  command: /GetAccesstoTown6Town6
+  type: runconsole
+  runcmd:
+  - '/manuaddp $player essentials.warps.Town6'
+'21':
+  command: /GetAccesstoTown7Town
+  type: runcommand-text
+  text:
+  - '&2[&aPokeTown&2]&a You now got access to &fTown 7&a!'
+  runcmd:
+  - '/GetAccesstoTown7Town7'
+'22':
+  command: /GetAccesstoTown7Town7
+  type: runconsole
+  runcmd:
+  - '/manuaddp $player essentials.warps.Town7'
+'23':
+  command: /GetAccesstoTown8Town
+  type: runcommand-text
+  text:
+  - '&2[&aPokeTown&2]&a You now got access to &fTown 8&a!'
+  runcmd:
+  - '/GetAccesstoTown8Town8'
+'24':
+  command: /GetAccesstoTown8Town8
+  type: runconsole
+  runcmd:
+  - '/manuaddp $player essentials.warps.Town8'

@@ -1,0 +1,4 @@
+host: 77.111.240.219
+port: 8204
+debug: false
+listener_folder: plugins/Votifier/listeners

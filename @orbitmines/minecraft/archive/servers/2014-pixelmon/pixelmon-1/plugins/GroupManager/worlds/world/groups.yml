@@ -1,0 +1,296 @@
+# Group inheritance
+#
+# Any inherited groups prefixed with a g: are global groups
+# and are inherited from the GlobalGroups.yml.
+#
+# Groups without the g: prefix are groups local to this world
+# and are defined in the this groups.yml file.
+#
+# Local group inheritances define your promotion tree when using 'manpromote/mandemote'
+
+groups:
+  Trainer:
+    default: true
+    permissions:
+    - essentials.spawn
+    - essentials.warp
+    - essentials.warps.*
+    - essentials.msg
+    - essentials.mail.send
+    - essentials.mail.clear
+    - essentials.mail.read
+    - essentials.mail
+    - BossShop.open
+    - essentials.pay
+    - serversigns.use.*
+    - pwrsay.admin
+    - mycommand.cmd.1
+    - mycommand.cmd.2
+    - mycommand.cmd.3
+    - mycommand.cmd.4
+    - mycommand.cmd.5
+    - mycommand.cmd.6
+    - mycommand.cmd.7
+    - mycommand.cmd.8
+    - mycommand.cmd.9
+    - mycommand.cmd.10
+    - mycommand.cmd.11
+    - mycommand.cmd.12
+    - mycommand.cmd.13
+    - mycommand.cmd.14
+    - mycommand.cmd.15
+    - mycommand.cmd.16
+    - mycommand.cmd.17
+    - mycommand.cmd.18
+    - mycommand.cmd.19
+    - mycommand.cmd.20
+    - mycommand.cmd.21
+    - mycommand.cmd.22
+    - mycommand.cmd.23
+    - mycommand.cmd.24
+    info:
+      prefix: '&7[&8&lTrainer&7] &8'
+      build: true
+      suffix: ''
+  VIP:
+    default: false
+    permissions:
+    - essentials.spawn
+    - essentials.warp
+    - essentials.warps.*
+    - essentials.msg
+    - essentials.mail.send
+    - essentials.mail.clear
+    - essentials.mail.read
+    - essentials.mail
+    - BossShop.open
+    - essentials.pay
+    - serversigns.use.*
+    - pwrsay.admin
+    - mycommand.cmd.1
+    - mycommand.cmd.2
+    - mycommand.cmd.3
+    - mycommand.cmd.4
+    - mycommand.cmd.5
+    - mycommand.cmd.6
+    - mycommand.cmd.7
+    - mycommand.cmd.8
+    - mycommand.cmd.9
+    - mycommand.cmd.10
+    - mycommand.cmd.11
+    - mycommand.cmd.12
+    - mycommand.cmd.13
+    - mycommand.cmd.14
+    - mycommand.cmd.15
+    - mycommand.cmd.16
+    - mycommand.cmd.17
+    - mycommand.cmd.18
+    - mycommand.cmd.19
+    - mycommand.cmd.20
+    - mycommand.cmd.21
+    - mycommand.cmd.22
+    - mycommand.cmd.23
+    - mycommand.cmd.24
+    info:
+      prefix: '&8[&7&lVIP&8] &7'
+      build: true
+      suffix: ''
+  VIP+:
+    default: false
+    permissions:
+    - essentials.spawn
+    - essentials.warp
+    - essentials.warps.*
+    - essentials.msg
+    - essentials.mail.send
+    - essentials.mail.clear
+    - essentials.mail.read
+    - essentials.mail
+    - BossShop.open
+    - essentials.enderchest
+    - essentials.pay
+    - serversigns.use.*
+    - pwrsay.admin
+    - mycommand.cmd.1
+    - pixelmon.commands.Heal
+    - mycommand.cmd.2
+    - mycommand.cmd.3
+    - mycommand.cmd.4
+    - mycommand.cmd.5
+    - mycommand.cmd.6
+    - mycommand.cmd.7
+    - mycommand.cmd.8
+    - mycommand.cmd.9
+    - mycommand.cmd.10
+    - mycommand.cmd.11
+    - mycommand.cmd.12
+    - mycommand.cmd.13
+    - mycommand.cmd.14
+    - mycommand.cmd.15
+    - mycommand.cmd.16
+    - mycommand.cmd.17
+    - mycommand.cmd.18
+    - mycommand.cmd.19
+    - mycommand.cmd.20
+    - mycommand.cmd.21
+    - mycommand.cmd.22
+    - mycommand.cmd.23
+    - mycommand.cmd.24
+    info:
+      prefix: '&6[&e&lVIP&6] &e'
+      build: true
+      suffix: ''
+  MVP:
+    default: false
+    permissions:
+    - essentials.spawn
+    - essentials.warp
+    - essentials.msg
+    - essentials.warps.*
+    - essentials.mail.send
+    - essentials.mail.clear
+    - essentials.mail.read
+    - essentials.mail
+    - BossShop.open
+    - essentials.pay
+    - serversigns.use.*
+    - essentials.enderchest
+    - pwrsay.admin
+    - mycommand.cmd.1
+    - mycommand.cmd.2
+    - mycommand.cmd.3
+    - mycommand.cmd.4
+    - mycommand.cmd.5
+    - mycommand.cmd.6
+    - mycommand.cmd.7
+    - mycommand.cmd.8
+    - pixelmon.commands.Heal
+    - mycommand.cmd.9
+    - mycommand.cmd.10
+    - mycommand.cmd.11
+    - mycommand.cmd.12
+    - mycommand.cmd.13
+    - mycommand.cmd.14
+    - mycommand.cmd.15
+    - mycommand.cmd.16
+    - mycommand.cmd.17
+    - mycommand.cmd.18
+    - mycommand.cmd.19
+    - mycommand.cmd.20
+    - mycommand.cmd.21
+    - mycommand.cmd.22
+    - mycommand.cmd.23
+    - mycommand.cmd.24
+    info:
+      prefix: '&b[&9&lVIP&b] &9'
+      build: true
+      suffix: ''
+  MVP+:
+    default: false
+    permissions:
+    - essentials.warps.*
+    - essentials.spawn
+    - essentials.warp
+    - essentials.msg
+    - essentials.mail.send
+    - essentials.mail.clear
+    - essentials.mail.read
+    - essentials.mail
+    - BossShop.open
+    - essentials.chat.color
+    - essentials.pay
+    - essentials.enderchest
+    - serversigns.use.*
+    - pwrsay.admin
+    - mycommand.cmd.1
+    - mycommand.cmd.2
+    - mycommand.cmd.3
+    - mycommand.cmd.4
+    - mycommand.cmd.5
+    - mycommand.cmd.6
+    - mycommand.cmd.7
+    - mycommand.cmd.8
+    - pixelmon.commands.Heal
+    - mycommand.cmd.9
+    - mycommand.cmd.10
+    - mycommand.cmd.11
+    - mycommand.cmd.12
+    - mycommand.cmd.13
+    - mycommand.cmd.14
+    - mycommand.cmd.15
+    - mycommand.cmd.16
+    - mycommand.cmd.17
+    - mycommand.cmd.18
+    - mycommand.cmd.19
+    - mycommand.cmd.20
+    - mycommand.cmd.21
+    - mycommand.cmd.22
+    - mycommand.cmd.23
+    - mycommand.cmd.24
+    info:
+      prefix: '&2[&a&lVIP&2] &a'
+      build: true
+      suffix: ''
+  Moderator:
+    default: false
+    permissions:
+    - essentials.warps.*
+    - essentials.spawn
+    - essentials.warp
+    - essentials.msg
+    - essentials.mail.send
+    - essentials.mail.clear
+    - essentials.mail.read
+    - essentials.mail
+    - BossShop.open
+    - essentials.pay
+    - serversigns.use.*
+    - pwrsay.admin
+    - mycommand.cmd.1
+    - mycommand.cmd.2
+    - mycommand.cmd.3
+    - mycommand.cmd.4
+    - mycommand.cmd.5
+    - mycommand.cmd.6
+    - mycommand.cmd.7
+    - mycommand.cmd.8
+    - mycommand.cmd.9
+    - mycommand.cmd.10
+    - mycommand.cmd.11
+    - mycommand.cmd.12
+    - mycommand.cmd.13
+    - mycommand.cmd.14
+    - mycommand.cmd.15
+    - mycommand.cmd.16
+    - mycommand.cmd.17
+    - mycommand.cmd.18
+    - mycommand.cmd.19
+    - mycommand.cmd.20
+    - mycommand.cmd.21
+    - mycommand.cmd.22
+    - mycommand.cmd.23
+    - mycommand.cmd.24
+    - essentials.kick
+    - essentials.ban
+    - essentials.tempban
+    - commandlog.notice
+    info:
+      prefix: '&9[&b&lMod&9] &b'
+      build: true
+      suffix: ''
+  Admin:
+    default: false
+    permissions:
+    - '*'
+    info:
+      prefix: '&4[&c&lAdmin&4] &c'
+      build: true
+      suffix: ''
+  Owner:
+    default: false
+    permissions:
+    - '*'
+    info:
+      prefix: '&c[&4&lOwner&c] &c'
+      build: true
+      suffix: ''

@@ -1,0 +1,8 @@
+first-item:
+  name: '&4&lKill Yourself &7(Right Click)'
+  id: 331
+  slot: 4
+  lore: ''
+  command: 'IAMDEADYUPXRUNREDSTONE'
+  cooldown-seconds: 3
+  permission: ''

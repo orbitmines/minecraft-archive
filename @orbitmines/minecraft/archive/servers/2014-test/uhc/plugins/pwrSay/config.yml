@@ -1,0 +1,7 @@
+#pwrSay | v1.0 | syszee
+
+#In order to add a broadcaster, just type the name of the new one below "main" and give it a prefix!
+#You can do this ingame using /pwrsay add <broadcaster>
+
+#Broadcasters (Main is the example! Use /pwrsay say main <message> in order to call it!)
+main: '&b[pwrCraft]&f:'

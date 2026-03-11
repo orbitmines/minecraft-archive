@@ -1,0 +1,7 @@
+# AdvancedMotd by MrFlieder!
+save ip-addresses: true
+player name variable: '%p'
+default player name: Minecraftler
+motd-list:
+- '&8&l[&6&lOrbitMines&8&l] [&4&lPixel&f&lmon&8&l] [&4&l3.0&f&l.4&8&l]          [&d&lOur
+  new Pixelmon server!&8&l]'

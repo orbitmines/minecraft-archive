@@ -1,0 +1,235 @@
+# MyCommand  Commands Config File
+# commandsnumber (default 20) it's number of command you want make
+# Don't forget the '/' on runcmd line , example command: /myhelp
+# type accept = text , runcommand , broadcast-text , runcommand-text , runcommand-broadcast-text , perm-broadcast-text , addpermission , addtimer , runconsole , runcommand-perm-broadcast-text , runcommand-random , runasoperator , iconmenu
+# Additional type accept if you use Spoutplugin = spout-text , spout-notification.\n" +
+# runcommand type example -> If command: /l and runcmd: /list,when you type /l mycommand execute /list
+# runcmd support custom argument in game.($arg1,$arg2,$arg3,$arg4,$arg5,$multiargs) Example - runcmd : /time $arg1
+# For Delayed command add $delay$ before the command in runcmd Example : - $delay$/list
+# Set delay time with delaytimer: 5 (5 = seconds)
+# Use the dot . for decimal cost Example = cost : 5.5
+# You can use a custom permission node by placing "permission-node:" field in a command,you also can change the permission error message with "permission-error:"
+# Custom error-message for invalid args ,put "error-message:" line in a command.
+# You can use itemcost : 'ID:AMOUNT' for set a cost with items.
+# http://dev.bukkit.org/server-mods/mycommand/pages/configuration-and-example
+options:
+  commandsnumber: 20
+'1':
+  command: /mycmd-sampletext
+  type: text
+  text:
+  - '$red Hello $darkgreen$player!'
+  runcmd:
+  - '/sample'
+  cost: 0
+  delaytimer: 5
+'2':
+  command: /mycmd-dice
+  type: text
+  text:
+  - '$red You got $darkgreen$rnd6 !'
+  runcmd:
+  - '/sample'
+  cost: 0
+  delaytimer: 5
+  permission-node: customperm.custom
+'3':
+  command: /mycmd-runcommand
+  type: runcommand
+  text:
+  - '$red Text of command $black3'
+  runcmd:
+  - '/list'
+  cost: 0
+  delaytimer: 5
+'4':
+  command: /mycmd-args
+  type: runcommand
+  text:
+  - '$red Text of command $black4'
+  runcmd:
+  - '/time $arg1 $arg2'
+  cost: 0
+  delaytimer: 5
+  error-message: 'Type /time day world'
+'5':
+  command: /mycmd-runcmdtimer
+  type: runcommand
+  text:
+  - '$red Text of command $black5'
+  runcmd:
+  - '$delay$/say 3..'
+  - '$delay$/say 2..'
+  - '$delay$/say 1..'
+  cost: 0
+  delaytimer: 1
+'6':
+  command: /mycmd-broadcast
+  type: broadcast-text
+  text:
+  - '$blue MyCommand Broadcast Test'
+  runcmd:
+  - '/sample'
+  cost: 0
+  delaytimer: 5
+'7':
+  command: /mycmd-spoutsample
+  type: spout-text
+  text:
+  - '$darkgreen -Spout Text-'
+  - '$red MyCommand!'
+  runcmd:
+  - '/sample'
+  cost: 0
+  delaytimer: 5
+'8':
+  command: /mycmd-runconsole
+  type: runconsole
+  text:
+  - '$red Text of command $black8'
+  runcmd:
+  - /say This /say it's performed by console.
+  cost: 0
+  delaytimer: 5
+'9':
+  command: /mycmd-addtimer
+  type: text
+  text:
+  - '$gold Put your command over /mycmd-addtimer'
+  - '$gold And change type : from text to addtimer'
+  runcmd:
+  - '/sample'
+  cost: 0
+  delaytimer: 5
+'10':
+  command: /mycmd-addpermission
+  type: text
+  text:
+  - '$gold Put your command over /mycmd-addpermission'
+  - '$gold And change type : from text to addpermission'
+  runcmd:
+  - '/sample'
+  cost: 0
+  delaytimer: 5
+'11':
+  command: /mycmd-textargs
+  type: text
+  text:
+  - 'Player Name : $player'
+  - 'World : $world'
+  - 'Health : $health Food : $food'
+  - 'Exp : $exp Level : $level'
+  - 'Gamemode : $gamemode'
+  - 'LastDamage : $lastdamage'
+  runcmd:
+  - '/sample'
+  cost: 0
+  delaytimer: 5
+'12':
+  command: /mycmd-online
+  type: text
+  text:
+  - '$red There are $online players online.'
+  - '$gold $ponline'
+  runcmd:
+  - '/sample'
+  cost: 0
+  delaytimer: 5
+'13':
+  command: /mycmd-clearchat
+  type: broadcast-text
+  text:
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  runcmd:
+  - '/sample'
+  cost: 0
+  delaytimer: 5
+'14':
+  command: /mycmd-shortcut
+  type: runcommand
+  text:
+  - '$red Text of command $black14'
+  runcmd:
+  - '/say $multiargs'
+  cost: 0
+  delaytimer: 5
+'15':
+  command: /mycmd-random
+  type: runcommand-random
+  text:
+  - '$red Text of command $black15'
+  runcmd:
+  - '/say 1 $multiargs'
+  - '/say 2 $multiargs'
+  - '/say 3 $multiargs'
+  cost: 0
+  delaytimer: 5
+'16':
+  command: /iconmenu
+  type: iconmenu
+  text:
+  - 'POSITION:ITEMID:COMMAND/MESSAGE:DESCRIPTION'
+  iconmenu_title: '&cMyCommand &4ItemMenu'
+  iconmenu_size: 27
+  iconmenu_commands:
+  - '0:322:/help:&aOpen the help menù'
+  - '1:345:/mycmd:MyCommand menù'
+  - '9:388:/list:&bShow online players'
+  - '10:347:/time set 0:Turn day'
+  - '26:339:/rules:&cSee the server rules'
+  cost: 0
+  delaytimer: 5
+'17':
+  command: /mycmd-help 1
+  type: text
+  text:
+  - '$brightgreen ---- MyCommand Help Page One ---'
+  - '$gold Test Help 1'
+  runcmd:
+  - '/sample'
+  cost: 0
+  delaytimer: 5
+'18':
+  command: /mycmd-help
+  type: text
+  text:
+  - '$brightgreen ---- MyCommand Help Main Page---'
+  - '$gold Test Help '
+  runcmd:
+  - '/sample'
+  cost: 0
+  delaytimer: 5
+'19':
+  command: /scriptexample
+  type: text
+  text:
+  - 'Example'
+  runcmd:
+  - '$Script$HasPermission==custompermission.test'
+  - '$Script$SetInteger=1'
+  - '$Script$Integer==1'
+  - '$Script$SetString=ciao'
+  - '$Script$String!=lol'
+  - '$Script$Integer>10'
+  - '/dosomething'
+  cost: 0
+  delaytimer: 5
+'20':
+  command: /itemcostexample
+  type: text
+  text:
+  - 'This command cost 5 cobblestone. 4=ID 5 = AMOUNT'
+  runcmd:
+  - '/sample'
+  cost: 0
+  itemcost: '4:5'
+  delaytimer: 5

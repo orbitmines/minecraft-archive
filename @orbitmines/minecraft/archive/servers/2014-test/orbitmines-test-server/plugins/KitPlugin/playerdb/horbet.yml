@@ -1,0 +1,36 @@
+Knight:
+  cooldown: 1398013455
+  usages: 0
+Archer:
+  cooldown: 1397906101
+  usages: 0
+Soldier:
+  cooldown: 1397905999
+  usages: 0
+Tank:
+  cooldown: 1397906043
+  usages: 0
+Villager:
+  cooldown: 1397906006
+  usages: 0
+Beast:
+  cooldown: 1397906018
+  usages: 0
+DarkMage:
+  cooldown: 1397906020
+  usages: 0
+Assassin:
+  cooldown: 1397906129
+  usages: 0
+Tree:
+  cooldown: 1397906037
+  usages: 0
+King:
+  cooldown: 1397906039
+  usages: 0
+SnowGolem:
+  cooldown: 1397906052
+  usages: 0
+Pyro:
+  cooldown: 1397906069
+  usages: 0

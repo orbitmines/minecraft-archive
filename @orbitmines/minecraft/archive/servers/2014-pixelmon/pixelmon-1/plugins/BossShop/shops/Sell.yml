@@ -1,0 +1,325 @@
+ShopName: Sell
+signs:
+  text: '[Sell]'
+  NeedPermissionToCreateSign: true
+shop:
+  Fish:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - type:RAW_FISH
+      - amount:1
+    Reward: 5
+    MenuItem:
+    - type:RAW_FISH
+    - amount:1
+    - name:&fString
+    - 'lore:&c&lReward: &65$'
+    - amount:1
+    Message: '&2[&aPokeShop&2] &aSold &f1 String &afor &65$'
+    InventoryLocation: 2
+    ExtraPermission: ''
+  Slime:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - type:SLIME_BALL
+      - amount:1
+    Reward: 5
+    MenuItem:
+    - type:SLIME_BALL
+    - amount:1
+    - name:&fSlime Ball
+    - 'lore:&c&lReward: &65$'
+    - amount:1
+    Message: '&2[&aPokeShop&2] &aSold &f1 Slime Ball &afor &65$'
+    InventoryLocation: 4
+    ExtraPermission: ''
+  Flesh:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - type:ROTTEN_FLESH
+      - amount:1
+    Reward: 5
+    MenuItem:
+    - type:ROTTEN_FLESH
+    - amount:1
+    - name:&fRotten Flesh
+    - 'lore:&c&lReward: &65$'
+    - amount:1
+    Message: '&2[&aPokeShop&2] &aSold &f1 Rotten Flesh &afor &65$'
+    InventoryLocation: 6
+    ExtraPermission: ''
+  Feather:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - type:FEATHER
+      - amount:1
+    Reward: 5
+    MenuItem:
+    - type:FEATHER
+    - amount:1
+    - name:&fFeather
+    - 'lore:&c&lReward: &65$'
+    - amount:1
+    Message: '&2[&aPokeShop&2] &aSold &f1 Feather &afor &65$'
+    InventoryLocation: 8
+    ExtraPermission: ''
+  Pearl:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - type:ENDER_PEARL
+      - amount:1
+    Reward: 5
+    MenuItem:
+    - type:ENDER_PEARL
+    - amount:1
+    - name:&fEnder Pearl
+    - 'lore:&c&lReward: &65$'
+    - amount:1
+    Message: '&2[&aPokeShop&2] &aSold &f1 Ender Pearl &afor &65$'
+    InventoryLocation: 10
+    ExtraPermission: ''
+  Beef:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - type:RAW_BEEF
+      - amount:1
+    Reward: 5
+    MenuItem:
+    - type:RAW_BEEF
+    - amount:1
+    - name:&fRaw Beef
+    - 'lore:&c&lReward: &65$'
+    - amount:1
+    Message: '&2[&aPokeShop&2] &aSold &f1 Raw Beef &afor &65$'
+    InventoryLocation: 12
+    ExtraPermission: ''
+  Leather:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - type:LEATHER
+      - amount:1
+    Reward: 5
+    MenuItem:
+    - type:LEATHER
+    - amount:1
+    - name:&fLeather
+    - 'lore:&c&lReward: &65$'
+    - amount:1
+    Message: '&2[&aPokeShop&2] &aSold &f1 Leather &afor &65$'
+    InventoryLocation: 14
+    ExtraPermission: ''
+  Glowstone:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - type:GLOWSTONE_DUST
+      - amount:1
+    Reward: 5
+    MenuItem:
+    - type:GLOWSTONE_DUST
+    - amount:1
+    - name:&fGlowstone Dust
+    - 'lore:&c&lReward: &65$'
+    - amount:1
+    Message: '&2[&aPokeShop&2] &aSold &f1 Glowstone Dust &afor &65$'
+    InventoryLocation: 16
+    ExtraPermission: ''
+  Seeds:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - type:SEEDS
+      - amount:1
+    Reward: 5
+    MenuItem:
+    - type:SEEDS
+    - amount:1
+    - name:&fSeeds
+    - 'lore:&c&lReward: &65$'
+    - amount:1
+    Message: '&2[&aPokeShop&2] &aSold &f1 Seed &afor &65$'
+    InventoryLocation: 18
+    ExtraPermission: ''
+  GoldNugget:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - type:GOLD_NUGGET
+      - amount:1
+    Reward: 5
+    MenuItem:
+    - type:GOLD_NUGGET
+    - amount:1
+    - name:&fGold Nugget
+    - 'lore:&c&lReward: &65$'
+    - amount:1
+    Message: '&2[&aPokeShop&2] &aSold &f1 Gold Nugget &afor &65$'
+    InventoryLocation: 20
+    ExtraPermission: ''
+  Wool:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - type:WOOL
+      - amount:1
+    Reward: 5
+    MenuItem:
+    - type:WOOL
+    - amount:1
+    - name:&fWool
+    - 'lore:&c&lReward: &65$'
+    - amount:1
+    Message: '&2[&aPokeShop&2] &aSold &f1 Wool &afor &65$'
+    InventoryLocation: 22
+    ExtraPermission: ''
+  String:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - type:STRING
+      - amount:1
+    Reward: 5
+    MenuItem:
+    - type:STRING
+    - amount:1
+    - name:&fString
+    - 'lore:&c&lReward: &65$'
+    - amount:1
+    Message: '&2[&aPokeShop&2] &aSold &f1 String &afor &65$'
+    InventoryLocation: 24
+    ExtraPermission: ''
+  Iron:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - type:IRON_INGOT
+      - amount:1
+    Reward: 10
+    MenuItem:
+    - type:IRON_INGOT
+    - amount:1
+    - name:&fIron Ingot
+    - 'lore:&c&lReward: &610$'
+    - amount:1
+    Message: '&2[&aPokeShop&2] &aSold &f1 Iron Ingot &afor &610$'
+    InventoryLocation: 26
+    ExtraPermission: ''
+  Blaze:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - type:BLAZE_POWDER
+      - amount:1
+    Reward: 7
+    MenuItem:
+    - type:BLAZE_POWDER
+    - amount:1
+    - name:&fBlaze Powder
+    - 'lore:&c&lReward: &67$'
+    - amount:1
+    Message: '&2[&aPokeShop&2] &aSold &f1 Blaze Powder &afor &67$'
+    InventoryLocation: 28
+    ExtraPermission: ''
+  Gun:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - type:SULPHUR
+      - amount:1
+    Reward: 5
+    MenuItem:
+    - type:SULPHUR
+    - amount:1
+    - name:&fGunpowder
+    - 'lore:&c&lReward: &65$'
+    - amount:1
+    Message: '&2[&aPokeShop&2] &aSold &f1 Gunpowder &afor &65$'
+    InventoryLocation: 30
+    ExtraPermission: ''
+  Diamond:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - type:DIAMOND
+      - amount:1
+    Reward: 20
+    MenuItem:
+    - type:DIAMOND
+    - amount:1
+    - name:&fDiamond
+    - 'lore:&c&lReward: &620$'
+    - amount:1
+    Message: '&2[&aPokeShop&2] &aSold &f1 Diamond &afor &620$'
+    InventoryLocation: 32
+    ExtraPermission: ''
+  Ink:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - 'id: 351'
+      - amount:1
+    Reward: 5
+    MenuItem:
+    - 'id: 351'
+    - amount:1
+    - name:&fInk Sac
+    - 'lore:&c&lReward: &65$'
+    - amount:1
+    Message: '&2[&aPokeShop&2] &aSold &f1 Ink Sac &afor &65$'
+    InventoryLocation: 34
+    ExtraPermission: ''
+  Apple:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - type:APPLE
+      - amount:1
+    Reward: 5
+    MenuItem:
+    - type:APPLE
+    - amount:1
+    - name:&fApple
+    - 'lore:&c&lReward: &65$'
+    - amount:1
+    Message: '&2[&aPokeShop&2] &aSold &f1 Apple &afor &65$'
+    InventoryLocation: 36
+    ExtraPermission: ''
+  Egg:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - type:EGG
+      - amount:1
+    Reward: 5
+    MenuItem:
+    - type:EGG
+    - amount:1
+    - name:&fegg
+    - 'lore:&c&lReward: &65$'
+    - amount:1
+    Message: '&2[&aPokeShop&2] &aSold &f1 Egg &afor &65$'
+    InventoryLocation: 38
+    ExtraPermission: ''
+  Bone:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - type:BONE
+      - amount:1
+    Reward: 5
+    MenuItem:
+    - type:BONE
+    - amount:1
+    - name:&fBone
+    - 'lore:&c&lReward: &65$'
+    - amount:1
+    Message: '&2[&aPokeShop&2] &aSold &f1 Bone &afor &65$'
+    InventoryLocation: 40
+    ExtraPermission: ''

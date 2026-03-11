@@ -1,0 +1,75 @@
+Knight:
+  cooldown: 1398440188
+  usages: 0
+Wizard:
+  cooldown: 1397921086
+  usages: 0
+Tank:
+  cooldown: 1397930434
+  usages: 0
+Drunk:
+  cooldown: 1397921094
+  usages: 0
+Pyro:
+  cooldown: 1397921102
+  usages: 0
+Necromancer:
+  cooldown: 1397930241
+  usages: 0
+Bunny:
+  cooldown: 1397921205
+  usages: 0
+Villager:
+  cooldown: 1397930615
+  usages: 0
+Lord:
+  cooldown: 1397930466
+  usages: 0
+GrimReaper:
+  cooldown: 1397929987
+  usages: 0
+Assassin:
+  cooldown: 1397921391
+  usages: 0
+Heavy:
+  cooldown: 1397929632
+  usages: 0
+Miner:
+  cooldown: 1397929627
+  usages: 0
+Blaze:
+  cooldown: 1397930348
+  usages: 0
+DarkMage:
+  cooldown: 1397929953
+  usages: 0
+Vampire:
+  cooldown: 1397929641
+  usages: 0
+Spider:
+  cooldown: 1397929863
+  usages: 0
+Librarian:
+  cooldown: 1397929872
+  usages: 0
+TNT:
+  cooldown: 1397930376
+  usages: 0
+Tree:
+  cooldown: 1397929908
+  usages: 0
+FisherMan:
+  cooldown: 1397930369
+  usages: 0
+King:
+  cooldown: 1397930383
+  usages: 0
+Fish:
+  cooldown: 1397930443
+  usages: 0
+Beast:
+  cooldown: 1397930519
+  usages: 0
+SnowGolem:
+  cooldown: 1397930547
+  usages: 0

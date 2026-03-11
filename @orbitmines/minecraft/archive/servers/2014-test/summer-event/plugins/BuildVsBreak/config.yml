@@ -1,0 +1,8 @@
+Prevent building: true
+Prevent breaking: true
+Sound: true
+Worlds:
+- KitPvPEvent
+- SurvivalEvent
+- CreativeEvent
+- Event

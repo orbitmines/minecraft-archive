@@ -1,0 +1,29 @@
+ShopName: Shop
+signs:
+  text: '[Shop]'
+  NeedPermissionToCreateSign: true
+shop:
+  Pokeball:
+    RewardType: shop
+    PriceType: free
+    Reward: Pokeballs
+    MenuItem:
+    - 'id: 8256'
+    - amount:1
+    - name:&b&lPokeballs
+    - lore:&8Here you can buy Pokeballs
+    Message: '&2[&aPokeShop&2] &aOpening the Pokeball Shop...'
+    InventoryLocation: 1
+    ExtraPermission: ''
+  Material:
+    RewardType: shop
+    PriceType: free
+    Reward: Potions
+    MenuItem:
+    - 'id: 10051'
+    - amount:1
+    - name:&b&lPotions
+    - lore:&8Here you can buy Potions
+    Message: '&2[&aPokeShop&2] &aOpening the Potions Shop...'
+    InventoryLocation: 2
+    ExtraPermission: ''

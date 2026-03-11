@@ -1,0 +1,139 @@
+ShopName: Teleport
+signs:
+  text: '[Teleport]'
+  NeedPermissionToCreateSign: true
+shop:
+  Town1:
+    RewardType: playercommand
+    PriceType: free
+    Reward:
+    - warp Town1
+    MenuItem:
+    - 'id:17'
+    - amount:1
+    - durability:1
+    - name:&6&lTown 1
+    - 'lore:&7Teleport to Town 1 #&7Gym: &8[&aGrass&8Gym]'
+    - amount:1
+    Message: '&2[&aPokeTP&2]&a Teleporting to &FTown 1&a...'
+    InventoryLocation: 1
+    ExtraPermission: ''
+  Town2:
+    RewardType: playercommand
+    PriceType: free
+    Reward:
+    - warp Town2
+    MenuItem:
+    - 'id:17'
+    - amount:2
+    - durability:1
+    - name:&6&lTown 2
+    - 'lore:&7Teleport to Town 2 #&7Gym: &8[&bWater&8Gym]'
+    - amount:2
+    Message: '&2[&aPokeTP&2]&a Teleporting to &FTown 2&a...'
+    InventoryLocation: 2
+    ExtraPermission: ''
+  Town3:
+    RewardType: playercommand
+    PriceType: free
+    Reward:
+    - warp Town3
+    MenuItem:
+    - 'id:17'
+    - amount:3
+    - durability:1
+    - name:&6&lTown 3
+    - 'lore:&7Teleport to Town 3 #&7Gym: &8[&4Fire&8Gym]'
+    - amount:3
+    Message: '&2[&aPokeTP&2]&a Teleporting to &FTown 3&a...'
+    InventoryLocation: 3
+    ExtraPermission: ''
+  Town4:
+    RewardType: playercommand
+    PriceType: free
+    Reward:
+    - warp Town4
+    MenuItem:
+    - 'id:17'
+    - amount:4
+    - durability:1
+    - name:&6&lTown 4
+    - 'lore:&7Teleport to Town 4 #&7Gym: &8[&7Rock&8Gym]'
+    - amount:4
+    Message: '&2[&aPokeTP&2]&a Teleporting to &FTown 4&a...'
+    InventoryLocation: 4
+    ExtraPermission: ''
+  Town5:
+    RewardType: playercommand
+    PriceType: free
+    Reward:
+    - warp Town5
+    MenuItem:
+    - 'id:17'
+    - amount:5
+    - durability:1
+    - name:&6&lTown 5
+    - 'lore:&7Teleport to Town 5 #&7Gym: &8[&dGhost&8Gym]'
+    - amount:5
+    Message: '&2[&aPokeTP&2]&a Teleporting to &FTown 5&a...'
+    InventoryLocation: 5
+    ExtraPermission: ''
+  Town6:
+    RewardType: playercommand
+    PriceType: free
+    Reward:
+    - warp Town6
+    MenuItem:
+    - 'id:17'
+    - amount:6
+    - durability:1
+    - name:&6&lTown 6
+    - 'lore:&7Teleport to Town 6 #&7Gym: &8[&eElectric&8Gym]'
+    - amount:6
+    Message: '&2[&aPokeTP&2]&a Teleporting to &FTown 6&a...'
+    InventoryLocation: 6
+    ExtraPermission: ''
+  Town7:
+    RewardType: playercommand
+    PriceType: free
+    Reward:
+    - warp Town7
+    MenuItem:
+    - 'id:17'
+    - amount:7
+    - durability:1
+    - name:&6&lTown 7
+    - 'lore:&7Teleport to Town 7 #&7Gym: &8[&lDark&8Gym]'
+    - amount:7
+    Message: '&2[&aPokeTP&2]&a Teleporting to &FTown 7&a...'
+    InventoryLocation: 7
+    ExtraPermission: ''
+  Town8:
+    RewardType: playercommand
+    PriceType: free
+    Reward:
+    - warp Town8
+    MenuItem:
+    - 'id:17'
+    - amount:8
+    - durability:1
+    - name:&6&lTown 8
+    - 'lore:&7Teleport to Town 8 #&7Gym: &8[&5Dragon&8Gym]'
+    - amount:8
+    Message: '&2[&aPokeTP&2]&a Teleporting to &FTown 8&a...'
+    InventoryLocation: 8
+    ExtraPermission: ''
+  Spawn:
+    RewardType: playercommand
+    PriceType: free
+    Reward:
+    - spawn
+    MenuItem:
+    - 'id:17'
+    - amount:1
+    - name:&6&lSpawn
+    - 'lore:&7Teleport to Spawn'
+    - amount:1
+    Message: '&2[&aPokeTP&2]&a Teleporting to &FSpawn&A...'
+    InventoryLocation: 9
+    ExtraPermission: ''

@@ -1,0 +1,6 @@
+name: CustomRecipes
+author: Fadi
+version: 1
+description: Custom Recipes!
+main: me.Fadi.CustomRecipes.Main
+commands:

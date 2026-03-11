@@ -1,0 +1,13 @@
+# AdvancedMotd by MrFlieder!
+save ip-addresses: true
+player name variable: '%p'
+default player name: Minecraftler
+motd-list:
+- '&8&l[&6&lOrbitMines&8&l] [&3&l1.7.5&8&l] [&a&lReworking our Server!&8&l] [&b&l20%
+  Sale in our Shop!&8&l] &8&l[&d&l/donate&8&l]'
+- '&8&l[&6&lOrbitMines&8&l] [&3&l1.7.5&8&l] [&a&lReworking our Server!&8&l] [&b&lDon''t
+  forget to vote ;)&8&l] &8&l[&d&l/vote&8&l]'
+- '&8&l[&6&lOrbitMines&8&l] [&3&l1.7.5&8&l] [&a&lReworking our Server!&8&l] [&b&lCurrently
+  Reworking&8&l] &8&l[&c&lKitPvP&8&l] &8&l[&4&lPrison&8&l]'
+- '&8&l[&6&lOrbitMines&8&l] [&3&l1.7.5&8&l] [&a&lReworking our Server!&8&l] [&b&lLast
+  Donator&8&l] &8&l[&d&lSean9deCoolste&8&l] &8&l[&4&l20 EUR&8&l]'

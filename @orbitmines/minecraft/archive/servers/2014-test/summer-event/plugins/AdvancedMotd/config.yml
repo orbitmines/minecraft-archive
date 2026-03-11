@@ -1,0 +1,8 @@
+# AdvancedMotd by MrFlieder!
+save ip-addresses: true
+player name variable: '%p'
+default player name: Minecraftler
+motd-list:
+- '&4AdvancedMotd &cby &6MrFlieder'
+- '&aThere are &b%online players&a online!'
+- '&6&k|||&r&3&i Welcome, &u&b%p&r&e :) &6&k|||'

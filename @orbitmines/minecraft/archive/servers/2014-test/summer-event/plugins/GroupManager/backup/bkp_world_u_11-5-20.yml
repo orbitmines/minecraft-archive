@@ -1,0 +1,111 @@
+users:
+  AbbydOnl:
+    group: Dead
+    subgroups: []
+    permissions:
+    - essentials.spawn
+  Afrobob1234:
+    group: Dead
+    subgroups: []
+    permissions: []
+  Bryan20027:
+    group: Longbow
+    subgroups: []
+    permissions: []
+  daanms:
+    group: Longbow
+    subgroups: []
+    permissions:
+    - essentials.spawn
+  eekhoorn2000:
+    group: Longbow
+    subgroups: []
+    permissions: []
+  ElgarL:
+    group: Waiting
+    subgroups: []
+    permissions:
+    - groupmanager.noofflineperms
+  fangergo:
+    group: Paladin
+    subgroups: []
+    permissions: []
+  firedraak:
+    group: Dead
+    subgroups: []
+    permissions: []
+  gigantmelvin:
+    group: Dead
+    subgroups: []
+    permissions:
+    - essentials.spawn
+    - essentials.sppawn
+  igiboy2012:
+    group: Paladin
+    subgroups: []
+    permissions: []
+  its_me_djimmi:
+    group: Longbow
+    subgroups: []
+    permissions: []
+  jasbro69:
+    group: Dead
+    subgroups: []
+    permissions: []
+  jeroeneboy:
+    group: Longbow
+    subgroups: []
+    permissions: []
+  jim5491158:
+    group: Dead
+    subgroups: []
+    permissions:
+    - essentials.soawn
+  jonabuilder1998:
+    group: Dead
+    subgroups: []
+    permissions: []
+  justinSNK:
+    group: Dead
+    subgroups: []
+    permissions: []
+  kevinkeijzer2004:
+    group: Dead
+    subgroups: []
+    permissions: []
+  KHobbits:
+    group: Waiting
+    subgroups: []
+    permissions:
+    - groupmanager.noofflineperms
+  krachtpatsertim:
+    group: Dead
+    subgroups: []
+    permissions:
+    - essentials.spawn
+  marioandbowser30:
+    group: Paladin
+    subgroups: []
+    permissions: []
+  O_o_Fadi_o_O:
+    group: Dead
+    subgroups: []
+    permissions: []
+  renau777:
+    group: Paladin
+    subgroups: []
+    permissions: []
+  Selasie:
+    group: Longbow
+    subgroups: []
+    permissions: []
+  sharewoods:
+    group: Dead
+    subgroups: []
+    permissions:
+    - essentials.spawn
+  snowleo:
+    group: Waiting
+    subgroups: []
+    permissions:
+    - groupmanager.noofflineperms

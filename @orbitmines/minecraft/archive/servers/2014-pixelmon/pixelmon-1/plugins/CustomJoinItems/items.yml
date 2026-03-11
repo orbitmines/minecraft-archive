@@ -1,0 +1,9 @@
+first-item:
+  name: '&5>&d> &6Teleport&d <&5<'
+  id: 345
+  slot: 1
+  lore:
+    - '&7Open the Teleport Menu...'
+  command: 'shop Teleport'
+  cooldown-seconds: 0
+  permission: ''

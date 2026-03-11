@@ -1,0 +1,16 @@
+permission: ''
+world: world
+X: -452
+Y: 71
+Z: 539
+price: 0.0
+cooldown: 0
+globalCooldown: 0
+confirmation: false
+commands:
+- '/GetAccesstoTown4Town '
+grantPermissions: []
+lastGlobalUse: 0
+lastUse: {}
+priceItems: []
+exp: 0

@@ -1,0 +1,12 @@
+# ====================================================== #
+#                  Plugin by: EveningMC                  #
+#       (PLAYER) is replace with the players name.       #
+#   (DISPLAY) is replace with the players displayname.   #
+# ====================================================== #
+Debug: false
+ConfigVersion: 1
+Messages:
+  JoinMessage: '&6&l(PLAYER)'
+  QuitMessage: '&6&l(PLAYER)'
+  JoinPrefix: '&a[Pixelmon] Join&2>>'
+  QuitPrefix: '&c[Pixelmon] Quit&4>>'

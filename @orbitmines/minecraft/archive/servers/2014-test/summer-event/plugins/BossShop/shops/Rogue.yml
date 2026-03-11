@@ -1,0 +1,143 @@
+ShopName: Rogue
+signs:
+  text: '[Rogue]'
+  NeedPermissionToCreateSign: true
+shop:
+  LeatherArmorTier2:
+    RewardType: command
+    PriceType: money
+    Price: 100
+    Reward:
+    - 'kit RogueArmorTier2 %player%'
+    MenuItem:
+    - type:LEATHER_CHESTPLATE
+    - amount:1
+    - enchantment:DURABILITY#30
+    - 'name:&c&lRogue Armor: &b&lTier 2'
+    - 'lore:&bTier 2 : &cRogue Helmet #&bTier 2 : &cRogue Chestplate#&bTier 2 : &cRogue Leggings #&bTier 2 : &cRogue Boots # #&cPrice: &6100 Points'
+    - amount:1
+    Message: '&8[&c&lRogue&8] &cYou have bought &fLeather Rogue Armor&c! (&bTier 2&c)'
+    InventoryLocation: 1
+    ExtraPermission: 'shops.rogue'
+  LeatherArmorTier3:
+    RewardType: command
+    PriceType: money
+    Price: 200
+    Reward:
+    - 'kit RogueArmorTier3 %player%'
+    MenuItem:
+    - type:LEATHER_CHESTPLATE
+    - amount:1
+    - enchantment:DURABILITY#50
+    - enchantment:PROTECTION_ENVIRONMENTAL#1
+    - 'name:&c&lRogue Armor: &b&lTier 3'
+    - 'lore:&bTier 3 : &cRogue Helmet #&bTier 3 : &cRogue Chestplate#&bTier 3 : &cRogue Leggings #&bTier 3 : &cRogue Boots # #&cPrice: &6200 Points'
+    - amount:1
+    Message: '&8[&c&lRogue&8] &cYou have bought &fLeather Rogue Armor&c! (&bTier 3&c)'
+    InventoryLocation: 2
+    ExtraPermission: 'shops.rogue'
+  LeatherArmorTier4:
+    RewardType: command
+    PriceType: money
+    Price: 350
+    Reward:
+    - 'kit RogueArmorTier4 %player%'
+    MenuItem:
+    - type:CHAINMAIL_CHESTPLATE
+    - amount:1
+    - enchantment:DURABILITY#75
+    - 'name:&c&lRogue Armor: &b&lTier 4'
+    - 'lore:&bTier 4 : &cRogue Helmet #&bTier 4 : &cRogue Chestplate#&bTier 4 : &cRogue Leggings #&bTier 4 : &cRogue Boots # #&cPrice: &6350 Points'
+    - amount:1
+    Message: '&8[&c&lRogue&8] &cYou have bought &fLeather Rogue Armor&c! (&bTier 4&c)'
+    InventoryLocation: 3
+    ExtraPermission: 'shops.rogue'
+  Steak:
+    RewardType: item
+    PriceType: money
+    Price: 3
+    Reward:
+    - id:364
+    - amount:1
+    MenuItem:
+    - id:364
+    - amount:1
+    - 'lore: #&cPrice: &63 Points'
+    - amount:1
+    Message: '&8[&c&lRogue&8] &cYou have bought &f1 Steak&c!'
+    InventoryLocation: 9
+    ExtraPermission: 'shops.rogue'
+  IronSword:
+    RewardType: item
+    PriceType: money
+    Price: 100
+    Reward:
+    - type:IRON_SWORD
+    - amount:1
+    - 'name:&bTier 2 : &cRogue Sword'
+    - enchantment:DURABILITY#30
+    MenuItem:
+    - type:IRON_SWORD
+    - amount:1
+    - enchantment:DURABILITY#30
+    - 'name:&c&lRogue Sword: &b&lTier 2'
+    - 'lore: #&cPrice: &6100 Points'
+    - amount:1
+    Message: '&8[&c&lRogue&8] &cYou have bought &f1 Rogue Sword&c! (&bTier 2&c)'
+    InventoryLocation: 4
+    ExtraPermission: 'shops.rogue'
+  DiamondSword:
+    RewardType: item
+    PriceType: money
+    Price: 200
+    Reward:
+    - type:DIAMOND_SWORD
+    - amount:1
+    - 'name:&bTier 3 : &cRogue Sword'
+    - enchantment:DURABILITY#50
+    MenuItem:
+    - type:DIAMOND_SWORD
+    - amount:1
+    - enchantment:DURABILITY#50
+    - 'name:&c&lRogue Sword: &b&lTier 3'
+    - 'lore: #&cPrice: &6200 Points'
+    - amount:1
+    Message: '&8[&c&lRogue&8] &cYou have bought &f1 Rogue Sword&c! (&bTier 3&c)'
+    InventoryLocation: 5
+    ExtraPermission: 'shops.rogue'
+  DiamondSwordLifeSteal:
+    RewardType: item
+    PriceType: money
+    Price: 300
+    Reward:
+    - type:DIAMOND_SWORD
+    - amount:1
+    - 'name:&bTier 4 : &cRogue Sword'
+    - 'lore:&4&oVampire'
+    - enchantment:DURABILITY#75
+    MenuItem:
+    - type:DIAMOND_SWORD
+    - amount:1
+    - enchantment:DURABILITY#75
+    - 'name:&c&lRogue Sword: &b&lTier 4'
+    - 'lore:&7Lifesteal I # #&cPrice: &6300 Points'
+    - amount:1
+    Message: '&8[&c&lRogue&8] &cYou have bought &f1 Rogue Sword&c! (&bTier 4&c)'
+    InventoryLocation: 6
+    ExtraPermission: 'shops.rogue'
+  Epic1:
+    RewardType: command
+    PriceType: money
+    Price: 500
+    Reward:
+    - 'kit RogueEpic1 %player%'
+    MenuItem:
+    - type:POTION
+    - amount:1
+    - durability:8201
+    - 'name:&8[&6&lEpic&8] &c&lStrength I'
+    - 'lore:&c[Unlimited] # #&cPrice: &6500 Points'
+    - amount:1
+    Message: '&8[&c&lRogue&8] &cYou have bought &fUnlimited Strength I&c!'
+    InventoryLocation: 7
+    ExtraPermission: 'shops.rogue'

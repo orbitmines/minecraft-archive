@@ -1,0 +1,100 @@
+#  GiveAnything Config
+#  http://www.mc-index.com
+#
+#  Online only (default: true)
+#  onlineonly: true
+#
+#  Only delivers rewards when the player is online.  If they are offline it will wait and deliver when they next join the server!
+#
+#  Lucky vote (default: false)
+#  luckyvote: false
+#
+#  Enables the lucky voting section, this allows voters to have a random chance to receive additional rewards when they vote, for the format see below.
+#
+#  Vote command (/vote) (default: false)
+#  votecommand: false
+#
+#  Enables the /vote command which will show the message contained in the votemessage section at the bottom of this config
+#
+#  Login vote reminder (default: false)
+#  voteremind: false
+#
+#  Shows the message contained in the votemessage section at the bottom of this config to players when they join the server
+#
+#  Services section (default is used if service doesn't exist)
+#  MC-Index:
+#    broadcast: '{GREEN}{username} {GOLD}has voted @ {GREEN}www.mc-index.com {GOLD}and received {GREEN}5 Diamonds {GOLD}and {GREEN}200 XP!'
+#    playermessage: '{GREEN}Thanks for voting at {AQUA}{service}!'
+#    commands: 
+#      - '/give {username} 264 5'
+#      - '/xp give {username} 200'
+#
+#  The above examples would give a voter 5 diamonds and 200XP whenever they vote on a site with the service name "MC-Index"
+#
+#  Lucky votes section (disabled by default)
+#  luckyvotes:
+#    50:
+#      broadcast: '{GREEN}{username} {GOLD}was lucky and received an {GREEN}extra $1000!'
+#      playermessage: '{GREEN}You were lucky and received an extra $1000!'
+#      commands:
+#        - '/eco give {username} 1000'
+#    100:
+#      broadcast: '{GREEN}{username} {GOLD}was {GREEN}super lucky {GOLD}and received an {GREEN}extra $5000!'
+#      playermessage: '{GREEN}You were super lucky and received an extra $5000!'
+#      commands:
+#        - '/eco give {username} 5000'
+#
+#  The above examples would give a 1 in 50 chance of a voter receiving an extra $1000, and a 1 in 100 chance of $5000
+#  If you do not use essentials economy, the command(s) can be modified to suit whichever economy you use. 
+#
+#  Vote Message
+#  votemessage:
+#    - 'add a message here with voting information'
+#    - 'players will see this when they type /vote'
+#
+#
+#  Available codes for messages / commands:
+#
+#  {service}    {servicename}   {SERVICE}   = service name
+#  {username}   {player}        {name}      = player username
+#  
+#  & = Colour Symbol to enter manual colours / control codes
+#  {AQUA}       {BLACK}         {BLUE}          {DARK_AQUA}     {DARK_BLUE}
+#  {DARK_GRAY}  {DARK_GREEN}    {DARK_PURPLE}   {DARK_RED}      {GOLD}
+#  {GRAY}       {GREEN}         {LIGHT_PURPLE}  {RED}           {WHITE}
+#  {YELLOW}     {BOLD}          {ITALIC}        {UNDERLINE}     {STRIKETHROUGH} 
+#  {STRIKE}     {STRIKETHROUGH} {MAGIC}         {RESET}
+#
+
+settings:
+  onlineonly: true
+  luckyvote: false
+  broadcastqueue: true
+  votecommand: true
+  voteremind: true
+services:
+  default:
+    broadcast: '{BLACK}[{BLUE}Vote{BLACK}] {GOLD}{username} {BLUE}has {GOLD}voted {BLUE}at {GOLD}www.orbitmines.com {BLUE}and {GOLD}received{BLUE}:      {GOLD}3 Poke Balls{BLUE}, {GOLD}2 Great Balls{BLUE} and {GOLD}50$'
+    playermessage: '{BLUE}Thanks for voting! {GOLD}{username} {BLUE}You can do this every {GOLD}24 Hours{BLUE}!'
+    commands: 
+      - '/give {username} 8256 3'
+      - '/give {username} 8257 2'
+      - '/eco give {username} 50'
+luckyvotes:
+  '10':
+    broadcast: '{GREEN}{username} {GOLD}was lucky and received an {GREEN}extra $1000!'
+    playermessage: '{GREEN}You were lucky and received an extra $1000!'
+    commands:
+    - /eco give user {username} 1000
+  '50':
+    broadcast: '{GREEN}{username} {GOLD}was super lucky and received an {GREEN}extra 100 XP and $1000!'
+    playermessage: '{GREEN}You were super lucky and received an {GREEN}extra 100 XP and $1000!'
+    commands:
+    - /xp give {username} 100
+    - /eco give {username} 1000
+votemessage:
+  - '{GOLD}-----------------------------------------------------'
+  - '{BLUE}Vote for us every day for in game rewards:'
+  - '{BLUE}{BLUE}Pixelmon: {GOLD}3 Poke Balls{BLUE}, {GOLD}2 Great Balls{BLUE} and {GOLD}50$'
+  - '{BLUE}Vote at: {GOLD}www.orbitmines.com'
+  - '{GOLD}-----------------------------------------------------'

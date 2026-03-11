@@ -1,0 +1,33 @@
+users:
+  basteti:
+    group: Moderator
+    subgroups: []
+    permissions: []
+  BenYOmin_Mango:
+    group: Owner
+    subgroups: []
+    permissions: []
+  eekhoorn2000:
+    group: Moderator
+    subgroups: []
+    permissions: []
+  O_o_Fadi_o_O:
+    group: Owner
+    subgroups: []
+    permissions: []
+  poplijm:
+    group: Moderator
+    subgroups: []
+    permissions: []
+  sharewoods:
+    group: Moderator
+    subgroups: []
+    permissions: []
+  SinaasAppelke:
+    group: Moderator
+    subgroups: []
+    permissions: []
+  slienimon:
+    group: Admin
+    subgroups: []
+    permissions: []

@@ -1,0 +1,1 @@
+../../../private/player-data/servers/2014-pixelmon/pixelmon-3/banned-players.txt

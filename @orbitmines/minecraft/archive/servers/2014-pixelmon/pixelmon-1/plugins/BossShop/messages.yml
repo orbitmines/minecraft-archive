@@ -1,0 +1,13 @@
+Main:
+  NoPermission: '&2[&aPokeShop&2] &aNot enough permissions!'
+  AlreadyBought: '&2[&aPokeShop&2] &aYou already bought that!'
+  ShopNotExisting: '&aComing Soon...'
+  OpenShop: '&a...'
+  CloseShop: ''
+Economy:
+  NoAccount: '&cYou don''t have an economy account!'
+NotEnough:
+  Money: '&2[&aPokeShop&2] &aYou don''t have enough Money!'
+  Item: '&2[&aPokeShop&2] &aYou don''t have enough items!'
+  Points: '&2[&aPokeShop&2] &aYou don''t have enough PokePoints!'
+  Exp: '&2[&aPokeShop&2] &aYou don''t have enough EXP!'

@@ -1,0 +1,254 @@
+# Group inheritance
+#
+# Any inherited groups prefixed with a g: are global groups
+# and are inherited from the GlobalGroups.yml.
+#
+# Groups without the g: prefix are groups local to this world
+# and are defined in the this groups.yml file.
+#
+# Local group inheritances define your promotion tree when using 'manpromote/mandemote'
+
+groups:
+  Checkpoint0:
+    default: true
+    permissions:
+    - mycommand.cmd.1
+    - mycommand.cmd.2
+    - mycommand.cmd.3
+    - mycommand.cmd.4
+    - mycommand.cmd.5
+    - mycommand.cmd.6
+    - mycommand.cmd.7
+    - mycommand.cmd.8
+    - mycommand.cmd.9
+    - mycommand.cmd.10
+    - mycommand.cmd.11
+    - mycommand.cmd.12
+    - mycommand.cmd.13
+    - mycommand.cmd.14
+    - mycommand.cmd.15
+    - Event.CheckPoint1
+    - nametag.group.checkpoint0
+    - essentials.spawn
+    - serversigns.use.*
+    info:
+      prefix: '&7[&6&lX&7-&4&lRun&7] &7'
+      build: false
+      suffix: ' &7[&a0&7]'
+  Checkpoint1:
+    default: false
+    permissions:
+    - mycommand.cmd.1
+    - mycommand.cmd.2
+    - mycommand.cmd.3
+    - essentials.spawn
+    - mycommand.cmd.4
+    - mycommand.cmd.5
+    - mycommand.cmd.6
+    - mycommand.cmd.7
+    - mycommand.cmd.8
+    - mycommand.cmd.9
+    - mycommand.cmd.10
+    - mycommand.cmd.11
+    - mycommand.cmd.12
+    - mycommand.cmd.13
+    - mycommand.cmd.14
+    - mycommand.cmd.15
+    - mycommand.cmd.all
+    - Event.CheckPoint2
+    - nametag.group.checkpoint1
+    - serversigns.use.*
+    info:
+      prefix: '&7[&6&lX&7-&4&lRun&7] &7'
+      build: false
+      suffix: ' &7[&a1&7]'
+  Checkpoint2:
+    default: false
+    permissions:
+    - mycommand.cmd.1
+    - mycommand.cmd.2
+    - mycommand.cmd.3
+    - mycommand.cmd.4
+    - mycommand.cmd.5
+    - mycommand.cmd.6
+    - mycommand.cmd.7
+    - mycommand.cmd.8
+    - mycommand.cmd.9
+    - mycommand.cmd.10
+    - mycommand.cmd.11
+    - mycommand.cmd.12
+    - essentials.spawn
+    - mycommand.cmd.13
+    - mycommand.cmd.14
+    - mycommand.cmd.15
+    - mycommand.cmd.all
+    - Event.CheckPoint3
+    - nametag.group.checkpoint2
+    - serversigns.use.*
+    info:
+      prefix: '&7[&6&lX&7-&4&lRun&7] &7'
+      build: false
+      suffix: ' &7[&a2&7]'
+  Checkpoint3:
+    default: false
+    permissions:
+    - mycommand.cmd.1
+    - essentials.spawn
+    - mycommand.cmd.2
+    - mycommand.cmd.3
+    - mycommand.cmd.4
+    - mycommand.cmd.5
+    - mycommand.cmd.6
+    - mycommand.cmd.7
+    - mycommand.cmd.8
+    - mycommand.cmd.9
+    - mycommand.cmd.10
+    - mycommand.cmd.11
+    - mycommand.cmd.12
+    - mycommand.cmd.13
+    - mycommand.cmd.14
+    - mycommand.cmd.15
+    - mycommand.cmd.all
+    - Event.CheckPoint4
+    - nametag.group.checkpoint3
+    - serversigns.use.*
+    info:
+      prefix: '&7[&6&lX&7-&4&lRun&7] &7'
+      build: false
+      suffix: ' &7[&a3&7]'
+  Checkpoint4:
+    default: false
+    permissions:
+    - mycommand.cmd.1
+    - mycommand.cmd.2
+    - mycommand.cmd.3
+    - mycommand.cmd.4
+    - essentials.spawn
+    - mycommand.cmd.5
+    - mycommand.cmd.6
+    - mycommand.cmd.7
+    - mycommand.cmd.8
+    - mycommand.cmd.9
+    - mycommand.cmd.10
+    - mycommand.cmd.11
+    - mycommand.cmd.12
+    - mycommand.cmd.13
+    - mycommand.cmd.14
+    - mycommand.cmd.15
+    - mycommand.cmd.all
+    - Event.CheckPoint5
+    - nametag.group.checkpoint4
+    - serversigns.use.*
+    info:
+      prefix: '&7[&6&lX&7-&4&lRun&7] &7'
+      build: false
+      suffix: ' &7[&a4&7]'
+  Checkpoint5:
+    default: false
+    permissions:
+    - mycommand.cmd.1
+    - mycommand.cmd.2
+    - mycommand.cmd.3
+    - mycommand.cmd.4
+    - mycommand.cmd.5
+    - mycommand.cmd.6
+    - essentials.spawn
+    - mycommand.cmd.7
+    - mycommand.cmd.8
+    - mycommand.cmd.9
+    - mycommand.cmd.10
+    - mycommand.cmd.11
+    - mycommand.cmd.12
+    - mycommand.cmd.13
+    - mycommand.cmd.14
+    - mycommand.cmd.15
+    - mycommand.cmd.all
+    - Event.CheckPoint6
+    - nametag.group.checkpoint5
+    - serversigns.use.*
+    info:
+      prefix: '&7[&6&lX&7-&4&lRun&7] &7'
+      build: false
+      suffix: ' &7[&a5&7]'
+  Checkpoint6:
+    default: false
+    permissions:
+    - mycommand.cmd.1
+    - mycommand.cmd.2
+    - mycommand.cmd.3
+    - mycommand.cmd.4
+    - mycommand.cmd.5
+    - mycommand.cmd.6
+    - mycommand.cmd.7
+    - mycommand.cmd.8
+    - mycommand.cmd.9
+    - mycommand.cmd.10
+    - mycommand.cmd.11
+    - mycommand.cmd.12
+    - essentials.spawn
+    - mycommand.cmd.13
+    - mycommand.cmd.14
+    - mycommand.cmd.15
+    - mycommand.cmd.all
+    - Event.CheckPoint7
+    - nametag.group.checkpoint6
+    - serversigns.use.*
+    info:
+      prefix: '&7[&6&lX&7-&4&lRun&7] &7'
+      build: false
+      suffix: ' &7[&a6&7]'
+  Checkpoint7:
+    default: false
+    permissions:
+    - mycommand.cmd.1
+    - mycommand.cmd.2
+    - mycommand.cmd.3
+    - essentials.spawn
+    - mycommand.cmd.4
+    - mycommand.cmd.5
+    - mycommand.cmd.6
+    - mycommand.cmd.7
+    - mycommand.cmd.8
+    - mycommand.cmd.9
+    - mycommand.cmd.10
+    - mycommand.cmd.11
+    - mycommand.cmd.12
+    - mycommand.cmd.13
+    - mycommand.cmd.14
+    - mycommand.cmd.15
+    - Event.win
+    - mycommand.cmd.all
+    - Event.CheckPoint8
+    - nametag.group.checkpoint7
+    - serversigns.use.*
+    info:
+      prefix: '&7[&6&lX&7-&4&lRun&7] &7'
+      build: false
+      suffix: ' &7[&a7&7]'
+  Checkpoint8:
+    default: false
+    permissions:
+    - mycommand.cmd.1
+    - mycommand.cmd.2
+    - mycommand.cmd.3
+    - mycommand.cmd.4
+    - mycommand.cmd.5
+    - mycommand.cmd.6
+    - mycommand.cmd.7
+    - mycommand.cmd.8
+    - mycommand.cmd.9
+    - mycommand.cmd.10
+    - mycommand.cmd.11
+    - mycommand.cmd.12
+    - essentials.spawn
+    - mycommand.cmd.13
+    - mycommand.cmd.14
+    - mycommand.cmd.15
+    - mycommand.cmd.all
+    - Event.win
+    - nametag.group.checkpoint8
+    - serversigns.use.*
+    info:
+      prefix: '&7[&6&lX&7-&4&lRun&7] &7'
+      build: false
+      suffix: ' &7[&a8&7]'

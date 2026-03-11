@@ -1,0 +1,16 @@
+permission: ''
+world: world
+X: -128
+Y: 68
+Z: -286
+price: 0.0
+cooldown: 0
+globalCooldown: 0
+confirmation: false
+commands:
+- '/GetAccesstoTown1Town '
+grantPermissions: []
+lastGlobalUse: 0
+lastUse: {}
+priceItems: []
+exp: 0
