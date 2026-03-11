@@ -33,84 +33,84 @@
             <artifactId>spigot-1.8.3</artifactId>
             <version>LATEST</version>
             <scope>system</scope>
-            <systemPath>${basedir}/../../.orbitmines/spigot/spigot-1.8.3.jar</systemPath>
+            <systemPath>${basedir}/../../../../.orbitmines/spigot/spigot-1.8.3.jar</systemPath>
         </dependency>
         <dependency>
             <groupId>com.orbitmines</groupId>
             <artifactId>spigot-1.8.8</artifactId>
             <version>LATEST</version>
             <scope>system</scope>
-            <systemPath>${basedir}/../../.orbitmines/spigot/spigot-1.8.8.jar</systemPath>
+            <systemPath>${basedir}/../../../../.orbitmines/spigot/spigot-1.8.8.jar</systemPath>
         </dependency>
         <dependency>
             <groupId>com.orbitmines</groupId>
             <artifactId>spigot-1.8</artifactId>
             <version>LATEST</version>
             <scope>system</scope>
-            <systemPath>${basedir}/../../.orbitmines/spigot/spigot-1.8.jar</systemPath>
+            <systemPath>${basedir}/../../../../.orbitmines/spigot/spigot-1.8.jar</systemPath>
         </dependency>
         <dependency>
             <groupId>com.orbitmines</groupId>
             <artifactId>spigot-1.9.4</artifactId>
             <version>LATEST</version>
             <scope>system</scope>
-            <systemPath>${basedir}/../../.orbitmines/spigot/spigot-1.9.4.jar</systemPath>
+            <systemPath>${basedir}/../../../../.orbitmines/spigot/spigot-1.9.4.jar</systemPath>
         </dependency>
         <dependency>
             <groupId>com.orbitmines</groupId>
             <artifactId>spigot-1.9</artifactId>
             <version>LATEST</version>
             <scope>system</scope>
-            <systemPath>${basedir}/../../.orbitmines/spigot/spigot-1.9.jar</systemPath>
+            <systemPath>${basedir}/../../../../.orbitmines/spigot/spigot-1.9.jar</systemPath>
         </dependency>
         <dependency>
             <groupId>com.orbitmines</groupId>
             <artifactId>spigot-1.10.2</artifactId>
             <version>LATEST</version>
             <scope>system</scope>
-            <systemPath>${basedir}/../../.orbitmines/spigot/spigot-1.10.2.jar</systemPath>
+            <systemPath>${basedir}/../../../../.orbitmines/spigot/spigot-1.10.2.jar</systemPath>
         </dependency>
         <dependency>
             <groupId>com.orbitmines</groupId>
             <artifactId>spigot-1.11</artifactId>
             <version>LATEST</version>
             <scope>system</scope>
-            <systemPath>${basedir}/../../.orbitmines/spigot/spigot-1.11.jar</systemPath>
+            <systemPath>${basedir}/../../../../.orbitmines/spigot/spigot-1.11.jar</systemPath>
         </dependency>
         <dependency>
             <groupId>com.orbitmines</groupId>
             <artifactId>spigot-1.12.2</artifactId>
             <version>LATEST</version>
             <scope>system</scope>
-            <systemPath>${basedir}/../../.orbitmines/spigot/spigot-1.12.2.jar</systemPath>
+            <systemPath>${basedir}/../../../../.orbitmines/spigot/spigot-1.12.2.jar</systemPath>
         </dependency>
         <dependency>
             <groupId>com.orbitmines</groupId>
             <artifactId>spigot-1.12</artifactId>
             <version>LATEST</version>
             <scope>system</scope>
-            <systemPath>${basedir}/../../.orbitmines/spigot/spigot-1.12.jar</systemPath>
+            <systemPath>${basedir}/../../../../.orbitmines/spigot/spigot-1.12.jar</systemPath>
         </dependency>
         <dependency>
             <groupId>com.orbitmines</groupId>
             <artifactId>spigot-1.13.1</artifactId>
             <version>LATEST</version>
             <scope>system</scope>
-            <systemPath>${basedir}/../../.orbitmines/spigot/spigot-1.13.1.jar</systemPath>
+            <systemPath>${basedir}/../../../../.orbitmines/spigot/spigot-1.13.1.jar</systemPath>
         </dependency>
         <dependency>
             <groupId>com.orbitmines</groupId>
             <artifactId>spigot-1.13.2</artifactId>
             <version>LATEST</version>
             <scope>system</scope>
-            <systemPath>${basedir}/../../.orbitmines/spigot/spigot-1.13.2.jar</systemPath>
+            <systemPath>${basedir}/../../../../.orbitmines/spigot/spigot-1.13.2.jar</systemPath>
         </dependency>
         <dependency>
             <groupId>com.orbitmines</groupId>
             <artifactId>spigot-1.13</artifactId>
             <version>LATEST</version>
             <scope>system</scope>
-            <systemPath>${basedir}/../../.orbitmines/spigot/spigot-1.13.jar</systemPath>
+            <systemPath>${basedir}/../../../../.orbitmines/spigot/spigot-1.13.jar</systemPath>
         </dependency>
     </dependencies>
 

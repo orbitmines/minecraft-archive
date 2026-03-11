@@ -27,7 +27,7 @@
             <artifactId>bungeecord-LATEST</artifactId>
             <version>LATEST</version>
             <scope>system</scope>
-            <systemPath>${basedir}/../../.orbitmines/spigot/BungeeCord.jar</systemPath>
+            <systemPath>${basedir}/../../../../.orbitmines/spigot/BungeeCord.jar</systemPath>
         </dependency>
 
         <dependency>
