@@ -60,10 +60,12 @@ public class MinecraftServer {
 
             String s;
             while ((s = input.readLine()) != null) {
-                System.out.println("[\033[1;32m" + this.name + "\033[0m] " + s);
+                System.out.print("[\033[1;32m" + this.name + "\033[0m] " + s);
+                System.out.flush();
             }
             while ((s = error.readLine()) != null) {
-                System.out.println("[\033[1;31m" + this.name + "\033[0m] " + s);
+                System.out.print("[\033[1;31m" + this.name + "\033[0m] " + s);
+                System.out.flush();
             }
         } catch (IOException | ConfigurationException e) {
             e.printStackTrace();

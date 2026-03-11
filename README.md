@@ -1,49 +1,37 @@
-# OrbitMines Minecraft Remastered
+# OrbitMines Minecraft Archive
 An archive and remaster of OrbitMines' Minecraft Server (2013-2019)
 
 ---
 
 - [ ] Check for java vulnerabilities
-- [ ] Separate logs into private repo
-- [ ] remove passwords
-- [ ] remove ips, 2fa keys
+- [ ] check for staff passwords.
 
 ---
 
 ## Local Setup
 
-- Install [Git](https://git-scm.com/downloads)
-- Install Java JDK 8 [(Windows/Mac)](https://www.oracle.com/nl/java/technologies/javase/javase8-archive-downloads.html)
-```
-sudo apt install git openjdk-8-jdk
-```
-- Install [Maven](https://maven.apache.org/install.html)
+- Prerequisites
+    ```
+    sudo apt install git maven openjdk-21-jdk
+    ```
+  - Install [Git](https://git-scm.com/downloads)
+  - Install [Maven](https://maven.apache.org/install.html)
+  - Install [Java JDK 21](https://www.oracle.com/java/technologies/javase/jdk21-archive-downloads.html)
 
-- Use Git Bash on Windows/Mac (TODO: Test this)
-```
-git bash
-```
+- *Open Git Bash or a terminal*
 
-- Clone this repository
-```
-git clone --recurse-submodules git@github.com:orbitmines/minecraft-archive.git
-```
+- Clone this repository 
+    ```
+    git clone --recurse-submodules git@github.com:orbitmines/minecraft-archive.git
+    ```
 
-```
-cd minecraft-archive
-```
+    ```
+    cd minecraft-archive
+    ```
 
-- Install & compile spigot
-```
-./install-spigot.sh
-```
-
-- (Optional) Compile archive tool
-```
-./compile.sh
-```
-
-- Run
-```
-./run.sh
-```
+- Start the servers
+  
+  *On first install, this will (1) Download Spigot, (2) Compile the code in `@orbitmines/minecraft/remastered` and (3) download all worlds (40.9 GB compressed, 74.3 GB on disk) from `archive.orbitmines.com`.*
+    ```
+    ./orbitmines minecraft run
+    ```
