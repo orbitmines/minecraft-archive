@@ -1,0 +1,2 @@
+#!/bin/sh
+XMS=${OM_XMS:-1G} ; XMX=${OM_XMX:-1G} ; java -Xms${XMS} -Xmx${XMX} -XX:+AlwaysPreTouch -XX:+DisableExplicitGC -XX:+UseG1GC -XX:+UnlockExperimentalVMOptions -XX:MaxGCPauseMillis=45 -XX:TargetSurvivorRatio=90 -XX:G1NewSizePercent=50 -XX:G1MaxNewSizePercent=80 -XX:InitiatingHeapOccupancyPercent=10 -XX:G1MixedGCLiveThresholdPercent=50 -XX:+AggressiveOpts -Dfile.encoding=UTF-8 -Djline.terminal=jline.UnsupportedTerminal -jar minecraft_server.jar

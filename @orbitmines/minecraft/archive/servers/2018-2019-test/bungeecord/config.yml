@@ -1,0 +1,36 @@
+groups: {}
+online_mode: true
+player_limit: -1
+network_compression_threshold: 64
+log_commands: false
+listeners:
+- query_port: 25564
+  query_enabled: false
+  bind_local_address: true
+  tab_list: GLOBAL_PING
+  ping_passthrough: false
+  force_default_server: false
+  proxy_protocol: false
+  host: 0.0.0.0:25565
+  motd: '&7&lOrbit&8&lMines'
+  priorities:
+  - some_server
+  forced_hosts:
+    some_ip: some_server
+  max_players: 1
+  tab_size: 60
+connection_throttle: 4000
+log_pings: true
+ip_forward: true
+prevent_proxy_connections: false
+forge_support: false
+stats: 3d332267-cc22-4e1e-bab2-608173d4376c
+disabled_commands: []
+connection_throttle_limit: 3
+timeout: 30000
+permissions: {}
+servers:
+  some_server:
+    motd: ''
+    address: 127.0.0.1:25595
+    restricted: false

@@ -1,0 +1,6 @@
+#!/bin/bash
+
+cd "${0%/*}"
+cd bungeecord-jars
+curl -o LATEST.jar https://ci.md-5.net/job/BungeeCord/lastSuccessfulBuild/artifact/bootstrap/target/BungeeCord.jar
+zip -u LATEST.jar messages.properties

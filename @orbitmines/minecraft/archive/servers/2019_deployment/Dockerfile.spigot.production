@@ -1,0 +1,79 @@
+FROM openjdk:8-jdk-alpine
+
+ARG om_server_name
+ARG space_spigot_version='LATEST'
+
+RUN apk update && \
+    apk add \
+        curl \
+        bash \
+        maven \
+        git \
+        dos2unix
+
+# Copy Build Sources
+WORKDIR /build
+COPY ./global-libraries /build/global-libraries
+COPY ./space-spigot-jars/${space_spigot_version}.jar /build/space-spigot-jars/${space_spigot_version}.jar
+COPY ./spigot-libraries /build/spigot-libraries
+COPY ./servers/${om_server_name} /build/servers/${om_server_name}
+
+# Use dos2unix to convert files to Unix based system if we're on Windows
+RUN find /build/servers/${om_server_name}/.docker -type f -print0 | xargs -0 dos2unix
+RUN find /build/spigot-libraries/.docker -type f -print0 | xargs -0 dos2unix
+
+WORKDIR /app
+
+# TODO
+#FROM openjdk:8-jdk-alpine
+#
+#ARG om_server_name
+#ARG space_spigot_version='LATEST'
+#
+#RUN apk update && \
+#    apk add \
+#        curl \
+#        bash \
+#        maven \
+#        git \
+#        dos2unix
+#
+## Copy Build Sources (TODO GET THESE FROM GITLAB INSTEAD OF LOCAL)
+#WORKDIR /build
+#COPY ./global-libraries /build/global-libraries
+#COPY ./space-spigot-jars/${space_spigot_version}.jar /build/space-spigot-jars/${space_spigot_version}.jar
+#COPY ./spigot-libraries /build/spigot-libraries
+#COPY ./servers/${om_server_name} /build/servers/${om_server_name}
+#
+## Use dos2unix to convert files to Unix based system if we're on Windows
+#RUN find /build/servers/${om_server_name}/.docker -type f -print0 | xargs -0 dos2unix
+#RUN find /build/spigot-libraries/.docker -type f -print0 | xargs -0 dos2unix
+#
+## Build Global Libraries
+#WORKDIR /build/global-libraries
+#RUN mvn clean install
+#
+## Build Spigot Libraries
+#WORKDIR /build/spigot-libraries
+#RUN mvn clean install
+#
+## Build Server Plugin
+#WORKDIR /build/servers/${om_server_name}
+#RUN mvn clean install
+#
+## Build Server Folder
+#WORKDIR /app
+#
+## Setup plugin
+#RUN mkdir plugins
+#RUN cp /build/servers/${om_server_name}/target/${om_server_name}-1.0-SNAPSHOT-jar-with-dependencies.jar /app/plugins/${om_server_name}.jar
+## Copy spigot jar
+#RUN cp /build/space-spigot-jars/${space_spigot_version}.jar /app/minecraft_server.jar
+## Copy default Spigot files
+#RUN cp -a /build/spigot-libraries/.docker/server_template/. /app
+## Copy default server files
+#RUN cp -a /build/space-servers/${space_spigot_version}/.docker/server_template/. /app
+#
+#RUN chmod +x /app/start.sh
+#
+#ENTRYPOINT ["sh", "start.sh"]

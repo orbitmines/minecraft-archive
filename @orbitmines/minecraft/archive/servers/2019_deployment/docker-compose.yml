@@ -1,0 +1,421 @@
+version: '3.5'
+services:
+  # NOTE TO SELF: Ports within network do not use the external port, but their internal ones.
+  mysql:
+    image: mysql:8.0.15
+    restart: always
+    command: --default-authentication-plugin=mysql_native_password --init-file /app/fixtures_development.sql
+    environment:
+      MYSQL_ROOT_PASSWORD: password
+      MYSQL_DATABASE: orbitmines_development
+      MYSQL_ROOT_HOST: '%'
+    ports:
+      - "3308:3306"
+    volumes:
+      - ./db:/app
+      - ./.test-servers/mysql-data:/var/lib/mysql
+  redis:
+    image: redis:5.0.3-alpine
+    restart: always
+    command: ["redis-server", "--appendonly", "yes"]
+    ports:
+      - "6379:6379"
+#    volumes:
+#      - ./.test-servers/redis-data:/data
+  bungeecord:
+    build:
+      context: .
+      dockerfile: ./Dockerfile.bungeecord
+      args:
+        om_server_name: bungeecord
+        bungeecord_version: LATEST
+    depends_on:
+      - mysql
+      - redis
+      - error-tracker # For development, to make sure error tracker is always up
+    environment:
+      - OM_ENV=development
+      - OM_SERVER_NAME=bungeecord
+      - OM_IP=bungeecord
+      - OM_PORT=25565
+      - OM_XMS=1G
+      - OM_XMX=1G
+      - OM_DISCORD_SERVER_ID=473472016092233746
+      - OM_DISCORD_BOT_TOKEN=
+      - OM_DISCORD_BOT_MAIN=true
+      - OM_DB_HOST=mysql
+      - OM_DB_PORT=3306
+      - OM_DB_NAME=orbitmines_development
+      - OM_DB_USER=orbitmines
+      - OM_DB_PASSWORD=password
+      - OM_DB_OPTIONS=?useUnicode=true&amp;useJDBCCompliantTimezoneShift=true&amp;serverTimezone=UTC
+      - OM_REDIS_HOST=redis
+      - OM_REDIS_PORT=6379
+      - OM_REDIS_TIMEOUT=0
+      - OM_REDIS_MAX_POOL_SIZE=20
+      - OM_MAX_PLAYERS=300
+      - OM_SHOP_LINK=https://OrbitMines.buycraft.net
+      - OM_WEBSITE_LINK=https://www.OrbitMines.com
+    stdin_open: true
+    tty: true
+    ports:
+      - "25565:25565"
+      - "8804:8804" # Player Analytics
+    command: [sh, -c, "cd /app &&
+                             mkdir -p plugins &&
+                             cp /build/servers/bungeecord/target/bungeecord-1.0-SNAPSHOT-jar-with-dependencies.jar /app/plugins/bungeecord.jar &&
+                             cp /build/bungeecord-jars/LATEST.jar /app/minecraft_server.jar &&
+                             cp -a /build/servers/bungeecord/.docker/server_template/. /app &&
+                             chmod +x /app/start.sh &&
+                             sh start.sh"]
+    restart: always
+    volumes:
+      - .:/build
+      - ./.test-servers/bungeecord:/app
+      - ./.test-servers/skins:/app/skins # SkinLibrary
+#      -  TODO : THESE ARE FOR PRODUCTION
+#      - ./.test-servers/prison/world/playerdata:/app/world/playerdata
+#      - ./.test-servers/prison/logs:/app/logs
+  hub:
+    build:
+      context: .
+      dockerfile: ./Dockerfile.spigot
+      args:
+        om_server_name: hub
+        space_spigot_version: LATEST
+    depends_on:
+      - mysql
+      - redis
+      - error-tracker # For development, to make sure error tracker is always up
+    environment:
+      - OM_ENV=development
+      - OM_SERVER_NAME=hub
+      - OM_IP=hub
+      - OM_PORT=25565
+      - OM_XMS=1G
+      - OM_XMX=1G
+      - OM_DISCORD_SERVER_ID=473472016092233746
+      - OM_DISCORD_BOT_TOKEN=
+      - OM_DISCORD_BOT_MAIN=false
+      - OM_DB_HOST=mysql
+      - OM_DB_PORT=3306
+      - OM_DB_NAME=orbitmines_development
+      - OM_DB_USER=orbitmines
+      - OM_DB_PASSWORD=password
+      - OM_DB_OPTIONS=?useUnicode=true&amp;useJDBCCompliantTimezoneShift=true&amp;serverTimezone=UTC
+      - OM_REDIS_HOST=redis
+      - OM_REDIS_PORT=6379
+      - OM_REDIS_TIMEOUT=0
+      - OM_REDIS_MAX_POOL_SIZE=15
+      - OM_DISCORD_INVITE_LINK=https://www.OrbitMines.com/discord
+      - OM_WEBSITE_LINK=https://www.OrbitMines.com
+      - OM_SHOP_LINK=https://OrbitMines.buycraft.net
+      - PLAN_URL=http://bungeecord:8804
+      - DEV_DISCORD_USER=${DEV_DISCORD_USER}
+    stdin_open: true
+    tty: true
+    ports:
+      - "25566:25565"
+    command: [sh, -c, "cd /app &&
+                             mkdir -p plugins &&
+                             cp /build/servers/hub/target/hub-1.0-SNAPSHOT-jar-with-dependencies.jar /app/plugins/hub.jar &&
+                             cp /build/space-spigot-jars/LATEST.jar /app/minecraft_server.jar &&
+                             cp -a /build/spigot-libraries/.docker/server_template/. /app &&
+                             cp -a /build/servers/hub/.docker/server_template/. /app &&
+                             chmod +x /app/start.sh &&
+                             sh start.sh"]
+    restart: always
+    volumes:
+      - .:/build
+      - ./.test-servers/hub:/app
+      - ./.test-servers/skins:/app/skins # SkinLibrary
+      - ./worlds:/app/worlds # Lobbies & Maps
+#      -  TODO : THESE ARE FOR PRODUCTION
+#      - ./.test-servers/hub/logs:/app/logs
+  survival:
+    build:
+      context: .
+      dockerfile: ./Dockerfile.spigot
+      args:
+        om_server_name: survival
+        space_spigot_version: LATEST
+    depends_on:
+      - mysql
+      - redis
+      - error-tracker # For development, to make sure error tracker is always up
+    environment:
+      - OM_ENV=development
+      - OM_SERVER_NAME=survival
+      - OM_IP=survival
+      - OM_PORT=25565
+      - OM_XMS=4G
+      - OM_XMX=4G
+      - OM_DISCORD_SERVER_ID=473472016092233746
+      - OM_DISCORD_BOT_TOKEN=
+      - OM_DISCORD_BOT_MAIN=false
+      - OM_DB_HOST=mysql
+      - OM_DB_PORT=3306
+      - OM_DB_NAME=orbitmines_development
+      - OM_DB_USER=orbitmines
+      - OM_DB_PASSWORD=password
+      - OM_DB_OPTIONS=?useUnicode=true&amp;useJDBCCompliantTimezoneShift=true&amp;serverTimezone=UTC
+      - OM_REDIS_HOST=redis
+      - OM_REDIS_PORT=6379
+      - OM_REDIS_TIMEOUT=0
+      - OM_REDIS_MAX_POOL_SIZE=15
+      - OM_DISCORD_INVITE_LINK=https://www.OrbitMines.com/discord
+      - OM_WEBSITE_LINK=https://www.OrbitMines.com
+      - OM_SHOP_LINK=https://OrbitMines.buycraft.net
+      - PLAN_URL=http://bungeecord:8804
+      - DEV_DISCORD_USER=${DEV_DISCORD_USER}
+    stdin_open: true
+    tty: true
+    ports:
+      - "25567:25565"
+    command: [sh, -c, "cd /app &&
+                             mkdir -p plugins &&
+                             cp /build/servers/survival/target/survival-1.0-SNAPSHOT-jar-with-dependencies.jar /app/plugins/survival.jar &&
+                             cp /build/space-spigot-jars/LATEST.jar /app/minecraft_server.jar &&
+                             cp -a /build/spigot-libraries/.docker/server_template/. /app &&
+                             cp -a /build/servers/survival/.docker/server_template/. /app &&
+                             chmod +x /app/start.sh &&
+                             sh start.sh"]
+    restart: always
+    volumes:
+      - .:/build
+      - ./.test-servers/survival:/app
+      - ./.test-servers/skins:/app/skins # SkinLibrary
+      - ./worlds:/app/worlds
+#      -  TODO : THESE ARE FOR PRODUCTION
+#      - ./.test-servers/hub/logs:/app/logs
+  kitpvp:
+    build:
+      context: .
+      dockerfile: ./Dockerfile.spigot
+      args:
+        om_server_name: kitpvp
+        space_spigot_version: LATEST
+    depends_on:
+      - mysql
+      - redis
+      - error-tracker # For development, to make sure error tracker is always up
+    environment:
+      - OM_ENV=development
+      - OM_SERVER_NAME=kitpvp
+      - OM_IP=kitpvp
+      - OM_PORT=25565
+      - OM_XMS=1G
+      - OM_XMX=1G
+      - OM_DISCORD_SERVER_ID=473472016092233746
+      - OM_DISCORD_BOT_TOKEN=
+      - OM_DISCORD_BOT_MAIN=false
+      - OM_DB_HOST=mysql
+      - OM_DB_PORT=3306
+      - OM_DB_NAME=orbitmines_development
+      - OM_DB_USER=orbitmines
+      - OM_DB_PASSWORD=password
+      - OM_DB_OPTIONS=?useUnicode=true&amp;useJDBCCompliantTimezoneShift=true&amp;serverTimezone=UTC
+      - OM_REDIS_HOST=redis
+      - OM_REDIS_PORT=6379
+      - OM_REDIS_TIMEOUT=0
+      - OM_REDIS_MAX_POOL_SIZE=15
+      - OM_DISCORD_INVITE_LINK=https://www.OrbitMines.com/discord
+      - OM_WEBSITE_LINK=https://www.OrbitMines.com
+      - OM_SHOP_LINK=https://OrbitMines.buycraft.net
+      - PLAN_URL=http://bungeecord:8804
+      - DEV_DISCORD_USER=${DEV_DISCORD_USER}
+    stdin_open: true
+    tty: true
+    ports:
+      - "25568:25565"
+    command: [sh, -c, "cd /app &&
+                             mkdir -p plugins &&
+                             cp /build/servers/kitpvp/target/kitpvp-1.0-SNAPSHOT-jar-with-dependencies.jar /app/plugins/kitpvp.jar &&
+                             cp /build/space-spigot-jars/LATEST.jar /app/minecraft_server.jar &&
+                             cp -a /build/spigot-libraries/.docker/server_template/. /app &&
+                             cp -a /build/servers/kitpvp/.docker/server_template/. /app &&
+                             chmod +x /app/start.sh &&
+                             sh start.sh"]
+    restart: always
+    volumes:
+      - .:/build
+      - ./.test-servers/kitpvp:/app
+      - ./.test-servers/skins:/app/skins # SkinLibrary
+      - ./worlds:/app/worlds # Lobbies & Maps
+#      -  TODO : THESE ARE FOR PRODUCTION
+#      - ./.test-servers/hub/logs:/app/logs
+  prison:
+    build:
+      context: .
+      dockerfile: ./Dockerfile.spigot
+      args:
+        om_server_name: prison
+        space_spigot_version: LATEST
+    depends_on:
+      - mysql
+      - redis
+      - error-tracker # For development, to make sure error tracker is always up
+    environment:
+      - OM_ENV=development
+      - OM_SERVER_NAME=prison
+      - OM_IP=prison
+      - OM_PORT=25565
+      - OM_XMS=1G
+      - OM_XMX=1G
+      - OM_DISCORD_SERVER_ID=473472016092233746
+      - OM_DISCORD_BOT_TOKEN=
+      - OM_DISCORD_BOT_MAIN=false
+      - OM_DB_HOST=mysql
+      - OM_DB_PORT=3306
+      - OM_DB_NAME=orbitmines_development
+      - OM_DB_USER=orbitmines
+      - OM_DB_PASSWORD=password
+      - OM_DB_OPTIONS=?useUnicode=true&amp;useJDBCCompliantTimezoneShift=true&amp;serverTimezone=UTC
+      - OM_REDIS_HOST=redis
+      - OM_REDIS_PORT=6379
+      - OM_REDIS_TIMEOUT=0
+      - OM_REDIS_MAX_POOL_SIZE=15
+      - OM_DISCORD_INVITE_LINK=https://www.OrbitMines.com/discord
+      - OM_WEBSITE_LINK=https://www.OrbitMines.com
+      - OM_SHOP_LINK=https://OrbitMines.buycraft.net
+      - PLAN_URL=http://bungeecord:8804
+      - DEV_DISCORD_USER=${DEV_DISCORD_USER}
+    stdin_open: true
+    tty: true
+    ports:
+      - "25569:25565"
+    command: [sh, -c, "cd /app &&
+                             mkdir -p plugins &&
+                             cp /build/servers/prison/target/prison-1.0-SNAPSHOT-jar-with-dependencies.jar /app/plugins/prison.jar &&
+                             cp /build/space-spigot-jars/LATEST.jar /app/minecraft_server.jar &&
+                             cp -a /build/spigot-libraries/.docker/server_template/. /app &&
+                             cp -a /build/servers/prison/.docker/server_template/. /app &&
+                             chmod +x /app/start.sh &&
+                             sh start.sh"]
+    restart: always
+    volumes:
+      - .:/build
+      - ./.test-servers/prison:/app
+      - ./.test-servers/skins:/app/skins # SkinLibrary
+      - ./worlds:/app/worlds # Lobbies & Maps
+#      -  TODO : THESE ARE FOR PRODUCTION
+#      - ./.test-servers/prison/world/playerdata:/app/world/playerdata
+#      - ./.test-servers/prison/logs:/app/logs
+  build:
+    build:
+      context: .
+      dockerfile: ./Dockerfile.spigot
+      args:
+        om_server_name: build
+        space_spigot_version: LATEST
+    depends_on:
+      - mysql
+      - redis
+      - error-tracker # For development, to make sure error tracker is always up
+    environment:
+      - OM_ENV=development
+      - OM_SERVER_NAME=build
+      - OM_IP=build
+      - OM_PORT=25565
+      - OM_XMS=1G
+      - OM_XMX=1G
+      - OM_DISCORD_SERVER_ID=473472016092233746
+      - OM_DISCORD_BOT_TOKEN=
+      - OM_DISCORD_BOT_MAIN=false
+      - OM_DB_HOST=mysql
+      - OM_DB_PORT=3306
+      - OM_DB_NAME=orbitmines_development
+      - OM_DB_USER=orbitmines
+      - OM_DB_PASSWORD=password
+      - OM_DB_OPTIONS=?useUnicode=true&amp;useJDBCCompliantTimezoneShift=true&amp;serverTimezone=UTC
+      - OM_REDIS_HOST=redis
+      - OM_REDIS_PORT=6379
+      - OM_REDIS_TIMEOUT=0
+      - OM_REDIS_MAX_POOL_SIZE=15
+      - OM_DISCORD_INVITE_LINK=https://www.OrbitMines.com/discord
+      - OM_WEBSITE_LINK=https://www.OrbitMines.com
+      - OM_SHOP_LINK=https://OrbitMines.buycraft.net
+      - PLAN_URL=http://bungeecord:8804
+      - DEV_DISCORD_USER=${DEV_DISCORD_USER}
+    stdin_open: true
+    tty: true
+    ports:
+      - "25570:25565"
+    command: [sh, -c, "cd /app &&
+                             mkdir -p plugins &&
+                             cp /build/servers/build/target/build-1.0-SNAPSHOT-jar-with-dependencies.jar /app/plugins/build.jar &&
+                             cp /build/space-spigot-jars/LATEST.jar /app/minecraft_server.jar &&
+                             cp -a /build/spigot-libraries/.docker/server_template/. /app &&
+                             cp -a /build/servers/build/.docker/server_template/. /app &&
+                             chmod +x /app/start.sh &&
+                             sh start.sh"]
+    restart: always
+    volumes:
+      - .:/build
+      - ./.test-servers/build:/app
+      - ./.test-servers/skins:/app/skins # SkinLibrary
+      - ./worlds:/app/worlds # Lobbies & Maps
+  #      -  TODO : THESE ARE FOR PRODUCTION
+  #      - ./.test-servers/hub/logs:/app/logs
+  error-tracker:
+    build:
+      context: .
+      dockerfile: ./Dockerfile.error_tracker
+    depends_on:
+#      - mysql
+      - redis
+    environment:
+      - OM_ENV=development
+      - OM_DISCORD_SERVER_ID=473472016092233746
+      - OM_DISCORD_BOT_TOKEN=
+      - OM_DISCORD_BOT_MAIN=false
+#      - OM_DB_HOST=mysql
+#      - OM_DB_PORT=3306
+#      - OM_DB_NAME=orbitmines_development
+#      - OM_DB_USER=orbitmines
+#      - OM_DB_PASSWORD=password
+#      - OM_DB_OPTIONS=?useUnicode=true&amp;useJDBCCompliantTimezoneShift=true&amp;serverTimezone=UTC
+      - OM_REDIS_HOST=redis
+      - OM_REDIS_PORT=6379
+      - OM_REDIS_TIMEOUT=0
+      - OM_REDIS_MAX_POOL_SIZE=5
+      - DEV_DISCORD_USER=${DEV_DISCORD_USER}
+    stdin_open: true
+    tty: true
+    command: [sh, -c, "cd /app &&
+                             cp /build/error-tracker/target/ErrorTracker-1.0-SNAPSHOT-jar-with-dependencies.jar /app/error-tracker.jar &&
+                             java -jar error-tracker.jar"]
+    restart: always
+    volumes:
+      - .:/build
+      - ./.test-servers/hub/logs:/app/servers/hub
+      - ./.test-servers/survival/logs:/app/servers/survival
+      - ./.test-servers/kitpvp/logs:/app/servers/kitpvp
+      - ./.test-servers/prison/logs:/app/servers/prison
+      - ./.test-servers/build/logs:/app/servers/build
+      - ./.test-servers/bungeecord:/app/servers/bungeecord
+      - ./.test-servers/error_logs:/app/error_logs
+  website:
+    build:
+      context: .
+      dockerfile: ./Dockerfile.website
+    depends_on:
+      - mysql
+#      - redis
+    environment:
+      - RAILS_ENV=development
+      - OM_ENV=development
+      - OM_DB_HOST=mysql
+      - OM_DB_PORT=3306
+      - OM_DB_NAME=orbitmines_development
+      - OM_DB_USER=orbitmines
+      - OM_DB_PASSWORD=password
+#      - OM_DB_OPTIONS=?useUnicode=true&amp;useJDBCCompliantTimezoneShift=true&amp;serverTimezone=UTC
+      - OM_REDIS_HOST=redis
+      - OM_REDIS_PORT=6379
+    command: [sh, -c, "cd /app && rm -rf tmp/pids/server.pid && rails server -b 0.0.0.0"]
+    restart: always
+    ports:
+      - "80:3000"
+    volumes:
+      - ./website:/app

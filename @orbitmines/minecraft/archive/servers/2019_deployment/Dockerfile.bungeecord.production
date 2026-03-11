@@ -1,0 +1,23 @@
+FROM openjdk:8-jdk-alpine
+
+ARG om_server_name
+ARG bungeecord_version='LATEST'
+
+RUN apk update && \
+    apk add \
+        curl \
+        bash \
+        maven \
+        git \
+        dos2unix
+
+# Copy Build Sources
+WORKDIR /build
+COPY ./global-libraries /build/global-libraries
+COPY ./bungeecord-jars/${bungeecord_version}.jar /build/bungeecord-jars/${bungeecord_version}.jar
+COPY ./servers/${om_server_name} /build/servers/${om_server_name}
+
+# Use dos2unix to convert files to Unix based system if we're on Windows
+RUN find /build/servers/${om_server_name}/.docker -type f -print0 | xargs -0 dos2unix
+
+WORKDIR /app

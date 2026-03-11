@@ -1,0 +1,70 @@
+# Build server database
+# DON'T TOUCH ANYTHING UNLESS YOU KNOW WHAT YOU'RE DOING!
+
+maps:
+  Hub:
+    private: false
+    members: []
+    type: 1
+    author: 33ee168b-5c2c-42c5-b3b2-d841ceb76b70
+    world: 952eb3ea-e92d-4548-bb3d-bfec341cd8bf
+  Joep:
+    private: false
+    members: []
+    type: 1
+    author: 33ee168b-5c2c-42c5-b3b2-d841ceb76b70
+    world: a6c71f9a-3fe4-46d6-bb8e-564b796b3edb
+  Lobby_HUB:
+    private: false
+    members: []
+    type: 1
+    author: 33ee168b-5c2c-42c5-b3b2-d841ceb76b70
+    world: a355d732-0b0b-43e7-aa60-2fa2558efec7
+  Lobby_SURVIVAL:
+    private: false
+    members: []
+    type: 1
+    author: 33ee168b-5c2c-42c5-b3b2-d841ceb76b70
+    world: 6fb02028-ab1c-4849-bf82-6f149fabddbc
+  Goldenrod_City:
+    private: false
+    members: []
+    type: 1
+    author: 33ee168b-5c2c-42c5-b3b2-d841ceb76b70
+    world: e252ec7a-d481-453f-9b68-8d1430d43d4c
+  Desert:
+    private: false
+    members: []
+    type: 1
+    author: 33ee168b-5c2c-42c5-b3b2-d841ceb76b70
+    world: 7f4bd1b5-db0b-43c9-8533-9abd271a8d53
+  Lobby_KITPVP:
+    private: false
+    members: []
+    type: 1
+    author: 33ee168b-5c2c-42c5-b3b2-d841ceb76b70
+    world: 00c8b208-5f33-4d6d-a875-aa5549f9508b
+  Halloween_Desert:
+    private: false
+    members: []
+    type: 1
+    author: 33ee168b-5c2c-42c5-b3b2-d841ceb76b70
+    world: c916b2d9-e11b-4df0-9b03-041031bfc4de
+  Halloween_HUB:
+    private: false
+    members: []
+    type: 1
+    author: 33ee168b-5c2c-42c5-b3b2-d841ceb76b70
+    world: 4fe7be3e-1b13-4107-b2c7-2af6b1c7a033
+  Halloween_KITPVP:
+    private: false
+    members: []
+    type: 1
+    author: 33ee168b-5c2c-42c5-b3b2-d841ceb76b70
+    world: 8db448e1-94b1-47c4-bf4e-cd7b27084eec
+  Halloween_SURVIVAL:
+    private: false
+    members: []
+    type: 1
+    author: 33ee168b-5c2c-42c5-b3b2-d841ceb76b70
+    world: 68d3d999-484d-42c2-9c4c-0b01722fc876

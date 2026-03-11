@@ -1,0 +1,17 @@
+FROM openjdk:8-jdk-alpine
+
+RUN apk update && \
+    apk add \
+        curl \
+        bash \
+        maven \
+        git \
+        dos2unix \
+        openssh
+
+# Copy Build Sources
+WORKDIR /build
+COPY ./global-libraries /build/global-libraries
+COPY ./server-restarter /build/server-restarter
+
+WORKDIR /app
