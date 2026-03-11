@@ -30,3 +30,10 @@ An archive and remaster of OrbitMines' Minecraft Server (2013-2019)
     ```
     ./orbitmines minecraft run
     ```
+  
+---
+
+### What has been excluded from the public archive?
+- *Servers*: logs (containing public & private chat messages), crash reports, old minecraft/spigot/craftbukkit server jars
+- *Players*: IPs, Bans, Reports, Dates when online (Though you can infer whether a player has been online before certain backup dates)
+- *Documents*: Invoices and other financial documents

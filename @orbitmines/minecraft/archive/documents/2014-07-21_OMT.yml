@@ -1,0 +1,82 @@
+ShopName: AdminChecklist
+signs:
+  text: '[AdminChecklist]'
+  NeedPermissionToCreateSign: true
+shop:
+  Info:
+    RewardType: money
+    PriceType: free
+    Reward: 0
+    MenuItem:
+    - type:PAPER
+    - amount:1
+    - name:&bInformation
+    - 'lore: #&a- High #&b- Normal #&c- Low'
+    InventoryLocation: 1
+    ExtraPermission: ''
+  KitPvP:
+    RewardType: money
+    PriceType: free
+    Reward: 0
+    MenuItem:
+    - type:IRON_SWORD
+    - amount:1
+    - name:&c&lKitPvP
+    - 'lore: #&a- Anti Hack #&b- LvL 3 Wizard #&b- LvL 3 Necromancer #&b- LvL 2 VIP Kits #&b- Add more VIP Ranks #&b- Update to Minecraft 1.7.9/10 #&c- Death Skills #&c- LvL 2 Levels kits # #&6Don''t ask any Staff questions about this.'
+    InventoryLocation: 2
+    ExtraPermission: ''
+  Prison:
+    RewardType: money
+    PriceType: free
+    Reward: 0
+    MenuItem:
+    - type:DIAMOND_PICKAXE
+    - amount:1
+    - name:&4&lPrison
+    - 'lore: #&a- Anti Hack #&a- Mine Rework #&a- Add 20 Ranks #&b- Add VIP Perks #&b- Add Animal Farm #&b- Add Villagers #&b- Add Mob Grinder #&b- Update to Minecraft 1.7.9/10 #&c- Quests #&c- Add Donate Shop Stuff # #&6Don''t ask any Staff questions about this.'
+    InventoryLocation: 3
+    ExtraPermission: ''
+  Creative:
+    RewardType: money
+    PriceType: free
+    Reward: 0
+    MenuItem:
+    - type:WOOD_AXE
+    - amount:1
+    - name:&d&lCreative
+    - 'lore: #&a- Anti Hack #&b- Add more VIP perks #&b- Update to Minecraft 1.7.9/10 #&c- PvP Area #&c- Add Donate Shop Stuff # #&6Don''t ask any Staff questions about this.'
+    InventoryLocation: 4
+    ExtraPermission: ''
+  Survival:
+    RewardType: money
+    PriceType: free
+    Reward: 0
+    MenuItem:
+    - type:STONE_HOE
+    - amount:1
+    - name:&a&lSurvival
+    - 'lore: #&a- Anti Hack #&b- More VIP perks #&b- Economy rework #&b- Update to Minecraft 1.7.9/10 # #&6Don''t ask any Staff questions about this.'
+    InventoryLocation: 5
+    ExtraPermission: ''
+  Pixelmon:
+    RewardType: money
+    PriceType: free
+    Reward: 0
+    MenuItem:
+    - id:420
+    - amount:1
+    - name:&4&lPixel&f&lmon
+    - 'lore: #&a- Anti Hack #&7&m- Adventure/&a&lSurvival Pixelmon  [v] #&a- Build Map #&a- Restore Old Pixelmons #&a- Code Plugins #&a- Pre-Order VIP Ranks #&b- Add VIP Ranks # #&6Don''t ask any Staff questions about this.'
+    InventoryLocation: 7
+    ExtraPermission: ''
+  SkyBlock:
+    RewardType: money
+    PriceType: free
+    Reward: 0
+    MenuItem:
+    - id:2
+    - amount:1
+    - name:&5&lSkyBlock
+    - 'lore: #&a- Anti Hack #&a- Add Shop #&7&m- Host Server&a&l [v] #&7&m- Update to Minecraft 1.7.9/10&a&l [v] #&7&m- Add OMT Shop&a&l [v] #&7&m- Install Plugins&a&l [v] #&7&m- Setup All Plugins&a&l [v] #&7&m- Add Pre-Order VIP Ranks&a&l [v] #&7&m- Code Plugins&a&l [v] #&7&m- Add Votes&a&l [v] #&b- Add VIP Ranks # #&6Don''t ask any Staff questions about this.'
+    InventoryLocation: 8
+    ExtraPermission: ''

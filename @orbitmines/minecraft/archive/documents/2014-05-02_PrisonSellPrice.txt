@@ -1,0 +1,110 @@
+Emerald
+468 - 1 Emerald
+7500 - 16 Emerald
+15000 - 32 Emerald
+30000 - 64 Emerald
+
+Emerald Block
+4680 - 1 Emerald Block
+75000 - 16 Emerald Block
+150000 - 32 Emerald Block
+300000 - 64 Emerald Block
+
+Diamond
+234 - 1 Diamond
+3750 - 16 Diamond
+7500 - 32 Diamond
+15000 - 64 Diamond
+
+Diamond Block
+2340 - 1 Diamond Block
+37500 - 16 Diamond Block
+75000 - 32 Diamond Block
+150000 - 64 Diamond Block
+
+Gold
+117 - 1 Gold
+1875 - 16 Gold
+3750 - 32 Gold
+7500 - 64 Gold
+
+Gold Block
+1170 - 1 Gold Block
+18750 - 16 Gold Block
+37500 - 32 Gold Block
+75000 - 64 Gold Block
+
+Iron
+46 - 1 Iron
+750 - 16 Iron
+1500 - 32 Iron
+3000 - 64 Iron
+
+Iron Block
+468 - 1 Iron Block
+7500 - 16 Iron Block
+15000 - 32 Iron Block
+30000 - 64 Iron Block
+
+Coal
+15 - 1 Coal
+250 - 16 Coal
+500 - 32 Coal
+1000 - 64 Coal
+
+Coal Block
+150 - 1 Coal Block
+2500 - 16 Coal Block
+5000 - 32 Coal Block
+10000 - 64 Coal Block
+
+Gold Ore
+375 - 1 Gold Ore
+750 - 16 Gold Ore
+1500 - 32 Gold Ore
+3000 - 64 Gold Ore
+
+Lapis Ore
+117 - 1 Lapis Ore
+750 - 16 Lapis Ore
+1500 - 32 Lapis Ore
+3000 - 64 Lapis Ore
+
+Iron Ore
+15 - 1 Iron Ore
+250 - 16 Iron Ore
+500 - 32 Iron Ore
+1000 - 64 Iron Ore
+
+Wood
+39 - 1 Wood Log
+625 - 16 Wood Log
+1250 - 32 Wood Log
+2500 - 64 Wood Log
+
+Sandstone / etc.
+5 - 1 Wood Log
+87 - 16 Wood Log
+175 - 32 Wood Log
+350 - 64 Wood Log
+
+Redstone
+125 - 1 Redstone
+2000 - 16 Redstone
+4000 - 32 Redstone
+8000 - 64 Redstone
+
+Quartz
+150 - 1 Quartz
+2500 - 16 Quartz
+5000 - 32 Quartz
+10000 - 64 Quartz
+
+Glowstone
+7031 - 1 Glowstone
+112500 - 16 Glowstone
+225000 - 32 Glowstone
+450000 - 64 Glowstone
+
+
+

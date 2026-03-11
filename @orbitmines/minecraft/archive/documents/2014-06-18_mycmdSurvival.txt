@@ -1,0 +1,91 @@
+# MyCommand  Commands Config File
+# commandsnumber (default 20) it's number of command you want make
+# Don't forget the '/' on runcmd line , example command: /myhelp
+# type accept = text , runcommand , broadcast-text , runcommand-text , runcommand-broadcast-text , perm-broadcast-text , addpermission , addtimer , runconsole , runcommand-perm-broadcast-text , runcommand-random , runasoperator , iconmenu , scoreboard
+# Additional type accept if you use Spoutplugin = spout-text , spout-notification.\n" +
+# runcommand type example -> If command: /l and runcmd: /list,when you type /l mycommand execute /list
+# runcmd support custom argument in game.($arg1,$arg2,$arg3,$arg4,$arg5,$multiargs) Example - runcmd : /time $arg1
+# For Delayed command add $delay$ before the command in runcmd Example : - $delay$/list
+# Set delay time with delaytimer: 5 (5 = seconds)
+# Use the dot . for decimal cost Example = cost : 5.5
+# You can use a custom permission node by placing "permission-node:" field in a command,you also can change the permission error message with "permission-error:"
+# Custom error-message for invalid args ,put "error-message:" line in a command.
+# You can use itemcost : 'ID:AMOUNT' for set a cost with items.
+# http://dev.bukkit.org/server-mods/mycommand/pages/configuration-and-example
+options:
+  commandsnumber: 10
+'1':
+  command: /help
+  type: text
+  text:
+  - '&9&m====================================================='
+  - '&6&LOrbitMines &a&lSurvival &6&lHelp Index'
+  - '&7/vote &6- Shows Vote Help'
+  - '&7/donate &6- Shows Donate Help'
+  - '&7/shop &6- Open the Shop'
+  - '&7/hub &6- Return to the Hub Server'
+  - '&9&m====================================================='
+'2':
+  command: /vote
+  type: text
+  text:
+  - '&7&m====================================================='
+  - ''
+  - '                          &6&lOrbitMines &4&lNetwork'
+  - ''
+  - '                           &7&lServer: &a&lSurvival'
+  - ''
+  - '   &7&lVote Reward: &b&l2 Diamonds&7, &8&l75 Claimblocks&7, &2&l5 Credits'
+  - ''
+  - '                   &7&lVote at: &c&lwww.OrbitMines.com'
+  - ''
+  - '&7&m====================================================='
+'3':
+  command: /donate
+  type: text
+  text:
+  - '&8[&6&lOrbitMines&8] &7Donate at: &6http://shop.orbitmines.com'
+'4':
+  command: /warplist
+  type: text
+  text:
+  - '&9&m====================================================='
+  - '&6&LOrbitMines &a&lSurvival &6&lWarp List'
+  - '&7&0&l[&f&lSkyCity&0&l] &6- &7/warp SkyCity'
+  - '&9&m====================================================='
+'5':
+  command: /job
+  type: runcommand
+  runcmd:
+  - '/shop Jobs'
+'6':
+  command: /claimtutorial
+  type: runconsole
+  runcmd:
+  - '/mvtp $player ClaimTutorial'
+'7':
+  command: /omt
+  type: runcommand-text
+  runcmd:
+  - '/points me'
+  text:
+  - '&8[&6&lOMT&8] &6Loading Tokens...'
+'8':
+  command: /test
+  type: text
+  text:
+  - '&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-'
+  - '        &6Don''t forget to vote with &6&l/vote&6 for Daily Rewards!'
+  - '            &6Vote Reward: 2 Diamonds, 75 Claimblocks, 50$'
+  - '&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-'
+'9':
+  command: /test2
+  type: text
+  text:
+  - '&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-        &6Don''t forget to vote with &6&l/vote&6 for Daily Rewards!               &6Vote Reward: 2 Diamonds, 75 Claimblocks, 5 Credits        &7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-'
+  - '&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-        &6Don''t forget to vote with &6&l/vote&6 for Daily Rewards!                      &6Vote Reward: 100.000$, 10 EXP Levels                &7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-'
+  - '&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-        &6Don''t forget to vote with &6&l/vote&6 for Daily Rewards!                               &6Vote Reward: 500 Coins                         &7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-'
+  - '&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-        &6Don''t forget to vote with &6&l/vote&6 for Daily Rewards!                          &6Vote Reward: 1 OrbitMines Token                   &7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-'
+  - '&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-    &6Do you want to have access to some awesome features?                        &6Support our Server! &6&l/donate                &7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-'
+  - '&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-     &6Did you know that you get 1 OrbitMines Token per vote?     &7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-'
+  - '&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-           &6Do you have any suggestions for a Server?                        &6Send them to &6&lSuggest@OrbitMines.com            &7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-&6-&7-'
