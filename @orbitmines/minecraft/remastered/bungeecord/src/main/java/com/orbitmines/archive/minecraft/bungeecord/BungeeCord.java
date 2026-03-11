@@ -20,7 +20,7 @@ public class BungeeCord extends Plugin implements Listener {
     @Override
     public void onEnable() {
 
-        MinecraftServer server = new MinecraftServer("archive", "1.21.5", "1G", 25566);
+        MinecraftServer server = new MinecraftServer("archive", "1.21.11", "1G", 25566);
 //        server.delete();
         server.run();
         this.registerServer(server);
