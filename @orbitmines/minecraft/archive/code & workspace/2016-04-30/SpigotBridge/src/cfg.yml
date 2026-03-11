@@ -1,0 +1,40 @@
+# This has to be the server name that you gave this server in your BungeeCord config.yml
+server: hub
+
+Spigot:
+  World:
+    Use: true
+    Interval: 100
+    Variables:
+      Location: false
+      WorldName: true
+
+Plugins:
+  # http://dev.bukkit.org/bukkit-plugins/vault/
+  Vault:
+    Use: true
+    Interval: 100
+    Variables:
+      Prefix: true
+      Suffix: true
+      Balance: false
+  # https://www.spigotmc.org/resources/essentialsx.9089/
+  Essentials:
+    Use: false
+    Interval: 100
+    Variables:
+      Nickname: false
+      # Will also vanish players from Command + TAB.
+      Vanish: true
+  # https://www.spigotmc.org/resources/factions.1900/
+  Factions:
+    Use: false
+    Interval: 100
+    Variables:
+      FactionName: true
+  # https://www.spigotmc.org/resources/cardinalpgm.5191/
+  Cardinal:
+    Use: false
+    Interval: 100
+    Variables:
+      Prefix: true

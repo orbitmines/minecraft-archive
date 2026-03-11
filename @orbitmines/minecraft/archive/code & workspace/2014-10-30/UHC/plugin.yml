@@ -1,0 +1,8 @@
+name: UHC
+author: O_o_Fadi_o_O
+version: 1.0
+description: UHC by O_o_Fadi_o_O
+main: me.O_o_Fadi_o_O.UHC.Start
+commands:
+  startgame:
+    description: Start the Game!

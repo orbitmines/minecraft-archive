@@ -1,0 +1,9 @@
+name: OrbitMinesPoll
+author: O_o_Fadi_o_O
+version: 1
+description: OrbitMinesPoll by O_o_Fadi_o_O
+main: me.O_o_Fadi_o_O.OrbitMinesPoll.Start
+commands:
+  pollvote:
+    description: Poll Vote!
+depend: [OrbitMines]

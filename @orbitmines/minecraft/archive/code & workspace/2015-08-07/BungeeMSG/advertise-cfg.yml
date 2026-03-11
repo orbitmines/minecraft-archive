@@ -1,0 +1,6 @@
+Use: true
+Kick: true
+
+Cancel:
+  IPs: true
+  Domains: true

@@ -1,0 +1,29 @@
+Use: true
+
+Announcers:
+  'NewFeatures':
+    Servers: '[ALL]'
+    Delay: 60
+    
+    Messages:
+      '1':
+        - '&f'
+        - ' &6&lBungee&7&lMSG &7- &dAutoAnnouncer'
+        - '&f'
+      '2':
+        - '&f'
+        - ' &6&lBungee&7&lMSG &7- &dNew v1.7.1 feature.'
+        - '&f'
+  'Hub&SG':
+    Servers: 'hub|sg-1'
+    Delay: 120
+    
+    Messages:
+      '1':
+        - '&f'
+        - ' &6&lBungee&7&lMSG &7- &bWill only be shown in the Hub and SG-1 Server!'
+        - '&f'
+      '2':
+        - '&f'
+        - ' &6&lBungee&7&lMSG &7- &bHello %receiver%!'
+        - '&f'

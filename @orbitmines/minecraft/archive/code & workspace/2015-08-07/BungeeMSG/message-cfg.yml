@@ -1,0 +1,4 @@
+Broadcast:
+- '&f'
+- ' &c&lBroadcast &7(&c%sender%&7)'
+- '  &6%msg%'

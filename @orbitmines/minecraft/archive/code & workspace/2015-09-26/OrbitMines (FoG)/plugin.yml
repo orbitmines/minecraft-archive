@@ -1,0 +1,7 @@
+name: OrbitMinesFoG
+author: O_o_Fadi_o_O
+version: 1
+description: OrbitMinesFoG by O_o_Fadi_o_O
+main: om.fog.FoG
+commands:
+depend: [OrbitMinesAPI]

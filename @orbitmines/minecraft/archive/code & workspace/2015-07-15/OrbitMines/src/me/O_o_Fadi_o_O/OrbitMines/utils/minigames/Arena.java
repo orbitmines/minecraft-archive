@@ -1,0 +1,480 @@
+package me.O_o_Fadi_o_O.OrbitMines.utils.minigames;
+
+import java.io.ByteArrayOutputStream;
+import java.io.DataOutputStream;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Random;
+
+import me.O_o_Fadi_o_O.OrbitMines.Start;
+import me.O_o_Fadi_o_O.OrbitMines.utils.Kit;
+import me.O_o_Fadi_o_O.OrbitMines.utils.Letters;
+import me.O_o_Fadi_o_O.OrbitMines.utils.OMPlayer;
+import me.O_o_Fadi_o_O.OrbitMines.utils.ServerData;
+import me.O_o_Fadi_o_O.OrbitMines.utils.Utils;
+import me.O_o_Fadi_o_O.OrbitMines.utils.Utils.Direction;
+import me.O_o_Fadi_o_O.OrbitMines.utils.Utils.GameState;
+import me.O_o_Fadi_o_O.OrbitMines.utils.Utils.MiniGameType;
+import me.O_o_Fadi_o_O.OrbitMines.utils.Utils.Server;
+
+import org.bukkit.Bukkit;
+import org.bukkit.Color;
+import org.bukkit.Location;
+import org.bukkit.Material;
+import org.bukkit.Sound;
+import org.bukkit.block.Block;
+import org.bukkit.craftbukkit.v1_8_R3.entity.CraftPlayer;
+import org.bukkit.entity.Player;
+import org.bukkit.inventory.ItemStack;
+import org.bukkit.inventory.meta.ItemMeta;
+import org.bukkit.scheduler.BukkitRunnable;
+import org.bukkit.scoreboard.DisplaySlot;
+
+public class Arena {
+
+	private MiniGameType type;
+	private int arenaid;
+	private GameState state;
+	private Location lobby;
+	private Map map;
+	private List<OMPlayer> players;
+	private List<OMPlayer> deadplayers;
+	private List<OMPlayer> spectators;
+	private int minutes;
+	private int seconds;
+	private SurvivalGamesData sgdata;
+	
+	public Arena(MiniGameType type, int arenaid, Location lobby){
+		this.type = type;
+		this.arenaid = arenaid;
+		this.state = GameState.WAITING;
+		this.lobby = lobby;
+		this.players = new ArrayList<OMPlayer>();
+		this.deadplayers = new ArrayList<OMPlayer>();
+		this.spectators = new ArrayList<OMPlayer>();
+		this.minutes = 1;
+		this.seconds = 0;
+	
+		switch(type){
+			case CHICKEN_FIGHT:
+				break;
+			case GHOST_ATTACK:
+				break;
+			case SKYWARS:
+				break;
+			case SPLATCRAFT:
+				break;
+			case SPLEEF:
+				break;
+			case SURVIVAL_GAMES:
+				this.sgdata = new SurvivalGamesData(this);
+				break;
+			case ULTRA_HARD_CORE:
+				break;
+		}
+		
+		setRandomMap();
+		ServerData.getMiniGames().getArenas().add(this);
+	}
+
+	public MiniGameType getType() {
+		return type;
+	}
+
+	public int getArenaID() {
+		return arenaid;
+	}
+
+	public Location getLobby() {
+		return lobby;
+	}
+
+	public Map getMap() {
+		return map;
+	}
+	public void setMap(Map map) {
+		this.map = map;
+	}
+	public void setRandomMap(){
+		List<Map> maps = ServerData.getMiniGames().getMaps().get(type);
+		List<Map> availablemaps = new ArrayList<Map>();
+		for(Map map : maps){
+			if(!map.isInUse()){
+				availablemaps.add(map);
+			}
+		}
+		this.map = availablemaps.get(new Random().nextInt(availablemaps.size()));
+		this.map.setInUse(true);
+		
+		generateWords();
+	}
+
+	public GameState getState() {
+		return state;
+	}
+	public void setState(GameState state) {
+		this.state = state;
+	}
+
+	public List<OMPlayer> getPlayers() {
+		return players;
+	}
+	public void setPlayers(List<OMPlayer> players) {
+		this.players = players;
+	}
+
+	public List<OMPlayer> getDeadPlayers() {
+		return deadplayers;
+	}
+	public void setDeadPlayers(List<OMPlayer> deadplayers) {
+		this.deadplayers = deadplayers;
+	}
+
+	public List<OMPlayer> getSpectators() {
+		return spectators;
+	}
+	public void setSpectators(List<OMPlayer> spectators) {
+		this.spectators = spectators;
+	}
+	
+	public List<OMPlayer> getAllPlayers(){
+		List<OMPlayer> players = new ArrayList<OMPlayer>();
+		players.addAll(getPlayers());
+		players.addAll(getSpectators());
+		
+		return players;
+	}
+
+	public int getMinutes() {
+		return minutes;
+	}
+	public void setMinutes(int minutes) {
+		this.minutes = minutes;
+	}
+
+	public int getSeconds() {
+		return seconds;
+	}
+	public void setSeconds(int seconds) {
+		this.seconds = seconds;
+	}
+	
+	public SurvivalGamesData getSG() {
+		return sgdata;
+	}
+
+	public void setSG(SurvivalGamesData sgdata) {
+		this.sgdata = sgdata;
+	}
+	
+	public void tickTimer(){
+		if(getSeconds() != -1){
+			setSeconds(getSeconds() -1);
+		}
+		if(getSeconds() == -1){
+			setMinutes(getMinutes() -1);
+			setSeconds(59);
+		}
+	}
+	
+	public void sendMessage(String message){
+		for(OMPlayer omp : getAllPlayers()){
+			omp.getPlayer().sendMessage(message);
+		}
+	}
+	
+	public void sendMessage(String[] messages){
+		for(OMPlayer omp : getAllPlayers()){
+			for(String message : messages){
+				omp.getPlayer().sendMessage(message);
+			}
+		}
+	}
+	
+	public void playSound(Sound sound, float arg2, float arg3){
+		for(OMPlayer omp : getAllPlayers()){
+			omp.getPlayer().playSound(omp.getPlayer().getLocation(), sound, arg2, arg3);
+		}
+	}
+	
+	public void showPlayers(OMPlayer omp){
+		for(OMPlayer omplayer : getAllPlayers()){
+			omplayer.getPlayer().showPlayer(omp.getPlayer());
+			omp.getPlayer().showPlayer(omplayer.getPlayer());
+		}
+	}
+	
+	public void clearScoreboards(){
+		for(OMPlayer omp : getAllPlayers()){
+			omp.getPlayer().getScoreboard().clearSlot(DisplaySlot.SIDEBAR);
+		}
+	}
+	
+	public boolean isSpectator(OMPlayer omp){
+		return this.spectators.contains(omp);
+	}
+	public boolean isPlayer(OMPlayer omp){
+		return this.players.contains(omp);
+	}
+	
+	public void join(final OMPlayer omp){
+		final String playername = omp.getPlayer().getName();
+		
+		omp.setArena(this);
+		omp.getPlayer().setFoodLevel(20);
+		omp.getPlayer().setHealth(20D);
+		omp.clearLevels();
+		showPlayers(omp);
+		omp.getPlayer().getInventory().setHeldItemSlot(0);
+		
+		if(getState() != GameState.ENDING && getState() != GameState.RESTARTING){
+			if(getState() != GameState.WARMUP && getState() != GameState.IN_GAME){
+				if(getPlayers().size() != getType().getMaxPlayers()){
+					getPlayers().add(omp);
+					omp.getPlayer().teleport(getLobby());
+					
+					sendMessage(" §2» §l§o" + omp.getPlayer().getName() + " §2(§f§l" + getType().getSignName() + " " + getArenaID() + "§2) §a" + getPlayers().size() + "§7/§a" + getType().getMaxPlayers());
+					Kit.getKit("Lobby").setItems(omp.getPlayer());
+
+					omp.getPlayer().setAllowFlight(false);
+					omp.getPlayer().setFlying(false);
+				}
+				else{
+					omp.toServer(Server.HUB);
+					
+					new BukkitRunnable(){
+						public void run(){
+							if(Utils.getPlayer(playername) != null){
+								omp.getPlayer().kickPlayer("§7Couldn't connect to the §3§lHub§7.");
+							}
+						}
+					}.runTaskLater(Start.getInstance(), 100);
+				}
+			}
+			else{
+				getSpectators().add(omp);
+				omp.getPlayer().teleport(getMap().getSpectatorLocation());
+				
+				sendMessage(" §2» §l§o" + omp.getPlayer().getName() + " §2(§f§l" + getType().getSignName() + " " + getArenaID() + "§2) §e[§lSpectator§e]");
+				Kit.getKit("Spectator").setItems(omp.getPlayer());
+
+				((CraftPlayer) omp.getPlayer()).getHandle().setInvisible(true);
+				omp.getPlayer().setAllowFlight(true);
+				omp.getPlayer().setFlying(true);
+			}
+		}
+		else{
+			omp.toServer(Server.HUB);
+			
+			new BukkitRunnable(){
+				public void run(){
+					if(Utils.getPlayer(playername) != null){
+						omp.getPlayer().kickPlayer("§7Couldn't connect to the §3§lHub§7.");
+					}
+				}
+			}.runTaskLater(Start.getInstance(), 100);
+		}
+	}
+	
+	public void leave(final OMPlayer omp){
+		final String playername = omp.getPlayer().getName();
+		showPlayers(omp);
+		
+		if(isPlayer(omp)){
+			getPlayers().remove(omp);
+			sendMessage(" §4« §l§o" + omp.getPlayer().getName() + " §4(§f§l" + getType().getSignName() + " " + getArenaID() + "§4) §c" + getPlayers().size() + "§7/§c" + getType().getMaxPlayers());
+			
+			switch(getType()){
+				case CHICKEN_FIGHT:
+					break;
+				case GHOST_ATTACK:
+					break;
+				case SKYWARS:
+					break;
+				case SPLATCRAFT:
+					break;
+				case SPLEEF:
+					break;
+				case SURVIVAL_GAMES:
+				    if(getPlayers().size() == 1){
+				    	getSG().setSecondPlace(omp);
+				    	getSG().ending();
+				    }
+				    else if(getPlayers().size() == 2){
+				    	getSG().setThirdPlace(omp);
+				    }
+				    else{}
+				    
+				    if(getState() == GameState.IN_GAME){
+					    omp.getSGPlayer().addLose();
+					    
+					    if(!getSG().isInDeathMatch() && getMinutes() != 0 && getPlayers().size() != 1 && getPlayers().size() <= 3){
+					    	setMinutes(1);
+					    	setSeconds(0);
+					    	
+							playSound(Sound.WITHER_DEATH, 5, 1);
+							sendMessage("§c§lDeathmatch starting in §f§l1m 0s§c§l!");
+					    }
+				    }
+					break;
+				case ULTRA_HARD_CORE:
+					break;
+			}
+		}
+		else{
+			getSpectators().remove(omp);
+			((CraftPlayer) omp.getPlayer()).getHandle().setInvisible(false);
+			sendMessage(" §4« §l§o" + omp.getPlayer().getName() + " §4(§f§l" + getType().getSignName() + " " + getArenaID() + "§4) §e[§lSpectator§e]");
+			
+			if(getType() == MiniGameType.SURVIVAL_GAMES){
+				if(getDeadPlayers().contains(omp)){
+					omp.getSGPlayer().addLose();
+				}
+			}
+		}
+		
+		if(omp.getPlayer().getVehicle() != null){
+			omp.getPlayer().leaveVehicle();
+		}
+		
+		omp.getPlayer().teleport(omp.getArena().getLobby());
+		omp.setArena(null);
+		omp.toServer(Server.HUB);
+		
+		new BukkitRunnable(){
+			public void run(){
+				if(Utils.getPlayer(playername) != null){
+					omp.getPlayer().kickPlayer("§7Couldn't connect to the §3§lHub§7.");
+				}
+			}
+		}.runTaskLater(Start.getInstance(), 100);
+	}
+	
+	public void generateWords(){
+		Location l1 = new Location(getLobby().getWorld(), getLobby().getX() -14, getLobby().getY() +9, getLobby().getZ() -30);
+		Location l2 = new Location(getLobby().getWorld(), getLobby().getX() -18, getLobby().getY() +3, getLobby().getZ() -30);
+		
+		//Clear Previous Words\\
+		for(Block b : Utils.getBlocksBetween(l1, new Location(getLobby().getWorld(), getLobby().getX() +50, getLobby().getY() +13, getLobby().getZ() -30))){
+			if(b.getType() != Material.AIR){
+				b.setType(Material.AIR);
+			}
+		}
+		for(Block b : Utils.getBlocksBetween(l2, new Location(getLobby().getWorld(), getLobby().getX() +50, getLobby().getY() +7, getLobby().getZ() -30))){
+			if(b.getType() != Material.AIR){
+				b.setType(Material.AIR);
+			}
+		}
+		
+		new Letters(getType().getName(), Direction.NORTH, l1).generate(Material.STAINED_CLAY, 0);
+		new Letters(getMap().getMapName(), Direction.NORTH, l2).generate(Material.STAINED_CLAY, 0);
+	}
+	
+	public void starting(){
+		for(OMPlayer omp : getPlayers()){
+			if(omp.hasPetEnabled()){
+				omp.disablePet();
+			}
+			if(omp.hasWardrobeEnabled()){
+				omp.disableWardrobe();
+			}
+			if(omp.isDisguised()){
+				omp.undisguise();
+			}
+			if(omp.hasHatEnabled()){
+				omp.disableHat();
+			}
+			omp.disableGadget();
+			
+			Player p = omp.getPlayer();
+			if(p.getOpenInventory().getTopInventory() != null && p.getOpenInventory().getTopInventory().getName() != null){
+				p.closeInventory();
+			}
+			if(p.getVehicle() != null){
+				p.leaveVehicle();
+			}
+		}
+		
+		setState(GameState.STARTING);
+	}
+	
+	public void updateWarmup(){
+		Color color = null;
+		
+		ItemStack item = new ItemStack(Material.STAINED_GLASS_PANE, getSeconds());
+		ItemMeta meta = item.getItemMeta();
+		if(getSeconds() <= 2){
+			meta.setDisplayName("§fStarting in §4" + getSeconds() + "§f...");
+			item.setItemMeta(meta);
+			item.setDurability((short) 14);
+			
+			color = Color.RED;
+		}
+		else if(getSeconds() <= 5){
+			meta.setDisplayName("§fStarting in §6" + getSeconds() + "§f...");
+			item.setItemMeta(meta);
+			item.setDurability((short) 1);
+			
+			color = Color.ORANGE;
+		}
+		else{
+			meta.setDisplayName("§fStarting in §a" + getSeconds() + "§f...");
+			item.setItemMeta(meta);
+			item.setDurability((short) 5);
+			
+			color = Color.LIME;
+		}
+		
+		ItemStack helmet = Utils.addColor(new ItemStack(Material.LEATHER_HELMET), color);
+		ItemStack chestplate = Utils.addColor(new ItemStack(Material.LEATHER_CHESTPLATE), color);
+		ItemStack leggings = Utils.addColor(new ItemStack(Material.LEATHER_LEGGINGS), color);
+		ItemStack boots = Utils.addColor(new ItemStack(Material.LEATHER_BOOTS), color);
+		
+		for(OMPlayer omp : getPlayers()){
+			Player p = omp.getPlayer();
+			p.getInventory().setHelmet(helmet);
+			p.getInventory().setChestplate(chestplate);
+			p.getInventory().setLeggings(leggings);
+			p.getInventory().setBoots(boots);
+			
+			for(int i = 0; i < 9; i++){
+				p.getInventory().setItem(i, item);
+			}
+		}
+	}
+	
+	public void sendData(){
+		if(Bukkit.getOnlinePlayers().size() > 0){
+			ByteArrayOutputStream b = new ByteArrayOutputStream();
+        	DataOutputStream out = new DataOutputStream(b);
+ 
+        	try{
+        		out.writeUTF("Forward");
+        		out.writeUTF("ALL");
+        		out.writeUTF(getType().getShortName());
+            	
+            	out.writeUTF(getArenaID() + "|" + getState().toString() + "|" + getPlayers().size() + "|" + getMinutes() + "|" + getSeconds());
+        	}catch(IOException ex){
+        		ex.printStackTrace();
+        	}
+        	
+        	Player player = null;
+        	for(Player p : Bukkit.getOnlinePlayers()){
+        		if(player == null){
+        			player = p;
+        		}
+        	}
+    		player.sendPluginMessage(Start.getInstance(), "BungeeCord", b.toByteArray());
+    	}
+	}
+	
+	public static Arena getArena(MiniGameType type, int arenaid){
+		for(Arena arena : ServerData.getMiniGames().getArenas()){
+			if(arena.getType() == type && arena.getArenaID() == arenaid){
+				return arena;
+			}
+		}
+		return null;
+	}
+}

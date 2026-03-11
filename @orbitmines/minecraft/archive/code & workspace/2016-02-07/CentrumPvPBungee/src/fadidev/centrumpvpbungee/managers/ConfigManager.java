@@ -1,0 +1,83 @@
+package fadidev.centrumpvpbungee.managers;
+
+import java.io.File;
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.util.HashMap;
+import java.util.Map;
+
+import net.md_5.bungee.config.Configuration;
+import net.md_5.bungee.config.ConfigurationProvider;
+import net.md_5.bungee.config.YamlConfiguration;
+import fadidev.centrumpvpbungee.CentrumPvPBungee;
+import fadidev.centrumpvpbungee.utils.Utils;
+import fadidev.centrumpvpbungee.utils.enums.Config;
+ 
+public class ConfigManager {
+ 
+	private CentrumPvPBungee msg;
+	
+	private Map<Config, Configuration> configs;
+	private Map<Config, File> files;
+	
+	public ConfigManager(){
+		msg = CentrumPvPBungee.getInstance();
+		configs = new HashMap<Config, Configuration>();
+		files = new HashMap<Config, File>();
+	}
+
+	public void setup(Config... configs){
+		if(!msg.getDataFolder().exists()){
+			msg.getDataFolder().mkdir();
+		}
+		
+		for(Config config : configs){
+			File f = new File(msg.getDataFolder(), config.getFileName());
+			files.put(config, f);
+			
+			if(!f.exists()){
+				copyFile(config.getFileName(), f.toPath());
+			}
+
+			try{
+				this.configs.put(config, YamlConfiguration.getProvider(YamlConfiguration.class).load(f));
+			}catch(IOException e){
+				Utils.warnConsole("Error while loading " + config.getFileName());
+				e.printStackTrace();
+			}
+		}
+	}
+	
+	public Configuration get(Config config){
+		return configs.get(config);
+	}
+	 
+	public void save(Config config){
+		try{
+			ConfigurationProvider.getProvider(YamlConfiguration.class).save(get(config), new File(msg.getDataFolder(), config.getFileName()));
+		}
+		catch(IOException ex){
+			Utils.warnConsole("Error while saving " + config.getFileName());
+			ex.printStackTrace();
+		}
+	}
+	
+	public void reload(Config config){
+		try{
+			this.configs.put(config, YamlConfiguration.getProvider(YamlConfiguration.class).load(this.files.get(config)));
+		}catch(IOException ex){
+			Utils.warnConsole("Error while reloading " + config.getFileName());
+			ex.printStackTrace();
+		}
+	}
+	
+	private void copyFile(String filename, Path path){
+		try{
+			Files.copy(msg.getResourceAsStream(filename), path);
+		}catch(IOException ex){
+			Utils.warnConsole("Error while creating " + filename);
+			ex.printStackTrace();
+		}
+	}
+}

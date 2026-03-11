@@ -1,0 +1,9 @@
+name: OrbitMinesKitPvP
+author: O_o_Fadi_o_O
+version: 1
+description: OrbitMinesKitPvP by O_o_Fadi_o_O
+main: om.kitpvp.KitPvP
+commands:
+  money:
+    description: OrbitMines Command.
+depend: [OrbitMinesAPI]

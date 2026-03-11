@@ -1,0 +1,17 @@
+package me.O_o_Fadi_o_O.SpigotSpleef.utils;
+
+public enum Ability {
+	NONE,
+	
+	JUMP,
+	NEAREST_PLAYER,
+	RANGE_SMALL,
+	RANGE_MEDIUM,
+	RANGE_BIG,
+	INSTANT_TNT,
+	PLUS_ONE_1,
+	PLUS_ONE_2,
+	PLUS_ONE_3,
+	PLUS_ONE_4,
+	PLUS_ONE_5,
+}

@@ -1,0 +1,21 @@
+package fadidev.bungeemsg.utils.enums;
+
+public enum LogReadType {
+	
+	PRIVATE_MESSAGES,
+	SPIES,
+	TOGGLES,
+	MUTES,
+	RELOADS,
+	RELOAD_DATA,
+	BANNED_WORDS,
+	SPAM,
+	ADVERTISING,
+	GLOBAL,
+	CHANNELS,
+	MUTE_ALL,
+	IGNORES,
+	REPORTS,
+	HELP_OPS;
+	
+}

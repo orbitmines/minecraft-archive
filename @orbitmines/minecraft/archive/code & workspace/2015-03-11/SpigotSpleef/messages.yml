@@ -1,0 +1,71 @@
+Messages:
+  PlayerJoin: 
+    Message: '&6&lSpigot&7&lSpleef &7| &6%player% &7joined. (&6%players%&7/&6%max-players%&7)' 
+  PlayerQuit: 
+    Message: '&6&lSpigot&7&lSpleef &7| &6%player% &7left. (&6%players%&7/&6%max-players%&7)'
+  SpectatorJoin: 
+    Message: '&6&lSpigot&7&lSpleef &7| &6%player% &7joined. (Spectator)'
+  SpectatorQuit: 
+    Message: '&6&lSpigot&7&lSpleef &7| &6%player% &7left. (Spectator)' 
+  Starting: 
+    Title:
+      Title: ''
+      Subtitle: '&7Starting in &6%seconds%&7...'
+      Settings: 0|0|2
+  Started:
+    Messages:
+    - '&7&m------------------------------'
+    - ''
+    - ' &6&lSpigot&7&lSpleef &7| Starting in &6%seconds%&7.'
+    - '    &7- Be the last one alive.'
+    - '    &7- Kill other players by removing space beneath their feet.'
+    - ''
+    - '&7&m------------------------------'
+    Sound: WITHER_DEATH
+
+  GameStarted: 
+    Message: '&6&lSpigot&7&lSpleef &7| &7Started the Game! It ends in &6%minutes%m %seconds%s&7.'
+    Sound: LEVEL_UP
+   
+  Ending: 
+    Message: '&6&lSpigot&7&lSpleef &7| The Game ends in &6%minutes%m %seconds%s&7.'
+    Sound: CLICK
+    
+  Ended:
+    Messages:
+    - '&7&m------------------------------'
+    - ''
+    - ' &6&lSpigot&7&lSpleef &7| Restarting in &6%seconds%&7.'
+    - '    &6&l1st: &7%player-1%'
+    - '    &7&l2nd: &7%player-2%'
+    - '    &c&l3rd: &7%player-3%'
+    - ''
+    - '&7&m------------------------------'
+    Sound: WITHER_DEATH
+   
+  CommandInGame: 
+    Message: '&6&lSpigot&7&lSpleef &7| &7You cannot perform commands while playing Spleef!'
+   
+  DeathMessageToPlayer: 
+    Message: '&6&lSpigot&7&lSpleef &7| You have been killed by &6%player%&7.'
+  DeathMessageToPlayerUnknownKiller:
+    Message: '&6&lSpigot&7&lSpleef &7| You died.'
+  DeathMessageToKiller: 
+    Message: '&6&lSpigot&7&lSpleef &7| You killed &6%player-2%&7!'
+  DeathMessage: 
+    Message: '&6&lSpigot&7&lSpleef &7| &6%player-2%&7 was killed by &6%player%&7.'
+  DeathMessageUnknownKiller: 
+    Message: '&6&lSpigot&7&lSpleef &7| &6%player-2%&7 died.'
+
+OtherMessages:
+  ChatPrefixIfNotPerArena: '&7[&6Spleef-%arena-id%&7] '
+  LobbyChatPrefixIfNotPerArena: '&7[&6Lobby&7] '
+   
+  AnimatedRightClick:
+  - '&6(Right Click)'
+  - '&e(Right Click)'
+  
+  AnimatedDots:
+  - '.'
+  - '..'
+  - '...'

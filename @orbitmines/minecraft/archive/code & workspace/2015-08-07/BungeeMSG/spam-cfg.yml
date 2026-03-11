@@ -1,0 +1,19 @@
+Use: true
+
+Duplicate:
+  Cancel: true
+  Sensitivity: 2
+  
+FastUsage:
+  Cancel: true
+  Timer: 5
+  Max: 3
+  
+Cooldown:
+  Use: true
+  Private: 2
+  Global: 2
+  
+Caps:
+  Cancel: true
+  Max: 10

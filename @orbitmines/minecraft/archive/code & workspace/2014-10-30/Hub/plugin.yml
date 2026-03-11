@@ -1,0 +1,15 @@
+name: Hub
+author: O_o_Fadi_o_O
+version: 1
+description: Hub by O_o_Fadi_o_O
+main: me.O_o_Fadi_o_O.Hub.Hub
+commands:
+  servers:
+    description: Server Selector!
+  vippoints:
+    description: VIP Points
+  omt:
+    description: OMT
+  perks:
+    description: Cosmetic Perks
+depend: [LibsDisguises]

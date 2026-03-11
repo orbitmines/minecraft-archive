@@ -1,0 +1,202 @@
+package me.O_o_Fadi_o_O.OrbitMines.events;
+
+import java.util.ArrayList;
+import java.util.Random;
+
+import me.O_o_Fadi_o_O.OrbitMines.Start;
+import me.O_o_Fadi_o_O.OrbitMines.utils.OMPlayer;
+import me.O_o_Fadi_o_O.OrbitMines.utils.ServerData;
+import me.O_o_Fadi_o_O.OrbitMines.utils.ServerData.KitPvPServer;
+import me.O_o_Fadi_o_O.OrbitMines.utils.Utils;
+import me.O_o_Fadi_o_O.OrbitMines.utils.Utils.Server;
+import me.O_o_Fadi_o_O.OrbitMines.utils.creative.CreativePlayer;
+import me.O_o_Fadi_o_O.OrbitMines.utils.creative.Plot;
+import me.O_o_Fadi_o_O.OrbitMines.utils.kitpvp.ActiveBooster;
+import me.O_o_Fadi_o_O.OrbitMines.utils.kitpvp.KitPvPPlayer;
+import me.O_o_Fadi_o_O.OrbitMines.utils.kitpvp.KitPvPUtils.ItemType;
+
+import org.bukkit.Bukkit;
+import org.bukkit.Material;
+import org.bukkit.Sound;
+import org.bukkit.enchantments.Enchantment;
+import org.bukkit.entity.Creeper;
+import org.bukkit.entity.Item;
+import org.bukkit.entity.Player;
+import org.bukkit.event.EventHandler;
+import org.bukkit.event.Listener;
+import org.bukkit.event.entity.EntityDeathEvent;
+import org.bukkit.event.entity.PlayerDeathEvent;
+import org.bukkit.inventory.ItemStack;
+import org.bukkit.scheduler.BukkitRunnable;
+import org.bukkit.util.Vector;
+
+public class EntityDeath implements Listener{
+	
+	@EventHandler
+	public void onDeath(EntityDeathEvent e){
+		if(ServerData.isServer(Server.HUB) && e.getEntity() instanceof Creeper){
+			e.getDrops().clear();
+		}
+	}
+	
+	@EventHandler
+	public void onDeath(PlayerDeathEvent e){
+		final Player p = (Player) e.getEntity();
+		final OMPlayer omp = OMPlayer.getOMPlayer(p);
+		
+		if(ServerData.isServer(Server.KITPVP)){
+			final KitPvPServer kitpvp = ServerData.getKitPvP();
+			KitPvPPlayer kp = omp.getKitPvPPlayer();
+			
+			e.getDrops().clear();
+
+			for(int i = 0; i < 6; i++){
+				ItemStack itemD = Utils.setDurability(Utils.setDisplayname(new ItemStack(Material.INK_SACK), "Blood " + p.getName() + i), 1);
+				int delay = 40;
+				if(i > 2){
+					itemD = Utils.setDurability(Utils.setDisplayname(new ItemStack(Material.BONE), "Bone " + p.getName() + i), 1);
+					delay = 60;
+				}
+				
+				final Item item = p.getWorld().dropItem(p.getLocation(), itemD);
+				item.setPickupDelay(Integer.MAX_VALUE);
+				item.setVelocity(Utils.getRandomVelocity());
+				
+				new BukkitRunnable(){
+					public void run(){
+						item.remove();
+					}
+				}.runTaskLater(Start.getInstance(), delay);
+			}
+			
+			kp.setKitSelected(null);
+			kp.setKitLevelSelected(1);
+			kp.setCurrentStreak(0);
+			kp.addDeath();
+			
+			if(p.getKiller() instanceof Player && p.getKiller() != p){
+				Player pK = (Player) p.getKiller();
+				final OMPlayer ompK = OMPlayer.getOMPlayer(pK);
+				KitPvPPlayer kpK = ompK.getKitPvPPlayer();
+				ItemStack item = pK.getItemInHand();
+				
+				{// Necromancer Wither I \\
+					ItemStack stick = Utils.hideFlags(Utils.addEnchantment(Utils.setLore(Utils.setDisplayname(new ItemStack(Material.STICK), "§b§lNecromancer §a§lLvL 3§8 || §8Necromancer's Staff"), ItemType.WITHER_I.addEnchantment(new ArrayList<String>())), Enchantment.DURABILITY, 1), 5);
+					
+					if(pK.getInventory().containsAtLeast(stick, 1)){
+						pK.getInventory().addItem(Utils.setDisplayname(new ItemStack(Material.REDSTONE), "§b§lNecromancer §a§lLvL 3§8 || §cSoul"));
+					}
+				}
+				
+				ActiveBooster booster = kitpvp.getBooster();
+				if(booster == null){
+					int money = (int) (50 * kpK.getVIPBooster());
+					int vipextra = money - 50;
+					
+					kpK.addMoney(money);
+					kp.createKillHologram(pK, money);
+					pK.sendMessage("§7You've killed §6" + p.getName() + "§7! §6§l+50 Coins");
+					if(vipextra != 0){
+						pK.sendMessage("§6§l+" + vipextra + " Coins §7(" + ompK.getVIPRank().getRankString() + " §lVIP§7)");
+					}
+				}
+				else{
+					int money = (int) (50 * booster.getBooster().getMultiplier());
+					int extra = money - 50;
+					money *= kpK.getVIPBooster();
+					int vipextra = money - 50 - extra;
+					
+					kpK.addMoney(money);
+					kp.createKillHologram(pK, money);
+					
+					pK.sendMessage("§7You've killed §6" + p.getName() + "§7! §6§l+50 Coins");
+					pK.sendMessage("§6§l+" + extra + " Coins §7(§a" + booster.getPlayer() + "'s Booster§7)");
+					if(vipextra != 0){
+						pK.sendMessage("§6§l+" + vipextra + " Coins §7(" + ompK.getVIPRank().getRankString() + " §lVIP§7)");
+					}
+				}
+				kpK.setCurrentStreak(kpK.getCurrentStreak() +1);
+				kpK.addKill();
+				pK.sendMessage("§f§lCurrent Streak: §c§l" + kpK.getCurrentStreak() + " §f§lBest Streak: §c§l" + kpK.getBestStreak());
+				if(kpK.getBestStreak() < kpK.getCurrentStreak()){
+					kpK.setBestStreak(kpK.getCurrentStreak());
+					
+					pK.sendMessage("§f§lNew Best Streak: §c§l" + kpK.getCurrentStreak());
+					pK.playSound(pK.getLocation(), Sound.LEVEL_UP, 5, 1);
+				}
+				
+				if(item == null || item.getType() != Material.BOW){
+					if(new Random().nextBoolean()){
+						e.setDeathMessage("§6" + p.getName() + "§7 was killed by §6" + pK.getName() + "§7!");
+					}
+					else{
+						e.setDeathMessage("§6" + p.getName() + "§7 was slaughtered by §6" + pK.getName() + "§7!");
+					}
+				}
+				else{
+					if(new Random().nextBoolean()){
+						e.setDeathMessage("§6" + p.getName() + "§7 was shot by §6" + pK.getName() + "§7!");
+					}
+					else{
+						e.setDeathMessage("§6" + p.getName() + "§7 was sniped by §6" + pK.getName() + "§7!");
+					}
+				}
+				kpK.addExp(2);
+				if(kpK.isLevelUp()){
+					kpK.setExp(kpK.getExp() - (int) kpK.getExpRequired());
+					kpK.addLevel();
+					Bukkit.broadcastMessage("§6" + ompK.getName() + " §7reached level §6" + kpK.getLevels() + "§7!");
+				}
+				kpK.updateLevel();
+				
+				final int streak = kpK.getCurrentStreak();
+				if(streak == 3 || streak == 5 || streak >= 10){
+					new BukkitRunnable(){
+						public void run(){
+							Bukkit.broadcastMessage("§c§l" + ompK.getName() + "§7 has a §c§l" + streak + " Kill Streak§7!");
+						}
+					}.runTaskLater(Start.getInstance(), 1);
+				}
+			}
+			else{
+				e.setDeathMessage("§6" + p.getName() + "§7 died.");
+			}
+			
+			p.setHealth(20);
+			p.teleport(kitpvp.getSpawn());
+			p.setFireTicks(0);
+			omp.clearInventory();
+			
+			new BukkitRunnable(){
+				public void run(){
+					p.setVelocity(new Vector(0, 0, 0));
+					kitpvp.giveLobbyItems(omp);
+				}
+			}.runTaskLater(Start.getInstance(), 1);
+		}
+		else if(ServerData.isServer(Server.CREATIVE)){
+			CreativePlayer cp = omp.getCreativePlayer();
+			
+			if(cp.isInPvPPlot()){
+				final Plot plot = cp.getPvPPlot();
+				
+				if(!plot.hasPvPDrops()){
+					e.getDrops().clear();
+				}
+				
+				cp.setSelectedKit(null);
+				p.setHealth(20D);
+				
+				new BukkitRunnable(){
+					public void run(){
+						p.setVelocity(new Vector(0, 0, 0));
+						p.teleport(plot.getPvPLobbyLocation());
+						omp.clearInventory();
+						omp.clearPotionEffects();
+					}
+				}.runTaskLater(Start.getInstance(), 1);
+			}
+		}
+		else{}
+	}
+}

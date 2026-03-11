@@ -1,0 +1,34 @@
+Servers:
+  hub: '&b&lHub'
+  sg-1: '&6&lSG-1'
+  
+PlayerNameSuggest:
+  HoverMessage: '&7Click to message &6%receiver%&7.'
+  SuggestedCommand: '/msg %receiver%'
+  
+EnableReplyInfo: true
+
+PlayerNotOnline: '&6%receiver% &7isn''t Online!'
+NoReceiver: '&7You have nobody to reply to.'
+ToThemselves: '&7You cannot send a message to yourself!'
+
+TellSenderIfPrivateDisabled: false
+
+SpamDuplicate: '&7Spamming is not allowed here!'
+SpamTooFast: '&7You''re sending messages too fast!'
+SpamCooldown: '&7You have to wait %left% more %second-grammer% before sending a Private Message again!'
+
+SecondGrammerVariableOne: 'second'
+SecondGrammerVariableMultiple: 'seconds'
+
+AdvertiseKickMessage: '&6&lKicked! &7Sending &6%type%&7 through PMs isn''t allowed!'
+AdvertiseMessage: '&7You''re not allowed to send &6%type%&7 through Private Messages!'
+  
+TypeVariableIPs: 'IPs'
+TypeVariableDomainNames: 'websites'
+
+TellSenderIfIgnored: true
+
+Cooldowns:
+  ReportCommand: 600
+  HelpOpCommand: 300

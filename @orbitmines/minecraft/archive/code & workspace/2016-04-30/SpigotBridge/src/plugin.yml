@@ -1,0 +1,9 @@
+name: SpigotBridge
+author: O_o_Fadi_o_O / FadiDev
+version: 1.0.0
+description: SpigotBridge by O_o_Fadi_o_O / FadiDev - OrbitMines
+main: fadidev.spigotbridge.SpigotBridge
+commands:
+  sbreload:
+    description: Reload Spigot Bridge.
+softdepend: [Vault, Essentials, Factions, MassiveCore, Cardinal]

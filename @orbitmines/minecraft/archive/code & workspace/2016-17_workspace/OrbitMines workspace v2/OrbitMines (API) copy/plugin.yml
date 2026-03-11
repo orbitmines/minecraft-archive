@@ -1,0 +1,23 @@
+name: OrbitMinesAPI
+author: O_o_Fadi_o_O
+version: 1
+description: OrbitMinesAPI by O_o_Fadi_o_O
+main: addtohub.API
+commands:
+  setlastdonator:
+    description: OrbitMines Command.
+  setvip:
+    description: OrbitMines Command.
+  setstaff:
+    description: OrbitMines Command.
+  resetMonthlyVIPPoints:
+    description: OrbitMines Command.
+  giveMonthlyVIPPoints:
+    description: OrbitMines Command.
+  votes:
+    description: OrbitMines Command.
+  vippoints:
+    description: OrbitMines Command.
+  omt:
+    description: OrbitMines Command.
+depend: [Votifier]

@@ -1,0 +1,7 @@
+name: OrbitMinesPrison
+author: O_o_Fadi_o_O
+version: 1.0.0
+description: OrbitMinesPrison by O_o_Fadi_o_O
+main: fadidev.orbitmines.prison.OrbitMinesPrison
+commands:
+depend: [OrbitMinesAPI]

@@ -1,0 +1,25 @@
+Servers:
+  hub: '&b&lHub'
+  sg-1: '&6&lSG-1'
+  
+PlayerNameSuggest:
+  HoverMessage: '&7Click to message &6%receiver%&7.'
+  SuggestedCommand: '/msg %receiver%'
+  
+EnableReplyInfo: true
+TellSenderIfPrivateDisabled: false
+TellSenderIfIgnored: true
+
+PlayerNotOnline: '&6%receiver% &7isn''t Online!'
+NoReceiver: '&7You have nobody to reply to.'
+ToThemselves: '&7You cannot use your own name here!'
+  
+SecondGrammerVariableOne: 'second'
+SecondGrammerVariableMultiple: 'seconds'
+  
+TypeVariableIPs: 'IPs'
+TypeVariableDomainNames: 'websites'
+
+Cooldowns:
+  ReportCommand: 600
+  HelpOpCommand: 300

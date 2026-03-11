@@ -1,0 +1,7 @@
+name: OrbitMinesCreative
+author: O_o_Fadi_o_O
+version: 1.0.0
+description: OrbitMinesCreative by O_o_Fadi_o_O
+main: fadidev.orbitmines.creative.OrbitMinesCreative
+commands:
+depend: [OrbitMinesAPI, WorldEdit]

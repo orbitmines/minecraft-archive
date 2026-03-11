@@ -1,0 +1,13 @@
+name: OrbitMinesHub
+author: O_o_Fadi_o_O
+version: 1.0.0
+description: OrbitMinesHub by O_o_Fadi_o_O
+main: fadidev.orbitmines.hub.OrbitMinesHub
+commands:
+  resetMonthlyVIPPoints:
+    description: OrbitMines Command.
+  giveMonthlyVIPPoints:
+    description: OrbitMines Command.
+  setlastdonator:
+    description: OrbitMines Command.
+depend: [OrbitMinesAPI]

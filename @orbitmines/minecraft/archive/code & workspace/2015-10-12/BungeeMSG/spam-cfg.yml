@@ -1,0 +1,24 @@
+Use: true
+
+Duplicate:
+  Cancel: true
+  Sensitivity: 2
+  
+FastUsage:
+  Cancel: true
+  Timer: 5
+  Max: 3
+  
+Cooldown:
+  Use: true
+  Private: 2
+  Global: 2
+  
+Caps:
+  Cancel: true
+  Max: 10
+  
+Messages:
+  SpamDuplicate: '&7Spamming is not allowed here!'
+  SpamTooFast: '&7You''re sending messages too fast!'
+  SpamCooldown: '&7You have to wait %left% more %second-grammer% before sending a Private Message again!'

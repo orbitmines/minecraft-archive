@@ -1,0 +1,7 @@
+name: OrbitMinesSkyBlock
+author: O_o_Fadi_o_O
+version: 1.0.0
+description: OrbitMinesSkyBlock by O_o_Fadi_o_O
+main: fadidev.orbitmines.skyblock.OrbitMinesSkyBlock
+commands:
+depend: [OrbitMinesAPI]

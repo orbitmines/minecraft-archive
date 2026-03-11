@@ -1,0 +1,17 @@
+name: OrbitMinesAPI
+author: O_o_Fadi_o_O
+version: 1.0.0
+description: OrbitMinesAPI by O_o_Fadi_o_O
+main: fadidev.orbitmines.api.OrbitMinesAPI
+commands:
+  setvip:
+    description: OrbitMines Command.
+  setstaff:
+    description: OrbitMines Command.
+  votes:
+    description: OrbitMines Command.
+  vippoints:
+    description: OrbitMines Command.
+  omt:
+    description: OrbitMines Command.
+depend: [Votifier]

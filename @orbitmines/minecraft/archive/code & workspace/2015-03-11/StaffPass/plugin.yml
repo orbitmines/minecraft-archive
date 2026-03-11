@@ -1,0 +1,14 @@
+name: StaffPass
+author: O_o_Fadi_o_O
+version: 1
+description: StaffPass by O_o_Fadi_o_O
+main: me.O_o_Fadi_o_O.StaffPass.StaffSecure
+commands:
+  login:
+    description: Login Command.
+  password:
+    description: Password Command
+  staffsecure:
+    description: Staffsecure Command.
+  resetpassword:
+    description: ResetPassword Command.

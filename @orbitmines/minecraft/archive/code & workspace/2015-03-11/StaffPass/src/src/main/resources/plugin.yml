@@ -1,0 +1,15 @@
+name: StaffSecure
+description: Give your players the option to have to register
+version: 2.0
+website: www.arkhamnetwork.org
+author: Harry5573
+main: org.arkhamnetwork.staffsecure.StaffSecure
+commands:
+  login:
+    description: Login command for staff
+  password:
+    description: Set password command for staff
+  staffsecure:
+    description: Main plugin command
+  resetpassword:
+    description: Console command to reset passwords

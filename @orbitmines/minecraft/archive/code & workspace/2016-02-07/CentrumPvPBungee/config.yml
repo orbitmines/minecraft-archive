@@ -1,0 +1,17 @@
+Chat:
+  Group1: pvp|lobby|pvp1|pvp2|pvp3
+  Group2: hub|pvp4|pvp5
+  
+Groups:
+  DEFAULT:
+    Default: true
+    Format: '&7%player%&8: &7%message%'
+    Delay: 10
+  VIP:
+    Default: false
+    Format: '&8[&6VIP&8] &6%player%&8: &7%message%'
+    Delay: 10
+  Admin:
+    Default: false
+    Format: '&8[&4A8] &4%player%&8: &6%message%'
+    Delay: 0

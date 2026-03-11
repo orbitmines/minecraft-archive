@@ -1,0 +1,18 @@
+Use: true
+
+Read:
+  Private: true
+  Spy: false
+  Toggle: false
+  Mute: false
+  Reload: false
+  ReloadData: false
+  BannedWord: false
+  Spam: false
+  Advertise: false
+  Global: false
+  Channel: false
+  MuteAll: false
+  Ignore: false
+  Report: true
+  HelpOp: true
