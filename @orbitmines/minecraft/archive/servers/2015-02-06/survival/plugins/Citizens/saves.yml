@@ -1,0 +1,1004 @@
+# Citizens NPC Storage
+
+last-created-npc-id: 426
+npc:
+  '295':
+    name: §cTutorial
+    traits:
+      spawned: true
+      equipment:
+        hand:
+          type: STONE_HOE
+          amount: 1
+          durability: 0
+          mdata: 0
+      location:
+        world: ClaimTutorial
+        x: '1.0920295070261536'
+        y: '74.0'
+        z: '-25.001995473550934'
+        yaw: '-318.3002624511719'
+        pitch: '36.14998245239258'
+      owner:
+        owner: O_o_Fadi_o_O
+        uuid: ''
+    traitnames: equipment,owner,spawned,type,location
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: dbc6048e-9cc7-423b-a2f7-430b0c829aea
+    metadata:
+      cached-skin-uuid: 10df47cb-96b5-4726-a757-16c0942b5640
+      cached-skin-uuid-name: Tutorial
+  '294':
+    name: §cTutorial
+    traits:
+      spawned: true
+      equipment:
+        hand:
+          type: STONE_HOE
+          amount: 1
+          durability: 0
+          mdata: 0
+      location:
+        world: ClaimTutorial
+        x: '10.670723654029064'
+        y: '74.0'
+        z: '-11.303717248916422'
+        yaw: '-67.2001953125'
+        pitch: '39.449981689453125'
+      owner:
+        owner: O_o_Fadi_o_O
+        uuid: ''
+    traitnames: equipment,owner,spawned,type,location
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: 50c16de5-29bc-4135-9775-4b6acc34ec1b
+    metadata:
+      cached-skin-uuid: 10df47cb-96b5-4726-a757-16c0942b5640
+      cached-skin-uuid-name: Tutorial
+  '408':
+    name: §f§lMiner
+    traits:
+      spawned: true
+      equipment:
+        hand:
+          type: STONE_PICKAXE
+          amount: 1
+          durability: 0
+          mdata: 0
+      location:
+        world: SurvivalShops
+        x: '-746.4277364770462'
+        y: '24.0'
+        z: '433.9625335407893'
+        yaw: '227.5963134765625'
+        pitch: '37.39203643798828'
+      owner:
+        owner: O_o_Fadi_o_O
+        uuid: ''
+      lookclose:
+        enabled: true
+        range: '5.0'
+        realisticlooking: false
+    traitnames: equipment,owner,spawned,type,location,lookclose
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: 879c61cf-f7a8-4cb7-80fc-59311c766801
+    metadata:
+      cached-skin-uuid: 4e94f45c-759c-4293-af16-fdf219237a5d
+      cached-skin-uuid-name: Miner
+  '406':
+    name: §f§lFarmer
+    traits:
+      age:
+        age: 0
+        locked: true
+      spawned: true
+      type: Villager
+      location:
+        world: SurvivalShops
+        x: '-715.4854851988391'
+        y: '11.0'
+        z: '475.46870350896717'
+        yaw: '101.15098571777344'
+        pitch: '0.0'
+      owner:
+        owner: O_o_Fadi_o_O
+        uuid: ''
+      lookclose:
+        enabled: true
+        range: '5.0'
+        realisticlooking: false
+    traitnames: owner,age,spawned,type,location,lookclose
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: ac2f59b0-b89d-4f14-8509-63b647f6b171
+  '412':
+    name: §lJobs
+    traits:
+      spawned: true
+      equipment:
+        hand:
+          type: DIAMOND_AXE
+          amount: 1
+          durability: 0
+          mdata: 0
+        helmet:
+          type: IRON_HELMET
+          amount: 1
+          durability: 0
+          mdata: 0
+      location:
+        world: SurvivalShops
+        x: '-684.1782228412956'
+        y: '11.0'
+        z: '400.8670020355043'
+        yaw: '5.093940734863281'
+        pitch: '0.0'
+      owner:
+        owner: O_o_Fadi_o_O
+        uuid: ''
+      lookclose:
+        enabled: true
+        range: '5.0'
+        realisticlooking: false
+    traitnames: equipment,owner,spawned,type,location,lookclose
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: 0593ebe8-8628-41a9-9e28-c479132e36c0
+    metadata:
+      cached-skin-uuid: b40760da-17a7-4359-a3f4-80a38e746188
+      cached-skin-uuid-name: jobs
+  '411':
+    name: §lAnimals
+    traits:
+      age:
+        age: 0
+        locked: true
+      spawned: true
+      type: Villager
+      location:
+        world: SurvivalShops
+        x: '-726.4015002126218'
+        y: '11.0'
+        z: '385.5945623276015'
+        yaw: '141.79905700683594'
+        pitch: '0.0'
+      owner:
+        owner: O_o_Fadi_o_O
+        uuid: ''
+      lookclose:
+        enabled: true
+        range: '5.0'
+        realisticlooking: false
+    traitnames: owner,spawned,age,type,location,lookclose
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: 65264567-2ffb-447f-9b2d-3b54b4462469
+  '409':
+    name: §f§lEnchanter
+    traits:
+      age:
+        age: 0
+        locked: true
+      spawned: true
+      type: Villager
+      location:
+        world: SurvivalShops
+        x: '-701.004514109935'
+        y: '30.0'
+        z: '418.87048420383144'
+        yaw: '62.15740966796875'
+        pitch: '0.0'
+      owner:
+        owner: O_o_Fadi_o_O
+        uuid: ''
+      lookclose:
+        enabled: true
+        range: '5.0'
+        realisticlooking: false
+    traitnames: owner,spawned,age,type,location,lookclose
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: b1a29fe7-747c-4c39-8f6a-74570d1b4dee
+  '413':
+    name: §lBlocks
+    traits:
+      spawned: true
+      equipment:
+        hand:
+          type: WORKBENCH
+          amount: 1
+          durability: 0
+          mdata: 0
+        helmet:
+          type: PUMPKIN
+          amount: 1
+          durability: 0
+          mdata: 0
+      location:
+        world: SurvivalShops
+        x: '-696.5736597724314'
+        y: '12.0'
+        z: '436.51534024274076'
+        yaw: '223.955810546875'
+        pitch: '12.90002727508545'
+      owner:
+        owner: O_o_Fadi_o_O
+        uuid: ''
+    traitnames: equipment,owner,spawned,type,location
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: ee374224-86fd-45b2-9c8b-fba0aee4ba99
+    metadata:
+      cached-skin-uuid: 97c052c2-9969-4334-8ee6-de799a5f5720
+      cached-skin-uuid-name: Blocks
+  '416':
+    name: §c§lTeleport
+    traits:
+      spawned: true
+      type: Enderman
+      location:
+        world: SurvivalShops
+        x: '-689.696769473579'
+        y: '12.0'
+        z: '422.19056051290244'
+        yaw: '-57.14398193359375'
+        pitch: '0.0'
+      owner:
+        owner: O_o_Fadi_o_O
+        uuid: ''
+    traitnames: owner,spawned,type,location
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: cf413959-0abb-458e-ac5a-ccbab8ec514a
+  '418':
+    name: Cow
+    traits:
+      age:
+        age: 0
+        locked: true
+      spawned: true
+      waypoints:
+        linear:
+          points:
+            '0':
+              location:
+                world: SurvivalShops
+                x: '-730.0'
+                y: '11.0'
+                z: '377.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '1':
+              location:
+                world: SurvivalShops
+                x: '-730.0'
+                y: '11.0'
+                z: '377.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '2':
+              location:
+                world: SurvivalShops
+                x: '-729.0'
+                y: '11.0'
+                z: '378.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '3':
+              location:
+                world: SurvivalShops
+                x: '-729.0'
+                y: '11.0'
+                z: '378.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '4':
+              location:
+                world: SurvivalShops
+                x: '-728.0'
+                y: '11.0'
+                z: '378.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '5':
+              location:
+                world: SurvivalShops
+                x: '-728.0'
+                y: '10.0'
+                z: '378.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '6':
+              location:
+                world: SurvivalShops
+                x: '-730.0'
+                y: '11.0'
+                z: '378.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '7':
+              location:
+                world: SurvivalShops
+                x: '-731.0'
+                y: '11.0'
+                z: '378.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '8':
+              location:
+                world: SurvivalShops
+                x: '-729.0'
+                y: '11.0'
+                z: '380.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '9':
+              location:
+                world: SurvivalShops
+                x: '-729.0'
+                y: '11.0'
+                z: '380.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '10':
+              location:
+                world: SurvivalShops
+                x: '-730.0'
+                y: '11.0'
+                z: '380.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '11':
+              location:
+                world: SurvivalShops
+                x: '-731.0'
+                y: '11.0'
+                z: '380.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '12':
+              location:
+                world: SurvivalShops
+                x: '-731.0'
+                y: '11.0'
+                z: '379.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '13':
+              location:
+                world: SurvivalShops
+                x: '-731.0'
+                y: '11.0'
+                z: '379.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '14':
+              location:
+                world: SurvivalShops
+                x: '-732.0'
+                y: '11.0'
+                z: '378.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '15':
+              location:
+                world: SurvivalShops
+                x: '-733.0'
+                y: '11.0'
+                z: '378.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '16':
+              location:
+                world: SurvivalShops
+                x: '-733.0'
+                y: '11.0'
+                z: '377.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '17':
+              location:
+                world: SurvivalShops
+                x: '-733.0'
+                y: '11.0'
+                z: '377.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '18':
+              location:
+                world: SurvivalShops
+                x: '-733.0'
+                y: '11.0'
+                z: '376.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '19':
+              location:
+                world: SurvivalShops
+                x: '-733.0'
+                y: '11.0'
+                z: '376.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '20':
+              location:
+                world: SurvivalShops
+                x: '-732.0'
+                y: '11.0'
+                z: '377.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '21':
+              location:
+                world: SurvivalShops
+                x: '-732.0'
+                y: '11.0'
+                z: '377.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '22':
+              location:
+                world: SurvivalShops
+                x: '-732.0'
+                y: '11.0'
+                z: '379.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '23':
+              location:
+                world: SurvivalShops
+                x: '-731.0'
+                y: '11.0'
+                z: '379.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '24':
+              location:
+                world: SurvivalShops
+                x: '-730.0'
+                y: '11.0'
+                z: '377.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '25':
+              location:
+                world: SurvivalShops
+                x: '-730.0'
+                y: '11.0'
+                z: '377.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '26':
+              location:
+                world: SurvivalShops
+                x: '-729.0'
+                y: '11.0'
+                z: '376.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '27':
+              location:
+                world: SurvivalShops
+                x: '-728.0'
+                y: '11.0'
+                z: '376.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '28':
+              location:
+                world: SurvivalShops
+                x: '-730.0'
+                y: '11.0'
+                z: '379.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '29':
+              location:
+                world: SurvivalShops
+                x: '-731.0'
+                y: '11.0'
+                z: '379.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '30':
+              location:
+                world: SurvivalShops
+                x: '-731.0'
+                y: '11.0'
+                z: '379.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '31':
+              location:
+                world: SurvivalShops
+                x: '-730.0'
+                y: '11.0'
+                z: '379.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '32':
+              location:
+                world: SurvivalShops
+                x: '-729.0'
+                y: '11.0'
+                z: '379.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '33':
+              location:
+                world: SurvivalShops
+                x: '-729.0'
+                y: '11.0'
+                z: '376.0'
+                yaw: '0.0'
+                pitch: '0.0'
+        provider: linear
+      type: Cow
+      location:
+        world: SurvivalShops
+        x: '-727.1999999880791'
+        y: '12.0'
+        z: '376.19999998807907'
+        yaw: '1.1796598E7'
+        pitch: '0.0'
+      owner:
+        owner: O_o_Fadi_o_O
+        uuid: ''
+    traitnames: waypoints,owner,age,spawned,type,location
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: abc9bd48-00f8-476a-af3d-c8503499b54c
+  '417':
+    name: Cow
+    traits:
+      age:
+        age: 0
+        locked: true
+      spawned: true
+      waypoints:
+        linear:
+          points:
+            '0':
+              location:
+                world: SurvivalShops
+                x: '-736.0'
+                y: '11.0'
+                z: '379.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '1':
+              location:
+                world: SurvivalShops
+                x: '-736.0'
+                y: '11.0'
+                z: '379.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '2':
+              location:
+                world: SurvivalShops
+                x: '-737.0'
+                y: '11.0'
+                z: '381.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '3':
+              location:
+                world: SurvivalShops
+                x: '-737.0'
+                y: '11.0'
+                z: '381.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '4':
+              location:
+                world: SurvivalShops
+                x: '-736.0'
+                y: '11.0'
+                z: '383.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '5':
+              location:
+                world: SurvivalShops
+                x: '-736.0'
+                y: '11.0'
+                z: '383.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '6':
+              location:
+                world: SurvivalShops
+                x: '-735.0'
+                y: '11.0'
+                z: '382.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '7':
+              location:
+                world: SurvivalShops
+                x: '-735.0'
+                y: '11.0'
+                z: '382.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '8':
+              location:
+                world: SurvivalShops
+                x: '-735.0'
+                y: '11.0'
+                z: '384.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '9':
+              location:
+                world: SurvivalShops
+                x: '-735.0'
+                y: '11.0'
+                z: '384.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '10':
+              location:
+                world: SurvivalShops
+                x: '-733.0'
+                y: '11.0'
+                z: '382.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '11':
+              location:
+                world: SurvivalShops
+                x: '-733.0'
+                y: '11.0'
+                z: '382.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '12':
+              location:
+                world: SurvivalShops
+                x: '-735.0'
+                y: '11.0'
+                z: '382.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '13':
+              location:
+                world: SurvivalShops
+                x: '-735.0'
+                y: '11.0'
+                z: '382.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '14':
+              location:
+                world: SurvivalShops
+                x: '-734.0'
+                y: '11.0'
+                z: '380.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '15':
+              location:
+                world: SurvivalShops
+                x: '-734.0'
+                y: '11.0'
+                z: '380.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '16':
+              location:
+                world: SurvivalShops
+                x: '-734.0'
+                y: '11.0'
+                z: '378.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '17':
+              location:
+                world: SurvivalShops
+                x: '-734.0'
+                y: '11.0'
+                z: '378.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '18':
+              location:
+                world: SurvivalShops
+                x: '-736.0'
+                y: '11.0'
+                z: '378.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '19':
+              location:
+                world: SurvivalShops
+                x: '-736.0'
+                y: '11.0'
+                z: '378.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '20':
+              location:
+                world: SurvivalShops
+                x: '-737.0'
+                y: '11.0'
+                z: '380.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '21':
+              location:
+                world: SurvivalShops
+                x: '-737.0'
+                y: '11.0'
+                z: '380.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '22':
+              location:
+                world: SurvivalShops
+                x: '-736.0'
+                y: '11.0'
+                z: '378.0'
+                yaw: '0.0'
+                pitch: '0.0'
+        provider: linear
+      type: Cow
+      location:
+        world: SurvivalShops
+        x: '-735.8364589669341'
+        y: '12.0'
+        z: '379.82597979309236'
+        yaw: '-183195.453125'
+        pitch: '0.0'
+      owner:
+        owner: O_o_Fadi_o_O
+        uuid: ''
+    traitnames: waypoints,owner,spawned,age,type,location
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: 2c16aba7-53cd-4b2a-8e1a-217fb4496b64
+  '421':
+    name: §cClaim Tutorial
+    traits:
+      spawned: true
+      equipment:
+        hand:
+          type: STONE_HOE
+          amount: 1
+          durability: 0
+          mdata: 0
+      location:
+        world: SurvivalShops
+        x: '-685.5551884847844'
+        y: '11.0'
+        z: '431.6168165724816'
+        yaw: '-126.88473510742188'
+        pitch: '16.500022888183594'
+      owner:
+        owner: O_o_Fadi_o_O
+        uuid: ''
+    traitnames: equipment,owner,spawned,type,location
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: c98c5d10-3d3d-495b-be37-dbd2cd9ee7b3
+  '426':
+    name: §4§lPvP World
+    uuid: c8ed38eb-c563-4227-9c0e-74b2a7a84f9a
+    traits:
+      spawned: true
+      location:
+        world: SurvivalShops
+        x: '-499.50998450652304'
+        y: '14.0'
+        z: '495.47917571338445'
+        yaw: '-135.13302612304688'
+        pitch: '6.150003433227539'
+      equipment:
+        hand:
+          type: DIAMOND_SWORD
+          amount: 1
+          durability: 0
+          mdata: 0
+          meta: {}
+          enchantments:
+            DAMAGE_ALL: 1
+        helmet:
+          type: IRON_HELMET
+          amount: 1
+          durability: 0
+          mdata: 0
+          meta: {}
+          enchantments:
+            PROTECTION_ENVIRONMENTAL: 1
+        chestplate:
+          type: IRON_CHESTPLATE
+          amount: 1
+          durability: 0
+          mdata: 0
+          meta: {}
+          enchantments:
+            PROTECTION_ENVIRONMENTAL: 1
+        leggings:
+          type: IRON_LEGGINGS
+          amount: 1
+          durability: 0
+          mdata: 0
+          meta: {}
+          enchantments:
+            PROTECTION_ENVIRONMENTAL: 1
+        boots:
+          type: IRON_BOOTS
+          amount: 1
+          durability: 0
+          mdata: 0
+          meta: {}
+          enchantments:
+            PROTECTION_ENVIRONMENTAL: 1
+      owner:
+        owner: O_o_Fadi_o_O
+        uuid: 8667aa59-4924-38a1-bc5c-94efed61d5bc
+    traitnames: equipment,owner,spawned,type,location
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+  '425':
+    name: §c§lRegion TP
+    uuid: 53fd42e9-4dd3-41d8-97c2-43697644314f
+    traits:
+      spawned: true
+      location:
+        world: SurvivalShops
+        x: '-499.5543793656316'
+        y: '14.0'
+        z: '483.4390783302626'
+        yaw: '-45.582977294921875'
+        pitch: '6.000061511993408'
+      equipment:
+        hand:
+          type: ENDER_PEARL
+          amount: 1
+          durability: 0
+          mdata: 0
+      owner:
+        owner: O_o_Fadi_o_O
+        uuid: 8667aa59-4924-38a1-bc5c-94efed61d5bc
+    traitnames: equipment,owner,spawned,type,location
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+  '424':
+    name: §a§lMerchant
+    uuid: edf6be52-26ce-4d0d-9656-94df3220ef40
+    traits:
+      spawned: true
+      location:
+        world: SurvivalShops
+        x: '-487.48992949951315'
+        y: '14.0'
+        z: '495.54846511686685'
+        yaw: '-225.43316650390625'
+        pitch: '5.550027847290039'
+      equipment:
+        hand:
+          type: GOLD_INGOT
+          amount: 1
+          durability: 0
+          mdata: 0
+      owner:
+        owner: O_o_Fadi_o_O
+        uuid: 8667aa59-4924-38a1-bc5c-94efed61d5bc
+    traitnames: equipment,owner,spawned,type,location
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    metadata:
+      cached-skin-uuid: a39ef57a-387c-4cd1-9740-59b732ebc7a5
+      cached-skin-uuid-name: Merchant
+  '423':
+    name: §6§lJob Manager
+    uuid: e8877916-eb90-4488-bc89-f41fa24264c2
+    traits:
+      spawned: true
+      location:
+        world: SurvivalShops
+        x: '-487.4732083484986'
+        y: '14.0'
+        z: '483.40222518638285'
+        yaw: '-314.9822998046875'
+        pitch: '9.449993133544922'
+      equipment:
+        hand:
+          type: IRON_AXE
+          amount: 1
+          durability: 0
+          mdata: 0
+        helmet:
+          type: LEATHER_HELMET
+          amount: 1
+          durability: 0
+          mdata: 0
+        chestplate:
+          type: LEATHER_CHESTPLATE
+          amount: 1
+          durability: 0
+          mdata: 0
+        leggings:
+          type: LEATHER_LEGGINGS
+          amount: 1
+          durability: 0
+          mdata: 0
+        boots:
+          type: LEATHER_BOOTS
+          amount: 1
+          durability: 0
+          mdata: 0
+      owner:
+        owner: O_o_Fadi_o_O
+        uuid: 8667aa59-4924-38a1-bc5c-94efed61d5bc
+    traitnames: equipment,owner,spawned,type,location
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true

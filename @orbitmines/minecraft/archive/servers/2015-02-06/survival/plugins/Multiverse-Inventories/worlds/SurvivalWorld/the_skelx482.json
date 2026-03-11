@@ -1,0 +1,1 @@
+{"SURVIVAL":{"armorContents":{},"enderChestContents":{},"inventoryContents":{"1":{"==":"org.bukkit.inventory.ItemStack","type":"ROTTEN_FLESH","amount":2},"0":{"==":"org.bukkit.inventory.ItemStack","type":"ARROW"}},"balance":"100.0","potions":"[]","stats":{"ex":"0.38159144","ra":"300","hp":"10","fl":"13","txp":"0","el":"0","sa":"0.0","ma":"300","xp":"0.0","ft":"-20","fd":"0.0"}}}

@@ -1,0 +1,36 @@
+ShopName: AquaAffinity
+signs:
+  text: '[AquaAffinity]'
+  NeedPermissionToCreateSign: true
+shop:
+  1:
+    RewardType: item
+    PriceType: money
+    Price: 500
+    Reward:
+    - - type:ENCHANTED_BOOK
+      - enchantment:WATER_WORKER#1
+      - amount:1
+    MenuItem:
+    - type:ENCHANTED_BOOK
+    - enchantment:WATER_WORKER#1
+    - amount:1
+    - 'name:&bEnchanted Book &6[Aqua Affinity I]'
+    - 'lore:&c&LPrice: &6500$ #&4Required: &8[&7&lVIP&8]'
+    - amount:1
+    Message: '&2[&aSurvival Shop&2] &aYou have bought &f1 Enchanted Book (Aqua Affinity I)&a for &6500$'
+    InventoryLocation: 1
+    ExtraPermission: 'vipshop.ivip'
+  BackToMenu:
+    RewardType: shop
+    PriceType: free
+    Reward: Survival
+    MenuItem:
+    - type:REDSTONE_BLOCK
+    - amount:1
+    - name:&a&LSurvival Menu
+    - lore:&8Back to the Survival Menu
+    - amount:1
+    InventoryLocation: 9
+    ExtraPermission: ''
+

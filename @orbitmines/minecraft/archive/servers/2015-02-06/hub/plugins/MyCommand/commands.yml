@@ -1,0 +1,43 @@
+# MyCommand  Commands Config File
+# commandsnumber (default 20) it's number of command you want make
+# Don't forget the '/' on runcmd line , example command: /myhelp
+# type accept = text , runcommand , broadcast-text , runcommand-text , runcommand-broadcast-text , perm-broadcast-text , addpermission , addtimer , runconsole , runcommand-perm-broadcast-text , runcommand-random , runasoperator , iconmenu
+# Additional type accept if you use Spoutplugin = spout-text , spout-notification.\n" +
+# runcommand type example -> If command: /l and runcmd: /list,when you type /l mycommand execute /list
+# runcmd support custom argument in game.($arg1,$arg2,$arg3,$arg4,$arg5,$multiargs) Example - runcmd : /time $arg1
+# For Delayed command add $delay$ before the command in runcmd Example : - $delay$/list
+# Set delay time with delaytimer: 5 (5 = seconds)
+# Use the dot . for decimal cost Example = cost : 5.5
+# You can use a custom permission node by placing "permission-node:" field in a command,you also can change the permission error message with "permission-error:"
+# Custom error-message for invalid args ,put "error-message:" line in a command.
+# You can use itemcost : 'ID:AMOUNT' for set a cost with items.
+# http://dev.bukkit.org/server-mods/mycommand/pages/configuration-and-example
+options:
+  commandsnumber: 50
+'1':
+  command: /plugins
+  type: text
+  text:
+  - '&fPlugins (1): &aOrbitMines Hub'
+'2':
+  command: /pl
+  type: text
+  text:
+  - '&fPlugins (1): &aOrbitMines Hub'
+'3':
+  command: /?
+  type: text
+  text:
+  - '&e--------- &fHelp: Index (1/1) &e--------------------'
+  - '&6OrbitMines Pixelmon: &fOrbitMines Hub Server'
+'4':
+  command: /donate
+  type: text
+  text:
+  - '&8[&6&lOrbitMines&8] &7Donate at: &6http://shop.orbitmines.com'
+'5':
+  command: /builder
+  type: runconsole
+  runcmd:
+  - '/mvtp $player SkyBlockWorld'
+

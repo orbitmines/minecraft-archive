@@ -1,0 +1,14 @@
+kit:
+  location: SurvivalShops,-682.4859599351215,13.0,425.5108644696932
+  lines:
+  - '&aStarter Kit:'
+  - '&b/kit Survival'
+pvp:
+  location: SurvivalPvP,-771.5013605224934,13.0,1176.521294701395
+  lines:
+  - '&4&lPvP Rules:'
+  - '&6/dis &7: &cDISALLOWED'
+  - '&6/fly &7: &cDISALLOWED'
+  - '&6Ender Pearls &7: &cDISALLOWED'
+  - '&6TP &7: &cDISALLOWED'
+  - '&6CombatLog &7: &cDISALLOWED'

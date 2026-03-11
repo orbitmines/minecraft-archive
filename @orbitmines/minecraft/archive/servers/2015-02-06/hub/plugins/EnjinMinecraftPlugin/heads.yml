@@ -1,0 +1,58 @@
+heads:
+  TopMonthlyVoter:
+    '0':
+      hashead: false
+      world: Hub
+      signx: -402
+      signy: 15
+      signz: 1041
+      position: 1
+    '1':
+      hashead: false
+      world: Hub
+      signx: -402
+      signy: 15
+      signz: 1023
+      position: 4
+    '2':
+      hashead: false
+      world: Hub
+      signx: -392
+      signy: 15
+      signz: 1041
+      position: 0
+    '3':
+      hashead: false
+      world: Hub
+      signx: -388
+      signy: 15
+      signz: 1027
+      position: 6
+    '4':
+      hashead: false
+      world: Hub
+      signx: -392
+      signy: 15
+      signz: 1023
+      position: 5
+    '5':
+      hashead: false
+      world: Hub
+      signx: -406
+      signy: 15
+      signz: 1027
+      position: 3
+    '6':
+      hashead: false
+      world: Hub
+      signx: -406
+      signy: 15
+      signz: 1037
+      position: 2
+    '7':
+      hashead: false
+      world: Hub
+      signx: -388
+      signy: 15
+      signz: 1037
+      position: 7

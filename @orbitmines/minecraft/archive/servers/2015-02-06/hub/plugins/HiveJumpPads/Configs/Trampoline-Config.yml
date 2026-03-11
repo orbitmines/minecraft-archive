@@ -1,0 +1,22 @@
+# HiveJumpPads - Trampoline Config 
+# 
+#  Anivable Sounds/Effects: 
+# 
+# Sounds: http://dev.Bukkit.org/bukkit-plugins/hive-jump-pads/pages/Sounds 
+# Effects: http://dev.Bukkit.org/bukkit-plugins/hive-jump-pad/pages/Effects 
+
+HiveJumpPads:
+  Trampolines:
+    Enable Trampoline: false
+    3x3 Field: true
+    Enable Sounds: false
+    Enable Effects: false
+    PressurePlate ID: 147
+    Block ID: 152
+    Jump height: 15
+    Sound: none
+    Effect: none
+    Disabled Worlds:
+    - World 1
+    - World 2
+    - World 3

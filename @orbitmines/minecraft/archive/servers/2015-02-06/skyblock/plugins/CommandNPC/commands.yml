@@ -1,0 +1,4 @@
+NPCS:
+  '17':
+    Commands:
+    - is info~~false

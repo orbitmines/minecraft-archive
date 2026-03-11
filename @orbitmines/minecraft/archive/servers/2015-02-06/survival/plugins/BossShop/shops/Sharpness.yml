@@ -1,0 +1,108 @@
+ShopName: Sharpness
+signs:
+  text: '[Sharpness]'
+  NeedPermissionToCreateSign: true
+shop:
+  1:
+    RewardType: item
+    PriceType: money
+    Price: 500
+    Reward:
+    - - type:ENCHANTED_BOOK
+      - enchantment:DAMAGE_ALL#1
+      - amount:1
+    MenuItem:
+    - type:ENCHANTED_BOOK
+    - enchantment:DAMAGE_ALL#1
+    - amount:1
+    - 'name:&bEnchanted Book &6[Sharpness I]'
+    - 'lore:&c&LPrice: &6500$'
+    - amount:1
+    Message: '&2[&aSurvival Shop&2] &aYou have bought &f1 Enchanted Book (Sharpness I)&a for &6500$'
+    InventoryLocation: 1
+    ExtraPermission: ''
+  2:
+    RewardType: item
+    PriceType: money
+    Price: 1000
+    Reward:
+    - - type:ENCHANTED_BOOK
+      - enchantment:DAMAGE_ALL#2
+      - amount:1
+    MenuItem:
+    - type:ENCHANTED_BOOK
+    - enchantment:DAMAGE_ALL#2
+    - amount:1
+    - 'name:&bEnchanted Book &6[Sharpness II]'
+    - 'lore:&c&LPrice: &61000$'
+    - amount:1
+    Message: '&2[&aSurvival Shop&2] &aYou have bought &f1 Enchanted Book (Sharpness II)&a for &61000$'
+    InventoryLocation: 2
+    ExtraPermission: ''
+  3:
+    RewardType: item
+    PriceType: money
+    Price: 2500
+    Reward:
+    - - type:ENCHANTED_BOOK
+      - enchantment:DAMAGE_ALL#3
+      - amount:1
+    MenuItem:
+    - type:ENCHANTED_BOOK
+    - enchantment:DAMAGE_ALL#3
+    - amount:1
+    - 'name:&bEnchanted Book &6[Sharpness III]'
+    - 'lore:&c&LPrice: &62500$ #&4Required: &8[&7&lVIP&8]'
+    - amount:1
+    Message: '&2[&aSurvival Shop&2] &aYou have bought &f1 Enchanted Book (Sharpness III)&a for &62500$'
+    InventoryLocation: 3
+    ExtraPermission: 'vipshop.ivip'
+  4:
+    RewardType: item
+    PriceType: money
+    Price: 4500
+    Reward:
+    - - type:ENCHANTED_BOOK
+      - enchantment:DAMAGE_ALL#4
+      - amount:1
+    MenuItem:
+    - type:ENCHANTED_BOOK
+    - enchantment:DAMAGE_ALL#4
+    - amount:1
+    - 'name:&bEnchanted Book &6[Sharpness IV]'
+    - 'lore:&c&LPrice: &64500$ #&4Required: &6[&e&lVIP&6]'
+    - amount:1
+    Message: '&2[&aSurvival Shop&2] &aYou have bought &f1 Enchanted Book (Sharpness IV)&a for &64500$'
+    InventoryLocation: 4
+    ExtraPermission: 'vipshop.gvip'
+  5:
+    RewardType: item
+    PriceType: money
+    Price: 6500
+    Reward:
+    - - type:ENCHANTED_BOOK
+      - enchantment:DAMAGE_ALL#5
+      - amount:1
+    MenuItem:
+    - type:ENCHANTED_BOOK
+    - enchantment:DAMAGE_ALL#5
+    - amount:1
+    - 'name:&bEnchanted Book &6[Sharpness V]'
+    - 'lore:&c&LPrice: &66500$ #&4Required: &b[&9&lVIP&b]'
+    - amount:1
+    Message: '&2[&aSurvival Shop&2] &aYou have bought &f1 Enchanted Book (Sharpness V)&a for &66500$'
+    InventoryLocation: 5
+    ExtraPermission: 'vipshop.dvip'
+  BackToMenu:
+    RewardType: shop
+    PriceType: free
+    Reward: Survival
+    MenuItem:
+    - type:REDSTONE_BLOCK
+    - amount:1
+    - name:&a&LSurvival Menu
+    - lore:&8Back to the Survival Menu
+    - amount:1
+    InventoryLocation: 9
+    ExtraPermission: ''
+

@@ -1,0 +1,161 @@
+ShopName: Jobs
+signs:
+  text: '[Jobs]'
+  NeedPermissionToCreateSign: true
+shop:
+  Miner:
+    RewardType: playercommand
+    PriceType: free
+    Reward:
+    - jobs join [Miner]
+    MenuItem:
+    - 'type: IRON_PICKAXE'
+    - amount:1
+    - name:&9[Miner]
+    - 'lore:&7Join the Job Miner'
+    - amount:1
+    InventoryLocation: 1
+    ExtraPermission: ''
+  Lumberjack:
+    RewardType: playercommand
+    PriceType: free
+    Reward:
+    - jobs join [Lumberjack]
+    MenuItem:
+    - 'type: STONE_AXE'
+    - amount:1
+    - name:&6[Lumberjack]
+    - 'lore:&7Join the Job Lumberjack'
+    - amount:1
+    InventoryLocation: 2
+    ExtraPermission: ''
+  Farmer:
+    RewardType: playercommand
+    PriceType: free
+    Reward:
+    - jobs join [Farmer]
+    MenuItem:
+    - 'type: DIAMOND_HOE'
+    - amount:1
+    - name:&a[Farmer]
+    - 'lore:&7Join the Job Farmer'
+    - amount:1
+    InventoryLocation: 3
+    ExtraPermission: ''
+  Fighter:
+    RewardType: playercommand
+    PriceType: free
+    Reward:
+    - jobs join [Fighter]
+    MenuItem:
+    - 'type: IRON_SWORD'
+    - amount:1
+    - name:&c[Fighter]
+    - 'lore:&7Join the Job Fighter'
+    - amount:1
+    InventoryLocation: 4
+    ExtraPermission: ''
+  Crafter:
+    RewardType: playercommand
+    PriceType: free
+    Reward:
+    - jobs join [Crafter]
+    MenuItem:
+    - 'type: WORKBENCH'
+    - amount:1
+    - name:&5[Crafter]
+    - 'lore:&7Join the Job Crafter'
+    - amount:1
+    InventoryLocation: 5
+    ExtraPermission: ''
+  Fisher:
+    RewardType: playercommand
+    PriceType: free
+    Reward:
+    - jobs join [Fisher]
+    MenuItem:
+    - 'type: FISHING_ROD'
+    - amount:1
+    - name:&b[Fisher]
+    - 'lore:&7Join the Job Fisher'
+    - amount:1
+    InventoryLocation: 6
+    ExtraPermission: ''
+  MinerL:
+    RewardType: playercommand
+    PriceType: free
+    Reward:
+    - jobs leave [Miner]
+    MenuItem:
+    - 'type: FIRE'
+    - amount:1
+    - name:&9[Miner]
+    - 'lore:&7Leave the Job Miner'
+    - amount:1
+    InventoryLocation: 19
+    ExtraPermission: ''
+  LumberjackL:
+    RewardType: playercommand
+    PriceType: free
+    Reward:
+    - jobs leave [Lumberjack]
+    MenuItem:
+    - 'type: FIRE'
+    - amount:1
+    - name:&6[Lumberjack]
+    - 'lore:&7Leave the Job Lumberjack'
+    - amount:1
+    InventoryLocation: 20
+    ExtraPermission: ''
+  FarmerL:
+    RewardType: playercommand
+    PriceType: free
+    Reward:
+    - jobs leave [Farmer]
+    MenuItem:
+    - 'type: FIRE'
+    - amount:1
+    - name:&a[Farmer]
+    - 'lore:&7Leave the Job Farmer'
+    - amount:1
+    InventoryLocation: 21
+    ExtraPermission: ''
+  FighterL:
+    RewardType: playercommand
+    PriceType: free
+    Reward:
+    - jobs leave [Fighter]
+    MenuItem:
+    - 'type: FIRE'
+    - amount:1
+    - name:&c[Fighter]
+    - 'lore:&7Leave the Job Fighter'
+    - amount:1
+    InventoryLocation: 22
+    ExtraPermission: ''
+  CrafterL:
+    RewardType: playercommand
+    PriceType: free
+    Reward:
+    - jobs leave [Crafter]
+    MenuItem:
+    - 'type: FIRE'
+    - amount:1
+    - name:&5[Crafter]
+    - 'lore:&7Leave the Job Crafter'
+    - amount:1
+    InventoryLocation: 23
+    ExtraPermission: ''
+  FisherL:
+    RewardType: playercommand
+    PriceType: free
+    Reward:
+    - jobs leave [Fisher]
+    MenuItem:
+    - 'type: FIRE'
+    - amount:1
+    - name:&b[Fisher]
+    - 'lore:&7Leave the Job Fisher'
+    - amount:1
+    InventoryLocation: 24
+    ExtraPermission: ''
