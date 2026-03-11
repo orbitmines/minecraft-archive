@@ -1,0 +1,23 @@
+# HiveJumpPads - JumpPad Config 
+# 
+#  Anivable Sounds/Effects: 
+# 
+# Sounds: http://dev.Bukkit.org/bukkit-plugins/hive-jump-pads/pages/Sounds 
+# Effects: http://dev.Bukkit.org/bukkit-plugins/hive-jump-pad/pages/Effects 
+
+HiveJumpPads:
+  JumpPads:
+    Enable Jump Pads: true
+    3x3 Field: false
+    Enable Sounds: true
+    Enable Effects: true
+    PressurePlate ID: 70
+    Block ID: 124
+    Jump lenght: 20
+    Jump height: 3
+    Sound: GHAST_FIREBALL
+    Effect: SMOKE
+    Disabled Worlds:
+    - World 1
+    - World 2
+    - World 3

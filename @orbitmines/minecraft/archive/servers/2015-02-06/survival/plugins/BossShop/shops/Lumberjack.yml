@@ -1,0 +1,30 @@
+ShopName: Lumberjack
+signs:
+  text: '[Lumberjack]'
+  NeedPermissionToCreateSign: true
+shop:
+  Log:
+    RewardType: money
+    PriceType: free
+    Reward: 0
+    MenuItem:
+    - type:LOG
+    - amount:1
+    - name:&fOak Wood
+    - 'lore:&7[Stats on LvL 1] #&cBreak: &65$ #&cPlace: &6-5$'
+    - amount:1
+    InventoryLocation: 1
+    ExtraPermission: ''
+  BackToMenu:
+    RewardType: shop
+    PriceType: free
+    Reward: Jobs
+    MenuItem:
+    - type:REDSTONE_BLOCK
+    - amount:1
+    - name:&a&LJob Menu
+    - lore:&8Back to the Jobs Menu
+    - amount:1
+    InventoryLocation: 9
+    ExtraPermission: ''
+

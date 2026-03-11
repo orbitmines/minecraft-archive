@@ -1,0 +1,17 @@
+ShopName: DiamondVIP
+signs:
+  text: '[DiamondVIP]'
+  NeedPermissionToCreateSign: true
+shop:
+  E-VIP:
+    RewardType: shop
+    PriceType: free
+    Reward: DiamondVIP-P1
+    MenuItem:
+    - 'type: DIAMOND'
+    - amount:1
+    - 'name:&9&lDiamond-VIP Shop'
+    - 'lore:&cRank: &b[&9&lVIP&b] #&cProfit: &625%'
+    - amount:1
+    InventoryLocation: 5
+    ExtraPermission: 'vipshop.D'

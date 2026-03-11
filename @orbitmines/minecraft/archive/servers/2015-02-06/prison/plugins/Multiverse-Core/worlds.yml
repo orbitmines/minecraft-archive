@@ -1,0 +1,353 @@
+worlds:
+  PrisonServer:
+    seed: 7422355313072493449
+    environment: NORMAL
+    type: FLAT
+    hidden: true
+    alias:
+      name: Prison
+      color: DARKRED
+    pvp: false
+    scale: 1.0
+    respawnworld: ''
+    allowweather: false
+    difficulty: EASY
+    animals:
+      spawn: true
+    monsters:
+      spawn: true
+    entryfee:
+      currency: -1
+      price: 0.0
+    hunger: true
+    autoheal: true
+    adjustspawn: true
+    portalform: ALL
+    gamemode: SURVIVAL
+    keepspawninmemory: false
+    spawn:
+      x: -223.51678131711026
+      y: 8.0
+      z: 15.530489951181703
+      pitch: -90.0
+      yaw: -359.39963
+      world: PrisonServer
+    autoload: true
+    bedrespawn: true
+  PrisonPvPArena:
+    generator: EmptyWorldGenerator
+    seed: -3901653597972380846
+    environment: NORMAL
+    type: NORMAL
+    hidden: true
+    alias:
+      name: Prison
+      color: DARKRED
+    pvp: true
+    scale: 1.0
+    respawnworld: PrisonServer
+    allowweather: true
+    difficulty: EASY
+    animals:
+      spawn: true
+    monsters:
+      spawn: true
+    entryfee:
+      currency: -1
+      price: 0.0
+    hunger: true
+    autoheal: true
+    adjustspawn: false
+    portalform: ALL
+    gamemode: SURVIVAL
+    keepspawninmemory: false
+    spawn:
+      x: 0.17924626319906006
+      y: 66.0
+      z: 0.4010848099163407
+      pitch: 5.399998
+      yaw: 180.44995
+      world: PrisonPvPArena
+    autoload: true
+    bedrespawn: true
+  world:
+    seed: -4692656229150555809
+    environment: NORMAL
+    type: NORMAL
+    hidden: false
+    alias:
+      name: ''
+      color: WHITE
+    pvp: true
+    scale: 1.0
+    respawnworld: ''
+    allowweather: true
+    difficulty: EASY
+    animals:
+      spawn: true
+    monsters:
+      spawn: true
+    entryfee:
+      currency: -1
+      price: 0.0
+    hunger: true
+    autoheal: true
+    adjustspawn: true
+    portalform: ALL
+    gamemode: SURVIVAL
+    keepspawninmemory: true
+    spawn:
+      x: 245.5
+      y: 68.0
+      z: 250.5
+      pitch: 0.0
+      yaw: 0.0
+      world: world
+    autoload: true
+    bedrespawn: true
+  world_nether:
+    seed: -4692656229150555809
+    environment: NETHER
+    type: NORMAL
+    hidden: false
+    alias:
+      name: ''
+      color: WHITE
+    pvp: true
+    scale: 8.0
+    respawnworld: ''
+    allowweather: true
+    difficulty: EASY
+    animals:
+      spawn: true
+    monsters:
+      spawn: true
+    entryfee:
+      currency: -1
+      price: 0.0
+    hunger: true
+    autoheal: true
+    adjustspawn: true
+    portalform: ALL
+    gamemode: SURVIVAL
+    keepspawninmemory: true
+    spawn:
+      x: -4.5
+      y: 64.0
+      z: 0.5
+      pitch: 0.0
+      yaw: 0.0
+      world: world_nether
+    autoload: true
+    bedrespawn: true
+  world_the_end:
+    seed: -4692656229150555809
+    environment: THE_END
+    type: NORMAL
+    hidden: false
+    alias:
+      name: ''
+      color: WHITE
+    pvp: true
+    scale: 1.0
+    respawnworld: ''
+    allowweather: true
+    difficulty: EASY
+    animals:
+      spawn: true
+    monsters:
+      spawn: true
+    entryfee:
+      currency: -1
+      price: 0.0
+    hunger: true
+    autoheal: true
+    adjustspawn: true
+    portalform: ALL
+    gamemode: SURVIVAL
+    keepspawninmemory: true
+    spawn:
+      x: 0.0
+      y: 62.0
+      z: 0.0
+      pitch: 0.0
+      yaw: 0.0
+      world: world_the_end
+    autoload: true
+    bedrespawn: true
+  PrisonPlots:
+    generator: PlotMe
+    seed: 9177372498505504550
+    environment: NORMAL
+    type: NORMAL
+    hidden: true
+    alias:
+      name: ''
+      color: WHITE
+    pvp: false
+    scale: 1.0
+    respawnworld: ''
+    allowweather: false
+    difficulty: EASY
+    animals:
+      spawn: true
+    monsters:
+      spawn: true
+    entryfee:
+      currency: -1
+      price: 0.0
+    hunger: true
+    autoheal: true
+    adjustspawn: true
+    portalform: ALL
+    gamemode: SURVIVAL
+    keepspawninmemory: true
+    spawn:
+      x: 19.11848756292481
+      y: 67.0
+      z: 18.775912821998837
+      pitch: 11.549964
+      yaw: 44.250076
+      world: PrisonPlots
+    autoload: true
+    bedrespawn: true
+  VoteShop:
+    seed: -950256618216896942
+    environment: NORMAL
+    type: FLAT
+    hidden: true
+    alias:
+      name: ''
+      color: WHITE
+    pvp: true
+    scale: 1.0
+    respawnworld: ''
+    allowweather: true
+    difficulty: EASY
+    animals:
+      spawn: true
+    monsters:
+      spawn: true
+    entryfee:
+      currency: -1
+      price: 0.0
+    hunger: true
+    autoheal: true
+    adjustspawn: true
+    portalform: ALL
+    gamemode: SURVIVAL
+    keepspawninmemory: true
+    spawn:
+      x: 573.6379408952323
+      y: 4.0
+      z: -306.4742478380534
+      pitch: 7.3499813
+      yaw: -270.89948
+      world: VoteShop
+    autoload: true
+    bedrespawn: true
+  VoteShop2:
+    seed: -8846260954584714289
+    environment: NORMAL
+    type: FLAT
+    hidden: true
+    alias:
+      name: ''
+      color: WHITE
+    pvp: false
+    scale: 1.0
+    respawnworld: ''
+    allowweather: true
+    difficulty: EASY
+    animals:
+      spawn: true
+    monsters:
+      spawn: true
+    entryfee:
+      currency: -1
+      price: 0.0
+    hunger: true
+    autoheal: true
+    adjustspawn: true
+    portalform: ALL
+    gamemode: SURVIVAL
+    keepspawninmemory: true
+    spawn:
+      x: -807.8322640101965
+      y: 4.0
+      z: -814.5578907248233
+      pitch: 4.64999
+      yaw: 89.10001
+      world: VoteShop2
+    autoload: true
+    bedrespawn: true
+  VoteShop3:
+    seed: 7089991008057610196
+    environment: NORMAL
+    type: FLAT
+    hidden: true
+    alias:
+      name: ''
+      color: WHITE
+    pvp: false
+    scale: 1.0
+    respawnworld: ''
+    allowweather: true
+    difficulty: EASY
+    animals:
+      spawn: true
+    monsters:
+      spawn: true
+    entryfee:
+      currency: -1
+      price: 0.0
+    hunger: true
+    autoheal: true
+    adjustspawn: true
+    portalform: ALL
+    gamemode: SURVIVAL
+    keepspawninmemory: true
+    spawn:
+      x: -91.2371875308418
+      y: 4.0
+      z: -109.45970413566839
+      pitch: 6.449998
+      yaw: 89.4
+      world: VoteShop3
+    autoload: true
+    bedrespawn: true
+  PrisonEvent:
+    seed: 893487535765152598
+    environment: NORMAL
+    type: FLAT
+    hidden: true
+    alias:
+      name: ''
+      color: WHITE
+    pvp: true
+    scale: 1.0
+    respawnworld: ''
+    allowweather: true
+    difficulty: EASY
+    animals:
+      spawn: true
+    monsters:
+      spawn: true
+    entryfee:
+      currency: -1
+      price: 0.0
+    hunger: true
+    autoheal: true
+    adjustspawn: true
+    portalform: ALL
+    gamemode: SURVIVAL
+    keepspawninmemory: true
+    spawn:
+      x: 1499.6087403158722
+      y: 25.0
+      z: 1096.043114913512
+      pitch: -11.400017
+      yaw: 91.650085
+      world: PrisonEvent
+    autoload: true
+    bedrespawn: true

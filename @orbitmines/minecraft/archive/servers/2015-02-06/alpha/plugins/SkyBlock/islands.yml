@@ -1,0 +1,71 @@
+islands:
+  '1':
+    IslandLocation:
+      world: SkyBlock
+      x: 0
+      y: 100
+      z: 0
+    Players:
+      Owner: BenYOmin_Mango
+    CreatedDate: 12-11-2014
+    TeleportEnabled: false
+  '2':
+    IslandLocation:
+      world: SkyBlock
+      x: 0
+      y: 100
+      z: 130
+    Players:
+      Owner: BenYOmin_Mango
+    CreatedDate: 12-11-2014
+    TeleportEnabled: false
+  '3':
+    IslandLocation:
+      world: SkyBlock
+      x: 130
+      y: 100
+      z: 130
+    Players:
+      Owner: BenYOmin_Mango
+    CreatedDate: 12-11-2014
+    TeleportEnabled: false
+  '4':
+    IslandLocation:
+      world: SkyBlock
+      x: 130
+      y: 100
+      z: 0
+    Players:
+      Owner: BenYOmin_Mango
+    CreatedDate: 12-11-2014
+    TeleportEnabled: false
+  '5':
+    IslandLocation:
+      world: SkyBlock
+      x: 130
+      y: 100
+      z: -130
+    Players:
+      Owner: BenYOmin_Mango
+    CreatedDate: 12-11-2014
+    TeleportEnabled: false
+  '6':
+    IslandLocation:
+      world: SkyBlock
+      x: 0
+      y: 100
+      z: -130
+    Players:
+      Owner: BenYOmin_Mango
+    CreatedDate: 12-11-2014
+    TeleportEnabled: false
+  '7':
+    IslandLocation:
+      world: SkyBlock
+      x: -130
+      y: 100
+      z: -130
+    Players:
+      Owner: BenYOmin_Mango
+    CreatedDate: 12-11-2014
+    TeleportEnabled: false

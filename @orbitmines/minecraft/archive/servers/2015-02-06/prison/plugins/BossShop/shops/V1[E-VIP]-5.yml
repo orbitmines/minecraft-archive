@@ -1,0 +1,210 @@
+ShopName: VoteShop1-E-P5
+signs:
+  text: '[VP-5]'
+  NeedPermissionToCreateSign: true
+shop:
+  Beacon:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - type:BEACON
+      - amount:1
+    Reward: 1875000
+    MenuItem:
+    - 'type: BEACON'
+    - amount:1
+    - name:&b&L1 Beacon
+    - 'lore:&2&LReward: &4&m1000000$&b &m1250000$&6 1875000$'
+    - amount:1
+    InventoryLocation: 2
+    ExtraPermission: 'voteshop.1E'
+  Beacon16:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - type:BEACON
+      - amount:16
+    Reward: 30000000
+    MenuItem:
+    - 'type: BEACON'
+    - amount:16
+    - name:&b&L16 Beacon
+    - 'lore:&2&LReward: &4&m16000000$&b &m20000000$&6 30000000$'
+    - amount:16
+    InventoryLocation: 11
+    ExtraPermission: 'voteshop.1E'
+  Beacon32:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - type:BEACON
+      - amount:32
+    Reward: 60000000
+    MenuItem:
+    - 'type: BEACON'
+    - amount:32
+    - name:&b&L32 Beacon
+    - 'lore:&2&LReward: &4&m32000000$&b &m40000000$&6 60000000$'
+    - amount:32
+    InventoryLocation: 20
+    ExtraPermission: 'voteshop.1E'
+  Beacon64:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - type:BEACON
+      - amount:64
+    Reward: 120000000
+    MenuItem:
+    - 'type: BEACON'
+    - amount:64
+    - name:&b&L64 Beacon
+    - 'lore:&2&LReward: &4&m64000000$&b &m80000000$&6 120000000$'
+    - amount:64
+    InventoryLocation: 29
+    ExtraPermission: 'voteshop.1E'
+  Melon:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - type:MELON_BLOCK
+      - amount:1
+    Reward: 11250
+    MenuItem:
+    - 'type: MELON_BLOCK'
+    - amount:1
+    - name:&a&L1 Melon
+    - 'lore:&2&LReward: &4&m6000$&b &m7500$&6 11250$'
+    - amount:1
+    InventoryLocation: 3
+    ExtraPermission: 'voteshop.1E'
+  Melon16:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - type:MELON_BLOCK
+      - amount:16
+    Reward: 180000 
+    MenuItem:
+    - 'type: MELON_BLOCK'
+    - amount:16
+    - name:&a&L16 Melon
+    - 'lore:&2&LReward: &4&m96000$&b &m120000$&6 180000$'
+    - amount:16
+    InventoryLocation: 12
+    ExtraPermission: 'voteshop.1E'
+  Melon32:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - type:MELON_BLOCK
+      - amount:32
+    Reward: 360000
+    MenuItem:
+    - 'type: MELON_BLOCK'
+    - amount:32
+    - name:&a&L32 Melon
+    - 'lore:&2&LReward: &4&m192000$&b &m240000$&6 360000$'
+    - amount:32
+    InventoryLocation: 21
+    ExtraPermission: 'voteshop.1E'
+  Melon64:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - type:MELON_BLOCK
+      - amount:64
+    Reward: 720000
+    MenuItem:
+    - 'type: MELON_BLOCK'
+    - amount:64
+    - name:&a&L64 Melon
+    - 'lore:&2&LReward: &4&m384000$&b &m480000$&6 720000$'
+    - amount:64
+    InventoryLocation: 30
+    ExtraPermission: 'voteshop.1E'
+  NetherWMelon:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - type:NETHER_STALK
+      - amount:1
+    Reward: 3750
+    MenuItem:
+    - 'type: NETHER_STALK'
+    - amount:1
+    - name:&c&L1 Nether Wart
+    - 'lore:&2&LReward: &4&m2000$&b &m2500$&6 3750$'
+    - amount:1
+    InventoryLocation: 4
+    ExtraPermission: 'voteshop.1E'
+  NetherWMelon16:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - type:NETHER_STALK
+      - amount:16
+    Reward: 60000
+    MenuItem:
+    - 'type: NETHER_STALK'
+    - amount:16
+    - name:&c&L16 Nether Wart
+    - 'lore:&2&LReward: &4&m32000$&b &m40000$&6 60000$'
+    - amount:16
+    InventoryLocation: 13
+    ExtraPermission: 'voteshop.1E'
+  NetherWMelon32:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - type:NETHER_STALK
+      - amount:32
+    Reward: 120000
+    MenuItem:
+    - 'type: NETHER_STALK'
+    - amount:32
+    - name:&c&L32 Nether Wart
+    - 'lore:&2&LReward: &4&m64000$&b &m80000$&6 120000$'
+    - amount:32
+    InventoryLocation: 22
+    ExtraPermission: 'voteshop.1E'
+  NetherW64:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - type:NETHER_STALK
+      - amount:64
+    Reward: 240000
+    MenuItem:
+    - 'type:NETHER_STALK'
+    - amount:64
+    - name:&c&L64 Nether Wart
+    - 'lore:&2&LReward: &4&m128000$&b &m160000$&6 240000$'
+    - amount:64
+    InventoryLocation: 31
+    ExtraPermission: 'voteshop.1E'
+  PrisonPage4:
+    RewardType: shop
+    PriceType: free
+    Reward: VoteShop1-E-P4
+    MenuItem:
+    - type:REDSTONE_BLOCK
+    - amount:4
+    - name:&4&L<<< VoteShop Sell Page 4
+    - lore:&8Open Page 4
+    - amount:4
+    InventoryLocation: 19
+    ExtraPermission: 'voteshop.1E'
+  PrisonPage6:
+    RewardType: shop
+    PriceType: free
+    Reward: VoteShop1-E-P6
+    MenuItem:
+    - type:REDSTONE_BLOCK
+    - amount:6
+    - name:&4&LPrison Sell Page 6 >>>
+    - lore:&8Open Page 6
+    - amount:6
+    InventoryLocation: 27
+    ExtraPermission: 'voteshop.1E'
+

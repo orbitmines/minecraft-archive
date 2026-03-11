@@ -1,0 +1,142 @@
+worlds:
+  SurvivalLobby:
+    generator: OrbitMinesEmptyWorldGenerator
+    seed: 2296952434322003082
+    environment: NORMAL
+    type: NORMAL
+    hidden: true
+    alias:
+      name: ''
+      color: WHITE
+    pvp: true
+    scale: 1.0
+    respawnworld: ''
+    allowweather: false
+    difficulty: EASY
+    animals:
+      spawn: true
+    monsters:
+      spawn: true
+    entryfee:
+      currency: -1
+      price: 0.0
+    hunger: true
+    autoheal: true
+    adjustspawn: true
+    portalform: ALL
+    gamemode: SURVIVAL
+    keepspawninmemory: true
+    spawn:
+      x: -0.07567916246123493
+      y: 74.0
+      z: -0.38584693062545816
+      pitch: 2.1000028
+      yaw: 90.44997
+      world: SurvivalLobby
+    autoload: true
+    bedrespawn: true
+  SurvivalWorld:
+    seed: -4405481766968203491
+    environment: NORMAL
+    type: NORMAL
+    hidden: true
+    alias:
+      name: ''
+      color: WHITE
+    pvp: false
+    scale: 1.0
+    respawnworld: ''
+    allowweather: true
+    difficulty: HARD
+    animals:
+      spawn: true
+    monsters:
+      spawn: true
+    entryfee:
+      currency: -1
+      price: 0.0
+    hunger: true
+    autoheal: true
+    adjustspawn: true
+    portalform: ALL
+    gamemode: SURVIVAL
+    keepspawninmemory: true
+    spawn:
+      x: -130.0
+      y: 64.0
+      z: 242.0
+      pitch: 0.0
+      yaw: 0.0
+      world: SurvivalWorld
+    autoload: true
+    bedrespawn: true
+  SurvivalWorld_nether:
+    seed: -1948708936597299738
+    environment: NETHER
+    type: NORMAL
+    hidden: true
+    alias:
+      name: ''
+      color: WHITE
+    pvp: false
+    scale: 8.0
+    respawnworld: ''
+    allowweather: true
+    difficulty: EASY
+    animals:
+      spawn: true
+    monsters:
+      spawn: true
+    entryfee:
+      currency: -1
+      price: 0.0
+    hunger: true
+    autoheal: true
+    adjustspawn: true
+    portalform: ALL
+    gamemode: SURVIVAL
+    keepspawninmemory: true
+    spawn:
+      x: 0.0
+      y: 119.0
+      z: 0.0
+      pitch: 0.0
+      yaw: 0.0
+      world: SurvivalWorld_nether
+    autoload: true
+    bedrespawn: true
+  SurvivalWorld_the_end:
+    seed: -1948708936597299738
+    environment: THE_END
+    type: NORMAL
+    hidden: true
+    alias:
+      name: ''
+      color: WHITE
+    pvp: false
+    scale: 1.0
+    respawnworld: ''
+    allowweather: true
+    difficulty: EASY
+    animals:
+      spawn: true
+    monsters:
+      spawn: true
+    entryfee:
+      currency: -1
+      price: 0.0
+    hunger: true
+    autoheal: true
+    adjustspawn: true
+    portalform: ALL
+    gamemode: SURVIVAL
+    keepspawninmemory: true
+    spawn:
+      x: 0.0
+      y: 60.0
+      z: 0.0
+      pitch: 0.0
+      yaw: 0.0
+      world: SurvivalWorld_the_end
+    autoload: true
+    bedrespawn: true

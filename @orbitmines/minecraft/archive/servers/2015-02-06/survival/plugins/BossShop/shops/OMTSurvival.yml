@@ -1,0 +1,229 @@
+ShopName: OMT
+signs:
+  text: '[OMT]'
+  NeedPermissionToCreateSign: true
+shop:
+  33Claimblocks:
+    RewardType: command
+    PriceType: points
+    Price: 1
+    Reward:
+    - 'adjustbonusclaimblocks %player% 33'
+    MenuItem:
+    - 'type: STONE_HOE'
+    - amount:1
+    - name:&733 Claimblocks
+    - 'lore:&c&LPrice:&6 %price% OMT'
+    - amount:1
+    Message: '&8[&6&lOMT&8] &7You have bought &633 Claimblocks&7! Price: &6%price% OMT'
+    InventoryLocation: 1
+    ExtraPermission: ''
+  100Claimblocks:
+    RewardType: command
+    PriceType: points
+    Price: 3
+    Reward:
+    - 'adjustbonusclaimblocks %player% 100'
+    MenuItem:
+    - 'type: STONE_HOE'
+    - amount:3
+    - name:&7100 Claimblocks
+    - 'lore:&c&LPrice:&6 %price% OMT'
+    - amount:3
+    Message: '&8[&6&lOMT&8] &7You have bought &6100 Claimblocks&7! Price: &6%price% OMT'
+    InventoryLocation: 3
+    ExtraPermission: ''
+  500Claimblocks:
+    RewardType: command
+    PriceType: points
+    Price: 15
+    Reward:
+    - 'adjustbonusclaimblocks %player% 500'
+    MenuItem:
+    - 'type: STONE_HOE'
+    - amount:15
+    - name:&7500 Claimblocks
+    - 'lore:&c&LPrice:&6 %price% OMT'
+    - amount:15
+    Message: '&8[&6&lOMT&8] &7You have bought &6500 Claimblocks&7! Price: &6%price% OMT'
+    InventoryLocation: 5
+    ExtraPermission: ''
+  1000Claimblocks:
+    RewardType: command
+    PriceType: points
+    Price: 30
+    Reward:
+    - 'adjustbonusclaimblocks %player% 1000'
+    MenuItem:
+    - 'type: STONE_HOE'
+    - amount:30
+    - name:&71000 Claimblocks
+    - 'lore:&c&LPrice:&6 %price% OMT'
+    - amount:30
+    Message: '&8[&6&lOMT&8] &7You have bought &61000 Claimblocks&7! Price: &6%price% OMT'
+    InventoryLocation: 7
+    ExtraPermission: ''
+  2000Claimblocks:
+    RewardType: command
+    PriceType: points
+    Price: 60
+    Reward:
+    - 'adjustbonusclaimblocks %player% 2000'
+    MenuItem:
+    - 'type: STONE_HOE'
+    - amount:60
+    - name:&72000 Claimblocks
+    - 'lore:&c&LPrice:&6 %price% OMT'
+    - amount:60
+    Message: '&8[&6&lOMT&8] &7You have bought &62000 Claimblocks&7! Price: &6%price% OMT'
+    InventoryLocation: 9
+    ExtraPermission: ''
+  333:
+    RewardType: command
+    PriceType: points
+    Price: 1
+    Reward:
+    - 'eco give %player% 333'
+    MenuItem:
+    - 'type: EMERALD'
+    - amount:1
+    - name:&7333$
+    - 'lore:&c&LPrice:&6 %price% OMT'
+    - amount:1
+    Message: '&8[&6&lOMT&8] &7You have bought &6333$&7! Price: &6%price% OMT'
+    InventoryLocation: 19
+    ExtraPermission: ''
+  1000:
+    RewardType: command
+    PriceType: points
+    Price: 3
+    Reward:
+    - 'eco give %player% 1000'
+    MenuItem:
+    - 'type: EMERALD'
+    - amount:3
+    - name:&71000$
+    - 'lore:&c&LPrice:&6 %price% OMT'
+    - amount:3
+    Message: '&8[&6&lOMT&8] &7You have bought &61000$&7! Price: &6%price% OMT'
+    InventoryLocation: 21
+    ExtraPermission: ''
+  5000:
+    RewardType: command
+    PriceType: points
+    Price: 15
+    Reward:
+    - 'eco give %player% 5000'
+    MenuItem:
+    - 'type: EMERALD'
+    - amount:15
+    - name:&75000$
+    - 'lore:&c&LPrice:&6 %price% OMT'
+    - amount:15
+    Message: '&8[&6&lOMT&8] &7You have bought &65000$&7! Price: &6%price% OMT'
+    InventoryLocation: 23
+    ExtraPermission: ''
+  10000:
+    RewardType: command
+    PriceType: points
+    Price: 30
+    Reward:
+    - 'eco give %player% 10000'
+    MenuItem:
+    - 'type: EMERALD'
+    - amount:30
+    - name:&710000$
+    - 'lore:&c&LPrice:&6 %price% OMT'
+    - amount:30
+    Message: '&8[&6&lOMT&8] &7You have bought &610000$&7! Price: &6%price% OMT'
+    InventoryLocation: 25
+    ExtraPermission: ''
+  20000:
+    RewardType: command
+    PriceType: points
+    Price: 60
+    Reward:
+    - 'eco give %player% 20000'
+    MenuItem:
+    - 'type: EMERALD'
+    - amount:60
+    - name:&720000$
+    - 'lore:&c&LPrice:&6 %price% OMT'
+    - amount:60
+    Message: '&8[&6&lOMT&8] &7You have bought &620000$&7! Price: &6%price% OMT'
+    InventoryLocation: 27
+    ExtraPermission: ''
+  5Levels:
+    RewardType: command
+    PriceType: points
+    Price: 1
+    Reward:
+    - 'exp give %player% 5l'
+    MenuItem:
+    - 'id:384'
+    - amount:1
+    - name:&75 EXP Levels
+    - 'lore:&c&LPrice:&6 %price% OMT'
+    - amount:1
+    Message: '&8[&6&lOMT&8] &7You have bought &65 EXP Levels&7! Price: &6%price% OMT'
+    InventoryLocation: 37
+  15Levels:
+    RewardType: command
+    PriceType: points
+    Price: 3
+    Reward:
+    - 'exp give %player% 15l'
+    MenuItem:
+    - 'id:384'
+    - amount:3
+    - name:&715 EXP Levels
+    - 'lore:&c&LPrice:&6 %price% OMT'
+    - amount:3
+    Message: '&8[&6&lOMT&8] &7You have bought &615 EXP Levels&7! Price: &6%price% OMT'
+    InventoryLocation: 39
+    ExtraPermission: ''
+  75Levels:
+    RewardType: command
+    PriceType: points
+    Price: 15
+    Reward:
+    - 'exp give %player% 75l'
+    MenuItem:
+    - 'id:384'
+    - amount:15
+    - name:&775 EXP Levels
+    - 'lore:&c&LPrice:&6 %price% OMT'
+    - amount:15
+    Message: '&8[&6&lOMT&8] &7You have bought &675 EXP Levels&7! Price: &6%price% OMT'
+    InventoryLocation: 41
+    ExtraPermission: ''
+  150Levels:
+    RewardType: command
+    PriceType: points
+    Price: 30
+    Reward:
+    - 'exp give %player% 150l'
+    MenuItem:
+    - 'id:384'
+    - amount:30
+    - name:&7150 EXP Levels
+    - 'lore:&c&LPrice:&6 %price% OMT'
+    - amount:30
+    Message: '&8[&6&lOMT&8] &7You have bought &6150 EXP Levels&7! Price: &6%price% OMT'
+    InventoryLocation: 43
+    ExtraPermission: ''
+  300Levels:
+    RewardType: command
+    PriceType: points
+    Price: 60
+    Reward:
+    - 'exp give %player% 300l'
+    MenuItem:
+    - 'id:384'
+    - amount:60
+    - name:&7300 EXP Levels
+    - 'lore:&c&LPrice:&6 %price% OMT'
+    - amount:60
+    Message: '&8[&6&lOMT&8] &7You have bought &6300 EXP Levels&7! Price: &6%price% OMT'
+    InventoryLocation: 45
+    ExtraPermission: ''

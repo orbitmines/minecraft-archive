@@ -1,0 +1,6 @@
+strings:
+  login: '&aJoin&2>> &6&l%s'
+  logout: '&cQuit&4>> &6&l%s'
+delayedCheck:
+  enabled: false
+  seconds: 3

@@ -1,0 +1,1 @@
+{"SURVIVAL":{"balance":"100.0","potions":"[{\"pd\":175,\"pa\":0,\"pt\":1},{\"pd\":175,\"pa\":0,\"pt\":11}]","armorContents":{},"inventoryContents":{"0":{"==":"org.bukkit.inventory.ItemStack","type":"DIAMOND","amount":3}},"enderChestContents":{},"stats":{"ra":"300","ex":"0.57458305","hp":"20","fl":"10","txp":"0","el":"0","ma":"300","sa":"0.0","xp":"0.0","ft":"-20","fd":"0.0"}}}

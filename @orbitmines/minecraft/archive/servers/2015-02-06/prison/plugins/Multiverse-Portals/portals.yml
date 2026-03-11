@@ -1,0 +1,603 @@
+portals:
+  E1:
+    entryfee:
+      currency: -1
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    owner: O_o_Fadi_o_O
+    location: -750.0,3.0,119.0:-750.0,9.0,119.0
+    world: PrisonServer
+    destination: p:E2
+  D1:
+    entryfee:
+      currency: -1
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    owner: O_o_Fadi_o_O
+    location: -759.0,3.0,101.0:-759.0,9.0,101.0
+    world: PrisonServer
+    destination: p:D2
+  D2:
+    entryfee:
+      currency: -1
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    owner: O_o_Fadi_o_O
+    location: -670.0,47.0,190.0:-670.0,48.0,190.0
+    world: PrisonServer
+  C1:
+    entryfee:
+      currency: -1
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    owner: O_o_Fadi_o_O
+    location: -768.0,3.0,101.0:-768.0,9.0,101.0
+    world: PrisonServer
+    destination: p:C2
+  C2:
+    entryfee:
+      currency: -1
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    owner: O_o_Fadi_o_O
+    location: -880.0,20.0,150.0:-880.0,21.0,150.0
+    world: PrisonServer
+  B1:
+    entryfee:
+      currency: -1
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    owner: O_o_Fadi_o_O
+    location: -759.0,3.0,85.0:-759.0,9.0,85.0
+    world: PrisonServer
+    destination: p:B2
+  B2:
+    entryfee:
+      currency: -1
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    owner: O_o_Fadi_o_O
+    location: -784.0,52.0,148.0:-784.0,53.0,148.0
+    world: PrisonServer
+  A1:
+    entryfee:
+      currency: -1
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    owner: O_o_Fadi_o_O
+    location: -768.0,3.0,85.0:-768.0,9.0,85.0
+    world: PrisonServer
+    destination: p:A2
+  A2:
+    entryfee:
+      currency: -1
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    owner: O_o_Fadi_o_O
+    location: -818.0,4.0,-6.0:-818.0,5.0,-6.0
+    world: PrisonServer
+  Donate:
+    entryfee:
+      currency: -1
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    owner: O_o_Fadi_o_O
+    location: -748.0,4.0,99.0:-748.0,11.0,99.0
+    world: PrisonServer
+    destination: p:Donate2
+  Shop:
+    entryfee:
+      currency: -1
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    owner: O_o_Fadi_o_O
+    location: -748.0,5.0,87.0:-748.0,11.0,87.0
+    world: PrisonServer
+    destination: p:SM2
+  Plots:
+    entryfee:
+      currency: -1
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    owner: O_o_Fadi_o_O
+    location: -736.0,5.0,87.0:-736.0,11.0,87.0
+    world: PrisonServer
+    destination: PrisonPlots
+  PvP:
+    entryfee:
+      currency: -1
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    owner: O_o_Fadi_o_O
+    location: -736.0,5.0,99.0:-736.0,11.0,99.0
+    world: PrisonServer
+    destination: PrisonPvPArena
+  Donate2:
+    entryfee:
+      currency: -1
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    owner: O_o_Fadi_o_O
+    location: -606.0,4.0,65.0:-606.0,5.0,65.0
+    world: PrisonServer
+  SM1:
+    entryfee:
+      currency: -1
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    owner: O_o_Fadi_o_O
+    location: -747.0,4.0,88.0:-747.0,11.0,88.0
+    world: PrisonServer
+    destination: p:SM2
+  SM2:
+    entryfee:
+      currency: -1
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    owner: O_o_Fadi_o_O
+    location: -516.0,4.0,141.0:-516.0,5.0,141.0
+    world: PrisonServer
+  E:
+    entryfee:
+      currency: -1
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    owner: O_o_Fadi_o_O
+    location: -231.0,6.0,75.0:-231.0,8.0,75.0
+    world: PrisonServer
+    destination: p:E2
+  D:
+    entryfee:
+      currency: -1
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    owner: O_o_Fadi_o_O
+    location: -234.0,6.0,72.0:-234.0,8.0,72.0
+    world: PrisonServer
+    destination: p:D2
+  C:
+    entryfee:
+      currency: -1
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    owner: O_o_Fadi_o_O
+    location: -236.0,6.0,69.0:-236.0,8.0,69.0
+    world: PrisonServer
+    destination: p:C2
+  B:
+    entryfee:
+      currency: -1
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    owner: O_o_Fadi_o_O
+    location: -237.0,6.0,65.0:-237.0,8.0,65.0
+    world: PrisonServer
+    destination: p:B2
+  A:
+    entryfee:
+      currency: -1
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    owner: O_o_Fadi_o_O
+    location: -236.0,6.0,61.0:-236.0,8.0,61.0
+    world: PrisonServer
+    destination: p:A2
+  shield:
+    entryfee:
+      currency: -1
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    owner: O_o_Fadi_o_O
+    location: -254.0,26.0,-15.0:-194.0,53.0,48.0
+    world: PrisonServer
+  E2:
+    entryfee:
+      currency: -1
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    owner: O_o_Fadi_o_O
+    location: -1276.0,70.0,-34.0:-1276.0,71.0,-34.0
+    world: PrisonServer
+  Iron1:
+    entryfee:
+      currency: -1
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    owner: O_o_Fadi_o_O
+    location: -220.0,6.0,61.0:-220.0,9.0,61.0
+    world: PrisonServer
+    destination: p:Iron2
+  Iron2:
+    entryfee:
+      currency: -1
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    owner: O_o_Fadi_o_O
+    location: -859.0,17.0,518.0:-859.0,18.0,518.0
+    world: PrisonServer
+  Gold2:
+    entryfee:
+      currency: -1
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    owner: O_o_Fadi_o_O
+    location: -908.0,17.0,518.0:-908.0,18.0,518.0
+    world: PrisonServer
+  Gold1:
+    entryfee:
+      currency: -1
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    owner: O_o_Fadi_o_O
+    location: -228.0,6.0,61.0:-228.0,9.0,61.0
+    world: PrisonServer
+    destination: p:Gold2
+  Diamond2:
+    entryfee:
+      currency: -1
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    owner: O_o_Fadi_o_O
+    location: -908.0,17.0,570.0:-908.0,18.0,570.0
+    world: PrisonServer
+  Emerald2:
+    entryfee:
+      currency: -1
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    owner: O_o_Fadi_o_O
+    location: -856.0,17.0,568.0:-856.0,18.0,568.0
+    world: PrisonServer
+  Emerald1:
+    entryfee:
+      currency: -1
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    owner: O_o_Fadi_o_O
+    location: -228.0,6.0,69.0:-228.0,9.0,69.0
+    world: PrisonServer
+    destination: p:Emerald2
+  Diamond1:
+    entryfee:
+      currency: -1
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    owner: O_o_Fadi_o_O
+    location: -220.0,6.0,69.0:-220.0,9.0,69.0
+    world: PrisonServer
+    destination: p:Diamond2
+  Plots1:
+    entryfee:
+      currency: -1
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    owner: O_o_Fadi_o_O
+    location: -217.0,6.0,-45.0:-217.0,8.0,-45.0
+    world: PrisonServer
+    destination: PrisonPlots
+  SpecialMines2:
+    entryfee:
+      currency: -1
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    owner: O_o_Fadi_o_O
+    location: -516.0,4.0,140.0:-516.0,5.0,140.0
+    world: PrisonServer
+  Enchant2:
+    entryfee:
+      currency: -1
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    owner: O_o_Fadi_o_O
+    location: -490.0,5.0,450.0:-490.0,6.0,450.0
+    world: PrisonServer
+  Furnace2:
+    entryfee:
+      currency: -1
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    owner: O_o_Fadi_o_O
+    location: -605.0,5.0,405.0:-605.0,6.0,405.0
+    world: PrisonServer
+  Furnace1:
+    entryfee:
+      currency: -1
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    owner: O_o_Fadi_o_O
+    location: -236.0,6.0,-39.0:-236.0,8.0,-39.0
+    world: PrisonServer
+    destination: p:Furnace2
+  Enchant1:
+    entryfee:
+      currency: -1
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    owner: O_o_Fadi_o_O
+    location: -231.0,6.0,-45.0:-231.0,8.0,-45.0
+    world: PrisonServer
+    destination: p:Enchant2
+  SpecialMines1:
+    entryfee:
+      currency: -1
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    owner: O_o_Fadi_o_O
+    location: -224.0,6.0,-48.0:-224.0,8.0,-48.0
+    world: PrisonServer
+    destination: p:SpecialMines2
+  AnimalFarm1:
+    entryfee:
+      currency: -1
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    owner: O_o_Fadi_o_O
+    location: -217.0,6.0,-25.0:-217.0,8.0,-25.0
+    world: PrisonServer
+    destination: p:AnimalFarm2
+  AnimalFarm2:
+    entryfee:
+      currency: -1
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    owner: O_o_Fadi_o_O
+    location: -349.0,5.0,96.0:-349.0,6.0,96.0
+    world: PrisonServer
+  OMine:
+    entryfee:
+      currency: -1
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    owner: O_o_Fadi_o_O
+    location: -474.0,3.0,-483.0:-375.0,34.0,-399.0
+    world: PrisonServer
+  P1:
+    entryfee:
+      currency: -1
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    owner: O_o_Fadi_o_O
+    location: -220.0,5.0,53.0:-220.0,9.0,53.0
+    world: PrisonServer
+    destination: p:P2
+  P2:
+    entryfee:
+      currency: -1
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    owner: O_o_Fadi_o_O
+    location: -414.0,9.0,-286.0:-414.0,10.0,-286.0
+    world: PrisonServer
+  O1:
+    entryfee:
+      currency: -1
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    owner: O_o_Fadi_o_O
+    location: -217.0,5.0,55.0:-217.0,9.0,55.0
+    world: PrisonServer
+    destination: p:O2
+  O2:
+    entryfee:
+      currency: -1
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    owner: O_o_Fadi_o_O
+    location: -412.0,9.0,-427.0:-412.0,10.0,-427.0
+    world: PrisonServer
+  N1:
+    entryfee:
+      currency: -1
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    owner: O_o_Fadi_o_O
+    location: -214.0,5.0,58.0:-214.0,9.0,58.0
+    world: PrisonServer
+    destination: p:N2
+  N2:
+    entryfee:
+      currency: -1
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    owner: O_o_Fadi_o_O
+    location: -427.0,10.0,-603.0:-427.0,11.0,-603.0
+    world: PrisonServer
+  M1:
+    entryfee:
+      currency: -1
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    owner: O_o_Fadi_o_O
+    location: -212.0,5.0,61.0:-212.0,9.0,61.0
+    world: PrisonServer
+    destination: p:M2
+  M2:
+    entryfee:
+      currency: -1
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    owner: O_o_Fadi_o_O
+    location: -421.0,11.0,-748.0:-421.0,12.0,-748.0
+    world: PrisonServer
+  L1:
+    entryfee:
+      currency: -1
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    owner: O_o_Fadi_o_O
+    location: -211.0,5.0,65.0:-211.0,9.0,65.0
+    world: PrisonServer
+    destination: p:L2
+  L2:
+    entryfee:
+      currency: -1
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    owner: O_o_Fadi_o_O
+    location: -417.0,8.0,-947.0:-417.0,9.0,-947.0
+    world: PrisonServer
+  K1:
+    entryfee:
+      currency: -1
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    owner: O_o_Fadi_o_O
+    location: -212.0,5.0,69.0:-212.0,9.0,69.0
+    world: PrisonServer
+    destination: p:K2
+  K2:
+    entryfee:
+      currency: -1
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    owner: O_o_Fadi_o_O
+    location: -388.0,20.0,-1111.0:-388.0,21.0,-1111.0
+    world: PrisonServer
+  J1:
+    entryfee:
+      currency: -1
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    owner: O_o_Fadi_o_O
+    location: -214.0,5.0,72.0:-214.0,9.0,72.0
+    world: PrisonServer
+    destination: p:J2
+  J2:
+    entryfee:
+      currency: -1
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    owner: O_o_Fadi_o_O
+    location: -386.0,9.0,-1220.0:-386.0,10.0,-1220.0
+    world: PrisonServer
+  I1:
+    entryfee:
+      currency: -1
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    owner: O_o_Fadi_o_O
+    location: -217.0,5.0,75.0:-217.0,9.0,75.0
+    world: PrisonServer
+    destination: p:I2
+  I2:
+    entryfee:
+      currency: -1
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    owner: O_o_Fadi_o_O
+    location: -353.0,10.0,-1359.0:-353.0,11.0,-1359.0
+    world: PrisonServer
+  H1:
+    entryfee:
+      currency: -1
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    owner: O_o_Fadi_o_O
+    location: -220.0,5.0,77.0:-220.0,9.0,77.0
+    world: PrisonServer
+    destination: p:H2
+  H2:
+    entryfee:
+      currency: -1
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    owner: O_o_Fadi_o_O
+    location: -409.0,9.0,-1611.0:-409.0,10.0,-1611.0
+    world: PrisonServer
+  G1:
+    entryfee:
+      currency: -1
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    owner: O_o_Fadi_o_O
+    location: -224.0,5.0,78.0:-224.0,9.0,78.0
+    world: PrisonServer
+    destination: p:G2
+  G2:
+    entryfee:
+      currency: -1
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    owner: O_o_Fadi_o_O
+    location: -400.0,10.0,-1756.0:-400.0,11.0,-1756.0
+    world: PrisonServer
+  F1:
+    entryfee:
+      currency: -1
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    owner: O_o_Fadi_o_O
+    location: -228.0,5.0,77.0:-228.0,9.0,77.0
+    world: PrisonServer
+    destination: p:F2
+  F2:
+    entryfee:
+      currency: -1
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    owner: O_o_Fadi_o_O
+    location: -403.0,9.0,-2010.0:-403.0,10.0,-2010.0
+    world: PrisonServer

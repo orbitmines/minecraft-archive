@@ -1,0 +1,340 @@
+# View Documentation at http://dev.bukkit.org/bukkit-plugins/repairsign/pages/config-explained/
+MODIFIERS:
+  DEBUG: true
+  MOTD: true
+  Update-Check: true
+  LANG: en_us
+  DENY_CREATIVE: false
+  COLOR_1: GREEN
+  COLOR_2: BLACK
+  PAYTO:
+    ENABLED: false
+    ACCOUNT: Server
+    BANK_PROFIT: 1
+  SALVAGE_MULTIPLIER: 1
+  ENCHANTMENT_MATERIAL_MODIFIERS:
+    WOOD: 0.05
+    LEATHER: 0.05
+    STONE: 0.1
+    CHAINMAIL: 0.2
+    IRON: 0.25
+    GOLD: 0.25
+    DIAMOND: 1.0
+    DEFAULT: 1.5
+ITEM:
+  WOOD_SWORD:
+    NAME: Wood Sword
+    COST: 100
+  STONE_SWORD:
+    NAME: Stone Sword
+    COST: 100
+  IRON_SWORD:
+    NAME: Iron Sword
+    COST: 100
+  GOLD_SWORD:
+    NAME: Gold Sword
+    COST: 100
+  DIAMOND_SWORD:
+    NAME: Diamond Sword
+    COST: 100
+  BOW:
+    NAME: Bow
+    COST: 100
+  LEATHER_BOOTS:
+    NAME: Leather Boots
+    COST: 100
+  CHAINMAIL_BOOTS:
+    NAME: Chainmail Boots
+    COST: 100
+  IRON_BOOTS:
+    NAME: Iron Boots
+    COST: 100
+  GOLD_BOOTS:
+    NAME: Gold Boots
+    COST: 100
+  DIAMOND_BOOTS:
+    NAME: Diamond Boots
+    COST: 100
+  LEATHER_LEGGINGS:
+    NAME: Leather Leggings
+    COST: 100
+  CHAINMAIL_LEGGINGS:
+    NAME: Chainmail Leggings
+    COST: 100
+  IRON_LEGGINGS:
+    NAME: Iron Leggings
+    COST: 100
+  GOLD_LEGGINGS:
+    NAME: Gold Leggings
+    COST: 100
+  DIAMOND_LEGGINGS:
+    NAME: Diamond Leggins
+    COST: 100
+  LEATHER_CHESTPLATE:
+    NAME: Leather Chestplate
+    COST: 100
+  CHAINMAIL_CHESTPLATE:
+    NAME: Chainmail Chestplate
+    COST: 100
+  IRON_CHESTPLATE:
+    NAME: Iron Chestplate
+    COST: 100
+  GOLD_CHESTPLATE:
+    NAME: Gold Chestplate
+    COST: 100
+  DIAMOND_CHESTPLATE:
+    NAME: Diamond Chestplate
+    COST: 100
+  LEATHER_HELMET:
+    NAME: Leather Helmet
+    COST: 100
+  CHAINMAIL_HELMET:
+    NAME: Chainmail Helmet
+    COST: 100
+  IRON_HELMET:
+    NAME: Iron Helmet
+    COST: 100
+  GOLD_HELMET:
+    NAME: Gold Helmet
+    COST: 100
+  DIAMOND_HELMET:
+    NAME: Diamond Helmet
+    COST: 100
+  WOOD_AXE:
+    NAME: Wood Axe
+    COST: 100
+  STONE_AXE:
+    NAME: Stone Axe
+    COST: 100
+  IRON_AXE:
+    NAME: Iron Axe
+    COST: 100
+  GOLD_AXE:
+    NAME: Gold Axe
+    COST: 100
+  DIAMOND_AXE:
+    NAME: Diamond Axe
+    COST: 100
+  WOOD_HOE:
+    NAME: Wood Hoe
+    COST: 100
+  STONE_HOE:
+    NAME: Stone Hoe
+    COST: 100
+  IRON_HOE:
+    NAME: Iron Hoe
+    COST: 100
+  GOLD_HOE:
+    NAME: Gold Hoe
+    COST: 100
+  DIAMOND_HOE:
+    NAME: Diamond Hoe
+    COST: 100
+  WOOD_PICKAXE:
+    NAME: Wood Pickaxe
+    COST: 100
+  STONE_PICKAXE:
+    NAME: Stone Pickaxe
+    COST: 100
+  IRON_PICKAXE:
+    NAME: Iron Pickaxe
+    COST: 100
+  GOLD_PICKAXE:
+    NAME: Gold Pickaxe
+    COST: 100
+  DIAMOND_PICKAXE:
+    NAME: Diamond Pickaxe
+    COST: 100
+  WOOD_SPADE:
+    NAME: Wood Shovel
+    COST: 100
+  STONE_SPADE:
+    NAME: Stone Shovel
+    COST: 100
+  IRON_SPADE:
+    NAME: Iron Shovel
+    COST: 100
+  GOLD_SPADE:
+    NAME: Gold Shovel
+    COST: 100
+  DIAMOND_SPADE:
+    NAME: Diamond Shovel
+    COST: 100
+  FISHING_ROD:
+    NAME: Fishing Pole
+    COST: 100
+  FLINT_AND_STEEL:
+    NAME: Flint and Steel
+    COST: 100
+  SHEARS:
+    NAME: Shears
+    COST: 100
+ENCHANTMENT:
+  DURABILITY:
+    NAME: Unbreaking
+    LEVEL_1_COST: 100
+    LEVEL_2_COST: 200
+    LEVEL_3_COST: 300
+    LEVEL_4_COST: 400
+    LEVEL_5_COST: 500
+    DEFAULT_COST: 600
+  PROTECTION_ENVIRONMENTAL:
+    NAME: Protection
+    LEVEL_1_COST: 100
+    LEVEL_2_COST: 200
+    LEVEL_3_COST: 300
+    LEVEL_4_COST: 400
+    LEVEL_5_COST: 500
+    DEFAULT_COST: 600
+  PROTECTION_FIRE:
+    NAME: Fire Protection
+    LEVEL_1_COST: 100
+    LEVEL_2_COST: 200
+    LEVEL_3_COST: 300
+    LEVEL_4_COST: 400
+    LEVEL_5_COST: 500
+    DEFAULT_COST: 600
+  PROTECTION_FALL:
+    NAME: Feather Falling
+    LEVEL_1_COST: 100
+    LEVEL_2_COST: 200
+    LEVEL_3_COST: 300
+    LEVEL_4_COST: 400
+    LEVEL_5_COST: 500
+    DEFAULT_COST: 600
+  PROTECTION_EXPLOSIONS:
+    NAME: Blast Protection
+    LEVEL_1_COST: 100
+    LEVEL_2_COST: 200
+    LEVEL_3_COST: 300
+    LEVEL_4_COST: 400
+    LEVEL_5_COST: 500
+    DEFAULT_COST: 600
+  PROTECTION_PROJECTILE:
+    NAME: Projectile Protection
+    LEVEL_1_COST: 100
+    LEVEL_2_COST: 200
+    LEVEL_3_COST: 300
+    LEVEL_4_COST: 400
+    LEVEL_5_COST: 500
+    DEFAULT_COST: 600
+  OXYGEN:
+    NAME: Respiration
+    LEVEL_1_COST: 100
+    LEVEL_2_COST: 200
+    LEVEL_3_COST: 300
+    LEVEL_4_COST: 400
+    LEVEL_5_COST: 500
+    DEFAULT_COST: 600
+  WATER_WORKER:
+    NAME: Aqua Affinity
+    LEVEL_1_COST: 100
+    LEVEL_2_COST: 200
+    LEVEL_3_COST: 300
+    LEVEL_4_COST: 400
+    LEVEL_5_COST: 500
+    DEFAULT_COST: 600
+  DAMAGE_ALL:
+    NAME: Sharpness
+    LEVEL_1_COST: 100
+    LEVEL_2_COST: 200
+    LEVEL_3_COST: 300
+    LEVEL_4_COST: 400
+    LEVEL_5_COST: 500
+    DEFAULT_COST: 600
+  DAMAGE_UNDEAD:
+    NAME: Smite
+    LEVEL_1_COST: 100
+    LEVEL_2_COST: 200
+    LEVEL_3_COST: 300
+    LEVEL_4_COST: 400
+    LEVEL_5_COST: 500
+    DEFAULT_COST: 600
+  DAMAGE_ARTHROPODS:
+    NAME: Bane of Arthropods
+    LEVEL_1_COST: 100
+    LEVEL_2_COST: 200
+    LEVEL_3_COST: 300
+    LEVEL_4_COST: 400
+    LEVEL_5_COST: 500
+    DEFAULT_COST: 600
+  KNOCKBACK:
+    NAME: Knockback
+    LEVEL_1_COST: 100
+    LEVEL_2_COST: 200
+    LEVEL_3_COST: 300
+    LEVEL_4_COST: 400
+    LEVEL_5_COST: 500
+    DEFAULT_COST: 600
+  FIRE_ASPECT:
+    NAME: Fire Aspect
+    LEVEL_1_COST: 100
+    LEVEL_2_COST: 200
+    LEVEL_3_COST: 300
+    LEVEL_4_COST: 400
+    LEVEL_5_COST: 500
+    DEFAULT_COST: 600
+  LOOT_BONUS_MOBS:
+    NAME: Looting
+    LEVEL_1_COST: 100
+    LEVEL_2_COST: 200
+    LEVEL_3_COST: 300
+    LEVEL_4_COST: 400
+    LEVEL_5_COST: 500
+    DEFAULT_COST: 600
+  DIG_SPEED:
+    NAME: Efficiency
+    LEVEL_1_COST: 100
+    LEVEL_2_COST: 200
+    LEVEL_3_COST: 300
+    LEVEL_4_COST: 400
+    LEVEL_5_COST: 500
+    DEFAULT_COST: 600
+  SILK_TOUCH:
+    NAME: Silk Touch
+    LEVEL_1_COST: 100
+    LEVEL_2_COST: 200
+    LEVEL_3_COST: 300
+    LEVEL_4_COST: 400
+    LEVEL_5_COST: 500
+    DEFAULT_COST: 600
+  LOOT_BONUS_BLOCKS:
+    NAME: Fortune
+    LEVEL_1_COST: 100
+    LEVEL_2_COST: 200
+    LEVEL_3_COST: 300
+    LEVEL_4_COST: 400
+    LEVEL_5_COST: 500
+    DEFAULT_COST: 600
+  ARROW_DAMAGE:
+    NAME: Power
+    LEVEL_1_COST: 100
+    LEVEL_2_COST: 200
+    LEVEL_3_COST: 300
+    LEVEL_4_COST: 400
+    LEVEL_5_COST: 500
+    DEFAULT_COST: 600
+  ARROW_KNOCKBACK:
+    NAME: Punch
+    LEVEL_1_COST: 100
+    LEVEL_2_COST: 200
+    LEVEL_3_COST: 300
+    LEVEL_4_COST: 400
+    LEVEL_5_COST: 500
+    DEFAULT_COST: 600
+  ARROW_FIRE:
+    NAME: Flame
+    LEVEL_1_COST: 100
+    LEVEL_2_COST: 200
+    LEVEL_3_COST: 300
+    LEVEL_4_COST: 400
+    LEVEL_5_COST: 500
+    DEFAULT_COST: 600
+  ARROW_INFINITE:
+    NAME: Infinity
+    LEVEL_1_COST: 100
+    LEVEL_2_COST: 200
+    LEVEL_3_COST: 300
+    LEVEL_4_COST: 400
+    LEVEL_5_COST: 500
+    DEFAULT_COST: 600

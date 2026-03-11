@@ -1,0 +1,5763 @@
+# Citizens NPC Storage
+
+last-created-npc-id: 482
+npc:
+  '2':
+    name: §b§lLobby
+    traits:
+      location:
+        world: Spawn
+        x: '1422.5'
+        y: '256.0'
+        z: '879.5'
+        yaw: '-40.499996185302734'
+        pitch: '27.750011444091797'
+      spawned: true
+      type: EnderDragon
+      owner:
+        owner: O_o_Fadi_o_O
+        uuid: ''
+    traitnames: owner,spawned,location,type
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: 0f75493e-8879-4de8-ac55-7d31a6081f66
+  '1':
+    name: §a§lSurvival
+    traits:
+      location:
+        world: SurvivalWorld
+        x: '-570.3819304290055'
+        y: '256.0'
+        z: '-68.55954028677661'
+        yaw: '-86.24969482421875'
+        pitch: '90.0'
+      spawned: true
+      type: EnderDragon
+      owner:
+        owner: O_o_Fadi_o_O
+        uuid: ''
+    traitnames: owner,spawned,location,type
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: 771d0a57-b9cb-464f-8e19-5075328dd051
+  '8':
+    name: SinaasAppelke
+    traits:
+      location:
+        world: Spawn
+        x: '1423.6542629498274'
+        y: '74.0'
+        z: '865.5596192348069'
+        yaw: '2.8499755859375'
+        pitch: '9.15000057220459'
+      spawned: true
+      owner:
+        owner: O_o_Fadi_o_O
+        uuid: ''
+    traitnames: owner,spawned,location,type
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: cd8c625e-8ae5-48c0-8892-1f814c4d0a7a
+  '6':
+    name: basteti
+    traits:
+      location:
+        world: Spawn
+        x: '1421.658033217826'
+        y: '74.0'
+        z: '865.4184598198841'
+        yaw: '359.7000427246094'
+        pitch: '25.049999237060547'
+      spawned: true
+      owner:
+        owner: O_o_Fadi_o_O
+        uuid: ''
+    traitnames: owner,spawned,location,type
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: c20de50c-f054-4d60-98ba-b6bc9a55d2f0
+  '5':
+    name: BenYOmin_Mango
+    traits:
+      location:
+        world: Spawn
+        x: '1419.3806067324767'
+        y: '74.0'
+        z: '865.413701375148'
+        yaw: '-2.25006103515625'
+        pitch: '15.150003433227539'
+      spawned: true
+      owner:
+        owner: O_o_Fadi_o_O
+        uuid: ''
+    traitnames: owner,spawned,location,type
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: de3108af-05e3-4302-b39d-f77800889bdb
+  '4':
+    name: O_o_Fadi_o_O
+    traits:
+      location:
+        world: Spawn
+        x: '1417.406110906048'
+        y: '74.0'
+        z: '865.3686547695963'
+        yaw: '-3.300018310546875'
+        pitch: '4.05000114440918'
+      spawned: true
+      owner:
+        owner: O_o_Fadi_o_O
+        uuid: ''
+    traitnames: owner,spawned,location,type
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: e1e23bf6-f585-4a33-bfa6-873cdfdbae29
+  '3':
+    name: slienimon
+    traits:
+      location:
+        world: Spawn
+        x: '1415.3397535182405'
+        y: '74.0'
+        z: '865.5217625972557'
+        yaw: '-1.2000148296356201'
+        pitch: '8.549995422363281'
+      spawned: true
+      owner:
+        owner: O_o_Fadi_o_O
+        uuid: ''
+    traitnames: owner,spawned,location,type
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: 63b4e600-a67e-4c01-827d-c5530c5fdec7
+  '9':
+    name: §4§lPrison
+    traits:
+      type: EnderDragon
+      spawned: true
+      location:
+        world: PrisonServer
+        x: '-861.5'
+        y: '256.0'
+        z: '314.5'
+        yaw: '-89.4000015258789'
+        pitch: '89.4000015258789'
+      owner:
+        owner: O_o_Fadi_o_O
+        uuid: ''
+    traitnames: owner,spawned,location,type
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: 475c86b8-5a3e-4b98-8a83-e16ec5666802
+  '14':
+    name: §b§lLobby
+    traits:
+      location:
+        world: Hub
+        x: '0.5'
+        y: '256.0'
+        z: '0.5'
+        yaw: '-179.40663146972656'
+        pitch: '90.0'
+      type: EnderDragon
+      spawned: true
+      owner:
+        owner: O_o_Fadi_o_O
+        uuid: ''
+    traitnames: owner,spawned,location,type
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: f5b3b60e-b6cd-444b-99c7-930ac99a506a
+  '77':
+    name: §8>> §4Shop �
+    traits:
+      age:
+        age: 0
+        locked: true
+      location:
+        world: KitPvP
+        x: '-584.432645611243'
+        y: '21.0'
+        z: '-869.6163318689801'
+        yaw: '-1.6512451171875'
+        pitch: '0.0'
+      type: Villager
+      spawned: true
+      owner:
+        owner: O_o_Fadi_o_O
+        uuid: ''
+    traitnames: owner,spawned,location,type,age
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: 1b2d6533-12af-43d9-a357-6b7f00cb8895
+  '76':
+    name: §2BOSS
+    traits:
+      location:
+        world: Dropper
+        x: '-44.472553477551294'
+        y: '143.0'
+        z: '-32.62362287045168'
+        yaw: '-1.1796652E7'
+        pitch: '0.0'
+      equipment:
+        hand:
+          type: MAP
+          amount: 1
+          durability: 2
+          mdata: 2
+      spawned: true
+      waypoints:
+        linear: {}
+        provider: linear
+      owner:
+        owner: slienimon
+        uuid: ''
+    traitnames: waypoints,owner,equipment,spawned,location,type
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: a00aa9dd-fbf2-4565-a326-805b4c6daa37
+  '74':
+    name: §4MINER
+    traits:
+      location:
+        world: Dropper
+        x: '-49.262785892408424'
+        y: '143.0'
+        z: '-37.93238980016322'
+        yaw: '305.69775390625'
+        pitch: '8.699938774108887'
+      equipment:
+        hand:
+          type: IRON_PICKAXE
+          amount: 1
+          durability: 0
+          mdata: 0
+      spawned: true
+      owner:
+        owner: slienimon
+        uuid: ''
+    traitnames: owner,equipment,spawned,location,type
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: ffa5d30a-9ac2-4b66-979a-c9a30c1f3bd7
+  '73':
+    name: §4MINER
+    traits:
+      location:
+        world: Dropper
+        x: '-50.880073771496626'
+        y: '143.0'
+        z: '-34.0644739126238'
+        yaw: '229.48583984375'
+        pitch: '5.999906063079834'
+      equipment:
+        hand:
+          type: TORCH
+          amount: 1
+          durability: 0
+          mdata: 0
+      spawned: true
+      owner:
+        owner: slienimon
+        uuid: ''
+    traitnames: owner,equipment,spawned,location,type
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: cfd6f270-8d9e-4bd6-a3cd-0081fe9a55ed
+  '72':
+    name: §4MINER
+    traits:
+      location:
+        world: Dropper
+        x: '-50.62377441087048'
+        y: '143.0'
+        z: '-36.281069204871656'
+        yaw: '275.986328125'
+        pitch: '7.349907875061035'
+      equipment:
+        hand:
+          type: IRON_PICKAXE
+          amount: 1
+          durability: 0
+          mdata: 0
+      spawned: true
+      owner:
+        owner: slienimon
+        uuid: ''
+    traitnames: owner,equipment,spawned,location,type
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: d38eb811-75fb-41f7-b180-88828f1a39f4
+  '83':
+    name: §2FIRE MAN
+    traits:
+      spawned: true
+      equipment:
+        hand:
+          type: IRON_AXE
+          amount: 1
+          durability: 0
+          mdata: 0
+        chestplate:
+          type: GOLD_CHESTPLATE
+          amount: 1
+          durability: 0
+          mdata: 0
+      location:
+        world: Dropper
+        x: '15.249143911547089'
+        y: '150.0'
+        z: '75.51802303173321'
+        yaw: '157.7096710205078'
+        pitch: '-6.5999932289123535'
+      owner:
+        owner: slienimon
+        uuid: ''
+    traitnames: owner,equipment,spawned,location,type
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: 79738657-20a9-46fe-be46-79fc8aef2b06
+  '82':
+    name: §2FIRE MAN
+    traits:
+      spawned: true
+      equipment:
+        hand:
+          type: IRON_AXE
+          amount: 1
+          durability: 0
+          mdata: 0
+        chestplate:
+          type: GOLD_CHESTPLATE
+          amount: 1
+          durability: 0
+          mdata: 0
+      location:
+        world: Dropper
+        x: '13.573598653927267'
+        y: '150.0'
+        z: '74.96303946830089'
+        yaw: '209.90966796875'
+        pitch: '-5.099992275238037'
+      owner:
+        owner: slienimon
+        uuid: ''
+    traitnames: owner,equipment,spawned,location,type
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: d6e16100-db0d-42ff-9f6e-5ab4bfac70c7
+  '81':
+    name: §2FIRE MAN
+    traits:
+      spawned: true
+      equipment:
+        hand:
+          type: IRON_AXE
+          amount: 1
+          durability: 0
+          mdata: 0
+        chestplate:
+          type: GOLD_CHESTPLATE
+          amount: 1
+          durability: 0
+          mdata: 0
+      location:
+        world: Dropper
+        x: '16.669736291206576'
+        y: '150.0'
+        z: '69.65041093729911'
+        yaw: '20.009735107421875'
+        pitch: '4.200005054473877'
+      owner:
+        owner: slienimon
+        uuid: ''
+    traitnames: owner,equipment,spawned,location,type
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: 792fae97-2c7c-4098-bf0e-151614531571
+  '79':
+    name: §4Lost_Guy
+    traits:
+      spawned: true
+      equipment:
+        hand:
+          type: POISONOUS_POTATO
+          amount: 1
+          durability: 0
+          mdata: 0
+        chestplate:
+          type: LEATHER_CHESTPLATE
+          amount: 1
+          durability: 0
+          mdata: 0
+          meta:
+            armor:
+              color: 5000268
+        leggings:
+          type: LEATHER_LEGGINGS
+          amount: 1
+          durability: 0
+          mdata: 0
+          meta:
+            armor:
+              color: 5000268
+        boots:
+          type: LEATHER_BOOTS
+          amount: 1
+          durability: 0
+          mdata: 0
+          meta:
+            armor:
+              color: 5000268
+      location:
+        world: Dropper
+        x: '4.665874409633828'
+        y: '46.0'
+        z: '63.60732357471616'
+        yaw: '336.36004638671875'
+        pitch: '1.4999891519546509'
+      owner:
+        owner: slienimon
+        uuid: ''
+    traitnames: owner,equipment,spawned,location,type
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: 7a8d13d4-9032-4f1a-8787-f0d6f6fe49cd
+  '93':
+    name: §4Thief
+    traits:
+      equipment:
+        chestplate:
+          type: CHAINMAIL_CHESTPLATE
+          amount: 1
+          durability: 0
+          mdata: 0
+        leggings:
+          type: CHAINMAIL_LEGGINGS
+          amount: 1
+          durability: 0
+          mdata: 0
+        boots:
+          type: CHAINMAIL_BOOTS
+          amount: 1
+          durability: 0
+          mdata: 0
+      location:
+        world: Dropper
+        x: '-41.69999998807907'
+        y: '90.0'
+        z: '68.13416981023748'
+        yaw: '292.35101318359375'
+        pitch: '3.5996897220611572'
+      spawned: true
+      owner:
+        owner: slienimon
+        uuid: ''
+    traitnames: owner,equipment,spawned,location,type
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: 1f3cb2dc-906d-47d7-9e41-18d92873627a
+  '92':
+    name: §2Bob
+    traits:
+      location:
+        world: Dropper
+        x: '-40.535145333053975'
+        y: '75.0'
+        z: '76.62293051048054'
+        yaw: '246.60089111328125'
+        pitch: '0.8996955752372742'
+      spawned: true
+      equipment:
+        chestplate:
+          type: LEATHER_CHESTPLATE
+          amount: 1
+          durability: 0
+          mdata: 0
+          meta:
+            armor:
+              color: 14188339
+        boots:
+          type: LEATHER_BOOTS
+          amount: 1
+          durability: 0
+          mdata: 0
+          meta:
+            armor:
+              color: 14188339
+      owner:
+        owner: slienimon
+        uuid: ''
+    traitnames: owner,equipment,spawned,location,type
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: 840cab12-844a-4474-9f9e-70679a3634b8
+  '90':
+    name: §4Technician
+    traits:
+      waypoints:
+        linear: {}
+        provider: linear
+      location:
+        world: Dropper
+        x: '-137.87742472570974'
+        y: '87.0'
+        z: '103.76714436652131'
+        yaw: '3598672.25'
+        pitch: '0.0'
+      spawned: true
+      equipment:
+        hand:
+          type: BLAZE_ROD
+          amount: 1
+          durability: 0
+          mdata: 0
+      owner:
+        owner: slienimon
+        uuid: ''
+    traitnames: waypoints,owner,equipment,spawned,location,type
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: f8756b43-17c1-4da5-83a3-93f2b3d67314
+  '89':
+    name: §2Technician
+    traits:
+      location:
+        world: Dropper
+        x: '-151.5294833764151'
+        y: '84.0'
+        z: '107.79925562151404'
+        yaw: '264.4517517089844'
+        pitch: '3.749953508377075'
+      spawned: true
+      owner:
+        owner: slienimon
+        uuid: ''
+    traitnames: owner,spawned,location,type
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: 7e3395bb-5c49-45fd-9642-8784ad8609a2
+  '87':
+    name: §4 NURCE
+    traits:
+      location:
+        world: Dropper
+        x: '-151.30000001192093'
+        y: '80.0'
+        z: '105.64544444300661'
+        yaw: '265.35186767578125'
+        pitch: '-3.450002431869507'
+      spawned: true
+      owner:
+        owner: slienimon
+        uuid: ''
+    traitnames: owner,spawned,location,type
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: 4637b616-4fc6-4b88-bb02-44224d2e1a8f
+  '85':
+    name: §4Wounded_Man
+    traits:
+      waypoints:
+        linear: {}
+        provider: linear
+      location:
+        world: Dropper
+        x: '-136.01777760297918'
+        y: '80.53584062504456'
+        z: '106.5318651923653'
+        yaw: '267.8401794433594'
+        pitch: '0.0'
+      spawned: true
+      owner:
+        owner: slienimon
+        uuid: ''
+    traitnames: waypoints,owner,spawned,location,type
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: 3759e9fc-205d-4f5a-9387-fac98e15db47
+  '84':
+    name: §4Wounded_Man
+    traits:
+      waypoints:
+        linear: {}
+        provider: linear
+      location:
+        world: Dropper
+        x: '-137.8192994081053'
+        y: '80.0'
+        z: '103.58570077494383'
+        yaw: '-8318782.5'
+        pitch: '0.0'
+      spawned: true
+      owner:
+        owner: slienimon
+        uuid: ''
+    traitnames: waypoints,owner,spawned,location,type
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: 06b52318-ce4a-4354-9a02-cc1ac28d271d
+  '133':
+    name: §4 Stuward
+    traits:
+      spawned: true
+      location:
+        world: Dropper
+        x: '-137.54099969414446'
+        y: '72.0'
+        z: '25.53694597021633'
+        yaw: '-160.35009765625'
+        pitch: '6.150085926055908'
+      owner:
+        owner: slienimon
+        uuid: ''
+    traitnames: owner,spawned,location,type
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: f5dfef53-6344-485e-b8de-119d0553083a
+  '132':
+    name: §4Stuward
+    traits:
+      spawned: true
+      location:
+        world: Dropper
+        x: '-51.489412523763534'
+        y: '93.0'
+        z: '31.562587332987068'
+        yaw: '193.34994506835938'
+        pitch: '-1.9500834941864014'
+      owner:
+        owner: slienimon
+        uuid: ''
+    traitnames: owner,spawned,location,type
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: eca75afc-0203-4ac2-aedb-87ebbf1fe83e
+  '130':
+    name: §2KingOfTheHill
+    traits:
+      spawned: true
+      location:
+        world: Dropper
+        x: '-47.525179864961295'
+        y: '93.0'
+        z: '31.580256966717105'
+        yaw: '178.04994201660156'
+        pitch: '-9.300081253051758'
+      owner:
+        owner: slienimon
+        uuid: ''
+    traitnames: owner,spawned,location,type
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: b53baa08-a0f4-4a08-8694-7e14d44f18d9
+  '129':
+    name: §2Technician
+    traits:
+      spawned: true
+      location:
+        world: Dropper
+        x: '-43.30000001192093'
+        y: '93.0'
+        z: '31.699999988079085'
+        yaw: '149.69996643066406'
+        pitch: '-5.100078105926514'
+      equipment:
+        hand:
+          type: BLAZE_ROD
+          amount: 1
+          durability: 0
+          mdata: 0
+      owner:
+        owner: slienimon
+        uuid: ''
+    traitnames: owner,equipment,spawned,location,type
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: 87db3d5e-c8c0-4d43-91ac-db840bdff116
+  '126':
+    name: §4Lost_guy
+    traits:
+      spawned: true
+      location:
+        world: Dropper
+        x: '-47.48442423929735'
+        y: '93.0'
+        z: '17.30000001192093'
+        yaw: '-2.398956298828125'
+        pitch: '0.7500137090682983'
+      equipment:
+        chestplate:
+          type: LEATHER_CHESTPLATE
+          amount: 1
+          durability: 0
+          mdata: 0
+          meta:
+            armor:
+              color: 5000268
+        leggings:
+          type: LEATHER_LEGGINGS
+          amount: 1
+          durability: 0
+          mdata: 0
+          meta:
+            armor:
+              color: 5000268
+        boots:
+          type: LEATHER_BOOTS
+          amount: 1
+          durability: 0
+          mdata: 0
+          meta:
+            armor:
+              color: 5000268
+      owner:
+        owner: slienimon
+        uuid: ''
+    traitnames: owner,equipment,spawned,location,type
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: 1f830f91-6d69-4832-b2ad-cf2fc542d58f
+  '125':
+    name: §2Bob
+    traits:
+      spawned: true
+      location:
+        world: Dropper
+        x: '-40.48697427850953'
+        y: '93.0'
+        z: '27.646251887356534'
+        yaw: '107.8499984741211'
+        pitch: '-3.3000776767730713'
+      equipment:
+        chestplate:
+          type: LEATHER_CHESTPLATE
+          amount: 1
+          durability: 0
+          mdata: 0
+          meta:
+            armor:
+              color: 14188339
+        boots:
+          type: LEATHER_BOOTS
+          amount: 1
+          durability: 0
+          mdata: 0
+          meta:
+            armor:
+              color: 14188339
+      owner:
+        owner: slienimon
+        uuid: ''
+    traitnames: owner,equipment,spawned,location,type
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: 6817094e-87e0-4717-bfa3-0fe7ef163b34
+  '124':
+    name: §2Tom
+    traits:
+      spawned: true
+      location:
+        world: Dropper
+        x: '-40.4064462404876'
+        y: '93.0'
+        z: '20.545637537185744'
+        yaw: '61.949989318847656'
+        pitch: '-3.900081157684326'
+      owner:
+        owner: slienimon
+        uuid: ''
+    traitnames: owner,spawned,location,type
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: 23861b11-c81e-4781-91c3-d5316fd3772b
+  '123':
+    name: §2Daddy
+    traits:
+      spawned: true
+      location:
+        world: Dropper
+        x: '-51.541732689793925'
+        y: '93.0'
+        z: '17.30000001192093'
+        yaw: '345.74810791015625'
+        pitch: '-7.500007152557373'
+      equipment:
+        chestplate:
+          type: LEATHER_CHESTPLATE
+          amount: 1
+          durability: 0
+          mdata: 0
+          meta:
+            armor:
+              color: 8375321
+        leggings:
+          type: LEATHER_LEGGINGS
+          amount: 1
+          durability: 0
+          mdata: 0
+          meta:
+            armor:
+              color: 8375321
+        boots:
+          type: LEATHER_BOOTS
+          amount: 1
+          durability: 0
+          mdata: 0
+          meta:
+            armor:
+              color: 8375321
+      lookclose:
+        enabled: false
+        range: '5.0'
+        realisticlooking: false
+      owner:
+        owner: slienimon
+        uuid: ''
+    traitnames: owner,equipment,spawned,location,type
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: 4a0d07f9-2536-46c0-95b4-a2a08bdfcff6
+  '122':
+    name: §4MINER
+    traits:
+      spawned: true
+      location:
+        world: Dropper
+        x: '-43.348635262599586'
+        y: '93.0'
+        z: '17.793939188807467'
+        yaw: '-344.388671875'
+        pitch: '8.699868202209473'
+      equipment:
+        hand:
+          type: STONE_PICKAXE
+          amount: 1
+          durability: 0
+          mdata: 0
+      owner:
+        owner: slienimon
+        uuid: ''
+    traitnames: owner,equipment,spawned,location,type
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: 0de12582-fe43-4e77-abcb-a39a616bce83
+  '119':
+    name: Bella
+    traits:
+      spawned: true
+      location:
+        world: Dropper
+        x: '-204.32738729121107'
+        y: '71.0'
+        z: '66.16507779303134'
+        yaw: '228732.703125'
+        pitch: '0.0'
+      waypoints:
+        linear: {}
+        provider: linear
+      type: Witch
+      equipment:
+        hand:
+          type: POTION
+          amount: 1
+          durability: 16420
+          mdata: 36
+      owner:
+        owner: slienimon
+        uuid: ''
+    traitnames: waypoints,owner,equipment,spawned,location,type
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: 127cca2c-89b3-41e5-907b-be693f006176
+  '114':
+    name: §5Notch
+    traits:
+      spawned: true
+      location:
+        world: Dropper
+        x: '11.417685335962537'
+        y: '61.0'
+        z: '6.50850674360341'
+        yaw: '-1.1796655E7'
+        pitch: '0.0'
+      waypoints:
+        linear: {}
+        provider: linear
+      owner:
+        owner: slienimon
+        uuid: ''
+    traitnames: waypoints,owner,spawned,location,type
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: 74f2d6b2-cbae-4fef-8044-035466325108
+  '108':
+    name: Bradd
+    traits:
+      spawned: true
+      location:
+        world: Dropper
+        x: '-103.30000001192093'
+        y: '81.0'
+        z: '-19.30000001192093'
+        yaw: '142.2004852294922'
+        pitch: '6.599849700927734'
+      equipment:
+        helmet:
+          type: LEATHER_HELMET
+          amount: 1
+          durability: 0
+          mdata: 0
+          meta:
+            armor:
+              color: 15892389
+      owner:
+        owner: slienimon
+        uuid: ''
+    traitnames: owner,equipment,spawned,location,type
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: 43221781-2979-4a32-8e2f-76d2fa76202a
+  '107':
+    name: Daddy
+    traits:
+      spawned: true
+      location:
+        world: Dropper
+        x: '-107.91868696676765'
+        y: '69.0'
+        z: '-12.24540934112754'
+        yaw: '-5403727.5'
+        pitch: '0.0'
+      waypoints:
+        linear: {}
+        provider: linear
+      equipment:
+        chestplate:
+          type: LEATHER_CHESTPLATE
+          amount: 1
+          durability: 0
+          mdata: 0
+          meta:
+            armor:
+              color: 8375321
+        leggings:
+          type: LEATHER_LEGGINGS
+          amount: 1
+          durability: 0
+          mdata: 0
+          meta:
+            armor:
+              color: 8375321
+        boots:
+          type: LEATHER_BOOTS
+          amount: 1
+          durability: 0
+          mdata: 0
+          meta:
+            armor:
+              color: 8375321
+      owner:
+        owner: slienimon
+        uuid: ''
+    traitnames: waypoints,owner,equipment,spawned,location,type
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: 914b5b80-2f9e-4d13-9d46-cd07270309ab
+  '105':
+    name: §2KingOfTheHill
+    traits:
+      spawned: true
+      location:
+        world: Dropper
+        x: '-88.67066892478176'
+        y: '69.0'
+        z: '117.30000001192093'
+        yaw: '31.80126953125'
+        pitch: '3.3001818656921387'
+      owner:
+        owner: slienimon
+        uuid: ''
+    traitnames: owner,spawned,location,type
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: 9ebcbb18-d9e4-4b2a-9f87-dbf590e17233
+  '103':
+    name: '>>Test<<'
+    traits:
+      spawned: true
+      location:
+        world: TestWorld
+        x: '0.8904574635029341'
+        y: '65.0'
+        z: '4.571632808397573'
+        yaw: '-270.1498107910156'
+        pitch: '13.200031280517578'
+      owner:
+        owner: O_o_Fadi_o_O
+        uuid: ''
+    traitnames: owner,spawned,location,type
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: 6c1aa5ee-f2ba-4713-84f0-23fb602909d8
+  '101':
+    name: §8>> §4Shop �
+    traits:
+      age:
+        age: 0
+        locked: true
+      spawned: true
+      location:
+        world: PrisonServer
+        x: '-855.2263857329133'
+        y: '9.0'
+        z: '320.51309040519345'
+        yaw: '126.89930725097656'
+        pitch: '0.0'
+      type: Villager
+      owner:
+        owner: O_o_Fadi_o_O
+        uuid: ''
+    traitnames: owner,spawned,location,type,age
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: e06b4eab-73c5-491a-98ce-c853f7c86fa6
+  '98':
+    name: §2Tommy
+    traits:
+      spawned: true
+      location:
+        world: Dropper
+        x: '58.69999998807908'
+        y: '61.0'
+        z: '30.16042645923551'
+        yaw: '61.050994873046875'
+        pitch: '2.850024700164795'
+      owner:
+        owner: slienimon
+        uuid: ''
+    traitnames: owner,spawned,location,type
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: 5a0e1d35-0fb9-4b57-8693-0ec4c5b4e621
+  '97':
+    name: §2Notch
+    traits:
+      spawned: true
+      location:
+        world: Dropper
+        x: '34.896195342466825'
+        y: '61.0'
+        z: '17.484465360421055'
+        yaw: '1711.57763671875'
+        pitch: '0.0'
+      waypoints:
+        linear: {}
+        provider: linear
+      equipment:
+        hand:
+          type: MAP
+          amount: 1
+          durability: 4
+          mdata: 4
+      owner:
+        owner: slienimon
+        uuid: ''
+    traitnames: waypoints,owner,equipment,spawned,location,type
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: ce838190-4830-4610-bacd-971d50f09afd
+  '96':
+    name: §2Tom
+    traits:
+      spawned: true
+      location:
+        world: Dropper
+        x: '0.30000001192093073'
+        y: '-1.9423598964406163E7'
+        z: '9.30000001192093'
+        yaw: '-33.14896011352539'
+        pitch: '-1.9499727487564087'
+      owner:
+        owner: slienimon
+        uuid: ''
+    traitnames: owner,spawned,location,type
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: 22f606d7-6cdf-4d81-9847-6d5a95f26609
+  '150':
+    name: §2King_Slime
+    traits:
+      slimesize:
+        size: 5
+      spawned: true
+      location:
+        world: Dropper
+        x: '27.756339397301247'
+        y: '102.0'
+        z: '-51.5'
+        yaw: '94.75407409667969'
+        pitch: '0.0'
+      type: Slime
+      lookclose:
+        enabled: false
+        range: '5.0'
+        realisticlooking: false
+      owner:
+        owner: slienimon
+        uuid: ''
+    traitnames: slimesize,owner,spawned,location,type
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: 8263fcb0-cc4b-4935-bcf1-05921b2b1340
+  '145':
+    name: §2Dave
+    traits:
+      spawned: true
+      location:
+        world: Dropper
+        x: '-35.77397013448871'
+        y: '93.0'
+        z: '22.157425613155404'
+        yaw: '67.34994506835938'
+        pitch: '0.0'
+      age:
+        age: 0
+        locked: true
+      type: Villager
+      owner:
+        owner: slienimon
+        uuid: ''
+    traitnames: owner,spawned,location,type,age
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: b2b0c284-c4b6-4ef0-b105-0c124f8a8b94
+  '140':
+    name: §4Maffia_Boss
+    traits:
+      spawned: true
+      lookclose:
+        enabled: false
+        range: '5.0'
+        realisticlooking: false
+      location:
+        world: Dropper
+        x: '-37.34952685490456'
+        y: '93.0'
+        z: '20.30000001192092'
+        yaw: '7.994010925292969'
+        pitch: '0.0'
+      equipment:
+        hand:
+          type: GOLD_INGOT
+          amount: 1
+          durability: 0
+          mdata: 0
+        helmet:
+          type: GOLD_HELMET
+          amount: 1
+          durability: 0
+          mdata: 0
+        chestplate:
+          type: DIAMOND_CHESTPLATE
+          amount: 1
+          durability: 0
+          mdata: 0
+        leggings:
+          type: DIAMOND_LEGGINGS
+          amount: 1
+          durability: 0
+          mdata: 0
+        boots:
+          type: DIAMOND_BOOTS
+          amount: 1
+          durability: 0
+          mdata: 0
+      type: Skeleton
+      owner:
+        owner: slienimon
+        uuid: ''
+    traitnames: owner,equipment,spawned,location,type
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: 19e8bc75-0c0e-4cd3-85bc-687b8ee100f9
+  '155':
+    name: Magma cubones
+    traits:
+      slimesize:
+        size: 2
+      spawned: true
+      lookclose:
+        enabled: false
+        range: '5.0'
+        realisticlooking: false
+      location:
+        world: Dropper
+        x: '40.82048249397046'
+        y: '109.0'
+        z: '-55.68799792098217'
+        yaw: '2.9322357177734375'
+        pitch: '0.0'
+      type: LavaSlime
+      owner:
+        owner: slienimon
+        uuid: ''
+    traitnames: slimesize,owner,spawned,location,type
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: 422b9e15-711e-40d8-b7e8-2e88457b3b7b
+  '154':
+    name: §6Heavon Prote
+    traits:
+      spawned: true
+      location:
+        world: Dropper
+        x: '45.10282514086208'
+        y: '109.0'
+        z: '-49.93877425809657'
+        yaw: '-278.5516052246094'
+        pitch: '7.049931049346924'
+      owner:
+        owner: slienimon
+        uuid: ''
+    traitnames: owner,spawned,location,type
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: e55055ea-a207-4b8f-bcbd-c356c500f3fe
+  '152':
+    name: §6Heavon Prote
+    traits:
+      spawned: true
+      location:
+        world: Dropper
+        x: '44.80367917849515'
+        y: '109.0'
+        z: '-53.153581416272374'
+        yaw: '85.04837799072266'
+        pitch: '-8.250066757202148'
+      owner:
+        owner: slienimon
+        uuid: ''
+    traitnames: owner,spawned,location,type
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: 6976ed11-7cb2-4e6d-b68b-8deafa223cfc
+  '160':
+    name: §2Slmie_King
+    traits:
+      spawned: true
+      location:
+        world: Dropper
+        x: '-35.30000001192092'
+        y: '93.0'
+        z: '26.699999988079078'
+        yaw: '-246.14999389648438'
+        pitch: '0.0'
+      type: Slime
+      owner:
+        owner: slienimon
+        uuid: ''
+    traitnames: owner,spawned,location,type
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: d0013caf-f093-462b-92b6-2bdd4daa6b96
+  '159':
+    name: §5Slienimon
+    traits:
+      spawned: true
+      waypoints:
+        linear: {}
+        provider: linear
+      equipment:
+        hand:
+          type: MAP
+          amount: 1
+          durability: 5
+          mdata: 5
+      location:
+        world: Dropper
+        x: '36.505453991067355'
+        y: '61.0'
+        z: '23.807886789930464'
+        yaw: '-7358220.0'
+        pitch: '0.0'
+      owner:
+        owner: slienimon
+        uuid: ''
+    traitnames: waypoints,owner,equipment,spawned,location,type
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: 1f843928-1add-471f-87ba-6f30e95f19df
+  '158':
+    name: §2Tom
+    traits:
+      spawned: true
+      location:
+        world: Dropper
+        x: '3.2217512005473505'
+        y: '64.0'
+        z: '9.014736374843258'
+        yaw: '330.00006103515625'
+        pitch: '-0.4500167667865753'
+      owner:
+        owner: slienimon
+        uuid: ''
+    traitnames: owner,spawned,location,type
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: e56b0868-1bfd-4002-b488-82c330368ac9
+  '157':
+    name: God
+    traits:
+      spawned: true
+      location:
+        world: Dropper
+        x: '111.50810875242786'
+        y: '131.0'
+        z: '-54.52193249846115'
+        yaw: '53.8541259765625'
+        pitch: '13.200014114379883'
+      poses: {}
+      owner:
+        owner: slienimon
+        uuid: ''
+    traitnames: poses,owner,spawned,location,type
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: 276c2bff-2827-4c99-8862-11c9b3b5c5de
+  '172':
+    name: YamiNoShiroiTora
+    traits:
+      waypoints:
+        linear: {}
+        provider: linear
+      location:
+        world: Dropper
+        x: '17.69999998807907'
+        y: '79.0'
+        z: '220.38281024136032'
+        yaw: '-5474.46435546875'
+        pitch: '0.0'
+      spawned: true
+      owner:
+        owner: slienimon
+        uuid: ''
+    traitnames: waypoints,owner,spawned,location,type
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: 78f19f2f-fce7-4bd1-a0cd-f97ee74d6dea
+  '167':
+    name: Molly
+    traits:
+      waypoints:
+        linear: {}
+        provider: linear
+      location:
+        world: Dropper
+        x: '12.420029866705034'
+        y: '79.0'
+        z: '193.8837162682527'
+        yaw: '-304018.09375'
+        pitch: '0.0'
+      spawned: true
+      owner:
+        owner: slienimon
+        uuid: ''
+    traitnames: waypoints,owner,spawned,location,type
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: 2ee9b302-44d1-48cf-9147-a8247ee5fee8
+  '166':
+    name: §3Maxim
+    traits:
+      waypoints:
+        linear: {}
+        provider: linear
+      location:
+        world: Dropper
+        x: '12.500052333323692'
+        y: '79.0'
+        z: '144.21456332316055'
+        yaw: '7920.001953125'
+        pitch: '0.0'
+      spawned: true
+      owner:
+        owner: slienimon
+        uuid: ''
+    traitnames: waypoints,owner,spawned,location,type
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: e4a7645d-946e-42f0-b8e5-d2c375a43094
+  '165':
+    name: §6Lisa
+    traits:
+      location:
+        world: Dropper
+        x: '-23.49953021953987'
+        y: '79.0'
+        z: '144.0390823350661'
+        yaw: '0.05686187744140625'
+        pitch: '0.0'
+      spawned: true
+      waypoints:
+        linear: {}
+        provider: linear
+      owner:
+        owner: slienimon
+        uuid: ''
+    traitnames: waypoints,owner,spawned,location,type
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: e96b8357-f2c3-4f7a-a4ca-e6c6e2cd90b5
+  '164':
+    name: §1Marion
+    traits:
+      waypoints:
+        linear: {}
+        provider: linear
+      location:
+        world: Dropper
+        x: '-5.615255122181693'
+        y: '79.0'
+        z: '179.41833656235409'
+        yaw: '85.6234130859375'
+        pitch: '0.0'
+      spawned: true
+      owner:
+        owner: slienimon
+        uuid: ''
+    traitnames: waypoints,owner,spawned,location,type
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: e4637a9e-366d-47c6-9722-a308df06850d
+  '163':
+    name: §2Gilles
+    traits:
+      waypoints:
+        linear: {}
+        provider: linear
+      location:
+        world: Dropper
+        x: '18.531024043647484'
+        y: '79.0'
+        z: '173.5005895316532'
+        yaw: '-633421.8125'
+        pitch: '0.0'
+      spawned: true
+      owner:
+        owner: slienimon
+        uuid: ''
+    traitnames: waypoints,owner,spawned,location,type
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: 7de053f3-dac0-44ef-bb21-1ab8b42213dc
+  '162':
+    name: §4Prisoner
+    traits:
+      location:
+        world: Dropper
+        x: '-16.35743696979184'
+        y: '79.0'
+        z: '168.52880841913583'
+        yaw: '89.694091796875'
+        pitch: '-1.5767812146805227E-4'
+      spawned: true
+      owner:
+        owner: slienimon
+        uuid: ''
+    traitnames: owner,spawned,location,type
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: 785f7081-a029-40d5-b26a-56ca6b67edc3
+  '175':
+    name: §4Maffia_boss
+    traits:
+      type: Skeleton
+      location:
+        world: Dropper
+        x: '-5.300000011920913'
+        y: '79.0'
+        z: '122.31311521608777'
+        yaw: '31.051620483398438'
+        pitch: '0.0'
+      equipment:
+        hand:
+          type: GOLD_INGOT
+          amount: 1
+          durability: 0
+          mdata: 0
+        chestplate:
+          type: DIAMOND_CHESTPLATE
+          amount: 1
+          durability: 0
+          mdata: 0
+        leggings:
+          type: DIAMOND_LEGGINGS
+          amount: 1
+          durability: 0
+          mdata: 0
+        boots:
+          type: DIAMOND_BOOTS
+          amount: 1
+          durability: 0
+          mdata: 0
+      spawned: true
+      owner:
+        owner: slienimon
+        uuid: ''
+    traitnames: owner,equipment,spawned,location,type
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: 9cd313d7-05eb-4d33-83af-d86c961c64bd
+  '182':
+    name: §4Factions
+    traits:
+      type: EnderDragon
+      spawned: true
+      location:
+        world: Factions
+        x: '234.5'
+        y: '256.0'
+        z: '277.5'
+        yaw: '-270.59930419921875'
+        pitch: '90.0'
+      owner:
+        owner: O_o_Fadi_o_O
+        uuid: ''
+    traitnames: owner,spawned,location,type
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: 0d81eabb-5bfe-47d2-abfc-d8582ec30f48
+  '223':
+    name: §8>> §4Shop �
+    traits:
+      age:
+        age: 0
+        locked: true
+      location:
+        world: PrisonServer
+        x: '-867.6779682128606'
+        y: '10.0'
+        z: '261.53589758554114'
+        yaw: '-178.5006561279297'
+        pitch: '0.0'
+      type: Villager
+      spawned: true
+      owner:
+        owner: O_o_Fadi_o_O
+        uuid: ''
+    traitnames: owner,spawned,location,type,age
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: fe2b8e8f-48ac-4e8b-b059-b495b70386fa
+  '222':
+    name: §8>> §4Shop �
+    traits:
+      age:
+        age: 0
+        locked: true
+      location:
+        world: PrisonServer
+        x: '-906.5855333312222'
+        y: '10.0'
+        z: '260.0073985245545'
+        yaw: '90.749267578125'
+        pitch: '0.0'
+      type: Villager
+      spawned: true
+      owner:
+        owner: O_o_Fadi_o_O
+        uuid: ''
+    traitnames: owner,spawned,location,type,age
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: 883669fe-04c3-483b-af33-821b07d3f38d
+  '221':
+    name: §8>> §4Shop �
+    traits:
+      age:
+        age: 0
+        locked: true
+      location:
+        world: PrisonServer
+        x: '-927.0735184580302'
+        y: '10.0'
+        z: '315.3074113820422'
+        yaw: '181.34912109375'
+        pitch: '0.0'
+      type: Villager
+      spawned: true
+      owner:
+        owner: O_o_Fadi_o_O
+        uuid: ''
+    traitnames: owner,spawned,location,type,age
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: 2c970b7b-83f4-4e45-a441-81bb3f336e51
+  '220':
+    name: §8>> §4Shop �
+    traits:
+      age:
+        age: 0
+        locked: true
+      location:
+        world: PrisonServer
+        x: '-918.0097704865778'
+        y: '9.0'
+        z: '364.3439270975553'
+        yaw: '180.29925537109375'
+        pitch: '0.0'
+      type: Villager
+      spawned: true
+      owner:
+        owner: O_o_Fadi_o_O
+        uuid: ''
+    traitnames: owner,spawned,location,type,age
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: d52d7e01-78ce-4214-83dc-4738caeba48f
+  '219':
+    name: §8>> §4Shop �
+    traits:
+      age:
+        age: 0
+        locked: true
+      location:
+        world: PrisonServer
+        x: '-762.9696933547089'
+        y: '7.0'
+        z: '344.5196844711718'
+        yaw: '180.89947509765625'
+        pitch: '0.0'
+      type: Villager
+      spawned: true
+      owner:
+        owner: O_o_Fadi_o_O
+        uuid: ''
+    traitnames: owner,spawned,location,type,age
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: d2769b41-d2e7-4bd4-98d7-a124265dd0a4
+  '218':
+    name: §8>> §4Shop �
+    traits:
+      age:
+        age: 0
+        locked: true
+      location:
+        world: PrisonServer
+        x: '-816.4517369521683'
+        y: '8.0'
+        z: '391.9885968358172'
+        yaw: '271.49920654296875'
+        pitch: '0.0'
+      type: Villager
+      spawned: true
+      owner:
+        owner: O_o_Fadi_o_O
+        uuid: ''
+    traitnames: owner,spawned,location,type,age
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: 987870b2-3c1e-4c83-8d30-7f65315fa7d2
+  '217':
+    name: §8>> §4Shop �
+    traits:
+      age:
+        age: 0
+        locked: true
+      location:
+        world: PrisonServer
+        x: '-873.65348405485'
+        y: '8.0'
+        z: '417.9377141375436'
+        yaw: '89.69921875'
+        pitch: '0.0'
+      type: Villager
+      spawned: true
+      owner:
+        owner: O_o_Fadi_o_O
+        uuid: ''
+    traitnames: owner,spawned,location,type,age
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: 25b2cf28-bced-4cf0-998c-dde966f3bbd3
+  '215':
+    name: §4Thomas
+    traits:
+      location:
+        world: Dropper
+        x: '-18.012499988079078'
+        y: '79.0'
+        z: '223.2087533731271'
+        yaw: '-97.0501708984375'
+        pitch: '6.4498138427734375'
+      spawned: true
+      owner:
+        owner: slienimon
+        uuid: ''
+    traitnames: owner,spawned,location,type
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: 531836d8-70b8-403b-b7c2-b6302594ac56
+  '214':
+    name: §4Bob
+    traits:
+      location:
+        world: Dropper
+        x: '-27.482183802729164'
+        y: '48.0'
+        z: '57.54039001903374'
+        yaw: '-91.05033111572266'
+        pitch: '6.74982213973999'
+      spawned: true
+      owner:
+        owner: slienimon
+        uuid: ''
+    traitnames: owner,spawned,location,type
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: 20d20c63-c438-497a-beb9-782934c06cc1
+  '213':
+    name: §4MINER
+    traits:
+      equipment:
+        hand:
+          type: STONE_PICKAXE
+          amount: 1
+          durability: 0
+          mdata: 0
+      location:
+        world: Dropper
+        x: '-63.41326737961776'
+        y: '48.0'
+        z: '19.67743142230055'
+        yaw: '53.099735260009766'
+        pitch: '-1.9081830396316946E-4'
+      spawned: true
+      owner:
+        owner: slienimon
+        uuid: ''
+    traitnames: owner,equipment,spawned,location,type
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: 32503aa9-59dd-40cd-a077-1876764e745b
+  '212':
+    name: §4MINER
+    traits:
+      equipment:
+        hand:
+          type: STONE_PICKAXE
+          amount: 1
+          durability: 0
+          mdata: 0
+      location:
+        world: Dropper
+        x: '-73.22372645733414'
+        y: '48.0'
+        z: '18.590149482733025'
+        yaw: '-60.30024719238281'
+        pitch: '-3.9001946449279785'
+      spawned: true
+      owner:
+        owner: slienimon
+        uuid: ''
+    traitnames: owner,equipment,spawned,location,type
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: 237b00bd-e46c-4b87-9f51-7a8b0670fbdd
+  '211':
+    name: §4MINER
+    traits:
+      equipment:
+        hand:
+          type: STONE_PICKAXE
+          amount: 1
+          durability: 0
+          mdata: 0
+      location:
+        world: Dropper
+        x: '-73.77450143185276'
+        y: '48.0'
+        z: '23.449235806625392'
+        yaw: '-96.90023803710938'
+        pitch: '1.3498047590255737'
+      spawned: true
+      owner:
+        owner: slienimon
+        uuid: ''
+    traitnames: owner,equipment,spawned,location,type
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: b0ed4981-b281-4e61-b2ea-71edd6bb2d2f
+  '210':
+    name: §4Maffia Boss
+    traits:
+      equipment:
+        hand:
+          type: GOLD_INGOT
+          amount: 1
+          durability: 0
+          mdata: 0
+        chestplate:
+          type: DIAMOND_CHESTPLATE
+          amount: 1
+          durability: 0
+          mdata: 0
+        leggings:
+          type: DIAMOND_LEGGINGS
+          amount: 1
+          durability: 0
+          mdata: 0
+        boots:
+          type: DIAMOND_BOOTS
+          amount: 1
+          durability: 0
+          mdata: 0
+      location:
+        world: Dropper
+        x: '-102.44198584644538'
+        y: '52.0'
+        z: '42.33557562786771'
+        yaw: '280.7998352050781'
+        pitch: '0.0'
+      type: Skeleton
+      spawned: true
+      owner:
+        owner: slienimon
+        uuid: ''
+    traitnames: owner,equipment,spawned,location,type
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: b086f193-4b2c-4202-a70c-5d7218a6efb1
+  '207':
+    name: §2KingOfTheHill
+    traits:
+      location:
+        world: Dropper
+        x: '-71.595050307129'
+        y: '48.0'
+        z: '59.52630128342563'
+        yaw: '-147.60032653808594'
+        pitch: '1.6498799324035645'
+      spawned: true
+      owner:
+        owner: slienimon
+        uuid: ''
+    traitnames: owner,spawned,location,type
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: e972da09-c7bb-40d6-af6a-c01b6388a9c1
+  '206':
+    name: §4Witch
+    traits:
+      location:
+        world: Dropper
+        x: '-55.54380436388016'
+        y: '48.0'
+        z: '56.66869819383408'
+        yaw: '-265.650390625'
+        pitch: '0.0'
+      type: Witch
+      spawned: true
+      owner:
+        owner: slienimon
+        uuid: ''
+    traitnames: owner,spawned,location,type
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: 0ef32082-f081-44db-8a3e-c643aa1ef8b6
+  '205':
+    name: §4Technician
+    traits:
+      location:
+        world: Dropper
+        x: '-46.00153587880898'
+        y: '52.0'
+        z: '55.30000001192093'
+        yaw: '-14.250285148620605'
+        pitch: '1.6499032974243164'
+      spawned: true
+      owner:
+        owner: slienimon
+        uuid: ''
+    traitnames: owner,spawned,location,type
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: 9c8139a5-bca2-4fe5-b21c-6b8a653f5092
+  '204':
+    name: §4Technician
+    traits:
+      location:
+        world: Dropper
+        x: '-45.699999988079036'
+        y: '48.0'
+        z: '61.43414130462139'
+        yaw: '-186.30030822753906'
+        pitch: '3.4499008655548096'
+      spawned: true
+      owner:
+        owner: slienimon
+        uuid: ''
+    traitnames: owner,spawned,location,type
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: 69af2996-6389-46b6-b3ce-83684d3794ab
+  '203':
+    name: §4Stuward
+    traits:
+      location:
+        world: Dropper
+        x: '-39.6234043977193'
+        y: '48.0'
+        z: '40.225034378128704'
+        yaw: '-5.09993839263916'
+        pitch: '3.2999744415283203'
+      spawned: true
+      owner:
+        owner: slienimon
+        uuid: ''
+    traitnames: owner,spawned,location,type
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: 809db0f2-59c6-4b1e-ae05-11d2a3be791e
+  '202':
+    name: §2Bradd
+    traits:
+      equipment:
+        helmet:
+          type: LEATHER_HELMET
+          amount: 1
+          durability: 0
+          mdata: 0
+          meta:
+            armor:
+              color: 15892389
+      location:
+        world: Dropper
+        x: '-51.0153958224875'
+        y: '52.0'
+        z: '22.142762222738366'
+        yaw: '178.199951171875'
+        pitch: '0.4500756561756134'
+      spawned: true
+      owner:
+        owner: slienimon
+        uuid: ''
+    traitnames: owner,equipment,spawned,location,type
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: 4355ab8a-912f-49e4-a8af-90de625a4cb6
+  '201':
+    name: §2Daddy
+    traits:
+      equipment:
+        chestplate:
+          type: LEATHER_CHESTPLATE
+          amount: 1
+          durability: 0
+          mdata: 0
+          meta:
+            armor:
+              color: 8375321
+        leggings:
+          type: LEATHER_LEGGINGS
+          amount: 1
+          durability: 0
+          mdata: 0
+          meta:
+            armor:
+              color: 8375321
+        boots:
+          type: LEATHER_BOOTS
+          amount: 1
+          durability: 0
+          mdata: 0
+          meta:
+            armor:
+              color: 8375321
+      location:
+        world: Dropper
+        x: '-50.39149622737949'
+        y: '48.0'
+        z: '17.699999988079064'
+        yaw: '-353.4000549316406'
+        pitch: '4.9500603675842285'
+      spawned: true
+      owner:
+        owner: slienimon
+        uuid: ''
+    traitnames: owner,equipment,spawned,location,type
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: 43e295b5-867e-47cf-a5e1-5250e1a930f8
+  '199':
+    name: §6MacDonalds
+    traits:
+      location:
+        world: Dropper
+        x: '-29.23972778398521'
+        y: '47.0'
+        z: '43.30974865332246'
+        yaw: '-179.70013427734375'
+        pitch: '1.8000415563583374'
+      spawned: true
+      owner:
+        owner: slienimon
+        uuid: ''
+    traitnames: owner,spawned,location,type
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: 0938a964-cb28-4065-8c57-bb79f45bbcaa
+  '198':
+    name: §6MacDonalds
+    traits:
+      location:
+        world: Dropper
+        x: '-31.30000001192093'
+        y: '47.0'
+        z: '40.53078225554603'
+        yaw: '-101.55029296875'
+        pitch: '3.6000406742095947'
+      spawned: true
+      owner:
+        owner: slienimon
+        uuid: ''
+    traitnames: owner,spawned,location,type
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: 2ba58658-adf3-4e4f-9cf9-d997ebdfc6a7
+  '197':
+    name: §6MacDonalds
+    traits:
+      location:
+        world: Dropper
+        x: '-31.300000011920925'
+        y: '47.0'
+        z: '38.365096019176825'
+        yaw: '-99.600341796875'
+        pitch: '3.3000407218933105'
+      spawned: true
+      owner:
+        owner: slienimon
+        uuid: ''
+    traitnames: owner,spawned,location,type
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: 57c5f292-6a83-4275-8b87-6f311190bc48
+  '194':
+    name: §2Tommy
+    traits:
+      location:
+        world: Dropper
+        x: '-29.699999988079057'
+        y: '-5223792.6025672415'
+        z: '21.300000011920922'
+        yaw: '-166.64990234375'
+        pitch: '8.40002155303955'
+      spawned: true
+      owner:
+        owner: slienimon
+        uuid: ''
+    traitnames: owner,spawned,location,type
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: 367c3544-0682-4c39-8485-09ce4cd26404
+  '193':
+    name: §2Tom
+    traits:
+      location:
+        world: Dropper
+        x: '-29.488990162771426'
+        y: '-5223792.6025672415'
+        z: '19.508448650632584'
+        yaw: '-30.45050048828125'
+        pitch: '7.2000532150268555'
+      spawned: true
+      owner:
+        owner: slienimon
+        uuid: ''
+    traitnames: owner,spawned,location,type
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: 14bc2232-39dc-41f0-a052-0a024ba9cb4c
+  '224':
+    name: §4Thief
+    traits:
+      spawned: true
+      location:
+        world: Dropper
+        x: '-102.69999998807907'
+        y: '52.0'
+        z: '38.437431043096275'
+        yaw: '228.00115966796875'
+        pitch: '1.4998067617416382'
+      owner:
+        owner: slienimon
+        uuid: ''
+    traitnames: owner,spawned,location,type
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: 44d48cba-c61f-4a4f-8576-003f88be650c
+  '231':
+    name: §4witch
+    traits:
+      location:
+        world: Dropper
+        x: '-37.30000001192093'
+        y: '93.0'
+        z: '27.69999998807907'
+        yaw: '-204.6000213623047'
+        pitch: '0.0'
+      spawned: true
+      type: Witch
+      owner:
+        owner: slienimon
+        uuid: ''
+    traitnames: owner,spawned,location,type
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: e140d4a5-36dd-4eb3-9439-dfbd153e7922
+  '230':
+    name: §6Scientist
+    traits:
+      location:
+        world: Dropper
+        x: '-48.58042624548379'
+        y: '40.0'
+        z: '83.69999998807907'
+        yaw: '222.9000244140625'
+        pitch: '6.599958419799805'
+      spawned: true
+      owner:
+        owner: slienimon
+        uuid: ''
+    traitnames: owner,spawned,location,type
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: 7ff7a169-f3f5-4611-910c-7b86cf19971f
+  '229':
+    name: §2Dave
+    traits:
+      age:
+        age: 0
+        locked: true
+      location:
+        world: Dropper
+        x: '-34.199015146604744'
+        y: '40.0'
+        z: '81.38549585280231'
+        yaw: '87.4503173828125'
+        pitch: '0.0'
+      spawned: true
+      type: Villager
+      owner:
+        owner: slienimon
+        uuid: ''
+    traitnames: owner,spawned,location,type,age
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: fc2da3a7-d4f7-4a1b-8edc-82c7ffdfd4f6
+  '227':
+    name: §2Mother
+    traits:
+      age:
+        age: 0
+        locked: true
+      location:
+        world: Dropper
+        x: '-99.69999998807909'
+        y: '47.0'
+        z: '60.69999998807906'
+        yaw: '-167.1002197265625'
+        pitch: '0.0'
+      spawned: true
+      type: Villager
+      owner:
+        owner: slienimon
+        uuid: ''
+    traitnames: owner,spawned,location,type,age
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: 15b5d096-f1da-4a6d-9a00-2bb934b58e99
+  '226':
+    name: §2Thomas
+    traits:
+      age:
+        age: -5
+        locked: true
+      location:
+        world: Dropper
+        x: '-127.61928844087141'
+        y: '-3.312133185332765E8'
+        z: '29.305759925706383'
+        yaw: '131.84976196289062'
+        pitch: '0.0'
+      spawned: true
+      type: Villager
+      owner:
+        owner: slienimon
+        uuid: ''
+    traitnames: owner,spawned,location,type,age
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: 9e904e73-d8a8-43e8-8151-9cae78c47803
+  '257':
+    name: §8>§4Prison§
+    traits:
+      spawned: true
+      location:
+        world: Hub
+        x: '-14.327944186179995'
+        y: '67.0'
+        z: '0.578379012811219'
+        yaw: '-90.30670166015625'
+        pitch: '8.549996376037598'
+      equipment:
+        hand:
+          type: DIAMOND_PICKAXE
+          amount: 1
+          durability: 0
+          mdata: 0
+          meta: {}
+          enchantments:
+            DIG_SPEED: 1
+        chestplate:
+          type: DIAMOND_CHESTPLATE
+          amount: 1
+          durability: 0
+          mdata: 0
+      owner:
+        owner: O_o_Fadi_o_O
+        uuid: ''
+    traitnames: owner,equipment,spawned,location,type
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: 20135bdb-a6b7-4be2-83fb-a90bb73003c5
+  '256':
+    name: §8>§aSurvival
+    traits:
+      spawned: true
+      location:
+        world: Hub
+        x: '0.5188267047666775'
+        y: '67.0'
+        z: '-14.359615294885401'
+        yaw: '-0.756744384765625'
+        pitch: '6.299996376037598'
+      equipment:
+        hand:
+          type: STONE_HOE
+          amount: 1
+          durability: 0
+          mdata: 0
+        helmet:
+          type: IRON_HELMET
+          amount: 1
+          durability: 0
+          mdata: 0
+        chestplate:
+          type: IRON_CHESTPLATE
+          amount: 1
+          durability: 0
+          mdata: 0
+        leggings:
+          type: IRON_LEGGINGS
+          amount: 1
+          durability: 0
+          mdata: 0
+        boots:
+          type: IRON_BOOTS
+          amount: 1
+          durability: 0
+          mdata: 0
+      owner:
+        owner: O_o_Fadi_o_O
+        uuid: ''
+    traitnames: owner,equipment,spawned,location,type
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: caeee27e-74c2-43e4-894f-2d1c1e40d425
+  '253':
+    name: §8>§5SkyBlock
+    traits:
+      spawned: true
+      location:
+        world: Hub
+        x: '0.4614698466736922'
+        y: '67.0'
+        z: '15.292733601885224'
+        yaw: '179.84326171875'
+        pitch: '9.000020980834961'
+      equipment:
+        hand:
+          type: CACTUS
+          amount: 1
+          durability: 0
+          mdata: 0
+        boots:
+          type: LEATHER_BOOTS
+          amount: 1
+          durability: 0
+          mdata: 0
+      owner:
+        owner: O_o_Fadi_o_O
+        uuid: ''
+    traitnames: owner,equipment,spawned,location,type
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: fd063767-e01c-4527-9dd3-e5374440dfe8
+  '250':
+    name: §8>§cKitPvP§
+    traits:
+      spawned: true
+      location:
+        world: Hub
+        x: '15.283128028681617'
+        y: '67.0'
+        z: '0.42372688365066324'
+        yaw: '91.49325561523438'
+        pitch: '5.249999046325684'
+      equipment:
+        hand:
+          type: IRON_SWORD
+          amount: 1
+          durability: 0
+          mdata: 0
+          meta:
+            lore:
+              '0': §bO_o_Fadi_o_O's Sword
+            displayname: §8[§b§lKnight§8]
+        helmet:
+          type: CHAINMAIL_HELMET
+          amount: 1
+          durability: 0
+          mdata: 0
+          meta:
+            lore:
+              '0': §bO_o_Fadi_o_O's Helmet
+            displayname: §8[§b§lKnight§8]
+        chestplate:
+          type: CHAINMAIL_CHESTPLATE
+          amount: 1
+          durability: 0
+          mdata: 0
+          meta:
+            lore:
+              '0': §bO_o_Fadi_o_O's Chestplate
+            displayname: §8[§b§lKnight§8]
+        leggings:
+          type: CHAINMAIL_LEGGINGS
+          amount: 1
+          durability: 0
+          mdata: 0
+          meta:
+            lore:
+              '0': §bO_o_Fadi_o_O's Leggings
+            displayname: §8[§b§lKnight§8]
+        boots:
+          type: CHAINMAIL_BOOTS
+          amount: 1
+          durability: 0
+          mdata: 0
+          meta:
+            lore:
+              '0': §bO_o_Fadi_o_O's Boots
+            displayname: §8[§b§lKnight§8]
+      owner:
+        owner: O_o_Fadi_o_O
+        uuid: ''
+    traitnames: owner,equipment,spawned,location,type
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: 2c454115-6916-43c1-a653-fa22a6ffd16a
+  '278':
+    name: §8>>§4Shop§8
+    traits:
+      location:
+        world: SkyBlockWorld
+        x: '19.30000001192093'
+        y: '65.0'
+        z: '0.5060645585625405'
+        yaw: '88.20447540283203'
+        pitch: '0.0'
+      age:
+        age: 0
+        locked: true
+      spawned: true
+      type: Villager
+      owner:
+        owner: O_o_Fadi_o_O
+        uuid: ''
+    traitnames: owner,spawned,location,type,age
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: aa108602-2807-410c-b41b-567075fb13ff
+  '295':
+    name: §cTutorial
+    traits:
+      spawned: true
+      equipment:
+        hand:
+          type: STONE_HOE
+          amount: 1
+          durability: 0
+          mdata: 0
+      location:
+        world: ClaimTutorial
+        x: '1.0920295070261536'
+        y: '74.0'
+        z: '-25.001995473550934'
+        yaw: '-318.3002624511719'
+        pitch: '36.14998245239258'
+      owner:
+        owner: O_o_Fadi_o_O
+        uuid: ''
+    traitnames: owner,equipment,spawned,location,type
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: 5af31e07-fdb6-4b7c-bf52-fd8271f7550f
+  '294':
+    name: §cTutorial
+    traits:
+      spawned: true
+      equipment:
+        hand:
+          type: STONE_HOE
+          amount: 1
+          durability: 0
+          mdata: 0
+      location:
+        world: ClaimTutorial
+        x: '10.670723654029064'
+        y: '74.0'
+        z: '-11.303717248916422'
+        yaw: '-67.2001953125'
+        pitch: '39.449981689453125'
+      owner:
+        owner: O_o_Fadi_o_O
+        uuid: ''
+    traitnames: owner,equipment,spawned,location,type
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: cb46ac03-63cb-44b1-8ea5-7954db8ed3a3
+  '298':
+    name: §6§lOrbitMines
+    traits:
+      type: EnderDragon
+      location:
+        world: OrbitMinesHub
+        x: '0.5120980229432838'
+        y: '256.0'
+        z: '0.7001401654855502'
+        yaw: '-3.899970769882202'
+        pitch: '86.55001831054688'
+      spawned: true
+      owner:
+        owner: O_o_Fadi_o_O
+        uuid: ''
+    traitnames: owner,spawned,location,type
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: 92acc729-c107-4608-9bde-3d37b4ea6e54
+  '310':
+    name: '&d&LCreative'
+    traits:
+      equipment:
+        hand:
+          type: LAPIS_BLOCK
+          amount: 1
+          durability: 0
+          mdata: 0
+      location:
+        world: Hub
+        x: '8.27284073475393'
+        y: '67.0'
+        z: '8.31695929524836'
+        yaw: '-224.4068603515625'
+        pitch: '14.099982261657715'
+      spawned: true
+      owner:
+        owner: O_o_Fadi_o_O
+        uuid: ''
+    traitnames: owner,equipment,spawned,location,type
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: 1539d560-b75b-45f7-a289-74427f9cc04c
+  '309':
+    name: §d§lCreative
+    traits:
+      location:
+        world: Creative
+        x: '-27.5'
+        y: '256.0'
+        z: '29.5'
+        yaw: '1.49836266040802'
+        pitch: '88.79999542236328'
+      type: EnderDragon
+      spawned: true
+      owner:
+        owner: O_o_Fadi_o_O
+        uuid: ''
+    traitnames: owner,spawned,location,type
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: d114893d-82d4-43c8-8800-93aa1b6feb96
+  '312':
+    name: §4§lFactions
+    traits:
+      spawned: true
+      equipment:
+        hand:
+          type: IRON_SWORD
+          amount: 1
+          durability: 0
+          mdata: 0
+          meta: {}
+          enchantments:
+            DAMAGE_ALL: 1
+        helmet:
+          type: CHAINMAIL_HELMET
+          amount: 1
+          durability: 0
+          mdata: 0
+          meta: {}
+          enchantments:
+            PROTECTION_ENVIRONMENTAL: 1
+        chestplate:
+          type: CHAINMAIL_CHESTPLATE
+          amount: 1
+          durability: 0
+          mdata: 0
+          meta: {}
+          enchantments:
+            PROTECTION_ENVIRONMENTAL: 1
+        leggings:
+          type: CHAINMAIL_LEGGINGS
+          amount: 1
+          durability: 0
+          mdata: 0
+          meta: {}
+          enchantments:
+            PROTECTION_ENVIRONMENTAL: 1
+        boots:
+          type: CHAINMAIL_BOOTS
+          amount: 1
+          durability: 0
+          mdata: 0
+          meta: {}
+          enchantments:
+            PROTECTION_ENVIRONMENTAL: 1
+      location:
+        world: Hub
+        x: '-7.429066739824971'
+        y: '-176320.20000128742'
+        z: '8.352639423027565'
+        yaw: '227.28797912597656'
+        pitch: '3.599987506866455'
+      owner:
+        owner: O_o_Fadi_o_O
+        uuid: ''
+    traitnames: owner,equipment,spawned,location,type
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: e4473206-03e6-470a-8146-19a528c40425
+  '320':
+    name: §1eekhoorn2000
+    traits:
+      spawned: true
+      location:
+        world: TestWorld
+        x: '-99.26203727525804'
+        y: '103.0'
+        z: '-0.35582430444406465'
+        yaw: '38.84521484375'
+        pitch: '-2.5500431060791016'
+      owner:
+        owner: slienimon
+        uuid: ''
+    traitnames: owner,spawned,location,type
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: f260986f-e851-4a19-9fbe-0c9e15bd63c1
+  '319':
+    name: §1sharewoods
+    traits:
+      spawned: true
+      location:
+        world: TestWorld
+        x: '-97.44761614788814'
+        y: '103.0'
+        z: '1.5426953783344133'
+        yaw: '56.694915771484375'
+        pitch: '-2.4000449180603027'
+      owner:
+        owner: slienimon
+        uuid: ''
+    traitnames: owner,spawned,location,type
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: 087dcc6f-8cbc-4a55-affd-73d56a117c36
+  '316':
+    name: §4O_o_Fadi_o_O
+    traits:
+      spawned: true
+      location:
+        world: TestWorld
+        x: '-100.38013804631709'
+        y: '103.0'
+        z: '16.635936267561647'
+        yaw: '181.19517517089844'
+        pitch: '7.0499653816223145'
+      owner:
+        owner: slienimon
+        uuid: ''
+    traitnames: owner,spawned,location,type
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: 8e4dcf55-3680-4267-b42b-ef995f32d5df
+  '315':
+    name: slienimon
+    traits:
+      spawned: true
+      location:
+        world: TestWorld
+        x: '-97.57262595953225'
+        y: '103.0'
+        z: '16.604921415267718'
+        yaw: '123.44513702392578'
+        pitch: '4.94996452331543'
+      owner:
+        owner: slienimon
+        uuid: ''
+    traitnames: owner,spawned,location,type
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: d666ef7f-d567-4d09-ac2e-38988701f64d
+  '313':
+    name: §4Herobrine
+    traits:
+      waypoints:
+        linear: {}
+        provider: linear
+      spawned: true
+      location:
+        world: TestWorld
+        x: '-107.98925849266956'
+        y: '103.0'
+        z: '6.7774237522460785'
+        yaw: '916954.75'
+        pitch: '0.0'
+      owner:
+        owner: slienimon
+        uuid: ''
+    traitnames: waypoints,owner,spawned,location,type
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: 1e5ea48b-6c08-4b50-b330-4c914f6933f5
+  '322':
+    name: §8>>§4Shop§8
+    traits:
+      waypoints:
+        linear: {}
+        provider: linear
+      type: Zombie
+      location:
+        world: KitPvP
+        x: '-689.4012653491371'
+        y: '18.0'
+        z: '-888.9601323431336'
+        yaw: '1.1322787E7'
+        pitch: '0.0'
+      spawned: true
+      owner:
+        owner: O_o_Fadi_o_O
+        uuid: ''
+    traitnames: waypoints,owner,spawned,location,type
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: 079dc720-d13f-4a21-a2f0-9894b26d3709
+  '328':
+    name: §6§lOrbitMines
+    traits:
+      location:
+        world: OrbitMinesHub
+        x: '331.4975752754558'
+        y: '256.0'
+        z: '-64.49279551833494'
+        yaw: '92.63079833984375'
+        pitch: '89.99996948242188'
+      spawned: true
+      type: EnderDragon
+      owner:
+        owner: O_o_Fadi_o_O
+        uuid: ''
+    traitnames: owner,spawned,location,type
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: 14d03d96-c80d-46b7-9c11-6d5c9c7a5b31
+  '327':
+    name: §6§lOrbitMines
+    traits:
+      location:
+        world: OrbitMinesHub
+        x: '331.5'
+        y: '256.0'
+        z: '-63.5'
+        yaw: '-92.15533447265625'
+        pitch: '90.0'
+      spawned: true
+      type: EnderDragon
+      owner:
+        owner: O_o_Fadi_o_O
+        uuid: ''
+    traitnames: owner,spawned,location,type
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: df599ea6-f3b2-4afd-8a60-ab2073317b53
+  '334':
+    name: §b§lToken Shop
+    traits:
+      type: Villager
+      location:
+        world: MiniGames
+        x: '86.44240799366374'
+        y: '65.0'
+        z: '-83.47896657412073'
+        yaw: '-180.0001678466797'
+        pitch: '0.0'
+      age:
+        age: 0
+        locked: true
+      spawned: true
+      owner:
+        owner: O_o_Fadi_o_O
+        uuid: ''
+    traitnames: owner,spawned,location,type,age
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: 75300e31-2c5c-42e7-9eff-3927663ce3e7
+  '333':
+    name: §b§lToken Shop
+    traits:
+      type: Villager
+      location:
+        world: MiniGames
+        x: '0.5006246290953972'
+        y: '65.0'
+        z: '-75.73331366875523'
+        yaw: '-179.99951171875'
+        pitch: '0.0'
+      age:
+        age: 0
+        locked: true
+      spawned: true
+      owner:
+        owner: O_o_Fadi_o_O
+        uuid: ''
+    traitnames: owner,spawned,location,type,age
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: 0fb1ff5c-dd3c-4e6a-b41b-493c54b1080f
+  '335':
+    name: §f§lMiniGames
+    traits:
+      location:
+        world: MiniGames
+        x: '-6.5'
+        y: '256.0'
+        z: '109.5'
+        yaw: '186.40066528320312'
+        pitch: '89.8499984741211'
+      type: EnderDragon
+      spawned: true
+      owner:
+        owner: O_o_Fadi_o_O
+        uuid: ''
+    traitnames: owner,spawned,location,type
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: 1ca7acdc-bc5f-40b8-afb9-2b6af459b61c
+  '338':
+    name: Luigi
+    traits:
+      spawned: true
+      location:
+        world: PrisonServer
+        x: '-687.630222038352'
+        y: '40.0'
+        z: '89.30000001192091'
+        yaw: '-20.646957397460938'
+        pitch: '-0.34712082147598267'
+      owner:
+        owner: slienimon
+        uuid: ''
+      lookclose:
+        enabled: true
+        range: '5.0'
+        realisticlooking: false
+    traitnames: owner,spawned,location,type,lookclose
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: 39ac2abf-1aee-42b3-9360-4d9d7cc629bc
+    metadata:
+      cached-skin-uuid: 6749119c-9837-4888-994c-60262d0bc2eb
+      cached-skin-uuid-name: Luigi
+  '337':
+    name: Mario
+    traits:
+      spawned: true
+      location:
+        world: PrisonServer
+        x: '-681.9544265987773'
+        y: '40.0'
+        z: '89.30000001192091'
+        yaw: '32.96240234375'
+        pitch: '-0.31123507022857666'
+      owner:
+        owner: slienimon
+        uuid: ''
+      lookclose:
+        enabled: true
+        range: '5.0'
+        realisticlooking: false
+    traitnames: owner,spawned,location,type,lookclose
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: 7e012b0b-5f0c-4ef2-8269-591e19be802c
+    metadata:
+      cached-skin-uuid: 3d125778-8880-441e-a536-42f2bd417782
+      cached-skin-uuid-name: Mario
+  '345':
+    name: §8>>§6Shop§8
+    traits:
+      location:
+        world: KitPvP
+        x: '-624.6134900747751'
+        y: '19.0'
+        z: '-1117.3450570961209'
+        yaw: '-314.66845703125'
+        pitch: '0.0'
+      type: Skeleton
+      equipment:
+        hand:
+          type: GOLD_INGOT
+          amount: 1
+          durability: 0
+          mdata: 0
+        helmet:
+          type: CHAINMAIL_HELMET
+          amount: 1
+          durability: 0
+          mdata: 0
+        chestplate:
+          type: CHAINMAIL_CHESTPLATE
+          amount: 1
+          durability: 0
+          mdata: 0
+        leggings:
+          type: CHAINMAIL_LEGGINGS
+          amount: 1
+          durability: 0
+          mdata: 0
+        boots:
+          type: CHAINMAIL_BOOTS
+          amount: 1
+          durability: 0
+          mdata: 0
+      spawned: true
+      owner:
+        owner: O_o_Fadi_o_O
+        uuid: ''
+    traitnames: owner,equipment,spawned,location,type
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: 543d36ab-9a74-4534-ab9d-5d8bff61d417
+  '344':
+    name: §8>>§6Shop§8
+    traits:
+      location:
+        world: KitPvP
+        x: '-632.3587708299233'
+        y: '19.0'
+        z: '-1117.3547653199767'
+        yaw: '-46.6181640625'
+        pitch: '0.0'
+      type: Skeleton
+      equipment:
+        hand:
+          type: GOLD_INGOT
+          amount: 1
+          durability: 0
+          mdata: 0
+        helmet:
+          type: CHAINMAIL_HELMET
+          amount: 1
+          durability: 0
+          mdata: 0
+        chestplate:
+          type: CHAINMAIL_CHESTPLATE
+          amount: 1
+          durability: 0
+          mdata: 0
+        leggings:
+          type: CHAINMAIL_LEGGINGS
+          amount: 1
+          durability: 0
+          mdata: 0
+        boots:
+          type: CHAINMAIL_BOOTS
+          amount: 1
+          durability: 0
+          mdata: 0
+      spawned: true
+      owner:
+        owner: O_o_Fadi_o_O
+        uuid: ''
+    traitnames: owner,equipment,spawned,location,type
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: da549a84-68a3-471c-aabb-0212c845aee7
+  '343':
+    name: §8>>§6Shop§8
+    traits:
+      location:
+        world: KitPvP
+        x: '-632.227294661083'
+        y: '19.0'
+        z: '-1109.7230170975497'
+        yaw: '-136.61865234375'
+        pitch: '0.0'
+      type: Skeleton
+      equipment:
+        hand:
+          type: GOLD_INGOT
+          amount: 1
+          durability: 0
+          mdata: 0
+        helmet:
+          type: CHAINMAIL_HELMET
+          amount: 1
+          durability: 0
+          mdata: 0
+        chestplate:
+          type: CHAINMAIL_CHESTPLATE
+          amount: 1
+          durability: 0
+          mdata: 0
+        leggings:
+          type: CHAINMAIL_LEGGINGS
+          amount: 1
+          durability: 0
+          mdata: 0
+        boots:
+          type: CHAINMAIL_BOOTS
+          amount: 1
+          durability: 0
+          mdata: 0
+      spawned: true
+      owner:
+        owner: O_o_Fadi_o_O
+        uuid: ''
+    traitnames: owner,equipment,spawned,location,type
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: 1f23b769-b9b7-47b2-9a32-d561fc034f60
+  '346':
+    name: §c§lKitPvP
+    traits:
+      type: EnderDragon
+      spawned: true
+      location:
+        world: KitPvP
+        x: '-666.5'
+        y: '256.0'
+        z: '-1132.5'
+        yaw: '-271.3226318359375'
+        pitch: '32.250038146972656'
+      owner:
+        owner: O_o_Fadi_o_O
+        uuid: ''
+    traitnames: owner,spawned,location,type
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: d832840c-9a73-40bd-bb77-cc14b7b64ba6
+  '352':
+    name: TestProject-2
+    traits:
+      type: Pig
+      spawned: true
+      waypoints:
+        linear: {}
+        provider: linear
+      age:
+        age: 0
+        locked: true
+      location:
+        world: KitPvP
+        x: '-557.8466527712985'
+        y: '10.0'
+        z: '-1105.399235174681'
+        yaw: '-1.179658E7'
+        pitch: '0.0'
+      owner:
+        owner: slienimon
+        uuid: ''
+    traitnames: waypoints,owner,spawned,location,type,age
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: 20fe8e82-2e81-45c8-b647-322f43189a95
+  '351':
+    name: TestProject-1
+    traits:
+      type: Pig
+      spawned: true
+      waypoints:
+        linear: {}
+        provider: linear
+      age:
+        age: 0
+        locked: true
+      location:
+        world: KitPvP
+        x: '-558.8529737621878'
+        y: '10.0'
+        z: '-1105.55990130364'
+        yaw: '-1.1796569E7'
+        pitch: '0.0'
+      owner:
+        owner: slienimon
+        uuid: ''
+    traitnames: waypoints,owner,spawned,location,type,age
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: fa2f7ddb-4d0f-4692-b112-a4c6647279d7
+  '357':
+    name: §8>>§6Shop§8
+    traits:
+      spawned: true
+      type: Skeleton
+      equipment:
+        hand:
+          type: GOLD_INGOT
+          amount: 1
+          durability: 0
+          mdata: 0
+        helmet:
+          type: CHAINMAIL_HELMET
+          amount: 1
+          durability: 0
+          mdata: 0
+        chestplate:
+          type: CHAINMAIL_CHESTPLATE
+          amount: 1
+          durability: 0
+          mdata: 0
+        leggings:
+          type: CHAINMAIL_LEGGINGS
+          amount: 1
+          durability: 0
+          mdata: 0
+        boots:
+          type: CHAINMAIL_BOOTS
+          amount: 1
+          durability: 0
+          mdata: 0
+      location:
+        world: KitPvP
+        x: '-624.6781295442097'
+        y: '19.0'
+        z: '-1109.7133743093111'
+        yaw: '135.92730712890625'
+        pitch: '0.0'
+      owner:
+        owner: O_o_Fadi_o_O
+        uuid: ''
+    traitnames: owner,equipment,spawned,location,type
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: f6d4974b-0b0d-4679-b9a3-e20beb893ce6
+  '368':
+    name: §8>>§4Shop§8
+    traits:
+      spawned: true
+      type: Villager
+      age:
+        age: 0
+        locked: true
+      location:
+        world: PrisonServer
+        x: '-659.3669931578111'
+        y: '36.0'
+        z: '2.1637224532536736'
+        yaw: '-85.82393646240234'
+        pitch: '0.0'
+      lookclose:
+        enabled: false
+        range: '5.0'
+        realisticlooking: false
+      owner:
+        owner: O_o_Fadi_o_O
+        uuid: ''
+    traitnames: owner,spawned,location,type,age
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: 9afb8a28-f7b8-43c2-aaf0-464aab2b7e58
+  '371':
+    name: §cPig
+    traits:
+      spawned: true
+      age:
+        age: 0
+        locked: true
+      type: Pig
+      waypoints:
+        linear:
+          points:
+            '0':
+              location:
+                world: PrisonServer
+                x: '-666.0'
+                y: '46.0'
+                z: '192.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '1':
+              location:
+                world: PrisonServer
+                x: '-666.0'
+                y: '46.0'
+                z: '196.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '2':
+              location:
+                world: PrisonServer
+                x: '-669.0'
+                y: '46.0'
+                z: '197.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '3':
+              location:
+                world: PrisonServer
+                x: '-667.0'
+                y: '46.0'
+                z: '192.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '4':
+              location:
+                world: PrisonServer
+                x: '-668.0'
+                y: '46.0'
+                z: '188.0'
+                yaw: '0.0'
+                pitch: '0.0'
+        provider: linear
+      location:
+        world: PrisonServer
+        x: '-666.8966727263229'
+        y: '47.0'
+        z: '193.25590404120175'
+        yaw: '1789737.625'
+        pitch: '0.0'
+      owner:
+        owner: slienimon
+        uuid: ''
+    traitnames: waypoints,owner,spawned,location,type,age
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: dae80363-fa1c-4339-9a31-002a3f5b4986
+  '370':
+    name: §cPig
+    traits:
+      spawned: true
+      age:
+        age: 0
+        locked: true
+      type: Pig
+      waypoints:
+        linear:
+          points:
+            '0':
+              location:
+                world: PrisonServer
+                x: '-674.0'
+                y: '46.0'
+                z: '188.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '1':
+              location:
+                world: PrisonServer
+                x: '-676.0'
+                y: '46.0'
+                z: '188.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '2':
+              location:
+                world: PrisonServer
+                x: '-678.0'
+                y: '46.0'
+                z: '189.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '3':
+              location:
+                world: PrisonServer
+                x: '-675.0'
+                y: '46.0'
+                z: '191.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '4':
+              location:
+                world: PrisonServer
+                x: '-673.0'
+                y: '46.0'
+                z: '193.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '5':
+              location:
+                world: PrisonServer
+                x: '-673.0'
+                y: '46.0'
+                z: '196.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '6':
+              location:
+                world: PrisonServer
+                x: '-676.0'
+                y: '46.0'
+                z: '197.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '7':
+              location:
+                world: PrisonServer
+                x: '-674.0'
+                y: '46.0'
+                z: '196.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '8':
+              location:
+                world: PrisonServer
+                x: '-672.0'
+                y: '46.0'
+                z: '193.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '9':
+              location:
+                world: PrisonServer
+                x: '-671.0'
+                y: '46.0'
+                z: '190.0'
+                yaw: '0.0'
+                pitch: '0.0'
+        provider: linear
+      location:
+        world: PrisonServer
+        x: '-675.6376787141197'
+        y: '47.0'
+        z: '190.72967875905573'
+        yaw: '-4015.898193359375'
+        pitch: '0.0'
+      owner:
+        owner: slienimon
+        uuid: ''
+    traitnames: waypoints,owner,spawned,location,type,age
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: ed4a398d-1946-44e1-b00c-62b5ea6ef293
+  '369':
+    name: §cPig
+    traits:
+      spawned: true
+      age:
+        age: 0
+        locked: true
+      type: Pig
+      waypoints:
+        linear:
+          points:
+            '0':
+              location:
+                world: PrisonServer
+                x: '-668.0'
+                y: '46.0'
+                z: '181.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '1':
+              location:
+                world: PrisonServer
+                x: '-668.0'
+                y: '46.0'
+                z: '178.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '2':
+              location:
+                world: PrisonServer
+                x: '-670.0'
+                y: '46.0'
+                z: '177.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '3':
+              location:
+                world: PrisonServer
+                x: '-671.0'
+                y: '46.0'
+                z: '179.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '4':
+              location:
+                world: PrisonServer
+                x: '-669.0'
+                y: '46.0'
+                z: '181.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '5':
+              location:
+                world: PrisonServer
+                x: '-667.0'
+                y: '46.0'
+                z: '184.0'
+                yaw: '0.0'
+                pitch: '0.0'
+        provider: linear
+      location:
+        world: PrisonServer
+        x: '-670.0037456308014'
+        y: '47.0'
+        z: '181.46100197497194'
+        yaw: '-1.1796569E7'
+        pitch: '0.0'
+      owner:
+        owner: slienimon
+        uuid: ''
+    traitnames: waypoints,owner,spawned,location,type,age
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: e93eb9d3-14f7-4c83-aa75-a9b4dbb6a339
+  '375':
+    name: §8>> §6Shop �
+    traits:
+      spawned: true
+      type: Villager
+      location:
+        world: KitPvPMap
+        x: '806.9868916538838'
+        y: '10.0'
+        z: '479.9707293243263'
+        yaw: '313.946533203125'
+        pitch: '0.0'
+      age:
+        age: 0
+        locked: true
+      owner:
+        owner: O_o_Fadi_o_O
+        uuid: ''
+    traitnames: owner,spawned,location,type,age
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: d3b949ae-596a-4e74-90dc-4c262631495c
+  '374':
+    name: §8>> §6Shop �
+    traits:
+      spawned: true
+      type: Villager
+      location:
+        world: KitPvPMap
+        x: '807.0204223718804'
+        y: '10.0'
+        z: '485.98497314002105'
+        yaw: '224.54632568359375'
+        pitch: '0.0'
+      age:
+        age: 0
+        locked: true
+      owner:
+        owner: O_o_Fadi_o_O
+        uuid: ''
+    traitnames: owner,spawned,location,type,age
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: 275660b0-2425-4810-a2eb-d8a4a9a69f37
+  '373':
+    name: §8>> §6Shop �
+    traits:
+      spawned: true
+      type: Villager
+      location:
+        world: KitPvPMap
+        x: '813.1372078672841'
+        y: '10.0'
+        z: '486.1347578171073'
+        yaw: '135.29635620117188'
+        pitch: '0.0'
+      age:
+        age: 0
+        locked: true
+      owner:
+        owner: O_o_Fadi_o_O
+        uuid: ''
+    traitnames: owner,spawned,location,type,age
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: bde8ad1b-42c0-4c15-a8a3-e7f3fcf8964c
+  '372':
+    name: §8>> §6Shop �
+    traits:
+      spawned: true
+      type: Villager
+      location:
+        world: KitPvPMap
+        x: '812.9496749849086'
+        y: '10.0'
+        z: '479.9979100252236'
+        yaw: '44.8463134765625'
+        pitch: '0.0'
+      age:
+        age: 0
+        locked: true
+      owner:
+        owner: O_o_Fadi_o_O
+        uuid: ''
+    traitnames: owner,spawned,location,type,age
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: 2676be46-07c9-45b1-87a2-8be7c441f9c8
+  '380':
+    name: §c§l Piggy
+    traits:
+      waypoints:
+        linear: {}
+        provider: linear
+      spawned: true
+      type: Pig
+      location:
+        world: KitPvPMap
+        x: '843.6868469737241'
+        y: '4.0'
+        z: '563.8319741760185'
+        yaw: '250.80987548828125'
+        pitch: '0.0'
+      age:
+        age: 0
+        locked: true
+      lookclose:
+        enabled: false
+        range: '5.0'
+        realisticlooking: false
+      owner:
+        owner: slienimon
+        uuid: ''
+    traitnames: waypoints,owner,spawned,location,type,age
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: 5c1f14f0-4d7d-4cfa-ac35-15b37ca57101
+  '379':
+    name: §c§l Piggy
+    traits:
+      spawned: true
+      type: Pig
+      location:
+        world: KitPvPMap
+        x: '841.8201418458166'
+        y: '4.0'
+        z: '563.8476855915776'
+        yaw: '-4.59930419921875'
+        pitch: '0.0'
+      age:
+        age: 0
+        locked: true
+      owner:
+        owner: slienimon
+        uuid: ''
+    traitnames: owner,spawned,location,type,age
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: 832fbfe8-d273-45cc-b750-ee5b7bddd530
+  '378':
+    name: §c§l Piggy
+    traits:
+      spawned: true
+      type: Pig
+      location:
+        world: KitPvPMap
+        x: '839.5680124474273'
+        y: '4.0'
+        z: '563.8995332569154'
+        yaw: '246.16357421875'
+        pitch: '0.0'
+      age:
+        age: 0
+        locked: true
+      lookclose:
+        enabled: false
+        range: '5.0'
+        realisticlooking: false
+      owner:
+        owner: slienimon
+        uuid: ''
+    traitnames: owner,spawned,location,type,age
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: 8a0748a7-6948-40e9-b36c-32968c3fab27
+  '377':
+    name: §c§l Piggy
+    traits:
+      spawned: true
+      type: Pig
+      location:
+        world: KitPvPMap
+        x: '837.5929809333923'
+        y: '4.0'
+        z: '564.239146917942'
+        yaw: '-167.19927978515625'
+        pitch: '0.0'
+      age:
+        age: 0
+        locked: true
+      owner:
+        owner: slienimon
+        uuid: ''
+    traitnames: owner,spawned,location,type,age
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: 19da219a-72d5-46ab-84b7-45c70cfa4e50
+  '385':
+    name: §6§lSkyWars
+    traits:
+      location:
+        world: SkyWarsLobby
+        x: '0.5'
+        y: '256.0'
+        z: '0.5'
+        yaw: '2.8500049114227295'
+        pitch: '85.20002746582031'
+      spawned: true
+      type: EnderDragon
+      owner:
+        owner: O_o_Fadi_o_O
+        uuid: ''
+    traitnames: owner,spawned,location,type
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: ef284c4b-e1f7-4d7b-8607-c8236f994290
+  '391':
+    name: §b§lToken Shop
+    traits:
+      age:
+        age: 0
+        locked: true
+      type: Villager
+      location:
+        world: SkyWarsLobby
+        x: '4.349204738398151'
+        y: '66.0'
+        z: '-3.3146605023271567'
+        yaw: '43.79841232299805'
+        pitch: '0.0'
+      spawned: true
+      owner:
+        owner: O_o_Fadi_o_O
+        uuid: ''
+    traitnames: owner,spawned,location,type,age
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: 87490154-0414-4007-a65e-b7ec765b8559
+  '390':
+    name: §b§lToken Shop
+    traits:
+      age:
+        age: 0
+        locked: true
+      type: Villager
+      location:
+        world: SkyWarsLobby
+        x: '-3.354391921457342'
+        y: '66.0'
+        z: '-3.357600748702518'
+        yaw: '-45.0015869140625'
+        pitch: '0.0'
+      spawned: true
+      owner:
+        owner: O_o_Fadi_o_O
+        uuid: ''
+    traitnames: owner,spawned,location,type,age
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: 5ef1b69d-f3dd-46b4-b773-30d201a3df86
+  '389':
+    name: §b§lToken Shop
+    traits:
+      age:
+        age: 0
+        locked: true
+      type: Villager
+      location:
+        world: SkyWarsLobby
+        x: '-3.434176961676323'
+        y: '66.0'
+        z: '4.300212346229269'
+        yaw: '-134.10157775878906'
+        pitch: '0.0'
+      spawned: true
+      owner:
+        owner: O_o_Fadi_o_O
+        uuid: ''
+    traitnames: owner,spawned,location,type,age
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: c63ed539-fe1f-48ff-a6c8-c31e77e41fda
+  '388':
+    name: §b§lToken Shop
+    traits:
+      age:
+        age: 0
+        locked: true
+      type: Villager
+      location:
+        world: SkyWarsLobby
+        x: '4.364859084835805'
+        y: '66.0'
+        z: '4.357420621148989'
+        yaw: '-226.20162963867188'
+        pitch: '0.0'
+      spawned: true
+      owner:
+        owner: O_o_Fadi_o_O
+        uuid: ''
+    traitnames: owner,spawned,location,type,age
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: 60628b41-4771-4294-a172-14f9d96e26c0
+  '404':
+    name: §8>> §6Shop§8 <<
+    traits:
+      location:
+        world: PrisonServer
+        x: '-816.9696980549367'
+        y: '29.0'
+        z: '-67.82017294965958'
+        yaw: '-0.39337158203125'
+        pitch: '0.0'
+      age:
+        age: 0
+        locked: true
+      type: Villager
+      spawned: true
+      owner:
+        owner: O_o_Fadi_o_O
+        uuid: ''
+    traitnames: owner,spawned,location,type,age
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: 46e7b01b-d282-4b84-b680-c8a41c2268a4
+  '407':
+    name: §8>> §6Shop§8 <<
+    traits:
+      location:
+        world: PrisonServer
+        x: '-898.9794388527077'
+        y: '19.0'
+        z: '154.71344960742715'
+        yaw: '-142.13255310058594'
+        pitch: '0.0'
+      age:
+        age: 0
+        locked: true
+      type: Villager
+      spawned: true
+      owner:
+        owner: O_o_Fadi_o_O
+        uuid: ''
+    traitnames: owner,spawned,location,type,age
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: 125dd869-41a8-473c-b5e3-b90adad7c4e8
+  '408':
+    name: §8>> §6Shop§8 <<
+    traits:
+      location:
+        world: PrisonServer
+        x: '-669.052017485182'
+        y: '47.0'
+        z: '206.11593651438562'
+        yaw: '178.86817932128906'
+        pitch: '0.0'
+      age:
+        age: 0
+        locked: true
+      type: Villager
+      spawned: true
+      owner:
+        owner: O_o_Fadi_o_O
+        uuid: ''
+    traitnames: owner,spawned,location,type,age
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: f621c1e4-dcf4-486e-bc0d-997b41cea442
+  '410':
+    name: §8>> §6Shop §8<<
+    traits:
+      location:
+        world: PrisonServer
+        x: '-878.7994817264971'
+        y: '45.0'
+        z: '-30.866420684376916'
+        yaw: '93.51815795898438'
+        pitch: '0.0'
+      age:
+        age: 0
+        locked: true
+      type: Villager
+      spawned: true
+      owner:
+        owner: O_o_Fadi_o_O
+        uuid: ''
+    traitnames: owner,spawned,location,type,age
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: 341b237b-e149-4cf2-9e4f-cec3b1a72eff
+  '412':
+    name: §8>> §6Shop §8<<
+    traits:
+      location:
+        world: PrisonServer
+        x: '-671.8645087542772'
+        y: '35.0'
+        z: '-23.644497473772905'
+        yaw: '-180.83197021484375'
+        pitch: '0.0'
+      age:
+        age: 0
+        locked: true
+      type: Villager
+      spawned: true
+      owner:
+        owner: O_o_Fadi_o_O
+        uuid: ''
+    traitnames: owner,spawned,location,type,age
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: 84db57cb-f799-4fcc-b170-2e7dd55b3f6d
+  '413':
+    name: §8>> §6Shop §8<<
+    traits:
+      location:
+        world: PrisonServer
+        x: '-684.9843866179459'
+        y: '41.0'
+        z: '80.3432066115537'
+        yaw: '0.6691180467605591'
+        pitch: '0.0'
+      age:
+        age: 0
+        locked: true
+      type: Villager
+      spawned: true
+      owner:
+        owner: O_o_Fadi_o_O
+        uuid: ''
+    traitnames: owner,spawned,location,type,age
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: 13b56e32-a691-4fbd-9f77-fca650bf0454
+  '414':
+    name: §8>> §6Shop §8<<
+    traits:
+      location:
+        world: PrisonServer
+        x: '-925.6943992995657'
+        y: '29.0'
+        z: '43.61450432861191'
+        yaw: '-90.53142547607422'
+        pitch: '0.0'
+      age:
+        age: 0
+        locked: true
+      type: Villager
+      spawned: true
+      owner:
+        owner: O_o_Fadi_o_O
+        uuid: ''
+    traitnames: owner,spawned,location,type,age
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: e88b26c2-713f-4976-950b-45739b750664
+  '411':
+    name: §8>> §6Shop §8<<
+    traits:
+      location:
+        world: PrisonServer
+        x: '-801.8022232146925'
+        y: '16.0'
+        z: '94.46989466051974'
+        yaw: '-269.3319091796875'
+        pitch: '0.0'
+      age:
+        age: 0
+        locked: true
+      type: Villager
+      spawned: true
+      owner:
+        owner: O_o_Fadi_o_O
+        uuid: ''
+    traitnames: owner,spawned,location,type,age
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: d1b29f75-2eca-4551-86a2-2e74eccf50d8
+  '409':
+    name: §8>> §6Shop §8<<
+    traits:
+      location:
+        world: PrisonServer
+        x: '-1276.894758189713'
+        y: '70.0'
+        z: '-28.199681573296427'
+        yaw: '192.0482177734375'
+        pitch: '0.0'
+      age:
+        age: 0
+        locked: true
+      type: Villager
+      spawned: true
+      owner:
+        owner: O_o_Fadi_o_O
+        uuid: ''
+    traitnames: owner,spawned,location,type,age
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: 1b163fcd-a014-43f0-8f91-36924063c215
+  '406':
+    name: §8>> §6Shop§8 <<
+    traits:
+      location:
+        world: PrisonServer
+        x: '-793.4623476634346'
+        y: '52.5'
+        z: '148.46743187296383'
+        yaw: '-90.08666229248047'
+        pitch: '0.0'
+      age:
+        age: 0
+        locked: true
+      type: Villager
+      spawned: true
+      owner:
+        owner: O_o_Fadi_o_O
+        uuid: ''
+    traitnames: owner,spawned,location,type,age
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: 562acca9-3323-49c5-8e76-cc2a2aad0a64
+  '405':
+    name: §8>> §6Shop§8 <<
+    traits:
+      location:
+        world: PrisonServer
+        x: '-830.0621922408664'
+        y: '4.0'
+        z: '-4.872306702969615'
+        yaw: '-90.38068389892578'
+        pitch: '0.0'
+      age:
+        age: 0
+        locked: true
+      type: Villager
+      spawned: true
+      owner:
+        owner: O_o_Fadi_o_O
+        uuid: ''
+    traitnames: owner,spawned,location,type,age
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: 3fce39c0-cccf-4c1d-8c6f-14767882a26f
+  '415':
+    name: §8>> §6Shop §8<<
+    traits:
+      location:
+        world: PrisonServer
+        x: '-607.0503264066131'
+        y: '34.0'
+        z: '-97.08180929639363'
+        yaw: '241.11874389648438'
+        pitch: '0.0'
+      age:
+        age: 0
+        locked: true
+      type: Villager
+      spawned: true
+      owner:
+        owner: O_o_Fadi_o_O
+        uuid: ''
+    traitnames: owner,spawned,location,type,age
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: 99cd2197-6b40-4d6b-a891-3f09980193f1
+  '416':
+    name: §8>> §6Shop §8<<
+    traits:
+      location:
+        world: PrisonServer
+        x: '-652.7958837632209'
+        y: '49.0'
+        z: '-144.44587560169464'
+        yaw: '-91.28195190429688'
+        pitch: '0.0'
+      age:
+        age: 0
+        locked: true
+      type: Villager
+      spawned: true
+      owner:
+        owner: O_o_Fadi_o_O
+        uuid: ''
+    traitnames: owner,spawned,location,type,age
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: 98d980f3-b91f-4f72-97cd-ebe74caed8b5
+  '418':
+    name: §8>> §6Shop §8<<
+    traits:
+      location:
+        world: PrisonServer
+        x: '-846.688029843125'
+        y: '56.0'
+        z: '-151.8002163410768'
+        yaw: '-321.0816650390625'
+        pitch: '0.0'
+      age:
+        age: 0
+        locked: true
+      type: Villager
+      spawned: true
+      owner:
+        owner: O_o_Fadi_o_O
+        uuid: ''
+    traitnames: owner,spawned,location,type,age
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: 75d1f4f3-dd2b-4f0e-9e21-fb5c9c71209c
+  '419':
+    name: §8>> §6Shop §8<<
+    traits:
+      location:
+        world: PrisonServer
+        x: '-731.670703608924'
+        y: '4.0'
+        z: '-98.32709195914241'
+        yaw: '136.55682373046875'
+        pitch: '0.0'
+      age:
+        age: 0
+        locked: true
+      type: Villager
+      spawned: true
+      owner:
+        owner: O_o_Fadi_o_O
+        uuid: ''
+    traitnames: owner,spawned,location,type,age
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: d219e1fd-d677-47a5-ac45-ec05fd55bd4e
+  '417':
+    name: §8>> §6Shop §8<<
+    traits:
+      location:
+        world: PrisonServer
+        x: '-785.0744031768884'
+        y: '4.0'
+        z: '-207.87863629381536'
+        yaw: '49.2684440612793'
+        pitch: '0.0'
+      age:
+        age: 0
+        locked: true
+      type: Villager
+      spawned: true
+      owner:
+        owner: O_o_Fadi_o_O
+        uuid: ''
+    traitnames: owner,spawned,location,type,age
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: f15d15d2-b539-48b0-b8f1-ea04bccb2db5
+  '423':
+    name: §8>> §6Shop §8<<
+    traits:
+      location:
+        world: PrisonServer
+        x: '-736.9001650533669'
+        y: '4.5'
+        z: '83.36608495519916'
+        yaw: '-336.6933288574219'
+        pitch: '0.0'
+      type: Skeleton
+      equipment:
+        hand:
+          type: BREAD
+          amount: 1
+          durability: 0
+          mdata: 0
+      spawned: true
+      owner:
+        owner: O_o_Fadi_o_O
+        uuid: ''
+    traitnames: owner,equipment,spawned,location,type
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: eb1001c0-3d2b-471d-9cb5-2e51a0561bac
+  '431':
+    name: §c§lRepair
+    traits:
+      spawned: true
+      location:
+        world: PrisonServer
+        x: '-506.5632885606462'
+        y: '5.0'
+        z: '140.47798016367813'
+        yaw: '-270.60107421875'
+        pitch: '0.0'
+      type: Blaze
+      owner:
+        owner: O_o_Fadi_o_O
+        uuid: ''
+    traitnames: owner,spawned,location,type
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: 3a6b63dc-8676-44b2-8efc-aef7052524ca
+  '430':
+    name: §8>> §6Buy §8<<
+    traits:
+      spawned: true
+      location:
+        world: PrisonServer
+        x: '-515.4921337920905'
+        y: '5.0'
+        z: '131.6919205820691'
+        yaw: '-0.9010009765625'
+        pitch: '0.0'
+      type: PigZombie
+      equipment:
+        hand:
+          type: DIAMOND_PICKAXE
+          amount: 1
+          durability: 0
+          mdata: 0
+          meta: {}
+          enchantments:
+            DIG_SPEED: 1
+      owner:
+        owner: O_o_Fadi_o_O
+        uuid: ''
+    traitnames: owner,equipment,spawned,location,type
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: cdce6240-2b87-41cc-9a7c-83418e820a66
+  '426':
+    name: §8>> §6Sell §8<<
+    traits:
+      spawned: true
+      location:
+        world: PrisonServer
+        x: '-515.5170649600568'
+        y: '5.0'
+        z: '149.3526572387973'
+        yaw: '-179.55072021484375'
+        pitch: '0.0'
+      type: Zombie
+      equipment:
+        hand:
+          type: BEACON
+          amount: 1
+          durability: 0
+          mdata: 0
+        helmet:
+          type: PUMPKIN
+          amount: 1
+          durability: 0
+          mdata: 0
+      owner:
+        owner: O_o_Fadi_o_O
+        uuid: ''
+    traitnames: owner,equipment,spawned,location,type
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: 34171ed6-8f1a-43be-8307-21acf0c3c659
+  '447':
+    name: §a§lEmerald VIP
+    traits:
+      location:
+        world: PrisonServer
+        x: '-871.239069289561'
+        y: '17.0'
+        z: '585.5307684573344'
+        yaw: '-89.99813079833984'
+        pitch: '0.0'
+      equipment:
+        hand:
+          type: EMERALD
+          amount: 1
+          durability: 0
+          mdata: 0
+      spawned: true
+      type: Skeleton
+      owner:
+        owner: O_o_Fadi_o_O
+        uuid: ''
+    traitnames: owner,equipment,spawned,location,type
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: 04374ca4-fd10-4850-8a68-658e05126ae1
+  '445':
+    name: §9§lDiamond VIP
+    traits:
+      location:
+        world: PrisonServer
+        x: '-922.4065157446286'
+        y: '17.0'
+        z: '587.4849319601044'
+        yaw: '-90.14825439453125'
+        pitch: '0.0'
+      equipment:
+        hand:
+          type: DIAMOND
+          amount: 1
+          durability: 0
+          mdata: 0
+      spawned: true
+      type: Skeleton
+      owner:
+        owner: O_o_Fadi_o_O
+        uuid: ''
+    traitnames: owner,equipment,spawned,location,type
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: 09532c0d-db47-4edd-b523-684abae39b97
+  '444':
+    name: §6§lGold VIP
+    traits:
+      location:
+        world: PrisonServer
+        x: '-891.5925582309084'
+        y: '17.0'
+        z: '535.5600099508413'
+        yaw: '-269.69818115234375'
+        pitch: '0.0'
+      equipment:
+        hand:
+          type: GOLD_INGOT
+          amount: 1
+          durability: 0
+          mdata: 0
+      spawned: true
+      type: Skeleton
+      owner:
+        owner: O_o_Fadi_o_O
+        uuid: ''
+    traitnames: owner,equipment,spawned,location,type
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: 24f32fd7-ab7c-41de-80dc-4aa1e8589de6
+  '443':
+    name: §7§lIron VIP
+    traits:
+      location:
+        world: PrisonServer
+        x: '-843.6301083410233'
+        y: '17.0'
+        z: '535.5116843064574'
+        yaw: '-269.84808349609375'
+        pitch: '0.0'
+      equipment:
+        hand:
+          type: IRON_INGOT
+          amount: 1
+          durability: 0
+          mdata: 0
+      spawned: true
+      type: Skeleton
+      owner:
+        owner: O_o_Fadi_o_O
+        uuid: ''
+    traitnames: owner,equipment,spawned,location,type
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: c5ce979a-3e0a-4e7e-9f68-66c6422ffc07
+  '455':
+    name: §b§lDiamond VIP
+    traits:
+      type: Skeleton
+      equipment:
+        hand:
+          type: DIAMOND
+          amount: 1
+          durability: 0
+          mdata: 0
+      location:
+        world: PrisonServer
+        x: '-277.4957468424336'
+        y: '6.0'
+        z: '19.500332485673923'
+        yaw: '153.0137481689453'
+        pitch: '0.0'
+      spawned: true
+      owner:
+        owner: O_o_Fadi_o_O
+        uuid: ''
+      lookclose:
+        enabled: true
+        range: '5.0'
+        realisticlooking: false
+    traitnames: owner,equipment,spawned,location,type,lookclose
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: 48386f0d-46c9-43e9-8213-f7ce158664f9
+  '454':
+    name: §7§lIron VIP
+    traits:
+      type: Skeleton
+      equipment:
+        hand:
+          type: IRON_INGOT
+          amount: 1
+          durability: 0
+          mdata: 0
+      location:
+        world: PrisonServer
+        x: '-269.4777799591491'
+        y: '6.0'
+        z: '19.481361091595538'
+        yaw: '48.540435791015625'
+        pitch: '0.0'
+      spawned: true
+      owner:
+        owner: O_o_Fadi_o_O
+        uuid: ''
+      lookclose:
+        enabled: true
+        range: '5.0'
+        realisticlooking: false
+    traitnames: owner,equipment,spawned,location,type,lookclose
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: 72328659-1330-4e21-9dad-527b227f3e5e
+  '452':
+    name: §8>> §6Shop §8<<
+    traits:
+      type: Villager
+      age:
+        age: 0
+        locked: true
+      location:
+        world: PrisonServer
+        x: '-273.5035497511865'
+        y: '6.0'
+        z: '15.488363937675139'
+        yaw: '269.986083984375'
+        pitch: '0.0'
+      spawned: true
+      owner:
+        owner: O_o_Fadi_o_O
+        uuid: ''
+    traitnames: owner,spawned,location,type,age
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: d4a3c2d7-77bd-4d6f-9247-5cf8b73ecf00
+  '457':
+    name: §6§lGold VIP
+    traits:
+      type: Skeleton
+      equipment:
+        hand:
+          type: GOLD_INGOT
+          amount: 1
+          durability: 0
+          mdata: 0
+      location:
+        world: PrisonServer
+        x: '-269.490681046492'
+        y: '6.0'
+        z: '11.50067994228672'
+        yaw: '-76.67864227294922'
+        pitch: '0.0'
+      spawned: true
+      owner:
+        owner: O_o_Fadi_o_O
+        uuid: ''
+      lookclose:
+        enabled: true
+        range: '5.0'
+        realisticlooking: false
+    traitnames: owner,equipment,spawned,location,type,lookclose
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: 3e11b501-8340-4bf8-9a75-6fb683e46c1b
+  '456':
+    name: §a§lEmerald VIP
+    traits:
+      type: Skeleton
+      equipment:
+        hand:
+          type: EMERALD
+          amount: 1
+          durability: 0
+          mdata: 0
+      location:
+        world: PrisonServer
+        x: '-277.4826134277048'
+        y: '6.0'
+        z: '11.51099037015433'
+        yaw: '267.4673156738281'
+        pitch: '0.0'
+      spawned: true
+      owner:
+        owner: O_o_Fadi_o_O
+        uuid: ''
+      lookclose:
+        enabled: true
+        range: '5.0'
+        realisticlooking: false
+    traitnames: owner,equipment,spawned,location,type,lookclose
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: 1d36dd9a-2139-45f8-b1da-db700077a5ff
+  '460':
+    name: §b§lVoteShop 3
+    traits:
+      type: Skeleton
+      equipment:
+        hand:
+          type: DIAMOND_BLOCK
+          amount: 1
+          durability: 0
+          mdata: 0
+        helmet:
+          type: DIAMOND_HELMET
+          amount: 1
+          durability: 0
+          mdata: 0
+          meta: {}
+          enchantments:
+            PROTECTION_ENVIRONMENTAL: 1
+        chestplate:
+          type: DIAMOND_CHESTPLATE
+          amount: 1
+          durability: 0
+          mdata: 0
+          meta: {}
+          enchantments:
+            PROTECTION_ENVIRONMENTAL: 1
+        leggings:
+          type: DIAMOND_LEGGINGS
+          amount: 1
+          durability: 0
+          mdata: 0
+          meta: {}
+          enchantments:
+            PROTECTION_ENVIRONMENTAL: 1
+        boots:
+          type: DIAMOND_BOOTS
+          amount: 1
+          durability: 0
+          mdata: 0
+          meta: {}
+          enchantments:
+            PROTECTION_ENVIRONMENTAL: 1
+      location:
+        world: PrisonServer
+        x: '-273.5070523591322'
+        y: '6.0'
+        z: '2.504062039919305'
+        yaw: '-54.76348876953125'
+        pitch: '0.0'
+      spawned: true
+      owner:
+        owner: O_o_Fadi_o_O
+        uuid: ''
+    traitnames: owner,equipment,spawned,location,type
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: b074492e-7406-4a4b-9045-b8f93a9d060a
+  '459':
+    name: §b§lVoteShop 2
+    traits:
+      type: Skeleton
+      equipment:
+        hand:
+          type: GOLD_BLOCK
+          amount: 1
+          durability: 0
+          mdata: 0
+        helmet:
+          type: GOLD_HELMET
+          amount: 1
+          durability: 0
+          mdata: 0
+          meta: {}
+          enchantments:
+            PROTECTION_ENVIRONMENTAL: 1
+        chestplate:
+          type: GOLD_CHESTPLATE
+          amount: 1
+          durability: 0
+          mdata: 0
+          meta: {}
+          enchantments:
+            PROTECTION_ENVIRONMENTAL: 1
+        leggings:
+          type: GOLD_LEGGINGS
+          amount: 1
+          durability: 0
+          mdata: 0
+          meta: {}
+          enchantments:
+            PROTECTION_ENVIRONMENTAL: 1
+        boots:
+          type: GOLD_BOOTS
+          amount: 1
+          durability: 0
+          mdata: 0
+          meta: {}
+          enchantments:
+            PROTECTION_ENVIRONMENTAL: 1
+      location:
+        world: PrisonServer
+        x: '-286.4968252322136'
+        y: '6.0'
+        z: '15.509552994497852'
+        yaw: '-90.16326904296875'
+        pitch: '0.0'
+      spawned: true
+      owner:
+        owner: O_o_Fadi_o_O
+        uuid: ''
+    traitnames: owner,equipment,spawned,location,type
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: ae000ea6-12b5-4c4e-adf0-c6bf1ef7fbf0
+  '458':
+    name: §b§lVoteShop 1
+    traits:
+      type: Skeleton
+      equipment:
+        hand:
+          type: IRON_BLOCK
+          amount: 1
+          durability: 0
+          mdata: 0
+        helmet:
+          type: IRON_HELMET
+          amount: 1
+          durability: 0
+          mdata: 0
+          meta: {}
+          enchantments:
+            PROTECTION_ENVIRONMENTAL: 1
+        chestplate:
+          type: IRON_CHESTPLATE
+          amount: 1
+          durability: 0
+          mdata: 0
+          meta: {}
+          enchantments:
+            PROTECTION_ENVIRONMENTAL: 1
+        leggings:
+          type: IRON_LEGGINGS
+          amount: 1
+          durability: 0
+          mdata: 0
+          meta: {}
+          enchantments:
+            PROTECTION_ENVIRONMENTAL: 1
+        boots:
+          type: IRON_BOOTS
+          amount: 1
+          durability: 0
+          mdata: 0
+          meta: {}
+          enchantments:
+            PROTECTION_ENVIRONMENTAL: 1
+      location:
+        world: PrisonServer
+        x: '-273.4770766759225'
+        y: '6.0'
+        z: '28.487790206343394'
+        yaw: '-129.01390075683594'
+        pitch: '0.0'
+      spawned: true
+      owner:
+        owner: O_o_Fadi_o_O
+        uuid: ''
+    traitnames: owner,equipment,spawned,location,type
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: 603dffd2-e084-4d4a-baa2-2054032540f1
+  '462':
+    name: §c§lAnimal Farm
+    traits:
+      type: Cow
+      age:
+        age: 0
+        locked: true
+      location:
+        world: PrisonServer
+        x: '-348.48854086801947'
+        y: '5.0'
+        z: '102.4542163592333'
+        yaw: '-180.14999389648438'
+        pitch: '0.0'
+      spawned: true
+      owner:
+        owner: O_o_Fadi_o_O
+        uuid: ''
+    traitnames: owner,spawned,location,type,age
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: 8686dd2c-1c3e-4f1d-b8ab-17c9dcf1305e
+  '464':
+    name: §6§lBread Shop
+    traits:
+      type: Skeleton
+      equipment:
+        hand:
+          type: BREAD
+          amount: 1
+          durability: 0
+          mdata: 0
+      location:
+        world: PrisonServer
+        x: '-263.4896557984588'
+        y: '6.0'
+        z: '22.487756599347424'
+        yaw: '-136.3502197265625'
+        pitch: '0.0'
+      spawned: true
+      owner:
+        owner: O_o_Fadi_o_O
+        uuid: ''
+    traitnames: owner,equipment,spawned,location,type
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: 0a536476-3304-4036-8e5e-0afdb7844e42
+  '466':
+    name: §b§lVoteShop 2
+    traits:
+      type: Skeleton
+      location:
+        world: VoteShop2
+        x: '-816.5360558145876'
+        y: '5.0'
+        z: '-814.4811863597429'
+        yaw: '-89.85004425048828'
+        pitch: '0.0'
+      equipment:
+        hand:
+          type: GOLD_BLOCK
+          amount: 1
+          durability: 0
+          mdata: 0
+        helmet:
+          type: GOLD_HELMET
+          amount: 1
+          durability: 0
+          mdata: 0
+          meta: {}
+          enchantments:
+            PROTECTION_ENVIRONMENTAL: 1
+        chestplate:
+          type: GOLD_CHESTPLATE
+          amount: 1
+          durability: 0
+          mdata: 0
+          meta: {}
+          enchantments:
+            PROTECTION_ENVIRONMENTAL: 1
+        leggings:
+          type: GOLD_LEGGINGS
+          amount: 1
+          durability: 0
+          mdata: 0
+          meta: {}
+          enchantments:
+            PROTECTION_ENVIRONMENTAL: 1
+        boots:
+          type: GOLD_BOOTS
+          amount: 1
+          durability: 0
+          mdata: 0
+          meta: {}
+          enchantments:
+            PROTECTION_ENVIRONMENTAL: 1
+      spawned: true
+      owner:
+        owner: O_o_Fadi_o_O
+        uuid: ''
+    traitnames: owner,equipment,spawned,location,type
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: 276ef30d-7131-41eb-bc00-2e7598aa0620
+  '467':
+    name: §b§lVote Shop 1
+    traits:
+      type: Skeleton
+      location:
+        world: VoteShop
+        x: '565.5206405287133'
+        y: '5.0'
+        z: '-306.5118407193606'
+        yaw: '-89.84939575195312'
+        pitch: '0.0'
+      equipment:
+        hand:
+          type: IRON_BLOCK
+          amount: 1
+          durability: 0
+          mdata: 0
+        helmet:
+          type: IRON_HELMET
+          amount: 1
+          durability: 0
+          mdata: 0
+          meta: {}
+          enchantments:
+            PROTECTION_ENVIRONMENTAL: 1
+        chestplate:
+          type: IRON_CHESTPLATE
+          amount: 1
+          durability: 0
+          mdata: 0
+          meta: {}
+          enchantments:
+            PROTECTION_ENVIRONMENTAL: 1
+        leggings:
+          type: IRON_LEGGINGS
+          amount: 1
+          durability: 0
+          mdata: 0
+          meta: {}
+          enchantments:
+            PROTECTION_ENVIRONMENTAL: 1
+        boots:
+          type: IRON_BOOTS
+          amount: 1
+          durability: 0
+          mdata: 0
+          meta: {}
+          enchantments:
+            PROTECTION_ENVIRONMENTAL: 1
+      spawned: true
+      owner:
+        owner: O_o_Fadi_o_O
+        uuid: ''
+    traitnames: owner,equipment,spawned,location,type
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: def6aa51-5d69-4418-adab-2c349126975c
+  '468':
+    name: §b§lVoteShop 3
+    traits:
+      type: Skeleton
+      location:
+        world: VoteShop3
+        x: '-99.4907628205061'
+        y: '5.0'
+        z: '-109.51279832101903'
+        yaw: '-90.14997863769531'
+        pitch: '0.0'
+      equipment:
+        hand:
+          type: DIAMOND_BLOCK
+          amount: 1
+          durability: 0
+          mdata: 0
+        helmet:
+          type: DIAMOND_HELMET
+          amount: 1
+          durability: 0
+          mdata: 0
+          meta: {}
+          enchantments:
+            PROTECTION_ENVIRONMENTAL: 1
+        chestplate:
+          type: DIAMOND_CHESTPLATE
+          amount: 1
+          durability: 0
+          mdata: 0
+          meta: {}
+          enchantments:
+            PROTECTION_ENVIRONMENTAL: 1
+        leggings:
+          type: DIAMOND_LEGGINGS
+          amount: 1
+          durability: 0
+          mdata: 0
+          meta: {}
+          enchantments:
+            PROTECTION_ENVIRONMENTAL: 1
+        boots:
+          type: DIAMOND_BOOTS
+          amount: 1
+          durability: 0
+          mdata: 0
+          meta: {}
+          enchantments:
+            PROTECTION_ENVIRONMENTAL: 1
+      spawned: true
+      owner:
+        owner: O_o_Fadi_o_O
+        uuid: ''
+    traitnames: owner,equipment,spawned,location,type
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: 746b4e0b-8d67-435e-8c97-6191314c523e
+  '471':
+    name: §8>> §6Shop§8 <<
+    traits:
+      age:
+        age: 0
+        locked: true
+      spawned: true
+      location:
+        world: PrisonServer
+        x: '-420.2988568311079'
+        y: '9.0'
+        z: '-291.583481941641'
+        yaw: '270.2867126464844'
+        pitch: '0.0'
+      type: Villager
+      owner:
+        owner: O_o_Fadi_o_O
+        uuid: ''
+    traitnames: owner,spawned,location,type,age
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: cfab1cdf-519d-4534-909d-ebdd59d0c1a9
+  '473':
+    name: §8>> §6Shop §8<<
+    traits:
+      age:
+        age: 0
+        locked: true
+      spawned: true
+      location:
+        world: PrisonServer
+        x: '-434.44939772350807'
+        y: '9.0'
+        z: '-451.45644268830466'
+        yaw: '-115.22174072265625'
+        pitch: '0.0'
+      type: Villager
+      owner:
+        owner: O_o_Fadi_o_O
+        uuid: ''
+    traitnames: owner,spawned,location,type,age
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: 681d0df7-56cf-4837-bd73-8e1d1e5248ae
+  '472':
+    name: §f§lMiner
+    traits:
+      equipment:
+        hand:
+          type: DIAMOND_PICKAXE
+          amount: 1
+          durability: 0
+          mdata: 0
+          meta: {}
+          enchantments:
+            DIG_SPEED: 1
+      spawned: true
+      location:
+        world: PrisonServer
+        x: '-426.6484461741657'
+        y: '13.0'
+        z: '-308.6915633927991'
+        yaw: '-213.76263427734375'
+        pitch: '11.549970626831055'
+      owner:
+        owner: O_o_Fadi_o_O
+        uuid: ''
+    traitnames: owner,equipment,spawned,location,type
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: 780d586f-7911-415e-9965-59b1d27e1b9e
+    metadata:
+      cached-skin-uuid: 4e94f45c-759c-4293-af16-fdf219237a5d
+      cached-skin-uuid-name: Miner
+  '474':
+    name: §8>> §6Shop§8 <<
+    traits:
+      age:
+        age: 0
+        locked: true
+      spawned: true
+      location:
+        world: PrisonServer
+        x: '-444.44387306681'
+        y: '9.0'
+        z: '-627.5058308925361'
+        yaw: '-90.07958221435547'
+        pitch: '0.0'
+      type: Villager
+      owner:
+        owner: O_o_Fadi_o_O
+        uuid: ''
+    traitnames: owner,spawned,location,type,age
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: a615f6b7-0a0c-4750-8f08-c43ab22fc383
+  '476':
+    name: §8>> §6Shop §8<<
+    traits:
+      type: Villager
+      spawned: true
+      location:
+        world: PrisonServer
+        x: '-389.73591264507786'
+        y: '9.0'
+        z: '-976.7622350131624'
+        yaw: '-219.52847290039062'
+        pitch: '0.0'
+      age:
+        age: 0
+        locked: true
+      owner:
+        owner: O_o_Fadi_o_O
+        uuid: ''
+    traitnames: owner,spawned,location,type,age
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: 709594c0-21fe-40e1-83b7-3ed7a99245f1
+  '475':
+    name: §8>> §6Shop §8<<
+    traits:
+      type: Villager
+      spawned: true
+      location:
+        world: PrisonServer
+        x: '-440.44709082681476'
+        y: '16.0'
+        z: '-799.6674894586549'
+        yaw: '-65.027099609375'
+        pitch: '0.0'
+      age:
+        age: 0
+        locked: true
+      owner:
+        owner: O_o_Fadi_o_O
+        uuid: ''
+    traitnames: owner,spawned,location,type,age
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: e3561823-0de5-4b65-90f0-910eae720b26
+  '477':
+    name: §8>> §6Shop §8<<
+    traits:
+      type: Villager
+      spawned: true
+      location:
+        world: PrisonServer
+        x: '-408.44289661047725'
+        y: '16.0'
+        z: '-1103.9780680246934'
+        yaw: '-0.0782470703125'
+        pitch: '0.0'
+      age:
+        age: 0
+        locked: true
+      owner:
+        owner: O_o_Fadi_o_O
+        uuid: ''
+    traitnames: owner,spawned,location,type,age
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: 87c3c974-e5c7-46a1-85e2-7a7a5a4f5f92
+  '478':
+    name: §8>> §6Shop §8<<
+    traits:
+      spawned: true
+      type: Villager
+      location:
+        world: PrisonServer
+        x: '-391.21162406605015'
+        y: '9.0'
+        z: '-1255.6434287870802'
+        yaw: '344.6219787597656'
+        pitch: '0.0'
+      age:
+        age: 0
+        locked: true
+      owner:
+        owner: O_o_Fadi_o_O
+        uuid: ''
+    traitnames: owner,spawned,location,type,age
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: 6dae49da-f3ea-4be7-a171-7b3a6f336347
+  '479':
+    name: §8>> §6Shop §8<<
+    traits:
+      spawned: true
+      location:
+        world: PrisonServer
+        x: '-327.39386834277406'
+        y: '16.0'
+        z: '-1403.5353004912358'
+        yaw: '-43.42779541015625'
+        pitch: '0.0'
+      type: Villager
+      age:
+        age: 0
+        locked: true
+      owner:
+        owner: O_o_Fadi_o_O
+        uuid: ''
+    traitnames: owner,spawned,location,type,age
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: 56e88b8c-c549-466a-aa70-80bc70e08db2
+  '480':
+    name: §8>> §6Shop§8 <<
+    traits:
+      spawned: true
+      age:
+        age: 0
+        locked: true
+      location:
+        world: PrisonServer
+        x: '-338.50727801180585'
+        y: '10.0'
+        z: '-1617.4118195287153'
+        yaw: '-352.877685546875'
+        pitch: '0.0'
+      type: Villager
+      owner:
+        owner: O_o_Fadi_o_O
+        uuid: ''
+    traitnames: owner,spawned,location,type,age
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: 1e52c452-5f45-417a-aa2a-dad57daf8543
+  '481':
+    name: §8>> §6Shop §8<<
+    traits:
+      type: Villager
+      age:
+        age: 0
+        locked: true
+      spawned: true
+      location:
+        world: PrisonServer
+        x: '-379.2965383129783'
+        y: '10.0'
+        z: '-1815.8047205223975'
+        yaw: '-236.336181640625'
+        pitch: '0.0'
+      owner:
+        owner: O_o_Fadi_o_O
+        uuid: ''
+    traitnames: owner,spawned,location,type,age
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: 528ddc27-b81c-4745-83f0-332d5971069f
+  '482':
+    name: §8>> §6Shop §8<<
+    traits:
+      type: Villager
+      age:
+        age: 0
+        locked: true
+      spawned: true
+      location:
+        world: PrisonServer
+        x: '-416.5535285523203'
+        y: '10.0'
+        z: '-1984.699999988079'
+        yaw: '-44.03143310546875'
+        pitch: '0.0'
+      owner:
+        owner: O_o_Fadi_o_O
+        uuid: ''
+    traitnames: owner,spawned,location,type,age
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: a2435370-c812-4b57-9307-5f231c693097

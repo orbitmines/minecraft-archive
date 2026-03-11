@@ -1,0 +1,19 @@
+boards:
+  omt:
+    command: omt
+    interval: 10m
+    sender: player
+    location:
+      world: OrbitMinesHub
+      x: 379.5434695507066
+      y: 150.10624820268154
+      z: 32.30000001192093
+  test:
+    command: baltop
+    interval: 10m
+    sender: console
+    location:
+      world: world
+      x: 1.5
+      y: 109.86512829970259
+      z: 0.4275347695161818

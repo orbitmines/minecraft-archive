@@ -1,0 +1,48 @@
+2015-01-24 22:20:21 [INFO] [Multiverse-Core] - Version 2.4-b527 (API v14) Enabled - By Rigby, fernferret, lithium3141 and main--
+2015-01-24 22:20:21 [INFO] [Multiverse-Core] Loading World & Settings - 'SurvivalLobby' - Env: NORMAL - Type: NORMAL & seed: 2296952434322003082 & generator: OrbitMinesEmptyWorldGenerator
+2015-01-24 22:20:21 [INFO] [Multiverse-Core] Loading World & Settings - 'SurvivalWorld' - Env: NORMAL - Type: NORMAL & seed: -4405481766968203491
+2015-01-24 22:20:21 [INFO] [Multiverse-Core] Loading World & Settings - 'SurvivalWorld_nether' - Env: NETHER - Type: NORMAL & seed: 4090547763235810023
+2015-01-24 22:20:21 [WARNING] [Multiverse-Core] Spawn location from world.dat file was unsafe. Adjusting...
+2015-01-24 22:20:21 [WARNING] [Multiverse-Core] Original Location: X: 0 Y: 0 Z: 0 P: 0 Y: 0 
+2015-01-24 22:20:21 [SEVERE] [Multiverse-Core] New safe spawn NOT found!!!
+2015-01-24 22:20:21 [INFO] [Multiverse-Core] Loading World & Settings - 'SurvivalWorld_the_end' - Env: THE_END - Type: NORMAL & seed: 4090547763235810023
+2015-01-24 22:20:21 [WARNING] [Multiverse-Core] Spawn location from world.dat file was unsafe. Adjusting...
+2015-01-24 22:20:21 [WARNING] [Multiverse-Core] Original Location: X: 0 Y: 0 Z: 0 P: 0 Y: 0 
+2015-01-24 22:20:21 [INFO] [Multiverse-Core] New Spawn for 'SurvivalWorld_the_end' is Located at: SurvivalWorld_the_end:0,00,60,00,0,00:0,00:0,00
+2015-01-24 22:20:21 [INFO] [Multiverse-Core] 4 - World(s) loaded.
+2015-01-24 22:20:29 [INFO] [Multiverse-Core] - Version 2.4-b527 (API v14) Enabled - By Rigby, fernferret, lithium3141 and main--
+2015-01-24 22:20:29 [INFO] [Multiverse-Core] Loading World & Settings - 'SurvivalLobby' - Env: NORMAL - Type: NORMAL & seed: 2296952434322003082 & generator: OrbitMinesEmptyWorldGenerator
+2015-01-24 22:20:29 [INFO] [Multiverse-Core] Loading World & Settings - 'SurvivalWorld' - Env: NORMAL - Type: NORMAL & seed: -4405481766968203491
+2015-01-24 22:20:29 [INFO] [Multiverse-Core] Loading World & Settings - 'SurvivalWorld_nether' - Env: NETHER - Type: NORMAL & seed: -1948708936597299738
+2015-01-24 22:20:29 [WARNING] [Multiverse-Core] Spawn location from world.dat file was unsafe. Adjusting...
+2015-01-24 22:20:29 [WARNING] [Multiverse-Core] Original Location: X: 0 Y: 119 Z: 0 P: 0 Y: 0 
+2015-01-24 22:20:29 [SEVERE] [Multiverse-Core] New safe spawn NOT found!!!
+2015-01-24 22:20:29 [INFO] [Multiverse-Core] Loading World & Settings - 'SurvivalWorld_the_end' - Env: THE_END - Type: NORMAL & seed: -1948708936597299738
+2015-01-24 22:20:29 [INFO] [Multiverse-Core] 4 - World(s) loaded.
+2015-01-24 22:23:52 [INFO] [Multiverse-Core] - Version 2.4-b527 (API v14) Enabled - By Rigby, fernferret, lithium3141 and main--
+2015-01-24 22:23:52 [INFO] [Multiverse-Core] Loading World & Settings - 'SurvivalLobby' - Env: NORMAL - Type: NORMAL & seed: 2296952434322003082 & generator: OrbitMinesEmptyWorldGenerator
+2015-01-24 22:23:53 [INFO] [Multiverse-Core] Loading World & Settings - 'SurvivalWorld' - Env: NORMAL - Type: NORMAL & seed: -4405481766968203491
+2015-01-24 22:23:53 [INFO] [Multiverse-Core] Loading World & Settings - 'SurvivalWorld_nether' - Env: NETHER - Type: NORMAL & seed: -1948708936597299738
+2015-01-24 22:23:53 [WARNING] [Multiverse-Core] Spawn location from world.dat file was unsafe. Adjusting...
+2015-01-24 22:23:53 [WARNING] [Multiverse-Core] Original Location: X: 0 Y: 119 Z: 0 P: 0 Y: 0 
+2015-01-24 22:23:53 [SEVERE] [Multiverse-Core] New safe spawn NOT found!!!
+2015-01-24 22:23:53 [INFO] [Multiverse-Core] Loading World & Settings - 'SurvivalWorld_the_end' - Env: THE_END - Type: NORMAL & seed: -1948708936597299738
+2015-01-24 22:23:53 [INFO] [Multiverse-Core] 4 - World(s) loaded.
+2015-01-24 22:25:45 [INFO] [Multiverse-Core] - Version 2.4-b527 (API v14) Enabled - By Rigby, fernferret, lithium3141 and main--
+2015-01-24 22:25:45 [INFO] [Multiverse-Core] Loading World & Settings - 'SurvivalLobby' - Env: NORMAL - Type: NORMAL & seed: 2296952434322003082 & generator: OrbitMinesEmptyWorldGenerator
+2015-01-24 22:25:45 [INFO] [Multiverse-Core] Loading World & Settings - 'SurvivalWorld' - Env: NORMAL - Type: NORMAL & seed: -4405481766968203491
+2015-01-24 22:25:45 [INFO] [Multiverse-Core] Loading World & Settings - 'SurvivalWorld_nether' - Env: NETHER - Type: NORMAL & seed: -1948708936597299738
+2015-01-24 22:25:45 [WARNING] [Multiverse-Core] Spawn location from world.dat file was unsafe. Adjusting...
+2015-01-24 22:25:45 [WARNING] [Multiverse-Core] Original Location: X: 0 Y: 119 Z: 0 P: 0 Y: 0 
+2015-01-24 22:25:45 [SEVERE] [Multiverse-Core] New safe spawn NOT found!!!
+2015-01-24 22:25:46 [INFO] [Multiverse-Core] Loading World & Settings - 'SurvivalWorld_the_end' - Env: THE_END - Type: NORMAL & seed: -1948708936597299738
+2015-01-24 22:25:46 [INFO] [Multiverse-Core] 4 - World(s) loaded.
+2015-01-24 22:27:15 [INFO] [Multiverse-Core] - Version 2.4-b527 (API v14) Enabled - By Rigby, fernferret, lithium3141 and main--
+2015-01-24 22:27:15 [INFO] [Multiverse-Core] Loading World & Settings - 'SurvivalLobby' - Env: NORMAL - Type: NORMAL & seed: 2296952434322003082 & generator: OrbitMinesEmptyWorldGenerator
+2015-01-24 22:27:15 [INFO] [Multiverse-Core] Loading World & Settings - 'SurvivalWorld' - Env: NORMAL - Type: NORMAL & seed: -4405481766968203491
+2015-01-24 22:27:16 [INFO] [Multiverse-Core] Loading World & Settings - 'SurvivalWorld_nether' - Env: NETHER - Type: NORMAL & seed: -1948708936597299738
+2015-01-24 22:27:16 [WARNING] [Multiverse-Core] Spawn location from world.dat file was unsafe. Adjusting...
+2015-01-24 22:27:16 [WARNING] [Multiverse-Core] Original Location: X: 0 Y: 119 Z: 0 P: 0 Y: 0 
+2015-01-24 22:27:16 [SEVERE] [Multiverse-Core] New safe spawn NOT found!!!
+2015-01-24 22:27:16 [INFO] [Multiverse-Core] Loading World & Settings - 'SurvivalWorld_the_end' - Env: THE_END - Type: NORMAL & seed: -1948708936597299738
+2015-01-24 22:27:16 [INFO] [Multiverse-Core] 4 - World(s) loaded.

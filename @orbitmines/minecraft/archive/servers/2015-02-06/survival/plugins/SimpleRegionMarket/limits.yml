@@ -1,0 +1,7 @@
+global:
+  global: -1
+worlds:
+  SurvivalShops: 1
+  SurvivalWorld_the_end: 1
+# Write like on Signs: 1m = 1 Minute, 1d = 1 Day...
+autoClearTime: 0

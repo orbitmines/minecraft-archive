@@ -1,0 +1,16 @@
+permission: ''
+world: PrisonServer
+X: -605
+Y: 6
+Z: 404
+price: 0.0
+cooldown: 0
+globalCooldown: 0
+confirmation: false
+commands:
+- '/spawn '
+grantPermissions: []
+lastGlobalUse: 0
+lastUse: {}
+priceItems: []
+exp: 0

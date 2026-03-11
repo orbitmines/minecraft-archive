@@ -1,0 +1,30 @@
+#  VoteSend Config
+#  http://www.mc-index.com
+#
+
+servers:
+  server2:
+    IP: 77.111.248.172
+    Port: 8203
+    Key: MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAvLtEwFaEsDKkkyaukKwg9jZWRqEcDf2fcFZgE3q+TUeDh4l2cgKx9IMzDyUePqfbe4PTMzfPoSZ6izZ1BL/AFtyUV7+tlXrEdVABkaoLRgby7XReUamEtQaRGK8+PN7OQn8Y1zxnTxgkQEeoWfZ0UV7/hvAJKX2uR8nLAZkraY54V4jjluLwLPcfOGJVR7kKGPhaLv28kbmvd06yuSG/5RN7W7hqEpSGZYjcOPAnSE3UhJwtiQgN0masw+o2OTZeEVnNvDuNhJQ+6cGk800/UFN8f1UZmuz7ctgN8QdyGCs0pVZywX+/WfPAr7W2eJox6zmIo0vgm6r2nlmKazFAFQIDAQAB
+    Custom: ''
+  server3:
+    IP: 77.111.206.117
+    Port: 8211
+    Key: MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA2NE96duGxAJetRoBzrcTUbArzS56q0KvvscgTj63oueTXl42ExtCNa2nZlZn+i0UgyW91XF6prGvVQzgakkb19Ur3YABO1jVwbrph/NCHF7u/gY21fEBJjyhd9OPLXieRid5bTj904IShnCsPoECIm/9usyfUdGSh6iJus8tSb695lG/S0QfFiHozX1AQqaXHxp1eE36ctgGsm3/FcE7plkT78ZnQTVe7dr/ugg4VIJkdYidX1b6IgWdmoA3Lsso+NCchNilEFv3sqKFfNUaQHhndqhaw2ADyt3M/po1/ZgCleyMu2gIgdgeOGI3onfSF7SQtVEzO9qvAi+Srid5hwIDAQAB
+    Custom: ''
+  server4:
+    IP: 77.111.236.34
+    Port: 8207
+    Key: MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA0MGLPVgPfHej9ZQu44eiiAKRhQ1hSkOQjsvssE1aCa4ebtt75pNMpuha0kwXkIO6HrVsXVVIyzll3jO+K443HL1PpEYpizwF+Wqo1xXrc/0i/x+khpafUBWRBRefQYb5gL/RKWOXNHdlhUMmz7pYV6D8zWVkR3o2oFwrShkx8rTES13NEVR5t6mZIHnacppHMuK/xKIlGhac4dVu7gJhQeFin5+MI++Yne2A7LoT4UezP0q8oWyNpZjrmjVRLRSy7jtLxhNdztRvvGOvgp7019IYPl8Hj3wubdT1xRE881vziBBKFeS0iGH5BkCkRUVZ176R8vp3kYzaaipwKfbHAwIDAQAB
+    Custom: ''
+  server5:
+    IP: 77.111.192.151
+    Port: 8214
+    Key: MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAs+RSBqoNTKwPet6hMv9uZIH8dilYfNnowy0VYvSuy4fjnP0LYGSzQiRMqCbdBNOWwddcSxs5vEKkuVoI6IIZLcffcGXBnn/tu8eqjcpRvTtYNmEDiiiowz3UxQKzhwvRbAHt5dtyed+/dLDzVtkJrGciQ3VjGnql14x2vikNcqBQC5Ywd0gb+s3yHChyz/531VyI+i7rHPhj2liGv2UNnlVhvckyT53kOhiRQSzKV9YZCnA+dVpX1dvTCpzVko4GJaqpua2xHqji1L5xnTRLd6eKTQ0SDuqnVzfF9BA66pTWUPTmfEyAQ3OTg+lOnd2bDGZPcmtEorO+jQRICGn5wQIDAQAB
+    Custom: ''
+  server6:
+    IP: 77.111.204.209
+    Port: 8202
+    Key: MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEApDUCEjNSpJbrlYJg33jslAZQS3vswErvNvu5Shay+syLZYgptVwiPsnqsis2webgIi+lGPzXbb52+07QoG8UeeC2/nzQxfCNyV9ZVmYe0s2HTHB+fpz1UQtHfyT0ARC8qQ54xDgEWkmtCnzNaxp4qdzIVl55IAQU6Kaxv36dsuRLHee4nrloAJEDQxa6R50mUWqRDZkEdqWAvdD14uBemRMia4smATgXPmF3YRH6mPrz21q1apQCdifd6iySzVaSIOsDreB1A5odVv3IteAvW5kHdlzZ0SbHCmroARMTe7pEqNRz/eP6WfL8E0nskX1AvtozSrQlFZGaJMm9NibqrQIDAQAB
+    Custom: ''

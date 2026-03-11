@@ -1,0 +1,72 @@
+ShopName: Looting
+signs:
+  text: '[Looting]'
+  NeedPermissionToCreateSign: true
+shop:
+  1:
+    RewardType: item
+    PriceType: money
+    Price: 750
+    Reward:
+    - - type:ENCHANTED_BOOK
+      - enchantment:LOOT_BONUS_MOBS#1
+      - amount:1
+    MenuItem:
+    - type:ENCHANTED_BOOK
+    - enchantment:LOOT_BONUS_MOBS#1
+    - amount:1
+    - 'name:&bEnchanted Book &6[Looting I]'
+    - 'lore:&c&LPrice: &6750$ #&4Required: &6[&e&lVIP&6]'
+    - amount:1
+    Message: '&2[&aSurvival Shop&2] &aYou have bought &f1 Enchanted Book (Looting I)&a for &6750$'
+    InventoryLocation: 1
+    ExtraPermission: 'vipshop.gvip'
+  2:
+    RewardType: item
+    PriceType: money
+    Price: 1500
+    Reward:
+    - - type:ENCHANTED_BOOK
+      - enchantment:LOOT_BONUS_MOBS#2
+      - amount:1
+    MenuItem:
+    - type:ENCHANTED_BOOK
+    - enchantment:LOOT_BONUS_MOBS#2
+    - amount:1
+    - 'name:&bEnchanted Book &6[Looting II]'
+    - 'lore:&c&LPrice: &61500$ #&4Required: &b[&9&lVIP&b]'
+    - amount:1
+    Message: '&2[&aSurvival Shop&2] &aYou have bought &f1 Enchanted Book (Looting II)&a for &61500$'
+    InventoryLocation: 2
+    ExtraPermission: 'vipshop.dvip'
+  3:
+    RewardType: item
+    PriceType: money
+    Price: 3000
+    Reward:
+    - - type:ENCHANTED_BOOK
+      - enchantment:LOOT_BONUS_MOBS#3
+      - amount:1
+    MenuItem:
+    - type:ENCHANTED_BOOK
+    - enchantment:LOOT_BONUS_MOBS#3
+    - amount:1
+    - 'name:&bEnchanted Book &6[Looting III]'
+    - 'lore:&c&LPrice: &63000$ #&4Required: &2[&a&lVIP&2]'
+    - amount:1
+    Message: '&2[&aSurvival Shop&2] &aYou have bought &f1 Enchanted Book (Looting III)&a for &63000$'
+    InventoryLocation: 3
+    ExtraPermission: 'vipshop.evip'
+  BackToMenu:
+    RewardType: shop
+    PriceType: free
+    Reward: Survival
+    MenuItem:
+    - type:REDSTONE_BLOCK
+    - amount:1
+    - name:&a&LSurvival Menu
+    - lore:&8Back to the Survival Menu
+    - amount:1
+    InventoryLocation: 9
+    ExtraPermission: ''
+

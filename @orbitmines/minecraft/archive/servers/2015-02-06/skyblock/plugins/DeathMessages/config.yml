@@ -1,0 +1,204 @@
+#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-# About Plugin/Author #-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#
+#
+# Plugin Name: DeathMessages
+# Author: Jose Manuel Gassin Perez-Traverso
+# Bukkit Profile: http://dev.bukkit.org/profiles/Mayhem777/
+# Description: Change the Default Bukkit Death Messages as you Wish, including colors, victim name, killer name and weapon/material/name...  also other General messages as Join/Kick/Leave.
+#
+#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-# About Plugin/Author #-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#
+
+#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-# Commands & Permissions #-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#
+#
+# /dm					|		deathmessages.user		|		Shows a list of commands.
+# /dm all				|		deathmessages.user		|		Toggles on/off both, Death and General Mesages for the player.
+# /dm dm				|		deathmessages.user		|		Toggles on/off Death Messages for the player.
+# /dm gm				|		deathmessages.user		|		Toggles on/off General Messages for the player.
+# /dm reload			|		deathmessages.admin		|		Reloads this file.
+#
+### Notes: you can use both /dm or /deathmessages for commands.
+#
+#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-# Commands & Permissions #-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#
+
+#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-# Plugin Version #-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#
+#
+# Don't change this or your config will be renamed to "old_config.yml" and the correct config.yml version will be created. (Same system for the lang files)
+Version: 2.7.0
+#
+#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-# Plugin Version #-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#
+
+#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-# Debugging #-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#
+#
+### Enabling this option will BROADCAST useful data about the Death Process, which will be useful to find plugins conflicting with Bukkit normal events.
+# You'll be able to check: Victim Name, World Name, Last Damage Cause Type, Last Damage Cause (Reason), and Damager.
+Debug: false
+#
+#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-# Debugging #-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#
+
+
+
+#====================================== PvP Messages ======================================#
+### What to do with PvP Death Messages?
+# 1 = Don't Show any of Them.
+# 2 = Show them as Usual.
+# 3 = ONLY show PvP Death Messages.
+PvP_Death_Messages_Handling: 2
+
+#====================================== World Settings ======================================#
+### IMPORTANT NOTE: World names are CASE SENSITIVE!
+### Disable ALL Death and General messages to those worlds, total silence, no message comming from the world itself or from any other.
+Silenced_Worlds:
+- TooManyDeaths_world
+- NoSpam_world
+
+### Linking worlds allows worlds to share death/general messages, worlds out if this list will ONLY see it's own messages.
+# Example: as you can see in this list, the worlds "world", "world_nether" and "world_the_end" are linked, so Death and General messages will be shared, if we have another world called "new_world", will only be able to see it's own Death and General Messages.
+Linked_Worlds:
+  Enable: false
+  World_List:
+  - world
+  - world_nether
+  - world_the_end
+
+#====================================== General Messages ======================================#
+### Enable/Disable custom General Messages:
+General_Messages: false
+
+### On Player FIRST Join Message:
+Player_First_Join: '&a[SkyBlock] Join&2>> &6&l%player'
+
+### On Player Join Message:
+Player_Join: '&a[SkyBlock] Join&2>> &6&l%player'
+
+### On Player Leave/Disconnect Message:
+Player_Disconect: '&c[SkyBlock] Quit&4>> &6&l%player'
+
+### On Player Kick Message:
+Player_Kick: '&cThe Player &b%player &chas been Kicked!'
+
+#====================================== Death Messages ======================================#
+### Change those TAGS as you wish.
+# %player = Player (victim) name
+# %killer = Player Assasin name (only for player kills, PvP)
+# %weapon_material = Material name of the weapon wielded by the killer(only for player kills, PvP)
+# %weapon_name = Meta display name of the weapon, instead of the material one, if there's no name it'll show the material one.
+# %world = World name in which the player died, can be used in any message.
+
+### Don't forget to use bukkit colors if you want ===>    http://dev.bukkit.org/media/images/42/45/Colors.png
+# And other Bukkit Formats ===>    &n = Underlined   ||   &o = Italic   ||   &m = Strike-through   ||   &l = Bold   ||   &k = Magic   ||   &r = Reset Format
+
+### Some Examples:
+# Example for Creeper Message = '&2%player &Elikes to hug &CCreepers&E, he is a pill of dust now...'
+# Example for PvP Message = '&2%player &Ewas slain by &Ckiller&E, wielding his mighty &C%weapon_material'
+
+### TAKE CARE ABOUT SPECIAL CHARACTERS OR NON-ENGLISH ONES! THE BUKKIT YAML PARSER DON'T ALLOWS THEM! CHECK THE PLUGIN PAGE TO USE VARIABLES INSTEAD TO SHOW THEM!
+
+### Finally, you can add/modify/remove all the random messages you wish, when a death occurs, a random message from the list will be chosen.
+# REMEMBER, THERE'RE NOT ONLY 2 POSSIBLE RANDOM MESSAGES, ADD/REMOVE ALL YOU WISH! INFINITE POSSIBILITIES!
+
+#====# Mob Causes #====#
+Blaze:
+- '&8[&5&lSkyBlock&8] &7%player was killed by a monster'
+CaveSpider:
+- '&8[&5&lSkyBlock&8] &7%player was killed by a monster'
+Creeper:
+- '&8[&5&lSkyBlock&8] &7%player was killed by a monster'
+EnderDragon:
+- '&8[&5&lSkyBlock&8] &7%player was killed by a monster'
+Enderman:
+- '&8[&5&lSkyBlock&8] &7%player was killed by a monster'
+Ghast:
+- '&8[&5&lSkyBlock&8] &7%player was killed by a monster'
+Giant:
+- '&8[&5&lSkyBlock&8] &7%player was killed by a monster'
+IronGolem:
+- '&8[&5&lSkyBlock&8] &7%player was killed by a monster'
+MagmaCube:
+- '&8[&5&lSkyBlock&8] &7%player was killed by a monster'
+PigZombie:
+- '&8[&5&lSkyBlock&8] &7%player was killed by a monster'
+Silverfish:
+- '&8[&5&lSkyBlock&8] &7%player was killed by a monster'
+SkeletonArcher:
+- '&8[&5&lSkyBlock&8] &7%player was killed by a monster'
+SkeletonMelee:
+- '&8[&5&lSkyBlock&8] &7%player was killed by a monster'
+Slime:
+- '&8[&5&lSkyBlock&8] &7%player was killed by a monster'
+Spider:
+- '&8[&5&lSkyBlock&8] &7%player was killed by a monster'
+Witch:
+- '&8[&5&lSkyBlock&8] &7%player was killed by a monster'
+Wolf:
+- '&8[&5&lSkyBlock&8] &7%player was killed by a monster'
+Zombie:
+- '&8[&5&lSkyBlock&8] &7%player was killed by a monster'
+### Wither
+Wither:
+- '&8[&5&lSkyBlock&8] &7%player was killed by a monster'
+WitherEffect:
+- '&8[&5&lSkyBlock&8] &7%player was killed by a monster'
+### Wither Skeleton
+WitherSkeleton:
+- '&8[&5&lSkyBlock&8] &7%player was killed by a monster'
+#====# PvP Causes #====#
+PvPWeapon:
+- '&8[&5&lSkyBlock&8] &7%player was killed by %killer'
+# Weapon Tag NOT APLICABLE
+PvPFist:
+- '&8[&5&lSkyBlock&8] &7%player was killed by %killer'
+PvPBow:
+- '&8[&5&lSkyBlock&8] &7%player was killed by %killer'
+# This happens when a player dies by a Thorn Enchantment.
+Thorns:
+- '&8[&5&lSkyBlock&8] &7%player was killed by %killer'
+#====# Other Causes #====#
+TNT:
+- '&8[&5&lSkyBlock&8] &7%player was killed by an explosion'
+Cactus:
+- '&8[&5&lSkyBlock&8] &7%player hugged a cactus'
+Anvil:
+- '&8[&5&lSkyBlock&8] &7%player was squashed by an anvil'
+# Dispenser only has 1 message for deaths, but i added another one if player dies from a fireball ;)
+DispenserArrow:
+- '&8[&5&lSkyBlock&8] &7%player died'
+DispenserFireball:
+- '&8[&5&lSkyBlock&8] &7%player died'
+Drowning:
+- '&8[&5&lSkyBlock&8] &7%player drowned'
+PotionofHarming:
+- '&2%player &Ewas killed by magic'
+# In Minecraft you can't die from normal Poison, you just get to half heart, anyway it a Poison Potion hits you when u're with low health and kills you or by other plugins this could happen.
+Fall:
+- '&8[&5&lSkyBlock&8] &7%player hit the ground too hard.'
+Poison:
+- '&8[&5&lSkyBlock&8] &7%player was killed by poison'
+# Direct exposure to a fire block
+FireBlock:
+- '&8[&5&lSkyBlock&8] &7%player went up in flames'
+# Death caused by burns after leaving a Fire Block or Lava Block.
+FireEffect:
+- '&8[&5&lSkyBlock&8] &7%player burned to death'
+Lava:
+- '&8[&5&lSkyBlock&8] &7%player tried to swim in lava'
+# You usually get "went up in flames" like cause of death by a thunder, now you can specify what you want, anyway if the fire kills you first the cause will still being the fire.
+Lightning:
+- '&8[&5&lSkyBlock&8] &7%player went up in flames'
+Starvation:
+- '&8[&5&lSkyBlock&8] &7%player starved to death'
+Suffocation:
+- '&8[&5&lSkyBlock&8] &7%player suffocated in a wall'
+# Suicide message is only possible when player uses /suicide or /kill to himself.
+Suicide:
+- '&8[&5&lSkyBlock&8] &7%player died'
+- '&8[&5&lSkyBlock&8] &7%player died'
+Void:
+- '&8[&5&lSkyBlock&8] &7%player fell into the void'
+# Weird causes like killed by EnderPearl, Eggs and Snowballs.
+# Snowmans can't kill players cause Snowballs have no damage, anyway some servers change this mechanic for fun (like my server), so i added it too.
+Others:
+- '&8[&5&lSkyBlock&8] &7%player died'
+Snowman:
+- '&8[&5&lSkyBlock&8] &7%player died'
+## Rest of the Causes, command causes will be showed here, like /kill or /suicide case doesn't have a damager.
+Unknown:
+- '&8[&5&lSkyBlock&8] &7%player died'

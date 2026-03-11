@@ -1,0 +1,4808 @@
+players:
+  SterreHaasnoot:
+    MaxHomesAllowed: 25
+    Money: 50
+    Homes:
+      home: SurvivalWorld|-475.5|70.0|-345.5|-3.9646606|15.450003
+  regonize11:
+    MaxHomesAllowed: 10
+  jason8660:
+    MaxHomesAllowed: 25
+  fangergo:
+    MaxHomesAllowed: 10
+    Money: 50
+    Homes:
+      zyron: SurvivalWorld|1247.9900956075878|64.0|-4313.132042396819|93.39041|2.6999912
+      city: SurvivalWorld|2538.8742247619307|62.0|-1541.5854041728965|-171.0243|16.800005
+      spawner: SurvivalWorld|2547.300000011921|57.0|-1569.2380760598562|-144.24655|10.649992
+      desert: SurvivalWorld|1280.7562508149433|74.0|10690.41092407861|180.39459|-9.667615
+      theater: SurvivalWorld|-1467.699999988079|85.0|-110.48813996986273|87.29943|13.6500025
+      huis: SurvivalWorld|-1372.300000011921|71.0|-94.31559178233145|86.37085|49.00585
+      jungle: SurvivalWorld|879.882069603013|71.0|-3073.7614124688703|-67.31178|-40.738213
+      vriend: SurvivalWorld|-3364.0856651291756|66.0|1748.2210420168522|218.15485|32.85001
+      lors: SurvivalWorld|2756.532672023545|87.0|-351.89195621124554|239.71603|11.291458
+    JobInfo:
+      Name: LUMBERJACK
+      Level: 0
+      XP: 0
+    MerchantInfo:
+      Selling:
+        '33':
+          Type: LOG
+          Durability: 1
+          Amount: 1
+          Price: 1
+        '36':
+          Type: LOG
+          Durability: 1
+          Amount: 64
+          Price: 5000
+        '44':
+          Type: LOG
+          Durability: 1
+          Amount: 64
+          Price: 1000
+  BenYOmin_Mango:
+    MaxHomesAllowed: 3
+  eddieirwin:
+    MaxHomesAllowed: 3
+    Money: 50
+    Homes:
+      mobs: SurvivalWorld|-520.2905439770589|69.0|-4120.300000011921|274.89044|12.450042
+      e: SurvivalWorld|-198.5|211.0|-3112.5|119.187805|13.650005
+      mine: SurvivalWorld|1786.473733652814|10.0|-3114.6867417215044|193.44312|-2.5500128
+    JobInfo:
+      Name: HUNTER
+      Level: 0
+      XP: 0
+    MerchantInfo:
+      Selling:
+        '30':
+          Type: BONE
+          Durability: 0
+          Amount: 64
+          Price: 3000
+        '31':
+          Type: SPIDER_EYE
+          Durability: 0
+          Amount: 64
+          Price: 1000
+        '86':
+          Type: BLAZE_ROD
+          Durability: 0
+          Amount: 64
+          Price: 1500
+  klimplant:
+    MaxHomesAllowed: 3
+    Money: 50
+  Spymarten27:
+    MaxHomesAllowed: 3
+    Money: 50
+  Noan2007:
+    MaxHomesAllowed: 3
+    Money: 50
+  Milanekke:
+    MaxHomesAllowed: 3
+    Money: 150
+    Homes:
+      home: SurvivalWorld|-1790.3140312201165|67.0|-1242.020178355701|-286.86035|-9.599942
+      SheepTeam: SurvivalWorld|-1839.613456383797|64.0|-1227.7055539466537|-35.460297|61.80001
+    JobInfo:
+      Name: LUMBERJACK
+      Level: 0
+      XP: 0
+    MerchantInfo:
+      Selling:
+        '40':
+          Type: LOG
+          Durability: 0
+          Amount: 64
+          Price: 17000
+  kirby12121999:
+    MaxHomesAllowed: 3
+    Money: 50
+    Homes:
+      home: SurvivalWorld|2561.2387975649326|93.0|863.8018300641015|238.3208|22.451414
+  LucChiem:
+    MaxHomesAllowed: 3
+    Money: 50
+  azelele:
+    MaxHomesAllowed: 3
+    Money: 50
+  MCexplode:
+    MaxHomesAllowed: 3
+    Money: 50
+  TychoDenHoorn:
+    MaxHomesAllowed: 3
+    Money: 40
+    Homes:
+      huis: SurvivalWorld|-3516.57737076042|72.0|3734.5828621892397|-154.89745|3.4500453
+    JobInfo:
+      Name: MINER
+      Level: 0
+      XP: 0
+  supertootje11:
+    MaxHomesAllowed: 3
+    Money: 50
+    JobInfo:
+      Name: MINER
+      Level: 0
+      XP: 0
+    Homes:
+      home: SurvivalWorld|1103.0410597382868|75.0|3721.257691660976|280.9999|18.900007
+  Willmore_Gaming:
+    MaxHomesAllowed: 3
+    Money: 50
+    JobInfo:
+      Name: HUNTER
+      Level: 0
+      XP: 0
+  ExplodeHDYT:
+    MaxHomesAllowed: 3
+    Money: 50
+  FerrieNijs:
+    MaxHomesAllowed: 3
+    Money: 50
+  Kreeper_Kitty:
+    MaxHomesAllowed: 3
+    Money: 50
+  timofritz:
+    MaxHomesAllowed: 3
+    Money: 50
+  Dude_Rancher:
+    MaxHomesAllowed: 3
+    Money: 75
+  superkilldave:
+    MaxHomesAllowed: 3
+    Money: 50
+  Rminecraft13:
+    MaxHomesAllowed: 3
+    Money: 50
+    Homes:
+      base: SurvivalWorld|-2067.8557209716355|71.0|533.8939704912049|-18.80893|27.750002
+      cas: SurvivalWorld|1001.8423983327734|72.0|-44.58758271953125|-304.70926|18.299908
+      nether: SurvivalWorld_nether|-182.85909338172834|63.0|-332.192189675175|-112.55762|13.799885
+  ChrisW_02:
+    MaxHomesAllowed: 3
+    Money: 50
+  Shiny_Charmander:
+    MaxHomesAllowed: 3
+    Money: 50
+    Homes:
+      home: SurvivalWorld|-475.4842629031474|70.0|-348.4589342121162|-183.95949|67.65
+  SUPERJELMER2002:
+    MaxHomesAllowed: 3
+    Money: 50
+  Minibommetje:
+    MaxHomesAllowed: 3
+    Money: 50
+  casper1252:
+    MaxHomesAllowed: 3
+    Money: 50
+  The_Dutchie_89:
+    MaxHomesAllowed: 3
+    Money: 50
+  redragon8gal:
+    MaxHomesAllowed: 3
+    Money: 50
+    JobInfo:
+      Name: HUNTER
+      Level: 0
+      XP: 0
+  Cool_Buddy15:
+    MaxHomesAllowed: 3
+    Money: 50
+  xkimyx004:
+    MaxHomesAllowed: 3
+    Money: 50
+  Svenieboy89:
+    MaxHomesAllowed: 3
+    Money: 50
+    Homes:
+      home: SurvivalWorld|-3561.5085875201394|64.0|-4257.585675922135|-72.40014|83.40001
+      Svenieboy89: SurvivalWorld|-3561.658960531272|64.0|-4256.7806827736895|-2.2001476|25.050018
+  ruygh:
+    MaxHomesAllowed: 3
+    Money: 50
+    Homes:
+      home: SurvivalWorld|-1983.8366912674987|79.0|-328.30031946284|-254.26143|10.611592
+  anoniemmick:
+    MaxHomesAllowed: 3
+    Money: 50
+    Homes:
+      en__plekje: SurvivalWorld|-3621.4763060564114|69.0|-3176.4464671828323|185.19153|9.599977
+      rienk__en__ik: SurvivalWorld|1116.727430574204|64.0|-4301.26607870025|-90.75914|15.449995
+  MineMartijnMC:
+    MaxHomesAllowed: 3
+    Money: 150
+    Homes:
+      home: SurvivalWorld|-3172.3740126447124|64.0|-2300.6752273728966|-339.06067|6.450063
+      wood: SurvivalWorld|-3126.6316292765787|68.0|-2284.253101515482|-90.06062|3.1500332
+      spawner: SurvivalWorld|-3405.8354290156312|63.0|2771.699999988079|-197.95074|54.89998
+    JobInfo:
+      Name: LUMBERJACK
+      Level: 0
+      XP: 0
+    MerchantInfo:
+      Selling:
+        '54':
+          Type: LOG
+          Durability: 0
+          Amount: 64
+          Price: 1000
+        '56':
+          Type: LOG
+          Durability: 0
+          Amount: 64
+          Price: 1000
+  moritzz11:
+    MaxHomesAllowed: 3
+    Money: 50
+  MissTeeJay:
+    MaxHomesAllowed: 3
+    Money: 50
+    JobInfo:
+      Name: LUMBERJACK
+      Level: 0
+      XP: 0
+  eExtatus:
+    MaxHomesAllowed: 3
+    Money: 50
+  Colin84:
+    MaxHomesAllowed: 3
+    Money: 50
+  jessezee:
+    MaxHomesAllowed: 3
+    Money: 50
+  lorenzodatbenik:
+    MaxHomesAllowed: 3
+    Money: 50
+  noessie8:
+    MaxHomesAllowed: 3
+    Money: 50
+  SJIMON02:
+    MaxHomesAllowed: 3
+    Money: 50
+  FastTurtles410:
+    MaxHomesAllowed: 3
+    Money: 50
+    Homes:
+      home: SurvivalWorld|2567.5767383428233|69.0|-2486.9530849417006|43.549866|31.200005
+    JobInfo:
+      Name: LUMBERJACK
+      Level: 0
+      XP: 0
+  raffieboy22:
+    MaxHomesAllowed: 3
+    Money: 50
+  The_Terminator33:
+    MaxHomesAllowed: 3
+    Money: 50
+  DrBubbles:
+    MaxHomesAllowed: 3
+    Money: 50
+  JoeJoeJUPPY_BC:
+    MaxHomesAllowed: 3
+    Money: 50
+  mipmip11:
+    MaxHomesAllowed: 3
+    Money: 50
+  Thijs205:
+    MaxHomesAllowed: 3
+    Money: 50
+  joelzandberg:
+    MaxHomesAllowed: 3
+    Money: 50
+  jeshua2004:
+    MaxHomesAllowed: 3
+    Money: 50
+    Homes:
+      huis: SurvivalWorld|-311.19575706569304|72.0|438.2591707902568|-204.44919|-8.399997
+      huis2: SurvivalWorld|2465.444324407266|67.0|-1287.8517567071085|-158.80069|17.999983
+    JobInfo:
+      Name: HUNTER
+      Level: 0
+      XP: 0
+    MerchantInfo:
+      Selling: {}
+  gwnfabian:
+    MaxHomesAllowed: 3
+    Money: 50
+    JobInfo:
+      Name: MINER
+      Level: 0
+      XP: 0
+  rickven95:
+    MaxHomesAllowed: 3
+    Money: 250
+    Homes:
+      rick: SurvivalWorld|-2933.6159429953686|70.0|-1031.8435721054136|200.19421|10.378769
+    JobInfo:
+      Name: MINER
+      Level: 0
+      XP: 2
+    MerchantInfo:
+      Selling: {}
+  LexTheBest3:
+    MaxHomesAllowed: 3
+    Money: 50
+  Mr_Hanky_Pooh:
+    MaxHomesAllowed: 3
+    Money: 50
+  Donderaar:
+    MaxHomesAllowed: 3
+    Money: 50
+  linseylovekoekie:
+    MaxHomesAllowed: 3
+    Money: 50
+  _Guus_:
+    MaxHomesAllowed: 3
+    Money: 150
+    Homes:
+      home: SurvivalWorld|-2927.1526439994477|70.0|-1030.2808451146511|293.85126|12.606574
+    JobInfo:
+      Name: MINER
+      Level: 0
+      XP: 1
+    MerchantInfo:
+      Selling:
+        '78':
+          Type: COAL
+          Durability: 0
+          Amount: 2
+          Price: 14141
+    SendMessages:
+    - ''
+    - Â§aÂ§lMerchant Â§8| Â§aPartyPoliceÂ§7 bought your Deal! (Â§6#77Â§7)
+    - 'Â§aÂ§lMerchant Â§8| Â§7Item: Â§8Â§l1 Â§8Â§lCoal'
+    - 'Â§aÂ§lMerchant Â§8| Â§7Item Price: Â§a0$'
+    - 'Â§aÂ§lMerchant Â§8| Â§7Merchant Tax: Â§c-0$ Â§7(Level Â§90Â§7, Â§c-20%Â§7)'
+    - 'Â§aÂ§lMerchant Â§8| Â§7Total Profit: Â§20$'
+    - Â§aÂ§lMerchant Â§8| Â§9+1 XP
+  siebevanolmen:
+    MaxHomesAllowed: 3
+    Money: 50
+  Minecon_Cape:
+    MaxHomesAllowed: 3
+    Money: 50
+  halovrienden1:
+    MaxHomesAllowed: 3
+    Money: 225
+    Homes:
+      home: SurvivalWorld|2650.0688150566393|12.0|-4377.300000011921|204.69014|31.349974
+      farm: SurvivalWorld|2651.5964114603557|12.0|-4366.6337142927605|202.29031|27.599976
+    JobInfo:
+      Name: MINER
+      Level: 0
+      XP: 0
+    MerchantInfo:
+      Selling: {}
+  RobotjeRo:
+    MaxHomesAllowed: 3
+    Money: 45
+  cootiegirl:
+    MaxHomesAllowed: 3
+    Money: 50
+  LameOtaku:
+    MaxHomesAllowed: 3
+    Money: 50
+  Boalino:
+    MaxHomesAllowed: 3
+    Money: 50
+  loquin18:
+    MaxHomesAllowed: 3
+    Money: 50
+    JobInfo:
+      Name: MINER
+      Level: 0
+      XP: 0
+  Oxiloc:
+    MaxHomesAllowed: 3
+    Money: 50
+  skythekidr:
+    MaxHomesAllowed: 3
+    Money: 50
+    Homes:
+      skythekidr: SurvivalWorld|1154.300000011921|72.0|1755.4305720263474|323.45044|5.0999365
+  stoerejose:
+    MaxHomesAllowed: 3
+    Money: 50
+    Homes:
+      home: SurvivalWorld|-1394.5370137462521|66.0|1536.93772422591|-242.30981|-3.4500086
+  robotlogan:
+    MaxHomesAllowed: 3
+    Money: 75
+    Homes:
+      home: SurvivalWorld|2516.6545658390764|63.0|-290.1291090747879|303.59442|18.74881
+  24pumkinking:
+    MaxHomesAllowed: 3
+    Money: 50
+    Homes:
+      a: SurvivalWorld|-3580.309553211088|63.0|-359.10718100076696|-71.31113|27.449968
+  RodyNL:
+    MaxHomesAllowed: 3
+    Money: 50
+    Homes:
+      home: SurvivalWorld|-2049.300000011921|13.0|-276.69999998807907|11.599304|12.745662
+  DessertSnipzzz:
+    MaxHomesAllowed: 3
+    Money: 50
+  Pikachuxroger:
+    MaxHomesAllowed: 3
+    Money: 50
+    Homes:
+      home: SurvivalWorld|2337.308740770655|64.0|-1207.587868744264|32.940643|19.800013
+      anoniemmick: SurvivalWorld|1120.5015975583497|64.0|-4304.366397832477|-35.29132|33.750015
+  Noud_Wouter:
+    MaxHomesAllowed: 3
+    Money: 75
+    Homes:
+      home: SurvivalWorld|980.6441756212294|32.0|-316.93577258641017|2.0327454|7.650036
+  MenabossYT:
+    MaxHomesAllowed: 3
+    Money: 50
+  fritske2002:
+    MaxHomesAllowed: 3
+    Money: 50
+  captangamer:
+    MaxHomesAllowed: 3
+    Money: 50
+    JobInfo:
+      Name: HUNTER
+      Level: 0
+      XP: 0
+  lucasverm:
+    MaxHomesAllowed: 3
+    Money: 50
+  carsinop:
+    MaxHomesAllowed: 3
+    Money: 50
+  Tiemenbr:
+    MaxHomesAllowed: 3
+    Money: 50
+  Remi_Mine:
+    MaxHomesAllowed: 3
+    Money: 50
+  basketakiman:
+    MaxHomesAllowed: 3
+    Money: 50
+  the_wizard_NL:
+    MaxHomesAllowed: 3
+    Money: 50
+  Maxxter122:
+    MaxHomesAllowed: 3
+    Money: 50
+    Homes:
+      home: SurvivalWorld|-2084.6585784401527|111.0|-273.96918910246774|-92.531075|58.44128
+  MrB34:
+    MaxHomesAllowed: 3
+    Money: 50
+  Bunnygirl0:
+    MaxHomesAllowed: 3
+    Money: 50
+  WildWRL:
+    MaxHomesAllowed: 3
+    Money: 50
+    JobInfo:
+      Name: LUMBERJACK
+      Level: 0
+      XP: 0
+  donut4298:
+    MaxHomesAllowed: 3
+    Money: 50
+  Vicgamer01:
+    MaxHomesAllowed: 3
+    Money: 150
+    JobInfo:
+      Name: HUNTER
+      Level: 0
+      XP: 0
+    Homes:
+      home: SurvivalWorld|2406.4329423408194|43.0|-4224.97805901745|95.29934|16.800047
+  ProfessorSelym:
+    MaxHomesAllowed: 3
+    Money: 50
+    Homes:
+      home: SurvivalWorld|-1983.905728080975|80.0|1730.4959417747107|184.99939|60.74999
+    JobInfo:
+      Name: FARMER
+      Level: 0
+      XP: 0
+  Adriaan_Wellner:
+    MaxHomesAllowed: 3
+    Money: 50
+  jordan_mattyclac:
+    MaxHomesAllowed: 3
+    Money: 50
+  Itz_Will32:
+    MaxHomesAllowed: 3
+    Money: 50
+  joepjesaurus:
+    MaxHomesAllowed: 3
+    Money: 50
+  zZ_DerpyPvP_Zz:
+    MaxHomesAllowed: 3
+    Money: 50
+  mitchket:
+    MaxHomesAllowed: 3
+    Money: 50
+    Homes:
+      cave: SurvivalWorld|2617.9365223367263|54.0|-4223.325907260553|-330.8993|9.1500025
+      home: SurvivalWorld|2616.99391587603|65.0|-4220.993286663505|-135.54993|20.850014
+    JobInfo:
+      Name: FARMER
+      Level: 0
+      XP: 0
+    MerchantInfo:
+      Selling:
+        '90':
+          Type: CARROT_ITEM
+          Durability: 0
+          Amount: 36
+          Price: 160
+        '91':
+          Type: CARROT_ITEM
+          Durability: 0
+          Amount: 64
+          Price: 110
+  Djbart2002:
+    MaxHomesAllowed: 3
+    Money: 150
+  chiko123456789:
+    MaxHomesAllowed: 3
+    Money: 50
+  crazycreeper250:
+    MaxHomesAllowed: 3
+    Money: 50
+  __PIGman__:
+    MaxHomesAllowed: 3
+    Money: 50
+  ChiaraBadger:
+    MaxHomesAllowed: 3
+    Money: 50
+  youssefboy2000:
+    MaxHomesAllowed: 3
+    Money: 50
+  lucasimba12:
+    MaxHomesAllowed: 3
+    Money: 50
+  BTMF_KING_CRAFT:
+    MaxHomesAllowed: 3
+    Money: 50
+  TheRedPanda1337:
+    MaxHomesAllowed: 3
+    Money: 50
+    Homes:
+      home: SurvivalWorld|-479.97683982333234|11.0|703.7577094608894|-222.80951|2.250004
+  Gamer_Luke:
+    MaxHomesAllowed: 3
+    Money: 50
+    Homes:
+      home: SurvivalWorld|-480.5650288091075|11.0|692.0328652011201|-62.70349|17.243683
+  wesselboy11:
+    MaxHomesAllowed: 3
+    Money: 50
+  hugodenhartoog:
+    MaxHomesAllowed: 3
+    Money: 50
+  33ee168b-5c2c-42c5-b3b2-d841ceb76b70:
+    MaxHomesAllowed: 3
+    Money: 118
+    Homes:
+      home: SurvivalWorld|2925.4188509144838|63.0|3916.0841922702284|284.4506|19.199978
+      chests: SurvivalWorld|-808.0218156030514|78.0|2839.8075402189615|-185.60793|13.050053
+      village: SurvivalWorld|1857.4990815629687|69.0|-894.3770159136545|-210.95203|30.14996
+      snow: SurvivalWorld|5764.571372727285|92.53936048289509|-4238.249733391605|332.92535|40.949894
+      home2: SurvivalWorld|-843.7690033705468|79.0|2845.1445720788656|-209.15793|24.600052
+      sand: SurvivalWorld|2307.9812289995593|68.0|-718.0614419190593|-312.00012|20.24999
+      spawner: SurvivalWorld|-465.79541019282146|20.0|607.833488289383|-167.0103|32.850044
+      skeleton: SurvivalWorld|-456.5681827893334|63.0|597.5169061455623|321.09036|6.2999816
+      jungle: SurvivalWorld|1517.3297676696245|85.0|-3333.798359539641|226.64667|70.50001
+      diamond: SurvivalWorld|-255.69999998807907|8.0|-4087.295816059876|-143.01682|30.000154
+      wither: SurvivalWorld|-448.0299163248392|5.0|788.4831191257981|-181.85945|-7.5000253
+      home1: SurvivalWorld|-254.8396414343444|63.0|-4173.1485368389085|-29.316895|26.550108
+      mine: SurvivalWorld|-886.8668747166856|8.0|2799.4574135813164|-91.25798|8.700028
+      mine2: SurvivalWorld|-256.0923545022614|8.0|-4112.9939302047205|-4.716919|7.350115
+      zombie: SurvivalWorld|-898.8863074850368|12.0|2891.630584514134|-11.139122|26.971344
+      rg: SurvivalWorld|1041.631665247183|64.65781523135254|-1283.2932811492233|-91.10951|45.45001
+      village1: SurvivalWorld|-2922.923905588227|71.0|2590.5913178781866|-255.95813|9.000014
+      diamond1: SurvivalWorld|-898.6999999880791|10.0|2615.666525103501|-182.90767|25.649954
+      reily16: SurvivalWorld|-492.9915129030082|67.0|-4203.271872972633|-269.25632|11.7104645
+      kevin: SurvivalWorld|2621.31059703259|64.0|786.5180853739615|-179.62598|3.2999732
+      cave: SurvivalWorld|-5121.752582664732|95.5|2085.7540894038716|-272.61597|22.499964
+      Home#1-8Blocks: SurvivalWorld|4322.300000011921|77.0|3947.123419511752|-220.30853|22.95009
+      Home#1-8Blocks2: SurvivalWorld|7386.130694729769|68.0|4985.607288270851|-41.811974|9.749928
+      Home#IceSpikes: SurvivalWorld|5172.328063044991|71.0|4223.946705856184|17.137976|12.3004055
+      Home#IceSpikes2: SurvivalWorld|6404.768134762003|72.0|4574.592313746327|337.8383|2.2503042
+      Home#Jungle: SurvivalWorld|7707.057046662696|66.0|5182.170209643798|12.78792|5.5497694
+      Home#Jungle2: SurvivalWorld|7799.919271019873|64.0|5509.94818460222|-26.212126|2.9997542
+      Home#Desert: SurvivalWorld|7897.273595517547|70.0|5641.177914148438|-42.711994|8.549712
+      Home#DesertVillage: SurvivalWorld|7992.3878596091945|70.0|5821.622133364338|189.63817|9.299684
+      Home#Mesa: SurvivalWorld|8657.975879322263|63.0|6768.758303474082|-44.657665|19.19994
+      Home#DesertTemple: SurvivalWorld|8868.364689728123|74.0|6768.711173419368|-128.80785|18.900063
+      Home#Horses: SurvivalWorld|9014.438917261765|72.0|6762.946318904707|272.66367|8.550015
+      Home#Savanne: SurvivalWorld|9254.692356013504|70.0|6723.023782781481|233.10857|10.350021
+      Home#Village: SurvivalWorld|9470.288084040805|69.0|6793.815736883893|-24.79463|5.249978
+      Home#SeaTemple: SurvivalWorld|9872.993624258259|70.0|7432.194459976749|262.14948|25.199923
+      Home#SeaTemple-2: SurvivalWorld|9897.471775103424|63.0|7349.2453585185285|304.23474|23.999954
+      Home#1: SurvivalWorld|3864.5504180050084|64.0|4038.7489347171468|27.900015|6.1499968
+      Home#SeaTempleGold: SurvivalWorld|9939.932020415847|40.0|7402.122754530834|-187.40332|43.49974
+      Home#SeaTempleSponges: SurvivalWorld|9958.769855165514|44.0|7405.108020352177|182.23828|8.700058
+    JobInfo:
+      Name: MINER
+      Level: 0
+      XP: 2
+    MerchantInfo:
+      Selling: {}
+    Announce: true
+  639e49bf-42de-4dcc-8eb8-75a0ee2a9cb2:
+    MaxHomesAllowed: 10
+    Money: 948
+    Homes:
+      drie: SurvivalWorld|2779.632553870271|87.0|-354.96105581043935|164.79091|24.150084
+      een: SurvivalWorld|1241.9801701783492|68.0|-4283.417769262356|-190.52563|13.350041
+      vijf: SurvivalWorld|-8050.221869821991|69.0|-1742.4861840507947|-346.56006|42.600002
+      vier: SurvivalWorld|2482.243048391864|67.0|-1286.2371657035335|177.09143|12.750006
+      tien: SurvivalWorld|-476.50483219681814|87.0|66.98750001192093|169.44038|20.850025
+      zeven: SurvivalWorld|-189.5|211.0|-3092.5|-105.80813|17.549889
+      acht: SurvivalWorld|2509.5983287186255|59.0|1227.670552813446|-252.2026|8.700009
+      twee: SurvivalWorld|1014.8598092788848|28.0|2690.2663479444655|-90.25244|5.5500107
+      brutuske02: SurvivalWorld|10316.985545712609|83.0|-1337.3501947388957|321.95026|4.8000765
+    JobInfo:
+      Name: LUMBERJACK
+      Level: 0
+      XP: 2
+    MerchantInfo:
+      Selling: {}
+  a8933f18-3825-4453-9c8a-bdaba7db8334:
+    MaxHomesAllowed: 3
+    Money: 61
+    Homes:
+      k: SurvivalWorld|-1563.5451788773778|62.0|-133.3391731445834|4.187958|34.058712
+      yt: SurvivalWorld|1188.6423505281816|66.0|-4937.280671373046|106.570694|41.114906
+      ng: SurvivalWorld|-3409.4394938823625|68.0|1170.7136705604664|7.706909|15.6034155
+    JobInfo:
+      Name: NETHER_EXPERT
+      Level: 0
+      XP: 3
+    MerchantInfo:
+      Selling: {}
+  0d6e5b6b-8337-4f98-a3a4-afcd244dfe68:
+    MaxHomesAllowed: 50
+    Money: 50
+    Homes:
+      home: SurvivalWorld|-3623.889337692952|73.0|-3259.9602654521323|-4.599951|21.150002
+      lol: SurvivalWorld|-530.2144321687124|64.0|-4253.8757789412875|351.1695|12.4500065
+      stad: SurvivalWorld|-3627.593455839297|73.0|-3255.751560543137|-1.2584839|24.899996
+      pantherace: SurvivalWorld|-1752.216760503588|70.0|1616.0351158531316|-292.9439|17.498196
+      geheime: SurvivalWorld|1157.068274096272|65.52261605623106|2722.3767348846404|-342.50903|56.399998
+      mine: SurvivalWorld|-3589.967695013973|30.0|-3489.1530194742268|-155.1889|-4.3500085
+      schaakboy: SurvivalWorld|-1404.965092787524|75.0|-35.80010949523765|106.01033|-16.649998
+      bakkerij: SurvivalWorld|2536.477164301211|67.0|560.7073977240423|-186.66248|19.5
+      theater: SurvivalWorld|-1451.5656313809834|108.35734908248905|-108.22738583114298|-88.90076|65.40586
+      basis: SurvivalWorld|2702.2376915270665|68.0|687.4949266841431|271.2906|55.799965
+      waterstad: SurvivalWorld|-1864.501894686512|65.0|720.5668682630703|83.491196|83.99996
+      big_home: SurvivalWorld|2608.401349975829|65.0|-4235.07121130072|-87.900826|29.099998
+      miner: SurvivalWorld|-3692.699999988079|34.78608123157454|-3259.0835383614353|319.74277|28.950008
+      mobfarm: SurvivalWorld|-525.5855107940151|69.0|-4117.6568711680975|-86.61035|-1.3499569
+      paleis: SurvivalWorld|2441.3881807058174|64.5|430.75704139364143|177.84103|32.400013
+      mineshaft: SurvivalWorld|2619.9865673713657|29.0|542.5554496881276|44.645477|20.100002
+      beginnen: SurvivalWorld|740.997720827381|72.0|2737.0771040669492|60.691174|19.050058
+      kasteel: SurvivalWorld|2508.3096690288035|68.0|1172.7126550361197|-357.50446|8.549943
+      starwars: SurvivalWorld|2195.387570432691|71.0|1146.300055982724|-43.856567|4.4999785
+      junglekamp: SurvivalWorld|1011.3000000119209|71.0|-3466.5604168228324|-102.05823|37.35001
+      teleport1409: SurvivalWorld|-198.63988445673922|211.0|-3113.2744323271636|-117.65802|12.149922
+      playwarrior: SurvivalWorld|-3443.300000011921|15.0|3783.394086349976|-266.3247|11.849974
+      gwnluca: SurvivalWorld|-3465.81530594857|18.0|3775.124239576699|-189.65324|19.050003
+      fort: SurvivalWorld|942.4410067442294|63.0|-47.282782821988704|270.09192|51.299995
+      job: SurvivalWorld|-3528.0097789080282|68.0|-1210.3494497794652|91.15179|11.300784
+      cafe: SurvivalWorld|-3167.300000011921|63.0|1705.8906164110508|-85.900696|6.7500253
+      adventure: SurvivalWorld|-7915.300000011921|70.0|946.8456175816635|-261.9981|16.500034
+      Thelive: SurvivalWorld|-3331.685677172905|63.0|-3053.366680320494|189.08833|21.149982
+      restorant: SurvivalWorld|1004.5740787197559|72.0|-76.74945284879703|178.74194|8.249983
+      kingdom: SurvivalWorld|-3357.699999988079|79.0|1235.699999988079|183.94867|84.15001
+      rienk222: SurvivalWorld|-1551.1305918773915|68.5|-111.2001392957228|218.51923|11.999992
+    JobInfo:
+      Name: LUMBERJACK
+      Level: 0
+      XP: 0
+  82f340b9-cbc3-46f3-9244-580fd4d38413:
+    Money: 50
+    MaxHomesAllowed: 3
+  6bbc476a-6d9c-4ad6-a80e-977511f56256:
+    MaxHomesAllowed: 3
+    Money: 175
+  054f8340-9235-4f51-99c5-715b8cf7bdc2:
+    Money: 50
+    MaxHomesAllowed: 3
+  08a38b86-e1fd-4ce8-be5e-2e6723b2091d:
+    MaxHomesAllowed: 3
+    Money: 50
+    Homes:
+      home: SurvivalWorld|-3600.032394541293|65.0|-4264.616921661792|164.3526|44.59418
+  e5122a8e-07e5-4178-8cb5-d6721f9607b6:
+    MaxHomesAllowed: 3
+    Money: 5431
+    Homes:
+      rec: SurvivalWorld|-3209.4341038750413|66.0|1680.0691827660858|272.93988|-7.499958
+      home: SurvivalWorld|-3508.6780246875546|64.0|-340.5403947304127|118.289375|7.199985
+      poketown: SurvivalWorld|-471.6102383385486|71.0|2802.482893216816|184.55219|20.7
+    JobInfo:
+      Name: ANIMAL_FARMER
+      Level: 0
+      XP: 37
+    MerchantInfo:
+      Selling: {}
+  3c878e91-5efc-4994-a8de-a4c1f686dcfd:
+    MaxHomesAllowed: 3
+    Money: 70
+    Homes:
+      home: SurvivalWorld|-3227.5053963811997|89.0|1652.3295998330414|153.49806|23.700008
+      huis: SurvivalWorld|-3243.92975051535|64.0|1711.6618585698302|253.3977|10.799896
+    JobInfo:
+      Name: MINER
+      Level: 0
+      XP: 1
+    MerchantInfo:
+      Selling:
+        '22':
+          Type: COBBLESTONE
+          Durability: 0
+          Amount: 64
+          Price: 1000
+        '27':
+          Type: COBBLESTONE
+          Durability: 0
+          Amount: 64
+          Price: 1000
+  a2b79034-9c9f-43f9-a7ae-2aaea8d1111b:
+    MaxHomesAllowed: 3
+    Money: 35
+    JobInfo:
+      Name: LUMBERJACK
+      Level: 0
+      XP: 1
+    Homes:
+      huis: SurvivalWorld|-3467.752664700433|18.0|3747.5879240313207|354.97055|8.249754
+  7eb2eeb7-4f84-490b-8300-66d55db4a7d0:
+    Money: 44
+    MaxHomesAllowed: 3
+    Homes:
+      home: SurvivalWorld|-3342.822454319682|65.0|-1339.8681930603595|41.150085|17.699991
+      wout: SurvivalWorld|2561.300026667598|61.0|677.6369090329749|8.599888|5.3999867
+      villa: SurvivalWorld|2415.5448288293674|64.0|649.129729502599|262.43994|19.373013
+  08182ae3-ce0f-4090-a736-90b067b5e94c:
+    MaxHomesAllowed: 3
+    Money: 50
+  4941a440-f136-4c3b-9072-b289c7e1ab91:
+    MaxHomesAllowed: 3
+    Money: 50
+    Homes:
+      home: SurvivalWorld|-1499.374020973087|64.0|-949.336768501173|-93.601654|53.549957
+    JobInfo:
+      Name: MINER
+      Level: 0
+      XP: 0
+  e4cbc42d-e908-42fa-b1a4-de01bda61aef:
+    Money: 50
+    MaxHomesAllowed: 3
+    JobInfo:
+      Name: MINER
+      Level: 0
+      XP: 0
+    Homes:
+      home: SurvivalWorld|-1499.3398859503516|64.0|-949.3823480733976|274.99652|74.549965
+  69626b0c-6910-49b0-9a1d-8cf83141d60a:
+    MaxHomesAllowed: 3
+    Money: 183
+    Homes:
+      home: SurvivalWorld|1025.707935631778|83.0|2682.4915126830883|-65.45755|2.2500126
+      yolo: SurvivalWorld|1013.3719400297904|66.0|2716.3526444998142|72.40537|61.64999
+      super: SurvivalWorld|-3209.124664764499|65.0|1683.6939930807123|-174.99992|25.050041
+    JobInfo:
+      Name: MINER
+      Level: 0
+      XP: 0
+  a026edff-051e-4deb-a1c1-4115b9efaef6:
+    Money: 50
+    MaxHomesAllowed: 3
+  f5a2990f-fc89-4cd9-b923-2eb82e216bfb:
+    MaxHomesAllowed: 3
+    Money: 50
+    Homes:
+      home: SurvivalWorld|-3278.483562869425|63.0|592.6971338855219|-179.78906|1.3499838
+      '2': SurvivalWorld|-3278.446306568181|63.0|592.6991431367933|-180.83752|0.74992204
+  7e1b70f3-6a9f-4d7e-8c48-b757a3ca2690:
+    Money: 50
+    MaxHomesAllowed: 3
+  585a2a70-ac3d-49fa-992a-5e40fbd6ec67:
+    MaxHomesAllowed: 3
+    Money: 267
+    Homes:
+      huis: SurvivalWorld|2588.988897269301|103.0|859.8573659103159|20.343424|22.799995
+      stan: SurvivalWorld|-3213.15519842811|51.0|1555.8629224171477|-44.205597|43.800034
+      huis3: SurvivalWorld|2735.1284047878344|88.0|-4132.99572361582|-236.05084|35.70003
+    JobInfo:
+      Name: HUNTER
+      Level: 0
+      XP: 5
+    MerchantInfo:
+      Selling: {}
+  89389054-0069-46b8-8156-63a39490fc5a:
+    MaxHomesAllowed: 3
+    Money: 45
+    Homes:
+      huis: SurvivalWorld|2734.9606702242386|88.0|-4133.413661480474|174.39062|16.050007
+      home: SurvivalWorld|-3789.1719148117086|95.0|-4148.944516615407|95.45669|29.40008
+      Werkplek: SurvivalWorld|2412.2553365182944|27.0|-4140.312030199118|80.33978|43.20002
+  10925aa5-7769-44ec-b0d1-509af5e0bd31:
+    MaxHomesAllowed: 3
+    Money: 547
+    Homes:
+      huisjeshua: SurvivalWorld|-311.767435591137|72.0|443.51249998807907|186.20474|24.278423
+      nieuwhuis: SurvivalWorld|2518.179162428239|71.0|-4481.512533169292|-0.9486084|51.907104
+      huisinstad: SurvivalWorld|-3447.3582884019197|69.0|-3537.2094557843966|-220.29846|19.499958
+    JobInfo:
+      Name: HUNTER
+      Level: 0
+      XP: 3
+    MerchantInfo:
+      Selling: {}
+  851ffa55-c616-4e3f-b559-5a4389e3e529:
+    MaxHomesAllowed: 3
+    Money: 4351
+    Homes:
+      base: SurvivalWorld|1019.0289921087866|54.0|1615.3309905740114|-84.55054|4.499959
+      spork: SurvivalWorld|-3342.9866969467816|69.0|1167.4754209601313|89.5996|12.749992
+      schietbaan: SurvivalWorld|1132.4387273045797|68.0|1602.6399660720688|186.8063|-4.9500504
+    JobInfo:
+      Name: LUMBERJACK
+      Level: 0
+      XP: 3
+    MerchantInfo:
+      Selling: {}
+  4ada4a83-a6c1-4b3b-8092-19644d3f8f21:
+    MaxHomesAllowed: 50
+    Money: 2660
+    Homes:
+      spawners: SurvivalWorld|2696.3082040232216|69.0|-4325.897277428653|85.196365|3.6493528
+      arens: SurvivalWorld|-1274.3217060860454|77.0|-165.34706462502635|170.83679|12.623917
+      ice: SurvivalWorld|5829.64009937368|96.70888331238483|2441.1630168603715|273.6966|51.180954
+      vilager: SurvivalWorld|8717.524020570549|79.0|2351.412321559313|264.79166|86.43765
+      horse: SurvivalWorld|8706.300000011921|69.0|1815.699999988079|-110.686005|51.834984
+      2de: SurvivalWorld|11082.300000011921|72.74051063623871|-3380.699999988079|339.5147|11.838067
+      drop: SurvivalWorld|10346.064551604428|69.95900708926065|-1303.9404778308026|134.70557|45.368916
+      jungle: SurvivalWorld|1019.6009554688845|63.75857393272333|-2874.0294786729346|56.787415|46.151817
+      eiland: SurvivalWorld|1857.253864168965|67.99064318920136|1437.985774101834|206.79163|59.24863
+      vip: SurvivalWorld|-3454.5145413621703|60.0|-194.51599889595263|180.2885|17.877533
+      hak: SurvivalWorld|-1479.7329156790431|70.39308938820929|-65.72830845177816|102.45181|47.513874
+      home: SurvivalWorld|10386.500591924698|70.0|-1315.6545763214683|179.92773|20.765167
+      mine: SurvivalWorld|10378.918165979725|10.0|-1746.1953201692609|91.42786|14.549984
+      '18': SurvivalWorld|11377.597879136847|64.0|-3974.2345018063493|50.274597|41.856037
+      tempel: SurvivalWorld|10443.321668146154|64.0|-4283.319576976977|185.07507|15.609579
+      tempel2: SurvivalWorld|8395.229156285763|66.0|-7304.857247709871|189.26459|20.793964
+      obi: SurvivalWorld|10377.272333175799|225.0|-1299.6445813216885|90.891235|84.640884
+      back: SurvivalWorld|11033.64027023005|63.0|-1485.7464881944268|49.49696|-33.667515
+      fire: SurvivalWorld|-2735.5645930355195|126.0|-1318.342983955878|-65.39492|26.500237
+      fire\: SurvivalWorld|10387.498098856075|70.0|-1313.7171518738307|331.7815|33.58046
+      end: SurvivalWorld|817.4522127045824|21.0|-379.7850891282692|245.31488|16.545134
+      jimmy: SurvivalWorld|10476.699999988079|67.0|-1266.699999988079|231.88074|40.803604
+      berghuis: SurvivalWorld|10599.357270742077|105.0|-1243.4479726937775|142.4436|52.660934
+      berg: SurvivalWorld|-3743.603463779498|92.0|-1898.3750392135341|-328.42737|32.272957
+  9a343275-5b1b-41e6-b72b-ccff170893c2:
+    Money: 50
+    MaxHomesAllowed: 3
+  db7cf60c-b4fd-4c82-b92f-ee5d5a616edc:
+    Money: 50
+    MaxHomesAllowed: 3
+  670d1c4c-a441-461b-80ee-66b7d1ccf8e8:
+    Money: 50
+    MaxHomesAllowed: 3
+  f32fb557-8b9d-4f05-811b-2790687d2b40:
+    Money: 50
+    MaxHomesAllowed: 3
+  165d5597-3bd6-4e4c-84a6-f15652224e23:
+    Money: 50
+    MaxHomesAllowed: 3
+    JobInfo:
+      Name: LUMBERJACK
+      Level: 0
+      XP: 0
+    Homes:
+      home: SurvivalWorld|2735.304323171098|91.0|-4109.627898907418|293.14972|23.25
+  74f86bc6-894a-43b7-a563-99e121752424:
+    MaxHomesAllowed: 3
+    Money: 850
+    Homes:
+      jop: SurvivalWorld|-2001.5766397802995|63.0|670.3617499484275|111.085464|12.000019
+      huis: SurvivalWorld|-539.1007654325232|76.0|-2226.127374825045|89.4892|21.750036
+      stad: SurvivalWorld|-3174.9670202540838|64.0|1676.225785751468|80.33496|40.04989
+    JobInfo:
+      Name: MINER
+      Level: 0
+      XP: 0
+  0a4cd5a6-bd22-441e-ad32-f7884445e7c7:
+    Money: 50
+    MaxHomesAllowed: 3
+  feb78717-d8ab-4d8d-a237-025ea6c54daa:
+    Money: 50
+    MaxHomesAllowed: 3
+  01a5412b-275b-4f42-aea9-1bef163210b9:
+    MaxHomesAllowed: 100
+    Money: 2427
+    Homes:
+      moeras: SurvivalWorld|-2057.12911959146|65.0|843.6632184687219|155.5728|25.950037
+      paarden: SurvivalWorld|1043.5780867444403|83.89438288095893|139.61830513564252|-108.59996|31.19996
+      village: SurvivalWorld|-2207.508922253051|77.0|-1202.6856902260674|-83.59973|31.200005
+      spawn: SurvivalWorld|-570.6416140227416|64.0|-68.6970484851268|-257.4577|90.0
+      building: SurvivalWorld|-666.3448736793549|63.0|1265.7178144445074|-239.99854|30.449974
+      stoage: SurvivalWorld|-464.61684817949913|101.0|114.8095771705616|-20.457642|26.100014
+      roofedforrest: SurvivalWorld|-271.96417229363584|63.0|-2243.853224580208|-174.2088|-5.849992
+      desert_tiaga: SurvivalWorld|-932.8608647899285|75.0|-406.0745239834549|-59.250244|46.650013
+      flipflop113: SurvivalWorld|-387.1214750371894|63.0|-19.607157612736213|-276.50775|-7.1999965
+      house3: SurvivalWorld|-388.26272342479547|81.0|-1036.5774777692257|267.67664|42.649055
+      tristan11b: SurvivalWorld|-571.7010813816397|111.0|-3175.395465989173|-353.45706|22.500004
+      destroux: SurvivalWorld|-3.4801123231617597|63.0|-322.3088543414997|-180.5083|-6.5999913
+      plains_spikeshome: SurvivalWorld|5746.19518404314|99.25391095559648|-4077.979034636672|277.27472|3.4499054
+      obsidian: SurvivalWorld|-511.4396918374284|11.0|-141.65644883611856|-160.1997|13.650033
+      icehouse: SurvivalWorld|5746.19518404314|99.25391095559648|-4077.979034636672|277.27472|3.4499054
+      smallvilage: SurvivalWorld|2821.7876240192422|78.44095062755146|2727.3526070170265|-195.50537|23.550032
+      beach: SurvivalWorld|2307.443144255939|75.44235215248183|2582.6867276185244|-262.8553|53.250042
+      journysouth: SurvivalWorld|2816.129626670515|101.79101726281051|4644.126151926046|-58.25483|27.599974
+      wither: SurvivalWorld|-557.9249416439541|14.0|166.74871357039237|-99.206085|29.699993
+      jeshua2004: SurvivalWorld|-320.9700707513472|77.0|423.74441324137706|-18.749437|22.200026
+      heksenhuis: SurvivalWorld|-1279.3809828838798|64.99657404410092|-2294.302245056102|345.85022|6.3000216
+      tradingvillage: SurvivalWorld|1844.7815194145167|67.0|-885.5726679418486|183.69722|51.599953
+      fadicity: SurvivalWorld|-529.4917795838576|66.5|372.4957151416006|-199.8576|90.0
+      ironfarm: SurvivalWorld|1794.3040256660854|64.0|-1103.6565327199828|-135.80344|53.24998
+      o: SurvivalWorld|1133.611129963287|90.0|1387.5443895467163|-33.00006|67.049995
+      funnybeach: SurvivalWorld|1349.27698689598|76.68862209530417|1470.7892427047668|-161.70087|3.0000043
+      horses: SurvivalWorld|-1572.6767981376393|78.85414070829954|-1827.6089847357077|-67.37744|0.8942145
+      paarden2: SurvivalWorld|990.8235118395016|63.0|2059.6987927265227|155.4|25.553593
+      gangsterlx: SurvivalWorld|1846.2779476825674|76.0|-1011.601959690536|54.39723|90.0
+      krachtpatsertim: SurvivalWorld|2361.0440066548044|83.73488912294859|-668.1643698801113|196.95018|23.100014
+      nlalphawolf: SurvivalWorld|-934.6912146902707|74.0|-406.4889211153268|-9.30024|47.850018
+      endportal: SurvivalWorld|820.2991714605306|24.0|-382.70061049643533|309.18646|-11.100008
+      house5: SurvivalWorld|2429.1175768558874|64.0|-1569.932311754184|-53.240417|-43.35
+      jim5491158: SurvivalWorld|-447.52861702289175|63.0|-411.98750001192093|-120.902405|-2.7003827
+      epicbiome: SurvivalWorld|2188.2015003042998|89.36230505317829|-717.5516618787682|71.94626|-38.85
+      cavespider: SurvivalWorld|-2253.300000011921|27.0|-1321.28841307312|-286.65063|12.449952
+      slimespawn: SurvivalWorld|-2278.7665817960888|25.08734522528372|-1379.821019487754|-352.34998|6.9000206
+      podzoll: SurvivalWorld|-16757.17169591308|72.0|-15413.675640534171|-232.31699|21.149973
+      fangergo: SurvivalWorld|-1359.0121193140278|76.73941602216549|-118.46795294048992|-21.90072|-3.0000033
+      wizar11: SurvivalWorld|1286.1222922161428|100.0|-33.461763623768604|258.1905|17.100065
+      castle: SurvivalWorld|-16357.117618962777|100.0|-14905.484469818595|281.65393|-14.100117
+      shop: SurvivalWorld|-1152.6228534693823|73.0|-143.64084801363862|-0.45041567|23.250025
+      mine: SurvivalWorld|-943.9304482003579|29.0|2899.7828468925213|130.0893|70.22472
+      witherchamber: SurvivalWorld|-622.579247224892|75.0|-117.48057984598611|-332.0078|22.200014
+      lops: SurvivalWorld|2751.612086787244|88.0|-346.3195591335926|177.98956|-6.0000086
+      villagedefend: SurvivalWorld|2591.4153696975245|72.0|1024.8861773886001|20.042511|-15.899996
+      xpbottle: SurvivalWorld|-16943.19351569839|69.0|-14978.699868362412|-170.81677|-8.399963
+      cavespiderspawner: SurvivalWorld|-3624.2907465550984|27.0|-317.3778874578705|129.55095|-2.1000059
+      casidas: SurvivalWorld|991.7652296003794|74.85177515932725|-45.99892015641004|33.749744|29.399933
+      nethercastle: SurvivalWorld|-438.9728651603247|64.99657404410092|721.1320367936786|106.74039|1.6500343
+      shrine: SurvivalWorld|-5110.850886099201|78.0|2091.241019864131|-49.56328|-11.55009
+      fadiyoutube: SurvivalWorld|1177.1335017526903|81.0|2826.4549158517893|-87.05813|44.100033
+      survival: SurvivalWorld|741.3798906089902|73.0|2734.4123052221653|-175.11122|50.400013
+      dungeon: SurvivalWorld|197.56829091876722|62.0|2802.73126534117|-308.76675|12.899931
+      spider: SurvivalWorld|737.1313113214707|24.0|3138.2219109689204|-317.4662|16.35002
+      houseoflogs: SurvivalWorld|1065.3841107848589|78.73119547355543|-4259.264478739894|84.812355|33.064323
+      sheepfarm: SurvivalWorld|-2074.857066341564|63.0|867.7337365547144|208.52336|36.1501
+      paarden3: SurvivalWorld|2044.4258886303503|93.989522789652|707.5490725874284|-142.50006|37.94999
+      mesasearch: SurvivalWorld|2689.6183508127033|100.04311050315575|-5021.360975517713|-163.50078|22.499947
+      christmas: SurvivalWorld|-3447.699999988079|18.0|3798.0266786091606|-132.95865|19.199986
+      town: SurvivalWorld|-3157.6068010552867|64.0|1677.5589084631217|279.4088|6.7500205
+      nether: SurvivalWorld_nether|-423.618358137525|74.0|24.95436768490689|30.499847|39.60001
+      '18': SurvivalWorld|9938.907514066963|63.0|7415.511760627209|-23.8981|50.099945
+      noname: SurvivalWorld|-1500.8875036371019|69.0|-155.12109637342405|109.64982|11.699993
+      nether1: SurvivalWorld_nether|89.76512350167778|53.0|140.77724361535365|-131.15784|11.249989
+      blazefarm: SurvivalWorld_nether|69.08677757208504|74.0|24.744423676310284|-142.10796|-3.6000001
+      pokemon: SurvivalWorld|-474.91445722986026|63.0|2872.623965129908|66.04996|76.04999
+      eekhoorn: SurvivalWorld|8690.916641528762|64.0|6104.823411007489|179.50194|16.5
+    JobInfo:
+      Name: FARMER
+      Level: 0
+      XP: 19
+    MerchantInfo:
+      Selling: {}
+    Announce: true
+  39eba734-63e0-46c1-80b2-17dbdea6ea8e:
+    MaxHomesAllowed: 3
+    Money: 1655
+    Homes:
+      home: SurvivalWorld|-529.1515751086098|68.0|-4137.88458315551|-16.26006|21.75001
+      kenava: SurvivalWorld|-3453.953405274455|68.0|738.9781734513016|-357.7|19.949997
+    JobInfo:
+      Name: FARMER
+      Level: 0
+      XP: 1
+    MerchantInfo:
+      Selling:
+        '111':
+          Type: MELON
+          Durability: 0
+          Amount: 64
+          Price: 180
+  d2e51e91-cf7d-4ea7-9540-50036bf282bb:
+    MaxHomesAllowed: 3
+    Money: 50
+    Homes:
+      home: SurvivalWorld|-3578.4241155171126|73.0|3503.9917140160287|-90.65694|-0.29998493
+    JobInfo:
+      Name: NETHER_EXPERT
+      Level: 0
+      XP: 0
+  9b6d3590-a9f5-4e33-a3a5-d45571f22b10:
+    MaxHomesAllowed: 25
+    Money: 823
+    Homes:
+      village: SurvivalWorld|-716.6942798897809|69.0|1250.8082666907403|-88.64908|-5.250014
+      snowbase: SurvivalWorld|5748.039383360863|97.0|-4079.4412735594524|-291.8256|-9.749959
+      vault: SurvivalWorld|-568.5085135682657|15.0|168.02389023204842|-103.70581|21.900038
+      buitenhuisje: SurvivalWorld|2564.635566153104|72.0|-1542.6134757027712|-208.72021|12.890942
+      skycity: SurvivalWorld|-464.01164378300365|109.0|115.18682797994637|-183.20964|23.700005
+      shrine: SurvivalWorld|-5101.834121970553|79.0|2109.449200551597|-262.5586|11.249996
+      yt: SurvivalWorld|-3143.6576578028735|97.0|1561.7693258467698|160.2807|18.900059
+      desert: SurvivalWorld|7752.752052615843|64.0|5782.926263641761|216.18976|15.900116
+      sea: SurvivalWorld|9936.58112628404|63.0|7416.2002155896525|120.702484|5.6999545
+    JobInfo:
+      Name: MINER
+      Level: 0
+      XP: 51
+    MerchantInfo:
+      Selling:
+        '309':
+          Type: COBBLESTONE
+          Durability: 0
+          Amount: 64
+          Price: 5
+        '310':
+          Type: COBBLESTONE
+          Durability: 0
+          Amount: 64
+          Price: 5
+        '389':
+          Type: COBBLESTONE
+          Durability: 0
+          Amount: 64
+          Price: 5
+  be495f1c-573b-490a-bf7a-f4da1a03621f:
+    MaxHomesAllowed: 3
+    Money: 475
+    Homes:
+      home: SurvivalWorld|-3168.7748144416605|64.0|1648.3242245133285|351.08997|10.799972
+      survival: SurvivalWorld|-3441.947410526169|15.0|3784.1120651831843|13.742432|36.600002
+      mine: SurvivalWorld|-167.10066312431476|104.0|-3289.9909227995486|-206.91144|64.799904
+    JobInfo:
+      Name: LUMBERJACK
+      Level: 0
+      XP: 0
+  538cb826-d92b-4e8d-8bf3-84efe52f6b42:
+    MaxHomesAllowed: 3
+    Money: 53
+    Homes:
+      home: SurvivalWorld|-3371.7075398227225|69.0|1175.0666435237495|98.93962|32.249966
+      mertboederij: SurvivalWorld|-580.8127336199701|63.0|-316.8150559286314|-50.45581|0.750022
+      vis: SurvivalWorld|-3495.8053085482893|63.0|1075.3598129175982|-110.61255|14.100004
+    JobInfo:
+      Name: MINER
+      Level: 0
+      XP: 1
+  2c335d4b-ed22-4a38-8404-7746f9837aab:
+    Money: 45
+    MaxHomesAllowed: 3
+  6acf0b30-ccda-454b-adb8-5a19bfb6b5fe:
+    Money: 50
+    MaxHomesAllowed: 3
+    JobInfo:
+      Name: MINER
+      Level: 0
+      XP: 0
+  4c978bf8-9721-488e-af3b-06c6af47ad1b:
+    Money: 50
+    MaxHomesAllowed: 3
+  6bab8ecb-a88c-4307-bdf1-9fc7a9bc7ab8:
+    Money: 40
+    MaxHomesAllowed: 3
+    Homes:
+      dorp: SurvivalWorld|10385.340115588804|70.0|-1315.9821122922278|-182.64984|30.149988
+      air: SurvivalWorld|10591.878263058667|108.0|-1240.0361640462456|-87.107666|36.599926
+    JobInfo:
+      Name: MINER
+      Level: 0
+      XP: 0
+    MerchantInfo:
+      Selling:
+        '68':
+          Type: COBBLESTONE
+          Durability: 0
+          Amount: 21
+          Price: 14070
+  e55d0897-04e4-49a3-83a4-96549c5ff4ea:
+    MaxHomesAllowed: 3
+    Money: 3350
+    Homes:
+      home: SurvivalWorld|-3494.300000011921|64.0|-367.9419471907587|-148.16656|22.761951
+      wit: SurvivalWorld|-2979.061905157799|87.0|3447.2173521669924|-86.460045|7.1446157
+      tocht: SurvivalWorld|-458.91256402189697|64.0|2904.589346321468|-272.19702|80.84998
+  a5abc690-b20d-4713-9479-b4857d77304d:
+    MaxHomesAllowed: 3
+    Money: 50
+    Homes:
+      home: SurvivalWorld|-2007.0263440663887|63.0|676.8480129462836|4.6402893|36.5472
+      kingdom: SurvivalWorld|-3451.7232721049754|68.0|-3545.3523738646118|-153.75818|10.127999
+  95f5b8cf-1f9b-4eed-80b2-d53988a87f1e:
+    Money: 50
+    MaxHomesAllowed: 3
+  8ee34913-3b8e-48f4-a264-e403ef2c6c87:
+    Money: 50
+    MaxHomesAllowed: 3
+    Homes:
+      home: SurvivalWorld|2574.383724516834|60.0|1719.1986810802157|-124.75006|21.450045
+  a66d37e5-f4f9-4d31-b3a7-d946b58ccee5:
+    Money: 50
+    MaxHomesAllowed: 3
+  bcc2422d-9d37-4f25-bdaa-1e15c6a725fb:
+    Money: 50
+    MaxHomesAllowed: 3
+  3844112d-9e95-4589-b874-36229aa34463:
+    Money: 50
+    MaxHomesAllowed: 3
+  cef4ba59-f58c-47b3-b3b9-ebd2f83029b9:
+    MaxHomesAllowed: 25
+    Money: 225
+    Homes:
+      home: SurvivalWorld|2907.140174331367|27.0|-1456.0358666862508|154.851|9.899934
+      '1': SurvivalWorld|2907.140174331367|27.0|-1456.0358666862508|192.05103|-13.9500675
+  46760fdf-bf9d-4309-b898-77f251a023b4:
+    Money: 50
+    MaxHomesAllowed: 3
+    JobInfo:
+      Name: LUMBERJACK
+      Level: 0
+      XP: 0
+  34b36a4c-a4f1-441e-af1a-c6cb7dc30459:
+    MaxHomesAllowed: 3
+    Money: 50
+    Homes:
+      home: SurvivalWorld|-1852.1069079157362|75.0|2458.581981682129|355.8908|16.722086
+  03a3e19b-5f97-40bb-9257-185bd667f564:
+    Money: 50
+    MaxHomesAllowed: 3
+  8d53dd31-f546-4200-a8ae-7a7ca8bd959b:
+    Money: 50
+    MaxHomesAllowed: 3
+  ae35cfc5-79a0-42b0-a97f-71644efe5216:
+    MaxHomesAllowed: 3
+    Money: 1086
+    Homes:
+      home: SurvivalWorld|-3374.219390443621|77.0|1182.211234980068|-201.6961|37.649857
+      mannenhall: SurvivalWorld|1051.5311742669141|44.0|2775.5000278519015|-270.27087|1.2000477
+      toren: SurvivalWorld|9447.845556524515|63.0|10615.421322109778|-190.15186|47.70001
+  2b2104ec-6523-4528-a756-d2d03c318ad1:
+    Money: 50
+    MaxHomesAllowed: 3
+  67737b0e-9ba9-4d00-af9d-c74d98cb4eff:
+    MaxHomesAllowed: 3
+    Money: 50
+    Homes:
+      home: SurvivalWorld|-1831.4127693441392|64.0|-1225.847967710213|-252.80835|24.599997
+      kd: SurvivalWorld|-1844.3213536857556|68.0|-1230.6357090603385|-357.95853|18.000015
+    JobInfo:
+      Name: LUMBERJACK
+      Level: 0
+      XP: 0
+    MerchantInfo:
+      Selling:
+        '58':
+          Type: LOG
+          Durability: 0
+          Amount: 64
+          Price: 500
+        '59':
+          Type: LOG
+          Durability: 0
+          Amount: 64
+          Price: 500
+        '60':
+          Type: LOG
+          Durability: 0
+          Amount: 64
+          Price: 500
+  5fb41351-25a2-4c5e-baa2-c514a49e5c99:
+    Money: 50
+    MaxHomesAllowed: 3
+    Homes:
+      home: SurvivalWorld|-3506.6407659479523|64.0|-344.23750001192093|122.326416|-8.718087
+      '2': SurvivalWorld|-3470.4303573871807|69.0|-241.67449957444651|312.52655|22.499994
+  86c2ea78-5299-4831-835c-241bd29e806b:
+    MaxHomesAllowed: 50
+    Money: 2904
+    Homes:
+      home: SurvivalWorld|-1275.4059075778905|71.0|-190.09229349270984|-273.75085|6.450089
+      dorp2: SurvivalWorld|1273.5905591483954|64.0|-4251.873130702746|-2.9137573|3.5999985
+      lors: SurvivalWorld|2757.8130741900236|88.0|-377.823200785802|-92.910774|17.550013
+      spawner: SurvivalWorld|2686.663533253634|71.0|-4325.373788770919|-262.5602|26.700012
+      berulas: SurvivalWorld|2588.773753036438|64.0|763.0310368772834|-96.359924|13.649913
+      kolkje: SurvivalWorld|2543.424955828353|67.0|-1626.7259826960017|-4.4500995|19.949972
+      jim: SurvivalWorld|10362.125420826784|69.0|-1319.142776514128|87.677124|18.513597
+      jona: SurvivalWorld|2622.368448324667|81.0|721.447734352264|-148.77197|38.24998
+      stad: SurvivalWorld|2609.2513210640427|63.0|456.74712464342343|-89.524796|24.040945
+      mine: SurvivalWorld|2624.016756008408|11.0|1239.6777624104845|-0.74121094|9.149936
+      noeras: SurvivalWorld|-1980.9183552356735|70.0|-4237.2940151962175|261.5398|23.849993
+      kamer: SurvivalWorld|-500.6230465010301|83.0|-1262.864379197048|-131.41486|17.888378
+      bed: SurvivalWorld|2582.627069107481|103.0|860.9101811527905|-246.66364|14.849983
+      farm: SurvivalWorld|2535.251038689818|91.0|877.3083151476958|-283.26385|16.949991
+      merijn: SurvivalWorld|2583.6731597987505|71.0|-1288.669573151792|-86.49878|18.749958
+      Huis: SurvivalWorld|-3389.7580449380375|68.0|733.654831305178|27.049932|3.9000046
+      berula2: SurvivalWorld|2718.9677393688003|68.0|943.9596812535357|-92.46008|46.799988
+    JobInfo:
+      Name: NETHER_EXPERT
+      Level: 0
+      XP: 0
+  6ab66ed5-1149-486e-b65c-b8165bea5dee:
+    Money: 50
+    MaxHomesAllowed: 3
+    JobInfo:
+      Name: HUNTER
+      Level: 0
+      XP: 0
+  198a9f60-4d07-4d9d-bd03-a17e846a22b7:
+    MaxHomesAllowed: 3
+    Money: 73
+    Homes:
+      huis4: SurvivalWorld|-3455.5380029587386|60.0|-196.55935821841743|87.22803|90.0
+      huis1: SurvivalWorld|-1332.6343446238216|75.0|-145.23750001192093|-2.492172|60.429092
+      homeplay: SurvivalWorld|-3154.5980672201345|64.0|1662.5701172233935|32.039978|31.950012
+  9e27e79d-0b68-4d27-9085-9e598ece442a:
+    MaxHomesAllowed: 3
+    Money: 50
+    JobInfo:
+      Name: ANIMAL_FARMER
+      Level: 0
+      XP: 0
+  00550777-c852-4453-91f0-98e33d471052:
+    Money: 50
+    MaxHomesAllowed: 3
+  8b8e93d9-0c34-4940-9fbb-c4ab327c8d75:
+    Money: 100
+    MaxHomesAllowed: 3
+    JobInfo:
+      Name: NETHER_EXPERT
+      Level: 0
+      XP: 0
+    MerchantInfo:
+      Selling: {}
+  91500930-2f1a-49d1-b92e-2e7d3c9af9b5:
+    Money: 50
+    MaxHomesAllowed: 3
+    JobInfo:
+      Name: MINER
+      Level: 0
+      XP: 0
+  72a9ce65-2240-4ad8-9300-ce6ec2207d3c:
+    Money: 50
+    MaxHomesAllowed: 3
+    Homes:
+      boom: SurvivalWorld|-3237.4891718899544|66.0|1801.373395253947|-175.18651|80.38086
+  874f2369-be8e-4bc5-931e-618da00ec78b:
+    MaxHomesAllowed: 3
+    Money: 50
+    JobInfo:
+      Name: MINER
+      Level: 0
+      XP: 0
+  51935659-5a50-40e9-af66-81df0e3728f3:
+    Money: 74
+    MaxHomesAllowed: 3
+    Homes:
+      Huis: SurvivalWorld|-1562.308942924095|69.0|-123.23276938000046|-358.69714|16.453903
+      B: SurvivalWorld|-1557.50254106094|63.0|215.10599753037718|-33.484467|24.30286
+    JobInfo:
+      Name: NETHER_EXPERT
+      Level: 0
+      XP: 3
+    MerchantInfo:
+      Selling: {}
+  f986291a-ed1a-4777-9d45-798c334c818e:
+    MaxHomesAllowed: 3
+    Money: 50
+  013433a1-ef78-40b2-8c21-02ef9f7bfe3c:
+    Money: 0
+    MaxHomesAllowed: 3
+    JobInfo:
+      Name: MINER
+      Level: 0
+      XP: 0
+  e614a99a-7853-4114-b41d-b7900af3e254:
+    MaxHomesAllowed: 3
+    Money: 2499
+    Homes:
+      Bastrooper: SurvivalWorld|-3559.7037846601493|64.0|-4249.113301677081|69.80606|6.1500173
+    JobInfo:
+      Name: MINER
+      Level: 0
+      XP: 5
+    MerchantInfo:
+      Selling:
+        '356':
+          Type: REDSTONE
+          Durability: 0
+          Amount: 51
+          Price: 110
+  2736dd48-8b8d-4c16-b30b-ba0437eaf020:
+    Money: 50
+    MaxHomesAllowed: 3
+    JobInfo:
+      Name: LUMBERJACK
+      Level: 0
+      XP: 0
+  3d86d33a-ca76-4352-b47c-73179d163fa8:
+    Money: 50
+    MaxHomesAllowed: 3
+  06d0b2a6-5413-4417-8386-d38151286003:
+    Money: 50
+    MaxHomesAllowed: 3
+  34b3cc5d-0998-4fa2-881d-7d0f24897968:
+    Money: 50
+    MaxHomesAllowed: 3
+  d03ee0ab-1d74-4127-b3ed-b2230b3b5a71:
+    Money: 50
+    MaxHomesAllowed: 3
+  7264a4c2-a3f5-4153-8271-a3936369f326:
+    Money: 50
+    MaxHomesAllowed: 3
+  bc6b26d1-9ca4-4625-9e04-77baaf94a923:
+    MaxHomesAllowed: 25
+    Money: 0
+  beeac132-bcaf-40c1-be49-6b8b9b5a23d1:
+    Money: 50
+    MaxHomesAllowed: 3
+    JobInfo:
+      Name: MINER
+      Level: 0
+      XP: 0
+  03677ebe-a243-4f59-bdc2-cde6583bc07f:
+    Money: 50
+    MaxHomesAllowed: 3
+  a020cba3-d7f4-49bb-b639-dcf3d2f6c5a4:
+    MaxHomesAllowed: 3
+    Money: 50
+    Homes:
+      home: SurvivalWorld|-3690.7169479795634|34.0|2515.699999988079|198.06238|30.728271
+      huis: SurvivalWorld|2576.1733393124337|64.0|2633.300000011921|-184.45004|36.449997
+      farm: SurvivalWorld|2589.6734404108993|63.0|2643.40873762266|-155.64996|90.0
+  d4d84f12-99d8-4cb8-b736-eb127ffd59b4:
+    MaxHomesAllowed: 3
+    Money: 51
+    Homes:
+      home: SurvivalWorld|-3411.3120167632655|57.0|-229.25645684801495|-33.359924|19.950047
+      neu: SurvivalWorld|-3418.769530905289|63.0|-411.5403342042682|90.39048|20.550058
+      '2': SurvivalWorld|-3260.8906505902255|63.0|-189.20195755857313|301.14282|38.40003
+    JobInfo:
+      Name: FARMER
+      Level: 0
+      XP: 0
+  c32e2703-91bf-42fb-ad9f-6db57f393abc:
+    Money: 50
+    MaxHomesAllowed: 3
+    JobInfo:
+      Name: LUMBERJACK
+      Level: 0
+      XP: 1
+    Homes:
+      home: SurvivalWorld|-3417.699999988079|57.0|-226.30000001192093|-136.4535|55.049953
+      new: SurvivalWorld|-3511.3178123513944|11.0|-275.5908940568228|-69.97657|38.399933
+      mine: SurvivalWorld|-3333.4814803005233|11.0|-274.30000001192093|9.787598|14.6999235
+    MerchantInfo:
+      Selling: {}
+  46be4262-b23c-45cd-bf5e-1dc52a3bc1e9:
+    Money: 50
+    MaxHomesAllowed: 3
+    Homes:
+      home: SurvivalWorld|-3414.4955328341525|57.0|-231.42104011961794|-57.63159|10.172657
+    JobInfo:
+      Name: HUNTER
+      Level: 0
+      XP: 0
+  b4c5c4a3-9d1b-4417-a71b-0619e3fe0729:
+    MaxHomesAllowed: 25
+    Money: 50
+    Homes:
+      home: SurvivalWorld|10399.08333336574|63.0|-1252.9191641331413|215.4805|12.899959
+      jungle: SurvivalWorld|889.7624999880791|93.0|-2513.618136236536|-142.55919|16.650126
+      potion: SurvivalWorld|-528.2762555797952|68.0|-4225.3911033808845|15.830033|12.513408
+      lol: SurvivalWorld|-3674.394794726316|67.0|-3235.237083464188|-121.858734|-2.3999982
+      loot: SurvivalWorld|2463.3343618137005|70.0|-1265.3412924739775|-173.32928|33.716747
+      dia: SurvivalWorld|1098.6565292734037|64.0|-4268.33568725822|-49.580414|24.724115
+      enchant: SurvivalWorld|2536.593926170513|20.0|-1637.388989661979|272.71506|41.82641
+      cave: SurvivalWorld|-433.770229761627|55.0|-4022.915133815962|-199.5938|-7.014503
+      boven: SurvivalWorld|-529.8608381881126|84.0|-4225.413324207985|-44.47339|12.939115
+      xp: SurvivalWorld|-526.395222895688|69.0|-4134.937251776605|-48.90576|17.424187
+      yolo: SurvivalWorld|-465.3277258468854|72.0|-4204.253693909323|-343.73315|8.854724
+      kopie: SurvivalWorld|-510.6697446114352|61.0|-4204.018485875936|-217.08047|12.557535
+      hout: SurvivalWorld|-1920.339298474831|72.0|-3312.6370897397846|-185.52725|7.2678337
+      gravel: SurvivalWorld|-3763.872470956069|61.0|-128.92873297914264|-310.74426|31.030165
+      farm: SurvivalWorld|-502.90830558287973|69.0|-4152.324244610588|-112.79834|66.51337
+      huis: SurvivalWorld|-427.5|67.0|-4210.5|-104.46526|44.82527
+      riraroe: SurvivalWorld|-3502.860348731504|65.0|-1282.2843662790472|-79.86486|36.539394
+      kasteel: SurvivalWorld|-3499.950586852949|64.0|-1282.3972164696906|-79.86486|36.539394
+    JobInfo:
+      Name: NETHER_EXPERT
+      Level: 0
+      XP: 0
+    MerchantInfo:
+      Selling:
+        '95':
+          Type: NETHERRACK
+          Durability: 0
+          Amount: 64
+          Price: 11006
+  7ae51b12-2feb-4d57-a1fa-dc5a4c6a8179:
+    MaxHomesAllowed: 3
+    Money: 525
+    Homes:
+      home: SurvivalWorld|-463.30000001192093|67.0|-4201.160748584893|86.449844|19.799973
+    JobInfo:
+      Name: NETHER_EXPERT
+      Level: 0
+      XP: 0
+  f646810a-5131-42bc-b625-001e433fe9e8:
+    Money: 50
+    MaxHomesAllowed: 3
+  ecc43797-1fd5-42e2-8092-f32ffc348c43:
+    Money: 50
+    MaxHomesAllowed: 3
+  85428ae1-d6ab-4fa0-961f-c8b9ae126d5b:
+    Money: 50
+    MaxHomesAllowed: 3
+  df2b18dd-11a9-43a8-868d-6d21f3ba1a64:
+    Money: 50
+    MaxHomesAllowed: 3
+  265d140f-b21d-4da4-bf72-1799f2830e2d:
+    Money: 50
+    MaxHomesAllowed: 3
+  6d46b0d3-8f9b-4c41-93fc-cfd9281dcd0e:
+    MaxHomesAllowed: 3
+    Money: 50
+  07acc52c-04cb-4a15-b6b8-d416a8f2cb37:
+    Money: 50
+    MaxHomesAllowed: 3
+  c486cd3c-595e-406c-a12b-a7efcca2ec19:
+    Money: 50
+    MaxHomesAllowed: 3
+  7a8d6dee-c4b4-4a18-b77b-494d35cd3924:
+    Money: 50
+    MaxHomesAllowed: 3
+  f5da4b3a-0626-4888-b80e-997735b57139:
+    MaxHomesAllowed: 3
+    Money: 50
+    Homes:
+      home: SurvivalWorld|-3405.7804393482065|70.0|3594.187237431589|82.204025|42.528904
+    JobInfo:
+      Name: LUMBERJACK
+      Level: 0
+      XP: 0
+    MerchantInfo:
+      Selling:
+        '158':
+          Type: LOG
+          Durability: 1
+          Amount: 64
+          Price: 3000
+        '281':
+          Type: LOG
+          Durability: 1
+          Amount: 64
+          Price: 3184
+  768cfe0c-c0d2-46ef-85d1-6cfcedad346a:
+    Money: 50
+    MaxHomesAllowed: 3
+  f4fcfb1a-2edd-47d6-8b31-e9afa8b47d51:
+    Money: 50
+    MaxHomesAllowed: 3
+  8cf6cce0-99fd-4924-9fb0-282d5943baf8:
+    MaxHomesAllowed: 3
+    Money: 50
+    JobInfo:
+      Name: HUNTER
+      Level: 0
+      XP: 0
+  f5d2b5ea-25a3-4632-80ba-a6b32c9c8944:
+    Money: 50
+    MaxHomesAllowed: 3
+  74dae0af-9a5e-4bac-b763-03c3a31a3574:
+    Money: 100
+    MaxHomesAllowed: 3
+  e50e3016-be6a-45e7-bdc2-c2b2aa143c8d:
+    Money: 50
+    MaxHomesAllowed: 3
+  fe7caa6d-136e-4698-a300-a3e3f38d1631:
+    Money: 50
+    MaxHomesAllowed: 3
+  6e9cc926-7cc6-4105-817e-73cc0e4b5241:
+    MaxHomesAllowed: 3
+    Money: 1100
+    Homes:
+      home: SurvivalWorld|980.5|71.0|-46.5|182.09969|18.14998
+      base: SurvivalWorld|949.0350578501302|55.0|2631.699999988079|1.3999329|35.85
+      home2: SurvivalWorld|1000.9263704340058|28.0|2690.2728229146746|254.00055|5.9999514
+    JobInfo:
+      Name: FARMER
+      Level: 0
+      XP: 0
+  8a9f1635-684b-4604-9efe-7dfedf36f13e:
+    Money: 50
+    MaxHomesAllowed: 3
+  6d5b0224-c7e9-42a7-9440-92cae0484e68:
+    Money: 50
+    MaxHomesAllowed: 3
+  aae11e34-8742-4c1d-aa88-8224d21f113e:
+    Money: 50
+    MaxHomesAllowed: 3
+  0662201c-f584-4053-bbcd-fffc104f1ad8:
+    Money: 50
+    MaxHomesAllowed: 3
+    JobInfo:
+      Name: MINER
+      Level: 0
+      XP: 0
+    Homes:
+      pokemon: SurvivalWorld|-234.22207791571125|67.0|3863.038495120306|-80.800026|30.300003
+  25747ff3-8e78-4125-b0ae-c09fdf08f91c:
+    Money: 50
+    MaxHomesAllowed: 3
+  ca26461b-bb4c-4fd5-98e0-18e5d1511c0e:
+    Money: 50
+    MaxHomesAllowed: 3
+  3d02d925-305b-43fd-a85b-536e02ce5659:
+    MaxHomesAllowed: 3
+    Money: 3985
+    Homes:
+      mobs: SurvivalWorld|-522.46581981162|69.0|-4118.186189862148|-95.310074|27.900034
+      home: SurvivalWorld|-198.5456148425422|211.0|-3115.070900080323|-3.3579712|16.949911
+      mine: SurvivalWorld|-199.69999998807907|31.0|-3080.594896083652|-93.20758|28.499937
+    JobInfo:
+      Name: MINER
+      Level: 0
+      XP: 1
+    MerchantInfo:
+      Selling: {}
+  e120eb87-8324-4feb-8b1d-4448ea1eb7ec:
+    Money: 50
+    MaxHomesAllowed: 3
+  ea253660-a053-4bea-9657-30c5b8cbc189:
+    Money: 50
+    MaxHomesAllowed: 3
+    Homes:
+      home: SurvivalWorld_nether|475.37560678344164|122.0|108.93164682659652|352.54727|27.900017
+      SPAWNER: SurvivalWorld|973.1842536944096|63.0|1793.866597305478|84.80023|24.60008
+      house: SurvivalWorld|2640.4362978021527|63.0|667.7116410188156|-248.35266|28.200031
+  1217c6d4-fa4f-408e-bb92-f185294aed29:
+    Money: 50
+    MaxHomesAllowed: 3
+  e40f01b1-767d-4cc1-87f7-67a831b82ce4:
+    Money: 50
+    MaxHomesAllowed: 3
+  072a92a8-4ae4-4cfb-a9d7-8c99c79d1d4d:
+    Money: 49
+    MaxHomesAllowed: 3
+  44f65cb5-d74e-4537-91f3-503c955d9ffc:
+    Money: 50
+    MaxHomesAllowed: 3
+  8f87ea15-9fa1-4310-8e5b-38f0fc9ee617:
+    Money: 50
+    MaxHomesAllowed: 3
+    Homes:
+      home: SurvivalWorld|1033.5675410297572|71.0|-4308.307148318481|-55.750793|33.749977
+  05798e41-0a7d-48eb-9ea4-d26b14426c09:
+    Money: 50
+    MaxHomesAllowed: 3
+  bfea976c-c82d-4d85-89c6-65f66de72286:
+    Money: 50
+    MaxHomesAllowed: 3
+  ba6b214b-b123-4af4-9e6c-cf8054cf785a:
+    Money: 50
+    MaxHomesAllowed: 3
+  d940db36-ae7e-40c2-a5ed-27f585bfe035:
+    Money: 50
+    MaxHomesAllowed: 3
+  e1cef4bf-f533-4fd6-8525-8f2d45f5a968:
+    Money: 50
+    MaxHomesAllowed: 3
+  c9d43689-2d71-44fe-8d4f-891241624376:
+    Money: 50
+    MaxHomesAllowed: 3
+  025cfe46-0993-479c-bdf2-02c43cb8a2c5:
+    Money: 50
+    MaxHomesAllowed: 3
+    Homes:
+      huis: SurvivalWorld|-460.4694250485494|67.0|-4201.236978745421|-276.39758|29.055035
+      huis2: SurvivalWorld|2664.775154570439|63.0|1376.8232812313324|98.5066|32.22017
+      mine: SurvivalWorld|-235.54807496469203|13.0|-4337.699999988079|79.88394|11.699909
+    JobInfo:
+      Name: MINER
+      Level: 0
+      XP: 0
+    MerchantInfo:
+      Selling:
+        '398':
+          Type: REDSTONE
+          Durability: 0
+          Amount: 64
+          Price: 1000
+        '399':
+          Type: COAL
+          Durability: 0
+          Amount: 55
+          Price: 500
+  a8601e1a-cb46-47ef-b21f-79eaf872e6b5:
+    MaxHomesAllowed: 3
+    Money: 50
+  e4f20940-1ec4-4125-bdc5-f786ed5b519d:
+    Money: 50
+    MaxHomesAllowed: 3
+    JobInfo:
+      Name: MINER
+      Level: 0
+      XP: 0
+  1a7e1f8c-3628-4199-a817-e61a732a5f52:
+    Money: 125
+    MaxHomesAllowed: 3
+  bcff4ed7-094a-4f56-bd1f-9b42cd2f90fa:
+    MaxHomesAllowed: 50
+    Money: 50
+    Homes:
+      home: SurvivalWorld|-368.4238959632005|63.0|-1383.5058368227824|-0.50944114|23.85002
+      mine: SurvivalWorld|2513.428251773782|61.0|581.5067629868591|236.04074|87.90002
+      woods: SurvivalWorld|-3684.7482813803213|68.0|-201.6761971750811|-280.5604|3.600021
+      spikes: SurvivalWorld|5960.822220983346|69.91284367681148|-3445.142812288575|-112.809135|10.350006
+      pika: SurvivalWorld|2592.106928711455|63.0|2662.4311474585134|99.1417|21.449974
+      igi: SurvivalWorld|-3627.0079287380636|71.0|950.7559268486814|-144.51001|25.650028
+      town: SurvivalWorld|1280.5273283576992|64.0|-4321.100439840067|-80.16028|-41.40001
+      wither: SurvivalWorld|2325.955248667843|58.0|-515.7342622584945|270.9582|14.850021
+      reis: SurvivalWorld|-4297.604619138972|63.0|4388.693609770251|-10.259674|7.3500066
+      ergens: SurvivalWorld|15897.434996847867|67.0|15780.300031281595|-236.65344|-0.29999885
+      jungle: SurvivalWorld|994.4753700007402|72.0|-3186.8555850515413|134.34026|14.249994
+      trust: SurvivalWorld|-1219.8489878483554|67.0|19.729802667677838|-53.310944|5.700043
+      help: SurvivalWorld|2522.0163834044724|107.38384826794358|-1217.0328895684943|-187.85841|56.55004
+      lui: SurvivalWorld|-393.7402500991681|70.0|-1282.5437511125601|-29.0094|24.45009
+      pop: SurvivalWorld|1255.3023941622441|91.0|10501.106877487451|-164.59113|23.59851
+      pony: SurvivalWorld|1854.8014930333782|75.0|-4468.114689201449|-32.907883|2.9999957
+      spawner: SurvivalWorld|4335.108340458956|64.0|-2898.6328400600055|191.69125|85.65004
+      vip: SurvivalWorld|2855.1398531043346|69.5|-1404.9914719012074|90.04314|21.392132
+      temple: SurvivalWorld|2342.699999988079|71.0|556.3000000119209|-142.25922|39.450005
+      wow_: SurvivalWorld|-457.98750001192093|90.20000004768372|88.69999998807907|72.54047|30.749992
+      ik: SurvivalWorld|2652.1243074468352|71.0|5127.155468908392|205.64178|7.050004
+      jason: SurvivalWorld|-1230.621568051985|58.0|45.9478695246153|287.63882|0.1500039
+      jelle: SurvivalWorld|-2008.4808869187468|11.0|-992.6667202706603|-25.246725|12.2999735
+      woust: SurvivalWorld|2371.300000011921|72.0|1131.300000011921|-47.30124|-3.599995
+      hakker: SurvivalWorld|-3453.5222694108315|71.0|-3555.4963342807496|269.79868|16.05001
+  b2632ca6-0487-42dd-b6d2-64a9b1be2a0b:
+    MaxHomesAllowed: 100
+    Money: 2028
+    Homes:
+      home: SurvivalWorld|2590.523694309321|97.0|864.5232722514173|161.61989|24.697737
+      second: SurvivalWorld|2785.024325223214|67.0|-431.51542015576547|77.94976|34.35
+      zyron: SurvivalWorld|1291.5261123185542|64.0|-4247.49652329675|181.13974|17.249975
+      noeras: SurvivalWorld|-1995.0066015968812|70.20000004768372|-4283.141246477109|-268.71002|34.64999
+      marioshop: SurvivalWorld|-1162.4375055015666|73.0|-140.07683036059072|180.60107|11.850015
+      eerstehuis: SurvivalWorld|-1274.6743746565157|72.0|-165.37347970513386|91.34983|6.449999
+      spawner: SurvivalWorld|2688.877174874065|71.0|-4325.523995288021|87.98889|-2.2499385
+      arens: SurvivalWorld|-1277.5059876688151|85.0|-165.54799103323012|270.00012|-3.300018
+      chickentown: SurvivalWorld|2505.65627516406|67.0|-1613.7636277077142|-1.2600098|5.6999636
+      desertvillage: SurvivalWorld|2585.614982376983|72.0|1027.3554045437738|339.246|15.899869
+      village2: SurvivalWorld|2622.3254921725593|70.0|1069.277113129775|122.04556|20.099993
+      mineshaft: SurvivalWorld|2685.339349303398|20.0|1098.5261850522306|-273.09888|39.300167
+      opnames: SurvivalWorld|2469.3945670671337|66.0|-1678.8586894260884|272.79092|22.350018
+      farian: SurvivalWorld|-1981.5945577561918|68.0|2667.7571293023693|87.49744|29.550001
+      trolldorp: SurvivalWorld|-3387.0151070881166|65.0|832.3000000119209|188.78995|36.899998
+      fortmetkoningstan: SurvivalWorld|-3480.960886288655|80.0|3727.1673742589232|262.8911|64.94998
+      stone: SurvivalWorld|-3560.2609695700025|74.0|3724.264763636528|86.19177|27.599974
+      vakantiepark: SurvivalWorld|-1312.699999988079|63.0|170.34853937046947|180.0028|19.950003
+      berula: SurvivalWorld|2588.1340145517174|97.0|861.0626791167224|188.79073|17.849983
+      brutuske02: SurvivalWorld|10385.40539283757|69.5|-1305.7235594644578|176.09259|8.10261
+      onderwaterstad: SurvivalWorld|2669.707061115379|51.0|447.63709245212453|270.62952|-1.4468287
+      huis: SurvivalWorld|2068.8638399806996|71.0|953.6074974328701|-122.1597|27.449972
+      mine: SurvivalWorld|2624.3237706994473|11.0|1243.6236112872139|274.99817|-6.6240816
+      corbyn: SurvivalWorld|-741.1749788820949|79.0|-1566.2425198629671|-27.839722|36.125446
+      lol: SurvivalWorld|2850.2969445290564|10.0|1274.4817412227906|267.49908|18.899742
+      luca: SurvivalWorld|-2000.326046691699|180.0|-2314.600849914978|13.042335|5.16942
+      parkour: SurvivalWorld|2777.7612355296474|132.0|-351.69999998807907|-76.48827|39.226135
+      dorpske: SurvivalWorld|-3430.199267288925|81.5|1202.5443401681125|95.51148|42.90167
+      vuurwerk: SurvivalWorld|1135.1546038647564|67.1344499731136|2731.434649845647|106.891785|14.249992
+      savvana: SurvivalWorld|2545.2117113212485|64.0|1474.8261999985443|192.66922|11.099939
+      merijnkamer: SurvivalWorld|2587.7566491010425|71.0|-1270.9941718077941|165.94617|21.600159
+      kevinhuus: SurvivalWorld|-3391.131144998003|68.0|735.617180033177|304.70166|23.40008
+      berula2: SurvivalWorld|2715.459165234424|71.0|943.9573255158404|268.57397|19.649649
+    JobInfo:
+      Name: NETHER_EXPERT
+      Level: 0
+      XP: 1
+    MerchantInfo:
+      Selling:
+        '409':
+          Type: NETHER_STALK
+          Durability: 0
+          Amount: 64
+          Price: 600
+        '410':
+          Type: NETHER_STALK
+          Durability: 0
+          Amount: 64
+          Price: 600
+  a95e5d59-74e3-4b95-8cbc-6916f354ce89:
+    Money: 50
+    MaxHomesAllowed: 3
+  7f250333-d705-46ae-93fa-bf48fa9cfd3a:
+    MaxHomesAllowed: 3
+    Money: 50
+    Homes:
+      home: SurvivalWorld|-3349.4208535281905|63.0|-244.0635923318071|102.64664|3.0000303
+  72a72a7b-0fbb-49e9-bca5-bbe4c328e095:
+    MaxHomesAllowed: 3
+    Money: 50
+  a645bb15-1198-4da1-953d-dbb250dc5261:
+    Money: 50
+    MaxHomesAllowed: 3
+  805293aa-38a3-4077-9c4c-727465c34725:
+    Money: 50
+    MaxHomesAllowed: 3
+  fa8e15f5-9f25-4fd6-9d08-5b3e6ee1380f:
+    Money: 50
+    MaxHomesAllowed: 3
+  749d266b-132d-405f-80df-4c7f42390c6e:
+    Money: 50
+    MaxHomesAllowed: 3
+  5e2deac2-01cd-4939-9e24-164b6acc937f:
+    Money: 50
+    MaxHomesAllowed: 3
+  823dc8f1-2f6d-4d82-b5d3-2661c4fb0083:
+    Money: 50
+    MaxHomesAllowed: 3
+  3f463611-98b0-410d-b5f2-f2753e54a874:
+    Money: 75
+    MaxHomesAllowed: 3
+  010422bd-c5f7-4c88-8551-b857604998cd:
+    Money: 50
+    MaxHomesAllowed: 3
+    Homes:
+      house: SurvivalWorld|-3254.3417932679877|73.0|-3268.9478247036573|-1.447998|37.500023
+  c7ded4a2-999d-4231-b0ed-ff315efb5c8f:
+    Money: 50
+    MaxHomesAllowed: 3
+  3af6e0f8-d892-4dca-8a84-faac85996465:
+    Money: 50
+    MaxHomesAllowed: 3
+  76ed368c-30b3-48f2-b31b-ab51e415f24a:
+    Money: 50
+    MaxHomesAllowed: 3
+  1c6419db-8484-497e-8f48-2b90825b41c2:
+    MaxHomesAllowed: 3
+    Money: 75
+    Homes:
+      home: SurvivalWorld|-3280.0336453813984|63.0|588.7131158201295|9.9501295|7.3499904
+      michael: SurvivalWorld|-490.6527635703252|39.0|-1189.442154153487|160.45406|16.628067
+    JobInfo:
+      Name: HUNTER
+      Level: 0
+      XP: 0
+  6522ee45-d420-46d9-8368-9776ff794587:
+    Money: 50
+    MaxHomesAllowed: 3
+  a341a6f0-450c-4638-a962-cdf4fce1176a:
+    Money: 50
+    MaxHomesAllowed: 3
+  9a73501e-9b6d-4058-859a-3842c75454ec:
+    Money: 50
+    MaxHomesAllowed: 3
+    JobInfo:
+      Name: HUNTER
+      Level: 0
+      XP: 0
+  09a715aa-c3ab-4a2b-b0f9-731bc79d70c0:
+    MaxHomesAllowed: 3
+    Money: 75
+    JobInfo:
+      Name: MINER
+      Level: 0
+      XP: 0
+  2447f48c-0eb2-414c-a03d-b06ec4a87c99:
+    Money: 50
+    MaxHomesAllowed: 3
+  af0663e0-5700-49ea-827b-42e8782e6165:
+    Money: 50
+    MaxHomesAllowed: 3
+    JobInfo:
+      Name: MINER
+      Level: 0
+      XP: 0
+    Homes:
+      huis: SurvivalWorld|2339.180488759846|64.0|-1068.0572945084768|357.43115|8.489353
+  1b9a6050-31ec-48c9-aae1-ffe3edbb39c5:
+    Money: 50
+    MaxHomesAllowed: 3
+  cecc75b8-3e3e-42c9-9b52-faafe3e11c95:
+    Money: 50
+    MaxHomesAllowed: 3
+  efa87767-ba74-45d3-9416-e2de943a7525:
+    Money: 75
+    MaxHomesAllowed: 3
+    Homes:
+      home: SurvivalWorld|-3238.699999988079|66.0|1801.300000011921|251.90015|62.550026
+      cavespider: SurvivalWorld|-3247.3820709461475|21.0|1749.874444134918|-240.32469|19.917665
+      base: SurvivalWorld|-607.0105654222521|75.0|-3465.417245033894|-288.14783|1.4443319
+    JobInfo:
+      Name: MINER
+      Level: 0
+      XP: 0
+    MerchantInfo:
+      Selling: {}
+  666fe26b-7099-47db-8125-64354756d205:
+    Money: 50
+    MaxHomesAllowed: 3
+  f1b3da89-204e-4f17-b7ee-1c777277a23d:
+    MaxHomesAllowed: 25
+    Money: 50
+    Homes:
+      home: SurvivalWorld|2340.5|71.0|-612.5|-269.12393|5.695015
+      ondergrond: SurvivalWorld|2413.589947791659|63.0|-1582.0576327455458|121.49844|9.150062
+      explore: SurvivalWorld|-40000.51645634925|65.0|-40000.49461893649|0.027067283|12.750024
+      mushroom: SurvivalWorld|2555.0924449612485|63.0|-3742.881268857288|-2.7733154|35.55004
+      shared: SurvivalWorld|-14794.703408422141|67.0|-15254.672114465613|133.37372|15.299925
+      witch: SurvivalWorld|-14828.413291111821|63.0|-15340.708736706396|37.824127|28.350008
+      breeding: SurvivalWorld|3613.620548504465|63.0|-705.6901353199414|74.20996|69.89991
+      chunk: SurvivalWorld|-20431.448648197365|63.0|-23951.450469566953|-0.002078247|34.79998
+      walt: SurvivalWorld|-724.2723943950674|43.0|302.5261629808317|-71.18346|28.34996
+      zyron: SurvivalWorld|1280.4867134121955|64.0|-4308.316847262863|-0.059814453|11.400001
+      gigi: SurvivalWorld|-1368.978517719444|70.0|-135.24456668642384|259.89038|24.59997
+      yhy: SurvivalWorld|2754.300000011921|32.0|-4394.300000011921|225.24066|16.349997
+      base: SurvivalWorld|1311.699999988079|69.0|10692.699999988079|-224.99988|23.099962
+      spikes: SurvivalWorld|-6964.699999988079|69.0|-1284.4468874376478|91.14044|14.999948
+      witchy: SurvivalWorld|-14268.491763691982|63.015625|-16202.408348916048|340.67386|17.700018
+      daanhotel: SurvivalWorld|2626.699999988079|64.0|678.3000000119209|36.69122|29.85004
+      find: SurvivalWorld|2423.1036223718365|115.0|-727.7253949710955|330.4243|19.649925
+    JobInfo:
+      Name: LUMBERJACK
+      Level: 0
+      XP: 0
+  98cf4bd2-1005-4495-ab1d-b4bbedb3f46b:
+    Money: 50
+    MaxHomesAllowed: 3
+    JobInfo:
+      Name: HUNTER
+      Level: 0
+      XP: 0
+  ede83763-e56c-4b39-b21b-4833f03d0b12:
+    Money: 50
+    MaxHomesAllowed: 3
+  2753a69c-f62c-46b1-9eeb-4fb40bf1fa41:
+    MaxHomesAllowed: 50
+    Money: 50
+    JobInfo:
+      Name: NETHER_EXPERT
+      Level: 0
+      XP: 0
+    Homes:
+      hoii: SurvivalWorld|-504.69999998807907|58.0|3990.2022267933066|-194.05106|17.850101
+      hoii3: SurvivalWorld|-501.9589362821662|64.0|3995.4070720374675|-183.10092|21.150166
+      hoii2: SurvivalWorld|-599.2339707638603|9.0|3970.300000011921|-357.1215|32.85012
+  0d2d06a7-4988-4046-a38c-80f759f1ca90:
+    Money: 50
+    MaxHomesAllowed: 3
+    JobInfo:
+      Name: NETHER_EXPERT
+      Level: 0
+      XP: 0
+  1ec5feb4-9b14-4af5-947e-13fe6c8b123d:
+    Money: 50
+    MaxHomesAllowed: 3
+  ce86d69f-37d0-4759-b284-55091e6428d0:
+    Money: 50
+    MaxHomesAllowed: 3
+  bf5abf64-b142-4c2f-9370-2e85cdd17311:
+    MaxHomesAllowed: 3
+    Money: 1075
+    Homes:
+      home: SurvivalWorld|-3115.5164300826773|67.0|1676.9732152825457|-196.16064|22.499996
+      op: SurvivalWorld|-1234.0309912366915|67.0|5.7968182377807835|162.1676|-1.5456433
+      base: SurvivalWorld|-3438.5950663682734|16.0|1941.742258745373|-154.36531|59.299232
+    JobInfo:
+      Name: LUMBERJACK
+      Level: 0
+      XP: 2
+    MerchantInfo:
+      Selling:
+        '51':
+          Type: LOG_2
+          Durability: 1
+          Amount: 64
+          Price: 2000
+  06c14e30-bbe2-4e7e-a61d-e33876045e13:
+    Money: 50
+    MaxHomesAllowed: 3
+  ff94c5bf-6d68-49e4-bb49-f3e829295b51:
+    Money: 50
+    MaxHomesAllowed: 3
+  62687bed-fb7b-45b1-ae00-6305f5291172:
+    Money: 50
+    MaxHomesAllowed: 3
+  7f5c1239-3439-4513-b706-c0ea2b2666ac:
+    Money: 150
+    MaxHomesAllowed: 3
+    Homes:
+      home: SurvivalWorld|3078.4840726103134|93.0|1633.264419488093|-57.82776|35.175663
+    JobInfo:
+      Name: LUMBERJACK
+      Level: 0
+      XP: 0
+    MerchantInfo:
+      Selling:
+        '149':
+          Type: LOG
+          Durability: 1
+          Amount: 64
+          Price: 50
+        '150':
+          Type: LOG
+          Durability: 1
+          Amount: 64
+          Price: 50
+  31cb1aec-75fb-434e-ae0e-12bea796bef1:
+    Money: 50
+    MaxHomesAllowed: 3
+  4a987a99-a127-46b6-ba32-ea620c3c9188:
+    Money: 50
+    MaxHomesAllowed: 3
+  ffeced7c-1762-41eb-952c-edb7ea7a1cee:
+    Money: 50
+    MaxHomesAllowed: 3
+  80cbec1c-1943-49c1-a130-6b6074ca8876:
+    Money: 50
+    MaxHomesAllowed: 3
+  93404bc9-2c47-4830-96f2-93d876681049:
+    MaxHomesAllowed: 3
+    Money: 50
+    Homes:
+      huis: SurvivalWorld|-126.83498158624113|106.0|-1836.944518716406|244.72571|19.649979
+      luca: SurvivalWorld|-3475.630223375775|18.0|3746.5539087213656|-80.90765|23.400005
+  8c55392a-1181-4c6b-a630-637e3f7269af:
+    Money: 50
+    MaxHomesAllowed: 3
+  5b164107-d0b1-43cf-b8a9-22d4c41ff31f:
+    MaxHomesAllowed: 3
+    Money: 4180
+    JobInfo:
+      Name: MINER
+      Level: 0
+      XP: 24
+    Homes:
+      kasteel: SurvivalWorld|2238.101536249518|64.0|-1084.8976874368905|-171.84962|27.150011
+      village: SurvivalWorld|10344.405104744823|70.0|-1300.0883242558232|-67.500244|6.750005
+      temple: SurvivalWorld|10953.206829870176|63.0|95.34717929840346|-22.952423|36.300095
+    MerchantInfo:
+      Selling: {}
+  edc4a30d-f788-4a03-b68d-3877429f0e9d:
+    Money: 50
+    MaxHomesAllowed: 3
+  4899f773-1f6a-4e59-83ce-d295fa55db3e:
+    Money: 150
+    MaxHomesAllowed: 3
+  c1fa587f-4463-4576-bace-a70a01be006b:
+    Money: 50
+    MaxHomesAllowed: 3
+  7a95d639-5af9-4405-ac58-5612a551c732:
+    MaxHomesAllowed: 3
+    Money: 75
+    Homes:
+      home: SurvivalWorld|-3479.699999988079|18.0|3801.4410458521634|284.08215|19.200047
+  371740db-9cf7-4990-a3e5-72baef43b82e:
+    Money: 700
+    MaxHomesAllowed: 3
+    JobInfo:
+      Name: LUMBERJACK
+      Level: 0
+      XP: 1
+    Homes:
+      paleis: SurvivalWorld|2441.175102726963|64.0625|430.10511679119315|181.70065|17.849981
+      joman: SurvivalWorld|2538.424059452803|58.0|1230.4715118781312|-183.2511|5.8499722
+      basis: SurvivalWorld|-1744.095378854686|71.0|1586.1818615947695|175.99904|15.900025
+    MerchantInfo:
+      Selling:
+        '413':
+          Type: LOG
+          Durability: 3
+          Amount: 64
+          Price: 500
+  6b0a1143-d5f4-495b-b849-73bdb0e37900:
+    Money: 50
+    MaxHomesAllowed: 3
+  d1e86395-52fa-4721-a5e6-5efe2ca430de:
+    Money: 50
+    MaxHomesAllowed: 3
+  8cb71209-8e9a-4cae-b00c-b2dc73bef056:
+    Money: 50
+    MaxHomesAllowed: 3
+  81ff5de7-cc3a-460f-89d4-bc8e27ab23a7:
+    Money: 50
+    MaxHomesAllowed: 3
+  57436c80-4fb1-4a27-93d4-e259dfcb790a:
+    MaxHomesAllowed: 3
+    Money: 50
+    Homes:
+      home: SurvivalWorld|-655.25598642697|71.0|-4272.779146788797|-289.86053|15.750015
+      m: SurvivalWorld|-657.7458453409506|71.0|-4271.379233966974|-291.21085|19.200027
+  0f42276d-e09f-4bb4-9cf2-4751949fd09c:
+    Money: 50
+    MaxHomesAllowed: 3
+  d3f0bf32-8880-48b6-b47c-d3d5ba434f2c:
+    Money: 50
+    MaxHomesAllowed: 3
+  991bf424-cafd-439e-b678-ec59273eb0b2:
+    Money: 50
+    MaxHomesAllowed: 3
+  550a841a-d293-4e74-8391-e248578f8c07:
+    Money: 50
+    MaxHomesAllowed: 3
+  3350201c-3b22-402d-9555-d43306250f62:
+    Money: 50
+    MaxHomesAllowed: 3
+  435cbd30-c5ff-4df4-a914-f3c6b0300a3b:
+    Money: 50
+    MaxHomesAllowed: 3
+  f33dc9aa-7892-4735-afe2-5674a7fc10a0:
+    Money: 50
+    MaxHomesAllowed: 3
+  d5f08aff-85e3-44cb-a209-dd57145c428a:
+    MaxHomesAllowed: 3
+    Money: 450
+    Homes:
+      home: SurvivalWorld|-199.41698053016165|211.0|-3113.9712424119684|172.1409|25.950014
+  2b06da3b-065b-458d-9da9-4e1a6639387b:
+    Money: 50
+    MaxHomesAllowed: 3
+    JobInfo:
+      Name: MINER
+      Level: 0
+      XP: 0
+  7dca5692-8ff1-4109-8afe-bc29363f5955:
+    MaxHomesAllowed: 3
+    Money: 50
+    Homes:
+      home: SurvivalWorld|-3387.4353453610825|64.0|1219.0444230270805|-283.74942|28.649973
+      '2': SurvivalWorld|-594.4275454480776|63.0|-316.69999998807907|109.99548|35.999996
+      '3': SurvivalWorld|-1103.4123113474811|74.0|-2253.3307104967976|94.999115|14.7000065
+  002b44d6-13d3-468f-8f7c-510119a73a10:
+    MaxHomesAllowed: 3
+    Money: 1325
+    Homes:
+      lol!: SurvivalWorld|-1843.7430878262078|68.0|-1234.5040356959114|74.89734|27.599958
+      kasteel2: SurvivalWorld|-3441.8886062443926|68.0|-3555.699999988079|-304.59848|-26.250076
+      base: SurvivalWorld|2330.444667325266|64.0|-1208.2940174520136|-12.549866|15.300002
+    JobInfo:
+      Name: NETHER_EXPERT
+      Level: 0
+      XP: 0
+  2ddfc722-accb-477d-8fc7-8c7f6d23c15b:
+    Money: 1735
+    MaxHomesAllowed: 3
+    Homes:
+      kasteel: SurvivalWorld|2234.8810312352166|64.0|-1083.1573550761154|-174.54929|28.950003
+      dorp: SurvivalWorld|10399.900219667845|65.0|-1278.7325012960282|1.2203369|25.349989
+      fleur: SurvivalWorld|2400.380963563125|62.0|-2663.300000011921|357.7213|16.199991
+    JobInfo:
+      Name: FARMER
+      Level: 0
+      XP: 5
+    MerchantInfo:
+      Selling: {}
+  0e2a4e1f-3fb5-4728-8422-e0af11b12924:
+    Money: 50
+    MaxHomesAllowed: 3
+  8dcb6c26-6902-4149-86bf-f6b00ad50054:
+    Money: 50
+    MaxHomesAllowed: 3
+    JobInfo:
+      Name: HUNTER
+      Level: 0
+      XP: 0
+  6e99441b-9e6b-4570-bf08-4c370060f6a9:
+    Money: 50
+    MaxHomesAllowed: 3
+    JobInfo:
+      Name: MINER
+      Level: 0
+      XP: 0
+  7f018f50-7cb2-4d3d-b469-ff9de57afed4:
+    Money: 50
+    MaxHomesAllowed: 3
+  7a8bcad8-0367-4578-8c19-5831d771dfd0:
+    Money: 50
+    MaxHomesAllowed: 3
+    JobInfo:
+      Name: MINER
+      Level: 0
+      XP: 0
+    Homes:
+      home: SurvivalWorld|-443.31923295147294|85.0|-1284.7356987340113|-153.30238|16.77486
+  9171816c-752a-4f41-9b8f-e6df5432d1f4:
+    MaxHomesAllowed: 3
+    Money: 50
+    JobInfo:
+      Name: MINER
+      Level: 0
+      XP: 0
+  24947175-45d3-498f-9759-ada9801da0ab:
+    Money: 50
+    MaxHomesAllowed: 3
+  0150e338-2285-43c4-b396-ed0a936128da:
+    Money: 50
+    MaxHomesAllowed: 3
+  1eee0978-4f7b-4e59-88ef-3c6664006952:
+    MaxHomesAllowed: 3
+    Money: 89
+    Homes:
+      island: SurvivalWorld|3607.219124699291|67.0|320.8803505344108|73.86905|18.82604
+    JobInfo:
+      Name: NETHER_EXPERT
+      Level: 0
+      XP: 0
+    MerchantInfo:
+      Selling: {}
+  0028c0e3-bf2f-4288-9984-1026b7436ebb:
+    Money: 50
+    MaxHomesAllowed: 3
+  0fb27fb6-cd60-4321-8df6-127e6f881080:
+    Money: 50
+    MaxHomesAllowed: 3
+  df4230c7-32de-44be-bcf6-415f85e9b28a:
+    Money: 50
+    MaxHomesAllowed: 3
+  b2030ec4-1fa8-477f-bd59-38e8828f0e29:
+    Money: 50
+    MaxHomesAllowed: 3
+  00182e86-7798-4180-9272-57dc86f889c0:
+    Money: 36
+    MaxHomesAllowed: 3
+    JobInfo:
+      Name: MINER
+      Level: 0
+      XP: 2
+    MerchantInfo:
+      Selling:
+        '147':
+          Type: DIAMOND
+          Durability: 0
+          Amount: 1
+          Price: 1001
+  1590eba0-e404-4e82-b25c-5b9ee0c81f1b:
+    Money: 50
+    MaxHomesAllowed: 3
+    JobInfo:
+      Name: MINER
+      Level: 0
+      XP: 0
+    Homes:
+      home: SurvivalWorld|-3388.368215986658|64.0|1219.0962305084615|103.10082|51.74993
+      huis: SurvivalWorld|-3388.699999988079|64.0|1218.7888530594878|173.00084|39.449932
+  ba5c603b-def4-425f-907b-6988dce56a81:
+    Money: 50
+    MaxHomesAllowed: 3
+  a2e798e4-6791-43f9-be0e-0e2ee4dd3c83:
+    Money: 50
+    MaxHomesAllowed: 3
+  87798dcb-fb75-4648-b27d-a7439ab7fffd:
+    Money: 50
+    MaxHomesAllowed: 3
+    JobInfo:
+      Name: MINER
+      Level: 0
+      XP: 0
+  641d9367-3b1c-4e67-a730-f14282575f35:
+    Money: 50
+    MaxHomesAllowed: 3
+  6f71e8c5-d383-4482-ad35-1056e7afc012:
+    MaxHomesAllowed: 25
+    Money: 1250
+    Homes:
+      Arens: SurvivalWorld|-1355.7115635059859|70.0|-28.286087424867954|179.7533|9.449909
+      arens: SurvivalWorld|-1339.5|74.0|-48.5|-1.4998908|2.1000397
+      lors: SurvivalWorld|2731.5|88.0|-345.5|-90.359665|4.3499956
+      zyron: SurvivalWorld|1332.576800614603|64.0|-4281.803214876111|102.390625|1.0499258
+      spikes: SurvivalWorld|1240.0217592631418|68.0|4102.333851228858|-268.70752|4.349798
+      temple: SurvivalWorld|3229.06224618593|66.0|1242.5246846540415|271.59967|2.6998632
+      podzol: SurvivalWorld|-3461.3157184986994|85.0|3772.264482000868|275.34027|6.75001
+      mesa: SurvivalWorld|1020.9282051351506|87.0|10840.186323146456|178.5011|3.1501932
+      top: SurvivalWorld|-1359.0523697292917|150.0|-46.99092177942165|255.90625|14.25
+      stan: SurvivalWorld|-1338.4376689045564|65.0|31.559308552118495|-18.44992|3.150049
+      fangergo: SurvivalWorld|-1408.601291866591|81.0|-90.1694190077469|148.94888|8.4000435
+      supermario: SurvivalWorld|2864.545106167459|70.0|-1419.5463378133682|-296.6098|-1.6499954
+      cave: SurvivalWorld|2577.584213706859|11.0|786.2301500581725|142.00201|14.249887
+      mine: SurvivalWorld|-3755.8873529580947|26.0|1934.8997685019826|287.30725|-4.5001097
+      SeaCity: SurvivalWorld|3470.4579024087407|45.0|-4292.210712406887|180.97015|13.650019
+      mineshaft2: SurvivalWorld|3331.411100089794|19.0|-4302.722541545052|267.36517|27.75017
+      spawner: SurvivalWorld|3391.411858299678|23.0|-4347.920485182841|64.56067|19.199993
+      lava: SurvivalWorld|3266.5976771522082|11.0|-4353.72045232922|246.06006|19.950148
+      stripmine: SurvivalWorld|3348.0378107728393|11.0|-4647.868452600821|62.468994|16.649931
+      nether: SurvivalWorld_nether|651.8256228159213|67.0|-341.14997228635514|2.4741516|6.15004
+      island: SurvivalWorld|3345.2989827826564|170.0|-4437.9688457655775|207.07373|39.300068
+      plantcity: SurvivalWorld|3365.1084200112696|63.0|-4338.707630472554|270.66882|8.550032
+      end: SurvivalWorld|-1017.4990493418363|20.0|-485.6265013741084|-0.69973755|16.499933
+      seacity: SurvivalWorld|3382.334781046113|63.0|-4026.539565458671|340.11798|17.549894
+      seatemple: SurvivalWorld|3381.5578721869897|63.0|-4025.3128741573014|240.21973|33.299984
+    JobInfo:
+      Name: MINER
+      Level: 0
+      XP: 8
+    MerchantInfo:
+      Selling: {}
+  905f3723-6c59-4913-bd6f-89b3b4afa396:
+    Money: 50
+    MaxHomesAllowed: 3
+  47dc3a5d-73ec-4f7a-b735-2376b10a1929:
+    Money: 525
+    MaxHomesAllowed: 3
+    JobInfo:
+      Name: LUMBERJACK
+      Level: 0
+      XP: 0
+  b8a306a0-0f9f-434f-93c5-681ffa94dd58:
+    Money: 1175
+    MaxHomesAllowed: 3
+    Homes:
+      '1': SurvivalWorld|-1342.016616027189|65.0|44.20401002395691|-298.82376|9.620525
+      '2': SurvivalWorld|3433.191331510503|67.0|-4363.8349253900005|238.66429|16.083944
+      '3': SurvivalWorld|-3440.4557517774615|11.0|1941.300000011921|-317.91254|10.448324
+    JobInfo:
+      Name: LUMBERJACK
+      Level: 0
+      XP: 0
+  f85ffa2e-e609-4b99-bdcf-2bef259ab11b:
+    Money: 50
+    MaxHomesAllowed: 3
+  febf2ebc-5a31-466e-af33-c62880bdc2e0:
+    Money: 50
+    MaxHomesAllowed: 3
+  f323cc29-96b3-4830-8d2c-503d46ceabae:
+    Money: 50
+    MaxHomesAllowed: 3
+    Homes:
+      home: SurvivalWorld|-3351.119710702076|73.0|1725.4650821295406|91.99368|21.430376
+    JobInfo:
+      Name: HUNTER
+      Level: 0
+      XP: 0
+    MerchantInfo:
+      Selling:
+        '278':
+          Type: SPIDER_EYE
+          Durability: 0
+          Amount: 64
+          Price: 1000
+        '279':
+          Type: ROTTEN_FLESH
+          Durability: 0
+          Amount: 2
+          Price: 5
+  c46676f6-bc66-457f-b568-5abaf11c82dc:
+    MaxHomesAllowed: 3
+    Money: 150
+    Homes:
+      home: SurvivalWorld|-3391.5104159692055|76.0|1150.0135638965194|172.73975|6.8999553
+      Toren: SurvivalWorld|-3339.846776504819|230.0|1168.2893348570055|313.44214|5.3999877
+      zoo: SurvivalWorld|-3254.9787551921268|70.0|915.2917406349247|188.0396|22.34998
+  a417f261-71ed-47f7-8729-2f8c9ae578c7:
+    Money: 50
+    MaxHomesAllowed: 3
+    Homes:
+      home: SurvivalWorld|995.4485422983923|65.0|-136.56419268067629|-316.89883|13.500003
+  a75cbf3a-f532-484e-8077-874e4875e9e2:
+    Money: 50
+    MaxHomesAllowed: 3
+    Homes:
+      home: SurvivalWorld|2600.300000011921|64.0|702.3628187555984|-103.0|25.799988
+  179ea719-713f-4760-8c8f-17557937897f:
+    Money: 50
+    MaxHomesAllowed: 3
+  dea53ab3-a7a0-46b9-8dc1-4e13e1f3ede0:
+    Money: 50
+    MaxHomesAllowed: 3
+    Homes:
+      home: SurvivalWorld|2654.062911381629|63.0|733.2270272770228|300.20007|13.649918
+  d23961f4-26d0-4cba-84c3-0eecabd7b247:
+    Money: 50
+    MaxHomesAllowed: 3
+    Homes:
+      home: SurvivalLobby|-9.49004726549154|74.0|-2.1112747334175275|128.8157|11.185607
+  a4daf667-4d96-424f-bbd7-5dc15865e4d1:
+    Money: 50
+    MaxHomesAllowed: 3
+  6d26a436-05a5-410d-a022-44f32b339879:
+    Money: 50
+    MaxHomesAllowed: 3
+  d96fabb1-cd65-42e7-b3ec-10546441ecec:
+    Money: 50
+    MaxHomesAllowed: 3
+  0d978226-da33-4c29-af2d-b5da1b5f13c0:
+    Money: 150
+    MaxHomesAllowed: 3
+    JobInfo:
+      Name: MINER
+      Level: 0
+      XP: 0
+  d6a49b9b-1e4c-423d-9c35-545ad2129444:
+    Money: 50
+    MaxHomesAllowed: 3
+  001ca01c-aa77-462e-9273-84f4244faf28:
+    Money: 50
+    MaxHomesAllowed: 3
+    JobInfo:
+      Name: NETHER_EXPERT
+      Level: 0
+      XP: 0
+  3828df17-50ae-4d53-a878-6c3f3010cd86:
+    Money: 150
+    MaxHomesAllowed: 3
+    Homes:
+      huis: SurvivalWorld|2303.9772987818046|68.0|-1084.6705366965289|304.07214|13.4926815
+  6df57a21-5813-4c24-ad1a-551b8b1acb03:
+    Money: 50
+    MaxHomesAllowed: 3
+  6871e4a2-ac7a-4e22-856b-e3ed84c53479:
+    Money: 50
+    MaxHomesAllowed: 3
+  2903ba65-c032-435f-ae48-abddbf3d0c51:
+    Money: 50
+    MaxHomesAllowed: 3
+  3242d587-49bb-4f65-a9d2-9e0dbbdbdf46:
+    MaxHomesAllowed: 3
+    Money: 50
+    JobInfo:
+      Name: MINER
+      Level: 0
+      XP: 0
+    MerchantInfo:
+      Selling:
+        '151':
+          Type: DIAMOND
+          Durability: 0
+          Amount: 3
+          Price: 5100
+  173371a4-2b93-4da9-9f5b-5297ecddb0ae:
+    MaxHomesAllowed: 3
+    Money: 75
+    Homes:
+      pe: SurvivalWorld|-459.5809764269097|82.0|-982.3000000119209|-34.709564|36.000084
+      godja: SurvivalWorld|-480.2693449925811|69.0|-1471.2495310643205|-273.50967|5.999981
+  3826d530-c7dd-42d8-a158-5b4d9be342d3:
+    Money: 50
+    MaxHomesAllowed: 3
+  819c846d-6f8e-489d-a38a-0edb4a3fda9e:
+    Money: 50
+    MaxHomesAllowed: 3
+  893595bb-4f25-4d56-9ab8-082f613bdaf6:
+    Money: 50
+    MaxHomesAllowed: 3
+  6fc164db-909c-46f3-88f7-5889ed90b964:
+    Money: 50
+    MaxHomesAllowed: 3
+  8dd483c6-55a2-423b-b426-40c541bffd00:
+    Money: 50
+    MaxHomesAllowed: 3
+  fd665cdc-4c75-4b19-b6b5-2e94e52aa5f2:
+    Money: 50
+    MaxHomesAllowed: 3
+  32ba1589-ddb8-477f-b047-928d4e827381:
+    Money: 50
+    MaxHomesAllowed: 3
+    JobInfo:
+      Name: MINER
+      Level: 0
+      XP: 0
+  5800db14-7793-4cbd-ac9b-758cbd008f8e:
+    Money: 50
+    MaxHomesAllowed: 3
+    Homes:
+      home: SurvivalWorld|-543.0308519361073|72.0|-1235.4966434011994|210.3697|10.860077
+    JobInfo:
+      Name: HUNTER
+      Level: 0
+      XP: 0
+  5b274c0a-8efa-45b4-9a61-ec0dbdb3e878:
+    Money: 50
+    MaxHomesAllowed: 3
+  771a70c9-000d-4b18-bafe-608ea92b8d93:
+    Money: 50
+    MaxHomesAllowed: 3
+  b390da2b-3125-46d9-aa38-1b25d5a5cb17:
+    MaxHomesAllowed: 3
+    Money: 50
+    Homes:
+      home: SurvivalWorld|-184.18933882787468|62.0|350.69999998807907|48.60041|-6.975051
+  109a311e-f4a2-4da3-9ad6-d2f9d5bd1330:
+    Money: 50
+    MaxHomesAllowed: 3
+    JobInfo:
+      Name: NETHER_EXPERT
+      Level: 0
+      XP: 0
+    Homes:
+      home: SurvivalWorld|-432.95370336062234|80.0|-3275.6452086497225|-35.050076|30.900007
+  221c83ea-95ce-4f2c-a5d0-202f6d793c37:
+    Money: 50
+    MaxHomesAllowed: 3
+    Homes:
+      Mines: SurvivalWorld|-1895.2479080633516|30.0|800.5374552152614|262.92523|45.73506
+      '-999': SurvivalLobby|-24.19775871845487|74.0|12.208560953263193|-285.518|15.943763
+  a045ed62-2c1a-47e8-8138-0ffed9fb20b3:
+    Money: 50
+    MaxHomesAllowed: 3
+  6873bc06-9f57-433b-ab87-e0ad12fbe2ad:
+    Money: 50
+    MaxHomesAllowed: 3
+  ed55ce92-34e2-4a82-99ba-e8bebdae3648:
+    Money: 50
+    MaxHomesAllowed: 3
+  dfa6960f-7956-4b8d-9dbf-7b9fc4d247eb:
+    Money: 150
+    MaxHomesAllowed: 3
+    Homes:
+      home: SurvivalWorld|-3371.9822454485675|69.0|1174.7226250263113|348.05017|68.10003
+      '2': SurvivalWorld|9449.300000011921|36.0|10606.300000011921|-3.3991842|41.250004
+      wither: SurvivalWorld_nether|-86.61758082022521|70.0|-337.06753243216906|307.09842|19.049965
+    JobInfo:
+      Name: MINER
+      Level: 0
+      XP: 0
+    MerchantInfo:
+      Selling: {}
+  39529404-0ae7-45a6-9b5b-539057ced18f:
+    Money: 50
+    MaxHomesAllowed: 3
+  d2623f4d-850e-49ee-984a-33df6e8be65e:
+    Money: 50
+    MaxHomesAllowed: 3
+  116fb670-5793-4699-ab6c-9829473dc1cf:
+    Money: 50
+    MaxHomesAllowed: 3
+    Homes:
+      home: SurvivalWorld|2563.640955865983|69.0|-2489.1023897458945|-131.80011|27.299967
+      bastrooper: SurvivalWorld|2560.6542363043263|69.0|-2489.0948352772216|-21.40004|5.849984
+      Yoshi54_51: SurvivalWorld|2562.7554154995883|69.0|-2487.6788978774116|173.29797|18.599985
+  3e1398b1-a74a-4b4f-925e-a3951c3135f4:
+    Money: 50
+    MaxHomesAllowed: 3
+    Homes:
+      home: SurvivalWorld|3372.9818949776077|66.0|-4363.397985480473|124.6676|19.095896
+      arenze: SurvivalWorld|-1342.161794215448|78.0|-52.86177744541001|111.5354|13.262008
+      eiland: SurvivalWorld|3356.2163754105554|170.0|-4442.951248025039|211.50262|10.073507
+    JobInfo:
+      Name: MINER
+      Level: 0
+      XP: 0
+  ff070c8a-bee5-4098-b1d6-295f8f01cd08:
+    Money: 50
+    MaxHomesAllowed: 3
+  5e4ea134-e044-4449-be4e-e8d92622f431:
+    Money: 50
+    MaxHomesAllowed: 3
+    Homes:
+      '13': SurvivalWorld|-3441.368885195513|64.0|-282.828934983392|-182.64998|6.299995
+  3609a386-babb-4932-9be1-660d8f02ccb9:
+    Money: 50
+    MaxHomesAllowed: 3
+    JobInfo:
+      Name: MINER
+      Level: 0
+      XP: 0
+  f23cc88b-cf9f-47ca-a8a1-c2b7cc96230b:
+    MaxHomesAllowed: 3
+    Money: 0
+    Homes:
+      jente: SurvivalWorld|2330.160983281385|64.0|-1207.1731012381617|185.4043|36.198166
+      kasteel: SurvivalWorld|2236.38821990895|64.0|-1080.4981817662092|-235.19489|36.775875
+      home: SurvivalWorld|2284.9852004222357|63.0|-1144.532203751456|178.80226|34.312195
+  ca452e32-decb-4731-aa8d-357318871782:
+    MaxHomesAllowed: 3
+    Money: 125
+    Homes:
+      home: SurvivalWorld|-3151.334830144001|68.875|1636.3436702615884|-280.90143|47.549946
+      hotel: SurvivalWorld|-3216.7434497867807|51.0|1568.5114599795056|228.98798|24.749979
+      wout: SurvivalWorld|-1745.699999988079|66.0|1588.699999988079|-110.04914|41.100002
+    JobInfo:
+      Name: NETHER_EXPERT
+      Level: 0
+      XP: 0
+    MerchantInfo:
+      Selling:
+        '395':
+          Type: NETHERRACK
+          Durability: 0
+          Amount: 64
+          Price: 640
+  5dacdb74-62bb-4f9c-803e-f1cdc0e6f4b2:
+    Money: 50
+    MaxHomesAllowed: 3
+    JobInfo:
+      Name: MINER
+      Level: 0
+      XP: 2
+    MerchantInfo:
+      Selling: {}
+    SendMessages:
+    - ''
+    - §a§lMerchant §8| §aSuperaardbei75§7 bought your Deal! (§6#163§7)
+    - '§a§lMerchant §8| §7Item: §8§l42 §8§lCoal'
+    - '§a§lMerchant §8| §7Item Price: §a0$'
+    - '§a§lMerchant §8| §7Merchant Tax: §c-0$ §7(Level §90§7, §c-20%§7)'
+    - '§a§lMerchant §8| §7Total Profit: §20$'
+    - §a§lMerchant §8| §9+1 XP
+    - ''
+    - §a§lMerchant §8| §aYoshi54_51§7 bought your Deal! (§6#162§7)
+    - '§a§lMerchant §8| §7Item: §8§l5 §8§lCoal'
+    - '§a§lMerchant §8| §7Item Price: §a0$'
+    - '§a§lMerchant §8| §7Merchant Tax: §c-0$ §7(Level §90§7, §c-20%§7)'
+    - '§a§lMerchant §8| §7Total Profit: §20$'
+    - §a§lMerchant §8| §9+1 XP
+  cb606ab4-c944-4eeb-8bb0-62465780745f:
+    Money: 0
+    MaxHomesAllowed: 3
+    JobInfo:
+      Name: MINER
+      Level: 0
+      XP: 0
+    Homes:
+      '3': SurvivalWorld|3460.0629819228275|45.0|-4295.419584709197|-269.64743|38.999832
+      '2': SurvivalWorld|3344.6141818810797|64.0|-4378.457736069849|274.55328|36.89977
+  e73d282b-344b-46fe-a330-2d7de5e32d5e:
+    Money: 50
+    MaxHomesAllowed: 3
+    JobInfo:
+      Name: HUNTER
+      Level: 0
+      XP: 0
+  c44b0069-23db-4847-ad3f-600b02e0bc9f:
+    Money: 50
+    MaxHomesAllowed: 3
+    Homes:
+      Ripedip: SurvivalWorld_nether|-194.5142351840714|68.0|-21.48912522624609|1.1786108|3.9840488
+  935406e6-06b2-4913-a052-1a6bdce3e504:
+    Money: 50
+    MaxHomesAllowed: 3
+  900a90b2-e397-448f-8011-e2d40d732d22:
+    Money: 40
+    MaxHomesAllowed: 3
+    JobInfo:
+      Name: HUNTER
+      Level: 0
+      XP: 0
+  b12b8dd3-d45a-49a2-bdda-d807f33bed2d:
+    Money: 50
+    MaxHomesAllowed: 3
+  6d4c1ac4-3a28-4782-8314-5d9973b6f8c2:
+    MaxHomesAllowed: 3
+    Money: 0
+  85b1b27f-fa7d-4786-bc1e-28a2add8d35b:
+    Money: 150
+    MaxHomesAllowed: 3
+    Homes:
+      huis: SurvivalWorld|-342.65597734456645|64.0|-4498.177695255511|-109.321655|18.134386
+  c58ddb1f-9977-4f6d-a451-42268860765e:
+    Money: 50
+    MaxHomesAllowed: 3
+  47684ac2-8c90-41d8-be33-4c4bb89593c6:
+    Money: 50
+    MaxHomesAllowed: 3
+  8ee5dc1e-7f26-444d-b9b9-37bca427aa87:
+    Money: 50
+    MaxHomesAllowed: 3
+  c94c9540-02f2-4efa-bdb9-a8be3baf18e7:
+    Money: 40
+    MaxHomesAllowed: 3
+  929aa3c0-6038-48fe-87ee-153a5cd6c785:
+    Money: 75
+    MaxHomesAllowed: 3
+  caf6facc-e2a7-4ddf-ab83-fb36c06d1f71:
+    Money: 35
+    MaxHomesAllowed: 3
+    JobInfo:
+      Name: MINER
+      Level: 0
+      XP: 0
+    MerchantInfo:
+      Selling:
+        '170':
+          Type: COBBLESTONE
+          Durability: 0
+          Amount: 1
+          Price: 7007
+        '171':
+          Type: COBBLESTONE
+          Durability: 0
+          Amount: 64
+          Price: 9188
+  89c9f676-f553-4888-9aa6-3ec34a95d352:
+    Money: 50
+    MaxHomesAllowed: 3
+  582b6e1a-e343-4666-9824-6528fca4e5b8:
+    Money: 50
+    MaxHomesAllowed: 3
+  597c88cd-325e-45a2-965d-8aa7e98c080d:
+    Money: 50
+    MaxHomesAllowed: 3
+    JobInfo:
+      Name: NETHER_EXPERT
+      Level: 0
+      XP: 0
+  0e9e479d-5298-4e11-a912-b5ba5c4c8ab5:
+    Money: 50
+    MaxHomesAllowed: 3
+  c476c4bb-08bc-4c33-80b5-60af5cbd5945:
+    Money: 50
+    MaxHomesAllowed: 3
+  2f06e1ae-afaf-4aa5-b4ae-50d03c1927fb:
+    Money: 50
+    MaxHomesAllowed: 3
+  0a554c74-a7d1-4a16-a00a-cd71964b19ad:
+    Money: 50
+    MaxHomesAllowed: 3
+  7361de75-cdda-4f8c-8b28-9452163658e1:
+    Money: 50
+    MaxHomesAllowed: 3
+  8effa6dd-8c56-4f75-834c-da9f01df5397:
+    Money: 50
+    MaxHomesAllowed: 3
+  e7129a66-b6dd-48e6-88a9-2136a7f8be2a:
+    Money: 50
+    MaxHomesAllowed: 3
+  305e573c-bdd0-4d51-b2e8-2f6fe1b13bcf:
+    Money: 50
+    MaxHomesAllowed: 3
+    Homes:
+      jellybeanyjel: SurvivalWorld|3314.1629521614996|66.9140114523433|-4265.330551463139|93.20361|13.499938
+  8fd3af50-9849-4d54-ad05-af5a9ac15b76:
+    Money: 50
+    MaxHomesAllowed: 3
+    JobInfo:
+      Name: MINER
+      Level: 0
+      XP: 0
+  a247a81f-c3b7-4bea-b290-93d56ea53aa0:
+    Money: 50
+    MaxHomesAllowed: 3
+    Homes:
+      home: SurvivalWorld|-238.0271714080313|63.0|3070.149595097054|-55.45288|2.55
+  c0f16e3e-adc7-42c7-839d-c93fd7a54a09:
+    Money: 50
+    MaxHomesAllowed: 3
+  297cc649-6ed9-410e-ad11-1c90366ed69e:
+    MaxHomesAllowed: 3
+    Money: 476
+    Homes:
+      home: SurvivalWorld|1172.7255226927698|72.0|-231.7069500757367|-141.74908|30.750004
+      end: SurvivalWorld|818.3146085948683|23.0|-384.99649125989015|173.40146|72.3
+      isend: SurvivalWorld_the_end|101.00745637551643|49.0|-0.4201486701553849|67.35132|16.649994
+    JobInfo:
+      Name: HUNTER
+      Level: 0
+      XP: 1
+    MerchantInfo:
+      Selling:
+        '402':
+          Type: ROTTEN_FLESH
+          Durability: 0
+          Amount: 64
+          Price: 400
+        '404':
+          Type: ENDER_PEARL
+          Durability: 0
+          Amount: 9
+          Price: 2000
+  293c6dbe-a6dd-4343-bc63-ee37bb0e6e24:
+    Money: 50
+    MaxHomesAllowed: 3
+  36e789a2-363f-4717-8782-47b469847ee9:
+    Money: 50
+    MaxHomesAllowed: 3
+  dbb29e50-9292-4aaf-9c6d-1335b3796fec:
+    MaxHomesAllowed: 3
+    Money: 47
+  3ec7454c-3af2-49fa-b313-45dab006da6b:
+    Money: 50
+    MaxHomesAllowed: 3
+  530aa630-7b16-4fe4-8d78-063dbf587dd5:
+    Money: 50
+    MaxHomesAllowed: 3
+  f5801ccf-9ff1-4c60-b079-c8d4800307ef:
+    MaxHomesAllowed: 3
+    Money: 50
+    Homes:
+      huis: SurvivalWorld|2586.2690515507693|103.0|865.6624818995249|237.29999|32.999992
+  2e498ac9-bbdb-4ead-af8e-be45f927845f:
+    Money: 40
+    MaxHomesAllowed: 3
+    JobInfo:
+      Name: LUMBERJACK
+      Level: 0
+      XP: 0
+  3afd1ea9-375f-49ad-9706-e09638ae313a:
+    Money: 50
+    MaxHomesAllowed: 3
+  9e116e7d-c288-4bd0-b5a8-5f846a17254c:
+    Money: 50
+    MaxHomesAllowed: 3
+  7362510b-7933-41f0-9c6f-1ad0405c1d02:
+    Money: 50
+    MaxHomesAllowed: 3
+  ce786f6e-5ff0-4abf-b4a3-16e9e5b73cba:
+    Money: 50
+    MaxHomesAllowed: 3
+  6b7cf56c-1d7a-4af1-ac9d-27fadbf308dd:
+    Money: 50
+    MaxHomesAllowed: 3
+  f37ca9e4-e655-4763-a4d1-f948754e29db:
+    Money: 50
+    MaxHomesAllowed: 3
+    JobInfo:
+      Name: MINER
+      Level: 0
+      XP: 0
+  8286b5bb-840c-42e1-b15a-19b0fe47624e:
+    MaxHomesAllowed: 3
+    Money: 50
+    Homes:
+      huis: SurvivalWorld|-4382.726948965415|69.0|-615.6474393902448|12.545354|8.286839
+      durpske: SurvivalWorld|2536.467046795661|74.0|-1593.8348059235739|269.90836|20.261
+    JobInfo:
+      Name: HUNTER
+      Level: 0
+      XP: 0
+  ce378183-b1cb-47ec-9509-5a686cc3f7ad:
+    Money: 50
+    MaxHomesAllowed: 3
+  8249bd52-5673-4eed-b321-8d732a9d5a3c:
+    Money: 50
+    MaxHomesAllowed: 3
+  2a857783-3570-4802-9004-c4c221c34fde:
+    Money: 50
+    MaxHomesAllowed: 3
+  ed5f18e5-d6cb-40a7-a601-4ea17fdba7f5:
+    Money: 50
+    MaxHomesAllowed: 3
+    Homes:
+      home: SurvivalWorld|-3418.0021547739384|67.0|3638.1057486522996|335.74933|33.000015
+  b70b710b-2ddf-4fee-93ab-633aab41feda:
+    Money: 620
+    MaxHomesAllowed: 3
+    JobInfo:
+      Name: HUNTER
+      Level: 0
+      XP: 0
+    MerchantInfo:
+      Selling: {}
+    Homes:
+      hoi: SurvivalWorld|-1495.0119512594035|74.0|-380.30000001192093|-323.7206|25.649988
+  e6d5bedf-05f4-492c-93a2-f8455c6e66da:
+    Money: 50
+    MaxHomesAllowed: 3
+    JobInfo:
+      Name: MINER
+      Level: 0
+      XP: 0
+  178d032f-4662-4ed0-b3e2-52dce9046f17:
+    Money: 50
+    MaxHomesAllowed: 3
+  6dcbe30c-f9fa-4789-8c1c-dee23fe1b7ae:
+    Money: 50
+    MaxHomesAllowed: 3
+  2f4fa024-79c7-4f05-9124-059a49ab51d7:
+    Money: 50
+    MaxHomesAllowed: 3
+  7b0de224-1d53-4bf0-bc85-a848e92929e7:
+    Money: 50
+    MaxHomesAllowed: 3
+  37660b95-27f6-48ce-9e47-a05296c80f9d:
+    Money: 50
+    MaxHomesAllowed: 3
+  3067fe39-221b-49ae-bd92-7d3206fc889f:
+    Money: 50
+    MaxHomesAllowed: 3
+  5a07e62f-ca5e-4846-954a-ecb72197f684:
+    Money: 50
+    MaxHomesAllowed: 3
+    JobInfo:
+      Name: MINER
+      Level: 0
+      XP: 0
+    Homes:
+      home: SurvivalWorld|2586.566793924548|73.0|-4375.804088822971|259.70032|9.449942
+  8b8b8992-6cf7-4d9c-845d-0d3d1a3b17ac:
+    Money: 50
+    MaxHomesAllowed: 3
+    JobInfo:
+      Name: LUMBERJACK
+      Level: 0
+      XP: 0
+  58e046d5-f8bf-4fa9-897a-c75aeb0cf245:
+    MaxHomesAllowed: 3
+    Money: 75
+    Homes:
+      home: SurvivalWorld|-3451.153146651985|71.0|-539.7278866693724|33.83922|14.100003
+  77529e82-2dd1-488d-acb3-128925264544:
+    Money: 50
+    MaxHomesAllowed: 3
+  da58f722-20c0-4698-8301-cd1d7b87c455:
+    Money: 66
+    MaxHomesAllowed: 3
+    JobInfo:
+      Name: MINER
+      Level: 0
+      XP: 1
+    Homes:
+      home: SurvivalWorld|-1592.9499972998292|85.0|-320.3319472693435|50.714912|71.84988
+      mine: SurvivalWorld|-1691.699999988079|16.0|-381.6757403971701|290.1189|75.750114
+      max: SurvivalWorld|-1569.9345227683732|78.0|-268.57785481941266|242.86322|55.350014
+    MerchantInfo:
+      Selling:
+        '239':
+          Type: REDSTONE
+          Durability: 0
+          Amount: 19
+          Price: 19500
+  7558b081-5a23-4d6d-bb98-5f883bbb002a:
+    Money: 508
+    MaxHomesAllowed: 3
+    JobInfo:
+      Name: LUMBERJACK
+      Level: 0
+      XP: 1
+    Homes:
+      home: SurvivalWorld|-1571.1213994363814|78.0|-268.5643873512482|273.0055|3.599925
+      uitkijktoren: SurvivalWorld|-1565.359388350246|135.0|-241.45230394964943|-270.21008|14.099955
+      sam: SurvivalWorld|-1593.9329998135352|85.0|-320.35161354269445|-78.13953|6.900061
+    MerchantInfo:
+      Selling: {}
+  65e33ace-3885-4237-83fb-ee76f72abd5b:
+    Money: 50
+    MaxHomesAllowed: 3
+  6ec8fbe0-6de1-41d7-a832-58cab8506697:
+    Money: 50
+    MaxHomesAllowed: 3
+  6b76afbd-73b5-4dcb-9b15-57231ba6803b:
+    Money: 50
+    MaxHomesAllowed: 3
+    JobInfo:
+      Name: HUNTER
+      Level: 0
+      XP: 0
+  b15a5a6d-c0f0-41be-af4c-cffe15c2a032:
+    Money: 225
+    MaxHomesAllowed: 3
+    Homes:
+      Merijnboyx: SurvivalWorld|-3403.8553281429417|75.0|733.5753027218581|-338.34982|34.8
+      Kevin: SurvivalWorld|2594.3932883879224|64.0|764.2789037935114|-75.85001|37.799976
+      Joey: SurvivalWorld|2583.5173792013215|103.0|860.2504926762819|264.95013|67.2
+    JobInfo:
+      Name: MINER
+      Level: 0
+      XP: 4
+    MerchantInfo:
+      Selling:
+        '268':
+          Type: REDSTONE
+          Durability: 0
+          Amount: 64
+          Price: 1500
+  912d57a6-5c42-4f1b-9800-f6fb4fce671a:
+    Money: 50
+    MaxHomesAllowed: 3
+    Homes:
+      home: SurvivalWorld|-1567.925000011921|62.0|-132.88538767218327|108.199234|64.349945
+      merijn: SurvivalWorld|2582.300000011921|71.0|-1291.1858544118552|-111.54895|34.79998
+  8e86f3f0-ae17-4adb-810d-dfb345aeeece:
+    MaxHomesAllowed: 3
+    Money: 50
+    Homes:
+      home: SurvivalWorld|-1472.7099418214848|68.0|-13.391046177145645|267.93216|5.6895995
+  b9269d7d-e955-4ba1-ad0e-04e677d50fad:
+    Money: 50
+    MaxHomesAllowed: 3
+  8d6ae121-2aec-47a9-aa03-fb0fe9f1e092:
+    Money: 50
+    MaxHomesAllowed: 3
+  f62e181d-bc9d-48f3-abe0-86af4fae3e80:
+    Money: 50
+    MaxHomesAllowed: 3
+  e2e2fe24-2e89-4985-a076-d9c32d3eec22:
+    Money: 50
+    MaxHomesAllowed: 3
+    JobInfo:
+      Name: ANIMAL_FARMER
+      Level: 0
+      XP: 0
+  dd39d8a0-0dbf-45b2-b94b-82a9e9a7cbd4:
+    Money: 50
+    MaxHomesAllowed: 3
+    Homes:
+      home: SurvivalWorld|-1927.2024805488275|76.0|2664.815038946871|255.49982|17.399998
+  c7d42925-23f7-4ab8-8899-7aaac5e4461a:
+    Money: 50
+    MaxHomesAllowed: 3
+  825fbb95-dd16-4f92-941e-8f4f197f96ca:
+    Money: 50
+    MaxHomesAllowed: 3
+    Homes:
+      home: SurvivalWorld|-3375.7255484791676|72.0|1177.243272986589|-91.55347|29.476864
+  78bce637-b07d-43b3-918b-875c62e5f80d:
+    Money: 50
+    MaxHomesAllowed: 3
+  513726af-7506-4173-8bc7-3c8bf3665c7f:
+    Money: 50
+    MaxHomesAllowed: 3
+  ef36903e-bd13-4bc9-8e79-4d3f783e46fe:
+    MaxHomesAllowed: 3
+    Money: 50
+    Homes:
+      home: SurvivalWorld|-2001.5382804901951|180.0|-2332.5214596356395|268.14722|90.0
+      second: SurvivalWorld|-1231.5|58.0|42.5|22.319489|13.718822
+      third: SurvivalWorld|-3469.591323869281|18.0|3768.027691037997|0.1593628|13.294401
+    JobInfo:
+      Name: NETHER_EXPERT
+      Level: 0
+      XP: 0
+  bfbc05aa-38cb-4b40-b4dc-b8196afee237:
+    Money: 50
+    MaxHomesAllowed: 3
+  eeaf09b7-8dfd-44af-b90d-dbe130ca974f:
+    Money: 50
+    MaxHomesAllowed: 3
+  0fed06d0-4929-4610-8669-c692837e5d7c:
+    Money: 50
+    MaxHomesAllowed: 3
+    JobInfo:
+      Name: LUMBERJACK
+      Level: 0
+      XP: 0
+  5ca952b2-9d51-4af2-a827-4663cee0da28:
+    Money: 50
+    MaxHomesAllowed: 3
+  05ba0cb4-78e0-4488-84f2-eb8bedb1f38b:
+    Money: 50
+    MaxHomesAllowed: 3
+  39fedc14-5095-4b70-9c91-229fd4e36d57:
+    Money: 50
+    MaxHomesAllowed: 3
+  509903d3-349c-4905-aae1-b04c1a123a9c:
+    Money: 50
+    MaxHomesAllowed: 3
+    JobInfo:
+      Name: HUNTER
+      Level: 0
+      XP: 0
+  a657a0dd-f179-4f8f-a5d0-aef3bde0c698:
+    Money: 50
+    MaxHomesAllowed: 3
+  6281be1a-489d-4933-a008-ae28d3abf56a:
+    Money: 50
+    MaxHomesAllowed: 3
+  16528a7d-48c1-4162-9106-cc28f59c5151:
+    Money: 290
+    MaxHomesAllowed: 3
+    Homes:
+      home: SurvivalWorld|-264.3456881826949|59.0|3217.9290663186976|180.1897|9.9000225
+      '2': SurvivalWorld|982.7190220841637|71.0|-53.237535488686156|-276.40134|22.650002
+      '3': SurvivalWorld|-2079.980179151774|70.0|1740.2851556636215|100.10196|2.2499473
+    JobInfo:
+      Name: MINER
+      Level: 0
+      XP: 3
+    MerchantInfo:
+      Selling: {}
+  9ee1fd7b-310f-4f72-bcc2-253d300790bf:
+    Money: 50
+    MaxHomesAllowed: 3
+    Homes:
+      home: SurvivalWorld|1047.0390066803684|65.0|-88.45280416866059|185.90012|-5.9999976
+      hotel: SurvivalWorld|-623.5666319651496|64.0|-3106.4008884368513|44.5932|-3.2999954
+  10af0518-bb89-4920-81dc-fbc9b165eb68:
+    Money: 50
+    MaxHomesAllowed: 3
+    Homes:
+      home: SurvivalWorld|-234.76720449439392|63.0|3075.4716830609336|-142.43982|42.14997
+      Bastille: SurvivalWorld|-3078.699619574268|101.0|-4185.478858639124|-179.50061|11.25004
+      Love: SurvivalWorld|-1774.3055794122733|64.0|2018.316196056966|-191.49988|-2.850087
+  b9e85a48-28d3-422c-933a-6012158c639b:
+    Money: 50
+    MaxHomesAllowed: 3
+  0c27b118-15aa-4499-9ddb-964e96508248:
+    Money: 50
+    MaxHomesAllowed: 3
+    Homes:
+      home: SurvivalWorld|-1223.6620183736816|63.0|-106.61737272056389|84.499756|34.049988
+  12790c51-d0e8-449b-9e91-360bbc157fe8:
+    Money: 50
+    MaxHomesAllowed: 3
+    Homes:
+      home: SurvivalWorld|-1223.8818766392699|63.0|-108.60343233256461|4.2466993|23.699974
+  ba7a58a3-62ed-42bc-b589-339d145949fa:
+    Money: 50
+    MaxHomesAllowed: 3
+  b25874ff-8b64-4fd8-ba73-a3fcc56544d5:
+    Money: 0
+    MaxHomesAllowed: 3
+  8165d56c-0097-4ece-a881-9bccbca57143:
+    Money: 50
+    MaxHomesAllowed: 3
+  4b6d14c0-59f7-4ea3-9b6c-c801f1201557:
+    Money: 412
+    MaxHomesAllowed: 3
+    Homes:
+      home: SurvivalWorld|947.092106207294|70.0|-199.82245917234036|-306.5592|19.799955
+      '2': SurvivalWorld|436.8268164921521|12.0|-122.88340674694682|-307.14963|44.100025
+      '3': SurvivalWorld|482.0299223167729|16.875|-514.4299550969745|15.051025|8.849971
+    JobInfo:
+      Name: MINER
+      Level: 0
+      XP: 4
+    MerchantInfo:
+      Selling: {}
+  87512612-6c8d-446d-8002-1c4fe41f8ba7:
+    Money: 50
+    MaxHomesAllowed: 3
+  11547cc4-9e83-4406-b5df-89bbfc07d131:
+    Money: 75
+    MaxHomesAllowed: 3
+  d5ecf1f5-4ec4-47ad-abad-51b8120ccfc1:
+    Money: 150
+    MaxHomesAllowed: 3
+  98b7044e-9bbb-4de4-b799-4f6bfd358b89:
+    Money: 50
+    MaxHomesAllowed: 3
+  03239d89-5827-4038-9b2c-b4e6fb1c9a52:
+    Money: 50
+    MaxHomesAllowed: 3
+  ad38cf9c-98bc-49ee-8028-59818c849c7a:
+    Money: 50
+    MaxHomesAllowed: 3
+  ec7635ed-fcd6-4844-9fea-96a14a150184:
+    Money: 50
+    MaxHomesAllowed: 3
+  56b5ee44-e8f6-44de-bedd-c015760685ea:
+    Money: 50
+    MaxHomesAllowed: 3
+    Homes:
+      home: SurvivalWorld|1075.1115456834075|69.0|-2306.140905452558|-142.90002|21.0
+  b6abf851-c5af-449e-975c-174530bab22c:
+    Money: 30
+    MaxHomesAllowed: 3
+    JobInfo:
+      Name: MINER
+      Level: 0
+      XP: 0
+  81ed19f8-1e24-4e33-b40b-8f1aa91f1fef:
+    Money: 50
+    MaxHomesAllowed: 3
+  709b663a-b6dc-4b0e-a7fe-adbdb600b421:
+    Money: 50
+    MaxHomesAllowed: 3
+  4831642a-d59a-42fa-8f8f-18ba50812578:
+    Money: 50
+    MaxHomesAllowed: 3
+  ed444385-027a-4a7b-9a94-50181099d986:
+    Money: 50
+    MaxHomesAllowed: 3
+  421728c7-b901-461c-80d9-0be83e3ef90d:
+    Money: 50
+    MaxHomesAllowed: 3
+  31fccb8e-5a93-438a-9300-6c07059978cd:
+    Money: 50
+    MaxHomesAllowed: 3
+  70fe5a82-0a65-4bab-a645-e6d542cf7f8a:
+    Money: 50
+    MaxHomesAllowed: 3
+  f69cbc82-9a42-4e04-b9a5-10709e8b3a61:
+    Money: 50
+    MaxHomesAllowed: 3
+  a4d9e26b-96bb-411a-8a0f-4263c9462ca6:
+    MaxHomesAllowed: 3
+    Money: 50
+    Homes:
+      kasteel: SurvivalWorld|-3347.699999988079|68.0|1123.4837769315677|61.988934|-0.8492512
+      home: SurvivalWorld|-3551.556752172611|72.0|-101.51306714402234|240.20009|24.899967
+    JobInfo:
+      Name: MINER
+      Level: 0
+      XP: 0
+  51a973d9-9984-49ba-9e5b-f1fa9ba8400e:
+    Money: 50
+    MaxHomesAllowed: 3
+  89b99766-06d8-44d9-adaf-a9368daf41a6:
+    Money: 50
+    MaxHomesAllowed: 3
+  2836b739-6b40-477a-a168-578b8856d9f1:
+    Money: 50
+    MaxHomesAllowed: 3
+  07dc6cf8-be5e-4288-a2aa-bb2a4c2d375d:
+    Money: 50
+    MaxHomesAllowed: 3
+  57d7f5f9-7063-4130-9f59-777c7cad2869:
+    Money: 50
+    MaxHomesAllowed: 3
+  ff5fb6ae-a572-4311-bd14-c5c9f84a8f22:
+    Money: 50
+    MaxHomesAllowed: 3
+  2fbe001a-8c46-4303-a6aa-7ea5ec60aafb:
+    Money: 50
+    MaxHomesAllowed: 3
+  3f389cc2-1c68-4de2-a38c-eba223be3041:
+    Money: 50
+    MaxHomesAllowed: 3
+  186094e3-4386-495b-aec1-a8f87f1b4085:
+    Money: 50
+    MaxHomesAllowed: 3
+  965d71dc-9107-4f84-bb04-a5ed8513755a:
+    MaxHomesAllowed: 3
+    Money: 775
+    Homes:
+      Home: SurvivalWorld|2644.5119843556563|64.0|1373.9025314026103|180.65291|1.7998176
+      dorp: SurvivalWorld|10369.502571621348|70.0|-1296.2111624472582|-293.7517|15.900044
+      Blazespawner!: SurvivalWorld_nether|424.2952025591494|74.0|331.954055677638|-127.01636|17.40001
+  6e2f3944-96d2-4e01-9056-dcab7f3937a4:
+    Money: 50
+    MaxHomesAllowed: 3
+    JobInfo:
+      Name: MINER
+      Level: 0
+      XP: 0
+  b29a105e-ba51-4d09-a5d5-32a9d036c0c6:
+    Money: 50
+    MaxHomesAllowed: 3
+  d1599c1a-1d14-4119-a31d-3118eadafd59:
+    Money: 50
+    MaxHomesAllowed: 3
+  82455caf-18a3-405f-b8c7-c6bd217fdb5a:
+    Money: 50
+    MaxHomesAllowed: 3
+  ee3a6c20-375c-4ee9-b322-efd32d2422e5:
+    Money: 50
+    MaxHomesAllowed: 3
+  661aaa27-c37a-4429-9a4c-47b350781321:
+    Money: 50
+    MaxHomesAllowed: 3
+  1013b451-1a38-48a0-92f7-c9c101f177ad:
+    Money: 50
+    MaxHomesAllowed: 3
+  0d5c1ab3-a03f-49aa-9c1c-c1d068a43699:
+    Money: 50
+    MaxHomesAllowed: 3
+  b30b1eda-b25c-40b8-a836-4a5a28f58f59:
+    Money: 50
+    MaxHomesAllowed: 3
+  f6cf9bbb-f26f-4622-a387-c2672a40e722:
+    Money: 50
+    MaxHomesAllowed: 3
+  646114f6-aec4-4f64-b833-4dbea557c124:
+    Money: 50
+    MaxHomesAllowed: 3
+    JobInfo:
+      Name: FARMER
+      Level: 0
+      XP: 0
+  10fe6cf1-b2d5-4c33-b640-22474934be21:
+    Money: 50
+    MaxHomesAllowed: 3
+  0cc9794e-c808-4f22-a991-8d42182b639c:
+    Money: 50
+    MaxHomesAllowed: 3
+  5671c430-b5f0-42bd-ada0-f5e375c6bfaf:
+    Money: 50
+    MaxHomesAllowed: 3
+  833a28bc-0569-4057-9f13-5d0e54667fbd:
+    Money: 50
+    MaxHomesAllowed: 3
+  e3e0437b-676d-4a8a-b357-864dc36f2adb:
+    Money: 39
+    MaxHomesAllowed: 3
+    Homes:
+      home: SurvivalWorld|10330.993807916468|73.0|-1288.699999988079|60.676514|-13.219182
+  07ff8c1b-0584-4484-84ad-59e8e06a744c:
+    Money: 50
+    MaxHomesAllowed: 3
+  313d5427-8301-404f-ad97-ce0acb881a52:
+    Money: 50
+    MaxHomesAllowed: 3
+  83e6fef2-1367-4551-bde2-702e82ffe711:
+    Money: 50
+    MaxHomesAllowed: 3
+  3e3ee659-4e14-48b4-835c-ecd87f543897:
+    Money: 50
+    MaxHomesAllowed: 3
+  75120ab7-962c-46c9-8d21-7aaf85470bbe:
+    Money: 50
+    MaxHomesAllowed: 3
+  d9b16b5b-4e0b-4341-9b26-d6ea77f99f2c:
+    Money: 131
+    MaxHomesAllowed: 3
+    Homes:
+      home: SurvivalWorld|-1965.2955939527337|67.0|-4289.683087636768|99.79993|44.55003
+      '2': SurvivalWorld|-562.3283111849842|63.0|-319.4593701881905|56.44978|20.249996
+      mine: SurvivalWorld|-1936.5047437457677|17.0|-4210.369255420119|205.09845|10.2000065
+    JobInfo:
+      Name: HUNTER
+      Level: 0
+      XP: 2
+    MerchantInfo:
+      Selling: {}
+  c5ff2262-431a-41f2-84f0-d9f1e1bf8cf1:
+    Money: 525
+    MaxHomesAllowed: 3
+    Homes:
+      home: SurvivalWorld|922.1259400320055|57.0|-125.22905881169878|-262.42297|36.54718
+      '2': SurvivalWorld|-1962.885020974078|64.0|-1227.1423797652776|-156.63037|27.331186
+  958a1fce-dbd4-4fa2-8aab-f6d199b9e84c:
+    Money: 50
+    MaxHomesAllowed: 3
+  4bec92c1-2e2d-4fc1-b591-3b08262f6459:
+    Money: 50
+    MaxHomesAllowed: 3
+  9076470d-f015-4f71-b692-291c03360a2d:
+    Money: 50
+    MaxHomesAllowed: 3
+  b4c4f81a-b436-40ca-98b6-f9f8215ae498:
+    Money: 50
+    MaxHomesAllowed: 3
+  027e7cdc-0bca-4b09-9b5f-74b1760595dc:
+    Money: 50
+    MaxHomesAllowed: 3
+  ba5b89b5-3b83-4182-9eeb-c7abacce5962:
+    Money: 50
+    MaxHomesAllowed: 3
+  5d281498-c9db-48e1-9c31-f8b3757013d9:
+    Money: 50
+    MaxHomesAllowed: 3
+  5dc81aeb-5df7-4e8e-8b17-8e59fe4f4765:
+    Money: 50
+    MaxHomesAllowed: 3
+    JobInfo:
+      Name: HUNTER
+      Level: 0
+      XP: 0
+  81137a93-7585-4a2e-8b34-780d0e549b7c:
+    Money: 50
+    MaxHomesAllowed: 3
+  ca46b35c-8771-401e-9ba7-6f44f801e349:
+    Money: 50
+    MaxHomesAllowed: 3
+  bd62c588-0793-4a11-af3e-29a1a0fa4a05:
+    Money: 50
+    MaxHomesAllowed: 3
+  fa9b6dd1-9b8d-4723-b0ce-1706ad3002fd:
+    Money: 50
+    MaxHomesAllowed: 3
+  60e36e15-558d-49a4-be8a-0707c726dc48:
+    Money: 50
+    MaxHomesAllowed: 3
+  5304201a-06c0-4ade-b4dd-dd914a05a7e4:
+    Money: 50
+    MaxHomesAllowed: 3
+    Homes:
+      home: SurvivalWorld|-1746.300000011921|74.0|-2277.3973222387176|114.95509|16.049965
+  02614b42-87bc-427b-9639-d75708948752:
+    Money: 50
+    MaxHomesAllowed: 3
+  5d9d9402-08ea-411f-afc4-78f3427c85cf:
+    MaxHomesAllowed: 3
+    Money: 50
+  77311138-9862-4140-b8f1-4e39c55b89af:
+    Money: 50
+    MaxHomesAllowed: 3
+    JobInfo:
+      Name: LUMBERJACK
+      Level: 0
+      XP: 0
+    Homes:
+      home: SurvivalWorld|2683.4962353498386|64.0|-1323.9542994618444|352.552|68.10005
+    MerchantInfo:
+      Selling: {}
+  90eda1b8-c17c-45a7-ba43-9ab81a11ab55:
+    Money: 225
+    MaxHomesAllowed: 3
+    Homes:
+      home: SurvivalWorld|-4159.722589766543|86.0|19.300000011920925|-268.4148|14.590198
+  75986e63-17c8-43d5-85b0-50793bdcdfaf:
+    Money: 50
+    MaxHomesAllowed: 3
+  481a44fe-6c32-404e-9f82-f5ce7e2f3845:
+    Money: 50
+    MaxHomesAllowed: 3
+  54ca31ba-dafe-49e5-b991-e340306bf877:
+    Money: 50
+    MaxHomesAllowed: 3
+  01a37a0a-a5b8-4a3a-9672-fb51008a51f9:
+    Money: 50
+    MaxHomesAllowed: 3
+  9fbb8979-5531-4ed7-bd00-d54e3756ed8a:
+    Money: 50
+    MaxHomesAllowed: 3
+  32c572f9-eaa7-486d-969d-05f9808ac16e:
+    Money: 50
+    MaxHomesAllowed: 3
+  470d87f7-8b84-4e53-8a1d-6d8c29c4f7f0:
+    Money: 50
+    MaxHomesAllowed: 3
+  c48d09cf-eb76-4b7b-97f8-9453a115b1bc:
+    Money: 50
+    MaxHomesAllowed: 3
+  3bbf10d7-0f6f-440e-b7d4-2353f522bb0d:
+    Money: 75
+    MaxHomesAllowed: 3
+    JobInfo:
+      Name: MINER
+      Level: 0
+      XP: 0
+    MerchantInfo:
+      Selling: {}
+  f2fbb73b-6d0c-44fd-afb7-efb517f81742:
+    Money: 50
+    MaxHomesAllowed: 3
+    JobInfo:
+      Name: MINER
+      Level: 0
+      XP: 0
+    MerchantInfo:
+      Selling:
+        '340':
+          Type: COBBLESTONE
+          Durability: 0
+          Amount: 1
+          Price: 41
+        '341':
+          Type: COBBLESTONE
+          Durability: 0
+          Amount: 4
+          Price: 1
+        '342':
+          Type: COBBLESTONE
+          Durability: 0
+          Amount: 6
+          Price: 560
+  bbede383-8557-462b-aa12-236cc69c1633:
+    Money: 50
+    MaxHomesAllowed: 3
+  c3e696e2-612a-475d-adf0-a809a6537cbe:
+    Money: 50
+    MaxHomesAllowed: 3
+  59a674a2-4454-41d4-9eca-0d0d6f65a606:
+    Money: 50
+    MaxHomesAllowed: 3
+  0894486e-b018-4682-a93d-0cc5959c0985:
+    Money: 50
+    MaxHomesAllowed: 3
+  eed141a6-e2c4-4a0d-8cdb-bd901e1b4e44:
+    Money: 50
+    MaxHomesAllowed: 3
+  8f7a7008-7d7d-4a15-9abe-189b5cd4362e:
+    Money: 50
+    MaxHomesAllowed: 3
+  e4b1cda9-4318-43ff-8f8e-b3fe0d8ce780:
+    Money: 125
+    MaxHomesAllowed: 3
+  d76c3884-1ead-40a9-8f65-461d3b5264e2:
+    Money: 50
+    MaxHomesAllowed: 3
+  2c6091a3-da47-4e57-ad49-67e7cc0e237c:
+    Money: 50
+    MaxHomesAllowed: 3
+  a6cf9c88-3276-422b-bc48-7bb3287fcc04:
+    Money: 50
+    MaxHomesAllowed: 3
+  66cdc3ad-4c38-41b0-90c7-0d8b4204b497:
+    Money: 50
+    MaxHomesAllowed: 3
+  0e2a14a5-cee6-4d2f-a500-bf1b76391160:
+    Money: 50
+    MaxHomesAllowed: 3
+    JobInfo:
+      Name: LUMBERJACK
+      Level: 0
+      XP: 0
+  1063a8ac-393e-4099-9c5f-e441d5ea7f1c:
+    Money: 50
+    MaxHomesAllowed: 3
+  ed6d52da-4ed2-4c52-87f1-3e0ad3cc2306:
+    Money: 50
+    MaxHomesAllowed: 3
+    Homes:
+      home: SurvivalWorld|1255.4877492084975|95.0|2752.444418734983|-168.54822|53.850014
+  72590e8e-554f-463d-8bb4-ecaca74b48f5:
+    Money: 213
+    MaxHomesAllowed: 3
+    Homes:
+      home: SurvivalWorld|-366.4696966903028|92.0|-2218.6037361928716|93.944885|85.799965
+      '2': SurvivalWorld|-3374.938610553649|72.0|1180.2504466069877|123.20056|19.200014
+    JobInfo:
+      Name: HUNTER
+      Level: 0
+      XP: 5
+    MerchantInfo:
+      Selling: {}
+    SendMessages:
+    - ''
+    - §a§lMerchant §8| §aplaywarrior§7 bought your Deal! (§6#367§7)
+    - '§a§lMerchant §8| §7Item: §f§l34 §f§lBone'
+    - '§a§lMerchant §8| §7Item Price: §a36$'
+    - '§a§lMerchant §8| §7Merchant Tax: §c-7$ §7(Level §90§7, §c-20%§7)'
+    - '§a§lMerchant §8| §7Total Profit: §229$'
+    - §a§lMerchant §8| §9+1 XP
+  c9c45b34-882f-4328-bfaf-8952a27d06f5:
+    Money: 50
+    MaxHomesAllowed: 3
+  8fd68444-2a23-4560-9c94-e7fbf3b67173:
+    Money: 50
+    MaxHomesAllowed: 3
+  e457358f-49f7-483a-bdea-3d345c0c31ae:
+    Money: 50
+    MaxHomesAllowed: 3
+  b9233f8d-afda-4084-a8e2-8c62b7befdd9:
+    MaxHomesAllowed: 3
+    Money: 325
+  b3460cbf-32b7-4a18-a892-a765bae15b55:
+    Money: 50
+    MaxHomesAllowed: 3
+  14519a51-be11-413d-a2da-4e1f8778ede6:
+    Money: 50
+    MaxHomesAllowed: 3
+  a293c5a1-c1ff-405a-8d00-8b0ff0a6c4a0:
+    Money: 50
+    MaxHomesAllowed: 3
+    Homes:
+      home: SurvivalWorld|-3452.425548826093|68.0|-3560.594954730565|-121.756714|-18.149963
+  e7c2a6e8-37c4-43d7-9135-499c093f6e28:
+    Money: 50
+    MaxHomesAllowed: 3
+  7dfb539a-9a37-4ba2-999e-77d79adec3b8:
+    Money: 50
+    MaxHomesAllowed: 3
+    JobInfo:
+      Name: MINER
+      Level: 0
+      XP: 0
+  2360226c-2336-436d-8671-4a1e10e0d5e2:
+    Money: 50
+    MaxHomesAllowed: 3
+  a05c2aa2-1071-40dd-b278-092e565f5451:
+    Money: 50
+    MaxHomesAllowed: 3
+  ed785e5a-2086-4cfe-80b5-ca1a5b4e71fc:
+    Money: 50
+    MaxHomesAllowed: 3
+  47f0c0f1-f5fc-4d6a-b660-f0a7061b1c75:
+    Money: 50
+    MaxHomesAllowed: 3
+  ecb36b2d-a3b4-4ba0-b3cc-afe75f19ff0e:
+    Money: 50
+    MaxHomesAllowed: 3
+    Homes:
+      jelmer: SurvivalWorld|-1910.9250859334002|72.0|-4279.408135543215|-3.1044922|11.4
+  84b999ba-b81c-4b3f-a8bf-e577863ab08d:
+    Money: 125
+    MaxHomesAllowed: 3
+  2076c098-52d1-46b8-bc61-77f31ba4795c:
+    Money: 50
+    MaxHomesAllowed: 3
+    Homes:
+      home: SurvivalWorld|-3394.3523852423277|64.0|1655.358066717339|-324.5503|70.34997
+  15e56535-0e6e-4003-8c60-52b0fd880883:
+    Money: 50
+    MaxHomesAllowed: 3
+  b471c52d-b803-4ced-9639-6fe4ac853033:
+    Money: 50
+    MaxHomesAllowed: 3
+    JobInfo:
+      Name: HUNTER
+      Level: 0
+      XP: 0
+  33d60079-74cc-43d8-b086-36b4cb159017:
+    MaxHomesAllowed: 3
+    Money: 400
+    Homes:
+      home: SurvivalWorld|2411.0456503680457|44.0|-4227.807834416092|-69.66037|9.450013
+    JobInfo:
+      Name: MINER
+      Level: 0
+      XP: 0
+  8639b1ae-87f4-455c-bcb1-5ac8e7395351:
+    Money: 50
+    MaxHomesAllowed: 3
+  19abd2c6-0fa3-48f9-a98c-0aa030bebb0b:
+    Money: 50
+    MaxHomesAllowed: 3
+  8ad7f8cd-a216-4fc2-aaeb-bb35209cc4ab:
+    Money: 50
+    MaxHomesAllowed: 3
+    JobInfo:
+      Name: HUNTER
+      Level: 0
+      XP: 0
+    Homes:
+      mine: SurvivalWorld|-4881.622460012444|58.0|-1696.4224432510853|18.94226|30.57307
+      dead: SurvivalWorld|-5017.886641971133|66.0|-1691.9048607015113|235.99884|18.423073
+  0d1e2f5b-e429-42b2-8fb2-4e081aae26da:
+    Money: 75
+    MaxHomesAllowed: 3
+    JobInfo:
+      Name: MINER
+      Level: 0
+      XP: 0
+    MerchantInfo:
+      Selling:
+        '359':
+          Type: COAL
+          Durability: 0
+          Amount: 6
+          Price: 13000
+    Homes:
+      GiantGames: SurvivalWorld|-3471.770907371508|63.0|-4407.612590426066|-351.85693|19.799856
+  2b6a2ca8-a61c-482c-9982-a7bb5bf5739b:
+    Money: 50
+    MaxHomesAllowed: 3
+  a12772db-05af-4a99-bbf5-95854fe9f1d4:
+    Money: 50
+    MaxHomesAllowed: 3
+  05bf0048-e315-43e0-b831-5330efecb44d:
+    Money: 43
+    MaxHomesAllowed: 3
+    JobInfo:
+      Name: MINER
+      Level: 0
+      XP: 2
+    MerchantInfo:
+      Selling: {}
+  5b84ac6b-116a-421e-a98b-5b3f45f6592f:
+    Money: 50
+    MaxHomesAllowed: 3
+  86f8efa0-f5e6-4a29-a56d-c544a6aaacf3:
+    Money: 50
+    MaxHomesAllowed: 3
+  4f10306c-689d-47b4-824f-b18ba3cecfcf:
+    MaxHomesAllowed: 3
+    Money: 50
+  117d39a8-9b19-4a1a-992b-02a0a121a4a6:
+    Money: 50
+    MaxHomesAllowed: 3
+  c29cb812-76e3-4291-bed3-b39094ba02b5:
+    Money: 50
+    MaxHomesAllowed: 3
+  36927e04-81c6-441e-b8d4-04ff9275996c:
+    Money: 50
+    MaxHomesAllowed: 3
+  92914832-3580-48f4-b9c5-0ac0e90e6756:
+    Money: 50
+    MaxHomesAllowed: 3
+  ff4affd0-e3e3-4b78-b85b-04914ee43b5c:
+    Money: 50
+    MaxHomesAllowed: 3
+  70751c4a-8b95-493a-bf28-a5319610cc6f:
+    Money: 50
+    MaxHomesAllowed: 3
+  eb281c8d-4873-4359-ab75-b63844846d42:
+    Money: 50
+    MaxHomesAllowed: 3
+    JobInfo:
+      Name: MINER
+      Level: 0
+      XP: 0
+  c87b00e6-a7e3-45f3-943b-84770b3859cd:
+    Money: 50
+    MaxHomesAllowed: 3
+  bef03826-de3e-45e8-88bf-758ad97b086a:
+    Money: 50
+    MaxHomesAllowed: 3
+  a982436b-9bf2-4bf0-9690-fa31bae626de:
+    Money: 50
+    MaxHomesAllowed: 3
+  c467a585-0900-419e-b2d2-ee7e0c75110c:
+    Money: 50
+    MaxHomesAllowed: 3
+  8ebbb225-9445-4a9d-8d3f-1a0a1e271f37:
+    Money: 50
+    MaxHomesAllowed: 3
+  0d3bbe18-18e7-4dc2-8fc4-04e87a0e5003:
+    Money: 50
+    MaxHomesAllowed: 3
+  6435c84d-40ce-4ca8-a28b-7d5f7d0cb617:
+    Money: 50
+    MaxHomesAllowed: 3
+  ece3fe45-0b61-431d-b60f-e54d88dccc59:
+    Money: 50
+    MaxHomesAllowed: 3
+  f5c036d2-21c6-4d45-a316-3728eb0d2ec1:
+    Money: 50
+    MaxHomesAllowed: 3
+  46790aa3-013d-4343-abb3-2e57786b008e:
+    Money: 50
+    MaxHomesAllowed: 3
+  e1f1da2e-d5b8-474d-b9da-147667e380cf:
+    Money: 50
+    MaxHomesAllowed: 3
+  825cdea4-f67e-4ce1-a19d-837921588f7d:
+    Money: 50
+    MaxHomesAllowed: 3
+    Homes:
+      home: SurvivalWorld|1055.2747484813751|16.0|698.5484506821596|-56.189804|16.266075
+  7dd58cb0-2a1e-4919-9630-4ace7cc54081:
+    Money: 50
+    MaxHomesAllowed: 3
+  e585b813-3ae6-4d12-bbe2-1920e6c4b37c:
+    Money: 50
+    MaxHomesAllowed: 3
+  01dddbc3-f0d9-4239-a119-6ac6c4488d77:
+    Money: 50
+    MaxHomesAllowed: 3
+  78f5e479-83e7-4b1d-b039-7c31bd3a15ed:
+    Money: 75
+    MaxHomesAllowed: 3
+    Homes:
+      huis: SurvivalWorld|2303.067459005494|68.0|-1085.145293198235|-79.44718|55.95
+      opslag: SurvivalWorld|2303.9442514941506|56.0|-1085.0921334292698|-224.04712|39.44995
+      mine: SurvivalWorld|2453.0733230614123|71.0|-1125.8993309388002|-135.39737|49.79994
+  ce21222f-b72a-4336-929e-96f2c1d69316:
+    Money: 50
+    MaxHomesAllowed: 3
+  c86bbe7b-9898-43b6-90b1-419d5e090eaa:
+    Money: 50
+    MaxHomesAllowed: 3
+  70677218-47ef-4913-871f-134d02256211:
+    Money: 50
+    MaxHomesAllowed: 3
+  6e281536-7fa1-4ca3-bdff-4430035dbb72:
+    Money: 50
+    MaxHomesAllowed: 3
+  4dd48385-04d6-4e79-a8f1-a762fdd96ae8:
+    Money: 50
+    MaxHomesAllowed: 3
+  c77e793e-f737-496f-949f-4eafc0464d85:
+    Money: 50
+    MaxHomesAllowed: 3
+  01be2757-4897-4264-9f0d-3c7f63fbb561:
+    Money: 50
+    MaxHomesAllowed: 3
+  32ac0cba-42aa-44cd-9cd3-f37009c580ae:
+    Money: 50
+    MaxHomesAllowed: 3
+  0a98be73-11e5-4d2f-9842-19254d554fb3:
+    Money: 50
+    MaxHomesAllowed: 3
+  c52d60b7-b796-4b39-bf3e-6c73a3151cde:
+    Money: 50
+    MaxHomesAllowed: 3
+    JobInfo:
+      Name: MINER
+      Level: 0
+      XP: 0
+  48e518a8-fc2a-4805-93f9-276c6f36df52:
+    Money: 50
+    MaxHomesAllowed: 3
+  9c696513-764e-481a-9163-4aeedd615109:
+    Money: 50
+    MaxHomesAllowed: 3
+  f0ed3bce-9a69-4544-8d29-c7c86cde3da8:
+    Money: 50
+    MaxHomesAllowed: 3
+  c2f3da0c-df7c-41ef-8bf5-e01998cc480f:
+    Money: 50
+    MaxHomesAllowed: 3
+    Homes:
+      '1': SurvivalWorld|3540.353149902104|125.0|-4406.12265964431|-275.04868|38.549984
+      '3': SurvivalWorld|-3439.95677038015|11.0|1945.064614100427|128.30338|18.299944
+      '2': SurvivalWorld|-1336.7212169558547|138.0|-47.09850714729326|-189.84668|14.099946
+  bb87f588-bf96-4709-b3bd-ef1508b9f33f:
+    Money: 50
+    MaxHomesAllowed: 3
+  ba17f120-8306-43eb-b941-41e258431cfa:
+    Money: 50
+    MaxHomesAllowed: 3
+  0bd63f66-23fe-45b2-873d-8e3aa11e2890:
+    Money: 50
+    MaxHomesAllowed: 3
+  9412408b-964b-4173-8a2b-34c3d579d923:
+    Money: 50
+    MaxHomesAllowed: 3
+    JobInfo:
+      Name: HUNTER
+      Level: 0
+      XP: 0
+  8511db40-9a54-443b-88bf-c8f2dff45c54:
+    Money: 50
+    MaxHomesAllowed: 3
+  c101be8d-b940-4876-9721-a7f111681701:
+    Money: 50
+    MaxHomesAllowed: 3
+  b9191f7b-1292-4e20-bdc7-49e91e4a1593:
+    Money: 50
+    MaxHomesAllowed: 3
+    Homes:
+      shop: SurvivalWorld|-395.63268033494097|66.0|-204.11449864838215|158.75043|12.6
+  07479ea8-3db2-4728-b7e3-23f82bf3315d:
+    Money: 50
+    MaxHomesAllowed: 3
+  cd121c0e-30b5-4137-bddd-4beecef9afd6:
+    Money: 50
+    MaxHomesAllowed: 3
+  3147c45a-b736-4bfd-a040-bf8e33d1bb16:
+    Money: 50
+    MaxHomesAllowed: 3
+  283fd31e-0fd5-4768-915d-da1a152c257c:
+    MaxHomesAllowed: 3
+    Money: 50
+    Homes:
+      arens: SurvivalWorld|-1217.0735724819294|80.0|-150.2150805160539|-190.31241|29.401497
+      grot: SurvivalWorld|-2060.3128544854885|13.0|-274.05804269752144|-81.26008|0.7152265
+      parcor: SurvivalWorld|2781.112820773174|134.875|-351.69999998807907|-315.38147|-25.721249
+  98b18a1e-c96c-4cf4-9ab1-debda2689ef0:
+    MaxHomesAllowed: 3
+    Money: 50
+    JobInfo:
+      Name: MINER
+      Level: 0
+      XP: 0
+  3d289584-30ad-46cb-9067-d70ce716d32e:
+    Money: 50
+    MaxHomesAllowed: 3
+  93ae0832-09d8-4c97-bd5e-5da655c4cce6:
+    Money: 50
+    MaxHomesAllowed: 3
+  94ec57ce-3bc2-4220-a11e-e4afc4a6554f:
+    Money: 50
+    MaxHomesAllowed: 3
+  c95239f0-7da4-419e-86e3-9871f73ec727:
+    Money: 50
+    MaxHomesAllowed: 3
+  154b6bf2-6e65-42ce-98a5-a2b4b72f5cac:
+    Money: 50
+    MaxHomesAllowed: 3
+    JobInfo:
+      Name: HUNTER
+      Level: 0
+      XP: 0
+  5d463ce5-b556-4d98-9316-547765ddd7f3:
+    Money: 50
+    MaxHomesAllowed: 3
+  4149879d-cd3f-49e3-9039-b5e169a18fdd:
+    Money: 50
+    MaxHomesAllowed: 3
+  adddf7ad-c1b6-4f0e-8902-dd3fd89ca43f:
+    Money: 50
+    MaxHomesAllowed: 3
+  1fa9e383-ee64-49c5-a87e-49c52a97a39f:
+    Money: 150
+    MaxHomesAllowed: 3
+    JobInfo:
+      Name: MINER
+      Level: 0
+      XP: 0
+    Homes:
+      qwerty: SurvivalWorld|-3513.5626760056402|73.0|-2408.4017931729722|0.6515798|11.849956
+    MerchantInfo:
+      Selling:
+        '386':
+          Type: COAL
+          Durability: 0
+          Amount: 12
+          Price: 5666
+        '387':
+          Type: COBBLESTONE
+          Durability: 0
+          Amount: 18
+          Price: 0
+  eb1e154a-f24f-4354-abd6-0092383318ef:
+    Money: 50
+    MaxHomesAllowed: 3
+  65805bbe-af6f-4498-9520-8e42a8c0423b:
+    MaxHomesAllowed: 3
+    Money: 50
+  c7465ea6-72cf-4e4b-9707-ed3764cc9c89:
+    Money: 50
+    MaxHomesAllowed: 3
+    JobInfo:
+      Name: NETHER_EXPERT
+      Level: 0
+      XP: 0
+  2e4ee793-62af-476f-a1a1-789888f92ddf:
+    Money: 50
+    MaxHomesAllowed: 3
+  1fe1f242-e3ae-4081-b12b-57f3ae112c2a:
+    Money: 50
+    MaxHomesAllowed: 3
+  24535f1c-a8af-4837-bac6-b9ae0f396913:
+    Money: 50
+    MaxHomesAllowed: 3
+  979dbbb4-3462-4323-8433-25a5c9d105eb:
+    Money: 50
+    MaxHomesAllowed: 3
+  sharewoods:
+    Announce: true
+  44d3dc82-9389-42f0-a491-ad6892613a3b:
+    Money: 50
+    MaxHomesAllowed: 3
+  f8718a74-80ae-4cb5-a942-8a9a033fbd0f:
+    Money: 50
+    MaxHomesAllowed: 3
+  0a32d03b-3ef3-474b-a2cd-90136a8663b4:
+    Money: 50
+    MaxHomesAllowed: 3
+  4c77f6fb-0702-426f-8dab-ff6a4ea83ba6:
+    Money: 50
+    MaxHomesAllowed: 3
+  8b732cd6-3ef0-4d3d-990f-704021a6463f:
+    Money: 50
+    MaxHomesAllowed: 3
+  8a3caf6f-fbca-4c40-b33f-7a21956c91e0:
+    Money: 50
+    MaxHomesAllowed: 3
+  2f22f86f-3a4c-40b7-a9c2-c81d512a8fc9:
+    Money: 375
+    MaxHomesAllowed: 3
+    JobInfo:
+      Name: MINER
+      Level: 0
+      XP: 0
+  cd9706d8-81f9-470c-8ebb-d1f9063306c6:
+    Money: 50
+    MaxHomesAllowed: 3
+    Homes:
+      island: SurvivalWorld|148.76295735615977|63.0|-4005.5405642682013|-169.35968|13.50871
+      minerandom: SurvivalWorld|171.48374475824264|11.0|-3834.699999988079|266.90372|7.1096396
+  689cfd40-11b9-4f6a-8e52-984814c1b29c:
+    Money: 50
+    MaxHomesAllowed: 3
+    Homes:
+      eiland: SurvivalWorld|148.89794232564861|63.0|-4005.241366166422|-180.55058|19.049978
+      random: SurvivalWorld|681.3849649034536|11.0|-3776.8707322452524|9.805908|14.24999
+  1f84efba-5c2b-4a44-a346-f90d6fa9c8db:
+    Money: 50
+    MaxHomesAllowed: 3
+  95c7a4f1-0bc1-40ef-a775-493230fea1b6:
+    Money: 50
+    MaxHomesAllowed: 3
+    JobInfo:
+      Name: MINER
+      Level: 0
+      XP: 0
+  e59ddfbd-7cd8-433e-aad8-1603c34dd5c2:
+    Money: 50
+    MaxHomesAllowed: 3
+    JobInfo:
+      Name: MINER
+      Level: 0
+      XP: 0
+  05e03a9f-e1b3-4254-a63d-4a2047fa0aeb:
+    Money: 50
+    MaxHomesAllowed: 3
+    JobInfo:
+      Name: MINER
+      Level: 0
+      XP: 0
+  5ab13b57-2fb7-4ac6-9bf3-7b8599cf630a:
+    Money: 50
+    MaxHomesAllowed: 3
+    JobInfo:
+      Name: ANIMAL_FARMER
+      Level: 0
+      XP: 0
+  245fb131-c05a-430d-8779-ba10d830084d:
+    Money: 50
+    MaxHomesAllowed: 3
+  d691f8ec-af87-4c5e-b3df-cc0ccdfa48f6:
+    Money: 50
+    MaxHomesAllowed: 3
+  9e85940f-c658-46e7-bf72-d9d7e55953f7:
+    Money: 50
+    MaxHomesAllowed: 3
+  e2e4b6b4-aa06-4f87-8e26-354545350fff:
+    Money: 50
+    MaxHomesAllowed: 3
+  f1bbb882-9904-4812-ae75-37c2030fde93:
+    Money: 50
+    MaxHomesAllowed: 3
+  358382a3-48a5-422d-9512-f503bb12d288:
+    Money: 50
+    MaxHomesAllowed: 3
+  5ce7b38d-5e1c-488b-9cdf-6fe76ce85605:
+    Money: 50
+    MaxHomesAllowed: 3
+    Homes:
+      home: SurvivalWorld|162.22075840240694|63.0|-4006.6350201950654|257.74158|8.388278
+      mine: SurvivalWorld|180.3175007153289|11.0|-3848.4552611018303|-187.77654|33.66787
+      ll: SurvivalWorld|182.96281498177188|10.0|-3912.4869576777132|275.2034|71.009125
+  cad26345-a90f-482c-a630-547c80ed2bfc:
+    Money: 50
+    MaxHomesAllowed: 3
+  45056955-2bdd-46d3-b009-a3807b9ccb5a:
+    Money: 75
+    MaxHomesAllowed: 3
+    Homes:
+      home: SurvivalWorld|-3841.792365606104|63.0|1711.111267722376|-7.145752|25.500027
+    JobInfo:
+      Name: FARMER
+      Level: 0
+      XP: 0
+  06a04ac5-0057-45a2-aa79-923fd66791e8:
+    Money: 50
+    MaxHomesAllowed: 3
+  075c0698-1454-47c3-b7db-9fd744c77a88:
+    Money: 50
+    MaxHomesAllowed: 3
+  4fdf718b-41e8-48d5-a7e1-0b8bcda5ca84:
+    Money: 50
+    MaxHomesAllowed: 3
+  6690ba75-d79a-4147-9499-c089b6269d4b:
+    Money: 50
+    MaxHomesAllowed: 3
+  fb98f440-5f40-41d8-bf4b-836a2f4d1d71:
+    Money: 50
+    MaxHomesAllowed: 3
+  648982b3-f896-435e-928a-c9e1b8563881:
+    Money: 50
+    MaxHomesAllowed: 3
+  368d4b0c-3744-4423-91a6-c91aa92e3a85:
+    Money: 50
+    MaxHomesAllowed: 3
+    Homes:
+      home: SurvivalWorld|2703.3942373436553|64.0|1447.2267249431889|-227.9497|17.99999
+  7be899ac-2550-443a-a071-b3773d9ec547:
+    Money: 50
+    MaxHomesAllowed: 3
+  5fc60485-639e-402f-9db7-9ba1495c25bc:
+    Money: 50
+    MaxHomesAllowed: 3
+  4d74660b-581f-47cf-95f4-99215b59f7e2:
+    Money: 50
+    MaxHomesAllowed: 3
+  e3efa3b7-772b-449c-8e7a-38feaa93fa06:
+    Money: 50
+    MaxHomesAllowed: 3
+  814c129d-2e38-4bd0-aeb0-497b51f2a5c9:
+    Money: 50
+    MaxHomesAllowed: 3
+  d8b351a7-0a91-4c9b-a5f8-480f1866948c:
+    Money: 50
+    MaxHomesAllowed: 3
+  60a05153-20dc-4f32-842d-b497fd950ba1:
+    Money: 50
+    MaxHomesAllowed: 3
+  903c00f1-8d07-4ac2-b08a-8fbdb70c855d:
+    Money: 425
+    MaxHomesAllowed: 3
+    Homes:
+      home: SurvivalWorld|2291.649214361879|67.0|-2719.5436666081605|267.46176|5.249924
+  39133c90-3782-4cea-b570-aad0b1d19f9f:
+    Money: 175
+    MaxHomesAllowed: 3
+    Homes:
+      home: SurvivalWorld|-1880.5365170721063|72.0|-338.8638647256021|102.64441|10.050051
+      paul: SurvivalWorld|2633.4172670823477|64.0|1406.5816605338537|173.29437|9.600011
+      kyra: SurvivalWorld|-2064.9437994367026|69.0|1742.768058390902|49.39991|12.75001
+  2873f7d1-2e74-4ddb-8bdf-38268f8aa349:
+    Money: 50
+    MaxHomesAllowed: 3
+  8a3f0f78-02f5-4ac8-85f9-d3e6a3da6cfc:
+    Money: 50
+    MaxHomesAllowed: 3
+    Homes:
+      home: SurvivalWorld|2315.142380255134|68.0|-1084.3728752751035|-284.54965|69.72482
+      ok: SurvivalWorld|2315.142380255134|68.0|-1084.3728752751035|-284.54965|69.72482
+  5b4b6521-c138-46cf-acba-24d4ced8711f:
+    Money: 50
+    MaxHomesAllowed: 3
+  e0a238ef-bc05-4f3e-9d2d-86e1372bb66e:
+    Money: 50
+    MaxHomesAllowed: 3
+  e09fbb83-1462-4025-b24e-ec9c81c9f729:
+    MaxHomesAllowed: 3
+    Money: 50
+    Homes:
+      home: SurvivalWorld|-1358.6228064024594|70.0|-119.58817932621137|-88.25968|10.499927
+      village: SurvivalWorld|-1455.5167619939973|68.0|83.82433591439359|-30.65968|31.049953
+  2f87e4b1-bee0-441d-9d8e-919522fcfc2c:
+    MaxHomesAllowed: 3
+    Money: 50
+  03bac7ab-3fa1-40c5-ba75-637f764064b2:
+    Money: 50
+    MaxHomesAllowed: 3
+  66cfb5ca-9897-49d0-9353-c41c9c2675a5:
+    Money: 50
+    MaxHomesAllowed: 3
+    JobInfo:
+      Name: HUNTER
+      Level: 0
+      XP: 0
+  a88daeb5-650d-4323-a296-9cc3d89be4e0:
+    Money: 50
+    MaxHomesAllowed: 3
+  0fa76ff5-388c-4624-9a19-a4367a0a9fde:
+    Money: 50
+    MaxHomesAllowed: 3
+  09e1b46d-7b7a-4d21-aa91-71d69bb9ad89:
+    Money: 50
+    MaxHomesAllowed: 3
+  dcd7094f-ded4-4795-ab68-9962662c715d:
+    Money: 50
+    MaxHomesAllowed: 3
+  c206506e-af21-4334-9062-5e84ffa0ac9a:
+    Money: 50
+    MaxHomesAllowed: 3
+  a6b5ccac-aef1-4028-b4f7-02e47a8c1c0c:
+    Money: 50
+    MaxHomesAllowed: 3
+  526ca84b-3a15-4bff-bb4c-fd93a6c3cebe:
+    Money: 50
+    MaxHomesAllowed: 3
+  00a52b22-ac0a-47f9-a273-1e217b21b48d:
+    Money: 50
+    MaxHomesAllowed: 3
+  611f3d08-53e1-4785-8ea3-2ae16e913b1f:
+    Money: 50
+    MaxHomesAllowed: 3
+  2b10cc00-ddb7-4bd1-b6a4-d24f7936767a:
+    Money: 275
+    MaxHomesAllowed: 3
+  01f02058-e40c-41de-ae6c-7b344d4c2594:
+    Money: 50
+    MaxHomesAllowed: 3
+  0e7bf642-caf8-477d-9cd5-f4ec8bacab26:
+    Money: 50
+    MaxHomesAllowed: 3
+  8eaea74b-f677-4f14-a4e8-b18b96ef2bc3:
+    Money: 50
+    MaxHomesAllowed: 3
+  0f7ec7c3-908e-4063-bda5-ba469018fe18:
+    Money: 50
+    MaxHomesAllowed: 3
+  0ab28912-6add-417f-b16c-ee9f4cf5a142:
+    Money: 50
+    MaxHomesAllowed: 3
+  9764e2f2-d00e-4777-8df2-9870e03cdc7a:
+    Money: 50
+    MaxHomesAllowed: 3
+  cc66d097-8030-47d5-8b6b-152cf299d670:
+    Money: 50
+    MaxHomesAllowed: 3
+  5b81d854-3759-4c5b-824a-5242e20c367d:
+    Money: 50
+    MaxHomesAllowed: 3
+    Homes:
+      home: SurvivalWorld|-3320.4633678970276|64.0|2623.1984633736006|31.328735|3.0581405
+  c903601a-cab2-4c78-9d17-2dc72edbc96f:
+    Money: 50
+    MaxHomesAllowed: 3
+  fcae5324-55fe-45a5-bca4-d03cefa61cd8:
+    Money: 50
+    MaxHomesAllowed: 3
+  310eb999-060b-4099-a2f1-8665d7b13573:
+    Money: 50
+    MaxHomesAllowed: 3
+  bb598933-f545-44cf-a965-c019807dfe2f:
+    Money: 50
+    MaxHomesAllowed: 3
+  ac65fb62-7af7-40a4-a4a8-f6ebcf508fae:
+    Money: 50
+    MaxHomesAllowed: 3
+  9af2e3ba-3def-4c4e-9328-d3bfcf329675:
+    Money: 2050
+    MaxHomesAllowed: 3
+    JobInfo:
+      Name: FARMER
+      Level: 0
+      XP: 0
+    Homes:
+      home: SurvivalWorld|2728.9870657716046|71.0|1399.9107186324366|-97.62549|47.989334
+  749cde31-2b52-4f1a-9092-c0d531c2930d:
+    Money: 50
+    MaxHomesAllowed: 3
+  f393b4a0-7366-4cb3-9f8e-d97203cbe954:
+    Money: 50
+    MaxHomesAllowed: 3
+    JobInfo:
+      Name: MINER
+      Level: 0
+      XP: 0
+  4471c3b8-0fde-4c9a-a946-7c94403ddb70:
+    Money: 50
+    MaxHomesAllowed: 3
+  32f97718-e8fa-471a-91ba-6301715c7dfa:
+    Money: 50
+    MaxHomesAllowed: 3
+LastDeal: 413
+ClaimBugToGive:
+- rienk222
+- 123pika456
+- jomancool55
+- O_o_Fadi_o_O
+- WOUT2004ANIKIN
+- aydenolmos
+- superbob2001
+- SGLMerlijn
+- K3vinSp
+- gwnluca
+- iFridge_Ivo
+- daanpabst
+- godda28
+- uranus2013
+- borie2004
+- playwarrior
+- Jardi_Mosselman
+- MyCoalGaming
+- woesteloempie
+- koningstan112
+- ivano2004
+- boazdepoaz
+- gapisabelle
+- Siobhan789
+- Lejoor456
+- NicoInTheHouse
+- otto10otto10
+- gigantmelvin
+- cincinnus
+- XthobianX
+- AmineCrafter007
+- eekhoorn2000
+- kenava
+- Marick06
+- sharewoods
+- koningdj03
+- milan_rietveld_1
+- ThatJakke
+- lokol1000
+- huntingstud
+- brutusthebeast
+- 12olivier34
+- Gesel11
+- RadiantPixelz
+- JoostoGast
+- kevinb_2003
+- appelz15
+- EpicSquirleX9
+- matt20041
+- 4Jonas
+- _JUST_CHRIS_
+- MarijnGames
+- terrorpookie
+- partycasper
+- RowdyBakker
+- eliboycool
+- kyran2002
+- kevinkeijzer2004
+- daim123654
+- the_king_k47n3
+- TheHobard
+- Poochum
+- XxPikachuBoyxX
+- sjouk123
+- bartiendani
+- killerfrans
+- Superaardbei75
+- get_pranked
+- prosam123
+- Bastrooper
+- ghostking44
+- Putkutin
+- comedyXD
+- rubendc2004
+- supersnuitje2
+- Dylandeer
+- supermario0001
+- MikeGamer2002
+- kippenfreak
+- maj4r
+- BryanVgemert
+- SpiderMan347
+- Ironman682
+- martin_rakkern
+- Iefo
+- cemre2002
+- timmietim26
+- HTBJim
+- BossOfToad
+- 4Oneday
+- DJgiogi
+- nicolakevin
+- brienie2001
+- TheVaultPvp
+- 20rick02
+- Rini2003
+- X_Roomijs
+- BilalTR
+- jasonboy7
+- LekkerFamous
+- JeffreyYe
+- its_me_djimmi
+- Dimitiris25
+- vinner70
+- SuperTjesse
+- Owen_timo
+- casidas
+- jeshua_sheepking
+- amberb_2004
+- GekkeNooby
+- chickenbrains
+- tygboy10
+- nicosimo93
+- Teleport1409
+- AlmightyNiels
+- AntiFighting
+- legoknockoff
+- N1ls
+- xXMegaFireXx
+- Hakker139
+- mick0101
+- iducooo
+- DJ_Maxxter
+- neymar11boy
+- jaapio2810
+- GroBF
+- TheSwaggerboy
+- awesomesn
+- morgnim
+- Minecrafterra4
+- _PinkShadow_
+- zotie3
+- marioandbowser30
+- daniel1xxx
+- xXMadnessMinerXx
+- allien17
+- Fleur262
+- IJsselminecraft
+- _lars010_
+- JipMichel
+- Toobster
+- MathijsE02
+- jurgen0390
+- MaxvanderWijk
+- mobfighter2014
+- jurbuilder18
+- ruubski
+- mrloler5415
+- Kiwislash
+- RoyalFlashhh
+- DubbelKyran
+- AzzerStandish
+- Kornstar2010
+- NautvdL
+- supernelis2511
+- magigDfrl
+- wesleyjonker2409
+- flame_arrow21
+- bartdecoolste
+- Luanidas
+- krachtpatsertim
+- dig2oblivion
+- JesseR95
+- kouros22
+- Dteterissa
+- m0nngis
+- SuperExosGamer
+- igiboy2012
+- ExplodeHD
+- semthekiller
+- _Ug
+- Bartje_zegt
+- Isis_Confirmed
+- PuReEHaTeE
+- ProfDrChris
+- xXINeoIXx
+- Xzero119
+- freestylejo5
+- Yoshi54_51
+- xstenboy
+- XLCreepers
+- Dark5mile
+- NL_NOOBSLAYER
+- jonabuilder1998
+- semamsing
+- MrDragon_01
+- supechicken159
+- Cheesenuggetts
+- XxEnderGamer
+- SuperCrafter88
+- PGMO131298
+- cammzyboy86
+- craftsajad2
+- djdanceA
+- alex_pro
+- Fire_Gun_LP
+- garethirwin
+- sceach2
+- Megalodon2
+- bloodekiller
+- Peachting
+- Tommelhood
+- thomasdephomas
+- Ramine2001
+- 0Teleport0
+- blackberry9900
+- djbart2002
+- Mtijn101
+- martin_mathias
+- Snoringmunchlax
+- PartyPolice
+- brutuske02
+- mvgeffen
+- timovg
+- Jeroen050
+- Pepijnse
+- vic75
+- Giant247
+- Arabu
+- stannekepanneke
+- Relicum
+- bobscarparts
+- The_Blue_Dragon
+- ColletArthur
+- EmjeR
+- The_Killer_7
+- SenseiRIP
+- Alexroge
+- linksword916
+- TheArgonKnight
+- draak92
+- de_bever
+- DouweGamesYT
+- hoi666ik
+- ThomasZomb
+- revalir
+- Balfa007
+- xanderboy2828
+- lukedev12
+- BRAVE10
+- jorispro
+- yoscottyo
+- Timmeenwouter
+- sneeuwvacht
+- yolostijn7055
+- xMickaa
+- yorib7
+- lordchima
+- wesselboy123
+- Filipinos3
+- lOlexionexis
+- DanielxHD
+- jolan21
+- mara85
+- MegaBeta
+- VoetbalMerijn
+- CoD_Maliwolf
+- IsaiahPlaysGames
+- mirrygost
+- ElectronicWizard
+- zurg200
+- rendezvous_
+- xXSupaFishXx
+- K_for_Kazza
+- Tygoboem
+- dutchfifaskils
+- reily16
+- pammm93
+- dePlant
+- PGraphix
+- dasmooi
+- Whackyorb
+- Ragthanatos1000
+- Black_Fire_HD
+- coole_Thijme
+- Sr_Elchu_FM
+- YellowDragonJ
+- genjutho
+- Ripedip
+- Justas_Bastas
+- 2006lars
+- pjenis905
+- JoeryBakker
+- knufi360
+- xIdeleteIx
+- danitosMC
+- BernhardW
+- girlygirl450
+- ZombiesGhost
+- Mac_Bruno
+- Legomiro
+- Lulle_Likker
+- ChillerKraft
+- DarkToxic
+- Dhrpieter9
+- Cardos
+- kukubaczeek
+- spiderweb121
+- DjemielBakker
+- Tibsie03
+- DrunQen_MunQey
+- jellybeanyjel
+- SheepGoDzZ
+- BjornJens
+- BeastModesTeun
+- daanms
+- EyGiooo
+- BorisdeGoede
+- ursupator
+- Fusselkopf
+- williamnrbk
+- goedegebure
+- MaxiOFul
+- Thyrx
+- Lucaman8
+- FOBulous_Alice
+- Vytrio
+- Fazemonkey
+- diegotilburg
+- Kolkje30
+- _CrazyChris_
+- OfficalMojang
+- iThomasPink
+- Matthiov
+- firedraak
+- TRitenburg
+- RedemtionMC
+- dimitrybouman
+- PiemelDipSaus
+- KontGaatje
+- tarol
+- DahRealSupah
+- KasperBoris
+- Just_Boris_03
+- cvr2_0
+- Potti2001
+- samimiliano01
+- maximiliano01
+- SpyroTM
+- Koekje030
+- DieJongens
+- Merijnboyx
+- the_stonebuilder
+- TheLotteS
+- ReneeZuus
+- happydog2002
+- girlpower66
+- Bryce2cool2006
+- assfire99
+- 10ukkie10
+- Luukimo
+- Chomi2000
+- DylanNL
+- cooleromeo
+- bbjb20
+- wouterdeboer
+- ni_dy_ry
+- Wabsickle
+- imme3
+- Sheamus1214
+- Elmas_Ejderha
+- Pjc1992
+- 2005elias
+- NietKyra
+- Jurre101
+- FleurFlower
+- Wifocraft
+- RickM
+- PatatKraam
+- Epic_King_Peter
+- GnomNom_Movies
+- Shadowfax999
+- MilaMoxx
+- BoyLTV
+- GewoonTwan
+- Andresian
+- juliusboy800
+- ribbon_kha
+- HSMonkeY11
+- TheFrosty_Person
+- Merlino
+- rickbuurmans
+- Serverpact
+- DfqCraft
+- TicoBeck
+- florisboyy
+- valcrog
+- Noidje97
+- Luuk_The_Builder
+- Speedy_Pinda_NL
+- DeemsGames_nl
+- CRAZY_MOPPO
+- sylky116
+- Brutuske02
+- Choocokoekkie
+- SemjoGamePlays
+- vincentvankuijk
+- Black_Jok3rs
+- RavaPollo
+- MrButterslayer
+- JaviLapLab
+- Koning_paul
+- theEvilReaper
+- BartTheBoss
+- Wavehunters
+- Jonino
+- Ravasa1
+- shadgalo
+- RPGHACK11
+- Gamer96YTSuper
+- kai824
+- Dark_Shame
+- EnderShadow500
+- TimV22
+- JustJoepje
+- smiley_devon
+- ABCTijgertje
+- mascotlover2525
+- AlexOzzyB
+- gamenerd25
+- partyboy_D
+- XX_AronK_XX
+- lucy2500
+- G3lfl1ng
+- corwin111
+- II_ninjanoah_II
+- jbaltus
+- TheMagikarpKing
+- ITendenzSinkend
+- Pvp_Guardian_
+- laurens13
+- viktorvermassen
+- iAllex17
+- Topcatflap
+- jeroeneboy
+- VIUMOLUX
+- thotralalalala
+- SiebeZeeland
+- lylyboy
+- Sqiudex
+- Manyo12
+- sisboy_56
+- McFloorie
+- kevinthehero123
+- Paul0416
+- Silibenzalawi
+- Partyboy_D
+- DarknessRogue
+- Genesis_Apok
+- Jafarel
+- ObnoxiousMonkey
+- 101Barz
+- MrMarioPlays_YT
+- N1nj4_G1rl
+- Pieke100
+- Pandrew30
+- Trentdking
+- Dylans150
+- mees20
+- Palito2002
+- BlockHeadDiamond
+- z3OrangeTi
+- _Maik_sc
+- bobdehuisbaas01
+- HardCorPvP
+- luukiboy1
+- larsop06
+- Rimme2004
+- riicky12
+- TeleportGamer123
+- Sjakie100
+- Pokeman197
+- VebionPlays
+- sanne003
+- Nenaminecraft
+- superswiftspeed
+- mberends
+- otterkes9904
+- lindemineur
+- Jonathano
+- LetTaddl
+- jim5491158
+- Kallum_HD
+- asiLukystar
+- OSOPOCHO
+- m3nno
+- mikamonster2000
+- JustRickGaming
+- Noutiehoffie
+- jelmerminer
+- Edward037
+- RUBENDARIO2004
+- Tete500
+- yolomaster64
+- protoman120
+- 8robi8
+- semboy11
+- KingWolf122
+- GiantGames
+- _Firebeatz_
+- S_superpinda
+- Niek679
+- snoop07
+- calior853
+- presidentobauke
+- crazy_pizzaninja
+- ava1231
+- Thunderking4876
+- NelsonSymen
+- ChocoLadeMelk
+- Kazz13_boy
+- Airos10
+- DelvilAngel
+- napataara
+- Master_Gamer123
+- xVinceH
+- Lewoq
+- Legendary_MC370
+- Froakie7
+- firefoxx927
+- rafgamerpro
+- neelyweely
+- pastasaus010
+- joelnoppert
+- TheDerpZombie
+- bradleymessi10
+- Ghast_Ghost
+- Anna_13
+- gekken_boy
+- femke_en_michiel
+- burgerino
+- Jotte_PVP
+- SuperH3RO
+- Dante_GamePlay
+- Pika_Girl_Mc
+- blurayizfreshz24
+- Centaurius
+- DiamontFriend
+- esbem
+- OliVIER_4
+- goldenman20
+- Txinbi
+- GodGDD
+- TaroxxGamer
+- Kickwird
+- MrPinnaplz
+- MEXECAN123
+- juriandekker
+- xX_IKING_Xx
+- Gastyx
+- _HeyimEmma_
+- kjeldJanssen
+- TimGamer123
+- RubenV139
+- MRpossuPvP
+- stampymitch
+- creeper100280
+- Fabian04Isaksson
+- pieterisdebeste
+- rickkieboy10
+- DuisterLord
+- theMysteryBoss
+- Jortvangemst
+- Thomnitro
+- Fireyfireball
+- terminator1100
+- ITO1
+- untwistedkid
+- Astro_Snake
+- oorklepje2001
+- SgXCreticals
+- alexik2006
+- DavidozNL
+- HenrikPlayzzHD
+- robohead101
+- m_naseman
+- MrTurkey06
+- JoeyNNL
+- Keuti
+- Nehcim
+- Kyan1000
+- swaggergames
+- DIEGOVELEZ2007
+- _GoldenFight_
+- JustMarkHere
+- SoullMaster
+- jefdijk
+- N_ComboPVP_N
+- RemmieMine
+- wberends
+- DutchPsycho
+- Dutchteddybeer
+- MGirl721
+- Cp022
+- patrick18072001
+- Herrkuhles
+- Ninja_Girl_Kate
+- doobysnacks
+- KemoGamesYT
+- Alcoholic_Dave
+- Fuwz
+- IvoraMC
+- JamayX
+- AlleenGlenn
+- iemand17
+- Football_Crafter
+- PatrickLieb
+- TheKillerBot
+- game_to_the_max
+- alexitron2001
+- Thomas606
+- TheGuti963
+- killer_Nathan
+- Selawi
+- MichonTNG
+- joppie1405
+- PINDAxROTSJE
+- vootjepvp
+- Jopie013
+- Jensiebboy
+- 10esmee10
+- hothead22305
+- champie123
+- ItzCometYT
+- KemoTV
+- Robin_030403
+- Natural_Destiny
+- Amie1991
+- ravo8
+- Beastygunner
+- Vulgario
+- Googlethis
+- jaguarnick
+- magnushaugr
+- ciaran236
+- Potato125
+- sea_coldplay
+- MissXCupcake
+- UrGoNeLoL
+- Agedo
+- Kokosnuss_TV
+- KapitaenSchick
+- altijd_anne
+- Pjenus_2
+- TheGamersNL
+- _Savie_
+- frutseloma
+- Vibezz
+- Bunnylover64
+- ruby010
+- jorre09
+- TheGelZ
+- TrustyGamesMaker
+- coolboys100
+- sanderkorndewal
+- Ni3tKyr4
+- Afrobob1234
+- eeawb
+- koentjep
+- TCBEP1977
+- Jeroendg99
+VoteRewardsNotGiven:
+- d74cc61c-0d14-4873-965f-c23679ccaf8e|4|
+- ee6b32a8-9885-4b74-8bb4-9a0262c02e95|2|
+- daceea73-5c79-4804-80bf-7ec3ac6c5163|3|
+- ba879ec1-f30d-421e-bba9-4a4d9906d672|8|
+- 57ca5227-98be-4dbb-aafa-9332f3362028|1|
+- d0f6f836-e3ec-416a-b6b9-f7eedc933e2d|1|
+- 82f340b9-cbc3-46f3-9244-580fd4d38413|4|
+- ecaaff57-f506-4779-a450-1a148bd80aec|1|
+- f3724fae-47f3-4370-94e1-faf2da8065d1|1|
+- 552c0d24-4efa-409c-8072-92e1cf71bbff|3|
+- cef4ba59-f58c-47b3-b3b9-ebd2f83029b9|1|
+- 2ff845e0-f179-43b6-8e27-39a8eee6ea97|1|
+- 57085bd0-6705-4ce7-a6bc-c8277caa251e|1|
+- 413d5822-34d7-4dcd-9438-5f08aaf9af18|4|
+- 5a955dd4-6e56-4660-8267-6ff8b77432bb|3|
+- a9c31c0a-fd32-4d1e-9a7b-96b3c9edf89a|1|
+- f1e53de1-f37b-45b2-a490-3361fb7e12a1|3|
+- 5d9bdf24-3974-4587-8d5d-f3e0abb8f95c|1|
+- 7be899ac-2550-443a-a071-b3773d9ec547|5|
+- 90eda1b8-c17c-45a7-ba43-9ab81a11ab55|2|
+- 5688f48f-f89b-42f2-be14-ea9b786430da|1|
+- e614a99a-7853-4114-b41d-b7900af3e254|4|
+- 8cf6cce0-99fd-4924-9fb0-282d5943baf8|4|
+- 48db927b-7b54-4709-8560-7746293ee161|4|
+- b70b710b-2ddf-4fee-93ab-633aab41feda|3|
+- 6bbc476a-6d9c-4ad6-a80e-977511f56256|3|
+- 01a5412b-275b-4f42-aea9-1bef163210b9|4|
+- 2b10cc00-ddb7-4bd1-b6a4-d24f7936767a|11|
+- 371740db-9cf7-4990-a3e5-72baef43b82e|4|

@@ -1,0 +1,498 @@
+ShopName: GoldVIP-P1
+signs:
+  text: '[P]'
+  NeedPermissionToCreateSign: true
+shop:
+  Emerald:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - type:EMERALD
+      - amount:1
+    Reward: 514
+    MenuItem:
+    - 'type: EMERALD'
+    - amount:1
+    - name:&A&L1 Emerald
+    - 'lore:&2&LReward: &4&m468$&b 514$'
+    - amount:1
+    InventoryLocation: 1
+    ExtraPermission: 'vipshop.G'
+  Emerald16:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - type:EMERALD
+      - amount:16
+    Reward: 8250
+    MenuItem:
+    - 'type: EMERALD'
+    - amount:16
+    - name:&a&L16 Emerald
+    - 'lore:&2&LReward: &4&m7500$&b 8250$'
+    - amount:16
+    InventoryLocation: 10
+    ExtraPermission: 'vipshop.G'
+  Emerald32:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - type:EMERALD
+      - amount:32
+    Reward: 16500
+    MenuItem:
+    - 'type: EMERALD'
+    - amount:32
+    - name:&a&L32 Emerald
+    - 'lore:&2&LReward: &4&m15000$&b 16500$'
+    - amount:32
+    InventoryLocation: 19
+    ExtraPermission: 'vipshop.G'
+  Emerald64:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - type:EMERALD
+      - amount:64
+    Reward: 33000
+    MenuItem:
+    - 'type: EMERALD'
+    - amount:64
+    - name:&a&L64 Emerald
+    - 'lore:&2&LReward: &4&m30000$&b 33000$'
+    - amount:64
+    InventoryLocation: 28
+    ExtraPermission: 'vipshop.G'
+  Diamond:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - type:DIAMOND
+      - amount:1
+    Reward: 257
+    MenuItem:
+    - 'type: DIAMOND'
+    - amount:1
+    - name:&b&L1 Diamond
+    - 'lore:&2&LReward: &4&m234$&b 257$'
+    - amount:1
+    InventoryLocation: 2
+    ExtraPermission: 'vipshop.G'
+  Diamond16:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - type:DIAMOND
+      - amount:16
+    Reward: 4125
+    MenuItem:
+    - 'type: DIAMOND'
+    - amount:16
+    - name:&b&L16 Diamond
+    - 'lore:&2&LReward: &4&m3750$&b 4125$'
+    - amount:16
+    InventoryLocation: 11
+    ExtraPermission: 'vipshop.G'
+  Diamond32:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - type:DIAMOND
+      - amount:32
+    Reward: 8250
+    MenuItem:
+    - 'type: DIAMOND'
+    - amount:32
+    - name:&b&L32 Diamond
+    - 'lore:&2&LReward: &4&m7500$&b 8250$'
+    - amount:32
+    InventoryLocation: 20
+    ExtraPermission: 'vipshop.G'
+  Diamond64:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - type:DIAMOND
+      - amount:64
+    Reward: 16500
+    MenuItem:
+    - 'type: DIAMOND'
+    - amount:64
+    - name:&b&L64 Diamond
+    - 'lore:&2&LReward: &4&m15000$&b 16500$'
+    - amount:64
+    InventoryLocation: 29
+    ExtraPermission: 'vipshop.G'
+  Gold:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - type:GOLD_INGOT
+      - amount:1
+    Reward: 128
+    MenuItem:
+    - 'type: GOLD_INGOT'
+    - amount:1
+    - name:&6&L1 Gold Ingot
+    - 'lore:&2&LReward: &4&m117$&b 128$'
+    - amount:1
+    InventoryLocation: 3
+    ExtraPermission: 'vipshop.G'
+  Gold16:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - type:GOLD_INGOT
+      - amount:16
+    Reward: 2062
+    MenuItem:
+    - 'type: GOLD_INGOT'
+    - amount:16
+    - name:&6&L16 Gold Ingot
+    - 'lore:&2&LReward: &4&m1875$&b 2062$'
+    - amount:16
+    InventoryLocation: 12
+    ExtraPermission: 'vipshop.G'
+  Gold32:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - type:GOLD_INGOT
+      - amount:32
+    Reward: 4125
+    MenuItem:
+    - 'type: GOLD_INGOT'
+    - amount:32
+    - name:&6&L1 Gold Ingot
+    - 'lore:&2&LReward: &4&m3750$&b 4125$'
+    - amount:32
+    InventoryLocation: 21
+    ExtraPermission: 'vipshop.G'
+  Gold64:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - type:GOLD_INGOT
+      - amount:64
+    Reward: 8250
+    MenuItem:
+    - 'type: GOLD_INGOT'
+    - amount:64
+    - name:&6&L1 Gold Ingot
+    - 'lore:&2&LReward: &4&m7500$&b 8250$'
+    - amount:64
+    InventoryLocation: 30
+    ExtraPermission: 'vipshop.G'
+  Iron:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - type:IRON_INGOT
+      - amount:1
+    Reward: 50
+    MenuItem:
+    - 'type: IRON_INGOT'
+    - amount:1
+    - name:&7&L1 Iron Ingot
+    - 'lore:&2&LReward: &4&m46$&b 50$'
+    - amount:1
+    InventoryLocation: 4
+    ExtraPermission: 'vipshop.G'
+  Iron16:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - type:IRON_INGOT
+      - amount:16
+    Reward: 825
+    MenuItem:
+    - 'type: IRON_INGOT'
+    - amount:16
+    - name:&7&L16 Iron Ingot
+    - 'lore:&2&LReward: &4&m750$&b 825'
+    - amount:16
+    InventoryLocation: 13
+    ExtraPermission: 'vipshop.G'
+  Iron32:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - type:IRON_INGOT
+      - amount:32
+    Reward: 1650
+    MenuItem:
+    - 'type: IRON_INGOT'
+    - amount:32
+    - name:&7&L32 Iron Ingot
+    - 'lore:&2&LReward: &4&m1500$&b 1650$'
+    - amount:32
+    InventoryLocation: 22
+    ExtraPermission: 'vipshop.G'
+  Iron64:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - type:IRON_INGOT
+      - amount:64
+    Reward: 3300
+    MenuItem:
+    - 'type: IRON_INGOT'
+    - amount:64
+    - name:&7&L64 Iron Ingot
+    - 'lore:&2&LReward: &4&m3000$&b 3300$'
+    - amount:64
+    InventoryLocation: 31
+    ExtraPermission: 'vipshop.G'
+  Coal:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - type:COAL
+      - amount:1
+    Reward: 16
+    MenuItem:
+    - 'type: COAL'
+    - amount:1
+    - name:&8&L1 Coal
+    - 'lore:&2&LReward: &4&m15$&b 16$'
+    - amount:1
+    InventoryLocation: 5
+    ExtraPermission: 'vipshop.G'
+  Coal16:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - type:COAL
+      - amount:16
+    Reward: 275
+    MenuItem:
+    - 'type: COAL'
+    - amount:16
+    - name:&8&L16 Coal
+    - 'lore:&2&LReward: &4&m250$&b 275$'
+    - amount:16
+    InventoryLocation: 14
+    ExtraPermission: 'vipshop.G'
+  Coal32:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - type:COAL
+      - amount:32
+    Reward: 550
+    MenuItem:
+    - 'type: COAL'
+    - amount:32
+    - name:&8&L32 Coal
+    - 'lore:&2&LReward: &4&m500$&b 550$'
+    - amount:32
+    InventoryLocation: 23
+    ExtraPermission: 'vipshop.G'
+  Coal64:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - type:COAL
+      - amount:64
+    Reward: 1100
+    MenuItem:
+    - 'type: COAL'
+    - amount:64
+    - name:&8&L64 Coal
+    - 'lore:&2&LReward: &4&m1000$&b 1100$'
+    - amount:64
+    InventoryLocation: 32
+    ExtraPermission: 'vipshop.G'
+  GoldOre:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - type:GOLD_ORE
+      - amount:1
+    Reward: 50
+    MenuItem:
+    - 'type: GOLD_ORE'
+    - amount:1
+    - name:&6&L1 Gold Ore
+    - 'lore:&2&LReward: &4&m46$&b 50$'
+    - amount:1
+    InventoryLocation: 6
+    ExtraPermission: 'vipshop.G'
+  GoldOre16:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - type:GOLD_ORE
+      - amount:16
+    Reward: 825
+    MenuItem:
+    - 'type: GOLD_ORE'
+    - amount:16
+    - name:&6&L16 Gold Ore
+    - 'lore:&2&LReward: &4&m750$&b 825$'
+    - amount:16
+    InventoryLocation: 15
+    ExtraPermission: 'vipshop.G'
+  GoldOre32:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - type:GOLD_ORE
+      - amount:32
+    Reward: 1650
+    MenuItem:
+    - 'type: GOLD_ORE'
+    - amount:32
+    - name:&6&L32 Gold Ore
+    - 'lore:&2&LReward: &4&m1500$&b 1650$'
+    - amount:32
+    InventoryLocation: 24
+    ExtraPermission: 'vipshop.G'
+  GoldOre64:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - type:GOLD_ORE
+      - amount:64
+    Reward: 3300
+    MenuItem:
+    - 'type: GOLD_ORE'
+    - amount:64
+    - name:&6&L64 Gold Ore
+    - 'lore:&2&LReward: &4&m3000$&b 3300$'
+    - amount:64
+    InventoryLocation: 33
+    ExtraPermission: 'vipshop.G'
+  IronOre:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - type:IRON_ORE
+      - amount:1
+    Reward: 16
+    MenuItem:
+    - 'type: IRON_ORE'
+    - amount:1
+    - name:&7&L1 Iron Ore
+    - 'lore:&2&LReward: &4&m15$&b 16$'
+    - amount:1
+    InventoryLocation: 7
+    ExtraPermission: 'vipshop.G'
+  IronOre16:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - type:IRON_ORE
+      - amount:16
+    Reward: 275
+    MenuItem:
+    - 'type: IRON_ORE'
+    - amount:16
+    - name:&7&L16 Iron Ore
+    - 'lore:&2&LReward: &4&m250$&b 275$'
+    - amount:16
+    InventoryLocation: 16
+    ExtraPermission: 'vipshop.G'
+  IronOre32:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - type:IRON_ORE
+      - amount:32
+    Reward: 550
+    MenuItem:
+    - 'type: IRON_ORE'
+    - amount:32
+    - name:&7&L32 Iron Ore
+    - 'lore:&2&LReward: &4&m500$&b 550$'
+    - amount:32
+    InventoryLocation: 25
+    ExtraPermission: 'vipshop.G'
+  IronOre64:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - type:IRON_ORE
+      - amount:64
+    Reward: 1100
+    MenuItem:
+    - 'type: IRON_ORE'
+    - amount:64
+    - name:&7&L64 Iron Ore
+    - 'lore:&2&LReward: &4&m1000$&b 1100$'
+    - amount:64
+    InventoryLocation: 34
+    ExtraPermission: 'vipshop.G'
+  Diamondb:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - type:DIAMOND_BLOCK
+      - amount:1
+    Reward: 2574
+    MenuItem:
+    - 'type: DIAMOND_BLOCK'
+    - amount:1
+    - name:&b&L1 Diamond Block
+    - 'lore:&2&LReward: &4&m2340$&b 2574$'
+    - amount:1
+    InventoryLocation: 8
+    ExtraPermission: 'vipshop.G'
+  Diamondb16:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - type:DIAMOND_BLOCK
+      - amount:16
+    Reward: 41250
+    MenuItem:
+    - 'type: DIAMOND_BLOCK'
+    - amount:16
+    - name:&b&L16 Diamond Block
+    - 'lore:&2&LReward: &4&m37500$&b 41250$'
+    - amount:16
+    InventoryLocation: 17
+    ExtraPermission: 'vipshop.G'
+  Diamondb32:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - type:DIAMOND_BLOCK
+      - amount:32
+    Reward: 82500
+    MenuItem:
+    - 'type: DIAMOND_BLOCK'
+    - amount:32
+    - name:&b&L32 Diamond Block
+    - 'lore:&2&LReward: &4&m75000$&b 82500$'
+    - amount:32
+    InventoryLocation: 26
+    ExtraPermission: 'vipshop.G'
+  Diamondb64:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - type:DIAMOND_BLOCK
+      - amount:64
+    Reward: 165000
+    MenuItem:
+    - 'type: DIAMOND_BLOCK'
+    - amount:64
+    - name:&b&L64 Diamond Block
+    - 'lore:&2&LReward: &4&m150000$&b 165000$'
+    - amount:64
+    InventoryLocation: 35
+    ExtraPermission: 'vipshop.G'
+  PrisonPage2:
+    RewardType: shop
+    PriceType: free
+    Reward: GoldVIP-P2
+    MenuItem:
+    - type:REDSTONE_BLOCK
+    - amount:2
+    - name:&4&LGoldVIP Sell Page 2 >>>
+    - lore:&8Open Page 2
+    - amount:2
+    InventoryLocation: 27
+    ExtraPermission: 'vipshop.G'
+

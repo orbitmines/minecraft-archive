@@ -1,0 +1,87 @@
+ConfigVersion: 10
+Integers:
+  EngineMode: 2
+  InitialRadius: 1
+  UpdateRadius: 2
+  ProcessingThreads: 23
+  MaxLoadedCacheFiles: 64
+  ProximityHiderDistance: 8
+  ProximityHiderID: 1
+  ProximityHiderEnd: 255
+  AirGeneratorMaxChance: 43
+  OrebfuscatorPriority: 1
+  CompressionLevel: 1
+Booleans:
+  UseProximityHider: true
+  UseSpecialBlockForProximityHider: true
+  UseYLocationProximity: false
+  UpdateOnDamage: true
+  DarknessHideBlocks: false
+  NoObfuscationForOps: false
+  NoObfuscationForPermission: false
+  UseCache: true
+  LoginNotification: true
+  AntiTexturePackAndFreecam: true
+  Enabled: true
+  CheckForUpdates: true
+Lists:
+  ObfuscateBlocks:
+  - 14
+  - 15
+  - 16
+  - 21
+  - 54
+  - 56
+  - 73
+  - 74
+  - 129
+  - 130
+  NetherObfuscateBlocks:
+  - 87
+  - 153
+  DarknessBlocks:
+  - 52
+  - 54
+  ProximityHiderBlocks:
+  - 23
+  - 52
+  - 54
+  - 56
+  - 58
+  - 61
+  - 62
+  - 116
+  - 129
+  - 130
+  - 145
+  - 146
+  DisabledWorlds:
+  - SurvivalWorld_the_end
+  - world_nether
+  - world
+  - world_the_end
+  - ClaimTutorial
+  - SurvivalShops
+  RandomBlocks:
+  - 1
+  - 4
+  - 5
+  - 14
+  - 15
+  - 16
+  - 21
+  - 46
+  - 48
+  - 49
+  - 56
+  - 73
+  - 82
+  - 129
+  NetherRandomBlocks:
+  - 13
+  - 87
+  - 88
+  - 112
+  - 153
+Strings:
+  CacheLocation: orebfuscator_cache

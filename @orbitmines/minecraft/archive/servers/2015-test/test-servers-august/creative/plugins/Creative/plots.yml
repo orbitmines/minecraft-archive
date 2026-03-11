@@ -1,0 +1,25 @@
+plots:
+  '1':
+    PlotLocation:
+      world: Creative
+      x: 0
+      y: 100
+      z: 0
+    Players:
+      Owner: 33ee168b-5c2c-42c5-b3b2-d841ceb76b70
+    Members:
+    - 0100f3bd-d13c-4940-8330-516f28337e08
+    CreatedDate: 05-02-2015
+    Color: GRAY
+    Mode: NORMAL
+  '2':
+    PlotLocation:
+      world: Creative
+      x: 0
+      y: 100
+      z: 105
+    Players:
+      Owner: BenYOmin_Mango
+    CreatedDate: 07-02-2015
+    Color: GRAY
+    Mode: NORMAL

@@ -1,0 +1,8 @@
+spawns: 
+  default: 
+    world: PrisonServer
+    x: -223.51678131711026
+    y: 8.0
+    z: 15.530489951181703
+    yaw: -359.39963
+    pitch: -90.0

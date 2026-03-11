@@ -1,0 +1,114 @@
+Channels:
+  Global: '&c[{channel}]&e[{server}]{prefix}&f{player}&f{suffix}&f: &f{message}'
+  Admin: '&9[Admin]{player}:{message}'
+  Faction: '&a{factions_roleprefix}{factions_title}{player}:&r {message}'
+  FactionAlly: '&d{factions_roleprefix}{factions_name}{player}:&r {message}'
+  Servers:
+    pixelmon:
+      Server: '&e[&6&lPixelmon&e] {prefix}&f{player}&f{suffix}&f: &7{message}'
+      Local: '&9[Local]{prefix}&f{player}&f{suffix}&f: &7{message}'
+      Shortname: p
+      ForceChannel: true
+      ForcedChannel: Server
+      UsingFactionChannels: false
+      LocalRange: 50
+      DisableConnectionMessages: true
+    hub:
+      Server: '&e[&6&lHub&e] {prefix}&7{player}{suffix}&b: &7{message}'
+      Local: '&9[Local]{prefix}&f{player}&f{suffix}&f: &7{message}'
+      Shortname: h
+      ForceChannel: true
+      ForcedChannel: Server
+      UsingFactionChannels: false
+      LocalRange: 50
+      DisableConnectionMessages: true
+    orbitmines:
+      Server: '&e[{server}]{prefix}&f{player}&f{suffix}&f: &7{message}'
+      Local: '&9[Local]{prefix}&f{player}&f{suffix}&f: &7{message}'
+      Shortname: o
+      ForceChannel: false
+      ForcedChannel: Server
+      UsingFactionChannels: false
+      LocalRange: 50
+      DisableConnectionMessages: true
+    factions:
+      Server: '&e[{server}]{prefix}&f{player}&f{suffix}&f: &7{message}'
+      Local: '&9[Local]{prefix}&f{player}&f{suffix}&f: &7{message}'
+      Shortname: f
+      ForceChannel: false
+      ForcedChannel: Server
+      UsingFactionChannels: false
+      LocalRange: 50
+      DisableConnectionMessages: true
+    creative:
+      Server: '&e[{server}]{prefix}&f{player}&f{suffix}&f: &7{message}'
+      Local: '&9[Local]{prefix}&f{player}&f{suffix}&f: &7{message}'
+      Shortname: c
+      ForceChannel: false
+      ForcedChannel: Server
+      UsingFactionChannels: false
+      LocalRange: 50
+      DisableConnectionMessages: true
+    survival:
+      Server: '&e[{server}]{prefix}&f{player}&f{suffix}&f: &7{message}'
+      Local: '&9[Local]{prefix}&f{player}&f{suffix}&f: &7{message}'
+      Shortname: s
+      ForceChannel: false
+      ForcedChannel: Server
+      UsingFactionChannels: false
+      LocalRange: 50
+      DisableConnectionMessages: true
+    minigames:
+      Server: '&e[{server}]{prefix}&f{player}&f{suffix}&f: &7{message}'
+      Local: '&9[Local]{prefix}&f{player}&f{suffix}&f: &7{message}'
+      Shortname: m
+      ForceChannel: false
+      ForcedChannel: Server
+      UsingFactionChannels: false
+      LocalRange: 50
+      DisableConnectionMessages: true
+    prison:
+      Server: '&e[{server}]{prefix}&f{player}&f{suffix}&f: &7{message}'
+      Local: '&9[Local]{prefix}&f{player}&f{suffix}&f: &7{message}'
+      Shortname: p
+      ForceChannel: false
+      ForcedChannel: Server
+      UsingFactionChannels: false
+      LocalRange: 50
+      DisableConnectionMessages: true
+    kitpvp:
+      Server: '&e[&6&lKitPvP&e] {prefix}&7{player}{suffix}&b: &7{message}'
+      Local: '&9[Local]{prefix}&f{player}&f{suffix}&f: &7{message}'
+      Shortname: k
+      ForceChannel: true
+      ForcedChannel: Server
+      UsingFactionChannels: false
+      LocalRange: 50
+      DisableConnectionMessages: true
+    skyblock:
+      Server: '&e[{server}]{prefix}&f{player}&f{suffix}&f: &7{message}'
+      Local: '&9[Local]{prefix}&f{player}&f{suffix}&f: &7{message}'
+      Shortname: s
+      ForceChannel: false
+      ForcedChannel: Server
+      UsingFactionChannels: false
+      LocalRange: 50
+      DisableConnectionMessages: true
+    events:
+      Server: '&e[{server}]{prefix}&f{player}&f{suffix}&f: &7{message}'
+      Local: '&9[Local]{prefix}&f{player}&f{suffix}&f: &7{message}'
+      Shortname: e
+      ForceChannel: false
+      ForcedChannel: Server
+      UsingFactionChannels: false
+      LocalRange: 50
+      DisableConnectionMessages: true
+    alpha:
+      Server: '&e[{server}]{prefix}&f{player}&f{suffix}&f: &7{message}'
+      Local: '&9[Local]{prefix}&f{player}&f{suffix}&f: &7{message}'
+      Shortname: a
+      ForceChannel: false
+      ForcedChannel: Server
+      UsingFactionChannels: false
+      LocalRange: 50
+      DisableConnectionMessages: true

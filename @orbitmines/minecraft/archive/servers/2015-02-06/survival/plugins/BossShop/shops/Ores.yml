@@ -1,0 +1,131 @@
+ShopName: Materials
+signs:
+  text: '[Materials]'
+  NeedPermissionToCreateSign: true
+shop:
+  Emerald:
+    RewardType: item
+    PriceType: money
+    Price: 200
+    Reward:
+    - - type:EMERALD
+      - amount:1
+    MenuItem:
+    - type:EMERALD
+    - amount:1
+    - name:&a&L1 Emerald
+    - 'lore:&c&LPrice: &6200$'
+    - amount:1
+    Message: '&2[&aSurvival Shop&2] &aYou have bought &f1 Emerald&a for &6200$'
+    InventoryLocation: 1
+    ExtraPermission: ''
+  Diamond:
+    RewardType: item
+    PriceType: money
+    Price: 150
+    Reward:
+    - - type:DIAMOND
+      - amount:1
+    MenuItem:
+    - type:DIAMOND
+    - amount:1
+    - name:&b&L1 Diamond
+    - 'lore:&c&LPrice: &6150$'
+    - amount:1
+    Message: '&2[&aSurvival Shop&2] &aYou have bought &f1 Diamond&a for &6150$'
+    InventoryLocation: 2
+    ExtraPermission: ''
+  Lapis:
+    RewardType: item
+    PriceType: money
+    Price: 100
+    Reward:
+    - - id:351
+      - amount:1
+      - durability:4
+    MenuItem:
+    - id:351
+    - amount:1
+    - durability:4
+    - name:&1&L1 Lapis Lazuli
+    - 'lore:&c&LPrice: &6100$'
+    - amount:1
+    Message: '&2[&aSurvival Shop&2] &aYou have bought &f1 Lapis Lazuli&a for &6100$'
+    InventoryLocation: 3
+    ExtraPermission: ''
+  Redstone:
+    RewardType: item
+    PriceType: money
+    Price: 100
+    Reward:
+    - - type:REDSTONE
+      - amount:1
+    MenuItem:
+    - type:REDSTONE
+    - amount:1
+    - name:&c&L1 Redstone
+    - 'lore:&c&LPrice: &6100$'
+    - amount:1
+    Message: '&2[&aSurvival Shop&2] &aYou have bought &f1 Redstone&a for &6100$'
+    InventoryLocation: 4
+    ExtraPermission: ''
+  Gold:
+    RewardType: item
+    PriceType: money
+    Price: 100
+    Reward:
+    - - type:GOLD_INGOT
+      - amount:1
+    MenuItem:
+    - type:GOLD_INGOT
+    - amount:1
+    - name:&6&L1 Gold Ingot
+    - 'lore:&c&LPrice: &6100$'
+    - amount:1
+    Message: '&2[&aSurvival Shop&2] &aYou have bought &f1 Gold Ingot&a for &6100$'
+    InventoryLocation: 5
+    ExtraPermission: ''
+  Iron:
+    RewardType: item
+    PriceType: money
+    Price: 75
+    Reward:
+    - - type:IRON_INGOT
+      - amount:1
+    MenuItem:
+    - type:IRON_INGOT
+    - amount:1
+    - name:&7&L1 Iron Ingot
+    - 'lore:&c&LPrice: &675$'
+    - amount:1
+    Message: '&2[&aSurvival Shop&2] &aYou have bought &f1 Iron Ingot&a for &675$'
+    InventoryLocation: 6
+    ExtraPermission: ''
+  Coal:
+    RewardType: item
+    PriceType: money
+    Price: 50
+    Reward:
+    - - type:COAL
+    MenuItem:
+    - type:COAL
+    - amount:1
+    - name:&8&L1 Coal
+    - 'lore:&c&LPrice: &650$'
+    - amount:1
+    Message: '&2[&aSurvival Shop&2] &aYou have bought &f1 Coal&a for &650$'
+    InventoryLocation: 7
+    ExtraPermission: ''
+  BackToMenu:
+    RewardType: shop
+    PriceType: free
+    Reward: Survival
+    MenuItem:
+    - type:REDSTONE_BLOCK
+    - amount:1
+    - name:&a&LSurvival Menu
+    - lore:&8Back to the Survival Menu
+    - amount:1
+    InventoryLocation: 9
+    ExtraPermission: ''
+

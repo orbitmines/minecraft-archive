@@ -1,0 +1,47 @@
+# Group inheritance
+#
+# Any inherited groups prefixed with a g: are global groups
+# and are inherited from the GlobalGroups.yml.
+#
+# Groups without the g: prefix are groups local to this world
+# and are defined in the this groups.yml file.
+#
+# Local group inheritances define your promotion tree when using 'manpromote/mandemote'
+
+groups:
+  User:
+    default: true
+    permissions:
+    - nametag.group.user
+    - -bukkit.command.me
+    - -bukkit.command.plugins
+    - -bukkit.command.plugin
+    - -bukkit.command.?
+    - -bukkit.command.help
+    - essentials.rules
+    - multiverse.portal.access.*
+    - serversigns.use.*
+    - essentials.balance
+    - essentials.balance.others
+    - essentials.balancetop
+    - essentials.msg
+    - essentials.seen
+    - essentials.pay
+    - essentials.mail
+    - -essentials.spawn
+    - essentials.mail.send
+    - multiverse.access.*
+    - essentials.mail.clear
+    - essentials.mail.read
+    - knightkit.1
+    - shop.kitpvp
+    - mycommand.cmd.1
+    - mycommand.cmd.2
+    - mycommand.cmd.3
+    - mycommand.cmd.4
+    - mycommand.cmd.5
+    - mycommand.cmd.6
+    - mycommand.cmd.7
+    info:
+      prefix: '&8'
+      build: true

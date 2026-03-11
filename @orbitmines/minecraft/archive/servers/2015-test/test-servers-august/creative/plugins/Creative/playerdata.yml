@@ -1,0 +1,23 @@
+players:
+  BenYOmin_Mango:
+    WorldEdit: []
+    PlotInfo:
+      HomeLocation:
+        world: Creative
+        x: 0.5
+        y: 100.0
+        z: 105.5
+        yaw: 180.0
+        pitch: 0.0
+      PlotNumber: 2
+  33ee168b-5c2c-42c5-b3b2-d841ceb76b70:
+    WorldEdit: []
+    PlotInfo:
+      HomeLocation:
+        world: Creative
+        x: 0
+        y: 100
+        z: 0
+        yaw: 180
+        pitch: 0
+    PlotNumber: 1

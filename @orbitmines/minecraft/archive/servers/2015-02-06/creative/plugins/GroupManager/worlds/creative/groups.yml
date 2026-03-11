@@ -1,0 +1,71 @@
+# Group inheritance
+#
+# Any inherited groups prefixed with a g: are global groups
+# and are inherited from the GlobalGroups.yml.
+#
+# Groups without the g: prefix are groups local to this world
+# and are defined in the this groups.yml file.
+#
+# Local group inheritances define your promotion tree when using 'manpromote/mandemote'
+
+groups:
+  UserC:
+    default: true
+    permissions:
+    - plotme.admin.home.other
+    - plotme.use
+    - -factions.*
+    - plotme.use.add
+    - serversigns.use.*
+    - essentials.msg
+    - nametag.group.user
+    - plotme.use.remove
+    - mycommand.cmd.1
+    - mycommand.cmd.2
+    - mycommand.cmd.3
+    - essentials.tpa
+    - essentials.tpahere
+    - essentials.tpaccept
+    - essentials.tpdeny
+    - mycommand.cmd.4
+    - -bukkit.command.me
+    - -bukkit.command.pl
+    - -bukkit.command.plugins
+    - -bukkit.command.plugin
+    - -bukkit.command.help
+    - -bukkit.command.?
+    - multiverse.access.*
+    - mycommand.cmd.5
+    - multiverse.access.*
+    - -multiverse.access.SurvivalWorld
+    - -multiverse.access.SurvivalWorld_nether
+    - -multiverse.access.nether_SurvivalWorld
+    - -multiverse.access.Factions
+    - -multiverse.access.Factions_nether
+    - -multiverse.access.nether_Factions
+    - mycommand.cmd.6
+    - mycommand.cmd.7
+    - mycommand.cmd.8
+    - mycommand.cmd.9
+    - mycommand.cmd.10
+    - mycommand.cmd.11
+    - mycommand.cmd.12
+    - mycommand.cmd.13
+    - mycommand.cmd.14
+    - mycommand.cmd.15
+    - mycommand.cmd.16
+    - mycommand.cmd.17
+    - mycommand.cmd.18
+    - mycommand.cmd.24
+    - mycommand.cmd.25
+    - mycommand.cmd.26
+    - mycommand.cmd.30
+    - mycommand.cmd.31
+    - mycommand.cmd.75
+    - mycommand.cmd.312
+    - mycommand.cmd.313
+    - mycommand.cmd.311
+    info:
+      prefix: '&8'
+      build: true
+      suffix: ''

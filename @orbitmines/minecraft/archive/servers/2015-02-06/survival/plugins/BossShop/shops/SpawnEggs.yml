@@ -1,0 +1,108 @@
+ShopName: SpawnEggs
+signs:
+  text: '[SpawnEggs]'
+  NeedPermissionToCreateSign: true
+shop:
+  Chicken:
+    RewardType: item
+    PriceType: money
+    Price: 400
+    Reward:
+    - - id:383
+      - durability:93
+      - amount:1
+    MenuItem:
+    - 'id:383'
+    - durability:93
+    - amount:1
+    - name:&7&L1 Chicken Spawn Egg
+    - 'lore:&c&LPrice: &6400$'
+    - amount:1
+    Message: '&2[&aSurvival Shop&2] &aYou have bought &f1 Chicken Spawn Egg&a for &6400$'
+    InventoryLocation: 1
+    ExtraPermission: ''
+  Pig:
+    RewardType: item
+    PriceType: money
+    Price: 700
+    Reward:
+    - - id:383
+      - durability:90
+      - amount:1
+    MenuItem:
+    - 'id:383'
+    - durability:90
+    - amount:1
+    - name:&d&L1 Pig Spawn Egg
+    - 'lore:&c&LPrice: &6700$'
+    - amount:1
+    Message: '&2[&aSurvival Shop&2] &aYou have bought &f1 Pig Spawn Egg&a for &6700$'
+    InventoryLocation: 2
+    ExtraPermission: ''
+  Sheep:
+    RewardType: item
+    PriceType: money
+    Price: 800
+    Reward:
+    - - id:383
+      - durability:91
+      - amount:1
+    MenuItem:
+    - 'id:383'
+    - durability:91
+    - amount:1
+    - name:&f&L1 Sheep Spawn Egg
+    - 'lore:&c&LPrice: &6800$'
+    - amount:1
+    Message: '&2[&aSurvival Shop&2] &aYou have bought &f1 Sheep Spawn Egg&a for &6800$'
+    InventoryLocation: 3
+    ExtraPermission: ''
+  Cow:
+    RewardType: item
+    PriceType: money
+    Price: 1000
+    Reward:
+    - - id:383
+      - durability:92
+      - amount:1
+    MenuItem:
+    - 'id:383'
+    - durability:92
+    - amount:1
+    - name:&8&L1 Cow Spawn Egg
+    - 'lore:&c&LPrice: &61000$'
+    - amount:1
+    Message: '&2[&aSurvival Shop&2] &aYou have bought &f1 Cow Spawn Egg&a for &61000$'
+    InventoryLocation: 4
+    ExtraPermission: ''
+  Horse:
+    RewardType: item
+    PriceType: money
+    Price: 2000
+    Reward:
+    - - id:383
+      - durability:100
+      - amount:1
+    MenuItem:
+    - 'id:383'
+    - durability:100
+    - amount:1
+    - name:&e&L1 Horse Spawn Egg
+    - 'lore:&c&LPrice: &62000$'
+    - amount:1
+    Message: '&2[&aSurvival Shop&2] &aYou have bought &f1 Horse Spawn Egg&a for &62000$'
+    InventoryLocation: 5
+    ExtraPermission: ''
+  BackToMenu:
+    RewardType: shop
+    PriceType: free
+    Reward: Survival
+    MenuItem:
+    - type:REDSTONE_BLOCK
+    - amount:1
+    - name:&a&LSurvival Menu
+    - lore:&8Back to the Survival Menu
+    - amount:1
+    InventoryLocation: 9
+    ExtraPermission: ''
+

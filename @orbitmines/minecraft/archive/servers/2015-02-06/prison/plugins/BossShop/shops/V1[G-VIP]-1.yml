@@ -1,0 +1,498 @@
+ShopName: VoteShop1-G-P1
+signs:
+  text: '[P]'
+  NeedPermissionToCreateSign: true
+shop:
+  Emerald:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - type:EMERALD
+      - amount:1
+    Reward: 643
+    MenuItem:
+    - 'type: EMERALD'
+    - amount:1
+    - name:&A&L1 Emerald
+    - 'lore:&2&LReward: &4&m468$&b &m585$&6 643$'
+    - amount:1
+    InventoryLocation: 1
+    ExtraPermission: 'voteshop.1G'
+  Emerald16:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - type:EMERALD
+      - amount:16
+    Reward: 10312
+    MenuItem:
+    - 'type: EMERALD'
+    - amount:16
+    - name:&a&L16 Emerald
+    - 'lore:&2&LReward: &4&m7500$&b &m9375$&6 10312$'
+    - amount:16
+    InventoryLocation: 10
+    ExtraPermission: 'voteshop.1G'
+  Emerald32:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - type:EMERALD
+      - amount:32
+    Reward: 20625
+    MenuItem:
+    - 'type: EMERALD'
+    - amount:32
+    - name:&a&L32 Emerald
+    - 'lore:&2&LReward: &4&m15000$&b &m18750$&6 20625$'
+    - amount:32
+    InventoryLocation: 19
+    ExtraPermission: 'voteshop.1G'
+  Emerald64:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - type:EMERALD
+      - amount:64
+    Reward: 41250
+    MenuItem:
+    - 'type: EMERALD'
+    - amount:64
+    - name:&a&L64 Emerald
+    - 'lore:&2&LReward: &4&m30000$&b &m37500$&6 41250$'
+    - amount:64
+    InventoryLocation: 28
+    ExtraPermission: 'voteshop.1G'
+  Diamond:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - type:DIAMOND
+      - amount:1
+    Reward: 321
+    MenuItem:
+    - 'type: DIAMOND'
+    - amount:1
+    - name:&b&L1 Diamond
+    - 'lore:&2&LReward: &4&m234$&b &m292$&6 321$'
+    - amount:1
+    InventoryLocation: 2
+    ExtraPermission: 'voteshop.1G'
+  Diamond16:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - type:DIAMOND
+      - amount:16
+    Reward: 5155
+    MenuItem:
+    - 'type: DIAMOND'
+    - amount:16
+    - name:&b&L16 Diamond
+    - 'lore:&2&LReward: &4&m3750$&b &m4687$&6 5155$'
+    - amount:16
+    InventoryLocation: 11
+    ExtraPermission: 'voteshop.1G'
+  Diamond32:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - type:DIAMOND
+      - amount:32
+    Reward: 10312
+    MenuItem:
+    - 'type: DIAMOND'
+    - amount:32
+    - name:&b&L32 Diamond
+    - 'lore:&2&LReward: &4&m7500$&b &m9375$&6 10312$'
+    - amount:32
+    InventoryLocation: 20
+    ExtraPermission: 'voteshop.1G'
+  Diamond64:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - type:DIAMOND
+      - amount:64
+    Reward: 20625
+    MenuItem:
+    - 'type: DIAMOND'
+    - amount:64
+    - name:&b&L64 Diamond
+    - 'lore:&2&LReward: &4&m15000$&b &m18750$&6 20625$'
+    - amount:64
+    InventoryLocation: 29
+    ExtraPermission: 'voteshop.1G'
+  Gold:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - type:GOLD_INGOT
+      - amount:1
+    Reward: 160
+    MenuItem:
+    - 'type: GOLD_INGOT'
+    - amount:1
+    - name:&6&L1 Gold Ingot
+    - 'lore:&2&LReward: &4&m117$&b &m146$&6 160$'
+    - amount:1
+    InventoryLocation: 3
+    ExtraPermission: 'voteshop.1G'
+  Gold16:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - type:GOLD_INGOT
+      - amount:16
+    Reward: 2577
+    MenuItem:
+    - 'type: GOLD_INGOT'
+    - amount:16
+    - name:&6&L16 Gold Ingot
+    - 'lore:&2&LReward: &4&m1875$&b &m2343$&6 2577$'
+    - amount:16
+    InventoryLocation: 12
+    ExtraPermission: 'voteshop.1G'
+  Gold32:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - type:GOLD_INGOT
+      - amount:32
+    Reward: 5155
+    MenuItem:
+    - 'type: GOLD_INGOT'
+    - amount:32
+    - name:&6&L1 Gold Ingot
+    - 'lore:&2&LReward: &4&m3750$&b &m4687$&6 5155$'
+    - amount:32
+    InventoryLocation: 21
+    ExtraPermission: 'voteshop.1G'
+  Gold64:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - type:GOLD_INGOT
+      - amount:64
+    Reward: 10312
+    MenuItem:
+    - 'type: GOLD_INGOT'
+    - amount:64
+    - name:&6&L1 Gold Ingot
+    - 'lore:&2&LReward: &4&m7500$&b &m9375$&6 10312$'
+    - amount:64
+    InventoryLocation: 30
+    ExtraPermission: 'voteshop.1G'
+  Iron:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - type:IRON_INGOT
+      - amount:1
+    Reward: 62
+    MenuItem:
+    - 'type: IRON_INGOT'
+    - amount:1
+    - name:&7&L1 Iron Ingot
+    - 'lore:&2&LReward: &4&m46$&b &m57$&6 62$'
+    - amount:1
+    InventoryLocation: 4
+    ExtraPermission: 'voteshop.1G'
+  Iron16:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - type:IRON_INGOT
+      - amount:16
+    Reward: 1030
+    MenuItem:
+    - 'type: IRON_INGOT'
+    - amount:16
+    - name:&7&L16 Iron Ingot
+    - 'lore:&2&LReward: &4&m750$&b &m937$&6 1030$'
+    - amount:16
+    InventoryLocation: 13
+    ExtraPermission: 'voteshop.1G'
+  Iron32:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - type:IRON_INGOT
+      - amount:32
+    Reward: 2062
+    MenuItem:
+    - 'type: IRON_INGOT'
+    - amount:32
+    - name:&7&L32 Iron Ingot
+    - 'lore:&2&LReward: &4&m1500$&b &m1875$&6 2062$'
+    - amount:32
+    InventoryLocation: 22
+    ExtraPermission: 'voteshop.1G'
+  Iron64:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - type:IRON_INGOT
+      - amount:64
+    Reward: 4125
+    MenuItem:
+    - 'type: IRON_INGOT'
+    - amount:64
+    - name:&7&L64 Iron Ingot
+    - 'lore:&2&LReward: &4&m3000$&b &m3750$&6 4125$'
+    - amount:64
+    InventoryLocation: 31
+    ExtraPermission: 'voteshop.1G'
+  Coal:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - type:COAL
+      - amount:1
+    Reward: 20
+    MenuItem:
+    - 'type: COAL'
+    - amount:1
+    - name:&8&L1 Coal
+    - 'lore:&2&LReward: &4&m15$&b &m18$&6 20$'
+    - amount:1
+    InventoryLocation: 5
+    ExtraPermission: 'voteshop.1G'
+  Coal16:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - type:COAL
+      - amount:16
+    Reward: 343
+    MenuItem:
+    - 'type: COAL'
+    - amount:16
+    - name:&8&L16 Coal
+    - 'lore:&2&LReward: &4&m250$&b &m312$&6 343$'
+    - amount:16
+    InventoryLocation: 14
+    ExtraPermission: 'voteshop.1G'
+  Coal32:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - type:COAL
+      - amount:32
+    Reward: 687
+    MenuItem:
+    - 'type: COAL'
+    - amount:32
+    - name:&8&L32 Coal
+    - 'lore:&2&LReward: &4&m500$&b &m625$&6 687$'
+    - amount:32
+    InventoryLocation: 23
+    ExtraPermission: 'voteshop.1G'
+  Coal64:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - type:COAL
+      - amount:64
+    Reward: 1375
+    MenuItem:
+    - 'type: COAL'
+    - amount:64
+    - name:&8&L64 Coal
+    - 'lore:&2&LReward: &4&m1000$&b &m1250$&6 1375$'
+    - amount:64
+    InventoryLocation: 32
+    ExtraPermission: 'voteshop.1G'
+  GoldOre:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - type:GOLD_ORE
+      - amount:1
+    Reward: 62
+    MenuItem:
+    - 'type: GOLD_ORE'
+    - amount:1
+    - name:&6&L1 Gold Ore
+    - 'lore:&2&LReward: &4&m46$&b &m57$&6 62$'
+    - amount:1
+    InventoryLocation: 6
+    ExtraPermission: 'voteshop.1G'
+  GoldOre16:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - type:GOLD_ORE
+      - amount:16
+    Reward: 1030
+    MenuItem:
+    - 'type: GOLD_ORE'
+    - amount:16
+    - name:&6&L16 Gold Ore
+    - 'lore:&2&LReward: &4&m750$&b &m937$&6 1030$'
+    - amount:16
+    InventoryLocation: 15
+    ExtraPermission: 'voteshop.1G'
+  GoldOre32:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - type:GOLD_ORE
+      - amount:32
+    Reward: 2062
+    MenuItem:
+    - 'type: GOLD_ORE'
+    - amount:32
+    - name:&6&L32 Gold Ore
+    - 'lore:&2&LReward: &4&m1500$&b &m1875$&6 2062$'
+    - amount:32
+    InventoryLocation: 24
+    ExtraPermission: 'voteshop.1G'
+  GoldOre64:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - type:GOLD_ORE
+      - amount:64
+    Reward: 4125
+    MenuItem:
+    - 'type: GOLD_ORE'
+    - amount:64
+    - name:&6&L64 Gold Ore
+    - 'lore:&2&LReward: &4&m3000$&b &m3750$&6 4125$'
+    - amount:64
+    InventoryLocation: 33
+    ExtraPermission: 'voteshop.1G'
+  IronOre:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - type:IRON_ORE
+      - amount:1
+    Reward: 20
+    MenuItem:
+    - 'type: IRON_ORE'
+    - amount:1
+    - name:&7&L1 Iron Ore
+    - 'lore:&2&LReward: &4&m15$&b &m18$&6 20$'
+    - amount:1
+    InventoryLocation: 7
+    ExtraPermission: 'voteshop.1G'
+  IronOre16:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - type:IRON_ORE
+      - amount:16
+    Reward: 343
+    MenuItem:
+    - 'type: IRON_ORE'
+    - amount:16
+    - name:&7&L16 Iron Ore
+    - 'lore:&2&LReward: &4&m250$&b &m312$&6 343$'
+    - amount:16
+    InventoryLocation: 16
+    ExtraPermission: 'voteshop.1G'
+  IronOre32:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - type:IRON_ORE
+      - amount:32
+    Reward: 687
+    MenuItem:
+    - 'type: IRON_ORE'
+    - amount:32
+    - name:&7&L32 Iron Ore
+    - 'lore:&2&LReward: &4&m500$&b &m625$&6 687$'
+    - amount:32
+    InventoryLocation: 25
+    ExtraPermission: 'voteshop.1G'
+  IronOre64:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - type:IRON_ORE
+      - amount:64
+    Reward: 1375
+    MenuItem:
+    - 'type: IRON_ORE'
+    - amount:64
+    - name:&7&L64 Iron Ore
+    - 'lore:&2&LReward: &4&m1000$&b &m1250$&6 1375$'
+    - amount:64
+    InventoryLocation: 34
+    ExtraPermission: 'voteshop.1G'
+  Diamondb:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - type:DIAMOND_BLOCK
+      - amount:1
+    Reward: 3217
+    MenuItem:
+    - 'type: DIAMOND_BLOCK'
+    - amount:1
+    - name:&b&L1 Diamond Block
+    - 'lore:&2&LReward: &4&m2340$&b &m2925$&6 3217$'
+    - amount:1
+    InventoryLocation: 8
+    ExtraPermission: 'voteshop.1G'
+  Diamondb16:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - type:DIAMOND_BLOCK
+      - amount:16
+    Reward: 51562
+    MenuItem:
+    - 'type: DIAMOND_BLOCK'
+    - amount:16
+    - name:&b&L16 Diamond Block
+    - 'lore:&2&LReward: &4&m37500$&b &m46875$&6 51562$'
+    - amount:16
+    InventoryLocation: 17
+    ExtraPermission: 'voteshop.1G'
+  Diamondb32:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - type:DIAMOND_BLOCK
+      - amount:32
+    Reward: 103125
+    MenuItem:
+    - 'type: DIAMOND_BLOCK'
+    - amount:32
+    - name:&b&L32 Diamond Block
+    - 'lore:&2&LReward: &4&m75000$&b &m93750$&6 103125$'
+    - amount:32
+    InventoryLocation: 26
+    ExtraPermission: 'voteshop.1G'
+  Diamondb64:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - type:DIAMOND_BLOCK
+      - amount:64
+    Reward: 206250
+    MenuItem:
+    - 'type: DIAMOND_BLOCK'
+    - amount:64
+    - name:&b&L64 Diamond Block
+    - 'lore:&2&LReward: &4&m150000$&b &m187500$&6 206250$'
+    - amount:64
+    InventoryLocation: 35
+    ExtraPermission: 'voteshop.1G'
+  PrisonPage2:
+    RewardType: shop
+    PriceType: free
+    Reward: VoteShop1-G-P2
+    MenuItem:
+    - type:REDSTONE_BLOCK
+    - amount:2
+    - name:&4&LVoteShop Sell Page 2 >>>
+    - lore:&8Open Page 2
+    - amount:2
+    InventoryLocation: 27
+    ExtraPermission: 'voteshop.1G'
+

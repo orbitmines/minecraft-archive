@@ -1,0 +1,474 @@
+ShopName: VoteShop2-I-P2
+signs:
+  text: '[VP-2]'
+  NeedPermissionToCreateSign: true
+shop:
+  Iron:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - type:IRON_BLOCK
+      - amount:1
+    Reward: 737
+    MenuItem:
+    - 'type: IRON_BLOCK'
+    - amount:1
+    - name:&7&L1 Iron Block
+    - 'lore:&2&LReward: &4&m468$&b &m702$&6 737$'
+    - amount:1
+    InventoryLocation: 2
+    ExtraPermission: 'voteshop.2I'
+  Iron16:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - type:IRON_BLOCK
+      - amount:16
+    Reward: 11812
+    MenuItem:
+    - 'type: IRON_BLOCK'
+    - amount:16
+    - name:&7&L16 Iron Block
+    - 'lore:&2&LReward: &4&m7500$&b &m11250$&6 11812$'
+    - amount:16
+    InventoryLocation: 11
+    ExtraPermission: 'voteshop.2I'
+  Iron32:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - type:IRON_BLOCK
+      - amount:32
+    Reward: 23625
+    MenuItem:
+    - 'type: IRON_BLOCK'
+    - amount:32
+    - name:&7&L32 Iron Block
+    - 'lore:&2&LReward: &4&m15000$&b &m22500$&6 23625$'
+    - amount:32
+    InventoryLocation: 20
+    ExtraPermission: 'voteshop.2I'
+  Iron64:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - type:IRON_BLOCK
+      - amount:64
+    Reward: 47250
+    MenuItem:
+    - 'type: IRON_BLOCK'
+    - amount:64
+    - name:&7&L64 Iron Block
+    - 'lore:&2&LReward: &4&m30000$&b &m45000$&6 47250$'
+    - amount:64
+    InventoryLocation: 29
+    ExtraPermission: 'voteshop.2I'
+  Coal:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - type:COAL_BLOCK
+      - amount:1
+    Reward: 236
+    MenuItem:
+    - 'type: COAL_BLOCK'
+    - amount:1
+    - name:&8&L1 Coal Block
+    - 'lore:&2&LReward: &4&m150$&b &m225$&6 236$'
+    - amount:1
+    InventoryLocation: 3
+    ExtraPermission: 'voteshop.2I'
+  Coal16:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - type:COAL_BLOCK
+      - amount:16
+    Reward: 3937
+    MenuItem:
+    - 'type: COAL_BLOCK'
+    - amount:16
+    - name:&8&L16 Coal Block
+    - 'lore:&2&LReward: &4&m2500$&b &m3750$&6 3937$'
+    - amount:16
+    InventoryLocation: 12
+    ExtraPermission: 'voteshop.2I'
+  Coal32:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - type:COAL_BLOCK
+      - amount:16
+    Reward: 7875
+    MenuItem:
+    - 'type: COAL_BLOCK'
+    - amount:32
+    - name:&8&L32 Coal Block
+    - 'lore:&2&LReward: &4&m5000$&b &m7500$&6 7875$'
+    - amount:32
+    InventoryLocation: 21
+    ExtraPermission: 'voteshop.2I'
+  Coal64:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - type:COAL_BLOCK
+      - amount:64
+    Reward: 15750
+    MenuItem:
+    - 'type: COAL_BLOCK'
+    - amount:64
+    - name:&8&L64 Coal Block
+    - 'lore:&2&LReward: &4&m10000$&b &m15000$&6 15750$'
+    - amount:64
+    InventoryLocation: 30
+    ExtraPermission: 'voteshop.2I'
+  Stone:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - id:24
+      - amount:1
+    Reward: 7
+    MenuItem:
+    - 'id: 24'
+    - amount:1
+    - name:&e&L1 Sandstone
+    - 'lore:&2&LReward: &4&m5$&b &m7$&6 7$'
+    - amount:1
+    InventoryLocation: 4
+    ExtraPermission: 'voteshop.2I'
+  Stone16:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - id:24
+      - amount:16
+    Reward: 136
+    MenuItem:
+    - 'id: 24'
+    - amount:16
+    - name:&e&L16 Sandstone
+    - 'lore:&2&LReward: &4&m87$&b &m130$&6 136$'
+    - amount:16
+    InventoryLocation: 13
+    ExtraPermission: 'voteshop.2I'
+  Stone32:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - id:24
+      - amount:32
+    Reward: 275
+    MenuItem:
+    - 'id: 24'
+    - amount:32
+    - name:&e&L32 Sandstone
+    - 'lore:&2&LReward: &4&m175$&b &m262$&6 275$'
+    - amount:32
+    InventoryLocation: 22
+    ExtraPermission: 'voteshop.2I'
+  Stone64:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - id:24
+      - amount:64
+    Reward: 551
+    MenuItem:
+    - 'id: 24'
+    - amount:64
+    - name:&e&L64 Sandstone
+    - 'lore:&2&LReward: &4&m350$&b &m525$&6 551$'
+    - amount:64
+    InventoryLocation: 31
+    ExtraPermission: 'voteshop.2I'
+  WoodLog:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - id:17
+      - amount:1
+    Reward: 60
+    MenuItem:
+    - 'id: 17'
+    - amount:1
+    - name:&6&L1 Oak Log
+    - 'lore:&2&LReward: &4&m39$&b &m58$&6 60$'
+    - amount:1
+    InventoryLocation: 5
+    ExtraPermission: 'voteshop.2I'
+  WoodLog16:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - id:17
+      - amount:16
+    Reward: 983
+    MenuItem:
+    - 'id: 17'
+    - amount:16
+    - name:&6&L16 Oak Log
+    - 'lore:&2&LReward: &4&m625$&b &m937$&6 983$'
+    - amount:16
+    InventoryLocation: 14
+    ExtraPermission: 'voteshop.2I'
+  WoodLog32:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - id:17
+      - amount:32
+    Reward: 1968
+    MenuItem:
+    - 'id: 17'
+    - amount:32
+    - name:&6&L32 Oak Log
+    - 'lore:&2&LReward: &4&m1250$&b &m1875$&6 1968$'
+    - amount:32
+    InventoryLocation: 23
+    ExtraPermission: 'voteshop.2I'
+  WoodLog64:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - id:17
+      - amount:64
+    Reward: 3937
+    MenuItem:
+    - 'id: 17'
+    - amount:64
+    - name:&6&L64 Oak Log
+    - 'lore:&2&LReward: &4&m2500$&b &m3750$&6 3937$'
+    - amount:64
+    InventoryLocation: 32
+    ExtraPermission: 'voteshop.2I'
+  WoodLog2:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - id:17
+      - amount:1
+      - durability:1
+    Reward: 60
+    MenuItem:
+    - 'id: 17'
+    - amount:1
+    - durability:1
+    - name:&6&L1 Spruce Log
+    - 'lore:&2&LReward: &4&m39$&b &m58$&6 60$'
+    - amount:1
+    InventoryLocation: 6
+    ExtraPermission: 'voteshop.2I'
+  WoodLog162:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - id:17
+      - amount:16
+      - durability:1
+    Reward: 983
+    MenuItem:
+    - 'id: 17'
+    - amount:16
+    - durability:1
+    - name:&6&L16 Spruce Log
+    - 'lore:&2&LReward: &4&m625$&b &m937$&6 983$'
+    - amount:16
+    InventoryLocation: 15
+    ExtraPermission: 'voteshop.2I'
+  WoodLog322:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - id:17
+      - amount:32
+      - durability:1
+    Reward: 1968
+    MenuItem:
+    - 'id: 17'
+    - amount:32
+    - durability:1
+    - name:&6&L32 Spruce Log
+    - 'lore:&2&LReward: &4&m1250$&b &m1875$&6 1968$'
+    - amount:32
+    InventoryLocation: 24
+    ExtraPermission: 'voteshop.2I'
+  WoodLog642:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - id:17
+      - amount:64
+      - durability:1
+    Reward: 3937
+    MenuItem:
+    - 'id: 17'
+    - amount:64
+    - durability:1
+    - name:&6&L64 Spruce Log
+    - 'lore:&2&LReward: &4&m2500$&b &m3750$&6 3937$'
+    - amount:64
+    InventoryLocation: 33
+    ExtraPermission: 'voteshop.2I'
+  WoodLog3:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - id:17
+      - amount:1
+      - durability:2
+    Reward: 60
+    MenuItem:
+    - 'id: 17'
+    - amount:1
+    - durability:2
+    - name:&6&L1 Birch Log
+    - 'lore:&2&LReward: &4&m39$&b &m58$&6 60$'
+    - amount:1
+    InventoryLocation: 7
+    ExtraPermission: 'voteshop.2I'
+  WoodLog163:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - id:17
+      - amount:16
+      - durability:2
+    Reward: 983
+    MenuItem:
+    - 'id: 17'
+    - amount:16
+    - durability:2
+    - name:&6&L16 Birch Log
+    - 'lore:&2&LReward: &4&m625$&b &m937$&6 983$'
+    - amount:16
+    InventoryLocation: 16
+    ExtraPermission: 'voteshop.2I'
+  WoodLog323:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - id:17
+      - amount:32
+      - durability:2
+    Reward: 1968
+    MenuItem:
+    - 'id: 17'
+    - amount:32
+    - durability:2
+    - name:&6&L32 Birch Log
+    - 'lore:&2&LReward: &4&m1250$&b &m1875$&6 1968$'
+    - amount:32
+    InventoryLocation: 25
+    ExtraPermission: 'voteshop.2I'
+  WoodLog643:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - id:17
+      - amount:64
+      - durability:2
+    Reward: 3937
+    MenuItem:
+    - 'id: 17'
+    - amount:64
+    - durability:2
+    - name:&6&L64 Birch Log
+    - 'lore:&2&LReward: &4&m2500$&b &m3750$&6 3937$'
+    - amount:64
+    InventoryLocation: 34
+    ExtraPermission: 'voteshop.2I'
+  WoodLog4:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - id:17
+      - amount:1
+      - durability:3
+    Reward: 60
+    MenuItem:
+    - 'id: 17'
+    - amount:1
+    - durability:3
+    - name:&6&L1 Jungle Log
+    - 'lore:&2&LReward: &4&m39$&b &m58$&6 60$'
+    - amount:1
+    InventoryLocation: 8
+    ExtraPermission: 'voteshop.2I'
+  WoodLog164:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - id:17
+      - amount:16
+      - durability:3
+    Reward: 983
+    MenuItem:
+    - 'id: 17'
+    - amount:16
+    - durability:3
+    - name:&6&L16 Jungle Log
+    - 'lore:&2&LReward: &4&m625$&b &m937$&6 983$'
+    - amount:16
+    InventoryLocation: 17
+    ExtraPermission: 'voteshop.2I'
+  WoodLog324:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - id:17
+      - amount:32
+      - durability:3
+    Reward: 1968
+    MenuItem:
+    - 'id: 17'
+    - amount:32
+    - durability:3
+    - name:&6&L32 Jungle Log
+    - 'lore:&2&LReward: &4&m1250$&b &m1875$&6 1968$'
+    - amount:32
+    InventoryLocation: 26
+    ExtraPermission: 'voteshop.2I'
+  WoodLog644:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - id:17
+      - amount:64
+      - durability:3
+    Reward: 3937
+    MenuItem:
+    - 'id: 17'
+    - amount:64
+    - durability:3
+    - name:&6&L64 Jungle Log
+    - 'lore:&2&LReward: &4&m2500$&b &m3750$&6 3937$'
+    - amount:64
+    InventoryLocation: 35
+    ExtraPermission: 'voteshop.2I'
+  PrisonPage1:
+    RewardType: shop
+    PriceType: free
+    Reward: VoteShop2-I-P1
+    MenuItem:
+    - type:REDSTONE_BLOCK
+    - amount:1
+    - name:&4&L<<< VoteShop Sell Page 1
+    - lore:&8Open Page 1
+    - amount:1
+    InventoryLocation: 19
+    ExtraPermission: 'voteshop.2I'
+  PrisonPage3:
+    RewardType: shop
+    PriceType: free
+    Reward: VoteShop2-I-P3
+    MenuItem:
+    - type:REDSTONE_BLOCK
+    - amount:3
+    - name:&4&LVote Shop Sell Page 3 >>>
+    - lore:&8Open Page 3
+    - amount:3
+    InventoryLocation: 27
+    ExtraPermission: 'voteshop.2I'
+

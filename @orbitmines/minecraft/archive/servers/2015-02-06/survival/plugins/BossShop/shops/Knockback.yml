@@ -1,0 +1,54 @@
+ShopName: Knockback
+signs:
+  text: '[Knockback]'
+  NeedPermissionToCreateSign: true
+shop:
+  1:
+    RewardType: item
+    PriceType: money
+    Price: 250
+    Reward:
+    - - type:ENCHANTED_BOOK
+      - enchantment:KNOCKBACK#1
+      - amount:1
+    MenuItem:
+    - type:ENCHANTED_BOOK
+    - enchantment:KNOCKBACK#1
+    - amount:1
+    - 'name:&bEnchanted Book &6[Knockback I]'
+    - 'lore:&c&LPrice: &6250$'
+    - amount:1
+    Message: '&2[&aSurvival Shop&2] &aYou have bought &f1 Enchanted Book (Knockback I)&a for &6250$'
+    InventoryLocation: 1
+    ExtraPermission: ''
+  2:
+    RewardType: item
+    PriceType: money
+    Price: 500
+    Reward:
+    - - type:ENCHANTED_BOOK
+      - enchantment:KNOCKBACK#2
+      - amount:1
+    MenuItem:
+    - type:ENCHANTED_BOOK
+    - enchantment:KNOCKBACK#2
+    - amount:1
+    - 'name:&bEnchanted Book &6[Knockback II]'
+    - 'lore:&c&LPrice: &6500$ #&4Required: &8[&7&lVIP&8]'
+    - amount:1
+    Message: '&2[&aSurvival Shop&2] &aYou have bought &f1 Enchanted Book (Knockback II)&a for &6500$'
+    InventoryLocation: 2
+    ExtraPermission: 'vipshop.ivip'
+  BackToMenu:
+    RewardType: shop
+    PriceType: free
+    Reward: Survival
+    MenuItem:
+    - type:REDSTONE_BLOCK
+    - amount:1
+    - name:&a&LSurvival Menu
+    - lore:&8Back to the Survival Menu
+    - amount:1
+    InventoryLocation: 9
+    ExtraPermission: ''
+

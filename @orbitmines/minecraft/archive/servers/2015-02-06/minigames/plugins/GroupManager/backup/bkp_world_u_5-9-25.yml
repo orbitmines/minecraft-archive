@@ -1,0 +1,561 @@
+users:
+  04d2dfe9-4207-3c48-a2e8-b926dfdd0b75:
+    lastname: rachtanos
+    group: User
+    subgroups: []
+    permissions:
+    - essentials.afk
+    - Rank.Iron
+    info:
+      prefix: '&7&lIron &7'
+  09a8be6c-41cb-3107-a964-8f31a258a51f:
+    lastname: jasonboy7
+    group: User
+    subgroups: []
+    permissions:
+    - essentials.afk
+    - essentials.nick
+    - essentials.nick.color
+    - Rank.Diamond
+    - Rank.Gold
+    - Rank.Iron
+    info:
+      prefix: '&9&lDiamond &9'
+  0b7fea92-9ddd-341f-8a28-74f960f6b3d8:
+    lastname: Bryan20027
+    group: User
+    subgroups: []
+    permissions:
+    - -Rank.Owner
+    - -Rank.Mod
+    - essentials.afk
+    - essentials.nick
+    - essentials.nick.color
+    - essentials.nick.format
+    - essentials.nick.magic
+    - Rank.Diamond
+    - Rank.Gold
+    - Rank.Iron
+    info:
+      prefix: '&9&lDiamond &9'
+  0c40097e-9b40-36c4-b5a2-14b36b0b2513:
+    lastname: gwnluca
+    group: User
+    subgroups: []
+    permissions:
+    - essentials.afk
+    - essentials.nick
+    - essentials.nick.color
+    - essentials.nick.format
+    - essentials.nick.magic
+    - Rank.Diamond
+    - Rank.Emerald
+    - Rank.Gold
+    - Rank.Iron
+    info:
+      prefix: '&a&lEmerald &a'
+  0fe7c65f-57e6-3e5f-b65e-10a5b85b0027:
+    lastname: Teleport1409
+    group: User
+    subgroups: []
+    permissions:
+    - essentials.afk
+    - Rank.Iron
+    info:
+      prefix: '&7&lIron &7'
+  11614ad9-1722-38b3-a7d2-537e51c96d79:
+    lastname: marioandbowser30
+    group: User
+    subgroups: []
+    permissions:
+    - essentials.afk
+    - essentials.nick
+    - essentials.nick.color
+    - essentials.nick.format
+    - essentials.nick.magic
+    - Rank.Diamond
+    - Rank.Emerald
+    - Rank.Gold
+    - Rank.Iron
+    info:
+      prefix: '&a&lEmerald &a'
+  123pika456:
+    group: User
+    subgroups: []
+    permissions:
+    - essentials.afk
+    - essentials.nick
+    - Rank.Gold
+    - Rank.Iron
+    info:
+      prefix: '&6&lGold &6'
+  1494d9a9-9d71-373a-b19e-f055a06a6ba3:
+    lastname: Afrobob1234
+    group: User
+    subgroups: []
+    permissions:
+    - essentials.nick
+    - essentials.nick.color
+    - essentials.nick.format
+  16a6fc85-82b4-391b-8818-7ddcfa1e8d0f:
+    lastname: eliboycool
+    group: User
+    subgroups: []
+    permissions:
+    - essentials.afk
+    - essentials.nick
+    - essentials.nick.color
+    - Rank.Diamond
+    - Rank.Gold
+    - Rank.Iron
+    info:
+      prefix: '&9&lDiamond &9'
+  1c3a0d34-7ef4-33c8-9c83-b9e9e1095ab9:
+    lastname: kevinkeijzer2004
+    group: User
+    subgroups: []
+    permissions:
+    - essentials.afk
+    - essentials.nick
+    - essentials.nick.color
+    - Rank.Diamond
+    - Rank.Gold
+    - Rank.Iron
+    info:
+      prefix: '&9&lDiamond &9'
+  1c75d796-be90-3ea1-8398-90ba4c80e286:
+    lastname: regonize11
+    group: User
+    subgroups: []
+    permissions:
+    - essentials.afk
+    - Rank.Iron
+    info:
+      prefix: '&7&lIron &7'
+  1c78661f-e862-3cfe-8eaf-df56eec8c3b9:
+    lastname: masterroos
+    group: User
+    subgroups: []
+    permissions:
+    - essentials.afk
+    - Rank.Iron
+    info:
+      prefix: '&7&lIron &7'
+  33059941-c84b-3864-95fe-e29e8609076f:
+    lastname: NL_NOOBSLAYER
+    group: User
+    subgroups: []
+    permissions:
+    - essentials.afk
+    - essentials.nick
+    - essentials.nick.color
+    - Rank.Diamond
+    - Rank.Gold
+    - Rank.Iron
+    info:
+      prefix: '&9&lDiamond &9'
+  33ee168b-5c2c-42c5-b3b2-d841ceb76b70:
+    lastname: O_o_Fadi_o_O
+    group: User
+    subgroups: []
+    permissions:
+    - ChatColor.ColorList
+    - ChatColor.DARK_GREY
+    - ChatColor.GREY
+    - ChatColor.PURPLE
+    - ChatColor.SetColor
+    - essentials.afk
+    - Hub.Fly
+    - HubFly.Use
+    - libsdisguises.disguise.chicken
+    - libsdisguises.disguise.cow
+    - libsdisguises.disguise.pig
+    - libsdisguises.undisguise
+    - smoketrail.use.off
+    - smoketrail.use.snow
+    - smoketrail.use.sweat
+    - staffsecure.staff
+    info:
+      prefix: '&4&lOwner &4'
+  350b4ab5-1828-3697-b6a9-8eb4b57fc766:
+    lastname: ivano2004
+    group: User
+    subgroups: []
+    permissions:
+    - essentials.afk
+    - essentials.nick
+    - essentials.nick.color
+    - Rank.Diamond
+    - Rank.Gold
+    - Rank.Iron
+    info:
+      prefix: '&9&lDiamond &9'
+  47558ed1-b7bf-3667-985e-2d20ff4d357a:
+    lastname: sharewoods
+    group: User
+    subgroups: []
+    permissions:
+    - -Rank.Owner
+    - -Rank.Emerald
+    - -Rank.Gold
+    - -Rank.Diamond
+    - essentials.mute
+    - Rank.Moderator
+    info:
+      prefix: '&7&lIron &8| &b&lMod &b'
+  47e9eaaa-b487-331a-a051-4fe0980a8113:
+    lastname: iefke
+    group: User
+    subgroups: []
+    permissions:
+    - essentials.afk
+    - essentials.nick
+    - essentials.nick.color
+    - essentials.nick.format
+    - essentials.nick.magic
+    - Rank.Diamond
+    - Rank.Emerald
+    - Rank.Gold
+    - Rank.Iron
+    info:
+      prefix: '&a&lEmerald &a'
+  51726c65-004b-3b7a-8e21-a286a043bcef:
+    lastname: gapisabelle
+    group: User
+    subgroups: []
+    permissions:
+    - essentials.afk
+    - essentials.nick
+    - Rank.Gold
+    - Rank.Iron
+    info:
+      prefix: '&6&lGold &6'
+  52bcc829-e8cf-3e4e-8f4c-5e14fde16c06:
+    lastname: Milanekke
+    group: User
+    subgroups: []
+    permissions:
+    - essentials.afk
+    - essentials.nick
+    - essentials.nick.color
+    - Rank.Diamond
+    - Rank.Gold
+    - Rank.Iron
+    info:
+      prefix: '&9&lDiamond &9'
+  64b035b0-5d64-3e89-81a1-4f771e91fe7c:
+    lastname: Koning_paul
+    group: User
+    subgroups: []
+    permissions:
+    - essentials.afk
+    - essentials.nick
+    - essentials.nick.color
+    - Rank.Diamond
+    - Rank.Gold
+    - Rank.Iron
+    info:
+      prefix: '&9&lDiamond &9'
+  661606bb-783c-38ee-ad04-614be9e9e4ae:
+    lastname: jomancool55
+    group: User
+    subgroups: []
+    permissions:
+    - essentials.afk
+    - essentials.nick
+    - essentials.nick.color
+    - Rank.Diamond
+    - Rank.Gold
+    - Rank.Iron
+    info:
+      prefix: '&9&lDiamond &9'
+  67958309-706f-336a-9923-7c4a60e79d41:
+    lastname: SkyPoes
+    group: User
+    subgroups: []
+    permissions:
+    - essentials.afk
+    - essentials.nick
+    - Rank.Gold
+    - Rank.Iron
+    info:
+      prefix: '&6&lGold &6'
+  696fe870-e68f-3a61-94f9-16b38b0723cd:
+    lastname: matt20041
+    group: User
+    subgroups: []
+    permissions:
+    - essentials.afk
+    - essentials.nick
+    - essentials.nick.color
+    - Rank.Diamond
+    - Rank.Gold
+    - Rank.Iron
+    info:
+      prefix: '&9&lDiamond &9'
+  82b9dbf3-63d5-3040-8aa8-14f252385797:
+    lastname: garethirwin
+    group: User
+    subgroups: []
+    permissions:
+    - essentials.afk
+    - essentials.nick
+    - essentials.nick.color
+    - Rank.Diamond
+    - Rank.Gold
+    - Rank.Iron
+    info:
+      prefix: '&9&lDiamond &9'
+  82fb9c64-82d6-3ec7-b268-19919bfb583b:
+    lastname: cooleromeo
+    group: User
+    subgroups: []
+    permissions:
+    - essentials.afk
+    - essentials.nick
+    - essentials.nick.color
+    - essentials.nick.format
+    - essentials.nick.magic
+    - Rank.Diamond
+    - Rank.Emerald
+    - Rank.Gold
+    - Rank.Iron
+    info:
+      prefix: '&a&lEmerald &a'
+  8667aa59-4924-38a1-bc5c-94efed61d5bc:
+    lastname: O_o_Fadi_o_O
+    group: User
+    subgroups: []
+    permissions:
+    - Rank.Owner
+  8738b9bb-caf7-3c88-8a1e-421272dee0be:
+    lastname: eekhoorn2000
+    group: User
+    subgroups: []
+    permissions:
+    - essentials.ban
+    - essentials.kick
+    - essentials.mute
+    - essentials.tp
+    - essentials.tp.others
+    - Rank.Moderator
+    info:
+      prefix: '&b&lMod &b'
+  8ddbeb39-d0ec-3bac-b4ca-9e8eb1cd1f5b:
+    lastname: AntiFighting
+    group: User
+    subgroups: []
+    permissions:
+    - essentials.afk
+    - Rank.Iron
+    info:
+      prefix: '&7&lIron &7'
+  9461839c-f5f4-35f9-b2cd-e1f732699245:
+    lastname: rienk222
+    group: User
+    subgroups: []
+    permissions:
+    - essentials.afk
+    - essentials.nick
+    - Rank.Builder
+    - Rank.Gold
+    - Rank.Iron
+    info:
+      prefix: '&6&lGold &6'
+  9e07db71-c16e-33d5-a410-5bc90ba627c5:
+    lastname: Maxioncraft
+    group: User
+    subgroups: []
+    permissions:
+    - essentials.afk
+    - Rank.Iron
+    info:
+      prefix: '&7&lIron &7'
+  9f05252a-9cdb-3a31-b052-efa99e9b65e4:
+    lastname: bartdecoolste
+    group: User
+    subgroups: []
+    permissions:
+    - essentials.afk
+    - essentials.nick
+    - essentials.nick.color
+    - Rank.Diamond
+    - Rank.Gold
+    - Rank.Iron
+    info:
+      prefix: '&9&lDiamond &9'
+  a448f555-a3f7-36d7-ac1c-4370c3f47d9e:
+    lastname: jim5491158
+    group: User
+    subgroups: []
+    permissions:
+    - -Rank.Owner
+    - essentials.afk
+    - essentials.ban
+    - essentials.kick
+    - essentials.nick
+    - essentials.tempban
+    - essentials.vanish
+    - Rank.Gold
+    - Rank.Iron
+    - Rank.Moderator
+    info:
+      prefix: '&b&lMod &b'
+  a97897b8-6729-35d4-a349-9e5ac3c9da65:
+    lastname: WOUT2004ANIKIN
+    group: User
+    subgroups: []
+    permissions:
+    - essentials.afk
+    - essentials.nick
+    - Rank.Gold
+    - Rank.Iron
+    info:
+      prefix: '&6&lGold &6'
+  b4307a2d-2a72-3305-8fe6-f43b1d2bae36:
+    lastname: Xzero119
+    group: User
+    subgroups: []
+    permissions:
+    - essentials.afk
+    - essentials.nick
+    - Rank.Gold
+    - Rank.Iron
+    info:
+      prefix: '&6&lGold &6'
+  b68257ad-3116-3dc6-8dd8-4dea47cbb72a:
+    lastname: casidas
+    group: User
+    subgroups: []
+    permissions:
+    - Rank.Builder
+    info:
+      prefix: '&d&lBuilder &d'
+  basteti:
+    group: User
+    subgroups: []
+    permissions: []
+    info:
+      prefix: '&b&lMod &b'
+  c180323b-7648-3ebe-b941-73d16d405c4b:
+    lastname: NovaStormWon
+    group: User
+    subgroups: []
+    permissions:
+    - essentials.afk
+    - Rank.Iron
+    info:
+      prefix: '&7&lIron &7'
+  c1d3bee6-eccd-3b60-8563-0e9297a186c2:
+    lastname: SterreHaasnoot
+    group: User
+    subgroups: []
+    permissions:
+    - essentials.afk
+    - essentials.nick
+    - Rank.Gold
+    - Rank.Iron
+    info:
+      prefix: '&6&lGold &6'
+  c330aff5-024f-3954-b346-8f5c89566619:
+    lastname: Ragthanatos1500
+    group: User
+    subgroups: []
+    permissions:
+    - essentials.afk
+    - Rank.Iron
+    info:
+      prefix: '&7&lIron &7'
+  c7bbb0d0-cb8c-3e53-80f5-2ee787be4f32:
+    lastname: eddieirwin
+    group: User
+    subgroups: []
+    permissions:
+    - essentials.afk
+    - essentials.nick
+    - essentials.nick.color
+    - essentials.nick.format
+    - essentials.nick.magic
+    - Rank.Diamond
+    - Rank.Emerald
+    - Rank.Gold
+    - Rank.Iron
+    info:
+      prefix: '&a&lEmerald &a'
+  c8639c21-162e-397b-9f90-51ffc9eb74d7:
+    lastname: draidstaiger
+    group: User
+    subgroups: []
+    permissions:
+    - essentials.afk
+    - Rank.Iron
+    info:
+      prefix: '&7&lIron &7'
+  d6b3eb95-9afc-3501-aa52-1ef4e9274239:
+    lastname: Kornstar2010
+    group: User
+    subgroups: []
+    permissions:
+    - essentials.afk
+    - essentials.nick
+    - Rank.Gold
+    - Rank.Iron
+    info:
+      prefix: '&6&lGold &6'
+  d9ea4c29-7d60-3ceb-a15a-918b76516976:
+    lastname: Riraroe
+    group: User
+    subgroups: []
+    permissions:
+    - essentials.afk
+    - essentials.nick
+    - Rank.Gold
+    - Rank.Iron
+    info:
+      prefix: '&6&lGold &6'
+  dc9b00f0-56e6-39da-88c1-278ca4885642:
+    lastname: koningstan112
+    group: User
+    subgroups: []
+    permissions:
+    - essentials.afk
+    - essentials.nick
+    - Rank.Gold
+    - Rank.Iron
+    info:
+      prefix: '&6&lGold &6'
+  f027033d-821f-36d3-b25e-1274081c2604:
+    lastname: playwarrior
+    group: User
+    subgroups: []
+    permissions:
+    - essentials.afk
+    - essentials.nick
+    - Rank.Gold
+    - Rank.Iron
+    info:
+      prefix: '&6&lGold &6'
+  f4a94c61-e731-32b5-8efc-110156e6a5c7:
+    lastname: jarischreuder
+    group: User
+    subgroups: []
+    permissions:
+    - essentials.afk
+    - essentials.nick
+    - essentials.nick.color
+    - Rank.Diamond
+    - Rank.Gold
+    - Rank.Iron
+    info:
+      prefix: '&9&lDiamond &9'
+  f4b17bd2-5759-3bf3-b4bc-a83e95a30731:
+    lastname: 12olivier34
+    group: User
+    subgroups: []
+    permissions:
+    - essentials.afk
+    - essentials.nick
+    - Rank.Gold
+    - Rank.Iron
+    info:
+      prefix: '&6&lGold &6'

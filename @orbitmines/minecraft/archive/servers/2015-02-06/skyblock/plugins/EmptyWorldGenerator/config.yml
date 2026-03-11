@@ -1,0 +1,12 @@
+# EmptyWorldGenerator v1.4 Config
+# You can choose if the block of bedrock gets spawned or not.
+# If enabled, there will be a block of bedrock at the location specified
+# below, and the player will spawn above that block. If the option is
+# disabled, there won't be a block of bedrock, but the player will still
+# spawn above the location specified.
+
+bedrock:
+  enabled: true
+  x: 0
+  y: 64
+  z: 0

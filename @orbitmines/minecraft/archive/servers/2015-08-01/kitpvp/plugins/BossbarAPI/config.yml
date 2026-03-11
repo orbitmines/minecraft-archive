@@ -1,0 +1,52 @@
+# BossbarAPI API by mgone2010
+#Don't change configversion
+configversion: 4.4
+#keep true if you will use as standalone and show bar message with AutoMessage at the bottom
+#set false if it's dependency of other plugin using this api
+EnableAutoMessage: true
+#time to wait in between announcements (in seconds)!):
+interval: 5
+#Bypass 64 characters in the message, this is experimental
+#but it's seem work perfectly.
+Bypass64CharLimit: true
+# Messages! Color and icon are supported.
+#EnableAutoMessage must be true to show this auto message
+#PS: duration can not be superior to the interval,
+#duration and health can not be enabled at the same time. -1 to disable (duration in seconds, health in %)
+messages:
+  0:
+    message: '&d:love: &3BossBarAPI is best plugin ever! &d:love:'
+    duration: 5
+    health: -1
+    worlds:
+    - world
+    - world_nether
+  1:
+    message: '&bWelcom %player%! &fThere is &c%online_players%/%max_players% online!'
+    duration: -1
+    health: -1
+    worlds:
+    - world
+    - Skyblock
+  2:
+    message: '&6&lhello &aworld, &fBossBarAPI 4.2 by mgone2010'
+    duration: -1
+    health: 50
+    worlds:
+    - world
+    - world_the_end
+  3:
+    message: '&efleur*fleur*fleur*fleur* Your Blance is %balance_player% fleur*fleur*fleur*fleur*'
+    duration: -1
+    health: -1
+    worlds:
+    - world
+    - world_the_end
+  4:
+    message: '&d/bossbar &fto see variables and icons list'
+    duration: -1
+    health: -1
+    worlds:
+    - world
+    - world_the_end
+#use this is you have problem to add new message http://yaml-online-parser.appspot.com/

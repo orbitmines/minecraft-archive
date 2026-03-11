@@ -1,0 +1,50 @@
+# Citizens NPC Storage
+
+last-created-npc-id: 1
+npc:
+  '0':
+    name: "\xa76"
+    uuid: 0a281f89-ce59-42f1-b674-e7b24b189f30
+    traits:
+      location:
+        world: Lobby
+        x: '0.8140153375546266'
+        y: '70.0'
+        z: '-1.663110155188296'
+        yaw: '13.05210018157959'
+        pitch: '14.55000114440918'
+      spawned: true
+      inventory: {}
+      owner:
+        owner: matt20041
+        uuid: cef4ba59-f58c-47b3-b3b9-ebd2f83029b9
+    traitnames: owner,spawned,inventory,location,type
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+  '1':
+    name: Test
+    uuid: c6c085a5-be5e-42af-b765-0a25b41c841e
+    traits:
+      type: Zombie
+      location:
+        world: Lobby
+        x: '4.646910156773002'
+        y: '70.0'
+        z: '-2.254756666108579'
+        yaw: '14.856043815612793'
+        pitch: '0.0'
+      spawned: true
+      owner:
+        owner: O_o_Fadi_o_O
+        uuid: 33ee168b-5c2c-42c5-b3b2-d841ceb76b70
+    traitnames: spawned,owner,location,type
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true

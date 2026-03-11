@@ -1,0 +1,9 @@
+EntitiesForAlarm: 1
+AlarmMessages:
+- '&f'
+- '&4&l[>>] &7Found laggy chunk on &c%server%§7. (&6%entities% &7Entities)'
+- '&4&l[>>] &7Cordinates: &6%world%&7, &6%x-cords%&7, &6%z-cords% &7(Chunk: &6%x-chunk%&7,
+  &6%z-chunk%&7)'
+ServerVariable:
+  ServerName: '&c%server%'
+  HoverMessage: '&7Connect to &c%server%&7.'

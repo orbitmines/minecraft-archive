@@ -1,0 +1,13 @@
+NPCS:
+  '0':
+    Commands:
+    - mgkitselect ChickenMama~~false
+  '1':
+    Commands:
+    - mgkitselect BabyChicken~~false
+  '2':
+    Commands:
+    - mgkitselect HotWing~~false
+  '3':
+    Commands:
+    - mgkitselect ChickenWarrior~~false

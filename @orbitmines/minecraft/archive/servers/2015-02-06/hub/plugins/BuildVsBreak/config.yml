@@ -1,0 +1,6 @@
+Prevent building: true
+Prevent breaking: true
+Sound: true
+Worlds:
+- world
+- OrbitMinesHub

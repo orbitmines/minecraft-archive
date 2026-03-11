@@ -1,0 +1,330 @@
+ShopName: Enchantments
+signs:
+  text: '[Enchantments]'
+  NeedPermissionToCreateSign: true
+shop:
+  Sword:
+    RewardType: money
+    PriceType: free
+    Reward: 0
+    MenuItem:
+    - type:IRON_SWORD
+    - amount:1
+    - name:&bSword Enchantments
+    - amount:1
+    InventoryLocation: 1
+    ExtraPermission: ''
+  SwordSharpness:
+    RewardType: shop
+    PriceType: free
+    Reward: Sharpness
+    MenuItem:
+    - type:ENCHANTED_BOOK
+    - amount:1
+    - 'name:&cSword: &6&nSharpness'
+    - amount:1
+    InventoryLocation: 2
+    ExtraPermission: ''
+  SwordFireAspect:
+    RewardType: shop
+    PriceType: free
+    Reward: FireAspect
+    MenuItem:
+    - type:ENCHANTED_BOOK
+    - amount:1
+    - 'name:&cSword: &6&nFire Aspect'
+    - amount:1
+    InventoryLocation: 3
+    ExtraPermission: ''
+  SwordKnockback:
+    RewardType: shop
+    PriceType: free
+    Reward: Knockback
+    MenuItem:
+    - type:ENCHANTED_BOOK
+    - amount:1
+    - 'name:&cSword: &6&nKnockback'
+    - amount:1
+    InventoryLocation: 4
+    ExtraPermission: ''
+  SwordSmite:
+    RewardType: shop
+    PriceType: free
+    Reward: Smite
+    MenuItem:
+    - type:ENCHANTED_BOOK
+    - amount:1
+    - 'name:&cSword: &6&nSmite'
+    - amount:1
+    InventoryLocation: 5
+    ExtraPermission: ''
+  SwordBaneofArthropods:
+    RewardType: shop
+    PriceType: free
+    Reward: BaneOfArthropods
+    MenuItem:
+    - type:ENCHANTED_BOOK
+    - amount:1
+    - 'name:&cSword: &6&nBane of Arthropods'
+    - amount:1
+    InventoryLocation: 6
+    ExtraPermission: ''
+  SwordLooting:
+    RewardType: shop
+    PriceType: free
+    Reward: Looting
+    MenuItem:
+    - type:ENCHANTED_BOOK
+    - amount:1
+    - 'name:&cSword: &6&nLooting'
+    - amount:1
+    InventoryLocation: 7
+    ExtraPermission: ''
+  SwordUnbreaking:
+    RewardType: shop
+    PriceType: free
+    Reward: Unbreaking
+    MenuItem:
+    - type:ENCHANTED_BOOK
+    - amount:1
+    - 'name:&cSword: &6&nUnbreaking'
+    - amount:1
+    InventoryLocation: 8
+    ExtraPermission: ''
+  Pickaxe:
+    RewardType: money
+    PriceType: free
+    Reward: 0
+    MenuItem:
+    - type:IRON_PICKAXE
+    - amount:1
+    - name:&bPickaxe Enchantments
+    - amount:1
+    InventoryLocation: 10
+    ExtraPermission: ''
+  PickaxeEfficiency:
+    RewardType: shop
+    PriceType: free
+    Reward: Efficiency
+    MenuItem:
+    - type:ENCHANTED_BOOK
+    - amount:1
+    - 'name:&cPickaxe: &6&nEfficiency'
+    - amount:1
+    InventoryLocation: 11
+    ExtraPermission: ''
+  PickaxeFortune:
+    RewardType: shop
+    PriceType: free
+    Reward: Fortune
+    MenuItem:
+    - type:ENCHANTED_BOOK
+    - amount:1
+    - 'name:&cPickaxe: &6&nFortune'
+    - amount:1
+    InventoryLocation: 12
+    ExtraPermission: ''
+  PickaxeUnbreaking:
+    RewardType: shop
+    PriceType: free
+    Reward: Unbreaking
+    MenuItem:
+    - type:ENCHANTED_BOOK
+    - amount:1
+    - 'name:&cPickaxe: &6&nUnbreaking'
+    - amount:1
+    InventoryLocation: 13
+    ExtraPermission: ''
+  PickaxeSilkTouch:
+    RewardType: shop
+    PriceType: free
+    Reward: SilkTouch
+    MenuItem:
+    - type:ENCHANTED_BOOK
+    - amount:1
+    - 'name:&cPickaxe: &6&nSilk Touch'
+    - amount:1
+    InventoryLocation: 14
+    ExtraPermission: ''
+  Axe:
+    RewardType: money
+    PriceType: free
+    Reward: 0
+    MenuItem:
+    - type:IRON_AXE
+    - amount:1
+    - name:&bAxe Enchantments
+    - amount:1
+    InventoryLocation: 19
+    ExtraPermission: ''
+  AxeEfficiency:
+    RewardType: shop
+    PriceType: free
+    Reward: Efficiency
+    MenuItem:
+    - type:ENCHANTED_BOOK
+    - amount:1
+    - 'name:&cAxe: &6&nEfficiency'
+    - amount:1
+    InventoryLocation: 20
+    ExtraPermission: ''
+  AxeUnbreaking:
+    RewardType: shop
+    PriceType: free
+    Reward: Unbreaking
+    MenuItem:
+    - type:ENCHANTED_BOOK
+    - amount:1
+    - 'name:&cAxe: &6&nUnbreaking'
+    - amount:1
+    InventoryLocation: 21
+    ExtraPermission: ''
+  Spade:
+    RewardType: money
+    PriceType: free
+    Reward: 0
+    MenuItem:
+    - type:IRON_SPADE
+    - amount:1
+    - name:&bShovel Enchantments
+    - amount:1
+    InventoryLocation: 28
+    ExtraPermission: ''
+  SpadeEfficiency:
+    RewardType: shop
+    PriceType: free
+    Reward: Efficiency
+    MenuItem:
+    - type:ENCHANTED_BOOK
+    - amount:1
+    - 'name:&cShovel: &6&nEfficiency'
+    - amount:1
+    InventoryLocation: 29
+    ExtraPermission: ''
+  SpadeUnbreaking:
+    RewardType: shop
+    PriceType: free
+    Reward: Unbreaking
+    MenuItem:
+    - type:ENCHANTED_BOOK
+    - amount:1
+    - 'name:&cShovel: &6&nUnbreaking'
+    - amount:1
+    InventoryLocation: 30
+    ExtraPermission: ''
+  Bow:
+    RewardType: money
+    PriceType: free
+    Reward: 0
+    MenuItem:
+    - type:BOW
+    - amount:1
+    - name:&bBow Enchantments
+    - amount:1
+    InventoryLocation: 37
+    ExtraPermission: ''
+  BowPower:
+    RewardType: shop
+    PriceType: free
+    Reward: Power
+    MenuItem:
+    - type:ENCHANTED_BOOK
+    - amount:1
+    - 'name:&cBow: &6&nPower'
+    - amount:1
+    InventoryLocation: 38
+    ExtraPermission: ''
+  BowPunch:
+    RewardType: shop
+    PriceType: free
+    Reward: Punch
+    MenuItem:
+    - type:ENCHANTED_BOOK
+    - amount:1
+    - 'name:&cBow: &6&nPunch'
+    - amount:1
+    InventoryLocation: 39
+    ExtraPermission: ''
+  BowFlame:
+    RewardType: shop
+    PriceType: free
+    Reward: Flame
+    MenuItem:
+    - type:ENCHANTED_BOOK
+    - amount:1
+    - 'name:&cBow: &6&nFlame'
+    - amount:1
+    InventoryLocation: 40
+    ExtraPermission: ''
+  BowInfinity:
+    RewardType: shop
+    PriceType: free
+    Reward: Infinity
+    MenuItem:
+    - type:ENCHANTED_BOOK
+    - amount:1
+    - 'name:&cBow: &6&nInfinity'
+    - amount:1
+    InventoryLocation: 41
+    ExtraPermission: ''
+  Helmet:
+    RewardType: shop
+    PriceType: free
+    Reward: Enchantments2
+    MenuItem:
+    - type:IRON_HELMET
+    - amount:1
+    - name:&bHelmet Enchantments
+    - 'lore: &8&oNext Page >>>'
+    - amount:1
+    InventoryLocation: 9
+    ExtraPermission: ''
+  Chestplate:
+    RewardType: shop
+    PriceType: free
+    Reward: Enchantments2
+    MenuItem:
+    - type:IRON_CHESTPLATE
+    - amount:1
+    - name:&bChestplate Enchantments
+    - 'lore: &8&oNext Page >>>'
+    - amount:1
+    InventoryLocation: 18
+    ExtraPermission: ''
+  Leggings:
+    RewardType: shop
+    PriceType: free
+    Reward: Enchantments2
+    MenuItem:
+    - type:IRON_LEGGINGS
+    - amount:1
+    - name:&bLeggings Enchantments
+    - 'lore: &8&oNext Page >>>'
+    - amount:1
+    InventoryLocation: 27
+    ExtraPermission: ''
+  Boots:
+    RewardType: shop
+    PriceType: free
+    Reward: Enchantments2
+    MenuItem:
+    - type:IRON_BOOTS
+    - amount:1
+    - name:&bBoots Enchantments
+    - 'lore: &8&oNext Page >>>'
+    - amount:1
+    InventoryLocation: 36
+    ExtraPermission: ''
+  BackToMenu:
+    RewardType: shop
+    PriceType: free
+    Reward: Survival
+    MenuItem:
+    - type:REDSTONE_BLOCK
+    - amount:1
+    - name:&a&LSurvival Menu
+    - lore:&8Back to the Survival Menu
+    - amount:1
+    InventoryLocation: 45
+    ExtraPermission: ''
+

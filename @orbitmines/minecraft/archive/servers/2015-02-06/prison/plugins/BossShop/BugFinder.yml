@@ -1,0 +1,4 @@
+2014 16-05 at 01:04:34 PM (Fri): 'Invalid Multiplier Group Line... "BossShop.RewardMultiplier.Money1:reward:2"!
+  It should look like this: "Permission.Node:<type>:<multiplier>". ''reward'' is no
+  valid PriceType... you can use: ''Money'', ''Points'' and ''EXP''!'
+2014 02-06 at 04:54:54 PM (Mon): 'Mistake in Config: CLOCK (type) is no valid Material!'

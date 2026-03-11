@@ -1,0 +1,117 @@
+Lord:
+  cooldown: 1398500444
+  usages: 0
+Knight:
+  cooldown: 1398164653
+  usages: 0
+Drunk:
+  cooldown: 1397923871
+  usages: 0
+Bunny:
+  cooldown: 1398845882
+  usages: 0
+Assassin:
+  cooldown: 1397399616
+  usages: 0
+Vampire:
+  cooldown: 1397895853
+  usages: 0
+Fish:
+  cooldown: 1396380335
+  usages: 0
+DarkMage:
+  cooldown: 1398505620
+  usages: 0
+Beast:
+  cooldown: 1397383030
+  usages: 0
+Pyro:
+  cooldown: 1397408497
+  usages: 0
+Wizard:
+  cooldown: 1398165856
+  usages: 0
+Soldier:
+  cooldown: 1397396240
+  usages: 0
+Factions:
+  cooldown: 1396115571
+  usages: 0
+Tank:
+  cooldown: 1397383954
+  usages: 0
+Necromancer:
+  cooldown: 1397410359
+  usages: 0
+Archer:
+  cooldown: 1398166249
+  usages: 0
+BunnyLvL2:
+  cooldown: 1398845882
+  usages: 0
+TankLvL2:
+  cooldown: 1396208103
+  usages: 0
+ArcherLvL2:
+  cooldown: 1398166249
+  usages: 0
+ArcherLvL3:
+  cooldown: 1397670965
+  usages: 0
+WizardLvL2:
+  cooldown: 1398165856
+  usages: 0
+SoldierLvL2:
+  cooldown: 1396370332
+  usages: 0
+NecromancerLvL2:
+  cooldown: 1396209173
+  usages: 0
+DrunkLvL2:
+  cooldown: 1396381722
+  usages: 0
+KnightLvL2:
+  cooldown: 1397822291
+  usages: 0
+KnightLvL3:
+  cooldown: 1397822291
+  usages: 0
+'11':
+  cooldown: 1397822291
+  usages: 0
+PyroLvL2:
+  cooldown: 1396381765
+  usages: 0
+Cake:
+  cooldown: 1396632101
+  usages: 0
+Sniper:
+  cooldown: 1397409507
+  usages: 0
+Prison:
+  cooldown: 1397742455
+  usages: 0
+FisherMan:
+  cooldown: 1398500369
+  usages: 0
+Librarian:
+  cooldown: 1398516989
+  usages: 0
+SnowGolem:
+  cooldown: 1397928151
+  usages: 0
+Tree:
+  cooldown: 1397899100
+  usages: 0
+Spider:
+  cooldown: 1397936482
+  usages: 0
+Villager:
+  cooldown: 1397923945
+  usages: 0
+GrimReaper:
+  cooldown: 1397924274
+  usages: 0
+Survival:
+  cooldown: 1404909549
+  usages: 0

@@ -1,0 +1,458 @@
+ShopName: VoteShop3-I-P4
+signs:
+  text: '[VP-4]'
+  NeedPermissionToCreateSign: true
+shop:
+  Redstone:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - type:REDSTONE_BLOCK
+      - amount:1
+    Reward: 2625
+    MenuItem:
+    - 'type: REDSTONE_BLOCK'
+    - amount:1
+    - name:&4&L1 Redstone Block
+    - 'lore:&2&LReward: &4&m1250$&b &m2500$&6 2625$'
+    - amount:1
+    InventoryLocation: 2
+    ExtraPermission: 'voteshop.3I'
+  Redstone16:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - type:REDSTONE_BLOCK
+      - amount:16
+    Reward: 42000
+    MenuItem:
+    - 'type: REDSTONE_BLOCK'
+    - amount:16
+    - name:&4&L16 Redstone Block
+    - 'lore:&2&LReward: &4&m20000$&b &m40000$&6 42000$'
+    - amount:16
+    InventoryLocation: 11
+    ExtraPermission: 'voteshop.3I'
+  Redstone32:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - type:REDSTONE_BLOCK
+      - amount:32
+    Reward: 84000
+    MenuItem:
+    - 'type: REDSTONE_BLOCK'
+    - amount:32
+    - name:&4&L32 Redstone Block
+    - 'lore:&2&LReward: &4&m40000$&b &m80000$&6 84000$'
+    - amount:32
+    InventoryLocation: 20
+    ExtraPermission: 'voteshop.3I'
+  Redstone64:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - type:REDSTONE_BLOCK
+      - amount:64
+    Reward: 168000
+    MenuItem:
+    - 'type: REDSTONE_BLOCK'
+    - amount:64
+    - name:&4&L64 Redstone Block
+    - 'lore:&2&LReward: &4&m80000$&b &m160000$&6 168000$'
+    - amount:64
+    InventoryLocation: 29
+    ExtraPermission: 'voteshop.3I'
+  Quartz:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - type:QUARTZ
+      - amount:1
+    Reward: 315
+    MenuItem:
+    - 'type: QUARTZ'
+    - amount:1
+    - name:&f&L1 Quartz
+    - 'lore:&2&LReward: &4&m150$&b &m300$&6 315$'
+    - amount:1
+    InventoryLocation: 3
+    ExtraPermission: 'voteshop.3I'
+  Quartz16:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - type:QUARTZ
+      - amount:16
+    Reward: 5250
+    MenuItem:
+    - 'type: QUARTZ'
+    - amount:16
+    - name:&f&L16 Quartz
+    - 'lore:&2&LReward: &4&m2500$&b &m5000$&6 5250$'
+    - amount:16
+    InventoryLocation: 12
+    ExtraPermission: 'voteshop.3I'
+  Quartz32:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - type:QUARTZ
+      - amount:32
+    Reward: 10500
+    MenuItem:
+    - 'type: QUARTZ'
+    - amount:32
+    - name:&f&L32 Quartz
+    - 'lore:&2&LReward: &4&m5000$&b &m10000$&6 10500$'
+    - amount:32
+    InventoryLocation: 21
+    ExtraPermission: 'voteshop.3I'
+  Quartz64:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - type:QUARTZ
+      - amount:64
+    Reward: 21000
+    MenuItem:
+    - 'type: QUARTZ'
+    - amount:64
+    - name:&f&L64 Quartz
+    - 'lore:&2&LReward: &4&m10000$&b &m20000$&6 21000$'
+    - amount:64
+    InventoryLocation: 30
+    ExtraPermission: 'voteshop.3I'
+  Quartzb:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - type:QUARTZ_BLOCK
+      - amount:1
+    Reward: 3150
+    MenuItem:
+    - 'type: QUARTZ_BLOCK'
+    - amount:1
+    - name:&f&L1 Quartz Block
+    - 'lore:&2&LReward: &4&m1500$&b &m3000$&6 3150$'
+    - amount:1
+    InventoryLocation: 4
+    ExtraPermission: 'voteshop.3I'
+  Quartzb16:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - type:QUARTZ_BLOCK
+      - amount:16
+    Reward: 52500
+    MenuItem:
+    - 'type: QUARTZ_BLOCK'
+    - amount:16
+    - name:&f&L16 Quartz Block
+    - 'lore:&2&LReward: &4&m25000$&b &m50000$&6 52500$'
+    - amount:16
+    InventoryLocation: 13
+    ExtraPermission: 'voteshop.3I'
+  Quartzb32:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - type:QUARTZ_BLOCK
+      - amount:32
+    Reward: 105000
+    MenuItem:
+    - 'type: QUARTZ_BLOCK'
+    - amount:32
+    - name:&f&L32 Quartz Block
+    - 'lore:&2&LReward: &4&m50000$&b &m100000$&6 105000$'
+    - amount:32
+    InventoryLocation: 22
+    ExtraPermission: 'voteshop.3I'
+  Quartzb64:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - type:QUARTZ_BLOCK
+      - amount:64
+    Reward: 210000
+    MenuItem:
+    - 'type: QUARTZ_BLOCK'
+    - amount:64
+    - name:&f&L64 Quartz Block
+    - 'lore:&2&LReward: &4&m100000$&b &m200000$&6 210000$'
+    - amount:64
+    InventoryLocation: 31
+    ExtraPermission: 'voteshop.3I'
+  Glowstone:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - type:GLOWSTONE
+      - amount:1
+    Reward: 14765
+    MenuItem:
+    - 'type: GLOWSTONE'
+    - amount:1
+    - name:&6&L1 Glowstone
+    - 'lore:&2&LReward: &4&m7031$&b &m14062$&6 14765$'
+    - amount:1
+    InventoryLocation: 5
+    ExtraPermission: 'voteshop.3I'
+  Glowstone16:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - type:GLOWSTONE
+      - amount:16
+    Reward: 236250
+    MenuItem:
+    - 'type: GLOWSTONE'
+    - amount:16
+    - name:&6&L16 Glowstone
+    - 'lore:&2&LReward: &4&m112500$&b &m225000$&6 236350$'
+    - amount:16
+    InventoryLocation: 14
+    ExtraPermission: 'voteshop.3I'
+  Glowstone32:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - type:GLOWSTONE
+      - amount:32
+    Reward: 472500
+    MenuItem:
+    - 'type: GLOWSTONE'
+    - amount:32
+    - name:&6&L32 Glowstone
+    - 'lore:&2&LReward: &4&m225000$&b &m450000$&6 472500$'
+    - amount:32
+    InventoryLocation: 23
+    ExtraPermission: 'voteshop.3I'
+  Glowstone64:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - type:GLOWSTONE
+      - amount:64
+    Reward: 945000
+    MenuItem:
+    - 'type: GLOWSTONE'
+    - amount:64
+    - name:&6&L64 Glowstone
+    - 'lore:&2&LReward: &4&m450000$&b &m900000$&6 945000$'
+    - amount:64
+    InventoryLocation: 32
+    ExtraPermission: 'voteshop.3I'
+  Redsand:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - type:SAND
+      - amount:1
+      - durability:1
+    Reward: 21
+    MenuItem:
+    - 'type: SAND'
+    - amount:1
+    - durability:1
+    - name:&c&L1 Red Sand
+    - 'lore:&2&LReward: &4&m10$&b &m20$&6 21$'
+    - amount:1
+    InventoryLocation: 6
+    ExtraPermission: 'voteshop.3I'
+  Redsand16:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - type:SAND
+      - amount:16
+      - durability:1
+    Reward: 336
+    MenuItem:
+    - 'type: SAND'
+    - amount:16
+    - durability:1
+    - name:&c&L16 Red Sand
+    - 'lore:&2&LReward: &4&m160$&b &m320$&6 336$'
+    - amount:16
+    InventoryLocation: 15
+    ExtraPermission: 'voteshop.3I'
+  Redsand32:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - type:SAND
+      - amount:32
+      - durability:1
+    Reward: 672
+    MenuItem:
+    - 'type: SAND'
+    - amount:32
+    - durability:1
+    - name:&c&L32 Red Sand
+    - 'lore:&2&LReward: &4&m320$&b &m640$&6 672$'
+    - amount:32
+    InventoryLocation: 24
+    ExtraPermission: 'voteshop.3I'
+  Redsand64:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - type:SAND
+      - amount:64
+      - durability:1
+    Reward: 1344
+    MenuItem:
+    - 'type: SAND'
+    - amount:64
+    - durability:1
+    - name:&c&L64 Red Sand
+    - 'lore:&2&LReward: &4&m640$&b &m1280$&6 1344$'
+    - amount:64
+    InventoryLocation: 33
+    ExtraPermission: 'voteshop.3I'
+  Stone:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - id:4
+      - amount:1
+    Reward: 10
+    MenuItem:
+    - 'id: 4'
+    - amount:1
+    - name:&7&L1 Cobblestone
+    - 'lore:&2&LReward: &4&m5$&b &m10$&6 10$'
+    - amount:1
+    InventoryLocation: 7
+    ExtraPermission: 'voteshop.3I'
+  Stone16:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - id:4
+      - amount:16
+    Reward: 182
+    MenuItem:
+    - 'id: 4'
+    - amount:16
+    - name:&7&L16 Cobblestone
+    - 'lore:&2&LReward: &4&m87$&b &m174$&6 182$'
+    - amount:16
+    InventoryLocation: 16
+    ExtraPermission: 'voteshop.3I'
+  Stone32:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - id:4
+      - amount:32
+    Reward: 367
+    MenuItem:
+    - 'id: 4'
+    - amount:32
+    - name:&7&L32 Cobblestone
+    - 'lore:&2&LReward: &4&m175$&b &m350$&6 367$'
+    - amount:32
+    InventoryLocation: 25
+    ExtraPermission: 'voteshop.3I'
+  Stone64:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - id:4
+      - amount:64
+    Reward: 735
+    MenuItem:
+    - 'id: 4'
+    - amount:64
+    - name:&7&L64 Cobblestone
+    - 'lore:&2&LReward: &4&m350$&b &m700$&6 735$'
+    - amount:64
+    InventoryLocation: 34
+    ExtraPermission: 'voteshop.3I'
+  Pumpkin1:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - type:PUMPKIN
+      - amount:1
+    Reward: 9450
+    MenuItem:
+    - 'type: PUMPKIN'
+    - amount:1
+    - name:&6&L1 Pumpkin
+    - 'lore:&2&LReward: &4&m4500$&b &m9000$&6 9450$'
+    - amount:1
+    InventoryLocation: 8
+    ExtraPermission: 'voteshop.3I'
+  Pumpkin16:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - type:PUMPKIN
+      - amount:16
+    Reward: 151200
+    MenuItem:
+    - 'type: PUMPKIN'
+    - amount:16
+    - name:&6&L16 Pumpkin
+    - 'lore:&2&LReward: &4&m72000$&b &m144000$&6 151200$'
+    - amount:16
+    InventoryLocation: 17
+    ExtraPermission: 'voteshop.3I'
+  Pumpkin32:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - type:PUMPKIN
+      - amount:32
+    Reward: 302400
+    MenuItem:
+    - 'type: PUMPKIN'
+    - amount:32
+    - name:&6&L32 Pumpkin
+    - 'lore:&2&LReward: &4&m144000$&b &m288000$&6 302400$'
+    - amount:32
+    InventoryLocation: 26
+    ExtraPermission: 'voteshop.3I'
+  Pumpkin64:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - type:PUMPKIN
+      - amount:64
+    Reward: 604800
+    MenuItem:
+    - 'type: PUMPKIN'
+    - amount:64
+    - name:&6&L64 Pumpkin
+    - 'lore:&2&LReward: &4&m288000$&b &m576000$&6 604800$'
+    - amount:64
+    InventoryLocation: 35
+    ExtraPermission: 'voteshop.3I'
+  PrisonPage3:
+    RewardType: shop
+    PriceType: free
+    Reward: VoteShop3-I-P3
+    MenuItem:
+    - type:REDSTONE_BLOCK
+    - amount:3
+    - name:&4&L<<< VoteShop Sell Page 3
+    - lore:&8Open Page 3
+    - amount:3
+    InventoryLocation: 19
+    ExtraPermission: 'voteshop.3I'
+  PrisonPage5:
+    RewardType: shop
+    PriceType: free
+    Reward: VoteShop3-I-P5
+    MenuItem:
+    - type:REDSTONE_BLOCK
+    - amount:5
+    - name:&4&LVoteShop Sell Page 5 >>>
+    - lore:&8Open Page 5
+    - amount:5
+    InventoryLocation: 27
+    ExtraPermission: 'voteshop.3I'
+

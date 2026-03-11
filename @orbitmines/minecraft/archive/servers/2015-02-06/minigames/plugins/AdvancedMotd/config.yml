@@ -1,0 +1,6 @@
+# AdvancedMotd by MrFlieder!
+save ip-addresses: true
+player name variable: '%p'
+default player name: Minecraftler
+motd-list:
+- '&f&lPlugin Development Server &8| &6&lO_o_Fadi_o_O'

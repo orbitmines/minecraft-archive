@@ -1,0 +1,16 @@
+permission: ''
+world: PrisonServer
+X: -811
+Y: 30
+Z: -63
+price: 0.0
+cooldown: 0
+globalCooldown: 0
+confirmation: false
+commands:
+- '/vote '
+grantPermissions: []
+lastGlobalUse: 0
+lastUse: {}
+priceItems: []
+exp: 0

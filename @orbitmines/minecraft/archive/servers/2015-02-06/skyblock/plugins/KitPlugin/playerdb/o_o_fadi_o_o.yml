@@ -1,0 +1,36 @@
+IronVIP+:
+  cooldown: 1404909830
+  usages: 0
+GoldVIP+:
+  cooldown: 1404934076
+  usages: 0
+DiamondVIP+:
+  cooldown: 1404910325
+  usages: 0
+EmeraldVIP+:
+  cooldown: 1404910485
+  usages: 0
+IronVIPSpawner+:
+  cooldown: 1404909878
+  usages: 0
+GoldVIPSpawner+:
+  cooldown: 1404934097
+  usages: 0
+DiamondVIPSpawner+:
+  cooldown: 1404910390
+  usages: 0
+EmeraldVIPSpawner+:
+  cooldown: 1404910511
+  usages: 0
+IronVIP:
+  cooldown: 1405599518
+  usages: 0
+GoldVIP:
+  cooldown: 1405602212
+  usages: 0
+DiamondVIP:
+  cooldown: 1405601390
+  usages: 0
+EmeraldVIP:
+  cooldown: 1405691269
+  usages: 0

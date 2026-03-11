@@ -1,0 +1,94 @@
+ShopName: Blocks
+signs:
+  text: '[Blocks]'
+  NeedPermissionToCreateSign: true
+shop:
+  Wood:
+    RewardType: item
+    PriceType: money
+    Price: 100
+    Reward:
+    - - type:LOG
+      - amount:16
+    MenuItem:
+    - type:LOG
+    - amount:16
+    - name:&6&L16 Logs
+    - 'lore:&c&LPrice: &6100$'
+    - amount:16
+    Message: '&2[&aSurvival Shop&2] &aYou have bought &f16 Logs&a for &6100$'
+    InventoryLocation: 1
+    ExtraPermission: ''
+  Obsidian:
+    RewardType: item
+    PriceType: money
+    Price: 500
+    Reward:
+    - - type:OBSIDIAN
+      - amount:16
+    MenuItem:
+    - type:OBSIDIAN
+    - amount:16
+    - name:&8&L16 Obsidian
+    - 'lore:&c&LPrice: &6500$'
+    - amount:16
+    Message: '&2[&aSurvival Shop&2] &aYou have bought &f16 Obsidian&a for &6500$'
+    InventoryLocation: 2
+    ExtraPermission: ''
+  Cobblestone:
+    RewardType: item
+    PriceType: money
+    Price: 75
+    Reward:
+    - - type:COBBLESTONE
+      - amount:16
+    MenuItem:
+    - type:COBBLESTONE
+    - amount:16
+    - name:&7&L16 Cobblestone
+    - 'lore:&c&LPrice: &675$'
+    - amount:16
+    Message: '&2[&aSurvival Shop&2] &aYou have bought &f16 Cobblestone&a for &675$'
+    InventoryLocation: 3
+    ExtraPermission: ''
+  Sapling:
+    RewardType: shop
+    PriceType: free
+    Reward: Saplings
+    MenuItem:
+    - type:SAPLING
+    - amount:1
+    - name:&2&lSaplings
+    - 'lore:&8Buy Saplings...'
+    - amount:1
+    InventoryLocation: 4
+    ExtraPermission: ''
+  EnderPearl:
+    RewardType: item
+    PriceType: money
+    Price: 200
+    Reward:
+    - - type:ENDER_PEARL
+      - amount:1
+    MenuItem:
+    - type:ENDER_PEARL
+    - amount:1
+    - name:&2&L1 Ender Pearl
+    - 'lore:&c&LPrice: &6200$'
+    - amount:1
+    Message: '&2[&aSurvival Shop&2] &aYou have bought &f1 Ender Pearl&a for &6200$'
+    InventoryLocation: 5
+    ExtraPermission: ''
+  BackToMenu:
+    RewardType: shop
+    PriceType: free
+    Reward: Survival
+    MenuItem:
+    - type:REDSTONE_BLOCK
+    - amount:1
+    - name:&a&LSurvival Menu
+    - lore:&8Back to the Survival Menu
+    - amount:1
+    InventoryLocation: 9
+    ExtraPermission: ''
+

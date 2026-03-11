@@ -1,0 +1,13 @@
+NPCS:
+  '24':
+    Commands:
+    - servers~~false
+  '25':
+    Commands:
+    - servers~~false
+  '21':
+    Commands:
+    - servers~~false
+  '22':
+    Commands:
+    - servers~~false

@@ -1,0 +1,17 @@
+ShopName: IronVIP
+signs:
+  text: '[IronVIP]'
+  NeedPermissionToCreateSign: true
+shop:
+  E-VIP:
+    RewardType: shop
+    PriceType: free
+    Reward: IronVIP-P1
+    MenuItem:
+    - 'type: IRON_INGOT'
+    - amount:1
+    - 'name:&7&lIron-VIP Shop'
+    - 'lore:&cRank: &8[&7&lVIP&8] #&cProfit: &65%'
+    - amount:1
+    InventoryLocation: 5
+    ExtraPermission: 'vipshop.I'

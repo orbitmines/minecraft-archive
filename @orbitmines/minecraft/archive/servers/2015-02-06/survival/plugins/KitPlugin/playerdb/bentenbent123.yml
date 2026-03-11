@@ -1,0 +1,27 @@
+Tank:
+  cooldown: 1393684305
+  usages: 0
+Pyro:
+  cooldown: 1393684226
+  usages: 0
+Archer:
+  cooldown: 1393684195
+  usages: 0
+Knight:
+  cooldown: 1394287725
+  usages: 0
+Wizard:
+  cooldown: 1393684001
+  usages: 0
+Assassin:
+  cooldown: 1393684049
+  usages: 0
+Drunk:
+  cooldown: 1393684266
+  usages: 0
+Lord:
+  cooldown: 1393684279
+  usages: 0
+Survival:
+  cooldown: 1394288660
+  usages: 0

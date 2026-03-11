@@ -1,0 +1,79 @@
+groups:
+  O_o_Fadi_o_O:
+  - owner
+  eekhoorn2000:
+  - moderator
+  sharewoods:
+  - moderator
+  jim5491158:
+  - moderator
+disabled_commands:
+- disabledcommandhere
+player_limit: -1
+stats: 72bd7a83-b3dc-4fda-a89c-bdd15728b5a3
+permissions:
+  default:
+  - bungeecord.command.server
+  - bungeecord.command.list
+  moderator:
+  - Rank.Moderator
+  owner:
+  - Rank.Owner
+  - bungeecord.command.alert
+  - bungeecord.command.end
+  - bungeecord.command.send
+  - bungeecord.command.ip
+  - bungeecord.command.reload
+listeners:
+- query_port: 25565
+  motd: ''
+  tab_list: GLOBAL_PING
+  query_enabled: false
+  forced_hosts:
+    hub.orbitminesmc.om: hub
+    mc.orbitmines.com: hub
+  ping_passthrough: false
+  default_server: hub
+  bind_local_address: true
+  fallback_server: hub
+  host: 77.111.240.232
+  max_players: 1000
+  tab_size: 60
+  force_default_server: true
+timeout: 30000
+connection_throttle: -1
+servers:
+  hub:
+    motd: ''
+    address: 77.111.204.68
+    restricted: false
+  survival:
+    motd: ''
+    address: 77.111.206.117
+    restricted: false
+  kitpvp:
+    motd: ''
+    address: 77.111.248.172
+    restricted: false
+  skyblock:
+    motd: ''
+    address: 77.111.192.151
+    restricted: false
+  creative:
+    motd: ''
+    address: 77.111.200.65
+    restricted: false
+  minigames:
+    motd: ''
+    address: 77.111.204.209
+    restricted: false
+  prison:
+    motd: ''
+    address: 77.111.236.34
+    restricted: false
+  alpha:
+    motd: ''
+    address: 77.111.240.219
+    restricted: false
+ip_forward: true
+online_mode: true

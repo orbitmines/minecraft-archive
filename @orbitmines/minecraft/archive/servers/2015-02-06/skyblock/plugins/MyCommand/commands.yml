@@ -1,0 +1,85 @@
+#-----------------------------------------------------------------------------------------------------------#
+#							  MyCommand Commands config file (last update v5.1.0)							#
+#																											#
+#  BukkitDev Help page : http://dev.bukkit.org/server-mods/mycommand/pages/configuration-and-example    	#
+#																											#
+#	How to make a command :	(See an example command below)													#
+#		For first,put you command number on first line  													#
+#		Now put your command name on "command:" line. Don't forget the '/' before you command.				#
+#		So,select your command type from a predefined list putting it after "type" line						#
+#	COMMAND TYPE LIST :																						#
+#		TEXT , ALIAS , RUN_COMMAND , BROADCAST_TEXT , RUN_COMMAND_TEXT , RUN_COMMAND_BROADCAST_TEXT			#
+#		ADD_PERMISSION , WARMUP , COOLDOWN , RUN_CONSOLE , RUNCOMMAND_PERM_BROADCAST_TEXT , SPOUT_TEXT		#
+#       RUN_COMMAND_RANDOM , RUN_ASOPERATOR , ICON_MENU , SCOREBOARD , BUNGEE_TP , SPOUT_NOTIFICATION		#
+#		BAR_API_TEXT , BAR_API_BROADCAST_TEXT 																#
+#																											#
+#	Now,if you command it's "TEXT" type,you can put multiple line of text below text list					#
+#	Same thing,if your command it's "RUNCOMMAND" type,but put you commands below runcmd list.				#
+#	For Delayed command add $delay$ before the command in runcmd Example : - $delay$/list					#
+#	Set delay time with delaytimer: 5 (5 = seconds) | Use the dot . for decimal cost Example = cost : 5.5 	#
+#	You can customize your permission node by placing "permission-node:" field in a command					#
+#	Also,you can change the permission error message with "permission-error:"								#
+#   Custom error-message for invalid args ,put "error-message:" line in a command.							#
+#   You can use itemcost : 'ID:AMOUNT' for set a cost with items. 											#
+#   Register REAL commands putting "registered: true" below the command.     								#
+#   With registered command you can use the "tab_completer: - Hi - Hello!"	 								#
+#-----------------------------------------------------------------------------------------------------------#
+'1':
+  command: /hub
+  type: BUNGEE_TP
+  server_name: hub
+'2':
+  command: /help
+  type: TEXT
+  text:
+  - '&9&m====================================================='
+  - '&6&LOrbitMines &5&lSkyBlock &6&lHelp Index'
+  - '&7/vote &6- Shows Vote Help'
+  - '&7/donate &6- Shows Donate Help'
+  - '&7/shop &6- Open the Shop'
+  - '&7/hub &6- Return to the Hub Server'
+  - '&7/is &6- Island Help'
+  - '&9&m====================================================='
+'3':
+  command: /?
+  type: TEXT
+  text:
+  - '&9&m====================================================='
+  - '&6&LOrbitMines &5&lSkyBlock &6&lHelp Index'
+  - '&7/vote &6- Shows Vote Help'
+  - '&7/donate &6- Shows Donate Help'
+  - '&7/shop &6- Open the Shop'
+  - '&7/hub &6- Return to the Hub Server'
+  - '&7/is &6- Island Help'
+  - '&9&m====================================================='
+'4':
+  command: /pl
+  type: TEXT
+  text:
+  - '&9&m====================================================='
+  - '&6&LOrbitMines &5&lSkyBlock &6&lHelp Index'
+  - '&7/vote &6- Shows Vote Help'
+  - '&7/donate &6- Shows Donate Help'
+  - '&7/shop &6- Open the Shop'
+  - '&7/hub &6- Return to the Hub Server'
+  - '&7/is &6- Island Help'
+  - '&9&m====================================================='
+'5':
+  command: /plugins
+  type: TEXT
+  text:
+  - '&9&m====================================================='
+  - '&6&LOrbitMines &5&lSkyBlock &6&lHelp Index'
+  - '&7/vote &6- Shows Vote Help'
+  - '&7/donate &6- Shows Donate Help'
+  - '&7/shop &6- Open the Shop'
+  - '&7/hub &6- Return to the Hub Server'
+  - '&7/is &6- Island Help'
+  - '&9&m====================================================='
+'8':
+  command: /donate
+  type: TEXT
+  text:
+  - '&8[&6&lOrbitMines&8] &7Donate at: &6http://shop.orbitmines.com'
+
+

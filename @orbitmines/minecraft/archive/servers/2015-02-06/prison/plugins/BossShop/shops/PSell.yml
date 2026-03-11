@@ -1,0 +1,498 @@
+ShopName: P-1
+signs:
+  text: '[P]'
+  NeedPermissionToCreateSign: true
+shop:
+  Emerald:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - type:EMERALD
+      - amount:1
+    Reward: 468
+    MenuItem:
+    - 'type: EMERALD'
+    - amount:1
+    - name:&A&L1 Emerald
+    - 'lore:&2&LReward: &b468$'
+    - amount:1
+    InventoryLocation: 1
+    ExtraPermission: ''
+  Emerald16:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - type:EMERALD
+      - amount:16
+    Reward: 7500
+    MenuItem:
+    - 'type: EMERALD'
+    - amount:16
+    - name:&a&L16 Emerald
+    - 'lore:&2&LReward: &b7500$'
+    - amount:16
+    InventoryLocation: 10
+    ExtraPermission: ''
+  Emerald32:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - type:EMERALD
+      - amount:32
+    Reward: 15000
+    MenuItem:
+    - 'type: EMERALD'
+    - amount:32
+    - name:&a&L32 Emerald
+    - 'lore:&2&LReward: &b15000$'
+    - amount:32
+    InventoryLocation: 19
+    ExtraPermission: ''
+  Emerald64:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - type:EMERALD
+      - amount:64
+    Reward: 30000
+    MenuItem:
+    - 'type: EMERALD'
+    - amount:64
+    - name:&a&L64 Emerald
+    - 'lore:&2&LReward: &b30000$'
+    - amount:64
+    InventoryLocation: 28
+    ExtraPermission: ''
+  Diamond:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - type:DIAMOND
+      - amount:1
+    Reward: 234
+    MenuItem:
+    - 'type: DIAMOND'
+    - amount:1
+    - name:&b&L1 Diamond
+    - 'lore:&2&LReward: &b234$'
+    - amount:1
+    InventoryLocation: 2
+    ExtraPermission: ''
+  Diamond16:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - type:DIAMOND
+      - amount:16
+    Reward: 3750
+    MenuItem:
+    - 'type: DIAMOND'
+    - amount:16
+    - name:&b&L16 Diamond
+    - 'lore:&2&LReward: &b3750$'
+    - amount:16
+    InventoryLocation: 11
+    ExtraPermission: ''
+  Diamond32:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - type:DIAMOND
+      - amount:32
+    Reward: 7500
+    MenuItem:
+    - 'type: DIAMOND'
+    - amount:32
+    - name:&b&L32 Diamond
+    - 'lore:&2&LReward: &b7500$'
+    - amount:32
+    InventoryLocation: 20
+    ExtraPermission: ''
+  Diamond64:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - type:DIAMOND
+      - amount:64
+    Reward: 15000
+    MenuItem:
+    - 'type: DIAMOND'
+    - amount:64
+    - name:&b&L64 Diamond
+    - 'lore:&2&LReward: &b15000$'
+    - amount:64
+    InventoryLocation: 29
+    ExtraPermission: ''
+  Gold:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - type:GOLD_INGOT
+      - amount:1
+    Reward: 117
+    MenuItem:
+    - 'type: GOLD_INGOT'
+    - amount:1
+    - name:&6&L1 Gold Ingot
+    - 'lore:&2&LReward: &b117$'
+    - amount:1
+    InventoryLocation: 3
+    ExtraPermission: ''
+  Gold16:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - type:GOLD_INGOT
+      - amount:16
+    Reward: 1875
+    MenuItem:
+    - 'type: GOLD_INGOT'
+    - amount:16
+    - name:&6&L16 Gold Ingot
+    - 'lore:&2&LReward: &b1875$'
+    - amount:16
+    InventoryLocation: 12
+    ExtraPermission: ''
+  Gold32:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - type:GOLD_INGOT
+      - amount:32
+    Reward: 3750
+    MenuItem:
+    - 'type: GOLD_INGOT'
+    - amount:32
+    - name:&6&L1 Gold Ingot
+    - 'lore:&2&LReward: &b3750$'
+    - amount:32
+    InventoryLocation: 21
+    ExtraPermission: ''
+  Gold64:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - type:GOLD_INGOT
+      - amount:64
+    Reward: 7500
+    MenuItem:
+    - 'type: GOLD_INGOT'
+    - amount:64
+    - name:&6&L1 Gold Ingot
+    - 'lore:&2&LReward: &b7500$'
+    - amount:64
+    InventoryLocation: 30
+    ExtraPermission: ''
+  Iron:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - type:IRON_INGOT
+      - amount:1
+    Reward: 46
+    MenuItem:
+    - 'type: IRON_INGOT'
+    - amount:1
+    - name:&7&L1 Iron Ingot
+    - 'lore:&2&LReward: &b46$'
+    - amount:1
+    InventoryLocation: 4
+    ExtraPermission: ''
+  Iron16:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - type:IRON_INGOT
+      - amount:16
+    Reward: 750
+    MenuItem:
+    - 'type: IRON_INGOT'
+    - amount:16
+    - name:&7&L16 Iron Ingot
+    - 'lore:&2&LReward: &b750$'
+    - amount:16
+    InventoryLocation: 13
+    ExtraPermission: ''
+  Iron32:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - type:IRON_INGOT
+      - amount:32
+    Reward: 1500
+    MenuItem:
+    - 'type: IRON_INGOT'
+    - amount:32
+    - name:&7&L32 Iron Ingot
+    - 'lore:&2&LReward: &b1500$'
+    - amount:32
+    InventoryLocation: 22
+    ExtraPermission: ''
+  Iron64:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - type:IRON_INGOT
+      - amount:64
+    Reward: 3000
+    MenuItem:
+    - 'type: IRON_INGOT'
+    - amount:64
+    - name:&7&L64 Iron Ingot
+    - 'lore:&2&LReward: &b3000$'
+    - amount:64
+    InventoryLocation: 31
+    ExtraPermission: ''
+  Coal:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - type:COAL
+      - amount:1
+    Reward: 15
+    MenuItem:
+    - 'type: COAL'
+    - amount:1
+    - name:&8&L1 Coal
+    - 'lore:&2&LReward: &b15$'
+    - amount:1
+    InventoryLocation: 5
+    ExtraPermission: ''
+  Coal16:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - type:COAL
+      - amount:16
+    Reward: 250
+    MenuItem:
+    - 'type: COAL'
+    - amount:16
+    - name:&8&L16 Coal
+    - 'lore:&2&LReward: &b250$'
+    - amount:16
+    InventoryLocation: 14
+    ExtraPermission: ''
+  Coal32:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - type:COAL
+      - amount:32
+    Reward: 500
+    MenuItem:
+    - 'type: COAL'
+    - amount:32
+    - name:&8&L32 Coal
+    - 'lore:&2&LReward: &b500$'
+    - amount:32
+    InventoryLocation: 23
+    ExtraPermission: ''
+  Coal64:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - type:COAL
+      - amount:64
+    Reward: 1000
+    MenuItem:
+    - 'type: COAL'
+    - amount:64
+    - name:&8&L64 Coal
+    - 'lore:&2&LReward: &b1000$'
+    - amount:64
+    InventoryLocation: 32
+    ExtraPermission: ''
+  GoldOre:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - type:GOLD_ORE
+      - amount:1
+    Reward: 46
+    MenuItem:
+    - 'type: GOLD_ORE'
+    - amount:1
+    - name:&6&L1 Gold Ore
+    - 'lore:&2&LReward: &b46$'
+    - amount:1
+    InventoryLocation: 6
+    ExtraPermission: ''
+  GoldOre16:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - type:GOLD_ORE
+      - amount:16
+    Reward: 750
+    MenuItem:
+    - 'type: GOLD_ORE'
+    - amount:16
+    - name:&6&L16 Gold Ore
+    - 'lore:&2&LReward: &b750$'
+    - amount:16
+    InventoryLocation: 15
+    ExtraPermission: ''
+  GoldOre32:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - type:GOLD_ORE
+      - amount:32
+    Reward: 1500
+    MenuItem:
+    - 'type: GOLD_ORE'
+    - amount:32
+    - name:&6&L32 Gold Ore
+    - 'lore:&2&LReward: &b1500$'
+    - amount:32
+    InventoryLocation: 24
+    ExtraPermission: ''
+  GoldOre64:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - type:GOLD_ORE
+      - amount:64
+    Reward: 3000
+    MenuItem:
+    - 'type: GOLD_ORE'
+    - amount:64
+    - name:&6&L64 Gold Ore
+    - 'lore:&2&LReward: &b3000$'
+    - amount:64
+    InventoryLocation: 33
+    ExtraPermission: ''
+  IronOre:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - type:IRON_ORE
+      - amount:1
+    Reward: 15
+    MenuItem:
+    - 'type: IRON_ORE'
+    - amount:1
+    - name:&7&L1 Iron Ore
+    - 'lore:&2&LReward: &b15$'
+    - amount:1
+    InventoryLocation: 7
+    ExtraPermission: ''
+  IronOre16:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - type:IRON_ORE
+      - amount:16
+    Reward: 250
+    MenuItem:
+    - 'type: IRON_ORE'
+    - amount:16
+    - name:&7&L16 Iron Ore
+    - 'lore:&2&LReward: &b250$'
+    - amount:16
+    InventoryLocation: 16
+    ExtraPermission: ''
+  IronOre32:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - type:IRON_ORE
+      - amount:32
+    Reward: 500
+    MenuItem:
+    - 'type: IRON_ORE'
+    - amount:32
+    - name:&7&L32 Iron Ore
+    - 'lore:&2&LReward: &b500$'
+    - amount:32
+    InventoryLocation: 25
+    ExtraPermission: ''
+  IronOre64:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - type:IRON_ORE
+      - amount:64
+    Reward: 1000
+    MenuItem:
+    - 'type: IRON_ORE'
+    - amount:64
+    - name:&7&L64 Iron Ore
+    - 'lore:&2&LReward: &b1000$'
+    - amount:64
+    InventoryLocation: 34
+    ExtraPermission: ''
+  Diamondb:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - type:DIAMOND_BLOCK
+      - amount:1
+    Reward: 2340
+    MenuItem:
+    - 'type: DIAMOND_BLOCK'
+    - amount:1
+    - name:&b&L1 Diamond Block
+    - 'lore:&2&LReward: &b2340$'
+    - amount:1
+    InventoryLocation: 8
+    ExtraPermission: ''
+  Diamondb16:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - type:DIAMOND_BLOCK
+      - amount:16
+    Reward: 37500
+    MenuItem:
+    - 'type: DIAMOND_BLOCK'
+    - amount:16
+    - name:&b&L16 Diamond Block
+    - 'lore:&2&LReward: &b37500$'
+    - amount:16
+    InventoryLocation: 17
+    ExtraPermission: ''
+  Diamondb32:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - type:DIAMOND_BLOCK
+      - amount:32
+    Reward: 75000
+    MenuItem:
+    - 'type: DIAMOND_BLOCK'
+    - amount:32
+    - name:&b&L32 Diamond Block
+    - 'lore:&2&LReward: &b75000$'
+    - amount:32
+    InventoryLocation: 26
+    ExtraPermission: ''
+  Diamondb64:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - type:DIAMOND_BLOCK
+      - amount:64
+    Reward: 150000
+    MenuItem:
+    - 'type: DIAMOND_BLOCK'
+    - amount:64
+    - name:&b&L64 Diamond Block
+    - 'lore:&2&LReward: &b150000$'
+    - amount:64
+    InventoryLocation: 35
+    ExtraPermission: ''
+  PrisonPage2:
+    RewardType: shop
+    PriceType: free
+    Reward: P-2
+    MenuItem:
+    - type:REDSTONE_BLOCK
+    - amount:2
+    - name:&4&LPrison Sell Page 2 >>>
+    - lore:&8Open Page 2
+    - amount:2
+    InventoryLocation: 27
+    ExtraPermission: ''
+

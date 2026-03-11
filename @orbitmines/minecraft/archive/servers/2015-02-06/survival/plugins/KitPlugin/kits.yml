@@ -1,0 +1,475 @@
+# Enchantment IDs and config explanation can be found here: http://dev.bukkit.org/bukkit-plugins/kitplugin/pages/kits-config-v6-1/
+IronVIP:
+  items:
+    diamond:
+      id: 264
+      data: 0
+      amount: 5
+      enchantments: []
+      lore: []
+      name: ''
+      slot: inventory
+    iron:
+      id: 265
+      data: 0
+      amount: 5
+      enchantments: []
+      lore: []
+      name: ''
+      slot: inventory
+    gold:
+      id: 266
+      data: 0
+      amount: 5
+      enchantments: []
+      lore: []
+      name: ''
+      slot: inventory
+    wood:
+      id: 17
+      amount: 64
+      lore: []
+      name: ''
+      slot: inventory
+    potion:
+      id: 373
+      amount: 1
+      data: 8194
+      lore: []
+      name: ''
+      slot: inventory
+  commands:
+  - exp give (player) 5l
+  removeeffects: false
+  effects: []
+  givemoney: 0
+  givexp: 0
+  usages: 0
+  clearinv: false
+  cleararmor: false
+  cooldown: 86400
+  price: 0
+  message: '&bYou received the &7&LIron VIP &bkit'
+GoldVIP:
+  items:
+    diamond:
+      id: 264
+      data: 0
+      amount: 8
+      enchantments: []
+      lore: []
+      name: ''
+      slot: inventory
+    iron:
+      id: 265
+      data: 0
+      amount: 15
+      enchantments: []
+      lore: []
+      name: ''
+      slot: inventory
+    gold:
+      id: 266
+      data: 0
+      amount: 10
+      enchantments: []
+      lore: []
+      name: ''
+      slot: inventory
+    wood:
+      id: 17
+      amount: 64
+      lore: []
+      name: ''
+      slot: inventory
+    wood2:
+      id: 17
+      amount: 64
+      lore: []
+      name: ''
+      slot: inventory
+    potion:
+      id: 373
+      amount: 1
+      data: 8194
+      lore: []
+      name: ''
+      slot: inventory
+    potion2:
+      id: 373
+      amount: 1
+      data: 16421
+      lore: []
+      name: ''
+      slot: inventory
+    potion3:
+      id: 373
+      amount: 1
+      data: 8259
+      lore: []
+      name: ''
+      slot: inventory
+  commands:
+  - exp give (player) 10l
+  removeeffects: false
+  effects: []
+  givemoney: 0
+  givexp: 0
+  usages: 0
+  clearinv: false
+  cleararmor: false
+  cooldown: 86400
+  price: 0
+  message: '&bYou received the &6&LGold VIP &bkit'
+DiamondVIP:
+  items:
+    diamond:
+      id: 264
+      data: 0
+      amount: 16
+      enchantments: []
+      lore: []
+      name: ''
+      slot: inventory
+    iron:
+      id: 265
+      data: 0
+      amount: 32
+      enchantments: []
+      lore: []
+      name: ''
+      slot: inventory
+    gold:
+      id: 266
+      data: 0
+      amount: 20
+      enchantments: []
+      lore: []
+      name: ''
+      slot: inventory
+    wood:
+      id: 17
+      amount: 64
+      lore: []
+      name: ''
+      slot: inventory
+    wood2:
+      id: 17
+      amount: 64
+      lore: []
+      name: ''
+      slot: inventory
+    wood3:
+      id: 17
+      amount: 64
+      lore: []
+      name: ''
+      slot: inventory
+    potion:
+      id: 373
+      amount: 1
+      data: 8194
+      lore: []
+      name: ''
+      slot: inventory
+    potion2:
+      id: 373
+      amount: 1
+      data: 16421
+      lore: []
+      name: ''
+      slot: inventory
+    potion3:
+      id: 373
+      amount: 1
+      data: 8259
+      lore: []
+      name: ''
+      slot: inventory
+    potion4:
+      id: 373
+      amount: 1
+      data: 16449
+      lore: []
+      name: ''
+      slot: inventory
+    potion5:
+      id: 373
+      amount: 1
+      data: 16457
+      lore: []
+      name: ''
+      slot: inventory
+    wolf:
+      id: 383
+      amount: 1
+      data: 95
+      lore: []
+      name: ''
+      slot: inventory
+  commands:
+  - exp give (player) 25l
+  removeeffects: false
+  effects: []
+  givemoney: 0
+  givexp: 0
+  usages: 0
+  clearinv: false
+  cleararmor: false
+  cooldown: 86400
+  price: 0
+  message: '&bYou received the &9&LDiamond VIP &bkit'
+EmeraldVIP:
+  items:
+    diamond:
+      id: 264
+      data: 0
+      amount: 32
+      enchantments: []
+      lore: []
+      name: ''
+      slot: inventory
+    iron:
+      id: 265
+      data: 0
+      amount: 64
+      enchantments: []
+      lore: []
+      name: ''
+      slot: inventory
+    gold:
+      id: 266
+      data: 0
+      amount: 40
+      enchantments: []
+      lore: []
+      name: ''
+      slot: inventory
+    wood:
+      id: 17
+      amount: 64
+      lore: []
+      name: ''
+      slot: inventory
+    wood2:
+      id: 17
+      amount: 64
+      lore: []
+      name: ''
+      slot: inventory
+    wood3:
+      id: 17
+      amount: 64
+      lore: []
+      name: ''
+      slot: inventory
+    wood4:
+      id: 17
+      amount: 64
+      lore: []
+      name: ''
+      slot: inventory
+    potion:
+      id: 373
+      amount: 1
+      data: 8194
+      lore: []
+      name: ''
+      slot: inventory
+    potion2:
+      id: 373
+      amount: 1
+      data: 16421
+      lore: []
+      name: ''
+      slot: inventory
+    potion3:
+      id: 373
+      amount: 1
+      data: 8259
+      lore: []
+      name: ''
+      slot: inventory
+    potion4:
+      id: 373
+      amount: 1
+      data: 16449
+      lore: []
+      name: ''
+      slot: inventory
+    potion5:
+      id: 373
+      amount: 1
+      data: 16457
+      lore: []
+      name: ''
+      slot: inventory
+    wolf:
+      id: 383
+      amount: 1
+      data: 95
+      lore: []
+      name: ''
+      slot: inventory
+    horse:
+      id: 383
+      amount: 1
+      data: 100
+      lore: []
+      name: ''
+      slot: inventory
+    apple:
+      id: 322
+      amount: 1
+      data: 1
+      lore: []
+      name: ''
+      slot: inventory
+  commands:
+  - exp give (player) 50l
+  removeeffects: false
+  effects: []
+  givemoney: 0
+  givexp: 0
+  usages: 0
+  clearinv: false
+  cleararmor: false
+  cooldown: 86400
+  price: 0
+  message: '&bYou received the &a&LEmerald VIP &bkit'
+Ores:
+  items:
+    emerald:
+      id: 388
+      data: 0
+      amount: 32
+      enchantments: []
+      lore: []
+      name: ''
+      slot: inventory
+    diamond:
+      id: 264
+      data: 0
+      amount: 32
+      enchantments: []
+      lore: []
+      name: ''
+      slot: inventory
+    gold:
+      id: 266
+      data: 0
+      amount: 32
+      enchantments: []
+      lore: []
+      name: ''
+      slot: inventory
+    iron:
+      id: 265
+      data: 0
+      amount: 32
+      enchantments: []
+      lore: []
+      name: ''
+      slot: inventory
+    coal:
+      id: 263
+      data: 0
+      amount: 32
+      enchantments: []
+      lore: []
+      name: ''
+      slot: inventory
+    redstone:
+      id: 331
+      data: 0
+      amount: 32
+      enchantments: []
+      lore: []
+      name: ''
+      slot: inventory
+    lapis:
+      id: 351
+      data: 4
+      amount: 32
+      enchantments: []
+      lore: []
+      name: ''
+      slot: inventory
+  commands: []
+  removeeffects: false
+  effects: []
+  givemoney: 0
+  givexp: 0
+  usages: 0
+  clearinv: false
+  cleararmor: false
+  cooldown: 172800
+  price: 0
+  message: '&bYou received the &0&LOres &bkit'
+Claimer:
+  items:
+    bedrock:
+      id: 291
+      data: 0
+      amount: 1
+      slot: inventory
+  commands:
+  - adjustbonusclaimblocks (player) 2000
+  removeeffects: false
+  effects: []
+  givemoney: 0
+  givexp: 0
+  usages: 0
+  clearinv: false
+  cleararmor: false
+  cooldown: 57600
+  price: 0
+  message: '&bYou received the &8&LClaimer &bkit. (&6&l+ 2000 Claimblocks&b)'
+Survival:
+  items:
+    sword:
+      id: 272
+      data: 0
+      amount: 1
+      name: '&bStarter Sword'
+      slot: inventory
+    shovel:
+      id: 273
+      data: 0
+      amount: 1
+      name: '&bStarter Shovel'
+      slot: inventory
+    pickaxe:
+      id: 274
+      data: 0
+      amount: 1
+      name: '&bStarter Pickaxe'
+      slot: inventory
+    axe:
+      id: 275
+      data: 0
+      amount: 1
+      name: '&bStarter Axe'
+      slot: inventory
+    hoe:
+      id: 291
+      data: 0
+      amount: 1
+      name: '&bStarter Hoe'
+      slot: inventory
+    bread:
+      id: 297
+      data: 0
+      amount: 20
+      slot: inventory
+  commands: []
+  removeeffects: false
+  effects: []
+  givemoney: 0
+  givexp: 0
+  usages: 0
+  clearinv: false
+  cleararmor: false
+  cooldown: 86400
+  price: 0
+  message: '&bYou received the Survival Starter kit.'

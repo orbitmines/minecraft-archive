@@ -1,0 +1,99 @@
+ShopName: Tools
+signs:
+  text: '[Tools]'
+  NeedPermissionToCreateSign: true
+shop:
+  Sword:
+    RewardType: item
+    PriceType: money
+    Price: 300
+    Reward:
+    - - type:DIAMOND_SWORD
+      - amount:1
+    MenuItem:
+    - 'type: DIAMOND_SWORD'
+    - amount:1
+    - name:&b&L1 Diamond Sword
+    - 'lore:&c&LPrice: &6300$'
+    - amount:1
+    Message: '&2[&aSurvival Shop&2] &aYou have bought &f1 Diamond Sword&a for &6300$'
+    InventoryLocation: 1
+    ExtraPermission: ''
+  Pickaxe:
+    RewardType: item
+    PriceType: money
+    Price: 450
+    Reward:
+    - - type:DIAMOND_PICKAXE
+      - amount:1
+    MenuItem:
+    - 'type: DIAMOND_PICKAXE'
+    - amount:1
+    - name:&b&L1 Diamond Pickaxe
+    - 'lore:&c&LPrice: &6450$'
+    - amount:1
+    Message: '&2[&aSurvival Shop&2] &aYou have bought &f1 Diamond Pickaxe&a for &6450$'
+    InventoryLocation: 2
+    ExtraPermission: ''
+  Axe:
+    RewardType: item
+    PriceType: money
+    Price: 450
+    Reward:
+    - - type:DIAMOND_AXE
+      - amount:1
+    MenuItem:
+    - 'type: DIAMOND_AXE'
+    - amount:1
+    - name:&b&L1 Diamond Axe
+    - 'lore:&c&LPrice: &6450$'
+    - amount:1
+    Message: '&2[&aSurvival Shop&2] &aYou have bought &f1 Diamond Axe&a for &6450$'
+    InventoryLocation: 3
+    ExtraPermission: ''
+  Shovel:
+    RewardType: item
+    PriceType: money
+    Price: 150
+    Reward:
+    - - type:DIAMOND_SPADE
+      - amount:1
+    MenuItem:
+    - 'type: DIAMOND_SPADE'
+    - amount:1
+    - name:&b&L1 Diamond Shovel
+    - 'lore:&c&LPrice: &6150$'
+    - amount:1
+    Message: '&2[&aSurvival Shop&2] &aYou have bought &f1 Diamond Shovel&a for &6150$'
+    InventoryLocation: 4
+    ExtraPermission: ''
+  Hoe:
+    RewardType: item
+    PriceType: money
+    Price: 300
+    Reward:
+    - - type:DIAMOND_HOE
+      - amount:1
+    MenuItem:
+    - 'type: DIAMOND_HOE'
+    - amount:1
+    - name:&b&L1 Diamond Hoe
+    - 'lore:&c&LPrice: &6300$'
+    - amount:1
+    Message: '&2[&aSurvival Shop&2] &aYou have bought &f1 Diamond Hoe&a for &6300$'
+    InventoryLocation: 5
+    ExtraPermission: ''
+  BackToMenu:
+    RewardType: shop
+    PriceType: free
+    Reward: Survival
+    MenuItem:
+    - type:REDSTONE_BLOCK
+    - amount:1
+    - name:&a&LSurvival Menu
+    - lore:&8Back to the Survival Menu
+    - amount:1
+    InventoryLocation: 9
+    ExtraPermission: ''
+
+

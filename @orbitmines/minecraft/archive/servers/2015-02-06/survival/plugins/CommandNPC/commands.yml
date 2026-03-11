@@ -1,0 +1,10 @@
+NPCS:
+  '416':
+    Commands:
+    - shop Regions~~false
+  '421':
+    Commands:
+    - claimtutorial~~false
+  '413':
+    Commands:
+    - shop Blocks~~false

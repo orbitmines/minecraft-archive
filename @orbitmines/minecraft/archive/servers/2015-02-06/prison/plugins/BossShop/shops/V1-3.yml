@@ -1,0 +1,466 @@
+ShopName: VoteShop1-P3
+signs:
+  text: '[VP-3]'
+  NeedPermissionToCreateSign: true
+shop:
+  LP:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - id:351
+      - amount:1
+      - durability:4
+    Reward: 146
+    MenuItem:
+    - 'id: 351'
+    - amount:1
+    - durability:4
+    - name:&1&L1 Lapis Lazuli
+    - 'lore:&2&LReward: &4&m117$&b 146$'
+    - amount:1
+    InventoryLocation: 2
+    ExtraPermission: 'voteshop.1'
+  LP16:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - id:351
+      - amount:16
+      - durability:4
+    Reward: 2343
+    MenuItem:
+    - 'id:351'
+    - amount:16
+    - durability:4
+    - name:&1&L16 Lapis Lazuli
+    - 'lore:&2&LReward: &4&m1875$&b 2343$'
+    - amount:16
+    InventoryLocation: 11
+    ExtraPermission: 'voteshop.1'
+  LP32:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - id:351
+      - amount:32
+      - durability:4
+    Reward: 4687
+    MenuItem:
+    - 'id:351'
+    - amount:32
+    - durability:4
+    - name:&1&L32 Lapis Lazuli
+    - 'lore:&2&LReward: &4&m3750$&b 4687$'
+    - amount:32
+    InventoryLocation: 20
+    ExtraPermission: 'voteshop.1'
+  LP64:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - id:351
+      - amount:64
+      - durability:4
+    Reward: 9375
+    MenuItem:
+    - 'id:351'
+    - amount:64
+    - durability:4
+    - name:&1&L64 Lapis Lazuli
+    - 'lore:&2&LReward: &4&m7500$&b 9375$'
+    - amount:64
+    InventoryLocation: 29
+    ExtraPermission: 'voteshop.1'
+  L:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - id:22
+      - amount:1
+    Reward: 1462
+    MenuItem:
+    - 'id:22'
+    - amount:1
+    - name:&1&L1 Lapis Lazuli Block
+    - 'lore:&2&LReward: &4&m1170$&b 1462$'
+    - amount:1
+    InventoryLocation: 3
+    ExtraPermission: 'voteshop.1'
+  L16:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - id:22
+      - amount:16
+    Reward: 23437
+    MenuItem:
+    - 'id:22'
+    - amount:16
+    - name:&1&L16 Lapis Lazuli Block
+    - 'lore:&2&LReward: &4&m18750$&b 23437$'
+    - amount:16
+    InventoryLocation: 12
+    ExtraPermission: 'voteshop.1'
+  L32:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - id:22
+      - amount:32
+    Reward: 46875
+    MenuItem:
+    - 'id:22'
+    - amount:32
+    - name:&1&L32 Lapis Lazuli Block
+    - 'lore:&2&LReward: &4&m37500$&b 46875$'
+    - amount:32
+    InventoryLocation: 21
+    ExtraPermission: 'voteshop.1'
+  L64:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - id:22
+      - amount:64
+    Reward: 93750
+    MenuItem:
+    - 'id:22'
+    - amount:64
+    - name:&1&L64 Lapis Lazuli Block
+    - 'lore:&2&LReward: &4&m75000$&b 93750$'
+    - amount:64
+    InventoryLocation: 30
+    ExtraPermission: 'voteshop.1'
+  Goldb:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - type:GOLD_BLOCK
+      - amount:1
+    Reward: 1462
+    MenuItem:
+    - 'type: GOLD_BLOCK'
+    - amount:1
+    - name:&6&L1 Gold Block
+    - 'lore:&2&LReward: &4&m1170$&b 1462$'
+    - amount:1
+    InventoryLocation: 4
+    ExtraPermission: 'voteshop.1'
+  Goldb16:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - type:GOLD_BLOCK
+      - amount:16
+    Reward: 23437
+    MenuItem:
+    - 'type: GOLD_BLOCK'
+    - amount:16
+    - name:&6&L16 Gold Block
+    - 'lore:&2&LReward: &4&m18750$&b 23437'
+    - amount:16
+    InventoryLocation: 13
+    ExtraPermission: 'voteshop.1'
+  Goldb32:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - type:GOLD_BLOCK
+      - amount:32
+    Reward: 46875
+    MenuItem:
+    - 'type: GOLD_BLOCK'
+    - amount:32
+    - name:&6&L32 Gold Block
+    - 'lore:&2&LReward: &4&m37500$&b 46875$'
+    - amount:32
+    InventoryLocation: 22
+    ExtraPermission: 'voteshop.1'
+  Goldb64:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - type:GOLD_BLOCK
+      - amount:64
+    Reward: 93750
+    MenuItem:
+    - 'type: GOLD_BLOCK'
+    - amount:64
+    - name:&6&L64 Gold Block
+    - 'lore:&2&LReward: &4&m75000$&b 93750$'
+    - amount:64
+    InventoryLocation: 31
+    ExtraPermission: 'voteshop.1'
+  Stone:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - id:159
+      - amount:1
+      - durability:2
+    Reward: 6
+    MenuItem:
+    - 'id: 159'
+    - amount:1
+    - durability:2
+    - name:&d&L1 Magenta Stained Clay
+    - 'lore:&2&LReward: &4&m5$&b 6$'
+    - amount:1
+    InventoryLocation: 5
+    ExtraPermission: 'voteshop.1'
+  Stone16:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - id:159
+      - amount:16
+      - durability:2
+    Reward: 108
+    MenuItem:
+    - 'id: 159'
+    - amount:16
+    - durability:2
+    - name:&d&L16 Magenta Stained Clay
+    - 'lore:&2&LReward: &4&m87$&b 108$'
+    - amount:16
+    InventoryLocation: 14
+    ExtraPermission: 'voteshop.1'
+  Stone32:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - id:159
+      - amount:32
+      - durability:2
+    Reward: 218
+    MenuItem:
+    - 'id: 159'
+    - amount:32
+    - durability:2
+    - name:&d&L32 Magenta Stained Clay
+    - 'lore:&2&LReward: &4&m175$&b 218$'
+    - amount:32
+    InventoryLocation: 23
+    ExtraPermission: 'voteshop.1'
+  Stone64:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - id:159
+      - amount:64
+      - durability:2
+    Reward: 437
+    MenuItem:
+    - 'id: 159'
+    - amount:64
+    - durability:2
+    - name:&d&L64 Magenta Stained Clay
+    - 'lore:&2&LReward: &4&m350$&b 437'
+    - amount:64
+    InventoryLocation: 32
+    ExtraPermission: 'voteshop.1'
+  E:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - id:133
+      - amount:1
+    Reward: 5850
+    MenuItem:
+    - 'id:133'
+    - amount:1
+    - name:&a&L1 Emerald Block
+    - 'lore:&2&LReward: &4&m4680$&b 5850$'
+    - amount:1
+    InventoryLocation: 6
+    ExtraPermission: 'voteshop.1'
+  E16:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - id:133
+      - amount:16
+    Reward: 93750
+    MenuItem:
+    - 'id:133'
+    - amount:16
+    - name:&a&L16 Emerald Block
+    - 'lore:&2&LReward: &4&m75000$&b 93750$'
+    - amount:16
+    InventoryLocation: 15
+    ExtraPermission: 'voteshop.1'
+  E32:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - id:133
+      - amount:32
+    Reward: 187500
+    MenuItem:
+    - 'id:133'
+    - amount:32
+    - name:&a&L32 Emerald Block
+    - 'lore:&2&LReward: &4&m150000$&b 187500$'
+    - amount:32
+    InventoryLocation: 24
+    ExtraPermission: 'voteshop.1'
+  E64:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - id:133
+      - amount:64
+    Reward: 375000
+    MenuItem:
+    - 'id:133'
+    - amount:64
+    - name:&a&L64 Emerald Block
+    - 'lore:&2&LReward: &4&m300000$&b 375000$'
+    - amount:64
+    InventoryLocation: 33
+    ExtraPermission: 'voteshop.1'
+  Snow:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - id:80
+      - amount:1
+    Reward: 6
+    MenuItem:
+    - 'id: 80'
+    - amount:1
+    - name:&f&L1 Snow Block
+    - 'lore:&2&LReward: &4&m5$&b 6$'
+    - amount:1
+    InventoryLocation: 7
+    ExtraPermission: 'voteshop.1'
+  Snow16:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - id:80
+      - amount:16
+    Reward: 108
+    MenuItem:
+    - 'id: 80'
+    - amount:16
+    - name:&f&L16 Snow Block
+    - 'lore:&2&LReward: &4&m87$&b 108$'
+    - amount:16
+    InventoryLocation: 16
+    ExtraPermission: 'voteshop.1'
+  Snow32:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - id:80
+      - amount:32
+    Reward: 218
+    MenuItem:
+    - 'id: 80'
+    - amount:32
+    - name:&f&L32 Snow Block
+    - 'lore:&2&LReward: &4&m175$&b 218$'
+    - amount:32
+    InventoryLocation: 25
+    ExtraPermission: 'voteshop.1'
+  Snow64:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - id:80
+      - amount:64
+    Reward: 437
+    MenuItem:
+    - 'id: 80'
+    - amount:64
+    - name:&f&L64 Snow Block
+    - 'lore:&2&LReward: &4&m350$&b 437$'
+    - amount:64
+    InventoryLocation: 34
+    ExtraPermission: 'voteshop.1'
+  Redstone:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - type:REDSTONE
+      - amount:1
+    Reward: 156
+    MenuItem:
+    - 'type: REDSTONE'
+    - amount:1
+    - name:&4&L1 Redstone
+    - 'lore:&2&LReward: &4&m125$&b 156$'
+    - amount:1
+    InventoryLocation: 8
+    ExtraPermission: 'voteshop.1'
+  Redstone16:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - type:REDSTONE
+      - amount:16
+    Reward: 2500
+    MenuItem:
+    - 'type: REDSTONE'
+    - amount:16
+    - name:&4&L16 Redstone
+    - 'lore:&2&LReward: &4&m2000$&b 2500$'
+    - amount:16
+    InventoryLocation: 17
+    ExtraPermission: 'voteshop.1'
+  Redstone32:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - type:REDSTONE
+      - amount:32
+    Reward: 5000
+    MenuItem:
+    - 'type: REDSTONE'
+    - amount:32
+    - name:&4&L32 Redstone
+    - 'lore:&2&LReward: &4&m4000$&b 5000$'
+    - amount:32
+    InventoryLocation: 26
+    ExtraPermission: 'voteshop.1'
+  Redstone64:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - type:REDSTONE
+      - amount:64
+    Reward: 10000
+    MenuItem:
+    - 'type: REDSTONE'
+    - amount:64
+    - name:&4&L64 Redstone
+    - 'lore:&2&LReward: &4&m8000$&b 10000$'
+    - amount:64
+    InventoryLocation: 35
+    ExtraPermission: 'voteshop.1'
+  PrisonPage2:
+    RewardType: shop
+    PriceType: free
+    Reward: VoteShop1-P2
+    MenuItem:
+    - type:REDSTONE_BLOCK
+    - amount:2
+    - name:&4&L<<< VoteShop Sell Page 2
+    - lore:&8Open Page 2
+    - amount:2
+    InventoryLocation: 19
+    ExtraPermission: 'voteshop.1'
+  PrisonPage4:
+    RewardType: shop
+    PriceType: free
+    Reward: VoteShop1-P4
+    MenuItem:
+    - type:REDSTONE_BLOCK
+    - amount:4
+    - name:&4&LVote Shop Sell Page 4 >>>
+    - lore:&8Open Page 4
+    - amount:4
+    InventoryLocation: 27
+    ExtraPermission: 'voteshop.1'
+

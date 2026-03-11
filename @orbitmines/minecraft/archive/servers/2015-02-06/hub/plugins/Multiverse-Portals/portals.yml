@@ -1,0 +1,82 @@
+portals:
+  pixelmonspawn:
+    entryfee:
+      currency: -1
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    owner: O_o_Fadi_o_O
+    location: 177.0,0.0,594.0:227.0,255.0,644.0
+    world: Pixelmon
+  '1':
+    entryfee:
+      currency: -1
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    owner: O_o_Fadi_o_O
+    location: -40.0,99.0,-67.0:-28.0,124.0,-67.0
+    world: OM-PvPLobby
+  '2':
+    entryfee:
+      currency: -1
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    owner: O_o_Fadi_o_O
+    location: -7.0,100.0,-31.0:-7.0,125.0,-19.0
+    world: OM-PvPLobby
+  '3':
+    entryfee:
+      currency: -1
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    owner: O_o_Fadi_o_O
+    location: -49.0,94.0,-5.0:-37.0,119.0,-5.0
+    world: OM-PvPLobby
+  p1:
+    entryfee:
+      currency: -1
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    owner: O_o_Fadi_o_O
+    location: -416.0,11.0,961.0:-374.0,35.0,974.0
+    world: Hub
+  p2:
+    entryfee:
+      currency: -1
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    owner: O_o_Fadi_o_O
+    location: -340.0,11.0,1006.0:-325.0,38.0,1058.0
+    world: Hub
+  p3:
+    entryfee:
+      currency: -1
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    owner: O_o_Fadi_o_O
+    location: -419.0,11.0,1091.0:-367.0,35.0,1108.0
+    world: Hub
+  p4:
+    entryfee:
+      currency: -1
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    owner: O_o_Fadi_o_O
+    location: -474.0,11.0,1009.0:-455.0,36.0,1060.0
+    world: Hub
+  p5:
+    entryfee:
+      currency: -1
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    owner: O_o_Fadi_o_O
+    location: -435.0,25.0,1039.0:-416.0,39.0,1054.0
+    world: Hub

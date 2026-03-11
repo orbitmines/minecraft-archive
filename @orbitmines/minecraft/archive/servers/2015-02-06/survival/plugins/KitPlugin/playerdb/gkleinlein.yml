@@ -1,0 +1,45 @@
+Knight:
+  cooldown: 1398849537
+  usages: 0
+Archer:
+  cooldown: 1398849451
+  usages: 0
+Wizard:
+  cooldown: 1398530282
+  usages: 0
+Tank:
+  cooldown: 1398530284
+  usages: 0
+Drunk:
+  cooldown: 1398849563
+  usages: 0
+Pyro:
+  cooldown: 1398530286
+  usages: 0
+Bunny:
+  cooldown: 1398530287
+  usages: 0
+Blaze:
+  cooldown: 1398530308
+  usages: 0
+TNT:
+  cooldown: 1398530567
+  usages: 0
+Tree:
+  cooldown: 1398530379
+  usages: 0
+SnowGolem:
+  cooldown: 1398530400
+  usages: 0
+King:
+  cooldown: 1398530495
+  usages: 0
+Prison:
+  cooldown: 1398712032
+  usages: 0
+Factions:
+  cooldown: 1398712263
+  usages: 0
+Survival:
+  cooldown: 1402151517
+  usages: 0

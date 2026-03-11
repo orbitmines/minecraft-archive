@@ -1,0 +1,103 @@
+# Group inheritance
+#
+# Any inherited groups prefixed with a g: are global groups
+# and are inherited from the GlobalGroups.yml.
+#
+# Groups without the g: prefix are groups local to this world
+# and are defined in the this groups.yml file.
+#
+# Local group inheritances define your promotion tree when using 'manpromote/mandemote'
+
+groups:
+  UserSu:
+    default: true
+    permissions:
+    - essentials.warps.SkyCity
+    - essentials.warps.Shops
+    - essentials.warps.Fadi
+    - essentials.warp
+    - -bukkit.command.me
+    - -bukkit.command.pl
+    - -bukkit.command.plugins
+    - -mcmmo.commands.party.teleport
+    - -bukkit.command.plugin
+    - -bukkit.command.help
+    - -bukkit.command.?
+    - essentials.recipe
+    - redeemMCMMO.credits
+    - redeemMCMMO.redeem
+    - PlayerPoints.me
+    - essentials.spawn
+    - auction.start
+    - auction.bid
+    - nametag.group.user
+    - -simpleregionmarket.signs.use.sell
+    - shop.survival
+    - multiverse.access.*
+    - -multiverse.access.Factions
+    - worldguard.region.teleport.*
+    - multiverse.teleport.self.w
+    - BossShop.open
+    - kit.kit
+    - kit.Survival
+    - -factions.*
+    - -easyplant.*
+    - BossShop.open
+    - BossShop.close
+    - BossShop.open.command.Survival
+    - itemmenu.open.itemmenu
+    - simpleregionmarket.signs.use.*
+    - serversigns.use.*
+    - NametagEdit.reload
+    - essentials.delhome
+    - jobs.command.leave
+    - essentials.rules
+    - essentials.home
+    - essentials.sethome
+    - essentials.sethome.multiple
+    - essentials.balance
+    - essentials.balance.others
+    - essentials.balancetop
+    - essentials.msg
+    - essentials.seen
+    - essentials.pay
+    - essentials.mail
+    - essentials.mail.send
+    - essentials.mail.clear
+    - essentials.mail.read
+    - multiverse.portal.access.*
+    - mycommand.cmd.1
+    - mycommand.cmd.2
+    - mycommand.cmd.3
+    - mycommand.cmd.4
+    - mycommand.cmd.5
+    - mycommand.cmd.6
+    - mycommand.cmd.7
+    - mycommand.cmd.8
+    - mycommand.cmd.9
+    - mycommand.cmd.10
+    - mycommand.cmd.11
+    - mycommand.cmd.12
+    - mycommand.cmd.13
+    - mycommand.cmd.14
+    - mycommand.cmd.15
+    - mycommand.cmd.16
+    - mycommand.cmd.17
+    - mycommand.cmd.18
+    - mycommand.cmd.24
+    - mycommand.cmd.25
+    - mycommand.cmd.75
+    - mycommand.cmd.192
+    - mycommand.cmd.191
+    - essentials.tpdeny
+    - essentials.tpaccept
+    - mycommand.cmd.75
+    - -silkspawners.silkdrop.*
+    - silkspawners.place.*
+    - mycommand.cmd.311
+    - mycommand.cmd.312
+    - mycommand.cmd.313
+    - mycommand.cmd.314
+    info:
+      prefix: '&8'
+      build: true

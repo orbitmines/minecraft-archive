@@ -1,0 +1,163 @@
+ShopName: Donate
+signs:
+  text: '[Donate]'
+  NeedPermissionToCreateSign: true
+shop:
+  IronVIP:
+    RewardType: money
+    PriceType: free
+    Reward: 0
+    MenuItem:
+    - type:IRON_INGOT
+    - amount:1
+    - name:&7&lIron VIP
+    - 'lore:&7Commands: # &7- &6/tpa <player> # &7- &6/tpahere <player> # &7- &6/kit IronVIP # &7- &6/afk #&7Features: # &7- &61000 Claimblocks # &7- &610 Homes # &7- &6Insta Plant! # &7- &6More Shop Access # &7- &8[&7&lVIP&8]&7 YourNameHere #&7Price: &65 EUR &7/ &66.96 USD #&7Donate: &6http://shop.orbitmines.com'
+    - amount:1
+    InventoryLocation: 1
+    ExtraPermission: ''
+  GoldVIP:
+    RewardType: money
+    PriceType: free
+    Reward: 0
+    MenuItem:
+    - type:GOLD_INGOT
+    - amount:1
+    - name:&6&lGold VIP
+    - 'lore:&7Commands: # &7- &6/tpa <player> # &7- &6/tpahere <player> # &7- &6/toolswap on&7/&6off # &7- &6/kit GoldVIP # &7- &6/afk # &7- &6/hat #&7Features: # &7- &62000 Claimblocks # &7- &625 Homes # &7- &6Insta Plant! # &7- &6Bigger Shop &7(/warp shops) # &7- &6More Shop Access # &7- &6Break Spawners with Silk Touch # &7- &6[&e&lVIP&6]&e YourNameHere #&7Price: &610 EUR &7/ &613.92 USD #&7Donate: &6http://shop.orbitmines.com'
+    - amount:1
+    InventoryLocation: 2
+    ExtraPermission: ''
+  DiamondVIP:
+    RewardType: money
+    PriceType: free
+    Reward: 0
+    MenuItem:
+    - type:DIAMOND
+    - amount:1
+    - name:&b&lDiamond VIP
+    - 'lore:&7Commands: # &7- &6/tpa <player> # &7- &6/tpahere <player> # &7- &6/toolswap on&7/&6off # &7- &6/kit DiamondVIP # &7- &6/afk # &7- &6/hat # &7- &6/fly # &7- &6/dis # &7- &6/back # &7- &6/feed # &7- &6/jump #&7Features: # &7- &65000 Claimblocks # &7- &650 Homes # &7- &6Insta Plant! # &7- &6Bigger Shop &7(/warp shops) # &7- &6More Shop Access # &7- &6Break Spawners with Silk Touch # &7- &b[&9&lVIP&b]&9 YourNameHere #&7Price: &625 EUR &7/ &634.81 USD #&7Donate: &6http://shop.orbitmines.com'
+    - amount:1
+    InventoryLocation: 3
+    ExtraPermission: ''
+  EmeraldVIP:
+    RewardType: money
+    PriceType: free
+    Reward: 0
+    MenuItem:
+    - type:EMERALD
+    - amount:1
+    - name:&a&lEmerald VIP
+    - 'lore:&7Commands: # &7- &6/tpa <player> # &7- &6/tpahere <player> # &7- &6/toolswap on&7/&6off # &7- &6/kit EmeraldVIP # &7- &6/afk # &7- &6/hat # &7- &6/fly # &7- &6/dis # &7- &6/back  # &7- &6/god  # &7- &6/heal  # &7- &6/feed # &7- &6/jump # &7- &6/magnet on&7/&6off # &7- &6/enderchest # &7- &6/workbench # &7- &6/thru # &7- &6/ptime # &7- &6/spa # &7- &6/fix # &7- &6/kittycannon #&7Features: # &7- &610000 Claimblocks # &7- &6100 Homes # &7- &6Insta Plant! # &7- &6Insta Tame Horses! # &7- &6Your Warp! &7(/warp YourWarp) # &7- &6C&8o&7l&bo&ar &dC&9o&1d&3e&4s # &7- &6Bigger Shop &7(/warp shops) # &7- &6More Shop Access # &7- &6Break Spawners with Silk Touch # &7- &2[&a&lVIP&2]&a YourNameHere #&7Price: &650 EUR &7/ &669.63 USD #&7Donate: &6http://shop.orbitmines.com'
+    - amount:1
+    InventoryLocation: 4
+    ExtraPermission: ''
+  100Levels:
+    RewardType: money
+    PriceType: free
+    Reward: 0
+    MenuItem:
+    - id:384
+    - amount:1
+    - name:&e&l100 Levels
+    - 'lore:&7Levels: # &7- &6100 Enchantment Levels #&7Price: &61.00 EUR &7/ &61.35 USD #&7Donate: &6http://shop.orbitmines.com'
+    - amount:1
+    InventoryLocation: 6
+    ExtraPermission: ''
+  3WitherSkulls:
+    RewardType: money
+    PriceType: free
+    Reward: 0
+    MenuItem:
+    - id:397
+    - amount:1
+    - durability:1
+    - name:&8&l3 Wither Skeleton Skulls
+    - 'lore:&7Skulls: # &7- &63 Wither Skeleton Skulls #&7Price: &63.00 EUR &7/ &64.07 USD #&7Donate: &6http://shop.orbitmines.com'
+    - amount:1
+    InventoryLocation: 8
+    ExtraPermission: ''
+  Claimblocks10000:
+    RewardType: money
+    PriceType: free
+    Reward: 0
+    MenuItem:
+    - type:STONE_HOE
+    - amount:1
+    - name:&a&l10000 Claimblocks
+    - 'lore:&7Claimblocks: # &7- &610000 Claimblocks #&7Price: &65 EUR &7/ &66.95 USD #&7Donate: &6http://shop.orbitmines.com'
+    - amount:1
+    InventoryLocation: 19
+    ExtraPermission: ''
+  Claimblocks20000:
+    RewardType: money
+    PriceType: free
+    Reward: 0
+    MenuItem:
+    - type:STONE_HOE
+    - amount:1
+    - name:&a&l20000 Claimblocks
+    - 'lore:&7Claimblocks: # &7- &620000 Claimblocks #&7Price: &68 EUR &7/ &611.13 USD #&7Donate: &6http://shop.orbitmines.com'
+    - amount:1
+    InventoryLocation: 20
+    ExtraPermission: ''
+  Claimblocks25000:
+    RewardType: money
+    PriceType: free
+    Reward: 0
+    MenuItem:
+    - type:STONE_HOE
+    - amount:1
+    - name:&a&l25000 Claimblocks
+    - 'lore:&7Claimblocks: # &7- &625000 Claimblocks #&7Price: &610 EUR &7/ &613.91 USD #&7Donate: &6http://shop.orbitmines.com'
+    - amount:1
+    InventoryLocation: 21
+    ExtraPermission: ''
+  Claimblocks50000:
+    RewardType: money
+    PriceType: free
+    Reward: 0
+    MenuItem:
+    - type:STONE_HOE
+    - amount:1
+    - name:&a&l50000 Claimblocks
+    - 'lore:&7Claimblocks: # &7- &650000 Claimblocks #&7Price: &617.50 EUR &7/ &624.35 USD #&7Donate: &6http://shop.orbitmines.com'
+    - amount:1
+    InventoryLocation: 22
+    ExtraPermission: ''
+  OreKit:
+    RewardType: money
+    PriceType: free
+    Reward: 0
+    MenuItem:
+    - type:COAL
+    - amount:1
+    - 'name:&c&lKit: &6&lOre'
+    - 'lore:&7Commands: # &7- &6/kit Ore #&7Price: &67.50 EUR &7/ &610.43 USD #&7Donate: &6http://shop.orbitmines.com'
+    - amount:1
+    InventoryLocation: 24
+    ExtraPermission: ''
+  ClaimerKit:
+    RewardType: money
+    PriceType: free
+    Reward: 0
+    MenuItem:
+    - type:DIAMOND_HOE
+    - amount:1
+    - 'name:&c&lKit: &6&lClaimer'
+    - 'lore:&7Commands: # &7- &6/kit Claimer #&7Price: &615 EUR &7/ &620.87 USD #&7Donate: &6http://shop.orbitmines.com'
+    - amount:1
+    InventoryLocation: 26
+    ExtraPermission: ''
+  BackToMenu:
+    RewardType: shop
+    PriceType: free
+    Reward: Survival
+    MenuItem:
+    - type:REDSTONE_BLOCK
+    - amount:1
+    - name:&a&LSurvival Menu
+    - lore:&8Back to the Survival Menu
+    - amount:1
+    InventoryLocation: 14
+    ExtraPermission: ''
+

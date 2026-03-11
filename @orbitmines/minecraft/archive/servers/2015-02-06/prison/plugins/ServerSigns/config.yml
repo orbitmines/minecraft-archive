@@ -1,0 +1,19 @@
+# 
+# Changing the message tag will mean players are informed the server is running ServerSigns when they connect
+listen_on_redstone: false
+blocks:
+- 68
+- 63
+language: en
+messageTag: '[ServerSigns]'
+messageTagColour: '&2'
+messageColour: '&e'
+vault_grant: true
+permission_console_command_add: pex user <player> add <permission>
+permission_console_command_remove: pex user <player> remove <permission>
+show_funds_removed_message: true
+currency: dollars
+broadcastDevelopers: true
+automaticUpdateChecks: true
+disableConsoleCommandLogging: false
+allowLeftClicking: false

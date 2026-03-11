@@ -1,0 +1,58 @@
+# Group inheritance
+#
+# Any inherited groups prefixed with a g: are global groups
+# and are inherited from the GlobalGroups.yml.
+#
+# Groups without the g: prefix are groups local to this world
+# and are defined in the this groups.yml file.
+#
+# Local group inheritances define your promotion tree when using 'manpromote/mandemote'
+
+groups:
+  User:
+    default: true
+    permissions:
+    - -simpleregionmarket.signs.use.*
+    - -ChestShop.shop.*
+    - -usb.extra.addwarp
+    - usb.island.warp
+    - usb.lock
+    - -easyplant.*
+    - -auction.start
+    - auction.bid
+    - multiverse.access.*
+    - silkspawners.place.*
+    - -silkspawners.silkdrop.*
+    - -bukkit.command.me
+    - -bukkit.command.pl
+    - -bukkit.command.plugins
+    - -bukkit.command.help
+    - -bukkit.command.?
+    - PlayerPoints.me
+    - essentials.spawn
+    - essentials.recipe
+    - essentials.pay
+    - essentials.balance
+    - essentials.balancetop
+    - essentials.msg
+    - essentials.mail
+    - essentials.mail.send
+    - essentials.mail.clear
+    - essentials.mail.read
+    - mycommand.cmd.1
+    - mycommand.cmd.2
+    - mycommand.cmd.3
+    - mycommand.cmd.4
+    - mycommand.cmd.5
+    - mycommand.cmd.6
+    - mycommand.cmd.7
+    - mycommand.cmd.8
+    - mycommand.cmd.9
+    - mycommand.cmd.10
+    - usb.island.*
+    - usb.party.*
+    - group.member
+    info:
+      prefix: '&8'
+      build: true
+      suffix: ''

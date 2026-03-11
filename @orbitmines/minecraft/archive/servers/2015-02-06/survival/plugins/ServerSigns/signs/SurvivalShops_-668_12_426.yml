@@ -1,0 +1,16 @@
+permission: ''
+world: SurvivalShops
+X: -668
+Y: 12
+Z: 426
+price: 0.0
+cooldown: 0
+globalCooldown: 0
+confirmation: false
+commands:
+- '/mainidea '
+grantPermissions: []
+lastGlobalUse: 0
+lastUse: {}
+priceItems: []
+exp: 0

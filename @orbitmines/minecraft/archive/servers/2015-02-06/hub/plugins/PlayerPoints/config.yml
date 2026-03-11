@@ -1,0 +1,25 @@
+storage: MySQL
+mysql:
+  host: sql-3.verygames.net
+  port: 3306
+  database: minecraft8494
+  user: minecraft8494
+  password: 9rmudrged
+  import:
+    use: false
+    source: YAML
+  export:
+    use: false
+    source: SQLITE
+  retry: 10
+vote:
+  enabled: false
+  amount: 100
+  online: false
+restrictions:
+  autocompleteOnline: false
+  hasPlayedBefore: false
+debug:
+  database: false
+vault: false
+version: 2.1.1

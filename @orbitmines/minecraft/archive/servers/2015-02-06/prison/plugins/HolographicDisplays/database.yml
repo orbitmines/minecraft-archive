@@ -1,0 +1,186 @@
+p1:
+  location: PrisonServer,-219.50834784666657,8.0,53.52659732456149
+  lines:
+  - '&aRank:'
+  - '&0&l[&f&lP&0&l]'
+o1:
+  location: PrisonServer,-216.51670488793357,8.0,55.52890405602463
+  lines:
+  - '&aRank:'
+  - '&0&l[&3&lO&0&l]'
+prison1:
+  location: PrisonServer,-741.5051551143929,8.0,87.51618854737187
+  lines:
+  - '&aRanks:'
+  - '&0&l[&f&lP&0&l]'
+  - '&0&l[&3&lO&0&l]'
+  - '&0&l[&0&lN&0&l]'
+  - '&0&l[&8&lM&0&l]'
+prison2:
+  location: PrisonServer,-735.5095346940301,8.0,93.52699517612047
+  lines:
+  - '&aRanks:'
+  - '&0&l[&7&lL&0&l]'
+  - '&0&l[&6&lK&0&l]'
+  - '&0&l[&f&lJ&0&l]'
+  - '&0&l[&2&lI&0&l]'
+prison3:
+  location: PrisonServer,-741.5111531486376,8.0,99.44779694564417
+  lines:
+  - '&aRanks:'
+  - '&0&l[&4&lH&0&l]'
+  - '&0&l[&e&lG&0&l]'
+  - '&0&l[&1&lF&0&l]'
+  - '&0&l[&5&lE&0&l]'
+prison4:
+  location: PrisonServer,-747.5446554044662,8.0,93.48154924405534
+  lines:
+  - '&aRanks:'
+  - '&0&l[&d&lD&0&l]'
+  - '&0&l[&b&lC&0&l]'
+  - '&0&l[&a&lB&0&l]'
+  - '&0&l[&c&lA&0&l]'
+n1:
+  location: PrisonServer,-213.50679211247774,8.0,58.52513783492907
+  lines:
+  - '&aRank:'
+  - '&0&l[N]'
+m1:
+  location: PrisonServer,-211.50758684160218,8.0,61.51832032382042
+  lines:
+  - '&aRank:'
+  - '&0&l[&8&lM&0&l]'
+l1:
+  location: PrisonServer,-210.48655920914987,8.0,65.5000431482784
+  lines:
+  - '&aRank:'
+  - '&0&l[&7&lL&0&l]'
+k1:
+  location: PrisonServer,-211.50546211639505,8.0,69.50640461816933
+  lines:
+  - '&aRank:'
+  - '&0&l[&6&lK&0&l]'
+j1:
+  location: PrisonServer,-213.49639014616815,8.0,72.49931517776075
+  lines:
+  - '&aRank:'
+  - '&0&l[&f&lJ&0&l]'
+i1:
+  location: PrisonServer,-216.51331045348454,8.0,75.47984494257713
+  lines:
+  - '&aRank:'
+  - '&0&l[&2&lI&0&l]'
+h1:
+  location: PrisonServer,-219.50115300606842,8.0,77.49739317759732
+  lines:
+  - '&aRank:'
+  - '&0&l[&4&lH&0&l]'
+g1:
+  location: PrisonServer,-223.50345382328214,8.0,78.51560261670389
+  lines:
+  - '&aRank:'
+  - '&0&l[&e&lG&0&l]'
+e1:
+  location: PrisonServer,-230.51454865470612,8.0,75.50464897299831
+  lines:
+  - '&aRank:'
+  - '&0&l[&5&lE&0&l]'
+f1:
+  location: PrisonServer,-227.48936173484287,8.0,77.49732530713051
+  lines:
+  - '&aRank:'
+  - '&0&l[&1&lF&0&l]'
+d1:
+  location: PrisonServer,-233.504788063841,8.0,72.48790655432738
+  lines:
+  - '&aRank:'
+  - '&0&l[&d&lD&0&l]'
+c1:
+  location: PrisonServer,-235.49918573209513,8.0,69.49873991984911
+  lines:
+  - '&aRank:'
+  - '&0&l[&b&lC&0&l]'
+b1:
+  location: PrisonServer,-236.50799821516594,8.0,65.5065122932328
+  lines:
+  - '&aRank:'
+  - '&0&l[&a&lB&0&l]'
+a1:
+  location: PrisonServer,-235.5010744753847,8.0,61.50561897919827
+  lines:
+  - '&aRank:'
+  - '&0&l[&c&lA&0&l]'
+plot1:
+  location: PrisonPlots,16.510532533909878,69.0,21.502721404958404
+  lines:
+  - '&4Prison Plots:'
+  - '&b/plot auto'
+  - '&c&lPrice: &61.000.000$'
+ivip1:
+  location: PrisonServer,-219.50006129016234,8.5,61.52018419516953
+  lines:
+  - '&aRank:'
+  - '&0&l[&7&lIron VIP&0&l]'
+gvip1:
+  location: PrisonServer,-227.5044189680083,8.5,61.51871461988742
+  lines:
+  - '&aRank:'
+  - '&0&l[&6&lGold VIP&0&l]'
+dvip1:
+  location: PrisonServer,-219.5013586131689,8.5,69.51107580579534
+  lines:
+  - '&aRank:'
+  - '&0&l[&b&lDiamond VIP&0&l]'
+evip1:
+  location: PrisonServer,-227.5089028508569,8.5,69.49317350083811
+  lines:
+  - '&aRank:'
+  - '&0&l[&a&lEmerald VIP&0&l]'
+animalfarm:
+  location: PrisonServer,-216.51518104863172,8.0,-24.52099147104913
+  lines:
+  - '&aWarp:'
+  - '&c&lAnimal Farm'
+mobgrinder:
+  location: PrisonServer,-211.5247413085978,8.0,-30.525008311373668
+  lines:
+  - '&aWarp:'
+  - '&4&lMob Grinder'
+villagers:
+  location: PrisonServer,-211.52741059399696,8.0,-38.52775660425718
+  lines:
+  - '&aWarp:'
+  - '&2&lVillagers'
+plots:
+  location: PrisonServer,-216.51198143105464,8.0,-44.49808263795876
+  lines:
+  - '&aWarp:'
+  - '&5&lPlots'
+specialmines:
+  location: PrisonServer,-223.49851254250572,8.0,-47.49402812707876
+  lines:
+  - '&aWarp:'
+  - '&6&lSpecial Mines'
+enchant:
+  location: PrisonServer,-230.5280270274353,8.0,-44.512910255454514
+  lines:
+  - '&aWarp:'
+  - '&d&lEnchant'
+furnace:
+  location: PrisonServer,-235.4748996568483,8.0,-38.49007003454626
+  lines:
+  - '&aWarp:'
+  - '&7&lFurnace'
+new:
+  location: PrisonServer,-223.4385112696833,11.0,19.499907211162697
+  lines:
+  - '&aWelcome!'
+  - '&6New?:'
+  - '&b/kit Prison'
+  - '&b/warp P'
+  - '&4&lPrison &ewill get an &9&lUpdate&e shortly!'
+pquest:
+  location: PrisonServer,-185.4898488078094,8.0,11.487065358482958
+  lines:
+  - '&a&lQuests:'
+  - '&0&l[&f&lP&0&l]'

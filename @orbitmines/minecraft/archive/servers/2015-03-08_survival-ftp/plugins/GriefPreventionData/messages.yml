@@ -1,0 +1,459 @@
+Messages:
+  RespectingClaims:
+    Text: §8§lClaim §8| §7Claim ignoring §c§lDISABLED§7!
+  IgnoringClaims:
+    Text: §8§lClaim §8| §7Claim ignoring §a§lENABLED§7!
+  SuccessfulAbandonExcludingLocked:
+    Text: '§8§lClaim §8| §7All Claims abandoned! (Except locked claims) §7Available
+      Claimblocks: §6{0}§7.'
+    Notes: '0: remaining blocks'
+  SuccessfulAbandonIncludingLocked:
+    Text: '§8§lClaim §8| §7All Claims abandoned! §7Available Claimblocks: §6{0}§7.'
+    Notes: '0: remaining blocks'
+  RestoreNatureActivate:
+    Text: §8§lClaim §8| §aRestore Nature§7 mode §a§lENABLED§7! Use §a/BasicClaims§7 to stop.
+  RestoreNatureAggressiveActivate:
+    Text: §8§lClaim §8| §cAggresive Restore Nature§7 mode §a§lENABLED§7! Use §a/BasicClaims§7 to stop.
+  FillModeActive:
+    Text: §8§lClaim §8| §eFill§7 mode §a§lENABLED§7! (§6{0}§7)
+    Notes: '0: fill radius'
+  TransferClaimPermission:
+    Text: §8§lClaim §8| §4§lDENIED§7! You have to be an §4§lOwner§7 to do this!
+  TransferClaimMissing:
+    Text: §8§lClaim §8| §7No claim here.
+  TransferClaimAdminOnly:
+    Text: §8§lClaim §8| §4§lDENIED§7! You have to be an §4§lOwner§7 to do this!
+  PlayerNotFound:
+    Text: §8§lClaim §8| §7Player doesn't exist.
+  TransferTopLevel:
+    Text: §8§lClaim §8| §7Only top level claims can be transferred.
+  TransferSuccess:
+    Text: §8§lClaim §8| §7Claim transferred.
+  TrustListNoClaim:
+    Text: §8§lClaim §8| §7You have to stand inside a Claim!
+  ClearPermsOwnerOnly:
+    Text: §8§lClaim §8| §4§lDENIED§7! You have to be the Claim Owner to do this!
+  UntrustIndividualAllClaims:
+    Text: §8§lClaim §8| §7Revoked {0}'s access to all your claims. (Stand inside a claim to edit it)
+    Notes: '0: untrusted player'
+  UntrustEveryoneAllClaims:
+    Text: §8§lClaim §8| §7Revoked all access to all your claims. (Stand inside a claim to edit it)
+  NoPermissionTrust:
+    Text: §8§lClaim §8| §7This area has been claimed by §6{0}§7!
+    Notes: '0: claim owner''s name'
+  ClearPermissionsOneClaim:
+    Text: §8§lClaim §8| §7Revoked all access to this claim. (Stand outside a claim to edit all claims)
+  UntrustIndividualSingleClaim:
+    Text: §8§lClaim §8| §7Revoked {0}'s access to this claim. (Stand outside a claim to edit all claims)
+    Notes: '0: untrusted player'
+  OnlySellBlocks:
+    Text: §8§lClaim §8| §7You cannot sell Claimblocks.
+  BlockPurchaseCost:
+    Text: '§8§lClaim §8| §7Price per block: §6{0}$§7. Your balance: §6{1}$§7.'
+    Notes: '0: cost of one block; 1: player''s account balance'
+  ClaimBlockLimit:
+    Text: §8§lClaim §8| §7Reached Claimblock limit. You cannot buy more.
+  InsufficientFunds:
+    Text: §8§lClaim §8| §7You don't have enough money.
+    Notes: '0: total cost; 1: player''s account balance'
+  PurchaseConfirmation:
+    Text: '§8§lClaim §8| §7Available Claimblocks: §6{1}§7. Price: §6{0}$§7.'
+    Notes: '0: total cost; 1: remaining blocks'
+  OnlyPurchaseBlocks:
+    Text: §8§lClaim §8| §7You cannot purchase Claimblocks.
+  BlockSaleValue:
+    Text: '§8§lClaim §8| §7Price for 1 Claimblock: §6{0}$§7. Claimblocks for sale:
+      §6{1}§7.'
+    Notes: '0: block value; 1: available blocks'
+  NotEnoughBlocksForSale:
+    Text: §8§lClaim §8| §7You don't have that much Claimblocks.
+  BlockSaleConfirmation:
+    Text: '§8§lClaim §8| §7Available Claimblocks: §6{1}§7. Earned: §6{0}$§7.'
+    Notes: '0: amount deposited; 1: remaining blocks'
+  AdminClaimsMode:
+    Text: §8§lClaim §8| §cAdmin§7 mode §a§lENABLED§7!
+  BasicClaimsMode:
+    Text: §8§lClaim §8| §aNormal§7 mode §a§lENABLED§7!
+  SubdivisionMode:
+    Text: §8§lClaim §8| §eSubdivision§7 mode §a§lENABLED§7! §7Use /BasicClaims to stop.
+  SubdivisionDemo:
+    Text: '§8§lClaim §8| §7Claim Tutorial: §6/claimtutorial§7.'
+  DeleteClaimMissing:
+    Text: §8§lClaim §8| §7No claim here.
+  DeletionSubdivisionWarning:
+    Text: §8§lClaim §8| §7This claim has subvisions, use /DeleteClaim again to confirm.
+  DeleteSuccess:
+    Text: §8§lClaim §8| §7Claim deleted.
+  CantDeleteAdminClaim:
+    Text: §8§lClaim §8| §4§lDENIED§7! You have to be an §4§lOwner§7 to do this!
+  DeleteAllSuccessExcludingLocked:
+    Text: §8§lClaim §8| §7Deleted all of §6{0}'s§7 claims. (Except locked claims)
+    Notes: '0: owner''s name'
+  DeleteAllSuccessIncludingLocked:
+    Text: §8§lClaim §8| §7Deleted all of §6{0}'s§7 claims.
+    Notes: '0: owner''s name'
+  NoDeletePermission:
+    Text: §8§lClaim §8| §4§lDENIED§7! You have to be an §4§lOwner§7 to do this!
+  AllAdminDeleted:
+    Text: §8§lClaim §8| §7Deleted all admin claims.
+  AdjustBlocksSuccess:
+    Text: '§8§lClaim §8| §7Gave {0}§6 {1} Claimblocks. New amount: §6{2}§7.'
+    Notes: '0: player; 1: adjustment; 2: new total'
+  NotTrappedHere:
+    Text: §8§lClaim §8| §7You can build here, get out yourself.
+  TrappedOnCooldown:
+    Text: §8§lClaim §8| §7You have to wait §6{1}§7 more minute(s)s to do this again.
+    Notes: '0: default cooldown hours; 1: remaining minutes'
+  RescuePending:
+    Text: §8§lClaim §8| §7Don't move for §610 seconds§7.
+  NonSiegeWorld:
+    Text: §8§lClaim §8| §7Siege is §c§lDISABLED§7.
+  AlreadySieging:
+    Text: §8§lClaim §8| §7You are already in a Siege.
+  NotSiegableThere:
+    Text: §8§lClaim §8| §6{0} §7isn't protected there.
+    Notes: '0: defending player'
+  SiegeTooFarAway:
+    Text: §8§lClaim §8| §7You are to far away from a Siege.
+  NoSiegeDefenseless:
+    Text: §8§lClaim §8| §7They can't defense themselves. Find someone else.
+  AlreadyUnderSiegePlayer:
+    Text: §8§lClaim §8| §6{0} §7is under Siege!
+    Notes: '0: defending player'
+  AlreadyUnderSiegeArea:
+    Text: §8§lClaim §8| §7This area is already under Siege!
+  NoSiegeAdminClaim:
+    Text: §8§lClaim §8| §c§lDISABLED§7 Siege in this area!
+  SiegeOnCooldown:
+    Text: §8§lClaim §8| §7This Siege is on cooldown!
+  SiegeAlert:
+    Text: §8§lClaim §8| §7You are under Siege by §6{0}!§7 Don't log out!
+    Notes: '0: attacker name'
+  SiegeConfirmed:
+    Text: §8§lClaim §8| §7You are attacking §6{0}!§7 Don't log out!
+    Notes: '0: defender name'
+  AbandonClaimMissing:
+    Text: §8§lClaim §8| §7Stand in one of your claims. §7Use §6/AbandonAllClaims§7 to delete all of your claims.
+  NotYourClaim:
+    Text: §8§lClaim §8| §7This isn't your claim!
+  DeleteTopLevelClaim:
+    Text: §8§lClaim §8| §7Stand inside a subvision to delete it. §7Use §6/AbandonTopLevelClaim§7 to delete this claim and all subdivisions.
+  AbandonSuccess:
+    Text: '§8§lClaim §8| §7Abandoned this claim! §7Available Claimblocks: §6{0}§7.'
+    Notes: '0: remaining claim blocks'
+  CantGrantThatPermission:
+    Text: §8§lClaim §8| §7You cannot give yourself that permission.
+  GrantPermissionNoClaim:
+    Text: §8§lClaim §8| §7Stand inside a claim where you want to give yourself permission.
+  GrantPermissionConfirmation:
+    Text: §8§lClaim §8| §7Granted §6{0}§7 permission to {1} {2}.
+    Notes: '0: target player; 1: permission description; 2: scope (changed claims)'
+  ManageUniversalPermissionsInstruction:
+    Text: §8§lClaim §8| §7Stand outside a claim to edit all your claims.
+  ManageOneClaimPermissionsInstruction:
+    Text: §8§lClaim §8| §7Stand inside a claim to edit it.
+  CollectivePublic:
+    Text: §6Public Access
+    Notes: as in 'granted the public permission to...'
+  BuildPermission:
+    Text: §6Build Access
+  ContainersPermission:
+    Text: §6Container & Animal Access
+  AccessPermission:
+    Text: §6Access to buttons and levers
+  PermissionsPermission:
+    Text: §6Access to manage permissions
+  LocationCurrentClaim:
+    Text: This Claim
+  LocationAllClaims:
+    Text: In all your Claims
+  PvPImmunityStart:
+    Text: §8§lClaim §8| §7You can't be attacked by other players as long as your inventory is empty.
+  SiegeNoDrop:
+    Text: §8§lClaim §8| §7You can't drop items while in a Siege.
+  DonateItemsInstruction:
+    Text: §8§lClaim §8| §6Left-Click§7 again to put the items from your hand in the chest.
+  ChestFull:
+    Text: §8§lClaim §8| §7This chest is §cfull§7.
+  DonationSuccess:
+    Text: §8§lClaim §8| §7Added items in your hand to this chest.
+  PlayerTooCloseForFire:
+    Text: §8§lClaim §8| §6{0} §7is nearby. You can't place fire that close to a player.
+    Notes: '0: other player''s name'
+  TooDeepToClaim:
+    Text: §8§lClaim §8| §7This chest is too deep underground. It's not protected!
+  ChestClaimConfirmation:
+    Text: §8§lClaim §8| §7This chest is protected.
+  AutomaticClaimNotification:
+    Text: §8§lClaim §8| §7This chest and nearby blocks are protected.
+  TrustCommandAdvertisement:
+    Text: §8§lClaim §8| §7Use §6/trust <player>§7 to trust a player to your claim. (Your own responsibility)
+  GoldenShovelAdvertisement:
+    Text: §8§lClaim §8| §7You'l need a Stone Hoe to claim land.
+  UnprotectedChestWarning:
+    Text: §8§lClaim §8| §7This chest isn't protected claim it with a Stone Hoe!
+  ThatPlayerPvPImmune:
+    Text: §8§lClaim §8| §7This player is defenceless!
+  CantFightWhileImmune:
+    Text: §8§lClaim §8| §7This player is protected from PvP!
+  NoDamageClaimedEntity:
+    Text: §8§lClaim §8| §7This belongs to §6{0}§7.
+    Notes: '0: owner name'
+  ShovelBasicClaimMode:
+    Text: §8§lClaim §8| §aBasic§7 mode §a§lENABLED§7.
+  RemainingBlocks:
+    Text: '§8§lClaim §8| §7Available Claimblocks: §6{0}§7.'
+    Notes: '0: remaining blocks'
+  CreativeBasicsDemoAdvertisement:
+    Text: §8§lClaim §8| §7Use §6/claimtutorial§7 for a Claim Tutorial.
+  SurvivalBasicsDemoAdvertisement:
+    Text: §8§lClaim §8| §7Use §6/claimtutorial§7 for a Claim Tutorial.
+  TrappedChatKeyword:
+    Text: trapped
+    Notes: When mentioned in chat, players get information about the /trapped command.
+  TrappedInstructions:
+    Text: §8§lClaim §8| §7Are you trapped in someones claim? Try §6/trapped§7!
+  PvPNoDrop:
+    Text: §8§lClaim §8| §7You cannot drop items while in combat!
+  SiegeNoTeleport:
+    Text: §8§lClaim §8| §7You cannot teleport out of a besieged area!
+  BesiegedNoTeleport:
+    Text: §8§lClaim §8| §7You cannot teleport in to a besiege area!
+  SiegeNoContainers:
+    Text: §8§lClaim §8| §7You cannot access containers while in a siege!
+  PvPNoContainers:
+    Text: §8§lClaim §8| §7You cannot access containers while in PvP!
+  PvPImmunityEnd:
+    Text: §8§lClaim §8| §7You can no fight with other players!
+  NoBedPermission:
+    Text: §8§lClaim §8| §6{0} §7doesn't give your permission to sleep here.
+    Notes: '0: claim owner'
+  NoWildernessBuckets:
+    Text: §8§lClaim §8| §7You cannot use buckets here!
+  NoLavaNearOtherPlayer:
+    Text: §8§lClaim §8| §6{0}§7 is nearby. You can't place lava buckets that close to a player.
+    Notes: '0: nearby player'
+  TooFarAway:
+    Text: §8§lClaim §8| §7Too far away.
+  BlockNotClaimed:
+    Text: §8§lClaim §8| §7No one has claimed this block.
+  BlockClaimed:
+    Text: §8§lClaim §8| §6{0}§7 claimed this block.
+    Notes: '0: claim owner'
+  SiegeNoShovel:
+    Text: §8§lClaim §8| §7You cannot claim while in a siege.
+  RestoreNaturePlayerInChunk:
+    Text: §8§lClaim §8| §7Unable to restore, §6{0}§7 is nearby.
+    Notes: '0: nearby player'
+  NoCreateClaimPermission:
+    Text: §8§lClaim §8| §7You aren't allowed to claim.
+  ResizeClaimTooSmall:
+    Text: §8§lClaim §8| §7This claim is too small! (Atleast §6{0}§7 by §6{0}§7)
+    Notes: '0: minimum claim size'
+  ResizeNeedMoreBlocks:
+    Text: §8§lClaim §8| §7You need §6{0}§7 more Claimblocks to claim this.
+    Notes: '0: how many needed'
+  NoCreativeUnClaim:
+    Text: §8§lClaim §8| §7You can't unclaim this land.
+  ClaimResizeSuccess:
+    Text: '§8§lClaim §8| §7Claim Resized. §7Available Claimblocks: §6{0}§7.'
+    Notes: '0: remaining blocks'
+  ResizeFailOverlap:
+    Text: §8§lClaim §8| §7This overlaps an other claim!
+  ResizeStart:
+    Text: §8§lClaim §8| §7Resizing Claim. §6Right-Click §7again to set this corner.
+  ResizeFailOverlapSubdivision:
+    Text: §8§lClaim §8| §7This overlaps an other claim!
+  SubdivisionStart:
+    Text: §8§lClaim §8| §7Subvision corner set!
+  CreateSubdivisionOverlap:
+    Text: §8§lClaim §8| §7This overlaps an other subvision!
+  SubdivisionSuccess:
+    Text: §8§lClaim §8| §7Subvision created! Use §6/trust <player>§7 to trust friends! (Your own responsibility)
+  CreateClaimFailOverlap:
+    Text: §8§lClaim §8| §7This overlaps an other claim! §7(Resize it by clicking on the corner or use §6/abandonclaim§7.
+  CreateClaimFailOverlapOtherPlayer:
+    Text: §8§lClaim §8| §7This overlaps §6{0}'s §7claim!
+    Notes: '0: other claim owner'
+  ClaimsDisabledWorld:
+    Text: §8§lClaim §8| §7You cannot claim in this world.
+  ClaimStart:
+    Text: §8§lClaim §8| §7Corner set! §6Right-Click§7 again for the opposite corner.
+  NewClaimTooSmall:
+    Text: §8§lClaim §8| §7This claim is too small! (Atleast §6{0}§7 by §6{0}§7)
+    Notes: '0: minimum claim size'
+  CreateClaimInsufficientBlocks:
+    Text: §8§lClaim §8| §7You need §6{0}§7 more Claimblocks to claim this.
+    Notes: '0: additional blocks needed'
+  AbandonClaimAdvertisement:
+    Text: §8§lClaim §8| §7Delete a claim by standing in it and typing §6/abandonclaim§7.
+  CreateClaimFailOverlapShort:
+    Text: §8§lClaim §8| §7This overlaps an other existing claim!
+  CreateClaimSuccess:
+    Text: §8§lClaim §8| §7Claim Created! §7Trust your friends with §6/trust <player>§7. (Your own responsibility)
+  SiegeWinDoorsOpen:
+    Text: §8§lClaim §8| §7Buttons and levers are unlocked for §65 minutes§7!
+  RescueAbortedMoved:
+    Text: §8§lClaim §8| §7Rescue cancelled! (You moved)
+  SiegeDoorsLockedEjection:
+    Text: §8§lClaim §8| §7Looting time is up!
+  NoModifyDuringSiege:
+    Text: §8§lClaim §8| §7You can't modify claims while in a Siege!
+  OnlyOwnersModifyClaims:
+    Text: §8§lClaim §8| §7Only§6 {0}§7 can modify this claim.
+    Notes: '0: owner name'
+  NoBuildUnderSiege:
+    Text: §8§lClaim §8| §7This claim is under §6Siege§7 by §6{0}§7. (You can't build here.)
+    Notes: '0: attacker name'
+  NoBuildPvP:
+    Text: §8§lClaim §8| §7You cannot build in claims while being in combat.
+  NoBuildPermission:
+    Text: §8§lClaim §8| §6{0}§7 didn't gave you the permission to build here.
+    Notes: '0: owner name'
+  NonSiegeMaterial:
+    Text: §8§lClaim §8| §7That material cannot be broken.
+  NoOwnerBuildUnderSiege:
+    Text: §8§lClaim §8| §7You cannot build while under Siege.
+  NoAccessPermission:
+    Text: §8§lClaim §8| §6{0}§7 didn't gave you the permission to use that.
+    Notes: '0: owner name.  access permission controls buttons, levers, and beds'
+  NoContainersSiege:
+    Text: §8§lClaim §8| §7This claim is under §6Siege§7 by §6{0}§7. (You can't build here.)
+    Notes: '0: attacker name'
+  NoContainersPermission:
+    Text: §8§lClaim §8| §6{0}§7 didn't gave you the permission to use that.
+    Notes: '0: owner''s name.  containers also include crafting blocks'
+  OwnerNameForAdminClaims:
+    Text: an administrator
+    Notes: as in 'You don't have an administrator's permission to build here.'
+  ClaimTooSmallForEntities:
+    Text: §8§lClaim §8| §7This claim isn't big enough for that.
+  TooManyEntitiesInClaim:
+    Text: §8§lClaim §8| §7This claim has too many entities in it. Try making it larger or remove some.
+  YouHaveNoClaims:
+    Text: §8§lClaim §8| §7You do not have any claims.
+  ConfirmFluidRemoval:
+    Text: §8§lClaim §8| §7Abandoning this claim will remove all water and lava in it! Type /abandonclaim again to confirm.
+  AutoBanNotify:
+    Text: Auto-banned {0}({1}).  See logs for details.
+  AdjustGroupBlocksSuccess:
+    Text: '§8§lClaim §8| §7Gave {0}§6 {1}Â§7 Claimblocks. New amount: §6{2}§7.'
+    Notes: '0: permission; 1: adjustment amount; 2: new total bonus'
+  InvalidPermissionID:
+    Text: §8§lClaim §8| §7Specify the player name or use [permission].
+  UntrustOwnerOnly:
+    Text: §8§lClaim §8| §7Only §6{0}§7 can revoke here.
+    Notes: '0: claim owner''s name'
+  HowToClaimRegex:
+    Text: (^|.*\W)how\W.*\W(claim|protect|lock)(\W.*|$)
+    Notes: This is a Java Regular Expression.  Look it up before editing!  It's used to tell players about the demo video when they ask how to claim land.
+  NoBuildOutsideClaims:
+    Text: §8§lClaim §8| §7You have to claim this land before building here.
+  PlayerOfflineTime:
+    Text: '§7Last login: §6{0}§7 days ago.'
+    Notes: '0: number of full days since last login'
+  BuildingOutsideClaims:
+    Text: §8§lClaim §8| §7Other players can build here! Claim it with a Stone Hoe!
+  TrappedWontWorkHere:
+    Text: §8§lClaim §8| §7Unable to find a safe location.
+  CommandBannedInPvP:
+    Text: §8§lClaim §8| §7You cannot use this command while in combat.
+  UnclaimCleanupWarning:
+    Text: §8§lClaim §8| §7Other players can now build here.
+  BuySellNotConfigured:
+    Text: §8§lClaim §8| §7You can buy Claimblocks at Spawn at the OMT Shop!
+  NoTeleportPvPCombat:
+    Text: §8§lClaim §8| §7You cannot teleport while in combat.
+  NoTNTDamageAboveSeaLevel:
+    Text: §8§lClaim §8| §7TNT will not destroy blocks above sea level.
+  NoTNTDamageClaims:
+    Text: §8§lClaim §8| §7TNT will not destroy claimed blocks.
+  IgnoreClaimsAdvertisement:
+    Text: §8§lClaim §8| §7Use §6/IgnoreClaims§7 to override.
+  NoPermissionForCommand:
+    Text: §8§lClaim §8| §4§lDENIED§7! You don't have permission to do that.
+  ClaimsListNoPermission:
+    Text: §8§lClaim §8| §4§lDENIED§7! You don't have permission to do that.
+  ExplosivesDisabled:
+    Text: §8§lClaim §8| §c§lDISABLED§7 explosions in this claim. §7Use §6/ClaimExplosions to §a§lENABLED§7.
+  ExplosivesEnabled:
+    Text: §8§lClaim §8| §a§lENABLED§7 explosions in this claim. §7Use §6/ClaimExplosions to §c§lDISABLED§7.
+  ClaimExplosivesAdvertisement:
+    Text: §8§lClaim §8| §7Use §6/ClaimExplosions§7 to toggle explosions in a claim.
+  PlayerInPvPSafeZone:
+    Text: §8§lClaim §8| §7That player is in a PvP free zone.
+  ClaimLocked:
+    Text: §8§lClaim §8| §7This claim has been §4locked§7. Use §6/unlockclaim §7to unlock.
+  ClaimUnlocked:
+    Text: §8§lClaim §8| §7This claim has been §aunlocked§7.
+  DeleteLockedClaimWarning:
+    Text: §8§lClaim §8| §7This claim is §4locked§7. Use §6/DeleteClaim §7again to confirm.
+  ConfirmAbandonLockedClaim:
+    Text: §8§lClaim §8| §7This claim is §4locked§7. Use §6/AbandonClaim §7again to confirm.
+  LoginSpamWait:
+    Text: §a§lSurvival §8| §7Wait §6{0}§7 more seconds to login again.
+  SuccessfulAbandon:
+    Text: '§8§lClaim §8| §7Claims Abanoned. §7Available Claimblocks: §6{0}§7.'
+    Notes: '0: remaining blocks'
+  PlayerNotFound2:
+    Text: §8§lClaim §8| §7That player hasn't logged in recently.
+  SubdivisionVideo2:
+    Text: §8§lClaim §8| §7For subvision help use §6/claimtutorial§7.
+    Notes: 0:video URL
+  DeleteAllSuccess:
+    Text: §8§lClaim §8| §7For claim help use §6/claimtutorial§7.
+    Notes: '0: owner''s name'
+  CreativeBasicsVideo2:
+    Text: §8§lClaim §8| §7For claim help use §6/claimtutorial§7.
+    Notes: '{0}: video URL'
+  SurvivalBasicsVideo2:
+    Text: §8§lClaim §8| §7For claim help use §6/claimtutorial§7.
+    Notes: '{0}: video URL'
+  NoPistonsOutsideClaims:
+    Text: §8§lClaim §8| §7Pistons won't work outside claims.
+  SoftMuted:
+    Text: Soft-muted {0}.
+    Notes: '0: The changed player''s name.'
+  UnSoftMuted:
+    Text: Un-soft-muted {0}.
+    Notes: '0: The changed player''s name.'
+  DropUnlockAdvertisement:
+    Text: §8§lClaim §8| §7Use §6/UnlockDrops§7 so other players can pickup your loot.
+  PickupBlockedExplanation:
+    Text: §8§lClaim §8| §6{0}§7 has to use §6/UnlockDrops§7 so you can pick this up.
+    Notes: '0: The item stack''s owner.'
+  DropUnlockConfirmation:
+    Text: §8§lClaim §8| §7Other players can now pick up your dead loot.
+  AdvertiseACandACB:
+    Text: §8§lClaim §8| §7Use §6/ACB §7for more claimblocks and §6/AdminClaims§7 for administrative claims.
+  AdvertiseAdminClaims:
+    Text: §8§lClaim §8| §7Use can use administrative claims.
+  AdvertiseACB:
+    Text: §8§lClaim §8| §7Use §6/ACB§7 to give yourself more Claimblocks.
+  NotYourPet:
+    Text: §8§lClaim §8| §7That belongs to §6{6}§7. (They can use /GivePet <player>)
+    Notes: '0: owner name'
+  PetGiveawayConfirmation:
+    Text: §8§lClaim §8| §7Pet transferred.
+  PetTransferCancellation:
+    Text: §8§lClaim §8| §cCancelled§7 Pet giveaway.
+  ReadyToTransferPet:
+    Text: §8§lClaim §8| §7Ready to transfer! §6Right-Click§7 a Pet to give it away! (Use §6/GivePet cancel§7 to cancel)
+  AvoidGriefClaimLand:
+    Text: §8§lClaim §8| §7Prevent grief by claiming land with a Stone Hoe.
+  BecomeMayor:
+    Text: §8§lClaim §8| §7Subdive your claims and become a mayor.
+  ClaimCreationFailedOverClaimCountLimit:
+    Text: §8§lClaim §8| §7You reached the limited amount of claims. You can use §6/abandonclaim§7 to remove claims.
+  CreateClaimFailOverlapRegion:
+    Text: §8§lClaim §8| §7You cannot claim this!
+  ResizeFailOverlapRegion:
+    Text: §8§lClaim §8| §7You do not have permission to build and claim here!
+  NoBuildPortalPermission:
+    Text: §8§lClaim §8| §7You can't use this portal! (It will end up in §6{0}'s§7 claim)
+    Notes: '0: Destination land claim owner''s name.'
+  ShowNearbyClaims:
+    Text: §8§lClaim §8| §6{0}§7 claims found.
+    Notes: '0: Number of claims found.'
+  NoChatUntilMove:
+    Text: §a§lSurvival §8| §7Move to §a§lENABLED§7 your chat.

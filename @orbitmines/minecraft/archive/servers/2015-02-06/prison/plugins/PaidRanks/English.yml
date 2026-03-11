@@ -1,0 +1,9 @@
+English:  
+  Highest_Rank_Possible: '&8[&4&lPrison&8]&7 You are at the highest possible paid rank!'
+  On_Rank_Up_Sent_To_Player: '&8[&4&lPrison&8]&7 You ranked up to &6+rank&7.'
+  On_Rank_Up_Broadcasting: '&8[&4&lPrison&8]&6 +name &7ranked up to &6+rank'
+  Not_Enough_Money: '&8[&4&lPrison&8]&7 You need &6+price &7to rankup to &6+rank'
+  Does_Not_Have_An_Account: '&8[&4&lPrison&8]&7 You do not have an account! We made you an account!'
+  Invalid_Args: '&8[&4&lPrison&8]&c Invalid Args!'
+  No_Permission: '&8[&4&lPrison&8]&c You do not have permission for this!'
+  Not_In_Group_List: '&8[&4&lPrison&8]&c You have to be the rank +rank to begin the group list.'

@@ -1,0 +1,473 @@
+ChickenFightArenas:
+  '1':
+    Enabled: true
+    LobbyLocation:
+      world: ChickenFightLobby1
+      x: 0.5116209002962493
+      y: 63.0
+      z: 4.4946029929552
+      yaw: 3.361702E-6
+      pitch: -0.45001587
+  '2':
+    Enabled: true
+    LobbyLocation:
+      world: ChickenFightLobby2
+      x: 0.4993254413844657
+      y: 63.0
+      z: 4.497328095229874
+      yaw: -1.2361407E-4
+      pitch: -1.2000115
+ChickenFightMaps:
+  Lava Island:
+    SpawnsAmount: 20
+    Spawns:
+      '1':
+        world: MiniGames-ChickenFight
+        x: -708.436951277588
+        y: 9.0
+        z: 209.66860641805974
+        yaw: -79.50009
+        pitch: 24.300014
+      '2':
+        world: MiniGames-ChickenFight
+        x: -696.8662718674501
+        y: 6.0
+        z: 217.8067051049791
+        yaw: -220.05011
+        pitch: -2.099988
+      '3':
+        world: MiniGames-ChickenFight
+        x: -710.7701914336545
+        y: 6.0
+        z: 218.3715845443567
+        yaw: -178.2
+        pitch: 3.300011
+      '4':
+        world: MiniGames-ChickenFight
+        x: -706.3330429506002
+        y: 10.0
+        z: 202.30000001192093
+        yaw: -317.1
+        pitch: 11.850007
+      '5':
+        world: MiniGames-ChickenFight
+        x: -716.2828964562198
+        y: 6.0
+        z: 204.01993562725394
+        yaw: -24.000061
+        pitch: 8.10001
+      '6':
+        world: MiniGames-ChickenFight
+        x: -714.6198662930307
+        y: 6.0
+        z: 216.92826977582848
+        yaw: -158.85016
+        pitch: -14.399987
+      '7':
+        world: MiniGames-ChickenFight
+        x: -698.4694588751278
+        y: 6.0
+        z: 201.60489994960284
+        yaw: -350.40027
+        pitch: 5.100014
+      '8':
+        world: MiniGames-ChickenFight
+        x: -689.5137831635438
+        y: 5.0
+        z: 214.77419824156576
+        yaw: -271.3503
+        pitch: -14.549991
+      '9':
+        world: MiniGames-ChickenFight
+        x: -694.5745102916939
+        y: 7.0
+        z: 225.95937894008628
+        yaw: -193.5003
+        pitch: -11.549984
+      '10':
+        world: MiniGames-ChickenFight
+        x: -704.2575967085689
+        y: 7.0
+        z: 222.4300939863262
+        yaw: -324.45032
+        pitch: 21.300014
+      '11':
+        world: MiniGames-ChickenFight
+        x: -717.049813028816
+        y: 6.0
+        z: 219.01214818351016
+        yaw: -152.55022
+        pitch: 9.750021
+      '12':
+        world: MiniGames-ChickenFight
+        x: -711.3000000119209
+        y: 8.0
+        z: 208.7042357505008
+        yaw: -281.85025
+        pitch: 6.7500215
+      '13':
+        world: MiniGames-ChickenFight
+        x: -696.3000000119209
+        y: 6.0
+        z: 208.63746216681915
+        yaw: -237.75012
+        pitch: 27.450018
+      '14':
+        world: MiniGames-ChickenFight
+        x: -710.19027001135
+        y: 6.0
+        z: 201.23597191549223
+        yaw: -337.79993
+        pitch: -0.44998023
+      '15':
+        world: MiniGames-ChickenFight
+        x: -720.094159595392
+        y: 6.0
+        z: 219.39615464685667
+        yaw: -130.05017
+        pitch: 1.800017
+      '16':
+        world: MiniGames-ChickenFight
+        x: -706.8290692320332
+        y: 6.0
+        z: 222.28792350789118
+        yaw: -170.70007
+        pitch: -4.3499846
+      '17':
+        world: MiniGames-ChickenFight
+        x: -718.8661991778099
+        y: 6.0
+        z: 204.4310893484732
+        yaw: -137.5502
+        pitch: -5.099986
+      '18':
+        world: MiniGames-ChickenFight
+        x: -702.0050419732371
+        y: 6.0
+        z: 202.64926938198008
+        yaw: -313.9501
+        pitch: -6.299987
+      '19':
+        world: MiniGames-ChickenFight
+        x: -706.7936507509013
+        y: 8.0
+        z: 208.33925596281904
+        yaw: -44.400055
+        pitch: 4.950023
+      '20':
+        world: MiniGames-ChickenFight
+        x: -702.6538837004047
+        y: 7.0
+        z: 225.99758432157196
+        yaw: -225.9
+        pitch: 2.1000218
+    SpectatorLocation:
+      world: MiniGames-ChickenFight
+      x: -715.962963506739
+      y: 12.666166949343046
+      z: 209.29224900839444
+      yaw: -59.850002
+      pitch: 28.650002
+    BuiltBy: O_o_Fadi_o_O
+  The Netherlands:
+    SpawnsAmount: 20
+    Spawns:
+      '1':
+        world: TheNetherlands
+        x: -2.1515996594479443
+        y: 38.0
+        z: 5.5752405888167305
+        yaw: 0.0
+        pitch: 0.0
+      '2':
+        world: TheNetherlands
+        x: -1.0615556850041936
+        y: 38.0
+        z: 18.44886835911763
+        yaw: -73.499985
+        pitch: 4.7999988
+      '3':
+        world: TheNetherlands
+        x: -19.7311962775724
+        y: 38.0
+        z: 29.528528207389577
+        yaw: 209.1
+        pitch: 0.59998864
+      '4':
+        world: TheNetherlands
+        x: -29.82557504315953
+        y: 38.0
+        z: 14.217282247215481
+        yaw: 241.49995
+        pitch: 4.6499887
+      '5':
+        world: TheNetherlands
+        x: -18.366450342705463
+        y: 38.0
+        z: 3.9093013285685556
+        yaw: 165.0
+        pitch: 8.39999
+      '6':
+        world: TheNetherlands
+        x: -31.262649109079103
+        y: 38.0
+        z: -4.346242829931265
+        yaw: 289.64984
+        pitch: 3.5999906
+      '7':
+        world: TheNetherlands
+        x: -2.370040923458927
+        y: 40.0
+        z: -5.482508504064667
+        yaw: 332.39984
+        pitch: 10.199983
+      '8':
+        world: TheNetherlands
+        x: 12.15703312319852
+        y: 38.0
+        z: -2.880896298354373
+        yaw: 19.049896
+        pitch: -3.3000195
+      '9':
+        world: TheNetherlands
+        x: 3.799144057001669
+        y: 39.0
+        z: 8.655613711359091
+        yaw: 109.799774
+        pitch: 3.449976
+      '10':
+        world: TheNetherlands
+        x: -11.593157394347163
+        y: 38.0
+        z: 3.256586387262293
+        yaw: 20.39972
+        pitch: 9.899973
+      '11':
+        world: TheNetherlands
+        x: 14.203909410916335
+        y: 38.0
+        z: -9.52768806128969
+        yaw: 35.09967
+        pitch: -1.6500127
+      '12':
+        world: TheNetherlands
+        x: 20.132490407177972
+        y: 38.0
+        z: 19.284892227845155
+        yaw: 107.69968
+        pitch: -3.7500107
+      '13':
+        world: TheNetherlands
+        x: 5.387295955077833
+        y: 38.0
+        z: 23.981493304967863
+        yaw: 120.89963
+        pitch: 2.8499885
+      '14':
+        world: TheNetherlands
+        x: -2.0692907503839892
+        y: 38.0
+        z: 6.854801900589184
+        yaw: 325.1997
+        pitch: -6.150013
+      '15':
+        world: TheNetherlands
+        x: -15.661999606184246
+        y: 38.0
+        z: 1.2347341624513954
+        yaw: 22.199493
+        pitch: 6.1499863
+      '16':
+        world: TheNetherlands
+        x: -16.644977752205552
+        y: 39.0
+        z: 13.699999988079071
+        yaw: 119.39963
+        pitch: 27.149986
+      '17':
+        world: TheNetherlands
+        x: -29.730158727157054
+        y: 38.0
+        z: 13.1432746695224
+        yaw: 237.74965
+        pitch: -7.6500025
+      '18':
+        world: TheNetherlands
+        x: -17.30000001192093
+        y: 38.0
+        z: 12.699999988079075
+        yaw: 179.54967
+        pitch: -9.750001
+      '19':
+        world: TheNetherlands
+        x: -32.9296121815466
+        y: 38.0
+        z: -0.6999999880790742
+        yaw: 303.7495
+        pitch: -6.000013
+      '20':
+        world: TheNetherlands
+        x: -17.782702351527327
+        y: 38.0
+        z: -5.989421747926055
+        yaw: 35.699524
+        pitch: -3.3000128
+    SpectatorLocation:
+      world: TheNetherlands
+      x: 5.51130634219958
+      y: 44.288704423289815
+      z: 4.424485603659836
+      yaw: 67.49942
+      pitch: 35.24998
+    BuiltBy: rienk222, casidas, jim5491158
+  Gladiator Arena:
+    SpawnsAmount: 20
+    Spawns:
+      '1':
+        world: HerobrinesTraining
+        x: 1.5956958210431833
+        y: 8.0
+        z: 12.442456552131508
+        yaw: -151.95003
+        pitch: -4.2
+      '2':
+        world: HerobrinesTraining
+        x: -10.364656259933815
+        y: 13.0
+        z: -11.24637084381769
+        yaw: -41.700077
+        pitch: 22.199986
+      '3':
+        world: HerobrinesTraining
+        x: 16.57307484463842
+        y: 8.0
+        z: -10.777783329767201
+        yaw: 55.949917
+        pitch: 0.2999767
+      '4':
+        world: HerobrinesTraining
+        x: 16.843859737339898
+        y: 8.0
+        z: 16.222432235809478
+        yaw: -190.80006
+        pitch: -1.6500243
+      '5':
+        world: HerobrinesTraining
+        x: 1.842417726502379
+        y: 8.0
+        z: 24.383102736549553
+        yaw: -120.30007
+        pitch: 5.549968
+      '6':
+        world: HerobrinesTraining
+        x: -4.707517523338963
+        y: 8.0
+        z: -0.05414792515232951
+        yaw: -112.500046
+        pitch: 7.349955
+      '7':
+        world: HerobrinesTraining
+        x: 17.574617550448725
+        y: 15.0
+        z: 26.69999998807907
+        yaw: -214.35005
+        pitch: -4.3500404
+      '8':
+        world: HerobrinesTraining
+        x: -15.891541460134908
+        y: 10.5
+        z: 5.4966096007371945
+        yaw: -124.19995
+        pitch: 20.099957
+      '9':
+        world: HerobrinesTraining
+        x: 0.8862263106045426
+        y: 8.0
+        z: 16.24101783093785
+        yaw: -159.89995
+        pitch: 19.949957
+      '10':
+        world: HerobrinesTraining
+        x: 6.083510856036526
+        y: 8.0
+        z: 4.010521613405714
+        yaw: 28.950033
+        pitch: -7.050052
+      '11':
+        world: HerobrinesTraining
+        x: 17.75202041427343
+        y: 8.5
+        z: 1.798953264597629
+        yaw: -196.34988
+        pitch: 1.499959
+      '12':
+        world: HerobrinesTraining
+        x: 1.4727595345758515
+        y: 8.0
+        z: -8.598476917368542
+        yaw: -6.2998657
+        pitch: 6.749958
+      '13':
+        world: HerobrinesTraining
+        x: 0.7480219915766131
+        y: 8.0
+        z: 10.114143185550827
+        yaw: -216.29994
+        pitch: -13.200043
+      '14':
+        world: HerobrinesTraining
+        x: -12.51025669347121
+        y: 12.0
+        z: 17.94246286418657
+        yaw: -150.14975
+        pitch: 13.649951
+      '15':
+        world: HerobrinesTraining
+        x: 15.422804040666946
+        y: 13.0
+        z: 21.556219053124828
+        yaw: -220.6496
+        pitch: 11.699952
+      '16':
+        world: HerobrinesTraining
+        x: 17.44261739543277
+        y: 8.0
+        z: 2.9043736472051975
+        yaw: -256.94952
+        pitch: 16.649954
+      '17':
+        world: HerobrinesTraining
+        x: -12.49596162397321
+        y: 6.0
+        z: -2.739876348994881
+        yaw: -42.599426
+        pitch: -8.100059
+      '18':
+        world: HerobrinesTraining
+        x: 28.69999998807907
+        y: 15.0
+        z: -7.455453657750969
+        yaw: -323.84906
+        pitch: 4.9499445
+      '19':
+        world: HerobrinesTraining
+        x: 22.59734600217845
+        y: 8.0
+        z: 9.177753942165078
+        yaw: -248.09875
+        pitch: -4.3500667
+      '20':
+        world: HerobrinesTraining
+        x: -3.351682397585198
+        y: 8.5
+        z: 3.3000000119209254
+        yaw: -110.69891
+        pitch: 4.0499325
+    SpectatorLocation:
+      world: HerobrinesTraining
+      x: -4.881569288881857
+      y: 15.856207688736143
+      z: 7.3123361407275596
+      yaw: -120.74884
+      pitch: 32.249924
+    BuiltBy: 'sharewoods, eekhoorn2000, Selasie'

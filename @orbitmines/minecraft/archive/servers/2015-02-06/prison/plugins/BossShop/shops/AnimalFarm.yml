@@ -1,0 +1,65 @@
+ShopName: AnimalFarm
+signs:
+  text: '[AnimalFarm]'
+  NeedPermissionToCreateSign: true
+shop:
+  Shop1:
+    RewardType: command
+    PriceType: free
+    Reward:
+    - manselect PrisonServer
+    - manuaddp %player% Prison.AnimalFarmTP
+    - sudo %player% AnimalFarmTP
+    - sudo %player% animalfarm1minute
+    MenuItem:
+    - 'id:347'
+    - amount:1
+    - 'name:&c&lAnimal Farm'
+    - 'lore:&7Time: &660 seconds #&7Price:&c 75000$'
+    - amount:1
+    InventoryLocation: 2
+  Shop2:
+    RewardType: command
+    PriceType: free
+    Reward:
+    - manselect PrisonServer
+    - manuaddp %player% Prison.AnimalFarmTP
+    - sudo %player% AnimalFarmTP
+    - sudo %player% animalfarm2minute
+    MenuItem:
+    - 'id:347'
+    - amount:2
+    - 'name:&c&lAnimal Farm'
+    - 'lore:&7Time: &6120 seconds #&7Price:&c 150000$'
+    - amount:2
+    InventoryLocation: 4
+  Shop3:
+    RewardType: command
+    PriceType: free
+    Reward:
+    - manselect PrisonServer
+    - manuaddp %player% Prison.AnimalFarmTP
+    - sudo %player% AnimalFarmTP
+    - sudo %player% animalfarm5minute
+    MenuItem:
+    - 'id:347'
+    - amount:5
+    - 'name:&c&lAnimal Farm'
+    - 'lore:&7Time: &6300 seconds #&7Price:&c 375000$'
+    - amount:5
+    InventoryLocation: 6
+  Shop4:
+    RewardType: command
+    PriceType: free
+    Reward:
+    - manselect PrisonServer
+    - manuaddp %player% Prison.AnimalFarmTP
+    - sudo %player% AnimalFarmTP
+    - sudo %player% animalfarm10minute
+    MenuItem:
+    - 'id:347'
+    - amount:10
+    - 'name:&c&lAnimal Farm'
+    - 'lore:&7Time: &6600 seconds #&7Price:&c 750000$'
+    - amount:10
+    InventoryLocation: 8

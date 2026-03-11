@@ -1,0 +1,6 @@
+Speed: 20
+&81: &f&lkouros22: &4&l11.25 EUR
+&82: &f&leddieirwin: &4&l25.00 EUR
+&83: &f&lalexitron2001: &4&l3.75 EUR
+&84: &f&lknufi360: &4&l7.50 EUR
+&85: &f&lprosam123: &4&l7.50 EUR

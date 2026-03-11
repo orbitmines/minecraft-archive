@@ -1,0 +1,8 @@
+# HiveJumpPads - Messages.yml | Change the Messages 
+
+HiveJumpPads:
+  Messages:
+    No Permissions: '&cYou don´t have the Permissions to execute this Command.'
+    Usage: '&7Please use &6/HiveJumpPads <args>'
+    Reload: '&7Reload ...'
+    Reload Complete: '&7Reload Complete'

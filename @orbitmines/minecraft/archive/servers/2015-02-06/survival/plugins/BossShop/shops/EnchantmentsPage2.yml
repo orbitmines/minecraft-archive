@@ -1,0 +1,371 @@
+ShopName: Enchantments2
+signs:
+  text: '[Enchantments2]'
+  NeedPermissionToCreateSign: true
+shop:
+  Helmet:
+    RewardType: money
+    PriceType: free
+    Reward: 0
+    MenuItem:
+    - type:IRON_HELMET
+    - amount:1
+    - name:&bHelmet Enchantments
+    - amount:1
+    InventoryLocation: 1
+    ExtraPermission: ''
+  HelmetProtection:
+    RewardType: shop
+    PriceType: free
+    Reward: Protection
+    MenuItem:
+    - type:ENCHANTED_BOOK
+    - amount:1
+    - 'name:&cHelmet: &6&nProtection'
+    - amount:1
+    InventoryLocation: 2
+    ExtraPermission: ''
+  HelmetFireProtection:
+    RewardType: shop
+    PriceType: free
+    Reward: FireProtection
+    MenuItem:
+    - type:ENCHANTED_BOOK
+    - amount:1
+    - 'name:&cHelmet: &6&nFire Protection'
+    - amount:1
+    InventoryLocation: 3
+    ExtraPermission: ''
+  HelmetBlastProtection:
+    RewardType: shop
+    PriceType: free
+    Reward: BlastProtection
+    MenuItem:
+    - type:ENCHANTED_BOOK
+    - amount:1
+    - 'name:&cHelmet: &6&nBlast Protection'
+    - amount:1
+    InventoryLocation: 4
+    ExtraPermission: ''
+  HelmetProjectileProtection:
+    RewardType: shop
+    PriceType: free
+    Reward: ProjectileProtection
+    MenuItem:
+    - type:ENCHANTED_BOOK
+    - amount:1
+    - 'name:&cHelmet: &6&nProjectile Protection'
+    - amount:1
+    InventoryLocation: 5
+    ExtraPermission: ''
+  HelmetRespiration:
+    RewardType: shop
+    PriceType: free
+    Reward: Respiration
+    MenuItem:
+    - type:ENCHANTED_BOOK
+    - amount:1
+    - 'name:&cHelmet: &6&nRespiration'
+    - amount:1
+    InventoryLocation: 6
+    ExtraPermission: ''
+  HelmetAquaAffinity:
+    RewardType: shop
+    PriceType: free
+    Reward: AquaAffinity
+    MenuItem:
+    - type:ENCHANTED_BOOK
+    - amount:1
+    - 'name:&cHelmet: &6&nAqua Affinity'
+    - amount:1
+    InventoryLocation: 7
+    ExtraPermission: ''
+  HelmetThorns:
+    RewardType: shop
+    PriceType: free
+    Reward: Thorns
+    MenuItem:
+    - type:ENCHANTED_BOOK
+    - amount:1
+    - 'name:&cHelmet: &6&nThorns'
+    - amount:1
+    InventoryLocation: 8
+    ExtraPermission: ''
+  HelmetUnbreaking:
+    RewardType: shop
+    PriceType: free
+    Reward: Unbreaking
+    MenuItem:
+    - type:ENCHANTED_BOOK
+    - amount:1
+    - 'name:&cHelmet: &6&nUnbreaking'
+    - amount:1
+    InventoryLocation: 9
+    ExtraPermission: ''
+  Chestplate:
+    RewardType: money
+    PriceType: free
+    Reward: 0
+    MenuItem:
+    - type:IRON_CHESTPLATE
+    - amount:1
+    - name:&bChestplate Enchantments
+    - amount:1
+    InventoryLocation: 10
+    ExtraPermission: ''
+  ChestplateProtection:
+    RewardType: shop
+    PriceType: free
+    Reward: Protection
+    MenuItem:
+    - type:ENCHANTED_BOOK
+    - amount:1
+    - 'name:&cChestplate: &6&nProtection'
+    - amount:1
+    InventoryLocation: 11
+    ExtraPermission: ''
+  ChestplateFireProtection:
+    RewardType: shop
+    PriceType: free
+    Reward: FireProtection
+    MenuItem:
+    - type:ENCHANTED_BOOK
+    - amount:1
+    - 'name:&cChestplate: &6&nFire Protection'
+    - amount:1
+    InventoryLocation: 12
+    ExtraPermission: ''
+  ChestplateBlastProtection:
+    RewardType: shop
+    PriceType: free
+    Reward: BlastProtection
+    MenuItem:
+    - type:ENCHANTED_BOOK
+    - amount:1
+    - 'name:&cChestplate: &6&nBlast Protection'
+    - amount:1
+    InventoryLocation: 13
+    ExtraPermission: ''
+  ChestplateProjectileProtection:
+    RewardType: shop
+    PriceType: free
+    Reward: ProjectileProtection
+    MenuItem:
+    - type:ENCHANTED_BOOK
+    - amount:1
+    - 'name:&cChestplate: &6&nProjectile Protection'
+    - amount:1
+    InventoryLocation: 14
+    ExtraPermission: ''
+  ChestplateThorns:
+    RewardType: shop
+    PriceType: free
+    Reward: Thorns
+    MenuItem:
+    - type:ENCHANTED_BOOK
+    - amount:1
+    - 'name:&cChestplate: &6&nThorns'
+    - amount:1
+    InventoryLocation: 15
+    ExtraPermission: ''
+  ChestplateUnbreaking:
+    RewardType: shop
+    PriceType: free
+    Reward: Unbreaking
+    MenuItem:
+    - type:ENCHANTED_BOOK
+    - amount:1
+    - 'name:&cChestplate: &6&nUnbreaking'
+    - amount:1
+    InventoryLocation: 16
+    ExtraPermission: ''
+  Leggings:
+    RewardType: money
+    PriceType: free
+    Reward: 0
+    MenuItem:
+    - type:IRON_LEGGINGS
+    - amount:1
+    - name:&bLeggings Enchantments
+    - amount:1
+    InventoryLocation: 19
+    ExtraPermission: ''
+  LeggingsProtection:
+    RewardType: shop
+    PriceType: free
+    Reward: Protection
+    MenuItem:
+    - type:ENCHANTED_BOOK
+    - amount:1
+    - 'name:&cLeggings: &6&nProtection'
+    - amount:1
+    InventoryLocation: 20
+    ExtraPermission: ''
+  LeggingsFireProtection:
+    RewardType: shop
+    PriceType: free
+    Reward: FireProtection
+    MenuItem:
+    - type:ENCHANTED_BOOK
+    - amount:1
+    - 'name:&cLeggings: &6&nFire Protection'
+    - amount:1
+    InventoryLocation: 21
+    ExtraPermission: ''
+  LeggingsBlastProtection:
+    RewardType: shop
+    PriceType: free
+    Reward: BlastProtection
+    MenuItem:
+    - type:ENCHANTED_BOOK
+    - amount:1
+    - 'name:&cLeggings: &6&nBlast Protection'
+    - amount:1
+    InventoryLocation: 22
+    ExtraPermission: ''
+  LeggingsProjectileProtection:
+    RewardType: shop
+    PriceType: free
+    Reward: ProjectileProtection
+    MenuItem:
+    - type:ENCHANTED_BOOK
+    - amount:1
+    - 'name:&cLeggings: &6&nProjectile Protection'
+    - amount:1
+    InventoryLocation: 23
+    ExtraPermission: ''
+  LeggingsThorns:
+    RewardType: shop
+    PriceType: free
+    Reward: Thorns
+    MenuItem:
+    - type:ENCHANTED_BOOK
+    - amount:1
+    - 'name:&cLeggings: &6&nThorns'
+    - amount:1
+    InventoryLocation: 24
+    ExtraPermission: ''
+  LeggingsUnbreaking:
+    RewardType: shop
+    PriceType: free
+    Reward: Unbreaking
+    MenuItem:
+    - type:ENCHANTED_BOOK
+    - amount:1
+    - 'name:&cLeggings: &6&nUnbreaking'
+    - amount:1
+    InventoryLocation: 25
+    ExtraPermission: ''
+  Boots:
+    RewardType: money
+    PriceType: free
+    Reward: 0
+    MenuItem:
+    - type:IRON_BOOTS
+    - amount:1
+    - name:&bBoots Enchantments
+    - amount:1
+    InventoryLocation: 28
+    ExtraPermission: ''
+  BootsProtection:
+    RewardType: shop
+    PriceType: free
+    Reward: Protection
+    MenuItem:
+    - type:ENCHANTED_BOOK
+    - amount:1
+    - 'name:&cBoots: &6&nProtection'
+    - amount:1
+    InventoryLocation: 29
+    ExtraPermission: ''
+  BootsFireProtection:
+    RewardType: shop
+    PriceType: free
+    Reward: FireProtection
+    MenuItem:
+    - type:ENCHANTED_BOOK
+    - amount:1
+    - 'name:&cBoots: &6&nFire Protection'
+    - amount:1
+    InventoryLocation: 30
+    ExtraPermission: ''
+  BootsBlastProtection:
+    RewardType: shop
+    PriceType: free
+    Reward: BlastProtection
+    MenuItem:
+    - type:ENCHANTED_BOOK
+    - amount:1
+    - 'name:&cBoots: &6&nBlast Protection'
+    - amount:1
+    InventoryLocation: 31
+    ExtraPermission: ''
+  BootsProjectileProtection:
+    RewardType: shop
+    PriceType: free
+    Reward: ProjectileProtection
+    MenuItem:
+    - type:ENCHANTED_BOOK
+    - amount:1
+    - 'name:&cBoots: &6&nProjectile Protection'
+    - amount:1
+    InventoryLocation: 32
+    ExtraPermission: ''
+  BootsThorns:
+    RewardType: shop
+    PriceType: free
+    Reward: Thorns
+    MenuItem:
+    - type:ENCHANTED_BOOK
+    - amount:1
+    - 'name:&cBoots: &6&nThorns'
+    - amount:1
+    InventoryLocation: 33
+    ExtraPermission: ''
+  BootsUnbreaking:
+    RewardType: shop
+    PriceType: free
+    Reward: Unbreaking
+    MenuItem:
+    - type:ENCHANTED_BOOK
+    - amount:1
+    - 'name:&cBoots: &6&nUnbreaking'
+    - amount:1
+    InventoryLocation: 34
+    ExtraPermission: ''
+  BootsFeatherFalling:
+    RewardType: shop
+    PriceType: free
+    Reward: FeatherFalling
+    MenuItem:
+    - type:ENCHANTED_BOOK
+    - amount:1
+    - 'name:&cBoots: &6&nFeather Falling'
+    - amount:1
+    InventoryLocation: 35
+    ExtraPermission: ''
+  BackToMenu:
+    RewardType: shop
+    PriceType: free
+    Reward: Survival
+    MenuItem:
+    - type:REDSTONE_BLOCK
+    - amount:1
+    - name:&a&LSurvival Menu
+    - lore:&8Back to the Survival Menu
+    - amount:1
+    InventoryLocation: 45
+    ExtraPermission: ''
+  Sword:
+    RewardType: shop
+    PriceType: free
+    Reward: Enchantments
+    MenuItem:
+    - type:IRON_SWORD
+    - amount:1
+    - name:&bEnchantments
+    - 'lore: &8&o<<< Previous Page'
+    - amount:1
+    InventoryLocation: 37
+    ExtraPermission: ''
+

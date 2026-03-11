@@ -1,0 +1,65 @@
+ShopName: Food
+signs:
+  text: '[Food]'
+  NeedPermissionToCreateSign: true
+shop:
+  Bread1:
+    RewardType: item
+    PriceType: money
+    Price: 100
+    Reward:
+    - - type:BREAD
+      - amount:1
+    MenuItem:
+    - 'type: BREAD'
+    - amount:1
+    - name:&6&L1 Bread
+    - 'lore:&2&LPrice: &b100$'
+    - amount:1
+    InventoryLocation: 2
+    ExtraPermission: ''
+  Bread16:
+    RewardType: item
+    PriceType: money
+    Price: 1600
+    Reward:
+    - - type:BREAD
+      - amount:16
+    MenuItem:
+    - 'type: BREAD'
+    - amount:16
+    - name:&6&L16 Bread
+    - 'lore:&2&LPrice: &b1600$'
+    - amount:16
+    InventoryLocation: 4
+    ExtraPermission: ''
+  Bread32:
+    RewardType: item
+    PriceType: money
+    Price: 3200
+    Reward:
+    - - type:BREAD
+      - amount:32
+    MenuItem:
+    - 'type: BREAD'
+    - amount:32
+    - name:&6&L32 Bread
+    - 'lore:&2&LPrice: &b3200$'
+    - amount:32
+    InventoryLocation: 6
+    ExtraPermission: ''
+  Bread64:
+    RewardType: item
+    PriceType: money
+    Price: 6400
+    Reward:
+    - - type:BREAD
+      - amount:64
+    MenuItem:
+    - 'type: BREAD'
+    - amount:64
+    - name:&6&L64 Bread
+    - 'lore:&2&LPrice: &b6400$'
+    - amount:64
+    InventoryLocation: 8
+    ExtraPermission: ''

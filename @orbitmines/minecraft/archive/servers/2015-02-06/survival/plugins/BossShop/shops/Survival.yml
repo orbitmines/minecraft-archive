@@ -1,0 +1,85 @@
+ShopName: Survival
+signs:
+  text: '[Survival]'
+  NeedPermissionToCreateSign: true
+shop:
+  Materials:
+    RewardType: shop
+    PriceType: free
+    Reward: Materials
+    MenuItem:
+    - 'type: EMERALD'
+    - amount:1
+    - name:&cMaterials
+    - amount:1
+    InventoryLocation: 1
+    ExtraPermission: 'shop.survival'
+  Food:
+    RewardType: shop
+    PriceType: free
+    Reward: Food
+    MenuItem:
+    - 'type: CAKE'
+    - amount:1
+    - name:&cFood
+    - amount:1
+    InventoryLocation: 2
+    ExtraPermission: 'shop.survival'
+  SpawnEggs:
+    RewardType: shop
+    PriceType: free
+    Reward: SpawnEggs
+    MenuItem:
+    - 'id:383'
+    - 'durability:92'
+    - amount:1
+    - name:&cSpawn Eggs
+    - amount:1
+    InventoryLocation: 3
+    ExtraPermission: 'shop.survival'
+  Tools:
+    RewardType: shop
+    PriceType: free
+    Reward: Tools
+    MenuItem:
+    - type:DIAMOND_PICKAXE
+    - amount:1
+    - name:&cTools
+    - amount:1
+    InventoryLocation: 4
+    ExtraPermission: 'shop.survival'
+  Enchantments:
+    RewardType: shop
+    PriceType: free
+    Reward: Enchantments
+    MenuItem:
+    - type:ENCHANTMENT_TABLE
+    - amount:1
+    - name:&cEnchantments
+    - amount:1
+    InventoryLocation: 5
+    ExtraPermission: 'shop.survival'
+  Blocks:
+    RewardType: shop
+    PriceType: free
+    Reward: Blocks
+    MenuItem:
+    - type:LOG
+    - amount:1
+    - name:&cBlocks
+    - amount:1
+    InventoryLocation: 6
+    ExtraPermission: 'shop.survival'
+  Jobs:
+    RewardType: shop
+    PriceType: free
+    Reward: Jobs
+    MenuItem:
+    - type:IRON_PICKAXE
+    - amount:1
+    - durability:153
+    - name:&cJobs
+    - amount:1
+    InventoryLocation: 8
+    ExtraPermission: 'shop.survival'
+

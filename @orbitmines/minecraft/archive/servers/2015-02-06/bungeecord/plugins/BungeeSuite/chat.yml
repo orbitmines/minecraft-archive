@@ -1,0 +1,13 @@
+Log chat to console: true
+Strip color from log: true
+MutePrivateMessages: true
+NicknameLengthLimit: 16
+UpdateNicknamesOnTab: true
+GlobalChatRegex: \{(factions_.*?)\}
+DefaultChannel: Global
+Prefix:
+  Groups:
+    Default: '&5[Member]'
+Suffix:
+  Groups:
+    Default: '&4'

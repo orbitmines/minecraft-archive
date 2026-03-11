@@ -1,0 +1,31 @@
+general:
+  debugMode: false
+  defaultBalance: 0.0
+  currencyName:
+    singular: token
+    plural: tokens
+messages:
+  prefix: '&7[&dSQLTokens&7] '
+  accessdenied: '&cYou do not have access to that command.'
+  accessdeniedbalanceothers: '&cYou do not have access to check others'' balance.'
+  badname: '&cThe player [player] does not exist!'
+  balance: '&a[balance] [currency]'
+  balanceset: '&a[player]''s balance has been set to [balance] [currency]'
+  paynotenough: '&cYou do not have enough money to do that.'
+  moneysent: '&aYou have successfully paid [player] [amount] [currency].'
+  balanceadd: '&a[balance] [currency] has been added to [player]''s balance'
+  baltopmessage: '&a#[index]: [player] ([balance] [currency])'
+  negative: You must enter a positive amount to pay
+mysql:
+  host: 127.0.0.1
+  port: 3306
+  database: sqltokens
+  username: sqltokens
+  password: password
+redis:
+  enable: true
+  host: 127.0.0.1
+  port: 6379
+  pass: ''
+  default-multiplier: 1
+vault-enabled: true

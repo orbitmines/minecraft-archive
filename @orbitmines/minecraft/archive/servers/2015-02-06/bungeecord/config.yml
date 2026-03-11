@@ -1,0 +1,98 @@
+restricted: false
+player_limit: 500
+ip_forward: false
+permissions:
+  default:
+  - bungeecord.command.server
+  - bungeecord.command.list
+  moderator:
+  - Rank.Moderator
+  - bungeecord.command.send
+  owner:
+  - Rank.Owner
+  - bungeecord.command.alert
+  - bungeecord.command.end
+  - bungeecord.command.send
+  - bungeecord.command.ip
+  - bungeecord.command.reload
+timeout: 30000
+online_mode: true
+servers:
+  hub:
+    address: 77.111.204.68
+    restricted: false
+    motd: '              &8[&6&lOrbitMines &4&lNetwork &3&l1.7&8]                                         &4&l&k!&c&l&k!&6&l&k! &b&l1 Year! &6&l&k!&c&l&k!&4&l&k!'
+    multilinemotd: '              &8[&6&lOrbitMines &4&lNetwork &3&l1.7&8]                                         &4&l&k!&c&l&k!&6&l&k! &b&l1 Year! &6&l&k!&c&l&k!&4&l&k!'
+  minigames:
+    address: 77.111.204.209
+    restricted: false
+    motd: ''
+    multilinemotd: ''
+  kitpvp:
+    address: 77.111.248.172
+    restricted: false
+    motd: ''
+    multilinemotd: ''
+  prison:
+    address: 77.111.236.34
+    restricted: false
+    motd: ''
+    multilinemotd: ''
+  creative:
+    address: 77.111.200.65
+    restricted: false
+    motd: ''
+    multilinemotd: ''
+  survival:
+    address: 77.111.206.117
+    restricted: false
+    motd: ''
+    multilinemotd: ''
+  skyblock:
+    address: 77.111.192.151
+    restricted: false
+    motd: ''
+    multilinemotd: ''
+  alpha:
+    address: 77.111.240.219
+    restricted: false
+    motd: ''
+    multilinemotd: ''
+listeners:
+- max_players: 500
+  fallback_server: hub
+  host: 77.111.240.232
+  bind_local_address: true
+  ping_passthrough: false
+  tab_list: GLOBAL_PING
+  default_server: hub
+  forced_hosts:
+    play.orbitmines.com: hub
+    mc.orbitmines.com: hub
+    pixelmon.orbitmines.com: hub
+    77.111.204.68: hub
+    77.111.204.209: hub
+    alpha.orbitmines.com: hub
+    77.111.248.172: hub
+    77.111.236.34: hub
+    77.111.206.117: hub
+    77.111.200.65: hub
+    77.111.192.151: hub
+  tab_size: 60
+  force_default_server: true
+  motd: ''
+  query_enabled: false
+  query_port: 25577
+disabled_commands:
+- disabledcommandhere
+groups:
+  O_o_Fadi_o_O:
+  - owner
+  eekhoorn2000:
+  - moderator
+  sharewoods:
+  - moderator
+  jim5491158:
+  - moderator
+connection_throttle: -1
+stats: c8896182-6dfc-4ce8-852d-164b2fb639aa

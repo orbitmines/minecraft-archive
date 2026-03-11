@@ -1,0 +1,30 @@
+Knight:
+  cooldown: 1397294912
+  usages: 0
+Tank:
+  cooldown: 1394295618
+  usages: 0
+Assassin:
+  cooldown: 1394296147
+  usages: 0
+Factions:
+  cooldown: 1398598294
+  usages: 0
+Archer:
+  cooldown: 1397295815
+  usages: 0
+Soldier:
+  cooldown: 1397295851
+  usages: 0
+Wizard:
+  cooldown: 1397295823
+  usages: 0
+Necromancer:
+  cooldown: 1397295833
+  usages: 0
+Lord:
+  cooldown: 1397295843
+  usages: 0
+Sniper:
+  cooldown: 1397295865
+  usages: 0

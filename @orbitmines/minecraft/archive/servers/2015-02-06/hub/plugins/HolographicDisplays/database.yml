@@ -1,0 +1,79 @@
+creative:
+  location: Hub,-405.53842959122403,17.0,1034.5509233632965
+  lines:
+  - '&d&lCreative'
+  - '&aPlayers: &c{online: creative}&4/&c100'
+survival:
+  location: Hub,-398.5537412571864,17.0,1023.5002571471571
+  lines:
+  - '&a&lSurvival'
+  - '&aPlayers: &c{online: survival}&4/&c100'
+kitpvp:
+  location: Hub,-394.530985584566,17.0,1023.4865801310823
+  lines:
+  - '&c&lKitPvP'
+  - '&aPlayers: &c{online: kitpvp}&4/&c100'
+prison:
+  location: Hub,-387.4900020250457,17.0,1030.4687526457178
+  lines:
+  - '&4&lPrison'
+  - '&aPlayers: &c{online: prison}&4/&c100'
+donate:
+  location: OrbitMinesHub,408.5219349427161,151.0,7.503835405091023
+  lines:
+  - '{animation: donate1.txt}'
+donate1:
+  location: OrbitMinesHub,408.53791268819185,151.5,7.597558595558339
+  lines:
+  - '&f&lRecent Donations:'
+skyblock:
+  location: Hub,-394.5045977697217,17.0,1041.5258382888337
+  lines:
+  - '&5&lSkyBlock'
+  - '&aPlayers: &c{online: skyblock}&4/&c100'
+news:
+  location: OrbitMinesHub,408.58313129376296,150.85155533097387,-0.5155415312851541
+  lines:
+  - '&6&l&oHALLOWEEN'
+  - '&4&lPrison &c&lv3 &a&l&oComing Soon!'
+u2:
+  location: Hub,-398.4884057166433,17.0,1041.4714676553294
+  lines:
+  - '&8&l&nUnavailable'
+  - '&aPlayers: &c0&4/&c0'
+u3:
+  location: Hub,-405.4803231620724,17.0,1030.5169400869752
+  lines:
+  - '&8&l&nUnavailable'
+  - '&aPlayers: &c0&4/&c0'
+minigames:
+  location: Hub,-387.34171536104515,17.0,1034.5553393044008
+  lines:
+  - '&f&lMiniGames &e&lBETA'
+  - '&aPlayers: &c{online: minigames}&4/&c100'
+news1:
+  location: Hub,-396.5857074784592,19.0,1027.5955164119453
+  lines:
+  - '&6&lOrbitMines &4&lNetwork'
+  - '&4&lPrison &c&lv3 &e&lAlpha&7! &a&o/server alpha'
+  - '&e&lNew: &6&lParkour &7(&3&lHub&7)'
+  - '&e&lNew: &b&lVIP Update&7 Part &b1&7/&b2 &7(&3&lHub&7)'
+  - '&e&lNew: &2&lFriends &a&o/friends'
+  - '&e&lNew: &7&lCustom &a&l/glist &7&l& &a&l/list'
+  - '&e&lNew: &c&lMasterMind &7(&3&lHub&7)'
+ss1:
+  location: Hub,-401.5,17.5,1037.5
+  lines:
+  - '&3&l&nServer Selector'
+ss2:
+  location: Hub,-401.5,17.5,1027.5
+  lines:
+  - '&3&l&nServer Selector'
+ss3:
+  location: Hub,-391.5,17.5,1027.5
+  lines:
+  - '&3&l&nServer Selector'
+ss4:
+  location: Hub,-391.5,17.5,1037.5
+  lines:
+  - '&3&l&nServer Selector'

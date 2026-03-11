@@ -1,0 +1,27 @@
+Tank:
+  cooldown: 1397397785
+  usages: 0
+Bunny:
+  cooldown: 1397398403
+  usages: 0
+Lord:
+  cooldown: 1397397856
+  usages: 0
+Wizard:
+  cooldown: 1397397896
+  usages: 0
+DarkMage:
+  cooldown: 1397397911
+  usages: 0
+Beast:
+  cooldown: 1397398162
+  usages: 0
+Vampire:
+  cooldown: 1397397952
+  usages: 0
+Necromancer:
+  cooldown: 1397398287
+  usages: 0
+Fish:
+  cooldown: 1397398350
+  usages: 0

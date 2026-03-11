@@ -1,0 +1,65 @@
+ShopName: VoteShop3
+signs:
+  text: '[VoteShop3]'
+  NeedPermissionToCreateSign: true
+shop:
+  User:
+    RewardType: shop
+    PriceType: free
+    Reward: VoteShop3-P1
+    MenuItem:
+    - 'type: COAL'
+    - amount:1
+    - 'name:&b&lVote Shop 3'
+    - 'lore:&cRank: &7[&8&lUser&7] #&cProfit: &6100%'
+    - amount:1
+    InventoryLocation: 1
+    ExtraPermission: 'voteshop.3'
+  I-VIP:
+    RewardType: shop
+    PriceType: free
+    Reward: VoteShop3-I-P1
+    MenuItem:
+    - 'type: IRON_INGOT'
+    - amount:1
+    - 'name:&b&lVote Shop 3'
+    - 'lore:&cRank: &8[&7&lVIP&8] #&cProfit: &6100% #&CExtra Profit: &65%'
+    - amount:1
+    InventoryLocation: 3
+    ExtraPermission: 'voteshop.3I'
+  G-VIP:
+    RewardType: shop
+    PriceType: free
+    Reward: VoteShop3-G-P1
+    MenuItem:
+    - 'type: GOLD_INGOT'
+    - amount:1
+    - 'name:&b&lVote Shop 3'
+    - 'lore:&cRank: &6[&e&lVIP&6] #&cProfit: &6100% #&CExtra Profit: &610%'
+    - amount:1
+    InventoryLocation: 5
+    ExtraPermission: 'voteshop.3G'
+  D-VIP:
+    RewardType: shop
+    PriceType: free
+    Reward: VoteShop3-D-P1
+    MenuItem:
+    - 'type: DIAMOND'
+    - amount:1
+    - 'name:&b&lVote Shop 3'
+    - 'lore:&cRank: &b[&9&lVIP&b] #&cProfit: &6100% #&CExtra Profit: &625%'
+    - amount:1
+    InventoryLocation: 7
+    ExtraPermission: 'voteshop.3D'
+  E-VIP:
+    RewardType: shop
+    PriceType: free
+    Reward: VoteShop3-E-P1
+    MenuItem:
+    - 'type: EMERALD'
+    - amount:1
+    - 'name:&b&lVote Shop 3'
+    - 'lore:&cRank: &2[&a&lVIP&2] #&cProfit: &6100% #&CExtra Profit: &650%'
+    - amount:1
+    InventoryLocation: 9
+    ExtraPermission: 'voteshop.3E'

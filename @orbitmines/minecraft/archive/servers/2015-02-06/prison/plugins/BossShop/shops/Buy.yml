@@ -1,0 +1,161 @@
+ShopName: Buy
+signs:
+  text: '[Buy]'
+  NeedPermissionToCreateSign: true
+shop:
+  Dirt:
+    RewardType: item
+    PriceType: money
+    Price: 5000
+    Reward:
+    - - type:DIRT
+      - amount:1
+    MenuItem:
+    - 'type: DIRT'
+    - amount:1
+    - name:&6&L1 Dirt
+    - 'lore:&c&LPrice: &b5000$'
+    - amount:1
+    InventoryLocation: 2
+    ExtraPermission: ''
+  Dirt16:
+    RewardType: item
+    PriceType: money
+    Price: 80000
+    Reward:
+    - - type:DIRT
+      - amount:16
+    MenuItem:
+    - 'type: DIRT'
+    - amount:16
+    - name:&6&L16 Dirt
+    - 'lore:&c&LPrice: &b80000$'
+    - amount:16
+    InventoryLocation: 11
+    ExtraPermission: ''
+  Dirt32:
+    RewardType: item
+    PriceType: money
+    Price: 160000
+    Reward:
+    - - type:DIRT
+      - amount:32
+    MenuItem:
+    - 'type: DIRT'
+    - amount:32
+    - name:&6&L32 Dirt
+    - 'lore:&c&LPrice: &b160000$'
+    - amount:32
+    InventoryLocation: 20
+    ExtraPermission: ''
+  Dirt64:
+    RewardType: item
+    PriceType: money
+    Price: 320000
+    Reward:
+    - - type:DIRT
+      - amount:64
+    MenuItem:
+    - 'type: DIRT'
+    - amount:64
+    - name:&6&L64 Dirt
+    - 'lore:&c&LPrice: &b320000$'
+    - amount:64
+    InventoryLocation: 29
+    ExtraPermission: ''
+  netherwart:
+    RewardType: item
+    PriceType: money
+    Price: 5000
+    Reward:
+    - - type:SOUL_SAND
+      - amount:1
+    MenuItem:
+    - 'type: SOUL_SAND'
+    - amount:1
+    - name:&7&L1 Soul Sand
+    - 'lore:&c&LPrice: &b5000$'
+    - amount:1
+    InventoryLocation: 4
+    ExtraPermission: ''
+  netherwart16:
+    RewardType: item
+    PriceType: money
+    Price: 80000
+    Reward:
+    - - type:SOUL_SAND
+      - amount:16
+    MenuItem:
+    - 'type: SOUL_SAND'
+    - amount:16
+    - name:&7&L16 Soul Sand
+    - 'lore:&c&LPrice: &b80000$'
+    - amount:16
+    InventoryLocation: 13
+    ExtraPermission: ''
+  netherwart32:
+    RewardType: item
+    PriceType: money
+    Price: 160000
+    Reward:
+    - - type:SOUL_SAND
+      - amount:32
+    MenuItem:
+    - 'type: SOUL_SAND'
+    - amount:32
+    - name:&7&L32 Soul Sand
+    - 'lore:&c&LPrice: &b160000$'
+    - amount:32
+    InventoryLocation: 22
+    ExtraPermission: ''
+  netherwart64:
+    RewardType: item
+    PriceType: money
+    Price: 320000
+    Reward:
+    - - type:SOUL_SAND
+      - amount:64
+    MenuItem:
+    - 'type: SOUL_SAND'
+    - amount:64
+    - name:&7&L64 Soul Sand
+    - 'lore:&c&LPrice: &b320000$'
+    - amount:64
+    InventoryLocation: 31
+    ExtraPermission: ''
+  water:
+    RewardType: item
+    PriceType: money
+    Price: 15000
+    Reward:
+    - - type:WATER_BUCKET
+      - amount:1
+    MenuItem:
+    - 'type: WATER_BUCKET'
+    - amount:1
+    - name:&b&L1 Water Bucket
+    - 'lore:&c&LPrice: &b15000$'
+    - amount:1
+    InventoryLocation: 6
+    ExtraPermission: ''
+  piackaxe:
+    RewardType: item
+    PriceType: money
+    Price: 325000
+    Reward:
+    - - type:DIAMOND_PICKAXE
+      - enchantment:DURABILITY#4
+      - enchantment:LOOT_BONUS_BLOCKS#2
+      - enchantment:DIG_SPEED#4
+      - amount:1
+    MenuItem:
+    - type:DIAMOND_PICKAXE
+    - enchantment:DURABILITY#4
+    - enchantment:LOOT_BONUS_BLOCKS#2
+    - enchantment:DIG_SPEED#4
+    - amount:1
+    - name:&b1 Starter Pickaxe
+    - 'lore:&c&LPrice: &b325000$'
+    - amount:1
+    InventoryLocation: 8
+    ExtraPermission: ''

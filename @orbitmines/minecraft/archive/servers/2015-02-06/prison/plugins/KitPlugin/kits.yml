@@ -1,0 +1,611 @@
+# Enchantment IDs and config explanation can be found here: http://dev.bukkit.org/bukkit-plugins/kitplugin/pages/kits-config-v6-1/
+Prison:
+  items:
+    sword:
+      id: 267
+      data: 0
+      amount: 1
+      enchantments:
+      - 16,3
+      - 20,1
+      lore: []
+      name: '&bStarter Sword'
+      slot: inventory
+    pickaxe:
+      id: 278
+      data: 0
+      amount: 1
+      enchantments:
+      - 32,4
+      - 34,4
+      - 35,2
+      lore: []
+      name: '&bStarter Pickaxe'
+      slot: inventory
+    axe:
+      id: 258
+      data: 0
+      amount: 1
+      enchantments:
+      - 32,4
+      - 34,4
+      lore: []
+      name: '&bStarter Axe'
+      slot: inventory
+    shovel:
+      id: 256
+      data: 0
+      amount: 1
+      enchantments:
+      - 32,4
+      - 34,4
+      lore: []
+      name: '&bStarter Shovel'
+      slot: inventory
+    hoe:
+      id: 292
+      data: 0
+      amount: 1
+      enchantments:
+      - 32,4
+      - 34,4
+      lore: []
+      name: '&bStarter Hoe'
+      slot: inventory
+    helmet:
+      id: 306
+      data: 0
+      amount: 1
+      enchantments:
+      - 0,2
+      - 1,1
+      - 34,1
+      lore: []
+      name: '&bStarter Helmet'
+      slot: helmet
+    chestplate:
+      id: 307
+      data: 0
+      amount: 1
+      enchantments:
+      - 0,2
+      - 1,1
+      - 34,1
+      lore: []
+      name: '&bStarter Chestplate'
+      slot: chestplate
+    leggings:
+      id: 308
+      data: 0
+      amount: 1
+      enchantments:
+      - 0,2
+      - 1,1
+      - 34,1
+      lore: []
+      name: '&bStarter Leggings'
+      slot: leggings
+    boots:
+      id: 309
+      data: 0
+      amount: 1
+      enchantments:
+      - 0,2
+      - 1,1
+      - 34,1
+      lore: []
+      name: '&bStarter Boots'
+      slot: boots
+    Apple:
+      id: 322
+      amount: 10
+      lore: []
+      name: ''
+      slot: inventory
+    Bread:
+      id: 297
+      amount: 64
+      lore: []
+      name: ''
+      slot: inventory
+  commands: []
+  removeeffects: true
+  effects: []
+  givemoney: 0
+  givexp: 0
+  usages: 0
+  clearinv: false
+  cleararmor: false
+  cooldown: 432000
+  price: 0
+  message: '&bYou received the &4&LPrison &bstarter kit'
+IronVIP:
+  items:
+    sword:
+      id: 276
+      data: 0
+      amount: 1
+      enchantments:
+      - 16,3
+      - 20,1
+      lore: []
+      name: '&7&lIron VIP Sword'
+      slot: inventory
+    pickaxe:
+      id: 278
+      data: 0
+      amount: 1
+      enchantments:
+      - 32,4
+      - 34,4
+      - 35,3
+      lore: []
+      name: '&7&lIron VIP Pickaxe'
+      slot: inventory
+    axe:
+      id: 258
+      data: 0
+      amount: 1
+      enchantments:
+      - 32,4
+      - 34,4
+      lore: []
+      name: '&7&lIron VIP Axe'
+      slot: inventory
+    shovel:
+      id: 256
+      data: 0
+      amount: 1
+      enchantments:
+      - 32,4
+      - 34,4
+      lore: []
+      name: '&7&lIron VIP Shovel'
+      slot: inventory
+    hoe:
+      id: 292
+      data: 0
+      amount: 1
+      enchantments:
+      - 32,4
+      - 34,4
+      lore: []
+      name: '&7&lIron VIP Hoe'
+      slot: inventory
+    helmet:
+      id: 306
+      data: 0
+      amount: 1
+      enchantments:
+      - 0,3
+      - 1,2
+      - 34,2
+      lore: []
+      name: '&7&lIron VIP Helmet'
+      slot: helmet
+    chestplate:
+      id: 311
+      data: 0
+      amount: 1
+      enchantments:
+      - 0,3
+      - 1,2
+      - 34,2
+      lore: []
+      name: '&7&lIron VIP Chestplate'
+      slot: chestplate
+    leggings:
+      id: 308
+      data: 0
+      amount: 1
+      enchantments:
+      - 0,3
+      - 1,2
+      - 34,2
+      lore: []
+      name: '&7&lIron VIP Leggings'
+      slot: leggings
+    boots:
+      id: 309
+      data: 0
+      amount: 1
+      enchantments:
+      - 0,3
+      - 1,2
+      - 34,2
+      lore: []
+      name: '&7&lIron VIP Boots'
+      slot: boots
+    Apple:
+      id: 322
+      amount: 15
+      lore: []
+      name: ''
+      slot: inventory
+    Bread:
+      id: 364
+      amount: 64
+      lore: []
+      name: ''
+      slot: inventory
+  commands: []
+  removeeffects: true
+  effects: []
+  givemoney: 0
+  givexp: 0
+  usages: 0
+  clearinv: false
+  cleararmor: false
+  cooldown: 432000
+  price: 0
+  message: '&bYou received the &4&LPrison &7&lIron VIP&b kit'
+GoldVIP:
+  items:
+    sword:
+      id: 276
+      data: 0
+      amount: 1
+      enchantments:
+      - 16,3
+      - 20,1
+      - 19,1
+      lore: []
+      name: '&6&lGold VIP Sword'
+      slot: inventory
+    pickaxe:
+      id: 278
+      data: 0
+      amount: 1
+      enchantments:
+      - 32,5
+      - 34,5
+      - 35,4
+      lore: []
+      name: '&6&lGold VIP Pickaxe'
+      slot: inventory
+    axe:
+      id: 258
+      data: 0
+      amount: 1
+      enchantments:
+      - 32,4
+      - 34,4
+      lore: []
+      name: '&6&lGold VIP Axe'
+      slot: inventory
+    shovel:
+      id: 277
+      data: 0
+      amount: 1
+      enchantments:
+      - 32,4
+      - 34,4
+      lore: []
+      name: '&6&lGold VIP Shovel'
+      slot: inventory
+    hoe:
+      id: 292
+      data: 0
+      amount: 1
+      enchantments:
+      - 32,4
+      - 34,4
+      lore: []
+      name: '&6&lGold VIP Hoe'
+      slot: inventory
+    helmet:
+      id: 306
+      data: 0
+      amount: 1
+      enchantments:
+      - 0,4
+      - 1,3
+      - 34,3
+      lore: []
+      name: '&6&lGold VIP Helmet'
+      slot: helmet
+    chestplate:
+      id: 311
+      data: 0
+      amount: 1
+      enchantments:
+      - 0,4
+      - 1,3
+      - 34,3
+      lore: []
+      name: '&6&lGold VIP Chestplate'
+      slot: chestplate
+    leggings:
+      id: 312
+      data: 0
+      amount: 1
+      enchantments:
+      - 0,4
+      - 1,3
+      - 34,3
+      lore: []
+      name: '&6&lGold VIP Leggings'
+      slot: leggings
+    boots:
+      id: 309
+      data: 0
+      amount: 1
+      enchantments:
+      - 0,4
+      - 1,3
+      - 34,3
+      lore: []
+      name: '&6&lGold VIP Boots'
+      slot: boots
+    Apple:
+      id: 322
+      amount: 20
+      lore: []
+      name: ''
+      slot: inventory
+    Bread:
+      id: 364
+      amount: 64
+      lore: []
+      name: ''
+      slot: inventory
+  commands: []
+  removeeffects: true
+  effects: []
+  givemoney: 0
+  givexp: 0
+  usages: 0
+  clearinv: false
+  cleararmor: false
+  cooldown: 432000
+  price: 0
+  message: '&bYou received the &4&LPrison &6&lGold VIP&b kit'
+DiamondVIP:
+  items:
+    sword:
+      id: 276
+      data: 0
+      amount: 1
+      enchantments:
+      - 16,3
+      - 20,1
+      - 19,2
+      lore: []
+      name: '&b&lDiamond VIP Sword'
+      slot: inventory
+    pickaxe:
+      id: 278
+      data: 0
+      amount: 1
+      enchantments:
+      - 32,6
+      - 34,6
+      - 35,6
+      lore: []
+      name: '&b&lDiamond VIP Pickaxe'
+      slot: inventory
+    axe:
+      id: 279
+      data: 0
+      amount: 1
+      enchantments:
+      - 32,5
+      - 34,4
+      lore: []
+      name: '&b&lDiamond VIP Axe'
+      slot: inventory
+    shovel:
+      id: 277
+      data: 0
+      amount: 1
+      enchantments:
+      - 32,5
+      - 34,4
+      lore: []
+      name: '&b&lDiamond VIP Shovel'
+      slot: inventory
+    hoe:
+      id: 293
+      data: 0
+      amount: 1
+      enchantments:
+      - 32,5
+      - 34,4
+      lore: []
+      name: '&b&lDiamond VIP Hoe'
+      slot: inventory
+    helmet:
+      id: 310
+      data: 0
+      amount: 1
+      enchantments:
+      - 0,6
+      - 1,5
+      - 34,5
+      lore: []
+      name: '&b&lDiamond VIP Helmet'
+      slot: helmet
+    chestplate:
+      id: 311
+      data: 0
+      amount: 1
+      enchantments:
+      - 0,6
+      - 1,5
+      - 34,5
+      lore: []
+      name: '&b&lDiamond VIP Chestplate'
+      slot: chestplate
+    leggings:
+      id: 312
+      data: 0
+      amount: 1
+      enchantments:
+      - 0,6
+      - 1,5
+      - 34,5
+      lore: []
+      name: '&b&lDiamond VIP Leggings'
+      slot: leggings
+    boots:
+      id: 313
+      data: 0
+      amount: 1
+      enchantments:
+      - 0,6
+      - 1,5
+      - 34,5
+      lore: []
+      name: '&b&lDiamond VIP Boots'
+      slot: boots
+    Apple:
+      id: 322
+      amount: 32
+      lore: []
+      name: ''
+      slot: inventory
+    Bread:
+      id: 364
+      amount: 64
+      lore: []
+      name: ''
+      slot: inventory
+  commands: []
+  removeeffects: true
+  effects: []
+  givemoney: 0
+  givexp: 0
+  usages: 0
+  clearinv: false
+  cleararmor: false
+  cooldown: 432000
+  price: 0
+  message: '&bYou received the &4&LPrison &b&lDiamond VIP&b kit'
+EmeraldVIP:
+  items:
+    sword:
+      id: 276
+      data: 0
+      amount: 1
+      enchantments:
+      - 16,4
+      - 20,2
+      - 19,2
+      lore: []
+      name: '&a&lEmerald VIP Sword'
+      slot: inventory
+    pickaxe:
+      id: 278
+      data: 0
+      amount: 1
+      enchantments:
+      - 32,7
+      - 34,7
+      - 35,9
+      lore: []
+      name: '&a&lEmerald VIP Pickaxe'
+      slot: inventory
+    axe:
+      id: 279
+      data: 0
+      amount: 1
+      enchantments:
+      - 32,6
+      - 34,4
+      lore: []
+      name: '&a&lEmerald VIP Axe'
+      slot: inventory
+    shovel:
+      id: 277
+      data: 0
+      amount: 1
+      enchantments:
+      - 32,6
+      - 34,4
+      lore: []
+      name: '&a&lEmerald VIP Shovel'
+      slot: inventory
+    hoe:
+      id: 293
+      data: 0
+      amount: 1
+      enchantments:
+      - 32,6
+      - 34,4
+      lore: []
+      name: '&a&lEmerald VIP Hoe'
+      slot: inventory
+    helmet:
+      id: 310
+      data: 0
+      amount: 1
+      enchantments:
+      - 0,8
+      - 1,6
+      - 34,6
+      lore: []
+      name: '&a&lEmerald VIP Helmet'
+      slot: helmet
+    chestplate:
+      id: 311
+      data: 0
+      amount: 1
+      enchantments:
+      - 0,8
+      - 1,6
+      - 34,6
+      lore: []
+      name: '&a&lEmerald VIP Chestplate'
+      slot: chestplate
+    leggings:
+      id: 312
+      data: 0
+      amount: 1
+      enchantments:
+      - 0,8
+      - 1,6
+      - 34,6
+      lore: []
+      name: '&a&lEmerald VIP Leggings'
+      slot: leggings
+    boots:
+      id: 313
+      data: 0
+      amount: 1
+      enchantments:
+      - 0,8
+      - 1,6
+      - 34,6
+      lore: []
+      name: '&a&lEmerald VIP Boots'
+      slot: boots
+    Apple:
+      id: 322
+      amount: 32
+      lore: []
+      name: ''
+      slot: inventory
+    Apple2:
+      id: 322
+      amount: 1
+      data: 1
+      lore: []
+      name: ''
+      slot: inventory
+    Bread:
+      id: 364
+      amount: 64
+      lore: []
+      name: ''
+      slot: inventory
+  commands: []
+  removeeffects: true
+  effects: []
+  givemoney: 0
+  givexp: 0
+  usages: 0
+  clearinv: false
+  cleararmor: false
+  cooldown: 432000
+  price: 0
+  message: '&bYou received the &4&LPrison &a&lEmerald VIP&b kit'

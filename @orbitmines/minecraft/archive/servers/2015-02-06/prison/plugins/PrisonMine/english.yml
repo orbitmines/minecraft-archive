@@ -1,0 +1,25 @@
+general:
+  title: '[Prison]'
+  title-success: '&8[&4&lPrison&8]'
+  title-error: '&8[&4&lPrison&8]'
+error:
+  mine-name: The &c<ID>&7 does not exist!
+  mine-not-selected: Select a mine first with &e/mine edit <name>
+  removing-air: This value is calculated automatically
+editing:
+  mine-selected-successfully: Mine &e<ID>&f has been selected
+  mine-deselected-successfully: Mine &e<ID>&f is no longer selected
+reset:
+  manual-reset-successful: '&7The &6<NAME>&7 have been reset!'
+  automatic-reset-warning: '&7The &6<NAME>&7 will reset in &6<NTIME>&7 minute(s).'
+  automatic-reset-successful: '&7The &6<NAME>&7 have been reset!'
+  timed-reset-successful: '&7The &6<NAME>&7 have been reset! Next reset in &6<PTIME>&7
+    minute(s).'
+  composition-reset-successful: '&7The &6<NAME>&7 have been reset!'
+  mine-cooldown: '&7The &6<NAME>&7 can be reset in &6<COOLENDS>&7 minute(s).'
+sign:
+  title: '&e<NAME>&0'
+  withdraw: '&b<PRICE> &fhas been withdrawn from your account!'
+  funds: You do not have enough money to reset the mine!
+misc:
+  mine-teleport: You have been teleported to &6<NAME>&f

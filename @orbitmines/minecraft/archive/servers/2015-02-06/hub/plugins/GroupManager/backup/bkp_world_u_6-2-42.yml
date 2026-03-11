@@ -1,0 +1,545 @@
+users:
+  123pika456:
+    group: User
+    subgroups: []
+    permissions:
+    - essentials.afk
+    - essentials.nick
+    - Rank.Gold
+    - Rank.Iron
+    info:
+      prefix: '&6&lGold &6'
+  12olivier34:
+    group: User
+    subgroups: []
+    permissions:
+    - essentials.afk
+    - essentials.nick
+    - essentials.nick.color
+    - Rank.Diamond
+    - Rank.Gold
+    - Rank.Iron
+    info:
+      prefix: '&9&lDiamond &9'
+  Afrobob1234:
+    group: User
+    subgroups: []
+    permissions:
+    - essentials.nick
+    - essentials.nick.color
+    - essentials.nick.format
+  AntiFighting:
+    group: User
+    subgroups: []
+    permissions:
+    - essentials.afk
+    - Rank.Iron
+    info:
+      prefix: '&7&lIron &7'
+  bartdecoolste:
+    group: User
+    subgroups: []
+    permissions:
+    - essentials.afk
+    - essentials.nick
+    - essentials.nick.color
+    - Rank.Diamond
+    - Rank.Gold
+    - Rank.Iron
+    info:
+      prefix: '&9&lDiamond &9'
+  basteti:
+    group: User
+    subgroups: []
+    permissions: []
+    info:
+      prefix: '&b&lMod &b'
+  Bryan20027:
+    group: User
+    subgroups: []
+    permissions:
+    - -Rank.Owner
+    - -Rank.Mod
+    - essentials.afk
+    - essentials.nick
+    - essentials.nick.color
+    - essentials.nick.format
+    - essentials.nick.magic
+    - Rank.Diamond
+    - Rank.Gold
+    - Rank.Iron
+    info:
+      prefix: '&9&lDiamond &9'
+  casidas:
+    group: User
+    subgroups: []
+    permissions:
+    - -Rank.Owner
+    - -Rank.Moderator
+    - multiverse.access.*
+    - mycommand.cmd.5
+    - Rank.Builder
+    info:
+      prefix: '&d&lBuilder &d'
+  cooleromeo:
+    group: User
+    subgroups: []
+    permissions:
+    - essentials.afk
+    - essentials.nick
+    - essentials.nick.color
+    - essentials.nick.format
+    - essentials.nick.magic
+    - Rank.Diamond
+    - Rank.Emerald
+    - Rank.Gold
+    - Rank.Iron
+    info:
+      prefix: '&a&lEmerald &a'
+  djbart2002:
+    group: User
+    subgroups: []
+    permissions:
+    - essentials.afk
+    - Rank.Iron
+    info:
+      prefix: '&7&lIron &7'
+  draidstaiger:
+    group: User
+    subgroups: []
+    permissions:
+    - essentials.afk
+    - Rank.Iron
+    info:
+      prefix: '&7&lIron &7'
+  eddieirwin:
+    group: User
+    subgroups: []
+    permissions:
+    - essentials.afk
+    - essentials.nick
+    - essentials.nick.color
+    - essentials.nick.format
+    - essentials.nick.magic
+    - Rank.Diamond
+    - Rank.Emerald
+    - Rank.Gold
+    - Rank.Iron
+    info:
+      prefix: '&a&lEmerald &a'
+  eekhoorn2000:
+    group: User
+    subgroups: []
+    permissions:
+    - -Rank.Owner
+    - -Rank.Emerald
+    - -Rank.Diamond
+    - -Rank.Gold
+    - -Rank.Iron
+    - essentials.ban
+    - essentials.kick
+    - essentials.mute
+    - essentials.tp
+    - essentials.tp.others
+    - Rank.Moderator
+    info:
+      prefix: '&b&lMod &b'
+  eliboycool:
+    group: User
+    subgroups: []
+    permissions:
+    - essentials.afk
+    - essentials.nick
+    - essentials.nick.color
+    - Rank.Diamond
+    - Rank.Gold
+    - Rank.Iron
+    info:
+      prefix: '&9&lDiamond &9'
+  gapisabelle:
+    group: User
+    subgroups: []
+    permissions:
+    - essentials.afk
+    - essentials.nick
+    - Rank.Gold
+    - Rank.Iron
+    info:
+      prefix: '&6&lGold &6'
+  garethirwin:
+    group: User
+    subgroups: []
+    permissions:
+    - essentials.afk
+    - essentials.nick
+    - essentials.nick.color
+    - Rank.Diamond
+    - Rank.Gold
+    - Rank.Iron
+    info:
+      prefix: '&9&lDiamond &9'
+  gwnluca:
+    group: User
+    subgroups: []
+    permissions:
+    - essentials.afk
+    - essentials.nick
+    - essentials.nick.color
+    - essentials.nick.format
+    - essentials.nick.magic
+    - Rank.Diamond
+    - Rank.Emerald
+    - Rank.Gold
+    - Rank.Iron
+    info:
+      prefix: '&a&lEmerald &a'
+  iefke:
+    group: User
+    subgroups: []
+    permissions:
+    - essentials.afk
+    - essentials.nick
+    - essentials.nick.color
+    - essentials.nick.format
+    - essentials.nick.magic
+    - Rank.Diamond
+    - Rank.Emerald
+    - Rank.Gold
+    - Rank.Iron
+    info:
+      prefix: '&a&lEmerald &a'
+  ivano2004:
+    group: User
+    subgroups: []
+    permissions:
+    - essentials.afk
+    - essentials.nick
+    - essentials.nick.color
+    - Rank.Diamond
+    - Rank.Gold
+    - Rank.Iron
+    info:
+      prefix: '&9&lDiamond &9'
+  jarischreuder:
+    group: User
+    subgroups: []
+    permissions:
+    - essentials.afk
+    - essentials.nick
+    - essentials.nick.color
+    - Rank.Diamond
+    - Rank.Gold
+    - Rank.Iron
+    info:
+      prefix: '&9&lDiamond &9'
+  jasonboy7:
+    group: User
+    subgroups: []
+    permissions:
+    - essentials.afk
+    - essentials.nick
+    - essentials.nick.color
+    - Rank.Diamond
+    - Rank.Gold
+    - Rank.Iron
+    info:
+      prefix: '&9&lDiamond &9'
+  jim5491158:
+    group: User
+    subgroups: []
+    permissions:
+    - -Rank.Owner
+    - essentials.afk
+    - essentials.ban
+    - essentials.kick
+    - essentials.nick
+    - essentials.tempban
+    - essentials.vanish
+    - Rank.Gold
+    - Rank.Iron
+    - Rank.Moderator
+    info:
+      prefix: '&b&lMod &b'
+  jomancool55:
+    group: User
+    subgroups: []
+    permissions:
+    - essentials.afk
+    - essentials.nick
+    - essentials.nick.color
+    - Rank.Diamond
+    - Rank.Gold
+    - Rank.Iron
+    info:
+      prefix: '&9&lDiamond &9'
+  kevinkeijzer2004:
+    group: User
+    subgroups: []
+    permissions:
+    - essentials.afk
+    - essentials.nick
+    - essentials.nick.color
+    - Rank.Diamond
+    - Rank.Gold
+    - Rank.Iron
+    info:
+      prefix: '&9&lDiamond &9'
+  Koning_paul:
+    group: User
+    subgroups: []
+    permissions:
+    - essentials.afk
+    - essentials.nick
+    - essentials.nick.color
+    - Rank.Diamond
+    - Rank.Gold
+    - Rank.Iron
+    info:
+      prefix: '&9&lDiamond &9'
+  koningstan112:
+    group: User
+    subgroups: []
+    permissions:
+    - essentials.afk
+    - essentials.nick
+    - Rank.Gold
+    - Rank.Iron
+    info:
+      prefix: '&6&lGold &6'
+  Kornstar2010:
+    group: User
+    subgroups: []
+    permissions:
+    - essentials.afk
+    - essentials.nick
+    - Rank.Gold
+    - Rank.Iron
+    info:
+      prefix: '&6&lGold &6'
+  marioandbowser30:
+    group: User
+    subgroups: []
+    permissions:
+    - essentials.afk
+    - essentials.nick
+    - essentials.nick.color
+    - essentials.nick.format
+    - essentials.nick.magic
+    - Rank.Diamond
+    - Rank.Emerald
+    - Rank.Gold
+    - Rank.Iron
+    info:
+      prefix: '&a&lEmerald &a'
+  masterroos:
+    group: User
+    subgroups: []
+    permissions:
+    - essentials.afk
+    - Rank.Iron
+    info:
+      prefix: '&7&lIron &7'
+  matt20041:
+    group: User
+    subgroups: []
+    permissions:
+    - essentials.afk
+    - essentials.nick
+    - essentials.nick.color
+    - Rank.Diamond
+    - Rank.Gold
+    - Rank.Iron
+    info:
+      prefix: '&9&lDiamond &9'
+  Maxioncraft:
+    group: User
+    subgroups: []
+    permissions:
+    - essentials.afk
+    - Rank.Iron
+    info:
+      prefix: '&7&lIron &7'
+  Milanekke:
+    group: User
+    subgroups: []
+    permissions:
+    - essentials.afk
+    - essentials.nick
+    - essentials.nick.color
+    - Rank.Diamond
+    - Rank.Gold
+    - Rank.Iron
+    info:
+      prefix: '&9&lDiamond &9'
+  NL_NOOBSLAYER:
+    group: User
+    subgroups: []
+    permissions:
+    - essentials.afk
+    - essentials.nick
+    - essentials.nick.color
+    - Rank.Diamond
+    - Rank.Gold
+    - Rank.Iron
+    info:
+      prefix: '&9&lDiamond &9'
+  NovaStormWon:
+    group: User
+    subgroups: []
+    permissions:
+    - essentials.afk
+    - Rank.Iron
+    info:
+      prefix: '&7&lIron &7'
+  O_o_Fadi_o_O:
+    group: User
+    subgroups: []
+    permissions:
+    - ChatColor.ColorList
+    - ChatColor.DARK_GREY
+    - ChatColor.GREY
+    - ChatColor.PURPLE
+    - ChatColor.SetColor
+    - essentials.afk
+    - essentials.nick
+    - Hub.Fly
+    - HubFly.Use
+    - libsdisguises.disguise.chicken
+    - libsdisguises.disguise.cow
+    - libsdisguises.disguise.pig
+    - libsdisguises.undisguise
+    - Rank.Gold
+    - Rank.Iron
+    - smoketrail.use.off
+    - smoketrail.use.snow
+    - smoketrail.use.sweat
+    - staffsecure.staff
+    info:
+      '&4&lOwner': '&4'
+      prefix: '&4&lOwner &4'
+  playwarrior:
+    group: User
+    subgroups: []
+    permissions:
+    - essentials.afk
+    - essentials.nick
+    - Rank.Gold
+    - Rank.Iron
+    info:
+      prefix: '&6&lGold &6'
+  rachtanos:
+    group: User
+    subgroups: []
+    permissions:
+    - essentials.afk
+    - Rank.Iron
+    info:
+      prefix: '&7&lIron &7'
+  Ragthanatos1500:
+    group: User
+    subgroups: []
+    permissions:
+    - essentials.afk
+    - Rank.Iron
+    info:
+      prefix: '&7&lIron &7'
+  regonize11:
+    group: User
+    subgroups: []
+    permissions:
+    - essentials.afk
+    - Rank.Iron
+    info:
+      prefix: '&7&lIron &7'
+  rienk222:
+    group: User
+    subgroups: []
+    permissions:
+    - -Rank.Owner
+    - -Rank.Moderator
+    - essentials.afk
+    - essentials.nick
+    - multiverse.access.*
+    - mycommand.cmd.5
+    - Rank.Builder
+    - Rank.Gold
+    - Rank.Iron
+    info:
+      prefix: '&6&lGold &8| &d&lBuilder &d'
+  Riraroe:
+    group: User
+    subgroups: []
+    permissions:
+    - essentials.afk
+    - essentials.nick
+    - Rank.Gold
+    - Rank.Iron
+    info:
+      prefix: '&6&lGold &6'
+  Selasie:
+    group: User
+    subgroups: []
+    permissions:
+    - -Rank.Owner
+  sharewoods:
+    group: User
+    subgroups: []
+    permissions:
+    - -Rank.Owner
+    - -Rank.Gold
+    - -Rank.Diamond
+    - -Rank.Emerald
+    - essentials.afk
+    - essentials.mute
+    - Rank.Iron
+    - Rank.Moderator
+    info:
+      prefix: '&7&lIron &8| &b&lMod &b'
+  SkyPoes:
+    group: User
+    subgroups: []
+    permissions:
+    - essentials.afk
+    - essentials.nick
+    - Rank.Gold
+    - Rank.Iron
+    info:
+      prefix: '&6&lGold &6'
+  SterreHaasnoot:
+    group: User
+    subgroups: []
+    permissions:
+    - essentials.afk
+    - essentials.nick
+    - Rank.Gold
+    - Rank.Iron
+    info:
+      prefix: '&6&lGold &6'
+  Teleport1409:
+    group: User
+    subgroups: []
+    permissions:
+    - essentials.afk
+    - Rank.Iron
+    info:
+      prefix: '&7&lIron &7'
+  WOUT2004ANIKIN:
+    group: User
+    subgroups: []
+    permissions:
+    - essentials.afk
+    - essentials.nick
+    - Rank.Gold
+    - Rank.Iron
+    info:
+      prefix: '&6&lGold &6'
+  Xzero119:
+    group: User
+    subgroups: []
+    permissions:
+    - essentials.afk
+    - essentials.nick
+    - Rank.Gold
+    - Rank.Iron
+    info:
+      prefix: '&6&lGold &6'

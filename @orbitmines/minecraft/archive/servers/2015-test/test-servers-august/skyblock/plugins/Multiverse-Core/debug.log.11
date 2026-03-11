@@ -1,0 +1,20 @@
+2015-03-03 13:57:45 [INFO] [Multiverse-Core] - Version 2.4-b527 (API v14) Enabled - By Rigby, fernferret, lithium3141 and main--
+2015-03-03 13:57:45 [INFO] [Multiverse-Core] Loading World & Settings - 'SkyBlock' - Env: NORMAL - Type: NORMAL & seed: 3338212099041922795 & generator: SkyBlock
+2015-03-03 13:57:45 [WARNING] [Multiverse-Core] Spawn location from world.dat file was unsafe. Adjusting...
+2015-03-03 13:57:45 [WARNING] [Multiverse-Core] Original Location: X: -1 Y: 100 Z: 3 P: 0 Y: 0 
+2015-03-03 13:57:45 [INFO] [Multiverse-Core] New Spawn for 'SkyBlock' is Located at: SkyBlock:-0,50,99,00,4,50:0,00:0,00
+2015-03-03 13:57:45 [INFO] [Multiverse-Core] Loading World & Settings - 'world' - Env: NORMAL - Type: NORMAL & seed: -105749104451575434
+2015-03-03 13:57:45 [INFO] [Multiverse-Core] Loading World & Settings - 'world_the_end' - Env: THE_END - Type: NORMAL & seed: -105749104451575434
+2015-03-03 13:57:45 [INFO] [Multiverse-Core] Loading World & Settings - 'SkyBlockWorld' - Env: NORMAL - Type: FLAT & seed: 4780911846797611899
+2015-03-03 13:57:46 [WARNING] [Multiverse-Core] Spawn location from world.dat file was unsafe. Adjusting...
+2015-03-03 13:57:46 [WARNING] [Multiverse-Core] Original Location: X: 0 Y: 0 Z: 0 P: 0 Y: 0 
+2015-03-03 13:57:46 [INFO] [Multiverse-Core] New Spawn for 'SkyBlockWorld' is Located at: SkyBlockWorld:1,50,4,00,0,50:0,00:0,00
+2015-03-03 13:57:46 [INFO] [Multiverse-Core] Loading World & Settings - 'SkyBlockLobby' - Env: NORMAL - Type: NORMAL & seed: -4196562319234676973 & generator: OrbitMinesEmptyWorldGenerator
+2015-03-03 13:57:46 [INFO] [Multiverse-Core] 5 - World(s) loaded.
+2015-03-03 13:57:49 [INFO] [Multiverse-Core] - Version 2.4-b527 (API v14) Enabled - By Rigby, fernferret, lithium3141 and main--
+2015-03-03 13:57:49 [INFO] [Multiverse-Core] Loading World & Settings - 'SkyBlock' - Env: NORMAL - Type: NORMAL & seed: 3338212099041922795 & generator: SkyBlock
+2015-03-03 13:57:49 [INFO] [Multiverse-Core] Loading World & Settings - 'world' - Env: NORMAL - Type: NORMAL & seed: -105749104451575434
+2015-03-03 13:57:49 [INFO] [Multiverse-Core] Loading World & Settings - 'world_the_end' - Env: THE_END - Type: NORMAL & seed: -105749104451575434
+2015-03-03 13:57:49 [INFO] [Multiverse-Core] Loading World & Settings - 'SkyBlockWorld' - Env: NORMAL - Type: FLAT & seed: 4780911846797611899
+2015-03-03 13:57:49 [INFO] [Multiverse-Core] Loading World & Settings - 'SkyBlockLobby' - Env: NORMAL - Type: NORMAL & seed: -4196562319234676973 & generator: OrbitMinesEmptyWorldGenerator
+2015-03-03 13:57:49 [INFO] [Multiverse-Core] 5 - World(s) loaded.

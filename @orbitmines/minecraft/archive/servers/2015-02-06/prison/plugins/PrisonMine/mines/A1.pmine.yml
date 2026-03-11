@@ -1,0 +1,88 @@
+mine:
+  ==: pMine
+  region:
+    ==: PrisonRegion
+    minimum:
+      ==: Vector
+      x: -823.0
+      y: 5.0
+      z: 8.0
+    maximum:
+      ==: Vector
+      x: -813.0
+      y: 24.0
+      z: 18.0
+    world: PrisonServer
+  flags: []
+  breakBlacklist:
+    ==: Blacklist
+    blocks: {}
+    type: 0
+  parent: MineF1
+  blocks:
+  - ==: MineBlock
+    blockData: 0
+    blockId: 56
+    chance: 0.2
+  - ==: MineBlock
+    blockData: 0
+    blockId: 129
+    chance: 0.2
+  - ==: MineBlock
+    blockData: 0
+    blockId: 57
+    chance: 0.2
+  - ==: MineBlock
+    blockData: 0
+    blockId: 133
+    chance: 0.2
+  - ==: MineBlock
+    blockData: 0
+    blockId: 153
+    chance: 0.125
+  - ==: MineBlock
+    blockData: 0
+    blockId: 89
+    chance: 0.075
+  - ==: MineBlock
+    blockData: 0
+    blockId: 0
+    chance: 6.938893903907228E-17
+  tpPoint:
+    ==: SimpleLoc
+    yaw: -1.130249
+    pitch: 8.699996
+    z: -0.22156272210490835
+    y: 4.0
+    world: PrisonServer
+    x: -817.6862763238387
+  blocksLeft: 2420
+  resetTriggers: []
+  id: A1
+  warningTimes: []
+  placeBlacklist:
+    ==: Blacklist
+    blocks: {}
+    type: 0
+  cooldownPeriod: 0
+  name: ''
+  blockReplaceBlacklist:
+    ==: Blacklist
+    blocks: {}
+    type: 0
+  protectionRegion:
+    ==: PrisonRegion
+    minimum:
+      ==: Vector
+      x: -823.0
+      y: 5.0
+      z: 8.0
+    maximum:
+      ==: Vector
+      x: -813.0
+      y: 24.0
+      z: 18.0
+    world: PrisonServer
+  world: PrisonServer
+  enabledProtection: []
+  cooldownEnabled: false

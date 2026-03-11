@@ -1,0 +1,12 @@
+Database:
+  Host: sql-3.verygames.net
+  Database: minecraft8499
+  Port: '3306'
+  Username: minecraft8499
+  Password: wyxy7yj
+  Threads: 5
+MOTD:
+  Enabled: true
+NewPlayerBroadcast: false
+BroadcastProxyConnectionMessages: false
+PlayerDisconnectDelay: 10

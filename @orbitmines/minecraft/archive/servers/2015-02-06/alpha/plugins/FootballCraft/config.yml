@@ -1,0 +1,37 @@
+Tiers:
+  Tier1:
+    EXP: 5
+    CASH: 5
+  Tier2:
+    EXP: 15
+    CASH: 15
+    EXPBoost2: 1
+    CASHBoost2: 1
+  Tier3:
+    EXP: 50
+    CASH: 50
+    EXPBoost2: 4
+    CASHBoost2: 4
+  Tier4:
+    EXP: 250
+    CASH: 250
+    EXPBoost2: 24
+    CASHBoost2: 24
+    EXPBoost5: 4
+    CASHBoost5: 4
+  Tier5:
+    EXP: 500
+    CASH: 500
+    EXPBoost5: 24
+    CASHBoost5: 24
+    EXPBoost2: 168
+    CASHBoost2: 168
+Nametags:
+  User:
+    permission: 'Tag.User'
+    prefix: '&7User '
+    suffix: ''
+  Admin:
+    permission: 'Tag.Admin'
+    prefix: '&cAdmin '
+    suffix: ''

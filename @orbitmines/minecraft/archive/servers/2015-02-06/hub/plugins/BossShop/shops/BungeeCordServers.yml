@@ -1,0 +1,70 @@
+ShopName: Servers
+DisplayName: '&0&lSelect a Server...'
+signs:
+  text: '[BungeeCord]'
+  NeedPermissionToCreateSign: true
+shop:
+  KitPvP:
+    RewardType: bungeecordserver
+    PriceType: free
+    Reward: kitpvp
+    MenuItem:
+    - type:IRON_SWORD
+    - amount:1
+    - name:&c&lKitPvP &8>> &71.7.2 - 1.7.10
+    - 'lore:&7&o&nClick to Connect&r # #&a------------------[ &2Coming Soon&a ]----------------- #&aWizard/Necromander LvL 3, Death Skills, Level Kits LvL 2 #&a------------------------------------------------'
+    InventoryLocation: 10
+    ExtraPermission: ''
+  Prison:
+    RewardType: bungeecordserver
+    PriceType: free
+    Reward: prison
+    MenuItem:
+    - type:DIAMOND_PICKAXE
+    - amount:1
+    - name:&4&lPrison &8>> &71.7.2 - 1.7.10
+    - 'lore:&7&o&nClick to Connect&r # #&a-------------------[ &2Coming Soon&a ]------------------- #&aMore Ranks, Mine Rework E-A, Animals, Mob Grinders, Villagers #&a---------------------------------------------------'
+    InventoryLocation: 12
+    ExtraPermission: ''
+  Creative:
+    RewardType: bungeecordserver
+    PriceType: free
+    Reward: creative
+    MenuItem:
+    - type:WOOD_AXE
+    - amount:1
+    - name:&d&lCreative &8>> &71.7.2 - 1.7.10
+    - 'lore:&7&o&nClick to Connect&r # #&a---[ &2Coming Soon&a ]--- #&aPvP Area, Empty World #&a-------------------'
+    InventoryLocation: 14
+    ExtraPermission: ''
+  Survival:
+    RewardType: bungeecordserver
+    PriceType: free
+    Reward: survival
+    MenuItem:
+    - type:STONE_HOE
+    - amount:1
+    - name:&a&lSurvival &8>> &71.7.2 - 1.7.10
+    - 'lore:&7&o&nClick to Connect&r # #&a------[ &2Coming Soon&a ]------ #&aEconomy Rework, Jobs Rework #&a-------------------------'
+    InventoryLocation: 16
+    ExtraPermission: ''
+  SkyBlock:
+    RewardType: bungeecordserver
+    PriceType: free
+    Reward: skyblock
+    MenuItem:
+    - id:2
+    - amount:1
+    - name:&5&lSkyBlock &8>> &71.7.2 - 1.7.10
+    - 'lore:&7&o&nClick to Connect&r # #&a-----[ &2Coming Soon&a ]----- #&aMore Challenges, Slime Farm #&a-----------------------'
+    InventoryLocation: 18
+    ExtraPermission: ''
+  Air:
+    RewardType: money
+    PriceType: free
+    Reward: 0
+    MenuItem:
+    - id:0
+    - amount:1
+    InventoryLocation: 27
+    ExtraPermission: ''

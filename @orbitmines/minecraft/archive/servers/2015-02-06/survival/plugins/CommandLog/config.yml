@@ -1,0 +1,4 @@
+ignored-commands:
+- /login
+- login
+console-info: false

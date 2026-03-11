@@ -1,0 +1,72 @@
+ShopName: Unbreaking
+signs:
+  text: '[Unbreaking]'
+  NeedPermissionToCreateSign: true
+shop:
+  1:
+    RewardType: item
+    PriceType: money
+    Price: 500
+    Reward:
+    - - type:ENCHANTED_BOOK
+      - enchantment:DURABILITY#1
+      - amount:1
+    MenuItem:
+    - type:ENCHANTED_BOOK
+    - enchantment:DURABILITY#1
+    - amount:1
+    - 'name:&bEnchanted Book &6[Unbreaking I]'
+    - 'lore:&c&LPrice: &6500$'
+    - amount:1
+    Message: '&2[&aSurvival Shop&2] &aYou have bought &f1 Enchanted Book (Unbreaking I)&a for &6500$'
+    InventoryLocation: 1
+    ExtraPermission: ''
+  2:
+    RewardType: item
+    PriceType: money
+    Price: 1000
+    Reward:
+    - - type:ENCHANTED_BOOK
+      - enchantment:DURABILITY#2
+      - amount:1
+    MenuItem:
+    - type:ENCHANTED_BOOK
+    - enchantment:DURABILITY#2
+    - amount:1
+    - 'name:&bEnchanted Book &6[Unbreaking II]'
+    - 'lore:&c&LPrice: &61000$'
+    - amount:1
+    Message: '&2[&aSurvival Shop&2] &aYou have bought &f1 Enchanted Book (Unbreaking II)&a for &61000$'
+    InventoryLocation: 2
+    ExtraPermission: ''
+  3:
+    RewardType: item
+    PriceType: money
+    Price: 2000
+    Reward:
+    - - type:ENCHANTED_BOOK
+      - enchantment:DURABILITY#3
+      - amount:1
+    MenuItem:
+    - type:ENCHANTED_BOOK
+    - enchantment:DURABILITY#3
+    - amount:1
+    - 'name:&bEnchanted Book &6[Unbreaking III]'
+    - 'lore:&c&LPrice: &62000$ #&4Required: &6[&e&lVIP&6]'
+    - amount:1
+    Message: '&2[&aSurvival Shop&2] &aYou have bought &f1 Enchanted Book (Unbreaking III)&a for &62000$'
+    InventoryLocation: 3
+    ExtraPermission: 'vipshop.gvip'
+  BackToMenu:
+    RewardType: shop
+    PriceType: free
+    Reward: Survival
+    MenuItem:
+    - type:REDSTONE_BLOCK
+    - amount:1
+    - name:&a&LSurvival Menu
+    - lore:&8Back to the Survival Menu
+    - amount:1
+    InventoryLocation: 9
+    ExtraPermission: ''
+

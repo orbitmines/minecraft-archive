@@ -1,0 +1,24 @@
+# Group inheritance
+#
+# Any inherited groups prefixed with a g: are global groups
+# and are inherited from the GlobalGroups.yml.
+#
+# Groups without the g: prefix are groups local to this world
+# and are defined in the this groups.yml file.
+#
+# Local group inheritances define your promotion tree when using 'manpromote/mandemote'
+
+groups:
+  Default:
+    default: true
+    permissions:
+    - -bukkit.command.plugins
+    - -bukkit.command.pl
+    - -bukkit.command.help
+    - -bukkit.command.?
+    - essentials.fly
+    - libsdisguises.disguise.*
+    - libsdisguises.disguise.*.*
+    info:
+      prefix: '&8'
+      build: false

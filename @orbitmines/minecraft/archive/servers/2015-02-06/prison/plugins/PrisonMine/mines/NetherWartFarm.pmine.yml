@@ -1,0 +1,68 @@
+mine:
+  ==: pMine
+  region:
+    ==: PrisonRegion
+    minimum:
+      ==: Vector
+      x: -534.0
+      y: 4.0
+      z: 122.0
+    maximum:
+      ==: Vector
+      x: -528.0
+      y: 4.0
+      z: 128.0
+    world: PrisonServer
+  flags: []
+  breakBlacklist:
+    ==: Blacklist
+    blocks: {}
+    type: 0
+  parent: BeaconMine
+  blocks:
+  - ==: MineBlock
+    blockData: 0
+    blockId: 0
+    chance: 0.95
+  - ==: MineBlock
+    blockData: 0
+    blockId: 115
+    chance: 0.05
+  tpPoint:
+    ==: SimpleLoc
+    yaw: -230.47876
+    pitch: 50.099953
+    z: 131.5680079382551
+    y: 14.149626774095516
+    world: PrisonServer
+    x: -524.0839943223581
+  blocksLeft: 49
+  resetTriggers: []
+  id: NetherWartFarm
+  warningTimes: []
+  placeBlacklist:
+    ==: Blacklist
+    blocks: {}
+    type: 0
+  cooldownPeriod: 21600
+  name: ''
+  blockReplaceBlacklist:
+    ==: Blacklist
+    blocks: {}
+    type: 0
+  protectionRegion:
+    ==: PrisonRegion
+    minimum:
+      ==: Vector
+      x: -534.0
+      y: 4.0
+      z: 122.0
+    maximum:
+      ==: Vector
+      x: -528.0
+      y: 4.0
+      z: 128.0
+    world: PrisonServer
+  world: PrisonServer
+  enabledProtection: []
+  cooldownEnabled: false

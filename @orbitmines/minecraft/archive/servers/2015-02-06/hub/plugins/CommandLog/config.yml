@@ -1,0 +1,5 @@
+ignored-commands:
+- /login
+- /register
+- /password
+console-info: false

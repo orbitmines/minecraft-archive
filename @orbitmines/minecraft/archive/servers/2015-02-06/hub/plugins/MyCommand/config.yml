@@ -1,0 +1,56 @@
+#MyCommand Plugin Config File
+#Disable - minecartevent it's used for detectorrail. moveevent it's used for warmups.
+options:
+  disablepermission: false
+  disabledebugmessage: true
+  disabledebugmessageconsole: false
+  disableconsolesupport: false
+  disableminecartevent: true
+  disablemoveevent: true
+  signheader: '[OrbitMines]'
+#This worlds in will be ignored by MyCommand.
+ignoredworlds:
+  active: false
+  list:
+  - world
+  - world_nether
+#Economy require vault plugin.
+economy:
+  allowdebit: false
+#Scheduler Options launchonstartin(sec) d M yyyy = 31 12 2013
+scheduler:
+  active: false
+  dateformat: 'd M yyyy'
+  launchonstartin: 60
+  launchcheckoneveryNmin: 60
+#Blockset valid for any blockset supported block and sign.Put 0 for disable.
+blockset:
+  delay: 5
+#Items ID.28(DetectorRail require disableminecartevent: true)
+items:
+  rightclickinteraction:
+  - 69
+  - 77
+  - 143
+  - 64
+  - 28
+  physicalinteraction:
+  - 70
+  - 72
+#Language Strings.
+language:
+  prefix: '[OrbitMines]'
+  timer1: ' The command will be performed in : '
+  timer2: ' You have bypassed the timer'
+  economy1: ' This command cost %s New Balance %s'
+  economy2: ' You need %s$ for run this command.'
+  execute: ' Execute: '
+  args1: 'No Args...Please use :'
+  args2: '-> Output Commands :'
+  item1: ' There are no Command on Items'
+  perm1: ' Ops,check your permissions.'
+  sign1: ' Sign Removed!.'
+  sign2:  All line it's empty.
+  block1: ' Block Removed!.'
+  spout1: ' No Spoutcraft client found'
+  blockset1: 'You must wait %s sec for re-use this'

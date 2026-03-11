@@ -1,0 +1,4 @@
+# [gSkulls] - Version 1.2
+# 
+# When a player dies then he drops a Skull!
+PlayerDropSkull: false

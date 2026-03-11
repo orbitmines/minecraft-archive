@@ -1,0 +1,133 @@
+# Citizens NPC Storage
+
+last-created-npc-id: 4
+npc:
+  '0':
+    name: Chicken Mama
+    uuid: a99739e1-deea-4702-824b-e9a6698bb637
+    traits:
+      age:
+        age: 0
+        locked: true
+      spawned: true
+      location:
+        world: MiniGamesLobby
+        x: '0.4925469631513768'
+        y: '64.5'
+        z: '23.526946789363134'
+        yaw: '179.55014038085938'
+        pitch: '0.0'
+      type: Chicken
+      owner:
+        owner: O_o_Fadi_o_O
+        uuid: 33ee168b-5c2c-42c5-b3b2-d841ceb76b70
+    traitnames: type,age,owner,spawned,location
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+  '1':
+    name: Baby Chicken
+    uuid: 4c988c58-0a09-4a4c-a5c6-6ad52eb2677e
+    traits:
+      type: Chicken
+      spawned: true
+      age:
+        age: -24000
+        locked: true
+      location:
+        world: MiniGamesLobby
+        x: '-13.45979722369131'
+        y: '64.5'
+        z: '18.47040802644296'
+        yaw: '-135.14981079101562'
+        pitch: '0.0'
+      owner:
+        owner: O_o_Fadi_o_O
+        uuid: 33ee168b-5c2c-42c5-b3b2-d841ceb76b70
+    traitnames: type,age,owner,spawned,location
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+  '2':
+    name: §4§lHot Wing
+    uuid: ccc6b138-2575-4905-933d-d13fb1256aa8
+    traits:
+      age:
+        age: 0
+        locked: true
+      location:
+        world: MiniGamesLobby
+        x: '-18.48788258718869'
+        y: '64.5'
+        z: '4.474091911121391'
+        yaw: '-90.15009307861328'
+        pitch: '0.0'
+      type: Chicken
+      spawned: true
+      owner:
+        owner: O_o_Fadi_o_O
+        uuid: 8667aa59-4924-38a1-bc5c-94efed61d5bc
+    traitnames: type,age,owner,spawned,location
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    metadata:
+      nameplate-visible: true
+  '4':
+    name: C. Overlord
+    uuid: d80dcd76-46e4-4bf4-8b7e-af38008bea02
+    traits:
+      type: Chicken
+      location:
+        world: MiniGamesLobby
+        x: '0.5192081449157364'
+        y: '64.5'
+        z: '-14.496455829443475'
+        yaw: '359.40020751953125'
+        pitch: '0.0'
+      spawned: true
+      age:
+        age: 0
+        locked: true
+      owner:
+        owner: O_o_Fadi_o_O
+        uuid: 8667aa59-4924-38a1-bc5c-94efed61d5bc
+    traitnames: type,equipment,age,owner,spawned,location
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+  '3':
+    name: Chicken Warrior
+    uuid: 5cd8f8de-0c3e-4e17-afa8-069d297fded9
+    traits:
+      type: VillagerGolem
+      location:
+        world: MiniGamesLobby
+        x: '-13.464216918246958'
+        y: '64.5'
+        z: '-9.487067146047838'
+        yaw: '314.84991455078125'
+        pitch: '0.0'
+      spawned: true
+      owner:
+        owner: O_o_Fadi_o_O
+        uuid: 8667aa59-4924-38a1-bc5c-94efed61d5bc
+    traitnames: type,owner,spawned,location
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true

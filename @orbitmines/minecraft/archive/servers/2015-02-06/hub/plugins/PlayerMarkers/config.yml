@@ -1,0 +1,23 @@
+updateInterval: 5000
+targetFile: markers.json
+saveOfflinePlayers: false
+hideVanishedPlayers: true
+offlineFile: locations.bin
+Mapping:
+  SGMap1: SGMap1
+  SGMap2: SGMap2
+  Map1: Map1
+  OM-PvPLobby: OM-PvPLobby
+  TestWorld: TestWorld
+  Event: Event
+  MiniGames-ChickenFight: MiniGames-ChickenFight
+  SkyBlockWorld: SkyBlockWorld
+  world_the_end: world_the_end
+  HubServer: HubServer
+  Hub: Hub
+  OrbitMinesHub: OrbitMinesHub
+  world_nether: world_nether
+  Pixelmon: Pixelmon
+  Prison: Prison
+  world: world
+  Hobbit: Hobbit

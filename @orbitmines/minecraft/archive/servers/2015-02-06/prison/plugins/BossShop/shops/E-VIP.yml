@@ -1,0 +1,17 @@
+ShopName: EmeraldVIP
+signs:
+  text: '[EmeraldVIP]'
+  NeedPermissionToCreateSign: true
+shop:
+  E-VIP:
+    RewardType: shop
+    PriceType: free
+    Reward: EmeraldVIP-P1
+    MenuItem:
+    - 'type: EMERALD'
+    - amount:1
+    - 'name:&a&lEmerald-VIP Shop'
+    - 'lore:&cRank: &2[&a&lVIP&2] #&cProfit: &650%'
+    - amount:1
+    InventoryLocation: 5
+    ExtraPermission: 'vipshop.E'

@@ -1,0 +1,134 @@
+# Citizens NPC Storage
+
+last-created-npc-id: 17
+npc:
+  '14':
+    name: §8>> §5Shop §8<<
+    uuid: 63a5190f-5e95-46ae-b316-8b736d142d77
+    traits:
+      type: Villager
+      location:
+        world: SkyBlockWorld
+        x: '0.49520702779928294'
+        y: '-6.771768955726153E8'
+        z: '-20.377966032234696'
+        yaw: '-0.00128173828125'
+        pitch: '0.0'
+      spawned: true
+      age:
+        age: 0
+        locked: true
+      owner:
+        owner: O_o_Fadi_o_O
+        uuid: 8667aa59-4924-38a1-bc5c-94efed61d5bc
+    traitnames: owner,spawned,age,location,type
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+  '13':
+    name: §8>> §5Shop §8<<
+    uuid: 57fd934f-a1e8-4df3-9759-3d573c9be4d0
+    traits:
+      type: Villager
+      location:
+        world: SkyBlockWorld
+        x: '-20.48379276108905'
+        y: '-6.771768955726153E8'
+        z: '0.4528514047932872'
+        yaw: '-90.0013427734375'
+        pitch: '0.0'
+      spawned: true
+      age:
+        age: 0
+        locked: true
+      owner:
+        owner: O_o_Fadi_o_O
+        uuid: 8667aa59-4924-38a1-bc5c-94efed61d5bc
+    traitnames: owner,spawned,age,location,type
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+  '12':
+    name: §8>> §5Shop §8<<
+    uuid: 13b72a49-b90f-439d-836e-9233c96dc044
+    traits:
+      type: Villager
+      location:
+        world: SkyBlockWorld
+        x: '0.47643578509043105'
+        y: '-6.771768955726153E8'
+        z: '21.41966054583888'
+        yaw: '-180.001220703125'
+        pitch: '0.0'
+      spawned: true
+      age:
+        age: 0
+        locked: true
+      owner:
+        owner: O_o_Fadi_o_O
+        uuid: 8667aa59-4924-38a1-bc5c-94efed61d5bc
+    traitnames: owner,spawned,age,location,type
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+  '11':
+    name: §8>> §5Shop §8<<
+    uuid: 24e28a0e-738d-4192-bab7-21bfe03c891e
+    traits:
+      type: Villager
+      location:
+        world: SkyBlockWorld
+        x: '21.50979135129827'
+        y: '-6.771768955726153E8'
+        z: '0.5160604207751746'
+        yaw: '-270.00146484375'
+        pitch: '0.0'
+      spawned: true
+      age:
+        age: 0
+        locked: true
+      owner:
+        owner: O_o_Fadi_o_O
+        uuid: 8667aa59-4924-38a1-bc5c-94efed61d5bc
+    traitnames: owner,spawned,age,location,type
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+  '17':
+    name: §d§lIsland Info
+    uuid: 7f4a7259-9754-4b15-b2fc-357996934ae2
+    traits:
+      spawned: true
+      age:
+        age: 0
+        locked: true
+      type: Villager
+      location:
+        world: SkyBlockWorld
+        x: '0.5196713088220902'
+        y: '68.0'
+        z: '-52.45518484775208'
+        yaw: '-0.151580810546875'
+        pitch: '0.0'
+      owner:
+        owner: O_o_Fadi_o_O
+        uuid: 8667aa59-4924-38a1-bc5c-94efed61d5bc
+    traitnames: owner,spawned,age,location,type
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true

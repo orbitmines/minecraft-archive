@@ -1,0 +1,42 @@
+Announcements:
+  enabled: true
+  Global:
+    Interval: 500
+    Messages:
+    - '&6&lOrbitMines&4&lNetwork &8| &4&lPrison &c&lv3 &e&lAlpha&7! &a&o/server alpha'
+    - '&6&lOrbitMines&4&lNetwork &8| &7Use &9/servers&7 to open the Server Selector!'
+    - '&6&lOrbitMines&b&lVote  &8| &7Don''t forget to &bvote&7 for &bawesome&7 rewards! &b/vote'
+    - '&6&lOrbitMines&9&lUpdate  &8| &7Use &9/perks&7 to open the Cosmetic Perk menu!'
+  factions:
+    Interval: 150
+    Messages: []
+  hub:
+    Interval: 325
+    Messages: []
+  creative:
+    Interval: 150
+    Messages: []
+  survival:
+    Interval: 325
+    Messages: []
+  minigames:
+    Interval: 150
+    Messages: []
+  prison:
+    Interval: 325
+    Messages: []
+  kitpvp:
+    Interval: 325
+    Messages: []
+  pixelmon:
+    Interval: 325
+    Messages: []
+  skyblock:
+    Interval: 325
+    Messages: []
+  events:
+    Interval: 150
+    Messages: []
+  alpha:
+    Interval: 150
+    Messages: []

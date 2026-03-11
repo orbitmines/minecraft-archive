@@ -1,0 +1,177 @@
+ShopName: OMT
+DisplayName: '&6&lOMT Shop'
+signs:
+  text: '[OMT]'
+  NeedPermissionToCreateSign: true
+shop:
+  50Money:
+    RewardType: command
+    PriceType: points
+    Price: 1
+    Reward:
+    - 'eco give %player% 50'
+    MenuItem:
+    - 'type: EMERALD'
+    - amount:1
+    - name:&750$
+    - 'lore:&cPrice:&6 %price% OMT'
+    - amount:1
+    Message: '&8[&6&lOMT&8] &7You have bought &650$&7! Price: &6%price% OMT'
+    InventoryLocation: 1
+    ExtraPermission: ''
+  150Money:
+    RewardType: command
+    PriceType: points
+    Price: 3
+    Reward:
+    - 'eco give %player% 150'
+    MenuItem:
+    - 'type: EMERALD'
+    - amount:3
+    - name:&7150$
+    - 'lore:&cPrice:&6 %price% OMT'
+    - amount:3
+    Message: '&8[&6&lOMT&8] &7You have bought &6150$&7! Price: &6%price% OMT'
+    InventoryLocation: 3
+    ExtraPermission: ''
+  750Money:
+    RewardType: command
+    PriceType: points
+    Price: 15
+    Reward:
+    - 'eco give %player% 750'
+    MenuItem:
+    - 'type: EMERALD'
+    - amount:15
+    - name:&7750$
+    - 'lore:&cPrice:&6 %price% OMT'
+    - amount:15
+    Message: '&8[&6&lOMT&8] &7You have bought &6750$&7! Price: &6%price% OMT'
+    InventoryLocation: 5
+    ExtraPermission: ''
+  1500Money:
+    RewardType: command
+    PriceType: points
+    Price: 30
+    Reward:
+    - 'eco give %player% 1500'
+    MenuItem:
+    - 'type: EMERALD'
+    - amount:30
+    - name:&71500$
+    - 'lore:&cPrice:&6 %price% OMT'
+    - amount:30
+    Message: '&8[&6&lOMT&8] &7You have bought &61500$&7! Price: &6%price% OMT'
+    InventoryLocation: 7
+    ExtraPermission: ''
+  3000Money:
+    RewardType: command
+    PriceType: points
+    Price: 60
+    Reward:
+    - 'eco give %player% 3000'
+    MenuItem:
+    - 'type: EMERALD'
+    - amount:60
+    - name:&73000$
+    - 'lore:&cPrice:&6 %price% OMT'
+    - amount:60
+    Message: '&8[&6&lOMT&8] &7You have bought &63000$&7! Price: &6%price% OMT'
+    InventoryLocation: 9
+    ExtraPermission: ''
+  4Dirt:
+    RewardType: item
+    PriceType: points
+    Price: 1
+    Reward:
+    - - 'type: DIRT'
+      - amount:4
+    MenuItem:
+    - 'type: DIRT'
+    - amount:4
+    - name:&74 Dirt
+    - 'lore:&cPrice:&6 %price% OMT'
+    - amount:4
+    Message: '&8[&6&lOMT&8] &7You have bought &64 Dirt&7! Price: &6%price% OMT'
+    InventoryLocation: 19
+    ExtraPermission: ''
+  32Cobblestone:
+    RewardType: item
+    PriceType: points
+    Price: 1
+    Reward:
+    - - 'type: COBBLESTONE'
+      - amount:32
+    MenuItem:
+    - 'type: COBBLESTONE'
+    - amount:32
+    - name:&732 Cobblestone
+    - 'lore:&cPrice:&6 %price% OMT'
+    - amount:32
+    Message: '&8[&6&lOMT&8] &7You have bought &632 Cobblestone&7! Price: &6%price% OMT'
+    InventoryLocation: 21
+    ExtraPermission: ''
+  Saplings:
+    RewardType: item
+    PriceType: points
+    Price: 3
+    Reward:
+    - - 'type: SAPLING'
+      - amount:1
+      - durability:0
+    - - 'type: SAPLING'
+      - amount:1
+      - durability:1
+    - - 'type: SAPLING'
+      - amount:1
+      - durability:2
+    - - 'type: SAPLING'
+      - amount:1
+      - durability:3
+    - - 'type: SAPLING'
+      - amount:1
+      - durability:4
+    - - 'type: SAPLING'
+      - amount:1
+      - durability:5
+    MenuItem:
+    - 'type: SAPLING'
+    - amount:1
+    - name:&71x All Saplings
+    - 'lore:&cPrice:&6 %price% OMT'
+    - amount:1
+    Message: '&8[&6&lOMT&8] &7You have bought &61x All Saplings&7! Price: &6%price% OMT'
+    InventoryLocation: 23
+    ExtraPermission: ''
+  5Iron:
+    RewardType: item
+    PriceType: points
+    Price: 3
+    Reward:
+    - - 'type: IRON_INGOT'
+      - amount:5
+    MenuItem:
+    - 'type: IRON_INGOT'
+    - amount:5
+    - name:&75 Iron Ingots
+    - 'lore:&cPrice:&6 %price% OMT'
+    - amount:5
+    Message: '&8[&6&lOMT&8] &7You have bought &65 Iron&7! Price: &6%price% OMT'
+    InventoryLocation: 25
+    ExtraPermission: ''
+  1Diamond:
+    RewardType: item
+    PriceType: points
+    Price: 5
+    Reward:
+    - - 'type: DIAMOND'
+      - amount:1
+    MenuItem:
+    - 'type: DIAMOND'
+    - amount:1
+    - name:&71 Diamond
+    - 'lore:&cPrice:&6 %price% OMT'
+    - amount:1
+    Message: '&8[&6&lOMT&8] &7You have bought &61 Diamond&7! Price: &6%price% OMT'
+    InventoryLocation: 27
+    ExtraPermission: ''

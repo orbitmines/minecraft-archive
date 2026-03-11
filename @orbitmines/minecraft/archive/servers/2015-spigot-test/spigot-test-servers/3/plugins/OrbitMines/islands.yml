@@ -1,0 +1,19 @@
+TotalIslands: 39
+LastLocation: SkyBlock|0|100|0|0|0
+islands:
+  '6':
+    IslandLocation: SkyBlock|0.0|100.0|130.0|0.0|0.0
+    CreatedDate: 11-07-2015
+    TeleportEnabled: true
+    Players:
+      Owner: cef4ba59-f58c-47b3-b3b9-ebd2f83029b9
+      Members: []
+  '39':
+    IslandLocation: SkyBlock|390.0|100.0|130.0|0.0|0.0
+    CreatedDate: 11-07-2015
+    TeleportEnabled: true
+    Players:
+      Owner: 33ee168b-5c2c-42c5-b3b2-d841ceb76b70
+      Members: []
+    NetherGenerated: true
+    IslandProtection: false

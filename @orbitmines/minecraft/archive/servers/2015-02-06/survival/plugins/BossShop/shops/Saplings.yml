@@ -1,0 +1,124 @@
+ShopName: Saplings
+signs:
+  text: '[Saplings]'
+  NeedPermissionToCreateSign: true
+shop:
+  Sapling1:
+    RewardType: item
+    PriceType: money
+    Price: 100
+    Reward:
+    - - type:SAPLING
+      - amount:3
+    MenuItem:
+    - type:SAPLING
+    - amount:3
+    - name:&a&L3 Oak Saplings
+    - 'lore:&c&LPrice: &6100$'
+    - amount:3
+    Message: '&2[&aSurvival Shop&2] &aYou have bought &f3 Oak Saplings&a for &6100$'
+    InventoryLocation: 1
+    ExtraPermission: ''
+  Sapling2:
+    RewardType: item
+    PriceType: money
+    Price: 100
+    Reward:
+    - - type:SAPLING
+      - amount:3
+      - durability:1
+    MenuItem:
+    - type:SAPLING
+    - amount:3
+    - durability:1
+    - name:&8&L3 Spruce Saplings
+    - 'lore:&c&LPrice: &6100$'
+    - amount:3
+    Message: '&2[&aSurvival Shop&2] &aYou have bought &f3 Spruce Saplings&a for &6100$'
+    InventoryLocation: 2
+    ExtraPermission: ''
+  Sapling3:
+    RewardType: item
+    PriceType: money
+    Price: 100
+    Reward:
+    - - type:SAPLING
+      - amount:3
+      - durability:2
+    MenuItem:
+    - type:SAPLING
+    - amount:3
+    - durability:2
+    - name:&f&L3 Birch Saplings
+    - 'lore:&c&LPrice: &6100$'
+    - amount:3
+    Message: '&2[&aSurvival Shop&2] &aYou have bought &f3 Birch Saplings&a for &6100$'
+    InventoryLocation: 3
+    ExtraPermission: ''
+  Sapling4:
+    RewardType: item
+    PriceType: money
+    Price: 100
+    Reward:
+    - - type:SAPLING
+      - amount:3
+      - durability:3
+    MenuItem:
+    - type:SAPLING
+    - amount:3
+    - durability:3
+    - name:&2&L3 Jungle Saplings
+    - 'lore:&c&LPrice: &6100$'
+    - amount:3
+    Message: '&2[&aSurvival Shop&2] &aYou have bought &f3 Jungle Saplings&a for &6100$'
+    InventoryLocation: 4
+    ExtraPermission: ''
+  Sapling5:
+    RewardType: item
+    PriceType: money
+    Price: 100
+    Reward:
+    - - type:SAPLING
+      - amount:3
+      - durability:4
+    MenuItem:
+    - type:SAPLING
+    - amount:3
+    - durability:4
+    - name:&a&L3 Acacia Saplings
+    - 'lore:&c&LPrice: &6100$'
+    - amount:3
+    Message: '&2[&aSurvival Shop&2] &aYou have bought &f3 Acacia Saplings&a for &6100$'
+    InventoryLocation: 5
+    ExtraPermission: ''
+  Sapling6:
+    RewardType: item
+    PriceType: money
+    Price: 100
+    Reward:
+    - - type:SAPLING
+      - amount:3
+      - durability:5
+    MenuItem:
+    - type:SAPLING
+    - amount:3
+    - durability:5
+    - name:&2&L3 Dark Oak Saplings
+    - 'lore:&c&LPrice: &6100$'
+    - amount:3
+    Message: '&2[&aSurvival Shop&2] &aYou have bought &f3 Dark Oak Saplings&a for &6100$'
+    InventoryLocation: 6
+    ExtraPermission: ''
+  BackToMenu:
+    RewardType: shop
+    PriceType: free
+    Reward: Blocks
+    MenuItem:
+    - type:REDSTONE_BLOCK
+    - amount:1
+    - name:&a&LBlock Menu
+    - lore:&8Back to the Block Menu
+    - amount:1
+    InventoryLocation: 9
+    ExtraPermission: ''
+

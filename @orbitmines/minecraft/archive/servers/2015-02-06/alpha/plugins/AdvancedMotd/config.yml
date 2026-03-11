@@ -1,0 +1,7 @@
+# AdvancedMotd by MrFlieder!
+save ip-addresses: true
+player name variable: '%p'
+default player name: Minecraftler
+motd-list:
+- '               &6&lOrbitMines &4&lNetwork &3&l1.7                   &4&l&k!&c&l&k!&6&l&k!
+  &eThere''s always a playerslot for you <3 &6&l&k!&c&l&k!&4&l&k!'

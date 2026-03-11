@@ -1,0 +1,237 @@
+# Citizens NPC Storage
+
+last-created-npc-id: 36
+npc:
+  '4':
+    name: §6§lServers
+    uuid: 30ba2328-97ce-47e4-abb3-6d49e3e54b06
+    traits:
+      spawned: true
+      age:
+        age: 0
+        locked: true
+      location:
+        world: OrbitMinesHub
+        x: '410.4861160960601'
+        y: '148.0'
+        z: '9.476265863523492'
+        yaw: '-225.54583740234375'
+        pitch: '0.0'
+      type: Villager
+      owner:
+        owner: O_o_Fadi_o_O
+        uuid: 8667aa59-4924-38a1-bc5c-94efed61d5bc
+    traitnames: age,location,owner,spawned,type
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+  '3':
+    name: §6§lServers
+    uuid: 3bfd67fd-316f-4aad-a83b-f6da9d417cdb
+    traits:
+      spawned: true
+      age:
+        age: 0
+        locked: true
+      location:
+        world: OrbitMinesHub
+        x: '398.4919608996627'
+        y: '148.0'
+        z: '9.444634428352387'
+        yaw: '-135.24557495117188'
+        pitch: '0.0'
+      type: Villager
+      owner:
+        owner: O_o_Fadi_o_O
+        uuid: 8667aa59-4924-38a1-bc5c-94efed61d5bc
+    traitnames: age,location,owner,spawned,type
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+  '2':
+    name: §6§lServers
+    uuid: 48776b78-4380-4485-9f83-e529a637457f
+    traits:
+      spawned: true
+      age:
+        age: 0
+        locked: true
+      location:
+        world: OrbitMinesHub
+        x: '398.5585158623765'
+        y: '148.0'
+        z: '-2.505501581293761'
+        yaw: '-44.3458251953125'
+        pitch: '0.0'
+      type: Villager
+      owner:
+        owner: O_o_Fadi_o_O
+        uuid: 8667aa59-4924-38a1-bc5c-94efed61d5bc
+    traitnames: age,location,owner,spawned,type
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+  '1':
+    name: §6§lServers
+    uuid: 26f59c60-4758-411b-b76e-78d342a9f562
+    traits:
+      spawned: true
+      age:
+        age: 0
+        locked: true
+      location:
+        world: OrbitMinesHub
+        x: '410.5131956470406'
+        y: '148.0'
+        z: '-2.5025662878266686'
+        yaw: '-315.09552001953125'
+        pitch: '0.0'
+      type: Villager
+      owner:
+        owner: O_o_Fadi_o_O
+        uuid: 8667aa59-4924-38a1-bc5c-94efed61d5bc
+    traitnames: age,location,owner,spawned,type
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+  '5':
+    name: §4§lParkour
+    uuid: 0395320e-14e4-4663-8f0d-af28842ca3ec
+    traits:
+      type: Skeleton
+      location:
+        world: OrbitMinesHub
+        x: '419.40288341288164'
+        y: '148.0'
+        z: '-11.349694770945465'
+        yaw: '46.05002975463867'
+        pitch: '0.0'
+      spawned: true
+      equipment:
+        hand:
+          type: BOW
+          amount: 1
+          durability: 0
+          mdata: 0
+      owner:
+        owner: O_o_Fadi_o_O
+        uuid: 8667aa59-4924-38a1-bc5c-94efed61d5bc
+    traitnames: location,owner,equipment,spawned,type
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+  '22':
+    name: §3§l§nServers
+    uuid: f6d694fe-41ec-4b17-8dba-6457d4e02526
+    traits:
+      spawned: true
+      type: Ozelot
+      location:
+        world: Hub
+        x: '-389.80787036059786'
+        y: '14.5'
+        z: '1038.2612346388707'
+        yaw: '135.14988708496094'
+        pitch: '0.0'
+      owner:
+        owner: O_o_Fadi_o_O
+        uuid: 8667aa59-4924-38a1-bc5c-94efed61d5bc
+    traitnames: location,owner,spawned,type
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+  '21':
+    name: §3§l§nServers
+    uuid: 0ce67181-2f66-4744-9973-a14291df6d7a
+    traits:
+      spawned: true
+      type: Ozelot
+      location:
+        world: Hub
+        x: '-390.3516763115348'
+        y: '14.5'
+        z: '1026.2370665672229'
+        yaw: '45.2977294921875'
+        pitch: '0.0'
+      owner:
+        owner: O_o_Fadi_o_O
+        uuid: 8667aa59-4924-38a1-bc5c-94efed61d5bc
+    traitnames: location,owner,spawned,type
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+  '24':
+    name: §3§l§nServers
+    uuid: c529ef25-ccca-4780-a993-28d5c8464e0c
+    traits:
+      spawned: true
+      type: Ozelot
+      age:
+        age: 0
+        locked: true
+      location:
+        world: Hub
+        x: '-402.426164820855'
+        y: '14.0'
+        z: '1039.8166421117219'
+        yaw: '-136.35244750976562'
+        pitch: '0.0'
+      owner:
+        owner: O_o_Fadi_o_O
+        uuid: 8667aa59-4924-38a1-bc5c-94efed61d5bc
+    traitnames: age,location,owner,spawned,type
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    metadata:
+      protected-leash: true
+  '25':
+    name: §3§l§nServers
+    uuid: e3791a20-2331-4328-b01a-1d9c55df7877
+    traits:
+      spawned: true
+      type: Ozelot
+      age:
+        age: 0
+        locked: true
+      location:
+        world: Hub
+        x: '-403.08450341473184'
+        y: '14.5'
+        z: '1026.1194137515395'
+        yaw: '-45.152435302734375'
+        pitch: '0.0'
+      owner:
+        owner: O_o_Fadi_o_O
+        uuid: 8667aa59-4924-38a1-bc5c-94efed61d5bc
+    traitnames: age,location,owner,spawned,type
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true

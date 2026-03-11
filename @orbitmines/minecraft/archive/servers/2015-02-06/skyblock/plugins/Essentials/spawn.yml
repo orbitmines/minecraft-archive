@@ -1,0 +1,8 @@
+spawns: 
+  default: 
+    world: SkyBlockWorld
+    x: 0.49108243358482234
+    y: 66.0
+    z: 0.5226054764753776
+    yaw: -178.05151
+    pitch: 1.6499965

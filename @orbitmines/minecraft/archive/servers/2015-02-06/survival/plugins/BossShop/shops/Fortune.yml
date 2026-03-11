@@ -1,0 +1,72 @@
+ShopName: Fortune
+signs:
+  text: '[Fortune]'
+  NeedPermissionToCreateSign: true
+shop:
+  1:
+    RewardType: item
+    PriceType: money
+    Price: 750
+    Reward:
+    - - type:ENCHANTED_BOOK
+      - enchantment:LOOT_BONUS_BLOCKS#1
+      - amount:1
+    MenuItem:
+    - type:ENCHANTED_BOOK
+    - enchantment:LOOT_BONUS_BLOCKS#1
+    - amount:1
+    - 'name:&bEnchanted Book &6[Fortune I]'
+    - 'lore:&c&LPrice: &6750$'
+    - amount:1
+    Message: '&2[&aSurvival Shop&2] &aYou have bought &f1 Enchanted Book (Fortune I)&a for &6750$'
+    InventoryLocation: 1
+    ExtraPermission: ''
+  2:
+    RewardType: item
+    PriceType: money
+    Price: 2500
+    Reward:
+    - - type:ENCHANTED_BOOK
+      - enchantment:LOOT_BONUS_BLOCKS#2
+      - amount:1
+    MenuItem:
+    - type:ENCHANTED_BOOK
+    - enchantment:LOOT_BONUS_BLOCKS#2
+    - amount:1
+    - 'name:&bEnchanted Book &6[Fortune II]'
+    - 'lore:&c&LPrice: &62500$'
+    - amount:1
+    Message: '&2[&aSurvival Shop&2] &aYou have bought &f1 Enchanted Book (Fortune II)&a for &62500$'
+    InventoryLocation: 2
+    ExtraPermission: ''
+  3:
+    RewardType: item
+    PriceType: money
+    Price: 5000
+    Reward:
+    - - type:ENCHANTED_BOOK
+      - enchantment:LOOT_BONUS_BLOCKS#3
+      - amount:1
+    MenuItem:
+    - type:ENCHANTED_BOOK
+    - enchantment:LOOT_BONUS_BLOCKS#3
+    - amount:1
+    - 'name:&bEnchanted Book &6[Fortune III]'
+    - 'lore:&c&LPrice: &65000$ #&4Required: &b[&9&lVIP&b]'
+    - amount:1
+    Message: '&2[&aSurvival Shop&2] &aYou have bought &f1 Enchanted Book (Fortune III)&a for &65000$'
+    InventoryLocation: 3
+    ExtraPermission: 'vipshop.dvip'
+  BackToMenu:
+    RewardType: shop
+    PriceType: free
+    Reward: Survival
+    MenuItem:
+    - type:REDSTONE_BLOCK
+    - amount:1
+    - name:&a&LSurvival Menu
+    - lore:&8Back to the Survival Menu
+    - amount:1
+    InventoryLocation: 9
+    ExtraPermission: ''
+

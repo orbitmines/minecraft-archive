@@ -1,0 +1,40 @@
+DefaultPaidRanks:
+  #Format =    <rank>:   Example below.
+  #Required      Price: <price>
+  #Optional      permission: <permission>
+  
+  #When true it will use /rankup
+  Enabled: true
+  Permission: paidranks.normal
+  P:
+    Price: 0
+  O:
+    Price: 100000
+  N:
+    Price: 200000
+  M:
+    Price: 300000
+  L:
+    Price: 500000
+  K:
+    Price: 1000000
+  J:
+    Price: 2500000
+  I:
+    Price: 5000000
+  H:
+    Price: 10000000
+  G:
+    Price: 15000000
+  F:
+    Price: 25000000
+  E:
+    Price: 50000000
+  D:
+    Price: 100000000
+  C:
+    Price: 250000000
+  B:
+    Price: 500000000
+  A:
+    Price: 1000000000

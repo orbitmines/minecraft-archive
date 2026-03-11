@@ -1,0 +1,133 @@
+# Group inheritance
+#
+# Any inherited groups prefixed with a g: are global groups
+# and are inherited from the GlobalGroups.yml.
+#
+# Groups without the g: prefix are groups local to this world
+# and are defined in the this groups.yml file.
+#
+# Local group inheritances define your promotion tree when using 'manpromote/mandemote'
+
+groups:
+  User:
+    default: true
+    permissions:
+    - BossShop.open.command
+    - essentials.spawn
+    - voteshop.1
+    - mycommand.cmd.1
+    - mycommand.cmd.2
+    - mycommand.cmd.3
+    - mycommand.cmd.4
+    - mycommand.cmd.5
+    - mycommand.cmd.6
+    - mycommand.cmd.7
+    - mycommand.cmd.8
+    - mycommand.cmd.9
+    - mycommand.cmd.10
+    - PlayerPoints.me
+    - multiverse.access.*
+    info:
+      prefix: '&7[&8&lUser&7] &8'
+      build: true
+      suffix: '&0&l [&b&lVoteShop&0&l]'
+  I-VIP:
+    default: false
+    permissions:
+    - BossShop.open.command
+    - essentials.spawn
+    - voteshop.1
+    - voteshop.1I
+    - mycommand.cmd.1
+    - mycommand.cmd.2
+    - mycommand.cmd.3
+    - mycommand.cmd.4
+    - mycommand.cmd.5
+    - mycommand.cmd.6
+    - mycommand.cmd.7
+    - mycommand.cmd.8
+    - mycommand.cmd.9
+    - mycommand.cmd.10
+    - PlayerPoints.me
+    - multiverse.access.*
+    info:
+      prefix: '&8[&7&lVIP&8] &7'
+      build: true
+      suffix: '&0&l [&b&lVoteShop&0&l]'
+  G-VIP:
+    default: false
+    permissions:
+    - BossShop.open.command
+    - essentials.spawn
+    - voteshop.1
+    - voteshop.1I
+    - voteshop.1G
+    - mycommand.cmd.1
+    - mycommand.cmd.2
+    - mycommand.cmd.3
+    - mycommand.cmd.4
+    - mycommand.cmd.5
+    - mycommand.cmd.6
+    - mycommand.cmd.7
+    - mycommand.cmd.8
+    - mycommand.cmd.9
+    - mycommand.cmd.10
+    - PlayerPoints.me
+    - multiverse.access.*
+    info:
+      prefix: '&6[&e&lVIP&6] &e'
+      build: true
+      suffix: '&0&l [&b&lVoteShop&0&l]'
+  D-VIP:
+    default: false
+    permissions:
+    - BossShop.open.command
+    - essentials.spawn
+    - essentials.enderchest
+    - voteshop.1
+    - voteshop.1I
+    - voteshop.1G
+    - voteshop.1D
+    - mycommand.cmd.1
+    - mycommand.cmd.2
+    - mycommand.cmd.3
+    - mycommand.cmd.4
+    - mycommand.cmd.5
+    - mycommand.cmd.6
+    - mycommand.cmd.7
+    - mycommand.cmd.8
+    - mycommand.cmd.9
+    - mycommand.cmd.10
+    - PlayerPoints.me
+    - multiverse.access.*
+    info:
+      prefix: '&b[&9&lVIP&b] &9'
+      build: true
+      suffix: '&0&l [&b&lVoteShop&0&l]'
+  E-VIP:
+    default: false
+    permissions:
+    - BossShop.open.command
+    - essentials.spawn
+    - essentials.enderchest
+    - voteshop.1
+    - voteshop.1I
+    - voteshop.1G
+    - voteshop.1D
+    - voteshop.1E
+    - mycommand.cmd.1
+    - mycommand.cmd.2
+    - mycommand.cmd.3
+    - mycommand.cmd.4
+    - mycommand.cmd.5
+    - mycommand.cmd.6
+    - mycommand.cmd.7
+    - mycommand.cmd.8
+    - mycommand.cmd.9
+    - mycommand.cmd.10
+    - PlayerPoints.me
+    - multiverse.access.*
+    info:
+      prefix: '&2[&a&lVIP&2] &a'
+      build: true
+      suffix: '&0&l [&b&lVoteShop&0&l]'

@@ -1,0 +1,542 @@
+Arenas:
+  Arena1:
+    Enabled: true
+    Spawns:
+      Fire:
+        world: ArcticMC-Game
+        x: 177
+        y: 10
+        z: 688
+        yaw: 0.45027852
+        pitch: 1.95006
+      Ice:
+        world: ArcticMC-Game
+        x: 147
+        y: 10
+        z: 718
+        yaw: -89.24972
+        pitch: -0.74992555
+      Life:
+        world: ArcticMC-Game
+        x: 177
+        y: 10
+        z: 748
+        yaw: -180.44972
+        pitch: -3.8999057
+      Water:
+        world: ArcticMC-Game
+        x: 207
+        y: 10
+        z: 718
+        yaw: -267.5997
+        pitch: 1.0378063E-4
+      Spectators:
+        world: ArcticMC-Game
+        x: 176
+        y: 21
+        z: 719
+        yaw: -181.49966
+        pitch: 31.500004
+      Lobby:
+        world: ArcticMC-Game
+        x: 140
+        y: 9
+        z: 760
+        yaw: -143.39993
+        pitch: -1.5000129
+    IceRows: 11
+    Ice:
+      Rows:
+        '1':
+          Loc1:
+            world: ArcticMC-Game
+            x: 146
+            y: 14
+            z: 723
+          Loc2:
+            world: ArcticMC-Game
+            x: 151
+            y: 10
+            z: 723
+        '2':
+          Loc1:
+            world: ArcticMC-Game
+            x: 146
+            y: 14
+            z: 722
+          Loc2:
+            world: ArcticMC-Game
+            x: 151
+            y: 9
+            z: 722
+        '3':
+          Loc1:
+            world: ArcticMC-Game
+            x: 151
+            y: 9
+            z: 721
+          Loc2:
+            world: ArcticMC-Game
+            x: 146
+            y: 14
+            z: 721
+        '4':
+          Loc1:
+            world: ArcticMC-Game
+            x: 151
+            y: 9
+            z: 720
+          Loc2:
+            world: ArcticMC-Game
+            x: 146
+            y: 14
+            z: 720
+        '5':
+          Loc1:
+            world: ArcticMC-Game
+            x: 151
+            y: 9
+            z: 719
+          Loc2:
+            world: ArcticMC-Game
+            x: 146
+            y: 14
+            z: 719
+        '6':
+          Loc1:
+            world: ArcticMC-Game
+            x: 146
+            y: 14
+            z: 718
+          Loc2:
+            world: ArcticMC-Game
+            x: 151
+            y: 9
+            z: 718
+        '7':
+          Loc1:
+            world: ArcticMC-Game
+            x: 151
+            y: 9
+            z: 717
+          Loc2:
+            world: ArcticMC-Game
+            x: 146
+            y: 14
+            z: 717
+        '8':
+          Loc1:
+            world: ArcticMC-Game
+            x: 151
+            y: 9
+            z: 716
+          Loc2:
+            world: ArcticMC-Game
+            x: 146
+            y: 14
+            z: 716
+        '9':
+          Loc1:
+            world: ArcticMC-Game
+            x: 151
+            y: 9
+            z: 715
+          Loc2:
+            world: ArcticMC-Game
+            x: 146
+            y: 14
+            z: 715
+        '10':
+          Loc1:
+            world: ArcticMC-Game
+            x: 151
+            y: 9
+            z: 714
+          Loc2:
+            world: ArcticMC-Game
+            x: 146
+            y: 14
+            z: 714
+        '11':
+          Loc1:
+            world: ArcticMC-Game
+            x: 151
+            y: 10
+            z: 713
+          Loc2:
+            world: ArcticMC-Game
+            x: 146
+            y: 14
+            z: 713
+    FireRows: 11
+    Fire:
+      Rows:
+        '1':
+          Loc1:
+            world: ArcticMC-Game
+            x: 172
+            y: 10
+            z: 692
+          Loc2:
+            world: ArcticMC-Game
+            x: 172
+            y: 14
+            z: 687
+        '2':
+          Loc1:
+            world: ArcticMC-Game
+            x: 173
+            y: 9
+            z: 692
+          Loc2:
+            world: ArcticMC-Game
+            x: 173
+            y: 14
+            z: 687
+        '3':
+          Loc1:
+            world: ArcticMC-Game
+            x: 174
+            y: 9
+            z: 692
+          Loc2:
+            world: ArcticMC-Game
+            x: 174
+            y: 14
+            z: 687
+        '4':
+          Loc1:
+            world: ArcticMC-Game
+            x: 175
+            y: 9
+            z: 692
+          Loc2:
+            world: ArcticMC-Game
+            x: 175
+            y: 14
+            z: 687
+        '5':
+          Loc1:
+            world: ArcticMC-Game
+            x: 176
+            y: 9
+            z: 692
+          Loc2:
+            world: ArcticMC-Game
+            x: 176
+            y: 14
+            z: 687
+        '6':
+          Loc1:
+            world: ArcticMC-Game
+            x: 177
+            y: 9
+            z: 692
+          Loc2:
+            world: ArcticMC-Game
+            x: 177
+            y: 14
+            z: 687
+        '7':
+          Loc1:
+            world: ArcticMC-Game
+            x: 178
+            y: 9
+            z: 692
+          Loc2:
+            world: ArcticMC-Game
+            x: 178
+            y: 14
+            z: 687
+        '8':
+          Loc1:
+            world: ArcticMC-Game
+            x: 179
+            y: 9
+            z: 692
+          Loc2:
+            world: ArcticMC-Game
+            x: 179
+            y: 14
+            z: 687
+        '9':
+          Loc1:
+            world: ArcticMC-Game
+            x: 180
+            y: 9
+            z: 692
+          Loc2:
+            world: ArcticMC-Game
+            x: 180
+            y: 14
+            z: 687
+        '10':
+          Loc1:
+            world: ArcticMC-Game
+            x: 181
+            y: 9
+            z: 692
+          Loc2:
+            world: ArcticMC-Game
+            x: 181
+            y: 14
+            z: 687
+        '11':
+          Loc1:
+            world: ArcticMC-Game
+            x: 182
+            y: 10
+            z: 692
+          Loc2:
+            world: ArcticMC-Game
+            x: 182
+            y: 14
+            z: 687
+    WaterRows: 11
+    Water:
+      Rows:
+        '1':
+          Loc1:
+            world: ArcticMC-Game
+            x: 203
+            y: 10
+            z: 713
+          Loc2:
+            world: ArcticMC-Game
+            x: 208
+            y: 14
+            z: 713
+        '2':
+          Loc1:
+            world: ArcticMC-Game
+            x: 203
+            y: 9
+            z: 714
+          Loc2:
+            world: ArcticMC-Game
+            x: 208
+            y: 14
+            z: 714
+        '3':
+          Loc1:
+            world: ArcticMC-Game
+            x: 203
+            y: 9
+            z: 715
+          Loc2:
+            world: ArcticMC-Game
+            x: 208
+            y: 14
+            z: 715
+        '4':
+          Loc1:
+            world: ArcticMC-Game
+            x: 203
+            y: 9
+            z: 716
+          Loc2:
+            world: ArcticMC-Game
+            x: 208
+            y: 14
+            z: 716
+        '5':
+          Loc1:
+            world: ArcticMC-Game
+            x: 203
+            y: 9
+            z: 717
+          Loc2:
+            world: ArcticMC-Game
+            x: 208
+            y: 14
+            z: 717
+        '6':
+          Loc1:
+            world: ArcticMC-Game
+            x: 203
+            y: 9
+            z: 718
+          Loc2:
+            world: ArcticMC-Game
+            x: 208
+            y: 14
+            z: 718
+        '7':
+          Loc1:
+            world: ArcticMC-Game
+            x: 203
+            y: 9
+            z: 719
+          Loc2:
+            world: ArcticMC-Game
+            x: 208
+            y: 14
+            z: 719
+        '8':
+          Loc1:
+            world: ArcticMC-Game
+            x: 203
+            y: 9
+            z: 720
+          Loc2:
+            world: ArcticMC-Game
+            x: 208
+            y: 14
+            z: 720
+        '9':
+          Loc1:
+            world: ArcticMC-Game
+            x: 203
+            y: 9
+            z: 721
+          Loc2:
+            world: ArcticMC-Game
+            x: 208
+            y: 14
+            z: 721
+        '10':
+          Loc1:
+            world: ArcticMC-Game
+            x: 203
+            y: 9
+            z: 722
+          Loc2:
+            world: ArcticMC-Game
+            x: 208
+            y: 14
+            z: 722
+        '11':
+          Loc1:
+            world: ArcticMC-Game
+            x: 203
+            y: 10
+            z: 723
+          Loc2:
+            world: ArcticMC-Game
+            x: 208
+            y: 14
+            z: 723
+    LifeRows: 11
+    Life:
+      Rows:
+        '1':
+          Loc1:
+            world: ArcticMC-Game
+            x: 182
+            y: 10
+            z: 744
+          Loc2:
+            world: ArcticMC-Game
+            x: 182
+            y: 14
+            z: 749
+        '2':
+          Loc1:
+            world: ArcticMC-Game
+            x: 181
+            y: 9
+            z: 744
+          Loc2:
+            world: ArcticMC-Game
+            x: 181
+            y: 14
+            z: 749
+        '3':
+          Loc1:
+            world: ArcticMC-Game
+            x: 180
+            y: 9
+            z: 744
+          Loc2:
+            world: ArcticMC-Game
+            x: 180
+            y: 14
+            z: 749
+        '4':
+          Loc1:
+            world: ArcticMC-Game
+            x: 179
+            y: 9
+            z: 744
+          Loc2:
+            world: ArcticMC-Game
+            x: 179
+            y: 14
+            z: 749
+        '5':
+          Loc1:
+            world: ArcticMC-Game
+            x: 178
+            y: 9
+            z: 744
+          Loc2:
+            world: ArcticMC-Game
+            x: 178
+            y: 14
+            z: 749
+        '6':
+          Loc1:
+            world: ArcticMC-Game
+            x: 177
+            y: 9
+            z: 744
+          Loc2:
+            world: ArcticMC-Game
+            x: 177
+            y: 14
+            z: 749
+        '7':
+          Loc1:
+            world: ArcticMC-Game
+            x: 176
+            y: 9
+            z: 744
+          Loc2:
+            world: ArcticMC-Game
+            x: 176
+            y: 14
+            z: 749
+        '8':
+          Loc1:
+            world: ArcticMC-Game
+            x: 175
+            y: 9
+            z: 744
+          Loc2:
+            world: ArcticMC-Game
+            x: 175
+            y: 14
+            z: 749
+        '9':
+          Loc1:
+            world: ArcticMC-Game
+            x: 174
+            y: 9
+            z: 744
+          Loc2:
+            world: ArcticMC-Game
+            x: 174
+            y: 14
+            z: 749
+        '10':
+          Loc1:
+            world: ArcticMC-Game
+            x: 173
+            y: 9
+            z: 744
+          Loc2:
+            world: ArcticMC-Game
+            x: 173
+            y: 14
+            z: 749
+        '11':
+          Loc1:
+            world: ArcticMC-Game
+            x: 172
+            y: 10
+            z: 744
+          Loc2:
+            world: ArcticMC-Game
+            x: 172
+            y: 14
+            z: 749

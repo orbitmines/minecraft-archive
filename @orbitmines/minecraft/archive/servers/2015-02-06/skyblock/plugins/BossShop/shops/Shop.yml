@@ -1,0 +1,161 @@
+ShopName: SkyBlock
+DisplayName: '&5&lSkyBlock'
+signs:
+  text: '[SkyBlock]'
+  NeedPermissionToCreateSign: true
+shop:
+  GRASS:
+    RewardType: item
+    PriceType: money
+    Price: 100
+    Reward:
+    - - type:GRASS
+      - amount:1
+    MenuItem:
+    - type:GRASS
+    - amount:1
+    - name:&a1 Grass Block
+    - 'lore: #&cPrice: &6100$'
+    Message: ''
+    InventoryLocation: 1
+    ExtraPermission: ''
+  SAND:
+    RewardType: item
+    PriceType: money
+    Price: 75
+    Reward:
+    - - type:SAND
+      - amount:1
+    MenuItem:
+    - type:SAND
+    - amount:1
+    - name:&e1 Sand
+    - 'lore: #&cPrice: &675$'
+    Message: ''
+    InventoryLocation: 2
+    ExtraPermission: ''
+  MELON:
+    RewardType: item
+    PriceType: money
+    Price: 25
+    Reward:
+    - - type:MELON_SEEDS
+      - amount:1
+    MenuItem:
+    - type:MELON_SEEDS
+    - amount:1
+    - name:&81 Melon Seeds
+    - 'lore: #&cPrice: &625$'
+    Message: ''
+    InventoryLocation: 3
+    ExtraPermission: ''
+  PUMPKIN_SEEDS:
+    RewardType: item
+    PriceType: money
+    Price: 25
+    Reward:
+    - - type:PUMPKIN_SEEDS
+      - amount:1
+    MenuItem:
+    - type:PUMPKIN_SEEDS
+    - amount:1
+    - name:&61 Pumpkin Seeds
+    - 'lore: #&cPrice: &625$'
+    Message: ''
+    InventoryLocation: 4
+    ExtraPermission: ''
+  SAPLING:
+    RewardType: item
+    PriceType: money
+    Price: 25
+    Reward:
+    - - type:SAPLING
+      - amount:1
+    MenuItem:
+    - type:SAPLING
+    - amount:1
+    - name:&21 Oak Sapling
+    - 'lore: #&cPrice: &625$'
+    Message: ''
+    InventoryLocation: 5
+    ExtraPermission: ''
+  Clownfish:
+    RewardType: item
+    PriceType: money
+    Price: 750
+    Reward:
+    - - type:RAW_FISH
+      - amount:1
+      - durability:2
+    MenuItem:
+    - type:RAW_FISH
+    - amount:1
+    - durability:2
+    - name:&61 Clownfish
+    - 'lore: #&cPrice: &6750$'
+    Message: ''
+    InventoryLocation: 6
+    ExtraPermission: ''
+  Slime:
+    RewardType: command
+    PriceType: item
+    Price:
+    - - id:4
+      - amount:64
+    - - id:260
+      - amount:2
+    - - id:296
+      - amount:64
+    - - id:81
+      - amount:64
+    - - id:338
+      - amount:64
+    - - id:360
+      - amount:64
+    - - id:86
+      - amount:64
+    - - id:39
+      - amount:64
+    - - id:40
+      - amount:64
+    - - id:367
+      - amount:64
+    - - id:287
+      - amount:32
+    - - id:289
+      - amount:16
+    - - id:262
+      - amount:32
+    - - id:352
+      - amount:32
+    - - id:375
+      - amount:4
+    - - id:392
+      - amount:64
+    - - id:391
+      - amount:64
+    - - id:349
+      - amount:5
+    - - id:349
+      - amount:5
+      - durability:1
+    - - id:349
+      - amount:1
+      - durability:3
+    - - id:17
+      - amount:64
+    - - id:357
+      - amount:64
+    - - id:354
+      - amount:2
+    Reward:
+    - 'mvtp %player% world'
+    - 'sudo %player% slimescountdownspawning'
+    MenuItem:
+    - type:SLIME_BALL
+    - amount:1
+    - name:&215 Minutes Slime Farm
+    - 'lore: #&cPrice: #&e64 Cobblestone #&e2 Apples #&e64 Wheat #&e64 Cactus #&e64 Sugarcane #&e64 Melons #&e64 Pumpkins #&e64 Brown Mushrooms #&e64 Red Mushrooms #&e64 Rotten Flesh #&e32 String #&e16 Gunpowder #&e32 Arrows #&e32 Bones #&e4 Spider Eyes #&e64 Carrots #&e64 Potatoes #&e5 Raw Fish #&e5 Raw Salmon #&e1 Pufferfish #&e64 Oak Logs #&e64 Cookies #&e2 Cakes'
+    Message: ''
+    InventoryLocation: 7
+    ExtraPermission: 'asdasdasd.asfajidsiads'

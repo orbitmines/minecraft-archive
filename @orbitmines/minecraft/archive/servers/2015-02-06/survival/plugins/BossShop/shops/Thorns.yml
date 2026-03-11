@@ -1,0 +1,72 @@
+ShopName: Thorns
+signs:
+  text: '[Thorns]'
+  NeedPermissionToCreateSign: true
+shop:
+  1:
+    RewardType: item
+    PriceType: money
+    Price: 1000
+    Reward:
+    - - type:ENCHANTED_BOOK
+      - enchantment:THORNS#1
+      - amount:1
+    MenuItem:
+    - type:ENCHANTED_BOOK
+    - enchantment:THORNS#1
+    - amount:1
+    - 'name:&bEnchanted Book &6[Thorns I]'
+    - 'lore:&c&LPrice: &61000$ #&4Required: &6[&e&lVIP&6]'
+    - amount:1
+    Message: '&2[&aSurvival Shop&2] &aYou have bought &f1 Enchanted Book (Thorns I)&a for &61000$'
+    InventoryLocation: 1
+    ExtraPermission: 'vipshop.gvip'
+  2:
+    RewardType: item
+    PriceType: money
+    Price: 2000
+    Reward:
+    - - type:ENCHANTED_BOOK
+      - enchantment:THORNS#2
+      - amount:1
+    MenuItem:
+    - type:ENCHANTED_BOOK
+    - enchantment:THORNS#2
+    - amount:1
+    - 'name:&bEnchanted Book &6[Thorns II]'
+    - 'lore:&c&LPrice: &62000$ #&4Required: &b[&9&lVIP&b]'
+    - amount:1
+    Message: '&2[&aSurvival Shop&2] &aYou have bought &f1 Enchanted Book (Thorns II)&a for &62000$'
+    InventoryLocation: 2
+    ExtraPermission: 'vipshop.dvip'
+  3:
+    RewardType: item
+    PriceType: money
+    Price: 5000
+    Reward:
+    - - type:ENCHANTED_BOOK
+      - enchantment:THORNS#3
+      - amount:1
+    MenuItem:
+    - type:ENCHANTED_BOOK
+    - enchantment:THORNS#3
+    - amount:1
+    - 'name:&bEnchanted Book &6[Thorns III]'
+    - 'lore:&c&LPrice: &65000$ #&4Required: &2[&a&lVIP&2]'
+    - amount:1
+    Message: '&2[&aSurvival Shop&2] &aYou have bought &f1 Enchanted Book (Thorns III)&a for &65000$'
+    InventoryLocation: 3
+    ExtraPermission: 'vipshop.evip'
+  BackToMenu:
+    RewardType: shop
+    PriceType: free
+    Reward: Survival
+    MenuItem:
+    - type:REDSTONE_BLOCK
+    - amount:1
+    - name:&a&LSurvival Menu
+    - lore:&8Back to the Survival Menu
+    - amount:1
+    InventoryLocation: 9
+    ExtraPermission: ''
+

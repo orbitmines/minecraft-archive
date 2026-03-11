@@ -1,0 +1,20 @@
+'1':
+  command: /help
+  type: TEXT
+  text:
+  - '&9&m====================================================='
+  - '&6&LOrbitMines &d&lCreative &6&lHelp Index'
+  - '&7/vote &6- Shows Vote Help'
+  - '&7/donate &6- Shows Donate Help'
+  - '&7/plot help &6- Show Plot Help'
+  - '&7/hub &6- Return to the Hub Server'
+  - '&9&m====================================================='
+'2':
+  command: /donate
+  type: TEXT
+  text:
+  - '&8[&6&lOrbitMines&8] &7Donate at: &6http://shop.orbitmines.com'
+'3':
+  command: /hub
+  type: BUNGEE_TP
+  server_name: hub

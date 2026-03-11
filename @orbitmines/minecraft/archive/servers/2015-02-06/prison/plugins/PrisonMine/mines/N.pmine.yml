@@ -1,0 +1,116 @@
+mine:
+  ==: pMine
+  region:
+    ==: PrisonRegion
+    minimum:
+      ==: Vector
+      x: -468.0
+      y: 4.0
+      z: -696.0
+    maximum:
+      ==: Vector
+      x: -389.0
+      y: 25.0
+      z: -657.0
+    world: PrisonServer
+  flags: []
+  breakBlacklist:
+    ==: Blacklist
+    blocks: {}
+    type: 0
+  parent: null
+  blocks:
+  - ==: MineBlock
+    blockData: 0
+    blockId: 80
+    chance: 0.15
+  - ==: MineBlock
+    blockData: 0
+    blockId: 21
+    chance: 0.125
+  - ==: MineBlock
+    blockData: 0
+    blockId: 56
+    chance: 0.125
+  - ==: MineBlock
+    blockData: 0
+    blockId: 15
+    chance: 0.125
+  - ==: MineBlock
+    blockData: 0
+    blockId: 41
+    chance: 0.1249
+  - ==: MineBlock
+    blockData: 0
+    blockId: 42
+    chance: 0.1
+  - ==: MineBlock
+    blockData: 0
+    blockId: 173
+    chance: 0.1
+  - ==: MineBlock
+    blockData: 0
+    blockId: 129
+    chance: 0.05
+  - ==: MineBlock
+    blockData: 0
+    blockId: 17
+    chance: 0.025
+  - ==: MineBlock
+    blockData: 1
+    blockId: 17
+    chance: 0.025
+  - ==: MineBlock
+    blockData: 2
+    blockId: 17
+    chance: 0.025
+  - ==: MineBlock
+    blockData: 3
+    blockId: 17
+    chance: 0.025
+  - ==: MineBlock
+    blockData: 0
+    blockId: 0
+    chance: 9.999999999997511E-5
+  tpPoint:
+    ==: SimpleLoc
+    yaw: -180.8265
+    pitch: -2.4598496
+    z: -645.7641693791217
+    y: 9.0
+    world: PrisonServer
+    x: -427.58030704965523
+  blocksLeft: 70400
+  resetTriggers:
+  - ==: TimeTrigger
+    next: '1820'
+    mine: N
+    period: '12000'
+  id: N
+  warningTimes: []
+  placeBlacklist:
+    ==: Blacklist
+    blocks: {}
+    type: 0
+  cooldownPeriod: 0
+  name: N Mines
+  blockReplaceBlacklist:
+    ==: Blacklist
+    blocks: {}
+    type: 0
+  protectionRegion:
+    ==: PrisonRegion
+    minimum:
+      ==: Vector
+      x: -468.0
+      y: 4.0
+      z: -696.0
+    maximum:
+      ==: Vector
+      x: -389.0
+      y: 25.0
+      z: -657.0
+    world: PrisonServer
+  world: PrisonServer
+  enabledProtection: []
+  cooldownEnabled: false

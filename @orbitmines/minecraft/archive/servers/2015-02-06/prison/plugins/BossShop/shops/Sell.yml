@@ -1,0 +1,245 @@
+ShopName: Sell
+signs:
+  text: '[Sell]'
+  NeedPermissionToCreateSign: true
+shop:
+  Pumpkin:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - type:PUMPKIN
+      - amount:1
+    Reward: 4500
+    MenuItem:
+    - 'type: PUMPKIN'
+    - amount:1
+    - name:&6&L1 Pumpkin
+    - 'lore:&2&LReward: &b4500$'
+    - amount:1
+    InventoryLocation: 2
+    ExtraPermission: ''
+  Pumpkin16:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - type:PUMPKIN
+      - amount:16
+    Reward: 72000
+    MenuItem:
+    - 'type: PUMPKIN'
+    - amount:16
+    - name:&6&L16 Pumpkin
+    - 'lore:&2&LReward: &b72000$'
+    - amount:16
+    InventoryLocation: 11
+    ExtraPermission: ''
+  Pumpkin32:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - type:PUMPKIN
+      - amount:32
+    Reward: 144000
+    MenuItem:
+    - 'type: PUMPKIN'
+    - amount:32
+    - name:&6&L32 Pumpkin
+    - 'lore:&2&LReward: &b144000$'
+    - amount:32
+    InventoryLocation: 20
+    ExtraPermission: ''
+  Pumpkin64:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - type:PUMPKIN
+      - amount:64
+    Reward: 288000
+    MenuItem:
+    - 'type: PUMPKIN'
+    - amount:64
+    - name:&6&L64 Pumpkin
+    - 'lore:&2&LReward: &b288000$'
+    - amount:64
+    InventoryLocation: 29
+    ExtraPermission: ''
+  Beacon:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - type:BEACON
+      - amount:1
+    Reward: 1000000
+    MenuItem:
+    - 'type: BEACON'
+    - amount:1
+    - name:&b&L1 Beacon
+    - 'lore:&2&LReward: &b1000000$'
+    - amount:1
+    InventoryLocation: 4
+    ExtraPermission: ''
+  Beacon16:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - type:BEACON
+      - amount:16
+    Reward: 16000000
+    MenuItem:
+    - 'type: BEACON'
+    - amount:16
+    - name:&b&L16 Beacon
+    - 'lore:&2&LReward: &b16000000$'
+    - amount:16
+    InventoryLocation: 13
+    ExtraPermission: ''
+  Beacon32:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - type:BEACON
+      - amount:32
+    Reward: 32000000
+    MenuItem:
+    - 'type: BEACON'
+    - amount:32
+    - name:&b&L32 Beacon
+    - 'lore:&2&LReward: &b32000000$'
+    - amount:32
+    InventoryLocation: 22
+    ExtraPermission: ''
+  Beacon64:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - type:BEACON
+      - amount:64
+    Reward: 64000000
+    MenuItem:
+    - 'type: BEACON'
+    - amount:64
+    - name:&b&L64 Beacon
+    - 'lore:&2&LReward: &b64000000$'
+    - amount:64
+    InventoryLocation: 31
+    ExtraPermission: ''
+  Melon:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - id:103
+      - amount:1
+    Reward: 6000
+    MenuItem:
+    - 'id:103'
+    - amount:1
+    - name:&A&L1 Melon
+    - 'lore:&2&LReward: &b6000$'
+    - amount:1
+    InventoryLocation: 6
+    ExtraPermission: ''
+  Melon16:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - id:103
+      - amount:16
+    Reward: 96000
+    MenuItem:
+    - 'id:103'
+    - amount:16
+    - name:&A&L16 Melon
+    - 'lore:&2&LReward: &b96000$'
+    - amount:16
+    InventoryLocation: 15
+    ExtraPermission: ''
+  Melon32:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - id:103
+      - amount:32
+    Reward: 192000
+    MenuItem:
+    - 'id:103'
+    - amount:32
+    - name:&A&L32 Melon
+    - 'lore:&2&LReward: &b192000$'
+    - amount:32
+    InventoryLocation: 24
+    ExtraPermission: ''
+  Melon64:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - id:103
+      - amount:64
+    Reward: 384000
+    MenuItem:
+    - 'id:103'
+    - amount:64
+    - name:&A&L64 Melon
+    - 'lore:&2&LReward: &b384000$'
+    - amount:64
+    InventoryLocation: 33
+    ExtraPermission: ''
+  Wart:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - id:372
+      - amount:1
+    Reward: 2000
+    MenuItem:
+    - 'id:372'
+    - amount:1
+    - name:&c&L1 Nether Wart
+    - 'lore:&2&LReward: &b2000$'
+    - amount:1
+    InventoryLocation: 8
+    ExtraPermission: ''
+  Wart16:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - id:372
+      - amount:16
+    Reward: 32000
+    MenuItem:
+    - 'id:372'
+    - amount:16
+    - name:&c&L16 Nether Wart
+    - 'lore:&2&LReward: &b32000$'
+    - amount:16
+    InventoryLocation: 17
+    ExtraPermission: ''
+  Wart32:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - id:372
+      - amount:32
+    Reward: 64000
+    MenuItem:
+    - 'id:372'
+    - amount:32
+    - name:&c&L32 Nether Wart
+    - 'lore:&2&LReward: &b64000$'
+    - amount:32
+    InventoryLocation: 26
+    ExtraPermission: ''
+  Wart64:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - id:372
+      - amount:64
+    Reward: 128000
+    MenuItem:
+    - 'id:372'
+    - amount:64
+    - name:&c&L64 Nether Wart
+    - 'lore:&2&LReward: &b128000$'
+    - amount:64
+    InventoryLocation: 35
+    ExtraPermission: ''

@@ -1,0 +1,37 @@
+Arenas:
+  Test:
+    Type: normal
+    Spawns:
+      Blue:
+        world: world
+        x: 166
+        y: 94
+        z: 258
+        yaw: -178.0498
+        pitch: -2.9999988
+      Red:
+        world: world
+        x: 166
+        y: 94
+        z: 229
+        yaw: -357.89978
+        pitch: -3.5999885
+      Ball:
+        world: world
+        x: 167
+        y: 94
+        z: 244
+      Lobby:
+        world: world
+        x: 198
+        y: 104
+        z: 247
+        yaw: -196.04962
+        pitch: 39.000023
+      AfterGame:
+        world: world
+        x: 187
+        y: 117
+        z: 223
+        yaw: -266.24948
+        pitch: 20.850023

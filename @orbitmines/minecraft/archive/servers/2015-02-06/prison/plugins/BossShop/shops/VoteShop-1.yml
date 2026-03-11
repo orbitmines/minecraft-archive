@@ -1,0 +1,21 @@
+ShopName: VoteShop-1
+signs:
+  text: '[VoteShop1]'
+  NeedPermissionToCreateSign: true
+shop:
+  User:
+    RewardType: command
+    PriceType: points
+    Price: 5
+    Reward:
+    - 'mvtp %player% VoteShop'
+    - 'sudo %player% voteshopcommand1'
+    - 'sudo %player% voteshopcommand2'
+    MenuItem:
+    - 'type: IRON_BLOCK'
+    - amount:1
+    - 'name:&b&lVote Shop 1'
+    - 'lore:&cRank: #&7[&8&lUser&7] &cProfit: &625% #&8[&7&lVIP&8] &cProfit: &625% + &65% #&6[&e&lVIP&6] &cProfit: &625% + &610% #&b[&9&lVIP&b] &cProfit: &625% + &625% #&2[&a&lVIP&2] &cProfit: &625% + &650% # #&c&lPrice: &65 OMT #&c&lTime: &6100 seconds'
+    - amount:1
+    InventoryLocation: 5
+    ExtraPermission: ''

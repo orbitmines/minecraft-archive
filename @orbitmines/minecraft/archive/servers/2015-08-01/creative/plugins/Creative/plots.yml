@@ -1,0 +1,1595 @@
+plots:
+  '1':
+    PlotLocation:
+      world: Creative
+      x: 0
+      y: 100
+      z: 0
+    Players:
+      Owner: fb949556-ddb3-49e2-8132-43148fffd614
+    CreatedDate: 07-02-2015
+    Color: GRAY
+    Mode: NORMAL
+  '2':
+    PlotLocation:
+      world: Creative
+      x: 0
+      y: 100
+      z: 105
+    Players:
+      Owner: 69626b0c-6910-49b0-9a1d-8cf83141d60a
+      Members:
+      - iFridge_Ivo
+      - gwnluca
+      - 123pika456
+      - rienk222
+    CreatedDate: 07-02-2015
+    Color: BLUE
+    Mode: NORMAL
+  '3':
+    PlotLocation:
+      world: Creative
+      x: 105
+      y: 100
+      z: 105
+    Players:
+      Owner: 2824416c-da29-4bcd-a68c-576fd248f205
+    CreatedDate: 07-02-2015
+    Color: GRAY
+    Mode: NORMAL
+  '4':
+    PlotLocation:
+      world: Creative
+      x: 105
+      y: 100
+      z: 0
+    Players:
+      Owner: a2b79034-9c9f-43f9-a7ae-2aaea8d1111b
+      Members:
+      - playwarrior
+    CreatedDate: 07-02-2015
+    Color: CYAN
+    Mode: NORMAL
+    PvPInfo:
+      SetupFinished: true
+      Locations:
+        Lobby: Creative|105.5|93.0|0.5|180.0|0.0
+        NPCs:
+          Normal: Creative|105.50000009424168|93.0|-1.8675802530781183|0.97302246|9.766536
+        Spawns:
+          '1': Creative|105.47051925307144|93.0|1.99913392148339|191.43593|-11.185612
+      EnableDrops: false
+      EnableArrows: false
+      EnableBuild: false
+      MaxPlayers: 50
+      Kits:
+        Normal:
+          '1': IRON_CHESTPLATE|1|0|Enchantments|null
+          '2': IRON_LEGGINGS|1|0|Enchantments|null
+          '3': IRON_BOOTS|1|0|Enchantments|null
+          '0': IRON_HELMET|1|0|Enchantments|null
+          '4': DIAMOND_SWORD|1|0|Enchantments|null
+          '5': POTION|1|8261|Enchantments|null
+          '6': POTION|1|8261|Enchantments|null
+          '7': POTION|1|8261|Enchantments|null
+          '8': POTION|1|16453|Enchantments|null
+          '9': POTION|1|16453|Enchantments|null
+          '12': POTION|1|8258|Enchantments|null
+          '10': POTION|1|16460|Enchantments|null
+          '11': POTION|1|16460|Enchantments|null
+  '5':
+    PlotLocation:
+      world: Creative
+      x: 105
+      y: 100
+      z: -105
+    Players:
+      Owner: 6e9cc926-7cc6-4105-817e-73cc0e4b5241
+    CreatedDate: 07-02-2015
+    Color: GRAY
+    Mode: NORMAL
+  '6':
+    PlotLocation:
+      world: Creative
+      x: 0
+      y: 100
+      z: -105
+    Players:
+      Owner: 3c878e91-5efc-4994-a8de-a4c1f686dcfd
+      Members:
+      - gapisabelle
+      - cincinnus
+      - playwarrior
+      - rienk222
+      - WOUT2004ANIKIN
+      - jomancool55
+      - koningstan112
+      - sharewoods
+      - Milanekke
+      - bartdecoolste
+      - Koning_paul
+      - ivano2004
+    CreatedDate: 07-02-2015
+    Color: LIGHT_BLUE
+    Mode: NORMAL
+  '7':
+    PlotLocation:
+      world: Creative
+      x: -105
+      y: 100
+      z: -105
+    Players:
+      Owner: ca452e32-decb-4731-aa8d-357318871782
+      Members:
+      - WOUT2004ANIKIN
+      - the_king_k47n3
+    CreatedDate: 07-02-2015
+    Color: GRAY
+    Mode: NORMAL
+  '8':
+    PlotLocation:
+      world: Creative
+      x: -105
+      y: 100
+      z: 0
+    Players:
+      Owner: matt20041
+      Members:
+      - koningstan112
+    CreatedDate: 07-02-2015
+    Color: GRAY
+    Mode: NORMAL
+  '9':
+    PlotLocation:
+      world: Creative
+      x: -105
+      y: 100
+      z: 105
+    Players:
+      Owner: 851ffa55-c616-4e3f-b559-5a4389e3e529
+    CreatedDate: 07-02-2015
+    Color: GRAY
+    Mode: NORMAL
+  '10':
+    PlotLocation:
+      world: Creative
+      x: -105
+      y: 100
+      z: 210
+    Players:
+      Owner: 965d71dc-9107-4f84-bb04-a5ed8513755a
+    CreatedDate: 07-02-2015
+    Color: WHITE
+    Mode: NORMAL
+    Members:
+    - 2b10cc00-ddb7-4bd1-b6a4-d24f7936767a
+  '11':
+    PlotLocation:
+      world: Creative
+      x: 0
+      y: 100
+      z: 210
+    Players:
+      Owner: b2632ca6-0487-42dd-b6d2-64a9b1be2a0b
+    CreatedDate: 07-02-2015
+    Color: SILVER
+    Mode: PVP
+    PvPInfo:
+      SetupFinished: true
+      Locations:
+        Lobby: Creative|2.8711678876398414|93.0|201.25975004619747|188.94177|32.651123
+        NPCs:
+          normal: Creative|2.8711678876398414|93.0|201.25975004619747|188.94177|32.651123
+        Spawns:
+          '1': Creative|2.8711678876398414|93.0|201.25975004619747|188.94177|32.651123
+      EnableDrops: false
+      EnableArrows: true
+      EnableBuild: false
+      MaxPlayers: 50
+      Kits:
+        normal:
+          '6': GOLDEN_APPLE|16|1|Enchantments|null
+          '7': GOLDEN_APPLE|64|0|Enchantments|null
+          '0': DIAMOND_HELMET|1|0|Enchantments|null
+          '1': IRON_CHESTPLATE|1|0|Enchantments|null
+          '2': DIAMOND_LEGGINGS|1|0|Enchantments|null
+          '3': IRON_BOOTS|1|0|Enchantments|null
+          '4': DIAMOND_SWORD|1|0|Enchantments|null
+          '5': BOW|1|0|Enchantments:ARROW_DAMAGE(2):ARROW_INFINITE(1)|null
+          '8': GOLDEN_APPLE|64|0|Enchantments|null
+          '9': GOLDEN_APPLE|64|0|Enchantments|null
+          '10': GOLDEN_APPLE|64|0|Enchantments|null
+          '11': GOLDEN_APPLE|64|0|Enchantments|null
+          '12': GOLDEN_APPLE|64|0|Enchantments|null
+  '12':
+    PlotLocation:
+      world: Creative
+      x: 105
+      y: 100
+      z: 210
+    Players:
+      Owner: cooleromeo
+      Members:
+      - matt20041
+      - jomancool55
+      - playwarrior
+      - koningstan112
+      - gwnluca
+    CreatedDate: 07-02-2015
+    Color: CYAN
+    Mode: NORMAL
+    PvPInfo:
+      SetupFinished: true
+      Locations:
+        Lobby: Creative|90.65419844509587|95.0|222.46219710594835|-268.00143|-1.6941688
+        NPCs:
+          Lord: Creative|104.30000001192093|106.0|214.51856786197615|-90.48446|-1.1944661
+        Spawns:
+          '1': Creative|104.30000001192093|106.0|214.53052620760747|-91.51468|-0.5698547
+      EnableDrops: false
+      EnableArrows: true
+      EnableBuild: false
+      MaxPlayers: 15
+      Kits:
+        Lord:
+          '4': GOLD_SWORD|1|0|Enchantments:DURABILITY(3)|null
+          '1': CHAINMAIL_CHESTPLATE|1|0|Enchantments|null
+          '0': GOLD_HELMET|1|0|Enchantments|null
+          '3': CHAINMAIL_BOOTS|1|0|Enchantments|null
+          '2': CHAINMAIL_LEGGINGS|1|0|Enchantments|null
+  '13':
+    PlotLocation:
+      world: Creative
+      x: 210
+      y: 100
+      z: 210
+    Players:
+      Owner: 585a2a70-ac3d-49fa-992a-5e40fbd6ec67
+    CreatedDate: 07-02-2015
+    Color: GRAY
+    Mode: NORMAL
+  '14':
+    PlotLocation:
+      world: Creative
+      x: 210
+      y: 100
+      z: 105
+    Players:
+      Owner: 9b6d3590-a9f5-4e33-a3a5-d45571f22b10
+    CreatedDate: 07-02-2015
+    Color: GRAY
+    Mode: NORMAL
+  '15':
+    PlotLocation:
+      world: Creative
+      x: 210
+      y: 100
+      z: 0
+    Players:
+      Owner: 33ee168b-5c2c-42c5-b3b2-d841ceb76b70
+    CreatedDate: 07-02-2015
+    Color: GRAY
+    Mode: NORMAL
+  '16':
+    PlotLocation:
+      world: Creative
+      x: 210
+      y: 100
+      z: -105
+    Players:
+      Owner: a8933f18-3825-4453-9c8a-bdaba7db8334
+      Members:
+      - gwnluca
+      - playwarrior
+      - eekhoorn2000
+    CreatedDate: 07-02-2015
+    Color: GRAY
+    Mode: NORMAL
+  '17':
+    PlotLocation:
+      world: Creative
+      x: 210
+      y: 100
+      z: -210
+    Players:
+      Owner: 01a5412b-275b-4f42-aea9-1bef163210b9
+      Members:
+      - jomancool55
+      - playwarrior
+      - fangergo
+      - rienk222
+      - sharewoods
+    CreatedDate: 07-02-2015
+    Color: GRAY
+    Mode: NORMAL
+  '18':
+    PlotLocation:
+      world: Creative
+      x: 105
+      y: 100
+      z: -210
+    Players:
+      Owner: LucChiem
+    CreatedDate: 07-02-2015
+    Color: GRAY
+    Mode: NORMAL
+  '19':
+    PlotLocation:
+      world: Creative
+      x: 0
+      y: 100
+      z: -210
+    Players:
+      Owner: 6bab8ecb-a88c-4307-bdf1-9fc7a9bc7ab8
+      Members:
+      - HTBJim
+    CreatedDate: 07-02-2015
+    Color: GRAY
+    Mode: NORMAL
+  '20':
+    PlotLocation:
+      world: Creative
+      x: -105
+      y: 100
+      z: -210
+    Players:
+      Owner: 198a9f60-4d07-4d9d-bd03-a17e846a22b7
+      Members:
+      - coole_Thijme
+      - WOUT2004ANIKIN
+    CreatedDate: 07-02-2015
+    Color: GRAY
+    Mode: NORMAL
+  '21':
+    PlotLocation:
+      world: Creative
+      x: -210
+      y: 100
+      z: -210
+    Players:
+      Owner: e5122a8e-07e5-4178-8cb5-d6721f9607b6
+      Members:
+      - playwarrior
+    CreatedDate: 07-02-2015
+    Color: GRAY
+    Mode: NORMAL
+  '22':
+    PlotLocation:
+      world: Creative
+      x: -210
+      y: 100
+      z: -105
+    Players:
+      Owner: e55d0897-04e4-49a3-83a4-96549c5ff4ea
+    CreatedDate: 07-02-2015
+    Color: PURPLE
+    Mode: NORMAL
+  '23':
+    PlotLocation:
+      world: Creative
+      x: -210
+      y: 100
+      z: 0
+    Players:
+      Owner: 83238c8f-a744-4f14-b93a-cc3ddcf69a42
+    CreatedDate: 07-02-2015
+    Color: GRAY
+    Mode: NORMAL
+  '24':
+    PlotLocation:
+      world: Creative
+      x: -210
+      y: 100
+      z: 105
+    Players:
+      Owner: be495f1c-573b-490a-bf7a-f4da1a03621f
+      Members:
+      - fangergo
+    CreatedDate: 07-02-2015
+    Color: GRAY
+    Mode: NORMAL
+  '25':
+    PlotLocation:
+      world: Creative
+      x: -210
+      y: 100
+      z: 210
+    Players:
+      Owner: suuux
+    CreatedDate: 07-02-2015
+    Color: GRAY
+    Mode: NORMAL
+  '26':
+    PlotLocation:
+      world: Creative
+      x: -210
+      y: 100
+      z: 315
+    Players:
+      Owner: 1656181c-578c-4052-8710-9a736aa99804
+    CreatedDate: 07-02-2015
+    Color: GRAY
+    Mode: NORMAL
+  '27':
+    PlotLocation:
+      world: Creative
+      x: -105
+      y: 100
+      z: 315
+    Players:
+      Owner: bruinvis
+    CreatedDate: 07-02-2015
+    Color: GRAY
+    Mode: NORMAL
+  '28':
+    PlotLocation:
+      world: Creative
+      x: 0
+      y: 100
+      z: 315
+    Players:
+      Owner: 8472072c-4d9e-47d9-9b58-01a14fe9ccff
+      Members:
+      - ElectroSteveHD
+      - TeeArkKillerz
+    CreatedDate: 07-02-2015
+    Color: GRAY
+    Mode: NORMAL
+  '29':
+    PlotLocation:
+      world: Creative
+      x: 105
+      y: 100
+      z: 315
+    Players:
+      Owner: 0d6e5b6b-8337-4f98-a3a4-afcd244dfe68
+      Members:
+      - koningdj03
+      - coole_Thijme
+    CreatedDate: 07-02-2015
+    Color: GRAY
+    Mode: NORMAL
+  '30':
+    PlotLocation:
+      world: Creative
+      x: 210
+      y: 100
+      z: 315
+    Players:
+      Owner: 639e49bf-42de-4dcc-8eb8-75a0ee2a9cb2
+      Members:
+      - playwarrior
+      - matt20041
+      - Milanekke
+      - XxEnderGamer
+    CreatedDate: 07-02-2015
+    Color: BLUE
+    Mode: NORMAL
+  '31':
+    PlotLocation:
+      world: Creative
+      x: 315
+      y: 100
+      z: 315
+    Players:
+      Owner: fangergo
+      Members:
+      - jomancool55
+      - WOUT2004ANIKIN
+      - NiekVerkuylen
+    CreatedDate: 07-02-2015
+    Color: GRAY
+    Mode: NORMAL
+  '32':
+    PlotLocation:
+      world: Creative
+      x: 315
+      y: 100
+      z: 210
+    Players:
+      Owner: TychoDenHoorn
+      Members:
+      - timmietim26
+      - koningdj03
+    CreatedDate: 08-02-2015
+    Color: GRAY
+    Mode: NORMAL
+  '33':
+    PlotLocation:
+      world: Creative
+      x: 315
+      y: 100
+      z: 105
+    Players:
+      Owner: timmietim26
+    CreatedDate: 08-02-2015
+    Color: GRAY
+    Mode: NORMAL
+  '34':
+    PlotLocation:
+      world: Creative
+      x: 315
+      y: 100
+      z: 0
+    Players:
+      Owner: JoeryBakker
+    CreatedDate: 08-02-2015
+    Color: GRAY
+    Mode: NORMAL
+  '35':
+    PlotLocation:
+      world: Creative
+      x: 315
+      y: 100
+      z: -105
+    Players:
+      Owner: 8fd3af50-9849-4d54-ad05-af5a9ac15b76
+    CreatedDate: 08-02-2015
+    Color: GRAY
+    Mode: NORMAL
+  '36':
+    PlotLocation:
+      world: Creative
+      x: 315
+      y: 100
+      z: -210
+    Players:
+      Owner: XxEnderGamer
+      Members: []
+    CreatedDate: 08-02-2015
+    Color: GRAY
+    Mode: NORMAL
+  '37':
+    PlotLocation:
+      world: Creative
+      x: 315
+      y: 100
+      z: -315
+    Players:
+      Owner: bartdecoolste
+      Members:
+      - gwnluca
+    CreatedDate: 08-02-2015
+    Color: GRAY
+    Mode: NORMAL
+  '38':
+    PlotLocation:
+      world: Creative
+      x: 210
+      y: 100
+      z: -315
+    Players:
+      Owner: captinrex00
+    CreatedDate: 08-02-2015
+    Color: GRAY
+    Mode: NORMAL
+  '39':
+    PlotLocation:
+      world: Creative
+      x: 105
+      y: 100
+      z: -315
+    Players:
+      Owner: siebevanolmen
+    CreatedDate: 08-02-2015
+    Color: GRAY
+    Mode: NORMAL
+  '40':
+    PlotLocation:
+      world: Creative
+      x: 0
+      y: 100
+      z: -315
+    Players:
+      Owner: NiekVerkuylen
+      Members:
+      - fangergo
+    CreatedDate: 08-02-2015
+    Color: GRAY
+    Mode: NORMAL
+  '41':
+    PlotLocation:
+      world: Creative
+      x: -105
+      y: 100
+      z: -315
+    Players:
+      Owner: 65805bbe-af6f-4498-9520-8e42a8c0423b
+    CreatedDate: 08-02-2015
+    Color: GRAY
+    Mode: NORMAL
+  '42':
+    PlotLocation:
+      world: Creative
+      x: -210
+      y: 100
+      z: -315
+    Players:
+      Owner: Ragthanatos1000
+    CreatedDate: 08-02-2015
+    Color: GRAY
+    Mode: NORMAL
+  '43':
+    PlotLocation:
+      world: Creative
+      x: -315
+      y: 100
+      z: -315
+    Players:
+      Owner: kirby12121999
+    CreatedDate: 08-02-2015
+    Color: GRAY
+    Mode: NORMAL
+  '44':
+    PlotLocation:
+      world: Creative
+      x: -315
+      y: 100
+      z: -210
+    Players:
+      Owner: f5da4b3a-0626-4888-b80e-997735b57139
+    CreatedDate: 09-02-2015
+    Color: GRAY
+    Mode: NORMAL
+  '45':
+    PlotLocation:
+      world: Creative
+      x: -315
+      y: 100
+      z: -105
+    Players:
+      Owner: 538cb826-d92b-4e8d-8bf3-84efe52f6b42
+      Members:
+      - WOUT2004ANIKIN
+    CreatedDate: 09-02-2015
+    Color: GRAY
+    Mode: NORMAL
+  '46':
+    PlotLocation:
+      world: Creative
+      x: -315
+      y: 100
+      z: 0
+    Players:
+      Owner: 67737b0e-9ba9-4d00-af9d-c74d98cb4eff
+    CreatedDate: 09-02-2015
+    Color: GRAY
+    Mode: NORMAL
+    Members:
+    - 8fd3af50-9849-4d54-ad05-af5a9ac15b76
+  '47':
+    PlotLocation:
+      world: Creative
+      x: -315
+      y: 100
+      z: 105
+    Players:
+      Owner: DeemsGames_nl
+    CreatedDate: 09-02-2015
+    Color: GRAY
+    Mode: NORMAL
+  '48':
+    PlotLocation:
+      world: Creative
+      x: -315
+      y: 100
+      z: 210
+    Players:
+      Owner: 5b164107-d0b1-43cf-b8a9-22d4c41ff31f
+    CreatedDate: 10-02-2015
+    Color: GRAY
+    Mode: NORMAL
+    Members:
+    - 2ddfc722-accb-477d-8fc7-8c7f6d23c15b
+  '49':
+    PlotLocation:
+      world: Creative
+      x: -315
+      y: 100
+      z: 315
+    Players:
+      Owner: 74f86bc6-894a-43b7-a563-99e121752424
+    CreatedDate: 10-02-2015
+    Color: GRAY
+    Mode: NORMAL
+    Members:
+    - 1c6419db-8484-497e-8f48-2b90825b41c2
+  '50':
+    PlotLocation:
+      world: Creative
+      x: -315
+      y: 100
+      z: 420
+    Players:
+      Owner: 002b44d6-13d3-468f-8f7c-510119a73a10
+    CreatedDate: 11-02-2015
+    Color: GRAY
+    Mode: NORMAL
+  '51':
+    PlotLocation:
+      world: Creative
+      x: -210
+      y: 100
+      z: 420
+    Players:
+      Owner: 4ada4a83-a6c1-4b3b-8092-19644d3f8f21
+      Members:
+      - Brutuske02
+    CreatedDate: 11-02-2015
+    Color: GRAY
+    Mode: NORMAL
+  '52':
+    PlotLocation:
+      world: Creative
+      x: -105
+      y: 100
+      z: 420
+    Players:
+      Owner: supertootje11
+    CreatedDate: 11-02-2015
+    Color: GRAY
+    Mode: NORMAL
+  '53':
+    PlotLocation:
+      world: Creative
+      x: 0
+      y: 100
+      z: 420
+    Players:
+      Owner: moritzz11
+    CreatedDate: 11-02-2015
+    Color: GRAY
+    Mode: NORMAL
+  '54':
+    PlotLocation:
+      world: Creative
+      x: 105
+      y: 100
+      z: 420
+    Players:
+      Owner: vanBeersLuuk
+    CreatedDate: 12-02-2015
+    Color: GRAY
+    Mode: NORMAL
+  '55':
+    PlotLocation:
+      world: Creative
+      x: 210
+      y: 100
+      z: 420
+    Players:
+      Owner: koningkeyani
+    CreatedDate: 12-02-2015
+    Color: GRAY
+    Mode: NORMAL
+  '56':
+    PlotLocation:
+      world: Creative
+      x: 315
+      y: 100
+      z: 420
+    Players:
+      Owner: Colin84
+    CreatedDate: 12-02-2015
+    Color: GRAY
+    Mode: NORMAL
+  '57':
+    PlotLocation:
+      world: Creative
+      x: 420
+      y: 100
+      z: 420
+    Players:
+      Owner: EsaiP
+    CreatedDate: 12-02-2015
+    Color: GRAY
+    Mode: NORMAL
+  '58':
+    PlotLocation:
+      world: Creative
+      x: 420
+      y: 100
+      z: 315
+    Players:
+      Owner: tweegamer2339
+    CreatedDate: 13-02-2015
+    Color: GRAY
+    Mode: NORMAL
+  '59':
+    PlotLocation:
+      world: Creative
+      x: 420
+      y: 100
+      z: 210
+    Players:
+      Owner: mylifeingreen
+    CreatedDate: 13-02-2015
+    Color: GRAY
+    Mode: NORMAL
+  '60':
+    PlotLocation:
+      world: Creative
+      x: 420
+      y: 100
+      z: 105
+    Players:
+      Owner: lucpachet
+    CreatedDate: 14-02-2015
+    Color: GRAY
+    Mode: NORMAL
+  '61':
+    PlotLocation:
+      world: Creative
+      x: 420
+      y: 100
+      z: 0
+    Players:
+      Owner: Quinnbies
+    CreatedDate: 14-02-2015
+    Color: GRAY
+    Mode: NORMAL
+  '62':
+    PlotLocation:
+      world: Creative
+      x: 420
+      y: 100
+      z: -105
+    Players:
+      Owner: DutchLars
+    CreatedDate: 14-02-2015
+    Color: GRAY
+    Mode: NORMAL
+  '63':
+    PlotLocation:
+      world: Creative
+      x: 420
+      y: 100
+      z: -210
+    Players:
+      Owner: samou_rai
+    CreatedDate: 14-02-2015
+    Color: GRAY
+    Mode: NORMAL
+  '64':
+    PlotLocation:
+      world: Creative
+      x: 420
+      y: 100
+      z: -315
+    Players:
+      Owner: oscar_is_cool
+    CreatedDate: 14-02-2015
+    Color: GRAY
+    Mode: NORMAL
+  '65':
+    PlotLocation:
+      world: Creative
+      x: 420
+      y: 100
+      z: -420
+    Players:
+      Owner: joelzandberg
+    CreatedDate: 15-02-2015
+    Color: GRAY
+    Mode: NORMAL
+  '66':
+    PlotLocation:
+      world: Creative
+      x: 315
+      y: 100
+      z: -420
+    Players:
+      Owner: PrincesseLuna
+    CreatedDate: 15-02-2015
+    Color: GRAY
+    Mode: NORMAL
+  '67':
+    PlotLocation:
+      world: Creative
+      x: 210
+      y: 100
+      z: -420
+    Players:
+      Owner: Hoppingterror1
+    CreatedDate: 15-02-2015
+    Color: GRAY
+    Mode: NORMAL
+  '68':
+    PlotLocation:
+      world: Creative
+      x: 105
+      y: 100
+      z: -420
+    Players:
+      Owner: f6a9f76a-bb29-40fb-9c8f-1efd1720d1b3
+      Members:
+      - maikelmillan
+    CreatedDate: 15-02-2015
+    Color: GRAY
+    Mode: NORMAL
+  '69':
+    PlotLocation:
+      world: Creative
+      x: 0
+      y: 100
+      z: -420
+    Players:
+      Owner: Markzby
+    CreatedDate: 15-02-2015
+    Color: GRAY
+    Mode: NORMAL
+  '70':
+    PlotLocation:
+      world: Creative
+      x: -105
+      y: 100
+      z: -420
+    Players:
+      Owner: noah_foulon
+      Members:
+      - poepsn0r
+    CreatedDate: 15-02-2015
+    Color: GRAY
+    Mode: NORMAL
+  '71':
+    PlotLocation:
+      world: Creative
+      x: -210
+      y: 100
+      z: -420
+    Players:
+      Owner: poepsn0r
+    CreatedDate: 15-02-2015
+    Color: GRAY
+    Mode: NORMAL
+  '72':
+    PlotLocation:
+      world: Creative
+      x: -315
+      y: 100
+      z: -420
+    Players:
+      Owner: Mattybleasdale
+    CreatedDate: 15-02-2015
+    Color: GRAY
+    Mode: NORMAL
+  '73':
+    PlotLocation:
+      world: Creative
+      x: -420
+      y: 100
+      z: -420
+    Players:
+      Owner: Poepdrol
+    CreatedDate: 15-02-2015
+    Color: GRAY
+    Mode: NORMAL
+  '74':
+    PlotLocation:
+      world: Creative
+      x: -420
+      y: 100
+      z: -315
+    Players:
+      Owner: kevinthehero123
+    CreatedDate: 15-02-2015
+    Color: GRAY
+    Mode: NORMAL
+  '75':
+    PlotLocation:
+      world: Creative
+      x: -420
+      y: 100
+      z: -210
+    Players:
+      Owner: fe36e01d-fe12-458a-8d57-1aa1c5b96fb5
+    CreatedDate: 16-02-2015
+    Color: GRAY
+    Mode: NORMAL
+  '76':
+    PlotLocation:
+      world: Creative
+      x: -420
+      y: 100
+      z: -105
+    Players:
+      Owner: mistergaming123
+    CreatedDate: 16-02-2015
+    Color: GRAY
+    Mode: NORMAL
+  '77':
+    PlotLocation:
+      world: Creative
+      x: -420
+      y: 100
+      z: 0
+    Players:
+      Owner: svja09
+    CreatedDate: 16-02-2015
+    Color: GRAY
+    Mode: NORMAL
+  '78':
+    PlotLocation:
+      world: Creative
+      x: -420
+      y: 100
+      z: 105
+    Players:
+      Owner: Raul_2007
+    CreatedDate: 16-02-2015
+    Color: GRAY
+    Mode: NORMAL
+  '79':
+    PlotLocation:
+      world: Creative
+      x: -420
+      y: 100
+      z: 210
+    Players:
+      Owner: captangamer
+    CreatedDate: 17-02-2015
+    Color: GRAY
+    Mode: NORMAL
+  '80':
+    PlotLocation:
+      world: Creative
+      x: -420
+      y: 100
+      z: 315
+    Players:
+      Owner: Dimitiris25
+    CreatedDate: 17-02-2015
+    Color: GRAY
+    Mode: NORMAL
+  '81':
+    PlotLocation:
+      world: Creative
+      x: -420
+      y: 100
+      z: 420
+    Players:
+      Owner: MissIsabelle
+    CreatedDate: 18-02-2015
+    Color: GRAY
+    Mode: NORMAL
+  '82':
+    PlotLocation:
+      world: Creative
+      x: -420
+      y: 100
+      z: 525
+    Players:
+      Owner: devinbs
+    CreatedDate: 18-02-2015
+    Color: GRAY
+    Mode: NORMAL
+  '83':
+    PlotLocation:
+      world: Creative
+      x: -315
+      y: 100
+      z: 525
+    Players:
+      Owner: DuisterLord
+    CreatedDate: 18-02-2015
+    Color: GRAY
+    Mode: NORMAL
+  '84':
+    PlotLocation:
+      world: Creative
+      x: -210
+      y: 100
+      z: 525
+    Players:
+      Owner: passiekuipje
+    CreatedDate: 18-02-2015
+    Color: GRAY
+    Mode: NORMAL
+  '85':
+    PlotLocation:
+      world: Creative
+      x: -105
+      y: 100
+      z: 525
+    Players:
+      Owner: draak92
+    CreatedDate: 18-02-2015
+    Color: GRAY
+    Mode: NORMAL
+  '86':
+    PlotLocation:
+      world: Creative
+      x: 0
+      y: 100
+      z: 525
+    Players:
+      Owner: skythekidr
+    CreatedDate: 18-02-2015
+    Color: GRAY
+    Mode: NORMAL
+  '87':
+    PlotLocation:
+      world: Creative
+      x: 105
+      y: 100
+      z: 525
+    Players:
+      Owner: TheFunGuysYves
+    CreatedDate: 19-02-2015
+    Color: GRAY
+    Mode: NORMAL
+  '88':
+    PlotLocation:
+      world: Creative
+      x: 210
+      y: 100
+      z: 525
+    Players:
+      Owner: 10925aa5-7769-44ec-b0d1-509af5e0bd31
+    CreatedDate: 19-02-2015
+    Color: GRAY
+    Mode: NORMAL
+  '89':
+    PlotLocation:
+      world: Creative
+      x: 315
+      y: 100
+      z: 525
+    Players:
+      Owner: lindemineur
+    CreatedDate: 19-02-2015
+    Color: GRAY
+    Mode: NORMAL
+  '90':
+    PlotLocation:
+      world: Creative
+      x: 420
+      y: 100
+      z: 525
+    Players:
+      Owner: TheLotteS
+    CreatedDate: 19-02-2015
+    Color: GRAY
+    Mode: NORMAL
+  '91':
+    PlotLocation:
+      world: Creative
+      x: 525
+      y: 100
+      z: 525
+    Players:
+      Owner: Justinubels
+    CreatedDate: 19-02-2015
+    Color: GRAY
+    Mode: NORMAL
+  '92':
+    PlotLocation:
+      world: Creative
+      x: 525
+      y: 100
+      z: 420
+    Players:
+      Owner: loquin18
+    CreatedDate: 19-02-2015
+    Color: GRAY
+    Mode: NORMAL
+  '93':
+    PlotLocation:
+      world: Creative
+      x: 525
+      y: 100
+      z: 315
+    Players:
+      Owner: Noud_Wouter
+      Members:
+      - k1ller15
+    CreatedDate: 20-02-2015
+    Color: GRAY
+    Mode: NORMAL
+  '94':
+    PlotLocation:
+      world: Creative
+      x: 525
+      y: 100
+      z: 210
+    Players:
+      Owner: theanikilator86
+    CreatedDate: 20-02-2015
+    Color: GRAY
+    Mode: NORMAL
+  '95':
+    PlotLocation:
+      world: Creative
+      x: 525
+      y: 100
+      z: 105
+    Players:
+      Owner: Agent_00pikachu
+    CreatedDate: 20-02-2015
+    Color: GRAY
+    Mode: NORMAL
+  '96':
+    PlotLocation:
+      world: Creative
+      x: 525
+      y: 100
+      z: 0
+    Players:
+      Owner: e614a99a-7853-4114-b41d-b7900af3e254
+    CreatedDate: 21-02-2015
+    Color: GRAY
+    Mode: NORMAL
+  '97':
+    PlotLocation:
+      world: Creative
+      x: 525
+      y: 100
+      z: -105
+    Players:
+      Owner: 371740db-9cf7-4990-a3e5-72baef43b82e
+    CreatedDate: 22-02-2015
+    Color: GRAY
+    Mode: NORMAL
+  '98':
+    PlotLocation:
+      world: Creative
+      x: 525
+      y: 100
+      z: -210
+    Players:
+      Owner: TheBear13
+    CreatedDate: 22-02-2015
+    Color: GRAY
+    Mode: NORMAL
+  '99':
+    PlotLocation:
+      world: Creative
+      x: 525
+      y: 100
+      z: -315
+    Players:
+      Owner: vedcon04
+    CreatedDate: 22-02-2015
+    Color: GRAY
+    Mode: NORMAL
+  '100':
+    PlotLocation:
+      world: Creative
+      x: 525
+      y: 100
+      z: -420
+    Players:
+      Owner: ivano2004
+    CreatedDate: 23-02-2015
+    Color: GRAY
+    Mode: NORMAL
+  '101':
+    PlotLocation:
+      world: Creative
+      x: 525
+      y: 100
+      z: -525
+    Players:
+      Owner: 0c8469be-f86c-4c94-bd7a-63eb46e2d4db
+    CreatedDate: 23-02-2015
+    Color: PURPLE
+    Mode: NORMAL
+    Members:
+    - 85b1b27f-fa7d-4786-bc1e-28a2add8d35b
+  '102':
+    PlotLocation:
+      world: Creative
+      x: 420
+      y: 100
+      z: -525
+    Players:
+      Owner: ursupator
+    CreatedDate: 23-02-2015
+    Color: GRAY
+    Mode: NORMAL
+  '103':
+    PlotLocation:
+      world: Creative
+      x: 315
+      y: 100
+      z: -525
+    Players:
+      Owner: FastTurtles410
+    CreatedDate: 24-02-2015
+    Color: GRAY
+    Mode: NORMAL
+  '104':
+    PlotLocation:
+      world: Creative
+      x: 210
+      y: 100
+      z: -525
+    Players:
+      Owner: crazycreeper250
+    CreatedDate: 25-02-2015
+    Color: GRAY
+    Mode: NORMAL
+  '105':
+    PlotLocation:
+      world: Creative
+      x: 105
+      y: 100
+      z: -525
+    Players:
+      Owner: Vierkanter
+    CreatedDate: 25-02-2015
+    Color: GRAY
+    Mode: NORMAL
+  '106':
+    PlotLocation:
+      world: Creative
+      x: 0
+      y: 100
+      z: -525
+    Players:
+      Owner: eddieirwin
+    CreatedDate: 25-02-2015
+    Color: GRAY
+    Mode: NORMAL
+  '107':
+    PlotLocation:
+      world: Creative
+      x: -105
+      y: 100
+      z: -525
+    Players:
+      Owner: CashDylan
+    CreatedDate: 26-02-2015
+    Color: GRAY
+    Mode: NORMAL
+  '108':
+    PlotLocation:
+      world: Creative
+      x: -210
+      y: 100
+      z: -525
+    Players:
+      Owner: Djbart2002
+    CreatedDate: 26-02-2015
+    Color: GRAY
+    Mode: NORMAL
+  '109':
+    PlotLocation:
+      world: Creative
+      x: -315
+      y: 100
+      z: -525
+    Players:
+      Owner: Svenieboy89
+    CreatedDate: 26-02-2015
+    Color: GRAY
+    Mode: NORMAL
+  '110':
+    PlotLocation:
+      world: Creative
+      x: -420
+      y: 100
+      z: -525
+    Players:
+      Owner: 09a715aa-c3ab-4a2b-b0f9-731bc79d70c0
+    CreatedDate: 26-02-2015
+    Color: GRAY
+    Mode: NORMAL
+  '111':
+    PlotLocation:
+      world: Creative
+      x: -525
+      y: 100
+      z: -525
+    Players:
+      Owner: hugodenhartoog
+    CreatedDate: 26-02-2015
+    Color: GRAY
+    Mode: NORMAL
+  '112':
+    PlotLocation:
+      world: Creative
+      x: -525
+      y: 100
+      z: -420
+    Players:
+      Owner: a66d37e5-f4f9-4d31-b3a7-d946b58ccee5
+    CreatedDate: 07-03-2015
+    Color: GRAY
+    Mode: NORMAL
+  '113':
+    PlotLocation:
+      world: Creative
+      x: -525
+      y: 100
+      z: -315
+    Players:
+      Owner: 35005dca-8c38-4143-9418-92edbaf7d488
+    CreatedDate: 07-03-2015
+    Color: GRAY
+    Mode: NORMAL
+  '114':
+    PlotLocation:
+      world: Creative
+      x: -525
+      y: 100
+      z: 0
+    Players:
+      Owner: f646810a-5131-42bc-b625-001e433fe9e8
+    CreatedDate: 07-03-2015
+    Color: GRAY
+    Mode: NORMAL
+    Members:
+    - f646810a-5131-42bc-b625-001e433fe9e8
+  '115':
+    PlotLocation:
+      world: Creative
+      x: -525
+      y: 100
+      z: 105
+    Players:
+      Owner: 07acc52c-04cb-4a15-b6b8-d416a8f2cb37
+    CreatedDate: 08-03-2015
+    Color: GRAY
+    Mode: NORMAL
+  '116':
+    PlotLocation:
+      world: Creative
+      x: -525
+      y: 100
+      z: 210
+    Players:
+      Owner: acb1a086-ca58-409b-8092-1b64fb183ba3
+    CreatedDate: 08-03-2015
+    Color: GRAY
+    Mode: NORMAL
+  '117':
+    PlotLocation:
+      world: Creative
+      x: -525
+      y: 100
+      z: 315
+    Players:
+      Owner: e50e3016-be6a-45e7-bdc2-c2b2aa143c8d
+    CreatedDate: 10-03-2015
+    Color: GRAY
+    Mode: NORMAL
+  '118':
+    PlotLocation:
+      world: Creative
+      x: -525
+      y: 100
+      z: 420
+    Players:
+      Owner: 74dae0af-9a5e-4bac-b763-03c3a31a3574
+    CreatedDate: 10-03-2015
+    Color: GRAY
+    Mode: NORMAL
+    Members:
+    - 69626b0c-6910-49b0-9a1d-8cf83141d60a
+  '119':
+    PlotLocation:
+      world: Creative
+      x: -525
+      y: 100
+      z: 525
+    Players:
+      Owner: 0662201c-f584-4053-bbcd-fffc104f1ad8
+    CreatedDate: 12-03-2015
+    Color: GRAY
+    Mode: NORMAL
+  '120':
+    PlotLocation:
+      world: Creative
+      x: -525
+      y: 100
+      z: 630
+    Players:
+      Owner: ad370275-2a86-41c3-847a-5f340456e26a
+    CreatedDate: 13-03-2015
+    Color: GRAY
+    Mode: NORMAL
+  '121':
+    PlotLocation:
+      world: Creative
+      x: -315
+      y: 100
+      z: 630
+    Players:
+      Owner: 39169f69-27a2-4c80-8a8a-99ccf7b61ca7
+    CreatedDate: 13-03-2015
+    Color: GRAY
+    Mode: NORMAL
+  '122':
+    PlotLocation:
+      world: Creative
+      x: -210
+      y: 100
+      z: 630
+    Players:
+      Owner: c32e2703-91bf-42fb-ad9f-6db57f393abc
+    CreatedDate: 13-03-2015
+    Color: GRAY
+    Mode: NORMAL
+    Members:
+    - d4d84f12-99d8-4cb8-b736-eb127ffd59b4
+  '123':
+    PlotLocation:
+      world: Creative
+      x: -105
+      y: 100
+      z: 630
+    Players:
+      Owner: 3af6e0f8-d892-4dca-8a84-faac85996465
+    CreatedDate: 14-03-2015
+    Color: GRAY
+    Mode: NORMAL
+  '124':
+    PlotLocation:
+      world: Creative
+      x: 0
+      y: 100
+      z: 630
+    Players:
+      Owner: f0de55a2-db3c-4c95-a550-09f1b68e4b88
+    CreatedDate: 14-03-2015
+    Color: GRAY
+    Mode: NORMAL
+  '125':
+    PlotLocation:
+      world: Creative
+      x: 315
+      y: 100
+      z: 630
+    Players:
+      Owner: 2ed52844-8a77-434f-970c-44effaca79be
+    CreatedDate: 15-03-2015
+    Color: GRAY
+    Mode: NORMAL
+  '126':
+    PlotLocation:
+      world: Creative
+      x: 420
+      y: 100
+      z: 630
+    Players:
+      Owner: 4cccbc51-1323-48ba-adb4-10be27e20fe7
+    CreatedDate: 15-03-2015
+    Color: GRAY
+    Mode: NORMAL
+  '127':
+    PlotLocation:
+      world: Creative
+      x: 525
+      y: 100
+      z: 630
+    Players:
+      Owner: e2c51e86-54fe-4935-acab-fd5b67fdf82a
+    CreatedDate: 15-03-2015
+    Color: GRAY
+    Mode: NORMAL
+  '128':
+    PlotLocation:
+      world: Creative
+      x: 630
+      y: 100
+      z: 630
+    Players:
+      Owner: 3d02d925-305b-43fd-a85b-536e02ce5659
+    CreatedDate: 15-03-2015
+    Color: GRAY
+    Mode: NORMAL
+  '129':
+    PlotLocation:
+      world: Creative
+      x: 630
+      y: 100
+      z: 420
+    Players:
+      Owner: 290473a0-4ab5-4001-9832-d5c10434a5f4
+    CreatedDate: 17-03-2015
+    Color: GRAY
+    Mode: NORMAL
+  '0':
+    Players:
+      Owner: 58e046d5-f8bf-4fa9-897a-c75aeb0cf245

@@ -1,0 +1,80 @@
+mine:
+  ==: pMine
+  region:
+    ==: PrisonRegion
+    minimum:
+      ==: Vector
+      x: -870.0
+      y: 1.0
+      z: 524.0
+    maximum:
+      ==: Vector
+      x: -848.0
+      y: 16.0
+      z: 546.0
+    world: PrisonServer
+  flags: []
+  breakBlacklist:
+    ==: Blacklist
+    blocks: {}
+    type: 0
+  parent: MineF1
+  blocks:
+  - ==: MineBlock
+    blockData: 0
+    blockId: 0
+    chance: 1.942890293094024E-16
+  - ==: MineBlock
+    blockData: 0
+    blockId: 56
+    chance: 0.425
+  - ==: MineBlock
+    blockData: 0
+    blockId: 129
+    chance: 0.425
+  - ==: MineBlock
+    blockData: 0
+    blockId: 133
+    chance: 0.075
+  - ==: MineBlock
+    blockData: 0
+    blockId: 57
+    chance: 0.075
+  tpPoint:
+    ==: SimpleLoc
+    yaw: -358.42706
+    pitch: 8.400011
+    z: 520.0646087515677
+    y: 17.0
+    world: PrisonServer
+    x: -858.1858370159343
+  blocksLeft: 8464
+  resetTriggers: []
+  id: Iron-VIPMine
+  warningTimes: []
+  placeBlacklist:
+    ==: Blacklist
+    blocks: {}
+    type: 0
+  cooldownPeriod: 0
+  name: ''
+  blockReplaceBlacklist:
+    ==: Blacklist
+    blocks: {}
+    type: 0
+  protectionRegion:
+    ==: PrisonRegion
+    minimum:
+      ==: Vector
+      x: -870.0
+      y: 1.0
+      z: 524.0
+    maximum:
+      ==: Vector
+      x: -848.0
+      y: 16.0
+      z: 546.0
+    world: PrisonServer
+  world: PrisonServer
+  enabledProtection: []
+  cooldownEnabled: false

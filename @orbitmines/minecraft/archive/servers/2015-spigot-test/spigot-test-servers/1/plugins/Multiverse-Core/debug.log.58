@@ -1,0 +1,8 @@
+2015-03-15 19:59:32 [INFO] [Multiverse-Core] - Version 2.4-b527 (API v14) Enabled - By Rigby, fernferret, lithium3141 and main--
+2015-03-15 19:59:32 [INFO] [Multiverse-Core] Loading World & Settings - 'world' - Env: NORMAL - Type: NORMAL & seed: 7057285974745616656
+2015-03-15 19:59:32 [INFO] [Multiverse-Core] Loading World & Settings - 'world_nether' - Env: NETHER - Type: NORMAL & seed: 7057285974745616656
+2015-03-15 19:59:32 [INFO] [Multiverse-Core] Loading World & Settings - 'world_the_end' - Env: THE_END - Type: NORMAL & seed: 7057285974745616656
+2015-03-15 19:59:32 [INFO] [Multiverse-Core] Loading World & Settings - 'Lobby' - Env: NORMAL - Type: NORMAL & seed: 4649916461310248534 & generator: OrbitMinesEmptyWorldGenerator
+2015-03-15 19:59:32 [INFO] [Multiverse-Core] Loading World & Settings - 'Arena1' - Env: NORMAL - Type: NORMAL & seed: 6292571125293778974 & generator: OrbitMinesEmptyWorldGenerator
+2015-03-15 19:59:33 [INFO] [Multiverse-Core] Loading World & Settings - 'Map1' - Env: NORMAL - Type: NORMAL & seed: 7340454999335466254 & generator: OrbitMinesEmptyWorldGenerator
+2015-03-15 19:59:33 [INFO] [Multiverse-Core] 6 - World(s) loaded.

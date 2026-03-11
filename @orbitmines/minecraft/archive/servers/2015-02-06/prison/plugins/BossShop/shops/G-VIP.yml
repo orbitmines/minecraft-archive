@@ -1,0 +1,17 @@
+ShopName: GoldVIP
+signs:
+  text: '[GoldVIP]'
+  NeedPermissionToCreateSign: true
+shop:
+  E-VIP:
+    RewardType: shop
+    PriceType: free
+    Reward: GoldVIP-P1
+    MenuItem:
+    - 'type: GOLD_INGOT'
+    - amount:1
+    - 'name:&6&lGold-VIP Shop'
+    - 'lore:&cRank: &6[&e&lVIP&6] #&cProfit: &610%'
+    - amount:1
+    InventoryLocation: 5
+    ExtraPermission: 'vipshop.G'

@@ -1,0 +1,151 @@
+#-----------------------------------------------------------------------------------------------------------#
+#							  MyCommand Commands config file (last update v5.1.0)							#
+#																											#
+#  BukkitDev Help page : http://dev.bukkit.org/server-mods/mycommand/pages/configuration-and-example    	#
+#																											#
+#	How to make a command :	(See an example command below)													#
+#		For first,put you command number on first line  													#
+#		Now put your command name on "command:" line. Don't forget the '/' before you command.				#
+#		So,select your command type from a predefined list putting it after "type" line						#
+#	COMMAND TYPE LIST :																						#
+#		TEXT , ALIAS , RUN_COMMAND , BROADCAST_TEXT , RUN_COMMAND_TEXT , RUN_COMMAND_BROADCAST_TEXT			#
+#		ADD_PERMISSION , WARMUP , COOLDOWN , RUN_CONSOLE , RUNCOMMAND_PERM_BROADCAST_TEXT , SPOUT_TEXT		#
+#       RUN_COMMAND_RANDOM , RUN_ASOPERATOR , ICON_MENU , SCOREBOARD , BUNGEE_TP , SPOUT_NOTIFICATION		#
+#		BAR_API_TEXT , BAR_API_BROADCAST_TEXT 																#
+#																											#
+#	Now,if you command it's "TEXT" type,you can put multiple line of text below text list					#
+#	Same thing,if your command it's "RUNCOMMAND" type,but put you commands below runcmd list.				#
+#	For Delayed command add $delay$ before the command in runcmd Example : - $delay$/list					#
+#	Set delay time with delaytimer: 5 (5 = seconds) | Use the dot . for decimal cost Example = cost : 5.5 	#
+#	You can customize your permission node by placing "permission-node:" field in a command					#
+#	Also,you can change the permission error message with "permission-error:"								#
+#   Custom error-message for invalid args ,put "error-message:" line in a command.							#
+#   You can use itemcost : 'ID:AMOUNT' for set a cost with items. 											#
+#   Register REAL commands putting "registered: true" below the command.     								#
+#   With registered command you can use the "tab_completer: - Hi - Hello!"	 								#
+#-----------------------------------------------------------------------------------------------------------#
+'1':
+  command: /hub
+  type: BUNGEE_TP
+  server_name: hub
+'2':
+  command: /help
+  type: TEXT
+  text:
+  - '&9&m====================================================='
+  - '&6&LOrbitMines &4&lPrison &6&lHelp Index'
+  - '&7/vote &6- Shows Vote Help'
+  - '&7/donate &6- Shows Donate Help'
+  - '&7/shop &6- Open the Shop'
+  - '&7/hub &6- Return to the Hub Server'
+  - '&7/ranks &6- List of all Prison Ranks'
+  - '&7/warplist &6- List of all the Warps'
+  - '&9&m====================================================='
+'3':
+  command: /donate
+  type: TEXT
+  text:
+  - '&8[&6&lOrbitMines&8] &7Donate at: &6http://shop.orbitmines.com'
+'4':
+  command: /ranks
+  type: TEXT
+  text:
+  - '&9&m====================================================='
+  - '&6&LOrbitMines &4&lPrison &6&lRank Prices'
+  - '&0&l[&f&lP&0&l] &6- &70$'
+  - '&0&l[&3&lO&0&l] &6- &7100000$'
+  - '&0&l[&0&lN&0&l] &6- &7200000$'
+  - '&0&l[&8&lM&0&l] &6- &7300000$'
+  - '&0&l[&7&lL&0&l] &6- &7500000$'
+  - '&0&l[&6&lK&0&l] &6- &71000000$'
+  - '&0&l[&f&lJ&0&l] &6- &72500000$'
+  - '&0&l[&2&lI&0&l] &6- &75000000$'
+  - '&0&l[&4&lH&0&l] &6- &710000000$'
+  - '&0&l[&E&lG&0&l] &6- &715000000$'
+  - '&0&l[&1&lF&0&l] &6- &725000000$'
+  - '&0&l[&5&lE&0&l] &6- &750000000$'
+  - '&0&l[&D&lD&0&l] &6- &7100000000$'
+  - '&0&l[&B&lC&0&l] &6- &7250000000$'
+  - '&0&l[&A&lB&0&l] &6- &7500000000$'
+  - '&0&l[&C&lA&0&l] &6- &71000000000$'
+  - '&9&m====================================================='
+'5':
+  command: /warplist
+  type: TEXT
+  text:
+  - '&9&m====================================================='
+  - '&6&LOrbitMines &4&lPrison &6&lWarp List'
+  - '&0&l[&f&lP&0&l] &6- &7/warp P'
+  - '&0&l[&3&lO&0&l] &6- &7/warp O'
+  - '&0&l[&0&lN&0&l] &6- &7/warp N'
+  - '&0&l[&8&lM&0&l] &6- &7/warp M'
+  - '&0&l[&7&lL&0&l] &6- &7/warp L'
+  - '&0&l[&6&lK&0&l] &6- &7/warp K'
+  - '&0&l[&f&lJ&0&l] &6- &7/warp J'
+  - '&0&l[&2&lI&0&l] &6- &7/warp I'
+  - '&0&l[&4&lH&0&l] &6- &7/warp H'
+  - '&0&l[&E&lG&0&l] &6- &7/warp G'
+  - '&0&l[&1&lF&0&l] &6- &7/warp F'
+  - '&0&l[&5&lE&0&l] &6- &7/warp E'
+  - '&0&l[&D&lD&0&l] &6- &7/warp D'
+  - '&0&l[&B&lC&0&l] &6- &7/warp C'
+  - '&0&l[&A&lB&0&l] &6- &7/warp B'
+  - '&0&l[&C&lA&0&l] &6- &7/warp A'
+  - '&0&l[&4&lPvP&0&l] &6- &7/warp PvP'
+  - '&0&l[&6&lSpecialMines&0&l] &6- &7/warp SM'
+  - '&0&l[&7&lFurnace&0&l] &6- &7/warp Furnace'
+  - '&8[&7&lVIP&8] &6- &7/warp IronVIP'
+  - '&6[&e&lVIP&6] &6- &7/warp GoldVIP'
+  - '&b[&9&lVIP&b] &6- &7/warp DiamondVIP'
+  - '&2[&a&lVIP&2] &6- &7/warp EmeraldVIP'
+  - '&9&m====================================================='
+'6':
+  command: /omt
+  type: RUN_COMMAND_TEXT
+  runcmd:
+  - '/points me'
+  text:
+  - '&8[&6&lOMT&8] &6Loading Tokens...'
+'7':
+  command: /voteshopcommand1
+  type: TEXT
+  text:
+  - '&8[&b&lVoteShop&8] &7You have &b100 Seconds&7 left!'
+  - '&8[&b&lVoteShop&8] &7Don''t leave this area the &bVoteShop&7 is still in &bBETA&7!'
+  - $delay$&8[&b&lVoteShop&8] &7You have &b90 Seconds&7 left!
+  - $delay$&8[&b&lVoteShop&8] &7You have &b80 Seconds&7 left!
+  - $delay$&8[&b&lVoteShop&8] &7You have &b70 Seconds&7 left!
+  - $delay$&8[&b&lVoteShop&8] &7You have &b60 Seconds&7 left!
+  - $delay$&8[&b&lVoteShop&8] &7You have &b50 Seconds&7 left!
+  - $delay$&8[&b&lVoteShop&8] &7You have &b40 Seconds&7 left!
+  - $delay$&8[&b&lVoteShop&8] &7You have &b30 Seconds&7 left!
+  - $delay$&8[&b&lVoteShop&8] &7You have &b20 Seconds&7 left!
+  - $delay$&8[&b&lVoteShop&8] &7You have &b10 Seconds&7 left!
+  - $delay$&8[&b&lVoteShop&8] &7You ran out of time!
+  delaytimer: 10
+  registered: true
+'8':
+  command: /voteshopcommand2
+  type: RUN_COMMAND
+  runcmd:
+  - $delay$/spawn
+  delaytimer: 100
+  registered: true
+'9':
+  command: /rules
+  type: TEXT
+  text:
+  - '&7&m====================================================='
+  - '&6&lOrbitMines &4&lRules:'
+  - ' &6- &7Don''t Advertise (Links IPs etc.)'
+  - ' &6- &7Have Respect for all Players'
+  - ' &6- &7Watch your Language!'
+  - ' &6- &7Listen to the Staff'
+  - ' &6- &7Don''t abuse Buggs'
+  - ' &6- &7Don''t hack (X-Ray Flyhacks etc.)'
+  - ' &6- &7Don''t spam Signs, the Chat or Commands'
+  - '&a&oExtra Survival Rules:'
+  - ' &6- &7Don''t forget to &lclaim&7! Other People can Grief!'
+  - ' &6- &7Don''t scam! (Shops, Auction etc.)'
+  - ' &6- &7Don''t grief the Landscape!'
+  - '&7&m====================================================='

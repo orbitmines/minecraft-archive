@@ -1,0 +1,108 @@
+ShopName: Protection
+signs:
+  text: '[Protection]'
+  NeedPermissionToCreateSign: true
+shop:
+  1:
+    RewardType: item
+    PriceType: money
+    Price: 400
+    Reward:
+    - - type:ENCHANTED_BOOK
+      - enchantment:PROTECTION_ENVIRONMENTAL#1
+      - amount:1
+    MenuItem:
+    - type:ENCHANTED_BOOK
+    - enchantment:PROTECTION_ENVIRONMENTAL#1
+    - amount:1
+    - 'name:&bEnchanted Book &6[Protection I]'
+    - 'lore:&c&LPrice: &6400$'
+    - amount:1
+    Message: '&2[&aSurvival Shop&2] &aYou have bought &f1 Enchanted Book (Protection I)&a for &6400$'
+    InventoryLocation: 1
+    ExtraPermission: ''
+  2:
+    RewardType: item
+    PriceType: money
+    Price: 800
+    Reward:
+    - - type:ENCHANTED_BOOK
+      - enchantment:PROTECTION_ENVIRONMENTAL#2
+      - amount:1
+    MenuItem:
+    - type:ENCHANTED_BOOK
+    - enchantment:PROTECTION_ENVIRONMENTAL#2
+    - amount:1
+    - 'name:&bEnchanted Book &6[Protection II]'
+    - 'lore:&c&LPrice: &6800$'
+    - amount:1
+    Message: '&2[&aSurvival Shop&2] &aYou have bought &f1 Enchanted Book (Protection II)&a for &6800$'
+    InventoryLocation: 2
+    ExtraPermission: ''
+  3:
+    RewardType: item
+    PriceType: money
+    Price: 1750
+    Reward:
+    - - type:ENCHANTED_BOOK
+      - enchantment:PROTECTION_ENVIRONMENTAL#3
+      - amount:1
+    MenuItem:
+    - type:ENCHANTED_BOOK
+    - enchantment:PROTECTION_ENVIRONMENTAL#3
+    - amount:1
+    - 'name:&bEnchanted Book &6[Protection III]'
+    - 'lore:&c&LPrice: &61750$ #&4Required: &8[&7&lVIP&8]'
+    - amount:1
+    Message: '&2[&aSurvival Shop&2] &aYou have bought &f1 Enchanted Book (Protection III)&a for &61750$'
+    InventoryLocation: 3
+    ExtraPermission: 'vipshop.ivip'
+  4:
+    RewardType: item
+    PriceType: money
+    Price: 2500
+    Reward:
+    - - type:ENCHANTED_BOOK
+      - enchantment:PROTECTION_ENVIRONMENTAL#4
+      - amount:1
+    MenuItem:
+    - type:ENCHANTED_BOOK
+    - enchantment:PROTECTION_ENVIRONMENTAL#4
+    - amount:1
+    - 'name:&bEnchanted Book &6[Protection IV]'
+    - 'lore:&c&LPrice: &62500$ #&4Required: &6[&e&lVIP&6]'
+    - amount:1
+    Message: '&2[&aSurvival Shop&2] &aYou have bought &f1 Enchanted Book (Protection IV)&a for &62500$'
+    InventoryLocation: 4
+    ExtraPermission: 'vipshop.gvip'
+  5:
+    RewardType: item
+    PriceType: money
+    Price: 3500
+    Reward:
+    - - type:ENCHANTED_BOOK
+      - enchantment:PROTECTION_ENVIRONMENTAL#5
+      - amount:1
+    MenuItem:
+    - type:ENCHANTED_BOOK
+    - enchantment:PROTECTION_ENVIRONMENTAL#5
+    - amount:1
+    - 'name:&bEnchanted Book &6[Protection V]'
+    - 'lore:&c&LPrice: &63500$ #&4Required: &b[&9&lVIP&b]'
+    - amount:1
+    Message: '&2[&aSurvival Shop&2] &aYou have bought &f1 Enchanted Book (Protection V)&a for &63500$'
+    InventoryLocation: 5
+    ExtraPermission: 'vipshop.dvip'
+  BackToMenu:
+    RewardType: shop
+    PriceType: free
+    Reward: Survival
+    MenuItem:
+    - type:REDSTONE_BLOCK
+    - amount:1
+    - name:&a&LSurvival Menu
+    - lore:&8Back to the Survival Menu
+    - amount:1
+    InventoryLocation: 9
+    ExtraPermission: ''
+

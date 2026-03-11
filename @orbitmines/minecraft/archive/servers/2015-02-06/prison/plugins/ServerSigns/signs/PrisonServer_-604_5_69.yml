@@ -1,0 +1,16 @@
+permission: ''
+world: PrisonServer
+X: -604
+Y: 5
+Z: 69
+price: 0.0
+cooldown: 0
+globalCooldown: 0
+confirmation: false
+commands:
+- '/warp IronVIP '
+grantPermissions: []
+lastGlobalUse: 0
+lastUse: {}
+priceItems: []
+exp: 0

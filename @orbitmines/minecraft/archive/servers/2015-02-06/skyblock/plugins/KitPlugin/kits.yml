@@ -1,0 +1,384 @@
+# ***************************
+# Config explanation: http://dev.bukkit.org/bukkit-plugins/kitplugin/pages/kits-config-v7-0/
+# ***************************
+# IMPORTANT: v7.0 or higher no longer allows numeric IDs! You have to use EXACT NAMES! 
+# Check your KitPlugin folder for all the names! It contains 3 files (names-items.yml, names-enchants.yml, names-effects.yml).
+# ***************************
+
+IronVIP+:
+  items:
+    Iron:
+      id: IRON_INGOT
+      amount: 5
+      slot: inventory
+    Diamond:
+      id: DIAMOND
+      amount: 2
+      slot: inventory
+    Sand:
+      id: SAND
+      amount: 8
+      slot: inventory
+    Grass:
+      id: GRASS
+      amount: 8
+      slot: inventory
+  commands: []
+  removeeffects: false
+  effects: []
+  givemoney: 0
+  givexp: 0
+  usages: 0
+  clearinv: false
+  cleararmor: false
+  cooldown: 86400
+  price: 0
+  message: '&6&lPre-Order &7&lIron VIP &a&lkit!'
+GoldVIP+:
+  items:
+    Iron:
+      id: IRON_INGOT
+      amount: 10
+      slot: inventory
+    Diamond:
+      id: DIAMOND
+      amount: 4
+      slot: inventory
+    Sand:
+      id: SAND
+      amount: 16
+      slot: inventory
+    Grass:
+      id: GRASS
+      amount: 16
+      slot: inventory
+  commands: []
+  removeeffects: false
+  effects: []
+  givemoney: 0
+  givexp: 0
+  usages: 0
+  clearinv: false
+  cleararmor: false
+  cooldown: 86400
+  price: 0
+  message: '&6&lPre-Order &6&lGold VIP &a&lkit!'
+DiamondVIP+:
+  items:
+    Iron:
+      id: IRON_INGOT
+      amount: 32
+      slot: inventory
+    Diamond:
+      id: DIAMOND
+      amount: 10
+      slot: inventory
+    Sand:
+      id: SAND
+      amount: 40
+      slot: inventory
+    Grass:
+      id: GRASS
+      amount: 40
+      slot: inventory
+    Gold:
+      id: GOLD_INGOT
+      amount: 16
+      slot: inventory
+  commands: []
+  removeeffects: false
+  effects: []
+  givemoney: 0
+  givexp: 0
+  usages: 0
+  clearinv: false
+  cleararmor: false
+  cooldown: 86400
+  price: 0
+  message: '&6&lPre-Order &9&lDiamond VIP &a&lkit!'
+EmeraldVIP+:
+  items:
+    Iron:
+      id: IRON_INGOT
+      amount: 64
+      slot: inventory
+    Diamond:
+      id: DIAMOND
+      amount: 25
+      slot: inventory
+    Sand:
+      id: SAND
+      amount: 64
+      slot: inventory
+    Grass:
+      id: GRASS
+      amount: 64
+      slot: inventory
+    Gold:
+      id: GOLD_INGOT
+      amount: 32
+      slot: inventory
+  commands: []
+  removeeffects: false
+  effects: []
+  givemoney: 0
+  givexp: 0
+  usages: 0
+  clearinv: false
+  cleararmor: false
+  cooldown: 86400
+  price: 0
+  message: '&6&lPre-Order &a&lEmerald VIP &a&lkit!'
+IronVIPSpawner+:
+  items:
+    Iron:
+      id: COBBLESTONE
+      amount: 1
+      slot: inventory
+  commands:
+  - silkspawners zombie 1 (player)
+  removeeffects: false
+  effects: []
+  givemoney: 0
+  givexp: 0
+  usages: 0
+  clearinv: false
+  cleararmor: false
+  cooldown: 432000
+  price: 0
+  message: '&6&lPre-Order &7&lIron VIP &8&lSpawner &a&lkit!'
+GoldVIPSpawner+:
+  items:
+    Iron:
+      id: COBBLESTONE
+      amount: 1
+      slot: inventory
+  commands:
+  - silkspawners zombie 1 (player)
+  - silkspawners skeleton 1 (player)
+  removeeffects: false
+  effects: []
+  givemoney: 0
+  givexp: 0
+  usages: 0
+  clearinv: false
+  cleararmor: false
+  cooldown: 432000
+  price: 0
+  message: '&6&lPre-Order &6&lGold VIP &8&lSpawner &a&lkit!'
+DiamondVIPSpawner+:
+  items:
+    Iron:
+      id: COBBLESTONE
+      amount: 1
+      slot: inventory
+  commands:
+  - silkspawners zombie 2 (player)
+  - silkspawners skeleton 1 (player)
+  - silkspawners spider 1 (player)
+  removeeffects: false
+  effects: []
+  givemoney: 0
+  givexp: 0
+  usages: 0
+  clearinv: false
+  cleararmor: false
+  cooldown: 432000
+  price: 0
+  message: '&6&lPre-Order &9&lDiamond VIP &8&lSpawner &a&lkit!'
+EmeraldVIPSpawner+:
+  items:
+    Iron:
+      id: COBBLESTONE
+      amount: 1
+      slot: inventory
+  commands:
+  - silkspawners zombie 2 (player)
+  - silkspawners skeleton 2 (player)
+  - silkspawners spider 2 (player)
+  - silkspawners pigman 1 (player)
+  - silkspawners slime 1 (player)
+  removeeffects: false
+  effects: []
+  givemoney: 0
+  givexp: 0
+  usages: 0
+  clearinv: false
+  cleararmor: false
+  cooldown: 432000
+  price: 0
+  message: '&6&lPre-Order &a&lEmerald VIP &8&lSpawner &a&lkit!'
+IronVIP:
+  items:
+    Iron:
+      id: IRON_INGOT
+      amount: 3
+      slot: inventory
+    Diamond:
+      id: DIAMOND
+      amount: 1
+      slot: inventory
+    Sand:
+      id: SAND
+      amount: 6
+      slot: inventory
+    Dirt:
+      id: DIRT
+      amount: 6
+      slot: inventory
+  commands:
+  - exp give (player) 5l
+  removeeffects: false
+  effects: []
+  givemoney: 0
+  givexp: 0
+  usages: 0
+  clearinv: false
+  cleararmor: false
+  cooldown: 86400
+  price: 0
+  message: '&7&lIron VIP &a&lkit!'
+GoldVIP:
+  items:
+    Iron:
+      id: IRON_INGOT
+      amount: 8
+      slot: inventory
+    Diamond:
+      id: DIAMOND
+      amount: 2
+      slot: inventory
+    Sand:
+      id: SAND
+      amount: 16
+      slot: inventory
+    Dirt:
+      id: DIRT
+      amount: 16
+      slot: inventory
+    Coal:
+      id: COAL
+      amount: 16
+      slot: inventory
+    Egg:
+      id: MONSTER_EGG
+      amount: 1
+      data: 93
+      slot: inventory
+  commands:
+  - exp give (player) 10l
+  removeeffects: false
+  effects: []
+  givemoney: 0
+  givexp: 0
+  usages: 0
+  clearinv: false
+  cleararmor: false
+  cooldown: 86400
+  price: 0
+  message: '&6&lGold VIP &a&lkit!'
+DiamondVIP:
+  items:
+    Iron:
+      id: IRON_INGOT
+      amount: 20
+      slot: inventory
+    Diamond:
+      id: DIAMOND
+      amount: 5
+      slot: inventory
+    Sand:
+      id: SAND
+      amount: 32
+      slot: inventory
+    Dirt:
+      id: DIRT
+      amount: 32
+      slot: inventory
+    Coal:
+      id: COAL
+      amount: 32
+      slot: inventory
+    Grass:
+      id: GRASS
+      amount: 2
+      slot: inventory
+    Egg:
+      id: MONSTER_EGG
+      amount: 1
+      data: 93
+      slot: inventory
+    Egg2:
+      id: MONSTER_EGG
+      amount: 1
+      data: 90
+      slot: inventory
+  commands:
+  - exp give (player) 25l
+  removeeffects: false
+  effects: []
+  givemoney: 0
+  givexp: 0
+  usages: 0
+  clearinv: false
+  cleararmor: false
+  cooldown: 86400
+  price: 0
+  message: '&9&lDiamond VIP &a&lkit!'
+EmeraldVIP:
+  items:
+    Iron:
+      id: IRON_INGOT
+      amount: 45
+      slot: inventory
+    Diamond:
+      id: DIAMOND
+      amount: 15
+      slot: inventory
+    Sand:
+      id: SAND
+      amount: 64
+      slot: inventory
+    Dirt:
+      id: DIRT
+      amount: 64
+      slot: inventory
+    Coal:
+      id: COAL
+      amount: 64
+      slot: inventory
+    Grass:
+      id: GRASS
+      amount: 10
+      slot: inventory
+    Leather:
+      id: LEATHER
+      amount: 2
+      slot: inventory
+    Egg:
+      id: MONSTER_EGG
+      amount: 1
+      data: 93
+      slot: inventory
+    Egg2:
+      id: MONSTER_EGG
+      amount: 1
+      data: 90
+      slot: inventory
+    Egg3:
+      id: MONSTER_EGG
+      amount: 1
+      data: 92
+      slot: inventory
+  commands:
+  - exp give (player) 50l
+  removeeffects: false
+  effects: []
+  givemoney: 0
+  givexp: 0
+  usages: 0
+  clearinv: false
+  cleararmor: false
+  cooldown: 86400
+  price: 0
+  message: '&a&lEmerald VIP &a&lkit!'

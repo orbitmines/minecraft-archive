@@ -1,0 +1,1 @@
+{"SURVIVAL":{"inventoryContents":{"0":{"==":"org.bukkit.inventory.ItemStack","type":"WOOD","amount":2},"8":{"==":"org.bukkit.inventory.ItemStack","type":"WORKBENCH"}},"armorContents":{},"balance":"0.0","enderChestContents":{},"potions":"[]","stats":{"ra":"300","ex":"0.5634818","hp":"20","fl":"11","txp":"0","el":"0","sa":"0.0","ma":"300","xp":"0.0","ft":"-20","fd":"0.0"}}}

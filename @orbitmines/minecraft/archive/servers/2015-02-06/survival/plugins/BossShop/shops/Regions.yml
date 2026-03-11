@@ -1,0 +1,693 @@
+ShopName: Regions
+signs:
+  text: '[Regions]'
+  NeedPermissionToCreateSign: true
+shop:
+  1:
+    RewardType: playercommand
+    PriceType: free
+    Reward:
+    - 'mvtp w:SurvivalWorld'
+    - 'rg tp 1'
+    MenuItem:
+    - id:6
+    - amount:1
+    - durability:2
+    - 'name:&aRegion &f1'
+    - 'lore:&7b: &cBirch Forest #&7x: &c-445 #&7y: &c70 #&7z: &c-279 #&7f: &c*'
+    - amount:1
+    Message: '&2[&aRegions&2] &aYou have been teleported to Region: &f1'
+    InventoryLocation: 23
+    ExtraPermission: ''
+  2:
+    RewardType: playercommand
+    PriceType: free
+    Reward:
+    - 'mvtp w:SurvivalWorld'
+    - 'rg tp 2'
+    MenuItem:
+    - id:6
+    - amount:2
+    - 'name:&aRegion &f2'
+    - 'lore:&7b: &cForestHills #&7x: &c-445 #&7y: &c87 #&7z: &c-1279 #&7f: &cNORTH'
+    - amount:2
+    Message: '&2[&aRegions&2] &aYou have been teleported to Region: &f2'
+    InventoryLocation: 22
+    ExtraPermission: ''
+  3:
+    RewardType: playercommand
+    PriceType: free
+    Reward:
+    - 'mvtp w:SurvivalWorld'
+    - 'rg tp 3'
+    MenuItem:
+    - id:106
+    - amount:3
+    - 'name:&aRegion &f3'
+    - 'lore:&7b: &cSwampland #&7x: &c-445 #&7y: &c66 #&7z: &c-2279 #&7f: &cNORTH'
+    - amount:3
+    Message: '&2[&aRegions&2] &aYou have been teleported to Region: &f3'
+    InventoryLocation: 21
+    ExtraPermission: ''
+  4:
+    RewardType: playercommand
+    PriceType: free
+    Reward:
+    - 'mvtp w:SurvivalWorld'
+    - 'rg tp 4'
+    MenuItem:
+    - type:STONE
+    - amount:4
+    - 'name:&aRegion &f4'
+    - 'lore:&7b: &cExtreme Hills #&7x: &c-445 #&7y: &c75 #&7z: &c-3279 #&7f: &cNORTH'
+    - amount:4
+    Message: '&2[&aRegions&2] &aYou have been teleported to Region: &f4'
+    InventoryLocation: 20
+    ExtraPermission: ''
+  5:
+    RewardType: playercommand
+    PriceType: free
+    Reward:
+    - 'mvtp w:SurvivalWorld'
+    - 'rg tp 5'
+    MenuItem:
+    - type:WATER
+    - amount:5
+    - 'name:&aRegion &f5'
+    - 'lore:&7b: &cRiver #&7x: &c-445 #&7y: &c66 #&7z: &c-4279 #&7f: &cNORTH'
+    - amount:5
+    Message: '&2[&aRegions&2] &aYou have been teleported to Region: &f5'
+    InventoryLocation: 19
+    ExtraPermission: ''
+  6:
+    RewardType: playercommand
+    PriceType: free
+    Reward:
+    - 'mvtp w:SurvivalWorld'
+    - 'rg tp 6'
+    MenuItem:
+    - id:6
+    - amount:6
+    - durability:4
+    - 'name:&aRegion &f6'
+    - 'lore:&7b: &cSavanna #&7x: &c1055 #&7y: &c71 #&7z: &c-279 #&7f: &cEAST'
+    - amount:6
+    Message: '&2[&aRegions&2] &aYou have been teleported to Region: &f6'
+    InventoryLocation: 14
+    ExtraPermission: ''
+  7:
+    RewardType: playercommand
+    PriceType: free
+    Reward:
+    - 'mvtp w:SurvivalWorld'
+    - 'rg tp 7'
+    MenuItem:
+    - type:WATER
+    - amount:7
+    - 'name:&aRegion &f7'
+    - 'lore:&7b: &cDeep Ocean #&7x: &c2555 #&7y: &c66 #&7z: &c-279 #&7f: &cEAST'
+    - amount:7
+    Message: '&2[&aRegions&2] &aYou have been teleported to Region: &f7'
+    InventoryLocation: 5
+    ExtraPermission: ''
+  8:
+    RewardType: playercommand
+    PriceType: free
+    Reward:
+    - 'mvtp w:SurvivalWorld'
+    - 'rg tp 8'
+    MenuItem:
+    - type:WATER
+    - amount:8
+    - 'name:&aRegion &f8'
+    - 'lore:&7b: &cDeep Ocean #&7x: &c-445 #&7y: &c66 #&7z: &c721 #&7f: &cSOUTH'
+    - amount:8
+    Message: '&2[&aRegions&2] &aYou have been teleported to Region: &f8'
+    InventoryLocation: 24
+    ExtraPermission: ''
+  9:
+    RewardType: playercommand
+    PriceType: free
+    Reward:
+    - 'mvtp w:SurvivalWorld'
+    - 'rg tp 9'
+    MenuItem:
+    - type:WATER
+    - amount:9
+    - 'name:&aRegion &f9'
+    - 'lore:&7b: &cDeep Ocean #&7x: &c-445 #&7y: &c66 #&7z: &c1721 #&7f: &cSOUTH'
+    - amount:9
+    Message: '&2[&aRegions&2] &aYou have been teleported to Region: &f9'
+    InventoryLocation: 25
+    ExtraPermission: ''
+  10:
+    RewardType: playercommand
+    PriceType: free
+    Reward:
+    - 'mvtp w:SurvivalWorld'
+    - 'rg tp 10'
+    MenuItem:
+    - id:6
+    - amount:10
+    - 'name:&aRegion &f10'
+    - 'lore:&7b: &cForestHills #&7x: &c-445 #&7y: &c83 #&7z: &c2721 #&7f: &cSOUTH'
+    - amount:10
+    Message: '&2[&aRegions&2] &aYou have been teleported to Region: &f10'
+    InventoryLocation: 26
+    ExtraPermission: ''
+  11:
+    RewardType: playercommand
+    PriceType: free
+    Reward:
+    - 'mvtp w:SurvivalWorld'
+    - 'rg tp 11'
+    MenuItem:
+    - type:SAND
+    - amount:11
+    - 'name:&aRegion &f11'
+    - 'lore:&7b: &cBeach #&7x: &c-445 #&7y: &c83 #&7z: &c3721 #&7f: &cSOUTH'
+    - amount:11
+    Message: '&2[&aRegions&2] &aYou have been teleported to Region: &f11'
+    InventoryLocation: 27
+    ExtraPermission: ''
+  12:
+    RewardType: playercommand
+    PriceType: free
+    Reward:
+    - 'mvtp w:SurvivalWorld'
+    - 'rg tp 12'
+    MenuItem:
+    - id:6
+    - amount:12
+    - 'name:&aRegion &f12'
+    - 'lore:&7b: &cForest #&7x: &c-1945 #&7y: &c72 #&7z: &c-279 #&7f: &cWEST'
+    - amount:12
+    Message: '&2[&aRegions&2] &aYou have been teleported to Region: &f12'
+    InventoryLocation: 32
+    ExtraPermission: ''
+  13:
+    RewardType: playercommand
+    PriceType: free
+    Reward:
+    - 'mvtp w:SurvivalWorld'
+    - 'rg tp 13'
+    MenuItem:
+    - id:6
+    - amount:13
+    - durability:5
+    - 'name:&aRegion &f13'
+    - 'lore:&7b: &cRoofed Forest #&7x: &c-3445 #&7y: &c67 #&7z: &c-279 #&7f: &cWEST'
+    - amount:13
+    Message: '&2[&aRegions&2] &aYou have been teleported to Region: &f13'
+    InventoryLocation: 41
+    ExtraPermission: ''
+  14:
+    RewardType: playercommand
+    PriceType: free
+    Reward:
+    - 'mvtp w:SurvivalWorld'
+    - 'rg tp 14'
+    MenuItem:
+    - type:WATER
+    - amount:14
+    - 'name:&aRegion &f14'
+    - 'lore:&7b: &cDeep Ocean #&7x: &c1055 #&7y: &c66 #&7z: &c-1279'
+    - amount:14
+    Message: '&2[&aRegions&2] &aYou have been teleported to Region: &f14'
+    InventoryLocation: 13
+    ExtraPermission: ''
+  15:
+    RewardType: playercommand
+    PriceType: free
+    Reward:
+    - 'mvtp w:SurvivalWorld'
+    - 'rg tp 15'
+    MenuItem:
+    - id:6
+    - amount:15
+    - durability:4
+    - 'name:&aRegion &f15'
+    - 'lore:&7b: &cSavanna #&7x: &c2555 #&7y: &c73 #&7z: &c-1279'
+    - amount:15
+    Message: '&2[&aRegions&2] &aYou have been teleported to Region: &f15'
+    InventoryLocation: 4
+    ExtraPermission: ''
+  16:
+    RewardType: playercommand
+    PriceType: free
+    Reward:
+    - 'mvtp w:SurvivalWorld'
+    - 'rg tp 16'
+    MenuItem:
+    - id:6
+    - amount:16
+    - durability:1
+    - 'name:&aRegion &f16'
+    - 'lore:&7b: &cTaiga #&7x: &c1055 #&7y: &c74 #&7z: &c-2279'
+    - amount:16
+    Message: '&2[&aRegions&2] &aYou have been teleported to Region: &f16'
+    InventoryLocation: 12
+    ExtraPermission: ''
+  17:
+    RewardType: playercommand
+    PriceType: free
+    Reward:
+    - 'mvtp w:SurvivalWorld'
+    - 'rg tp 17'
+    MenuItem:
+    - type:WATER
+    - amount:17
+    - 'name:&aRegion &f17'
+    - 'lore:&7b: &cOcean #&7x: &c2555 #&7y: &c66 #&7z: &c-2279'
+    - amount:17
+    Message: '&2[&aRegions&2] &aYou have been teleported to Region: &f17'
+    InventoryLocation: 3
+    ExtraPermission: ''
+  18:
+    RewardType: playercommand
+    PriceType: free
+    Reward:
+    - 'mvtp w:SurvivalWorld'
+    - 'rg tp 18'
+    MenuItem:
+    - type:WATER
+    - amount:18
+    - 'name:&aRegion &f18'
+    - 'lore:&7b: &cOcean #&7x: &c1055 #&7y: &c66 #&7z: &c-3279'
+    - amount:18
+    Message: '&2[&aRegions&2] &aYou have been teleported to Region: &f18'
+    InventoryLocation: 11
+    ExtraPermission: ''
+  19:
+    RewardType: playercommand
+    PriceType: free
+    Reward:
+    - 'mvtp w:SurvivalWorld'
+    - 'rg tp 19'
+    MenuItem:
+    - type:WATER
+    - amount:19
+    - 'name:&aRegion &f19'
+    - 'lore:&7b: &cOcean #&7x: &c2555 #&7y: &c66 #&7z: &c-3279'
+    - amount:19
+    Message: '&2[&aRegions&2] &aYou have been teleported to Region: &f19'
+    InventoryLocation: 2
+    ExtraPermission: ''
+  20:
+    RewardType: playercommand
+    PriceType: free
+    Reward:
+    - 'mvtp w:SurvivalWorld'
+    - 'rg tp 20'
+    MenuItem:
+    - type:SAPLING
+    - amount:20
+    - 'name:&aRegion &f20'
+    - 'lore:&7b: &cForestHills #&7x: &c1055 #&7y: &c70 #&7z: &c-4279'
+    - amount:20
+    Message: '&2[&aRegions&2] &aYou have been teleported to Region: &f20'
+    InventoryLocation: 10
+    ExtraPermission: ''
+  21:
+    RewardType: playercommand
+    PriceType: free
+    Reward:
+    - 'mvtp w:SurvivalWorld'
+    - 'rg tp 21'
+    MenuItem:
+    - type:SAPLING
+    - amount:21
+    - durability:4
+    - 'name:&aRegion &f21'
+    - 'lore:&7b: &cSavanna #&7x: &c2555 #&7y: &c74 #&7z: &c-4279'
+    - amount:21
+    Message: '&2[&aRegions&2] &aYou have been teleported to Region: &f21'
+    InventoryLocation: 1
+  22:
+    RewardType: playercommand
+    PriceType: free
+    Reward:
+    - 'mvtp w:SurvivalWorld'
+    - 'rg tp 22'
+    MenuItem:
+    - type:WATER
+    - amount:22
+    - 'name:&aRegion &f22'
+    - 'lore:&7b: &cOcean #&7x: &c1055 #&7y: &c66 #&7z: &c721'
+    - amount:22
+    Message: '&2[&aRegions&2] &aYou have been teleported to Region: &f22'
+    InventoryLocation: 15
+    ExtraPermission: ''
+  23:
+    RewardType: playercommand
+    PriceType: free
+    Reward:
+    - 'mvtp w:SurvivalWorld'
+    - 'rg tp 23'
+    MenuItem:
+    - type:SAND
+    - amount:23
+    - 'name:&aRegion &f23'
+    - 'lore:&7b: &cBeach #&7x: &c2555 #&7y: &c68 #&7z: &c721'
+    - amount:23
+    Message: '&2[&aRegions&2] &aYou have been teleported to Region: &f23'
+    InventoryLocation: 6
+    ExtraPermission: ''
+  24:
+    RewardType: playercommand
+    PriceType: free
+    Reward:
+    - 'mvtp w:SurvivalWorld'
+    - 'rg tp 24'
+    MenuItem:
+    - id:106
+    - amount:24
+    - 'name:&aRegion &f24'
+    - 'lore:&7b: &cSwampland #&7x: &c1055 #&7y: &c69 #&7z: &c1721'
+    - amount:24
+    Message: '&2[&aRegions&2] &aYou have been teleported to Region: &f24'
+    InventoryLocation: 16
+    ExtraPermission: ''
+  25:
+    RewardType: playercommand
+    PriceType: free
+    Reward:
+    - 'mvtp w:SurvivalWorld'
+    - 'rg tp 25'
+    MenuItem:
+    - type:CACTUS
+    - amount:25
+    - 'name:&aRegion &f25'
+    - 'lore:&7b: &cDesert #&7x: &c2555 #&7y: &c66 #&7z: &c1721'
+    - amount:25
+    Message: '&2[&aRegions&2] &aYou have been teleported to Region: &f25'
+    InventoryLocation: 7
+    ExtraPermission: ''
+  26:
+    RewardType: playercommand
+    PriceType: free
+    Reward:
+    - 'mvtp w:SurvivalWorld'
+    - 'rg tp 26'
+    MenuItem:
+    - type:SAPLING
+    - amount:26
+    - 'name:&aRegion &f26'
+    - 'lore:&7b: &cForest #&7x: &c1055 #&7y: &c73 #&7z: &c2721'
+    - amount:26
+    Message: '&2[&aRegions&2] &aYou have been teleported to Region: &f26'
+    InventoryLocation: 17
+    ExtraPermission: ''
+  27:
+    RewardType: playercommand
+    PriceType: free
+    Reward:
+    - 'mvtp w:SurvivalWorld'
+    - 'rg tp 27'
+    MenuItem:
+    - type:WATER
+    - amount:27
+    - 'name:&aRegion &f27'
+    - 'lore:&7b: &cDeep Ocean #&7x: &c2555 #&7y: &c66 #&7z: &c2721'
+    - amount:27
+    Message: '&2[&aRegions&2] &aYou have been teleported to Region: &f27'
+    InventoryLocation: 8
+    ExtraPermission: ''
+  28:
+    RewardType: playercommand
+    PriceType: free
+    Reward:
+    - 'mvtp w:SurvivalWorld'
+    - 'rg tp 28'
+    MenuItem:
+    - type:SAPLING
+    - amount:28
+    - durability:1
+    - 'name:&aRegion &f28'
+    - 'lore:&7b: &cCold Taiga #&7x: &c1055 #&7y: &c76 #&7z: &c3721'
+    - amount:28
+    Message: '&2[&aRegions&2] &aYou have been teleported to Region: &f28'
+    InventoryLocation: 18
+    ExtraPermission: ''
+  29:
+    RewardType: playercommand
+    PriceType: free
+    Reward:
+    - 'mvtp w:SurvivalWorld'
+    - 'rg tp 29'
+    MenuItem:
+    - type:WATER
+    - amount:29
+    - durability:1
+    - 'name:&aRegion &f29'
+    - 'lore:&7b: &cDeep Ocean #&7x: &c2555 #&7y: &c66 #&7z: &c3721'
+    - amount:29
+    Message: '&2[&aRegions&2] &aYou have been teleported to Region: &f29'
+    InventoryLocation: 9
+    ExtraPermission: ''
+  30:
+    RewardType: playercommand
+    PriceType: free
+    Reward:
+    - 'mvtp w:SurvivalWorld'
+    - 'rg tp 30'
+    MenuItem:
+    - id:106
+    - amount:30
+    - durability:1
+    - 'name:&aRegion &f30'
+    - 'lore:&7b: &cSwampland #&7x: &c-1945 #&7y: &c68 #&7z: &c721'
+    - amount:30
+    Message: '&2[&aRegions&2] &aYou have been teleported to Region: &f30'
+    InventoryLocation: 33
+    ExtraPermission: ''
+  31:
+    RewardType: playercommand
+    PriceType: free
+    Reward:
+    - 'mvtp w:SurvivalWorld'
+    - 'rg tp 31'
+    MenuItem:
+    - id:2
+    - amount:31
+    - durability:1
+    - 'name:&aRegion &f31'
+    - 'lore:&7b: &cPlains #&7x: &c-3445 #&7y: &c67 #&7z: &c721'
+    - amount:31
+    Message: '&2[&aRegions&2] &aYou have been teleported to Region: &f31'
+    InventoryLocation: 42
+    ExtraPermission: ''
+  32:
+    RewardType: playercommand
+    PriceType: free
+    Reward:
+    - 'mvtp w:SurvivalWorld'
+    - 'rg tp 32'
+    MenuItem:
+    - type:SAPLING
+    - amount:32
+    - 'name:&aRegion &f32'
+    - 'lore:&7b: &cForest #&7x: &c-1945 #&7y: &c83 #&7z: &c1721'
+    - amount:32
+    Message: '&2[&aRegions&2] &aYou have been teleported to Region: &f32'
+    InventoryLocation: 34
+    ExtraPermission: ''
+  33:
+    RewardType: playercommand
+    PriceType: free
+    Reward:
+    - 'mvtp w:SurvivalWorld'
+    - 'rg tp 33'
+    MenuItem:
+    - type:STONE
+    - amount:33
+    - 'name:&aRegion &f33'
+    - 'lore:&7b: &cExtreme Hills #&7x: &c-3445 #&7y: &c89 #&7z: &c1721'
+    - amount:33
+    Message: '&2[&aRegions&2] &aYou have been teleported to Region: &f33'
+    InventoryLocation: 43
+    ExtraPermission: ''
+  34:
+    RewardType: playercommand
+    PriceType: free
+    Reward:
+    - 'mvtp w:SurvivalWorld'
+    - 'rg tp 34'
+    MenuItem:
+    - type:SAPLING
+    - amount:34
+    - 'name:&aRegion &f34'
+    - 'lore:&7b: &cForest #&7x: &c-1945 #&7y: &c69 #&7z: &c2721'
+    - amount:34
+    Message: '&2[&aRegions&2] &aYou have been teleported to Region: &f34'
+    InventoryLocation: 35
+    ExtraPermission: ''
+  35:
+    RewardType: playercommand
+    PriceType: free
+    Reward:
+    - 'mvtp w:SurvivalWorld'
+    - 'rg tp 35'
+    MenuItem:
+    - type:ICE
+    - amount:35
+    - 'name:&aRegion &f35'
+    - 'lore:&7b: &cIce Plains #&7x: &c-3445 #&7y: &c71 #&7z: &c2721'
+    - amount:35
+    Message: '&2[&aRegions&2] &aYou have been teleported to Region: &f35'
+    InventoryLocation: 44
+    ExtraPermission: ''
+  36:
+    RewardType: playercommand
+    PriceType: free
+    Reward:
+    - 'mvtp w:SurvivalWorld'
+    - 'rg tp 36'
+    MenuItem:
+    - type:WATER
+    - amount:36
+    - 'name:&aRegion &f36'
+    - 'lore:&7b: &cRiver #&7x: &c-1945 #&7y: &c66 #&7z: &c3721'
+    - amount:36
+    Message: '&2[&aRegions&2] &aYou have been teleported to Region: &f36'
+    InventoryLocation: 36
+    ExtraPermission: ''
+  37:
+    RewardType: playercommand
+    PriceType: free
+    Reward:
+    - 'mvtp w:SurvivalWorld'
+    - 'rg tp 37'
+    MenuItem:
+    - type:SAPLING
+    - amount:37
+    - durability:1
+    - 'name:&aRegion &f37'
+    - 'lore:&7b: &cTaiga #&7x: &c-3445 #&7y: &c74 #&7z: &c3721'
+    - amount:37
+    Message: '&2[&aRegions&2] &aYou have been teleported to Region: &f37'
+    InventoryLocation: 45
+    ExtraPermission: ''
+  38:
+    RewardType: playercommand
+    PriceType: free
+    Reward:
+    - 'mvtp w:SurvivalWorld'
+    - 'rg tp 38'
+    MenuItem:
+    - type:SAPLING
+    - amount:38
+    - durability:1
+    - 'name:&aRegion &f38'
+    - 'lore:&7b: &cTaiga #&7x: &c-1945 #&7y: &c70 #&7z: &c-1279'
+    - amount:38
+    Message: '&2[&aRegions&2] &aYou have been teleported to Region: &f38'
+    InventoryLocation: 31
+    ExtraPermission: ''
+  39:
+    RewardType: playercommand
+    PriceType: free
+    Reward:
+    - 'mvtp w:SurvivalWorld'
+    - 'rg tp 39'
+    MenuItem:
+    - type:GRASS
+    - amount:39
+    - 'name:&aRegion &f39'
+    - 'lore:&7b: &cPlains #&7x: &c-3445 #&7y: &c69 #&7z: &c-1279'
+    - amount:39
+    Message: '&2[&aRegions&2] &aYou have been teleported to Region: &f39'
+    InventoryLocation: 40
+    ExtraPermission: ''
+  40:
+    RewardType: playercommand
+    PriceType: free
+    Reward:
+    - 'mvtp w:SurvivalWorld'
+    - 'rg tp 40'
+    MenuItem:
+    - type:GRASS
+    - amount:40
+    - 'name:&aRegion &f40'
+    - 'lore:&7b: &cPlains #&7x: &c-3445 #&7y: &c74 #&7z: &c-1279'
+    - amount:40
+    Message: '&2[&aRegions&2] &aYou have been teleported to Region: &f40'
+    InventoryLocation: 30
+    ExtraPermission: ''
+  41:
+    RewardType: playercommand
+    PriceType: free
+    Reward:
+    - 'mvtp w:SurvivalWorld'
+    - 'rg tp 41'
+    MenuItem:
+    - type:SAPLING
+    - amount:41
+    - durability:2
+    - 'name:&aRegion &f41'
+    - 'lore:&7b: &cBirch Forest #&7x: &c-3445 #&7y: &c75 #&7z: &c-2279'
+    - amount:41
+    Message: '&2[&aRegions&2] &aYou have been teleported to Region: &f41'
+    InventoryLocation: 39
+    ExtraPermission: ''
+  42:
+    RewardType: playercommand
+    PriceType: free
+    Reward:
+    - 'mvtp w:SurvivalWorld'
+    - 'rg tp 42'
+    MenuItem:
+    - type:SAND
+    - amount:42
+    - 'name:&aRegion &f42'
+    - 'lore:&7b: &cBeach #&7x: &c-1945 #&7y: &c67 #&7z: &c-3279'
+    - amount:42
+    Message: '&2[&aRegions&2] &aYou have been teleported to Region: &f42'
+    InventoryLocation: 29
+    ExtraPermission: ''
+  43:
+    RewardType: playercommand
+    PriceType: free
+    Reward:
+    - 'mvtp w:SurvivalWorld'
+    - 'rg tp 43'
+    MenuItem:
+    - type:GRASS
+    - amount:43
+    - 'name:&aRegion &f43'
+    - 'lore:&7b: &cPlains #&7x: &c-3445 #&7y: &c73 #&7z: &c-3279'
+    - amount:43
+    Message: '&2[&aRegions&2] &aYou have been teleported to Region: &f43'
+    InventoryLocation: 38
+    ExtraPermission: ''
+  44:
+    RewardType: playercommand
+    PriceType: free
+    Reward:
+    - 'mvtp w:SurvivalWorld'
+    - 'rg tp 44'
+    MenuItem:
+    - type:GRASS
+    - amount:44
+    - 'name:&aRegion &f44'
+    - 'lore:&7b: &cPlains #&7x: &c-1945 #&7y: &c70 #&7z: &c-4279'
+    - amount:44
+    Message: '&2[&aRegions&2] &aYou have been teleported to Region: &f44'
+    InventoryLocation: 28
+    ExtraPermission: ''
+  45:
+    RewardType: playercommand
+    PriceType: free
+    Reward:
+    - 'mvtp w:SurvivalWorld'
+    - 'rg tp 45'
+    MenuItem:
+    - type:SAPLING
+    - amount:45
+    - durability:1
+    - 'name:&aRegion &f45'
+    - 'lore:&7b: &cTaiga #&7x: &c-3445 #&7y: &c66 #&7z: &c-4279'
+    - amount:45
+    Message: '&2[&aRegions&2] &aYou have been teleported to Region: &f45'
+    InventoryLocation: 37
+    ExtraPermission: ''
