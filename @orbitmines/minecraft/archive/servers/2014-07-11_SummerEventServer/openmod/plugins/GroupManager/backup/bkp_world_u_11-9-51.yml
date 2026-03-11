@@ -1,0 +1,63 @@
+users:
+  AbbydOnl:
+    group: Dead
+    subgroups: []
+    permissions:
+    - essentials.spawn
+  daanms:
+    group: Longbow
+    subgroups: []
+    permissions:
+    - essentials.spawn
+  ElgarL:
+    group: Waiting
+    subgroups: []
+    permissions:
+    - groupmanager.noofflineperms
+  fangergo:
+    group: Paladin
+    subgroups: []
+    permissions: []
+  gigantmelvin:
+    group: Dead
+    subgroups: []
+    permissions:
+    - essentials.spawn
+    - essentials.sppawn
+  igiboy2012:
+    group: Paladin
+    subgroups: []
+    permissions: []
+  jim5491158:
+    group: Dead
+    subgroups: []
+    permissions:
+    - essentials.soawn
+  KHobbits:
+    group: Waiting
+    subgroups: []
+    permissions:
+    - groupmanager.noofflineperms
+  krachtpatsertim:
+    group: Dead
+    subgroups: []
+    permissions:
+    - essentials.spawn
+  renau777:
+    group: Paladin
+    subgroups: []
+    permissions: []
+  Selasie:
+    group: Longbow
+    subgroups: []
+    permissions: []
+  sharewoods:
+    group: Dead
+    subgroups: []
+    permissions:
+    - essentials.spawn
+  snowleo:
+    group: Waiting
+    subgroups: []
+    permissions:
+    - groupmanager.noofflineperms

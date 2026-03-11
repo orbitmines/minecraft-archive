@@ -1,0 +1,18 @@
+worth:
+  emerald: 75
+  diamond: 45
+  log: 5
+  goldingot: 25
+  ironingot: 10
+  coal: 5
+  goldore: 15
+  ironore: 5
+  charcoal: 7
+  wood: 1
+  emeraldblock: 700
+  diamondblock: 415
+  goldblock: 225
+  ironblock: 100
+  coalblock: 50
+  cobblestone 0.31
+  netherrack: 0.31

@@ -1,0 +1,90 @@
+ShopName: Arrows
+signs:
+  text: '[Arrows]'
+  NeedPermissionToCreateSign: true
+shop:
+  Arrow1:
+    RewardType: item
+    PriceType: money
+    Price: 25
+    Reward:
+    - - type:ARROW
+      - amount:1
+    MenuItem:
+    - type:ARROW
+    - amount:1
+    - name:&b&LArrow
+    - 'lore:&6&L[1]&B&l Arrow #&c&LPrice: &b25 Credits #&6&LYour Credits: &b%balance%'
+    - amount:1
+    InventoryLocation: 1
+    ExtraPermission: ''
+  Arrow16:
+    RewardType: item
+    PriceType: money
+    Price: 400
+    Reward:
+    - - type:ARROW
+      - amount:16
+    MenuItem:
+    - type:ARROW
+    - amount:16
+    - name:&b&LArrow
+    - 'lore:&6&L[16]&B&l Arrows #&c&LPrice: &b400 Credits #&6&LYour Credits: &b%balance%'
+    - amount:1
+    InventoryLocation: 2
+    ExtraPermission: ''
+  Arrow32:
+    RewardType: item
+    PriceType: money
+    Price: 800
+    Reward:
+    - - type:ARROW
+      - amount:32
+    MenuItem:
+    - type:ARROW
+    - amount:32
+    - name:&b&LArrow
+    - 'lore:&6&L[32]&B&l Arrows #&c&LPrice: &b800 Credits #&6&LYour Credits: &b%balance%'
+    - amount:1
+    InventoryLocation: 3
+    ExtraPermission: ''
+  Arrow64:
+    RewardType: item
+    PriceType: money
+    Price: 1600
+    Reward:
+    - - type:ARROW
+      - amount:64
+    MenuItem:
+    - type:ARROW
+    - amount:64
+    - name:&b&LArrow
+    - 'lore:&6&L[64]&B&l Arrows #&c&LPrice: &b1600 Credits #&6&LYour Credits: &b%balance%'
+    - amount:1
+    InventoryLocation: 4
+    ExtraPermission: ''
+  Balance:
+    RewardType: playercommand
+    PriceType: free
+    Reward:
+    - money
+    - Uridium
+    MenuItem:
+    - type:DIAMOND
+    - amount:1
+    - name:&b&LBalance
+    - 'lore:&6&LYour Credits: &b%balance% #&6&LYour Uridium: &b%balancepoints%'
+    - amount:1
+    InventoryLocation: 18
+  BackToMenu:
+    RewardType: shop
+    PriceType: free
+    Reward: OrbitMinesPvP
+    MenuItem:
+    - type:REDSTONE_BLOCK
+    - amount:1
+    - name:&4&LOrbitMines PvP Menu
+    - lore:&8Back to OrbitMines PvP Menu
+    - amount:1
+    InventoryLocation: 9
+    ExtraPermission: ''

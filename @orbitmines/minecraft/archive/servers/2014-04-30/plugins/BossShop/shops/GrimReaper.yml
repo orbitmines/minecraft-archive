@@ -1,0 +1,97 @@
+ShopName: GrimReaper
+signs:
+  text: '[GrimReaper]'
+  NeedPermissionToCreateSign: true
+shop:
+  Helmet:
+    RewardType: money
+    PriceType: free
+    Reward: 0
+    MenuItem:
+    - id:397
+    - amount:1
+    - durability:1
+    - name:&bHelmet
+    - enchantment:PROTECTION_ENVIRONMENTAL#8
+    InventoryLocation: 12
+    ExtraPermission: ''
+  Chestplate:
+    RewardType: money
+    PriceType: free
+    Reward: 0
+    MenuItem:
+    - id:299
+    - amount:1
+    - name:&fChestplate
+    - 'lore:&7Slows enemy when Hit'
+    - color:100#100#100
+    InventoryLocation: 21
+    ExtraPermission: ''
+  Leggings:
+    RewardType: money
+    PriceType: free
+    Reward: 0
+    MenuItem:
+    - id:300
+    - amount:1
+    - name:&fLeggings
+    - color:100#100#100
+    InventoryLocation: 30
+    ExtraPermission: ''
+  Boots:
+    RewardType: money
+    PriceType: free
+    Reward: 0
+    MenuItem:
+    - id:301
+    - amount:1
+    - name:&fBoots
+    - color:100#100#100
+    InventoryLocation: 39
+    ExtraPermission: ''
+  Sword:
+    RewardType: money
+    PriceType: free
+    Reward: 0
+    MenuItem:
+    - type:STONE_AXE
+    - amount:1
+    - name:&bStone Axe
+    - enchantment:DAMAGE_ALL#3
+    InventoryLocation: 16
+    ExtraPermission: ''
+  Bread:
+    RewardType: money
+    PriceType: free
+    Reward: 0
+    MenuItem:
+    - id:297
+    - amount:25
+    - name:&fBread
+    InventoryLocation: 25
+    ExtraPermission: ''
+  BackToMenu:
+    RewardType: shop
+    PriceType: free
+    Reward: BuyKit
+    MenuItem:
+    - type:REDSTONE_BLOCK
+    - amount:1
+    - name:&4&LBuy Kit Menu
+    - lore:&8Back to the Buy Kit Menu
+    - amount:1
+    InventoryLocation: 46
+    ExtraPermission: ''
+  BuyKit:
+    RewardType: money
+    PriceType: free
+    Reward: 0
+    MenuItem:
+    - type:EMERALD_BLOCK
+    - amount:1
+    - 'name:&aBuy GrimReaper'
+    - 'lore:&cPrice: &65 EUR &C/ &c[&6&lVIP&c]'
+    - amount:1
+    Message: '&cBuy &6VIP&c or buy this kit for &65 EUR'
+    InventoryLocation: 54
+    ExtraPermission: ''

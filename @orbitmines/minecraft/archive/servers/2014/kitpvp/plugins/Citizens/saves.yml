@@ -1,0 +1,96 @@
+# Citizens NPC Storage
+
+last-created-npc-id: 398
+npc:
+  '375':
+    name: §8>> §6Shop �
+    traits:
+      spawned: true
+      type: Villager
+      location:
+        world: KitPvPMap
+        x: '806.9868916538838'
+        y: '10.0'
+        z: '479.9707293243263'
+        yaw: '313.946533203125'
+        pitch: '0.0'
+      age:
+        age: 0
+        locked: true
+      owner: O_o_Fadi_o_O
+    traitnames: owner,spawned,age,type,location
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+  '374':
+    name: §8>> §6Shop �
+    traits:
+      spawned: true
+      type: Villager
+      location:
+        world: KitPvPMap
+        x: '807.0204223718804'
+        y: '10.0'
+        z: '485.98497314002105'
+        yaw: '224.54632568359375'
+        pitch: '0.0'
+      age:
+        age: 0
+        locked: true
+      owner: O_o_Fadi_o_O
+    traitnames: owner,spawned,age,type,location
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+  '373':
+    name: §8>> §6Shop �
+    traits:
+      spawned: true
+      type: Villager
+      location:
+        world: KitPvPMap
+        x: '813.1372078672841'
+        y: '10.0'
+        z: '486.1347578171073'
+        yaw: '135.29635620117188'
+        pitch: '0.0'
+      age:
+        age: 0
+        locked: true
+      owner: O_o_Fadi_o_O
+    traitnames: owner,spawned,age,type,location
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+  '372':
+    name: §8>> §6Shop �
+    traits:
+      spawned: true
+      type: Villager
+      location:
+        world: KitPvPMap
+        x: '812.9496749849086'
+        y: '10.0'
+        z: '479.9979100252236'
+        yaw: '44.8463134765625'
+        pitch: '0.0'
+      age:
+        age: 0
+        locked: true
+      owner: O_o_Fadi_o_O
+    traitnames: owner,spawned,age,type,location
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true

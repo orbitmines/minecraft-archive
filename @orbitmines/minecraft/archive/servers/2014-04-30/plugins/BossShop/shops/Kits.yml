@@ -1,0 +1,66 @@
+ShopName: KitPvP
+signs:
+  text: '[Kits]'
+  NeedPermissionToCreateSign: true
+shop:
+  SelectKit:
+    RewardType: shop
+    PriceType: free
+    Reward: SelectKit
+    MenuItem:
+    - 'type: IRON_SWORD'
+    - amount:1
+    - name:&b&LKits
+    - 'lore:&7Select a Kit'
+    - amount:1
+    InventoryLocation: 2
+    ExtraPermission: 'shop.kitpvp'
+  BuyKit:
+    RewardType: shop
+    PriceType: free
+    Reward: BuyKit
+    MenuItem:
+    - 'type: GOLD_INGOT'
+    - amount:1
+    - name:&b&LBuy Kits
+    - 'lore:&7Here you can buy Kits'
+    - amount:1
+    InventoryLocation: 3
+    ExtraPermission: 'shop.kitpvp'
+  Items:
+    RewardType: shop
+    PriceType: free
+    Reward: BuyItems
+    MenuItem:
+    - 'type: GOLDEN_APPLE'
+    - amount:1
+    - name:&b&LBuy Items
+    - 'lore:&7Here you can buy Items'
+    - amount:1
+    InventoryLocation: 6
+    ExtraPermission: 'shop.kitpvp'
+  Upgrade:
+    RewardType: shop
+    PriceType: free
+    Reward: UpgradeKit
+    MenuItem:
+    - type:IRON_HELMET
+    - amount:1
+    - name:&b&LUpgrade Kits
+    - 'lore:&7Here you can upgrade your Kits'
+    - amount:1
+    InventoryLocation: 4
+    ExtraPermission: 'shop.kitpvp'
+  OMT:
+    RewardType: shop
+    PriceType: free
+    Reward: OMTKitPvP
+    MenuItem:
+    - type:GOLD_NUGGET
+    - amount:1
+    - name:&b&LOrbitMines Tokens
+    - 'lore:&7Change OrbitMines Tokens to KitPvP Money'
+    - amount:1
+    InventoryLocation: 8
+    ExtraPermission: 'shop.kitpvp'
+

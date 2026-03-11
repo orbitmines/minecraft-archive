@@ -1,0 +1,598 @@
+# Group inheritance
+#
+# Any inherited groups prefixed with a g: are global groups
+# and are inherited from the GlobalGroups.yml.
+#
+# Groups without the g: prefix are groups local to this world
+# and are defined in the this groups.yml file.
+#
+# Local group inheritances define your promotion tree when using 'manpromote/mandemote'
+
+groups:
+  UserKitPvP1-10:
+    default: true
+    permissions:
+    - nametag.group.user
+    - killermoney.getcash
+    - kit.Knight
+    - kit.kit
+    - BossShop.open
+    - BossShop.close
+    - BossShop.open.command.KitPvP
+    - essentials.rules
+    - multiverse.portal.access.*
+    - serversigns.use.*
+    - essentials.balance
+    - essentials.balance.others
+    - essentials.balancetop
+    - essentials.msg
+    - essentials.seen
+    - essentials.pay
+    - essentials.mail
+    - essentials.spawn
+    - essentials.mail.send
+    - essentials.mail.clear
+    - essentials.mail.read
+    - knightkit.1
+    - shop.kitpvp
+    - mycommand.cmd.1
+    - mycommand.cmd.2
+    - mycommand.cmd.3
+    - mycommand.cmd.4
+    - mycommand.cmd.5
+    info:
+      prefix: '&7[&8&lUser&7] &8'
+      build: true
+  UserKitPvP11-20:
+    default: false
+    permissions:
+    - nametag.group.user
+    - killermoney.getcash
+    - essentials.clearinventory
+    - kit.Knight
+    - -factions.*
+    - kit.kit
+    - BossShop.open
+    - BossShop.close
+    - BossShop.open.command.KitPvP
+    - essentials.rules
+    - multiverse.portal.access.*
+    - serversigns.use.*
+    - essentials.balance
+    - essentials.balance.others
+    - essentials.balancetop
+    - essentials.msg
+    - essentials.seen
+    - essentials.pay
+    - essentials.mail
+    - essentials.mail.send
+    - essentials.mail.clear
+    - essentials.mail.read
+    - knightkit.1
+    - shop.kitpvp
+    - mycommand.cmd.1
+    - mycommand.cmd.2
+    - mycommand.cmd.3
+    - mycommand.cmd.4
+    - mycommand.cmd.5
+    - essentials.spawn
+    info:
+      prefix: '&7[&8&lUser&7] &8'
+      build: true
+  UserKitPvP21-30:
+    default: false
+    permissions:
+    - nametag.group.user
+    - killermoney.getcash
+    - LevelsKitPvP.21
+    - essentials.clearinventory
+    - kit.Knight
+    - -factions.*
+    - kit.kit
+    - BossShop.open
+    - BossShop.close
+    - BossShop.open.command.KitPvP
+    - essentials.rules
+    - multiverse.portal.access.*
+    - serversigns.use.*
+    - essentials.balance
+    - essentials.balance.others
+    - essentials.balancetop
+    - essentials.msg
+    - essentials.seen
+    - essentials.pay
+    - essentials.mail
+    - essentials.mail.send
+    - essentials.mail.clear
+    - essentials.mail.read
+    - knightkit.1
+    - shop.kitpvp
+    - mycommand.cmd.1
+    - mycommand.cmd.2
+    - mycommand.cmd.3
+    - mycommand.cmd.4
+    - mycommand.cmd.5
+    - essentials.spawn
+    info:
+      prefix: '&7[&8&lUser&7] &8'
+      build: true
+  UserKitPvP31-40:
+    default: false
+    permissions:
+    - nametag.group.user
+    - killermoney.getcash
+    - essentials.clearinventory
+    - kit.Knight
+    - LevelsKitPvP.21
+    - -factions.*
+    - kit.kit
+    - BossShop.open
+    - BossShop.close
+    - BossShop.open.command.KitPvP
+    - essentials.rules
+    - multiverse.portal.access.*
+    - serversigns.use.*
+    - essentials.balance
+    - essentials.balance.others
+    - essentials.balancetop
+    - essentials.msg
+    - essentials.seen
+    - essentials.pay
+    - essentials.mail
+    - essentials.mail.send
+    - essentials.mail.clear
+    - essentials.mail.read
+    - essentials.spawn
+    - knightkit.1
+    - shop.kitpvp
+    - mycommand.cmd.1
+    - mycommand.cmd.2
+    - mycommand.cmd.3
+    - mycommand.cmd.4
+    - mycommand.cmd.5
+    info:
+      prefix: '&7[&8&lUser&7] &8'
+      build: true
+  UserKitPvP41-50:
+    default: false
+    permissions:
+    - nametag.group.user
+    - killermoney.getcash
+    - LevelsKitPvP.21
+    - LevelsKitPvP.41
+    - essentials.clearinventory
+    - kit.Knight
+    - -factions.*
+    - kit.kit
+    - BossShop.open
+    - BossShop.close
+    - BossShop.open.command.KitPvP
+    - essentials.rules
+    - multiverse.portal.access.*
+    - serversigns.use.*
+    - essentials.balance
+    - essentials.balance.others
+    - essentials.balancetop
+    - essentials.msg
+    - essentials.seen
+    - essentials.pay
+    - essentials.mail
+    - essentials.mail.send
+    - essentials.mail.clear
+    - essentials.mail.read
+    - knightkit.1
+    - shop.kitpvp
+    - mycommand.cmd.1
+    - mycommand.cmd.2
+    - mycommand.cmd.3
+    - mycommand.cmd.4
+    - mycommand.cmd.5
+    - essentials.spawn
+    info:
+      prefix: '&7[&8&lUser&7] &8'
+      build: true
+  UserKitPvP51-60:
+    default: false
+    permissions:
+    - nametag.group.user
+    - killermoney.getcash
+    - essentials.clearinventory
+    - kit.Knight
+    - -factions.*
+    - LevelsKitPvP.21
+    - LevelsKitPvP.41
+    - kit.kit
+    - BossShop.open
+    - BossShop.close
+    - BossShop.open.command.KitPvP
+    - essentials.rules
+    - multiverse.portal.access.*
+    - serversigns.use.*
+    - essentials.balance
+    - essentials.balance.others
+    - essentials.balancetop
+    - essentials.msg
+    - essentials.seen
+    - essentials.pay
+    - essentials.mail
+    - essentials.mail.send
+    - essentials.mail.clear
+    - essentials.mail.read
+    - knightkit.1
+    - shop.kitpvp
+    - mycommand.cmd.1
+    - mycommand.cmd.2
+    - mycommand.cmd.3
+    - mycommand.cmd.4
+    - mycommand.cmd.5
+    - essentials.spawn
+    info:
+      prefix: '&7[&8&lUser&7] &8'
+      build: true
+  UserKitPvP61-70:
+    default: false
+    permissions:
+    - nametag.group.user
+    - killermoney.getcash
+    - essentials.clearinventory
+    - kit.Knight
+    - -factions.*
+    - kit.kit
+    - LevelsKitPvP.21
+    - LevelsKitPvP.41
+    - LevelsKitPvP.61
+    - BossShop.open
+    - BossShop.close
+    - BossShop.open.command.KitPvP
+    - essentials.rules
+    - multiverse.portal.access.*
+    - serversigns.use.*
+    - essentials.balance
+    - essentials.balance.others
+    - essentials.balancetop
+    - essentials.msg
+    - essentials.seen
+    - essentials.pay
+    - essentials.mail
+    - essentials.mail.send
+    - essentials.mail.clear
+    - essentials.mail.read
+    - knightkit.1
+    - shop.kitpvp
+    - mycommand.cmd.1
+    - mycommand.cmd.2
+    - mycommand.cmd.3
+    - mycommand.cmd.4
+    - mycommand.cmd.5
+    - essentials.spawn
+    info:
+      prefix: '&7[&8&lUser&7] &8'
+      build: true
+  UserKitPvP71-80:
+    default: false
+    permissions:
+    - nametag.group.user
+    - killermoney.getcash
+    - essentials.clearinventory
+    - kit.Knight
+    - -factions.*
+    - LevelsKitPvP.21
+    - LevelsKitPvP.41
+    - LevelsKitPvP.61
+    - kit.kit
+    - BossShop.open
+    - BossShop.close
+    - BossShop.open.command.KitPvP
+    - essentials.rules
+    - multiverse.portal.access.*
+    - serversigns.use.*
+    - essentials.balance
+    - essentials.balance.others
+    - essentials.balancetop
+    - essentials.msg
+    - essentials.seen
+    - essentials.pay
+    - essentials.mail
+    - essentials.mail.send
+    - essentials.mail.clear
+    - essentials.mail.read
+    - knightkit.1
+    - shop.kitpvp
+    - mycommand.cmd.1
+    - mycommand.cmd.2
+    - mycommand.cmd.3
+    - mycommand.cmd.4
+    - mycommand.cmd.5
+    - essentials.spawn
+    info:
+      prefix: '&7[&8&lUser&7] &8'
+      build: true
+  UserKitPvP81-90:
+    default: false
+    permissions:
+    - nametag.group.user
+    - killermoney.getcash
+    - essentials.clearinventory
+    - kit.Knight
+    - -factions.*
+    - LevelsKitPvP.21
+    - LevelsKitPvP.41
+    - LevelsKitPvP.61
+    - LevelsKitPvP.81
+    - kit.kit
+    - BossShop.open
+    - BossShop.close
+    - BossShop.open.command.KitPvP
+    - essentials.rules
+    - multiverse.portal.access.*
+    - serversigns.use.*
+    - essentials.balance
+    - essentials.balance.others
+    - essentials.balancetop
+    - essentials.msg
+    - essentials.seen
+    - essentials.pay
+    - essentials.mail
+    - essentials.mail.send
+    - essentials.mail.clear
+    - essentials.mail.read
+    - knightkit.1
+    - shop.kitpvp
+    - mycommand.cmd.1
+    - mycommand.cmd.2
+    - mycommand.cmd.3
+    - mycommand.cmd.4
+    - mycommand.cmd.5
+    - essentials.spawn
+    info:
+      prefix: '&7[&8&lUser&7] &8'
+      build: true
+  UserKitPvP91-100:
+    default: false
+    permissions:
+    - nametag.group.user
+    - killermoney.getcash
+    - essentials.clearinventory
+    - kit.Knight
+    - -factions.*
+    - LevelsKitPvP.21
+    - LevelsKitPvP.41
+    - LevelsKitPvP.61
+    - LevelsKitPvP.81
+    - kit.kit
+    - BossShop.open
+    - BossShop.close
+    - BossShop.open.command.KitPvP
+    - essentials.rules
+    - multiverse.portal.access.*
+    - serversigns.use.*
+    - essentials.balance
+    - essentials.balance.others
+    - essentials.balancetop
+    - essentials.msg
+    - essentials.seen
+    - essentials.pay
+    - essentials.mail
+    - essentials.mail.send
+    - essentials.mail.clear
+    - essentials.mail.read
+    - knightkit.1
+    - shop.kitpvp
+    - mycommand.cmd.1
+    - mycommand.cmd.2
+    - mycommand.cmd.3
+    - mycommand.cmd.4
+    - mycommand.cmd.5
+    - essentials.spawn
+    info:
+      prefix: '&7[&8&lUser&7] &8'
+      build: true
+  UserKitPvP101-110:
+    default: false
+    permissions:
+    - nametag.group.user
+    - killermoney.getcash
+    - essentials.clearinventory
+    - kit.Knight
+    - LevelsKitPvP.21
+    - LevelsKitPvP.41
+    - LevelsKitPvP.61
+    - LevelsKitPvP.81
+    - LevelsKitPvP.101
+    - -factions.*
+    - kit.kit
+    - BossShop.open
+    - BossShop.close
+    - BossShop.open.command.KitPvP
+    - essentials.rules
+    - multiverse.portal.access.*
+    - serversigns.use.*
+    - essentials.balance
+    - essentials.balance.others
+    - essentials.balancetop
+    - essentials.msg
+    - essentials.seen
+    - essentials.pay
+    - essentials.mail
+    - essentials.mail.send
+    - essentials.mail.clear
+    - essentials.mail.read
+    - knightkit.1
+    - shop.kitpvp
+    - mycommand.cmd.1
+    - mycommand.cmd.2
+    - mycommand.cmd.3
+    - mycommand.cmd.4
+    - mycommand.cmd.5
+    - essentials.spawn
+    info:
+      prefix: '&7[&8&lUser&7] &8'
+      build: true
+  UserKitPvP111-120:
+    default: false
+    permissions:
+    - nametag.group.user
+    - killermoney.getcash
+    - essentials.clearinventory
+    - kit.Knight
+    - -factions.*
+    - LevelsKitPvP.21
+    - LevelsKitPvP.41
+    - LevelsKitPvP.61
+    - LevelsKitPvP.81
+    - LevelsKitPvP.101
+    - kit.kit
+    - BossShop.open
+    - BossShop.close
+    - BossShop.open.command.KitPvP
+    - essentials.rules
+    - multiverse.portal.access.*
+    - serversigns.use.*
+    - essentials.balance
+    - essentials.balance.others
+    - essentials.balancetop
+    - essentials.msg
+    - essentials.seen
+    - essentials.pay
+    - essentials.mail
+    - essentials.mail.send
+    - essentials.mail.clear
+    - essentials.mail.read
+    - knightkit.1
+    - shop.kitpvp
+    - mycommand.cmd.1
+    - mycommand.cmd.2
+    - mycommand.cmd.3
+    - mycommand.cmd.4
+    - mycommand.cmd.5
+    - essentials.spawn
+    info:
+      prefix: '&7[&8&lUser&7] &8'
+      build: true
+  UserKitPvP121-130:
+    default: false
+    permissions:
+    - nametag.group.user
+    - killermoney.getcash
+    - essentials.clearinventory
+    - kit.Knight
+    - -factions.*
+    - LevelsKitPvP.21
+    - LevelsKitPvP.41
+    - LevelsKitPvP.61
+    - LevelsKitPvP.81
+    - LevelsKitPvP.101
+    - LevelsKitPvP.121
+    - kit.kit
+    - BossShop.open
+    - BossShop.close
+    - BossShop.open.command.KitPvP
+    - essentials.rules
+    - multiverse.portal.access.*
+    - serversigns.use.*
+    - essentials.balance
+    - essentials.balance.others
+    - essentials.balancetop
+    - essentials.msg
+    - essentials.seen
+    - essentials.pay
+    - essentials.mail
+    - essentials.mail.send
+    - essentials.mail.clear
+    - essentials.mail.read
+    - knightkit.1
+    - shop.kitpvp
+    - mycommand.cmd.1
+    - mycommand.cmd.2
+    - mycommand.cmd.3
+    - mycommand.cmd.4
+    - mycommand.cmd.5
+    - essentials.spawn
+    info:
+      prefix: '&7[&8&lUser&7] &8'
+      build: true
+  UserKitPvP131-140:
+    default: false
+    permissions:
+    - nametag.group.user
+    - killermoney.getcash
+    - essentials.clearinventory
+    - kit.Knight
+    - -factions.*
+    - LevelsKitPvP.21
+    - LevelsKitPvP.41
+    - LevelsKitPvP.61
+    - LevelsKitPvP.81
+    - LevelsKitPvP.101
+    - LevelsKitPvP.121
+    - kit.kit
+    - BossShop.open
+    - BossShop.close
+    - BossShop.open.command.KitPvP
+    - essentials.rules
+    - multiverse.portal.access.*
+    - serversigns.use.*
+    - essentials.balance
+    - essentials.balance.others
+    - essentials.balancetop
+    - essentials.msg
+    - essentials.seen
+    - essentials.pay
+    - essentials.mail
+    - essentials.mail.send
+    - essentials.mail.clear
+    - essentials.mail.read
+    - knightkit.1
+    - shop.kitpvp
+    - mycommand.cmd.1
+    - mycommand.cmd.2
+    - mycommand.cmd.3
+    - mycommand.cmd.4
+    - mycommand.cmd.5
+    - essentials.spawn
+    info:
+      prefix: '&7[&8&lUser&7] &8'
+      build: true
+  UserKitPvP141-150:
+    default: false
+    permissions:
+    - nametag.group.user
+    - killermoney.getcash
+    - essentials.clearinventory
+    - kit.Knight
+    - -factions.*
+    - LevelsKitPvP.21
+    - LevelsKitPvP.41
+    - LevelsKitPvP.61
+    - LevelsKitPvP.81
+    - LevelsKitPvP.101
+    - LevelsKitPvP.121
+    - LevelsKitPvP.141
+    - kit.kit
+    - BossShop.open
+    - BossShop.close
+    - BossShop.open.command.KitPvP
+    - essentials.rules
+    - multiverse.portal.access.*
+    - serversigns.use.*
+    - essentials.balance
+    - essentials.balance.others
+    - essentials.balancetop
+    - essentials.msg
+    - essentials.seen
+    - essentials.pay
+    - essentials.mail
+    - essentials.mail.send
+    - essentials.mail.clear
+    - essentials.mail.read
+    - knightkit.1
+    - shop.kitpvp
+    - mycommand.cmd.1
+    - mycommand.cmd.2
+    - mycommand.cmd.3
+    - mycommand.cmd.4
+    - mycommand.cmd.5
+    - essentials.spawn
+    info:
+      prefix: '&7[&8&lUser&7] &8'
+      build: true

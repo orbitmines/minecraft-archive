@@ -1,0 +1,45 @@
+pvp:
+  status_conflict:
+    attacker: '§cYou do not have PvP enabled!
+
+      §4Use /pvp to toggle PvP on and off.'
+    defender: §c%player% does not have PvP enabled!
+  cooldown:
+    command:
+      toggle: §cYou have to wait §b%TimeLeft% §c%TimeValue% before you can toggle PvP!
+      tp: §cYou have to wait §b%TimeLeft% §c%TimeValue% before you can teleport!
+    attack:
+      death_wait: §cYou have to wait §b%TimeLeft% §c%TimeValue% before you can toggle PvP again!
+      join: §c%player% is immune to PvP for §b%TimeLeft% §cmore %TimeValue%%PvPOnHit%.
+      join_pvp_on_hit: ' unless they attack first'
+      blocked_item: §cYou have to wait §b%TimeLeft% §c%TimeValue% before you can use that item!
+      blocked_item_outside_pvp: §cThis item cannot be used outside of PvP! %player% does not have PvP enabled.
+  kill:
+    attacker: §aYou have defeated %player%!
+    defender: §cYou have been killed by %player%!
+  flying: §cYou cannot PvP while flying!
+  creative: §cYou cannot PvP in creative mode!
+time:
+  second: second
+  seconds: seconds
+  minute: minute
+  minutes: minutes
+command:
+  toggle:
+    'on': §eYou have toggled PvP on! You may attack anyone who has PvP on.
+    'off': §eYou have toggled PvP off! Nobody can attack you.
+    unmoderated: §cPvP is not moderated in this world!
+  clear: §aAll players now have their PvP status set to default.
+  global_on: §aAll online players now have PvP on.
+  global_off: §aAll online players now have PvP off.
+  reload: §aReloaded configuration successfully.
+  set_other:
+    receiver_pvp_enabled: §3PvP has been enabled for you by %player%.
+    receiver_pvp_disabled: §3PvP has been disabled for you by %player%.
+    enabled: §a%player%'s PvP has been enabled.
+    disabled: §a%player%'s PvP has been disabled.
+    usage: '§cUsage: /pvp setother <player>'
+error:
+  console_pvp: §cYou can't fight from the console!
+  no_player: '§cNo such player: ''%player%'''
+  no_permission: §cYou don't have permission to do that!

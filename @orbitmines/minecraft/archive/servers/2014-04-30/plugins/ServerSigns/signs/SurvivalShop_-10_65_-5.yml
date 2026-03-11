@@ -1,0 +1,16 @@
+permission: ''
+world: SurvivalShop
+X: -10
+Y: 65
+Z: -5
+price: 0.0
+cooldown: 0
+globalCooldown: 0
+confirmation: false
+commands:
+- '/GiveSurvivalDiamond '
+grantPermissions: []
+lastGlobalUse: 0
+lastUse: {}
+priceItems: []
+exp: 0

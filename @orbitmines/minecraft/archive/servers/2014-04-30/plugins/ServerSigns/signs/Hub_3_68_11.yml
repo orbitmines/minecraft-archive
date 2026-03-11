@@ -1,0 +1,16 @@
+permission: ''
+world: Hub
+X: 3
+Y: 68
+Z: 11
+price: 0.0
+cooldown: 0
+globalCooldown: 0
+confirmation: false
+commands:
+- '/spleef join Arena1 '
+grantPermissions: []
+lastGlobalUse: 0
+lastUse: {}
+priceItems: []
+exp: 0

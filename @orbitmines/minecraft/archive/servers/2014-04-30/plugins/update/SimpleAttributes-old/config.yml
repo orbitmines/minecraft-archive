@@ -1,0 +1,36 @@
+#This SimpleAttributes plugin is made by EgorDm.
+#  _________.__               .__            _____   __    __         ._____.           __                 
+# /   _____/|__| _____ ______ |  |   ____   /  _  \_/  |__/  |________|__\_ |__  __ ___/  |_  ____   ______
+# \_____  \ |  |/     \\____ \|  | _/ __ \ /  /_\  \   __\   __\_  __ \  || __ \|  |  \   __\/ __ \ /  ___/
+# /        \|  |  Y Y  \  |_> >  |_\  ___//    |    \  |  |  |  |  | \/  || \_\ \  |  /|  | \  ___/ \___ \ 
+#/_______  /|__|__|_|  /   __/|____/\___  >____|__  /__|  |__|  |__|  |__||___  /____/ |__|  \___  >____  >
+#        \/          \/|__|             \/        \/                          \/                 \/     \/   
+version: 2
+
+unofficial-attributes: true
+#This option allows you to use UnOfficial attributes whitch are added by this plugin
+#UnOfficial attributes are: Defense
+
+auto-update: true
+update-check: true
+#This option allows you to turn on autoupdate so the plugin
+#can always stay up to date.
+
+
+enable-presets: true
+#This allows you to spawn in a preset with /att preset <presetname>
+using-presets:
+- WeaponLvL1
+item-presets:
+    WeaponLvL1:
+        itemID: 276
+        permission: true
+        name: '&b&LWeapon &c&LLvl 1'
+        lores:
+            - &6LvL 1
+        attributesused:
+            - damage:8
+            - speed%:50
+            - maxhealth+:20
+        
+

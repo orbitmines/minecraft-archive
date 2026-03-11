@@ -1,0 +1,105 @@
+ShopName: BuyItems
+signs:
+  text: '[BuyItems]'
+  NeedPermissionToCreateSign: true
+shop:
+  GoldenApple:
+    RewardType: item
+    PriceType: money
+    Price: 150
+    Reward:
+    - - type:GOLDEN_APPLE
+      - amount:1
+    MenuItem:
+    - 'type: GOLDEN_APPLE'
+    - amount:1
+    - name:&6&L1 Golden Apple
+    - 'lore:&c&LPrice: &b150 Coins'
+    - amount:1
+    Message: '&bYou have bought a &6&LGolden Apple'
+    InventoryLocation: 1
+    ExtraPermission: ''
+  Arrows:
+    RewardType: item
+    PriceType: money
+    Price: 100
+    Reward:
+    - - type:ARROW
+      - amount:16
+    MenuItem:
+    - 'type: ARROW'
+    - amount:16
+    - name:&6&L16 Arrows
+    - 'lore:&c&LPrice: &b100 Coins'
+    - amount:1
+    Message: '&bYou have bought &6&L16 Arrows'
+    InventoryLocation: 2
+    ExtraPermission: ''
+  GoldenAppleG:
+    RewardType: item
+    PriceType: money
+    Price: 750
+    Reward:
+    - - type:GOLDEN_APPLE
+      - amount:1
+      - durability:1
+    MenuItem:
+    - 'type: GOLDEN_APPLE'
+    - amount:1
+    - durability:1
+    - name:&6&L1 Enchanted Golden Apple
+    - 'lore:&c&LPrice: &b750 Coins'
+    - amount:1
+    Message: '&bYou have bought a &6&LEnchanted Golden Apple'
+    InventoryLocation: 3
+    ExtraPermission: ''
+  HealthPotions:
+    RewardType: item
+    PriceType: money
+    Price: 150
+    Reward:
+    - - type:POTION
+      - amount:1
+      - durability:8197
+    MenuItem:
+    - 'type: POTION'
+    - amount:1
+    - durability:8197
+    - name:&6&L1 Istant Health Potion
+    - 'lore:&c&LPrice: &b150 Coins'
+    - amount:1
+    - durability:8197
+    Message: '&bYou have bought a &6&LInstant Health Potion'
+    InventoryLocation: 4
+    ExtraPermission: ''
+  SplashHealthPotions:
+    RewardType: item
+    PriceType: money
+    Price: 250
+    Reward:
+    - - type:POTION
+      - amount:1
+      - durability:16389
+    MenuItem:
+    - 'type: POTION'
+    - amount:1
+    - durability:16389
+    - name:&6&L1 Splash Istant Health Potion
+    - 'lore:&c&LPrice: &b250 Coins'
+    - amount:1
+    - durability:16389
+    Message: '&bYou have bought a &6&LSplash Instant Health Potion'
+    InventoryLocation: 5
+    ExtraPermission: ''
+  BackToMenu:
+    RewardType: shop
+    PriceType: free
+    Reward: KitPvP
+    MenuItem:
+    - type:REDSTONE_BLOCK
+    - amount:1
+    - name:&4&LKit PvP Menu
+    - lore:&8Back to the Kit PvP Menu
+    - amount:1
+    InventoryLocation: 9
+    ExtraPermission: ''

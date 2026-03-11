@@ -1,0 +1,104 @@
+ShopName: OMTSurvival
+signs:
+  text: '[OMTSurvival]'
+  NeedPermissionToCreateSign: true
+shop:
+  1OMT:
+    RewardType: money
+    PriceType: points
+    Price: 1
+    Reward: 200
+    MenuItem:
+    - 'type: GOLD_NUGGET'
+    - amount:1
+    - name:&6&L200$ [Survival]
+    - 'lore:&c&LPrice:&4&L 1 OMT #&b&LYour OMT: &6&L%balancepoints%'
+    - amount:1
+    Message: '&bYou have received 200$ &c(Cost: 1 OMT)'
+    InventoryLocation: 1
+    ExtraPermission: 'shop.survival'
+  10OMT:
+    RewardType: money
+    PriceType: points
+    Price: 10
+    Reward: 2000
+    MenuItem:
+    - 'type: GOLD_NUGGET'
+    - amount:10
+    - name:&6&L2.000$ [Survival]
+    - 'lore:&c&LPrice:&4&L 10 OMT #&b&LYour OMT: &6&L%balancepoints%'
+    - amount:10
+    Message: '&bYou have received 2.000$ &c(Cost: 10 OMT)'
+    InventoryLocation: 2
+    ExtraPermission: 'shop.survival'
+  50OMT:
+    RewardType: money
+    PriceType: points
+    Price: 50
+    Reward: 10000
+    MenuItem:
+    - 'type: GOLD_NUGGET'
+    - amount:50
+    - name:&6&L10.000$ [Survival]
+    - 'lore:&c&LPrice:&4&L 50 OMT #&b&LYour OMT: &6&L%balancepoints%'
+    - amount:50
+    Message: '&bYou have received 10.000$ &c(Cost: 50 OMT)'
+    InventoryLocation: 3
+    ExtraPermission: 'shop.survival'
+  1OMTC:
+    RewardType: command
+    PriceType: points
+    Price: 1
+    Reward:
+    - 'adjustbonusclaimblocks %player% 100'
+    MenuItem:
+    - 'type: GOLD_NUGGET'
+    - amount:1
+    - name:&6&L100 ClaimBlocks [Survival]
+    - 'lore:&c&LPrice:&4&L 1 OMT #&b&LYour OMT: &6&L%balancepoints%'
+    - amount:1
+    Message: '&bYou have received 100 ClaimBlocks &c(Cost: 1 OMT)'
+    InventoryLocation: 5
+    ExtraPermission: 'shop.survival'
+  10OMTC:
+    RewardType: command
+    PriceType: points
+    Price: 10
+    Reward:
+    - 'adjustbonusclaimblocks %player% 1000'
+    MenuItem:
+    - 'type: GOLD_NUGGET'
+    - amount:10
+    - name:&6&L1.000 ClaimBlocks [Survival]
+    - 'lore:&c&LPrice:&4&L 10 OMT #&b&LYour OMT: &6&L%balancepoints%'
+    - amount:10
+    Message: '&bYou have received 1.000 ClaimBlocks &c(Cost: 10 OMT)'
+    InventoryLocation: 6
+    ExtraPermission: 'shop.survival'
+  50OMTC:
+    RewardType: command
+    PriceType: points
+    Price: 50
+    Reward:
+    - 'adjustbonusclaimblocks %player% 5000'
+    MenuItem:
+    - 'type: GOLD_NUGGET'
+    - amount:50
+    - name:&6&L5.000 ClaimBlocks [Survival]
+    - 'lore:&c&LPrice:&4&L 50 OMT #&b&LYour OMT: &6&L%balancepoints%'
+    - amount:50
+    Message: '&bYou have received 5.000 ClaimBlocks &c(Cost: 50 OMT)'
+    InventoryLocation: 7
+    ExtraPermission: 'shop.survival'
+  BackToMenu:
+    RewardType: shop
+    PriceType: free
+    Reward: Survival
+    MenuItem:
+    - type:REDSTONE_BLOCK
+    - amount:1
+    - name:&4&LSurvival Menu
+    - lore:&8Back to the Survival Menu
+    - amount:1
+    InventoryLocation: 9
+    ExtraPermission: ''

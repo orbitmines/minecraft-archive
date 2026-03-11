@@ -1,0 +1,147 @@
+ShopName: Paladin
+signs:
+  text: '[Paladin]'
+  NeedPermissionToCreateSign: true
+shop:
+  IronArmorTier2:
+    RewardType: command
+    PriceType: money
+    Price: 50
+    Reward:
+    - 'kit PaladinArmorTier2 %player%'
+    MenuItem:
+    - type:IRON_CHESTPLATE
+    - amount:1
+    - enchantment:DURABILITY#30
+    - 'name:&c&lPaladin Armor: &b&lTier 2'
+    - 'lore:&bTier 2 : &cPaladin Leggings #&bTier 2 : &cPaladin Boots # #&cPrice: &650 Points'
+    - amount:1
+    Message: '&8[&c&lPaladin&8] &cYou have bought &fIron Paladin Armor&c! (&bTier 2&c)'
+    InventoryLocation: 1
+    ExtraPermission: 'shops.paladin'
+  IronArmorTier3:
+    RewardType: command
+    PriceType: money
+    Price: 150
+    Reward:
+    - 'kit PaladinArmorTier3 %player%'
+    MenuItem:
+    - type:IRON_CHESTPLATE
+    - amount:1
+    - enchantment:DURABILITY#50
+    - enchantment:PROTECTION_ENVIRONMENTAL#1
+    - 'name:&c&lPaladin Armor: &b&lTier 3'
+    - 'lore:&bTier 3 : &cPaladin Helmet #&bTier 3 : &cPaladin Chestplate #&bTier 3 : &cPaladin Leggings #&bTier 3 : &cPaladin Boots # #&cPrice: &6150 Points'
+    - amount:1
+    Message: '&8[&c&lPaladin&8] &cYou have bought &fIron Paladin Armor&c! (&bTier 3&c)'
+    InventoryLocation: 2
+    ExtraPermission: 'shops.paladin'
+  DiamondArmorTier4:
+    RewardType: command
+    PriceType: money
+    Price: 250
+    Reward:
+    - 'kit PaladinArmorTier4 %player%'
+    MenuItem:
+    - type:DIAMOND_CHESTPLATE
+    - amount:1
+    - enchantment:DURABILITY#75
+    - 'name:&c&lPaladin Armor: &b&lTier 4'
+    - 'lore:&bTier 4 : &cPaladin Helmet #&bTier 4 : &cPaladin Chestplate #&bTier 4 : &cPaladin Leggings #&bTier 4 : &cPaladin Boots # #&cPrice: &6250 Points'
+    - amount:1
+    Message: '&8[&c&lPaladin&8] &cYou have bought &fDiamond Paladin Armor&c! (&bTier 4&c)'
+    InventoryLocation: 3
+    ExtraPermission: 'shops.paladin'
+  Steak:
+    RewardType: item
+    PriceType: money
+    Price: 3
+    Reward:
+    - id:364
+    - amount:1
+    MenuItem:
+    - id:364
+    - amount:1
+    - 'lore: #&cPrice: &63 Points'
+    - amount:1
+    Message: '&8[&c&lPaladin&8] &cYou have bought &f1 Steak&c!'
+    InventoryLocation: 9
+    ExtraPermission: 'shops.paladin'
+  IronSword1:
+    RewardType: item
+    PriceType: money
+    Price: 75
+    Reward:
+    - type:IRON_SWORD
+    - amount:1
+    - 'name:&bTier 2 : &cPaladin Sword'
+    - enchantment:DURABILITY#30
+    MenuItem:
+    - type:IRON_SWORD
+    - amount:1
+    - enchantment:DURABILITY#30
+    - 'name:&c&lPaladin Sword: &b&lTier 2'
+    - 'lore: #&cPrice: &675 Points'
+    - amount:1
+    Message: '&8[&c&lPaladin&8] &cYou have bought &f1 Paladin Sword&c! (&bTier 2&c)'
+    InventoryLocation: 4
+    ExtraPermission: 'shops.paladin'
+  IronSword:
+    RewardType: item
+    PriceType: money
+    Price: 125
+    Reward:
+    - type:IRON_SWORD
+    - amount:1
+    - 'name:&bTier 3 : &cPaladin Sword'
+    - enchantment:DURABILITY#50
+    - enchantment:DAMAGE_ALL#1
+    MenuItem:
+    - type:IRON_SWORD
+    - amount:1
+    - enchantment:DURABILITY#50
+    - enchantment:DAMAGE_ALL#1
+    - 'name:&c&lPaladin Sword: &b&lTier 3'
+    - 'lore: #&cPrice: &6125 Points'
+    - amount:1
+    Message: '&8[&c&lPaladin&8] &cYou have bought &f1 Paladin Sword&c! (&bTier 3&c)'
+    InventoryLocation: 5
+    ExtraPermission: 'shops.paladin'
+  IronSword3:
+    RewardType: item
+    PriceType: money
+    Price: 200
+    Reward:
+    - type:IRON_SWORD
+    - amount:1
+    - 'name:&bTier 4 : &cPaladin Sword'
+    - enchantment:DURABILITY#75
+    - enchantment:DAMAGE_ALL#2
+    MenuItem:
+    - type:IRON_SWORD
+    - amount:1
+    - enchantment:DURABILITY#75
+    - enchantment:DAMAGE_ALL#2
+    - 'name:&c&lPaladin Sword: &b&lTier 4'
+    - 'lore: #&cPrice: &6200 Points'
+    - amount:1
+    Message: '&8[&c&lPaladin&8] &cYou have bought &f1 Paladin Sword&c! (&bTier 4&c)'
+    InventoryLocation: 6
+    ExtraPermission: 'shops.paladin'
+  HealthPotion:
+    RewardType: item
+    PriceType: money
+    Price: 15
+    Reward:
+    - type:POTION
+    - amount:1
+    - durability:16389
+    MenuItem:
+    - type:POTION
+    - amount:1
+    - durability:16389
+    - 'lore: #&cPrice: &615 Points'
+    - amount:1
+    Message: '&8[&c&lPaladin&8] &cYou have bought &f1 Health Potion&c!'
+    InventoryLocation: 7
+    ExtraPermission: 'shops.paladin'

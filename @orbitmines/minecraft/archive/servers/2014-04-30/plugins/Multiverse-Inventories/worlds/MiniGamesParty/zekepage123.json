@@ -1,0 +1,1 @@
+{"SURVIVAL":{"inventoryContents":{"1":{"==":"org.bukkit.inventory.ItemStack","type":"ARROW","amount":14},"0":{"==":"org.bukkit.inventory.ItemStack","type":"BOW","damage":7}},"potions":"[]","enderChestContents":{},"balance":"0.0","armorContents":{},"stats":{"ex":"1.4826325","ra":"300","hp":"20","txp":"0","fl":"20","el":"0","ma":"300","sa":"0.0","xp":"0.0","ft":"-20","fd":"0.0"}}}

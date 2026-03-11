@@ -1,0 +1,1 @@
+{"SURVIVAL":{"inventoryContents":{"1":{"==":"org.bukkit.inventory.ItemStack","type":"ROTTEN_FLESH"},"0":{"==":"org.bukkit.inventory.ItemStack","type":"BAKED_POTATO"}},"balance":"0.0","potions":"[]","enderChestContents":{},"armorContents":{},"stats":{"ra":"300","ex":"0.0","hp":"20","fl":"20","txp":"6","el":"0","sa":"5.0","ma":"300","xp":"0.3529412","ft":"0","fd":"0.0"}}}

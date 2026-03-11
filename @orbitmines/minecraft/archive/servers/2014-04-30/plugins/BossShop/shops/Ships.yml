@@ -1,0 +1,199 @@
+ShopName: Ships
+signs:
+  text: '[Ships]'
+  NeedPermissionToCreateSign: true
+shop:
+  Phoenix:
+    RewardType: playercommand
+    PriceType: free
+    Reward:
+    - BuyShipPhoenix
+    MenuItem:
+    - type:BOAT
+    - amount:1
+    - name:&8[&CPhoenix&8]
+    - 'lore:&b&L10 Hearts #&c&LPrice: &b0 Credits #&6&LYour Credits: &b%balance%'
+    - amount:1
+    InventoryLocation: 1
+    ExtraPermission: ''
+  Liberator:
+    RewardType: playercommand
+    PriceType: free
+    Reward:
+    - BuyShipLiberator
+    MenuItem:
+    - type:BOAT
+    - amount:1
+    - name:&8[&CLiberator&8]
+    - 'lore:&b&L14 Hearts #&c&LPrice: &b400 Credits #&6&LYour Credits: &b%balance%'
+    - amount:1
+    InventoryLocation: 4
+    ExtraPermission: ''
+  Piranha:
+    RewardType: playercommand
+    PriceType: free
+    Reward:
+    - BuyShipPiranha
+    MenuItem:
+    - type:BOAT
+    - amount:1
+    - name:&8[&CPiranha&8]
+    - 'lore:&b&L15 Hearts #&c&LPrice: &b1250 Credits #&6&LYour Credits: &b%balance%'
+    - amount:1
+    InventoryLocation: 5
+    ExtraPermission: ''
+  Bigboy:
+    RewardType: playercommand
+    PriceType: free
+    Reward:
+    - BuyShipBigboy
+    MenuItem:
+    - type:BOAT
+    - amount:1
+    - name:&8[&CBigboy&8]
+    - 'lore:&b&L17 Hearts #&c&LPrice: &b3000 Credits #&6&LYour Credits: &b%balance%'
+    - amount:1
+    InventoryLocation: 7
+    ExtraPermission: ''
+  Defcom:
+    RewardType: playercommand
+    PriceType: free
+    Reward:
+    - BuyShipDefcom
+    MenuItem:
+    - type:BOAT
+    - amount:1
+    - name:&8[&CDefcom&8]
+    - 'lore:&b&L13 Hearts #&c&LPrice: &b320 Credits #&6&LYour Credits: &b%balance%'
+    - amount:1
+    InventoryLocation: 3
+    ExtraPermission: ''
+  Yamato:
+    RewardType: playercommand
+    PriceType: free
+    Reward:
+    - BuyShipYamato
+    MenuItem:
+    - type:BOAT
+    - amount:1
+    - name:&8[&CYamato&8]
+    - 'lore:&b&L12 Hearts #&c&LPrice: &b160 Credits #&6&LYour Credits: &b%balance%'
+    - amount:1
+    InventoryLocation: 2
+    ExtraPermission: ''
+  Nostromo:
+    RewardType: playercommand
+    PriceType: free
+    Reward:
+    - BuyShipNostromo
+    MenuItem:
+    - type:BOAT
+    - amount:1
+    - name:&8[&CNostromo&8]
+    - 'lore:&b&L16 Hearts #&c&LPrice: &b1950 Credits #&6&LYour Credits: &b%balance%'
+    - amount:1
+    InventoryLocation: 6
+    ExtraPermission: ''
+  Leonov:
+    RewardType: playercommand
+    PriceType: free
+    Reward:
+    - BuyShipLeonov
+    MenuItem:
+    - type:MINECART
+    - amount:1
+    - name:&8[&CLeonov&8]
+    - 'lore:&b&L20 Hearts #&c&LPrice: &b1500 Uridium #&6&LYour Uridium: &b%balancepoints%'
+    - amount:1
+    InventoryLocation: 10
+    ExtraPermission: ''
+  Spearhead:
+    RewardType: playercommand
+    PriceType: free
+    Reward:
+    - BuyShipSpearhead
+    MenuItem:
+    - type:MINECART
+    - amount:1
+    - name:&8[&CSpearhead&8]
+    - 'lore:&b&L24 Hearts #&c&LPrice: &b4500 Uridium #&6&LYour Uridium: &b%balancepoints%'
+    - amount:1
+    InventoryLocation: 12
+    ExtraPermission: ''
+  Vengeance:
+    RewardType: playercommand
+    PriceType: free
+    Reward:
+    - BuyShipVengeance
+    MenuItem:
+    - type:MINECART
+    - amount:1
+    - name:&8[&CVengeance&8]
+    - 'lore:&b&L22 Hearts #&c&LPrice: &b3000 Uridium #&6&LYour Uridium: &b%balancepoints%'
+    - amount:1
+    InventoryLocation: 11
+    ExtraPermission: ''
+  Goliath:
+    RewardType: playercommand
+    PriceType: free
+    Reward:
+    - BuyShipGoliath
+    MenuItem:
+    - type:MINECART
+    - amount:1
+    - name:&8[&CGoliath&8]
+    - 'lore:&b&L30 Hearts #&c&LPrice: &b8000 Uridium #&6&LYour Uridium: &b%balancepoints%'
+    - amount:1
+    InventoryLocation: 13
+    ExtraPermission: ''
+  Aegis:
+    RewardType: playercommand
+    PriceType: free
+    Reward:
+    - BuyShipAegis
+    MenuItem:
+    - type:MINECART
+    - amount:1
+    - name:&8[&CAegis&8]
+    - 'lore:&b&L35 Hearts #&c&LPrice: &b15000 Uridium #&6&LYour Uridium: &b%balancepoints%'
+    - amount:1
+    InventoryLocation: 14
+    ExtraPermission: ''
+  Citadel:
+    RewardType: playercommand
+    PriceType: free
+    Reward:
+    - BuyShipCitadel
+    MenuItem:
+    - type:MINECART
+    - amount:1
+    - name:&8[&CCitadel&8]
+    - 'lore:&b&L40 Hearts #&c&LPrice: &b25000 Uridium #&6&LYour Uridium: &b%balancepoints%'
+    - amount:1
+    InventoryLocation: 15
+    ExtraPermission: ''
+  Balance:
+    RewardType: playercommand
+    PriceType: free
+    Reward:
+    - money
+    - Uridium
+    MenuItem:
+    - type:DIAMOND
+    - amount:1
+    - name:&b&LBalance
+    - 'lore:&6&LYour Credits: &b%balance% #&6&LYour Uridium: &b%balancepoints%'
+    - amount:1
+    InventoryLocation: 18
+  BackToMenu:
+    RewardType: shop
+    PriceType: free
+    Reward: OrbitMinesPvP
+    MenuItem:
+    - type:REDSTONE_BLOCK
+    - amount:1
+    - name:&4&LOrbitMines PvP Menu
+    - lore:&8Back to OrbitMines PvP Menu
+    - amount:1
+    InventoryLocation: 9
+    ExtraPermission: ''

@@ -1,0 +1,9 @@
+# CONFIG VERSION, WILL ERASE YOUR CONFIG IF YOU ALTER.
+version: 1
+
+# Set if you the plugin to automatically alert you of plugin updates.
+checkForUpdates: true
+
+# Messages to set for when denying dropping.
+dropDenyMessage: "&1[&6OrbitMines&1] &cYou aren't allowed to drop items."
+potionDenyMessage: "&1[&6OrbitMines&1] &cYou aren't allowed to use potions."

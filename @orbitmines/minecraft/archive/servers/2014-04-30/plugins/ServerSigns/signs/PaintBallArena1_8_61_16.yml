@@ -1,0 +1,16 @@
+permission: ''
+world: PaintBallArena1
+X: 8
+Y: 61
+Z: 16
+price: 0.0
+cooldown: 0
+globalCooldown: 0
+confirmation: false
+commands:
+- '/pb leave '
+grantPermissions: []
+lastGlobalUse: 0
+lastUse: {}
+priceItems: []
+exp: 0

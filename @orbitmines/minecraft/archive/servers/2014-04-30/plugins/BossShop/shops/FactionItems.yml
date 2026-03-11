@@ -1,0 +1,79 @@
+ShopName: Factions
+signs:
+  text: '[ItemsF]'
+  NeedPermissionToCreateSign: true
+shop:
+  1OMT:
+    RewardType: money
+    PriceType: points
+    Price: 1
+    Reward: 500
+    MenuItem:
+    - 'type: GOLD_NUGGET'
+    - amount:1
+    - name:&6&L250$ [Factions]
+    - 'lore:&c&LPrice:&4&L 1 OMT #&b&LYour OMT: &6&L%balancepoints%'
+    - amount:1
+    Message: '&bYou have received 250$ &c(Cost: 1 OMT)'
+    InventoryLocation: 9
+    ExtraPermission: 'shop.factions'
+  TnT:
+    RewardType: item
+    PriceType: money
+    Price: 250
+    Reward:
+    - - type:TNT
+      - amount:16
+    MenuItem:
+    - 'type: TNT'
+    - amount:16
+    - name:&4&L16 TnT
+    - 'lore:&c&LPrice: &b250$'
+    - amount:16
+    InventoryLocation: 1
+    ExtraPermission: 'shop.factions'
+  Obsidian:
+    RewardType: item
+    PriceType: money
+    Price: 500
+    Reward:
+    - - type:OBSIDIAN
+      - amount:16
+    MenuItem:
+    - 'type: OBSIDIAN'
+    - amount:16
+    - name:&8&L16 Obsidian
+    - 'lore:&c&LPrice: &b500$'
+    - amount:16
+    InventoryLocation: 2
+    ExtraPermission: 'shop.factions'
+  GoldenApple:
+    RewardType: item
+    PriceType: money
+    Price: 250
+    Reward:
+    - - type:GOLDEN_APPLE
+      - amount:3
+    MenuItem:
+    - 'type: GOLDEN_APPLE'
+    - amount:3
+    - name:&6&L3 Golden Apples
+    - 'lore:&c&LPrice: &b250$'
+    - amount:3
+    InventoryLocation: 3
+    ExtraPermission: 'shop.factions'
+  enderpearl:
+    RewardType: item
+    PriceType: money
+    Price: 350
+    Reward:
+    - - type:ENDER_PEARL
+      - amount:8
+    MenuItem:
+    - 'type: ENDER_PEARL'
+    - amount:8
+    - name:&6&L3 Golden Apples
+    - 'lore:&c&LPrice: &b350$'
+    - amount:8
+    InventoryLocation: 4
+    ExtraPermission: 'shop.factions'

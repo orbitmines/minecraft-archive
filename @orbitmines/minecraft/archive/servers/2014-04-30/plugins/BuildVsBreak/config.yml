@@ -1,0 +1,22 @@
+Prevent building: true
+Prevent breaking: true
+Sound: true
+Worlds:
+- world
+- Spawn
+- BattleSiegeKit1
+- BattleSiegeMapKit2
+- SuperSmashMap1
+- OITCArena1
+- PrisonPvPArena
+- PrisonVoteShop
+- SkyBlockWorld
+- Hub
+- KitPvP
+- ClaimTutorial
+- Tutorial
+- TestWorld
+- MiniGames
+- H&SArena1
+- MiniGamesParty
+- SkyWarsLobby

@@ -1,0 +1,16 @@
+permission: ''
+world: TestWorld
+X: 31
+Y: 120
+Z: -32
+price: 0.0
+cooldown: 0
+globalCooldown: 0
+confirmation: false
+commands:
+- '/InformationPrisonVIP '
+grantPermissions: []
+lastGlobalUse: 0
+lastUse: {}
+priceItems: []
+exp: 0

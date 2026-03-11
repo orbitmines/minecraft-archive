@@ -1,0 +1,21 @@
+signs:
+  Arena2:
+    joinsigns:
+    - MiniGames,-1,67,-83
+    playersigns: []
+  Arena1:
+    joinsigns:
+    - MiniGames,-2,67,-83
+    playersigns: []
+  Arena4:
+    joinsigns:
+    - MiniGames,1,67,-83
+    playersigns: []
+  Arena3:
+    joinsigns:
+    - MiniGames,0,67,-83
+    playersigns: []
+  Arena5:
+    joinsigns:
+    - MiniGames,2,67,-83
+    playersigns: []

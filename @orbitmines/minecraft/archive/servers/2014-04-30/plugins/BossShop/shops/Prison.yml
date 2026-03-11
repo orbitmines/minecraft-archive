@@ -1,0 +1,41 @@
+ShopName: Prison
+signs:
+  text: '[Prison]'
+  NeedPermissionToCreateSign: true
+shop:
+  Sell:
+    RewardType: shop
+    PriceType: free
+    Reward: PrisonSell
+    MenuItem:
+    - 'type: EMERALD_BLOCK'
+    - amount:1
+    - name:&b&LSell Shop
+    - 'lore:&8Here you can sell your Items'
+    - amount:1
+    InventoryLocation: 3
+    ExtraPermission: 'shop.prison'
+  Buy:
+    RewardType: shop
+    PriceType: free
+    Reward: PrisonBuy
+    MenuItem:
+    - 'type: REDSTONE_BLOCK'
+    - amount:1
+    - name:&b&LBuy Shop
+    - 'lore:&8Here you can buy your Items'
+    - amount:1
+    InventoryLocation: 5
+    ExtraPermission: 'shop.prison'
+  OMT:
+    RewardType: shop
+    PriceType: free
+    Reward: OMTPrison
+    MenuItem:
+    - type:GOLD_BLOCK
+    - amount:1
+    - name:&b&LOrbitMines Tokens
+    - 'lore:&8Change OrbitMines Tokens for Money'
+    - amount:1
+    InventoryLocation: 7
+    ExtraPermission: 'shop.prison'

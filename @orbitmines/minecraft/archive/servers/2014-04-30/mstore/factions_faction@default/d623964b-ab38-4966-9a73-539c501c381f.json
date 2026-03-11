@@ -1,0 +1,16 @@
+{
+  "name": "Assassin",
+  "description": "silence and stealth are the words",
+  "createdAtMillis": 1397581698972,
+  "home": {
+    "w": "Factions",
+    "lx": 62.08447880271968,
+    "ly": 35.0,
+    "lz": -142.13747851778618,
+    "p": 17.550068,
+    "y": 342.7494
+  },
+  "relationWishes": {
+    "dddc6998-bb8c-49b3-9602-b5c45b770106": "ALLY"
+  }
+}

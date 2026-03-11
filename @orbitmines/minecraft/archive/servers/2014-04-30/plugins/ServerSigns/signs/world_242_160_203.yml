@@ -1,0 +1,16 @@
+permission: ''
+world: world
+X: 242
+Y: 160
+Z: 203
+price: 0.0
+cooldown: 0
+globalCooldown: 0
+confirmation: false
+commands:
+- '/PlayPvPVenus '
+grantPermissions: []
+lastGlobalUse: 0
+lastUse: {}
+priceItems: []
+exp: 0

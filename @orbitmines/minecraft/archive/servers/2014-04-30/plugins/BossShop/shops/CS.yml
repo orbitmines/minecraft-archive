@@ -1,0 +1,75 @@
+ShopName: ColorShuffle
+signs:
+  text: '[CS]'
+  NeedPermissionToCreateSign: true
+shop:
+  Arena1:
+    RewardType: playercommand
+    PriceType: free
+    Reward:
+    - color join Arena1
+    MenuItem:
+    - 'type: WOOL'
+    - amount:1
+    - durability:5
+    - name:&b[&3C&8o&bl&ao&2r&1S&4h&2u&4f&9f&3l&ae&4]
+    - 'lore:&6&LJoin Arena 1'
+    - amount:1
+    InventoryLocation: 3
+    ExtraPermission: 'shop.CS'
+  Arena2:
+    RewardType: playercommand
+    PriceType: free
+    Reward:
+    - color join Arena2
+    MenuItem:
+    - 'type: WOOL'
+    - amount:2
+    - durability:5
+    - name:&1[&aC&co&dl&ao&2r&bS&3h&au&ff&6f&7l&4e&2]
+    - 'lore:&6&LJoin Arena 2'
+    - amount:2
+    InventoryLocation: 5
+    ExtraPermission: 'shop.CS'
+  Arena3:
+    RewardType: playercommand
+    PriceType: free
+    Reward:
+    - color join Arena3
+    MenuItem:
+    - 'type: WOOL'
+    - amount:3
+    - durability:5
+    - name:&a[&cC&4o&1l&2o&9r&0S&ah&bu&df&af&fl&1e&5]
+    - 'lore:&6&LJoin Arena 3'
+    - amount:3
+    InventoryLocation: 7
+    ExtraPermission: 'shop.CS'
+  Leave1:
+    RewardType: playercommand
+    PriceType: free
+    Reward:
+    - color leave
+    MenuItem:
+    - 'type: WOOL'
+    - amount:1
+    - durability:14
+    - name:&5[&4C&ao&cl&do&ar&cS&Ah&cu&1f&0f&3l&4e&b]
+    - 'lore:&4&LLeave Arena'
+    - amount:1
+    InventoryLocation: 1
+    ExtraPermission: 'shop.CS'
+  Leave2:
+    RewardType: playercommand
+    PriceType: free
+    Reward:
+    - color leave
+    MenuItem:
+    - 'type: WOOL'
+    - amount:1
+    - durability:14
+    - name:&b[&aC&co&cl&do&5r&6S&7h&au&ff&df&al&2e&9]
+    - 'lore:&4&LLeave Arena'
+    - amount:1
+    InventoryLocation: 9
+    ExtraPermission: 'shop.CS'

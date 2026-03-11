@@ -1,0 +1,106 @@
+ShopName: SpeedGenerators
+signs:
+  text: '[Speed]'
+  NeedPermissionToCreateSign: true
+shop:
+  LvL1:
+    RewardType: playercommand
+    PriceType: free
+    Reward:
+    - BuySpeedGeneratorLvL1
+    MenuItem:
+    - type:CHAINMAIL_BOOTS
+    - amount:1
+    - name:&b&LSpeedGenerator &c&LLvL 1
+    - 'lore:&b&L10% Speed Boost #&c&LPrice: &b200 Credits #&6&LYour Credits: &b%balance%'
+    - amount:1
+    InventoryLocation: 1
+    ExtraPermission: ''
+  LvL2:
+    RewardType: playercommand
+    PriceType: free
+    Reward:
+    - BuySpeedGeneratorLvL2
+    MenuItem:
+    - type:CHAINMAIL_BOOTS
+    - amount:1
+    - name:&b&LSpeedGenerator &c&LLvL 2
+    - 'lore:&b&L15% Speed Boost #&c&LPrice: &b400 Credits #&6&LYour Credits: &b%balance%'
+    - amount:1
+    InventoryLocation: 2
+    ExtraPermission: ''
+  LvL3:
+    RewardType: playercommand
+    PriceType: free
+    Reward:
+    - BuySpeedGeneratorLvL3
+    MenuItem:
+    - type:CHAINMAIL_BOOTS
+    - amount:1
+    - name:&b&LSpeedGenerator &c&LLvL 3
+    - 'lore:&b&L20% Speed Boost #&c&LPrice: &b800 Credits #&6&LYour Credits: &b%balance%'
+    - amount:1
+    InventoryLocation: 3
+  LvL4:
+    RewardType: playercommand
+    PriceType: free
+    Reward:
+    - BuySpeedGeneratorLvL4
+    MenuItem:
+    - type:CHAINMAIL_BOOTS
+    - amount:1
+    - name:&b&LSpeedGenerator &c&LLvL 4
+    - 'lore:&b&L25% Speed Boost #&c&LPrice: &b1600 Credits #&6&LYour Credits: &b%balance%'
+    - amount:1
+    InventoryLocation: 4
+  LvL5:
+    RewardType: playercommand
+    PriceType: free
+    Reward:
+    - BuySpeedGeneratorLvL5
+    MenuItem:
+    - type:IRON_BOOTS
+    - amount:1
+    - name:&b&LSpeedGenerator &c&LLvL 5
+    - 'lore:&b&L35% Speed Boost #&c&LPrice: &b1000 Uridium #&6&LYour Uridium: &b%balancepoints%'
+    - amount:1
+    InventoryLocation: 10
+    ExtraPermission: ''
+  LvL7:
+    RewardType: playercommand
+    PriceType: free
+    Reward:
+    - BuySpeedGeneratorLvL7
+    MenuItem:
+    - type:IRON_BOOTS
+    - amount:1
+    - name:&b&LSpeedGenerator &c&LLvL 7
+    - 'lore:&b&L50% Speed Boost #&c&LPrice: &b2500 Uridium #&6&LYour Uridium: &b%balancepoints%'
+    - amount:1
+    InventoryLocation: 11
+    ExtraPermission: ''
+  Balance:
+    RewardType: playercommand
+    PriceType: free
+    Reward:
+    - money
+    - Uridium
+    MenuItem:
+    - type:DIAMOND
+    - amount:1
+    - name:&b&LBalance
+    - 'lore:&6&LYour Credits: &b%balance% #&6&LYour Uridium: &b%balancepoints%'
+    - amount:1
+    InventoryLocation: 18
+  BackToMenu:
+    RewardType: shop
+    PriceType: free
+    Reward: OrbitMinesPvP
+    MenuItem:
+    - type:REDSTONE_BLOCK
+    - amount:1
+    - name:&4&LOrbitMines PvP Menu
+    - lore:&8Back to OrbitMines PvP Menu
+    - amount:1
+    InventoryLocation: 9
+    ExtraPermission: ''

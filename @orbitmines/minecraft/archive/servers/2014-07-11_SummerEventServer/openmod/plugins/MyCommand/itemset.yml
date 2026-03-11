@@ -1,0 +1,8 @@
+# 
+#  					BukkitDev Help page : http://dev.bukkit.org/server-mods/mycommand/    					#
+config:
+  autoload: false
+  set_name: testlist
+itemset:
+  XRUN:
+    REDSTONE: /IAMDEADYUPXRUNREDSTONE

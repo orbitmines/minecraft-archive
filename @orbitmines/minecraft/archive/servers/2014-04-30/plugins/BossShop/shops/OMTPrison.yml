@@ -1,0 +1,59 @@
+ShopName: OMTPrison
+signs:
+  text: '[OMTPrison]'
+  NeedPermissionToCreateSign: true
+shop:
+  1OMT:
+    RewardType: money
+    PriceType: points
+    Price: 1
+    Reward: 1000
+    MenuItem:
+    - 'type: GOLD_NUGGET'
+    - amount:1
+    - name:&6&L1.000$ [Prison]
+    - 'lore:&c&LPrice:&4&L 1 OMT #&b&LYour OMT: &6&L%balancepoints%'
+    - amount:1
+    Message: '&bYou have received 1.000$ &c(Cost: 1 OMT)'
+    InventoryLocation: 1
+    ExtraPermission: 'shop.prison'
+  10OMT:
+    RewardType: money
+    PriceType: points
+    Price: 10
+    Reward: 10000
+    MenuItem:
+    - 'type: GOLD_NUGGET'
+    - amount:10
+    - name:&6&L10.000$ [Prison]
+    - 'lore:&c&LPrice:&4&L 10 OMT #&b&LYour OMT: &6&L%balancepoints%'
+    - amount:10
+    Message: '&bYou have received 10.000$ &c(Cost: 10 OMT)'
+    InventoryLocation: 2
+    ExtraPermission: 'shop.prison'
+  50OMT:
+    RewardType: money
+    PriceType: points
+    Price: 50
+    Reward: 50000
+    MenuItem:
+    - 'type: GOLD_NUGGET'
+    - amount:50
+    - name:&6&L50.000$ [Prison]
+    - 'lore:&c&LPrice:&4&L 50 OMT #&b&LYour OMT: &6&L%balancepoints%'
+    - amount:50
+    Message: '&bYou have received 50.000$ &c(Cost: 50 OMT)'
+    InventoryLocation: 3
+    ExtraPermission: 'shop.kitpvp'
+  BackToMenu:
+    RewardType: shop
+    PriceType: free
+    Reward: Prison
+    MenuItem:
+    - type:REDSTONE_BLOCK
+    - amount:1
+    - name:&4&LPrison Menu
+    - lore:&8Back to the Prison Menu
+    - amount:1
+    InventoryLocation: 9
+    ExtraPermission: ''

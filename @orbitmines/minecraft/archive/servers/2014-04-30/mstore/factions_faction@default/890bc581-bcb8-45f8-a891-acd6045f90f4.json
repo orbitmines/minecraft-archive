@@ -1,0 +1,16 @@
+{
+  "name": "SlimeBalls",
+  "description": "SlimeBalls, We Are The Best Slimes You Can Find!",
+  "createdAtMillis": 1397994196908,
+  "home": {
+    "w": "Factions",
+    "lx": -795.5619959492581,
+    "ly": 150.0,
+    "lz": -257.4866753803332,
+    "p": 90.0,
+    "y": 42.77267
+  },
+  "relationWishes": {
+    "a17719c2-e249-41d6-8623-cecd9b2936b2": "TRUCE"
+  }
+}

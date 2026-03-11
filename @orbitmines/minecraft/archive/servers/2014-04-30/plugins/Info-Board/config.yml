@@ -1,0 +1,736 @@
+# Info Board Config, Last Edited in v0.1.7
+# Max rows is 15, and most characters in a row is 16(Unless you enable scroll) (This includes color/formating codes)
+# The group setting will always go to default if the players group isn't found.(Scoreboards per group requires vault to be on the server)
+# The world setting will always go to global if the players world isn't found.
+# 
+# =============================================================
+# #                   Example
+# Info Board:
+# # Page Number
+#   '1':
+# # How Long this page is shown for
+#     Show Time: 10
+# # What world sees this page (global = All)
+#     global:
+# # What Permissions group sees this page
+#       default:
+# # Pages Title
+#         Title: '&4&lDuskHaven'
+# # Pages Rows
+#          Rows:
+#          - ' '
+#          - 'This board is only'
+#          - 'seen by defaults'
+#       Admin:
+#         Title: '&4&lAdmin Page'
+#         Rows:
+#         - ' '
+#         - 'This board is only'
+#         - 'seen by Admins'
+#   '2':
+#     Show Time: 5
+#     world:
+#       default:
+#         Title: '&a&lStats'
+#          Rows:
+# #               Splitting a line can be done in two ways: using <split>
+#          - 'Online Players: <split> <onlineplayers>'
+# #                Or Using ;
+#          - 'Money: ; <balance>'
+#          - 'PowerLevel: <split> <mcmmopowerlevel>'
+#          - 'Your Level: <split> <level>'
+#     world_the_nether:
+#       default:
+#         Title: '&a&lNether'
+#          Rows:
+# #         - 'Your Level: <split> <level>'
+# # Will only display if <exp> isn't "0" or "Unknown"
+# #         - '~!<exp>Your Exp:'
+# #         - '~!<exp><exp>'
+# #
+# ==================================================================
+# ==================================================================
+# Custom Variables are pretty simple, just follow this setup:
+# Custom Variables: 
+#  <Variable>: What it gets replaced to
+# (Also can be used to change "false" to "No")
+# ==================================================================
+# ==================================================================
+# For Disabled Worlds, Any worlds you want disabled put them here!  
+# ==================================================================
+# ==================================================================
+# Just a heads up, using scroll MAY cause some lag. That's why it's a config option
+# <scroll> remove the limit of characters in a row as it scrolls through
+# To enable this turn, change "Scrolling Text.Enable" to true, and restart the server
+# Shift Time is how long between letters move
+# ==================================================================
+# ==================================================================
+# For Update Time, How many seconds between updating the scoreboard
+# ==================================================================
+# ==================    SCORE BOARDS      ======================
+# Max rows is 15, and most characters in a row is 16(Unless you enable scroll) (This includes color/formating codes)
+# The group setting will always go to default if the players group isn't found.(Scoreboards per group requires vault to be on the server)
+# The world setting will always go to global if the players world isn't found.
+# ==================================================================
+Check for Updates: true
+Custom Variables:
+  <website>: www.OrbitMines.com
+  <plugindev>: OrbitMines
+Disabled Worlds:
+- world
+- HideAndSeekArena1
+- HideAndSeekArena2
+- HideAndSeekArena3
+- HideAndSeekArena4
+- HideAndSeekArena5
+- HideAndSeekArena6
+- HideAndSeekArena7
+Scrolling Text:
+  Enable: true
+  Shift Time: 1
+Update Time: 2
+Info Board:
+  '1':
+    Show Time: 20
+    global:
+      default:
+        Title: '&b<player>'
+        Rows:
+        - ' '
+        - '&6&lWelcome!'
+        - ' '
+        - '&d&lWebsite:'
+        - OrbitMines.com
+        - ' '
+        - '&e&lVote:'
+        - '&b/vote'
+        - ' '
+        - '&c&lDonate:'
+        - '&b/donate'
+        - ' '
+    SkyWarsLobby:
+      UserS:
+        Title: '&6&lSkyWars'
+        Rows:
+        - ' '
+        - '&6&lStats:'
+        - ' '
+        - '&e&lScore:'
+        - <money>
+        - ' '
+        - '&6&lOMT:'
+        - <playerpoints>
+        - ' '
+        - '&c&lNo Rank.'
+        - '&b/donate'
+        - ' '
+    Event:
+      UserS:
+        Title: '&6&lCake'
+        Rows:
+        - poplijm<split>2
+        - jim5491158<split>2
+        - SinaasAppelke<split>2
+        - Xzero119<split>3
+        - ItsYasin<split>1
+        - jimdave<split>0
+        - sebastiaan1981<split>1
+        - blackberry9900<split>0
+    MiniGames:
+      UserS:
+        Title: '&f&lMiniGames'
+        Rows:
+        - '&6&lOMT<split><playerpoints> '
+        - '&2SkyWars<split>0'
+        - '&4HideAndSeek<split>0'
+        - '&4OITC<split>0'
+        - '&4BattleSiege<split>0'
+    Hub:
+      UserS:
+        Title: '&6&lOrbitMines'
+        Rows:
+        - ' '
+        - '&6&lGamemodes:'
+        - ' '
+        - '&c&lKitPvP'
+        - '&4&lPrison'
+        - '&d&lCreative'
+        - '&a&lSurvival'
+        - '&5&lSkyBlock'
+        - '&4&lFactions'
+        - ' '
+        - '&lComing Soon:'
+        - '&6&lThe Hobbit'
+        - '&4&lPvP'
+        - ' '
+    H&SArena1:
+      UserS:
+        Title: '&f&lMiniGames'
+        Rows:
+        - ' '
+        - '&1&lPlaying:'
+        - '&6ColorShuffle'
+        - ' '
+    Creative:
+      UserC:
+        Title: '&d&lCreative'
+        Rows:
+        - ' '
+        - '&6&lInfo:'
+        - ' '
+        - '&b&lHelp:'
+        - /plot
+        - ' '
+        - '&1&lMap:'
+        - OrbitMines.com
+        - ' '
+        - '&c&lNo Rank'
+        - '&b/donate'
+        - ' '
+      VIPC:
+        Title: '&d&lCreative'
+        Rows:
+        - ' '
+        - '&6&lInfo:'
+        - ' '
+        - '&b&lHelp:'
+        - /plot
+        - ' '
+        - '&1&lMap:'
+        - OrbitMines.com
+        - ' '
+        - '&5[&d&lVIP&5]'
+        - Thanks for
+        - the Support!
+        - ' '
+    skyworld:
+      UserSk:
+        Title: '&5&lSkyBlock'
+        Rows:
+        - ' '
+        - '&6&lStats:'
+        - ' '
+        - '&2&lMoney:'
+        - <money>
+        - ' '
+        - '&d&lChallenges:'
+        - /c
+        - ' '
+        - '&c&lNo Rank.'
+        - '&b/donate'
+        - ' '
+      VIPSkyBlock:
+        Title: '&5&lSkyBlock'
+        Rows:
+        - ' '
+        - '&6&lStats:'
+        - ' '
+        - '&2&lMoney:'
+        - <money>
+        - ' '
+        - '&d&lChallenges:'
+        - /c
+        - ' '
+        - '&6[&9&lVIP&6]'
+        - Thanks for the
+        - Support!
+        - ' '
+    Factions:
+      UserF:
+        Title: '&4&lFactions'
+        Rows:
+        - ' '
+        - '&6&lStats:'
+        - ' '
+        - '&2&lMoney:'
+        - <money>
+        - ' '
+        - '&b&lFaction:'
+        - <factionsfname>
+        - ' '
+        - '&d&lCurrent Land:'
+        - <factionsfinname>
+        - ' '
+        - '&c&lNo Rank.'
+        - '&lComing Soon'
+        - ' '
+    SurvivalWorld:
+      UserSu:
+        Title: '&a&lSurvival'
+        Rows:
+        - ' '
+        - '&6&lStats:'
+        - ' '
+        - '&2&lMoney:'
+        - <money>
+        - ' '
+        - '&1&lJob:'
+        - <jobstitle1>
+        - ' '
+        - '&d&lJob Level:'
+        - <jobslevel1>
+        - ' '
+        - '&c&lNo Rank.'
+        - '&b/donate'
+        - ' '
+      Iron-VIP:
+        Title: '&a&lSurvival'
+        Rows:
+        - ' '
+        - '&6&lStats:'
+        - ' '
+        - '&2&lMoney:'
+        - <money>
+        - ' '
+        - '&1&lJob:'
+        - <jobstitle1>
+        - ' '
+        - '&d&lJob Level:'
+        - <jobslevel1>
+        - ' '
+        - '&7&lIron VIP'
+        - Thanks for the
+        - Support!
+      Gold-VIP:
+        Title: '&a&lSurvival'
+        Rows:
+        - ' '
+        - '&6&lStats:'
+        - ' '
+        - '&2&lMoney:'
+        - <money>
+        - ' '
+        - '&1&lJob:'
+        - <jobstitle1>
+        - ' '
+        - '&d&lJob Level:'
+        - <jobslevel1>
+        - ' '
+        - '&6&lGold VIP'
+        - Thanks for the
+        - Support!
+      Diamond-VIP:
+        Title: '&a&lSurvival'
+        Rows:
+        - ' '
+        - '&6&lStats:'
+        - ' '
+        - '&2&lMoney:'
+        - <money>
+        - ' '
+        - '&1&lJob:'
+        - <jobstitle1>
+        - ' '
+        - '&d&lJob Level:'
+        - <jobslevel1>
+        - ' '
+        - '&b&lDiamond VIP'
+        - Thanks for the
+        - Support!
+      Emerald-VIP:
+        Title: '&a&lSurvival'
+        Rows:
+        - ' '
+        - '&6&lStats:'
+        - ' '
+        - '&2&lMoney:'
+        - <money>
+        - ' '
+        - '&1&lJob:'
+        - <jobstitle1>
+        - ' '
+        - '&d&lJob Level:'
+        - <jobslevel1>
+        - ' '
+        - '&a&lEmerald VIP'
+        - Thanks for the
+        - Support!
+    PrisonServer:
+      F:
+        Title: '&4&lPrison'
+        Rows:
+        - ' '
+        - '&6&lStats:'
+        - ' '
+        - '&2&lMoney:'
+        - <money>
+        - ' '
+        - '&b&lRankup Price'
+        - '2.000'
+        - ' '
+        - '&e&lRank:'
+        - '&0&l[&1&lF&0&l]'
+        - ' '
+        - '&d&lNext Rank:'
+        - '&0&l[&5&lE&0&l]'
+        - ' '
+      E:
+        Title: '&4&lPrison'
+        Rows:
+        - ' '
+        - '&6&lStats:'
+        - ' '
+        - '&2&lMoney:'
+        - <money>
+        - ' '
+        - '&b&lRankup Price'
+        - '10.000'
+        - ' '
+        - '&e&lRank:'
+        - '&0&l[&5&lE&0&l]'
+        - ' '
+        - '&d&lNext Rank:'
+        - '&0&l[&d&lD&0&l]'
+        - ' '
+      D:
+        Title: '&4&lPrison'
+        Rows:
+        - ' '
+        - '&6&lStats:'
+        - ' '
+        - '&2&lMoney:'
+        - <money>
+        - ' '
+        - '&b&lRankup Price'
+        - '50.000'
+        - ' '
+        - '&e&lRank:'
+        - '&0&l[&d&lD&0&l]'
+        - ' '
+        - '&d&lNext Rank:'
+        - '&0&l[&b&lC&0&l]'
+        - ' '
+      C:
+        Title: '&4&lPrison'
+        Rows:
+        - ' '
+        - '&6&lStats:'
+        - ' '
+        - '&2&lMoney:'
+        - <money>
+        - ' '
+        - '&b&lRankup Price'
+        - '250.000'
+        - ' '
+        - '&e&lRank:'
+        - '&0&l[&b&lC&0&l]'
+        - ' '
+        - '&d&lNext Rank:'
+        - '&0&l[&a&lB&0&l]'
+        - ' '
+      B:
+        Title: '&4&lPrison'
+        Rows:
+        - ' '
+        - '&6&lStats:'
+        - ' '
+        - '&2&lMoney:'
+        - <money>
+        - ' '
+        - '&b&lRankup Price'
+        - '750.000'
+        - ' '
+        - '&e&lRank:'
+        - '&0&l[&a&lB&0&l]'
+        - ' '
+        - '&d&lNext Rank:'
+        - '&0&l[&c&lA&0&l]'
+        - ' '
+      A:
+        Title: '&4&lPrison'
+        Rows:
+        - ' '
+        - '&6&lStats:'
+        - ' '
+        - '&2&lMoney:'
+        - <money>
+        - ' '
+        - '&b&lRankup Price'
+        - 2.000.000
+        - ' '
+        - '&e&lRank:'
+        - '&0&l[&c&lA&0&l]'
+        - ' '
+        - '&d&lNext Rank:'
+        - '&0[&4&lA&6+&0]'
+        - ' '
+      A+:
+        Title: '&4&lPrison'
+        Rows:
+        - ' '
+        - '&6&lStats:'
+        - ' '
+        - '&2&lMoney:'
+        - <money>
+        - ' '
+        - '&b&lRankup Price'
+        - 5.000.000
+        - ' '
+        - '&e&lRank:'
+        - '&0[&4&lA&6+&0]'
+        - ' '
+        - '&d&lNext Rank:'
+        - '&0[&4&lA&6++&0]'
+        - ' '
+      A++:
+        Title: '&4&lPrison'
+        Rows:
+        - ' '
+        - '&6&lStats:'
+        - ' '
+        - '&2&lMoney:'
+        - <money>
+        - ' '
+        - '&b&lRankup Price'
+        - 10.000.000
+        - ' '
+        - '&e&lRank:'
+        - '&0[&4&lA&6++&0]'
+        - ' '
+        - '&d&lNext Rank:'
+        - '&6&l[&9&lZ&6&l]'
+        - ' '
+      Z:
+        Title: '&4&lPrison'
+        Rows:
+        - ' '
+        - '&6&lStats:'
+        - ' '
+        - '&2&lMoney:'
+        - <money>
+        - ' '
+        - '&b&lRankup Price'
+        - '-------------'
+        - ' '
+        - '&e&lRank:'
+        - '&6&l[&9&lZ&6&l]'
+        - ' '
+        - '&d&lNext Rank:'
+        - '&a&LComing Soon'
+        - ' '
+    KitPvPMap:
+      UserKitPvP1-10:
+        Title: '&c&lKitPvP'
+        Rows:
+        - ' '
+        - '&6&lStats:'
+        - ' '
+        - '&2&lCoins:'
+        - <money>
+        - ' '
+        - '&b&lLevel:'
+        - '&a&l0-10'
+        - ' '
+        - '&d&lGet VIP:'
+        - '&b/donate'
+        - ' '
+      UserKitPvP11-20:
+        Title: '&c&lKitPvP'
+        Rows:
+        - ' '
+        - '&6&lStats:'
+        - ' '
+        - '&2&lCoins:'
+        - <money>
+        - ' '
+        - '&b&lLevel:'
+        - '&2&l11-20'
+        - ' '
+        - '&d&lGet VIP:'
+        - '&b/donate'
+        - ' '
+      UserKitPvP21-30:
+        Title: '&c&lKitPvP'
+        Rows:
+        - ' '
+        - '&6&lStats:'
+        - ' '
+        - '&2&lCoins:'
+        - <money>
+        - ' '
+        - '&b&lLevel:'
+        - '&e&l21-30'
+        - ' '
+        - '&d&lGet VIP:'
+        - '&b/donate'
+        - ' '
+      UserKitPvP31-40:
+        Title: '&c&lKitPvP'
+        Rows:
+        - ' '
+        - '&6&lStats:'
+        - ' '
+        - '&2&lCoins:'
+        - <money>
+        - ' '
+        - '&b&lLevel:'
+        - '&6&l31-40'
+        - ' '
+        - '&d&lGet VIP:'
+        - '&b/donate'
+        - ' '
+      UserKitPvP41-50:
+        Title: '&c&lKitPvP'
+        Rows:
+        - ' '
+        - '&6&lStats:'
+        - ' '
+        - '&2&lCoins:'
+        - <money>
+        - ' '
+        - '&b&lLevel:'
+        - '&b&l41-50'
+        - ' '
+        - '&d&lGet VIP:'
+        - '&b/donate'
+        - ' '
+      UserKitPvP51-60:
+        Title: '&c&lKitPvP'
+        Rows:
+        - ' '
+        - '&6&lStats:'
+        - ' '
+        - '&2&lCoins:'
+        - <money>
+        - ' '
+        - '&b&lLevel:'
+        - '&9&l51-60'
+        - ' '
+        - '&d&lGet VIP:'
+        - '&b/donate'
+        - ' '
+      UserKitPvP61-70:
+        Title: '&c&lKitPvP'
+        Rows:
+        - ' '
+        - '&6&lStats:'
+        - ' '
+        - '&2&lCoins:'
+        - <money>
+        - ' '
+        - '&b&lLevel:'
+        - '&3&l61-70'
+        - ' '
+        - '&d&lGet VIP:'
+        - '&b/donate'
+        - ' '
+      UserKitPvP71-80:
+        Title: '&c&lKitPvP'
+        Rows:
+        - ' '
+        - '&6&lStats:'
+        - ' '
+        - '&2&lCoins:'
+        - <money>
+        - ' '
+        - '&b&lLevel:'
+        - '&1&l71-80'
+        - ' '
+        - '&d&lGet VIP:'
+        - '&b/donate'
+        - ' '
+      UserKitPvP81-90:
+        Title: '&c&lKitPvP'
+        Rows:
+        - ' '
+        - '&6&lStats:'
+        - ' '
+        - '&2&lCoins:'
+        - <money>
+        - ' '
+        - '&b&lLevel:'
+        - '&d&l81-90'
+        - ' '
+        - '&d&lGet VIP:'
+        - '&b/donate'
+        - ' '
+      UserKitPvP91-100:
+        Title: '&c&lKitPvP'
+        Rows:
+        - ' '
+        - '&6&lStats:'
+        - ' '
+        - '&2&lCoins:'
+        - <money>
+        - ' '
+        - '&b&lLevel:'
+        - '&5&l91-100'
+        - ' '
+        - '&d&lGet VIP:'
+        - '&b/donate'
+        - ' '
+      UserKitPvP101-110:
+        Title: '&c&lKitPvP'
+        Rows:
+        - ' '
+        - '&6&lStats:'
+        - ' '
+        - '&2&lCoins:'
+        - <money>
+        - ' '
+        - '&b&lLevel:'
+        - '&c&l101-110'
+        - ' '
+        - '&d&lGet VIP:'
+        - '&b/donate'
+        - ' '
+      UserKitPvP111-120:
+        Title: '&c&lKitPvP'
+        Rows:
+        - ' '
+        - '&6&lStats:'
+        - ' '
+        - '&2&lCoins:'
+        - <money>
+        - ' '
+        - '&b&lLevel:'
+        - '&4&l111-120'
+        - ' '
+        - '&d&lGet VIP:'
+        - '&b/donate'
+        - ' '
+      UserKitPvP121-130:
+        Title: '&c&lKitPvP'
+        Rows:
+        - ' '
+        - '&6&lStats:'
+        - ' '
+        - '&2&lCoins:'
+        - <money>
+        - ' '
+        - '&b&lLevel:'
+        - '&7&l121-130'
+        - ' '
+        - '&d&lGet VIP:'
+        - '&b/donate'
+        - ' '
+      UserKitPvP131-140:
+        Title: '&c&lKitPvP'
+        Rows:
+        - ' '
+        - '&6&lStats:'
+        - ' '
+        - '&2&lCoins:'
+        - <money>
+        - ' '
+        - '&b&lLevel:'
+        - '&8&l131-140'
+        - ' '
+        - '&d&lGet VIP:'
+        - '&b/donate'
+        - ' '
+      UserKitPvP141-150:
+        Title: '&c&lKitPvP'
+        Rows:
+        - ' '
+        - '&6&lStats:'
+        - ' '
+        - '&2&lCoins:'
+        - <money>
+        - ' '
+        - '&b&lLevel:'
+        - '&0&l141-150'
+        - ' '
+        - '&d&lGet VIP:'
+        - '&b/donate'
+        - ' '

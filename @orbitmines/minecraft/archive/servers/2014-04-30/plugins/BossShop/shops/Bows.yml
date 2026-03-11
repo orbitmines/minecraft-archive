@@ -1,0 +1,45 @@
+ShopName: Bows
+signs:
+  text: '[Bows]'
+  NeedPermissionToCreateSign: true
+shop:
+  Bows:
+    RewardType: item
+    PriceType: money
+    Price: 1000
+    Reward:
+    - - type:BOW
+      - amount:1
+    MenuItem:
+    - type:BOW
+    - amount:1
+    - name:&b&LBow
+    - 'lore:&b&LFire Arrows #&c&LPrice: &b1000 Credits #&6&LYour Credits: &b%balance%'
+    - amount:1
+    InventoryLocation: 1
+    ExtraPermission: ''
+  Balance:
+    RewardType: playercommand
+    PriceType: free
+    Reward:
+    - money
+    - Uridium
+    MenuItem:
+    - type:DIAMOND
+    - amount:1
+    - name:&b&LBalance
+    - 'lore:&6&LYour Credits: &b%balance% #&6&LYour Uridium: &b%balancepoints%'
+    - amount:1
+    InventoryLocation: 18
+  BackToMenu:
+    RewardType: shop
+    PriceType: free
+    Reward: OrbitMinesPvP
+    MenuItem:
+    - type:REDSTONE_BLOCK
+    - amount:1
+    - name:&4&LOrbitMines PvP Menu
+    - lore:&8Back to OrbitMines PvP Menu
+    - amount:1
+    InventoryLocation: 9
+    ExtraPermission: ''

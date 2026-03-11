@@ -1,0 +1,48 @@
+ShopName: VoteShop
+signs:
+  text: '[VoteShop]'
+  NeedPermissionToCreateSign: true
+shop:
+  Sell:
+    RewardType: shop
+    PriceType: points
+    Reward: PVoteShopSell
+    Price: 5
+    MenuItem:
+    - 'type: EMERALD_BLOCK'
+    - amount:1
+    - name:&b&LVote Shop
+    - 'lore:&7&nOpening this shop will cost 5 OMT!&7&l #&b&LYour OMT: &6&L%balancepoints%'
+    - amount:1
+    InventoryLocation: 5
+    ExtraPermission: 'shop.prison'
+  OMT1:
+    RewardType: points
+    PriceType: item
+    Reward: 1
+    Price:
+    - 'type: PAPER'
+    - amount:1
+    MenuItem:
+    - 'type: PAPER'
+    - amount:1
+    - name:&b&LOrbitMines Tokens
+    - 'lore:&7Change an old Vote Ticket to OMT'
+    - amount:1
+    InventoryLocation: 3
+    ExtraPermission: 'shop.prison'
+  OMT2:
+    RewardType: points
+    PriceType: item
+    Reward: 1
+    Price:
+    - 'type: PAPER'
+    - amount:1
+    MenuItem:
+    - 'type: PAPER'
+    - amount:1
+    - name:&b&LOrbitMines Tokens
+    - 'lore:&7Change an old Vote Ticket to OMT.'
+    - amount:1
+    InventoryLocation: 7
+    ExtraPermission: 'shop.prison'

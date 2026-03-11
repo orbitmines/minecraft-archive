@@ -1,0 +1,16 @@
+permission: ''
+world: world
+X: 211
+Y: 110
+Z: 155
+price: 0.0
+cooldown: 0
+globalCooldown: 0
+confirmation: false
+commands:
+- '/hub '
+grantPermissions: []
+lastGlobalUse: 0
+lastUse: {}
+priceItems: []
+exp: 0

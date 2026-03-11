@@ -1,0 +1,260 @@
+ShopName: SkyWars
+signs:
+  text: '[SkyWars]'
+  NeedPermissionToCreateSign: true
+shop:
+  DiamondHelmet:
+    RewardType: item
+    PriceType: money
+    Price: 5
+    Reward:
+    - - type:DIAMOND_HELMET
+      - amount:1
+    MenuItem:
+    - 'type: DIAMOND_HELMET'
+    - amount:1
+    - name:&9[&b&lToken Shop&9]
+    - 'lore:&6&LDiamond Helmet #&b&LPrice: &f5 Tokens #&cYour Tokens: &f%balance% #&4Required: &5[&dVIP&5]'
+    - amount:1
+    Message: '&9[&b&lToken Shop&9] &fYou bought &b1 Diamond Helmet&f!'
+    InventoryLocation: 2
+    ExtraPermission: ''
+  DiamondChestplate:
+    RewardType: item
+    PriceType: money
+    Price: 9
+    Reward:
+    - - type:DIAMOND_CHESTPLATE
+      - amount:1
+    MenuItem:
+    - 'type: DIAMOND_CHESTPLATE'
+    - amount:1
+    - name:&9[&b&lToken Shop&9]
+    - 'lore:&6&LDiamond Chestplate #&b&LPrice: &f9 Tokens #&cYour Tokens: &f%balance% #&4Required: &5[&dVIP&5]'
+    - amount:1
+    Message: '&9[&b&lToken Shop&9] &fYou bought &b1 Diamond Chestplate&f!'
+    InventoryLocation: 11
+    ExtraPermission: ''
+  DiamondLeggings:
+    RewardType: item
+    PriceType: money
+    Price: 7
+    Reward:
+    - - type:DIAMOND_LEGGINGS
+      - amount:1
+    MenuItem:
+    - 'type: DIAMOND_LEGGINGS'
+    - amount:1
+    - name:&9[&b&lToken Shop&9]
+    - 'lore:&6&LIron Diamond #&b&LPrice: &f7 Tokens #&cYour Tokens: &f%balance% #&4Required: &5[&dVIP&5]'
+    - amount:1
+    Message: '&9[&b&lToken Shop&9] &fYou bought &b1 Diamond Leggings&f!'
+    InventoryLocation: 20
+    ExtraPermission: ''
+  DiamondBoots:
+    RewardType: item
+    PriceType: money
+    Price: 5
+    Reward:
+    - - type:DIAMOND_BOOTS
+      - amount:1
+    MenuItem:
+    - 'type: DIAMOND_BOOTS'
+    - amount:1
+    - name:&9[&b&lToken Shop&9]
+    - 'lore:&6&LDiamond Boots #&b&LPrice: &f5 Tokens #&cYour Tokens: &f%balance% #&4Required: &5[&dVIP&5]'
+    - amount:1
+    Message: '&9[&b&lToken Shop&9] &fYou bought &b1 Diamond Boots&f!'
+    InventoryLocation: 29
+    ExtraPermission: ''
+  IronHelmet:
+    RewardType: item
+    PriceType: money
+    Price: 5
+    Reward:
+    - - type:IRON_HELMET
+      - amount:1
+    MenuItem:
+    - 'type: IRON_HELMET'
+    - amount:1
+    - name:&9[&b&lToken Shop&9]
+    - 'lore:&6&LIron Helmet #&b&LPrice: &f5 Tokens #&cYour Tokens: &f%balance%'
+    - amount:1
+    Message: '&9[&b&lToken Shop&9] &fYou bought &b1 Iron Helmet&f!'
+    InventoryLocation: 1
+    ExtraPermission: ''
+  IronChestplate:
+    RewardType: item
+    PriceType: money
+    Price: 9
+    Reward:
+    - - type:IRON_CHESTPLATE
+      - amount:1
+    MenuItem:
+    - 'type: IRON_CHESTPLATE'
+    - amount:1
+    - name:&9[&b&lToken Shop&9]
+    - 'lore:&6&LIron Chestplate #&b&LPrice: &f9 Tokens #&cYour Tokens: &f%balance%'
+    - amount:1
+    Message: '&9[&b&lToken Shop&9] &fYou bought &b1 Iron Chestplate&f!'
+    InventoryLocation: 10
+    ExtraPermission: ''
+  IronLeggings:
+    RewardType: item
+    PriceType: money
+    Price: 7
+    Reward:
+    - - type:IRON_LEGGINGS
+      - amount:1
+    MenuItem:
+    - 'type: IRON_LEGGINGS'
+    - amount:1
+    - name:&9[&b&lToken Shop&9]
+    - 'lore:&6&LIron Leggings #&b&LPrice: &f7 Tokens #&cYour Tokens: &f%balance%'
+    - amount:1
+    Message: '&9[&b&lToken Shop&9] &fYou bought &b1 Iron Leggings&f!'
+    InventoryLocation: 19
+    ExtraPermission: ''
+  IronBoots:
+    RewardType: item
+    PriceType: money
+    Price: 5
+    Reward:
+    - - type:IRON_BOOTS
+      - amount:1
+    MenuItem:
+    - 'type: IRON_BOOTS'
+    - amount:1
+    - name:&9[&b&lToken Shop&9]
+    - 'lore:&6&LIron Boots #&b&LPrice: &f5 Tokens #&cYour Tokens: &f%balance%'
+    - amount:1
+    Message: '&9[&b&lToken Shop&9] &fYou bought &b1 Iron Boots&f!'
+    InventoryLocation: 28
+    ExtraPermission: ''
+  IronSword:
+    RewardType: item
+    PriceType: money
+    Price: 4
+    Reward:
+    - - type:IRON_SWORD
+      - amount:1
+    MenuItem:
+    - 'type: IRON_SWORD'
+    - amount:1
+    - name:&9[&b&lToken Shop&9]
+    - 'lore:&6&LIron Sword #&b&LPrice: &f4 Tokens #&cYour Tokens: &f%balance%'
+    - amount:1
+    Message: '&9[&b&lToken Shop&9] &fYou bought &b1 Iron Sword&f!'
+    InventoryLocation: 3
+    ExtraPermission: ''
+  Bow:
+    RewardType: item
+    PriceType: money
+    Price: 5
+    Reward:
+    - - type:BOW
+      - amount:1
+    MenuItem:
+    - 'type: BOW'
+    - amount:1
+    - name:&9[&b&lToken Shop&9]
+    - 'lore:&6&LBow #&b&LPrice: &f5 Tokens #&cYour Tokens: &f%balance%'
+    - amount:1
+    Message: '&9[&b&lToken Shop&9] &fYou bought &b1 Bow&f!'
+    InventoryLocation: 4
+    ExtraPermission: ''
+  Arrow:
+    RewardType: item
+    PriceType: money
+    Price: 3
+    Reward:
+    - - type:ARROW
+      - amount:2
+    MenuItem:
+    - 'type: ARROW'
+    - amount:2
+    - name:&9[&b&lToken Shop&9]
+    - 'lore:&6&L2 Arrows #&b&LPrice: &f3 Tokens #&cYour Tokens: &f%balance%'
+    - amount:2
+    Message: '&9[&b&lToken Shop&9] &fYou bought &b2 Arrows&f!'
+    InventoryLocation: 13
+    ExtraPermission: ''
+  Minigun:
+    RewardType: command
+    PriceType: money
+    Price: 8
+    Reward:
+    - kit MiniGun %player% 
+    MenuItem:
+    - 'type: BOW'
+    - amount:1
+    - name:&9[&b&lToken Shop&9]
+    - 'lore:&6&LMiniGun #&b&LPrice: &f8 Tokens #&cYour Tokens: &f%balance% #&4Required: &5[&dVIP&5]'
+    - amount:1
+    Message: '&9[&b&lToken Shop&9] &fYou bought &b1 MiniGun&f!'
+    InventoryLocation: 22
+    ExtraPermission: ''
+  DiamondSword:
+    RewardType: item
+    PriceType: money
+    Price: 4
+    Reward:
+    - - type:DIAMOND_SWORD
+      - amount:1
+    MenuItem:
+    - 'type: DIAMOND_SWORD'
+    - amount:1
+    - name:&9[&b&lToken Shop&9]
+    - 'lore:&6&LDiamond Sword #&b&LPrice: &f4 Tokens #&cYour Tokens: &f%balance% #&4Required: &5[&dVIP&5]'
+    - amount:1
+    Message: '&9[&b&lToken Shop&9] &fYou bought &b1 Diamond Sword&f!'
+    InventoryLocation: 12
+    ExtraPermission: ''
+  IronPickaxe:
+    RewardType: item
+    PriceType: money
+    Price: 2
+    Reward:
+    - - type:IRON_PICKAXE
+      - amount:1
+    MenuItem:
+    - 'type: IRON_PICKAXE'
+    - amount:1
+    - name:&9[&b&lToken Shop&9]
+    - 'lore:&6&LIron Pickaxe #&b&LPrice: &f2 Tokens #&cYour Tokens: &f%balance%'
+    - amount:1
+    Message: '&9[&b&lToken Shop&9] &fYou bought &b1 Iron Pickaxe&f!'
+    InventoryLocation: 21
+    ExtraPermission: ''
+  DiamondPickaxe:
+    RewardType: item
+    PriceType: money
+    Price: 2
+    Reward:
+    - - type:DIAMOND_PICKAXE
+      - amount:1
+    MenuItem:
+    - 'type: DIAMOND_PICKAXE'
+    - amount:1
+    - name:&9[&b&lToken Shop&9]
+    - 'lore:&6&LDiamond Pickaxe #&b&LPrice: &f2 Tokens #&cYour Tokens: &f%balance% #&4Required: &5[&dVIP&5]'
+    - amount:1
+    Message: '&9[&b&lToken Shop&9] &fYou bought &b1 Diamond Pickaxe&f!'
+    InventoryLocation: 30
+    ExtraPermission: ''
+  GoldenApple:
+    RewardType: item
+    PriceType: money
+    Price: 4
+    Reward:
+    - - type:GOLDEN_APPLE
+      - amount:1
+    MenuItem:
+    - 'type: GOLDEN_APPLE'
+    - amount:1
+    - name:&9[&b&lToken Shop&9]
+    - 'lore:&6&LGolden Apple #&b&LPrice: &f2 Tokens #&cYour Tokens: &f%balance%'
+    - amount:1
+    Message: '&9[&b&lToken Shop&9] &fYou bought &b1 Golden Apple&f!'
+    InventoryLocation: 9
+    ExtraPermission: ''

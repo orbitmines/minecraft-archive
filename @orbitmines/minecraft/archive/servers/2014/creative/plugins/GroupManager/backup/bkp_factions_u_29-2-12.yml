@@ -1,0 +1,76 @@
+users:
+  basteti:
+    group: UserF
+    subgroups: []
+    permissions:
+    - commandlog.notice
+    - essentials.ban
+    - essentials.kick
+    - essentials.tp
+    - essentials.tp.others
+    - nametag.group.mod
+    - staffsecure.staff
+    info:
+      prefix: '&9[&b&lMod&9] &b'
+  BenYOmin_Mango:
+    group: UserF
+    subgroups: []
+    permissions:
+    - '*'
+    - staffsecure.staff
+    info:
+      prefix: '&c[&4&lCo-Owner&c] &4'
+  eekhoorn2000:
+    group: UserF
+    subgroups: []
+    permissions:
+    - commandlog.notice
+    - essentials.ban
+    - essentials.kick
+    - essentials.tp
+    - essentials.tp.others
+    - nametag.group.mod
+    - staffsecure.staff
+    info:
+      prefix: '&9[&b&lMod&9] &b'
+  O_o_Fadi_o_O:
+    group: UserF
+    subgroups: []
+    permissions:
+    - '*'
+    - staffsecure.staff
+    info:
+      prefix: '&c[&4&lOwner&c] &4'
+  sharewoods:
+    group: UserF
+    subgroups: []
+    permissions:
+    - commandlog.notice
+    - essentials.ban
+    - essentials.kick
+    - essentials.tp
+    - essentials.tp.others
+    - nametag.group.mod
+    - staffsecure.staff
+    info:
+      prefix: '&9[&b&lMod&9] &b'
+  SinaasAppelke:
+    group: UserF
+    subgroups: []
+    permissions:
+    - commandlog.notice
+    - essentials.ban
+    - essentials.kick
+    - essentials.tp
+    - essentials.tp.others
+    - nametag.group.mod
+    - staffsecure.staff
+    info:
+      prefix: '&9[&b&lMod&9] &b'
+  slienimon:
+    group: UserF
+    subgroups: []
+    permissions:
+    - staffsecure.staff
+    info:
+      prefix: '&4[&c&lAdmin&4] &c'

@@ -1,0 +1,116 @@
+ShopName: Blaze
+signs:
+  text: '[Blaze]'
+  NeedPermissionToCreateSign: true
+shop:
+  Helmet:
+    RewardType: money
+    PriceType: free
+    Reward: 0
+    MenuItem:
+    - id:159
+    - amount:1
+    - durability:4
+    - name:&bHelmet
+    - enchantment:PROTECTION_ENVIRONMENTAL#2
+    - enchantment:PROTECTION_FIRE#3
+    - color:180#130#10
+    InventoryLocation: 12
+    ExtraPermission: ''
+  Chestplate:
+    RewardType: money
+    PriceType: free
+    Reward: 0
+    MenuItem:
+    - id:299
+    - amount:1
+    - name:&bChestplate
+    - enchantment:PROTECTION_ENVIRONMENTAL#1
+    - color:180#130#10
+    InventoryLocation: 21
+    ExtraPermission: ''
+  Leggings:
+    RewardType: money
+    PriceType: free
+    Reward: 0
+    MenuItem:
+    - id:300
+    - amount:1
+    - name:&bLeggings
+    - enchantment:PROTECTION_ENVIRONMENTAL#1
+    - color:180#130#10
+    InventoryLocation: 30
+    ExtraPermission: ''
+  Boots:
+    RewardType: money
+    PriceType: free
+    Reward: 0
+    MenuItem:
+    - id:301
+    - amount:1
+    - name:&bBoots
+    - enchantment:PROTECTION_ENVIRONMENTAL#1
+    - color:180#130#10
+    InventoryLocation: 39
+    ExtraPermission: ''
+  Sword:
+    RewardType: money
+    PriceType: free
+    Reward: 0
+    MenuItem:
+    - id:377
+    - amount:1
+    - name:&bBlaze Powder
+    - enchantment:DAMAGE_ALL#3
+    - enchantment:FIRE_ASPECT#2
+    InventoryLocation: 16
+    ExtraPermission: ''
+  Egg:
+    RewardType: money
+    PriceType: free
+    Reward: 0
+    MenuItem:
+    - id:383
+    - amount:1
+    - durability:61
+    - name:&fBlaze Spawn Egg
+    InventoryLocation: 25
+    ExtraPermission: ''
+  Bread:
+    RewardType: money
+    PriceType: free
+    Reward: 0
+    MenuItem:
+    - id:297
+    - amount:25
+    - name:&fBread
+    InventoryLocation: 34
+    ExtraPermission: ''
+  BackToMenu:
+    RewardType: shop
+    PriceType: free
+    Reward: BuyKit
+    MenuItem:
+    - type:REDSTONE_BLOCK
+    - amount:1
+    - name:&4&LBuy Kit Menu
+    - lore:&8Back to the Buy Kit Menu
+    - amount:1
+    InventoryLocation: 46
+    ExtraPermission: ''
+  BuyKit:
+    RewardType: permission
+    PriceType: money
+    Price: 30000
+    Reward:
+    - kit.Blaze
+    - blazekit.1
+    MenuItem:
+    - type:EMERALD_BLOCK
+    - amount:1
+    - 'name:&aBuy Blaze'
+    - 'lore:&cPrice: &630000 #&4Level: &3&l61'
+    - amount:1
+    Message: '&bYou have bought the &6&LBlaze&b kit!'
+    InventoryLocation: 54
+    ExtraPermission: 'LevelsKitPvP.61'

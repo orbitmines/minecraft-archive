@@ -1,0 +1,281 @@
+# ########################################################## #
+#                                                            #
+#                    ## Creating Quests ##                   #
+#                                                            #
+#               To create your own quests go to:             #
+# http://dev.bukkit.org/server-mods/qquests/pages/quests-yml/ #
+#                                                            #
+#                   ## Special Characters ##                 #
+#                                                            #
+#              To use special characters wrap the            #
+#              string in single or double quotes.            #
+#                                                            #
+# ########################################################## #
+# Twitter: @SamSchooler
+# Quests 0-8 by Quaz3l
+# 
+# A standalone quest
+First Assignment:
+  setup:
+    repeated: 0
+    invisible: false
+  tasks:
+    '0':
+      type: kill
+      id: zombie
+      display: Zombie
+      amount: 6
+    '1':
+      type: collect
+      id: 351;1
+      display: Prometium
+      amount: 8
+  onJoin:
+    message: First Assignment Kill - 6 Zombies and Collect 8 Prometium! Reward $10!
+  onDrop:
+    message: First Assignment - Try it again later!
+  onComplete:
+    message: First Assignment - Completed!
+    delay: 5
+    money: 40
+Show us what you are made of! I:
+  setup:
+    repeated: 0
+    invisible: false
+  tasks:
+    '0':
+      type: kill
+      id: zombie
+      display: Zombie
+      amount: 5
+  onJoin:
+    message: Show us what you're made of! - Kill 5 Zombies! Reward $40!
+  onDrop:
+    message: Show us what you're made of! - Try it again later!
+  onComplete:
+    message: Show us what you're made of! - Completed!
+    delay: 5
+    money: 40
+Ore wanted now! I:
+  setup:
+    repeated: 0
+    invisible: false
+  tasks:
+    '0':
+      type: collect
+      id: 351;4
+      display: Endurium
+      amount: 30
+  onJoin:
+    message: Ore wanted now! I - Collect 30 Endurium! Reward $40!
+  onDrop:
+    message: Ore wanted now! I - Try it again later!
+  onComplete:
+    message: Ore wanted now! I - Completed!
+    delay: 5
+    money: 40
+Collecting mission I:
+  setup:
+    repeated: 0
+    invisible: false
+  tasks:
+    '0':
+      type: collect
+      id: 251;1
+      display: Prometium
+      amount: 20
+  onJoin:
+    message: Collecting mission I - Collect 20 Prometium! Reward $20!
+  onDrop:
+    message: Collecting mission I - Try it again later!
+  onComplete:
+    message: Collecting mission I - Completed!
+    delay: 5
+    money: 20
+Far reaches of the universe:
+  setup:
+    repeated: 0
+    invisible: false
+  tasks:
+    '0':
+      type: collect
+      id: 351;1
+      display: Prometium
+      amount: 5
+    '1':
+      type: collect
+      id: 351;4
+      display: Endurium
+      amount: 5
+    '2':
+      type: kill
+      id: zombie
+      display: Zombie
+      amount: 8
+  onJoin:
+    message: Far reaches of the universe - Collect 5 Prometium, 5 Endurium and kill 8 Zombies! Reward $80!
+  onDrop:
+    message: Far reaches of the universe - Try it again later!
+  onComplete:
+    message: Far reaches of the universe - Completed!
+    delay: 5
+    money: 80
+Skeleton I:
+  setup:
+    repeated: 0
+    invisible: false
+  tasks:
+    '0':
+      type: kill
+      id: skeleton
+      display: Skeleton
+      amount: 8
+  onJoin:
+    message: Skeleton I - Kill 8 Skeletons! Reward $60!
+  onDrop:
+    message: Skeleton I - Try it again later!
+  onComplete:
+    message: Skeleton I - Completed!
+    delay: 5
+    money: 60
+Skeletons sighted!:
+  setup:
+    repeated: 0
+    invisible: false
+  tasks:
+    '0':
+      type: kill
+      id: skeleton
+      display: Skeleton
+      amount: 10
+  onJoin:
+    message: Skeletons sighted! - Kill 10 Skeletons! Reward $80!
+  onDrop:
+    message: Skeletons sighted! - Try it again later!
+  onComplete:
+    message: Skeletons sighted! - Completed!
+    delay: 5
+    money: 80
+Show us what you are made of! II:
+  setup:
+    repeated: 0
+    invisible: false
+  tasks:
+    '0':
+      type: kill
+      id: zombie
+      display: Zombie
+      amount: 10
+  onJoin:
+    message: Show us what you're made of! - Kill 10 Zombies! Reward $80!
+  onDrop:
+    message: Show us what you're made of! - Try it again later!
+  onComplete:
+    message: Show us what you're made of! - Completed!
+    delay: 5
+    money: 80
+Terbium wanted now!:
+  setup:
+    repeated: 0
+    invisible: false
+  tasks:
+    '0':
+      type: collect
+      id: 251;11
+      display: Terbium
+      amount: 40
+  onJoin:
+    message: Terbium wanted now! - Kill 5 Zombies! Reward $80!
+  onDrop:
+    message: Terbium wanted now! - Try it again later!
+  onComplete:
+    message: Terbium wanted now! - Completed!
+    delay: 5
+    money: 80
+Ore wanted now! II:
+  setup:
+    repeated: 0
+    invisible: false
+  tasks:
+    '0':
+      type: collect
+      id: 351;4
+      display: Endurium
+      amount: 60
+  onJoin:
+    message: Ore wanted now! II - Collect 60 Endurium! Reward $80!
+  onDrop:
+    message: Ore wanted now! II - Try it again later!
+  onComplete:
+    message: Ore wanted now! II - Completed!
+    delay: 5
+    money: 80
+Collecting mission II:
+  setup:
+    repeated: 0
+    invisible: false
+  tasks:
+    '0':
+      type: collect
+      id: 351;1
+      display: Prometium
+      amount: 40
+  onJoin:
+    message: Collecting mission II - Collect 40 Prometium! Reward $40!
+  onDrop:
+    message: Collecting mission II - Try it again later!
+  onComplete:
+    message: Collecting mission II - Completed!
+    delay: 5
+    money: 40
+Gatherer:
+  setup:
+    repeated: 0
+    invisible: false
+  tasks:
+    '0':
+      type: collect
+      id: 351;1
+      display: Prometium
+      amount: 5
+    '1':
+      type: collect
+      id: 351;4
+      display: Endurium
+      amount: 5
+    '2':
+      type: collect
+      id: 351;11
+      display: Terbium
+      amount: 3
+  onJoin:
+    message: Gatherer - Collect 5 Prometium, 5 Endurium, 3 Terbium! Reward $20!
+  onDrop:
+    message: Gatherer - Try it again later!
+  onComplete:
+    message: Gatherer - Completed!
+    delay: 5
+    money: 20
+Zombie and Slime:
+  setup:
+    repeated: 0
+    invisible: false
+  tasks:
+    '0':
+      type: kill
+      id: zombie
+      display: Zombie
+      amount: 12
+    '1':
+      type: kill
+      id: slime
+      display: Slime
+      amount: 2
+  onJoin:
+    message: Zombie and Slime - Kill 12 Zombies and 3 Slimes! Reward $80!
+  onDrop:
+    message: Zombie and Slime - Try it again later!
+  onComplete:
+    message: Zombie and Slime - Completed!
+    delay: 5
+    money: 80

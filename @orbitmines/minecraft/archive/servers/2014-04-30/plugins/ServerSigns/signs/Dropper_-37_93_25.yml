@@ -1,0 +1,16 @@
+permission: ''
+world: Dropper
+X: -37
+Y: 93
+Z: 25
+price: 0.0
+cooldown: 0
+globalCooldown: 0
+confirmation: false
+commands:
+- '/MissionSlime_King '
+grantPermissions: []
+lastGlobalUse: 0
+lastUse: {}
+priceItems: []
+exp: 0

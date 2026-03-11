@@ -1,0 +1,16 @@
+{
+  "name": "thehobbits",
+  "description": "thehobbits",
+  "createdAtMillis": 1396972969424,
+  "home": {
+    "w": "Factions",
+    "lx": -136.5077397155202,
+    "ly": 66.0,
+    "lz": -1032.2877457608236,
+    "p": 9.600003,
+    "y": -66.15396
+  },
+  "relationWishes": {
+    "1628a816-8183-46ee-bfeb-a2a28be8d754": "ALLY"
+  }
+}

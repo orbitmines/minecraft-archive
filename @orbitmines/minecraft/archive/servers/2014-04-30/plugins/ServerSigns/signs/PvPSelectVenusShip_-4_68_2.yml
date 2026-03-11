@@ -1,0 +1,16 @@
+permission: ''
+world: PvPSelectVenusShip
+X: -4
+Y: 68
+Z: 2
+price: 0.0
+cooldown: 0
+globalCooldown: 0
+confirmation: false
+commands:
+- '/PlayPvPSelectPiranhaVenus '
+grantPermissions: []
+lastGlobalUse: 0
+lastUse: {}
+priceItems: []
+exp: 0

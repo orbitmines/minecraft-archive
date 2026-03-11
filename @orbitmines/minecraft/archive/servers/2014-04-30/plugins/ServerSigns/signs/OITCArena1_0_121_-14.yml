@@ -1,0 +1,16 @@
+permission: ''
+world: OITCArena1
+X: 0
+Y: 121
+Z: -14
+price: 0.0
+cooldown: 0
+globalCooldown: 0
+confirmation: false
+commands:
+- '/oitc leave '
+grantPermissions: []
+lastGlobalUse: 0
+lastUse: {}
+priceItems: []
+exp: 0

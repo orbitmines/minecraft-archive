@@ -1,0 +1,3379 @@
+# MyCommand  Commands Config File
+# commandsnumber (default 20) it's number of command you want make
+# Don't forget the '/' on runcmd line , example command: /myhelp
+# type accept = text , runcommand , broadcast-text , runcommand-text , runcommand-broadcast-text , perm-broadcast-text , addpermission , addtimer , runconsole , runcommand-perm-broadcast-text , runcommand-random , runasoperator , iconmenu , scoreboard
+# Additional type accept if you use Spoutplugin = spout-text , spout-notification.\n" +
+# runcommand type example -> If command: /l and runcmd: /list,when you type /l mycommand execute /list
+# runcmd support custom argument in game.($arg1,$arg2,$arg3,$arg4,$arg5,$multiargs) Example - runcmd : /time $arg1
+# For Delayed command add $delay$ before the command in runcmd Example : - $delay$/list
+# Set delay time with delaytimer: 5 (5 = seconds)
+# Use the dot . for decimal cost Example = cost : 5.5
+# You can use a custom permission node by placing "permission-node:" field in a command,you also can change the permission error message with "permission-error:"
+# Custom error-message for invalid args ,put "error-message:" line in a command.
+# You can use itemcost : 'ID:AMOUNT' for set a cost with items.
+# http://dev.bukkit.org/server-mods/mycommand/pages/configuration-and-example
+options:
+  commandsnumber: 500
+'1':
+  command: /help
+  type: text
+  text:
+  - '&9&m====================================================='
+  - '&6&LOrbitMines Help Index'
+  - '&7/PrisonHelp &6- Shows Help for Prison'
+  - '&7/SurvivalHelp &6- Shows Help for Survival'
+  - '&7/SkyBlockHelp &6- Shows Help for SkyBlock'
+  - '&7/KitPvPHelp &6- Shows Help for KitPvP'
+  - '&7/vote &6- Shows Vote Help'
+  - '&7/donate &6- Shows Donate Help'
+  - '&7/command &6- Shows Command Help'
+  - '&9&m====================================================='
+'2':
+  command: /PrisonHelp
+  type: text
+  text:
+  - '&9&m====================================================='
+  - '&6&LOrbitMines Prison Help Index'
+  - '&7/warplist &6- Shows a list of warps'
+  - '&7/shop Prison &6- Opens the Prison shop'
+  - '&7/kit Prison &6- Gives you the starter kit in Prison'
+  - '&7/ShopHelp &6- Shows You how to make a Shop Sign'
+  - '&7/rankup &6- Rankup to a higher Rank'
+  - '&7/ranks &6- Shows all Ranks with the Prices'
+  - '&9&m====================================================='
+'3':
+  command: /warplist
+  type: text
+  text:
+  - '&9&m====================================================='
+  - '&6&LOrbitMines Prison Warp List'
+  - '&7/warp PrisonF &6- Teleport to Prison F'
+  - '&7/warp PrisonE &6- Teleport to Prison E'
+  - '&7/warp PrisonD &6- Teleport to Prison D'
+  - '&7/warp PrisonC &6- Teleport to Prison C'
+  - '&7/warp PrisonB &6- Teleport to Prison B'
+  - '&7/warp PrisonA &6- Teleport to Prison A'
+  - '&7/warp PrisonA+ &6- Teleport to Prison A+'
+  - '&7/warp PrisonA++ &6- Teleport to Prison A++'
+  - '&7/warp PrisonZ &6- Teleport to Prison Z'
+  - '&7/warp IronVIP &6- Teleport to Iron VIP Mine'
+  - '&7/warp GoldVIP &6- Teleport to Gold VIP Mine'
+  - '&7/warp DiamondVIP &6- Teleport to Diamond VIP Mine'
+  - '&7/warp EmeraldVIP &6- Teleport to Emerald VIP Mine'
+  - '&7/warp PvP &6- Teleport to PvP area'
+  - '&7/warp Furnace &6- Teleport to the Private Furnaces'
+  - '&7/warp PrisonSpawn &6- Teleport to the Prison spawn'
+  - '&9&m====================================================='
+'4':
+  command: /ShopHelp
+  type: text
+  text:
+  - '&9&m====================================================='
+  - '&6&LOrbitMines Sign Shop Help'
+  - ' '
+  - '&7 Line 1: '
+  - '&7 Line 2: &6<Item Amount>'
+  - '&7 Line 3: &6B <Buy Price>  (B = They buy from you S = They Sell to you'
+  - '&7 Line 4: &6<Item Name>'
+  - ' '
+  - '&6&L Example:'
+  - '&7 Line 1: '
+  - '&7 Line 2: &610'
+  - '&7 Line 3: &6S 1000'
+  - '&7 Line 4: &6Gold_Block'
+  - '&9&m====================================================='
+'5':
+  command: /SurvivalHelp
+  type: text
+  text:
+  - '&9&m====================================================='
+  - '&6&LOrbitMines Survival Help Index'
+  - '&7/ClaimTutorial &6- For a Tutorial How to claim'
+  - '&7/sethome (Home name) &6- Set a home'
+  - '&7/home (Home name) &6- Go to your home'
+  - '&7/delhome (Home name) &6- Remove a home'
+  - '&7/job &6- Shows the Job Menu'
+  - '&7/money &6- Shows your balance'
+  - '&7/pay &6- Pay someone money'
+  - '&7/shop Survival &6- Open the Survival Shop'
+  - '&9&m====================================================='
+'6':
+  command: /SkyBlockHelp
+  type: text
+  text:   
+  - '&9&m====================================================='
+  - '&6&LOrbitMines Survival Help Index'
+  - '&7/island &6- Go to your island'
+  - '&7/island restart &6- Restart your island'
+  - '&7/island sethome &6- Sethome for /island'
+  - '&7/island level &6- Shows your island level'
+  - '&7/island invite <player> &6- Invite a player to your island'
+  - '&7/island leave &6- Leave an island'
+  - '&7/island kick <player> &6- Kick a player from your island'
+  - '&7/island accept &6- Accept an island invite'
+  - '&7/island top &6- Shows the top 10 islands'
+  - '&7/c &6- Shows all challenges'
+  - '&7/c <name> &6- Info about a challenge'
+  - '&7/c c <name> &6- Complete a challenge'
+  - '&9&m====================================================='
+'7':
+  command: /ranks
+  type: text
+  text:
+  - '&9&m====================================================='
+  - '&6&LOrbitMines Prison Ranks Help Index'
+  - ' &0&L[&1&LF&0&L] &6- &7Default'
+  - ' &0&L[&5&LE&0&L] &6- &72000$'
+  - ' &0&L[&d&LD&0&L] &6- &710.000$'
+  - ' &0&L[&b&LC&0&L] &6- &750.000$'
+  - ' &0&L[&a&LB&0&L] &6- &7250.000$'
+  - ' &0&L[&c&LA&0&L] &6- &7750.000$'
+  - ' &0&L[&4&LA&6&L+&0&L] &6- &72.000.000$'
+  - ' &0&L[&4&LA&6&L++&0&L] &6- &75.000.000$'
+  - ' &6&L[&9&LZ&6&L] &6- &710.000.000$'
+  - '&9&m====================================================='
+'8':
+  command: /vote
+  type: text
+  text:
+  - '&9&m====================================================='
+  - '&6&LOrbitMines Vote Help'
+  - '&a&L[&2&l1&a&l] &6Go to www.orbitmines.com'
+  - '&a&L[&2&l2&a&l] &6Click on the Vote button'
+  - '&a&L[&2&l3&a&l] &6Click on the image (Click Here) or fill the code in'
+  - '&a&L[&2&l4&a&l] &6Fill in your Minecraft Username below it'
+  - '&a&L[&2&l5&a&l] &6Hit Send Vote'
+  - '&9&m====================================================='
+'9':
+  command: /donate
+  type: text
+  text:
+  - '&9&m====================================================='
+  - '&6&LOrbitMines Donate Help'
+  - '&7Donate at: &6http://shop.orbitmines.com'
+  - '&9&m====================================================='
+'10':
+  command: /command
+  type: text
+  text:
+  - '&9&m====================================================='
+  - '&6&LOrbitMines Command Help'
+  - '&7/lobby &6- Go to the Lobby'
+  - '&7/hub &6- Go to the Hub'
+  - '&7/prison &6- Go to Prison'
+  - '&7/skyblock &6- Go to SkyBlock'
+  - '&7/survival &6- Go to Survival'
+  - '&7/prison &6- Go to Prison'
+  - '&9&m====================================================='
+'11':
+  command: /prison
+  type: runcommand
+  runcmd:
+  - '/undis'
+  - '/toolswap off'
+  - '/magnet off'
+  - '/PrisonTP'
+'12':
+  command: /PrisonTP
+  type: runconsole
+  runcmd:
+  - '/god $player off'
+  - '/fly $player off'
+  - '/gms $player'
+  - '/ne reload'
+  - '/ib reload'
+  - '/mvtp $player PrisonServer'
+'13':
+  command: /survival
+  type: runcommand
+  runcmd:
+  - '/undis'
+  - '/toolswap off'
+  - '/magnet off'
+  - '/SurvivalTP'
+'14':
+  command: /SurvivalTP
+  type: runconsole
+  runcmd:
+  - '/god $player off'
+  - '/fly $player off'
+  - '/gms $player'
+  - '/ne reload'
+  - '/ib reload'
+  - '/mvtp $player SurvivalWorld'
+'15':
+  command: /kitpvp
+  type: runcommand
+  runcmd:
+  - '/undis'
+  - '/toolswap off'
+  - '/magnet off'
+  - '/KitPvPTP'
+'16':
+  command: /KitPvPTP
+  type: runconsole
+  runcmd:
+  - '/god $player off'
+  - '/fly $player off'
+  - '/gms $player'
+  - '/ne reload'
+  - '/ib reload'
+  - '/mvtp $player KitPvPMap'
+'17':
+  command: /skyblock
+  type: runcommand
+  runcmd:
+  - '/undis'
+  - '/toolswap off'
+  - '/magnet off'
+  - '/SkyBlockTP'
+'18':
+  command: /SkyBlockTP
+  type: runconsole
+  runcmd:
+  - '/god $player off'
+  - '/fly $player off'
+  - '/gms $player'
+  - '/ne reload'
+  - '/ib reload'
+  - '/mvtp $player SkyBlockWorld'
+'19':
+  command: /InformationPrisonVIP
+  type: text
+  text:
+  - '&9&m====================================================='
+  - ' '
+  - '&4&L Prison &7- &bDiamond VIP &7- &6Price: &d&L25 EUR'
+  - ' '
+  - ' Commands that can be used with this VIP:'
+  - '&6 /afk &c(Puts you in afk mode)'
+  - '&6 /enderchest &c(Opens your enderchest)'
+  - '&6 /workbench &c(Opens a crafting table)'
+  - '&6 /magnet on/off &c(Turn your item magnet on/off)'
+  - '&6 /toolswap on/off &c(Swaps to the right tool to break a block)'
+  - '&6 /warp IronVIP &7- &6/warp GoldVIP &7- &6/warp DiamondVIP'
+  - '&c (Warps give access to the VIP Mines)'
+  - ' '
+  - '&9&m====================================================='
+'20':
+  command: /InformationSurvivalVIP
+  type: text
+  text:
+  - '&9&m====================================================='
+  - ' '
+  - '&a&L Survival &7- &bDiamond VIP &7- &6Price: &d&L25 EUR'
+  - ' '
+  - ' Commands that can be used with this VIP:'
+  - '&6 /tpa &7- &6/tpahere &c(Teleport to a player)'
+  - '&6 /toolswap on/off &c(Swaps to the right tool to break a block)'
+  - '&6 /magnet on/off &c(Turn your item magnet on/off)'
+  - '&6 /fly &c(Toggles your fly mode)'
+  - '&6 /dis &c(Disguise as a Mob!)'
+  - '&6 /undis &c(Turn Disguise mode off)'
+  - ' '
+  - '&9&m====================================================='
+'21':
+  command: /FreeVIP
+  type: runcommand-text
+  text:
+  - '&9&m====================================================='
+  - ' '
+  - '&6 You now have &n24 hours&b Diamond-VIP &6in &4&LPrison&6 and &a&LSurvival&6!'
+  - ' '
+  - '&9&m====================================================='
+  runcmd:
+  - '/pwrsay say vip &L$player &bis now 1 day D-VIP in&a&L Survival&b!'
+  - '/FreeVIPConsole'
+'22':
+  command: /GiveMod
+  type: runcommand
+  runcmd:
+  - '/manuaddv $arg1 prefix &b[Mod] &b'
+  - '/manuaddp $arg1 essenstials.kick'
+  - '/manuaddp $arg1 essenstials.ban'
+  - '/manuaddp $arg1 essenstials.tp'
+  - '/manuaddp $arg1 essenstials.tp.others'
+'23':
+  command: /FreeVIPConsole
+  type: runconsole
+  runcmd:
+  - '/mvtp $player SurvivalWorld'
+  - '/manuadd $player FreeVIP SurvivalWorld'
+  - '/tcmd 1d mvtp $player SurvivalWorld#$player'
+  - '/tcmd 1d manuadd $player User SurvivalWorld#$player'
+  - '/tcmd 1d mvtp $player OrbitMinesHub#$player'
+  - '/mvtp $player OrbitMinesHub'
+  - '/manuadd $player NoFreeVIP Tutorial'
+'24':
+  command: /creative
+  type: runcommand
+  runcmd:
+  - '/undis'
+  - '/toolswap off'
+  - '/magnet off'
+  - '/CreativeTP'
+'25':
+  command: /CreativeTP
+  type: runconsole
+  runcmd:
+  - '/god $player off'
+  - '/fly $player off'
+  - '/gmc $player'
+  - '/ne reload'
+  - '/ib reload'
+  - '/mvtp $player Creative'
+'26':
+  command: /FactionsIron-VIP
+  type: text
+  text:
+  - '&9&m====================================================='
+  - '&6&L Iron-VIP | Factions'
+  - ' '
+  - '&6 /kit Iron-VIP'
+  - '&6  Armor:'
+  - '&7   Helmet: &6Iron // Protection II'
+  - '&7   Chestplate: &6Iron // Protection II'
+  - '&7   Leggings: &6Iron // Protection II'
+  - '&7   Boots: &6Iron // Protection II'
+  - '&6  Items:'
+  - '&7   Sword: &6Iron // Sharpness III'
+  - '&7   Golden Apples: &65'
+  - ' '
+  - '&9&m====================================================='
+'27':
+  command: /FactionsGold-VIP
+  type: text
+  text:
+  - '&9&m====================================================='
+  - '&6&L Gold-VIP | Factions'
+  - ' '
+  - '&6 /kit Gold-VIP'
+  - '&6  Armor:'
+  - '&7   Helmet: &6Iron // Protection IV'
+  - '&7   Chestplate: &6Iron // Protection IV'
+  - '&7   Leggings: &6Iron // Protection IV'
+  - '&7   Boots: &6Iron // Protection IV'
+  - '&6  Items:'
+  - '&7   Sword: &6Iron // Sharpness III, Fire Aspect I'
+  - '&7   Golden Apples: &610'
+  - ' '
+  - '&9&m====================================================='
+'28':
+  command: /FactionsDiamond-VIP
+  type: text
+  text:
+  - '&9&m====================================================='
+  - '&6&L Diamond-VIP | Factions'
+  - ' '
+  - '&6 /kit Diamond-VIP'
+  - '&6  Armor:'
+  - '&7   Helmet: &6Diamond // Protection IV'
+  - '&7   Chestplate: &6Diamond // Protection V'
+  - '&7   Leggings: &6Diamond // Protection IV'
+  - '&7   Boots: &6Diamond // Protection IV'
+  - '&6  Items:'
+  - '&7   Sword: &6Diamond // Sharpness IV, Fire Aspect II'
+  - '&7   Bow: &6// Punch I, Power II'
+  - '&7   Golden Apples: &625'
+  - ' '
+  - '&9&m====================================================='
+'29':
+  command: /FactionsEmerald-VIP
+  type: text
+  text:
+  - '&9&m====================================================='
+  - '&6&L Emerald-VIP | Factions'
+  - ' '
+  - '&6 /kit Emerald-VIP'
+  - '&6  Armor:'
+  - '&7   Helmet: &6Diamond // Protection V'
+  - '&7   Chestplate: &6Diamond // Protection V, Thorns II'
+  - '&7   Leggings: &6Diamond // Protection V'
+  - '&7   Boots: &6Diamond // Protection V'
+  - '&6  Items:'
+  - '&7   Sword: &6Diamond // Sharpness V, Fire Aspect III'
+  - '&7   Bow: &6// Punch I, Power II, Flame I, Infinity I'
+  - '&7   Golden Apples: &610'
+  - '&7   Enchanted Golden Apples: &61'
+  - ' '
+  - '&9&m====================================================='
+'30':
+  command: /factions
+  type: runcommand
+  runcmd:
+  - '/undis'
+  - '/toolswap off'
+  - '/magnet off'
+  - '/FactionsTP'
+'31':
+  command: /FactionsTP
+  type: runconsole
+  runcmd:
+  - '/god $player off'
+  - '/fly $player off'
+  - '/gms $player'
+  - '/ne reload'
+  - '/ib reload'
+  - '/mvtp $player Factions'
+'32':
+ command: /StartGame
+ type: runcommand
+ runcmd:
+ - $delay$/pwrsay say Cake Game Countdown has started!
+ - /pwrsay say Cake &9&L$arg1 &6&Lvs &9&L$arg2
+ - /kit Cake $arg1
+ - /kit Cake $arg2
+ - $delay$/pwrsay say Cake Starting in &9&L5&6&L...
+ - $delay$/pwrsay say Cake Starting in &9&L4&6&L...
+ - $delay$/pwrsay say Cake Starting in &9&L3&6&L...
+ - $delay$/pwrsay say Cake Starting in &9&L2&6&L...
+ - $delay$/pwrsay say Cake Starting in &9&L1&6&L...
+ - $delay$/pwrsay say Cake Starting in &9Game started&6&L!
+ - //replace irondoor 0
+ delaytimer: 1
+'33':
+ command: /WinnerGame
+ type: runcommand
+ runcmd:
+ - '/pwrsay say Cake &9&L$arg1 &6&Lwon this Round! Total Wins: &9&L$arg2'
+ - '/ci $arg1'
+ - '/warp EventSpectate $arg1'
+'34':
+ command: /RestartGame
+ type: runcommand
+ runcmd:
+ - $delay$/pwrsay say Cake Restarting Map...
+ - $delay$//undo
+ - '$delay$/pwrsay say Cake Next Round: &9&L$arg1 &6&Lvs &9&L$arg2'
+ - $delay$/warp Player1 $arg1
+ - $delay$/warp Player2 $arg2
+delaytimer: 1
+'35':
+  command: /KitPvPNews
+  type: text
+  text:
+  - '&9&m====================================================='
+  - '&c&l KitPvP'
+  - '&b&l New: &6&l9 New Kits added!'
+  - '&b&l Coming Soon: &6&lMore Items in the Shop // MVP Kits'
+  - '&9&m====================================================='
+'36':
+  command: /MP-1
+  type: text
+  text:
+  - '&b&m========================[&1&LMP-1&6&b&m]======================='
+  - '&6                                 Cost: &1&L400$'
+  - '&6                                   Damage: &1&L6'
+  - '&6                              Buy: &1&L/buyMP-1'
+'37':
+  command: /LF-2
+  type: text
+  text:
+  - '&b&m========================[&1&LLF-2&6&b&m]======================='
+  - '&6                              Cost: &1&L5 Uridium'
+  - '&6                                  Damage: &1&L10'
+  - '&6                              Buy: &1&L/buyLF-2'
+'38':
+  command: /LF-3
+  type: text
+  text:
+  - '&b&m========================[&1&LLF-3&6&b&m]======================='
+  - '&6                             Cost: &1&L10 Uridium'
+  - '&6                                  Damage: &1&L15'
+  - '&6                              Buy: &1&L/buyLF-3'
+'39':
+  command: /LF-4
+  type: text
+  text:
+  - '&b&m========================[&1&LLF-3&6&b&m]======================='
+  - '&6                             Cost: &1&L25 Uridium'
+  - '&6                                  Damage: &1&L20'
+  - '&6                              Buy: &1&L/buyLF-4'
+'40':
+  command: /buyLF-1
+  type: runcommand
+  runcmd:
+  - /attributes give $player 276 1 LF-1 +damage:4
+  cost: 100
+'41':
+  command: /buyMP-1
+  type: runcommand
+  runcmd:
+  - '/attributes give $player 276 1 MP-1 +damage:6'
+  cost: 400
+'42':
+  command: /buyLF-2
+  type: runcommand
+  runcmd:
+  - '/attributes give $player 276 1 LF-2 +damage:10'
+  itemcost: '266:5'
+'43':
+  command: /buyLF-3
+  type: runcommand
+  runcmd:
+  - '/attributes give $player 276 1 LF-3 +damage:15'
+  itemcost: '266:10'
+'44':
+  command: /buyLF-4
+  type: runcommand
+  runcmd:
+  - '/attributes give $player 276 1 LF-4 +damage:20'
+  itemcost: '266:25'
+'45':
+  command: /rockets
+  type: text
+  text:
+  - '&b&m======================[&1&LRockets&b&m]====================='
+  - '&b&m==============:&6Shoot with a RocketLauncher&b&m:=============='
+  - '&b&m=================&1&LCredit($)-Rockets:&b&m================='
+  - '                                   &6/R-310'
+'46':
+  command: /R-310
+  type: text
+  text:
+  - '&b&m========================[&1&LR-310&6&b&m]======================'
+  - '&6                             Cost: &1&L25 Uridium'
+  - '&6                                  Damage: &1&L10'
+  - '&6                              Buy: &1&L/buy.R-310'
+  - '&6                      (type /buy.R-310+ to buy 64)'
+'47':
+  command: /PLT-2026
+  type: text
+  text:
+  - '&a&LCOMING SOON'
+'48':
+  command: /PLT-2021
+  type: text
+  text:
+  - '&a&LCOMING SOON'
+'49':
+  command: /WIZ-X
+  type: text
+  text:
+  - '&a&LCOMING SOON'
+'50':
+  command: /buy.R-310
+  type: runconsole
+  runcmd:
+  - '/give $player arrow 1'
+  cost: 1
+'51':
+  command: /buy.PLT-2026
+  type: text
+  text:
+  - '&a&LCOMING SOON'
+'52':
+  command: /buy.PLT-2021
+  type: text
+  text:
+  - '&a&LCOMING SOON'
+'53':
+  command: /buy.WIZ-X
+  type: text
+  text:
+  - '&a&LCOMING SOON'
+'54':
+  command: /buy.R-310+
+  type: runconsole
+  runcmd:
+  - '/give $player arrow 64'
+  cost: 64
+'55':
+  command: /buy.PLT-2026+
+  type: text
+  text:
+  - '&a&LCOMING SOON'
+'56':
+  command: /SpeedGenerators
+  type: text
+  text:
+  - '&b&m==================[&1&LSpeedGenerators&b&m]================'
+  - '&b&m===============:&6Equip and you walk faster!&b&m:==============='
+  - '&b&m============&1&LCredit($)-SpeedGenerators:&b&m============'
+  - '&6                                  /G3N-1010'
+  - '&6                                  /G3N-2010'
+  - '&6                                  /G3N-3210'
+  - '&6                                  /G3N-3310'
+  - '&b&m=============&1&LUridium-SpeedGenerators:&b&m============='
+  - '&6                                  /G3N-6910                          '
+  - '&6                                  /G3N-7910                           '
+'57':
+  command: /G3N-1010
+  type: text
+  text:
+  - '&b&m======================[&1&LG3N-1010&6&b&m]===================='
+  - '&6                                  Cost: &1&L200$'
+  - '&6                                  Speed: &1&L10%'
+  - '&6                           Buy: &1&L/buy.G3N-1010'
+'58':
+  command: /G3N-2010
+  type: text
+  text:
+  - '&b&m======================[&1&LG3N-2010&6&b&m]===================='
+  - '&6                                  Cost: &1&L400$'
+  - '&6                                  Speed: &1&L15%'
+  - '&6                           Buy: &1&L/buy.G3N-2010'
+'59':
+  command: /G3N-3210
+  type: text
+  text:
+  - '&b&m======================[&1&LG3N-3210&6&b&m]===================='
+  - '&6                                  Cost: &1&L800$'
+  - '&6                                  Speed: &1&L20%'
+  - '&6                           Buy: &1&L/buy.G3N-3210'
+'60':
+  command: /G3N-3310
+  type: text
+  text:
+  - '&b&m======================[&1&LG3N-3310&6&b&m]===================='
+  - '&6                                  Cost: &1&L1600$'
+  - '&6                                  Speed: &1&L25%'
+  - '&6                           Buy: &1&L/buy.G3N-3310'
+'61':
+  command: /G3N-6900
+  type: text
+  text:
+  - '&b&m======================[&1&LG3N-6900&6&b&m]===================='
+  - '&6                              Cost: &1&L10 Uridium'
+  - '&6                                  Speed: &1&L35%'
+  - '&6                           Buy: &1&L/buy.G3N-3210'
+'62':
+  command: /G3N-7900
+  type: text
+  text:
+  - '&b&m======================[&1&LG3N-7900&6&b&m]===================='
+  - '&6                              Cost: &1&L20 Uridium'
+  - '&6                                  Speed: &1&L50%'
+  - '&6                           Buy: &1&L/buy.G3N-3210'
+'63':
+  command: /buy.G3N-1010
+  type: runcommand
+  runcmd:
+  - '/attributes give $player 305 1 G3N-1010 %speed:10'
+  cost: 200
+'64':
+  command: /buy.G3N-2010
+  type: runcommand
+  runcmd:
+  - '/attributes give $player 305 1 G3N-2010 %speed:15'
+  cost: 400
+'65':
+  command: /buy.G3N-3210
+  type: runcommand
+  runcmd:
+  - '/attributes give $player 305 1 G3N-3210 %speed:20'
+  cost: 800
+'66':
+  command: /buy.G3N-3310
+  type: runcommand
+  runcmd:
+  - '/attributes give $player 305 1 G3N-3310 %speed:25'
+  cost: 1600
+'67':
+  command: /buy.G3N-6900
+  type: runcommand
+  runcmd:
+  - '/attributes give $player 305 1 G3N-6900 %speed:35'
+  itemcost: '266:10'
+'68':
+  command: /buy.G3N-7900
+  type: runcommand
+  runcmd:
+  - '/attributes give $player 305 1 G3N-7900 %speed:50'
+  itemcost: '266:20'
+'69':
+  command: /-Venus-
+  type: runconsole
+  runcmd:
+  - '/mvtp $player 1-1'
+'70':
+  command: /-Mars-
+  type: runconsole
+  runcmd:
+  - '/mvtp $player 3-1'
+'71':
+  command: /-Earth-
+  type: runconsole
+  runcmd:
+  - '/mvtp $player 2-1'
+'72':
+  command: /JoinVenus
+  type: runconsole
+  runcmd: 
+  - '/mv tp $player TutorialNL'
+'73':
+  command: /JoinMars
+  type: runconsole
+  runcmd: 
+  - '/mv tp $player TutorialNLMars'
+'74':
+  command: /JoinEarth
+  type: runconsole
+  runcmd: 
+  - '/mv tp $player TutorialNLEarth'
+'75':
+  command: /lobby
+  type: runcommand
+  runcmd:
+  - '/undis'
+  - '/toolswap off'
+  - '/magnet off'
+  - '/HubTP'
+'76':
+  command: /Tutorial
+  type: runconsole
+  runcmd:
+  - '/mv tp $player world'
+'77':
+  command: /commands
+  type: text
+  text:
+  - '&b&m=====================[&1&LCommands&b&m]====================='
+  - '&1&L /msg <player> <text> &b- &6Send a private message to a player'
+  - '&1&L /r <text> &b- &6Send a message back to a player'
+  - '&1&L /lobby &b- &6Go to the lobby'
+  - '&1&L /money &b- &6Shows your Money($)'
+  - '&1&L /orbitmines &b- &6Shows all the basic commands'
+  - '&1&L /mail send <player> <message> &b- &6Send a mail to a player'
+  - '&1&L /mail read &b- &6Read your mails'
+  - '&1&L /mail clear &b- &6Clear your mail'
+  - '&1&L /commands &b- &6Shows this menu'
+  - '&1&L /team-info &b- &6Shows info of teams'
+  - '&1&L /team-chat &b- &6Set team chat on/off'
+'78':
+  command: /Jim
+  type: runconsole
+  runcmd:
+  - '/mv tp $player Jim'
+'79':
+  command: /SG3N-A01
+  type: text
+  text:
+  - '&b&m======================[&1&LSG3N-A01&6&b&m]===================='
+  - '&6                                  Cost: &1&L800$'
+  - '&6                                   Block: &1&L5%'
+  - '&6                           Buy: &1&L/buy.SG3N-A01'
+'80':
+  command: /SG3N-A02
+  type: text
+  text:
+  - '&b&m======================[&1&LSG3N-A02&6&b&m]===================='
+  - '&6                                  Cost: &1&L1600$'
+  - '&6                                   Block: &1&L10%'
+  - '&6                           Buy: &1&L/buy.SG3N-A02'
+'81':
+  command: /SG3N-A03
+  type: text
+  text:
+  - '&b&m======================[&1&LSG3N-A03&6&b&m]===================='
+  - '&6                                Cost: &1&L25.600$'
+  - '&6                                   Block: &1&L25%'
+  - '&6                           Buy: &1&L/buy.SG3N-A03'
+'82':
+  command: /SG3N-B01
+  type: text
+  text:
+  - '&b&m======================[&1&LSG3N-B01&6&b&m]===================='
+  - '&6                              Cost: &1&L25 Uridium'
+  - '&6                                   Block: &1&L20%'
+  - '&6                           Buy: &1&L/buy.SG3N-B01'
+'83':
+  command: /SG3N-B02
+  type: text
+  text:
+  - '&b&m======================[&1&LSG3N-B02&6&b&m]===================='
+  - '&6                             Cost: &1&L100 Uridium'
+  - '&6                                   Block: &1&L50%'
+  - '&6                           Buy: &1&L/buy.SG3N-B02'
+'84':
+  command: /buy.SG3N-A01
+  type: runcommand
+  runcmd:
+  - '/attributes give $player 303 1 SG3N-A01 %defence:5'
+  cost: 800
+'85':
+  command: /buy.SG3N-A02
+  type: runcommand
+  runcmd:
+  - '/attributes give $player 303 1 SG3N-A02 %defence:10'
+  cost: 1600
+'86':
+  command: /buy.SG3N-A03
+  type: runcommand
+  runcmd:
+  - '/attributes give $player 303 1 SG3N-A03 %defence:25'
+  cost: 25600
+'87':
+  command: /buy.SG3N-B01
+  type: runcommand
+  runcmd:
+  - '/attributes give $player 303 1 SG3N-B01 %defence:20'
+  itemcost: '266:25'
+'88':
+  command: /buy.SG3N-B02
+  type: runcommand
+  runcmd:
+  - '/attributes give $player 303 1 SG3N-B02 %defence:50'
+  itemcost: '266:100'
+'89':
+  command: /pet-name
+  type: runcommand
+  runcmd:
+  - '/petname %black%[%darkred%$arg1 $arg2 $arg3%black%]'
+'90':
+  command: /pet-on
+  type: runcommand
+  runcmd:
+  - '/petcall'
+'91':
+  command: /pet-off
+  type: runcommand
+  runcmd:
+  - '/petsendaway'
+'92':
+  command: /pet
+  type: text
+  text:
+  - '&b&m========================[&1&LPET&b&m]========================'
+  - '&6                           Cost: &1&L50 Uridium'
+  - '&6                   &1&L/pet-info &6- shows pet commands'
+  - '&6  Buy: &1&L/buy.pet &6- you will be teleported to the PET-Tutorial!'
+'93':
+  command: /pet.buy
+  type: runconsole
+  runcmd:
+  - '/mvtp $player PETTutorial'
+  - '/manuaddp $player mycommand.cmd.89'
+  - '/manuaddp $player mycommand.cmd.90'
+  - '/manuaddp $player mycommand.cmd.91'
+  - '/manuaddp $player mycommand.cmd.147'
+  itemcost: '266:50'
+'94':
+  command: /pet-info
+  type: text
+  text:
+  - '&b&m========================[&1&LPET&b&m]========================'
+  - '&1&L          /pet &b- &6shows information about the pet'
+  - '&1&L                  /buy.pet &b- &6buy a pet'
+  - '&1&L            /pet-on &b- &6let your pet come to you'
+  - '&1&L              /pet-off &b- &6send your pet away'
+  - '&1&L               /pet-info &b- &6shows this menu'
+  - '&1&L          /pet-me &b- &6shows the stats of your pet'
+  - '&1&L        /pet-name <name> &b- &6gives you pet a name'
+'95':
+  command: /donateSDads
+  type: text
+  text:
+  - '&b&m======================[&1&LDonate&b&m]======================='
+  - '&6    Donate and get: &1&LVIP Ranks&6, &1&LNPC&6, &1&LUridium&6, &1&LJumpCredits&6!'
+  - '&6                      Donate: &4http://shop.orbitmines.com'
+'96':
+  command: /JumpCreditMenu
+  type: iconmenu
+  text:
+  - 'POSITION:ITEMID:ITEMDATA:COMMAND/MESSAGE:TITLE:DESCRIPTION;MULTILINES'
+  iconmenu_title: '&1JumpCredit &2Menu'
+  iconmenu_size: 36
+  iconmenu_commands:
+  - '0:87:0:/1-1:&4Mars 1-1:&bTP to map 1-1;&bCost &5&L1 &bJumpCredit'
+  - '1:87:0:/1-2:&4Mars 1-2:&bTP to map 1-2;&bCost &5&L1 &bJumpCredit'
+  - '2:87:0:/1-3:&4Mars 1-3:&bTP to map 1-3;&bCost &5&L1 &bJumpCredit'
+  - '3:87:0:/1-4:&4Mars 1-4:&bTP to map 1-4;&bCost &5&L1 &bJumpCredit'
+  - '4:87:0:/1-5:&4Mars 1-5:&bTP to map 1-5;&bCost &5&L1 &bJumpCredit'
+  - '5:87:0:/1-6:&4Mars 1-6:&bTP to map 1-6;&bCost &5&L2 &bJumpCredit'
+  - '6:87:0:/1-7:&4Mars 1-7:&bTP to map 1-7;&bCost &5&L2 &bJumpCredit'
+  - '7:87:0:/1-8:&4Mars 1-8:&bTP to map 1-8;&bCost &5&L2 &bJumpCredit'
+  - '9:80:0:/2-1:&bEarth 2-1:&aTP to map 2-1;&aCost &5&L1 &aJumpCredit'
+  - '10:80:0:/2-2:&bEarth 2-2:&aTP to map 2-2;&aCost &5&L1 &aJumpCredit'
+  - '11:80:0:/2-3:&bEarth 2-3:&aTP to map 2-3;&aCost &5&L1 &aJumpCredit'
+  - '12:80:0:/2-4:&bEarth 2-4:&aTP to map 2-4;&aCost &5&L1 &aJumpCredit'
+  - '13:80:0:/2-5:&bEarth 2-5:&aTP to map 2-5;&aCost &5&L1 &aJumpCredit'
+  - '14:80:0:/2-6:&bEarth 2-6:&aTP to map 2-6;&aCost &5&L2 &aJumpCredit'
+  - '15:80:0:/2-7:&bEarth 2-7:&aTP to map 2-7;&aCost &5&L2 &aJumpCredit'
+  - '16:80:0:/2-8:&bEarth 2-8:&aTP to map 2-8;&aCost &5&L2 &aJumpCredit'
+  - '18:2:0:/3-1:&aVenus 3-1:&4TP to map 3-1;&4Cost &5&L1 &4JumpCredit'
+  - '19:2:0:/3-2:&aVenus 3-2:&4TP to map 3-2;&4Cost &5&L1 &4JumpCredit'
+  - '20:2:0:/3-3:&aVenus 3-3:&4TP to map 3-3;&4Cost &5&L1 &4JumpCredit'
+  - '21:2:0:/3-4:&aVenus 3-4:&4TP to map 3-4;&4Cost &5&L1 &4JumpCredit'
+  - '22:2:0:/3-5:&aVenus 3-5:&4TP to map 3-5;&4Cost &5&L1 &4JumpCredit'
+  - '23:2:0:/3-6:&aVenus 3-6:&4TP to map 3-6;&4Cost &5&L2 &4JumpCredit'
+  - '24:2:0:/3-7:&aVenus 3-7:&4TP to map 3-7;&4Cost &5&L2 &4JumpCredit'
+  - '25:2:0:/3-8:&aVenus 3-8:&4TP to map 3-8;&4Cost &5&L2 &4JumpCredit'
+  - '27:10:0:/4-1:&7BattleMap 4-1:&8TP to map 4-1;&8Cost &5&L2 &8JumpCredits'
+  - '28:10:0:/4-2:&7BattleMap 4-2:&8TP to map 4-2;&8Cost &5&L2 &8JumpCredits' 
+  - '29:10:0:/4-3:&7BattleMap 4-3:&8TP to map 4-3;&8Cost &5&L2 &8JumpCredits'  
+  - '30:10:0:/4-4:&7BattleMap 4-4:&8TP to map 4-4;&8Cost &5&L2 &8JumpCredits'
+  - '31:10:0:/4-5:&7BattleMap 4-5:&8TP to map 4-5;&8Cost &5&L2 &8JumpCredits'
+  - '8:322:1:/1-0:&6Special Event 1-0 &4&LDISABLED:&1TP to map 1-0;&1Cost &5&L1 &1JumpCredit'
+  - '17:322:1:/2-0:&6Special Event 2-0 &4&LDISABLED:&1TP to map 2-0;&1Cost &5&L1 &1JumpCredit' 
+  - '26:322:1:/3-0:&6Special Event 3-0 &4&LDISABLED:&1TP to map 3-0;&1Cost &5&L1 &1JumpCredit'  
+'97':
+  command: /rocketlauncher
+  type: text
+  text:
+  - '&b&m=================[&1&LRocketLaunchers&b&m]=================='
+  - '&b&m====================:&6Shoot Rockets!&b&m:===================='
+  - '&b&m============&1&LCredit($)-RocketLaunchers:&b&m============'
+  - '&6                                    /HST-0'
+  - '&6                                    /HST-1'
+  - '&b&m=============&1&LUridium-RocketLaunchers:&b&m============='
+  - '&6                                    /HST-2                          '
+'98':
+  command: /HST-0
+  type: text
+  text:
+  - '&b&m=======================[&1&LHST-0&b&m]======================='
+  - '&6                      Rockets Shoots: &1&L1 &6each time'
+  - '&6                                Cost: &1&L1000$'
+  - '&6                             Buy: &1&L/buyHST-0'
+'99':
+  command: /HST-1
+  type: text
+  text:
+  - '&a&LCOMING SOON'
+'100':
+  command: /HST-2
+  type: text
+  text:
+  - '&a&LCOMING SOON'
+'101':
+  command: /buyHST-0
+  type: runconsole
+  runcmd:
+  - '/give $player 261 1'
+  cost: 1000
+'102':
+  command: /buyHST-1
+  type: text
+  text:
+  - '&a&LCOMING SOON'
+'103':
+  command: /buyHST-2
+  type: text
+  text:
+  - '&a&LCOMING SOON'
+'104':
+  command: /1-1
+  type: runconsole
+  runcmd:
+  - '/mvtp $player 3-1'
+  itemcost: '368:1'
+'105':
+  command: /1-2
+  type: runconsole
+  runcmd:
+  - '/mvtp $player 1-2'
+  itemcost: '368:1'
+'106':
+  command: /1-3
+  type: runconsole
+  runcmd:
+  - '/mvtp $player 1-3'
+  itemcost: '368:1'
+'107':
+  command: /1-4
+  type: runconsole
+  runcmd:
+  - '/mvtp $player 1-4'
+  itemcost: '368:1'
+'108':
+  command: /1-5
+  type: runconsole
+  runcmd:
+  - '/mvtp $player 1-5'
+  itemcost: '368:1'
+'109':
+  command: /1-6
+  type: runconsole
+  runcmd:
+  - '/mvtp $player 1-6'
+  itemcost: '368:2'
+'110':
+  command: /1-7
+  type: runconsole
+  runcmd:
+  - '/mvtp $player 1-7'
+  itemcost: '368:2'
+'111':
+  command: /1-8
+  type: runconsole
+  runcmd:
+  - '/mvtp $player 1-8'
+  itemcost: '368:2'
+'112':
+  command: /2-1
+  type: runconsole
+  runcmd:
+  - '/mvtp $player 2-1'
+  itemcost: '368:1'
+'113':
+  command: /2-2
+  type: runconsole
+  runcmd:
+  - '/mvtp $player 2-2'
+  itemcost: '368:1'
+'114':
+  command: /2-3
+  type: runconsole
+  runcmd:
+  - '/mvtp $player 2-3'
+  itemcost: '368:1'
+'115':
+  command: /2-4
+  type: runconsole
+  runcmd:
+  - '/mvtp $player 2-4'
+  itemcost: '368:1'
+'116':
+  command: /2-5
+  type: runconsole
+  runcmd:
+  - '/mvtp $player 2-5'
+  itemcost: '368:1'
+'117':
+  command: /2-6
+  type: runconsole
+  runcmd:
+  - '/mvtp $player 2-6'
+  itemcost: '368:2'
+'118':
+  command: /2-7
+  type: runconsole
+  runcmd:
+  - '/mvtp $player 2-7'
+  itemcost: '368:2'
+'119':
+  command: /2-8
+  type: runconsole
+  runcmd:
+  - '/mvtp $player 2-8'
+  itemcost: '368:2'
+'120':
+  command: /3-1
+  type: runconsole
+  runcmd:
+  - '/mvtp $player 1-1'
+  itemcost: '368:1'
+'121':
+  command: /3-2
+  type: runconsole
+  runcmd:
+  - '/mvtp $player 3-2'
+  itemcost: '368:1'
+'122':
+  command: /3-3
+  type: runconsole
+  runcmd:
+  - '/mvtp $player 3-3'
+  itemcost: '368:1'
+'123':
+  command: /3-4
+  type: runconsole
+  runcmd:
+  - '/mvtp $player 3-4'
+  itemcost: '368:1'
+'124':
+  command: /3-5
+  type: runconsole
+  runcmd:
+  - '/mvtp $player 3-5'
+  itemcost: '368:1'
+'125':
+  command: /3-6
+  type: runconsole
+  runcmd:
+  - '/mvtp $player 3-6'
+  itemcost: '368:2'
+'126':
+  command: /3-7
+  type: runconsole
+  runcmd:
+  - '/mvtp $player 3-7'
+  itemcost: '368:2'
+'127':
+  command: /3-8
+  type: runconsole
+  runcmd:
+  - '/mvtp $player 3-8'
+  itemcost: '368:2'
+'128':
+  command: /4-1
+  type: runconsole
+  runcmd:
+  - '/mvtp $player 4-1'
+  itemcost: '368:2'
+'129':
+  command: /4-2
+  type: runconsole
+  runcmd:
+  - '/mvtp $player 4-2'
+  itemcost: '368:2'
+'130':
+  command: /4-3
+  type: runconsole
+  runcmd:
+  - '/mvtp $player 4-3'
+  itemcost: '368:2'
+'131':
+  command: /4-4
+  type: runconsole
+  runcmd:
+  - '/mvtp $player 4-4'
+  itemcost: '368:2'
+'132':
+  command: /4-5
+  type: runconsole
+  runcmd:
+  - '/mvtp $player 4-5'
+  itemcost: '368:2'
+'133':
+  command: /0-1
+  type: text
+  text:
+  - '&b Sorry Special Event Map 0-1 is &4&LDISABLED'
+  - '&b Check out our forum to see when there is a special event!'
+  - '&b type: /website'
+'134':
+  command: /0-2
+  type: text
+  text:
+  - '&b Sorry Special Event Map 0-2 is &4&LDISABLED'
+  - '&b Check out our forum to see when there is a special event!'
+  - '&b type: /website'
+'135':
+  command: /0-3
+  type: text
+  text:
+  - '&b Sorry Special Event Map 0-3 is &4&LDISABLED'
+  - '&b Check out our forum to see when there is a special event!'
+  - '&b type: &6/website'
+'136':
+  command: /EarthJoin
+  type: runconsole
+  text:
+  runcmd:
+  - '/manuadd $player EarthGuest'
+  - '/msg $player &bYou Joined Earth, Type: &1&L/JoinEarth.&b               (Are you sure? You can pick an other team)'
+'137':
+  command: /VenusJoin
+  type: runconsole
+  text:
+  runcmd:
+  - '/manuadd $player VenusGuest'
+  - '/msg $player &bYou Joined Venus, Type: &1&L/JoinVenus.&b               (Are you sure? You can pick an other team)'
+'138':
+  command: /pet-me
+  type: runcommand
+  runcmd:
+  - '/petinfo'
+'139':
+  command: /group invite
+  type: runcommand
+  runcmd:
+  - '/blf invite $arg1'
+'140':
+  command: /groups
+  type: text
+  text:
+  - '&b&m=======================<&1&LGroup&b&m]======================='
+  - '&1&L /group invite <player> &6- Invite a Player to your group'
+  - '&1&L /group list &6- Shows all the Players in your group'
+  - '&1&L /group remove <player> &6- Remove a Player from your group'
+  - '&1&L /group accept <player> &6- Accept a group invite'
+  - '&4&LGROUP PLUGIN DISABLED'
+'141':
+  command: /VenusFinishTutorial
+  type: runcommand
+  runcmd:
+  - '/teams add Venus $player'
+'142':
+  command: /EarthFinishTutorial
+  type: runcommand
+  runcmd:
+  - '/teams add Earth $player'
+'143':
+  command: /MarsFinishTutorial
+  type: runcommand
+  runcmd:
+  - '/teams add Mars $player'
+'144':
+  command: /FinishTutorialPortal
+  type: runconsole
+  runcmd:
+  - '/manuaddp $player multiverse.portal.access.*'
+'145':
+  command: /VenusFinishTutorial1
+  type: runconsole
+  runcmd:
+  - '/manuadd $player Venus'
+'146':
+  command: /EarthFinishTutorial1
+  type: runconsole
+  runcmd:
+  - '/manuadd $player Earth'
+'147':
+  command: /MarsFinishTutorial1
+  type: runconsole
+  runcmd:
+  - '/manuadd $player Mars'
+'148':
+  command: /JC
+  type: runconsole
+  runcmd:
+  - '/give $player 368 64'
+'149':
+  command: /Materials
+  type: iconmenu
+  text:
+  - 'POSITION:ITEMID:ITEMDATA:COMMAND/MESSAGE:TITLE:DESCRIPTION;MULTILINES'
+  iconmenu_title: '&1Materials'
+  iconmenu_size: 9
+  iconmenu_commands:
+  - '1:351:9:/craftPrometid:&dPrometid:&bMake with;&b2&4 Prometium;&b1&1 Endurium'
+  - '3:351:14:/craftPromerium:&6Promerium:&bMake with;&b2&e Terbium;&b1&1 Endurium'
+  - '5:351:10:/craftDuranium:&aDuranium:&bMake with;&b1&d Prometid;&b1&6 Promerium;&b1 &7Xeonomit'
+  - '7:351:7:/craftXeonomit:&7Xeonomit:&bMake with;&b10 &6Promerium'
+'150':
+  command: /craftPrometid
+  type: runconsole
+  runcmd:
+  - '/give $player 351;9 1'
+  itemcost: '351'
+'151':
+  command: /classitemDefender
+  type: runcommand
+  runcmd:
+  - '/ckit delete $player_Defender'
+  - '/ckit create $player_Defender'
+  - '/ckit save config'
+  - '/spawn'
+'152':
+  command: /classitemSurvivor
+  type: runcommand
+  runcmd:
+  - '/ckit delete $player_Survivor'
+  - '/ckit create $player_Survivor'
+  - '/ckit save config'
+  - '/spawn'
+'153':
+  command: /GiveItemSurvivorDiamond
+  type: runconsole
+  runcmd:
+  - '/give $player 264 1'
+  cost: 250
+'154':
+  command: /GiveItemSurvivorIron
+  type: runconsole
+  runcmd:
+  - '/give $player 265 1'
+  cost: 100
+'155':
+  command: /GiveItemSurvivorArrow
+  type: runconsole
+  runcmd:
+  - '/give $player 262 16'
+  cost: 300
+'156':
+  command: /GiveItemSurvivorCoal
+  type: runconsole
+  runcmd:
+  - '/give $player 263 5'
+  cost: 150
+'157':
+  command: /GiveItemSurvivorWood
+  type: runconsole
+  runcmd:
+  - '/give $player 5 16'
+  cost: 150
+'158':
+  command: /GiveItemSurvivorLavaBucket
+  type: runconsole
+  runcmd:
+  - '/give $player 327 1'
+  cost: 450
+'159':
+  command: /GiveItemSurvivorGoldenApple
+  type: runconsole
+  runcmd:
+  - '/give $player 322 1'
+  cost: 250
+'160':
+  command: /GiveItemSurvivorSpiderEgg
+  type: runconsole
+  runcmd:
+  - '/give $player 383;52 5'
+  cost: 1000
+'161':
+  command: /GiveItemSurvivorBow
+  type: runconsole
+  runcmd:
+  - '/give $player 261 1'
+  cost: 650
+'162':
+  command: /SurvivorShop
+  type: runconsole
+  runcmd:
+  - '/mvtp $player BattleSiegeMapKit2'
+'163':
+  command: /DefenderShop
+  type: runconsole
+  runcmd:
+  - '/mvtp $player BattleSiegeKit1'
+'164':
+  command: /GiveItemDefenderTNT
+  type: runconsole
+  runcmd:
+  - '/give $player 46 16'
+  cost: 250
+'165':
+  command: /GiveItemDefenderStone
+  type: runconsole
+  runcmd:
+  - '/give $player 1 64'
+  cost: 100
+'166':
+  command: /GiveItemDefenderWood
+  type: runconsole
+  runcmd:
+  - '/give $player 5 32'
+  cost: 100
+'167':
+  command: /GiveItemDefenderRedstone
+  type: runconsole
+  runcmd:
+  - '/give $player 331 16'
+  cost: 125
+'168':
+  command: /GiveItemDefenderIron
+  type: runconsole
+  runcmd:
+  - '/give $player 265 10'
+  cost: 80
+'169':
+  command: /GiveItemDefenderDiaHelmet
+  type: runconsole
+  runcmd:
+  - '/give $player 310 1'
+  cost: 250
+'170':
+  command: /GiveItemDefenderDiaChestplate
+  type: runconsole
+  runcmd:
+  - '/give $player 311 1'
+  cost: 500
+'171':
+  command: /GiveItemDefenderDiaPants
+  type: runconsole
+  runcmd:
+  - '/give $player 312 1'
+  cost: 400
+'172':
+  command: /GiveItemDefenderDiaBoots
+  type: runconsole
+  runcmd:
+  - '/give $player 313 1'
+  cost: 200
+'173':
+  command: /GiveItemDefenderBow
+  type: runconsole
+  runcmd:
+  - '/give $player 261 1'
+  cost: 500
+'174':
+  command: /GiveItemDefenderArrow
+  type: runconsole
+  runcmd:
+  - '/give $player 262 16'
+  cost: 200
+'175':
+  command: /GiveItemDefenderEnchantTable
+  type: runconsole
+  runcmd:
+  - '/give $player 116 1'
+  cost: 750
+'176':
+  command: /GiveItemDefenderGoldenApple
+  type: runconsole
+  runcmd:
+  - '/give $player 322 1'
+  cost: 125
+'177':
+  command: /GiveItemDefenderBottle
+  type: runconsole
+  runcmd:
+  - '/give $player 384 2'
+  cost: 200
+'178':
+  command: /GiveItemDefenderWorkBench
+  type: runconsole
+  runcmd:
+  - '/give $player 58 1'
+  cost: 25
+'179':
+  command: /GiveItemDefenderDispencer
+  type: runconsole
+  runcmd:
+  - '/give $player 23 1'
+  cost: 250
+'180':
+  command: /GiveItemDefenderFireCharge
+  type: runconsole
+  runcmd:
+  - '/give $player 385 16'
+  cost: 200
+'181':
+  command: /GiveItemDefenderLavaBucket
+  type: runconsole
+  runcmd:
+  - '/give $player 327 1'
+  cost: 300
+'182':
+  command: /GiveItemDefenderWaterBucket
+  type: runconsole
+  runcmd:
+  - '/give $player 326 1'
+  cost: 75
+'183':
+  command: /BattleSiegeTutorial
+  type: text
+  text:
+  - '$delay$&b&m==================&1&LTutorial&b&m=================='
+  - '$delay$&1 Battle&4Siege'
+  - '$delay$&b PvP minigame, 2 vs 6 players'
+  - '$delay$&b 6 Players need to gather resources'
+  - '$delay$&b 2 Players build a base / traps'
+  - '$delay$&b After 20 minutes is PvP on!'
+  - '$delay$&b Then the 6 Players rush the base of the 2 Players and fight!'
+  - '$delay$&b Now go to the Survivors shop and Defenders shop and type the command on a sign where you see &fNew? Type;'
+  - '$delay$&b Good Luck!'
+  delaytimer: 3
+'184':
+  command: /ChooseDefenderVoteGameArena
+  type: runcommand
+  runcmd:
+  - '/ckit give $player $player_Defender'
+  - '/sg vote'
+'185':
+  command: /ChooseSurvivorVoteGameArena
+  type: runcommand
+  runcmd:
+  - '/ckit give $player $player_Survivor'
+  - '/sg vote'
+'186':
+  command: /spec1
+  type: runcommand
+  runcmd:
+  - '/warp PaintWarArena1'
+'187':
+  command: /spec2
+  type: runcommand
+  runcmd:
+  - '/warp PaintWarArena2'
+'188':
+  command: /spec3
+  type: runcommand
+  runcmd:
+  - '/warp PaintWarArena3'
+'189':
+  command: /spec4
+  type: runcommand
+  runcmd:
+  - '/warp PaintWarArena4'
+'190':
+  command: /spec5
+  type: runcommand
+  runcmd:
+  - '/warp PaintWarArena5'
+'191':
+  command: /ClaimTutorial
+  type: runconsole
+  runcmd:
+  - '/mvtp $player ClaimTutorial'
+'192':
+  command: /sspawn
+  type: runconsole
+  runcmd:
+  - '/mvtp $player SurvivalWorld'
+'193':
+  command: /MBlocks
+  type: iconmenu
+  text:
+  - 'POSITION:ITEMID:ITEMDATA:COMMAND/MESSAGE:TITLE:DESCRIPTION;MULTILINES'
+  iconmenu_title: '&6MicroBlocks &1Menu'
+  iconmenu_size: 9
+  iconmenu_commands:
+  - '0:397:3:/mblockschest:&4Head:&b - Chest'
+  - '1:397:3:/mblocksworkbench:&4Head:&b - Workbench'
+  - '2:397:3:/mblockstroll:&4Head:&b - Troll Face'
+  - '3:397:3:/mblocksenderman:&4Head:&b - Enderman'
+  - '4:397:3:/mblocksmelon:&4Head:&b - Melon'
+  - '5:397:3:/mblockscactus:&4Head:&b - Cactus'
+  - '6:397:3:/mblocksstonebrick:&4Head:&b - Stonebrick'
+  - '7:397:3:/mblocksvillager:&4Head:&b - Villager'
+  - '8:397:3:/mblocksnetherrack:&4Head:&b - Netherrack'
+'194':
+  command: /mblockschest
+  type: runconsole
+  runcmd:
+  - '/givemb $player chest'
+'195':
+  command: /mblocksworkbench
+  type: runconsole
+  runcmd:
+  - '/givemb $player workbench'
+'196':
+  command: /mblockstroll
+  type: runconsole
+  runcmd:
+  - '/givemb $player troll'
+'197':
+  command: /mblocksenderman
+  type: runconsole
+  runcmd:
+  - '/givemb $player enderman'
+'198':
+  command: /mblocksmelon
+  type: runconsole
+  runcmd:
+  - '/givemb $player melon'
+'199':
+  command: /mblockscactus
+  type: runconsole
+  runcmd:
+  - '/givemb $player cactus'
+'200':
+  command: /mblocksstonebrick
+  type: runconsole
+  runcmd:
+  - '/givemb $player stonebrick'
+'201':
+  command: /mblocksvillager
+  type: runconsole
+  runcmd:
+  - '/givemb $player netherrack'
+'202':
+  command: /mblocksnetherrack
+  type: runconsole
+  runcmd:
+  - '/givemb $player netherrack'
+'203':
+  command: /d9fasijfekmm3rbnhjagnvasdDONATEANIMALSKULLS
+  type: runcommand
+  runcmd:
+  - '/givemb $player sheep'
+  - '/givemb $player chicken'
+  - '/givemb $player cow'
+  - '/givemb $player pig'
+  - '/sspawn'
+'204':
+  command: /GiveSurvivalDiamond
+  type: runconsole
+  runcmd:
+  - '/give $player 264 1'
+  cost: 25
+'205':
+  command: /GiveSurvivalGold
+  type: runconsole
+  runcmd:
+  - '/give $player 266 1'
+  cost: 12
+'206':
+  command: /GiveSurvivalIron
+  type: runconsole
+  runcmd:
+  - '/give $player 265 1'
+  cost: 7.50
+'207':
+  command: /GiveSurvivalLapisLazuli
+  type: runconsole
+  runcmd:
+  - '/give $player 351:4 1'
+  cost: 8
+'208':
+  command: /GiveSurvivalEmerald
+  type: runconsole
+  runcmd:
+  - '/give $player 388 1'
+  cost: 35
+'209':
+  command: /GiveSurvivalCoal
+  type: runconsole
+  runcmd:
+  - '/give $player 263 1'
+  cost: 5
+'210':
+  command: /GiveSurvivalYellowDye
+  type: runconsole
+  runcmd:
+  - '/give $player 351:11 2'
+  cost: 5
+'211':
+  command: /GiveSurvivalRedDye
+  type: runconsole
+  runcmd:
+  - '/give $player 351:1 2'
+  cost: 5
+'212':
+  command: /GiveSurvivalGrayDye
+  type: runconsole
+  runcmd:
+  - '/give $player 351:8 2'
+  cost: 7
+'213':
+  command: /GiveSurvivalLimeDye
+  type: runconsole
+  runcmd:
+  - '/give $player 351:1e0 2'
+  cost: 5
+'214':
+  command: /GiveSurvivalPinkDye
+  type: runconsole
+  runcmd:
+  - '/give $player 351:9 2'
+  cost: 7
+'215':
+  command: /GiveSurvivalPurpleDye
+  type: runconsole
+  runcmd:
+  - '/give $player 351:5 2'
+  cost: 7
+'216':
+  command: /GiveSurvivalCyanDye
+  type: runconsole
+  runcmd:
+  - '/give $player 351:6 2'
+  cost: 7
+'217':
+  command: /GiveSurvivalMagentaDye
+  type: runconsole
+  runcmd:
+  - '/give $player 351:13 2'
+  cost: 7
+'218':
+  command: /GiveSurvivalOrangeDye
+  type: runconsole
+  runcmd:
+  - '/give $player 351:14 2'
+  cost: 7
+'219':
+  command: /GiveSurvivalBlueDye
+  type: runconsole
+  runcmd:
+  - '/give $player 351:12 2'
+  cost: 5
+'220':
+  command: /GiveSurvivalBukkit
+  type: runconsole
+  runcmd:
+  - '/give $player 325 1'
+  cost: 22.50
+'221':
+  command: /GiveSurvivalEnchantBottle
+  type: runconsole
+  runcmd:
+  - '/give $player 384 1'
+  cost: 25
+'222':
+  command: /GiveSurvivalSlime
+  type: runconsole
+  runcmd:
+  - '/give $player 341 1'
+  cost: 25
+'223':
+  command: /GiveSurvivalEnderPearl
+  type: runconsole
+  runcmd:
+  - '/give $player 368 1'
+  cost: 50
+'224':
+  command: /GiveSurvivalFireWorkStar
+  type: runconsole
+  runcmd:
+  - '/give $player 402 1'
+  cost: 20
+'225':
+  command: /GiveSurvivalBone
+  type: runconsole
+  runcmd:
+  - '/give $player 352 1'
+  cost: 5
+'226':
+  command: /GiveSurvivalNetherBrick
+  type: runconsole
+  runcmd:
+  - '/give $player 405 4'
+  cost: 10
+'227':
+  command: /GiveSurvivalQuartz
+  type: runconsole
+  runcmd:
+  - '/give $player 406 1'
+  cost: 10
+'228':
+  command: /GiveSurvivalNetherWart
+  type: runconsole
+  runcmd:
+  - '/give $player 372 1'
+  cost: 50
+'229':
+  command: /GiveSurvivalBlazeRod
+  type: runconsole
+  runcmd:
+  - '/give $player 369 1'
+  cost: 75
+'230':
+  command: /GiveSurvivalCowSpawnEgg
+  type: runconsole
+  runcmd:
+  - '/give $player 383:92 1'
+  cost: 250
+'231':
+  command: /GiveSurvivalPigSpawnEgg
+  type: runconsole
+  runcmd:
+  - '/give $player 383:90 1'
+  cost: 200
+'232':
+  command: /GiveSurvivalChickenSpawnEgg
+  type: runconsole
+  runcmd:
+  - '/give $player 383:93 1'
+  cost: 100
+'233':
+  command: /GiveSurvivalSheepSpawnEgg
+  type: runconsole
+  runcmd:
+  - '/give $player 383:91 1'
+  cost: 200
+'234':
+  command: /GiveSurvivalOcelotSpawnEgg
+  type: runconsole
+  runcmd:
+  - '/give $player 383:98 1'
+  cost: 250
+'235':
+  command: /GiveSurvivalWolfSpawnEgg
+  type: runconsole
+  runcmd:
+  - '/give $player 383:95 1'
+  cost: 250
+'236':
+  command: /GiveSurvivalHorseSpawnEgg
+  type: runconsole
+  runcmd:
+  - '/give $player 383:100 1'
+  cost: 500
+'237':
+  command: /GiveSurvivalMushroomCowSpawnEgg
+  type: runconsole
+  runcmd:
+  - '/give $player 383:96 1'
+  cost: 350
+'238':
+  command: /sshop
+  type: runcommand
+  runcmd:
+  - '/warp sshop'
+'239':
+  command: /GiveSurvivalWoodenPickaxe
+  type: runconsole
+  runcmd:
+  - '/give $player 270 1'
+  cost: 3
+'240':
+  command: /GiveSurvivalStonePickaxe
+  type: runconsole
+  runcmd:
+  - '/give $player 274 1'
+  cost: 7
+'241':
+  command: /GiveSurvivalGoldenPickaxe
+  type: runconsole
+  runcmd:
+  - '/give $player 285 1'
+  cost: 10
+'242':
+  command: /GiveSurvivalIronPickaxe
+  type: runconsole
+  runcmd:
+  - '/give $player 257 1'
+  cost: 25
+'243':
+  command: /GiveSurvivalDiamondPickaxe
+  type: runconsole
+  runcmd:
+  - '/give $player 278 1'
+  cost: 75
+'244':
+  command: /GiveSurvivalWoodenSword
+  type: runconsole
+  runcmd:
+  - '/give $player 268 1'
+  cost: 3
+'245':
+  command: /GiveSurvivalStoneSword
+  type: runconsole
+  runcmd:
+  - '/give $player 272 1'
+  cost: 5
+'246':
+  command: /GiveSurvivalGoldenSword
+  type: runconsole
+  runcmd:
+  - '/give $player 283 1'
+  cost: 7
+'247':
+  command: /GiveSurvivalIronSword
+  type: runconsole
+  runcmd:
+  - '/give $player 267 1'
+  cost: 15
+'248':
+  command: /GiveSurvivalDiamondSword
+  type: runconsole
+  runcmd:
+  - '/give $player 276 1'
+  cost: 55
+'249':
+  command: /GiveSurvivalWoodenShovel
+  type: runconsole
+  runcmd:
+  - '/give $player 269 1'
+  cost: 1.50
+'250':
+  command: /GiveSurvivalStoneShovel
+  type: runconsole
+  runcmd:
+  - '/give $player 273 1'
+  cost: 2.50
+'251':
+  command: /GiveSurvivalGoldenShovel
+  type: runconsole
+  runcmd:
+  - '/give $player 284 1'
+  cost: 3.50
+'252':
+  command: /GiveSurvivalIronShovel
+  type: runconsole
+  runcmd:
+  - '/give $player 256 1'
+  cost: 8
+'253':
+  command: /GiveSurvivalDiamondShovel
+  type: runconsole
+  runcmd:
+  - '/give $player 277 1'
+  cost: 27.50
+'254':
+  command: /GiveSurvivalWoodenAxe
+  type: runconsole
+  runcmd:
+  - '/give $player 271 1'
+  cost: 3
+'255':
+  command: /GiveSurvivalStoneAxe
+  type: runconsole
+  runcmd:
+  - '/give $player 275 1'
+  cost: 7
+'256':
+  command: /GiveSurvivalGoldenAxe
+  type: runconsole
+  runcmd:
+  - '/give $player 286 1'
+  cost: 10
+'257':
+  command: /GiveSurvivalIronAxe
+  type: runconsole
+  runcmd:
+  - '/give $player 258 1'
+  cost: 25
+'258':
+  command: /GiveSurvivalDiamondAxe
+  type: runconsole
+  runcmd:
+  - '/give $player 279 1'
+  cost: 75
+'259':
+  command: /GiveSurvivalWoodenHoe
+  type: runconsole
+  runcmd:
+  - '/give $player 290 1'
+  cost: 3
+'260':
+  command: /GiveSurvivalStoneHoe
+  type: runconsole
+  runcmd:
+  - '/give $player 291 1'
+  cost: 5
+'261':
+  command: /GiveSurvivalGoldenHoe
+  type: runconsole
+  runcmd:
+  - '/give $player 294 1'
+  cost: 7
+'262':
+  command: /GiveSurvivalIronHoe
+  type: runconsole
+  runcmd:
+  - '/give $player 292 1'
+  cost: 15
+'263':
+  command: /GiveSurvivalDiamondHoe
+  type: runconsole
+  runcmd:
+  - '/give $player 293 1'
+  cost: 45
+'264':
+  command: /GiveSurvivalLead
+  type: runconsole
+  runcmd:
+  - '/give $player 420 1'
+  cost: 45
+'265':
+  command: /GiveSurvivalShears
+  type: runconsole
+  runcmd:
+  - '/give $player 359 1'
+  cost: 15
+'266':
+  command: /GiveSurvivalClock
+  type: runconsole
+  runcmd:
+  - '/give $player 347 1'
+  cost: 35
+'267':
+  command: /GiveSurvivalFishingRod
+  type: runconsole
+  runcmd:
+  - '/give $player 346 1'
+  cost: 15
+'268':
+  command: /GiveSurvivalCompass
+  type: runconsole
+  runcmd:
+  - '/give $player 345 1'
+  cost: 35
+'269':
+  command: /PrisonSellEmerald
+  type: runconsole
+  runcmd:
+  - '/eco give $player 75'
+  itemcost: '388:1'
+'270':
+  command: /PrisonSellDiamond
+  type: runconsole
+  runcmd:
+  - '/eco give $player 45'
+  itemcost: '264:1'
+'271':
+  command: /PrisonSellGold
+  type: runconsole
+  runcmd:
+  - '/eco give $player 25'
+  itemcost: '266:1'
+'272':
+  command: /PrisonSellIron
+  type: runconsole
+  runcmd:
+  - '/eco give $player 10'
+  itemcost: '265:1'
+'273':
+  command: /PrisonSellCoal
+  type: runconsole
+  runcmd:
+  - '/eco give $player 5'
+  itemcost: '263:1'
+'274':
+  command: /PrisonSellCobbleStone
+  type: runconsole
+  runcmd:
+  - '/eco give $player 20'
+  itemcost: '4:64'
+'275':
+  command: /PrisonSellWood
+  type: runconsole
+  runcmd:
+  - '/eco give $player 5'
+  itemcost: '5:10'
+'276':
+  command: /PrisonBuyEmerald
+  type: runconsole
+  runcmd:
+  - '/give $player 388 1'
+  cost: 150
+'277':
+  command: /PrisonBuyDiamond
+  type: runconsole
+  runcmd:
+  - '/give $player 264 1'
+  cost: 100
+'278':
+  command: /PrisonBuyGold
+  type: runconsole
+  runcmd:
+  - '/give $player 266 1'
+  cost: 50
+'279':
+  command: /PrisonBuyIron
+  type: runconsole
+  runcmd:
+  - '/give $player 265 1'
+  cost: 20
+'280':
+  command: /PrisonBuyCoal
+  type: runconsole
+  runcmd:
+  - '/give $player 263 1'
+  cost: 10
+'281':
+  command: /PrisonBuyCobbleStone
+  type: runconsole
+  runcmd:
+  - '/give $player 4 64'
+  cost: 40
+'282':
+  command: /PrisonBuyWood
+  type: runconsole
+  runcmd:
+  - '/give $player 5 10'
+  cost: 10
+'283':
+  command: /PrisonSellWoodLog
+  type: runconsole
+  runcmd:
+  - '/eco give $player 3'
+  itemcost: '17:1'
+'284':
+  command: /PrisonBuyWoodLog
+  type: runconsole
+  runcmd:
+  - '/give $player 17 1'
+  cost: 6
+'285':
+  command: /PrisonSellSteak
+  type: runconsole
+  runcmd:
+  - '/eco give $player 40'
+  itemcost: '364:3'
+'286':
+  command: /PrisonBuySteakVote1358913212
+  type: runconsole
+  runcmd:
+  - '/give $player 364 3'
+  cost: 40
+'287':
+  command: /PrisonSellRedstone
+  type: runconsole
+  runcmd:
+  - '/eco give $player 10'
+  itemcost: '331:5'
+'288':
+  command: /PrisonBuyRedstone
+  type: runconsole
+  runcmd:
+  - '/give $player 331 5'
+  cost: 20
+'289':
+  command: /PrisonSellIronOre
+  type: runconsole
+  runcmd:
+  - '/eco give $player 5'
+  itemcost: '15:1'
+'290':
+  command: /PrisonBuyIronOre
+  type: runconsole
+  runcmd:
+  - '/give $player 15 1'
+  cost: 10
+'291':
+  command: /PrisonSellGoldOre
+  type: runconsole
+  runcmd:
+  - '/eco give $player 15'
+  itemcost: '14:1'
+'292':
+  command: /PrisonBuyGoldOre
+  type: runconsole
+  runcmd:
+  - '/give $player 14 1'
+  cost: 25
+'293':
+  command: /DonateLink
+  type: text
+  text:
+  - '&b Donate at:  &cshop.orbitmines.com   '
+'294':
+  command: /OMhelp
+  type: text
+  text:
+  - '&bNeed any help?'
+  - '&cJust ask our Staff, go to our forum or ask other players for help'
+  - '&bWhere can I vote?'
+  - '&cGo to &6orbitmines.com &cand click on the Vote button at the bottom of the page'
+  - '&bWhere can I donate?'
+  - '&cYou can donate at &6shop.orbitmines.com &cto help our server!'
+'295':
+  command: /BattleSiegeStartCountdown
+  type: runcommand
+  runcmd:
+  - /Say hey
+  delaytimer: 1
+'296':
+  command: /PrisonVoteShop
+  type: runconsole
+  runcmd:
+  - /mvtp $player PrisonVoteShop
+  - /tell $player &BYou got &65 &bMinutes left in the vote shop.
+  - $delay$/msg $player &BYou got &64.5 &bMinutes left in the vote shop.
+  - $delay$/msg $player &BYou got &64 &bMinutes left in the vote shop.
+  - $delay$/msg $player &BYou got &63.5 &bMinutes left in the vote shop.
+  - $delay$/msg $player &BYou got &63 &bMinutes left in the vote shop.
+  - $delay$/msg $player &BYou got &62.5 &bMinutes left in the vote shop.
+  - $delay$/msg $player &BYou got &62 &bMinutes left in the vote shop.
+  - $delay$/msg $player &BYou got &61.5 &bMinutes left in the vote shop.
+  - $delay$/msg $player &BYou got &61 &bMinutes left in the vote shop.
+  - $delay$/msg $player &BYou got &60.5 &bMinutes left in the vote shop.
+  - $delay$/msg $player &BVoteShop time is over vote for more tickets!
+  - /mvtp $player PrisonServer
+  itemcost: '339:2'
+  delaytimer: 30
+'297':
+  command: /PrisonSellEmeraldVote1358913212
+  type: runconsole
+  runcmd:
+  - '/eco give $player 150'
+  itemcost: '388:1'
+'298':
+  command: /PrisonSellDiamondVote1358913212
+  type: runconsole
+  runcmd:
+  - '/eco give $player 90'
+  itemcost: '264:1'
+'299':
+  command: /PrisonSellGoldVote1358913212
+  type: runconsole
+  runcmd:
+  - '/eco give $player 50'
+  itemcost: '266:1'
+'300':
+  command: /PrisonSellIronVote1358913212
+  type: runconsole
+  runcmd:
+  - '/eco give $player 20'
+  itemcost: '265:1'
+'301':
+  command: /PrisonSellCoalVote1358913212
+  type: runconsole
+  runcmd:
+  - '/eco give $player 10'
+  itemcost: '263:1'
+'302':
+  command: /PrisonSellCobbleStoneVote1358913212
+  type: runconsole
+  runcmd:
+  - '/eco give $player 40'
+  itemcost: '4:64'
+'303':
+  command: /PrisonSellWoodVote1358913212
+  type: runconsole
+  runcmd:
+  - '/eco give $player 10'
+  itemcost: '5:10'
+'304':
+  command: /PrisonSellWoodLogVote1358913212
+  type: runconsole
+  runcmd:
+  - '/eco give $player 6'
+  itemcost: '17:1'
+'305':
+  command: /PrisonSellEmeraldBlockVote1358913212
+  type: runconsole
+  runcmd:
+  - '/eco give $player 1400'
+  itemcost: '133:1'
+'306':
+  command: /PrisonSellDiamondBlockVote1358913212
+  type: runconsole
+  runcmd:
+  - '/eco give $player 835'
+  itemcost: '57:1'
+'307':
+  command: /PrisonSellGoldBlockVote1358913212
+  type: runconsole
+  runcmd:
+  - '/eco give $player 450'
+  itemcost: '41:1'
+'308':
+  command: /PrisonSellIronBlockVote1358913212
+  type: runconsole
+  runcmd:
+  - '/eco give $player 200'
+  itemcost: '42:1'
+'309':
+  command: /PrisonSellCoalBlockVote1358913212
+  type: runconsole
+  runcmd:
+  - '/eco give $player 100'
+  itemcost: '173:1'
+'310':
+  command: /CSRestoreArenas
+  type: runcommand
+  runcmd:
+  - '/color restore Arena1'
+  - '/color restore Arena2'
+  - '/color restore Arena3'
+  - '/color restore Arena4'
+  - '/color restore Arena5'
+'311':
+  command: /ServerNews
+  type: text
+  text:
+  - '&e&M===================&2&L Server News: &e&M==================='
+  - '&2 We have this planned but we do not know when we start with it:'
+  - '&2&L - &cPixelmon Server'
+  - '&2 We will be working on it soon:'
+  - '&2&L - &bThe Hobbit (Our Unique Custom Adventure)'
+  - '&2&L - &bSkyWars'
+  - '&2 We are working on it and it should be done soon:'
+  - '&2&L - &aPlots for Prison'
+  - '&2&L - &aOrbitMines PvP (Our Unique Custom PvP)'
+  - '&6 Suggest more features on our forum!: www.OrbitMines.com'
+'312':
+  command: /Hub
+  type: runcommand
+  runcmd:
+  - '/undis'
+  - '/toolswap off'
+  - '/magnet off'
+  - '/HubTP'
+'313':
+  command: /HubTP
+  type: runconsole
+  runcmd:
+  - '/god $player off'
+  - '/fly $player off'
+  - '/gms $player'
+  - '/ne reload'
+  - '/ib reload'
+  - '/mvtp $player OrbitMinesHub'
+'314':
+  command: /job
+  type: runcommand
+  runcmd:
+  - '/shop Jobs'
+'315':
+  command: /PlayPvPSelectPhoenixVenus
+  type: runconsole
+  runcmd:
+  - '/ne prefix $player &a[Venus] &a'
+  - '/ne suffix $player &8[&cPhoenix&8]'
+  - '/hpset $player 20'
+  - '/mvtp $player 1-1'
+'316':
+  command: /PlayPvPSelectYamatoVenus
+  type: runconsole
+  runcmd:
+  - '/ne prefix $player &a[Venus] &a'
+  - '/ne suffix $player &8[&cYamato&8]'
+  - '/hpset $player 24'
+  - '/mvtp $player 1-1'
+'317':
+  command: /PlayPvPSelectDefcomVenus
+  type: runconsole
+  runcmd:
+  - '/ne prefix $player &a[Venus] &a'
+  - '/ne suffix $player &8[&cDefcom&8]'
+  - '/hpset $player 26'
+  - '/mvtp $player 1-1'
+'318':
+  command: /PlayPvPSelectLiberatorVenus
+  type: runconsole
+  runcmd:
+  - '/ne prefix $player &a[Venus] &a'
+  - '/ne suffix $player &8[&cLiberator&8]'
+  - '/hpset $player 28'
+  - '/mvtp $player 1-1'
+'319':
+  command: /PlayPvPSelectPiranhaVenus
+  type: runconsole
+  runcmd:
+  - '/ne prefix $player &a[Venus] &a'
+  - '/ne suffix $player &8[&cPiranha&8]'
+  - '/hpset $player 30'
+  - '/mvtp $player 1-1'
+'320':
+  command: /PlayPvPSelectNostromoVenus
+  type: runconsole
+  runcmd:
+  - '/ne prefix $player &a[Venus] &a'
+  - '/ne suffix $player &8[&cNostromo&8]'
+  - '/hpset $player 32'
+  - '/mvtp $player 1-1'
+'321':
+  command: /PlayPvPSelectBigBoyVenus
+  type: runconsole
+  runcmd:
+  - '/ne prefix $player &a[Venus] &a'
+  - '/ne suffix $player &8[&cBigBoy&8]'
+  - '/hpset $player 34'
+  - '/mvtp $player 1-1'
+'322':
+  command: /PlayPvPSelectLeonovVenus
+  type: runconsole
+  runcmd:
+  - '/ne prefix $player &a[Venus] &a'
+  - '/ne suffix $player &8[&5Leonov&8]'
+  - '/hpset $player 40'
+  - '/mvtp $player 1-1'
+'323':
+  command: /PlayPvPSelectVengeanceVenus
+  type: runconsole
+  runcmd:
+  - '/ne prefix $player &a[Venus] &a'
+  - '/ne suffix $player &8[&5Vengeance&8]'
+  - '/hpset $player 44'
+  - '/mvtp $player 1-1'
+'324':
+  command: /PlayPvPSelectSpearheadVenus
+  type: runconsole
+  runcmd:
+  - '/ne prefix $player &a[Venus] &a'
+  - '/ne suffix $player &8[&5Spearhead&8]'
+  - '/hpset $player 48'
+  - '/mvtp $player 1-1'
+'325':
+  command: /PlayPvPSelectGoliathVenus
+  type: runconsole
+  runcmd:
+  - '/ne prefix $player &a[Venus] &a'
+  - '/ne suffix $player &8[&5Goliath&8]'
+  - '/hpset $player 60'
+  - '/mvtp $player 1-1'
+'326':
+  command: /PlayPvPSelectAegisVenus
+  type: runconsole
+  runcmd:
+  - '/ne prefix $player &a[Venus] &a'
+  - '/ne suffix $player &8[&5Aegis&8]'
+  - '/hpset $player 70'
+  - '/mvtp $player 1-1'
+'327':
+  command: /PlayPvPSelectCitadelVenus
+  type: runconsole
+  runcmd:
+  - '/ne prefix $player &a[Venus] &a'
+  - '/ne suffix $player &8[&5Citadel&8]'
+  - '/hpset $player 80'
+  - '/mvtp $player 1-1'
+'328':
+  command: /PlayPvPSelectPhoenixEarth
+  type: runconsole
+  runcmd:
+  - '/ne prefix $player &b[Earth] &b'
+  - '/ne suffix $player &8[&cPhoenix&8]'
+  - '/hpset $player 20'
+  - '/mvtp $player 2-1'
+'329':
+  command: /PlayPvPSelectYamatoEarth
+  type: runconsole
+  runcmd:
+  - '/ne prefix $player &b[Earth] &b'
+  - '/ne suffix $player &8[&cYamato&8]'
+  - '/hpset $player 24'
+  - '/mvtp $player 2-1'
+'330':
+  command: /PlayPvPSelectDefcomEarth
+  type: runconsole
+  runcmd:
+  - '/ne prefix $player &b[Earth] &b'
+  - '/ne suffix $player &8[&cDefcom&8]'
+  - '/hpset $player 26'
+  - '/mvtp $player 2-1'
+'331':
+  command: /PlayPvPSelectLiberatorEarth
+  type: runconsole
+  runcmd:
+  - '/ne prefix $player &b[Earth] &b'
+  - '/ne suffix $player &8[&cLiberator&8]'
+  - '/hpset $player 28'
+  - '/mvtp $player 2-1'
+'332':
+  command: /PlayPvPSelectPiranhaEarth
+  type: runconsole
+  runcmd:
+  - '/ne prefix $player &b[Earth] &b'
+  - '/ne suffix $player &8[&cPiranha&8]'
+  - '/hpset $player 30'
+  - '/mvtp $player 2-1'
+'333':
+  command: /PlayPvPSelectNostromoEarth
+  type: runconsole
+  runcmd:
+  - '/ne prefix $player &b[Earth] &b'
+  - '/ne suffix $player &8[&cNostromo&8]'
+  - '/hpset $player 32'
+  - '/mvtp $player 2-1'
+'334':
+  command: /PlayPvPSelectBigBoyEarth
+  type: runconsole
+  runcmd:
+  - '/ne prefix $player &b[Earth] &b'
+  - '/ne suffix $player &8[&cBigBoy&8]'
+  - '/hpset $player 34'
+  - '/mvtp $player 2-1'
+'335':
+  command: /PlayPvPSelectLeonovEarth
+  type: runconsole
+  runcmd:
+  - '/ne prefix $player &b[Earth] &b'
+  - '/ne suffix $player &8[&5Leonov&8]'
+  - '/hpset $player 40'
+  - '/mvtp $player 2-1'
+'336':
+  command: /PlayPvPSelectVengeanceEarth
+  type: runconsole
+  runcmd:
+  - '/ne prefix $player &b[Earth] &b'
+  - '/ne suffix $player &8[&5Vengeance&8]'
+  - '/hpset $player 44'
+  - '/mvtp $player 2-1'
+'337':
+  command: /PlayPvPSelectSpearheadEarth
+  type: runconsole
+  runcmd:
+  - '/ne prefix $player &b[Earth] &b'
+  - '/ne suffix $player &8[&5Spearhead&8]'
+  - '/hpset $player 48'
+  - '/mvtp $player 2-1'
+'338':
+  command: /PlayPvPSelectGoliathEarth
+  type: runconsole
+  runcmd:
+  - '/ne prefix $player &b[Earth] &b'
+  - '/ne suffix $player &8[&5Goliath&8]'
+  - '/hpset $player 60'
+  - '/mvtp $player 2-1'
+'339':
+  command: /PlayPvPSelectAegisEarth
+  type: runconsole
+  runcmd:
+  - '/ne prefix $player &b[Earth] &b'
+  - '/ne suffix $player &8[&5Aegis&8]'
+  - '/hpset $player 70'
+  - '/mvtp $player 2-1'
+'340':
+  command: /PlayPvPSelectCitadelEarth
+  type: runconsole
+  runcmd:
+  - '/ne prefix $player &b[Earth] &b'
+  - '/ne suffix $player &8[&5Citadel&8]'
+  - '/hpset $player 80'
+  - '/mvtp $player 2-1'
+'341':
+  command: /PlayPvPSelectPhoenixMars
+  type: runconsole
+  runcmd:
+  - '/ne prefix $player &4[Mars] &4'
+  - '/ne suffix $player &8[&cPhoenix&8]'
+  - '/hpset $player 20'
+  - '/mvtp $player 3-1'
+'342':
+  command: /PlayPvPSelectYamatoMars
+  type: runconsole
+  runcmd:
+  - '/ne prefix $player &4[Mars] &4'
+  - '/ne suffix $player &8[&cYamato&8]'
+  - '/hpset $player 24'
+  - '/mvtp $player 3-1'
+'343':
+  command: /PlayPvPSelectDefcomMars
+  type: runconsole
+  runcmd:
+  - '/ne prefix $player &4[Mars] &4'
+  - '/ne suffix $player &8[&cDefcom&8]'
+  - '/hpset $player 26'
+  - '/mvtp $player 3-1'
+'344':
+  command: /PlayPvPSelectLiberatorMars
+  type: runconsole
+  runcmd:
+  - '/ne prefix $player &4[Mars] &4'
+  - '/ne suffix $player &8[&cLiberator&8]'
+  - '/hpset $player 28'
+  - '/mvtp $player 3-1'
+'345':
+  command: /PlayPvPSelectPiranhaMars
+  type: runconsole
+  runcmd:
+  - '/ne prefix $player &4[Mars] &4'
+  - '/ne suffix $player &8[&cPiranha&8]'
+  - '/hpset $player 30'
+  - '/mvtp $player 3-1'
+'346':
+  command: /PlayPvPSelectNostromoMars
+  type: runconsole
+  runcmd:
+  - '/ne prefix $player &4[Mars] &4'
+  - '/ne suffix $player &8[&cNostromo&8]'
+  - '/hpset $player 32'
+  - '/mvtp $player 3-1'
+'347':
+  command: /PlayPvPSelectBigBoyMars
+  type: runconsole
+  runcmd:
+  - '/ne prefix $player &4[Mars] &4'
+  - '/ne suffix $player &8[&cBigBoy&8]'
+  - '/hpset $player 34'
+  - '/mvtp $player 3-1'
+'348':
+  command: /PlayPvPSelectLeonovMars
+  type: runconsole
+  runcmd:
+  - '/ne prefix $player &4[Mars] &4'
+  - '/ne suffix $player &8[&5Leonov&8]'
+  - '/hpset $player 40'
+  - '/mvtp $player 3-1'
+'349':
+  command: /PlayPvPSelectVengeanceMars
+  type: runconsole
+  runcmd:
+  - '/ne prefix $player &4[Mars] &4'
+  - '/ne suffix $player &8[&5Vengeance&8]'
+  - '/hpset $player 44'
+  - '/mvtp $player 3-1'
+'350':
+  command: /PlayPvPSelectSpearheadMars
+  type: runconsole
+  runcmd:
+  - '/ne prefix $player &4[Mars] &4'
+  - '/ne suffix $player &8[&5Spearhead&8]'
+  - '/hpset $player 48'
+  - '/mvtp $player 3-1'
+'351':
+  command: /PlayPvPSelectGoliathMars
+  type: runconsole
+  runcmd:
+  - '/ne prefix $player &4[Mars] &4'
+  - '/ne suffix $player &8[&5Goliath&8]'
+  - '/hpset $player 60'
+  - '/mvtp $player 3-1'
+'352':
+  command: /PlayPvPSelectAegisMars
+  type: runconsole
+  runcmd:
+  - '/ne prefix $player &4[Mars] &4'
+  - '/ne suffix $player &8[&5Aegis&8]'
+  - '/hpset $player 70'
+  - '/mvtp $player 3-1'
+'353':
+  command: /PlayPvPSelectCitadelMars
+  type: runconsole
+  runcmd:
+  - '/ne prefix $player &4[Mars] &4'
+  - '/ne suffix $player &8[&5Citadel&8]'
+  - '/hpset $player 80'
+  - '/mvtp $player 3-1'
+'354':
+  command: /PlayPvPVenus
+  type: runcommand-text
+  text:
+  - '&b&m====================================================='
+  - ' '
+  - '&c&L Your Name: &3&L$player'
+  - '&c&L Your Team: &a&LVenus'
+  - '&c Select your ship - This is the ship you bought last time in PvP'
+  - ' '
+  - '&b&m====================================================='
+  runcmd:
+  - '/teams group switch OrbitMines'
+  - '/teams add Venus $player'
+  - '/PlayPvPVenusTP'
+'355':
+  command: /PlayPvPVenusTP
+  type: runconsole
+  runcmd:
+  - '/mvtp $player PvPSelectVenusShip'
+'356':
+  command: /PlayPvPMars
+  type: runcommand-text
+  text:
+  - '&b&m====================================================='
+  - ' '
+  - '&c&L Your Name: &3&L$player'
+  - '&c&L Your Team: &4&LMars'
+  - '&c Select your ship - This is the ship you bought last time in PvP'
+  - ' '
+  - '&b&m====================================================='
+  runcmd:
+  - '/teams group switch OrbitMines'
+  - '/teams add Mars $player'
+  - '/PlayPvPMarsTP'
+'357':
+  command: /PlayPvPMarsTP
+  type: runconsole
+  runcmd:
+  - '/mvtp $player PvPSelectMarsShip'
+'358':
+  command: /PlayPvPEarth
+  type: runcommand-text
+  text:
+  - '&b&m====================================================='
+  - ' '
+  - '&c&L Your Name: &3&L$player'
+  - '&c&L Your Team: &b&LEarth'
+  - '&c Select your ship - This is the ship you bought last time in PvP'
+  - ' '
+  - '&b&m====================================================='
+  runcmd:
+  - '/teams group switch OrbitMines'
+  - '/teams add Earth $player'
+  - '/PlayPvPEarthTP'
+'359':
+  command: /PlayPvPEarthTP
+  type: runconsole
+  runcmd:
+  - '/mvtp $player PvPSelectEarthShip'
+'360':
+  command: /PlayPvPTutorial
+  type: runcommand-text
+  text:
+  - '&b&m====================================================='
+  - ' '
+  - '&c&L Your Name: &3&L$player'
+  - '&c&L Welcome to the &6&LOrbitMines PvP &C&LTutorial!'
+  - ' '
+  - '&b&m====================================================='
+  runcmd:
+  - '/PlayPvPTutorialTP'
+'361':
+  command: /PlayPvPTutorialTP
+  type: runconsole
+  runcmd:
+  - '/mvtp $player world'
+'362':
+  command: /PlayPvPSelectVenusT
+  type: runcommand-text
+  text:
+  - '&b&m====================================================='
+  - ' '
+  - '&c&L Your Name: &3&L$player'
+  - '&c&L Your Team: &a&LVenus'
+  - '&c Because you just started you need to choose the ship Phoenix: Right-Click the sign with Phoenix on it'
+  - ' '
+  - '&b&m====================================================='
+  runcmd:
+  - '/teams group switch OrbitMines'
+  - '/teams add Venus $player'
+  - '/PlayPvPVenusTPT'
+'363':
+  command: /PlayPvPSelectMarsT
+  type: runcommand-text
+  text:
+  - '&b&m====================================================='
+  - ' '
+  - '&c&L Your Name: &3&L$player'
+  - '&c&L Your Team: &4&LMars'
+  - '&c Because you just started you need to choose the ship Phoenix: Right-Click the sign with Phoenix on it'
+  - ' '
+  - '&b&m====================================================='
+  runcmd:
+  - '/teams group switch OrbitMines'
+  - '/teams add Mars $player'
+  - '/PlayPvPMarsTPT'
+'364':
+  command: /PlayPvPSelectEarthT
+  type: runcommand-text
+  text:
+  - '&b&m====================================================='
+  - ' '
+  - '&c&L Your Name: &3&L$player'
+  - '&c&L Your Team: &b&LEarth'
+  - '&c Because you just started you need to choose the ship Phoenix: Right-Click the sign with Phoenix on it'
+  - ' '
+  - '&b&m====================================================='
+  runcmd:
+  - '/teams group switch OrbitMines'
+  - '/teams add Earth $player'
+  - '/PlayPvPEarthTPT'
+'365':
+  command: /PlayPvPVenusTPT
+  type: runconsole
+  runcmd:
+  - '/mvtp $player PvPSelectVenusShip'
+  - '/manuadd $player Venus world'
+  - '/manuadd $player Phoenix 1-1'
+'366':
+  command: /PlayPvPMarsTPT
+  type: runconsole
+  runcmd:
+  - '/mvtp $player PvPSelectMarsShip'
+  - '/manuadd $player Mars world'
+  - '/manuadd $player Phoenix 1-1'
+'367':
+  command: /PlayPvPEarthTPT
+  type: runconsole
+  runcmd:
+  - '/mvtp $player PvPSelectEarthShip'
+  - '/manuadd $player Earth world'
+  - '/manuadd $player Phoenix 1-1'
+'368':
+  command: /BuyShipPhoenix
+  type: runconsole
+  runcmd:
+  - '/manuadd $player Phoenix 1-1'
+'369':
+  command: /Claimer
+  type: runconsole
+  runcmd:
+  - '/adjustbonusclaimblocks $player 1500'
+  itemcost: '7:1'
+'370':
+  command: /QuitMission
+  type: runcommand-text
+  text:
+  - '&b&m====================================================='
+  - ' '
+  - '&c&L You Quit your Mission!'
+  - '&c&L You can now accept an other one!'
+  - ' '
+  - '&b&m====================================================='
+  runcmd:
+  - '/warp Arcade'
+  - '/QuitMissionConsole'
+'371':
+  command: /Question1RightAnswer
+  type: runcommand-text
+  text:
+  - '&b&m====================================================='
+  - ' '
+  - '&c&LWell Done &6&L$player &C&LYou past Question 1'
+  - ' '
+  - '&b&m====================================================='
+  runcmd:
+  - '/CompleteQuestion1'
+  - '/warp Question2'
+'372':
+  command: /CompleteQuestion1
+  type: runconsole
+  runcmd:
+  - '/manuadd $player Question2 Tutorial'
+'373':
+  command: /WrongAnswerTutorial
+  type: runcommand-text
+  text:
+  - '&b&m====================================================='
+  - ' '
+  - '&c&LWrong answer wait &615 Seconds'
+  - ' '
+  - '&b&m====================================================='
+  runcmd:
+  - '/warp WrongAnswer'
+  - '/WrongAnswer'
+'374':
+  command: /WrongAnswer
+  type: runconsole
+  runcmd:
+  - '/manuadd $player Question1 Tutorial'
+  - $delay$/mvtp $player Tutorial
+  delaytimer: 15
+'375':
+  command: /Question2RightAnswer
+  type: runcommand-text
+  text:
+  - '&b&m====================================================='
+  - ' '
+  - '&c&LWell Done &6&L$player &C&LYou past Question 2'
+  - ' '
+  - '&b&m====================================================='
+  runcmd:
+  - '/CompleteQuestion2'
+  - '/warp Question3'
+'376':
+  command: /CompleteQuestion2
+  type: runconsole
+  runcmd:
+  - '/manuadd $player Question3 Tutorial'
+'377':
+  command: /Question3RightAnswer
+  type: runcommand-text
+  text:
+  - '&b&m====================================================='
+  - ' '
+  - '&c&LWell Done &6&L$player &C&LYou past Question 3'
+  - ' '
+  - '&b&m====================================================='
+  runcmd:
+  - '/CompleteQuestion3'
+  - '/warp Question4'
+'378':
+  command: /CompleteQuestion3
+  type: runconsole
+  runcmd:
+  - '/manuadd $player Question4 Tutorial'
+'379':
+  command: /Question4RightAnswer
+  type: runcommand-text
+  text:
+  - '&b&m====================================================='
+  - ' '
+  - '&c&LWell Done &6&L$player &C&LYou past Question 4'
+  - ' '
+  - '&b&m====================================================='
+  runcmd:
+  - '/CompleteQuestion4'
+  - '/warp Question5'
+'380':
+  command: /CompleteQuestion4
+  type: runconsole
+  runcmd:
+  - '/manuadd $player Question5 Tutorial'
+'381':
+  command: /Question5RightAnswer
+  type: runcommand-text
+  text:
+  - '&b&m====================================================='
+  - ' '
+  - '&c&LWell Done &6&L$player &C&LYou past Question 5'
+  - ' '
+  - '&b&m====================================================='
+  runcmd:
+  - '/CompleteQuestion5'
+  - '/warp CompleteTutorial'
+'382':
+  command: /CompleteQuestion5
+  type: runconsole
+  runcmd:
+  - '/manuadd $player CompletedTutorial Tutorial'
+'383':
+  command: /CompleteTutorial
+  type: runcommand-text
+  text:
+  - '&b&m====================================================='
+  - ' '
+  - '&c&LWelcome to &6&LOrbitMines &c&L$player!'
+  - ' '
+  - '&b&m====================================================='
+  runcmd:
+  - '/lobby'
+'384':
+  command: /quit
+  type: runcommand-text
+  text:
+  - '&b&m====================================================='
+  - ' '
+  - '&c&L You Quit your mission.'
+  - ' '
+  - '&b&m====================================================='
+  runcmd:
+  - '/stopmission'
+'385':
+  command: /stopmission
+  type: runconsole
+  runcmd:
+  - '/manuadd $player None Dropper'
+  - '/mvtp $player Dropper'
+'386':
+  command: /MissionBob
+  type: runcommand-text
+  text:
+  - '&b&m====================================================='
+  - ' '
+  - '&c&L You Started a Mission!'
+  - '&a Bob: &2&LA Dude just took my book and ran into the maze please find him, and get my book back!'
+  - ' '
+  - '&b&m====================================================='
+  runcmd:
+  - '/consoleMissionBob'
+  - '/warp Bob'
+'387':
+  command: /consoleMissionBob
+  type: runconsole
+  runcmd:
+  - '/manuadd $player Bob Dropper'
+'388':
+  command: /MissionBobComplete
+  type: runcommand-text
+  text:
+  - '&b&m====================================================='
+  - ' '
+  - '&c&L You Finished a Mission!'
+  - '&a Bob: &2&LThank you! Take this as a reward:'
+  - '&6&L You received 1 Arcade Token!'
+  - ' '
+  - '&b&m====================================================='
+  runcmd:
+  - '/consoleMissionBobComplete'
+'389':
+  command: /consoleMissionBobComplete
+  type: runconsole
+  runcmd:
+  - '/points give $player 1'
+  - '/mvtp $player Dropper'
+  - '/manuadd $player None Dropper'
+  - '/manuaddp $player -mycommand.cmd.386'
+  - '/manuaddp $player -mycommand.cmd.387'
+  - '/manuaddp $player -mycommand.cmd.388'
+  - '/manuaddp $player -mycommand.cmd.389'
+'390':
+  command: /MissionTechnician
+  type: runcommand-text
+  text:
+  - '&b&m====================================================='
+  - ' '
+  - '&c&L You Started a Mission!'
+  - '&a Technician: &2&LA Bom exploded in a hospital. Please help us to rescue that people that are stuck!'
+  - ' '
+  - '&b&m====================================================='
+  runcmd:
+  - '/consoleMissionTechnician'
+  - '/warp Help_Technician'
+'391':
+  command: /consoleMissionTechnician
+  type: runconsole
+  runcmd:
+  - '/manuadd $player Technician Dropper'
+'392':
+  command: /MissionTechnicianComplete
+  type: runcommand-text
+  text:
+  - '&b&m====================================================='
+  - ' '
+  - '&c&L You Finished a Mission!'
+  - '&a Technician: &2&LThank you! Take this as a reward:'
+  - '&6&L You received 1 Arcade Token!'
+  - ' '
+  - '&b&m====================================================='
+  runcmd:
+  - '/consoleMissionTechnicianComplete'
+'393':
+  command: /consoleMissionTechnicianComplete
+  type: runconsole
+  runcmd:
+  - '/points give $player 1'
+  - '/mvtp $player Dropper'
+  - '/manuadd $player None Dropper'
+  - '/manuaddp $player -mycommand.cmd.390'
+  - '/manuaddp $player -mycommand.cmd.391'
+  - '/manuaddp $player -mycommand.cmd.392'
+  - '/manuaddp $player -mycommand.cmd.393'
+'394':
+  command: /MissionKingOfTheHill
+  type: runcommand-text
+  text:
+  - '&b&m====================================================='
+  - ' '
+  - '&c&L You Started a Mission!'
+  - '&a KingOfTheHill: &2Reach the Top and be the King Of the Mountain!'
+  - ' '
+  - '&b&m====================================================='
+  runcmd:
+  - '/consoleMissionKingOfTheHill'
+  - '/warp KingOfTheHill'
+'395':
+  command: /consoleMissionKingOfTheHill
+  type: runconsole
+  runcmd:
+  - '/manuadd $player KingOfTheHill Dropper'
+'396':
+  command: /MissionKingOfTheHillComplete
+  type: runcommand-text
+  text:
+  - '&b&m====================================================='
+  - ' '
+  - '&c&L You Finished a Mission!'
+  - '&a KingOfTheHill: &2&LThank you! Take this as a reward:'
+  - '&6&L You received 1 Arcade Token!'
+  - ' '
+  - '&b&m====================================================='
+  runcmd:
+  - '/consoleMissionKingOfTheHillComplete'
+'397':
+  command: /consoleMissionKingOfTheHillComplete
+  type: runconsole
+  runcmd:
+  - '/points give $player 1'
+  - '/mvtp $player Dropper'
+  - '/manuadd $player None Dropper'
+  - '/manuaddp $player -mycommand.cmd.394'
+  - '/manuaddp $player -mycommand.cmd.395'
+  - '/manuaddp $player -mycommand.cmd.396'
+  - '/manuaddp $player -mycommand.cmd.397'
+'398':
+  command: /MissionStuward
+  type: runcommand-text
+  text:
+  - '&b&m====================================================='
+  - ' '
+  - '&c&L You Started a Mission!'
+  - '&a Stuward: &2&LA witch changed the path to weird red blocks. Find the Witch and tell her to change it back to the original path.'
+  - ' '
+  - '&b&m====================================================='
+  runcmd:
+  - '/consoleMissionStuward'
+  - '/warp Help_Stuward'
+'399':
+  command: /consoleMissionStuward
+  type: runconsole
+  runcmd:
+  - '/manuadd $player Stuward Dropper'
+'400':
+  command: /MissionStuwardComplete
+  type: runcommand-text
+  text:
+  - '&b&m====================================================='
+  - ' '
+  - '&c&L You Finished a Mission!'
+  - '&a Stuward: &2&LThank you! Take this as a reward:'
+  - '&6&L You received 1 Arcade Token!'
+  - ' '
+  - '&b&m====================================================='
+  runcmd:
+  - '/consoleMissionStuwardComplete'
+'401':
+  command: /consoleMissionStuwardComplete
+  type: runconsole
+  runcmd:
+  - '/points give $player 1'
+  - '/mvtp $player Dropper'
+  - '/manuadd $player None Dropper'
+  - '/manuaddp $player -mycommand.cmd.398'
+  - '/manuaddp $player -mycommand.cmd.399'
+  - '/manuaddp $player -mycommand.cmd.400'
+  - '/manuaddp $player -mycommand.cmd.401'
+'402':
+  command: /MissionDaddy
+  type: runcommand-text
+  text:
+  - '&b&m====================================================='
+  - ' '
+  - '&c&L You Started a Mission!'
+  - '&a Daddy: &2&LOh no, Oh no! I lost my son! What do I have to do? Please help me and find my son!!!'
+  - ' '
+  - '&b&m====================================================='
+  runcmd:
+  - '/consoleMissionDaddy'
+  - '/warp Help_Daddy'
+'403':
+  command: /consoleMissionDaddy
+  type: runconsole
+  runcmd:
+  - '/manuadd $player Daddy Dropper'
+'404':
+  command: /MissionDaddyComplete
+  type: runcommand-text
+  text:
+  - '&b&m====================================================='
+  - ' '
+  - '&c&L You Finished a Mission!'
+  - '&a Daddy: &2&LThank you! Take this as a reward:'
+  - '&6&L You received 1 Arcade Token!'
+  - ' '
+  - '&b&m====================================================='
+  runcmd:
+  - '/consoleMissionDaddyComplete'
+'405':
+  command: /consoleMissionDaddyComplete
+  type: runconsole
+  runcmd:
+  - '/points give $player 1'
+  - '/mvtp $player Dropper'
+  - '/manuadd $player None Dropper'
+  - '/manuaddp $player -mycommand.cmd.402'
+  - '/manuaddp $player -mycommand.cmd.403'
+  - '/manuaddp $player -mycommand.cmd.404'
+  - '/manuaddp $player -mycommand.cmd.405'
+'406':
+  command: /MissionLost_Guy
+  type: runcommand-text
+  text:
+  - '&b&m====================================================='
+  - ' '
+  - '&c&L You Started a Mission!'
+  - '&a Lost_Guy: &2&LA guy fell down into the darkness of the tree. It is your job to find him and rescue the poor guy! Jump in the hole and avoid the branches!'
+  - ' '
+  - '&b&m====================================================='
+  runcmd:
+  - '/consoleMissionLost_Guy'
+  - '/warp Lost_Guy'
+'407':
+  command: /consoleMissionLost_Guy
+  type: runconsole
+  runcmd:
+  - '/manuadd $player Lost_Guy Dropper'
+'408':
+  command: /MissionLost_GuyComplete
+  type: runcommand-text
+  text:
+  - '&b&m====================================================='
+  - ' '
+  - '&c&L You Finished a Mission!'
+  - '&a Lost Guy: &2&LThank you! Take this as a reward:'
+  - '&6&L You received 1 Arcade Token!'
+  - ' '
+  - '&b&m====================================================='
+  runcmd:
+  - '/consoleMissionLost_GuyComplete'
+'409':
+  command: /consoleMissionLost_GuyComplete
+  type: runconsole
+  runcmd:
+  - '/points give $player 1'
+  - '/mvtp $player Dropper'
+  - '/manuadd $player None Dropper'
+  - '/manuaddp $player -mycommand.cmd.406'
+  - '/manuaddp $player -mycommand.cmd.407'
+  - '/manuaddp $player -mycommand.cmd.408'
+  - '/manuaddp $player -mycommand.cmd.409'
+'410':
+  command: /MissionMINER
+  type: runcommand-text
+  text:
+  - '&b&m====================================================='
+  - ' '
+  - '&c&L You Started a Mission!'
+  - '&a MINER: &2&LWe were digging a mine in search for diamonds. Yesterday we found a huge one. We tried to get it out, but it is stuck and nobody wants to go down to attach the diamond to the rope of the crane, Do you want to help us?'
+  - ' '
+  - '&b&m====================================================='
+  runcmd:
+  - '/consoleMissionMINER'
+  - '/warp help_MINER'
+'411':
+  command: /consoleMissionMINER
+  type: runconsole
+  runcmd:
+  - '/manuadd $player Miner Dropper'
+'412':
+  command: /MissionMINERComplete
+  type: runcommand-text
+  text:
+  - '&b&m====================================================='
+  - ' '
+  - '&c&L You Finished a Mission!'
+  - '&a MINER: &2&LThank you! Take this as a reward:'
+  - '&6&L You received 1 Arcade Token!'
+  - ' '
+  - '&b&m====================================================='
+  runcmd:
+  - '/consoleMissionMINERComplete'
+'413':
+  command: /consoleMissionMINERComplete
+  type: runconsole
+  runcmd:
+  - '/points give $player 1'
+  - '/mvtp $player Dropper'
+  - '/manuadd $player None Dropper'
+  - '/manuaddp $player -mycommand.cmd.410'
+  - '/manuaddp $player -mycommand.cmd.411'
+  - '/manuaddp $player -mycommand.cmd.412'
+  - '/manuaddp $player -mycommand.cmd.413'
+'414':
+  command: /MissionTom
+  type: runcommand-text
+  text:
+  - '&b&m====================================================='
+  - ' '
+  - '&c&L You Started a Mission!'
+  - '&a Tom: &2&LMy twin Brother was playing here and he ran into the maze. I want to go in there but... Oh, Please just help me and get my little brother!!!'
+  - ' '
+  - '&b&m====================================================='
+  runcmd:
+  - '/consoleMissionTom'
+  - '/warp Help_Tom'
+'415':
+  command: /consoleMissionTom
+  type: runconsole
+  runcmd:
+  - '/manuadd $player Tom Dropper'
+'416':
+  command: /MissionTomComplete
+  type: runcommand-text
+  text:
+  - '&b&m====================================================='
+  - ' '
+  - '&c&L You Finished a Mission!'
+  - '&a Tom: &2&LThank you! Take this as a reward:'
+  - '&6&L You received 1 Arcade Token!'
+  - ' '
+  - '&b&m====================================================='
+  runcmd:
+  - '/consoleMissionTomComplete'
+'417':
+  command: /consoleMissionTomComplete
+  type: runconsole
+  runcmd:
+  - '/points give $player 1'
+  - '/mvtp $player Dropper'
+  - '/manuadd $player None Dropper'
+  - '/manuaddp $player -mycommand.cmd.414'
+  - '/manuaddp $player -mycommand.cmd.415'
+  - '/manuaddp $player -mycommand.cmd.416'
+  - '/manuaddp $player -mycommand.cmd.417'
+'418':
+  command: /MissionMaffia_Boss
+  type: runcommand-text
+  text:
+  - '&b&m====================================================='
+  - ' '
+  - '&c&L You Started a Mission!'
+  - '&4 Maffia_Boss: &c&LI know it sounds weird but I need your help... Someone payed me for bringing his son back home, They said he ran into this dungeon.'
+  - ' '
+  - '&b&m====================================================='
+  runcmd:
+  - '/consoleMissionMaffia_Boss'
+  - '/warp Maffia_Bos'
+'419':
+  command: /consoleMissionMaffia_Boss
+  type: runconsole
+  runcmd:
+  - '/manuadd $player Maffia_Boss Dropper'
+'420':
+  command: /MissionMaffia_BossComplete
+  type: runcommand-text
+  text:
+  - '&b&m====================================================='
+  - ' '
+  - '&c&L You Finished a Mission!'
+  - '&4 Maffia_Boss: &c&LThank you! Take this as a reward:'
+  - '&6&L You received 1 Arcade Token!'
+  - ' '
+  - '&b&m====================================================='
+  runcmd:
+  - '/consoleMissionMaffia_BossComplete'
+'421':
+  command: /consoleMissionMaffia_BossComplete
+  type: runconsole
+  runcmd:
+  - '/points give $player 1'
+  - '/mvtp $player Dropper'
+  - '/manuadd $player None Dropper'
+  - '/manuaddp $player -mycommand.cmd.418'
+  - '/manuaddp $player -mycommand.cmd.419'
+  - '/manuaddp $player -mycommand.cmd.420'
+  - '/manuaddp $player -mycommand.cmd.421'
+'422':
+  command: /MissionDave
+  type: runcommand-text
+  text:
+  - '&b&m====================================================='
+  - ' '
+  - '&c&L You Started a Mission!'
+  - '&a Mother: &2&LPlease search my Husband!'
+  - ' '
+  - '&b&m====================================================='
+  runcmd:
+  - '/consoleMissionDave'
+  - '/warp Dave'
+'423':
+  command: /consoleMissionDave
+  type: runconsole
+  runcmd:
+  - '/manuadd $player Dave Dropper'
+'424':
+  command: /MissionDaveComplete
+  type: runcommand-text
+  text:
+  - '&b&m====================================================='
+  - ' '
+  - '&c&L You Finished a Mission!'
+  - '&a Dave: &2&LThank you! Take this as a reward:'
+  - '&6&L You received 1 Arcade Token!'
+  - ' '
+  - '&b&m====================================================='
+  runcmd:
+  - '/consoleMissionDaveComplete'
+'425':
+  command: /consoleMissionDaveComplete
+  type: runconsole
+  runcmd:
+  - '/points give $player 1'
+  - '/mvtp $player Dropper'
+  - '/manuadd $player None Dropper'
+  - '/manuaddp $player -mycommand.cmd.422'
+  - '/manuaddp $player -mycommand.cmd.423'
+  - '/manuaddp $player -mycommand.cmd.424'
+  - '/manuaddp $player -mycommand.cmd.425'
+'426':
+  command: /MissionSlime_King
+  type: runcommand-text
+  text:
+  - '&b&m====================================================='
+  - ' '
+  - '&c&L You Started a Mission!'
+  - '&a Slime King: &2&LWelcome to the heaven, don''t worry you are not dead, but you came to here with a reason. You need to go to my boss and tell him this message: &4... &2&L Then you will help me a lot you need to go over the clouds to get to my boss.'
+  - ' '
+  - '&b&m====================================================='
+  runcmd:
+  - '/consoleMissionSlime_King'
+  - '/warp Slime_King'
+'427':
+  command: /consoleMissionSlime_King
+  type: runconsole
+  runcmd:
+  - '/manuadd $player Slime_King Dropper'
+'428':
+  command: /MissionSlime_KingComplete
+  type: runcommand-text
+  text:
+  - '&b&m====================================================='
+  - ' '
+  - '&c&L You Finished a Mission!'
+  - '&a Slime_King: &2&LThank you! Take this as a reward:'
+  - '&6&L You received 1 Arcade Token!'
+  - ' '
+  - '&b&m====================================================='
+  runcmd:
+  - '/consoleMissionSlime_KingComplete'
+'429':
+  command: /consoleMissionSlime_KingComplete
+  type: runconsole
+  runcmd:
+  - '/points give $player 1'
+  - '/mvtp $player Dropper'
+  - '/manuadd $player None Dropper'
+  - '/manuaddp $player -mycommand.cmd.426'
+  - '/manuaddp $player -mycommand.cmd.427'
+  - '/manuaddp $player -mycommand.cmd.428'
+  - '/manuaddp $player -mycommand.cmd.429'
+'430':
+  command: /MissionWitch
+  type: runcommand-text
+  text:
+  - '&b&m====================================================='
+  - ' '
+  - '&c&L You Started a Mission!'
+  - '&a Witch: &2&LSomeone stole my cauldron. Hold the thief!'
+  - ' '
+  - '&b&m====================================================='
+  runcmd:
+  - '/consoleMissionWitch'
+  - '/warp Witch'
+'431':
+  command: /consoleMissionWitch
+  type: runconsole
+  runcmd:
+  - '/manuadd $player Witch Dropper'
+'432':
+  command: /MissionWitchComplete
+  type: runcommand-text
+  text:
+  - '&b&m====================================================='
+  - ' '
+  - '&c&L You Finished a Mission!'
+  - '&a Witch: &2&LThank you! Take this as a reward:'
+  - '&6&L You received 1 Arcade Token!'
+  - ' '
+  - '&b&m====================================================='
+  runcmd:
+  - '/consoleMissionWitchComplete'
+'433':
+  command: /consoleMissionWitchComplete
+  type: runconsole
+  runcmd:
+  - '/points give $player 1'
+  - '/mvtp $player Dropper'
+  - '/manuadd $player None Dropper'
+  - '/manuaddp $player -mycommand.cmd.430'
+  - '/manuaddp $player -mycommand.cmd.431'
+  - '/manuaddp $player -mycommand.cmd.432'
+  - '/manuaddp $player -mycommand.cmd.433'

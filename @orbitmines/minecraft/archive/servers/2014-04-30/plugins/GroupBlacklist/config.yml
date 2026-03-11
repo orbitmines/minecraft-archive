@@ -1,0 +1,15 @@
+settings:
+    log:
+        break: true
+        place: true
+        use: true
+    advanced:
+        tntdroponbreak: false
+        globalblocktnt: false
+        mergelog: false
+
+groups:
+    Default:
+        break: 46,51
+        place: 46,51
+        use: '51'

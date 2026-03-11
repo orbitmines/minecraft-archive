@@ -1,0 +1,17 @@
+permission: ''
+world: PrisonServer
+X: -889
+Y: 18
+Z: 587
+price: 0.0
+cooldown: 0
+globalCooldown: 0
+confirmation: false
+commands:
+- '/WarpPrisonSpawn '
+- '/Warp PrisonSpawn '
+grantPermissions: []
+lastGlobalUse: 0
+lastUse: {}
+priceItems: []
+exp: 0

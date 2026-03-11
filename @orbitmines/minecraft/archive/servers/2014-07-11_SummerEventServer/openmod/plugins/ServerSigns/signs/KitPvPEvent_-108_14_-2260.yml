@@ -1,0 +1,21 @@
+permission: ''
+world: KitPvPEvent
+X: -108
+Y: 14
+Z: -2260
+price: 0.0
+cooldown: 0
+globalCooldown: 0
+confirmation: false
+commands:
+- /PaySkullGetPoint
+grantPermissions: []
+lastGlobalUse: 0
+lastUse: {}
+priceItems: []
+exp: 0
+pi_criteria:
+  enchants: false
+  name: false
+  lores: false
+should_cancel_event: true

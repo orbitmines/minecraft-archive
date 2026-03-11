@@ -1,0 +1,89 @@
+ShopName: OrbitMinesPvP
+signs:
+  text: '[Shop]'
+  NeedPermissionToCreateSign: true
+shop:
+  Ships:
+    RewardType: shop
+    PriceType: free
+    Reward: Ships
+    MenuItem:
+    - type:BOAT
+    - amount:1
+    - name:&b&lShips
+    - lore:&8Here you can buy ships
+    Message: ''
+    InventoryLocation: 1
+    ExtraPermission: 'shop.pvp'
+  Weapons:
+    RewardType: shop
+    PriceType: free
+    Reward: Weapons
+    MenuItem:
+    - type:DIAMOND_SWORD
+    - amount:1
+    - name:&b&lWeapons
+    - lore:&8Here you can buy your weapons
+    Message: ''
+    InventoryLocation: 2
+    ExtraPermission: 'shop.pvp'
+  ShieldGenerators:
+    RewardType: shop
+    PriceType: free
+    Reward: ShieldGenerators
+    MenuItem:
+    - type:CHAINMAIL_CHESTPLATE
+    - amount:1
+    - name:&b&lShieldGenerators
+    - lore:&8Here you can buy ShieldGenerators
+    Message: ''
+    InventoryLocation: 3
+    ExtraPermission: 'shop.pvp'
+  SpeedGenerators:
+    RewardType: shop
+    PriceType: free
+    Reward: SpeedGenerators
+    MenuItem:
+    - type:CHAINMAIL_BOOTS
+    - amount:1
+    - name:&b&lSpeedGenerators
+    - lore:&8Here you can buy SpeedGenerators
+    Message: ''
+    InventoryLocation: 4
+    ExtraPermission: 'shop.pvp'
+  Bows:
+    RewardType: shop
+    PriceType: free
+    Reward: Bows
+    MenuItem:
+    - type:BOW
+    - amount:1
+    - name:&b&lBows
+    - lore:&8Here you can buy Bows
+    Message: ''
+    InventoryLocation: 5
+    ExtraPermission: 'shop.pvp'
+  Arrows:
+    RewardType: shop
+    PriceType: free
+    Reward: Arrows
+    MenuItem:
+    - type:ARROW
+    - amount:1
+    - name:&b&lArrows
+    - lore:&8Here you can buy Arrows
+    Message: ''
+    InventoryLocation: 6
+    ExtraPermission: 'shop.pvp'
+  Materials:
+    RewardType: shop
+    PriceType: free
+    Reward: Materials
+    MenuItem:
+    - type:FURNACE
+    - amount:1
+    - name:&b&lMaterial Melting
+    - 'lore:&8Here you can Melt Materials #&a Coming Soon...'
+    Message: ''
+    InventoryLocation: 9
+    ExtraPermission: 'shop.pvp'

@@ -1,0 +1,59 @@
+ShopName: OMTKitPvP
+signs:
+  text: '[OMTKitPvP]'
+  NeedPermissionToCreateSign: true
+shop:
+  1OMT:
+    RewardType: money
+    PriceType: points
+    Price: 1
+    Reward: 500
+    MenuItem:
+    - 'type: GOLD_NUGGET'
+    - amount:1
+    - name:&6&L500$ [KitPvP]
+    - 'lore:&c&LPrice:&4&L 1 OMT #&b&LYour OMT: &6&L%balancepoints%'
+    - amount:1
+    Message: '&bYou have received 500$ &c(Cost: 1 OMT)'
+    InventoryLocation: 1
+    ExtraPermission: 'shop.kitpvp'
+  10OMT:
+    RewardType: money
+    PriceType: points
+    Price: 10
+    Reward: 5000
+    MenuItem:
+    - 'type: GOLD_NUGGET'
+    - amount:10
+    - name:&6&L5.000$ [KitPvP]
+    - 'lore:&c&LPrice:&4&L 10 OMT #&b&LYour OMT: &6&L%balancepoints%'
+    - amount:10
+    Message: '&bYou have received 5.000$ &c(Cost: 10 OMT)'
+    InventoryLocation: 2
+    ExtraPermission: 'shop.kitpvp'
+  50OMT:
+    RewardType: money
+    PriceType: points
+    Price: 50
+    Reward: 25000
+    MenuItem:
+    - 'type: GOLD_NUGGET'
+    - amount:50
+    - name:&6&L25.000$ [KitPvP]
+    - 'lore:&c&LPrice:&4&L 50 OMT #&b&LYour OMT: &6&L%balancepoints%'
+    - amount:50
+    Message: '&bYou have received 25.000$ &c(Cost: 50 OMT)'
+    InventoryLocation: 3
+    ExtraPermission: 'shop.kitpvp'
+  BackToMenu:
+    RewardType: shop
+    PriceType: free
+    Reward: KitPvP
+    MenuItem:
+    - type:REDSTONE_BLOCK
+    - amount:1
+    - name:&4&LKit PvP Menu
+    - lore:&8Back to the Kit PvP Menu
+    - amount:1
+    InventoryLocation: 9
+    ExtraPermission: ''

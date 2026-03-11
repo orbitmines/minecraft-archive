@@ -1,0 +1,16 @@
+permission: ''
+world: TestWorld
+X: -1
+Y: 65
+Z: 18
+price: 0.0
+cooldown: 0
+globalCooldown: 0
+confirmation: false
+commands:
+- '/shop VoteShop '
+grantPermissions: []
+lastGlobalUse: 0
+lastUse: {}
+priceItems: []
+exp: 0

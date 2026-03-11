@@ -1,0 +1,61 @@
+# Group inheritance
+#
+# Any inherited groups prefixed with a g: are global groups
+# and are inherited from the GlobalGroups.yml.
+#
+# Groups without the g: prefix are groups local to this world
+# and are defined in the this groups.yml file.
+#
+# Local group inheritances define your promotion tree when using 'manpromote/mandemote'
+
+groups:
+  User:
+    default: true
+    permissions:
+    - mycommand.cmd.312
+    - mycommand.cmd.313
+    - mycommand.cmd.360
+    - mycommand.cmd.361
+    - mycommand.cmd.362
+    - mycommand.cmd.363
+    - mycommand.cmd.364
+    - mycommand.cmd.365
+    - mycommand.cmd.366
+    - mycommand.cmd.367
+    - serversigns.use.*
+    info:
+      prefix: '&8[User] &8'
+      build: true
+  Venus:
+    default: true
+    permissions:
+    - mycommand.cmd.312
+    - mycommand.cmd.313
+    - mycommand.cmd.354
+    - mycommand.cmd.355
+    - serversigns.use.*
+    info:
+      prefix: '&8[User] &8'
+      build: true
+  Mars:
+    default: true
+    permissions:
+    - mycommand.cmd.312
+    - mycommand.cmd.313
+    - mycommand.cmd.356
+    - mycommand.cmd.357
+    - serversigns.use.*
+    info:
+      prefix: '&8[User] &8'
+      build: true
+  Earth:
+    default: true
+    permissions:
+    - mycommand.cmd.312
+    - mycommand.cmd.313
+    - mycommand.cmd.358
+    - mycommand.cmd.359
+    - serversigns.use.*
+    info:
+      prefix: '&8[User] &8'
+      build: true

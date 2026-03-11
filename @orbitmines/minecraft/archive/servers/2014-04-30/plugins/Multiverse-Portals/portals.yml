@@ -1,0 +1,988 @@
+portals:
+  TutorialNLEarth->2-1:
+    entryfee:
+      currency: -1
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    owner: O_o_Fadi_o_O
+    location: 1369.0,22.0,-560.0:1369.0,29.0,-555.0
+    world: TutorialNLEarth
+    destination: p:TutorialNLEarth->2-1(2)
+  TutorialNL->3-1:
+    entryfee:
+      currency: -1
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    owner: O_o_Fadi_o_O
+    location: 323.0,21.0,977.0:323.0,28.0,982.0
+    world: TutorialNL
+    destination: p:TutorialNL->3-1(2)
+  TutorialNLMars->1-1:
+    entryfee:
+      currency: -1
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    owner: O_o_Fadi_o_O
+    location: 376.0,21.0,950.0:376.0,28.0,955.0
+    world: TutorialNLMars
+    destination: p:TutorialNLMars->1-1(2)
+  3-2->3-1:
+    entryfee:
+      currency: -1
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    owner: O_o_Fadi_o_O
+    location: 370.0,18.0,717.0:370.0,24.0,722.0
+    world: 3-2
+    destination: p:3-1->3-2
+  3-1->3-2:
+    entryfee:
+      currency: -1
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    owner: O_o_Fadi_o_O
+    location: 863.0,23.0,-104.0:863.0,30.0,-99.0
+    world: 1-1
+    destination: p:3-2->3-1
+  1-2->1-1:
+    entryfee:
+      currency: -1
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    owner: O_o_Fadi_o_O
+    location: -184.0,18.0,-1507.0:-184.0,24.0,-1501.0
+    world: 1-2
+    destination: p:1-1->1-2
+  1-1->1-2:
+    entryfee:
+      currency: -1
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    owner: O_o_Fadi_o_O
+    location: 3344.0,21.0,2136.0:3344.0,28.0,2141.0
+    world: 3-1
+    destination: p:1-2->1-1
+  3-3->3-2:
+    entryfee:
+      currency: -1
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    owner: O_o_Fadi_o_O
+    location: 181.0,4.0,-352.0:186.0,10.0,-352.0
+    world: 3-3
+    destination: p:3-2->3-3
+  3-2->3-3:
+    entryfee:
+      currency: -1
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    owner: O_o_Fadi_o_O
+    location: 384.0,32.0,592.0:384.0,38.0,597.0
+    world: 3-2
+    destination: p:3-3->3-2
+  1-3->2-3:
+    entryfee:
+      currency: -1
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    owner: O_o_Fadi_o_O
+    location: 115.0,29.0,809.0:120.0,35.0,809.0
+    world: 1-3
+    destination: p:2-3->1-3
+  2-3->1-3:
+    entryfee:
+      currency: -1
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    owner: O_o_Fadi_o_O
+    location: -13.0,29.0,49.0:-8.0,35.0,49.0
+    world: 2-3
+    destination: p:1-3->2-3
+  2-3->2-2:
+    entryfee:
+      currency: -1
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    owner: O_o_Fadi_o_O
+    location: 118.0,4.0,173.0:123.0,10.0,173.0
+    world: 2-3
+    destination: p:2-2->2-3
+  2-2->2-3:
+    entryfee:
+      currency: -1
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    owner: O_o_Fadi_o_O
+    location: -223.0,32.0,-1307.0:-223.0,38.0,-1302.0
+    world: 2-2
+    destination: p:2-3->2-2
+  2-2->2-1:
+    entryfee:
+      currency: -1
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    owner: O_o_Fadi_o_O
+    location: -237.0,18.0,-1182.0:-237.0,24.0,-1177.0
+    world: 2-2
+    destination: p:2-1->2-2
+  2-1->2-2:
+    entryfee:
+      currency: -1
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    owner: O_o_Fadi_o_O
+    location: -53.0,23.0,-1117.0:-53.0,29.0,-1112.0
+    world: 2-1
+    destination: p:2-2->2-1
+  1-2->1-3:
+    entryfee:
+      currency: -1
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    owner: O_o_Fadi_o_O
+    location: -170.0,32.0,-1631.0:-170.0,38.0,-1626.0
+    world: 1-2
+    destination: p:1-3->1-2
+  1-3->1-2:
+    entryfee:
+      currency: -1
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    owner: O_o_Fadi_o_O
+    location: 246.0,4.0,933.0:251.0,10.0,933.0
+    world: 1-3
+    destination: p:1-2->1-3
+  3-2->3-4:
+    entryfee:
+      currency: -1
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    owner: O_o_Fadi_o_O
+    location: 225.0,38.0,588.0:225.0,44.0,593.0
+    world: 3-2
+    destination: p:3-4->3-2
+  3-4->3-2:
+    entryfee:
+      currency: -1
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    owner: O_o_Fadi_o_O
+    location: -145.0,41.0,-663.0:-140.0,47.0,-663.0
+    world: 3-4
+    destination: p:3-2->3-4
+  3-3->3-4:
+    entryfee:
+      currency: -1
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    owner: O_o_Fadi_o_O
+    location: 50.0,4.0,-336.0:55.0,10.0,-336.0
+    world: 3-3
+    destination: p:3-4->3-3
+  3-4->3-3:
+    entryfee:
+      currency: -1
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    owner: O_o_Fadi_o_O
+    location: -150.0,16.0,-786.0:-145.0,22.0,-786.0
+    world: 3-4
+    destination: p:3-3->3-4
+  2-4->3-3:
+    entryfee:
+      currency: -1
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    owner: O_o_Fadi_o_O
+    location: -621.0,25.0,-1642.0:-616.0,31.0,-1642.0
+    world: 2-4
+    destination: p:3-3->2-4
+  3-3->2-4:
+    entryfee:
+      currency: -1
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    owner: O_o_Fadi_o_O
+    location: 50.0,29.0,-476.0:55.0,35.0,-476.0
+    world: 3-3
+    destination: p:2-4->3-3
+  3-4->1-4:
+    entryfee:
+      currency: -1
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    owner: O_o_Fadi_o_O
+    location: -302.0,25.0,-783.0:-297.0,31.0,-783.0
+    world: 3-4
+    destination: p:1-4->3-4
+  1-4->3-4:
+    entryfee:
+      currency: -1
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    owner: O_o_Fadi_o_O
+    location: 861.0,25.0,-54.0:866.0,31.0,-54.0
+    world: 1-4
+    destination: p:3-4->1-4
+  3-4->4-3:
+    entryfee:
+      currency: -1
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    owner: O_o_Fadi_o_O
+    location: -223.0,60.0,-784.0:-218.0,66.0,-784.0
+    world: 3-4
+    destination: p:4-3->3-4
+  4-3->3-4:
+    entryfee:
+      currency: -1
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    owner: O_o_Fadi_o_O
+    location: 970.0,18.0,696.0:975.0,24.0,696.0
+    world: 4-3
+    destination: p:3-4->4-3
+  3-5->3-7:
+    entryfee:
+      currency: -1
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    owner: O_o_Fadi_o_O
+    location: -385.0,14.0,-853.0:-380.0,21.0,-853.0
+    world: 3-5
+    destination: p:3-7->3-5
+  3-7->3-5:
+    entryfee:
+      currency: -1
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    owner: O_o_Fadi_o_O
+    location: 702.0,49.0,-211.0:706.0,56.0,-211.0
+    world: 3-7
+    destination: p:3-5->3-7
+  3-5->4-5:
+    entryfee:
+      currency: -1
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    owner: O_o_Fadi_o_O
+    location: -378.0,13.0,-715.0:-373.0,20.0,-715.0
+    world: 3-5
+  3-5->4-4:
+    entryfee:
+      currency: -1
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    owner: O_o_Fadi_o_O
+    location: -232.0,10.0,-719.0:-227.0,17.0,-719.0
+    world: 3-5
+  3-5->3-6:
+    entryfee:
+      currency: -1
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    owner: O_o_Fadi_o_O
+    location: -225.0,8.0,-845.0:-220.0,15.0,-845.0
+    world: 3-5
+    destination: p:3-6->3-5
+  3-6->3-5:
+    entryfee:
+      currency: -1
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    owner: O_o_Fadi_o_O
+    location: -1426.0,17.0,-181.0:-1426.0,23.0,-176.0
+    world: 4-2
+    destination: p:3-5->3-6
+  3-6->3-8:
+    entryfee:
+      currency: -1
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    owner: O_o_Fadi_o_O
+    location: -1262.0,37.0,-41.0:-1262.0,43.0,-36.0
+    world: 4-2
+    destination: p:3-8->3-6
+  3-8->3-6:
+    entryfee:
+      currency: -1
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    owner: O_o_Fadi_o_O
+    location: 66.0,11.0,-1412.0:71.0,18.0,-1412.0
+    world: 3-8
+    destination: p:3-6->3-8
+  3-8->3-7:
+    entryfee:
+      currency: -1
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    owner: O_o_Fadi_o_O
+    location: 67.0,12.0,-1545.0:72.0,19.0,-1545.0
+    world: 3-8
+    destination: p:3-7->3-8
+  3-7->3-8:
+    entryfee:
+      currency: -1
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    owner: O_o_Fadi_o_O
+    location: 532.0,46.0,-206.0:537.0,52.0,-206.0
+    world: 3-7
+    destination: p:3-8->3-7
+  1-2->1-4:
+    entryfee:
+      currency: -1
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    owner: O_o_Fadi_o_O
+    location: -329.0,38.0,-1635.0:-329.0,44.0,-1630.0
+    world: 1-2
+    destination: p:1-4->1-2
+  1-4->1-2:
+    entryfee:
+      currency: -1
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    owner: O_o_Fadi_o_O
+    location: 1018.0,41.0,66.0:1023.0,47.0,66.0
+    world: 1-4
+    destination: p:1-2->1-4
+  1-3->1-4:
+    entryfee:
+      currency: -1
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    owner: O_o_Fadi_o_O
+    location: 115.0,4.0,949.0:120.0,10.0,949.0
+    world: 1-3
+    destination: p:1-4->1-3
+  1-4->1-3:
+    entryfee:
+      currency: -1
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    owner: O_o_Fadi_o_O
+    location: 1013.0,16.0,-57.0:1018.0,22.0,-57.0
+    world: 1-4
+    destination: p:1-3->1-4
+  1-4->4-1:
+    entryfee:
+      currency: -1
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    owner: O_o_Fadi_o_O
+    location: 940.0,60.0,-55.0:945.0,66.0,-55.0
+    world: 1-4
+    destination: p:4-1->1-4
+  4-1->1-4:
+    entryfee:
+      currency: -1
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    owner: O_o_Fadi_o_O
+    location: 566.0,6.0,928.0:566.0,12.0,933.0
+    world: 4-1
+    destination: p:1-4->4-1
+  1-5->1-6:
+    entryfee:
+      currency: -1
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    owner: O_o_Fadi_o_O
+    location: -140.0,10.0,-481.0:-135.0,16.0,-481.0
+    world: 1-5
+    destination: p:1-6->1-5
+  1-5->4-4:
+    entryfee:
+      currency: -1
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    owner: O_o_Fadi_o_O
+    location: -287.0,13.0,-481.0:-282.0,19.0,-481.0
+    world: 1-5
+  1-5->1-7:
+    entryfee:
+      currency: -1
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    owner: O_o_Fadi_o_O
+    location: -129.0,7.0,-617.0:-129.0,13.0,-612.0
+    world: 1-5
+    destination: p:1-7->1-5
+  1-7->1-5:
+    entryfee:
+      currency: -1
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    owner: O_o_Fadi_o_O
+    location: 223.0,49.0,-562.0:228.0,56.0,-562.0
+    world: 1-7
+    destination: p:1-5->1-7
+  1-6->1-5:
+    entryfee:
+      currency: -1
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    owner: O_o_Fadi_o_O
+    location: -70.0,17.0,606.0:-70.0,23.0,611.0
+    world: 1-6
+    destination: p:1-5->1-6
+  1-6->1-8:
+    entryfee:
+      currency: -1
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    owner: O_o_Fadi_o_O
+    location: 94.0,37.0,746.0:94.0,43.0,751.0
+    world: 1-6
+    destination: p:1-8->1-6
+  1-8->1-6:
+    entryfee:
+      currency: -1
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    owner: O_o_Fadi_o_O
+    location: -108.0,12.0,-1216.0:-103.0,18.0,-1216.0
+    world: 1-8
+    destination: p:1-6->1-8
+  1-8->1-7:
+    entryfee:
+      currency: -1
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    owner: O_o_Fadi_o_O
+    location: -107.0,13.0,-1349.0:-102.0,19.0,-1349.0
+    world: 1-8
+    destination: p:1-7->1-8
+  1-7->1-8:
+    entryfee:
+      currency: -1
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    owner: O_o_Fadi_o_O
+    location: 54.0,46.0,-557.0:59.0,52.0,-557.0
+    world: 1-7
+    destination: p:1-8->1-7
+  2-2->2-4:
+    entryfee:
+      currency: -1
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    owner: O_o_Fadi_o_O
+    location: -382.0,38.0,-1311.0:-382.0,44.0,-1306.0
+    world: 2-2
+    destination: p:2-4->2-2
+  2-4->2-2:
+    entryfee:
+      currency: -1
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    owner: O_o_Fadi_o_O
+    location: -464.0,41.0,-1522.0:-459.0,47.0,-1522.0
+    world: 2-4
+    destination: p:2-2->2-4
+  2-3->2-4:
+    entryfee:
+      currency: -1
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    owner: O_o_Fadi_o_O
+    location: -13.0,4.0,189.0:-8.0,10.0,189.0
+    world: 2-3
+    destination: p:2-4->2-3
+  2-4->2-3:
+    entryfee:
+      currency: -1
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    owner: O_o_Fadi_o_O
+    location: -469.0,16.0,-1645.0:-464.0,22.0,-1645.0
+    world: 2-4
+    destination: p:2-3->2-4
+  2-4->4-2:
+    entryfee:
+      currency: -1
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    owner: O_o_Fadi_o_O
+    location: -542.0,60.0,-1643.0:-537.0,66.0,-1643.0
+    world: 2-4
+    destination: p:4-2->2-4
+  4-2->2-4:
+    entryfee:
+      currency: -1
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    owner: O_o_Fadi_o_O
+    location: 138.0,11.0,792.0:143.0,18.0,792.0
+    world: 3-6
+    destination: p:2-4->4-2
+  2-5->2-6:
+    entryfee:
+      currency: -1
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    owner: O_o_Fadi_o_O
+    location: -840.0,8.0,-465.0:-835.0,15.0,-465.0
+    world: 2-5
+  SurvivalShop1:
+    entryfee:
+      currency: -1
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    owner: O_o_Fadi_o_O
+    location: -250.0,67.0,432.0:-250.0,69.0,432.0
+    world: SurvivalTowny
+  SurvivalShop2:
+    entryfee:
+      currency: -1
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    owner: O_o_Fadi_o_O
+    location: -251.0,67.0,431.0:-251.0,69.0,431.0
+    world: SurvivalTowny
+  SkyBlock->Lobby:
+    entryfee:
+      currency: -1
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    owner: O_o_Fadi_o_O
+    location: 0.0,65.0,0.0:0.0,66.0,0.0
+    world: SkyBlockWorld
+  NetherMines1:
+    entryfee:
+      currency: -1
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    owner: O_o_Fadi_o_O
+    location: -889.0,9.0,296.0:-886.0,13.0,296.0
+    world: PrisonServer
+    destination: p:NetherMines2
+  NetherMines2:
+    entryfee:
+      currency: -1
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    owner: O_o_Fadi_o_O
+    location: -643.0,8.0,564.0:-643.0,12.0,567.0
+    world: PrisonServer
+    destination: p:NetherMines1
+  TutorialVoid:
+    entryfee:
+      currency: -1
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    owner: O_o_Fadi_o_O
+    location: -34.0,51.0,-72.0:48.0,52.0,44.0
+    world: Tutorial
+    destination: p:TutorialVoidSpawn
+  TutorialVoidSpawn:
+    entryfee:
+      currency: -1
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    owner: O_o_Fadi_o_O
+    location: 0.0,67.0,0.0:0.0,68.0,0.0
+    world: Tutorial
+  Void1:
+    entryfee:
+      currency: -1
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    owner: O_o_Fadi_o_O
+    location: -55.0,37.0,-68.0:96.0,40.0,54.0
+    world: Tutorial
+    destination: p:Void2
+  Void2:
+    entryfee:
+      currency: -1
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    owner: O_o_Fadi_o_O
+    location: 0.0,67.0,0.0:0.0,68.0,0.0
+    world: Tutorial
+  OrbitMines:
+    entryfee:
+      currency: -1
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    owner: O_o_Fadi_o_O
+    location: 13.0,65.0,-1.0:13.0,68.0,1.0
+    world: OrbitMinesHub
+    destination: p:OrbitMines2
+  OrbitMines2:
+    entryfee:
+      currency: -1
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    owner: O_o_Fadi_o_O
+    location: 0.0,66.0,0.0:0.0,67.0,0.0
+    world: Hub
+  MiniGames2:
+    entryfee:
+      currency: -1
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    owner: O_o_Fadi_o_O
+    location: 0.0,65.0,0.0:0.0,66.0,0.0
+    world: MiniGames
+  A1:
+    entryfee:
+      currency: -1
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    owner: O_o_Fadi_o_O
+    location: -764.0,5.0,4.0:-764.0,10.0,8.0
+    world: PrisonServer
+    destination: p:A2
+  PrisonSpawn:
+    entryfee:
+      currency: -1
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    owner: O_o_Fadi_o_O
+    location: -743.0,5.0,15.0:-743.0,6.0,15.0
+    world: PrisonServer
+  A2:
+    entryfee:
+      currency: -1
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    owner: O_o_Fadi_o_O
+    location: -818.0,4.0,-6.0:-818.0,5.0,-6.0
+    world: PrisonServer
+  P2:
+    entryfee:
+      currency: -1
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    owner: O_o_Fadi_o_O
+    location: -821.0,29.0,-61.0:-821.0,30.0,-61.0
+    world: PrisonServer
+  P1:
+    entryfee:
+      currency: -1
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    owner: O_o_Fadi_o_O
+    location: -762.0,5.0,-4.0:-760.0,8.0,-2.0
+    world: PrisonServer
+    destination: p:P2
+  O1:
+    entryfee:
+      currency: -1
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    owner: O_o_Fadi_o_O
+    location: -754.0,5.0,-6.0:-750.0,8.0,-6.0
+    world: PrisonServer
+    destination: p:O2
+  O2:
+    entryfee:
+      currency: -1
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    owner: O_o_Fadi_o_O
+    location: -738.0,4.0,-106.0:-738.0,5.0,-106.0
+    world: PrisonServer
+  N:
+    entryfee:
+      currency: -1
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    owner: O_o_Fadi_o_O
+    location: -745.0,5.0,-6.0:-741.0,8.0,-6.0
+    world: PrisonServer
+  Survival:
+    entryfee:
+      currency: -1
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    owner: O_o_Fadi_o_O
+    location: 329.0,117.0,-92.0:332.0,123.0,-92.0
+    world: OrbitMinesHub
+    destination: SurvivalWorld
+  KitPvP:
+    entryfee:
+      currency: -1
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    owner: O_o_Fadi_o_O
+    location: 358.0,117.0,-66.0:358.0,122.0,-63.0
+    world: OrbitMinesHub
+    destination: KitPvPMap
+  Prison:
+    entryfee:
+      currency: -1
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    owner: O_o_Fadi_o_O
+    location: 329.0,117.0,-37.0:332.0,122.0,-37.0
+    world: OrbitMinesHub
+    destination: PrisonServer
+  Creative:
+    entryfee:
+      currency: -1
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    owner: O_o_Fadi_o_O
+    location: 303.0,117.0,-66.0:303.0,122.0,-63.0
+    world: OrbitMinesHub
+    destination: Creative
+  Hobbit:
+    entryfee:
+      currency: -1
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    owner: O_o_Fadi_o_O
+    location: 312.0,116.0,-49.0:315.0,122.0,-46.0
+    world: OrbitMinesHub
+  Pixelmon:
+    entryfee:
+      currency: -1
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    owner: O_o_Fadi_o_O
+    location: 346.0,116.0,-49.0:349.0,122.0,-46.0
+    world: OrbitMinesHub
+    destination: SkyBlockWorld
+  Factions:
+    entryfee:
+      currency: -1
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    owner: O_o_Fadi_o_O
+    location: 312.0,116.0,-83.0:315.0,122.0,-80.0
+    world: OrbitMinesHub
+    destination: Factions
+  HubVoid:
+    entryfee:
+      currency: -1
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    owner: O_o_Fadi_o_O
+    location: 231.0,79.0,-147.0:394.0,79.0,0.0
+    world: OrbitMinesHub
+    destination: OrbitMinesHub
+  HideAndSeek:
+    entryfee:
+      currency: -1
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    owner: O_o_Fadi_o_O
+    location: -10.0,80.0,81.0:-4.0,88.0,81.0
+    world: MiniGames
+  PrisonO1:
+    entryfee:
+      currency: -1
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    owner: O_o_Fadi_o_O
+    location: -750.0,4.0,67.0:-750.0,9.0,67.0
+    world: PrisonServer
+    destination: p:PrisonO2
+  PrisonP1:
+    entryfee:
+      currency: -1
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    owner: O_o_Fadi_o_O
+    location: -750.0,4.0,76.0:-750.0,9.0,76.0
+    world: PrisonServer
+    destination: p:PrisonP2
+  PrisonO2:
+    entryfee:
+      currency: -1
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    owner: O_o_Fadi_o_O
+    location: -736.0,4.0,-105.0:-736.0,5.0,-105.0
+    world: PrisonServer
+  PrisonP2:
+    entryfee:
+      currency: -1
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    owner: O_o_Fadi_o_O
+    location: -822.0,29.0,-61.0:-822.0,30.0,-61.0
+    world: PrisonServer
+  lava:
+    entryfee:
+      currency: -1
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    owner: O_o_Fadi_o_O
+    location: -683.0,10.0,-1169.0:-683.0,20.0,-1169.0
+    world: KitPvP
+  water:
+    entryfee:
+      currency: -1
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    owner: O_o_Fadi_o_O
+    location: -708.0,10.0,-1133.0:-682.0,45.0,-1088.0
+    world: KitPvP
+  SkyWars:
+    entryfee:
+      currency: -1
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    owner: O_o_Fadi_o_O
+    location: -10.0,80.0,137.0:-4.0,88.0,137.0
+    world: MiniGames
+    destination: SkyWarsLobby
+  SkyWarsPortal1:
+    entryfee:
+      currency: -1
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    owner: O_o_Fadi_o_O
+    location: -23.0,66.0,-2.0:-23.0,72.0,2.0
+    world: SkyWarsLobby
+    destination: MiniGames
+  SkyWarsPortal2:
+    entryfee:
+      currency: -1
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    owner: O_o_Fadi_o_O
+    location: -2.0,66.0,23.0:2.0,73.0,23.0
+    world: SkyWarsLobby
+    destination: MiniGames
+  SkyWarsPortal3:
+    entryfee:
+      currency: -1
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    owner: O_o_Fadi_o_O
+    location: -2.0,66.0,-23.0:2.0,72.0,-23.0
+    world: SkyWarsLobby
+    destination: MiniGames
+  SkyWarsPortal4:
+    entryfee:
+      currency: -1
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    owner: O_o_Fadi_o_O
+    location: 23.0,66.0,-2.0:23.0,72.0,2.0
+    world: SkyWarsLobby
+    destination: MiniGames
+  OITC:
+    entryfee:
+      currency: -1
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    owner: O_o_Fadi_o_O
+    location: -35.0,80.0,106.0:-35.0,86.0,111.0
+    world: MiniGames
+  MiniGames:
+    entryfee:
+      currency: -1
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    owner: O_o_Fadi_o_O
+    location: 346.0,116.0,-83.0:349.0,124.0,-80.0
+    world: OrbitMinesHub
+    destination: MiniGames

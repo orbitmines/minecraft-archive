@@ -1,0 +1,211 @@
+# If enabled, players will be able to get the enchantments (Not the Items) through the enchanting Table.
+enchantmentTable: false
+enchantmentTableProbability: 5
+commandBypass: false
+AntiMcMMOrepair: false
+enchantments:
+  lore:
+    disableItalic: false
+    color: DARK_RED
+  requirePermissions: false
+  Autorepair:
+    enabled: true
+    enchantProbability: 1
+    healAmount: 1
+    stopAtFullDur: true
+    repairOnMoving: false
+  Blind:
+    enabled: true
+    enchantProbability: 1
+    strength: 10
+    duration: 2
+  BlindBow:
+    enabled: true
+    enchantProbability: 1
+  Block:
+    enabled: true
+    enchantProbability: 1
+    cooldown: 20
+    strength: 5
+    duration: 1
+  BombardmentBow:
+    enabled: true
+    enchantProbability: 1
+  Cripple:
+    enabled: true
+    enchantProbability: 1
+  Cursed:
+    enabled: true
+    enchantProbability: 1
+  Deathbringer:
+    enabled: true
+    enchantProbability: 1
+    damageAmplifier: 2
+  Deepwounds:
+    enabled: true
+    bleedChance: 25
+    enchantProbability: 1
+  Enlighted:
+    enabled: true
+    enchantProbability: 1
+    Duration: 2
+    Strength: 3
+  FireworkBow:
+    enabled: true
+    enchantProbability: 1
+    Duration: 5
+    Delay: 1
+  Frozen:
+    enabled: true
+    enchantProbability: 1
+    Duration: 4
+    Strength: 5
+  Gears:
+    enabled: true
+    enchantProbability: 1
+    speedBoost: 3
+  Glowing:
+    enabled: true
+    enchantProbability: 1
+  Gooey:
+    enabled: true
+    enchantProbability: 1
+    heightMultiplier: 1.5
+    rightclick: false
+  Hardened:
+    enabled: true
+    enchantProbability: 1
+    Duration: 1
+    Strength: 5
+  Hooks:
+    enabled: true
+    enchantProbability: 1
+  Ice:
+    enabled: true
+    enchantProbability: 2
+    specialFreeze: true
+  Implants:
+    enabled: true
+    enchantProbability: 1
+  LightningBow:
+    enabled: true
+    enchantProbability: 1
+    customLightning: false
+  Lifesteal:
+    enabled: true
+    enchantProbability: 1
+    heal: 1
+  Molten:
+    enabled: true
+    enchantProbability: 1
+    Duration: 2
+  Obsidianshielding:
+    enabled: true
+    enchantProbability: 1
+  Poison:
+    enabled: true
+    enchantProbability: 1
+    strength: 6
+    duration: 1
+  PoisonBow:
+    enabled: true
+    enchantProbability: 1
+    Duration: 8
+    Strength: 4
+  Poisoned:
+    enabled: true
+    enchantProbability: 1
+    Duration: 2
+    Strength: 5
+  Shockwave:
+    enabled: true
+    enchantProbability: 1
+    cooldown: 5
+  Stomp:
+    enabled: true
+    enchantProbability: 1
+  Springs:
+    enabled: true
+    enchantProbability: 1
+    jumpBoost: 3
+  Thunderingblow:
+    enabled: true
+    lightningChance: 25
+  Vampire:
+    enabled: true
+    enchantProbability: 1
+items:
+  Assassin:
+    enabled: true
+    Length(Attack): 1
+    Cooldown(Attack): 3
+    Length(Use): 3
+    Cooldown(Use): 10
+    WeaknessLength: 10
+  Bandage:
+    enabled: true
+    Cooldown(Self): 60
+    Cooldown(Others): 30
+  BeastmastersBow:
+    enabled: true
+    toSpawn: ZOMBIE
+    mobAmount: 3
+  Deathscythe:
+    enabled: true
+    cooldown: 10
+    range: 10
+    debuffDuration: 3
+    debuffStrength: 1
+  Flamethrower:
+    enabled: true
+    isReloadable: false
+    fireDuration: 3
+  HermesBoots:
+    enabled: true
+    speedStrength: 2
+  HookshotBow:
+    enabled: true
+  Landmine:
+    enabled: true
+    disarmCooldown: 20
+  LivefireBoots:
+    enabled: true
+    flameDuration: 2
+  Medikit:
+    enabled: true
+    cooldown: 60
+  Minigun:
+    enabled: true
+    shotsFired: 20
+  NecromancerStaff:
+    enabled: true
+    Cost(Wither): 10
+    Cooldown(Wither): 3
+    Cost(Fireball): 4
+    Cooldown(Fireball): 3
+    Cost(Lightning): 500
+    Cooldown(Lightning): 100
+  Potionlauncher:
+    enabled: true
+  Powergloves:
+    enabled: true
+    Cooldown: 5
+    MaxGrabtime: 3
+    ThrowStrength: 2
+  PyroAxe:
+    enabled: true
+    damageMultiplier: 3
+  RocketBoots:
+    enabled: true
+  Suicidelever:
+    enabled: true
+    strength: 10
+    tntAmount: 1
+  Swimsuit:
+    enabled: true
+    damageBoostUnderwater: 2
+    speedBoostUnderwater: 4
+  ThorsAxe:
+    enabled: true
+    Cooldown: 10
+    fireDuration: 5

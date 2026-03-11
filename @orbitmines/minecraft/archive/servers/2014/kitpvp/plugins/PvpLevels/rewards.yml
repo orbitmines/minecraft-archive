@@ -1,0 +1,186 @@
+# Do not edit 'version'
+version: 1
+rewards:
+  # Item being given
+  item:
+    use: true
+    name: 'golden_apple'
+    amount: 1
+  # Money being given (uses Vault)
+  money:
+    use: true
+    amount: 25.0
+  # Command being executed
+  commands:
+    use: true
+    commands:
+    - '/heal {User}'
+  # Level rewards, for each level
+  level:
+    '11':
+      item:
+        use: false
+        name: 'diamond'
+        amount: 1
+      money:
+        use: false
+        amount: 50.0
+      commands:
+        use: true
+        commands:
+        - '/manuadd {User} UserKitPvP11-20 KitPvP'
+    '21':
+      item:
+        use: false
+        name: 'diamond'
+        amount: 1
+      money:
+        use: false
+        amount: 50.0
+      commands:
+        use: true
+        commands:
+        - '/manuadd {User} UserKitPvP21-30 KitPvP'
+      item:
+        use: false
+        name: 'diamond'
+        amount: 1
+      money:
+        use: false
+        amount: 50.0
+      commands:
+        use: true
+        commands:
+        - '/manuadd {User} UserKitPvP31-40 KitPvP'
+    '41':
+      item:
+        use: false
+        name: 'diamond'
+        amount: 1
+      money:
+        use: false
+        amount: 50.0
+      commands:
+        use: true
+        commands:
+        - '/manuadd {User} UserKitPvP41-50 KitPvP'
+    '51':
+      item:
+        use: false
+        name: 'diamond'
+        amount: 1
+      money:
+        use: false
+        amount: 50.0
+      commands:
+        use: true
+        commands:
+        - '/manuadd {User} UserKitPvP51-60 KitPvP'
+    '61':
+      item:
+        use: false
+        name: 'diamond'
+        amount: 1
+      money:
+        use: false
+        amount: 50.0
+      commands:
+        use: true
+        commands:
+        - '/manuadd {User} UserKitPvP61-70 KitPvP'
+    '71':
+      item:
+        use: false
+        name: 'diamond'
+        amount: 1
+      money:
+        use: false
+        amount: 50.0
+      commands:
+        use: true
+        commands:
+        - '/manuadd {User} UserKitPvP71-80 KitPvP'
+    '81':
+      item:
+        use: false
+        name: 'diamond'
+        amount: 1
+      money:
+        use: false
+        amount: 50.0
+      commands:
+        use: true
+        commands:
+        - '/manuadd {User} UserKitPvP81-90 KitPvP'
+    '91':
+      item:
+        use: false
+        name: 'diamond'
+        amount: 1
+      money:
+        use: false
+        amount: 50.0
+      commands:
+        use: true
+        commands:
+        - '/manuadd {User} UserKitPvP91-100 KitPvP'
+    '101':
+      item:
+        use: false
+        name: 'diamond'
+        amount: 1
+      money:
+        use: false
+        amount: 50.0
+      commands:
+        use: true
+        commands:
+        - '/manuadd {User} UserKitPvP101-110 KitPvP'
+    '111':
+      item:
+        use: false
+        name: 'diamond'
+        amount: 1
+      money:
+        use: false
+        amount: 50.0
+      commands:
+        use: true
+        commands:
+        - '/manuadd {User} UserKitPvP111-120 KitPvP'
+    '121':
+      item:
+        use: false
+        name: 'diamond'
+        amount: 1
+      money:
+        use: false
+        amount: 50.0
+      commands:
+        use: true
+        commands:
+        - '/manuadd {User} UserKitPvP121-130 KitPvP'
+    '131':
+      item:
+        use: false
+        name: 'diamond'
+        amount: 1
+      money:
+        use: false
+        amount: 50.0
+      commands:
+        use: true
+        commands:
+        - '/manuadd {User} UserKitPvP131-140 KitPvP'
+    '141':
+      item:
+        use: false
+        name: 'diamond'
+        amount: 1
+      money:
+        use: false
+        amount: 50.0
+      commands:
+        use: true
+        commands:
+        - '/manuadd {User} UserKitPvP141-150 KitPvP'

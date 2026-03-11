@@ -1,0 +1,17 @@
+permission: ''
+world: Dropper
+X: -52
+Y: 93
+Z: 30
+price: 0.0
+cooldown: 0
+globalCooldown: 0
+confirmation: false
+commands:
+- 'warp Help_Stuward '
+- '/MissionStuward '
+grantPermissions: []
+lastGlobalUse: 0
+lastUse: {}
+priceItems: []
+exp: 0

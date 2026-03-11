@@ -1,0 +1,21 @@
+permission: ''
+world: Event
+X: 509
+Y: 26
+Z: -616
+price: 0.0
+cooldown: 0
+globalCooldown: 0
+confirmation: false
+commands:
+- /shop Kit-Longbow
+grantPermissions: []
+lastGlobalUse: 0
+lastUse: {}
+priceItems: []
+exp: 0
+pi_criteria:
+  enchants: false
+  name: false
+  lores: false
+should_cancel_event: true

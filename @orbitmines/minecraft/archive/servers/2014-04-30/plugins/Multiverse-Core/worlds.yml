@@ -1,0 +1,1643 @@
+worlds:
+  world:
+    seed: -6448017735731761298
+    environment: NORMAL
+    type: NORMAL
+    hidden: false
+    alias:
+      name: Hub
+      color: GOLD
+    pvp: false
+    scale: 1.0
+    respawnworld: ''
+    allowweather: true
+    difficulty: EASY
+    animals:
+      spawn: true
+    monsters:
+      spawn: true
+    entryfee:
+      currency: -1
+      price: 0.0
+    hunger: false
+    autoheal: true
+    adjustspawn: true
+    portalform: ALL
+    gamemode: SURVIVAL
+    keepspawninmemory: true
+    spawn:
+      x: 215.04840395021628
+      y: 109.0
+      z: 155.59762822670226
+      pitch: 6.4500036
+      yaw: 90.447266
+      world: world
+    autoload: true
+    bedrespawn: true
+  world_nether:
+    seed: -6448017735731761298
+    environment: NETHER
+    type: NORMAL
+    hidden: true
+    alias:
+      name: ''
+      color: WHITE
+    pvp: false
+    scale: 8.0
+    respawnworld: ''
+    allowweather: true
+    difficulty: EASY
+    animals:
+      spawn: true
+    monsters:
+      spawn: true
+    entryfee:
+      currency: -1
+      price: 0.0
+    hunger: false
+    autoheal: true
+    adjustspawn: true
+    portalform: ALL
+    gamemode: SURVIVAL
+    keepspawninmemory: false
+    spawn:
+      x: 0.0
+      y: 64.0
+      z: 0.0
+      pitch: 0.0
+      yaw: 0.0
+      world: world_nether
+    autoload: true
+    bedrespawn: true
+  world_the_end:
+    seed: -6448017735731761298
+    environment: THE_END
+    type: NORMAL
+    hidden: true
+    alias:
+      name: ''
+      color: WHITE
+    pvp: false
+    scale: 1.0
+    respawnworld: ''
+    allowweather: true
+    difficulty: EASY
+    animals:
+      spawn: true
+    monsters:
+      spawn: true
+    entryfee:
+      currency: -1
+      price: 0.0
+    hunger: false
+    autoheal: true
+    adjustspawn: true
+    portalform: ALL
+    gamemode: SURVIVAL
+    keepspawninmemory: false
+    spawn:
+      x: 0.0
+      y: 62.0
+      z: 0.0
+      pitch: 0.0
+      yaw: 0.0
+      world: world_the_end
+    autoload: true
+    bedrespawn: true
+  HideAndSeekArena1:
+    generator: EmptyWorldGenerator
+    seed: 2462435734672833101
+    environment: NORMAL
+    type: NORMAL
+    hidden: false
+    alias:
+      name: HideAndSeek
+      color: BLUE
+    pvp: true
+    scale: 1.0
+    respawnworld: ''
+    allowweather: false
+    difficulty: EASY
+    animals:
+      spawn: true
+    monsters:
+      spawn: true
+    entryfee:
+      currency: -1
+      price: 0.0
+    hunger: true
+    autoheal: true
+    adjustspawn: true
+    portalform: ALL
+    gamemode: SURVIVAL
+    keepspawninmemory: false
+    spawn:
+      x: 2.5
+      y: 68.0
+      z: 0.5
+      pitch: 0.0
+      yaw: 0.0
+      world: HideAndSeekArena1
+    autoload: true
+    bedrespawn: true
+  HideAndSeekArena2:
+    generator: EmptyWorldGenerator
+    seed: -8268376374910045876
+    environment: NORMAL
+    type: NORMAL
+    hidden: false
+    alias:
+      name: HideAndSeek
+      color: BLUE
+    pvp: true
+    scale: 1.0
+    respawnworld: ''
+    allowweather: false
+    difficulty: EASY
+    animals:
+      spawn: true
+    monsters:
+      spawn: true
+    entryfee:
+      currency: -1
+      price: 0.0
+    hunger: true
+    autoheal: true
+    adjustspawn: true
+    portalform: ALL
+    gamemode: SURVIVAL
+    keepspawninmemory: false
+    spawn:
+      x: -8.5
+      y: 67.0
+      z: 0.5
+      pitch: 0.0
+      yaw: 0.0
+      world: HideAndSeekArena2
+    autoload: true
+    bedrespawn: true
+  HideAndSeekArena3:
+    generator: EmptyWorldGenerator
+    seed: -5256672452246183513
+    environment: NORMAL
+    type: NORMAL
+    hidden: false
+    alias:
+      name: HideAndSeek
+      color: BLUE
+    pvp: true
+    scale: 1.0
+    respawnworld: ''
+    allowweather: false
+    difficulty: EASY
+    animals:
+      spawn: true
+    monsters:
+      spawn: true
+    entryfee:
+      currency: -1
+      price: 0.0
+    hunger: true
+    autoheal: true
+    adjustspawn: true
+    portalform: ALL
+    gamemode: SURVIVAL
+    keepspawninmemory: false
+    spawn:
+      x: 2.5
+      y: 65.0
+      z: 1.5
+      pitch: 0.0
+      yaw: 0.0
+      world: HideAndSeekArena3
+    autoload: true
+    bedrespawn: true
+  HideAndSeekArena4:
+    generator: EmptyWorldGenerator
+    seed: 5493870114880214056
+    environment: NORMAL
+    type: NORMAL
+    hidden: false
+    alias:
+      name: HideAndSeek
+      color: BLUE
+    pvp: true
+    scale: 1.0
+    respawnworld: ''
+    allowweather: false
+    difficulty: EASY
+    animals:
+      spawn: true
+    monsters:
+      spawn: true
+    entryfee:
+      currency: -1
+      price: 0.0
+    hunger: true
+    autoheal: true
+    adjustspawn: false
+    portalform: ALL
+    gamemode: SURVIVAL
+    keepspawninmemory: false
+    spawn:
+      x: 0.7366502904702465
+      y: 68.5
+      z: 0.43213588925523244
+      pitch: 53.100006
+      yaw: -268.8004
+      world: HideAndSeekArena4
+    autoload: true
+    bedrespawn: true
+  HideAndSeekArena5:
+    generator: EmptyWorldGenerator
+    seed: -7054190273967286696
+    environment: NORMAL
+    type: NORMAL
+    hidden: false
+    alias:
+      name: HideAndSeek
+      color: BLUE
+    pvp: true
+    scale: 1.0
+    respawnworld: ''
+    allowweather: false
+    difficulty: EASY
+    animals:
+      spawn: true
+    monsters:
+      spawn: true
+    entryfee:
+      currency: -1
+      price: 0.0
+    hunger: true
+    autoheal: true
+    adjustspawn: true
+    portalform: ALL
+    gamemode: SURVIVAL
+    keepspawninmemory: false
+    spawn:
+      x: 0.0
+      y: 65.0
+      z: 0.0
+      pitch: 0.0
+      yaw: 0.0
+      world: HideAndSeekArena5
+    autoload: true
+    bedrespawn: true
+  OITCArena1:
+    generator: EmptyWorldGenerator
+    seed: -4269340542074379308
+    environment: NORMAL
+    type: NORMAL
+    hidden: false
+    alias:
+      name: OITC
+      color: BLUE
+    pvp: true
+    scale: 1.0
+    respawnworld: ''
+    allowweather: true
+    difficulty: EASY
+    animals:
+      spawn: true
+    monsters:
+      spawn: true
+    entryfee:
+      currency: -1
+      price: 0.0
+    hunger: true
+    autoheal: true
+    adjustspawn: false
+    portalform: ALL
+    gamemode: SURVIVAL
+    keepspawninmemory: false
+    spawn:
+      x: -4.161891428560254
+      y: 67.0
+      z: 12.159123158483634
+      pitch: 61.2
+      yaw: -243.00002
+      world: OITCArena1
+    autoload: true
+    bedrespawn: true
+  ClaimTutorial:
+    generator: EmptyWorldGenerator
+    seed: -322369342966526297
+    environment: NORMAL
+    type: NORMAL
+    hidden: true
+    alias:
+      name: Survival
+      color: GREEN
+    pvp: false
+    scale: 1.0
+    respawnworld: ''
+    allowweather: true
+    difficulty: EASY
+    animals:
+      spawn: true
+    monsters:
+      spawn: false
+    entryfee:
+      currency: -1
+      price: 0.0
+    hunger: true
+    autoheal: true
+    adjustspawn: true
+    portalform: ALL
+    gamemode: SURVIVAL
+    keepspawninmemory: false
+    spawn:
+      x: 15.591126429359202
+      y: 74.0
+      z: -7.920371597087371
+      pitch: 28.499979
+      yaw: -269.99982
+      world: ClaimTutorial
+    autoload: true
+    bedrespawn: true
+  VIPCity:
+    generator: EmptyWorldGenerator
+    seed: -3437280881692189136
+    environment: NORMAL
+    type: NORMAL
+    hidden: false
+    alias:
+      name: VIPCity
+      color: GOLD
+    pvp: false
+    scale: 1.0
+    respawnworld: ''
+    allowweather: true
+    difficulty: EASY
+    animals:
+      spawn: true
+    monsters:
+      spawn: false
+    entryfee:
+      currency: -1
+      price: 0.0
+    hunger: false
+    autoheal: true
+    adjustspawn: true
+    portalform: ALL
+    gamemode: SURVIVAL
+    keepspawninmemory: false
+    spawn:
+      x: -4.5
+      y: 99.0
+      z: 5.5
+      pitch: 0.0
+      yaw: 0.0
+      world: VIPCity
+    autoload: true
+    bedrespawn: true
+  SurvivalWorld:
+    seed: -4405481766968203491
+    environment: NORMAL
+    type: NORMAL
+    hidden: true
+    alias:
+      name: Survival
+      color: GREEN
+    pvp: false
+    scale: 1.0
+    respawnworld: SurvivalWorld
+    allowweather: false
+    difficulty: NORMAL
+    animals:
+      spawn: true
+    monsters:
+      spawn: true
+    entryfee:
+      currency: -1
+      price: 0.0
+    hunger: true
+    autoheal: true
+    adjustspawn: true
+    portalform: ALL
+    gamemode: SURVIVAL
+    keepspawninmemory: false
+    spawn:
+      x: -570.7079776338977
+      y: 64.0
+      z: -68.73046158607491
+      pitch: -0.8999995
+      yaw: 271.04996
+      world: SurvivalWorld
+    autoload: true
+    bedrespawn: true
+  TestWorld:
+    generator: EmptyWorldGenerator
+    seed: -2009212189697072014
+    environment: NORMAL
+    type: NORMAL
+    hidden: false
+    alias:
+      name: TestWorld
+      color: RED
+    pvp: false
+    scale: 1.0
+    respawnworld: ''
+    allowweather: true
+    difficulty: EASY
+    animals:
+      spawn: true
+    monsters:
+      spawn: true
+    entryfee:
+      currency: -1
+      price: 0.0
+    hunger: true
+    autoheal: true
+    adjustspawn: false
+    portalform: ALL
+    gamemode: SURVIVAL
+    keepspawninmemory: false
+    spawn:
+      x: 33.48838084491776
+      y: 119.0
+      z: -21.61712331370681
+      pitch: 4.949992
+      yaw: 181.04509
+      world: TestWorld
+    autoload: true
+    bedrespawn: true
+  PrisonServer:
+    seed: 7422355313072493449
+    environment: NORMAL
+    type: FLAT
+    hidden: true
+    alias:
+      name: Prison
+      color: DARKRED
+    pvp: false
+    scale: 1.0
+    respawnworld: ''
+    allowweather: false
+    difficulty: EASY
+    animals:
+      spawn: true
+    monsters:
+      spawn: true
+    entryfee:
+      currency: -1
+      price: 0.0
+    hunger: true
+    autoheal: true
+    adjustspawn: true
+    portalform: ALL
+    gamemode: SURVIVAL
+    keepspawninmemory: false
+    spawn:
+      x: -862.403652504614
+      y: 9.0
+      z: 314.5495127759808
+      pitch: 7.200001
+      yaw: 271.72226
+      world: PrisonServer
+    autoload: true
+    bedrespawn: true
+  PrisonPvPArena:
+    generator: EmptyWorldGenerator
+    seed: -3901653597972380846
+    environment: NORMAL
+    type: NORMAL
+    hidden: true
+    alias:
+      name: Prison
+      color: DARKRED
+    pvp: true
+    scale: 1.0
+    respawnworld: PrisonServer
+    allowweather: true
+    difficulty: EASY
+    animals:
+      spawn: true
+    monsters:
+      spawn: true
+    entryfee:
+      currency: -1
+      price: 0.0
+    hunger: true
+    autoheal: true
+    adjustspawn: false
+    portalform: ALL
+    gamemode: SURVIVAL
+    keepspawninmemory: false
+    spawn:
+      x: 0.17924626319906006
+      y: 66.0
+      z: 0.4010848099163407
+      pitch: 5.399998
+      yaw: 180.44995
+      world: PrisonPvPArena
+    autoload: true
+    bedrespawn: true
+  Hub:
+    generator: EmptyWorldGenerator
+    seed: -7782337634000896533
+    environment: NORMAL
+    type: NORMAL
+    hidden: false
+    alias:
+      name: Lobby
+      color: WHITE
+    pvp: false
+    scale: 1.0
+    respawnworld: ''
+    allowweather: false
+    difficulty: EASY
+    animals:
+      spawn: true
+    monsters:
+      spawn: true
+    entryfee:
+      currency: -1
+      price: 0.0
+    hunger: false
+    autoheal: true
+    adjustspawn: true
+    portalform: ALL
+    gamemode: SURVIVAL
+    keepspawninmemory: false
+    spawn:
+      x: 0.5
+      y: 66.0
+      z: 0.5
+      pitch: -4.800029
+      yaw: 270.89325
+      world: Hub
+    autoload: true
+    bedrespawn: true
+  HideAndSeekArena6:
+    generator: EmptyWorldGenerator
+    seed: -3061157117655005757
+    environment: NORMAL
+    type: NORMAL
+    hidden: false
+    alias:
+      name: HideAndSeek
+      color: BLUE
+    pvp: true
+    scale: 1.0
+    respawnworld: ''
+    allowweather: false
+    difficulty: EASY
+    animals:
+      spawn: true
+    monsters:
+      spawn: true
+    entryfee:
+      currency: -1
+      price: 0.0
+    hunger: true
+    autoheal: true
+    adjustspawn: true
+    portalform: ALL
+    gamemode: SURVIVAL
+    keepspawninmemory: false
+    spawn:
+      x: 8.5
+      y: 69.0
+      z: 4.5
+      pitch: 0.0
+      yaw: 0.0
+      world: HideAndSeekArena6
+    autoload: true
+    bedrespawn: true
+  skyworld:
+    generator: uSkyBlock
+    seed: -6783253096094947782
+    environment: NORMAL
+    type: FLAT
+    hidden: true
+    alias:
+      name: SkyBlock
+      color: DARKPURPLE
+    pvp: false
+    scale: 1.0
+    respawnworld: SkyBlockWorld
+    allowweather: true
+    difficulty: EASY
+    animals:
+      spawn: true
+    monsters:
+      spawn: true
+    entryfee:
+      currency: -1
+      price: 0.0
+    hunger: true
+    autoheal: true
+    adjustspawn: true
+    portalform: ALL
+    gamemode: SURVIVAL
+    keepspawninmemory: false
+    spawn:
+      x: -77.0
+      y: 4.0
+      z: -820.0
+      pitch: 0.0
+      yaw: 0.0
+      world: skyworld
+    autoload: true
+    bedrespawn: true
+  SkyBlockWorld:
+    generator: EmptyWorldGenerator
+    seed: 8239626870833630624
+    environment: NORMAL
+    type: NORMAL
+    hidden: true
+    alias:
+      name: SkyBlock
+      color: DARKPURPLE
+    pvp: false
+    scale: 1.0
+    respawnworld: ''
+    allowweather: true
+    difficulty: EASY
+    animals:
+      spawn: true
+    monsters:
+      spawn: true
+    entryfee:
+      currency: -1
+      price: 0.0
+    hunger: false
+    autoheal: true
+    adjustspawn: true
+    portalform: ALL
+    gamemode: SURVIVAL
+    keepspawninmemory: false
+    spawn:
+      x: 0.4574560711972874
+      y: 65.0
+      z: -0.23688227828507757
+      pitch: 7.649999
+      yaw: -178.04562
+      world: SkyBlockWorld
+    autoload: true
+    bedrespawn: true
+  HideAndSeekArena7:
+    generator: EmptyWorldGenerator
+    seed: 1231229221361519479
+    environment: NORMAL
+    type: NORMAL
+    hidden: false
+    alias:
+      name: HideAndSeek
+      color: BLUE
+    pvp: true
+    scale: 1.0
+    respawnworld: ''
+    allowweather: false
+    difficulty: EASY
+    animals:
+      spawn: true
+    monsters:
+      spawn: true
+    entryfee:
+      currency: -1
+      price: 0.0
+    hunger: true
+    autoheal: true
+    adjustspawn: true
+    portalform: ALL
+    gamemode: SURVIVAL
+    keepspawninmemory: false
+    spawn:
+      x: -3.5
+      y: 65.0
+      z: -3.5
+      pitch: 0.0
+      yaw: 0.0
+      world: HideAndSeekArena7
+    autoload: true
+    bedrespawn: true
+  SpleefArena1:
+    generator: EmptyWorldGenerator
+    seed: 6743397079429917287
+    environment: NORMAL
+    type: NORMAL
+    hidden: false
+    alias:
+      name: ''
+      color: WHITE
+    pvp: true
+    scale: 1.0
+    respawnworld: ''
+    allowweather: true
+    difficulty: EASY
+    animals:
+      spawn: true
+    monsters:
+      spawn: true
+    entryfee:
+      currency: -1
+      price: 0.0
+    hunger: true
+    autoheal: true
+    adjustspawn: true
+    portalform: ALL
+    gamemode: SURVIVAL
+    keepspawninmemory: false
+    spawn:
+      x: 1.5
+      y: 66.0
+      z: 0.5
+      pitch: 0.0
+      yaw: 0.0
+      world: SpleefArena1
+    autoload: true
+    bedrespawn: true
+  PaintBallArena1:
+    generator: EmptyWorldGenerator
+    seed: 1077806448998217411
+    environment: NORMAL
+    type: NORMAL
+    hidden: false
+    alias:
+      name: Paintball
+      color: YELLOW
+    pvp: true
+    scale: 1.0
+    respawnworld: ''
+    allowweather: false
+    difficulty: EASY
+    animals:
+      spawn: true
+    monsters:
+      spawn: true
+    entryfee:
+      currency: -1
+      price: 0.0
+    hunger: true
+    autoheal: true
+    adjustspawn: true
+    portalform: ALL
+    gamemode: SURVIVAL
+    keepspawninmemory: false
+    spawn:
+      x: 0.0
+      y: 65.0
+      z: 0.0
+      pitch: 0.0
+      yaw: 0.0
+      world: PaintBallArena1
+    autoload: true
+    bedrespawn: true
+  PaintBallArena2:
+    generator: EmptyWorldGenerator
+    seed: -2734058768574138714
+    environment: NORMAL
+    type: NORMAL
+    hidden: false
+    alias:
+      name: Paintball
+      color: YELLOW
+    pvp: true
+    scale: 1.0
+    respawnworld: ''
+    allowweather: false
+    difficulty: EASY
+    animals:
+      spawn: true
+    monsters:
+      spawn: true
+    entryfee:
+      currency: -1
+      price: 0.0
+    hunger: true
+    autoheal: true
+    adjustspawn: true
+    portalform: ALL
+    gamemode: SURVIVAL
+    keepspawninmemory: true
+    spawn:
+      x: 1.5
+      y: 68.0
+      z: 0.5
+      pitch: 0.0
+      yaw: 0.0
+      world: PaintBallArena2
+    autoload: true
+    bedrespawn: true
+  Dropper:
+    generator: EmptyWorldGenerator
+    seed: -5020548657461130719
+    environment: NORMAL
+    type: NORMAL
+    hidden: false
+    alias:
+      name: Arcade
+      color: GOLD
+    pvp: true
+    scale: 1.0
+    respawnworld: ''
+    allowweather: false
+    difficulty: EASY
+    animals:
+      spawn: true
+    monsters:
+      spawn: true
+    entryfee:
+      currency: -1
+      price: 0.0
+    hunger: true
+    autoheal: true
+    adjustspawn: true
+    portalform: ALL
+    gamemode: SURVIVAL
+    keepspawninmemory: true
+    spawn:
+      x: -51.26658571468854
+      y: 93.0
+      z: 24.579669501583005
+      pitch: 9.0
+      yaw: 89.85
+      world: Dropper
+    autoload: true
+    bedrespawn: true
+  KitPvP:
+    seed: 1193390848394720123
+    environment: NORMAL
+    type: FLAT
+    hidden: false
+    alias:
+      name: ''
+      color: RED
+    pvp: true
+    scale: 1.0
+    respawnworld: KitPvP
+    allowweather: false
+    difficulty: EASY
+    animals:
+      spawn: true
+    monsters:
+      spawn: true
+    entryfee:
+      currency: -1
+      price: 0.0
+    hunger: true
+    autoheal: true
+    adjustspawn: true
+    portalform: ALL
+    gamemode: SURVIVAL
+    keepspawninmemory: true
+    spawn:
+      x: -628.6030213112481
+      y: 19.0
+      z: -1113.5420111403891
+      pitch: 11.400035
+      yaw: -88.62268
+      world: KitPvP
+    autoload: true
+    bedrespawn: true
+  PaintBallArena3:
+    generator: EmptyWorldGenerator
+    seed: 4917290521723574350
+    environment: NORMAL
+    type: NORMAL
+    hidden: false
+    alias:
+      name: Paintball
+      color: YELLOW
+    pvp: true
+    scale: 1.0
+    respawnworld: ''
+    allowweather: false
+    difficulty: EASY
+    animals:
+      spawn: true
+    monsters:
+      spawn: true
+    entryfee:
+      currency: -1
+      price: 0.0
+    hunger: true
+    autoheal: true
+    adjustspawn: true
+    portalform: ALL
+    gamemode: SURVIVAL
+    keepspawninmemory: true
+    spawn:
+      x: 6.5
+      y: 65.0
+      z: 1.5
+      pitch: 0.0
+      yaw: 0.0
+      world: PaintBallArena3
+    autoload: true
+    bedrespawn: true
+  Tutorial:
+    generator: EmptyWorldGenerator
+    seed: 8430760725322689895
+    environment: NORMAL
+    type: NORMAL
+    hidden: false
+    alias:
+      name: ''
+      color: PINK
+    pvp: false
+    scale: 1.0
+    respawnworld: ''
+    allowweather: true
+    difficulty: EASY
+    animals:
+      spawn: true
+    monsters:
+      spawn: true
+    entryfee:
+      currency: -1
+      price: 0.0
+    hunger: true
+    autoheal: true
+    adjustspawn: true
+    portalform: ALL
+    gamemode: SURVIVAL
+    keepspawninmemory: true
+    spawn:
+      x: 0.5087842182524245
+      y: 67.0
+      z: 0.5305816203965182
+      pitch: 8.849999
+      yaw: 0.6010283
+      world: Tutorial
+    autoload: true
+    bedrespawn: true
+  survivalworld_nether:
+    seed: 3488415952286687665
+    environment: NETHER
+    type: NORMAL
+    hidden: true
+    alias:
+      name: Survival
+      color: GREEN
+    pvp: false
+    scale: 8.0
+    respawnworld: SurvivalWorld
+    allowweather: true
+    difficulty: EASY
+    animals:
+      spawn: true
+    monsters:
+      spawn: true
+    entryfee:
+      currency: -1
+      price: 0.0
+    hunger: true
+    autoheal: true
+    adjustspawn: true
+    portalform: ALL
+    gamemode: SURVIVAL
+    keepspawninmemory: true
+    spawn:
+      x: 1.5
+      y: 65.0
+      z: -2.5
+      pitch: 0.0
+      yaw: 0.0
+      world: survivalworld_nether
+    autoload: true
+    bedrespawn: true
+  Hobbit:
+    seed: 6419727481748960376
+    environment: NORMAL
+    type: FLAT
+    hidden: false
+    alias:
+      name: ''
+      color: GOLD
+    pvp: true
+    scale: 1.0
+    respawnworld: ''
+    allowweather: false
+    difficulty: EASY
+    animals:
+      spawn: true
+    monsters:
+      spawn: true
+    entryfee:
+      currency: -1
+      price: 0.0
+    hunger: true
+    autoheal: true
+    adjustspawn: true
+    portalform: ALL
+    gamemode: SURVIVAL
+    keepspawninmemory: true
+    spawn:
+      x: -855.1963955623766
+      y: 19.5
+      z: 551.9015901806439
+      pitch: 45.300007
+      yaw: 133.19998
+      world: Hobbit
+    autoload: true
+    bedrespawn: true
+  SkyWarsMap1:
+    generator: EmptyWorldGenerator
+    seed: 2693038335501527437
+    environment: NORMAL
+    type: NORMAL
+    hidden: false
+    alias:
+      name: SkyWars
+      color: RED
+    pvp: true
+    scale: 1.0
+    respawnworld: ''
+    allowweather: true
+    difficulty: EASY
+    animals:
+      spawn: true
+    monsters:
+      spawn: true
+    entryfee:
+      currency: -1
+      price: 0.0
+    hunger: true
+    autoheal: true
+    adjustspawn: true
+    portalform: ALL
+    gamemode: SURVIVAL
+    keepspawninmemory: true
+    spawn:
+      x: 2.5
+      y: 67.0
+      z: 1.5
+      pitch: 0.0
+      yaw: 0.0
+      world: SkyWarsMap1
+    autoload: true
+    bedrespawn: true
+  H&SArena1:
+    seed: 6046831188062321588
+    environment: NORMAL
+    type: FLAT
+    hidden: false
+    alias:
+      name: ColorShuffle
+      color: GOLD
+    pvp: false
+    scale: 1.0
+    respawnworld: ''
+    allowweather: false
+    difficulty: EASY
+    animals:
+      spawn: true
+    monsters:
+      spawn: true
+    entryfee:
+      currency: -1
+      price: 0.0
+    hunger: true
+    autoheal: true
+    adjustspawn: true
+    portalform: ALL
+    gamemode: SURVIVAL
+    keepspawninmemory: true
+    spawn:
+      x: -1210.5
+      y: 10.0
+      z: 1125.5
+      pitch: 0.0
+      yaw: 0.0
+      world: H&SArena1
+    autoload: true
+    bedrespawn: true
+  SkyWarsMap2:
+    generator: EmptyWorldGenerator
+    seed: 5437053696879951363
+    environment: NORMAL
+    type: NORMAL
+    hidden: false
+    alias:
+      name: ''
+      color: WHITE
+    pvp: true
+    scale: 1.0
+    respawnworld: ''
+    allowweather: true
+    difficulty: EASY
+    animals:
+      spawn: true
+    monsters:
+      spawn: true
+    entryfee:
+      currency: -1
+      price: 0.0
+    hunger: true
+    autoheal: true
+    adjustspawn: true
+    portalform: ALL
+    gamemode: SURVIVAL
+    keepspawninmemory: true
+    spawn:
+      x: 1.5
+      y: 65.0
+      z: 1.5
+      pitch: 0.0
+      yaw: 0.0
+      world: SkyWarsMap2
+    autoload: true
+    bedrespawn: true
+  MiniGames:
+    generator: EmptyWorldGenerator
+    seed: -4859731899831903021
+    environment: NORMAL
+    type: NORMAL
+    hidden: true
+    alias:
+      name: ''
+      color: WHITE
+    pvp: false
+    scale: 1.0
+    respawnworld: ''
+    allowweather: false
+    difficulty: EASY
+    animals:
+      spawn: true
+    monsters:
+      spawn: true
+    entryfee:
+      currency: -1
+      price: 0.0
+    hunger: false
+    autoheal: true
+    adjustspawn: true
+    portalform: ALL
+    gamemode: SURVIVAL
+    keepspawninmemory: true
+    spawn:
+      x: -6.117645006604241
+      y: 78.0
+      z: 109.75058933897384
+      pitch: 11.999997
+      yaw: -0.4984131
+      world: MiniGames
+    autoload: true
+    bedrespawn: true
+  OrbitMinesHub:
+    generator: EmptyWorldGenerator
+    seed: 8023684305532837757
+    environment: NORMAL
+    type: NORMAL
+    hidden: true
+    alias:
+      name: Hub
+      color: GOLD
+    pvp: false
+    scale: 1.0
+    respawnworld: ''
+    allowweather: false
+    difficulty: EASY
+    animals:
+      spawn: true
+    monsters:
+      spawn: true
+    entryfee:
+      currency: -1
+      price: 0.0
+    hunger: false
+    autoheal: true
+    adjustspawn: true
+    portalform: ALL
+    gamemode: SURVIVAL
+    keepspawninmemory: true
+    spawn:
+      x: 331.076861330545
+      y: 119.0
+      z: -64.14209701787178
+      pitch: 5.400021
+      yaw: -88.013245
+      world: OrbitMinesHub
+    autoload: true
+    bedrespawn: true
+  PrisonPlots:
+    seed: 1612996860093331924
+    environment: NORMAL
+    type: FLAT
+    hidden: false
+    alias:
+      name: ''
+      color: WHITE
+    pvp: true
+    scale: 1.0
+    respawnworld: ''
+    allowweather: true
+    difficulty: EASY
+    animals:
+      spawn: true
+    monsters:
+      spawn: true
+    entryfee:
+      currency: -1
+      price: 0.0
+    hunger: true
+    autoheal: true
+    adjustspawn: true
+    portalform: ALL
+    gamemode: SURVIVAL
+    keepspawninmemory: true
+    spawn:
+      x: 662.0
+      y: 4.0
+      z: 29.0
+      pitch: 0.0
+      yaw: 0.0
+      world: PrisonPlots
+    autoload: true
+    bedrespawn: true
+  QuakeArena1:
+    generator: EmptyWorldGenerator
+    seed: 4056251703278054408
+    environment: NORMAL
+    type: NORMAL
+    hidden: false
+    alias:
+      name: Quake
+      color: RED
+    pvp: true
+    scale: 1.0
+    respawnworld: ''
+    allowweather: false
+    difficulty: EASY
+    animals:
+      spawn: true
+    monsters:
+      spawn: true
+    entryfee:
+      currency: -1
+      price: 0.0
+    hunger: true
+    autoheal: true
+    adjustspawn: true
+    portalform: ALL
+    gamemode: SURVIVAL
+    keepspawninmemory: true
+    spawn:
+      x: 1.5
+      y: 66.0
+      z: 0.5
+      pitch: 0.0
+      yaw: 0.0
+      world: QuakeArena1
+    autoload: true
+    bedrespawn: true
+  PaintBallArena4:
+    generator: EmptyWorldGenerator
+    seed: -8211629634534156087
+    environment: NORMAL
+    type: NORMAL
+    hidden: false
+    alias:
+      name: Paintball
+      color: YELLOW
+    pvp: true
+    scale: 1.0
+    respawnworld: ''
+    allowweather: false
+    difficulty: EASY
+    animals:
+      spawn: true
+    monsters:
+      spawn: true
+    entryfee:
+      currency: -1
+      price: 0.0
+    hunger: true
+    autoheal: true
+    adjustspawn: true
+    portalform: ALL
+    gamemode: SURVIVAL
+    keepspawninmemory: true
+    spawn:
+      x: 1.5
+      y: 66.0
+      z: 0.5
+      pitch: 0.0
+      yaw: 0.0
+      world: PaintBallArena4
+    autoload: true
+    bedrespawn: true
+  Creative:
+    generator: PlotMe
+    seed: -8334475456184078361
+    environment: NORMAL
+    type: NORMAL
+    hidden: true
+    alias:
+      name: ''
+      color: LIGHTPURPLE
+    pvp: true
+    scale: 1.0
+    respawnworld: ''
+    allowweather: false
+    difficulty: EASY
+    animals:
+      spawn: false
+    monsters:
+      spawn: false
+    entryfee:
+      currency: -1
+      price: 0.0
+    hunger: true
+    autoheal: true
+    adjustspawn: true
+    portalform: ALL
+    gamemode: CREATIVE
+    keepspawninmemory: true
+    spawn:
+      x: -27.92071590442494
+      y: 67.0
+      z: 28.93094988952996
+      pitch: 13.049995
+      yaw: 2.3983653
+      world: Creative
+    autoload: true
+    bedrespawn: true
+  Factions:
+    seed: 6915184670856230922
+    environment: NORMAL
+    type: NORMAL
+    hidden: false
+    alias:
+      name: ''
+      color: DARKRED
+    pvp: true
+    scale: 1.0
+    respawnworld: ''
+    allowweather: true
+    difficulty: EASY
+    animals:
+      spawn: true
+    monsters:
+      spawn: true
+    entryfee:
+      currency: -1
+      price: 0.0
+    hunger: true
+    autoheal: true
+    adjustspawn: true
+    portalform: ALL
+    gamemode: SURVIVAL
+    keepspawninmemory: true
+    spawn:
+      x: 0.19117519666559424
+      y: 110.20000004768372
+      z: 361.5638552590298
+      pitch: 8.25
+      yaw: 89.09997
+      world: Factions
+    autoload: true
+    bedrespawn: true
+  Factions_nether:
+    seed: 2678461773439165607
+    environment: NETHER
+    type: NORMAL
+    hidden: false
+    alias:
+      name: ''
+      color: WHITE
+    pvp: true
+    scale: 8.0
+    respawnworld: ''
+    allowweather: true
+    difficulty: EASY
+    animals:
+      spawn: true
+    monsters:
+      spawn: true
+    entryfee:
+      currency: -1
+      price: 0.0
+    hunger: true
+    autoheal: true
+    adjustspawn: true
+    portalform: ALL
+    gamemode: SURVIVAL
+    keepspawninmemory: true
+    spawn:
+      x: -5.5
+      y: 65.0
+      z: 8.5
+      pitch: 0.0
+      yaw: 0.0
+      world: Factions_nether
+    autoload: true
+    bedrespawn: true
+  PaintBallArena5:
+    generator: EmptyWorldGenerator
+    seed: -3629315125915118532
+    environment: NORMAL
+    type: NORMAL
+    hidden: false
+    alias:
+      name: Paintball
+      color: YELLOW
+    pvp: true
+    scale: 1.0
+    respawnworld: ''
+    allowweather: true
+    difficulty: EASY
+    animals:
+      spawn: true
+    monsters:
+      spawn: true
+    entryfee:
+      currency: -1
+      price: 0.0
+    hunger: true
+    autoheal: true
+    adjustspawn: true
+    portalform: ALL
+    gamemode: SURVIVAL
+    keepspawninmemory: true
+    spawn:
+      x: -2.5
+      y: 105.0
+      z: 4.5
+      pitch: 0.0
+      yaw: 0.0
+      world: PaintBallArena5
+    autoload: true
+    bedrespawn: true
+  Event:
+    generator: EmptyWorldGenerator
+    seed: -8298764872831214886
+    environment: NORMAL
+    type: NORMAL
+    hidden: false
+    alias:
+      name: ''
+      color: GOLD
+    pvp: true
+    scale: 1.0
+    respawnworld: ''
+    allowweather: true
+    difficulty: EASY
+    animals:
+      spawn: true
+    monsters:
+      spawn: true
+    entryfee:
+      currency: -1
+      price: 0.0
+    hunger: false
+    autoheal: true
+    adjustspawn: true
+    portalform: ALL
+    gamemode: SURVIVAL
+    keepspawninmemory: true
+    spawn:
+      x: 14.5
+      y: 85.0
+      z: -19.5
+      pitch: 6.4499874
+      yaw: -355.3413
+      world: Event
+    autoload: true
+    bedrespawn: true
+  KitPvPMap:
+    seed: 3959158082671722107
+    environment: NORMAL
+    type: FLAT
+    hidden: true
+    alias:
+      name: KitPvP
+      color: RED
+    pvp: true
+    scale: 1.0
+    respawnworld: ''
+    allowweather: true
+    difficulty: EASY
+    animals:
+      spawn: true
+    monsters:
+      spawn: true
+    entryfee:
+      currency: -1
+      price: 0.0
+    hunger: true
+    autoheal: true
+    adjustspawn: true
+    portalform: ALL
+    gamemode: SURVIVAL
+    keepspawninmemory: true
+    spawn:
+      x: 809.7702989441767
+      y: 10.0
+      z: 482.92810632651174
+      pitch: 3.3000412
+      yaw: -179.8525
+      world: KitPvPMap
+    autoload: true
+    bedrespawn: true
+  skyworld_nether:
+    seed: -1620113300618163503
+    environment: NETHER
+    type: NORMAL
+    hidden: true
+    alias:
+      name: ''
+      color: WHITE
+    pvp: true
+    scale: 8.0
+    respawnworld: ''
+    allowweather: true
+    difficulty: EASY
+    animals:
+      spawn: true
+    monsters:
+      spawn: true
+    entryfee:
+      currency: -1
+      price: 0.0
+    hunger: true
+    autoheal: true
+    adjustspawn: true
+    portalform: ALL
+    gamemode: SURVIVAL
+    keepspawninmemory: true
+    spawn:
+      x: 7.5
+      y: 65.0
+      z: 7.5
+      pitch: 0.0
+      yaw: 0.0
+      world: skyworld_nether
+    autoload: true
+    bedrespawn: true
+  SkyWarsLobby:
+    generator: EmptyWorldGenerator
+    seed: 5265501180964885723
+    environment: NORMAL
+    type: NORMAL
+    hidden: false
+    alias:
+      name: ''
+      color: WHITE
+    pvp: false
+    scale: 1.0
+    respawnworld: ''
+    allowweather: false
+    difficulty: EASY
+    animals:
+      spawn: true
+    monsters:
+      spawn: true
+    entryfee:
+      currency: -1
+      price: 0.0
+    hunger: false
+    autoheal: true
+    adjustspawn: true
+    portalform: ALL
+    gamemode: SURVIVAL
+    keepspawninmemory: true
+    spawn:
+      x: 1.5
+      y: 66.0
+      z: 0.5
+      pitch: 0.0
+      yaw: 0.0
+      world: SkyWarsLobby
+    autoload: true
+    bedrespawn: true
+  island-0:
+    generator: SkyWars
+    seed: -7687884196924128883
+    environment: NORMAL
+    type: NORMAL
+    hidden: false
+    alias:
+      name: ''
+      color: WHITE
+    pvp: true
+    scale: 1.0
+    respawnworld: ''
+    allowweather: false
+    difficulty: NORMAL
+    animals:
+      spawn: false
+    monsters:
+      spawn: false
+    entryfee:
+      currency: -1
+      price: 0.0
+    hunger: true
+    autoheal: true
+    adjustspawn: false
+    portalform: ALL
+    gamemode: SURVIVAL
+    keepspawninmemory: false
+    spawn:
+      x: 0.0
+      y: 64.0
+      z: 0.0
+      pitch: 0.0
+      yaw: 0.0
+      world: island-0
+    autoload: true
+    bedrespawn: true

@@ -1,0 +1,19 @@
+{
+  "name": "TheSkypeCall",
+  "createdAtMillis": 1398062546846,
+  "home": {
+    "w": "Factions",
+    "lx": 1345.3759038897629,
+    "ly": 107.0,
+    "lz": -149.5726000544896,
+    "p": 44.10002,
+    "y": 265.66217
+  },
+  "invitedPlayerIds": [
+    "alscool",
+    "flim2002"
+  ],
+  "relationWishes": {
+    "177d56c0-577f-4129-9cff-f2e06650be45": "TRUCE"
+  }
+}

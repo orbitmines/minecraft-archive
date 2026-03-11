@@ -1,0 +1,109 @@
+# Group inheritance
+#
+# Any inherited groups prefixed with a g: are global groups
+# and are inherited from the GlobalGroups.yml.
+#
+# Groups without the g: prefix are groups local to this world
+# and are defined in the this groups.yml file.
+#
+# Local group inheritances define your promotion tree when using 'manpromote/mandemote'
+
+groups:
+  Waiting:
+    default: true
+    permissions:
+    - nametag.group.waiting
+    - mycommand.cmd.1
+    - essentials.spawn
+    - mycommand.cmd.4
+    - mycommand.cmd.5
+    - Event.LongbowArrows
+    - mycommand.cmd.6
+    - shops.waiting
+    - BossShop.open
+    - serversigns.use.*
+    info:
+      prefix: '&a'
+      build: true
+  Longbow:
+    default: false
+    permissions:
+    - Event.Alive
+    - nametag.group.longbow
+    - mycommand.cmd.1
+    - mycommand.cmd.4
+    - mycommand.cmd.5
+    - mycommand.cmd.6
+    - essentials.spawn
+    - BossShop.open
+    - Event.LongbowArrows
+    - serversigns.use.*
+    - shops.longbow
+    info:
+      prefix: '&2[&aAlive&2] &a'
+      build: true
+      suffix: ' &2[&aLongbow&2]'
+  Paladin:
+    default: false
+    permissions:
+    - nametag.group.paladin
+    - mycommand.cmd.1
+    - essentials.spawn
+    - mycommand.cmd.4
+    - mycommand.cmd.5
+    - mycommand.cmd.6
+    - Event.Alive
+    - BossShop.open
+    - serversigns.use.*
+    - shops.paladin
+    info:
+      prefix: '&2[&aAlive&2] &a'
+      build: true
+      suffix: ' &2[&aPaladin&2]'
+  Mage:
+    default: false
+    permissions:
+    - nametag.group.mage
+    - mycommand.cmd.1
+    - mycommand.cmd.4
+    - mycommand.cmd.5
+    - Event.Alive
+    - mycommand.cmd.6
+    - essentials.spawn
+    - BossShop.open
+    - serversigns.use.*
+    info:
+      prefix: '&2[&aAlive&2] &a'
+      build: true
+      suffix: ' &2[&aMage&2]'
+  Rogue:
+    default: false
+    permissions:
+    - nametag.group.rogue
+    - mycommand.cmd.1
+    - mycommand.cmd.4
+    - essentials.spawn
+    - mycommand.cmd.5
+    - Event.Alive
+    - mycommand.cmd.6
+    - BossShop.open
+    - serversigns.use.*
+    - shops.rogue
+    info:
+      prefix: '&2[&aAlive&2] &a'
+      build: true
+      suffix: ' &2[&aRogue&2]'
+  Dead:
+    default: false
+    permissions:
+    - nametag.group.dead
+    - mycommand.cmd.1
+    - essentials.spawn
+    - mycommand.cmd.4
+    - mycommand.cmd.5
+    - mycommand.cmd.6
+    - BossShop.open
+    - serversigns.use.*
+    info:
+      prefix: '&4[&cDead&4] &c'
+      build: true

@@ -1,0 +1,34 @@
+# ########################################################## #
+#                                                            #
+#                 ## Player Quest Profiles ##                #
+#                                                            #
+#                         DO NOT TOUCH!                      #
+#                                                            #
+#     This File Is Here To Save Quest Info About Players     #
+#                                                            #
+# ########################################################## #
+
+O_o_Fadi_o_O:
+  Given: 1
+  Dropped: 1
+BenYOmin_Mango:
+  Given: 13
+  Completed: 13
+  FinishCount:
+    Zombie and Slime: 1
+    Gatherer: 1
+    Ore wanted now! I: 1
+    Show us what you are made of! I: 1
+    Skeleton I: 1
+    Collecting mission II: 1
+    Collecting mission I: 1
+    Terbium wanted now!: 1
+    First Assignment: 1
+    Show us what you are made of! II: 1
+    Skeletons sighted!: 1
+    Ore wanted now! II: 1
+    Far reaches of the universe: 1
+eekhoorn2000:
+  Given: 1
+basteti:
+  Given: 1

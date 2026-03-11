@@ -1,0 +1,14 @@
+shops:
+  O_o_Fadi_o_O:
+    '1':
+      location: SurvivalWorld,-578,64,-71
+      price: 10.0
+      amount: 1
+      type: buying
+      timesUsed: 0
+      item:
+        name: ''
+        data: STONE(0)
+        durability: 0
+        enchantments: '{}'
+        lore: '[]'

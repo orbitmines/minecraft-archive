@@ -1,0 +1,245 @@
+#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-# About Plugin/Author #-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#
+#
+# Plugin Name: DeathMessages
+# Author: Jose Manuel Gassin Perez-Traverso
+# Bukkit Profile: http://dev.bukkit.org/profiles/Mayhem777/
+# Description: Change the Default Bukkit Death Messages as you Wish, including colors, victim name, killer name and weapon/material/name...  also other General messages as Join/Kick/Leave.
+#
+#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-# About Plugin/Author #-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#
+
+#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-# Commands & Permissions #-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#
+#
+# /dm					|		deathmessages.user		|		Shows a list of commands.
+# /dm all				|		deathmessages.user		|		Toggles on/off both, Death and General Mesages for the player.
+# /dm dm				|		deathmessages.user		|		Toggles on/off Death Messages for the player.
+# /dm gm				|		deathmessages.user		|		Toggles on/off General Messages for the player.
+# /dm reload			|		deathmessages.admin		|		Reloads this file.
+#
+### Notes: you can use both /dm or /deathmessages for commands.
+#
+#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-# Commands & Permissions #-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#
+
+#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-# Plugin Version #-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#
+#
+# Don't change this or your config will be renamed to "old_config.yml" and the correct config.yml version will be created. (Same system for the lang files)
+Version: 2.7.0
+#
+#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-# Plugin Version #-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#
+
+#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-# Debugging #-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#
+#
+### Enabling this option will BROADCAST useful data about the Death Process, which will be useful to find plugins conflicting with Bukkit normal events.
+# You'll be able to check: Victim Name, World Name, Last Damage Cause Type, Last Damage Cause (Reason), and Damager.
+Debug: false
+#
+#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-# Debugging #-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#
+
+
+
+#====================================== PvP Messages ======================================#
+### What to do with PvP Death Messages?
+# 1 = Don't Show any of Them.
+# 2 = Show them as Usual.
+# 3 = ONLY show PvP Death Messages.
+PvP_Death_Messages_Handling: 2
+
+#====================================== World Settings ======================================#
+### IMPORTANT NOTE: World names are CASE SENSITIVE!
+### Disable ALL Death and General messages to those worlds, total silence, no message comming from the world itself or from any other.
+Silenced_Worlds:
+- TooManyDeaths_world
+- NoSpam_world
+
+### Linking worlds allows worlds to share death/general messages, worlds out if this list will ONLY see it's own messages.
+# Example: as you can see in this list, the worlds "world", "world_nether" and "world_the_end" are linked, so Death and General messages will be shared, if we have another world called "new_world", will only be able to see it's own Death and General Messages.
+Linked_Worlds:
+  Enable: false
+  World_List:
+  - world
+  - world_nether
+  - world_the_end
+
+#====================================== General Messages ======================================#
+### Enable/Disable custom General Messages:
+General_Messages: true
+
+### On Player FIRST Join Message:
+Player_First_Join: '&a[Creative] Join&2>> &6&L%player'
+
+### On Player Join Message:
+Player_Join: '&a[Creative] Join&2>> &6&L%player'
+
+### On Player Leave/Disconnect Message:
+Player_Disconect: '&c[Creative] Quit&4>> &6&L%player'
+
+### On Player Kick Message:
+Player_Kick: '&cThe Player &6&L%player &chas been Kicked!'
+
+#====================================== Death Messages ======================================#
+### Change those TAGS as you wish.
+# %player = Player (victim) name
+# %killer = Player Assasin name (only for player kills, PvP)
+# %weapon_material = Material name of the weapon wielded by the killer(only for player kills, PvP)
+# %weapon_name = Meta display name of the weapon, instead of the material one, if there's no name it'll show the material one.
+# %world = World name in which the player died, can be used in any message.
+
+### Don't forget to use bukkit colors if you want ===>    http://dev.bukkit.org/media/images/42/45/Colors.png
+# And other Bukkit Formats ===>    &n = Underlined   ||   &o = Italic   ||   &m = Strike-through   ||   &l = Bold   ||   &k = Magic   ||   &r = Reset Format
+
+### Some Examples:
+# Example for Creeper Message = '&2%player &Elikes to hug &CCreepers&E, he is a pill of dust now...'
+# Example for PvP Message = '&2%player &Ewas slain by &Ckiller&E, wielding his mighty &C%weapon_material'
+
+### TAKE CARE ABOUT SPECIAL CHARACTERS OR NON-ENGLISH ONES! THE BUKKIT YAML PARSER DON'T ALLOWS THEM! CHECK THE PLUGIN PAGE TO USE VARIABLES INSTEAD TO SHOW THEM!
+
+### Finally, you can add/modify/remove all the random messages you wish, when a death occurs, a random message from the list will be chosen.
+# REMEMBER, THERE'RE NOT ONLY 2 POSSIBLE RANDOM MESSAGES, ADD/REMOVE ALL YOU WISH! INFINITE POSSIBILITIES!
+
+#====# Mob Causes #====#
+Blaze:
+- '&8[&7Dead&8] &7%player &8by a &7Mob'
+- '&8[&7Dead&8] &7%player &8by a &7Mob'
+CaveSpider:
+- '&8[&7Dead&8] &7%player &8by a &7Mob'
+- '&8[&7Dead&8] &7%player &8by a &7Mob'
+Creeper:
+- '&8[&7Dead&8] &7%player &8by a &7Mob'
+- '&8[&7Dead&8] &7%player &8by a &7Mob'
+EnderDragon:
+- '&8[&7Dead&8] &7%player &8by a &7Mob'
+- '&8[&7Dead&8] &7%player &8by a &7Mob'
+Enderman:
+- '&8[&7Dead&8] &7%player &8by a &7Mob'
+- '&8[&7Dead&8] &7%player &8by a &7Mob'
+Ghast:
+- '&8[&7Dead&8] &7%player &8by a &7Mob'
+- '&8[&7Dead&8] &7%player &8by a &7Mob'
+Giant:
+- '&8[&7Dead&8] &7%player &8by a &7Mob'
+- '&8[&7Dead&8] &7%player &8by a &7Mob'
+IronGolem:
+- '&8[&7Dead&8] &7%player &8by a &7Mob'
+- '&8[&7Dead&8] &7%player &8by a &7Mob'
+MagmaCube:
+- '&8[&7Dead&8] &7%player &8by a &7Mob'
+- '&8[&7Dead&8] &7%player &8by a &7Mob'
+PigZombie:
+- '&8[&7Dead&8] &7%player &8by a &7Mob'
+- '&8[&7Dead&8] &7%player &8by a &7Mob'
+Silverfish:
+- '&8[&7Dead&8] &7%player &8by a &7Mob'
+- '&8[&7Dead&8] &7%player &8by a &7Mob'
+SkeletonArcher:
+- '&8[&7Dead&8] &7%player &8by a &7Mob'
+- '&8[&7Dead&8] &7%player &8by a &7Mob'
+SkeletonMelee:
+- '&8[&7Dead&8] &7%player &8by a &7Mob'
+- '&8[&7Dead&8] &7%player &8by a &7Mob'
+Slime:
+- '&8[&7Dead&8] &7%player &8by a &7Mob'
+- '&8[&7Dead&8] &7%player &8by a &7Mob'
+Spider:
+- '&8[&7Dead&8] &7%player &8by a &7Mob'
+- '&8[&7Dead&8] &7%player &8by a &7Mob'
+Witch:
+- '&8[&7Dead&8] &7%player &8by a &7Mob'
+- '&8[&7Dead&8] &7%player &8by a &7Mob'
+Wolf:
+- '&8[&7Dead&8] &7%player &8by a &7Mob'
+- '&8[&7Dead&8] &7%player &8by a &7Mob'
+Zombie:
+- '&8[&7Dead&8] &7%player &8by a &7Mob'
+- '&8[&7Dead&8] &7%player &8by a &7Mob'
+### Wither
+Wither:
+- '&8[&7Dead&8] &7%player &8by a &7Mob'
+- '&8[&7Dead&8] &7%player &8by a &7Mob'
+WitherEffect:
+- '&8[&7Dead&8] &7%player &8by a &7Mob'
+- '&8[&7Dead&8] &7%player &8by a &7Mob'
+### Wither Skeleton
+WitherSkeleton:
+- '&8[&7Dead&8] &7%player &8by a &7Mob'
+- '&8[&7Dead&8] &7%player &8by a &7Mob'
+#====# PvP Causes #====#
+PvPWeapon:
+- '&8[&7Dead&8] &7%player &8by &7%killer'
+- '&8[&7Dead&8] &7%player &8by &7%killer'
+# Weapon Tag NOT APLICABLE
+PvPFist:
+- '&8[&7Dead&8] &7%player &8by &7%killer'
+- '&8[&7Dead&8] &7%player &8by &7%killer'
+PvPBow:
+- '&8[&7Dead&8] &7%player &8by &7%killer'
+- '&8[&7Dead&8] &7%player &8by &7%killer'
+# This happens when a player dies by a Thorn Enchantment.
+Thorns:
+- '&8[&7Dead&8] &7%player &8by &7%killer'
+- '&8[&7Dead&8] &7%player &8by &7%killer'
+#====# Other Causes #====#
+TNT:
+- '&8[&7Dead&8] &7%player &8by a&7 Block'
+Cactus:
+- '&8[&7Dead&8] &7%player &8by a&7 Block'
+- '&8[&7Dead&8] &7%player &8by a&7 Block'
+Anvil:
+- '&8[&7Dead&8] &7%player &8by a&7 Block'
+- '&8[&7Dead&8] &7%player &8by a&7 Block'
+# Dispenser only has 1 message for deaths, but i added another one if player dies from a fireball ;)
+DispenserArrow:
+- '&8[&7Dead&8] &7%player &8by a&7 Block'
+- '&8[&7Dead&8] &7%player &8by a&7 Block'
+DispenserFireball:
+- '&8[&7Dead&8] &7%player &8by a&7 Block'
+- '&8[&7Dead&8] &7%player &8by a&7 Block'
+Drowning:
+- '&8[&7Dead&8] &7%player &8by &7Water'
+- '&8[&7Dead&8] &7%player &8by &7Water'
+PotionofHarming:
+- '&8[&7Dead&8] &7%player &8by a&7 Potion'
+# In Minecraft you can't die from normal Poison, you just get to half heart, anyway it a Poison Potion hits you when u're with low health and kills you or by other plugins this could happen.
+Fall:
+- '&8[&7Dead&8] &7%player &8by the&7 Ground'
+Poison:
+- '&8[&7Dead&8] &7%player &8by a&7 Potion'
+- '&8[&7Dead&8] &7%player &8by a&7 Potion'
+# Direct exposure to a fire block
+FireBlock:
+- '&8[&7Dead&8] &7%player &8by &7Fire'
+- '&8[&7Dead&8] &7%player &8by &7Fire'
+# Death caused by burns after leaving a Fire Block or Lava Block.
+FireEffect:
+- '&8[&7Dead&8] &7%player &8by &7Fire'
+- '&8[&7Dead&8] &7%player &8by &7Fire'
+Lava:
+- '&8[&7Dead&8] &7%player &8by &7Fire'
+- '&8[&7Dead&8] &7%player &8by &7Fire'
+# You usually get "went up in flames" like cause of death by a thunder, now you can specify what you want, anyway if the fire kills you first the cause will still being the fire.
+Lightning:
+- '&8[&7Dead&8] &7%player &8by &7Lightning'
+- '&8[&7Dead&8] &7%player &8by &7Lightning'
+Starvation:
+- '&8[&7Dead&8] &7%player &8by &7Food'
+- '&8[&7Dead&8] &7%player &8by &7Food'
+Suffocation:
+- '&8[&7Dead&8] &7%player &8by a &7Wall'
+- '&8[&7Dead&8] &7%player &8by a &7Wall'
+# Suicide message is only possible when player uses /suicide or /kill to himself.
+Suicide:
+- '&8[&7Dead&8] &7%player'
+- '&8[&7Dead&8] &7%player'
+Void:
+- '&8[&7Dead&8] &7%player'
+- '&8[&7Dead&8] &7%player'
+# Weird causes like killed by EnderPearl, Eggs and Snowballs.
+# Snowmans can't kill players cause Snowballs have no damage, anyway some servers change this mechanic for fun (like my server), so i added it too.
+Others:
+- '&8[&7Dead&8] &7%player'
+- '&8[&7Dead&8] &7%player'
+Snowman:
+- '&8[&7Dead&8] &7%player &8by a &7Mob'
+- '&8[&7Dead&8] &7%player &8by a &7Mob'
+## Rest of the Causes, command causes will be showed here, like /kill or /suicide case doesn't have a damager.
+Unknown:
+- '&8[&7Dead&8] &7%player'
+- '&8[&7Dead&8] &7%player'

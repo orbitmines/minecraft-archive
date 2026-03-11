@@ -1,0 +1,2956 @@
+# Enchantment IDs and config explanation can be found here: http://dev.bukkit.org/bukkit-plugins/kitplugin/pages/kits-config-v6-1/
+Knight:
+  items:
+    sword:
+      id: 272
+      data: 0
+      amount: 1
+      enchantments: []
+      lore:
+      - '&b(player)''s Sword'
+      name: '&8[&b&LKnight&8]'
+      slot: inventory
+    helmet:
+      id: 302
+      amount: 1
+      lore:
+      - '&b(player)''s Helmet'
+      name: '&8[&b&LKnight&8]'
+      slot: helmet
+    chestplate:
+      id: 303
+      amount: 1
+      lore:
+      - '&b(player)''s Chestplate'
+      name: '&8[&b&LKnight&8]'
+      slot: chestplate
+    pants:
+      id: 304
+      amount: 1
+      lore:
+      - '&b(player)''s Leggings'
+      name: '&8[&b&LKnight&8]'
+      slot: leggings
+    boots:
+      id: 305
+      amount: 1
+      lore:
+      - '&b(player)''s Boots'
+      name: '&8[&b&LKnight&8]'
+      slot: boots
+    HPPotion:
+      id: 373
+      data: 8197
+      amount: 1
+      lore:
+      - '&b(player)''s Instant Health Potion'
+      name: '&8[&b&LKnight&8]'
+      slot: inventory
+    Bread:
+      id: 297
+      amount: 25
+      lore:
+      - '&8Bread'
+      name: '&8[&4&LKit PvP&8]'
+      slot: inventory
+  commands:
+  - hpset (player) 20
+  removeeffects: true
+  effects:
+  - 22,10,4
+  givemoney: 0
+  givexp: 0
+  usages: 0
+  clearinv: true
+  cleararmor: true
+  cooldown: 30
+  price: 0
+  message: '&b&LSelected Kit: &6&LKnight'
+Archer:
+  items:
+    sword:
+      id: 272
+      data: 0
+      amount: 1
+      enchantments: []
+      lore:
+      - '&b(player)''s Sword'
+      name: '&8[&b&LArcher&8]'
+      slot: inventory
+    Bow:
+      id: 261
+      data: 0
+      amount: 1
+      lore:
+      - '&b(player)''s Bow'
+      name: '&8[&b&LArcher&8]'
+      slot: inventory
+    Arrows:
+      id: 262
+      data: 0
+      amount: 32
+      lore:
+      - '&b(player)''s Arrows'
+      name: '&8[&b&LArcher&8]'
+      slot: inventory
+    helmet:
+      id: 298
+      amount: 1
+      lore:
+      - '&b(player)''s Helmet'
+      name: '&8[&b&LArcher&8]'
+      slot: helmet
+      color: 51 255 204
+    chestplate:
+      id: 299
+      amount: 1
+      lore:
+      - '&b(player)''s Chestplate'
+      name: '&8[&b&LArcher&8]'
+      slot: chestplate
+      color: 51 255 204
+    pants:
+      id: 300
+      amount: 1
+      lore:
+      - '&b(player)''s Leggings'
+      name: '&8[&b&LArcher&8]'
+      slot: leggings
+      color: 51 255 204
+    boots:
+      id: 301
+      amount: 1
+      lore:
+      - '&b(player)''s Boots'
+      name: '&8[&b&LArcher&8]'
+      slot: boots
+      color: 51 255 204
+    HPPotion:
+      id: 373
+      data: 8197
+      amount: 1
+      lore:
+      - '&b(player)''s HP Potion'
+      name: '&8[&b&LArcher&8]'
+      slot: inventory
+    Bread:
+      id: 297
+      amount: 25
+      lore:
+      - '&8Bread'
+      name: '&8[&4&LKit PvP&8]'
+      slot: inventory
+  commands:
+  - hpset (player) 20
+  removeeffects: true
+  effects:
+  - 22,10,4
+  givemoney: 0
+  givexp: 0
+  usages: 0
+  clearinv: true
+  cleararmor: true
+  cooldown: 30
+  price: 0
+  message: '&b&LSelected Kit: &6&LArcher'
+Wizard:
+  items:
+    sword:
+      id: 272
+      data: 0
+      amount: 1
+      enchantments: []
+      lore:
+      - '&b(player)''s Sword'
+      name: '&8[&b&LWizard&8]'
+      slot: inventory
+    helmet:
+      id: 314
+      amount: 1
+      lore:
+      - '&b(player)''s Helmet'
+      name: '&8[&b&LWizard&8]'
+      slot: helmet
+    chestplate:
+      id: 315
+      amount: 1
+      lore:
+      - '&b(player)''s Chestplate'
+      name: '&8[&b&LWizard&8]'
+      slot: chestplate
+    pants:
+      id: 316
+      amount: 1
+      lore:
+      - '&b(player)''s Leggings'
+      name: '&8[&b&LWizard&8]'
+      slot: leggings
+    boots:
+      id: 317
+      amount: 1
+      lore:
+      - '&b(player)''s Boots'
+      name: '&8[&b&LWizard&8]'
+      slot: boots
+    PotionREGEN:
+      id: 373
+      data: 8193
+      amount: 1
+      lore:
+      - '&b(player)''s Regeneration Potion'
+      name: '&8[&b&LWizard&8]'
+      slot: inventory
+    PotionSWIFTNESS:
+      id: 373
+      data: 8194
+      amount: 1
+      lore:
+      - '&b(player)''s Swiftness Potion'
+      name: '&8[&b&LWizard&8]'
+      slot: inventory
+    PotionWEAKNESS:
+      id: 373
+      data: 16392
+      amount: 1
+      lore:
+      - '&b(player)''s Weakness Potion'
+      name: '&8[&b&LWizard&8]'
+      slot: inventory
+    PotionHP:
+      id: 373
+      data: 16389
+      amount: 2
+      lore:
+      - '&b(player)''s Instant Health Potion'
+      name: '&8[&b&LWizard&8]'
+      slot: inventory
+    Bread:
+      id: 297
+      amount: 25
+      lore:
+      - '&8Bread'
+      name: '&8[&4&LKit PvP&8]'
+      slot: inventory
+  commands:
+  - hpset (player) 20
+  removeeffects: true
+  effects:
+  - 22,10,4
+  givemoney: 0
+  givexp: 0
+  usages: 0
+  clearinv: true
+  cleararmor: true
+  cooldown: 30
+  message: '&b&LSelected Kit: &6&LWizard'
+Soldier:
+  items:
+    sword:
+      id: 272
+      data: 0
+      amount: 1
+      enchantments: []
+      lore:
+      - '&b(player)''s Sword'
+      name: '&8[&b&LSoldier&8]'
+      slot: inventory
+    Bow:
+      id: 261
+      data: 0
+      amount: 1
+      lore:
+      - '&b(player)''s Bow'
+      name: '&8[&b&LSoldier&8]'
+      slot: inventory
+    Arrows:
+      id: 262
+      data: 0
+      amount: 16
+      lore:
+      - '&b(player)''s Arrows'
+      name: '&8[&b&LSoldier&8]'
+      slot: inventory
+    helmet:
+      id: 298
+      amount: 1
+      enchantments:
+      - 0,1
+      lore:
+      - '&b(player)''s Helmet'
+      name: '&8[&b&LSoldier&8]'
+      slot: helmet
+    chestplate:
+      id: 307
+      amount: 1
+      enchantments: []
+      lore:
+      - '&b(player)''s Chestplate'
+      name: '&8[&b&LSoldier&8]'
+      slot: chestplate
+    pants:
+      id: 300
+      amount: 1
+      enchantments:
+      - 0,1
+      lore:
+      - '&b(player)''s Leggings'
+      name: '&8[&b&LSoldier&8]'
+      slot: leggings
+    boots:
+      id: 301
+      amount: 1
+      enchantments:
+      - 0,1
+      lore:
+      - '&b(player)''s Boots'
+      name: '&8[&b&LSoldier&8]'
+      slot: boots
+    Bread:
+      id: 297
+      amount: 25
+      lore:
+      - '&8Bread'
+      name: '&8[&4&LKit PvP&8]'
+      slot: inventory
+  commands:
+  - hpset (player) 20
+  removeeffects: true
+  effects:
+  - 22,10,4
+  givemoney: 0
+  givexp: 0
+  usages: 0
+  clearinv: true
+  cleararmor: true
+  cooldown: 30
+  price: 0
+  message: '&b&LSelected Kit: &6&LSoldier'
+Tank:
+  items:
+    sword:
+      id: 268
+      data: 0
+      amount: 1
+      enchantments:
+      - 19,1
+      lore:
+      - '&b(player)''s Sword'
+      name: '&8[&b&LTank&8]'
+      slot: inventory
+    GoldenApple:
+      id: 322
+      data: 0
+      amount: 2
+      lore:
+      - '&b(player)''s Golden Apple'
+      name: '&8[&b&LTank&8]'
+      slot: inventory
+    helmet:
+      id: 306
+      amount: 1
+      lore:
+      - '&b(player)''s Helmet'
+      name: '&8[&b&LTank&8]'
+      slot: helmet
+    chestplate:
+      id: 311
+      amount: 1
+      enchantments:
+      - 0,1
+      lore:
+      - '&b(player)''s Chestplate'
+      name: '&8[&b&LTank&8]'
+      slot: chestplate
+    pants:
+      id: 308
+      amount: 1
+      lore:
+      - '&b(player)''s Leggings'
+      name: '&8[&b&LTank&8]'
+      slot: leggings
+    boots:
+      id: 309
+      amount: 1
+      lore:
+      - '&b(player)''s Boots'
+      name: '&8[&b&LTank&8]'
+      slot: boots
+    Bread:
+      id: 297
+      amount: 25
+      lore:
+      - '&8Bread'
+      name: '&8[&4&LKit PvP&8]'
+      slot: inventory
+  commands:
+  - hpset (player) 20
+  removeeffects: true
+  effects:
+  - 22,10,4
+  - 2,3000,2
+  givemoney: 0
+  givexp: 0
+  usages: 0
+  clearinv: true
+  cleararmor: true
+  cooldown: 30
+  price: 0
+  message: '&b&LSelected Kit: &6&LTank'
+Pyro:
+  items:
+    sword:
+      id: 267
+      data: 0
+      amount: 1
+      enchantments:
+      - 20,2
+      lore:
+      - '&b(player)''s Sword'
+      name: '&8[&b&LPyro&8]'
+      slot: inventory
+    helmet:
+      id: 314
+      amount: 1
+      enchantments:
+      - 1,1
+      lore:
+      - '&b(player)''s Helmet'
+      name: '&8[&b&LPyro&8]'
+      slot: helmet
+    chestplate:
+      id: 315
+      amount: 1
+      enchantments:
+      - 1,1
+      lore:
+      - '&b(player)''s Chestplate'
+      name: '&8[&b&LPyro&8]'
+      slot: chestplate
+    pants:
+      id: 316
+      amount: 1
+      enchantments:
+      - 1,1
+      lore:
+      - '&b(player)''s Leggings'
+      name: '&8[&b&LPyro&8]'
+      slot: leggings
+    boots:
+      id: 317
+      amount: 1
+      enchantments:
+      - 1,1
+      lore:
+      - '&b(player)''s Boots'
+      name: '&8[&b&LPyro&8]'
+      slot: boots
+    Bread:
+      id: 297
+      amount: 25
+      lore:
+      - '&8Bread'
+      name: '&8[&4&LKit PvP&8]'
+      slot: inventory
+  commands:
+  - hpset (player) 20
+  removeeffects: true
+  effects:
+  - 22,10,4
+  - 12,3000,3
+  givemoney: 0
+  givexp: 0
+  usages: 0
+  clearinv: true
+  cleararmor: true
+  cooldown: 30
+  message: '&b&LSelected Kit: &6&LPyro'
+Assassin:
+  items:
+    sword:
+      id: 276
+      data: 0
+      amount: 1
+      enchantments:
+      - 16,1
+      - 34,3
+      lore:
+      - '&b(player)''s Sword'
+      name: '&8[&4&LAssassin&8]'
+      slot: inventory
+    helmet:
+      id: 298
+      amount: 1
+      lore:
+      - '&b(player)''s Helmet'
+      name: '&8[&4&LAssassin&8]'
+      slot: helmet
+    chestplate:
+      id: 299
+      amount: 1
+      lore:
+      - '&b(player)''s Chestplate'
+      name: '&8[&4&LAssassin&8]'
+      slot: chestplate
+    pants:
+      id: 300
+      amount: 1
+      lore:
+      - '&b(player)''s Leggings'
+      name: '&8[&4&LAssassin&8]'
+      slot: leggings
+    boots:
+      id: 313
+      amount: 1
+      enchantments:
+      - 2,3
+      - 0,1
+      lore:
+      - '&b(player)''s Boots'
+      name: '&8[&4&LAssassin&8]'
+      slot: boots
+      color: 51 255 204
+    Bread:
+      id: 297
+      amount: 25
+      lore:
+      - '&8Bread'
+      name: '&8[&4&LKit PvP&8]'
+      slot: inventory
+  commands:
+  - hpset (player) 20
+  removeeffects: true
+  effects:
+  - 22,10,4
+  - 1,3000,1
+  givemoney: 0
+  givexp: 0
+  usages: 0
+  clearinv: true
+  cleararmor: true
+  cooldown: 30
+  price: 0
+  message: '&b&LSelected Kit: &6&LAssassin'
+Lord:
+  items:
+    sword:
+      id: 283
+      data: 0
+      amount: 1
+      enchantments:
+      - 34,3
+      lore:
+      - '&b(player)''s Sword'
+      name: '&8[&4&LLord&8]'
+      slot: inventory
+    GoldenApple:
+      id: 322
+      data: 0
+      amount: 5
+      lore:
+      - '&b(player)''s Golden Apple'
+      name: '&8[&4&LLord&8]'
+      slot: inventory
+    helmet:
+      id: 314
+      amount: 1
+      enchantments:
+      - 34,3
+      lore:
+      - '&b(player)''s Helmet'
+      name: '&8[&4&LLord&8]'
+      slot: helmet
+    chestplate:
+      id: 303
+      amount: 1
+      enchantments: []
+      lore:
+      - '&b(player)''s Chestplate'
+      name: '&8[&4&LLord&8]'
+      slot: chestplate
+    pants:
+      id: 304
+      amount: 1
+      enchantments: []
+      lore:
+      - '&b(player)''s Leggings'
+      name: '&8[&4&LLord&8]'
+      slot: leggings
+    boots:
+      id: 305
+      amount: 1
+      enchantments: []
+      lore:
+      - '&b(player)''s Boots'
+      name: '&8[&4&LLord&8]'
+      slot: boots
+    Bread:
+      id: 297
+      amount: 25
+      lore:
+      - '&8Bread'
+      name: '&8[&4&LKit PvP&8]'
+      slot: inventory
+  commands:
+  - hpset (player) 20
+  removeeffects: true
+  effects:
+  - 22,10,4
+  - 5,3000,0
+  givemoney: 0
+  givexp: 0
+  usages: 0
+  clearinv: true
+  cleararmor: true
+  cooldown: 30
+  message: '&b&LSelected Kit: &6&LLord'
+Drunk:
+  items:
+    sword:
+      id: 267
+      data: 0
+      amount: 1
+      enchantments:
+      - 19,2
+      lore:
+      - '&b(player)''s Sword'
+      name: '&8[&b&LDrunk&8]'
+      slot: inventory
+    helmet:
+      id: 302
+      amount: 1
+      enchantments:
+      - 0,1
+      lore:
+      - '&b(player)''s Helmet'
+      name: '&8[&b&LDrunk&8]'
+      slot: helmet
+    chestplate:
+      id: 303
+      amount: 1
+      enchantments:
+      - 0,1
+      lore:
+      - '&b(player)''s Chestplate'
+      name: '&8[&b&LDrunk&8]'
+      slot: chestplate
+    pants:
+      id: 304
+      amount: 1
+      enchantments:
+      - 0,1
+      lore:
+      - '&b(player)''s Leggings'
+      name: '&8[&b&LDrunk&8]'
+      slot: leggings
+    boots:
+      id: 305
+      amount: 1
+      enchantments:
+      - 0,1
+      lore:
+      - '&b(player)''s Boots'
+      name: '&8[&b&LDrunk&8]'
+      slot: boots
+    StrengthPotion:
+      id: 373
+      data: 8201
+      amount: 1
+      lore:
+      - '&b(player)''s Strength Potion'
+      name: '&8[&b&LDrunk&8]'
+      slot: inventory
+    Bread:
+      id: 297
+      amount: 25
+      lore:
+      - '&8Bread'
+      name: '&8[&4&LKit PvP&8]'
+      slot: inventory
+  commands:
+  - hpset (player) 20
+  removeeffects: true
+  effects:
+  - 22,10,4
+  - 9,3000,1
+  givemoney: 0
+  givexp: 0
+  usages: 0
+  clearinv: true
+  cleararmor: true
+  cooldown: 30
+  price: 0
+  message: '&b&LSelected Kit: &6&LDrunk'
+Bunny:
+  items:
+    sword:
+      id: 267
+      data: 0
+      amount: 1
+      enchantments: []
+      lore:
+      - '&b(player)''s Sword'
+      name: '&8[&b&LBunny&8]'
+      slot: inventory
+    helmet:
+      id: 298
+      amount: 1
+      enchantments:
+      - 0,1
+      lore:
+      - '&b(player)''s Helmet'
+      name: '&8[&b&LBunny&8]'
+      slot: helmet
+      color: 250 250 250
+    chestplate:
+      id: 299
+      amount: 1
+      enchantments:
+      - 0,1
+      lore:
+      - '&b(player)''s Chestplate'
+      name: '&8[&b&LBunny&8]'
+      slot: chestplate
+      color: 250 250 250
+    pants:
+      id: 300
+      amount: 1
+      enchantments:
+      - 0,1
+      lore:
+      - '&b(player)''s Leggings'
+      name: '&8[&b&LBunny&8]'
+      slot: leggings
+      color: 250 250 250
+    boots:
+      id: 301
+      amount: 1
+      enchantments:
+      - 0,1
+      lore:
+      - '&b(player)''s Boots'
+      name: '&8[&b&LBunny&8]'
+      slot: boots
+      color: 250 250 250
+    PoisonPotion:
+      id: 373
+      data: 16420
+      amount: 1
+      lore:
+      - '&b(player)''s Poison Potion'
+      name: '&8[&b&LBunny&8]'
+      slot: inventory
+    DamagePotion:
+      id: 373
+      data: 16396
+      amount: 2
+      lore:
+      - '&b(player)''s Instant Damage Potion'
+      name: '&8[&b&LBunny&8]'
+      slot: inventory
+    Bread:
+      id: 297
+      amount: 25
+      lore:
+      - '&8Bread'
+      name: '&8[&4&LKit PvP&8]'
+      slot: inventory
+  commands:
+  - hpset (player) 20
+  removeeffects: true
+  effects:
+  - 22,10,4
+  - 8,3000,3
+  givemoney: 0
+  givexp: 0
+  usages: 0
+  clearinv: true
+  cleararmor: true
+  cooldown: 30
+  price: 0
+  message: '&b&LSelected Kit: &6&LBunny'
+Necromancer:
+  items:
+    sword:
+      id: 294
+      data: 0
+      amount: 1
+      enchantments:
+      - 16,10
+      lore:
+      - '&b(player)''s Hoe'
+      name: '&8[&b&LNecromancer&8]'
+      slot: inventory
+    Bow:
+      id: 261
+      data: 0
+      amount: 1
+      lore:
+      - '&b(player)''s Bow'
+      name: '&bBeastmaster''s Bow'
+      slot: inventory
+    Arrow:
+      id: 262
+      data: 0
+      amount: 5
+      lore:
+      - '&b(player)''s Arrow'
+      name: '&8[&b&LNecromancer&8]'
+      slot: inventory
+    helmet:
+      id: 298
+      amount: 1
+      enchantments:
+      - 0,1
+      lore:
+      - '&b(player)''s Helmet'
+      name: '&8[&b&LNecromancer&8]'
+      slot: helmet
+      color: 0 0 0
+    chestplate:
+      id: 299
+      amount: 1
+      enchantments:
+      - 0,1
+      lore:
+      - '&b(player)''s Chestplate'
+      name: '&8[&b&LNecromancer&8]'
+      slot: chestplate
+      color: 0 0 0
+    pants:
+      id: 300
+      amount: 1
+      enchantments:
+      - 0,1
+      lore:
+      - '&b(player)''s Leggings'
+      name: '&8[&b&LNecromancer&8]'
+      slot: leggings
+      color: 0 0 0
+    boots:
+      id: 301
+      amount: 1
+      enchantments:
+      - 0,1
+      lore:
+      - '&b(player)''s Boots'
+      name: '&8[&b&LNecromancer&8]'
+      slot: boots
+      color: 0 0 0
+    Bread:
+      id: 297
+      amount: 25
+      lore:
+      - '&8Bread'
+      name: '&8[&4&LKit PvP&8]'
+      slot: inventory
+  commands:
+  - hpset (player) 20
+  removeeffects: true
+  effects:
+  - 22,10,4
+  givemoney: 0
+  givexp: 0
+  usages: 0
+  clearinv: true
+  cleararmor: true
+  cooldown: 30
+  price: 0
+  message: '&b&LSelected Kit: &6&LNecromancer'
+Vampire:
+  items:
+    sword:
+      id: 267
+      data: 0
+      amount: 1
+      enchantments: []
+      lore:
+      - '&4&oVampire'
+      name: '&8[&4&LVampire&8]'
+      slot: inventory
+    swords:
+      id: 267
+      data: 0
+      amount: 1
+      enchantments: []
+      lore:
+      - '&4&oBlind'
+      name: '&8[&4&LVampire&8]'
+      slot: inventory
+    helmet:
+      id: 298
+      amount: 1
+      enchantments:
+      - 0,2
+      lore:
+      - '&b(player)''s Helmet'
+      name: '&8[&4&LVampire&8]'
+      slot: helmet
+      color: 150 10 50
+    chestplate:
+      id: 299
+      amount: 1
+      enchantments:
+      - 0,2
+      lore:
+      - '&b(player)''s Chestplate'
+      name: '&8[&4&LVampire&8]'
+      slot: chestplate
+      color: 150 10 50
+    pants:
+      id: 300
+      amount: 1
+      enchantments:
+      - 0,2
+      lore:
+      - '&b(player)''s Leggings'
+      name: '&8[&4&LVampire&8]'
+      slot: leggings
+      color: 150 10 50
+    boots:
+      id: 301
+      amount: 1
+      enchantments:
+      - 0,2
+      lore:
+      - '&b(player)''s Boots'
+      name: '&8[&4&LVampire&8]'
+      slot: boots
+      color: 150 10 50
+    Bread:
+      id: 297
+      amount: 25
+      lore:
+      - '&8Bread'
+      name: '&8[&4&LKit PvP&8]'
+      slot: inventory
+  commands:
+  - hpset (player) 20
+  removeeffects: true
+  effects:
+  - 22,10,4
+  givemoney: 0
+  givexp: 0
+  usages: 0
+  clearinv: true
+  cleararmor: true
+  cooldown: 30
+  price: 0
+  message: '&b&LSelected Kit: &6&LVampire'
+KnightLvL2:
+  items:
+    sword:
+      id: 272
+      data: 0
+      amount: 1
+      enchantments: []
+      lore:
+      - '&b(player)''s Sword'
+      name: '&8[&b&LKnight&a&L LvL 2&8]'
+      slot: inventory
+    helmet:
+      id: 302
+      amount: 1
+      lore:
+      - '&b(player)''s Helmet'
+      name: '&8[&b&LKnight&a&L LvL 2&8]'
+      slot: helmet
+    chestplate:
+      id: 303
+      amount: 1
+      enchantments:
+      - 0,1
+      lore:
+      - '&b(player)''s Chestplate'
+      name: '&8[&b&LKnight&a&L LvL 2&8]'
+      slot: chestplate
+    pants:
+      id: 304
+      amount: 1
+      enchantments:
+      - 0,1
+      lore:
+      - '&b(player)''s Leggings'
+      name: '&8[&b&LKnight&a&L LvL 2&8]'
+      slot: leggings
+    boots:
+      id: 305
+      amount: 1
+      lore:
+      - '&b(player)''s Boots'
+      name: '&8[&b&LKnight&a&L LvL 2&8]'
+      slot: boots
+    HPPotion:
+      id: 373
+      data: 16389
+      amount: 1
+      lore:
+      - '&b(player)''s Instant Health Potion'
+      name: '&8[&b&LKnight&a&L LvL 2&8]'
+      slot: inventory
+    Bread:
+      id: 297
+      amount: 25
+      lore:
+      - '&8Bread'
+      name: '&8[&4&LKit PvP&8]'
+      slot: inventory
+  commands:
+  - hpset (player) 20
+  removeeffects: true
+  effects:
+  - 22,10,4
+  givemoney: 0
+  givexp: 0
+  usages: 0
+  clearinv: true
+  cleararmor: true
+  cooldown: 30
+  price: 0
+  message: '&b&LSelected Kit: &6&LKnight &a&LLeveL 2'
+ArcherLvL2:
+  items:
+    sword:
+      id: 272
+      data: 0
+      amount: 1
+      enchantments: []
+      lore:
+      - '&b(player)''s Sword'
+      name: '&8[&b&LArcher&a&L LvL 2&8]'
+      slot: inventory
+    Bow:
+      id: 261
+      data: 0
+      amount: 1
+      lore:
+      - '&4&oLightning'
+      name: '&8[&b&LArcher&a&L LvL 2&8]'
+      slot: inventory
+    Arrows:
+      id: 262
+      data: 0
+      amount: 32
+      lore:
+      - '&b(player)''s Arrows'
+      name: '&8[&b&LArcher&a&L LvL 2&8]'
+      slot: inventory
+    helmet:
+      id: 298
+      amount: 1
+      lore:
+      - '&b(player)''s Helmet'
+      name: '&8[&b&LArcher&a&L LvL 2&8]'
+      slot: helmet
+      color: 51 255 204
+    chestplate:
+      id: 299
+      amount: 1
+      lore:
+      - '&b(player)''s Chestplate'
+      name: '&8[&b&LArcher&a&L LvL 2&8]'
+      slot: chestplate
+      color: 51 255 204
+    pants:
+      id: 300
+      amount: 1
+      lore:
+      - '&b(player)''s Leggings'
+      name: '&8[&b&LArcher&a&L LvL 2&8]'
+      slot: leggings
+      color: 51 255 204
+    boots:
+      id: 301
+      amount: 1
+      lore:
+      - '&b(player)''s Boots'
+      name: '&8[&b&LArcher&a&L LvL 2&8]'
+      slot: boots
+      color: 51 255 204
+    HPPotion:
+      id: 373
+      data: 8197
+      amount: 1
+      lore:
+      - '&b(player)''s HP Potion'
+      name: '&8[&b&LArcher&a&L LvL 2&8]'
+      slot: inventory
+    Bread:
+      id: 297
+      amount: 25
+      lore:
+      - '&8Bread'
+      name: '&8[&4&LKit PvP&8]'
+      slot: inventory
+  commands:
+  - hpset (player) 20
+  removeeffects: true
+  effects:
+  - 22,10,4
+  givemoney: 0
+  givexp: 0
+  usages: 0
+  clearinv: true
+  cleararmor: true
+  cooldown: 30
+  price: 0
+  message: '&b&LSelected Kit: &6&LArcher &a&LLevel 2'
+SoldierLvL2:
+  items:
+    sword:
+      id: 272
+      data: 0
+      amount: 1
+      enchantments: []
+      lore:
+      - '&4&oThundering Blow'
+      name: '&8[&b&LSoldier &a&LLvL 2&8]'
+      slot: inventory
+    Bow:
+      id: 261
+      data: 0
+      amount: 1
+      lore:
+      - '&b(player)''s Bow'
+      name: '&8[&b&LSoldier &a&LLvL 2&8]'
+      slot: inventory
+    Arrows:
+      id: 262
+      data: 0
+      amount: 16
+      lore:
+      - '&b(player)''s Arrows'
+      name: '&8[&b&LSoldier &a&LLvL 2&8]'
+      slot: inventory
+    helmet:
+      id: 298
+      amount: 1
+      enchantments:
+      - 0,1
+      lore:
+      - '&b(player)''s Helmet'
+      name: '&8[&b&LSoldier &a&LLvL 2&8]'
+      slot: helmet
+    chestplate:
+      id: 307
+      amount: 1
+      enchantments:
+      - 0,1
+      lore:
+      - '&b(player)''s Chestplate'
+      name: '&8[&b&LSoldier &a&LLvL 2&8]'
+      slot: chestplate
+    pants:
+      id: 300
+      amount: 1
+      enchantments:
+      - 0,1
+      lore:
+      - '&b(player)''s Leggings'
+      name: '&8[&b&LSoldier &a&LLvL 2&8]'
+      slot: leggings
+    boots:
+      id: 301
+      amount: 1
+      enchantments:
+      - 0,1
+      lore:
+      - '&b(player)''s Boots'
+      name: '&8[&b&LSoldier &a&LLvL 2&8]'
+      slot: boots
+    Bread:
+      id: 297
+      amount: 25
+      lore:
+      - '&8Bread'
+      name: '&8[&4&LKit PvP&8]'
+      slot: inventory
+  commands:
+  - hpset (player) 20
+  removeeffects: true
+  effects:
+  - 22,10,4
+  givemoney: 0
+  givexp: 0
+  usages: 0
+  clearinv: true
+  cleararmor: true
+  cooldown: 30
+  price: 0
+  message: '&b&LSelected Kit: &6&LSoldier &a&LLevel 2'
+WizardLvL2:
+  items:
+    sword:
+      id: 272
+      data: 0
+      amount: 1
+      enchantments:
+      - 16,1
+      lore:
+      - '&b(player)''s Sword'
+      name: '&8[&b&LWizard &a&LLvL 2&8]'
+      slot: inventory
+    helmet:
+      id: 314
+      amount: 1
+      enchantments:
+      - 0,1
+      lore:
+      - '&b(player)''s Helmet'
+      name: '&8[&b&LWizard &a&LLvL 2&8]'
+      slot: helmet
+    chestplate:
+      id: 315
+      amount: 1
+      enchantments:
+      - 0,1
+      lore:
+      - '&b(player)''s Chestplate'
+      name: '&8[&b&LWizard &a&LLvL 2&8]'
+      slot: chestplate
+    pants:
+      id: 316
+      amount: 1
+      enchantments:
+      - 0,1
+      lore:
+      - '&b(player)''s Leggings'
+      name: '&8[&b&LWizard &a&LLvL 2&8]'
+      slot: leggings
+    boots:
+      id: 317
+      amount: 1
+      enchantments:
+      - 0,1
+      lore:
+      - '&b(player)''s Boots'
+      name: '&8[&b&LWizard &a&LLvL 2&8]'
+      slot: boots
+    PotionREGEN:
+      id: 373
+      data: 8193
+      amount: 1
+      lore:
+      - '&b(player)''s Regeneration Potion'
+      name: '&8[&b&LWizard &a&LLvL 2&8]'
+      slot: inventory
+    PotionSWIFTNESS:
+      id: 373
+      data: 8194
+      amount: 1
+      lore:
+      - '&b(player)''s Swiftness Potion'
+      name: '&8[&b&LWizard &a&LLvL 2&8]'
+      slot: inventory
+    PotionWEAKNESS:
+      id: 373
+      data: 16392
+      amount: 1
+      lore:
+      - '&b(player)''s Weakness Potion'
+      name: '&8[&b&LWizard &a&LLvL 2&8]'
+      slot: inventory
+    PotionHP:
+      id: 373
+      data: 16389
+      amount: 2
+      lore:
+      - '&b(player)''s Instant Health Potion'
+      name: '&8[&b&LWizard &a&LLvL 2&8]'
+      slot: inventory
+    BlazeRod:
+      id: 259
+      data: 0
+      amount: 1
+      lore:
+      - '&aMagic Wand'
+      name: '&4Flamethrower'
+      slot: inventory
+    Bread:
+      id: 297
+      amount: 25
+      lore:
+      - '&8Bread'
+      name: '&8[&4&LKit PvP&8]'
+      slot: inventory
+  commands:
+  - hpset (player) 20
+  removeeffects: true
+  effects:
+  - 22,10,4
+  givemoney: 0
+  givexp: 0
+  usages: 0
+  clearinv: true
+  cleararmor: true
+  cooldown: 30
+  message: '&b&LSelected Kit: &6&LWizard &a&LLevel 2'
+TankLvL2:
+  items:
+    sword:
+      id: 272
+      data: 0
+      amount: 1
+      enchantments:
+      - 19,2
+      lore:
+      - '&b(player)''s Sword'
+      name: '&8[&b&LTank &a&LLvL 2&8]'
+      slot: inventory
+    GoldenApple:
+      id: 322
+      data: 0
+      amount: 3
+      lore:
+      - '&b(player)''s Golden Apple'
+      name: '&8[&b&LTank &a&LLvL 2&8]'
+      slot: inventory
+    helmet:
+      id: 306
+      amount: 1
+      lore:
+      - '&b(player)''s Helmet'
+      name: '&8[&b&LTank &a&LLvL 2&8]'
+      slot: helmet
+    chestplate:
+      id: 311
+      amount: 1
+      enchantments:
+      - 0,1
+      lore:
+      - '&b(player)''s Chestplate'
+      name: '&8[&b&LTank &a&LLvL 2&8]'
+      slot: chestplate
+    pants:
+      id: 308
+      amount: 1
+      enchantments:
+      - 0,1
+      lore:
+      - '&b(player)''s Leggings'
+      name: '&8[&b&LTank &a&LLvL 2&8]'
+      slot: leggings
+    boots:
+      id: 309
+      amount: 1
+      lore:
+      - '&b(player)''s Boots'
+      name: '&8[&b&LTank &a&LLvL 2&8]'
+      slot: boots
+    Bread:
+      id: 297
+      amount: 25
+      lore:
+      - '&8Bread'
+      name: '&8[&4&LKit PvP&8]'
+      slot: inventory
+  commands:
+  - hpset (player) 20
+  removeeffects: true
+  effects:
+  - 22,10,4
+  - 2,3000,2
+  givemoney: 0
+  givexp: 0
+  usages: 0
+  clearinv: true
+  cleararmor: true
+  cooldown: 30
+  price: 0
+  message: '&b&LSelected Kit: &6&LTank &a&LLevel 2'
+DrunkLvL2:
+  items:
+    sword:
+      id: 267
+      data: 0
+      amount: 1
+      enchantments:
+      - 19,2
+      lore:
+      - '&4&oBlind'
+      name: '&8[&b&LDrunk &a&LLvL 2&8]'
+      slot: inventory
+    helmet:
+      id: 306
+      amount: 1
+      enchantments:
+      - 0,1
+      lore:
+      - '&b(player)''s Helmet'
+      name: '&8[&b&LDrunk &a&LLvL 2&8]'
+      slot: helmet
+    chestplate:
+      id: 303
+      amount: 1
+      enchantments:
+      - 0,1
+      lore:
+      - '&b(player)''s Chestplate'
+      name: '&8[&b&LDrunk &a&LLvL 2&8]'
+      slot: chestplate
+    pants:
+      id: 304
+      amount: 1
+      enchantments:
+      - 0,1
+      lore:
+      - '&b(player)''s Leggings'
+      name: '&8[&b&LDrunk &a&LLvL 2&8]'
+      slot: leggings
+    boots:
+      id: 309
+      amount: 1
+      enchantments:
+      - 0,1
+      lore:
+      - '&b(player)''s Boots'
+      name: '&8[&b&LDrunk &a&LLvL 2&8]'
+      slot: boots
+    StrengthPotion:
+      id: 373
+      data: 8201
+      amount: 1
+      lore:
+      - '&b(player)''s Strength Potion'
+      name: '&8[&b&LDrunk &a&LLvL 2&8]'
+      slot: inventory
+    Bread:
+      id: 297
+      amount: 25
+      lore:
+      - '&8Bread'
+      name: '&8[&4&LKit PvP&8]'
+      slot: inventory
+  commands:
+  - hpset (player) 20
+  removeeffects: true
+  effects:
+  - 22,10,4
+  - 9,3000,0
+  givemoney: 0
+  givexp: 0
+  usages: 0
+  clearinv: true
+  cleararmor: true
+  cooldown: 30
+  price: 0
+  message: '&b&LSelected Kit: &6&LDrunk &A&LLevel 2'
+PyroLvL2:
+  items:
+    sword:
+      id: 267
+      data: 0
+      amount: 1
+      enchantments:
+      - 16,1
+      - 20,2
+      lore:
+      - '&b(player)''s Sword'
+      name: '&8[&b&LPyro &a&LLvL 2&8]'
+      slot: inventory
+    helmet:
+      id: 314
+      amount: 1
+      enchantments:
+      - 1,1
+      lore:
+      - '&b(player)''s Helmet'
+      name: '&8[&b&LPyro &a&LLvL 2&8]'
+      slot: helmet
+    chestplate:
+      id: 315
+      amount: 1
+      enchantments:
+      - 0,1
+      - 1,1
+      lore:
+      - '&b(player)''s Chestplate'
+      name: '&8[&b&LPyro &a&LLvL 2&8]'
+      slot: chestplate
+    pants:
+      id: 316
+      amount: 1
+      enchantments:
+      - 1,1
+      lore:
+      - '&b(player)''s Leggings'
+      name: '&8[&b&LPyro &a&LLvL 2&8]'
+      slot: leggings
+    boots:
+      id: 317
+      amount: 1
+      enchantments:
+      - 0,1
+      - 1,1
+      lore:
+      - '&b(player)''s Boots'
+      name: '&4Livefire Boots'
+      slot: boots
+    Bread:
+      id: 297
+      amount: 25
+      lore:
+      - '&8Bread'
+      name: '&8[&4&LKit PvP&8]'
+      slot: inventory
+  commands:
+  - hpset (player) 20
+  removeeffects: true
+  effects:
+  - 22,10,4
+  - 12,3000,3
+  givemoney: 0
+  givexp: 0
+  usages: 0
+  clearinv: true
+  cleararmor: true
+  cooldown: 30
+  message: '&b&LSelected Kit: &6&LPyro &a&LLevel 2'
+BunnyLvL2:
+  items:
+    sword:
+      id: 267
+      data: 0
+      amount: 1
+      enchantments: []
+      lore:
+      - '&b(player)''s Sword'
+      name: '&8[&b&LBunny &a&LLvL 2&8]'
+      slot: inventory
+    helmet:
+      id: 298
+      amount: 1
+      enchantments:
+      - 0,2
+      lore:
+      - '&b(player)''s Helmet'
+      name: '&8[&b&LBunny &a&LLvL 2&8]'
+      slot: helmet
+      color: 250 250 250
+    chestplate:
+      id: 299
+      amount: 1
+      enchantments:
+      - 0,2
+      lore:
+      - '&b(player)''s Chestplate'
+      name: '&8[&b&LBunny &a&LLvL 2&8]'
+      slot: chestplate
+      color: 250 250 250
+    pants:
+      id: 300
+      amount: 1
+      enchantments:
+      - 0,2
+      lore:
+      - '&b(player)''s Leggings'
+      name: '&8[&b&LBunny &a&LLvL 2&8]'
+      slot: leggings
+      color: 250 250 250
+    boots:
+      id: 301
+      amount: 1
+      enchantments:
+      - 0,2
+      lore:
+      - '&b(player)''s Boots'
+      name: '&8[&b&LBunny &a&LLvL 2&8]'
+      slot: boots
+      color: 250 250 250
+    Carrot:
+      id: 391
+      amount: 1
+      enchantments:
+      - 16,6
+      - 19,10
+      lore:
+      - '&6Bunny Power ;D'
+      name: '&6Knockback Carrot'
+      slot: inventory
+    PoisonPotion:
+      id: 373
+      data: 16420
+      amount: 2
+      lore:
+      - '&b(player)''s Poison Potion'
+      name: '&8[&b&LBunny &a&LLvL 2&8]'
+      slot: inventory
+    DamagePotion:
+      id: 373
+      data: 16396
+      amount: 2
+      lore:
+      - '&b(player)''s Instant Damage Potion'
+      name: '&8[&b&LBunny &a&LLvL 2&8]'
+      slot: inventory
+    Bread:
+      id: 297
+      amount: 25
+      lore:
+      - '&8Bread'
+      name: '&8[&4&LKit PvP&8]'
+      slot: inventory
+  commands:
+  - hpset (player) 20
+  removeeffects: true
+  effects:
+  - 22,10,4
+  - 8,3000,3
+  givemoney: 0
+  givexp: 0
+  usages: 0
+  clearinv: true
+  cleararmor: true
+  cooldown: 30
+  price: 0
+  message: '&b&LSelected Kit: &6&LBunny &a&LLevel 2'
+DarkMage:
+  items:
+    sword:
+      id: 272
+      data: 0
+      amount: 1
+      enchantments:
+      - 16,1
+      lore:
+      - '&b(player)''s Sword'
+      name: '&8[&4&LDark Mage&8]'
+      slot: inventory
+    staf:
+      id: 369
+      amount: 1
+      enchantments: []
+      lore:
+      - '&b(player)''s Wand'
+      name: '&7Potion Launcher'
+      slot: inventory
+    potions:
+      id: 373
+      data: 16396
+      amount: 2
+      enchantments: []
+      lore:
+      - '&b(player)''s Potion'
+      name: '&8[&4&LDark Mage&8]'
+      slot: inventory
+    stick:
+      id: 280
+      amount: 1
+      enchantments: []
+      lore:
+      - '&b(player)''s Stick'
+      name: '&8[&4&LDark Mage&8]'
+      slot: inventory
+    helmet:
+      id: 298
+      amount: 1
+      enchantments: []
+      lore:
+      - '&b(player)''s Helmet'
+      name: '&8[&4&LDark Mage&8]'
+      slot: helmet
+      color: 0 0 0
+    chestplate:
+      id: 299
+      amount: 1
+      enchantments: []
+      lore:
+      - '&b(player)''s Chestplate'
+      name: '&8[&4&LDark Mage&8]'
+      slot: chestplate
+      color: 0 0 0
+    pants:
+      id: 300
+      amount: 1
+      enchantments: []
+      lore:
+      - '&b(player)''s Leggings'
+      name: '&8[&4&LDark Mage&8]'
+      slot: leggings
+      color: 0 0 0
+    boots:
+      id: 309
+      amount: 1
+      enchantments: []
+      lore:
+      - '&8Power: &a&oONLINE'
+      name: '&bRocket Boots'
+      slot: boots
+      color: 0 0 0
+    Bread:
+      id: 297
+      amount: 25
+      lore:
+      - '&8Bread'
+      name: '&8[&4&LKit PvP&8]'
+      slot: inventory
+  commands:
+  - hpset (player) 20
+  removeeffects: true
+  effects:
+  - 22,10,4
+  givemoney: 0
+  givexp: 0
+  usages: 0
+  clearinv: true
+  cleararmor: true
+  cooldown: 30
+  price: 0
+  message: '&b&LSelected Kit: &6&LDark Mage'
+Beast:
+  items:
+    sword:
+      id: 258
+      data: 0
+      amount: 1
+      enchantments:
+      - 16,1
+      lore:
+      - '&4&oShockwave'
+      name: '&8[&4&LBeast&8]'
+      slot: inventory
+    helmet:
+      id: 298
+      amount: 1
+      enchantments:
+      - 0,1
+      lore:
+      - '&b(player)''s Helmet'
+      name: '&8[&4&LBeast&8]'
+      slot: helmet
+      color: 15 0 0
+    chestplate:
+      id: 299
+      amount: 1
+      enchantments:
+      - 0,1
+      lore:
+      - '&b(player)''s Chestplate'
+      name: '&8[&4&LBeast&8]'
+      slot: chestplate
+      color: 15 0 0
+    pants:
+      id: 300
+      amount: 1
+      enchantments:
+      - 0,1
+      lore:
+      - '&b(player)''s Leggings'
+      name: '&8[&4&LBeast&8]'
+      slot: leggings
+      color: 15 0 0
+    boots:
+      id: 301
+      amount: 1
+      enchantments:
+      - 0,1
+      lore:
+      - '&b(player)''s Boots'
+      name: '&8[&4&LBeast&8]'
+      slot: boots
+      color: 15 0 0
+    Bread:
+      id: 297
+      amount: 25
+      lore:
+      - '&8Bread'
+      name: '&8[&4&LKit PvP&8]'
+      slot: inventory
+  commands:
+  - hpset (player) 20
+  removeeffects: true
+  effects:
+  - 22,10,4
+  givemoney: 0
+  givexp: 0
+  usages: 0
+  clearinv: true
+  cleararmor: true
+  cooldown: 30
+  price: 0
+  message: '&b&LSelected Kit: &6&LBeast'
+Fish:
+  items:
+    fish1:
+      id: 349
+      data: 0
+      amount: 1
+      enchantments:
+      - 16,8
+      lore:
+      - '&b(player)''s Fish'
+      name: '&8[&4&LFish&8]'
+      slot: inventory
+    fish2:
+      id: 349
+      data: 2
+      amount: 1
+      enchantments:
+      - 19,5
+      lore:
+      - '&b(player)''s Fish'
+      name: '&8[&4&LFish&8]'
+      slot: inventory
+    fish3:
+      id: 349
+      data: 3
+      amount: 1
+      enchantments: []
+      lore:
+      - '&4&oPoison'
+      name: '&8[&4&LFish&8]'
+      slot: inventory
+    fish4:
+      id: 350
+      data: 0
+      amount: 1
+      enchantments:
+      - 20,2
+      - 16,2
+      lore:
+      - '&b(player)''s Fish'
+      name: '&8[&4&LFish&8]'
+      slot: inventory
+    helmet:
+      id: 302
+      amount: 1
+      enchantments: []
+      lore:
+      - '&b(player)''s Helmet'
+      name: '&8[&4&LFish&8]'
+      slot: helmet
+      color: 15 0 0
+    chestplate:
+      id: 303
+      amount: 1
+      enchantments: []
+      lore:
+      - '&b(player)''s Chestplate'
+      name: '&8[&4&LFish&8]'
+      slot: chestplate
+      color: 15 0 0
+    pants:
+      id: 304
+      amount: 1
+      enchantments: []
+      lore:
+      - '&b(player)''s Leggings'
+      name: '&8[&4&LFish&8]'
+      slot: leggings
+      color: 15 0 0
+    boots:
+      id: 305
+      amount: 1
+      enchantments: []
+      lore:
+      - '&b(player)''s Boots'
+      name: '&8[&4&LFish&8]'
+      slot: boots
+      color: 15 0 0
+    Bread:
+      id: 297
+      amount: 25
+      lore:
+      - '&8Bread'
+      name: '&8[&4&LKit PvP&8]'
+      slot: inventory
+  commands:
+  - hpset (player) 20
+  removeeffects: true
+  effects:
+  - 22,10,4
+  givemoney: 0
+  givexp: 0
+  usages: 0
+  clearinv: true
+  cleararmor: true
+  cooldown: 30
+  price: 0
+  message: '&b&LSelected Kit: &6&LFish'
+NecromancerLvL2:
+  items:
+    sword:
+      id: 294
+      data: 0
+      amount: 1
+      enchantments:
+      - 16,10
+      lore:
+      - '&b(player)''s Hoe'
+      name: '&8Death''s Scythe'
+      slot: inventory
+    Bow:
+      id: 261
+      data: 0
+      amount: 1
+      enchantments:
+      - 48,1
+      lore:
+      - '&b(player)''s Bow'
+      name: '&bBeastmaster''s Bow'
+      slot: inventory
+    Arrow:
+      id: 262
+      data: 0
+      amount: 10
+      lore:
+      - '&b(player)''s Arrow'
+      name: '&8[&b&LNecromancer &a&LLvL 2&8]'
+      slot: inventory
+    helmet:
+      id: 298
+      amount: 1
+      enchantments:
+      - 0,2
+      lore:
+      - '&b(player)''s Helmet'
+      name: '&8[&b&LNecromancer &a&LLvL 2&8]'
+      slot: helmet
+      color: 0 0 0
+    chestplate:
+      id: 299
+      amount: 1
+      enchantments:
+      - 0,2
+      lore:
+      - '&b(player)''s Chestplate'
+      name: '&8[&b&LNecromancer &a&LLvL 2&8]'
+      slot: chestplate
+      color: 0 0 0
+    pants:
+      id: 300
+      amount: 1
+      enchantments:
+      - 0,2
+      lore:
+      - '&b(player)''s Leggings'
+      name: '&8[&b&LNecromancer &a&LLvL 2&8]'
+      slot: leggings
+      color: 0 0 0
+    boots:
+      id: 301
+      amount: 1
+      enchantments:
+      - 0,2
+      lore:
+      - '&b(player)''s Boots'
+      name: '&8[&b&LNecromancer &a&LLvL 2&8]'
+      slot: boots
+      color: 0 0 0
+    Bread:
+      id: 297
+      amount: 25
+      lore:
+      - '&8Bread'
+      name: '&8[&4&LKit PvP&8]'
+      slot: inventory
+  commands:
+  - hpset (player) 20
+  removeeffects: true
+  effects:
+  - 22,10,4
+  givemoney: 0
+  givexp: 0
+  usages: 0
+  clearinv: true
+  cleararmor: true
+  cooldown: 30
+  price: 0
+  message: '&b&LSelected Kit: &6&LNecromancer &a&LLevel 2'
+KnightLvL3:
+  items:
+    sword:
+      id: 272
+      data: 0
+      amount: 1
+      enchantments:
+      - 16,1
+      lore:
+      - '&b(player)''s Sword'
+      name: '&8[&b&LKnight&a&L LvL 3&8]'
+      slot: inventory
+    helmet:
+      id: 302
+      amount: 1
+      enchantments:
+      - 0,1
+      lore:
+      - '&b(player)''s Helmet'
+      name: '&8[&b&LKnight&a&L LvL 3&8]'
+      slot: helmet
+    chestplate:
+      id: 303
+      amount: 1
+      enchantments:
+      - 0,1
+      lore:
+      - '&b(player)''s Chestplate'
+      name: '&8[&b&LKnight&a&L LvL 3&8]'
+      slot: chestplate
+    pants:
+      id: 304
+      amount: 1
+      enchantments:
+      - 0,1
+      lore:
+      - '&b(player)''s Leggings'
+      name: '&8[&b&LKnight&a&L LvL 3&8]'
+      slot: leggings
+    boots:
+      id: 305
+      amount: 1
+      enchantments:
+      - 0,1
+      lore:
+      - '&b(player)''s Boots'
+      name: '&8[&b&LKnight&a&L LvL 3&8]'
+      slot: boots
+    HPPotion:
+      id: 373
+      data: 16389
+      amount: 2
+      lore:
+      - '&b(player)''s Instant Health Potion'
+      name: '&8[&b&LKnight&a&L LvL 3&8]'
+      slot: inventory
+    Bread:
+      id: 297
+      amount: 25
+      lore:
+      - '&8Bread'
+      name: '&8[&4&LKit PvP&8]'
+      slot: inventory
+  commands:
+  - hpset (player) 20
+  removeeffects: true
+  effects:
+  - 22,10,4
+  givemoney: 0
+  givexp: 0
+  usages: 0
+  clearinv: true
+  cleararmor: true
+  cooldown: 30
+  price: 0
+  message: '&b&LSelected Kit: &6&LKnight &a&LLeveL 3'
+ArcherLvL3:
+  items:
+    sword:
+      id: 272
+      data: 0
+      amount: 1
+      enchantments: []
+      lore:
+      - '&b(player)''s Sword'
+      name: '&8[&b&LArcher&a&L LvL 3&8]'
+      slot: inventory
+    Bow:
+      id: 261
+      data: 0
+      amount: 1
+      enchantments:
+      - 48,1
+      lore:
+      - '&4&oLightning'
+      name: '&8[&b&LArcher&a&L LvL 3&8]'
+      slot: inventory
+    Arrows:
+      id: 262
+      data: 0
+      amount: 32
+      lore:
+      - '&b(player)''s Arrows'
+      name: '&8[&b&LArcher&a&L LvL 3&8]'
+      slot: inventory
+    helmet:
+      id: 298
+      amount: 1
+      enchantments:
+      - 0,1
+      lore:
+      - '&b(player)''s Helmet'
+      name: '&8[&b&LArcher&a&L LvL 3&8]'
+      slot: helmet
+      color: 51 255 204
+    chestplate:
+      id: 299
+      amount: 1
+      enchantments:
+      - 0,1
+      lore:
+      - '&b(player)''s Chestplate'
+      name: '&8[&b&LArcher&a&L LvL 3&8]'
+      slot: chestplate
+      color: 51 255 204
+    pants:
+      id: 300
+      amount: 1
+      enchantments:
+      - 0,1
+      lore:
+      - '&b(player)''s Leggings'
+      name: '&8[&b&LArcher&a&L LvL 3&8]'
+      slot: leggings
+      color: 51 255 204
+    boots:
+      id: 301
+      amount: 1
+      enchantments:
+      - 0,1
+      lore:
+      - '&b(player)''s Boots'
+      name: '&8[&b&LArcher&a&L LvL 3&8]'
+      slot: boots
+      color: 51 255 204
+    HPPotion:
+      id: 373
+      data: 16389
+      amount: 1
+      lore:
+      - '&b(player)''s HP Potion'
+      name: '&8[&b&LArcher&a&L LvL 3&8]'
+      slot: inventory
+    Bread:
+      id: 297
+      amount: 25
+      lore:
+      - '&8Bread'
+      name: '&8[&4&LKit PvP&8]'
+      slot: inventory
+  commands:
+  - hpset (player) 20
+  removeeffects: true
+  effects:
+  - 22,10,4
+  givemoney: 0
+  givexp: 0
+  usages: 0
+  clearinv: true
+  cleararmor: true
+  cooldown: 30
+  price: 0
+  message: '&b&LSelected Kit: &6&LArcher &a&LLevel 3'
+Heavy:
+  items:
+    sword:
+      id: 267
+      amount: 1
+      enchantments: []
+      lore:
+      - '&b(player)''s Sword'
+      name: '&8[&4&LHeavy&8]'
+      slot: inventory
+    Bow:
+      id: 261
+      data: 0
+      amount: 1
+      lore:
+      - '&b(player)''s Bow'
+      name: '&bMinigun'
+      slot: inventory
+    Arrows:
+      id: 262
+      data: 0
+      amount: 8
+      lore:
+      - '&b(player)''s Arrow'
+      name: '&8[&4&LHeavy&8]'
+      slot: inventory
+    helmet:
+      id: 298
+      amount: 1
+      enchantments:
+      - 0,2
+      lore:
+      - '&b(player)''s Helmet'
+      name: '&8[&4&LHeavy&8]'
+      slot: helmet
+      color: 2 100 204
+    chestplate:
+      id: 299
+      amount: 1
+      enchantments:
+      - 0,2
+      lore:
+      - '&b(player)''s Chestplate'
+      name: '&8[&4&LHeavy&8]'
+      slot: chestplate
+      color: 2 100 204
+    pants:
+      id: 300
+      amount: 1
+      enchantments:
+      - 0,2
+      lore:
+      - '&b(player)''s Leggings'
+      name: '&8[&4&LHeavy&8]'
+      slot: leggings
+      color: 2 100 204
+    boots:
+      id: 301
+      amount: 1
+      enchantments:
+      - 0,2
+      lore:
+      - '&b(player)''s Boots'
+      name: '&8[&4&LHeavy&8]'
+      slot: boots
+      color: 2 100 204
+    Bread:
+      id: 297
+      amount: 25
+      lore:
+      - '&8Bread'
+      name: '&8[&4&LKit PvP&8]'
+      slot: inventory
+  commands:
+  - hpset (player) 20
+  removeeffects: true
+  effects:
+  - 22,10,4
+  givemoney: 0
+  givexp: 0
+  usages: 0
+  clearinv: true
+  cleararmor: true
+  cooldown: 30
+  price: 0
+  message: '&b&LSelected Kit: &6&LHeavy'
+King:
+  items:
+    sword:
+      id: 272
+      data: 0
+      amount: 1
+      enchantments:
+      - 16,1
+      lore:
+      - '&b(player)''s Sword'
+      name: '&8[&1&LKing&8]'
+      slot: inventory
+    helmet:
+      id: 310
+      amount: 1
+      lore:
+      - '&b(player)''s Helmet'
+      name: '&8[&1&LKing&8]'
+      slot: helmet
+    chestplate:
+      id: 315
+      amount: 1
+      enchantments:
+      - 0,2
+      lore:
+      - '&b(player)''s Chestplate'
+      name: '&8[&1&LKing&8]'
+      slot: chestplate
+    pants:
+      id: 316
+      amount: 1
+      lore:
+      - '&b(player)''s Leggings'
+      name: '&8[&1&LKing&8]'
+      slot: leggings
+    boots:
+      id: 317
+      amount: 1
+      lore:
+      - '&b(player)''s Boots'
+      name: '&8[&1&LKing&8]'
+      slot: boots
+    Bread:
+      id: 297
+      amount: 25
+      lore:
+      - '&8Bread'
+      name: '&8[&4&LKit PvP&8]'
+      slot: inventory
+  commands:
+  - hpset (player) 20
+  removeeffects: true
+  effects:
+  - 22,10,4
+  givemoney: 0
+  givexp: 0
+  usages: 0
+  clearinv: true
+  cleararmor: true
+  cooldown: 30
+  message: '&b&LSelected Kit: &6&LKing'
+Tree:
+  items:
+    sword:
+      id: 18
+      data: 0
+      amount: 1
+      enchantments:
+      - 16,4
+      lore:
+      - '&b(player)''s Leaves'
+      name: '&8[&1&LTree&8]'
+      slot: inventory
+    helmet:
+      id: 18
+      amount: 1
+      enchantments:
+      - 0,3
+      lore:
+      - '&b(player)''s Leaves'
+      name: '&8[&1&LTree&8]'
+      slot: helmet
+    chestplate:
+      id: 303
+      amount: 1
+      lore:
+      - '&b(player)''s Chestplate'
+      name: '&8[&1&LTree&8]'
+      slot: chestplate
+    pants:
+      id: 304
+      amount: 1
+      lore:
+      - '&b(player)''s Leggings'
+      name: '&8[&1&LTree&8]'
+      slot: leggings
+    boots:
+      id: 305
+      amount: 1
+      lore:
+      - '&b(player)''s Boots'
+      name: '&8[&1&LTree&8]'
+      slot: boots
+    Bread:
+      id: 297
+      amount: 25
+      lore:
+      - '&8Bread'
+      name: '&8[&4&LKit PvP&8]'
+      slot: inventory
+  commands:
+  - hpset (player) 20
+  removeeffects: true
+  effects:
+  - 22,10,4
+  givemoney: 0
+  givexp: 0
+  usages: 0
+  clearinv: true
+  cleararmor: true
+  cooldown: 30
+  message: '&b&LSelected Kit: &6&LTree'
+TNT:
+  items:
+    sword:
+      id: 46
+      data: 0
+      amount: 1
+      enchantments:
+      - 16,4
+      - 20,2
+      lore:
+      - '&b(player)''s Sword'
+      name: '&8[&1&LTNT&8]'
+      slot: inventory
+    PotionSWIFTNESS:
+      id: 373
+      data: 8194
+      amount: 1
+      lore:
+      - '&b(player)''s Swiftness Potion'
+      name: '&8[&1&LTNT&8]'
+      slot: inventory
+    helmet:
+      id: 46
+      amount: 1
+      enchantments:
+      - 0,5
+      lore:
+      - '&b(player)''s Helmet'
+      name: '&8[&1&LTNT&8]'
+      slot: helmet
+    chestplate:
+      id: 315
+      amount: 1
+      enchantments: []
+      lore:
+      - '&b(player)''s Chestplate'
+      name: '&8[&1&LTNT&8]'
+      slot: chestplate
+    pants:
+      id: 316
+      amount: 1
+      lore:
+      - '&b(player)''s Leggings'
+      name: '&8[&1&LTNT&8]'
+      slot: leggings
+    boots:
+      id: 317
+      amount: 1
+      lore:
+      - '&b(player)''s Boots'
+      name: '&8[&1&LTNT&8]'
+      slot: boots
+    Bread:
+      id: 297
+      amount: 25
+      lore:
+      - '&8Bread'
+      name: '&8[&4&LKit PvP&8]'
+      slot: inventory
+  commands:
+  - hpset (player) 20
+  removeeffects: true
+  effects:
+  - 22,10,4
+  givemoney: 0
+  givexp: 0
+  usages: 0
+  clearinv: true
+  cleararmor: true
+  cooldown: 30
+  message: '&b&LSelected Kit: &6&LTNT'
+Blaze:
+  items:
+    sword:
+      id: 377
+      data: 0
+      amount: 1
+      enchantments:
+      - 16,3
+      - 20,1
+      lore:
+      - '&b(player)''s Blaze Powder'
+      name: '&8[&1&LBlaze&8]'
+      slot: inventory
+    coal:
+      id: 383
+      data: 61
+      amount: 1
+      enchantments: []
+      lore:
+      - '&b(player)''s Blaze'
+      name: '&8[&1&LBlaze&8]'
+      slot: inventory
+    helmet:
+      id: 159
+      data: 4
+      amount: 1
+      enchantments:
+      - 0,2
+      - 1,3
+      lore:
+      - '&b(player)''s Helmet'
+      name: '&8[&1&LBlaze&8]'
+      slot: helmet
+    chestplate:
+      id: 299
+      amount: 1
+      enchantments:
+      - 0,1
+      - 1,3
+      lore:
+      - '&b(player)''s Chestplate'
+      name: '&8[&1&LBlaze&8]'
+      slot: chestplate
+      color: 180 130 10
+    pants:
+      id: 300
+      amount: 1
+      enchantments:
+      - 0,1
+      - 1,3
+      lore:
+      - '&b(player)''s Leggings'
+      name: '&8[&1&LBlaze&8]'
+      slot: leggings
+      color: 180 130 10
+    boots:
+      id: 301
+      amount: 1
+      enchantments:
+      - 0,1
+      - 1,3
+      lore:
+      - '&b(player)''s Boots'
+      name: '&8[&1&LBlaze&8]'
+      slot: boots
+      color: 180 130 10
+    Bread:
+      id: 297
+      amount: 25
+      lore:
+      - '&8Bread'
+      name: '&8[&4&LKit PvP&8]'
+      slot: inventory
+  commands:
+  - hpset (player) 20
+  removeeffects: true
+  effects:
+  - 22,10,4
+  givemoney: 0
+  givexp: 0
+  usages: 0
+  clearinv: true
+  cleararmor: true
+  cooldown: 30
+  price: 0
+  message: '&b&LSelected Kit: &6&LBlaze'
+GrimReaper:
+  items:
+    sword:
+      id: 275
+      data: 0
+      amount: 1
+      enchantments:
+      - 16,3
+      lore:
+      - '&b(player)''s Axe'
+      name: '&8[&4&LGrim Reaper&8]'
+      slot: inventory
+    helmet:
+      id: 397
+      data: 1
+      amount: 1
+      enchantments:
+      - 0,8
+      lore:
+      - '&b(player)''s Helmet'
+      name: '&8[&4&LGrim Reaper&8]'
+      slot: helmet
+      color: 100 100 100
+    chestplate:
+      id: 299
+      amount: 1
+      lore:
+      - '&b(player)''s Chestplate'
+      - '&4&oFrozen'
+      name: '&8[&4&LGrim Reaper&8]'
+      slot: chestplate
+      color: 100 100 100
+    pants:
+      id: 300
+      amount: 1
+      lore:
+      - '&b(player)''s Leggings'
+      name: '&8[&4&LGrim Reaper&8]'
+      slot: leggings
+      color: 100 100 100
+    boots:
+      id: 301
+      amount: 1
+      lore:
+      - '&b(player)''s Boots'
+      name: '&8[&4&LGrim Reaper&8]'
+      slot: boots
+      color: 100 100 100
+    Bread:
+      id: 297
+      amount: 25
+      lore:
+      - '&8Bread'
+      name: '&8[&4&LKit PvP&8]'
+      slot: inventory
+  commands:
+  - hpset (player) 20
+  removeeffects: true
+  effects:
+  - 22,10,4
+  givemoney: 0
+  givexp: 0
+  usages: 0
+  clearinv: true
+  cleararmor: true
+  cooldown: 30
+  price: 0
+  message: '&b&LSelected Kit: &6&LGrim Reaper'
+FisherMan:
+  items:
+    sword:
+      id: 346
+      data: 0
+      amount: 1
+      enchantments:
+      - 16,6
+      lore:
+      - '&b(player)''s Fishing Rod'
+      name: '&8[&1&LFisherMan&8]'
+      slot: inventory
+    fish:
+      id: 349
+      data: 1
+      amount: 1
+      enchantments:
+      - 19,4
+      - 20,2
+      lore:
+      - '&b(player)''s Fish'
+      name: '&8[&1&LFisherMan&8]'
+      slot: inventory
+    helmet:
+      id: 298
+      amount: 1
+      enchantments:
+      - 0,2
+      lore:
+      - '&b(player)''s Helmet'
+      name: '&8[&1&LFisherMan&8]'
+      slot: helmet
+      color: 120 130 10
+    chestplate:
+      id: 299
+      amount: 1
+      enchantments:
+      - 0,1
+      lore:
+      - '&b(player)''s Chestplate'
+      name: '&8[&1&LFisherMan&8]'
+      slot: chestplate
+      color: 120 130 10
+    pants:
+      id: 300
+      amount: 1
+      enchantments:
+      - 0,1
+      lore:
+      - '&b(player)''s Leggings'
+      name: '&8[&1&LFisherMan&8]'
+      slot: leggings
+      color: 120 130 10
+    boots:
+      id: 301
+      amount: 1
+      enchantments:
+      - 0,2
+      lore:
+      - '&b(player)''s Boots'
+      name: '&8[&1&LFisherMan&8]'
+      slot: boots
+      color: 120 130 10
+    Bread:
+      id: 297
+      amount: 25
+      lore:
+      - '&8Bread'
+      name: '&8[&4&LKit PvP&8]'
+      slot: inventory
+  commands:
+  - hpset (player) 20
+  removeeffects: true
+  effects:
+  - 22,10,4
+  givemoney: 0
+  givexp: 0
+  usages: 0
+  clearinv: true
+  cleararmor: true
+  cooldown: 30
+  price: 0
+  message: '&b&LSelected Kit: &6&LFisherMan'
+SnowGolem:
+  items:
+    sword:
+      id: 332
+      data: 0
+      amount: 1
+      enchantments:
+      - 16,8
+      - 19,2
+      lore:
+      - '&b(player)''s Snowball'
+      name: '&8[&1&LSnowGolem&8]'
+      slot: inventory
+    helmet:
+      id: 86
+      amount: 1
+      enchantments:
+      - 0,6
+      lore:
+      - '&b(player)''s Helmet'
+      name: '&8[&1&LSnowGolem&8]'
+      slot: helmet
+      color: 200 200 200
+    chestplate:
+      id: 299
+      amount: 1
+      enchantments:
+      - 0,2
+      lore:
+      - '&b(player)''s Chestplate'
+      name: '&8[&1&LSnowGolem&8]'
+      slot: chestplate
+      color: 200 200 200
+    pants:
+      id: 300
+      amount: 1
+      enchantments:
+      - 0,1
+      lore:
+      - '&b(player)''s Leggings'
+      name: '&8[&1&LSnowGolem&8]'
+      slot: leggings
+      color: 200 200 200
+    boots:
+      id: 301
+      amount: 1
+      enchantments:
+      - 0,1
+      lore:
+      - '&b(player)''s Boots'
+      name: '&8[&1&LSnowGolem&8]'
+      slot: boots
+      color: 200 200 200
+    Bread:
+      id: 297
+      amount: 25
+      lore:
+      - '&8Bread'
+      name: '&8[&4&LKit PvP&8]'
+      slot: inventory
+  commands:
+  - hpset (player) 20
+  removeeffects: true
+  effects:
+  - 22,10,4
+  - 1,3000,0
+  givemoney: 0
+  givexp: 0
+  usages: 0
+  clearinv: true
+  cleararmor: true
+  cooldown: 30
+  price: 0
+  message: '&b&LSelected Kit: &6&LSnowGolem'
+Librarian:
+  items:
+    sword:
+      id: 340
+      data: 0
+      amount: 1
+      enchantments:
+      - 19,6
+      lore:
+      - '&b(player)''s Book'
+      name: '&8[&1&LLibrarian&8]'
+      slot: inventory
+    book:
+      id: 339
+      data: 1
+      amount: 1
+      enchantments:
+      - 16,9
+      lore:
+      - '&b(player)''s Paper'
+      name: '&8[&1&LLibrarian&8]'
+      slot: inventory
+    helmet:
+      id: 47
+      amount: 1
+      enchantments:
+      - 0,6
+      lore:
+      - '&b(player)''s Helmet'
+      name: '&8[&1&LLibrarian&8]'
+      slot: helmet
+    chestplate:
+      id: 303
+      amount: 1
+      enchantments: []
+      lore:
+      - '&b(player)''s Chestplate'
+      name: '&8[&1&LLibrarian&8]'
+      slot: chestplate
+    pants:
+      id: 304
+      amount: 1
+      enchantments: []
+      lore:
+      - '&b(player)''s Leggings'
+      name: '&8[&1&LLibrarian&8]'
+      slot: leggings
+    boots:
+      id: 305
+      amount: 1
+      enchantments: []
+      lore:
+      - '&b(player)''s Boots'
+      name: '&8[&1&LLibrarian&8]'
+      slot: boots
+    Bread:
+      id: 297
+      amount: 25
+      lore:
+      - '&8Bread'
+      name: '&8[&4&LKit PvP&8]'
+      slot: inventory
+  commands:
+  - hpset (player) 20
+  removeeffects: true
+  effects:
+  - 22,10,4
+  givemoney: 0
+  givexp: 0
+  usages: 0
+  clearinv: true
+  cleararmor: true
+  cooldown: 30
+  price: 0
+  message: '&b&LSelected Kit: &6&LLibrarian'
+Spider:
+  items:
+    sword:
+      id: 375
+      data: 0
+      amount: 1
+      enchantments:
+      - 16,9
+      lore:
+      - '&b(player)''s Egg'
+      - '&4&oPoison'
+      name: '&8[&1&LSpider&8]'
+      slot: inventory
+    egg1:
+      id: 383
+      data: 52
+      amount: 2
+      enchantments: []
+      lore:
+      - '&b(player)''s Spider'
+      name: '&8[&1&LSpider&8]'
+      slot: inventory
+    egg2:
+      id: 383
+      data: 59
+      amount: 2
+      enchantments: []
+      lore:
+      - '&b(player)''s Cave Spider'
+      name: '&8[&1&LSpider&8]'
+      slot: inventory
+    helmet:
+      id: 298
+      amount: 1
+      enchantments:
+      - 0,2
+      lore:
+      - '&b(player)''s Helmet'
+      name: '&8[&1&LSpider&8]'
+      slot: helmet
+      color: 0 0 0
+    chestplate:
+      id: 299
+      amount: 1
+      enchantments:
+      - 0,3
+      lore:
+      - '&b(player)''s Chestplate'
+      name: '&8[&1&LSpider&8]'
+      slot: chestplate
+      color: 0 0 0
+    pants:
+      id: 300
+      amount: 1
+      enchantments:
+      - 0,2
+      lore:
+      - '&b(player)''s Leggings'
+      name: '&8[&1&LSpider&8]'
+      slot: leggings
+      color: 0 0 0
+    boots:
+      id: 301
+      amount: 1
+      enchantments:
+      - 0,2
+      lore:
+      - '&b(player)''s Boots'
+      name: '&8[&1&LSpider&8]'
+      slot: boots
+      color: 0 0 0
+    Bread:
+      id: 297
+      amount: 25
+      lore:
+      - '&8Bread'
+      name: '&8[&4&LKit PvP&8]'
+      slot: inventory
+  commands:
+  - hpset (player) 20
+  removeeffects: true
+  effects:
+  - 22,10,4
+  givemoney: 0
+  givexp: 0
+  usages: 0
+  clearinv: true
+  cleararmor: true
+  cooldown: 30
+  price: 0
+  message: '&b&LSelected Kit: &6&LSpider'
+Villager:
+  items:
+    sword:
+      id: 388
+      data: 0
+      amount: 1
+      enchantments:
+      - 16,10
+      - 20,1
+      lore:
+      - '&b(player)''s Emerald'
+      name: '&8[&1&LVillager&8]'
+      slot: inventory
+    helmet:
+      id: 302
+      amount: 1
+      enchantments:
+      - 0,1
+      lore:
+      - '&b(player)''s Helmet'
+      name: '&8[&1&LVillager&8]'
+      slot: helmet
+    chestplate:
+      id: 303
+      amount: 1
+      enchantments:
+      - 0,1
+      lore:
+      - '&b(player)''s Chestplate'
+      name: '&8[&1&LVillager&8]'
+      slot: chestplate
+    pants:
+      id: 304
+      amount: 1
+      enchantments:
+      - 0,1
+      lore:
+      - '&b(player)''s Leggings'
+      name: '&8[&1&LVillager&8]'
+      slot: leggings
+    boots:
+      id: 305
+      amount: 1
+      enchantments:
+      - 0,1
+      lore:
+      - '&b(player)''s Boots'
+      name: '&8[&1&LVillager&8]'
+      slot: boots
+    Bread:
+      id: 297
+      amount: 25
+      lore:
+      - '&8Bread'
+      name: '&8[&4&LKit PvP&8]'
+      slot: inventory
+  commands:
+  - hpset (player) 20
+  removeeffects: true
+  effects:
+  - 22,10,4
+  givemoney: 0
+  givexp: 0
+  usages: 0
+  clearinv: true
+  cleararmor: true
+  cooldown: 30
+  price: 0
+  message: '&b&LSelected Kit: &6&LVillager'

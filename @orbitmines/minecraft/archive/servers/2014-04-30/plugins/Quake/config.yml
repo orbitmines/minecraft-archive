@@ -1,0 +1,8 @@
+useVault: false
+shop:
+  id: 388
+  world:
+  - MiniGames
+ScoreBoard:
+  world:
+  - MiniGames

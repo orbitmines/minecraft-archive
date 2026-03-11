@@ -1,0 +1,15 @@
+{
+  "name": "raidpro",
+  "createdAtMillis": 1396883690485,
+  "home": {
+    "w": "Factions",
+    "lx": -1577.0586769840409,
+    "ly": 91.0,
+    "lz": 538.4505418420756,
+    "p": 46.65001,
+    "y": -208.24722
+  },
+  "relationWishes": {
+    "fb7a7f61-0809-4a59-82fc-084406c1c1dd": "ENEMY"
+  }
+}

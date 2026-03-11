@@ -1,0 +1,13 @@
+# Enable debug info in console
+debug-mode: false
+
+# Enable colors in console output
+color-logs: true
+
+# Should the user's backpack empty to the ground when they die?
+# A false value will leave the player's backpack contents alone.
+empty-backpack-on-death: false
+
+# If empty-backpack-on-death is true should we drop the items to the ground?
+# A false value will just make the backpack items disappear.
+drop-backpack-items-on-death: false

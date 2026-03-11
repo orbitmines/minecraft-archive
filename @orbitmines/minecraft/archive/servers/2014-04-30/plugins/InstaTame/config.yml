@@ -1,0 +1,20 @@
+# InstaTame v2.0 by spoljo666spoljo
+wild-tame:
+  enabled: true
+  notify:
+    # Should we notify player once he tames a wild horse
+    enabled: true
+    # Message that will be sent to player that tames a wild horse
+    message: '&9[&6Horse&9] Yes Sir!'
+
+egg-tame:
+  enabled: true
+  notify:
+    # Should we notify player once he tames a horse with the egg
+    enabled: true
+    # Message that will be sent to player that spawns the horse with an egg
+    message: '&9[&6Horse&9] Yes Sir!'
+
+# Color of the horse that you spawn
+# Valid colors: BLACK, BROWN, CHESTNUT, CREAMY, DARK_BROWN, GRAY, WHITE
+egg-spawn-color: CREAMY

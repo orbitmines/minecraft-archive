@@ -1,0 +1,16 @@
+permission: ''
+world: world
+X: 241
+Y: 87
+Z: 243
+price: 0.0
+cooldown: 0
+globalCooldown: 0
+confirmation: false
+commands:
+- '/PlayPvPSelectVenusT '
+grantPermissions: []
+lastGlobalUse: 0
+lastUse: {}
+priceItems: []
+exp: 0

@@ -1,0 +1,16 @@
+permission: ''
+world: KitPvP
+X: -728
+Y: 16
+Z: -863
+price: 0.0
+cooldown: 0
+globalCooldown: 0
+confirmation: false
+commands:
+- '/kitpvp '
+grantPermissions: []
+lastGlobalUse: 0
+lastUse: {}
+priceItems: []
+exp: 0

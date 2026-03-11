@@ -1,0 +1,34 @@
+{
+  "name": "SnowMountains",
+  "description": "Welcome to a very strange place",
+  "createdAtMillis": 1395069133502,
+  "home": {
+    "w": "Factions",
+    "lx": -1487.139449993047,
+    "ly": 77.0,
+    "lz": 147.84597023509,
+    "p": 18.205267,
+    "y": 50.582947
+  },
+  "open": true,
+  "invitedPlayerIds": [
+    "draakje2001",
+    "justcrm",
+    "mutsje147",
+    "tommie27"
+  ],
+  "relationWishes": {
+    "e2a4ea2d-ed60-4c78-8425-b347dd4052ec": "ALLY",
+    "ce041dff-4b35-49c0-9b35-a981bf132ae7": "ALLY",
+    "dddc6998-bb8c-49b3-9602-b5c45b770106": "ALLY",
+    "c8c1437f-3342-4310-ace3-c754fe7ff830": "ALLY",
+    "5f0d25ba-20ad-4abc-922d-e151c54b46ea": "ALLY",
+    "1bd1dc17-8dda-486b-ab93-dcb9305dadc8": "ALLY",
+    "58f9fb75-808c-4c22-9400-50978c6d76c1": "ALLY",
+    "21a0e3b2-ca22-475e-a99d-140d8edcdb42": "ALLY",
+    "d53d068d-0663-426d-9ddc-a7207b328928": "ALLY",
+    "b14cdbff-d187-483f-8c06-b229f1a23860": "ALLY",
+    "043e3c56-08cd-474d-92c1-127bb52a3fca": "ALLY",
+    "a993f784-5c2d-48a3-9ead-5b52d3eba0d3": "ALLY"
+  }
+}

@@ -1,0 +1,102 @@
+ShopName: Knight
+signs:
+  text: '[Knight]'
+  NeedPermissionToCreateSign: true
+shop:
+  Helmet:
+    RewardType: money
+    PriceType: free
+    Reward: 0
+    MenuItem:
+    - id:302
+    - amount:1
+    - name:&fHelmet
+    InventoryLocation: 12
+    ExtraPermission: ''
+  Chestplate:
+    RewardType: money
+    PriceType: free
+    Reward: 0
+    MenuItem:
+    - id:303
+    - amount:1
+    - name:&fChestplate
+    InventoryLocation: 21
+    ExtraPermission: ''
+  Leggings:
+    RewardType: money
+    PriceType: free
+    Reward: 0
+    MenuItem:
+    - id:304
+    - amount:1
+    - name:&fLeggings
+    InventoryLocation: 30
+    ExtraPermission: ''
+  Boots:
+    RewardType: money
+    PriceType: free
+    Reward: 0
+    MenuItem:
+    - id:305
+    - amount:1
+    - name:&fBoots
+    InventoryLocation: 39
+    ExtraPermission: ''
+  Sword:
+    RewardType: money
+    PriceType: free
+    Reward: 0
+    MenuItem:
+    - type:STONE_SWORD
+    - amount:1
+    - name:&fStone Sword
+    InventoryLocation: 16
+    ExtraPermission: ''
+  Potion:
+    RewardType: money
+    PriceType: free
+    Reward: 0
+    MenuItem:
+    - id:373
+    - amount:1
+    - durability:8197
+    - name:&fPotion of Healing
+    InventoryLocation: 25
+    ExtraPermission: ''
+  Bread:
+    RewardType: money
+    PriceType: free
+    Reward: 0
+    MenuItem:
+    - id:297
+    - amount:25
+    - name:&fBread
+    InventoryLocation: 34
+    ExtraPermission: ''
+  BackToMenu:
+    RewardType: shop
+    PriceType: free
+    Reward: BuyKit
+    MenuItem:
+    - type:REDSTONE_BLOCK
+    - amount:1
+    - name:&4&LBuy Kit Menu
+    - lore:&8Back to the Buy Kit Menu
+    - amount:1
+    InventoryLocation: 46
+    ExtraPermission: ''
+  BuyKit:
+    RewardType: permission
+    PriceType: free
+    Reward:
+    - kit.Knight
+    - knightkit.1
+    MenuItem:
+    - type:EMERALD_BLOCK
+    - amount:1
+    - 'name:&aBuy Knight'
+    - 'lore:&cPrice: &60'
+    - amount:1
+    InventoryLocation: 54
+    ExtraPermission: ''

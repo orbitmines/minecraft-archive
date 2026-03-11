@@ -1,0 +1,94 @@
+# Group inheritance
+#
+# Any inherited groups prefixed with a g: are global groups
+# and are inherited from the GlobalGroups.yml.
+#
+# Groups without the g: prefix are groups local to this world
+# and are defined in the this groups.yml file.
+#
+# Local group inheritances define your promotion tree when using 'manpromote/mandemote'
+
+groups:
+  UserS:
+    default: true
+    permissions:
+    - shop.CS
+    - killermoney.getcash
+    - paintball.general
+    - multiverse.teleport.self.SkyBlockWorld
+    - essentials.msg
+    - dynmap.webregister
+    - -factions.*
+    - multiverse.teleport.self.SurvivalWorld
+    - multiverse.teleport.self.PrisonServer
+    - multiverse.teleport.self.KitPvP
+    - multiverse.teleport.self.TestWorld
+    - multiverse.teleport.self.Creative
+    - multiverse.teleport.self.Factions
+    - multiverse.teleport.self.Event
+    - heavyspleef.join.Arena1
+    - heavyspleef.sign.join
+    - multiverse.access.*
+    - heavyspleef.leave
+    - heavyspleef.vote
+    - heavyspleef.help.user
+    - heavyspleef.spectate
+    - heavyspleef.static
+    - essentials.rules
+    - heavyspleef.static.other
+    - pvparena.*
+    - multiverse.portal.access.*
+    - essentials.kits.Defender
+    - essentials.kits.Survivor
+    - essentials.kit
+    - essentials.kit.others
+    - -help
+    - compassnav.*
+    - compassnac.admin.*
+    - serversigns.use.*
+    - NametagEdit.reload
+    - teams.*
+    - PaintWar.arenas
+    - PaintWar.stats
+    - PaintWar.top
+    - PaintWar.join
+    - PaintWar.leave
+    - mycommand.cmd.1
+    - mycommand.cmd.2
+    - mycommand.cmd.3
+    - mycommand.cmd.4
+    - mycommand.cmd.5
+    - mycommand.cmd.6
+    - mycommand.cmd.7
+    - mycommand.cmd.8
+    - mycommand.cmd.9
+    - mycommand.cmd.10
+    - mycommand.cmd.11
+    - mycommand.cmd.12
+    - mycommand.cmd.13
+    - mycommand.cmd.14
+    - mycommand.cmd.15
+    - mycommand.cmd.16
+    - mycommand.cmd.17
+    - mycommand.cmd.18
+    - mycommand.cmd.24
+    - mycommand.cmd.25
+    - mycommand.cmd.30
+    - mycommand.cmd.31
+    - mycommand.cmd.75
+    - mycommand.cmd.186
+    - mycommand.cmd.187
+    - mycommand.cmd.188
+    - mycommand.cmd.189
+    - mycommand.cmd.190
+    - mycommand.cmd.192
+    - mycommand.cmd.294
+    - mycommand.cmd.312
+    - mycommand.cmd.313
+    - PaintWar.start
+    - essentials.warp
+    - blockhunt.player
+    - mycommand.cmd.311
+    info:
+      prefix: '&7[&8&lUser&7] &8'
+      build: true

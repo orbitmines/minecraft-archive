@@ -1,0 +1,45 @@
+# Group inheritance
+#
+# Any inherited groups prefixed with a g: are global groups
+# and are inherited from the GlobalGroups.yml.
+#
+# Groups without the g: prefix are groups local to this world
+# and are defined in the this groups.yml file.
+#
+# Local group inheritances define your promotion tree when using 'manpromote/mandemote'
+
+groups:
+  FreeVIP:
+    default: true
+    permissions:
+    - serversigns.use.*
+    - mycommand.cmd.75
+    - mycommand.cmd.19
+    - mycommand.cmd.20
+    - pwrsay.admin
+    - mycommand.cmd.21
+    - mycommand.cmd.22
+    - mycommand.cmd.23
+    - mycommand.cmd.313
+    - mycommand.cmd.312
+    info:
+      prefix: '&8[User] &8'
+      build: true
+      suffix: ''
+  NoFreeVIP:
+    default: false
+    permissions:
+    - mycommand.cmd.313
+    - mycommand.cmd.20
+    - serversigns.use.*
+    - mycommand.cmd.312
+    info:
+      prefix: '&8[User] &8'
+      build: true
+      suffix: ''
+
+
+
+
+
+

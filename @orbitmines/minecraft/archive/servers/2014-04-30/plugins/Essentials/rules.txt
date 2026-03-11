@@ -1,0 +1,9 @@
+&6&L[1] &7Don't advertise
+&6&L[2] &7Have respect for all Players
+&6&L[3] &7Watch your language
+&6&L[4] &7Listen to Owners, Admins and Moderators
+&6&L[5] &7Griefing in Survival is &nallowed&r&7! You can claim!
+&6&L[6] &7Don't abuse a bug, Report it on our forum
+&6&L[7] &7Don't hack. (X-Ray etc.)
+&6&L[8] &7Don't spam the chat, signs and commands
+&6&L[9] &7You will be banned if you don't follow the rules

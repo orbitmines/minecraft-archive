@@ -1,0 +1,116 @@
+ShopName: Tank
+signs:
+  text: '[Tank]'
+  NeedPermissionToCreateSign: true
+shop:
+  Helmet:
+    RewardType: money
+    PriceType: free
+    Reward: 0
+    MenuItem:
+    - id:306
+    - amount:1
+    - name:&bHelmet
+    InventoryLocation: 12
+    ExtraPermission: ''
+  Chestplate:
+    RewardType: money
+    PriceType: free
+    Reward: 0
+    MenuItem:
+    - id:311
+    - amount:1
+    - name:&fChestplate
+    - enchantment:PROTECTION_ENVIRONMENTAL#1
+    InventoryLocation: 21
+    ExtraPermission: ''
+  Leggings:
+    RewardType: money
+    PriceType: free
+    Reward: 0
+    MenuItem:
+    - id:308
+    - amount:1
+    - name:&bLeggings
+    InventoryLocation: 30
+    ExtraPermission: ''
+  Boots:
+    RewardType: money
+    PriceType: free
+    Reward: 0
+    MenuItem:
+    - id:309
+    - amount:1
+    - name:&bBoots
+    InventoryLocation: 39
+    ExtraPermission: ''
+  Sword:
+    RewardType: money
+    PriceType: free
+    Reward: 0
+    MenuItem:
+    - type:WOOD_SWORD
+    - amount:1
+    - name:&fWooden Sword
+    - enchantment:KNOCKBACK#1
+    InventoryLocation: 16
+    ExtraPermission: ''
+  Apple:
+    RewardType: money
+    PriceType: free
+    Reward: 0
+    MenuItem:
+    - id:322
+    - amount:2
+    - name:&fBow
+    InventoryLocation: 25
+    ExtraPermission: ''
+  Bread:
+    RewardType: money
+    PriceType: free
+    Reward: 0
+    MenuItem:
+    - id:297
+    - amount:25
+    - name:&fBread
+    InventoryLocation: 34
+    ExtraPermission: ''
+  effect:
+    RewardType: money
+    PriceType: free
+    Reward: 0
+    MenuItem:
+    - id:373
+    - amount:1
+    - name:&6Potion Effect
+    - 'lore:&cSlowness III'
+    InventoryLocation: 23
+    ExtraPermission: ''
+  BackToMenu:
+    RewardType: shop
+    PriceType: free
+    Reward: BuyKit
+    MenuItem:
+    - type:REDSTONE_BLOCK
+    - amount:1
+    - name:&4&LBuy Kit Menu
+    - lore:&8Back to the Buy Kit Menu
+    - amount:1
+    InventoryLocation: 46
+    ExtraPermission: ''
+  BuyKit:
+    RewardType: permission
+    PriceType: money
+    Price: 15000
+    Reward:
+    - kit.Tank
+    - tankkit.1
+    MenuItem:
+    - type:EMERALD_BLOCK
+    - amount:1
+    - 'name:&aBuy Tank'
+    - 'lore:&cPrice: &615000'
+    - amount:1
+    Message: '&bYou have bought the &6&LTank&b kit!'
+    InventoryLocation: 54
+    ExtraPermission: ''

@@ -1,0 +1,615 @@
+# Enchantment IDs and config explanation can be found here: http://dev.bukkit.org/bukkit-plugins/kitplugin/pages/kits-config-v6-1/
+Longbow:
+  items:
+    sword:
+      id: 268
+      data: 0
+      name: '&bTier 1 : &cLongbow Sword'
+      enchantments:
+      - 34,10
+      amount: 1
+      slot: inventory
+    bow:
+      id: 261
+      data: 0
+      name: '&bTier 1 : &cLongbow Bow'
+      enchantments:
+      - 34,10
+      amount: 1
+      slot: inventory
+    arrow:
+      id: 262
+      data: 0
+      amount: 16
+      slot: inventory
+    steak:
+      id: 364
+      data: 0
+      amount: 5
+      slot: inventory
+    helmet:
+      id: 298
+      data: 0
+      name: '&bTier 1 : &cLongbow Helmet'
+      enchantments:
+      - 34,10
+      amount: 1
+      slot: helmet
+    chestplate:
+      id: 299
+      data: 0
+      name: '&bTier 1 : &cLongbow Chestplate'
+      enchantments:
+      - 34,10
+      amount: 1
+      slot: chestplate
+    leggings:
+      id: 300
+      data: 0
+      name: '&bTier 1 : &cLongbow Leggings'
+      enchantments:
+      - 34,10
+      amount: 1
+      slot: leggings
+    boots:
+      id: 301
+      data: 0
+      name: '&bTier 1 : &cLongbow Boots'
+      enchantments:
+      - 34,10
+      amount: 1
+      slot: boots
+  commands:
+  - sudo (player) longbowgetarrows
+  removeeffects: true
+  givemoney: 0
+  givexp: 0
+  usages: 0
+  clearinv: true
+  cleararmor: true
+  cooldown: 0
+  price: 0
+  message: '&AKit: &cLongbow'
+Paladin:
+  items:
+    sword:
+      id: 272
+      data: 0
+      name: '&bTier 1 : &cPaladin Sword'
+      enchantments:
+      - 34,10
+      amount: 1
+      slot: inventory
+    steak:
+      id: 364
+      data: 0
+      amount: 5
+      slot: inventory
+    helmet:
+      id: 306
+      data: 0
+      name: '&bTier 1 : &cPaladin Helmet'
+      enchantments:
+      - 34,10
+      amount: 1
+      slot: helmet
+    chestplate:
+      id: 307
+      data: 0
+      name: '&bTier 1 : &cPaladin Chestplate'
+      enchantments:
+      - 34,10
+      amount: 1
+      slot: chestplate
+  commands: []
+  removeeffects: true
+  effects: []
+  givemoney: 0
+  givexp: 0
+  usages: 0
+  clearinv: true
+  cleararmor: true
+  cooldown: 0
+  price: 0
+  message: '&AKit: &cPaladin'
+Mage:
+  items:
+    sword:
+      id: 280
+      data: 0
+      amount: 1
+      name: '&bTier 1 : &cDamage Spell'
+      enchantments:
+      - 34,1
+      slot: inventory
+    steak:
+      id: 364
+      data: 0
+      amount: 5
+      slot: inventory
+    leggings:
+      id: 316
+      data: 0
+      amount: 1
+      name: '&bTier 1 : &cMage Leggings'
+      slot: leggings
+    chestplate:
+      id: 315
+      data: 0
+      name: '&bTier 1 : &cMage Chestplate'
+      amount: 1
+      slot: chestplate
+  commands: []
+  removeeffects: true
+  effects: []
+  givemoney: 0
+  givexp: 0
+  usages: 0
+  clearinv: true
+  cleararmor: true
+  cooldown: 0
+  price: 0
+  message: '&AKit: &cMage'
+Rogue:
+  items:
+    sword:
+      id: 268
+      data: 0
+      amount: 1
+      name: '&bTier 1 : &cRogue Sword'
+      enchantments:
+      - 34,10
+      - 19,1
+      slot: inventory
+    steak:
+      id: 364
+      data: 0
+      amount: 5
+      slot: inventory
+    boots:
+      id: 301
+      data: 0
+      name: '&bTier 1 : &cRogue Boots'
+      enchantments:
+      - 34,10
+      - 2,1
+      amount: 1
+      slot: boots
+  commands: []
+  removeeffects: true
+  effects:
+  - 1,1000000,0
+  givemoney: 0
+  givexp: 0
+  usages: 0
+  clearinv: true
+  cleararmor: true
+  cooldown: 0
+  price: 0
+  message: '&AKit: &cRogue'
+RogueArmorTier2:
+  items:
+    boots:
+      id: 301
+      data: 0
+      name: '&bTier 2 : &cRogue Boots'
+      enchantments:
+      - 34,30
+      amount: 1
+      slot: boots
+    leggings:
+      id: 300
+      data: 0
+      name: '&bTier 2 : &cRogue Leggings'
+      enchantments:
+      - 34,30
+      amount: 1
+      slot: leggings
+    chestplate:
+      id: 299
+      data: 0
+      name: '&bTier 2 : &cRogue Chestplate'
+      enchantments:
+      - 34,30
+      amount: 1
+      slot: chestplate
+    helmet:
+      id: 298
+      data: 0
+      name: '&bTier 2 : &cRogue Helmet'
+      enchantments:
+      - 34,30
+      amount: 1
+      slot: helmet
+  commands: []
+  removeeffects: false
+  effects: []
+  givemoney: 0
+  givexp: 0
+  usages: 0
+  clearinv: false
+  cleararmor: false
+  cooldown: 0
+  price: 0
+  message: '&cRogue Armor (&bTier 2&c)'
+RogueArmorTier3:
+  items:
+    boots:
+      id: 301
+      data: 0
+      name: '&bTier 3 : &cRogue Boots'
+      enchantments:
+      - 34,50
+      - 0,1
+      amount: 1
+      slot: boots
+    leggings:
+      id: 300
+      data: 0
+      name: '&bTier 3 : &cRogue Leggings'
+      enchantments:
+      - 34,50
+      - 0,1
+      amount: 1
+      slot: leggings
+    chestplate:
+      id: 299
+      data: 0
+      name: '&bTier 3 : &cRogue Chestplate'
+      enchantments:
+      - 34,50
+      - 0,1
+      amount: 1
+      slot: chestplate
+    helmet:
+      id: 298
+      data: 0
+      name: '&bTier 3 : &cRogue Helmet'
+      enchantments:
+      - 34,50
+      - 0,1
+      amount: 1
+      slot: helmet
+  commands: []
+  removeeffects: false
+  effects: []
+  givemoney: 0
+  givexp: 0
+  usages: 0
+  clearinv: false
+  cleararmor: false
+  cooldown: 0
+  price: 0
+  message: '&cRogue Armor (&bTier 3&c)'
+RogueArmorTier4:
+  items:
+    boots:
+      id: 305
+      data: 0
+      name: '&bTier 4 : &cRogue Boots'
+      enchantments:
+      - 34,75
+      amount: 1
+      slot: boots
+    leggings:
+      id: 304
+      data: 0
+      name: '&bTier 4 : &cRogue Leggings'
+      enchantments:
+      - 34,75
+      amount: 1
+      slot: leggings
+    chestplate:
+      id: 303
+      data: 0
+      name: '&bTier 4 : &cRogue Chestplate'
+      enchantments:
+      - 34,75
+      amount: 1
+      slot: chestplate
+    helmet:
+      id: 302
+      data: 0
+      name: '&bTier 4 : &cRogue Helmet'
+      enchantments:
+      - 34,75
+      amount: 1
+      slot: helmet
+  commands: []
+  removeeffects: false
+  effects: []
+  givemoney: 0
+  givexp: 0
+  usages: 0
+  clearinv: false
+  cleararmor: false
+  cooldown: 0
+  price: 0
+  message: '&cRogue Armor (&bTier 4&c)'
+RogueEpic1:
+  items:
+    helmet:
+      id: 364
+      amount: 1
+      slot: inventory
+  commands: []
+  removeeffects: false
+  effects:
+  - 5,1000000,0
+  givemoney: 0
+  givexp: 0
+  usages: 0
+  clearinv: false
+  cleararmor: false
+  cooldown: 0
+  price: 0
+  message: '&8[&6&lEpic&8] &c+ Strength I'
+PaladinArmorTier2:
+  items:
+    boots:
+      id: 309
+      data: 0
+      name: '&bTier 2 : &cPaladin Boots'
+      enchantments:
+      - 34,30
+      amount: 1
+      slot: boots
+    leggings:
+      id: 308
+      data: 0
+      name: '&bTier 2 : &cPaladin Leggings'
+      enchantments:
+      - 34,30
+      amount: 1
+      slot: leggings
+  commands: []
+  removeeffects: false
+  effects: []
+  givemoney: 0
+  givexp: 0
+  usages: 0
+  clearinv: false
+  cleararmor: false
+  cooldown: 0
+  price: 0
+  message: '&cPaladin Armor (&bTier 2&c)'
+PaladinArmorTier3:
+  items:
+    boots:
+      id: 309
+      data: 0
+      name: '&bTier 3 : &cPaladin Boots'
+      enchantments:
+      - 34,50
+      - 0,1
+      amount: 1
+      slot: boots
+    leggings:
+      id: 308
+      data: 0
+      name: '&bTier 3 : &cPaladin Leggings'
+      enchantments:
+      - 34,50
+      - 0,1
+      amount: 1
+      slot: leggings
+    chestplate:
+      id: 307
+      data: 0
+      name: '&bTier 3 : &cPaladin Chestplate'
+      enchantments:
+      - 34,50
+      - 0,1
+      amount: 1
+      slot: chestplate
+    helmet:
+      id: 306
+      data: 0
+      name: '&bTier 3 : &cPaladin Helmet'
+      enchantments:
+      - 34,50
+      - 0,1
+      amount: 1
+      slot: helmet
+  commands: []
+  removeeffects: false
+  effects: []
+  givemoney: 0
+  givexp: 0
+  usages: 0
+  clearinv: false
+  cleararmor: false
+  cooldown: 0
+  price: 0
+  message: '&cPaladin Armor (&bTier 3&c)'
+PaladinArmorTier4:
+  items:
+    boots:
+      id: 313
+      data: 0
+      name: '&bTier 4 : &cPaladin Boots'
+      enchantments:
+      - 34,75
+      amount: 1
+      slot: boots
+    leggings:
+      id: 312
+      data: 0
+      name: '&bTier 4 : &cPaladin Leggings'
+      enchantments:
+      - 34,75
+      amount: 1
+      slot: leggings
+    chestplate:
+      id: 311
+      data: 0
+      name: '&bTier 4 : &cPaladin Chestplate'
+      enchantments:
+      - 34,75
+      amount: 1
+      slot: chestplate
+    helmet:
+      id: 310
+      data: 0
+      name: '&bTier 4 : &cPaladin Helmet'
+      enchantments:
+      - 34,75
+      amount: 1
+      slot: helmet
+  commands: []
+  removeeffects: false
+  effects: []
+  givemoney: 0
+  givexp: 0
+  usages: 0
+  clearinv: false
+  cleararmor: false
+  cooldown: 0
+  price: 0
+  message: '&cPaladin Armor (&bTier 4&c)'
+LongbowArmorTier3:
+  items:
+    boots:
+      id: 301
+      data: 0
+      name: '&bTier 3 : &cLongbow Boots'
+      enchantments:
+      - 34,50
+      - 0,2
+      amount: 1
+      slot: boots
+    leggings:
+      id: 300
+      data: 0
+      name: '&bTier 3 : &cLongbow Leggings'
+      enchantments:
+      - 34,50
+      - 0,2
+      amount: 1
+      slot: leggings
+    chestplate:
+      id: 299
+      data: 0
+      name: '&bTier 3 : &cLongbow Chestplate'
+      enchantments:
+      - 34,50
+      - 0,2
+      amount: 1
+      slot: chestplate
+    helmet:
+      id: 298
+      data: 0
+      name: '&bTier 3 : &cLongbow Helmet'
+      enchantments:
+      - 34,50
+      - 0,2
+      amount: 1
+      slot: helmet
+  commands: []
+  removeeffects: false
+  effects: []
+  givemoney: 0
+  givexp: 0
+  usages: 0
+  clearinv: false
+  cleararmor: false
+  cooldown: 0
+  price: 0
+  message: '&cLongbow Armor (&bTier 3&c)'
+SkullHunter:
+  items:
+    sword:
+      id: 275
+      data: 0
+      amount: 1
+      enchantments:
+      - 16,3
+      - 34,1000
+      lore: []
+      slot: inventory
+    helmet:
+      id: 298
+      amount: 1
+      enchantments:
+      - 0,1
+      - 34,1000
+      lore: []
+      slot: helmet
+      color: 0 0 0
+    chestplate:
+      id: 299
+      amount: 1
+      enchantments:
+      - 0,1
+      - 34,1000
+      lore: []
+      slot: chestplate
+      color: 0 0 0
+    pants:
+      id: 300
+      amount: 1
+      enchantments:
+      - 0,1
+      - 34,1000
+      lore: []
+      slot: leggings
+      color: 0 0 0
+    boots:
+      id: 301
+      amount: 1
+      enchantments:
+      - 0,1
+      - 34,1000
+      lore: []
+      slot: boots
+      color: 0 0 0
+  commands: []
+  removeeffects: true
+  givemoney: 0
+  givexp: 0
+  usages: 0
+  clearinv: true
+  cleararmor: true
+  cooldown: 30
+  price: 0
+  message: '&c&lSkull Hunter'
+Clear:
+  items:
+    sword:
+      id: 278
+      data: 0
+      amount: 1
+      enchantments:
+      - 32,10
+      - 35,5
+      - 34,1000
+      lore: []
+      slot: inventory
+  commands: []
+  removeeffects: true
+  givemoney: 0
+  givexp: 0
+  usages: 0
+  clearinv: true
+  cleararmor: true
+  cooldown: 30
+  price: 0
+  message: '&aCleared Inventory...'
+Clear1:
+  items:
+    sword:
+      id: 1
+      data: 0
+      amount: 1
+      lore: []
+      slot: inventory
+  commands: []
+  removeeffects: true
+  givemoney: 0
+  givexp: 0
+  usages: 0
+  clearinv: true
+  cleararmor: true
+  cooldown: 30
+  price: 0
+  message: '&aCleared Inventory...'

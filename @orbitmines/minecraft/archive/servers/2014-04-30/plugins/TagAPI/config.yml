@@ -1,0 +1,12 @@
+#
+#     TagAPI
+#
+#
+#  All options in here are ADVANCED STUFF
+#
+#
+# debug
+#   If true, will output debug messages relating to name tags.
+#   Don't use unless asked, or bored.
+#
+debug: false

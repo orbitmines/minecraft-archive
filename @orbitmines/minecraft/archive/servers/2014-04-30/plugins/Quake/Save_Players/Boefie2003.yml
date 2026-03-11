@@ -1,0 +1,32 @@
+Name: Boefie2003
+Health: 20.0
+Food: 20
+Saturation: 4.0
+Exhaustion: 2.535389
+XP-Level: 0
+Exp: 0.0
+GameMode: 0
+Armor:
+  Item-Nb: 4
+  Item0:
+    ==: org.bukkit.inventory.ItemStack
+    type: AIR
+    damage: -1
+    amount: 0
+  Item1:
+    ==: org.bukkit.inventory.ItemStack
+    type: AIR
+    damage: -1
+    amount: 0
+  Item2:
+    ==: org.bukkit.inventory.ItemStack
+    type: AIR
+    damage: -1
+    amount: 0
+  Item3:
+    ==: org.bukkit.inventory.ItemStack
+    type: AIR
+    damage: -1
+    amount: 0
+Inventaire:
+  Item-Nb: 36

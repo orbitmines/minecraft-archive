@@ -1,0 +1,109 @@
+ShopName: KnightLvL2
+signs:
+  text: '[KnightLvL2]'
+  NeedPermissionToCreateSign: true
+shop:
+  Helmet:
+    RewardType: money
+    PriceType: free
+    Reward: 0
+    MenuItem:
+    - id:302
+    - amount:1
+    - name:&fHelmet
+    InventoryLocation: 12
+    ExtraPermission: ''
+  Chestplate:
+    RewardType: money
+    PriceType: free
+    Reward: 0
+    MenuItem:
+    - id:303
+    - amount:1
+    - name:&fChestplate
+    - 'lore: #&cChanged in LvL 2: #&a&l+ Protection 1'
+    - enchantment:PROTECTION_ENVIRONMENTAL#1
+    InventoryLocation: 21
+    ExtraPermission: ''
+  Leggings:
+    RewardType: money
+    PriceType: free
+    Reward: 0
+    MenuItem:
+    - id:304
+    - amount:1
+    - name:&fLeggings
+    - 'lore: #&cChanged in LvL 2: #&a&l+ Protection 1'
+    - enchantment:PROTECTION_ENVIRONMENTAL#1
+    InventoryLocation: 30
+    ExtraPermission: ''
+  Boots:
+    RewardType: money
+    PriceType: free
+    Reward: 0
+    MenuItem:
+    - id:305
+    - amount:1
+    - name:&fBoots
+    InventoryLocation: 39
+    ExtraPermission: ''
+  Sword:
+    RewardType: money
+    PriceType: free
+    Reward: 0
+    MenuItem:
+    - type:STONE_SWORD
+    - amount:1
+    - name:&fStone Sword
+    InventoryLocation: 16
+    ExtraPermission: ''
+  Potion:
+    RewardType: money
+    PriceType: free
+    Reward: 0
+    MenuItem:
+    - id:373
+    - amount:1
+    - durability:16389
+    - name:&fPotion of Healing
+    - 'lore: #&cChanged in LvL 2: #&a&l+ Splash Potion Healing #&4&l- Potion of Healing'
+    InventoryLocation: 25
+    ExtraPermission: ''
+  Bread:
+    RewardType: money
+    PriceType: free
+    Reward: 0
+    MenuItem:
+    - id:297
+    - amount:25
+    - name:&fBread
+    InventoryLocation: 34
+    ExtraPermission: ''
+  BackToMenu:
+    RewardType: shop
+    PriceType: free
+    Reward: UpgradeKit
+    MenuItem:
+    - type:REDSTONE_BLOCK
+    - amount:1
+    - name:&4&LUpgrade Kit Menu
+    - lore:&8Back to the Upgrade Kit Menu
+    - amount:1
+    InventoryLocation: 46
+    ExtraPermission: ''
+  BuyKit:
+    RewardType: permission
+    PriceType: money
+    Price: 10000
+    Reward:
+    - kit.KnightLvL2
+    - knightkit.2
+    MenuItem:
+    - type:EMERALD_BLOCK
+    - amount:1
+    - 'name:&aUpgrade Knight to Level 2'
+    - 'lore:&cPrice: &610000'
+    - amount:1
+    Message: '&bYou have upgraded your &6&LKnight&b kit to &a&lLevel 2&b!'
+    InventoryLocation: 54
+    ExtraPermission: 'knightkit.1'

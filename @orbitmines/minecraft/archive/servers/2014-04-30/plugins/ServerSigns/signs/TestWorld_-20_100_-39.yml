@@ -1,0 +1,16 @@
+permission: ''
+world: TestWorld
+X: -20
+Y: 100
+Z: -39
+price: 0.0
+cooldown: 0
+globalCooldown: 0
+confirmation: false
+commands:
+- '/poll '
+grantPermissions: []
+lastGlobalUse: 0
+lastUse: {}
+priceItems: []
+exp: 0

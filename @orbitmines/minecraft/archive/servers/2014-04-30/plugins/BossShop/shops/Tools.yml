@@ -1,0 +1,64 @@
+ShopName: Food
+signs:
+  text: '[Food]'
+  NeedPermissionToCreateSign: true
+shop:
+  Cake:
+    RewardType: item
+    PriceType: money
+    Price: 50
+    Reward:
+    - - type:CAKE
+      - amount:1
+    MenuItem:
+    - 'type: CAKE'
+    - amount:1
+    - name:&F&LCake
+    - 'lore:&c&LPrice: &b50 Money #&6&LYour Money: &b%balance%'
+    - amount:1
+    InventoryLocation: 1
+    ExtraPermission: ''
+  GoldenApple:
+    RewardType: item
+    PriceType: money
+    Price: 450
+    Reward:
+    - - type:GOLDEN_APPLE
+      - amount:1
+    MenuItem:
+    - 'type: GOLDEN_APPLE'
+    - amount:1
+    - name:&E&LGolden Apple
+    - 'lore:&c&LPrice: &b450 Money #&6&LYour Money: &b%balance%'
+    - amount:1
+    InventoryLocation: 2
+    ExtraPermission: ''
+  Cookie:
+    RewardType: item
+    PriceType: money
+    Price: 10
+    Reward:
+    - - type:COOKIE
+      - amount:1
+    MenuItem:
+    - 'type: COOKIE'
+    - amount:1
+    - name:&6&LCookie
+    - 'lore:&c&LPrice: &b10 Money #&6&LYour Money: &b%balance%'
+    - amount:1
+    InventoryLocation: 3
+    ExtraPermission: ''
+  BackToMenu:
+    RewardType: shop
+    PriceType: free
+    Reward: Survival
+    MenuItem:
+    - type:REDSTONE_BLOCK
+    - amount:1
+    - name:&a&LSurvival Menu
+    - lore:&8Back to Survival Menu
+    - amount:1
+    InventoryLocation: 9
+    ExtraPermission: ''
+
+

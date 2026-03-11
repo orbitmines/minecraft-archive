@@ -1,0 +1,31 @@
+cfg-version: 7
+message: You have reached the edge of this world.
+round-border: true
+debug-mode: false
+whoosh-effect: false
+portal-redirection: true
+knock-back-dist: 3.0
+timer-delay-ticks: 5
+remount-delay-ticks: 0
+dynmap-border-enabled: true
+dynmap-border-message: The border of the world.
+player-killed-bad-spawn: false
+worlds:
+  SurvivalTowny:
+    x: -244.53566841558222
+    z: 426.54801764769945
+    radiusX: 3000
+    radiusZ: 3000
+    wrapping: false
+  SurvivalWorld:
+    x: -570.5100660251384
+    z: -68.35095209584478
+    radiusX: 10000
+    radiusZ: 10000
+    wrapping: false
+  Factions:
+    x: 234.53200159679957
+    z: 277.64512816626615
+    radiusX: 10000
+    radiusZ: 10000
+    wrapping: false

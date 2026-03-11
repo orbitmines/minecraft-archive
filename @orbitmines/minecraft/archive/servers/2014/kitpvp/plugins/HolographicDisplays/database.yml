@@ -1,0 +1,9 @@
+kitpvp1:
+  location: KitPvPMap,810.1178449775302,13.0,478.5268063864152
+  lines:
+  - '&c&lKitPvP'
+  - '&bKill: &6&l50$'
+  - '&bLevel: &6&l50$'
+  - '&bKillstreak: &6&l50$'
+  - '&bVote: &6&l500$ &d(/vote)'
+  - '&bVIP: &6&lAll VIP Kits &d(/donate)'

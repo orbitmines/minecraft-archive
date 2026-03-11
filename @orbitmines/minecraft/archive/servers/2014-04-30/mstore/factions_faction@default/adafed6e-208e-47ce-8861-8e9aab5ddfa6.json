@@ -1,0 +1,10 @@
+{
+  "name": "Beehive",
+  "description": "i act like a bee, so i will only attack people that attacked me",
+  "createdAtMillis": 1395153810188,
+  "relationWishes": {
+    "6b73c4f0-2333-4e13-a296-d4fe2f6f2114": "ALLY",
+    "dddc6998-bb8c-49b3-9602-b5c45b770106": "ALLY",
+    "5f0d25ba-20ad-4abc-922d-e151c54b46ea": "ALLY"
+  }
+}

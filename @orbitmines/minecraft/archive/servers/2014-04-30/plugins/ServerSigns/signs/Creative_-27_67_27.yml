@@ -1,0 +1,16 @@
+permission: ''
+world: Creative
+X: -27
+Y: 67
+Z: 27
+price: 0.0
+cooldown: 0
+globalCooldown: 0
+confirmation: false
+commands:
+- '/FlyBrokenCreative '
+grantPermissions: []
+lastGlobalUse: 0
+lastUse: {}
+priceItems: []
+exp: 0

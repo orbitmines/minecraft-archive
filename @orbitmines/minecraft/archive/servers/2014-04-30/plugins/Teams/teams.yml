@@ -1,0 +1,31 @@
+OrbitMines:
+  Venus:
+    points: 0
+    managers:
+    - OrbitMines
+    settings:
+      leader: O_o_Fadi_o_O
+      tag: '&a[V]&f'
+      displayTag: true
+      noMemberPVP: true
+    members: []
+  Mars:
+    points: 0
+    managers:
+    - OrbitMines
+    settings:
+      leader: O_o_Fadi_o_O
+      tag: '&4[M]&f'
+      displayTag: true
+      noMemberPVP: true
+    members: []
+  Earth:
+    points: 0
+    members: []
+    managers:
+    - OrbitMines
+    settings:
+      leader: O_o_Fadi_o_O
+      tag: '&b[E]&f'
+      displayTag: true
+      noMemberPVP: true

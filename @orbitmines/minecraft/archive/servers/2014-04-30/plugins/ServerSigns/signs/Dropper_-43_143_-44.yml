@@ -1,0 +1,16 @@
+permission: ''
+world: Dropper
+X: -43
+Y: 143
+Z: -44
+price: 0.0
+cooldown: 0
+globalCooldown: 0
+confirmation: false
+commands:
+- '/stop '
+grantPermissions: []
+lastGlobalUse: 0
+lastUse: {}
+priceItems: []
+exp: 0

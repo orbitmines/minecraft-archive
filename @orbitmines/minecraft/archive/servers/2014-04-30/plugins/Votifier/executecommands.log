@@ -1,0 +1,42 @@
+say basteti has voted at                         http://serverpact.nl/voten.htm?server=8503 and received: Survival: 3 Diamonds, 150 ClaimBlocks and 100$                     Prison: 10 Diamonds, 500$ and 1 Emerald Block
+mvtp basteti SurvivalWorld
+eco give basteti 100
+give basteti 264 3
+adjustbonusclaimblocks basteti 150
+mvtp basteti PrisonServer
+eco give {username} 500
+give basteti 264 10
+give basteti 133 1
+mvtp basteti Spawn
+say damianx46 has voted at                         http://serverpact.nl/voten.htm?server=8503 and received: Survival: 3 Diamonds, 150 ClaimBlocks and 100$                     Prison: 10 Diamonds, 500$ and 1 Emerald Block
+mvtp damianx46 SurvivalWorld
+eco give damianx46 100
+give damianx46 264 3
+adjustbonusclaimblocks damianx46 150
+mvtp damianx46 PrisonServer
+eco give {username} 500
+give damianx46 264 10
+give damianx46 133 1
+mvtp damianx46 Spawn
+say slienimon has voted at                         http://serverpact.nl/voten.htm?server=8503 and received: Survival: 3 Diamonds, 150 ClaimBlocks and 100$                     Prison: 10 Diamonds, 500$ and 1 Emerald Block
+mvtp slienimon SurvivalWorld
+eco give slienimon 100
+give slienimon 264 3
+adjustbonusclaimblocks slienimon 150
+mvtp slienimon PrisonServer
+eco give {username} 500
+give slienimon 264 10
+give slienimon 133 1
+mvtp slienimon Spawn
+say O_o_Fadi_o_O has voted at http://serverpact.nl/voten.htm?server=8503 and received: 
+say Survival: 3 Diamonds 150 ClaimBlocks and 100$
+say Prison: 10 Diamonds 1 Emerald Block and 500$
+mvtp O_o_Fadi_o_O SurvivalWorld
+eco give O_o_Fadi_o_O 100
+give O_o_Fadi_o_O 264 3
+adjustbonusclaimblocks O_o_Fadi_o_O 150
+mvtp O_o_Fadi_o_O PrisonServer
+eco give {username} 500
+give O_o_Fadi_o_O 264 10
+give O_o_Fadi_o_O 133 1
+mvtp O_o_Fadi_o_O Spawn

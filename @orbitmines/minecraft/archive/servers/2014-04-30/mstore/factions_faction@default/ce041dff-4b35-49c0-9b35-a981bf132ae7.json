@@ -1,0 +1,15 @@
+{
+  "name": "DDGfaction",
+  "createdAtMillis": 1395072443737,
+  "home": {
+    "w": "Factions",
+    "lx": -46.92992281245334,
+    "ly": 64.0,
+    "lz": 699.947940762669,
+    "p": 6.8999934,
+    "y": -353.55048
+  },
+  "relationWishes": {
+    "564886c3-2469-4ce1-bacd-7f0a39f88c7b": "ALLY"
+  }
+}

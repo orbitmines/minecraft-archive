@@ -1,0 +1,30 @@
+Knight:
+  cooldown: 1397393272
+  usages: 0
+Tank:
+  cooldown: 1397393303
+  usages: 0
+Fish:
+  cooldown: 1397393308
+  usages: 0
+DarkMage:
+  cooldown: 1397393313
+  usages: 0
+Vampire:
+  cooldown: 1397393370
+  usages: 0
+Sniper:
+  cooldown: 1397393698
+  usages: 0
+Assassin:
+  cooldown: 1397393355
+  usages: 0
+Lord:
+  cooldown: 1397393420
+  usages: 0
+Wizard:
+  cooldown: 1397393432
+  usages: 0
+Prison:
+  cooldown: 1397393848
+  usages: 0

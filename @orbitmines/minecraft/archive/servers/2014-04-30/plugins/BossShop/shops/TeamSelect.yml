@@ -1,0 +1,18 @@
+ShopName: TeamSelect
+signs:
+  text: '[Team]'
+  NeedPermissionToCreateSign: true
+shop:
+  Venus:
+    RewardType: playercommand
+    PriceType: free
+    Reward:
+    - playpvpselectvenust
+    MenuItem:
+    - type:EMERALD_BLOCK
+    - amount:1
+    - name:&a&LVenus
+    - 'lore:&8Click to Join Venus'
+    - amount:1
+    InventoryLocation: 1
+    ExtraPermission: ''

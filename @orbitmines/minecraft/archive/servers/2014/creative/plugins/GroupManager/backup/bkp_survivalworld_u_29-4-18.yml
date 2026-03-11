@@ -1,0 +1,91 @@
+users:
+  basteti:
+    group: UserSu
+    subgroups: []
+    permissions:
+    - commandlog.notice
+    - essentials.ban
+    - essentials.kick
+    - essentials.tp
+    - essentials.tp.others
+    - nametag.group.mod
+    - staffsecure.staff
+    info:
+      prefix: '&9[&b&lMod&9] &b'
+  BenYOmin_Mango:
+    group: UserSu
+    subgroups: []
+    permissions:
+    - staffsecure.staff
+    info:
+      prefix: '&c[&4&lCo-Owner&c] &4'
+  eekhoorn2000:
+    group: Emerald-VIP
+    subgroups: []
+    permissions:
+    - commandlog.notice
+    - essenstials.ban
+    - essenstials.kick
+    - essenstials.tp
+    - essenstials.tp.others
+    - essentials.ban
+    - essentials.kick
+    - essentials.tp
+    - essentials.tp.others
+    - staffsecure.staff
+    - tc.lightgreen
+    info:
+      prefix: '&2[&a&lVIP&2]&9[&b&lMod&9] &b'
+      '&2[&a&lVIP&2]&9[&b&lMod&9]': '&b'
+  kouros22:
+    group: Gold-VIP
+    subgroups: []
+    permissions: []
+  krachtpatsertim:
+    group: Iron-VIP
+    subgroups: []
+    permissions: []
+  matt20041:
+    group: Diamond-VIP
+    subgroups: []
+    permissions: []
+  O_o_Fadi_o_O:
+    group: Emerald-VIP
+    subgroups: []
+    permissions:
+    - staffsecure.staff
+    info:
+      prefix: '&c[&4&lOwner&c] &4'
+  sharewoods:
+    group: UserSu
+    subgroups: []
+    permissions:
+    - commandlog.notice
+    - essentials.ban
+    - essentials.kick
+    - essentials.tp
+    - essentials.tp.others
+    - nametag.group.mod
+    - staffsecure.staff
+    info:
+      prefix: '&9[&b&lMod&9] &b'
+  SinaasAppelke:
+    group: UserSu
+    subgroups: []
+    permissions:
+    - commandlog.notice
+    - essentials.ban
+    - essentials.kick
+    - essentials.tp
+    - essentials.tp.others
+    - nametag.group.mod
+    - staffsecure.staff
+    info:
+      prefix: '&9[&b&lMod&9] &b'
+  slienimon:
+    group: UserSu
+    subgroups: []
+    permissions:
+    - staffsecure.staff
+    info:
+      prefix: '&4[&c&lAdmin&4] &c'

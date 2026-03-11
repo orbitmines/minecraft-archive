@@ -1,0 +1,16 @@
+permission: ''
+world: MiniGames
+X: 275
+Y: 77
+Z: -100
+price: 0.0
+cooldown: 0
+globalCooldown: 0
+confirmation: false
+commands:
+- '/pb stats '
+grantPermissions: []
+lastGlobalUse: 0
+lastUse: {}
+priceItems: []
+exp: 0

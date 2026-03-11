@@ -1,0 +1,21 @@
+permission: ''
+world: SurvivalEvent
+X: -459
+Y: 113
+Z: -16
+price: 0.0
+cooldown: 0
+globalCooldown: 0
+confirmation: false
+commands:
+- /YESIJUSTREACHEDTHENEXTCHECKPOINT6
+grantPermissions: []
+lastGlobalUse: 0
+lastUse: {}
+priceItems: []
+exp: 0
+pi_criteria:
+  enchants: false
+  name: false
+  lores: false
+should_cancel_event: true

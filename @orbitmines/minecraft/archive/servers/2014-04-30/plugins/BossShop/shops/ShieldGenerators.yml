@@ -1,0 +1,94 @@
+ShopName: ShieldGenerators
+signs:
+  text: 'ShieldGenerator'
+  NeedPermissionToCreateSign: true
+shop:
+  LvL1:
+    RewardType: playercommand
+    PriceType: free
+    Reward:
+    - BuyShieldGeneratorLvL1
+    MenuItem:
+    - type:CHAINMAIL_CHESTPLATE
+    - amount:1
+    - name:&b&LShieldGenerator &c&LLvL 1
+    - 'lore:&b&L5% Block Damage #&c&LPrice: &b800 Credits #&6&LYour Credits: &b%balance%'
+    - amount:1
+    InventoryLocation: 1
+    ExtraPermission: ''
+  LvL2:
+    RewardType: playercommand
+    PriceType: free
+    Reward:
+    - BuyShieldGeneratorLvL2
+    MenuItem:
+    - type:CHAINMAIL_CHESTPLATE
+    - amount:1
+    - name:&b&LShieldGenerator &c&LLvL 2
+    - 'lore:&b&L10% Block Damage #&c&LPrice: &b1600 Credits #&6&LYour Credits: &b%balance%'
+    - amount:1
+    InventoryLocation: 2
+    ExtraPermission: ''
+  LvL4:
+    RewardType: playercommand
+    PriceType: free
+    Reward:
+    - BuyShieldGeneratorLvL4
+    MenuItem:
+    - type:CHAINMAIL_CHESTPLATE
+    - amount:1
+    - name:&b&LShieldGenerator &c&LLvL 4
+    - 'lore:&b&L25% Block Damage #&c&LPrice: &b20000 Credits #&6&LYour Credits: &b%balance%'
+    - amount:1
+    InventoryLocation: 3
+  LvL5:
+    RewardType: playercommand
+    PriceType: free
+    Reward:
+    - BuyShieldGeneratorLvL5
+    MenuItem:
+    - type:IRON_CHESTPLATE
+    - amount:1
+    - name:&b&LShieldGenerator &c&LLvL 5
+    - 'lore:&b&L35% Block Damage #&c&LPrice: &b2500 Uridium #&6&LYour Uridium: &b%balancepoints%'
+    - amount:1
+    InventoryLocation: 10
+    ExtraPermission: ''
+  LvL7:
+    RewardType: playercommand
+    PriceType: free
+    Reward:
+    - BuyShieldGeneratorLvL7
+    MenuItem:
+    - type:IRON_CHESTPLATE
+    - amount:1
+    - name:&b&LShieldGenerator &c&LLvL 7
+    - 'lore:&b&L50% Block Damage #&c&LPrice: &b7500 Uridium #&6&LYour Uridium: &b%balancepoints%'
+    - amount:1
+    InventoryLocation: 11
+    ExtraPermission: ''
+  Balance:
+    RewardType: playercommand
+    PriceType: free
+    Reward:
+    - money
+    - Uridium
+    MenuItem:
+    - type:DIAMOND
+    - amount:1
+    - name:&b&LBalance
+    - 'lore:&6&LYour Credits: &b%balance% #&6&LYour Uridium: &b%balancepoints%'
+    - amount:1
+    InventoryLocation: 18
+  BackToMenu:
+    RewardType: shop
+    PriceType: free
+    Reward: OrbitMinesPvP
+    MenuItem:
+    - type:REDSTONE_BLOCK
+    - amount:1
+    - name:&4&LOrbitMines PvP Menu
+    - lore:&8Back to OrbitMines PvP Menu
+    - amount:1
+    InventoryLocation: 9
+    ExtraPermission: ''

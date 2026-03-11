@@ -1,0 +1,20 @@
+users:
+  ElgarL:
+    group: None
+    subgroups: []
+    permissions:
+    - groupmanager.noofflineperms
+  KHobbits:
+    group: None
+    subgroups: []
+    permissions:
+    - groupmanager.noofflineperms
+  O_o_Fadi_o_O:
+    group: Daddy
+    subgroups: []
+    permissions: []
+  snowleo:
+    group: None
+    subgroups: []
+    permissions:
+    - groupmanager.noofflineperms

@@ -1,0 +1,27 @@
+{
+  "name": "Guardians",
+  "description": "We are the Guardians of the universe",
+  "createdAtMillis": 1396633529684,
+  "home": {
+    "w": "Factions",
+    "lx": -41.39754107094397,
+    "ly": 64.0,
+    "lz": 1082.649667736004,
+    "p": 55.593582,
+    "y": -184.5008
+  },
+  "invitedPlayerIds": [
+    "copymiddle",
+    "jimdave",
+    "popboy369",
+    "popcorn3635",
+    "rileyrealms",
+    "rileyvandijk95",
+    "sinaasappelke",
+    "slienimon",
+    "thiboxer"
+  ],
+  "relationWishes": {
+    "177d56c0-577f-4129-9cff-f2e06650be45": "ALLY"
+  }
+}

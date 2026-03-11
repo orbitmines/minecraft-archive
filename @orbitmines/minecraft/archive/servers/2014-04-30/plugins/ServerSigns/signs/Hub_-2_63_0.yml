@@ -1,0 +1,16 @@
+permission: ''
+world: Hub
+X: -2
+Y: 63
+Z: 0
+price: 0.0
+cooldown: 0
+globalCooldown: 0
+confirmation: false
+commands:
+- '/Lobby '
+grantPermissions: []
+lastGlobalUse: 0
+lastUse: {}
+priceItems: []
+exp: 0

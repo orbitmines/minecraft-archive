@@ -1,0 +1,16 @@
+permission: ''
+world: 1-1
+X: 721
+Y: 8
+Z: -222
+price: 0.0
+cooldown: 0
+globalCooldown: 0
+confirmation: false
+commands:
+- '/Shop '
+grantPermissions: []
+lastGlobalUse: 0
+lastUse: {}
+priceItems: []
+exp: 0

@@ -1,0 +1,302 @@
+# This Config Controls what plugins work on certain worlds.
+# Example
+# limit:
+#   WorldEdit:
+#     - world
+#     - world_nether
+#   Essentials: []
+# This will make it so worldedit will only work in world & world_nether, meaning in the end it is not usable.
+# When there is no worlds in the list it will allow it for any worlds, in this example allowing all worlds.
+# Whenever a plugin is added, this config will automatically add it!
+# exempt-login-events is for excluding login events when true, this means if a plugin uses PlayerLogin it will allow it for any world. We advise this to be enabled!
+# blocked-msg is the string displayed to a client when a command is blocked
+# check-for-updates is the controller for if updates should be alerted to the users with the permissions/op.
+exempt-login-events: true
+check-for-updates: true
+blocked-msg: '&c[Error] This command cannot be performed in this world.'
+limit:
+  WorldBorder: []
+  GroupManager: []
+  SGPoints:
+  - Hub
+  - Breeze_Island
+  - Survival_Games_4
+  VoxelSniper: []
+  Buycraft: []
+  Vault: []
+  Backpack: []
+  Multiverse-Core: []
+  NoFallDamage: []
+  DisableRespawnScreen: []
+  MobLoot:
+  - 1-1
+  - 1-2
+  - 1-3
+  - 1-4
+  - 1-5
+  - 1-6
+  - 1-7
+  - 1-8
+  - 2-1
+  - 2-2
+  - 2-3
+  - 2-4
+  - 2-5
+  - 2-6
+  - 2-7
+  - 2-8
+  - 3-1
+  - 3-2
+  - 3-3
+  - 3-4
+  - 3-5
+  - 3-6
+  - 3-7
+  - 3-8
+  - 4-1
+  - 4-2
+  - 4-3
+  - 4-4
+  - 4-5
+  AlwaysDay:
+  - 1-1
+  - 1-2
+  - 1-3
+  - 1-4
+  - 1-5
+  - 1-6
+  - 1-7
+  - 1-8
+  - 2-1
+  - 2-2
+  - 2-3
+  - 2-4
+  - 2-5
+  - 2-6
+  - 2-7
+  - 2-8
+  - 3-1
+  - 3-2
+  - 3-3
+  - 3-4
+  - 3-5
+  - 3-6
+  - 3-7
+  - 3-8
+  - 4-1
+  - 4-2
+  - 4-3
+  - 4-4
+  - 4-5
+  SkyWars:
+  - island-0
+  - SkyWarsLobby
+  ColourYourSigns: []
+  ProtocolLib: []
+  Votifier: []
+  Citizens: []
+  KingKitsSpecial: []
+  PlayerMagnet: []
+  WorldEdit: []
+  Microblocks: []
+  JNoDrops:
+  - 1-1
+  - 1-2
+  - 1-3
+  - 1-4
+  - 1-5
+  - 1-6
+  - 1-7
+  - 1-8
+  - 2-1
+  - 2-2
+  - 2-3
+  - 2-4
+  - 2-5
+  - 2-6
+  - 2-7
+  - 2-8
+  - 3-1
+  - 3-2
+  - 3-3
+  - 3-4
+  - 3-5
+  - 3-6
+  - 3-7
+  - 3-8
+  - 4-1
+  - 4-2
+  - 4-3
+  - 4-4
+  - 4-5
+  - Lobby
+  - Hub
+  Multiverse-Inventories: []
+  PlayerMarkers: []
+  AdvancedMotd: []
+  JoinCommands: []
+  ToolSwap: []
+  Teams: []
+  Mobcash:
+  - 1-1
+  - 1-2
+  - 1-3
+  - 1-4
+  - 1-5
+  - 1-6
+  - 1-7
+  - 1-8
+  - 2-1
+  - 2-2
+  - 2-3
+  - 2-4
+  - 2-5
+  - 2-6
+  - 2-7
+  - 2-8
+  - 3-1
+  - 3-2
+  - 3-3
+  - 3-4
+  - 3-5
+  - 3-6
+  - 3-7
+  - 3-8
+  - 4-1
+  - 4-2
+  - 4-3
+  - 4-4
+  - 4-5
+  HealthBar: []
+  EmptyWorldGenerator: []
+  MyCommand: []
+  ChestKits: []
+  WorldGuard: []
+  StackableItems: []
+  CommandLog: []
+  CustomJoinItems:
+  - Hub
+  SimpleAttributes: []
+  pwrSay: []
+  BuildVsBreak: []
+  OITC: []
+  AutoBroadcast: []
+  MyPet: []
+  PaintWar: []
+  AutoSaver: []
+  Customjoin: []
+  GriefPrevention: []
+  NametagEdit: []
+  Essentials: []
+  qQuests: []
+  InSigns: []
+  ServerSigns: []
+  LibsDisguises: []
+  Multiverse-Portals: []
+  BlockHunt: []
+  CompassNavigation:
+  - OrbitMinesHub
+  - Hub
+  DakadoHealth: []
+  SurvivalGames: []
+  EssentialsChat: []
+  EssentialsProtect: []
+  EssentialsSpawn: []
+  blFriends: []
+  ScoreboardStats: []
+  EssentialsAntiBuild: []
+  BuildMyThing: []
+  ColorShuffle: []
+  VotifierCommand: []
+  PrisonSuite: []
+  PrisonMine: []
+  SimpleRegionMarket: []
+  PaidRanks: []
+  Info Board: []
+  TabColor: []
+  Shop: []
+  Shops: []
+  ChestShop: []
+  Census Signs: []
+  AntiCommandTab: []
+  StopDeathScreen: []
+  GAListener: []
+  SpectatorPlus: []
+  GroupBlacklist: []
+  IcePvPControl: []
+  SkullTurret: []
+  PlotMe: []
+  VanishNoPacket: []
+  uSkyBlock: []
+  VampireZ: []
+  DragonCast: []
+  Jobs:
+  - SurvivalWorld
+  BossShop: []
+  PlayerPoints: []
+  Custom Enchantments: []
+  PItemMenu: []
+  JoinExecutor: []
+  HeavySpleef: []
+  commandNPC: []
+  SpawnJoin: []
+  Paintball: []
+  TagAPI: []
+  JoinMessagePlus: []
+  KillerMoney:
+  - KitPvP
+  - KitPvPMap
+  BarAPI: []
+  DrawMyThing: []
+  ClearLag: []
+  KitPlugin: []
+  Potening: []
+  ClearFX: []
+  mcore:
+  - Factions
+  - Factions_nether
+  Factions:
+  - Factions
+  - Factions_nether
+  PvpLevels:
+  - KitPvP
+  - KitPvPMap
+  FirstSpawn: []
+  NoCheatPlus: []
+  DeathMessages: []
+  SkullMyHead: []
+  gSkulls: []
+  RedstoneCommand: []
+  Multiverse-NetherPortals:
+  - SurvivalWorld
+  - SurvivalWorld_nether
+  - nether_SurvivalWorld
+  - Factions
+  - Factions_nether
+  - nether_Factions
+  - skyworld
+  - nether_skyworld
+  Quake:
+  - QuakeArena1
+  - MiniGames
+  - OITCArena1
+  ScheduledCommands: []
+  InstaTame: []
+  Easy Plant: []
+  Superpickaxe: []
+  InvisibleWalls: []
+  HolographicDisplays: []
+  CombatLog: []
+  dynmap: []
+  Orebfuscator: []
+  MinigamesParty: []
+  PlayerVaults: []
+  Easy_Plant: []
+  Custom_Enchantments: []
+  Info_Board: []
+  Info-Board: []
+  VoteSend: []
+  ExplodingEggs: []
+  Egg_Explode: []
+  StaffSecure: []
+  LoginSecurity: []

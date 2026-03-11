@@ -1,0 +1,151 @@
+# Configuration for CompassNavigation by Adzwoolly and DenialMC!
+# Each number represents the slot in the compass GUI.
+# If the slot is not in use, set Enabled to False!
+# Item is the item to represent the teleport in the Compass GUI.
+# Use IDs for specifying an item:
+# http://www.minecraftwiki.net/wiki/Data_values
+# Pitch: -90 = Sky, +90 = Floor
+# The name and lore can have colour codes. The colour code is '&', e.g. '&6' for gold
+# For colour codes please check:
+# http://www.minecraftwiki.net/wiki/Formatting_codes
+# Up to 6 rows are supported.
+# You can specify data values for the item. For example: 35:2
+# You can specify Essentials warps using the Warp option.
+# You can specify BungeeCord servers using the Bungee option.
+# You can specify Lilypad servers using the Lilypad option.
+# You can specify prices for using certain slots with the Price option.
+# You can specify item amouints with the Amount option.
+# You can specify enchanted status with the Enchanted option (true or false).
+# You can specify commands to run with the Command option (Don't include the first slash). To run a console command just write "c:" before the command itself. Use those modifiers: <name>, <displayname>, <x>, <y>, <z>, <yaw>, <pitch>.
+# Set up slots ingame with /cn setup!
+# You can disable the pvp warmup time with WarmupTime, increase the distance checked with WarmupDistance and the time to pass with WarmupDelay.
+# Don't forget to add items to the config!
+
+Item: 345
+GUIName: OrbitMines
+Rows: 1
+Prefix: '&2&l[&a&lCN&2&l]'
+SignName: '&9&lWelcome!'
+NoPermSignName: '&4[Teleport]'
+CommandName: compass
+AutoUpdater: true
+Sounds: true
+WarmupTime: true
+WarmupDistance: 15
+WarmupDelay: 5
+DisabledWorlds:
+- example1
+- example2
+'1':
+  World: SurvivalWorld
+  X: -570.3342601736396
+  Y: 64.0
+  Z: -68.37698211444581
+  Yaw: 267.59998
+  Pitch: 6.450001
+  Name: '&a&LSurvival'
+  Enabled: true
+  Item: '291:0'
+  Lore:
+  - '&b - Claim Land!'
+  - '&b - Trust Friends!'
+  - '&b - Accept a Job!'
+  - '&b - Earn Money!'
+  - '&b - Build!'
+'2':
+  World: PrisonServer
+  X: -862.403652504614
+  Y: 9.0
+  Z: 314.5495127759808
+  Yaw: 271.27225
+  Pitch: 5.1000004
+  Name: '&4&LPrison'
+  Enabled: true
+  Item: '278:0'
+  Lore:
+  - '&b - Mine!'
+  - '&b - Sell!'
+  - '&b - Buy a Shop!'
+  - '&b - Rankup!'
+  - '&b - Get out of Prison!'
+'3':
+  World: SkyBlockWorld
+  X: 0.4574560711972874
+  Y: 65.0
+  Z: -0.23688227828507757
+  Yaw: -177.89563
+  Pitch: 3.299999
+  Enabled: true
+  Item: '2:0'
+  Name: '&5&LSkyBlock'
+  Lore:
+  - '&b - Island!'
+  - '&b - Challenges!'
+  - '&b - Island Levels!'
+  - '&b - Play with Friends!'
+  - '&b - Be the best Island!'
+'4':
+  World: Creative
+  X: -27.91252529956684
+  Y: 67.0
+  Z: 28.490940846209167
+  Yaw: 2.3983653
+  Pitch: 13.049995
+  Name: '&d&LCreative'
+  Enabled: true
+  Item: '138:0'
+  Lore:
+  - '&b - Plots!'
+  - '&b - Build!'
+  - '&b - Play with Friends!'
+  - '&b - Competitions!'
+  - '&b - Fly!'
+'5':
+  Name: '&c&LKitPvP'
+  Item: '267:0'
+  Enabled: true
+  World: KitPvP
+  X: -691.5127879734257
+  Y: 18.0
+  Z: -891.409110156782
+  Yaw: -1.3500018
+  Pitch: 9.45
+  Lore:
+  - '&b - Unique!'
+  - '&b - Custom Abilities!'
+  - '&b - Buy Kits!'
+  - '&b - Level Up!'
+  - '&b - Upgrade Kits!'
+'6':
+  Item: '276:0'
+  Enabled: true
+  Name: '&4&LFactions'
+  Lore:
+  - '&b - Starter Kit!'
+  - '&b - Factions!'
+  - '&b - Teleport!'
+  - '&b - Fight!'
+  - '&b - Raid!'
+  World: Factions
+  X: 0.19117519666559424
+  Y: 110.20000004768372
+  Z: 361.5638552590298
+  Yaw: 88.799965
+  Pitch: 1.049998
+'8':
+  World: MiniGames
+  X: 0.6385659933189342
+  Y: 65.0
+  Z: 0.6533022307012604
+  Yaw: 0.29997593
+  Pitch: -0.29999852
+  Enabled: true
+  Item: '332:0'
+  Name: '&f&LMiniGames'
+  Lore:
+  - '&b - Hide And Seek'
+  - '&b - ColorShuffle'
+  - '&b - SkyWars'
+  - '&b - Quake'
+  - '&b - PaintBall'
+  - '&b - Spleef'

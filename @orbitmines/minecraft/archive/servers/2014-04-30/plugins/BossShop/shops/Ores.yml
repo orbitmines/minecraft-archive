@@ -1,0 +1,92 @@
+ShopName: Ores
+signs:
+  text: '[Ores]'
+  NeedPermissionToCreateSign: true
+shop:
+  Emerald:
+    RewardType: item
+    PriceType: money
+    Price: 200
+    Reward:
+    - - type:EMERALD
+      - amount:1
+    MenuItem:
+    - type:EMERALD
+    - amount:1
+    - name:&a&L1 Emerald
+    - 'lore:&c&LPrice: &b200 Money #&6&LYour Money: &b%balance%'
+    - amount:1
+    InventoryLocation: 1
+    ExtraPermission: ''
+  Diamond:
+    RewardType: item
+    PriceType: money
+    Price: 150
+    Reward:
+    - - type:DIAMOND
+      - amount:1
+    MenuItem:
+    - type:DIAMOND
+    - amount:1
+    - name:&b&L1 Diamond
+    - 'lore:&c&LPrice: &b150 Money #&6&LYour Money: &b%balance%'
+    - amount:1
+    InventoryLocation: 2
+    ExtraPermission: ''
+  Gold:
+    RewardType: item
+    PriceType: money
+    Price: 100
+    Reward:
+    - - type:GOLD_INGOT
+      - amount:1
+    MenuItem:
+    - type:GOLD_INGOT
+    - amount:1
+    - name:&6&L1 Gold Ingot
+    - 'lore:&c&LPrice: &b100 Money #&6&LYour Money: &b%balance%'
+    - amount:1
+    InventoryLocation: 3
+    ExtraPermission: ''
+  Iron:
+    RewardType: item
+    PriceType: money
+    Price: 75
+    Reward:
+    - - type:IRON_INGOT
+      - amount:1
+    MenuItem:
+    - type:IRON_INGOT
+    - amount:1
+    - name:&7&L1 Iron Ingot
+    - 'lore:&c&LPrice: &b75 Money #&6&LYour Money: &b%balance%'
+    - amount:1
+    InventoryLocation: 4
+    ExtraPermission: ''
+  Coal:
+    RewardType: item
+    PriceType: money
+    Price: 50
+    Reward:
+    - - type:COAL
+    MenuItem:
+    - type:COAL
+    - amount:1
+    - name:&8&L1 Coal
+    - 'lore:&c&LPrice: &b50 Money #&6&LYour Money: &b%balance%'
+    - amount:1
+    InventoryLocation: 5
+    ExtraPermission: ''
+  BackToMenu:
+    RewardType: shop
+    PriceType: free
+    Reward: Survival
+    MenuItem:
+    - type:REDSTONE_BLOCK
+    - amount:1
+    - name:&a&LSurvival Menu
+    - lore:&8Back to Survival Menu
+    - amount:1
+    InventoryLocation: 9
+    ExtraPermission: ''
+

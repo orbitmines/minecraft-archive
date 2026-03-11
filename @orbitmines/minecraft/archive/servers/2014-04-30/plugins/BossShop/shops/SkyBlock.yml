@@ -1,0 +1,29 @@
+ShopName: SkyBlock
+signs:
+  text: '[SkyBlock]'
+  NeedPermissionToCreateSign: true
+shop:
+  Buy:
+    RewardType: shop
+    PriceType: free
+    Reward: BuySkyBlock
+    MenuItem:
+    - 'type: DIRT'
+    - amount:1
+    - name:&b&LBuy Items
+    - 'lore:&8Here you can buy items'
+    - amount:1
+    InventoryLocation: 3
+    ExtraPermission: 'shop.skyblock'
+  Sell:
+    RewardType: shop
+    PriceType: free
+    Reward: SellSkyBlock
+    MenuItem:
+    - 'type: GRASS'
+    - amount:1
+    - name:&b&LSell Items
+    - 'lore:&8Here you can sell items'
+    - amount:1
+    InventoryLocation: 7
+    ExtraPermission: 'shop.skyblock'

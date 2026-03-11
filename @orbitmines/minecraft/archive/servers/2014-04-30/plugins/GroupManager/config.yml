@@ -1,0 +1,248 @@
+settings:
+  config:
+    # With this enabled anyone set as op has full permissions when managing GroupManager
+    # The user will be able to promote players to the same group or even above.
+    opOverrides: true
+    
+    # Default setting for 'mantogglevalidate'
+    # true will cause GroupManager to attempt name matching by default.
+    validate_toggle: true
+    # ************************************************************************************************************************************************************
+    # *** NOTE: Having this feature enabled can allow improper use of Command Blocks which may lead to undesireable permission changes. You have been warned! ***
+    # ************************************************************************************************************************************************************
+    allow_commandblocks: false
+    
+  data:
+    save:
+      # How often GroupManager will save it's data back to groups.yml and users.yml
+      minutes: 10
+      # Number of hours to retain backups (plugins/GroupManager/backup)
+      hours: 24
+      
+  logging:
+    # Level of detail GroupManager will use when logging.
+    # Acceptable entries are - ALL,CONFIG,FINE,FINER,FINEST,INFO,OFF,SEVERE,WARNING
+    level: INFO
+    
+  mirrors:
+        # Worlds listed here have their settings mirrored in their children.
+        # The first element 'world' is the main worlds name, and is the parent world.
+        # subsequent elements 'world_nether' and 'world_the_end' are worlds which will use
+        # the same user/groups files as the parent.
+        # the element 'all_unnamed_worlds' specifies all worlds that aren't listed, and automatically mirrors them to it's parent.
+        # Each child world can be configured to mirror the 'groups', 'users' or both files from its parent.
+        world:
+          TEST:
+          - users
+          - groups
+        Spawn:
+          all_unnamed_worlds:
+          - users
+          - groups
+          Hub:
+          - users
+          - groups
+          MiniGames:
+          - users
+          - groups
+          BattleSiege:
+          - users
+          - groups
+          SkyWarsArenaWorld:
+          - users
+          - groups
+          PaintWarArena1:
+          - users
+          - groups
+          PaintWarArena2:
+          - users
+          - groups
+          PaintWarArena3:
+          - users
+          - groups
+          PaintWarArena4:
+          - users
+          - groups
+          PaintWarArena5:
+          - users
+          - groups
+          HideAndSeekArena1:
+          - users
+          - groups
+          HideAndSeekArena2:
+          - users
+          - groups
+          HideAndSeekArena3:
+          - users
+          - groups
+          HideAndSeekArena4:
+          - users
+          - groups
+          HideAndSeekArena5:
+          - users
+          - groups
+          OITCArena1:
+          - users
+          - groups
+        SurvivalWorld:
+          SurvivalShop:
+          - users
+          - groups
+          SurvivalWorld_nether:
+          - users
+          - groups
+          ClaimTutorial:
+          - users
+          - groups
+          DonateAnimallSkull:
+          - users
+          - groups
+          world_nether:
+          - users
+          - groups
+        PrisonWorld1:
+          PrisonWorld:
+          - users
+          - groups
+          PrisonServer:
+          - users
+          - groups
+          PrisonPvPArena:
+          - users
+          - groups
+          PrisonVoteShop:
+          - users
+          - groups
+        BattleSiegeEvent:
+          TestWorld:
+          - users
+          - groups
+        SkyBlockWorld:
+          skyworld:
+          - users
+          - groups
+          skyworld_nether:
+          - users
+          - groups
+        1-1:
+          1-2:
+          - users
+          - groups
+          1-3:
+          - users
+          - groups
+          1-4:
+          - users
+          - groups
+          1-5:
+          - users
+          - groups
+          1-6:
+          - users
+          - groups
+          1-7:
+          - users
+          - groups
+          1-8:
+          - users
+          - groups
+          2-1:
+          - users
+          - groups
+          2-2:
+          - users
+          - groups
+          2-3:
+          - users
+          - groups
+          2-4:
+          - users
+          - groups
+          2-5:
+          - users
+          - groups
+          2-6:
+          - users
+          - groups
+          2-7:
+          - users
+          - groups
+          2-8:
+          - users
+          - groups
+          3-1:
+          - users
+          - groups
+          3-2:
+          - users
+          - groups
+          3-3:
+          - users
+          - groups
+          3-4:
+          - users
+          - groups
+          3-5:
+          - users
+          - groups
+          3-6:
+          - users
+          - groups
+          3-7:
+          - users
+          - groups
+          3-8:
+          - users
+          - groups
+          4-1:
+          - users
+          - groups
+          4-2:
+          - users
+          - groups
+          4-3:
+          - users
+          - groups
+          4-4:
+          - users
+          - groups
+          4-5:
+          - users
+          - groups
+          PvPSelectVenusShip:
+          - users
+          - groups
+          PvPSelectEarthShip:
+          - users
+          - groups
+          PvPSelectMarsShip:
+          - users
+          - groups
+        KitPvP:
+          KitPvPMap:
+          - users
+          - groups
+        Dropper:
+          TestWorld:
+          - users
+          - groups
+        Tutorial:
+          TestWorld:
+          - users
+          - groups
+        Creative:
+          plotworld:
+          - users
+          - groups
+        Factions:
+          Factions_nether:
+          - users
+          - groups
+
+    #  world2:      (World2 would have it's own set of user and groups files)
+    #    world3:
+    #    - users    (World3 would use the users.yml from world2, but it's own groups.yml)
+    #    world4:
+    #    - groups   (World4 would use the groups.yml from world2, but it's own users.yml)
+    #  world5:
+    #    - world6   (this would cause world6 to mirror both files from world5)

@@ -1,0 +1,95 @@
+ShopName: Weapons
+signs:
+  text: '[Weapons]'
+  NeedPermissionToCreateSign: true
+shop:
+  LvL1:
+    RewardType: playercommand
+    PriceType: free
+    Reward:
+    - BuyWeaponLvL1
+    MenuItem:
+    - type:IRON_SWORD
+    - amount:1
+    - name:&b&LWeapon &c&LLvL 1
+    - 'lore:&b&L4 Attack Damage #&c&LPrice: &b100 Credits #&6&LYour Credits: &b%balance%'
+    - amount:1
+    InventoryLocation: 1
+    ExtraPermission: ''
+  LvL2:
+    RewardType: playercommand
+    PriceType: free
+    Reward:
+    - BuyWeaponLvL2
+    MenuItem:
+    - type:IRON_SWORD
+    - amount:2
+    - name:&b&LWeapon &c&LLvL 2
+    - 'lore:&b&L6 Attack Damage #&c&LPrice: &b400 Credits #&6&LYour Credits: &b%balance%'
+    - amount:1
+    InventoryLocation: 2
+    ExtraPermission: ''
+  LvL3:
+    RewardType: playercommand
+    PriceType: free
+    Reward:
+    - BuyWeaponLvL3
+    MenuItem:
+    - type:IRON_SWORD
+    - amount:3
+    - name:&b&LWeapon &c&LLvL 3
+    - 'lore:&b&L8 Attack Damage #&c&LPrice: &b2500 Credits #&6&LYour Credits: &b%balance%'
+    - amount:1
+    InventoryLocation: 3
+    ExtraPermission: ''
+  LvL5:
+    RewardType: playercommand
+    PriceType: free
+    Reward:
+    - BuyWeaponLvL5
+    MenuItem:
+    - type:DIAMOND_SWORD
+    - amount:5
+    - name:&b&LWeapon &c&LLvL 5
+    - 'lore:&b&L15 Attack Damage #&c&LPrice: &b250 Uridium #&6&LYour Uridium: &b%balancepoints%'
+    - amount:1
+    InventoryLocation: 10
+    ExtraPermission: ''
+  LvL7:
+    RewardType: playercommand
+    PriceType: free
+    Reward:
+    - BuyWeaponLvL7
+    MenuItem:
+    - type:DIAMOND_SWORD
+    - amount:7
+    - name:&b&LWeapon &c&LLvL 7
+    - 'lore:&b&L25 Attack Damage #&c&LPrice: &b750 Uridium #&6&LYour Uridium: &b%balancepoints%'
+    - amount:1
+    InventoryLocation: 11
+    ExtraPermission: ''
+  Balance:
+    RewardType: playercommand
+    PriceType: free
+    Reward:
+    - money
+    - Uridium
+    MenuItem:
+    - type:DIAMOND
+    - amount:1
+    - name:&b&LBalance
+    - 'lore:&6&LYour Credits: &b%balance% #&6&LYour Uridium: &b%balancepoints%'
+    - amount:1
+    InventoryLocation: 18
+  BackToMenu:
+    RewardType: shop
+    PriceType: free
+    Reward: OrbitMinesPvP
+    MenuItem:
+    - type:REDSTONE_BLOCK
+    - amount:1
+    - name:&4&LOrbitMines PvP Menu
+    - lore:&8Back to OrbitMines PvP Menu
+    - amount:1
+    InventoryLocation: 9
+    ExtraPermission: ''

@@ -1,0 +1,181 @@
+users:
+  basteti:
+    group: Venus
+    subgroups: []
+    permissions:
+    - mb.skull
+    - mb.use
+    - multiverse.access.PrisonServer
+    - staffsecure.staff
+  BenYOmin_Mango:
+    group: Venus
+    subgroups: []
+    permissions:
+    - -mycommand.cmd.386
+    - -mycommand.cmd.387
+    - -mycommand.cmd.388
+    - -mycommand.cmd.389
+    - -mycommand.cmd.390
+    - -mycommand.cmd.391
+    - -mycommand.cmd.392
+    - -mycommand.cmd.393
+    - -mycommand.cmd.394
+    - -mycommand.cmd.395
+    - -mycommand.cmd.396
+    - -mycommand.cmd.397
+    - -mycommand.cmd.398
+    - -mycommand.cmd.399
+    - -mycommand.cmd.400
+    - -mycommand.cmd.401
+    - -mycommand.cmd.402
+    - -mycommand.cmd.403
+    - -mycommand.cmd.404
+    - -mycommand.cmd.405
+    - -mycommand.cmd.406
+    - -mycommand.cmd.407
+    - -mycommand.cmd.408
+    - -mycommand.cmd.409
+    - -mycommand.cmd.410
+    - -mycommand.cmd.411
+    - -mycommand.cmd.412
+    - -mycommand.cmd.413
+    - -mycommand.cmd.418
+    - -mycommand.cmd.419
+    - -mycommand.cmd.420
+    - -mycommand.cmd.421
+    - -mycommand.cmd.422
+    - -mycommand.cmd.423
+    - -mycommand.cmd.424
+    - -mycommand.cmd.425
+    - -mycommand.cmd.426
+    - -mycommand.cmd.427
+    - -mycommand.cmd.428
+    - -mycommand.cmd.429
+    - -mycommand.cmd.430
+    - -mycommand.cmd.431
+    - -mycommand.cmd.432
+    - -mycommand.cmd.433
+    - -mycommand.cmd.19
+    - -mycommand.cmd.20
+    - -mycommand.cmd.21
+    - -mycommand.cmd.22
+    - essentials.afk
+    - essentials.warps.IronVIP
+    - essentials.workbench
+    - mb.skull
+    - mb.use
+    - multiverse.access.PrisonServer
+    - staffsecure.staff
+    - toolswap.off
+    info:
+      prefix: '&4[Owner] &4'
+  eekhoorn2000:
+    group: Venus
+    subgroups: []
+    permissions:
+    - mb.skull
+    - mb.use
+    - multiverse.access.PrisonServer
+    - staffsecure.staff
+  O_o_Fadi_o_O:
+    group: Venus
+    subgroups: []
+    permissions:
+    - -mycommand.cmd.386
+    - -mycommand.cmd.387
+    - -mycommand.cmd.388
+    - -mycommand.cmd.389
+    - -mycommand.cmd.390
+    - -mycommand.cmd.391
+    - -mycommand.cmd.392
+    - -mycommand.cmd.393
+    - -mycommand.cmd.394
+    - -mycommand.cmd.395
+    - -mycommand.cmd.396
+    - -mycommand.cmd.397
+    - -mycommand.cmd.398
+    - -mycommand.cmd.399
+    - -mycommand.cmd.400
+    - -mycommand.cmd.401
+    - -mycommand.cmd.402
+    - -mycommand.cmd.403
+    - -mycommand.cmd.404
+    - -mycommand.cmd.405
+    - -mycommand.cmd.406
+    - -mycommand.cmd.407
+    - -mycommand.cmd.408
+    - -mycommand.cmd.409
+    - -mycommand.cmd.410
+    - -mycommand.cmd.411
+    - -mycommand.cmd.412
+    - -mycommand.cmd.413
+    - -mycommand.cmd.418
+    - -mycommand.cmd.419
+    - -mycommand.cmd.420
+    - -mycommand.cmd.421
+    - -mycommand.cmd.422
+    - -mycommand.cmd.423
+    - -mycommand.cmd.424
+    - -mycommand.cmd.425
+    - -mycommand.cmd.426
+    - -mycommand.cmd.427
+    - -mycommand.cmd.428
+    - -mycommand.cmd.429
+    - -mycommand.cmd.430
+    - -mycommand.cmd.431
+    - -mycommand.cmd.432
+    - -mycommand.cmd.433
+    - -mycommand.cmd.19
+    - -mycommand.cmd.20
+    - -mycommand.cmd.21
+    - -mycommand.cmd.22
+    - essentials.*
+    - essentials.afk
+    - essentials.warps.IronVIP
+    - essentials.workbench
+    - mb.skull
+    - mb.use
+    - multiverse.access.PrisonServer
+    - staffsecure.staff
+    - toolswap.off
+    info:
+      prefix: '&4[Owner] &4'
+  sharewoods:
+    group: Venus
+    subgroups: []
+    permissions:
+    - mb.skull
+    - mb.use
+    - multiverse.access.PrisonServer
+    - staffsecure.staff
+  SinaasAppelke:
+    group: Earth
+    subgroups: []
+    permissions:
+    - -mycommand.cmd.414
+    - -mycommand.cmd.415
+    - -mycommand.cmd.416
+    - -mycommand.cmd.417
+    - multiverse.portal.access.*
+    - staffsecure.staff
+  slienimon:
+    group: Mars
+    subgroups: []
+    permissions:
+    - -mycommand.cmd.386
+    - -mycommand.cmd.387
+    - -mycommand.cmd.388
+    - -mycommand.cmd.389
+    - -mycommand.cmd.390
+    - -mycommand.cmd.391
+    - -mycommand.cmd.392
+    - -mycommand.cmd.393
+    - -mycommand.cmd.410
+    - -mycommand.cmd.411
+    - -mycommand.cmd.412
+    - -mycommand.cmd.413
+    - -mycommand.cmd.418
+    - -mycommand.cmd.419
+    - -mycommand.cmd.420
+    - -mycommand.cmd.421
+    - staffsecure.staff

@@ -1,0 +1,18 @@
+{
+  "name": "PvPbOzeZ",
+  "description": "We are bosses at pvp",
+  "createdAtMillis": 1394779611690,
+  "home": {
+    "w": "Factions",
+    "lx": -748.5614004265836,
+    "ly": 64.0,
+    "lz": 442.3245386543929,
+    "p": -0.9000397,
+    "y": -179.09943
+  },
+  "open": true,
+  "relationWishes": {
+    "177d56c0-577f-4129-9cff-f2e06650be45": "ENEMY",
+    "09ea0838-ed9d-4c5b-8395-eeabfe747d52": "ENEMY"
+  }
+}

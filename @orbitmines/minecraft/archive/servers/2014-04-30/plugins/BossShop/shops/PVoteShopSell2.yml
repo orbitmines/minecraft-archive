@@ -1,0 +1,450 @@
+ShopName: PVoteShopSell2
+signs:
+  text: '[VoteShopSell2]'
+  NeedPermissionToCreateSign: true
+shop:
+  Wood:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - type:WOOD
+      - amount:1
+    Reward: 2
+    MenuItem:
+    - 'type: WOOD'
+    - amount:1
+    - name:&6&L1 Wood
+    - 'lore:&2&LReward: &4&m1$&b 2$'
+    - amount:1
+    InventoryLocation: 2
+    ExtraPermission: ''
+  Wood16:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - type:WOOD
+      - amount:16
+    Reward: 32
+    MenuItem:
+    - 'type: WOOD'
+    - amount:16
+    - name:&6&L16 Wood
+    - 'lore:&2&LReward: &4&m16$&b 32$'
+    - amount:16
+    InventoryLocation: 11
+    ExtraPermission: ''
+  Wood32:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - type:WOOD
+      - amount:32
+    Reward: 64
+    MenuItem:
+    - 'type: WOOD'
+    - amount:32
+    - name:&6&L32 Wood
+    - 'lore:&2&LReward: &4&m32$&b 64$'
+    - amount:32
+    InventoryLocation: 20
+    ExtraPermission: ''
+  Wood64:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - type:WOOD
+      - amount:64
+    Reward: 128
+    MenuItem:
+    - 'type: WOOD'
+    - amount:64
+    - name:&6&L64 Wood
+    - 'lore:&2&LReward: &4&m64$&b 128$'
+    - amount:64
+    InventoryLocation: 29
+    ExtraPermission: ''
+  Emerald:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - type:EMERALD_BLOCK
+      - amount:1
+    Reward: 1400
+    MenuItem:
+    - 'type: EMERALD_BLOCK'
+    - amount:1
+    - name:&a&L1 Emerald Block
+    - 'lore:&2&LReward: &4&m700$&b 1400$'
+    - amount:1
+    InventoryLocation: 3
+    ExtraPermission: ''
+  Emerald16:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - type:EMERALD_BLOCK
+      - amount:16
+    Reward: 22400
+    MenuItem:
+    - 'type: EMERALD_BLOCK'
+    - amount:16
+    - name:&a&L16 Emerald Block
+    - 'lore:&2&LReward: &4&m11200&b 22400$'
+    - amount:16
+    InventoryLocation: 12
+    ExtraPermission: ''
+  Emerald32:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - type:EMERALD_BLOCK
+      - amount:32
+    Reward: 44800
+    MenuItem:
+    - 'type: EMERALD_BLOCK'
+    - amount:32
+    - name:&a&L32 Emerald Block
+    - 'lore:&2&LReward: &4&m22400$&b 44800$'
+    - amount:32
+    InventoryLocation: 21
+    ExtraPermission: ''
+  Emerald64:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - type:EMERALD_BLOCK
+      - amount:64
+    Reward: 89600
+    MenuItem:
+    - 'type: EMERALD_BLOCK'
+    - amount:64
+    - name:&a&L64 Emerald Block
+    - 'lore:&2&LReward: &4&m44800$&b 89600$'
+    - amount:64
+    InventoryLocation: 30
+    ExtraPermission: ''
+  Diamond:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - type:DIAMOND_BLOCK
+      - amount:1
+    Reward: 830
+    MenuItem:
+    - 'type: DIAMOND_BLOCK'
+    - amount:1
+    - name:&b&L1 Diamond Block
+    - 'lore:&2&LReward: &4&m415$&b 830$'
+    - amount:1
+    InventoryLocation: 4
+    ExtraPermission: ''
+  Diamond16:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - type:DIAMOND_BLOCK
+      - amount:16
+    Reward: 13280
+    MenuItem:
+    - 'type: DIAMOND_BLOCK'
+    - amount:16
+    - name:&b&L16 Diamond Block
+    - 'lore:&2&LReward: &4&m6640$&b 13280$'
+    - amount:16
+    InventoryLocation: 13
+    ExtraPermission: ''
+  Diamond32:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - type:DIAMOND_BLOCK
+      - amount:32
+    Reward: 26560
+    MenuItem:
+    - 'type: DIAMOND_BLOCK'
+    - amount:32
+    - name:&b&L32 Diamond Block
+    - 'lore:&2&LReward: &4&m13280$&b 26560$'
+    - amount:32
+    InventoryLocation: 22
+    ExtraPermission: ''
+  Diamond64:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - type:DIAMOND_BLOCK
+      - amount:64
+    Reward: 53120
+    MenuItem:
+    - 'type: DIAMOND_BLOCK'
+    - amount:64
+    - name:&b&L64 Diamond Block
+    - 'lore:&2&LReward: &4&m26560$&b 53120$'
+    - amount:64
+    InventoryLocation: 31
+    ExtraPermission: ''
+  Gold:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - type:GOLD_BLOCK
+      - amount:1
+    Reward: 450
+    MenuItem:
+    - 'type: GOLD_BLOCK'
+    - amount:1
+    - name:&6&L1 Gold Block
+    - 'lore:&2&LReward: &4&m225$&b 450$'
+    - amount:1
+    InventoryLocation: 5
+    ExtraPermission: ''
+  Gold16:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - type:GOLD_BLOCK
+      - amount:16
+    Reward: 7200
+    MenuItem:
+    - 'type: GOLD_BLOCK'
+    - amount:16
+    - name:&6&L16 Gold Block
+    - 'lore:&2&LReward: &4&m3600$&b 7200$'
+    - amount:16
+    InventoryLocation: 14
+    ExtraPermission: ''
+  Gold32:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - type:GOLD_BLOCK
+      - amount:32
+    Reward: 14400
+    MenuItem:
+    - 'type: GOLD_BLOCK'
+    - amount:32
+    - name:&6&L32 Gold Block
+    - 'lore:&2&LReward: &4&m7200$&b 14400$'
+    - amount:32
+    InventoryLocation: 23
+    ExtraPermission: ''
+  Gold64:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - type:GOLD_BLOCK
+      - amount:64
+    Reward: 28800
+    MenuItem:
+    - 'type: GOLD_BLOCK'
+    - amount:64
+    - name:&6&L64 Gold Block
+    - 'lore:&2&LReward: &4&m14400$&b 28800$'
+    - amount:64
+    InventoryLocation: 32
+    ExtraPermission: ''
+  Iron:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - type:IRON_BLOCK
+      - amount:1
+    Reward: 200
+    MenuItem:
+    - 'type: IRON_BLOCK'
+    - amount:1
+    - name:&7&L1 Iron Block
+    - 'lore:&2&LReward: &4&m100$&b 200$'
+    - amount:1
+    InventoryLocation: 6
+    ExtraPermission: ''
+  Iron16:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - type:IRON_BLOCK
+      - amount:16
+    Reward: 3200
+    MenuItem:
+    - 'type: IRON_BLOCK'
+    - amount:16
+    - name:&7&L16 Iron Block
+    - 'lore:&2&LReward: &4&m1600$&b 3200$'
+    - amount:16
+    InventoryLocation: 15
+    ExtraPermission: ''
+  Iron32:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - type:IRON_BLOCK
+      - amount:32
+    Reward: 6400
+    MenuItem:
+    - 'type: IRON_BLOCK'
+    - amount:32
+    - name:&7&L32 Iron Block
+    - 'lore:&2&LReward: &4&m3200$&b 6400$'
+    - amount:32
+    InventoryLocation: 24
+    ExtraPermission: ''
+  Iron64:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - type:IRON_BLOCK
+      - amount:64
+    Reward: 12800
+    MenuItem:
+    - 'type: IRON_BLOCK'
+    - amount:64
+    - name:&7&L64 Iron Block
+    - 'lore:&2&LReward: &4&m6400$&b 12800$'
+    - amount:64
+    InventoryLocation: 33
+    ExtraPermission: ''
+  Coal:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - type:COAL_BLOCK
+      - amount:1
+    Reward: 100
+    MenuItem:
+    - 'type: COAL_BLOCK'
+    - amount:1
+    - name:&8&L1 Coal Block
+    - 'lore:&2&LReward: &4&m50$&b 100$'
+    - amount:1
+    InventoryLocation: 7
+    ExtraPermission: ''
+  Coal16:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - type:COAL_BLOCK
+      - amount:16
+    Reward: 1600
+    MenuItem:
+    - 'type: COAL_BLOCK'
+    - amount:16
+    - name:&8&L16 Coal Block
+    - 'lore:&2&LReward: &4&m800$&b 1600$'
+    - amount:16
+    InventoryLocation: 16
+    ExtraPermission: ''
+  Coal32:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - type:COAL_BLOCK
+      - amount:16
+    Reward: 3200
+    MenuItem:
+    - 'type: COAL_BLOCK'
+    - amount:32
+    - name:&8&L32 Coal Block
+    - 'lore:&2&LReward: &4&m1600$&b 3200$'
+    - amount:32
+    InventoryLocation: 25
+    ExtraPermission: ''
+  Coal64:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - type:COAL_BLOCK
+      - amount:64
+    Reward: 6400
+    MenuItem:
+    - 'type: COAL_BLOCK'
+    - amount:64
+    - name:&8&L64 Coal Block
+    - 'lore:&2&LReward: &4&m3200$&b 6400$'
+    - amount:64
+    InventoryLocation: 34
+    ExtraPermission: ''
+  Cobblestone:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - type:COBBLESTONE
+      - amount:64
+    Reward: 40
+    MenuItem:
+    - 'type: COBBLESTONE'
+    - amount:64
+    - name:&8&L64 CobbleStone
+    - 'lore:&2&LReward: &4&m20$&b 40$'
+    - amount:64
+    InventoryLocation: 8
+    ExtraPermission: ''
+  Netherrack:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - type:NETHERRACK
+      - amount:64
+    Reward: 40
+    MenuItem:
+    - 'type: NETHERRACK'
+    - amount:64
+    - name:&c&L64 Netherrack
+    - 'lore:&2&LReward: &4&m20$&b 40$'
+    - amount:64
+    InventoryLocation: 17
+    ExtraPermission: ''
+  Snowblock:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - type:SNOW_BLOCK
+      - amount:64
+    Reward: 40
+    MenuItem:
+    - 'type: SNOW_BLOCK'
+    - amount:64
+    - name:&f&L64 Snowblock
+    - 'lore:&2&LReward: &4&m20$&b 40$'
+    - amount:64
+    InventoryLocation: 26
+    ExtraPermission: ''
+  Glowstone:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - type:GLOWSTONE
+      - amount:64
+    Reward: 2000
+    MenuItem:
+    - 'type: GLOWSTONE'
+    - amount:64
+    - name:&e&L64 Glowstone
+    - 'lore:&2&LReward: &4&m1000$&b 2000$'
+    - amount:64
+    InventoryLocation: 35
+    ExtraPermission: ''
+  PrisonPage1:
+    RewardType: shop
+    PriceType: free
+    Reward: PVoteShopSell
+    MenuItem:
+    - type:REDSTONE_BLOCK
+    - amount:1
+    - name:&4&L<<< Prison Sell Page 1
+    - lore:&8Open Page 1
+    - amount:1
+    InventoryLocation: 19
+    ExtraPermission: ''
+  PrisonPage3:
+    RewardType: shop
+    PriceType: free
+    Reward: PVoteShopSell3
+    MenuItem:
+    - type:REDSTONE_BLOCK
+    - amount:3
+    - name:&4&LPrison Sell Page 3 >>>
+    - lore:&8Open Page 1
+    - amount:3
+    InventoryLocation: 27
+    ExtraPermission: ''
+

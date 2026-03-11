@@ -1,0 +1,17 @@
+ShopName: ServerNews
+signs:
+  text: '[ServerNews]'
+  NeedPermissionToCreateSign: true
+shop:
+  Prison:
+    RewardType: playercommand
+    PriceType: free
+    Reward: balance
+    MenuItem:
+    - 'type: DIAMOND_PICKAXE'
+    - amount:1
+    - name:&4&LPrison
+    - 'lore:&a&LWill be added Soon: #&a + Nether Mines #&a + Rank Z #&a + Lapislazuli/Redstone in Mines #&a + Plots (Houses/Chests)'
+    - amount:1
+    InventoryLocation: 1
+    ExtraPermission: ''

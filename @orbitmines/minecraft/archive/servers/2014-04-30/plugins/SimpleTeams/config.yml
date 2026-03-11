@@ -1,0 +1,78 @@
+# Maximum team size:
+MaxTeamSize: 5
+
+# Can players hurt their team members?
+CanHurtTeam: false
+
+# Only hurt players that have a team?
+CanOnlyHurtPlayersWithTeam: true
+
+# Can players switch teams while on a team?
+CanSwitchDirectly: false
+
+# Options for when a player dies:
+OnDeath:
+  # returns the player to the set lobby upon death
+  ReturnToLobby: true
+  # removes player from team upon death
+  RemoveFromTeam: true
+
+# Action to take when a player joins a team
+# Only one of these options should be set true (if any)
+# if both are set true, SendToTeamBase takes priority
+OnTeamJoin:
+  # true to send to lobby first
+  SendToLobby: false
+  # true to send to team's spawn first
+  SendToTeamBase: true
+
+# Action to take when a player leaves a team
+OnTeamLeave:
+  # Should the player be returned to the lobby?
+  ReturnToLobby: true
+  # Tell the player's team of a lost team member?
+  NotifyMembers: true
+
+# These messages are sent based on the event that occurs
+# All messages support color codes, ie: '&4 this is a message'
+Messages:
+  # Sent when a player attempts to join a full team (goes to player attempting to join)
+  JoinFullTeamAttempt: 'Sorry! That team is full, you cannot join it!'
+
+  # Sent when a player tries to hurt a player on the same team (goes to attacker)
+  # CanHurtTeam must be set to false to trigger this message
+  HurtTeamMemberAttempt: 'You cant hurt your team members!'
+
+  # Sent when a player not on a team attacks a player on a team (goes to attacker)
+  # CanOnlyHurtPlayersWithTeam must be true to trigger this message
+  AttackPlayerWithoutTeam: 'You cannot hurt players when you are not on a team!'
+
+  # Sent when a player on a team attacks a player not on a team (goes to attacker)
+  # CanOnlyHurtPlayersWithTeam must be true to trigger this message
+  AttackPlayerNotOnTeam: 'You cannot hurt players who are not on a team!'
+
+  # Sent when a player switches teams (goes to team switched out of)
+  # CanSwitchDirectly must be true to trigger this message
+  PlayerSwitchTeams: 'Someone has betrayed the team and joined the enemy!'
+
+  # Sent when a player is denied switching teams (goes to player attempting to switch)
+  PlayerSwitchTeamsFailed: 'You are not permitted to switch teams like that!'
+
+  # Sent when a player joins a team (goes to team joined)
+  PlayerJoinTeam: 'An ally has been gained! A player has joined the team!'
+
+  # Sent to player when they join a team
+  TeamJoined: 'Welcome to the team!'
+  
+  # Sent when a player leaves a team (goes to team left)
+  PlayerLeaveTeam: 'A player has left your team!'
+  
+  # Sent to a player when they leave a team
+  TeamLeft: 'You have left the team'
+
+CheckForUpdate:
+  OnStart: true
+  OnAdminJoin: true
+
+# Don't touch this. Seriously. Unless of course you like broken plugins.
+Version: 1.1

@@ -1,0 +1,36 @@
+Tank:
+  cooldown: 1395498235
+  usages: 0
+Wizard:
+  cooldown: 1395498234
+  usages: 0
+Knight:
+  cooldown: 1397488032
+  usages: 0
+Archer:
+  cooldown: 1397488005
+  usages: 0
+Soldier:
+  cooldown: 1395498232
+  usages: 0
+Drunk:
+  cooldown: 1395498236
+  usages: 0
+Pyro:
+  cooldown: 1395498326
+  usages: 0
+Bunny:
+  cooldown: 1395498173
+  usages: 0
+Necromancer:
+  cooldown: 1395498185
+  usages: 0
+Prison:
+  cooldown: 1397487412
+  usages: 0
+Factions:
+  cooldown: 1395499075
+  usages: 0
+Survival:
+  cooldown: 1397488412
+  usages: 0

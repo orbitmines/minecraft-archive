@@ -1,0 +1,22 @@
+event1:
+  location: CreativeEvent,-28.043866660822864,68.5,-25.50343226188976
+  lines:
+  - '&e&lSummer Events'
+  - '&6Ends at &c20:00 (GMT +2)'
+event2:
+  location: CreativeEvent,-32.05403300869644,68.5,-27.942939271263192
+  lines:
+  - '&a&lBuild Quest:'
+  - '&6Medieval Farmhouse'
+event3:
+  location: CreativeEvent,-23.9158691095773,68.5,-27.988326704144516
+  lines:
+  - '&3&lRules:'
+  - '&6NO buildings from Internet'
+  - '&6NO Teamwork, Build ALONE'
+  - '&6DON''T copy buildings from other players'
+event4:
+  location: CreativeEvent,-28.035358952075644,68.5,-31.028412710045757
+  lines:
+  - '&4&lStart a Plot:'
+  - '&7/plot auto'

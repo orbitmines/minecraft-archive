@@ -1,0 +1,22 @@
+ignored-commands:
+- /PrisonBuyEmerald
+- /PrisonBuyDiamond
+- /PrisonBuyGoldOre
+- /PrisonBuyGold
+- /PrisonBuyIronOre
+- /PrisonBuyIron
+- /PrisonBuyWoodLog
+- /PrisonBuyWood
+- /PrisonBuyCobbleStone
+- /PrisonBuyCoal
+- /PrisonSellEmerald
+- /PrisonSellDiamond
+- /PrisonSellGoldOre
+- /PrisonSellGold
+- /PrisonSellIronOre
+- /PrisonSellIron
+- /PrisonSellWoodLog
+- /PrisonSellWood
+- /PrisonSellCobbleStone
+- /PrisonSellCoal
+console-info: false

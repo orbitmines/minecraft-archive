@@ -1,0 +1,18 @@
+icon:
+  # The material this kit should have in the inventory menu
+  material: 'BOW'
+  # The data this material should have (optional)
+  data: 0
+# Gives the player the permission to purchase this kit through score (optional)
+points: 25
+# Additional text added to the lores of the item in the inventory menu (optional)
+details:
+- '&cWarning:'
+- '&625$ per Game!'
+- ' '
+- '&bArcher Kit:'
+# The items in this kit
+items:
+- 'Bow 1'
+- 'Arrow 5'
+- 'Golden_Apple 2'

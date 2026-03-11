@@ -1,0 +1,62 @@
+# 
+# Optional schematic specific configuration
+lobby:
+  world: SkyWarsLobby
+  spawn: 0.41 66.00 0.71 -269.85 4.05
+  radius: 0
+score:
+  per-kill: 3
+  per-win: 5
+  on-death: -1
+  on-leave: -1
+  groups:
+    example:
+      per-kill: 3
+      per-win: 10
+      on-death: -1
+      on-leave: -1
+schematics:
+  schematic-name:
+    min-players: 2
+    timer: 11
+  CandyLand:
+    min-players: 3
+    timer: 11
+  LavaLand:
+    min-players: 3
+    timer: 11
+  Vulcano:
+    min-players: 3
+    timer: 11
+  FarmHouses:
+    min-players: 8
+    timer: 11
+statistics:
+  update-interval: 600
+  top: 30
+data-storage: FILE
+database:
+  hostname: sql-3.verygames.net
+  port: 3306
+  username: minecraft4268
+  password: hnfxy5h48
+  database: minecraft4268
+islands-per-row: 100
+island-buffer: 5
+island-building:
+  enabled: false
+  interval: 1
+  blocks-per-tick: 20
+build-cages: true
+ignore-air: false
+fill-empty-chests: true
+fill-populated-chests: true
+use-economy: true
+disable-kits: true
+chat-handled-by-other-plugin: false
+clear-inventory-on-join: false
+save-inventory: false
+whitelisted-commands:
+- help
+- msg
+- r

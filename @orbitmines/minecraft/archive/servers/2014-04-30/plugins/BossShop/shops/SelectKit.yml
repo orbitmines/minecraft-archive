@@ -1,0 +1,382 @@
+ShopName: SelectKit
+signs:
+  text: '[SelectKit]'
+  NeedPermissionToCreateSign: true
+shop:
+  Knight:
+    RewardType: playercommand
+    PriceType: free
+    Reward:
+    - kit Knight
+    - kit KnightLvL2
+    - kit KnightLvL3
+    - kit 11
+    MenuItem:
+    - 'type: IRON_SWORD'
+    - amount:1
+    - name:&8[&b&LKnight&8]
+    - 'lore:&3-------- #&6&nSelect Kit&6&L #&3--------'
+    - amount:1
+    InventoryLocation: 1
+    ExtraPermission: ''
+  Bunny:
+    RewardType: playercommand
+    PriceType: free
+    Reward:
+    - kit Bunny
+    - kit BunnyLvL2
+    MenuItem:
+    - 'type: LEATHER_BOOTS'
+    - amount:1
+    - name:&8[&b&LBunny&8]
+    - 'lore:&3-------- #&6&nSelect Kit&6&L #&3--------'
+    - amount:1
+    InventoryLocation: 8
+    ExtraPermission: ''
+  Archer:
+    RewardType: playercommand
+    PriceType: free
+    Reward:
+    - kit Archer
+    - kit ArcherLvL2
+    - kit ArcherLvL3
+    MenuItem:
+    - 'type: BOW'
+    - amount:1
+    - name:&8[&b&LArcher&8]
+    - 'lore:&3-------- #&6&nSelect Kit&6&L #&3--------'
+    - amount:1
+    InventoryLocation: 2
+    ExtraPermission: ''
+  Wizard:
+    RewardType: playercommand
+    PriceType: free
+    Reward:
+    - kit Wizard
+    - Kit WizardLvL2
+    MenuItem:
+    - 'type: POTION'
+    - amount:1
+    - name:&8[&b&LWizard&8]
+    - 'lore:&3-------- #&6&nSelect Kit&6&L #&3--------'
+    - amount:1
+    InventoryLocation: 4
+    ExtraPermission: ''
+  Tank:
+    RewardType: playercommand
+    PriceType: free
+    Reward:
+    - kit Tank
+    - kit TankLvL2
+    MenuItem:
+    - 'type: IRON_CHESTPLATE'
+    - amount:1
+    - name:&8[&b&LTank&8]
+    - 'lore:&3-------- #&6&nSelect Kit&6&L #&3--------'
+    - amount:1
+    InventoryLocation: 5
+    ExtraPermission: ''
+  Soldier:
+    RewardType: playercommand
+    PriceType: free
+    Reward:
+    - kit Soldier
+    - kit SoldierLvL2
+    MenuItem:
+    - 'type: STONE_SWORD'
+    - amount:1
+    - name:&8[&b&LSoldier&8]
+    - 'lore:&3-------- #&6&nSelect Kit&6&L #&3--------'
+    - amount:1
+    InventoryLocation: 3
+    ExtraPermission: ''
+  Pyro:
+    RewardType: playercommand
+    PriceType: free
+    Reward:
+    - kit Pyro
+    - kit PyroLvL2
+    MenuItem:
+    - 'type: GOLD_HELMET'
+    - amount:1
+    - name:&8[&b&LPyro&8]
+    - 'lore:&3-------- #&6&nSelect Kit&6&L #&3--------'
+    - amount:1
+    InventoryLocation: 7
+    ExtraPermission: ''
+  Drunk:
+    RewardType: playercommand
+    PriceType: free
+    Reward:
+    - kit Drunk
+    - kit DrunkLvL2
+    MenuItem:
+    - 'type: CHAINMAIL_LEGGINGS'
+    - amount:1
+    - name:&8[&b&LDrunk&8]
+    - 'lore:&3-------- #&6&nSelect Kit&6&L #&3--------'
+    - amount:1
+    InventoryLocation: 6
+    ExtraPermission: ''
+  Assassin:
+    RewardType: playercommand
+    PriceType: free
+    Reward:
+    - kit Assassin
+    MenuItem:
+    - 'type: DIAMOND_BOOTS'
+    - amount:1
+    - name:&8[&4&LAssassin&8]
+    - 'lore:&3-------- #&6&nSelect Kit&6&L #&3--------'
+    - amount:1
+    InventoryLocation: 37
+    ExtraPermission: ''
+  Lord:
+    RewardType: playercommand
+    PriceType: free
+    Reward:
+    - kit Lord
+    MenuItem:
+    - 'type: GOLD_SWORD'
+    - amount:1
+    - name:&8[&4&LLord&8]
+    - 'lore:&3-------- #&6&nSelect Kit&6&L #&3--------'
+    - amount:1
+    InventoryLocation: 38
+    ExtraPermission: ''
+  Vampire:
+    RewardType: playercommand
+    PriceType: free
+    Reward:
+    - kit Vampire
+    MenuItem:
+    - 'type: REDSTONE'
+    - amount:1
+    - name:&8[&4&LVampire&8]
+    - 'lore:&3-------- #&6&nSelect Kit&6&L #&3--------'
+    - amount:1
+    InventoryLocation: 39
+    ExtraPermission: ''
+  DarkMage:
+    RewardType: playercommand
+    PriceType: free
+    Reward:
+    - kit DarkMage
+    MenuItem:
+    - 'type: BLAZE_ROD'
+    - amount:1
+    - name:&8[&4&LDark Mage&8]
+    - 'lore:&3-------- #&6&nSelect Kit&6&L #&3--------'
+    - amount:1
+    InventoryLocation: 40
+    ExtraPermission: ''
+  Beast:
+    RewardType: playercommand
+    PriceType: free
+    Reward:
+    - kit Beast
+    MenuItem:
+    - 'type: IRON_AXE'
+    - amount:1
+    - name:&8[&4&LBeast&8]
+    - 'lore:&3-------- #&6&nSelect Kit&6&L #&3--------'
+    - amount:1
+    InventoryLocation: 41
+    ExtraPermission: ''
+  Fish:
+    RewardType: playercommand
+    PriceType: free
+    Reward:
+    - kit Fish
+    MenuItem:
+    - 'type: COOKED_FISH'
+    - amount:1
+    - name:&8[&4&LFish&8]
+    - 'lore:&3-------- #&6&nSelect Kit&6&L #&3--------'
+    - amount:1
+    InventoryLocation: 42
+    ExtraPermission: ''
+  Heavy:
+    RewardType: playercommand
+    PriceType: free
+    Reward:
+    - kit Heavy
+    MenuItem:
+    - 'type: ARROW'
+    - amount:1
+    - name:&8[&4&LHeavy&8]
+    - 'lore:&3-------- #&6&nSelect Kit&6&L #&3--------'
+    - amount:1
+    InventoryLocation: 43
+    ExtraPermission: ''
+  GrimReaper:
+    RewardType: playercommand
+    PriceType: free
+    Reward:
+    - kit GrimReaper
+    MenuItem:
+    - 'id: 397'
+    - amount:1
+    - durability:1
+    - name:&8[&4&LGrim Reaper&8]
+    - 'lore:&3-------- #&6&nSelect Kit&6&L #&3--------'
+    - amount:1
+    InventoryLocation: 44
+    ExtraPermission: ''
+  Miner:
+    RewardType: playercommand
+    PriceType: free
+    Reward:
+    - kit Miner
+    MenuItem:
+    - 'id: 285'
+    - amount:1
+    - name:&8[&4&LMiner&8]
+    - 'lore:&3-------- #&6&nSelect Kit&6&L #&3--------'
+    - amount:1
+    InventoryLocation: 45
+    ExtraPermission: ''
+  Necromancer:
+    RewardType: playercommand
+    PriceType: free
+    Reward:
+    - kit Necromancer
+    - kit NecromancerLvL2
+    MenuItem:
+    - 'type: GOLD_Hoe'
+    - amount:1
+    - name:&8[&b&LNecromancer&8]
+    - 'lore:&3-------- #&6&nSelect Kit&6&L #&3--------'
+    - amount:1
+    InventoryLocation: 9
+    ExtraPermission: ''
+  King:
+    RewardType: playercommand
+    PriceType: free
+    Reward:
+    - kit King
+    MenuItem:
+    - 'type: DIAMOND_HELMET'
+    - amount:1
+    - name:&8[&1&LKing&8]
+    - 'lore:&3-------- #&6&nSelect Kit&6&L #&3--------'
+    - amount:1
+    InventoryLocation: 10
+    ExtraPermission: ''
+  Tree:
+    RewardType: playercommand
+    PriceType: free
+    Reward:
+    - kit Tree
+    MenuItem:
+    - 'type: LEAVES'
+    - amount:1
+    - name:&8[&1&LTree&8]
+    - 'lore:&3-------- #&6&nSelect Kit&6&L #&3--------'
+    - amount:1
+    InventoryLocation: 11
+    ExtraPermission: ''
+  Blaze:
+    RewardType: playercommand
+    PriceType: free
+    Reward:
+    - kit Blaze
+    MenuItem:
+    - 'type: BLAZE_POWDER'
+    - amount:1
+    - name:&8[&1&LBlaze&8]
+    - 'lore:&3-------- #&6&nSelect Kit&6&L #&3--------'
+    - amount:1
+    InventoryLocation: 12
+    ExtraPermission: ''
+  TNT:
+    RewardType: playercommand
+    PriceType: free
+    Reward:
+    - kit TNT
+    MenuItem:
+    - 'type: TNT'
+    - amount:1
+    - name:&8[&1&LTNT&8]
+    - 'lore:&3-------- #&6&nSelect Kit&6&L #&3--------'
+    - amount:1
+    InventoryLocation: 13
+    ExtraPermission: ''
+  FisherMan:
+    RewardType: playercommand
+    PriceType: free
+    Reward:
+    - kit FisherMan
+    MenuItem:
+    - 'type: FISHING_ROD'
+    - amount:1
+    - name:&8[&1&LFisherMan&8]
+    - 'lore:&3-------- #&6&nSelect Kit&6&L #&3--------'
+    - amount:1
+    InventoryLocation: 14
+    ExtraPermission: ''
+  SnowGolem:
+    RewardType: playercommand
+    PriceType: free
+    Reward:
+    - kit SnowGolem
+    MenuItem:
+    - 'type: PUMPKIN'
+    - amount:1
+    - name:&8[&1&LSnowGolem&8]
+    - 'lore:&3-------- #&6&nSelect Kit&6&L #&3--------'
+    - amount:1
+    InventoryLocation: 15
+    ExtraPermission: ''
+  Librarian:
+    RewardType: playercommand
+    PriceType: free
+    Reward:
+    - kit Librarian
+    MenuItem:
+    - 'type: BOOKSHELF'
+    - amount:1
+    - name:&8[&1&LLibrarian&8]
+    - 'lore:&3-------- #&6&nSelect Kit&6&L #&3--------'
+    - amount:1
+    InventoryLocation: 16
+    ExtraPermission: ''
+  Spider:
+    RewardType: playercommand
+    PriceType: free
+    Reward:
+    - kit Spider
+    MenuItem:
+    - 'type: SPIDER_EYE'
+    - amount:1
+    - name:&8[&1&LSpider&8]
+    - 'lore:&3-------- #&6&nSelect Kit&6&L #&3--------'
+    - amount:1
+    InventoryLocation: 17
+    ExtraPermission: ''
+  Villager:
+    RewardType: playercommand
+    PriceType: free
+    Reward:
+    - kit Villager
+    MenuItem:
+    - 'type: EMERALD'
+    - amount:1
+    - name:&8[&1&LVillager&8]
+    - 'lore:&3-------- #&6&nSelect Kit&6&L #&3--------'
+    - amount:1
+    InventoryLocation: 18
+    ExtraPermission: ''
+  BackToMenu:
+    RewardType: shop
+    PriceType: free
+    Reward: KitPvP
+    MenuItem:
+    - type:REDSTONE_BLOCK
+    - amount:1
+    - name:&4&LKit PvP Menu
+    - lore:&8Back to the Kit PvP Menu
+    - amount:1
+    InventoryLocation: 23
+    ExtraPermission: ''
+

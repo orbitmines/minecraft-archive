@@ -1,0 +1,16 @@
+permission: ''
+world: Hub
+X: 4
+Y: 66
+Z: 9
+price: 0.0
+cooldown: 0
+globalCooldown: 0
+confirmation: false
+commands:
+- '/spleef stats top '
+grantPermissions: []
+lastGlobalUse: 0
+lastUse: {}
+priceItems: []
+exp: 0

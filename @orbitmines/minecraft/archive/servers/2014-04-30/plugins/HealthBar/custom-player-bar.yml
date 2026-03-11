@@ -1,0 +1,54 @@
+# Do not use tabs, change only the part in quotes.
+# You can use these placeholders, but the could change in
+# future, so check this page when you update:
+# 
+#  dev.bukkit.org/server-mods/health-bar/pages/customization
+#
+# Placeholders:
+# <3          heart symbol
+# [x]         block symbol
+# [/]         half block symbol
+# [*]         star symbol
+# [p]         big dot symbol
+# [+]         small diamond symbol
+# [++]        big diamond symbol
+# 
+# You can use formatting codes (&4, &n, &k...)
+#         
+# Symbols cannot be saved in .yml files, you can look
+# at the customization page to see them.
+#
+# WARNING: TEAM PREFIX AND SUFFIX MUST NOT BE LONGER
+#          THAN 16 CHARACTERS OR PLAYERS WILL CRASH!
+#          PLACEHOLDERS COUNTS AS ONE CHARACTER.
+
+10-percent:
+  prefix: '&4'
+  suffix: '1 Health'
+20-percent:
+  prefix: '&4'
+  suffix: '2 Health'
+30-percent:
+  prefix: '&c'
+  suffix: '3 Health'
+40-percent:
+  prefix: '&c'
+  suffix: '4 Health'
+50-percent:
+  prefix: '&2'
+  suffix: '5 Health'
+60-percent:
+  prefix: '&2'
+  suffix: '6 Health'
+70-percent:
+  prefix: '&2'
+  suffix: '7 Health'
+80-percent:
+  prefix: '&a'
+  suffix: '8 Health'
+90-percent:
+  prefix: '&a'
+  suffix: ' 9 Health'
+100-percent:
+  prefix: '&a'
+  suffix: '10 Health'

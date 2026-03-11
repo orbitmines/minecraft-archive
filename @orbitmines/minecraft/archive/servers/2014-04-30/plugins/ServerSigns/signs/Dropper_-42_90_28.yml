@@ -1,0 +1,17 @@
+permission: ''
+world: Dropper
+X: -42
+Y: 90
+Z: 28
+price: 0.0
+cooldown: 0
+globalCooldown: 0
+confirmation: false
+commands:
+- '/warp KingOfTheLadder '
+- '/kit KingOfTheLadder '
+grantPermissions: []
+lastGlobalUse: 0
+lastUse: {}
+priceItems: []
+exp: 0

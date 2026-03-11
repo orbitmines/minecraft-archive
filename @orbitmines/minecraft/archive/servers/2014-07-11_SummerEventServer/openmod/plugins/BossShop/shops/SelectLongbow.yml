@@ -1,0 +1,118 @@
+ShopName: Kit-Longbow
+signs:
+  text: '[Kit-Longbow]'
+  NeedPermissionToCreateSign: true
+shop:
+  Choose:
+    RewardType: command
+    PriceType: free
+    Reward:
+    - 'manuadd %player% Longbow'
+    - 'mvtp %player% Event'
+    - 'kit Longbow %player%'
+    - 'sudo O_o_Fadi_o_O pwrsay say event &f%player%&c has chosen the &fLongbow Kit&c!'
+    MenuItem:
+    - id:351
+    - amount:1
+    - durability:10
+    - 'name:&bSelect: &aLongbow'
+    InventoryLocation: 1
+    ExtraPermission: 'shops.waiting'
+  Longbow:
+    RewardType: shop
+    PriceType: free
+    Reward: Longbow
+    MenuItem:
+    - type:GOLD_INGOT
+    - amount:1
+    - 'name:&bShop: &aLongbow'
+    - 'lore:&7View the Longbow Shop...'
+    - amount:1
+    InventoryLocation: 9
+    ExtraPermission: 'shops.waiting'
+  Helmet:
+    RewardType: money
+    PriceType: free
+    Reward: 0
+    MenuItem:
+    - id:298
+    - amount:1
+    - 'name:&bTier 1 : &cLongbow Helmet'
+    - enchantment:DURABILITY#10
+    InventoryLocation: 4
+    ExtraPermission: 'shops.waiting'
+  Chestplate:
+    RewardType: money
+    PriceType: free
+    Reward: 0
+    MenuItem:
+    - id:299
+    - amount:1
+    - 'name:&bTier 1 : &cLongbow Chestplate'
+    - enchantment:DURABILITY#10
+    InventoryLocation: 13
+    ExtraPermission: 'shops.waiting'
+  Leggings:
+    RewardType: money
+    PriceType: free
+    Reward: 0
+    MenuItem:
+    - id:300
+    - amount:1
+    - 'name:&bTier 1 : &cLongbow Leggings'
+    - enchantment:DURABILITY#10
+    InventoryLocation: 22
+    ExtraPermission: 'shops.waiting'
+  Boots:
+    RewardType: money
+    PriceType: free
+    Reward: 0
+    MenuItem:
+    - id:301
+    - amount:1
+    - 'name:&bTier 1 : &cLongbow Boots'
+    - enchantment:DURABILITY#10
+    InventoryLocation: 31
+    ExtraPermission: 'shops.waiting'
+  Sword:
+    RewardType: money
+    PriceType: free
+    Reward: 0
+    MenuItem:
+    - id:268
+    - amount:1
+    - 'name:&bTier 1 : &cLongbow Sword'
+    - enchantment:DURABILITY#10
+    InventoryLocation: 6
+    ExtraPermission: 'shops.waiting'
+  Bow:
+    RewardType: money
+    PriceType: free
+    Reward: 0
+    MenuItem:
+    - id:261
+    - amount:1
+    - 'name:&bTier 1 : &cLongbow Bow'
+    - enchantment:DURABILITY#10
+    InventoryLocation: 15
+    ExtraPermission: 'shops.waiting'
+  Arrow:
+    RewardType: money
+    PriceType: free
+    Reward: 0
+    MenuItem:
+    - id:262
+    - amount:16
+    - 'lore:&7+ 1 Arrow every 3 Seconds'
+    InventoryLocation: 24
+    ExtraPermission: 'shops.waiting'
+  Steak:
+    RewardType: money
+    PriceType: free
+    Reward: 0
+    MenuItem:
+    - id:364
+    - amount:5
+    InventoryLocation: 33
+    ExtraPermission: 'shops.waiting'
+

@@ -1,0 +1,20 @@
+allWorlds:
+  default:
+    MIN: -1
+    MAX: -1
+    arrow: 100
+    '266': 100
+    '368': 100
+  testPlayer:
+    MIN: -1
+    MAX: -1
+  testGroup:
+    MIN: -1
+    MAX: -1
+  chest:
+    MIN: -1
+    MAX: -1
+testWorld:
+  default:
+    MIN: -1
+    MAX: -1

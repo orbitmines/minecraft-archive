@@ -1,0 +1,1 @@
+{"SURVIVAL":{"inventoryContents":{"1":{"==":"org.bukkit.inventory.ItemStack","type":"BONE","amount":4},"0":{"==":"org.bukkit.inventory.ItemStack","type":"SAND"}},"armorContents":{},"potions":"[]","enderChestContents":{},"balance":"0.0","stats":{"ra":"300","ex":"1.3145585","hp":"20","txp":"21","fl":"6","el":"1","sa":"0.0","ma":"300","xp":"0.2352941","ft":"-20","fd":"0.0"}}}

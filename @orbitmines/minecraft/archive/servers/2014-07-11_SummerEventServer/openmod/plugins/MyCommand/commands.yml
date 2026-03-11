@@ -1,0 +1,210 @@
+#-----------------------------------------------------------------------------------------------------------#
+#							  MyCommand Commands config file (last update v5.1.0)							#
+#																											#
+#  BukkitDev Help page : http://dev.bukkit.org/server-mods/mycommand/pages/configuration-and-example    	#
+#																											#
+#	How to make a command :	(See an example command below)													#
+#		For first,put you command number on first line  													#
+#		Now put your command name on "command:" line. Don't forget the '/' before you command.				#
+#		So,select your command type from a predefined list putting it after "type" line						#
+#	COMMAND TYPE LIST :																						#
+#		TEXT , ALIAS , RUN_COMMAND , BROADCAST_TEXT , RUN_COMMAND_TEXT , RUN_COMMAND_BROADCAST_TEXT			#
+#		ADD_PERMISSION , WARMUP , COOLDOWN , RUN_CONSOLE , RUNCOMMAND_PERM_BROADCAST_TEXT , SPOUT_TEXT		#
+#       RUN_COMMAND_RANDOM , RUN_ASOPERATOR , ICON_MENU , SCOREBOARD , BUNGEE_TP , SPOUT_NOTIFICATION		#
+#		BAR_API_TEXT , BAR_API_BROADCAST_TEXT 																#
+#																											#
+#	Now,if you command it's "TEXT" type,you can put multiple line of text below text list					#
+#	Same thing,if your command it's "RUNCOMMAND" type,but put you commands below runcmd list.				#
+#	For Delayed command add $delay$ before the command in runcmd Example : - $delay$/list					#
+#	Set delay time with delaytimer: 5 (5 = seconds) | Use the dot . for decimal cost Example = cost : 5.5 	#
+#	You can customize your permission node by placing "permission-node:" field in a command					#
+#	Also,you can change the permission error message with "permission-error:"								#
+#   Custom error-message for invalid args ,put "error-message:" line in a command.							#
+#   You can use itemcost : 'ID:AMOUNT' for set a cost with items. 											#
+#   Register REAL commands putting "registered: true" below the command.     								#
+#   With registered command you can use the "tab_completer: - Hi - Hello!"	 								#
+#-----------------------------------------------------------------------------------------------------------#
+'1':
+  command: /hub
+  type: BUNGEE_TP
+  server_name: hub
+'2':
+  command: /wave
+  type: RUN_COMMAND
+  runcmd:
+  - $delay$/pwrsay say event &cTeleporting back to the Arena in &f5 &c...
+  - $delay$/pwrsay say event &cTeleporting back to the Arena in &f4 &c...
+  - $delay$/pwrsay say event &cTeleporting back to the Arena in &f3 &c...
+  - $delay$/pwrsay say event &cTeleporting back to the Arena in &f2 &c...
+  - $delay$/pwrsay say event &cTeleporting back to the Arena in &f1 &c...
+  - $delay$/pwrsay say event &cTeleported to the Arena.
+  - $delay$/lightningstart
+  - $delay$/startwave$arg1
+  - $delay$/startwave$arg1part1
+  - $delay$/startwave$arg1part2
+  delaytimer: 1
+'3':
+  command: /shopstp
+  type: RUN_COMMAND
+  runcmd:
+  - $delay$/pwrsay say event &cTeleporting to the Shops in &f5 &c...
+  - $delay$/pwrsay say event &cTeleporting to the Shops in &f4 &c...
+  - $delay$/pwrsay say event &cTeleporting to the Shops in &f3 &c...
+  - $delay$/pwrsay say event &cTeleporting to the Shops in &f2 &c...
+  - $delay$/pwrsay say event &cTeleporting to the Shops in &f1 &c...
+  - $delay$/pwrsay say event &cTeleported to the Shops.
+  - '/shopstps'
+  delaytimer: 1
+'4':
+  command: /help
+  type: TEXT
+  text:
+  - '&4[&c&lEvent&4] &cWelcome &f$player&c!'
+'5':
+  command: /pl
+  type: TEXT
+  text:
+  - '&4[&c&lEvent&4] &cWelcome &f$player&c!'
+'6':
+  command: /plugins
+  type: TEXT
+  text:
+  - '&4[&c&lEvent&4] &cWelcome &f$player&c!'
+'7':
+  command: /arenatp
+  type: RUN_COMMAND
+  runcmd:
+  - '/mvspawn'
+  - $delay$/pwrsay say event &cTeleporting back to the Arena in &f10 &c...
+  - $delay$/pwrsay say event &cTeleporting back to the Arena in &f9 &c...
+  - $delay$/pwrsay say event &cTeleporting back to the Arena in &f8 &c...
+  - $delay$/pwrsay say event &cTeleporting back to the Arena in &f7 &c...
+  - $delay$/pwrsay say event &cTeleporting back to the Arena in &f6 &c...
+  - $delay$/pwrsay say event &cTeleporting back to the Arena in &f5 &c...
+  - $delay$/pwrsay say event &cTeleporting back to the Arena in &f4 &c...
+  - $delay$/pwrsay say event &cTeleporting back to the Arena in &f3 &c...
+  - $delay$/pwrsay say event &cTeleporting back to the Arena in &f2 &c...
+  - $delay$/pwrsay say event &cTeleporting back to the Arena in &f1 &c...
+  - $delay$/pwrsay say event &cTeleported to the Arena.
+  - '/tpall'
+  delaytimer: 1
+'8':
+  command: /selecttp
+  type: RUN_COMMAND
+  runcmd:
+  - $delay$/pwrsay say event &cTeleporting to the Lobby in &f5 &c...
+  - $delay$/pwrsay say event &cTeleporting to the Lobby in &f4 &c...
+  - $delay$/pwrsay say event &cTeleporting to the Lobby in &f3 &c...
+  - $delay$/pwrsay say event &cTeleporting to the Lobby in &f2 &c...
+  - $delay$/pwrsay say event &cTeleporting to the Lobby in &f1 &c...
+  - $delay$/pwrsay say event &cTeleported to the Lobby.
+  - '/select'
+  delaytimer: 1
+'9':
+  command: /IAMDEADYUP
+  type: RUN_COMMAND_TEXT
+  runcmd:
+  - '/IAMDEADYUP2'
+  text:
+  - '&4[&c&lEvent&4] &cTeleporting back in &f10 Seconds&c...'
+  registered: true
+'10':
+  command: /IAMDEADYUP2
+  type: RUN_COMMAND
+  runcmd:
+  - $delay$/IAMDEAD
+  delaytimer: 10
+  registered: true
+'11':
+  command: /PaySkullGetPoint
+  type: RUN_COMMAND_TEXT
+  text:
+  - '&4[&c&lEvent&4]&c Added &41&c Point to your total Points!'
+  runcmd:
+  - '/HeyIHaveGivenASkullNowIGetAPoint'
+  registered: true
+  itemcost: 'SKULL_ITEM:1'
+'12':
+  command: /?
+  type: TEXT
+  text:
+  - '&4[&c&lEvent&4] &cWelcome &f$player&c!'
+'13':
+  command: /IAMDEADYUPXRUN
+  type: RUN_COMMAND
+  runcmd:
+  - '/IAMDEADYUP2XRUN'
+  registered: true
+'14':
+  command: /IAMDEADYUP2XRUN
+  type: RUN_COMMAND
+  runcmd:
+  - $delay$/IAMDEAD
+  delaytimer: 1
+  registered: true
+'15':
+  command: /IAMDEADYUPXRUNREDSTONE
+  type: RUN_CONSOLE
+  runcmd:
+  - '/kill $player'
+  delaytimer: 1
+  registered: true
+'16':
+  command: /startinggame
+  type: RUN_COMMAND
+  runcmd:
+  - '$delay$/pwrsay say event &cGame Starting in &f10&c...'
+  - '$delay$/pwrsay say event &cGame Starting in &f9&c...'
+  - '$delay$/pwrsay say event &cGame Starting in &f8&c...'
+  - '$delay$/pwrsay say event &cGame Starting in &f7&c...'
+  - '$delay$/pwrsay say event &cGame Starting in &f6&c...'
+  - '$delay$/pwrsay say event &cGame Starting in &f5&c...'
+  - '$delay$/pwrsay say event &cGame Starting in &f4&c...'
+  - '$delay$/pwrsay say event &cGame Starting in &f3&c...'
+  - '$delay$/pwrsay say event &cGame Starting in &f2&c...'
+  - '$delay$/pwrsay say event &cGame Starting in &f1&c...'
+  - '$delay$/pwrsay say event &cGame Started!'
+  - '$delay$/pwrsay say event &cPlayer with the most Money after 15 minutes wins!'
+  - '$delay$/pwrsay say event &cUse /sell all to sell the stuff in your inventory!!'
+  - '/startinggame2'
+  - '/startgame'
+  delaytimer: 1
+  registered: true
+'17':
+  command: /startinggame2
+  type: RUN_COMMAND
+  runcmd:
+  - '/pwrsay say event &cTime Left: &f15m 0s'
+  - '$delay$/pwrsay say event &cTime Left: &f14m 30s'
+  - '$delay$/pwrsay say event &cTime Left: &f14m 0s'
+  - '$delay$/pwrsay say event &cTime Left: &f13m 30s'
+  - '$delay$/pwrsay say event &cTime Left: &f13m 0s'
+  - '$delay$/pwrsay say event &cTime Left: &f12m 30s'
+  - '$delay$/pwrsay say event &cTime Left: &f12m 0s'
+  - '$delay$/pwrsay say event &cTime Left: &f11m 30s'
+  - '$delay$/pwrsay say event &cTime Left: &f11m 0s'
+  - '$delay$/pwrsay say event &cTime Left: &f10m 30s'
+  - '$delay$/pwrsay say event &cTime Left: &f10m 0s'
+  - '$delay$/pwrsay say event &cTime Left: &f9m 30s'
+  - '$delay$/pwrsay say event &cTime Left: &f9m 0s'
+  - '$delay$/pwrsay say event &cTime Left: &f8m 30s'
+  - '$delay$/pwrsay say event &cTime Left: &f8m 0s'
+  - '$delay$/pwrsay say event &cTime Left: &f7m 30s'
+  - '$delay$/pwrsay say event &cTime Left: &f7m 0s'
+  - '$delay$/pwrsay say event &cTime Left: &f6m 30s'
+  - '$delay$/pwrsay say event &cTime Left: &f6m 0s'
+  - '$delay$/pwrsay say event &cTime Left: &f5m 30s'
+  - '$delay$/pwrsay say event &cTime Left: &f5m 0s'
+  - '$delay$/pwrsay say event &cTime Left: &f4m 30s'
+  - '$delay$/pwrsay say event &cTime Left: &f4m 0s'
+  - '$delay$/pwrsay say event &cTime Left: &f3m 30s'
+  - '$delay$/pwrsay say event &cTime Left: &f3m 0s'
+  - '$delay$/pwrsay say event &cTime Left: &f2m 30s'
+  - '$delay$/pwrsay say event &cTime Left: &f2m 0s'
+  - '$delay$/pwrsay say event &cTime Left: &f1m 30s'
+  - '$delay$/pwrsay say event &cTime Left: &f1m 0s'
+  - '$delay$/pwrsay say event &cTime Left: &f0m 30s'
+  - '$delay$/pwrsay say event &cGame Ended! All Points:'
+  - '/endgame'
+  delaytimer: 30
+  registered: true

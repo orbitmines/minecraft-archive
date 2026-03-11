@@ -1,0 +1,65 @@
+ShopName: OrbitMinesShop
+signs:
+  text: '[Shops]'
+  NeedPermissionToCreateSign: true
+shop:
+  Survival:
+    RewardType: shop
+    PriceType: free
+    Reward: Survival
+    MenuItem:
+    - type:STONE_HOE
+    - amount:1
+    - name:&a&lSurvival
+    - lore:&8Open the Survival shop
+    Message: ''
+    InventoryLocation: 1
+    ExtraPermission: 'shop.survival'
+  Prison:
+    RewardType: shop
+    PriceType: free
+    Reward: Prison
+    MenuItem:
+    - type:DIAMOND_PICKAXE
+    - amount:1
+    - name:&4&lPrison
+    - lore:&8Open the Prison shop
+    Message: ''
+    InventoryLocation: 3
+    ExtraPermission: 'shop.prison'
+  KitPvP:
+    RewardType: shop
+    PriceType: free
+    Reward: KitPvP
+    MenuItem:
+    - type:IRON_SWORD
+    - amount:1
+    - name:&c&lKitPvP
+    - lore:&8Open the KitPvP shop
+    Message: ''
+    InventoryLocation: 5
+    ExtraPermission: 'shop.kitpvp'
+  SkyBlock:
+    RewardType: shop
+    PriceType: free
+    Reward: SkyBlock
+    MenuItem:
+    - type:DIRT
+    - amount:1
+    - name:&5&lSkyBlock
+    - lore:&8Open the SkyBlock shop
+    Message: ''
+    InventoryLocation: 7
+    ExtraPermission: 'shop.skyblock'
+  Factions:
+    RewardType: shop
+    PriceType: free
+    Reward: Factions
+    MenuItem:
+    - type:DIAMOND_SWORD
+    - amount:1
+    - name:&4&lFactions
+    - lore:&8Open the Factions shop
+    Message: ''
+    InventoryLocation: 9
+    ExtraPermission: 'shop.factions'

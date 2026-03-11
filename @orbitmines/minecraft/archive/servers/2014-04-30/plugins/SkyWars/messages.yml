@@ -1,0 +1,53 @@
+prefix: '&e[&6&lSkyWars&e] '
+game:
+  join: '&aJoin&2>> &6{player} &6{amount}&7/&6{slots}'
+  required: '&dPlayers&5>> &6{amount}&7 more Required to Start!'
+  quit:
+    playing: '&cQuit&4>> &6{player} {score}'
+    other: '&cQuit&4>> &6{player} &6{amount}&7/&6{slots}'
+  remaining: '&dPlayers&5>> &6{remaining} &7Remaining!'
+  death: '&7Death&8>> &6{player} {score}'
+  kill: '&7Kill&8>> &6{player} {player_score}&7 by &6{killer} {killer_score}'
+  countdown: '&7Game starting in &6{timer}&7...'
+  win: '&6{player}&7 has won on &6{map} &a(+{score})&7!'
+  start: '&7Game Started!'
+  eliminated:
+    self: '&7You lost this Game, try again!'
+    others: '&7Dea&8>> &6{player}'
+chat:
+  local: '&e[&6&lSkyWars&e] {score} &6{player} &6&l> &r&7{message}'
+  global: '&e[&6&lSkyWars&e] {score} &6{player} &6&l> &r&7{message}'
+error:
+  cmd-disabled: 'This command is disabled during the game!'
+  no-schematics: '&cThere are no schematics available.'
+  not-in-game: '&cYou are not in a SkyWars game'
+  already-started: '&cGame is already started'
+  not-enough-players: '&cNot enough players'
+  arena-under-construction: '&cArena is still under construction'
+  insufficient-permissions: '&cInsufficient permissions!'
+  player-only: '&aThis command may only be exeucted as a player'
+  already-has-kit: '&cYou have already chosen a kit!'
+  can-not-pick-kit: '&cYou can not pick a kit at this time!'
+  no-such-kit: '&cNo such kit!'
+  not-enough-score: '&cNot enough score to purchase this kit!'
+  no-permission-kit: '&cNo permission to use this kit!'
+  no-valid-score: '&cNot a valid score!'
+  no-valid-player: '&cNot a valid player!'
+  not-enough-arguments: '&cNot enough arguments. &f{example}'
+  invalid-cmd: '&eInvalid command'
+success:
+  lobby-set: '&aLobby spawn has been set.'
+  reload: '&aChests, kits and plugin.yml has been reloaded'
+  enjoy-kit: '&aEnjoy your kit!'
+  score-set: '&6{player}&a''s score has been set to &6{value}'
+  score-give: '&6{value} &ahas been added to &6{player}&a''s score'
+  score-take: '&6{value} &ahas been removed from &6{player}&a''s score'
+cmd:
+  available-commands: '&eAvailable commands:'
+  score: '&a{player}''s score is: &6{value}'
+kit:
+  window-title: '&0Kits'
+  lores:
+    no-permission: '&r&cNo permission'
+score:
+  naming: ' score'

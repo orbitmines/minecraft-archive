@@ -1,0 +1,152 @@
+ShopName: BuySkyBlock
+signs:
+  text: '[BuySkyBlock]'
+  NeedPermissionToCreateSign: true
+shop:
+  Grass:
+    RewardType: item
+    PriceType: money
+    Price: 100
+    Reward:
+    - - type:GRASS
+      - amount:1
+    MenuItem:
+    - 'type: GRASS'
+    - amount:1
+    - name:&6&L1 Grass Block
+    - 'lore:&c&LPrice: &b100$'
+    - amount:1
+    InventoryLocation: 1
+    ExtraPermission: ''
+  Dirt:
+    RewardType: item
+    PriceType: money
+    Price: 50
+    Reward:
+    - - type:DIRT
+      - amount:1
+    MenuItem:
+    - 'type: DIRT'
+    - amount:1
+    - name:&6&L1 Dirt
+    - 'lore:&c&LPrice: &b50$'
+    - amount:1
+    InventoryLocation: 2
+    ExtraPermission: ''
+  sand:
+    RewardType: item
+    PriceType: money
+    Price: 75
+    Reward:
+    - - type:SAND
+      - amount:1
+    MenuItem:
+    - 'type: SAND'
+    - amount:1
+    - name:&6&L1 Sand
+    - 'lore:&c&LPrice: &b75$'
+    - amount:1
+    InventoryLocation: 3
+    ExtraPermission: ''
+  Sappling:
+    RewardType: item
+    PriceType: money
+    Price: 150
+    Reward:
+    - - type:SAPLING
+      - amount:1
+    MenuItem:
+    - 'type: SAPLING'
+    - amount:1
+    - name:&6&L1 Sapling
+    - 'lore:&c&LPrice: &b150$'
+    - amount:1
+    InventoryLocation: 4
+    ExtraPermission: ''
+  pickaxe:
+    RewardType: item
+    PriceType: money
+    Price: 50
+    Reward:
+    - - type:STONE_PICKAXE
+      - amount:1
+    MenuItem:
+    - 'type: STONE_PICKAXE'
+    - amount:1
+    - name:&6&L1 Stone Pickaxe
+    - 'lore:&c&LPrice: &b50$'
+    - amount:1
+    InventoryLocation: 5
+    ExtraPermission: ''
+  bukkit:
+    RewardType: item
+    PriceType: money
+    Price: 150
+    Reward:
+    - - type:BUCKET
+      - amount:1
+    MenuItem:
+    - 'type: BUCKET'
+    - amount:1
+    - name:&6&L1 Bucket
+    - 'lore:&c&LPrice: &b150$'
+    - amount:1
+    InventoryLocation: 6
+    ExtraPermission: ''
+  lavabukkit:
+    RewardType: item
+    PriceType: money
+    Price: 150
+    Reward:
+    - - type:LAVA_BUCKET
+      - amount:1
+    MenuItem:
+    - 'type: LAVA_BUCKET'
+    - amount:1
+    - name:&6&L1 Lava Bucket
+    - 'lore:&c&LPrice: &b300$'
+    - amount:1
+    InventoryLocation: 7
+    ExtraPermission: ''
+  ICE:
+    RewardType: item
+    PriceType: money
+    Price: 75
+    Reward:
+    - - type:ICE
+      - amount:1
+    MenuItem:
+    - 'type: ICE'
+    - amount:1
+    - name:&6&L1 Ice
+    - 'lore:&c&LPrice: &b75$'
+    - amount:1
+    InventoryLocation: 8
+    ExtraPermission: ''
+  iron:
+    RewardType: item
+    PriceType: money
+    Price: 75
+    Reward:
+    - - id:15
+      - amount:1
+    MenuItem:
+    - 'id:15'
+    - amount:1
+    - name:&6&L1 Iron Ore
+    - 'lore:&c&LPrice: &b75$'
+    - amount:1
+    InventoryLocation: 9
+    ExtraPermission: ''
+  BackToMenu:
+    RewardType: shop
+    PriceType: free
+    Reward: SkyBlock
+    MenuItem:
+    - type:REDSTONE_BLOCK
+    - amount:1
+    - name:&4&LSkyBlock Menu
+    - lore:&8Back to the SkyBlock Menu
+    - amount:1
+    InventoryLocation: 14
+    ExtraPermission: ''

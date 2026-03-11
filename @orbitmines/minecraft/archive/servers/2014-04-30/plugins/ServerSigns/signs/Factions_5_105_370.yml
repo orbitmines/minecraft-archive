@@ -1,0 +1,16 @@
+permission: ''
+world: Factions
+X: 5
+Y: 105
+Z: 370
+price: 0.0
+cooldown: 0
+globalCooldown: 0
+confirmation: false
+commands:
+- '/shop Faction '
+grantPermissions: []
+lastGlobalUse: 0
+lastUse: {}
+priceItems: []
+exp: 0

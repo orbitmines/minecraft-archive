@@ -1,0 +1,18 @@
+permission: ''
+world: Dropper
+X: -40
+Y: 26
+Z: -36
+price: 0.0
+cooldown: 0
+globalCooldown: 0
+confirmation: false
+commands:
+- 'warp dropper '
+- 'warp arcade_spawn '
+- '/MissionMINERComplete '
+grantPermissions: []
+lastGlobalUse: 0
+lastUse: {}
+priceItems: []
+exp: 0

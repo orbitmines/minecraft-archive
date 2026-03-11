@@ -1,0 +1,16 @@
+permission: ''
+world: TestWorld
+X: 83
+Y: 150
+Z: -41
+price: 0.0
+cooldown: 0
+globalCooldown: 0
+confirmation: false
+commands:
+- '/shop KitPvP '
+grantPermissions: []
+lastGlobalUse: 0
+lastUse: {}
+priceItems: []
+exp: 0

@@ -1,0 +1,66 @@
+ShopName: Survival
+signs:
+  text: '[Survival]'
+  NeedPermissionToCreateSign: true
+shop:
+  Ores:
+    RewardType: shop
+    PriceType: free
+    Reward: Ores
+    MenuItem:
+    - 'type: DIAMOND'
+    - amount:1
+    - name:&b&LOres
+    - 'lore:&8Here you can buy Diamond, Iron ...'
+    - amount:1
+    InventoryLocation: 1
+    ExtraPermission: 'shop.survival'
+  Food:
+    RewardType: shop
+    PriceType: free
+    Reward: Food
+    MenuItem:
+    - 'type: GOLDEN_APPLE'
+    - amount:1
+    - name:&b&LFood
+    - 'lore:&8Here you can buy Food'
+    - amount:1
+    InventoryLocation: 2
+    ExtraPermission: 'shop.survival'
+  SpawnEggs:
+    RewardType: shop
+    PriceType: free
+    Reward: SpawnEggs
+    MenuItem:
+    - 'id:383'
+    - 'durability:92'
+    - amount:1
+    - name:&b&LSpawn Eggs
+    - 'lore:&8Here you can buy Spawn Eggs'
+    - amount:1
+    InventoryLocation: 3
+    ExtraPermission: 'shop.survival'
+  OMT:
+    RewardType: shop
+    PriceType: free
+    Reward: OMTSurvival
+    MenuItem:
+    - 'type: GOLD_NUGGET'
+    - amount:1
+    - name:&b&LOrbitMines Tokens
+    - 'lore:&8Here you can change OrbitMines Tokens to Claimblocks or Money'
+    - amount:1
+    InventoryLocation: 4
+    ExtraPermission: 'shop.survival'
+  Balance:
+    RewardType: playercommand
+    PriceType: free
+    Reward:
+    - money
+    MenuItem:
+    - type:GOLD_BLOCK
+    - amount:1
+    - name:&b&LBalance
+    - 'lore:&6&LYour Money: &b%balance%'
+    - amount:1
+    InventoryLocation: 9

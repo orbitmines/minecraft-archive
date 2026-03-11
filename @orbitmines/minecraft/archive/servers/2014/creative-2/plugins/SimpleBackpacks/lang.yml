@@ -1,0 +1,16 @@
+# Use & for color codes.
+no-console: '&4This command is only available to players!'
+no-perm: '&4You don''t have permission for that!'
+no-user: '&4That user is not online!'
+already-open: '&4This backpack is already open! Cannot open right now.'
+backpack-opened: '&7Backpack opened.'
+log-access-denied: '&4{player} was denied access to that command!'
+log-zero-backpack: '&4{player} tried to open an inventory with size 0!'
+log-opening-backpack: '&eOpening backpack for {player}. &r({slots})'
+log-closing-backpack: Closing backpack for {player}. (inventory close)
+log-updating-backpack: Updating backpack for {player}. (inventory click)
+log-emptying-backpack: Emptying backpack for {player}. (death)
+log-getting-backpack: Getting backpack for {player}. ({slots})
+log-creating-backpack: Creating backpack for {player}. ({slots})
+log-saving-backpack: Saving backpack for {player}. ({slots})
+log-owner-unknown: '&4ERROR: Unable to determine backpack owner!'

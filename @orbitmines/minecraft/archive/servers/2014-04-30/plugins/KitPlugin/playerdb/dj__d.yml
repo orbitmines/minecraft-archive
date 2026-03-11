@@ -1,0 +1,45 @@
+Knight:
+  cooldown: 1397483238
+  usages: 0
+Soldier:
+  cooldown: 1397483610
+  usages: 0
+Pyro:
+  cooldown: 1397673044
+  usages: 0
+Fish:
+  cooldown: 1397321186
+  usages: 0
+Sniper:
+  cooldown: 1397321140
+  usages: 0
+Beast:
+  cooldown: 1397320881
+  usages: 0
+DarkMage:
+  cooldown: 1397297493
+  usages: 0
+Assassin:
+  cooldown: 1397321723
+  usages: 0
+Lord:
+  cooldown: 1397321690
+  usages: 0
+Vampire:
+  cooldown: 1397320729
+  usages: 0
+Necromancer:
+  cooldown: 1397321165
+  usages: 0
+Bunny:
+  cooldown: 1397321060
+  usages: 0
+Wizard:
+  cooldown: 1397296675
+  usages: 0
+Tank:
+  cooldown: 1397320754
+  usages: 0
+Drunk:
+  cooldown: 1397321294
+  usages: 0

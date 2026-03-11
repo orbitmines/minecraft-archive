@@ -1,0 +1,388 @@
+ShopName: UpgradeKit
+signs:
+  text: '[UpgradeKit]'
+  NeedPermissionToCreateSign: true
+shop:
+  Knight:
+    RewardType: shop
+    PriceType: free
+    Reward: KnightLvL2
+    MenuItem:
+    - 'type: IRON_SWORD'
+    - amount:1
+    - name:&8[&b&LKnight&8] &a&LLvL 2
+    - 'lore:&7Click for Details...'
+    - amount:1
+    InventoryLocation: 1
+    ExtraPermission: ''
+  Archer:
+    RewardType: shop
+    PriceType: free
+    Reward: ArcherLvL2
+    MenuItem:
+    - 'type: BOW'
+    - amount:1
+    - name:&8[&b&LArcher&8] &a&LLvL 2
+    - 'lore:&7Click for Details...'
+    - amount:1
+    InventoryLocation: 2
+    ExtraPermission: ''
+  Wizard:
+    RewardType: permission
+    PriceType: money
+    Price: 35000
+    Reward:
+    - kit.WizardLvL2
+    - wizardkit.2
+    MenuItem:
+    - 'type: POTION'
+    - amount:1
+    - name:&8[&b&LWizard&8] &a&LLvL 2
+    - 'lore:&3-------------------------- #&c&LPrice: &b35.000 Coins #&3-------------------------- #&6&LAdded to Level 2: #&a&L + Sharpness 1 (on sword) #&a&L + 1 Magic Wand #&a  - Shoot Fire #&a&L + Protection 1 #&a  - Helmet #&a  - Chestplate #&a  - Leggings #&a  - Boots #&3--------------------------'
+    - amount:1
+    Message: '&bYou have upgraded your &6&LWizard &bkit to &a&LLevel 2&b!'
+    InventoryLocation: 4
+    ExtraPermission: 'wizardkit.1'
+  Tank:
+    RewardType: permission
+    PriceType: money
+    Price: 50000
+    Reward:
+    - kit.TankLvL2
+    - tankkit.2
+    MenuItem:
+    - 'type: IRON_CHESTPLATE'
+    - amount:1
+    - name:&8[&b&LTank&8] &a&LLvL 2
+    - 'lore:&3------------------------------- #&c&LPrice: &b50.000 #&3------------------------------- #&6&LAdded to Level 2: #&a&L + Protection 1 #&a  - Leggings #&a&L + Stone Sword (Knockback 2) #&a&L + 1 Golden Apple #&4&L - Wooden Sword (Knockback 1) #&3-------------------------------'
+    - amount:1
+    Message: '&bYou have upgraded your &6&LTank &bkit to &a&LLevel 2&b!'
+    InventoryLocation: 5
+    ExtraPermission: 'tankkit.1'
+  Soldier:
+    RewardType: shop
+    PriceType: free
+    Reward: SoldierLvL2
+    MenuItem:
+    - 'type: STONE_SWORD'
+    - amount:1
+    - name:&8[&b&LSoldier&8] &a&LLvL 2
+    - 'lore:&7Click for Details...'
+    - amount:1
+    InventoryLocation: 3
+    ExtraPermission: ''
+  Pyro:
+    RewardType: permission
+    PriceType: money
+    Price: 65000
+    Reward:
+    - kit.PyroLvL2
+    - pyrokit.2
+    MenuItem:
+    - 'type: GOLD_HELMET'
+    - amount:1
+    - name:&8[&b&LPyro&8] &a&LLvL 2
+    - 'lore:&3----------------------------------- #&c&LPrice: &b65.000 Coins #&3----------------------------------- #&6&LAdded to Level 2: #&a&L + Sharpness 1 (on sword) #&a&L + Trail of Fire #&a  - When you walk fire ignites behind you #&A&L + Protecion 1 #&a  - Chestplate #&a  - Boots #&3-----------------------------------'
+    - amount:1
+    Message: '&bYou have upgraded your &6&LPyro &bkit to &a&LLevel 2&b!'
+    InventoryLocation: 7
+    ExtraPermission: 'pyrokit.1'
+  Bunny:
+    RewardType: permission
+    PriceType: money
+    Price: 50000
+    Reward:
+    - kit.BunnyLvL2
+    - bunnykit.2
+    MenuItem:
+    - 'type: LEATHER_BOOTS'
+    - amount:1
+    - name:&8[&b&LBunny&8] &a&LLvL 2
+    - 'lore:&3--------------------- #&c&LPrice: &b50.000 Coins #&3--------------------- #&6&LAdded to Level 2: #&a&L + 1 Poison Potion #&a&L + Protection 2 #&a  - Helmet #&a  - Chestplate  #&a  - Leggings #&a  - Boots #&a&L + Knockback Carrot #&a  - Sharpness 6 #&a  - Knockback 10 #&3---------------------'
+    - amount:1
+    Message: '&bYou have upgraded your &6&LBunny &bkit to &a&LLevel 2&b!'
+    InventoryLocation: 8
+    ExtraPermission: 'bunnykit.1'
+  Drunk:
+    RewardType: permission
+    PriceType: money
+    Price: 50000
+    Reward:
+    - kit.DrunkLvL2
+    - drunkkit.2
+    MenuItem:
+    - 'type: CHAINMAIL_LEGGINGS'
+    - amount:1
+    - name:&8[&b&LDrunk&8] &a&LLvL 2
+    - 'lore:&3----------------------------- #&c&LPrice: &b50.000 Coins #&3----------------------------- #&6&LAdded to Level 2: #&a&L + Iron Armor Protection 1 #&a  - Helmet #&a  - Boots #&a&L + Blindness (on sword) #&a  - Blinds enemy on Hit #&a&L + Nausea 1 #&4&L - Nausea 2 #&4&L - Chainmail Protection 1 #&4  - Helmet #&4  - Boots #&3-----------------------------'
+    - amount:1
+    Message: '&bYou have upgraded your &6&LDrunk &bkit to &a&LLevel 2&b!'
+    InventoryLocation: 6
+    ExtraPermission: 'drunkkit.1'
+  Necromancer:
+    RewardType: permission
+    PriceType: money
+    Price: 75000
+    Reward:
+    - kit.NecromancerLvL2
+    - necromancerkit.2
+    MenuItem:
+    - 'type: GOLD_HOE'
+    - amount:1
+    - name:&8[&b&LNecromancer&8] &a&LLvL 2
+    - 'lore:&3----------------------------------------- #&c&LPrice: &b75.000 Coins #&3----------------------------------------- #&6&LAdded to Level 2: #&a&L + 5 Arrows #&a&L + Leather Armor Protection 2 #&a  - Helmet #&a  - Chestplate #&a  - Leggings #&a  - Boots #&a&L + Power 1 Bow #&a&L + Pull Hoe #&a  - Right-click your hoe to pull a player to you #&3-----------------------------------------'
+    - amount:1
+    InventoryLocation: 9
+    ExtraPermission: 'necromancerkit.1'
+  Knight3:
+    RewardType: permission
+    PriceType: money
+    Price: 50000
+    Reward:
+    - kit.KnightLvL3
+    - knightkit.3
+    MenuItem:
+    - 'type: IRON_SWORD'
+    - amount:1
+    - name:&8[&b&LKnight&8] &a&LLvL 3
+    - 'lore:&3----------------------------------------- #&c&LPrice: &b50.000 Coins #&3----------------------------------------- #&6&LAdded to Level 3: #&a&L + Sharpness 1 (on sword) #&a&L + Chain Armor Protection 1 #&a  - Helmet #&a  - Boots #&a&L + 1 Instant Health Splash Potion #&3-----------------------------------------'
+    - amount:1
+    InventoryLocation: 10
+    ExtraPermission: 'knightkit.2'
+  Archer3:
+    RewardType: permission
+    PriceType: money
+    Price: 50000
+    Reward:
+    - kit.ArcherLvL3
+    - knightkit.3
+    MenuItem:
+    - 'type: BOW'
+    - amount:1
+    - name:&8[&b&LArcher&8] &a&LLvL 3
+    - 'lore:&3------------------------------- #&c&LPrice: &b50.000 #&3------------------------------- #&6&LAdded to Level 3: #&a&L + Power 1 Bow #&a&L + Protection 1 Leather Armor #&a  - Helmet #&a  - Chestplate #&a  - Leggings #&a  - Boots #&a&L + Splash Instant Health Potion  #&4&L - Instant Health Potion #&3-------------------------------'
+    - amount:1
+    InventoryLocation: 11
+    ExtraPermission: 'archerkit.2'
+  Soldier3:
+    RewardType: permission
+    PriceType: money
+    Price: 0
+    Reward: []
+    MenuItem:
+    - 'type: STONE_SWORD'
+    - amount:1
+    - name:&8[&b&LSoldier&8] &a&LLvL 3
+    - 'lore:&3------------ #&a&LComing Soon #&3------------'
+    - amount:1
+    InventoryLocation: 12
+    ExtraPermission: 'soldierkit.2'
+  Wizard3:
+    RewardType: permission
+    PriceType: money
+    Price: 0
+    Reward: []
+    MenuItem:
+    - 'type: POTION'
+    - amount:1
+    - name:&8[&b&LWizard&8] &a&LLvL 3
+    - 'lore:&3------------ #&a&LComing Soon #&3------------'
+    - amount:1
+    InventoryLocation: 13
+    ExtraPermission: 'wizardkit.2'
+  Tank3:
+    RewardType: permission
+    PriceType: money
+    Price: 0
+    Reward: []
+    MenuItem:
+    - 'type: IRON_CHESTPLATE'
+    - amount:1
+    - name:&8[&b&LTank&8] &a&LLvL 3
+    - 'lore:&3------------ #&a&LComing Soon #&3------------'
+    - amount:1
+    InventoryLocation: 14
+    ExtraPermission: 'tankkit.2'
+  Drunk3:
+    RewardType: permission
+    PriceType: money
+    Price: 0
+    Reward: []
+    MenuItem:
+    - 'type: CHAINMAIL_LEGGINGS'
+    - amount:1
+    - name:&8[&b&LDrunk&8] &a&LLvL 3
+    - 'lore:&3------------ #&a&LComing Soon #&3------------'
+    - amount:1
+    InventoryLocation: 15
+    ExtraPermission: 'drunkkit.2'
+  Pyro3:
+    RewardType: permission
+    PriceType: money
+    Price: 0
+    Reward: []
+    MenuItem:
+    - 'type: GOLD_HELMET'
+    - amount:1
+    - name:&8[&b&LPyro&8] &a&LLvL 3
+    - 'lore:&3------------ #&a&LComing Soon #&3------------'
+    - amount:1
+    InventoryLocation: 16
+    ExtraPermission: 'pyrokit.2'
+  Bunny3:
+    RewardType: permission
+    PriceType: money
+    Price: 0
+    Reward: []
+    MenuItem:
+    - 'type: LEATHER_BOOTS'
+    - amount:1
+    - name:&8[&b&LBunny&8] &a&LLvL 3
+    - 'lore:&3------------ #&a&LComing Soon #&3------------'
+    - amount:1
+    InventoryLocation: 17
+    ExtraPermission: 'bunnykit.2'
+  Necromancer3:
+    RewardType: permission
+    PriceType: money
+    Price: 0
+    Reward: []
+    MenuItem:
+    - 'type: GOLD_HOE'
+    - amount:1
+    - name:&8[&b&LNecromancer&8] &a&LLvL 3
+    - 'lore:&3------------ #&a&LComing Soon #&3------------'
+    - amount:1
+    InventoryLocation: 18
+    ExtraPermission: 'necromancerkit.2'
+  Assassin2:
+    RewardType: permission
+    PriceType: money
+    Price: 0
+    Reward: []
+    MenuItem:
+    - 'type: DIAMOND_BOOTS'
+    - amount:1
+    - name:&8[&4&LAssassin&8] &a&LLvL 2
+    - 'lore:&3------------ #&a&LComing Soon #&3------------'
+    - amount:1
+    InventoryLocation: 28
+    ExtraPermission: 'VIP.kit'
+  Lord2:
+    RewardType: permission
+    PriceType: money
+    Price: 0
+    Reward: []
+    MenuItem:
+    - 'type: GOLD_SWORD'
+    - amount:1
+    - name:&8[&4&LLord&8] &a&LLvL 2
+    - 'lore:&3------------ #&a&LComing Soon #&3------------'
+    - amount:1
+    InventoryLocation: 29
+    ExtraPermission: 'VIP.kit'
+  Vampire2:
+    RewardType: permission
+    PriceType: money
+    Price: 0
+    Reward: []
+    MenuItem:
+    - 'type: REDSTONE'
+    - amount:1
+    - name:&8[&4&LVampire&8] &a&LLvL 2
+    - 'lore:&3------------ #&a&LComing Soon #&3------------'
+    - amount:1
+    InventoryLocation: 30
+    ExtraPermission: 'VIP.kit'
+  DarkMage2:
+    RewardType: permission
+    PriceType: money
+    Price: 0
+    Reward: []
+    MenuItem:
+    - 'type: BLAZE_ROD'
+    - amount:1
+    - name:&8[&4&LDark Mage&8] &a&LLvL 2
+    - 'lore:&3------------ #&a&LComing Soon #&3------------'
+    - amount:1
+    InventoryLocation: 31
+    ExtraPermission: 'VIP.kit'
+  Beast2:
+    RewardType: permission
+    PriceType: money
+    Price: 0
+    Reward: []
+    MenuItem:
+    - 'type: IRON_AXE'
+    - amount:1
+    - name:&8[&4&LBeast&8] &a&LLvL 2
+    - 'lore:&3------------ #&a&LComing Soon #&3------------'
+    - amount:1
+    InventoryLocation: 32
+    ExtraPermission: 'VIP.kit'
+  Fish2:
+    RewardType: permission
+    PriceType: money
+    Price: 0
+    Reward: []
+    MenuItem:
+    - 'type: COOKED_FISH'
+    - amount:1
+    - name:&8[&4&LFish&8] &a&LLvL 2
+    - 'lore:&3------------ #&a&LComing Soon #&3------------'
+    - amount:1
+    InventoryLocation: 33
+    ExtraPermission: 'VIP.kit'
+  Heavy2:
+    RewardType: permission
+    PriceType: money
+    Price: 0
+    Reward: []
+    MenuItem:
+    - 'type: ARROW'
+    - amount:1
+    - name:&8[&4&LHeavy&8] &a&LLvL 2
+    - 'lore:&3------------ #&a&LComing Soon #&3------------'
+    - amount:1
+    InventoryLocation: 34
+    ExtraPermission: 'VIP.kit'
+  GrimReaper2:
+    RewardType: permission
+    PriceType: money
+    Price: 0
+    Reward: []
+    MenuItem:
+    - 'id: 397'
+    - amount:1
+    - durability:1
+    - name:&8[&4&LGrim Reaper&8] &a&LLvL 2
+    - 'lore:&3------------ #&a&LComing Soon #&3------------'
+    - amount:1
+    InventoryLocation: 35
+    ExtraPermission: 'VIP.kit'
+  Miner2:
+    RewardType: permission
+    PriceType: money
+    Price: 0
+    Reward: []
+    MenuItem:
+    - 'id: 285'
+    - amount:1
+    - name:&8[&4&LMiner&8] &a&LLvL 2
+    - 'lore:&3------------ #&a&LComing Soon #&3------------'
+    - amount:1
+    InventoryLocation: 36
+    ExtraPermission: 'VIP.kit'
+  BackToMenu:
+    RewardType: shop
+    PriceType: free
+    Reward: KitPvP
+    MenuItem:
+    - type:REDSTONE_BLOCK
+    - amount:1
+    - name:&4&LKit PvP Menu
+    - lore:&8Back to the Kit PvP Menu
+    - amount:1
+    InventoryLocation: 23
+    ExtraPermission: ''
+

@@ -1,0 +1,6 @@
+Arena1:
+  Countdown: 15
+  MaxPlayers: 24
+  KillsToWin: 25
+  AutoStartPlayers: 6
+  EndTime: 480

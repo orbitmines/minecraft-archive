@@ -1,0 +1,16 @@
+permission: ''
+world: Factions
+X: 4
+Y: 104
+Z: 352
+price: 0.0
+cooldown: 0
+globalCooldown: 0
+confirmation: false
+commands:
+- '/FactionsIron-VIP '
+grantPermissions: []
+lastGlobalUse: 0
+lastUse: {}
+priceItems: []
+exp: 0

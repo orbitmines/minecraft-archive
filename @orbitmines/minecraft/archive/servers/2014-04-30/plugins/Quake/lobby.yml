@@ -1,0 +1,10 @@
+LobbySpawn: MiniGames, 86.46448097791092, 68.0, -79.08845500318249, -178.92935, 15.258251
+Nombre: 1
+min:
+  lobby0: MiniGames, 84.0, 67.0, -91.0, 0.0, 0.0
+  lobby1: MiniGames, 84.0, 67.0, -91.0, 0.0, 0.0
+  lobby2: MiniGames, 84.0, 67.0, -91.0, 0.0, 0.0
+max:
+  lobby0: MiniGames, 88.0, 67.0, -91.0, 0.0, 0.0
+  lobby1: MiniGames, 88.0, 67.0, -91.0, 0.0, 0.0
+  lobby2: MiniGames, 88.0, 67.0, -91.0, 0.0, 0.0

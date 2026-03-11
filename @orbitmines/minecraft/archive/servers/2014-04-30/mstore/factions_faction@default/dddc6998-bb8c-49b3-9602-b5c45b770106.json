@@ -1,0 +1,20 @@
+{
+  "name": "TheStaff",
+  "description": "We're The Staff!",
+  "createdAtMillis": 1394727878919,
+  "home": {
+    "w": "Factions",
+    "lx": 3975.175662947705,
+    "ly": 8.0,
+    "lz": -194.48356785209296,
+    "p": 5.3999815,
+    "y": -275.55145
+  },
+  "relationWishes": {
+    "c8c1437f-3342-4310-ace3-c754fe7ff830": "ENEMY",
+    "177d56c0-577f-4129-9cff-f2e06650be45": "ALLY",
+    "adafed6e-208e-47ce-8861-8e9aab5ddfa6": "ALLY",
+    "1bd1dc17-8dda-486b-ab93-dcb9305dadc8": "ENEMY",
+    "d623964b-ab38-4966-9a73-539c501c381f": "ALLY"
+  }
+}

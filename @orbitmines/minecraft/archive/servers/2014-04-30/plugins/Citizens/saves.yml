@@ -1,0 +1,6193 @@
+# Citizens NPC Storage
+
+last-created-npc-id: 398
+npc:
+  '2':
+    name: §b§lLobby
+    traits:
+      location:
+        world: Spawn
+        x: '1422.5'
+        y: '256.0'
+        z: '879.5'
+        yaw: '-40.499996185302734'
+        pitch: '27.750011444091797'
+      owner: O_o_Fadi_o_O
+      spawned: true
+      type: EnderDragon
+    traitnames: type,location,owner,spawned
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+  '1':
+    name: §a§lSurvival
+    traits:
+      location:
+        world: SurvivalWorld
+        x: '-570.3819304290055'
+        y: '256.0'
+        z: '-68.55954028677661'
+        yaw: '-86.24969482421875'
+        pitch: '90.0'
+      owner: O_o_Fadi_o_O
+      spawned: true
+      type: EnderDragon
+    traitnames: type,location,owner,spawned
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+  '8':
+    name: SinaasAppelke
+    traits:
+      location:
+        world: Spawn
+        x: '1423.6542629498274'
+        y: '74.0'
+        z: '865.5596192348069'
+        yaw: '2.8499755859375'
+        pitch: '9.15000057220459'
+      owner: O_o_Fadi_o_O
+      spawned: true
+    traitnames: type,location,owner,spawned
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+  '6':
+    name: basteti
+    traits:
+      location:
+        world: Spawn
+        x: '1421.658033217826'
+        y: '74.0'
+        z: '865.4184598198841'
+        yaw: '359.7000427246094'
+        pitch: '25.049999237060547'
+      owner: O_o_Fadi_o_O
+      spawned: true
+    traitnames: type,location,owner,spawned
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+  '5':
+    name: BenYOmin_Mango
+    traits:
+      location:
+        world: Spawn
+        x: '1419.3806067324767'
+        y: '74.0'
+        z: '865.413701375148'
+        yaw: '-2.25006103515625'
+        pitch: '15.150003433227539'
+      owner: O_o_Fadi_o_O
+      spawned: true
+    traitnames: type,location,owner,spawned
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+  '4':
+    name: O_o_Fadi_o_O
+    traits:
+      location:
+        world: Spawn
+        x: '1417.406110906048'
+        y: '74.0'
+        z: '865.3686547695963'
+        yaw: '-3.300018310546875'
+        pitch: '4.05000114440918'
+      owner: O_o_Fadi_o_O
+      spawned: true
+    traitnames: type,location,owner,spawned
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+  '3':
+    name: slienimon
+    traits:
+      location:
+        world: Spawn
+        x: '1415.3397535182405'
+        y: '74.0'
+        z: '865.5217625972557'
+        yaw: '-1.2000148296356201'
+        pitch: '8.549995422363281'
+      owner: O_o_Fadi_o_O
+      spawned: true
+    traitnames: type,location,owner,spawned
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+  '9':
+    name: §4§lPrison
+    traits:
+      type: EnderDragon
+      spawned: true
+      location:
+        world: PrisonServer
+        x: '-861.5'
+        y: '256.0'
+        z: '314.5'
+        yaw: '-89.4000015258789'
+        pitch: '89.4000015258789'
+      owner: O_o_Fadi_o_O
+    traitnames: type,location,owner,spawned
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+  '14':
+    name: §b§lLobby
+    traits:
+      owner: O_o_Fadi_o_O
+      location:
+        world: Hub
+        x: '0.5'
+        y: '256.0'
+        z: '0.5'
+        yaw: '-179.40663146972656'
+        pitch: '90.0'
+      type: EnderDragon
+      spawned: true
+    traitnames: type,location,owner,spawned
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+  '77':
+    name: §8>> §4Shop §8<<
+    traits:
+      age:
+        age: 0
+        locked: true
+      location:
+        world: KitPvP
+        x: '-584.432645611243'
+        y: '21.0'
+        z: '-869.6163318689801'
+        yaw: '-1.6512451171875'
+        pitch: '0.0'
+      owner: O_o_Fadi_o_O
+      type: Villager
+      spawned: true
+    traitnames: type,location,age,owner,spawned
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+  '76':
+    name: §2BOSS
+    traits:
+      location:
+        world: Dropper
+        x: '-44.472553477551294'
+        y: '143.0'
+        z: '-32.62362287045168'
+        yaw: '-1.1796652E7'
+        pitch: '0.0'
+      owner: slienimon
+      equipment:
+        hand:
+          type: MAP
+          amount: 1
+          durability: 2
+          mdata: 2
+      spawned: true
+      waypoints:
+        linear:
+          points:
+            '0':
+              location:
+                world: Dropper
+                x: '-45.0'
+                y: '142.0'
+                z: '-38.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '1':
+              location:
+                world: Dropper
+                x: '-45.0'
+                y: '142.0'
+                z: '-33.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '2':
+              location:
+                world: Dropper
+                x: '-39.0'
+                y: '142.0'
+                z: '-41.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '3':
+              location:
+                world: Dropper
+                x: '-43.0'
+                y: '142.0'
+                z: '-43.0'
+                yaw: '0.0'
+                pitch: '0.0'
+        provider: linear
+    traitnames: type,location,waypoints,owner,equipment,spawned
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+  '74':
+    name: §4MINER
+    traits:
+      location:
+        world: Dropper
+        x: '-49.262785892408424'
+        y: '143.0'
+        z: '-37.93238980016322'
+        yaw: '305.69775390625'
+        pitch: '8.699938774108887'
+      owner: slienimon
+      equipment:
+        hand:
+          type: IRON_PICKAXE
+          amount: 1
+          durability: 0
+          mdata: 0
+      spawned: true
+    traitnames: type,location,equipment,owner,spawned
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+  '73':
+    name: §4MINER
+    traits:
+      location:
+        world: Dropper
+        x: '-50.880073771496626'
+        y: '143.0'
+        z: '-34.0644739126238'
+        yaw: '229.48583984375'
+        pitch: '5.999906063079834'
+      owner: slienimon
+      equipment:
+        hand:
+          type: TORCH
+          amount: 1
+          durability: 0
+          mdata: 0
+      spawned: true
+    traitnames: type,location,owner,equipment,spawned
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+  '72':
+    name: §4MINER
+    traits:
+      location:
+        world: Dropper
+        x: '-50.62377441087048'
+        y: '143.0'
+        z: '-36.281069204871656'
+        yaw: '275.986328125'
+        pitch: '7.349907875061035'
+      owner: slienimon
+      equipment:
+        hand:
+          type: IRON_PICKAXE
+          amount: 1
+          durability: 0
+          mdata: 0
+      spawned: true
+    traitnames: type,location,equipment,owner,spawned
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+  '83':
+    name: §2FIRE MAN
+    traits:
+      owner: slienimon
+      spawned: true
+      equipment:
+        hand:
+          type: IRON_AXE
+          amount: 1
+          durability: 0
+          mdata: 0
+        chestplate:
+          type: GOLD_CHESTPLATE
+          amount: 1
+          durability: 0
+          mdata: 0
+      location:
+        world: Dropper
+        x: '15.249143911547089'
+        y: '150.0'
+        z: '75.51802303173321'
+        yaw: '157.7096710205078'
+        pitch: '-6.5999932289123535'
+    traitnames: type,location,owner,equipment,spawned
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+  '82':
+    name: §2FIRE MAN
+    traits:
+      owner: slienimon
+      spawned: true
+      equipment:
+        hand:
+          type: IRON_AXE
+          amount: 1
+          durability: 0
+          mdata: 0
+        chestplate:
+          type: GOLD_CHESTPLATE
+          amount: 1
+          durability: 0
+          mdata: 0
+      location:
+        world: Dropper
+        x: '13.573598653927267'
+        y: '150.0'
+        z: '74.96303946830089'
+        yaw: '209.90966796875'
+        pitch: '-5.099992275238037'
+    traitnames: type,location,equipment,owner,spawned
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+  '81':
+    name: §2FIRE MAN
+    traits:
+      owner: slienimon
+      spawned: true
+      equipment:
+        hand:
+          type: IRON_AXE
+          amount: 1
+          durability: 0
+          mdata: 0
+        chestplate:
+          type: GOLD_CHESTPLATE
+          amount: 1
+          durability: 0
+          mdata: 0
+      location:
+        world: Dropper
+        x: '16.669736291206576'
+        y: '150.0'
+        z: '69.65041093729911'
+        yaw: '20.009735107421875'
+        pitch: '4.200005054473877'
+    traitnames: type,location,equipment,owner,spawned
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+  '79':
+    name: §4Lost_Guy
+    traits:
+      owner: slienimon
+      spawned: true
+      equipment:
+        hand:
+          type: POISONOUS_POTATO
+          amount: 1
+          durability: 0
+          mdata: 0
+        chestplate:
+          type: LEATHER_CHESTPLATE
+          amount: 1
+          durability: 0
+          mdata: 0
+          meta:
+            armor:
+              color: 5000268
+        leggings:
+          type: LEATHER_LEGGINGS
+          amount: 1
+          durability: 0
+          mdata: 0
+          meta:
+            armor:
+              color: 5000268
+        boots:
+          type: LEATHER_BOOTS
+          amount: 1
+          durability: 0
+          mdata: 0
+          meta:
+            armor:
+              color: 5000268
+      location:
+        world: Dropper
+        x: '4.665874409633828'
+        y: '46.0'
+        z: '63.60732357471616'
+        yaw: '336.36004638671875'
+        pitch: '1.4999891519546509'
+    traitnames: type,location,equipment,owner,spawned
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+  '93':
+    name: §4Thief
+    traits:
+      equipment:
+        chestplate:
+          type: CHAINMAIL_CHESTPLATE
+          amount: 1
+          durability: 0
+          mdata: 0
+        leggings:
+          type: CHAINMAIL_LEGGINGS
+          amount: 1
+          durability: 0
+          mdata: 0
+        boots:
+          type: CHAINMAIL_BOOTS
+          amount: 1
+          durability: 0
+          mdata: 0
+      owner: slienimon
+      location:
+        world: Dropper
+        x: '-41.69999998807907'
+        y: '90.0'
+        z: '68.13416981023748'
+        yaw: '292.35101318359375'
+        pitch: '3.5996897220611572'
+      spawned: true
+    traitnames: type,location,owner,equipment,spawned
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+  '92':
+    name: §2Bob
+    traits:
+      owner: slienimon
+      location:
+        world: Dropper
+        x: '-40.535145333053975'
+        y: '75.0'
+        z: '76.62293051048054'
+        yaw: '246.60089111328125'
+        pitch: '0.8996955752372742'
+      spawned: true
+      equipment:
+        chestplate:
+          type: LEATHER_CHESTPLATE
+          amount: 1
+          durability: 0
+          mdata: 0
+          meta:
+            armor:
+              color: 14188339
+        boots:
+          type: LEATHER_BOOTS
+          amount: 1
+          durability: 0
+          mdata: 0
+          meta:
+            armor:
+              color: 14188339
+    traitnames: type,location,equipment,owner,spawned
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+  '90':
+    name: §4Technician
+    traits:
+      waypoints:
+        linear:
+          points:
+            '0':
+              location:
+                world: Dropper
+                x: '-137.0'
+                y: '86.0'
+                z: '104.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '1':
+              location:
+                world: Dropper
+                x: '-139.0'
+                y: '86.0'
+                z: '103.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '2':
+              location:
+                world: Dropper
+                x: '-137.0'
+                y: '87.0'
+                z: '103.0'
+                yaw: '0.0'
+                pitch: '0.0'
+        provider: linear
+      owner: slienimon
+      location:
+        world: Dropper
+        x: '-137.87742472570974'
+        y: '87.0'
+        z: '103.76714436652131'
+        yaw: '3598672.25'
+        pitch: '0.0'
+      spawned: true
+      equipment:
+        hand:
+          type: BLAZE_ROD
+          amount: 1
+          durability: 0
+          mdata: 0
+    traitnames: type,location,waypoints,equipment,owner,spawned
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+  '89':
+    name: §2Technician
+    traits:
+      owner: slienimon
+      location:
+        world: Dropper
+        x: '-151.5294833764151'
+        y: '84.0'
+        z: '107.79925562151404'
+        yaw: '264.4517517089844'
+        pitch: '3.749953508377075'
+      spawned: true
+    traitnames: type,location,owner,spawned
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+  '87':
+    name: §4 NURCE
+    traits:
+      owner: slienimon
+      location:
+        world: Dropper
+        x: '-151.30000001192093'
+        y: '80.0'
+        z: '105.64544444300661'
+        yaw: '265.35186767578125'
+        pitch: '-3.450002431869507'
+      spawned: true
+    traitnames: type,location,owner,spawned
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+  '85':
+    name: §4Wounded_Man
+    traits:
+      waypoints:
+        linear:
+          points:
+            '0':
+              location:
+                world: Dropper
+                x: '-139.0'
+                y: '79.0'
+                z: '106.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '1':
+              location:
+                world: Dropper
+                x: '-136.0'
+                y: '79.0'
+                z: '106.0'
+                yaw: '0.0'
+                pitch: '0.0'
+        provider: linear
+      owner: slienimon
+      location:
+        world: Dropper
+        x: '-136.01777760297918'
+        y: '80.53584062504456'
+        z: '106.5318651923653'
+        yaw: '267.8401794433594'
+        pitch: '0.0'
+      spawned: true
+    traitnames: type,location,waypoints,owner,spawned
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+  '84':
+    name: §4Wounded_Man
+    traits:
+      waypoints:
+        linear:
+          points:
+            '0':
+              location:
+                world: Dropper
+                x: '-137.0'
+                y: '79.0'
+                z: '104.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '1':
+              location:
+                world: Dropper
+                x: '-139.0'
+                y: '79.0'
+                z: '103.0'
+                yaw: '0.0'
+                pitch: '0.0'
+        provider: linear
+      owner: slienimon
+      location:
+        world: Dropper
+        x: '-137.8192994081053'
+        y: '80.0'
+        z: '103.58570077494383'
+        yaw: '-8318782.5'
+        pitch: '0.0'
+      spawned: true
+    traitnames: type,waypoints,location,owner,spawned
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+  '133':
+    name: §4 Stuward
+    traits:
+      spawned: true
+      location:
+        world: Dropper
+        x: '-137.54099969414446'
+        y: '72.0'
+        z: '25.53694597021633'
+        yaw: '-160.35009765625'
+        pitch: '6.150085926055908'
+      owner: slienimon
+    traitnames: type,location,owner,spawned
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+  '132':
+    name: §4Stuward
+    traits:
+      spawned: true
+      location:
+        world: Dropper
+        x: '-51.489412523763534'
+        y: '93.0'
+        z: '31.562587332987068'
+        yaw: '193.34994506835938'
+        pitch: '-1.9500834941864014'
+      owner: slienimon
+    traitnames: type,location,owner,spawned
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+  '130':
+    name: §2KingOfTheHill
+    traits:
+      spawned: true
+      location:
+        world: Dropper
+        x: '-47.525179864961295'
+        y: '93.0'
+        z: '31.580256966717105'
+        yaw: '178.04994201660156'
+        pitch: '-9.300081253051758'
+      owner: slienimon
+    traitnames: type,location,owner,spawned
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+  '129':
+    name: §2Technician
+    traits:
+      spawned: true
+      location:
+        world: Dropper
+        x: '-43.30000001192093'
+        y: '93.0'
+        z: '31.699999988079085'
+        yaw: '149.69996643066406'
+        pitch: '-5.100078105926514'
+      owner: slienimon
+      equipment:
+        hand:
+          type: BLAZE_ROD
+          amount: 1
+          durability: 0
+          mdata: 0
+    traitnames: type,location,owner,equipment,spawned
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+  '126':
+    name: §4Lost_guy
+    traits:
+      spawned: true
+      location:
+        world: Dropper
+        x: '-47.48442423929735'
+        y: '93.0'
+        z: '17.30000001192093'
+        yaw: '-2.398956298828125'
+        pitch: '0.7500137090682983'
+      owner: slienimon
+      equipment:
+        chestplate:
+          type: LEATHER_CHESTPLATE
+          amount: 1
+          durability: 0
+          mdata: 0
+          meta:
+            armor:
+              color: 5000268
+        leggings:
+          type: LEATHER_LEGGINGS
+          amount: 1
+          durability: 0
+          mdata: 0
+          meta:
+            armor:
+              color: 5000268
+        boots:
+          type: LEATHER_BOOTS
+          amount: 1
+          durability: 0
+          mdata: 0
+          meta:
+            armor:
+              color: 5000268
+    traitnames: type,location,owner,equipment,spawned
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+  '125':
+    name: §2Bob
+    traits:
+      spawned: true
+      location:
+        world: Dropper
+        x: '-40.48697427850953'
+        y: '93.0'
+        z: '27.646251887356534'
+        yaw: '107.8499984741211'
+        pitch: '-3.3000776767730713'
+      owner: slienimon
+      equipment:
+        chestplate:
+          type: LEATHER_CHESTPLATE
+          amount: 1
+          durability: 0
+          mdata: 0
+          meta:
+            armor:
+              color: 14188339
+        boots:
+          type: LEATHER_BOOTS
+          amount: 1
+          durability: 0
+          mdata: 0
+          meta:
+            armor:
+              color: 14188339
+    traitnames: type,location,equipment,owner,spawned
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+  '124':
+    name: §2Tom
+    traits:
+      spawned: true
+      location:
+        world: Dropper
+        x: '-40.4064462404876'
+        y: '93.0'
+        z: '20.545637537185744'
+        yaw: '61.949989318847656'
+        pitch: '-3.900081157684326'
+      owner: slienimon
+    traitnames: type,location,owner,spawned
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+  '123':
+    name: §2Daddy
+    traits:
+      spawned: true
+      location:
+        world: Dropper
+        x: '-51.541732689793925'
+        y: '93.0'
+        z: '17.30000001192093'
+        yaw: '345.74810791015625'
+        pitch: '-7.500007152557373'
+      owner: slienimon
+      equipment:
+        chestplate:
+          type: LEATHER_CHESTPLATE
+          amount: 1
+          durability: 0
+          mdata: 0
+          meta:
+            armor:
+              color: 8375321
+        leggings:
+          type: LEATHER_LEGGINGS
+          amount: 1
+          durability: 0
+          mdata: 0
+          meta:
+            armor:
+              color: 8375321
+        boots:
+          type: LEATHER_BOOTS
+          amount: 1
+          durability: 0
+          mdata: 0
+          meta:
+            armor:
+              color: 8375321
+      lookclose:
+        enabled: false
+        range: '5.0'
+        realisticlooking: false
+    traitnames: type,location,owner,equipment,spawned
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+  '122':
+    name: §4MINER
+    traits:
+      spawned: true
+      location:
+        world: Dropper
+        x: '-43.348635262599586'
+        y: '93.0'
+        z: '17.793939188807467'
+        yaw: '-344.388671875'
+        pitch: '8.699868202209473'
+      owner: slienimon
+      equipment:
+        hand:
+          type: STONE_PICKAXE
+          amount: 1
+          durability: 0
+          mdata: 0
+    traitnames: type,location,owner,equipment,spawned
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+  '119':
+    name: Bella
+    traits:
+      spawned: true
+      location:
+        world: Dropper
+        x: '-204.32738729121107'
+        y: '71.0'
+        z: '66.16507779303134'
+        yaw: '228732.703125'
+        pitch: '0.0'
+      owner: slienimon
+      waypoints:
+        linear:
+          points:
+            '0':
+              location:
+                world: Dropper
+                x: '-204.0'
+                y: '70.0'
+                z: '64.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '1':
+              location:
+                world: Dropper
+                x: '-204.0'
+                y: '70.0'
+                z: '62.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '2':
+              location:
+                world: Dropper
+                x: '-202.0'
+                y: '70.0'
+                z: '63.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '3':
+              location:
+                world: Dropper
+                x: '-205.0'
+                y: '70.0'
+                z: '66.0'
+                yaw: '0.0'
+                pitch: '0.0'
+        provider: linear
+      type: Witch
+      equipment:
+        hand:
+          type: POTION
+          amount: 1
+          durability: 16420
+          mdata: 36
+    traitnames: type,location,waypoints,owner,equipment,spawned
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+  '114':
+    name: §5Notch
+    traits:
+      spawned: true
+      location:
+        world: Dropper
+        x: '11.417685335962537'
+        y: '61.0'
+        z: '6.50850674360341'
+        yaw: '-1.1796655E7'
+        pitch: '0.0'
+      owner: slienimon
+      waypoints:
+        linear:
+          points:
+            '0':
+              location:
+                world: Dropper
+                x: '13.0'
+                y: '60.0'
+                z: '0.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '1':
+              location:
+                world: Dropper
+                x: '11.0'
+                y: '60.0'
+                z: '1.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '2':
+              location:
+                world: Dropper
+                x: '11.0'
+                y: '60.0'
+                z: '6.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '3':
+              location:
+                world: Dropper
+                x: '13.0'
+                y: '60.0'
+                z: '8.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '4':
+              location:
+                world: Dropper
+                x: '15.0'
+                y: '60.0'
+                z: '10.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '5':
+              location:
+                world: Dropper
+                x: '17.0'
+                y: '60.0'
+                z: '12.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '6':
+              location:
+                world: Dropper
+                x: '19.0'
+                y: '60.0'
+                z: '14.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '7':
+              location:
+                world: Dropper
+                x: '24.0'
+                y: '60.0'
+                z: '14.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '8':
+              location:
+                world: Dropper
+                x: '28.0'
+                y: '60.0'
+                z: '15.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '9':
+              location:
+                world: Dropper
+                x: '28.0'
+                y: '60.0'
+                z: '13.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '10':
+              location:
+                world: Dropper
+                x: '25.0'
+                y: '60.0'
+                z: '12.0'
+                yaw: '0.0'
+                pitch: '0.0'
+        provider: linear
+    traitnames: type,location,waypoints,owner,spawned
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+  '108':
+    name: Bradd
+    traits:
+      spawned: true
+      location:
+        world: Dropper
+        x: '-103.30000001192093'
+        y: '81.0'
+        z: '-19.30000001192093'
+        yaw: '142.2004852294922'
+        pitch: '6.599849700927734'
+      owner: slienimon
+      equipment:
+        helmet:
+          type: LEATHER_HELMET
+          amount: 1
+          durability: 0
+          mdata: 0
+          meta:
+            armor:
+              color: 15892389
+    traitnames: type,location,owner,equipment,spawned
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+  '107':
+    name: Daddy
+    traits:
+      spawned: true
+      location:
+        world: Dropper
+        x: '-107.91868696676765'
+        y: '69.0'
+        z: '-12.24540934112754'
+        yaw: '-5403727.5'
+        pitch: '0.0'
+      owner: slienimon
+      waypoints:
+        linear:
+          points:
+            '0':
+              location:
+                world: Dropper
+                x: '-108.0'
+                y: '68.0'
+                z: '-14.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '1':
+              location:
+                world: Dropper
+                x: '-109.0'
+                y: '68.0'
+                z: '-17.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '2':
+              location:
+                world: Dropper
+                x: '-108.0'
+                y: '68.0'
+                z: '-12.0'
+                yaw: '0.0'
+                pitch: '0.0'
+        provider: linear
+      equipment:
+        chestplate:
+          type: LEATHER_CHESTPLATE
+          amount: 1
+          durability: 0
+          mdata: 0
+          meta:
+            armor:
+              color: 8375321
+        leggings:
+          type: LEATHER_LEGGINGS
+          amount: 1
+          durability: 0
+          mdata: 0
+          meta:
+            armor:
+              color: 8375321
+        boots:
+          type: LEATHER_BOOTS
+          amount: 1
+          durability: 0
+          mdata: 0
+          meta:
+            armor:
+              color: 8375321
+    traitnames: type,location,waypoints,equipment,owner,spawned
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+  '105':
+    name: §2KingOfTheHill
+    traits:
+      spawned: true
+      location:
+        world: Dropper
+        x: '-88.67066892478176'
+        y: '69.0'
+        z: '117.30000001192093'
+        yaw: '31.80126953125'
+        pitch: '3.3001818656921387'
+      owner: slienimon
+    traitnames: type,location,owner,spawned
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+  '103':
+    name: '>>Test<<'
+    traits:
+      spawned: true
+      location:
+        world: TestWorld
+        x: '0.8904574635029341'
+        y: '65.0'
+        z: '4.571632808397573'
+        yaw: '-270.1498107910156'
+        pitch: '13.200031280517578'
+      owner: O_o_Fadi_o_O
+    traitnames: type,location,owner,spawned
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+  '101':
+    name: §8>> §4Shop §8<<
+    traits:
+      age:
+        age: 0
+        locked: true
+      spawned: true
+      location:
+        world: PrisonServer
+        x: '-855.2263857329133'
+        y: '9.0'
+        z: '320.51309040519345'
+        yaw: '126.89930725097656'
+        pitch: '0.0'
+      owner: O_o_Fadi_o_O
+      type: Villager
+    traitnames: type,location,age,owner,spawned
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+  '98':
+    name: §2Tommy
+    traits:
+      spawned: true
+      location:
+        world: Dropper
+        x: '58.69999998807908'
+        y: '61.0'
+        z: '30.16042645923551'
+        yaw: '61.050994873046875'
+        pitch: '2.850024700164795'
+      owner: slienimon
+    traitnames: type,location,owner,spawned
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+  '97':
+    name: §2Notch
+    traits:
+      spawned: true
+      location:
+        world: Dropper
+        x: '34.896195342466825'
+        y: '61.0'
+        z: '17.484465360421055'
+        yaw: '1711.57763671875'
+        pitch: '0.0'
+      owner: slienimon
+      waypoints:
+        linear:
+          points:
+            '0':
+              location:
+                world: Dropper
+                x: '30.0'
+                y: '60.0'
+                z: '13.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '1':
+              location:
+                world: Dropper
+                x: '36.0'
+                y: '60.0'
+                z: '10.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '2':
+              location:
+                world: Dropper
+                x: '36.0'
+                y: '60.0'
+                z: '17.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '3':
+              location:
+                world: Dropper
+                x: '33.0'
+                y: '60.0'
+                z: '27.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '4':
+              location:
+                world: Dropper
+                x: '38.0'
+                y: '60.0'
+                z: '33.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '5':
+              location:
+                world: Dropper
+                x: '43.0'
+                y: '60.0'
+                z: '40.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '6':
+              location:
+                world: Dropper
+                x: '43.0'
+                y: '60.0'
+                z: '37.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '7':
+              location:
+                world: Dropper
+                x: '39.0'
+                y: '60.0'
+                z: '37.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '8':
+              location:
+                world: Dropper
+                x: '35.0'
+                y: '60.0'
+                z: '37.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '9':
+              location:
+                world: Dropper
+                x: '35.0'
+                y: '60.0'
+                z: '33.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '10':
+              location:
+                world: Dropper
+                x: '30.0'
+                y: '60.0'
+                z: '32.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '11':
+              location:
+                world: Dropper
+                x: '22.0'
+                y: '60.0'
+                z: '33.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '12':
+              location:
+                world: Dropper
+                x: '21.0'
+                y: '60.0'
+                z: '27.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '13':
+              location:
+                world: Dropper
+                x: '21.0'
+                y: '60.0'
+                z: '22.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '14':
+              location:
+                world: Dropper
+                x: '30.0'
+                y: '60.0'
+                z: '6.0'
+                yaw: '0.0'
+                pitch: '0.0'
+        provider: linear
+      equipment:
+        hand:
+          type: MAP
+          amount: 1
+          durability: 4
+          mdata: 4
+    traitnames: type,location,waypoints,owner,equipment,spawned
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+  '96':
+    name: §2Tom
+    traits:
+      spawned: true
+      location:
+        world: Dropper
+        x: '0.30000001192093073'
+        y: '-1.9423598964406163E7'
+        z: '9.30000001192093'
+        yaw: '-33.14896011352539'
+        pitch: '-1.9499727487564087'
+      owner: slienimon
+    traitnames: type,location,owner,spawned
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+  '150':
+    name: §2King_Slime
+    traits:
+      owner: slienimon
+      slimesize:
+        size: 5
+      spawned: true
+      location:
+        world: Dropper
+        x: '27.756339397301247'
+        y: '102.0'
+        z: '-51.5'
+        yaw: '94.75407409667969'
+        pitch: '0.0'
+      type: Slime
+      lookclose:
+        enabled: false
+        range: '5.0'
+        realisticlooking: false
+    traitnames: slimesize,type,location,owner,spawned
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+  '145':
+    name: §2Dave
+    traits:
+      owner: slienimon
+      spawned: true
+      location:
+        world: Dropper
+        x: '-35.77397013448871'
+        y: '93.0'
+        z: '22.157425613155404'
+        yaw: '67.34994506835938'
+        pitch: '0.0'
+      age:
+        age: 0
+        locked: true
+      type: Villager
+    traitnames: type,location,age,owner,spawned
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+  '140':
+    name: §4Maffia_Boss
+    traits:
+      owner: slienimon
+      spawned: true
+      lookclose:
+        enabled: false
+        range: '5.0'
+        realisticlooking: false
+      location:
+        world: Dropper
+        x: '-37.34952685490456'
+        y: '93.0'
+        z: '20.30000001192092'
+        yaw: '7.994010925292969'
+        pitch: '0.0'
+      equipment:
+        hand:
+          type: GOLD_INGOT
+          amount: 1
+          durability: 0
+          mdata: 0
+        helmet:
+          type: GOLD_HELMET
+          amount: 1
+          durability: 0
+          mdata: 0
+        chestplate:
+          type: DIAMOND_CHESTPLATE
+          amount: 1
+          durability: 0
+          mdata: 0
+        leggings:
+          type: DIAMOND_LEGGINGS
+          amount: 1
+          durability: 0
+          mdata: 0
+        boots:
+          type: DIAMOND_BOOTS
+          amount: 1
+          durability: 0
+          mdata: 0
+      type: Skeleton
+    traitnames: type,location,owner,equipment,spawned
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+  '155':
+    name: Magma cubones
+    traits:
+      slimesize:
+        size: 2
+      spawned: true
+      lookclose:
+        enabled: false
+        range: '5.0'
+        realisticlooking: false
+      location:
+        world: Dropper
+        x: '40.82048249397046'
+        y: '109.0'
+        z: '-55.68799792098217'
+        yaw: '2.9322357177734375'
+        pitch: '0.0'
+      type: LavaSlime
+      owner: slienimon
+    traitnames: slimesize,type,location,owner,spawned
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+  '154':
+    name: §6Heavon Protect
+    traits:
+      spawned: true
+      location:
+        world: Dropper
+        x: '45.10282514086208'
+        y: '109.0'
+        z: '-49.93877425809657'
+        yaw: '-278.5516052246094'
+        pitch: '7.049931049346924'
+      owner: slienimon
+    traitnames: type,location,owner,spawned
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+  '152':
+    name: §6Heavon Protect
+    traits:
+      spawned: true
+      location:
+        world: Dropper
+        x: '44.80367917849515'
+        y: '109.0'
+        z: '-53.153581416272374'
+        yaw: '85.04837799072266'
+        pitch: '-8.250066757202148'
+      owner: slienimon
+    traitnames: type,location,owner,spawned
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+  '160':
+    name: §2Slmie_King
+    traits:
+      spawned: true
+      owner: slienimon
+      location:
+        world: Dropper
+        x: '-35.30000001192092'
+        y: '93.0'
+        z: '26.699999988079078'
+        yaw: '-246.14999389648438'
+        pitch: '0.0'
+      type: Slime
+    traitnames: type,location,owner,spawned
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+  '159':
+    name: §5Slienimon
+    traits:
+      spawned: true
+      waypoints:
+        linear:
+          points:
+            '0':
+              location:
+                world: Dropper
+                x: '34.0'
+                y: '60.0'
+                z: '19.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '1':
+              location:
+                world: Dropper
+                x: '34.0'
+                y: '60.0'
+                z: '25.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '2':
+              location:
+                world: Dropper
+                x: '31.0'
+                y: '60.0'
+                z: '25.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '3':
+              location:
+                world: Dropper
+                x: '28.0'
+                y: '60.0'
+                z: '27.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '4':
+              location:
+                world: Dropper
+                x: '28.0'
+                y: '60.0'
+                z: '31.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '5':
+              location:
+                world: Dropper
+                x: '32.0'
+                y: '60.0'
+                z: '32.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '6':
+              location:
+                world: Dropper
+                x: '35.0'
+                y: '60.0'
+                z: '32.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '7':
+              location:
+                world: Dropper
+                x: '38.0'
+                y: '60.0'
+                z: '31.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '8':
+              location:
+                world: Dropper
+                x: '38.0'
+                y: '60.0'
+                z: '23.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '9':
+              location:
+                world: Dropper
+                x: '38.0'
+                y: '60.0'
+                z: '15.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '10':
+              location:
+                world: Dropper
+                x: '43.0'
+                y: '60.0'
+                z: '15.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '11':
+              location:
+                world: Dropper
+                x: '44.0'
+                y: '60.0'
+                z: '9.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '12':
+              location:
+                world: Dropper
+                x: '43.0'
+                y: '60.0'
+                z: '4.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '13':
+              location:
+                world: Dropper
+                x: '43.0'
+                y: '60.0'
+                z: '0.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '14':
+              location:
+                world: Dropper
+                x: '38.0'
+                y: '60.0'
+                z: '-2.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '15':
+              location:
+                world: Dropper
+                x: '35.0'
+                y: '60.0'
+                z: '1.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '16':
+              location:
+                world: Dropper
+                x: '36.0'
+                y: '60.0'
+                z: '6.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '17':
+              location:
+                world: Dropper
+                x: '36.0'
+                y: '60.0'
+                z: '10.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '18':
+              location:
+                world: Dropper
+                x: '36.0'
+                y: '60.0'
+                z: '17.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '19':
+              location:
+                world: Dropper
+                x: '36.0'
+                y: '60.0'
+                z: '20.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '20':
+              location:
+                world: Dropper
+                x: '36.0'
+                y: '60.0'
+                z: '26.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '21':
+              location:
+                world: Dropper
+                x: '33.0'
+                y: '60.0'
+                z: '28.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '22':
+              location:
+                world: Dropper
+                x: '32.0'
+                y: '60.0'
+                z: '30.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '23':
+              location:
+                world: Dropper
+                x: '35.0'
+                y: '63.0'
+                z: '5.0'
+                yaw: '0.0'
+                pitch: '0.0'
+        provider: linear
+      equipment:
+        hand:
+          type: MAP
+          amount: 1
+          durability: 5
+          mdata: 5
+      owner: slienimon
+      location:
+        world: Dropper
+        x: '36.505453991067355'
+        y: '61.0'
+        z: '23.807886789930464'
+        yaw: '-7358220.0'
+        pitch: '0.0'
+    traitnames: type,waypoints,location,equipment,owner,spawned
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+  '158':
+    name: §2Tom
+    traits:
+      spawned: true
+      owner: slienimon
+      location:
+        world: Dropper
+        x: '3.2217512005473505'
+        y: '64.0'
+        z: '9.014736374843258'
+        yaw: '330.00006103515625'
+        pitch: '-0.4500167667865753'
+    traitnames: type,location,owner,spawned
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+  '157':
+    name: God
+    traits:
+      spawned: true
+      owner: slienimon
+      location:
+        world: Dropper
+        x: '111.50810875242786'
+        y: '131.0'
+        z: '-54.52193249846115'
+        yaw: '53.8541259765625'
+        pitch: '13.200014114379883'
+      poses: {}
+    traitnames: type,location,owner,poses,spawned
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+  '172':
+    name: YamiNoShiroiTora
+    traits:
+      waypoints:
+        linear:
+          points:
+            '0':
+              location:
+                world: Dropper
+                x: '15.0'
+                y: '78.0'
+                z: '211.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '1':
+              location:
+                world: Dropper
+                x: '19.0'
+                y: '78.0'
+                z: '211.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '2':
+              location:
+                world: Dropper
+                x: '19.0'
+                y: '78.0'
+                z: '213.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '3':
+              location:
+                world: Dropper
+                x: '16.0'
+                y: '78.0'
+                z: '213.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '4':
+              location:
+                world: Dropper
+                x: '15.0'
+                y: '78.0'
+                z: '215.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '5':
+              location:
+                world: Dropper
+                x: '17.0'
+                y: '78.0'
+                z: '215.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '6':
+              location:
+                world: Dropper
+                x: '19.0'
+                y: '78.0'
+                z: '215.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '7':
+              location:
+                world: Dropper
+                x: '19.0'
+                y: '78.0'
+                z: '218.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '8':
+              location:
+                world: Dropper
+                x: '19.0'
+                y: '78.0'
+                z: '220.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '9':
+              location:
+                world: Dropper
+                x: '17.0'
+                y: '78.0'
+                z: '220.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '10':
+              location:
+                world: Dropper
+                x: '17.0'
+                y: '78.0'
+                z: '217.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '11':
+              location:
+                world: Dropper
+                x: '15.0'
+                y: '78.0'
+                z: '217.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '12':
+              location:
+                world: Dropper
+                x: '15.0'
+                y: '78.0'
+                z: '220.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '13':
+              location:
+                world: Dropper
+                x: '13.0'
+                y: '78.0'
+                z: '220.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '14':
+              location:
+                world: Dropper
+                x: '13.0'
+                y: '78.0'
+                z: '215.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '15':
+              location:
+                world: Dropper
+                x: '11.0'
+                y: '78.0'
+                z: '215.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '16':
+              location:
+                world: Dropper
+                x: '11.0'
+                y: '78.0'
+                z: '220.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '17':
+              location:
+                world: Dropper
+                x: '9.0'
+                y: '78.0'
+                z: '220.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '18':
+              location:
+                world: Dropper
+                x: '9.0'
+                y: '78.0'
+                z: '213.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '19':
+              location:
+                world: Dropper
+                x: '7.0'
+                y: '78.0'
+                z: '213.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '20':
+              location:
+                world: Dropper
+                x: '5.0'
+                y: '78.0'
+                z: '212.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '21':
+              location:
+                world: Dropper
+                x: '5.0'
+                y: '78.0'
+                z: '216.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '22':
+              location:
+                world: Dropper
+                x: '3.0'
+                y: '78.0'
+                z: '216.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '23':
+              location:
+                world: Dropper
+                x: '3.0'
+                y: '78.0'
+                z: '220.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '24':
+              location:
+                world: Dropper
+                x: '1.0'
+                y: '78.0'
+                z: '220.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '25':
+              location:
+                world: Dropper
+                x: '1.0'
+                y: '78.0'
+                z: '217.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '26':
+              location:
+                world: Dropper
+                x: '-3.0'
+                y: '78.0'
+                z: '217.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '27':
+              location:
+                world: Dropper
+                x: '-3.0'
+                y: '78.0'
+                z: '220.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '28':
+              location:
+                world: Dropper
+                x: '-1.0'
+                y: '78.0'
+                z: '219.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '29':
+              location:
+                world: Dropper
+                x: '14.0'
+                y: '79.0'
+                z: '211.0'
+                yaw: '0.0'
+                pitch: '0.0'
+        provider: linear
+      location:
+        world: Dropper
+        x: '17.69999998807907'
+        y: '79.0'
+        z: '220.38281024136032'
+        yaw: '-5474.46435546875'
+        pitch: '0.0'
+      owner: slienimon
+      spawned: true
+    traitnames: type,waypoints,location,owner,spawned
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+  '167':
+    name: Molly
+    traits:
+      waypoints:
+        linear:
+          points:
+            '0':
+              location:
+                world: Dropper
+                x: '8.0'
+                y: '78.0'
+                z: '191.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '1':
+              location:
+                world: Dropper
+                x: '6.0'
+                y: '78.0'
+                z: '193.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '2':
+              location:
+                world: Dropper
+                x: '6.0'
+                y: '78.0'
+                z: '196.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '3':
+              location:
+                world: Dropper
+                x: '8.0'
+                y: '78.0'
+                z: '197.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '4':
+              location:
+                world: Dropper
+                x: '11.0'
+                y: '78.0'
+                z: '197.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '5':
+              location:
+                world: Dropper
+                x: '12.0'
+                y: '78.0'
+                z: '194.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '6':
+              location:
+                world: Dropper
+                x: '12.0'
+                y: '78.0'
+                z: '191.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '7':
+              location:
+                world: Dropper
+                x: '10.0'
+                y: '78.0'
+                z: '191.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '8':
+              location:
+                world: Dropper
+                x: '12.0'
+                y: '78.0'
+                z: '190.0'
+                yaw: '0.0'
+                pitch: '0.0'
+        provider: linear
+      location:
+        world: Dropper
+        x: '12.420029866705034'
+        y: '79.0'
+        z: '193.8837162682527'
+        yaw: '-304018.09375'
+        pitch: '0.0'
+      owner: slienimon
+      spawned: true
+    traitnames: type,location,waypoints,owner,spawned
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+  '166':
+    name: §3Maxim
+    traits:
+      waypoints:
+        linear:
+          points:
+            '0':
+              location:
+                world: Dropper
+                x: '13.0'
+                y: '78.0'
+                z: '152.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '1':
+              location:
+                world: Dropper
+                x: '13.0'
+                y: '78.0'
+                z: '150.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '2':
+              location:
+                world: Dropper
+                x: '11.0'
+                y: '78.0'
+                z: '147.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '3':
+              location:
+                world: Dropper
+                x: '8.0'
+                y: '78.0'
+                z: '145.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '4':
+              location:
+                world: Dropper
+                x: '8.0'
+                y: '78.0'
+                z: '141.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '5':
+              location:
+                world: Dropper
+                x: '8.0'
+                y: '78.0'
+                z: '136.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '6':
+              location:
+                world: Dropper
+                x: '-3.0'
+                y: '78.0'
+                z: '135.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '7':
+              location:
+                world: Dropper
+                x: '-3.0'
+                y: '78.0'
+                z: '133.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '8':
+              location:
+                world: Dropper
+                x: '-3.0'
+                y: '78.0'
+                z: '135.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '9':
+              location:
+                world: Dropper
+                x: '0.0'
+                y: '78.0'
+                z: '135.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '10':
+              location:
+                world: Dropper
+                x: '3.0'
+                y: '78.0'
+                z: '135.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '11':
+              location:
+                world: Dropper
+                x: '8.0'
+                y: '78.0'
+                z: '135.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '12':
+              location:
+                world: Dropper
+                x: '8.0'
+                y: '78.0'
+                z: '143.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '13':
+              location:
+                world: Dropper
+                x: '10.0'
+                y: '78.0'
+                z: '147.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '14':
+              location:
+                world: Dropper
+                x: '14.0'
+                y: '78.0'
+                z: '152.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '15':
+              location:
+                world: Dropper
+                x: '15.0'
+                y: '78.0'
+                z: '148.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '16':
+              location:
+                world: Dropper
+                x: '12.0'
+                y: '78.0'
+                z: '145.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '17':
+              location:
+                world: Dropper
+                x: '12.0'
+                y: '78.0'
+                z: '142.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '18':
+              location:
+                world: Dropper
+                x: '12.0'
+                y: '78.0'
+                z: '138.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '19':
+              location:
+                world: Dropper
+                x: '12.0'
+                y: '78.0'
+                z: '135.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '20':
+              location:
+                world: Dropper
+                x: '-3.0'
+                y: '79.0'
+                z: '136.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '21':
+              location:
+                world: Dropper
+                x: '8.0'
+                y: '78.0'
+                z: '152.0'
+                yaw: '0.0'
+                pitch: '0.0'
+        provider: linear
+      location:
+        world: Dropper
+        x: '12.500052333323692'
+        y: '79.0'
+        z: '144.21456332316055'
+        yaw: '7920.001953125'
+        pitch: '0.0'
+      owner: slienimon
+      spawned: true
+    traitnames: type,waypoints,location,owner,spawned
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+  '165':
+    name: §6Lisa
+    traits:
+      location:
+        world: Dropper
+        x: '-23.49953021953987'
+        y: '79.0'
+        z: '144.0390823350661'
+        yaw: '0.05686187744140625'
+        pitch: '0.0'
+      owner: slienimon
+      spawned: true
+      waypoints:
+        linear:
+          points:
+            '0':
+              location:
+                world: Dropper
+                x: '-34.0'
+                y: '78.0'
+                z: '132.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '1':
+              location:
+                world: Dropper
+                x: '-34.0'
+                y: '78.0'
+                z: '129.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '2':
+              location:
+                world: Dropper
+                x: '-38.0'
+                y: '78.0'
+                z: '129.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '3':
+              location:
+                world: Dropper
+                x: '-40.0'
+                y: '78.0'
+                z: '129.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '4':
+              location:
+                world: Dropper
+                x: '-40.0'
+                y: '78.0'
+                z: '131.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '5':
+              location:
+                world: Dropper
+                x: '-38.0'
+                y: '78.0'
+                z: '132.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '6':
+              location:
+                world: Dropper
+                x: '-38.0'
+                y: '78.0'
+                z: '135.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '7':
+              location:
+                world: Dropper
+                x: '-38.0'
+                y: '78.0'
+                z: '138.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '8':
+              location:
+                world: Dropper
+                x: '-40.0'
+                y: '78.0'
+                z: '135.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '9':
+              location:
+                world: Dropper
+                x: '-41.0'
+                y: '78.0'
+                z: '133.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '10':
+              location:
+                world: Dropper
+                x: '-40.0'
+                y: '78.0'
+                z: '136.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '11':
+              location:
+                world: Dropper
+                x: '-38.0'
+                y: '78.0'
+                z: '136.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '12':
+              location:
+                world: Dropper
+                x: '-38.0'
+                y: '78.0'
+                z: '131.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '13':
+              location:
+                world: Dropper
+                x: '-40.0'
+                y: '78.0'
+                z: '129.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '14':
+              location:
+                world: Dropper
+                x: '-37.0'
+                y: '78.0'
+                z: '129.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '15':
+              location:
+                world: Dropper
+                x: '-34.0'
+                y: '78.0'
+                z: '131.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '16':
+              location:
+                world: Dropper
+                x: '-34.0'
+                y: '78.0'
+                z: '134.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '17':
+              location:
+                world: Dropper
+                x: '-32.0'
+                y: '78.0'
+                z: '132.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '18':
+              location:
+                world: Dropper
+                x: '-32.0'
+                y: '78.0'
+                z: '128.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '19':
+              location:
+                world: Dropper
+                x: '-28.0'
+                y: '78.0'
+                z: '128.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '20':
+              location:
+                world: Dropper
+                x: '-27.0'
+                y: '78.0'
+                z: '132.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '21':
+              location:
+                world: Dropper
+                x: '-26.0'
+                y: '78.0'
+                z: '136.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '22':
+              location:
+                world: Dropper
+                x: '-26.0'
+                y: '78.0'
+                z: '139.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '23':
+              location:
+                world: Dropper
+                x: '-24.0'
+                y: '78.0'
+                z: '143.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '24':
+              location:
+                world: Dropper
+                x: '-20.0'
+                y: '78.0'
+                z: '144.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '25':
+              location:
+                world: Dropper
+                x: '-13.0'
+                y: '78.0'
+                z: '144.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '26':
+              location:
+                world: Dropper
+                x: '-9.0'
+                y: '78.0'
+                z: '144.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '27':
+              location:
+                world: Dropper
+                x: '-7.0'
+                y: '78.0'
+                z: '146.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '28':
+              location:
+                world: Dropper
+                x: '-33.0'
+                y: '78.0'
+                z: '134.0'
+                yaw: '0.0'
+                pitch: '0.0'
+        provider: linear
+    traitnames: type,waypoints,location,owner,spawned
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+  '164':
+    name: §1Marion
+    traits:
+      waypoints:
+        linear:
+          points:
+            '0':
+              location:
+                world: Dropper
+                x: '-26.0'
+                y: '78.0'
+                z: '148.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '1':
+              location:
+                world: Dropper
+                x: '-23.0'
+                y: '78.0'
+                z: '148.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '2':
+              location:
+                world: Dropper
+                x: '-22.0'
+                y: '78.0'
+                z: '146.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '3':
+              location:
+                world: Dropper
+                x: '-17.0'
+                y: '78.0'
+                z: '146.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '4':
+              location:
+                world: Dropper
+                x: '-10.0'
+                y: '78.0'
+                z: '146.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '5':
+              location:
+                world: Dropper
+                x: '-8.0'
+                y: '78.0'
+                z: '146.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '6':
+              location:
+                world: Dropper
+                x: '-8.0'
+                y: '78.0'
+                z: '147.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '7':
+              location:
+                world: Dropper
+                x: '-4.0'
+                y: '78.0'
+                z: '148.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '8':
+              location:
+                world: Dropper
+                x: '-2.0'
+                y: '78.0'
+                z: '150.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '9':
+              location:
+                world: Dropper
+                x: '2.0'
+                y: '78.0'
+                z: '154.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '10':
+              location:
+                world: Dropper
+                x: '1.0'
+                y: '78.0'
+                z: '158.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '11':
+              location:
+                world: Dropper
+                x: '-4.0'
+                y: '78.0'
+                z: '158.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '12':
+              location:
+                world: Dropper
+                x: '-7.0'
+                y: '78.0'
+                z: '158.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '13':
+              location:
+                world: Dropper
+                x: '-7.0'
+                y: '78.0'
+                z: '161.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '14':
+              location:
+                world: Dropper
+                x: '-9.0'
+                y: '78.0'
+                z: '163.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '15':
+              location:
+                world: Dropper
+                x: '-11.0'
+                y: '78.0'
+                z: '165.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '16':
+              location:
+                world: Dropper
+                x: '-11.0'
+                y: '78.0'
+                z: '167.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '17':
+              location:
+                world: Dropper
+                x: '-11.0'
+                y: '78.0'
+                z: '169.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '18':
+              location:
+                world: Dropper
+                x: '-9.0'
+                y: '78.0'
+                z: '166.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '19':
+              location:
+                world: Dropper
+                x: '-7.0'
+                y: '78.0'
+                z: '168.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '20':
+              location:
+                world: Dropper
+                x: '-4.0'
+                y: '78.0'
+                z: '170.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '21':
+              location:
+                world: Dropper
+                x: '-3.0'
+                y: '78.0'
+                z: '174.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '22':
+              location:
+                world: Dropper
+                x: '-3.0'
+                y: '78.0'
+                z: '178.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '23':
+              location:
+                world: Dropper
+                x: '-5.0'
+                y: '78.0'
+                z: '180.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '24':
+              location:
+                world: Dropper
+                x: '-8.0'
+                y: '78.0'
+                z: '179.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '25':
+              location:
+                world: Dropper
+                x: '-13.0'
+                y: '78.0'
+                z: '179.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '26':
+              location:
+                world: Dropper
+                x: '-16.0'
+                y: '78.0'
+                z: '177.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '27':
+              location:
+                world: Dropper
+                x: '-16.0'
+                y: '78.0'
+                z: '180.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '28':
+              location:
+                world: Dropper
+                x: '-15.0'
+                y: '78.0'
+                z: '180.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '29':
+              location:
+                world: Dropper
+                x: '-15.0'
+                y: '78.0'
+                z: '182.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '30':
+              location:
+                world: Dropper
+                x: '-18.0'
+                y: '78.0'
+                z: '183.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '31':
+              location:
+                world: Dropper
+                x: '-21.0'
+                y: '78.0'
+                z: '185.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '32':
+              location:
+                world: Dropper
+                x: '-21.0'
+                y: '78.0'
+                z: '190.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '33':
+              location:
+                world: Dropper
+                x: '-23.0'
+                y: '78.0'
+                z: '191.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '34':
+              location:
+                world: Dropper
+                x: '-28.0'
+                y: '78.0'
+                z: '146.0'
+                yaw: '0.0'
+                pitch: '0.0'
+        provider: linear
+      location:
+        world: Dropper
+        x: '-5.615255122181693'
+        y: '79.0'
+        z: '179.41833656235409'
+        yaw: '85.6234130859375'
+        pitch: '0.0'
+      owner: slienimon
+      spawned: true
+    traitnames: type,waypoints,location,owner,spawned
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+  '163':
+    name: §2Gilles
+    traits:
+      waypoints:
+        linear:
+          points:
+            '0':
+              location:
+                world: Dropper
+                x: '2.0'
+                y: '78.0'
+                z: '160.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '1':
+              location:
+                world: Dropper
+                x: '4.0'
+                y: '78.0'
+                z: '157.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '2':
+              location:
+                world: Dropper
+                x: '8.0'
+                y: '78.0'
+                z: '156.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '3':
+              location:
+                world: Dropper
+                x: '13.0'
+                y: '78.0'
+                z: '157.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '4':
+              location:
+                world: Dropper
+                x: '13.0'
+                y: '78.0'
+                z: '161.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '5':
+              location:
+                world: Dropper
+                x: '17.0'
+                y: '78.0'
+                z: '161.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '6':
+              location:
+                world: Dropper
+                x: '19.0'
+                y: '78.0'
+                z: '164.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '7':
+              location:
+                world: Dropper
+                x: '19.0'
+                y: '78.0'
+                z: '167.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '8':
+              location:
+                world: Dropper
+                x: '17.0'
+                y: '78.0'
+                z: '166.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '9':
+              location:
+                world: Dropper
+                x: '16.0'
+                y: '78.0'
+                z: '163.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '10':
+              location:
+                world: Dropper
+                x: '13.0'
+                y: '78.0'
+                z: '164.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '11':
+              location:
+                world: Dropper
+                x: '13.0'
+                y: '78.0'
+                z: '167.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '12':
+              location:
+                world: Dropper
+                x: '15.0'
+                y: '78.0'
+                z: '166.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '13':
+              location:
+                world: Dropper
+                x: '13.0'
+                y: '78.0'
+                z: '170.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '14':
+              location:
+                world: Dropper
+                x: '16.0'
+                y: '78.0'
+                z: '172.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '15':
+              location:
+                world: Dropper
+                x: '17.0'
+                y: '78.0'
+                z: '175.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '16':
+              location:
+                world: Dropper
+                x: '18.0'
+                y: '78.0'
+                z: '173.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '17':
+              location:
+                world: Dropper
+                x: '-2.0'
+                y: '78.0'
+                z: '160.0'
+                yaw: '0.0'
+                pitch: '0.0'
+        provider: linear
+      location:
+        world: Dropper
+        x: '18.531024043647484'
+        y: '79.0'
+        z: '173.5005895316532'
+        yaw: '-633421.8125'
+        pitch: '0.0'
+      owner: slienimon
+      spawned: true
+    traitnames: type,waypoints,location,owner,spawned
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+  '162':
+    name: §4Prisoner
+    traits:
+      location:
+        world: Dropper
+        x: '-16.35743696979184'
+        y: '79.0'
+        z: '168.52880841913583'
+        yaw: '89.694091796875'
+        pitch: '-1.5767812146805227E-4'
+      owner: slienimon
+      spawned: true
+    traitnames: type,location,owner,spawned
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+  '175':
+    name: §4Maffia_boss
+    traits:
+      type: Skeleton
+      owner: slienimon
+      location:
+        world: Dropper
+        x: '-5.300000011920913'
+        y: '79.0'
+        z: '122.31311521608777'
+        yaw: '31.051620483398438'
+        pitch: '0.0'
+      equipment:
+        hand:
+          type: GOLD_INGOT
+          amount: 1
+          durability: 0
+          mdata: 0
+        chestplate:
+          type: DIAMOND_CHESTPLATE
+          amount: 1
+          durability: 0
+          mdata: 0
+        leggings:
+          type: DIAMOND_LEGGINGS
+          amount: 1
+          durability: 0
+          mdata: 0
+        boots:
+          type: DIAMOND_BOOTS
+          amount: 1
+          durability: 0
+          mdata: 0
+      spawned: true
+    traitnames: type,location,owner,equipment,spawned
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+  '182':
+    name: §4Factions
+    traits:
+      type: EnderDragon
+      spawned: true
+      owner: O_o_Fadi_o_O
+      location:
+        world: Factions
+        x: '234.5'
+        y: '256.0'
+        z: '277.5'
+        yaw: '-270.59930419921875'
+        pitch: '90.0'
+    traitnames: type,location,owner,spawned
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+  '223':
+    name: §8>> §4Shop §8<<
+    traits:
+      age:
+        age: 0
+        locked: true
+      location:
+        world: PrisonServer
+        x: '-867.6779682128606'
+        y: '10.0'
+        z: '261.53589758554114'
+        yaw: '-178.5006561279297'
+        pitch: '0.0'
+      type: Villager
+      spawned: true
+      owner: O_o_Fadi_o_O
+    traitnames: type,location,age,owner,spawned
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+  '222':
+    name: §8>> §4Shop §8<<
+    traits:
+      age:
+        age: 0
+        locked: true
+      location:
+        world: PrisonServer
+        x: '-906.5855333312222'
+        y: '10.0'
+        z: '260.0073985245545'
+        yaw: '90.749267578125'
+        pitch: '0.0'
+      type: Villager
+      spawned: true
+      owner: O_o_Fadi_o_O
+    traitnames: type,location,age,owner,spawned
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+  '221':
+    name: §8>> §4Shop §8<<
+    traits:
+      age:
+        age: 0
+        locked: true
+      location:
+        world: PrisonServer
+        x: '-927.0735184580302'
+        y: '10.0'
+        z: '315.3074113820422'
+        yaw: '181.34912109375'
+        pitch: '0.0'
+      type: Villager
+      spawned: true
+      owner: O_o_Fadi_o_O
+    traitnames: type,location,age,owner,spawned
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+  '220':
+    name: §8>> §4Shop §8<<
+    traits:
+      age:
+        age: 0
+        locked: true
+      location:
+        world: PrisonServer
+        x: '-918.0097704865778'
+        y: '9.0'
+        z: '364.3439270975553'
+        yaw: '180.29925537109375'
+        pitch: '0.0'
+      type: Villager
+      spawned: true
+      owner: O_o_Fadi_o_O
+    traitnames: type,location,age,owner,spawned
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+  '219':
+    name: §8>> §4Shop §8<<
+    traits:
+      age:
+        age: 0
+        locked: true
+      location:
+        world: PrisonServer
+        x: '-762.9696933547089'
+        y: '7.0'
+        z: '344.5196844711718'
+        yaw: '180.89947509765625'
+        pitch: '0.0'
+      type: Villager
+      spawned: true
+      owner: O_o_Fadi_o_O
+    traitnames: type,location,age,owner,spawned
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+  '218':
+    name: §8>> §4Shop §8<<
+    traits:
+      age:
+        age: 0
+        locked: true
+      location:
+        world: PrisonServer
+        x: '-816.4517369521683'
+        y: '8.0'
+        z: '391.9885968358172'
+        yaw: '271.49920654296875'
+        pitch: '0.0'
+      type: Villager
+      spawned: true
+      owner: O_o_Fadi_o_O
+    traitnames: type,location,age,owner,spawned
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+  '217':
+    name: §8>> §4Shop §8<<
+    traits:
+      age:
+        age: 0
+        locked: true
+      location:
+        world: PrisonServer
+        x: '-873.65348405485'
+        y: '8.0'
+        z: '417.9377141375436'
+        yaw: '89.69921875'
+        pitch: '0.0'
+      type: Villager
+      spawned: true
+      owner: O_o_Fadi_o_O
+    traitnames: type,location,age,owner,spawned
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+  '215':
+    name: §4Thomas
+    traits:
+      location:
+        world: Dropper
+        x: '-18.012499988079078'
+        y: '79.0'
+        z: '223.2087533731271'
+        yaw: '-97.0501708984375'
+        pitch: '6.4498138427734375'
+      spawned: true
+      owner: slienimon
+    traitnames: type,location,owner,spawned
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+  '214':
+    name: §4Bob
+    traits:
+      location:
+        world: Dropper
+        x: '-27.482183802729164'
+        y: '48.0'
+        z: '57.54039001903374'
+        yaw: '-91.05033111572266'
+        pitch: '6.74982213973999'
+      spawned: true
+      owner: slienimon
+    traitnames: type,location,owner,spawned
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+  '213':
+    name: §4MINER
+    traits:
+      equipment:
+        hand:
+          type: STONE_PICKAXE
+          amount: 1
+          durability: 0
+          mdata: 0
+      location:
+        world: Dropper
+        x: '-63.41326737961776'
+        y: '48.0'
+        z: '19.67743142230055'
+        yaw: '53.099735260009766'
+        pitch: '-1.9081830396316946E-4'
+      spawned: true
+      owner: slienimon
+    traitnames: type,location,owner,equipment,spawned
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+  '212':
+    name: §4MINER
+    traits:
+      equipment:
+        hand:
+          type: STONE_PICKAXE
+          amount: 1
+          durability: 0
+          mdata: 0
+      location:
+        world: Dropper
+        x: '-73.22372645733414'
+        y: '48.0'
+        z: '18.590149482733025'
+        yaw: '-60.30024719238281'
+        pitch: '-3.9001946449279785'
+      spawned: true
+      owner: slienimon
+    traitnames: type,location,equipment,owner,spawned
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+  '211':
+    name: §4MINER
+    traits:
+      equipment:
+        hand:
+          type: STONE_PICKAXE
+          amount: 1
+          durability: 0
+          mdata: 0
+      location:
+        world: Dropper
+        x: '-73.77450143185276'
+        y: '48.0'
+        z: '23.449235806625392'
+        yaw: '-96.90023803710938'
+        pitch: '1.3498047590255737'
+      spawned: true
+      owner: slienimon
+    traitnames: type,location,equipment,owner,spawned
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+  '210':
+    name: §4Maffia Boss
+    traits:
+      equipment:
+        hand:
+          type: GOLD_INGOT
+          amount: 1
+          durability: 0
+          mdata: 0
+        chestplate:
+          type: DIAMOND_CHESTPLATE
+          amount: 1
+          durability: 0
+          mdata: 0
+        leggings:
+          type: DIAMOND_LEGGINGS
+          amount: 1
+          durability: 0
+          mdata: 0
+        boots:
+          type: DIAMOND_BOOTS
+          amount: 1
+          durability: 0
+          mdata: 0
+      location:
+        world: Dropper
+        x: '-102.44198584644538'
+        y: '52.0'
+        z: '42.33557562786771'
+        yaw: '280.7998352050781'
+        pitch: '0.0'
+      type: Skeleton
+      spawned: true
+      owner: slienimon
+    traitnames: type,location,equipment,owner,spawned
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+  '207':
+    name: §2KingOfTheHill
+    traits:
+      location:
+        world: Dropper
+        x: '-71.595050307129'
+        y: '48.0'
+        z: '59.52630128342563'
+        yaw: '-147.60032653808594'
+        pitch: '1.6498799324035645'
+      spawned: true
+      owner: slienimon
+    traitnames: type,location,owner,spawned
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+  '206':
+    name: §4Witch
+    traits:
+      location:
+        world: Dropper
+        x: '-55.54380436388016'
+        y: '48.0'
+        z: '56.66869819383408'
+        yaw: '-265.650390625'
+        pitch: '0.0'
+      type: Witch
+      spawned: true
+      owner: slienimon
+    traitnames: type,location,owner,spawned
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+  '205':
+    name: §4Technician
+    traits:
+      location:
+        world: Dropper
+        x: '-46.00153587880898'
+        y: '52.0'
+        z: '55.30000001192093'
+        yaw: '-14.250285148620605'
+        pitch: '1.6499032974243164'
+      spawned: true
+      owner: slienimon
+    traitnames: type,location,owner,spawned
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+  '204':
+    name: §4Technician
+    traits:
+      location:
+        world: Dropper
+        x: '-45.699999988079036'
+        y: '48.0'
+        z: '61.43414130462139'
+        yaw: '-186.30030822753906'
+        pitch: '3.4499008655548096'
+      spawned: true
+      owner: slienimon
+    traitnames: type,location,owner,spawned
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+  '203':
+    name: §4Stuward
+    traits:
+      location:
+        world: Dropper
+        x: '-39.6234043977193'
+        y: '48.0'
+        z: '40.225034378128704'
+        yaw: '-5.09993839263916'
+        pitch: '3.2999744415283203'
+      spawned: true
+      owner: slienimon
+    traitnames: type,location,owner,spawned
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+  '202':
+    name: §2Bradd
+    traits:
+      equipment:
+        helmet:
+          type: LEATHER_HELMET
+          amount: 1
+          durability: 0
+          mdata: 0
+          meta:
+            armor:
+              color: 15892389
+      location:
+        world: Dropper
+        x: '-51.0153958224875'
+        y: '52.0'
+        z: '22.142762222738366'
+        yaw: '178.199951171875'
+        pitch: '0.4500756561756134'
+      spawned: true
+      owner: slienimon
+    traitnames: type,location,equipment,owner,spawned
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+  '201':
+    name: §2Daddy
+    traits:
+      equipment:
+        chestplate:
+          type: LEATHER_CHESTPLATE
+          amount: 1
+          durability: 0
+          mdata: 0
+          meta:
+            armor:
+              color: 8375321
+        leggings:
+          type: LEATHER_LEGGINGS
+          amount: 1
+          durability: 0
+          mdata: 0
+          meta:
+            armor:
+              color: 8375321
+        boots:
+          type: LEATHER_BOOTS
+          amount: 1
+          durability: 0
+          mdata: 0
+          meta:
+            armor:
+              color: 8375321
+      location:
+        world: Dropper
+        x: '-50.39149622737949'
+        y: '48.0'
+        z: '17.699999988079064'
+        yaw: '-353.4000549316406'
+        pitch: '4.9500603675842285'
+      spawned: true
+      owner: slienimon
+    traitnames: type,location,equipment,owner,spawned
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+  '199':
+    name: §6MacDonalds
+    traits:
+      location:
+        world: Dropper
+        x: '-29.23972778398521'
+        y: '47.0'
+        z: '43.30974865332246'
+        yaw: '-179.70013427734375'
+        pitch: '1.8000415563583374'
+      spawned: true
+      owner: slienimon
+    traitnames: type,location,owner,spawned
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+  '198':
+    name: §6MacDonalds
+    traits:
+      location:
+        world: Dropper
+        x: '-31.30000001192093'
+        y: '47.0'
+        z: '40.53078225554603'
+        yaw: '-101.55029296875'
+        pitch: '3.6000406742095947'
+      spawned: true
+      owner: slienimon
+    traitnames: type,location,owner,spawned
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+  '197':
+    name: §6MacDonalds
+    traits:
+      location:
+        world: Dropper
+        x: '-31.300000011920925'
+        y: '47.0'
+        z: '38.365096019176825'
+        yaw: '-99.600341796875'
+        pitch: '3.3000407218933105'
+      spawned: true
+      owner: slienimon
+    traitnames: type,location,owner,spawned
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+  '194':
+    name: §2Tommy
+    traits:
+      location:
+        world: Dropper
+        x: '-29.699999988079057'
+        y: '-5223792.6025672415'
+        z: '21.300000011920922'
+        yaw: '-166.64990234375'
+        pitch: '8.40002155303955'
+      spawned: true
+      owner: slienimon
+    traitnames: type,location,owner,spawned
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+  '193':
+    name: §2Tom
+    traits:
+      location:
+        world: Dropper
+        x: '-29.488990162771426'
+        y: '-5223792.6025672415'
+        z: '19.508448650632584'
+        yaw: '-30.45050048828125'
+        pitch: '7.2000532150268555'
+      spawned: true
+      owner: slienimon
+    traitnames: type,location,owner,spawned
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+  '224':
+    name: §4Thief
+    traits:
+      spawned: true
+      location:
+        world: Dropper
+        x: '-102.69999998807907'
+        y: '52.0'
+        z: '38.437431043096275'
+        yaw: '228.00115966796875'
+        pitch: '1.4998067617416382'
+      owner: slienimon
+    traitnames: type,location,owner,spawned
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+  '231':
+    name: §4witch
+    traits:
+      owner: slienimon
+      location:
+        world: Dropper
+        x: '-37.30000001192093'
+        y: '93.0'
+        z: '27.69999998807907'
+        yaw: '-204.6000213623047'
+        pitch: '0.0'
+      spawned: true
+      type: Witch
+    traitnames: type,location,owner,spawned
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+  '230':
+    name: §6Scientist
+    traits:
+      owner: slienimon
+      location:
+        world: Dropper
+        x: '-48.58042624548379'
+        y: '40.0'
+        z: '83.69999998807907'
+        yaw: '222.9000244140625'
+        pitch: '6.599958419799805'
+      spawned: true
+    traitnames: type,location,owner,spawned
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+  '229':
+    name: §2Dave
+    traits:
+      owner: slienimon
+      age:
+        age: 0
+        locked: true
+      location:
+        world: Dropper
+        x: '-34.199015146604744'
+        y: '40.0'
+        z: '81.38549585280231'
+        yaw: '87.4503173828125'
+        pitch: '0.0'
+      spawned: true
+      type: Villager
+    traitnames: type,location,age,owner,spawned
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+  '227':
+    name: §2Mother
+    traits:
+      owner: slienimon
+      age:
+        age: 0
+        locked: true
+      location:
+        world: Dropper
+        x: '-99.69999998807909'
+        y: '47.0'
+        z: '60.69999998807906'
+        yaw: '-167.1002197265625'
+        pitch: '0.0'
+      spawned: true
+      type: Villager
+    traitnames: type,location,age,owner,spawned
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+  '226':
+    name: §2Thomas
+    traits:
+      owner: slienimon
+      age:
+        age: -5
+        locked: true
+      location:
+        world: Dropper
+        x: '-127.61928844087141'
+        y: '-3.312133185332765E8'
+        z: '29.305759925706383'
+        yaw: '131.84976196289062'
+        pitch: '0.0'
+      spawned: true
+      type: Villager
+    traitnames: type,location,age,owner,spawned
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+  '257':
+    name: §8>§4Prison§8<
+    traits:
+      spawned: true
+      location:
+        world: Hub
+        x: '-14.327944186179995'
+        y: '67.0'
+        z: '0.578379012811219'
+        yaw: '-90.30670166015625'
+        pitch: '8.549996376037598'
+      owner: O_o_Fadi_o_O
+      equipment:
+        hand:
+          type: DIAMOND_PICKAXE
+          amount: 1
+          durability: 0
+          mdata: 0
+          meta: {}
+          enchantments:
+            DIG_SPEED: 1
+        chestplate:
+          type: DIAMOND_CHESTPLATE
+          amount: 1
+          durability: 0
+          mdata: 0
+    traitnames: type,location,owner,equipment,spawned
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+  '256':
+    name: §8>§aSurvival§8<
+    traits:
+      spawned: true
+      location:
+        world: Hub
+        x: '0.5188267047666775'
+        y: '67.0'
+        z: '-14.359615294885401'
+        yaw: '-0.756744384765625'
+        pitch: '6.299996376037598'
+      owner: O_o_Fadi_o_O
+      equipment:
+        hand:
+          type: STONE_HOE
+          amount: 1
+          durability: 0
+          mdata: 0
+        helmet:
+          type: IRON_HELMET
+          amount: 1
+          durability: 0
+          mdata: 0
+        chestplate:
+          type: IRON_CHESTPLATE
+          amount: 1
+          durability: 0
+          mdata: 0
+        leggings:
+          type: IRON_LEGGINGS
+          amount: 1
+          durability: 0
+          mdata: 0
+        boots:
+          type: IRON_BOOTS
+          amount: 1
+          durability: 0
+          mdata: 0
+    traitnames: type,location,equipment,owner,spawned
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+  '253':
+    name: §8>§5SkyBlock§8<
+    traits:
+      spawned: true
+      location:
+        world: Hub
+        x: '0.4614698466736922'
+        y: '67.0'
+        z: '15.292733601885224'
+        yaw: '179.84326171875'
+        pitch: '9.000020980834961'
+      owner: O_o_Fadi_o_O
+      equipment:
+        hand:
+          type: CACTUS
+          amount: 1
+          durability: 0
+          mdata: 0
+        boots:
+          type: LEATHER_BOOTS
+          amount: 1
+          durability: 0
+          mdata: 0
+    traitnames: type,location,equipment,owner,spawned
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+  '250':
+    name: §8>§cKitPvP§8<
+    traits:
+      spawned: true
+      location:
+        world: Hub
+        x: '15.283128028681617'
+        y: '67.0'
+        z: '0.42372688365066324'
+        yaw: '91.49325561523438'
+        pitch: '5.249999046325684'
+      owner: O_o_Fadi_o_O
+      equipment:
+        hand:
+          type: IRON_SWORD
+          amount: 1
+          durability: 0
+          mdata: 0
+          meta:
+            lore:
+              '0': §bO_o_Fadi_o_O's Sword
+            displayname: §8[§b§lKnight§8]
+        helmet:
+          type: CHAINMAIL_HELMET
+          amount: 1
+          durability: 0
+          mdata: 0
+          meta:
+            lore:
+              '0': §bO_o_Fadi_o_O's Helmet
+            displayname: §8[§b§lKnight§8]
+        chestplate:
+          type: CHAINMAIL_CHESTPLATE
+          amount: 1
+          durability: 0
+          mdata: 0
+          meta:
+            lore:
+              '0': §bO_o_Fadi_o_O's Chestplate
+            displayname: §8[§b§lKnight§8]
+        leggings:
+          type: CHAINMAIL_LEGGINGS
+          amount: 1
+          durability: 0
+          mdata: 0
+          meta:
+            lore:
+              '0': §bO_o_Fadi_o_O's Leggings
+            displayname: §8[§b§lKnight§8]
+        boots:
+          type: CHAINMAIL_BOOTS
+          amount: 1
+          durability: 0
+          mdata: 0
+          meta:
+            lore:
+              '0': §bO_o_Fadi_o_O's Boots
+            displayname: §8[§b§lKnight§8]
+    traitnames: type,location,owner,equipment,spawned
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+  '278':
+    name: §8>>§4Shop§8<<
+    traits:
+      location:
+        world: SkyBlockWorld
+        x: '19.30000001192093'
+        y: '65.0'
+        z: '0.5060645585625405'
+        yaw: '88.20447540283203'
+        pitch: '0.0'
+      age:
+        age: 0
+        locked: true
+      owner: O_o_Fadi_o_O
+      spawned: true
+      type: Villager
+    traitnames: type,location,age,owner,spawned
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+  '295':
+    name: §cTutorial
+    traits:
+      spawned: true
+      owner: O_o_Fadi_o_O
+      equipment:
+        hand:
+          type: STONE_HOE
+          amount: 1
+          durability: 0
+          mdata: 0
+      location:
+        world: ClaimTutorial
+        x: '1.0920295070261536'
+        y: '74.0'
+        z: '-25.001995473550934'
+        yaw: '-318.3002624511719'
+        pitch: '36.14998245239258'
+    traitnames: type,location,owner,equipment,spawned
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+  '294':
+    name: §cTutorial
+    traits:
+      spawned: true
+      owner: O_o_Fadi_o_O
+      equipment:
+        hand:
+          type: STONE_HOE
+          amount: 1
+          durability: 0
+          mdata: 0
+      location:
+        world: ClaimTutorial
+        x: '10.670723654029064'
+        y: '74.0'
+        z: '-11.303717248916422'
+        yaw: '-67.2001953125'
+        pitch: '39.449981689453125'
+    traitnames: type,location,owner,equipment,spawned
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+  '298':
+    name: §6§lOrbitMines
+    traits:
+      type: EnderDragon
+      owner: O_o_Fadi_o_O
+      location:
+        world: OrbitMinesHub
+        x: '0.5120980229432838'
+        y: '256.0'
+        z: '0.7001401654855502'
+        yaw: '-3.899970769882202'
+        pitch: '86.55001831054688'
+      spawned: true
+    traitnames: type,location,owner,spawned
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+  '310':
+    name: '&d&LCreative'
+    traits:
+      equipment:
+        hand:
+          type: LAPIS_BLOCK
+          amount: 1
+          durability: 0
+          mdata: 0
+      location:
+        world: Hub
+        x: '8.27284073475393'
+        y: '67.0'
+        z: '8.31695929524836'
+        yaw: '-224.4068603515625'
+        pitch: '14.099982261657715'
+      spawned: true
+      owner: O_o_Fadi_o_O
+    traitnames: type,location,equipment,owner,spawned
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+  '309':
+    name: §d§lCreative
+    traits:
+      location:
+        world: Creative
+        x: '-27.5'
+        y: '256.0'
+        z: '29.5'
+        yaw: '1.49836266040802'
+        pitch: '88.79999542236328'
+      type: EnderDragon
+      spawned: true
+      owner: O_o_Fadi_o_O
+    traitnames: type,location,owner,spawned
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+  '312':
+    name: §4§lFactions
+    traits:
+      owner: O_o_Fadi_o_O
+      spawned: true
+      equipment:
+        hand:
+          type: IRON_SWORD
+          amount: 1
+          durability: 0
+          mdata: 0
+          meta: {}
+          enchantments:
+            DAMAGE_ALL: 1
+        helmet:
+          type: CHAINMAIL_HELMET
+          amount: 1
+          durability: 0
+          mdata: 0
+          meta: {}
+          enchantments:
+            PROTECTION_ENVIRONMENTAL: 1
+        chestplate:
+          type: CHAINMAIL_CHESTPLATE
+          amount: 1
+          durability: 0
+          mdata: 0
+          meta: {}
+          enchantments:
+            PROTECTION_ENVIRONMENTAL: 1
+        leggings:
+          type: CHAINMAIL_LEGGINGS
+          amount: 1
+          durability: 0
+          mdata: 0
+          meta: {}
+          enchantments:
+            PROTECTION_ENVIRONMENTAL: 1
+        boots:
+          type: CHAINMAIL_BOOTS
+          amount: 1
+          durability: 0
+          mdata: 0
+          meta: {}
+          enchantments:
+            PROTECTION_ENVIRONMENTAL: 1
+      location:
+        world: Hub
+        x: '-7.429066739824971'
+        y: '-176320.20000128742'
+        z: '8.352639423027565'
+        yaw: '227.28797912597656'
+        pitch: '3.599987506866455'
+    traitnames: type,location,equipment,owner,spawned
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+  '320':
+    name: §1eekhoorn2000
+    traits:
+      spawned: true
+      location:
+        world: TestWorld
+        x: '-99.26203727525804'
+        y: '103.0'
+        z: '-0.35582430444406465'
+        yaw: '38.84521484375'
+        pitch: '-2.5500431060791016'
+      owner: slienimon
+    traitnames: type,location,owner,spawned
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+  '319':
+    name: §1sharewoods
+    traits:
+      spawned: true
+      location:
+        world: TestWorld
+        x: '-97.44761614788814'
+        y: '103.0'
+        z: '1.5426953783344133'
+        yaw: '56.694915771484375'
+        pitch: '-2.4000449180603027'
+      owner: slienimon
+    traitnames: type,location,owner,spawned
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+  '316':
+    name: §4O_o_Fadi_o_O
+    traits:
+      spawned: true
+      location:
+        world: TestWorld
+        x: '-100.38013804631709'
+        y: '103.0'
+        z: '16.635936267561647'
+        yaw: '181.19517517089844'
+        pitch: '7.0499653816223145'
+      owner: slienimon
+    traitnames: type,location,owner,spawned
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+  '315':
+    name: slienimon
+    traits:
+      spawned: true
+      location:
+        world: TestWorld
+        x: '-97.57262595953225'
+        y: '103.0'
+        z: '16.604921415267718'
+        yaw: '123.44513702392578'
+        pitch: '4.94996452331543'
+      owner: slienimon
+    traitnames: type,location,owner,spawned
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+  '313':
+    name: §4Herobrine
+    traits:
+      waypoints:
+        linear:
+          points:
+            '0':
+              location:
+                world: TestWorld
+                x: '-109.0'
+                y: '102.0'
+                z: '5.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '1':
+              location:
+                world: TestWorld
+                x: '-108.0'
+                y: '102.0'
+                z: '5.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '2':
+              location:
+                world: TestWorld
+                x: '-108.0'
+                y: '102.0'
+                z: '8.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '3':
+              location:
+                world: TestWorld
+                x: '-109.0'
+                y: '102.0'
+                z: '5.0'
+                yaw: '0.0'
+                pitch: '0.0'
+        provider: linear
+      spawned: true
+      location:
+        world: TestWorld
+        x: '-107.98925849266956'
+        y: '103.0'
+        z: '6.7774237522460785'
+        yaw: '916954.75'
+        pitch: '0.0'
+      owner: slienimon
+    traitnames: type,waypoints,location,owner,spawned
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+  '322':
+    name: §8>>§4Shop§8<<
+    traits:
+      owner: O_o_Fadi_o_O
+      waypoints:
+        linear:
+          points:
+            '0':
+              location:
+                world: KitPvP
+                x: '-689.0'
+                y: '17.0'
+                z: '-890.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '1':
+              location:
+                world: KitPvP
+                x: '-690.0'
+                y: '17.0'
+                z: '-890.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '2':
+              location:
+                world: KitPvP
+                x: '-690.0'
+                y: '17.0'
+                z: '-889.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '3':
+              location:
+                world: KitPvP
+                x: '-691.0'
+                y: '17.0'
+                z: '-889.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '4':
+              location:
+                world: KitPvP
+                x: '-692.0'
+                y: '17.0'
+                z: '-889.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '5':
+              location:
+                world: KitPvP
+                x: '-693.0'
+                y: '17.0'
+                z: '-889.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '6':
+              location:
+                world: KitPvP
+                x: '-694.0'
+                y: '17.0'
+                z: '-889.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '7':
+              location:
+                world: KitPvP
+                x: '-694.0'
+                y: '17.0'
+                z: '-890.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '8':
+              location:
+                world: KitPvP
+                x: '-695.0'
+                y: '17.0'
+                z: '-890.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '9':
+              location:
+                world: KitPvP
+                x: '-695.0'
+                y: '17.0'
+                z: '-891.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '10':
+              location:
+                world: KitPvP
+                x: '-695.0'
+                y: '17.0'
+                z: '-892.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '11':
+              location:
+                world: KitPvP
+                x: '-695.0'
+                y: '17.0'
+                z: '-893.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '12':
+              location:
+                world: KitPvP
+                x: '-694.0'
+                y: '17.0'
+                z: '-893.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '13':
+              location:
+                world: KitPvP
+                x: '-694.0'
+                y: '17.0'
+                z: '-894.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '14':
+              location:
+                world: KitPvP
+                x: '-693.0'
+                y: '17.0'
+                z: '-894.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '15':
+              location:
+                world: KitPvP
+                x: '-693.0'
+                y: '17.0'
+                z: '-895.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '16':
+              location:
+                world: KitPvP
+                x: '-692.0'
+                y: '17.0'
+                z: '-895.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '17':
+              location:
+                world: KitPvP
+                x: '-691.0'
+                y: '17.0'
+                z: '-895.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '18':
+              location:
+                world: KitPvP
+                x: '-690.0'
+                y: '17.0'
+                z: '-895.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '19':
+              location:
+                world: KitPvP
+                x: '-690.0'
+                y: '17.0'
+                z: '-894.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '20':
+              location:
+                world: KitPvP
+                x: '-689.0'
+                y: '17.0'
+                z: '-894.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '21':
+              location:
+                world: KitPvP
+                x: '-689.0'
+                y: '17.0'
+                z: '-893.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '22':
+              location:
+                world: KitPvP
+                x: '-689.0'
+                y: '17.0'
+                z: '-892.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '23':
+              location:
+                world: KitPvP
+                x: '-689.0'
+                y: '17.0'
+                z: '-891.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '24':
+              location:
+                world: KitPvP
+                x: '-689.0'
+                y: '17.0'
+                z: '-890.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '25':
+              location:
+                world: KitPvP
+                x: '-689.0'
+                y: '17.0'
+                z: '-891.0'
+                yaw: '0.0'
+                pitch: '0.0'
+        provider: linear
+      type: Zombie
+      location:
+        world: KitPvP
+        x: '-689.4012653491371'
+        y: '18.0'
+        z: '-888.9601323431336'
+        yaw: '1.1322787E7'
+        pitch: '0.0'
+      spawned: true
+    traitnames: type,waypoints,location,owner,spawned
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+  '323':
+    name: §8>>§4Shop§8<<
+    traits:
+      location:
+        world: PrisonServer
+        x: '-830.0470780854954'
+        y: '4.0'
+        z: '-5.0139090402942355'
+        yaw: '-89.93057250976562'
+        pitch: '0.0'
+      owner: O_o_Fadi_o_O
+      spawned: true
+      type: Villager
+      age:
+        age: 0
+        locked: true
+    traitnames: type,location,age,owner,spawned
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+  '324':
+    name: §8>>§4Shop§8<<
+    traits:
+      location:
+        world: PrisonServer
+        x: '-731.648671723822'
+        y: '4.0'
+        z: '-98.22581011420236'
+        yaw: '-226.4432373046875'
+        pitch: '0.0'
+      owner: O_o_Fadi_o_O
+      spawned: true
+      type: Villager
+      age:
+        age: 0
+        locked: true
+    traitnames: type,location,age,owner,spawned
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+  '325':
+    name: §8>>§4Shop§8<<
+    traits:
+      location:
+        world: PrisonServer
+        x: '-817.1080792930231'
+        y: '29.0'
+        z: '-68.49491457281479'
+        yaw: '-3.093017578125'
+        pitch: '0.0'
+      owner: O_o_Fadi_o_O
+      spawned: true
+      type: Villager
+      age:
+        age: 0
+        locked: true
+    traitnames: type,location,age,owner,spawned
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+  '328':
+    name: §6§lOrbitMines
+    traits:
+      owner: O_o_Fadi_o_O
+      location:
+        world: OrbitMinesHub
+        x: '331.4975752754558'
+        y: '256.0'
+        z: '-64.49279551833494'
+        yaw: '92.63079833984375'
+        pitch: '89.99996948242188'
+      spawned: true
+      type: EnderDragon
+    traitnames: type,location,owner,spawned
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+  '327':
+    name: §6§lOrbitMines
+    traits:
+      owner: O_o_Fadi_o_O
+      location:
+        world: OrbitMinesHub
+        x: '331.5'
+        y: '256.0'
+        z: '-63.5'
+        yaw: '-92.15533447265625'
+        pitch: '90.0'
+      spawned: true
+      type: EnderDragon
+    traitnames: type,location,owner,spawned
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+  '334':
+    name: §b§lToken Shop
+    traits:
+      owner: O_o_Fadi_o_O
+      type: Villager
+      location:
+        world: MiniGames
+        x: '86.44240799366374'
+        y: '65.0'
+        z: '-83.47896657412073'
+        yaw: '-180.0001678466797'
+        pitch: '0.0'
+      age:
+        age: 0
+        locked: true
+      spawned: true
+    traitnames: type,location,age,owner,spawned
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+  '333':
+    name: §b§lToken Shop
+    traits:
+      owner: O_o_Fadi_o_O
+      type: Villager
+      location:
+        world: MiniGames
+        x: '0.5006246290953972'
+        y: '65.0'
+        z: '-75.73331366875523'
+        yaw: '-179.99951171875'
+        pitch: '0.0'
+      age:
+        age: 0
+        locked: true
+      spawned: true
+    traitnames: type,location,age,owner,spawned
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+  '335':
+    name: §f§lMiniGames
+    traits:
+      location:
+        world: MiniGames
+        x: '-6.5'
+        y: '256.0'
+        z: '109.5'
+        yaw: '186.40066528320312'
+        pitch: '89.8499984741211'
+      type: EnderDragon
+      owner: O_o_Fadi_o_O
+      spawned: true
+    traitnames: type,location,owner,spawned
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+  '338':
+    name: Luigi
+    traits:
+      spawned: true
+      owner: slienimon
+      location:
+        world: PrisonServer
+        x: '-687.630222038352'
+        y: '40.0'
+        z: '89.30000001192091'
+        yaw: '-45.394832611083984'
+        pitch: '-6.321794509887695'
+      lookclose:
+        enabled: true
+        range: '5.0'
+        realisticlooking: false
+    traitnames: type,lookclose,location,owner,spawned
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+  '337':
+    name: Mario
+    traits:
+      spawned: true
+      owner: slienimon
+      location:
+        world: PrisonServer
+        x: '-681.9544265987773'
+        y: '40.0'
+        z: '89.30000001192091'
+        yaw: '37.84784698486328'
+        pitch: '-7.10125732421875'
+      lookclose:
+        enabled: true
+        range: '5.0'
+        realisticlooking: false
+    traitnames: type,lookclose,location,owner,spawned
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+  '345':
+    name: §8>>§6Shop§8<<
+    traits:
+      location:
+        world: KitPvP
+        x: '-624.6134900747751'
+        y: '19.0'
+        z: '-1117.3450570961209'
+        yaw: '-314.66845703125'
+        pitch: '0.0'
+      type: Skeleton
+      owner: O_o_Fadi_o_O
+      equipment:
+        hand:
+          type: GOLD_INGOT
+          amount: 1
+          durability: 0
+          mdata: 0
+        helmet:
+          type: CHAINMAIL_HELMET
+          amount: 1
+          durability: 0
+          mdata: 0
+        chestplate:
+          type: CHAINMAIL_CHESTPLATE
+          amount: 1
+          durability: 0
+          mdata: 0
+        leggings:
+          type: CHAINMAIL_LEGGINGS
+          amount: 1
+          durability: 0
+          mdata: 0
+        boots:
+          type: CHAINMAIL_BOOTS
+          amount: 1
+          durability: 0
+          mdata: 0
+      spawned: true
+    traitnames: type,location,equipment,owner,spawned
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+  '344':
+    name: §8>>§6Shop§8<<
+    traits:
+      location:
+        world: KitPvP
+        x: '-632.3587708299233'
+        y: '19.0'
+        z: '-1117.3547653199767'
+        yaw: '-46.6181640625'
+        pitch: '0.0'
+      type: Skeleton
+      owner: O_o_Fadi_o_O
+      equipment:
+        hand:
+          type: GOLD_INGOT
+          amount: 1
+          durability: 0
+          mdata: 0
+        helmet:
+          type: CHAINMAIL_HELMET
+          amount: 1
+          durability: 0
+          mdata: 0
+        chestplate:
+          type: CHAINMAIL_CHESTPLATE
+          amount: 1
+          durability: 0
+          mdata: 0
+        leggings:
+          type: CHAINMAIL_LEGGINGS
+          amount: 1
+          durability: 0
+          mdata: 0
+        boots:
+          type: CHAINMAIL_BOOTS
+          amount: 1
+          durability: 0
+          mdata: 0
+      spawned: true
+    traitnames: type,location,equipment,owner,spawned
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+  '343':
+    name: §8>>§6Shop§8<<
+    traits:
+      location:
+        world: KitPvP
+        x: '-632.227294661083'
+        y: '19.0'
+        z: '-1109.7230170975497'
+        yaw: '-136.61865234375'
+        pitch: '0.0'
+      type: Skeleton
+      owner: O_o_Fadi_o_O
+      equipment:
+        hand:
+          type: GOLD_INGOT
+          amount: 1
+          durability: 0
+          mdata: 0
+        helmet:
+          type: CHAINMAIL_HELMET
+          amount: 1
+          durability: 0
+          mdata: 0
+        chestplate:
+          type: CHAINMAIL_CHESTPLATE
+          amount: 1
+          durability: 0
+          mdata: 0
+        leggings:
+          type: CHAINMAIL_LEGGINGS
+          amount: 1
+          durability: 0
+          mdata: 0
+        boots:
+          type: CHAINMAIL_BOOTS
+          amount: 1
+          durability: 0
+          mdata: 0
+      spawned: true
+    traitnames: type,location,owner,equipment,spawned
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+  '346':
+    name: §c§lKitPvP
+    traits:
+      type: EnderDragon
+      spawned: true
+      owner: O_o_Fadi_o_O
+      location:
+        world: KitPvP
+        x: '-666.5'
+        y: '256.0'
+        z: '-1132.5'
+        yaw: '-271.3226318359375'
+        pitch: '32.250038146972656'
+    traitnames: type,location,owner,spawned
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+  '352':
+    name: TestProject-2
+    traits:
+      type: Pig
+      spawned: true
+      waypoints:
+        linear:
+          points:
+            '0':
+              location:
+                world: KitPvP
+                x: '-551.0'
+                y: '9.0'
+                z: '-1109.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '1':
+              location:
+                world: KitPvP
+                x: '-559.0'
+                y: '9.0'
+                z: '-1106.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '2':
+              location:
+                world: KitPvP
+                x: '-552.0'
+                y: '9.0'
+                z: '-1107.0'
+                yaw: '0.0'
+                pitch: '0.0'
+        provider: linear
+      age:
+        age: 0
+        locked: true
+      owner: slienimon
+      location:
+        world: KitPvP
+        x: '-557.8466527712985'
+        y: '10.0'
+        z: '-1105.399235174681'
+        yaw: '-1.179658E7'
+        pitch: '0.0'
+    traitnames: type,waypoints,location,age,owner,spawned
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+  '351':
+    name: TestProject-1
+    traits:
+      type: Pig
+      spawned: true
+      waypoints:
+        linear:
+          points:
+            '0':
+              location:
+                world: KitPvP
+                x: '-559.0'
+                y: '9.0'
+                z: '-1109.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '1':
+              location:
+                world: KitPvP
+                x: '-560.0'
+                y: '9.0'
+                z: '-1107.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '2':
+              location:
+                world: KitPvP
+                x: '-557.0'
+                y: '9.0'
+                z: '-1106.0'
+                yaw: '0.0'
+                pitch: '0.0'
+        provider: linear
+      age:
+        age: 0
+        locked: true
+      owner: slienimon
+      location:
+        world: KitPvP
+        x: '-558.8529737621878'
+        y: '10.0'
+        z: '-1105.55990130364'
+        yaw: '-1.1796569E7'
+        pitch: '0.0'
+    traitnames: type,waypoints,location,age,owner,spawned
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+  '357':
+    name: §8>>§6Shop§8<<
+    traits:
+      spawned: true
+      type: Skeleton
+      equipment:
+        hand:
+          type: GOLD_INGOT
+          amount: 1
+          durability: 0
+          mdata: 0
+        helmet:
+          type: CHAINMAIL_HELMET
+          amount: 1
+          durability: 0
+          mdata: 0
+        chestplate:
+          type: CHAINMAIL_CHESTPLATE
+          amount: 1
+          durability: 0
+          mdata: 0
+        leggings:
+          type: CHAINMAIL_LEGGINGS
+          amount: 1
+          durability: 0
+          mdata: 0
+        boots:
+          type: CHAINMAIL_BOOTS
+          amount: 1
+          durability: 0
+          mdata: 0
+      owner: O_o_Fadi_o_O
+      location:
+        world: KitPvP
+        x: '-624.6781295442097'
+        y: '19.0'
+        z: '-1109.7133743093111'
+        yaw: '135.92730712890625'
+        pitch: '0.0'
+    traitnames: type,location,owner,equipment,spawned
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+  '368':
+    name: §8>>§4Shop§8<<
+    traits:
+      spawned: true
+      owner: O_o_Fadi_o_O
+      type: Villager
+      age:
+        age: 0
+        locked: true
+      location:
+        world: PrisonServer
+        x: '-659.3669931578111'
+        y: '36.0'
+        z: '2.1637224532536736'
+        yaw: '-85.82393646240234'
+        pitch: '0.0'
+      lookclose:
+        enabled: false
+        range: '5.0'
+        realisticlooking: false
+    traitnames: type,location,age,owner,spawned
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+  '367':
+    name: §8>>§4Shop§8<<
+    traits:
+      spawned: true
+      owner: O_o_Fadi_o_O
+      type: Villager
+      age:
+        age: 0
+        locked: true
+      location:
+        world: PrisonServer
+        x: '-653.310318272469'
+        y: '49.0'
+        z: '-144.5783006435154'
+        yaw: '-87.61814880371094'
+        pitch: '0.0'
+      lookclose:
+        enabled: false
+        range: '5.0'
+        realisticlooking: false
+    traitnames: type,location,age,owner,spawned
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+  '366':
+    name: §8>>§4Shop§8<<
+    traits:
+      spawned: true
+      owner: O_o_Fadi_o_O
+      type: Villager
+      age:
+        age: 0
+        locked: true
+      location:
+        world: PrisonServer
+        x: '-595.5530078022634'
+        y: '38.0'
+        z: '-97.55886505014143'
+        yaw: '183.6124267578125'
+        pitch: '0.0'
+      lookclose:
+        enabled: false
+        range: '5.0'
+        realisticlooking: false
+    traitnames: type,location,age,owner,spawned
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+  '365':
+    name: §8>>§4Shop§8<<
+    traits:
+      spawned: true
+      owner: O_o_Fadi_o_O
+      type: Villager
+      age:
+        age: 0
+        locked: true
+      location:
+        world: PrisonServer
+        x: '-671.5639511302036'
+        y: '35.0'
+        z: '-23.713509479730305'
+        yaw: '184.22161865234375'
+        pitch: '0.0'
+      lookclose:
+        enabled: false
+        range: '5.0'
+        realisticlooking: false
+    traitnames: type,location,age,owner,spawned
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+  '364':
+    name: §8>>§4Shop§8<<
+    traits:
+      spawned: true
+      owner: O_o_Fadi_o_O
+      type: Villager
+      age:
+        age: 0
+        locked: true
+      location:
+        world: PrisonServer
+        x: '-846.9192221918393'
+        y: '56.0'
+        z: '-151.70724263537844'
+        yaw: '47.62115478515625'
+        pitch: '0.0'
+      lookclose:
+        enabled: false
+        range: '5.0'
+        realisticlooking: false
+    traitnames: type,location,age,owner,spawned
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+  '363':
+    name: §8>>§4Shop§8<<
+    traits:
+      spawned: true
+      owner: O_o_Fadi_o_O
+      type: Villager
+      age:
+        age: 0
+        locked: true
+      location:
+        world: PrisonServer
+        x: '-925.3029138966815'
+        y: '29.0'
+        z: '43.48037353635637'
+        yaw: '-89.86051940917969'
+        pitch: '0.0'
+      lookclose:
+        enabled: false
+        range: '5.0'
+        realisticlooking: false
+    traitnames: type,location,age,owner,spawned
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+  '362':
+    name: §8>>§4Shop§8<<
+    traits:
+      spawned: true
+      owner: O_o_Fadi_o_O
+      type: Villager
+      age:
+        age: 0
+        locked: true
+      location:
+        world: PrisonServer
+        x: '-878.3000000119209'
+        y: '45.0'
+        z: '-30.46100548539745'
+        yaw: '98.90275573730469'
+        pitch: '0.0'
+      lookclose:
+        enabled: true
+        range: '5.0'
+        realisticlooking: false
+    traitnames: type,lookclose,location,age,owner,spawned
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+  '361':
+    name: §8>>§4Shop§8<<
+    traits:
+      spawned: true
+      owner: O_o_Fadi_o_O
+      type: Villager
+      age:
+        age: 0
+        locked: true
+      location:
+        world: PrisonServer
+        x: '-801.4730202514223'
+        y: '16.0'
+        z: '94.51071895458027'
+        yaw: '90.62451171875'
+        pitch: '0.0'
+      lookclose:
+        enabled: false
+        range: '5.0'
+        realisticlooking: false
+    traitnames: type,location,age,owner,spawned
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+  '360':
+    name: §8>>§4Shop§8<<
+    traits:
+      spawned: true
+      owner: O_o_Fadi_o_O
+      type: Villager
+      age:
+        age: 0
+        locked: true
+      location:
+        world: PrisonServer
+        x: '-684.9696840885368'
+        y: '41.0'
+        z: '80.16524862901161'
+        yaw: '-1.229583740234375'
+        pitch: '0.0'
+      lookclose:
+        enabled: false
+        range: '5.0'
+        realisticlooking: false
+    traitnames: type,location,age,owner,spawned
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+  '371':
+    name: §cPig
+    traits:
+      spawned: true
+      owner: slienimon
+      age:
+        age: 0
+        locked: true
+      type: Pig
+      waypoints:
+        linear:
+          points:
+            '0':
+              location:
+                world: PrisonServer
+                x: '-666.0'
+                y: '46.0'
+                z: '192.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '1':
+              location:
+                world: PrisonServer
+                x: '-666.0'
+                y: '46.0'
+                z: '196.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '2':
+              location:
+                world: PrisonServer
+                x: '-669.0'
+                y: '46.0'
+                z: '197.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '3':
+              location:
+                world: PrisonServer
+                x: '-667.0'
+                y: '46.0'
+                z: '192.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '4':
+              location:
+                world: PrisonServer
+                x: '-668.0'
+                y: '46.0'
+                z: '188.0'
+                yaw: '0.0'
+                pitch: '0.0'
+        provider: linear
+      location:
+        world: PrisonServer
+        x: '-667.4103225512067'
+        y: '47.0'
+        z: '194.25758904525318'
+        yaw: '4143087.5'
+        pitch: '0.0'
+    traitnames: type,waypoints,location,age,owner,spawned
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+  '370':
+    name: §cPig
+    traits:
+      spawned: true
+      owner: slienimon
+      age:
+        age: 0
+        locked: true
+      type: Pig
+      waypoints:
+        linear:
+          points:
+            '0':
+              location:
+                world: PrisonServer
+                x: '-674.0'
+                y: '46.0'
+                z: '188.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '1':
+              location:
+                world: PrisonServer
+                x: '-676.0'
+                y: '46.0'
+                z: '188.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '2':
+              location:
+                world: PrisonServer
+                x: '-678.0'
+                y: '46.0'
+                z: '189.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '3':
+              location:
+                world: PrisonServer
+                x: '-675.0'
+                y: '46.0'
+                z: '191.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '4':
+              location:
+                world: PrisonServer
+                x: '-673.0'
+                y: '46.0'
+                z: '193.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '5':
+              location:
+                world: PrisonServer
+                x: '-673.0'
+                y: '46.0'
+                z: '196.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '6':
+              location:
+                world: PrisonServer
+                x: '-676.0'
+                y: '46.0'
+                z: '197.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '7':
+              location:
+                world: PrisonServer
+                x: '-674.0'
+                y: '46.0'
+                z: '196.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '8':
+              location:
+                world: PrisonServer
+                x: '-672.0'
+                y: '46.0'
+                z: '193.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '9':
+              location:
+                world: PrisonServer
+                x: '-671.0'
+                y: '46.0'
+                z: '190.0'
+                yaw: '0.0'
+                pitch: '0.0'
+        provider: linear
+      location:
+        world: PrisonServer
+        x: '-672.0333423758437'
+        y: '47.0'
+        z: '194.12890193277397'
+        yaw: '922.9058227539062'
+        pitch: '0.0'
+    traitnames: type,waypoints,location,age,owner,spawned
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+  '369':
+    name: §cPig
+    traits:
+      spawned: true
+      owner: slienimon
+      age:
+        age: 0
+        locked: true
+      type: Pig
+      waypoints:
+        linear:
+          points:
+            '0':
+              location:
+                world: PrisonServer
+                x: '-668.0'
+                y: '46.0'
+                z: '181.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '1':
+              location:
+                world: PrisonServer
+                x: '-668.0'
+                y: '46.0'
+                z: '178.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '2':
+              location:
+                world: PrisonServer
+                x: '-670.0'
+                y: '46.0'
+                z: '177.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '3':
+              location:
+                world: PrisonServer
+                x: '-671.0'
+                y: '46.0'
+                z: '179.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '4':
+              location:
+                world: PrisonServer
+                x: '-669.0'
+                y: '46.0'
+                z: '181.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '5':
+              location:
+                world: PrisonServer
+                x: '-667.0'
+                y: '46.0'
+                z: '184.0'
+                yaw: '0.0'
+                pitch: '0.0'
+        provider: linear
+      location:
+        world: PrisonServer
+        x: '-667.2585245199439'
+        y: '47.0'
+        z: '182.15621812637642'
+        yaw: '-3783423.75'
+        pitch: '0.0'
+    traitnames: type,waypoints,location,age,owner,spawned
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+  '375':
+    name: §8>> §6Shop §8<<
+    traits:
+      spawned: true
+      type: Villager
+      location:
+        world: KitPvPMap
+        x: '806.9868916538838'
+        y: '10.0'
+        z: '479.9707293243263'
+        yaw: '313.946533203125'
+        pitch: '0.0'
+      age:
+        age: 0
+        locked: true
+      owner: O_o_Fadi_o_O
+    traitnames: type,location,age,owner,spawned
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+  '374':
+    name: §8>> §6Shop §8<<
+    traits:
+      spawned: true
+      type: Villager
+      location:
+        world: KitPvPMap
+        x: '807.0204223718804'
+        y: '10.0'
+        z: '485.98497314002105'
+        yaw: '224.54632568359375'
+        pitch: '0.0'
+      age:
+        age: 0
+        locked: true
+      owner: O_o_Fadi_o_O
+    traitnames: type,location,age,owner,spawned
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+  '373':
+    name: §8>> §6Shop §8<<
+    traits:
+      spawned: true
+      type: Villager
+      location:
+        world: KitPvPMap
+        x: '813.1372078672841'
+        y: '10.0'
+        z: '486.1347578171073'
+        yaw: '135.29635620117188'
+        pitch: '0.0'
+      age:
+        age: 0
+        locked: true
+      owner: O_o_Fadi_o_O
+    traitnames: type,location,age,owner,spawned
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+  '372':
+    name: §8>> §6Shop §8<<
+    traits:
+      spawned: true
+      type: Villager
+      location:
+        world: KitPvPMap
+        x: '812.9496749849086'
+        y: '10.0'
+        z: '479.9979100252236'
+        yaw: '44.8463134765625'
+        pitch: '0.0'
+      age:
+        age: 0
+        locked: true
+      owner: O_o_Fadi_o_O
+    traitnames: type,location,age,owner,spawned
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+  '380':
+    name: §c§l Piggy
+    traits:
+      waypoints:
+        linear: {}
+        provider: linear
+      spawned: true
+      type: Pig
+      location:
+        world: KitPvPMap
+        x: '843.6868469737241'
+        y: '4.0'
+        z: '563.8319741760185'
+        yaw: '250.80987548828125'
+        pitch: '0.0'
+      age:
+        age: 0
+        locked: true
+      owner: slienimon
+      lookclose:
+        enabled: false
+        range: '5.0'
+        realisticlooking: false
+    traitnames: type,location,waypoints,age,owner,spawned
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+  '379':
+    name: §c§l Piggy
+    traits:
+      spawned: true
+      type: Pig
+      location:
+        world: KitPvPMap
+        x: '841.8201418458166'
+        y: '4.0'
+        z: '563.8476855915776'
+        yaw: '-4.59930419921875'
+        pitch: '0.0'
+      age:
+        age: 0
+        locked: true
+      owner: slienimon
+    traitnames: type,location,age,owner,spawned
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+  '378':
+    name: §c§l Piggy
+    traits:
+      spawned: true
+      type: Pig
+      location:
+        world: KitPvPMap
+        x: '839.5680124474273'
+        y: '4.0'
+        z: '563.8995332569154'
+        yaw: '246.16357421875'
+        pitch: '0.0'
+      age:
+        age: 0
+        locked: true
+      owner: slienimon
+      lookclose:
+        enabled: false
+        range: '5.0'
+        realisticlooking: false
+    traitnames: type,location,age,owner,spawned
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+  '377':
+    name: §c§l Piggy
+    traits:
+      spawned: true
+      type: Pig
+      location:
+        world: KitPvPMap
+        x: '837.5929809333923'
+        y: '4.0'
+        z: '564.239146917942'
+        yaw: '-167.19927978515625'
+        pitch: '0.0'
+      age:
+        age: 0
+        locked: true
+      owner: slienimon
+    traitnames: type,location,age,owner,spawned
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+  '385':
+    name: §6§lSkyWars
+    traits:
+      location:
+        world: SkyWarsLobby
+        x: '0.5'
+        y: '256.0'
+        z: '0.5'
+        yaw: '2.8500049114227295'
+        pitch: '85.20002746582031'
+      spawned: true
+      owner: O_o_Fadi_o_O
+      type: EnderDragon
+    traitnames: type,location,owner,spawned
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+  '391':
+    name: §b§lToken Shop
+    traits:
+      age:
+        age: 0
+        locked: true
+      type: Villager
+      location:
+        world: SkyWarsLobby
+        x: '4.349204738398151'
+        y: '66.0'
+        z: '-3.3146605023271567'
+        yaw: '43.79841232299805'
+        pitch: '0.0'
+      owner: O_o_Fadi_o_O
+      spawned: true
+    traitnames: type,location,age,owner,spawned
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+  '390':
+    name: §b§lToken Shop
+    traits:
+      age:
+        age: 0
+        locked: true
+      type: Villager
+      location:
+        world: SkyWarsLobby
+        x: '-3.354391921457342'
+        y: '66.0'
+        z: '-3.357600748702518'
+        yaw: '-45.0015869140625'
+        pitch: '0.0'
+      owner: O_o_Fadi_o_O
+      spawned: true
+    traitnames: type,location,age,owner,spawned
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+  '389':
+    name: §b§lToken Shop
+    traits:
+      age:
+        age: 0
+        locked: true
+      type: Villager
+      location:
+        world: SkyWarsLobby
+        x: '-3.434176961676323'
+        y: '66.0'
+        z: '4.300212346229269'
+        yaw: '-134.10157775878906'
+        pitch: '0.0'
+      owner: O_o_Fadi_o_O
+      spawned: true
+    traitnames: type,location,age,owner,spawned
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+  '388':
+    name: §b§lToken Shop
+    traits:
+      age:
+        age: 0
+        locked: true
+      type: Villager
+      location:
+        world: SkyWarsLobby
+        x: '4.364859084835805'
+        y: '66.0'
+        z: '4.357420621148989'
+        yaw: '-226.20162963867188'
+        pitch: '0.0'
+      owner: O_o_Fadi_o_O
+      spawned: true
+    traitnames: type,location,age,owner,spawned
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+  '396':
+    name: §8>>§4Shop§8<<
+    traits:
+      owner: O_o_Fadi_o_O
+      spawned: true
+      age:
+        age: 0
+        locked: true
+      location:
+        world: PrisonServer
+        x: '-669.0454935363899'
+        y: '47.0'
+        z: '206.57116931299794'
+        yaw: '179.66317749023438'
+        pitch: '0.0'
+      type: Villager
+      lookclose:
+        enabled: false
+        range: '5.0'
+        realisticlooking: false
+    traitnames: type,location,age,owner,spawned
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+  '395':
+    name: §8>>§4Shop§8<<
+    traits:
+      owner: O_o_Fadi_o_O
+      spawned: true
+      age:
+        age: 0
+        locked: true
+      location:
+        world: PrisonServer
+        x: '-898.9558777325366'
+        y: '19.0'
+        z: '154.53929195720193'
+        yaw: '222.57720947265625'
+        pitch: '0.0'
+      type: Villager
+      lookclose:
+        enabled: false
+        range: '5.0'
+        realisticlooking: false
+    traitnames: type,location,age,owner,spawned
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+  '394':
+    name: §8>>§4Shop§8<<
+    traits:
+      owner: O_o_Fadi_o_O
+      spawned: true
+      age:
+        age: 0
+        locked: true
+      location:
+        world: PrisonServer
+        x: '-793.4475690599509'
+        y: '52.5'
+        z: '148.45531764601'
+        yaw: '-89.63667297363281'
+        pitch: '0.0'
+      type: Villager
+    traitnames: type,location,age,owner,spawned
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+  '398':
+    name: §8>>§4Shop§8<<
+    traits:
+      owner: O_o_Fadi_o_O
+      spawned: true
+      age:
+        age: 0
+        locked: true
+      location:
+        world: PrisonServer
+        x: '-785.5616482480871'
+        y: '4.0'
+        z: '-207.36971986312133'
+        yaw: '43.859375'
+        pitch: '0.0'
+      type: Villager
+      lookclose:
+        enabled: false
+        range: '5.0'
+        realisticlooking: false
+    traitnames: type,location,age,owner,spawned
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+  '397':
+    name: §8>>§4Shop§8<<
+    traits:
+      owner: O_o_Fadi_o_O
+      spawned: true
+      age:
+        age: 0
+        locked: true
+      location:
+        world: PrisonServer
+        x: '-831.9085067940059'
+        y: '236.0'
+        z: '0.9403065722367299'
+        yaw: '179.82449340820312'
+        pitch: '0.0'
+      type: Villager
+      lookclose:
+        enabled: false
+        range: '5.0'
+        realisticlooking: false
+    traitnames: type,location,age,owner,spawned
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true

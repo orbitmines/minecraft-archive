@@ -1,0 +1,16 @@
+permission: ''
+world: PrisonVoteShop
+X: 6
+Y: 67
+Z: -2
+price: 0.0
+cooldown: 0
+globalCooldown: 0
+confirmation: false
+commands:
+- '/PrisonSellCobbleStoneVote1358913212 '
+grantPermissions: []
+lastGlobalUse: 0
+lastUse: {}
+priceItems: []
+exp: 0

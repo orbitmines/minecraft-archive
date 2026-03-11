@@ -1,0 +1,64 @@
+notifyMeOfUpdates: true
+chatPrefix: '`6[`1OrbitMines`6] `d'
+primaryCommand: quest
+persistDelay: 5
+access:
+  commands:
+    commands:
+    - info
+    - tasks
+    - drop
+    - done
+    signs:
+    - info
+    - tasks
+    - drop
+    - done
+    npcs:
+    - info
+    - tasks
+    - drop
+    - done
+  signs:
+    commands:
+    - info
+    - tasks
+    - drop
+    - done
+    signs:
+    - info
+    - tasks
+    - drop
+    - done
+    npcs:
+    - info
+    - tasks
+    - drop
+    - done
+  npcs:
+    commands:
+    - info
+    - tasks
+    - drop
+    - done
+    signs:
+    - info
+    - tasks
+    - drop
+    - done
+    npcs:
+    - info
+    - tasks
+    - drop
+    - done
+showItemIds: true
+info:
+  showMoney: true
+  moneyName: coins
+  showHealth: true
+  showFood: true
+  showCommands: true
+  showItems: true
+  showLevelsAdded: true
+  showSetLevel: true
+autoUpdate: true

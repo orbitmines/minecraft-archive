@@ -1,0 +1,1439 @@
+users:
+  1DGurl11:
+    group: E
+    subgroups: []
+    permissions: []
+  1hik:
+    group: E
+    subgroups: []
+    permissions: []
+  1valdemarhansen:
+    group: E
+    subgroups: []
+    permissions: []
+  20damian07:
+    group: C
+    subgroups: []
+    permissions: []
+  90bart:
+    group: E
+    subgroups: []
+    permissions: []
+  99starfish:
+    group: E
+    subgroups: []
+    permissions: []
+  _CraftKings_:
+    group: D
+    subgroups: []
+    permissions: []
+  _McChouffe_:
+    group: C
+    subgroups: []
+    permissions: []
+  _McLink88_:
+    group: C
+    subgroups: []
+    permissions: []
+  _mr_jim_:
+    group: D
+    subgroups: []
+    permissions: []
+  _Sparaat_:
+    group: E
+    subgroups: []
+    permissions: []
+  aaren10:
+    group: D
+    subgroups: []
+    permissions: []
+  adnip:
+    group: C
+    subgroups: []
+    permissions: []
+  Akie12:
+    group: E
+    subgroups: []
+    permissions: []
+  AleristheSeeker:
+    group: D
+    subgroups: []
+    permissions: []
+  alex030299:
+    group: C
+    subgroups: []
+    permissions: []
+  alvianalberts:
+    group: D
+    subgroups: []
+    permissions: []
+  An00rC00l:
+    group: E
+    subgroups: []
+    permissions: []
+  Anmol23:
+    group: E
+    subgroups: []
+    permissions: []
+  AttyDragon:
+    group: D
+    subgroups: []
+    permissions: []
+  avancoi:
+    group: D
+    subgroups: []
+    permissions: []
+  awertzu:
+    group: E
+    subgroups: []
+    permissions: []
+  axeandsmash:
+    group: E
+    subgroups: []
+    permissions: []
+  B00MAN2003:
+    group: E
+    subgroups: []
+    permissions: []
+  badbois:
+    group: E
+    subgroups: []
+    permissions: []
+  bajancanadian4:
+    group: C
+    subgroups: []
+    permissions: []
+  BajanCanadian5:
+    group: D
+    subgroups: []
+    permissions: []
+  banba2000:
+    group: C
+    subgroups: []
+    permissions: []
+  baneklis:
+    group: B
+    subgroups: []
+    permissions: []
+  bartkramer:
+    group: D
+    subgroups: []
+    permissions: []
+  basbobby:
+    group: E
+    subgroups: []
+    permissions: []
+  basteti:
+    group: C
+    subgroups: []
+    permissions:
+    - commandlog.notice
+    - essentials.ban
+    - essentials.kick
+    - essentials.tp
+    - essentials.tp.others
+    - staffsecure.staff
+    - tc.blue
+    info:
+      prefix: '&9[&b&lMod&9] &b'
+  bentenbent123:
+    group: E
+    subgroups: []
+    permissions: []
+  BenYOmin_Mango:
+    group: C
+    subgroups: []
+    permissions:
+    - essentials.warps.DiamondVIP
+    - essentials.warps.EmeraldVIP
+    - essentials.warps.GoldVIP
+    - essentials.warps.IronVIP
+    - staffsecure.staff
+    - tc.darkred
+    info:
+      prefix: '&c[&4&lCo-Owner&c] &4'
+  bigdcd:
+    group: E
+    subgroups: []
+    permissions: []
+  birchtree20:
+    group: E
+    subgroups: []
+    permissions: []
+  blackberry9900:
+    group: C
+    subgroups: []
+    permissions: []
+  blij007:
+    group: D
+    subgroups: []
+    permissions: []
+  Block_boy02:
+    group: B
+    subgroups: []
+    permissions: []
+  block_eraser:
+    group: E
+    subgroups: []
+    permissions: []
+  Blue_Monkey56:
+    group: D
+    subgroups: []
+    permissions: []
+  bramskovic77:
+    group: D
+    subgroups: []
+    permissions: []
+  Brunotmz:
+    group: E
+    subgroups: []
+    permissions: []
+  Bryan20027:
+    group: A
+    subgroups: []
+    permissions: []
+  builder_poseidon:
+    group: E
+    subgroups: []
+    permissions: []
+  BurnWeekVideo:
+    group: C
+    subgroups: []
+    permissions: []
+  bursyboy1999:
+    group: B
+    subgroups: []
+    permissions: []
+  cakatoe:
+    group: E
+    subgroups: []
+    permissions: []
+  camouflage_panda:
+    group: E
+    subgroups: []
+    permissions: []
+  casey1107:
+    group: D
+    subgroups: []
+    permissions: []
+  cashen11:
+    group: D
+    subgroups: []
+    permissions: []
+  casidas:
+    group: C
+    subgroups: []
+    permissions: []
+  cemre2002:
+    group: E
+    subgroups: []
+    permissions: []
+  ChantieGirl:
+    group: D
+    subgroups: []
+    permissions: []
+  chielkill:
+    group: D
+    subgroups: []
+    permissions: []
+  Chocolade_zonder:
+    group: C
+    subgroups: []
+    permissions: []
+  chrisjebuilds:
+    group: E
+    subgroups: []
+    permissions: []
+  chukkie123:
+    group: D
+    subgroups: []
+    permissions: []
+  Colindude8:
+    group: E
+    subgroups: []
+    permissions: []
+  connor1789:
+    group: D
+    subgroups: []
+    permissions: []
+  coolala:
+    group: E
+    subgroups: []
+    permissions: []
+  cooleromeo:
+    group: C
+    subgroups: []
+    permissions: []
+  Craftmagician138:
+    group: C
+    subgroups: []
+    permissions: []
+  crazy_steak:
+    group: E
+    subgroups: []
+    permissions: []
+  crazysantaclause:
+    group: B
+    subgroups: []
+    permissions: []
+  creagirl:
+    group: E
+    subgroups: []
+    permissions: []
+  Cyclopsfeo:
+    group: C
+    subgroups: []
+    permissions: []
+  daanboy12:
+    group: E
+    subgroups: []
+    permissions: []
+  daanboy941:
+    group: D
+    subgroups: []
+    permissions: []
+  daaneel007:
+    group: E
+    subgroups: []
+    permissions: []
+  daanms:
+    group: D
+    subgroups: []
+    permissions: []
+  damianx46:
+    group: E
+    subgroups: []
+    permissions: []
+  Danielthehero123:
+    group: E
+    subgroups: []
+    permissions: []
+  Darkfeder112:
+    group: E
+    subgroups: []
+    permissions: []
+  DavidCoolboy11:
+    group: E
+    subgroups: []
+    permissions: []
+  davidlordman:
+    group: E
+    subgroups: []
+    permissions: []
+  DeemsGames_nl:
+    group: E
+    subgroups: []
+    permissions: []
+  dennis26jan:
+    group: D
+    subgroups: []
+    permissions: []
+  derpasorusrex:
+    group: E
+    subgroups: []
+    permissions: []
+  Destroux:
+    group: B
+    subgroups: []
+    permissions: []
+  DiamondCrusher8:
+    group: D
+    subgroups: []
+    permissions: []
+  DiamondHunter007:
+    group: E
+    subgroups: []
+    permissions: []
+  DiamondIDragon:
+    group: E
+    subgroups: []
+    permissions: []
+  DierWolf26:
+    group: D
+    subgroups: []
+    permissions: []
+  DinoJayson:
+    group: E
+    subgroups: []
+    permissions: []
+  DJ__D:
+    group: E
+    subgroups: []
+    permissions: []
+  DJ_Laan:
+    group: E
+    subgroups: []
+    permissions: []
+  Domukas_Bond:
+    group: E
+    subgroups: []
+    permissions: []
+  donovan2649:
+    group: C
+    subgroups: []
+    permissions: []
+  DQLaura:
+    group: E
+    subgroups: []
+    permissions: []
+  DQWoodus:
+    group: E
+    subgroups: []
+    permissions: []
+  Dylandeer:
+    group: E
+    subgroups: []
+    permissions: []
+  dylangeordy:
+    group: E
+    subgroups: []
+    permissions: []
+  dylanvanling:
+    group: E
+    subgroups: []
+    permissions: []
+  eekhoorn2000:
+    group: A+
+    subgroups: []
+    permissions:
+    - commandlog.notice
+    - essenstials.ban
+    - essenstials.kick
+    - essenstials.tp
+    - essenstials.tp.others
+    - essentials.afk
+    - essentials.ban
+    - essentials.clearinventory
+    - essentials.enderchest
+    - essentials.kick
+    - essentials.tp
+    - essentials.tp.others
+    - essentials.warps.DiamondVIP
+    - essentials.warps.GoldVIP
+    - essentials.warps.IronVIP
+    - essentials.workbench
+    - playermagnet.magnet
+    - simpleregionmarket.admin
+    - staffsecure.staff
+    - toolswap.off
+    - toolswap.on
+    - toolswap.use
+    info:
+      prefix: '&b[&9&lVIP&b]&9[&b&lMod&9] &b'
+  eleanorsara:
+    group: E
+    subgroups: []
+    permissions: []
+  eliboycool:
+    group: D
+    subgroups: []
+    permissions: []
+  Emi114play:
+    group: E
+    subgroups: []
+    permissions: []
+  EnderShadow500:
+    group: C
+    subgroups: []
+    permissions: []
+  enderxidxl:
+    group: E
+    subgroups: []
+    permissions: []
+  EPICDUDES13:
+    group: E
+    subgroups: []
+    permissions: []
+  euas:
+    group: E
+    subgroups: []
+    permissions: []
+  ExpertMurderer2:
+    group: D
+    subgroups: []
+    permissions: []
+  fangergo:
+    group: E
+    subgroups: []
+    permissions: []
+  Fastthomaz:
+    group: E
+    subgroups: []
+    permissions: []
+  firedraak:
+    group: B
+    subgroups: []
+    permissions: []
+  fknoodles:
+    group: E
+    subgroups: []
+    permissions: []
+  Flim2002:
+    group: C
+    subgroups: []
+    permissions: []
+  FlipFlop113:
+    group: E
+    subgroups: []
+    permissions: []
+  FreezingLion:
+    group: E
+    subgroups: []
+    permissions: []
+  FreshBast:
+    group: E
+    subgroups: []
+    permissions: []
+  gangsterlx:
+    group: E
+    subgroups: []
+    permissions: []
+  geenpaniek:
+    group: E
+    subgroups: []
+    permissions: []
+  General_Kevin:
+    group: D
+    subgroups: []
+    permissions: []
+  ggkqeqjry:
+    group: E
+    subgroups: []
+    permissions: []
+  girlcrepper:
+    group: D
+    subgroups: []
+    permissions: []
+  gkleinlein:
+    group: B
+    subgroups: []
+    permissions: []
+  gledge1995:
+    group: E
+    subgroups: []
+    permissions: []
+  god_brian:
+    group: E
+    subgroups: []
+    permissions: []
+  Gta_Expert:
+    group: E
+    subgroups: []
+    permissions: []
+  gunly:
+    group: E
+    subgroups: []
+    permissions: []
+  gwnluca:
+    group: C
+    subgroups: []
+    permissions: []
+  haavard066:
+    group: E
+    subgroups: []
+    permissions: []
+  HaloMartin:
+    group: D
+    subgroups: []
+    permissions: []
+  happymana00:
+    group: E
+    subgroups: []
+    permissions: []
+  hayden1010101:
+    group: E
+    subgroups: []
+    permissions: []
+  hega125:
+    group: D
+    subgroups: []
+    permissions: []
+  HEY_lazergame:
+    group: C
+    subgroups: []
+    permissions: []
+  hingijs:
+    group: D
+    subgroups: []
+    permissions: []
+  hogie2003:
+    group: D
+    subgroups: []
+    permissions: []
+  holyshit2001:
+    group: E
+    subgroups: []
+    permissions: []
+  huismus:
+    group: E
+    subgroups: []
+    permissions: []
+  hunkhill1:
+    group: D
+    subgroups: []
+    permissions: []
+  iefke:
+    group: C
+    subgroups: []
+    permissions: []
+  iemand24:
+    group: C
+    subgroups: []
+    permissions: []
+  ImCrazyGerjan:
+    group: D
+    subgroups: []
+    permissions: []
+  InzeNL:
+    group: E
+    subgroups: []
+    permissions: []
+  iRaphahell:
+    group: E
+    subgroups: []
+    permissions: []
+  iskillyoucreeper:
+    group: D
+    subgroups: []
+    permissions: []
+  its_me_djimmi:
+    group: C
+    subgroups: []
+    permissions: []
+  Itssmike1:
+    group: E
+    subgroups: []
+    permissions: []
+  JamayX:
+    group: E
+    subgroups: []
+    permissions: []
+  jarischreuder:
+    group: E
+    subgroups: []
+    permissions: []
+  Jasmab06:
+    group: D
+    subgroups: []
+    permissions: []
+  JayaPandaMine:
+    group: E
+    subgroups: []
+    permissions: []
+  jenskay:
+    group: E
+    subgroups: []
+    permissions: []
+  JeroenvdHoorn:
+    group: A+
+    subgroups: []
+    permissions: []
+  jeshua2004:
+    group: C
+    subgroups: []
+    permissions:
+    - essentials.warps.GoldVIP
+    - essentials.warps.IronVIP
+    - tc.gold
+    info:
+      prefix: '&6[&e&lVIP&6] &e'
+  JikuJikuJin:
+    group: C
+    subgroups: []
+    permissions: []
+  jim5491158:
+    group: D
+    subgroups: []
+    permissions: []
+  jimdave:
+    group: E
+    subgroups: []
+    permissions: []
+  jmans2041:
+    group: C
+    subgroups: []
+    permissions: []
+  jobdegroot:
+    group: D
+    subgroups: []
+    permissions: []
+  Jochem_10:
+    group: D
+    subgroups: []
+    permissions: []
+  Joercraft:
+    group: E
+    subgroups: []
+    permissions: []
+  johgirl:
+    group: D
+    subgroups: []
+    permissions: []
+  jonabuilder1998:
+    group: B
+    subgroups: []
+    permissions: []
+  joppie1405:
+    group: C
+    subgroups: []
+    permissions: []
+  jordycoolyboy56:
+    group: C
+    subgroups: []
+    permissions: []
+  jordypukky:
+    group: C
+    subgroups: []
+    permissions: []
+  jorisiscool1:
+    group: E
+    subgroups: []
+    permissions: []
+  JorisValk99:
+    group: D
+    subgroups: []
+    permissions: []
+  juriaankoper:
+    group: D
+    subgroups: []
+    permissions: []
+  Jurre101:
+    group: B
+    subgroups: []
+    permissions: []
+  JustinJames02:
+    group: E
+    subgroups: []
+    permissions: []
+  JustLuukyNL:
+    group: D
+    subgroups: []
+    permissions: []
+  kaitlynrocks9362:
+    group: E
+    subgroups: []
+    permissions: []
+  Karatas076:
+    group: D
+    subgroups: []
+    permissions: []
+  Keny1122:
+    group: C
+    subgroups: []
+    permissions: []
+  kevin020400:
+    group: E
+    subgroups: []
+    permissions: []
+  Kevin_doggy_24:
+    group: E
+    subgroups: []
+    permissions: []
+  knufi360:
+    group: C
+    subgroups: []
+    permissions: []
+  KoenLaarhoven4:
+    group: C
+    subgroups: []
+    permissions: []
+  Kolkje30:
+    group: C
+    subgroups: []
+    permissions: []
+  korneto:
+    group: E
+    subgroups: []
+    permissions: []
+  kouros22:
+    group: C
+    subgroups: []
+    permissions: []
+  krachtpatsertim:
+    group: C
+    subgroups: []
+    permissions: []
+  kroro1:
+    group: E
+    subgroups: []
+    permissions: []
+  Lancey:
+    group: E
+    subgroups: []
+    permissions: []
+  LavaKillTF:
+    group: E
+    subgroups: []
+    permissions: []
+  lenahoornsman:
+    group: E
+    subgroups: []
+    permissions: []
+  Lenny2002:
+    group: C
+    subgroups: []
+    permissions: []
+  leoole255:
+    group: C
+    subgroups: []
+    permissions: []
+  lkramer04:
+    group: D
+    subgroups: []
+    permissions: []
+  lorano123:
+    group: E
+    subgroups: []
+    permissions: []
+  LordPookie:
+    group: E
+    subgroups: []
+    permissions: []
+  lucluckyboy:
+    group: E
+    subgroups: []
+    permissions: []
+  Luke_the_Assasin:
+    group: C
+    subgroups: []
+    permissions: []
+  magnus0311:
+    group: D
+    subgroups: []
+    permissions: []
+  marina550:
+    group: E
+    subgroups: []
+    permissions: []
+  mario_sam:
+    group: D
+    subgroups: []
+    permissions: []
+  marknatejack:
+    group: D
+    subgroups: []
+    permissions: []
+  MartianKrafter:
+    group: D
+    subgroups: []
+    permissions: []
+  massie9:
+    group: C
+    subgroups: []
+    permissions: []
+  MasterDean001:
+    group: B
+    subgroups: []
+    permissions: []
+  masterkock:
+    group: C
+    subgroups: []
+    permissions: []
+  math762b:
+    group: E
+    subgroups: []
+    permissions: []
+  matt20041:
+    group: C
+    subgroups: []
+    permissions:
+    - essentials.afk
+    - essentials.enderchest
+    - essentials.warps.DiamondVIP
+    - essentials.warps.GoldVIP
+    - essentials.warps.IronVIP
+    - essentials.workbench
+    - playermagnet.magnet
+    - tc.aqua
+    - toolswap.off
+    - toolswap.on
+    - toolswap.use
+    info:
+      prefix: '&b[&9&lVIP&b] &9'
+  matthew7788:
+    group: E
+    subgroups: []
+    permissions: []
+  maximiliano01:
+    group: E
+    subgroups: []
+    permissions: []
+  mcjelle2801:
+    group: B
+    subgroups: []
+    permissions: []
+  megafro:
+    group: E
+    subgroups: []
+    permissions: []
+  mek301:
+    group: E
+    subgroups: []
+    permissions: []
+  merih2002:
+    group: C
+    subgroups: []
+    permissions: []
+  metro149:
+    group: D
+    subgroups: []
+    permissions: []
+  minelars123:
+    group: E
+    subgroups: []
+    permissions: []
+  minikars:
+    group: E
+    subgroups: []
+    permissions: []
+  misterswag124:
+    group: E
+    subgroups: []
+    permissions: []
+  miyocrafting7:
+    group: D
+    subgroups: []
+    permissions: []
+  Mooster157:
+    group: E
+    subgroups: []
+    permissions: []
+  Mr_Wolf63:
+    group: C
+    subgroups: []
+    permissions: []
+  MrDries:
+    group: A++
+    subgroups: []
+    permissions: []
+  MusicGirl4:
+    group: E
+    subgroups: []
+    permissions: []
+  mvgeffen:
+    group: E
+    subgroups: []
+    permissions: []
+  Nanthonij:
+    group: C
+    subgroups: []
+    permissions: []
+  napestaartje:
+    group: D
+    subgroups: []
+    permissions:
+    - essentials.afk
+    - essentials.enderchest
+    - essentials.warps.DiamondVIP
+    - essentials.warps.GoldVIP
+    - essentials.warps.IronVIP
+    - essentials.workbench
+    - playermagnet.magnet
+    - tc.aqua
+    - toolswap.off
+    - toolswap.on
+    - toolswap.use
+    info:
+      prefix: '&b[&9&lVIP&b] &9'
+  nede21:
+    group: E
+    subgroups: []
+    permissions: []
+  Nials909:
+    group: A
+    subgroups: []
+    permissions: []
+  nicolajsej9:
+    group: D
+    subgroups: []
+    permissions: []
+  NielsLaarhoven:
+    group: C
+    subgroups: []
+    permissions: []
+  Nightspeedy:
+    group: C
+    subgroups: []
+    permissions: []
+  Nitrohag:
+    group: D
+    subgroups: []
+    permissions: []
+  niXni:
+    group: E
+    subgroups: []
+    permissions: []
+  O_o_Fadi_o_O:
+    group: A++
+    subgroups: []
+    permissions:
+    - essentials.*
+    - staffsecure.staff
+    info:
+      prefix: '&c[&4&lOwner&c] &4'
+  OneLostShadow:
+    group: D
+    subgroups: []
+    permissions: []
+  opaleike12:
+    group: E
+    subgroups: []
+    permissions: []
+  panchito009:
+    group: E
+    subgroups: []
+    permissions: []
+  partyscout:
+    group: E
+    subgroups: []
+    permissions: []
+  PelSte:
+    group: D
+    subgroups: []
+    permissions: []
+  pepperjack:
+    group: E
+    subgroups: []
+    permissions: []
+  pink_lady1:
+    group: E
+    subgroups: []
+    permissions: []
+  pkleinlein:
+    group: B
+    subgroups: []
+    permissions:
+    - archerkit.1
+    - kit.Archer
+    - kit.Knight
+    - kit.Soldier
+    - knightkit.1
+    - soldierkit.1
+  ProMaster2014:
+    group: E
+    subgroups: []
+    permissions: []
+  protoman120:
+    group: E
+    subgroups: []
+    permissions: []
+  quinten0902:
+    group: D
+    subgroups: []
+    permissions: []
+  Quinten12_NL:
+    group: E
+    subgroups: []
+    permissions: []
+  qwinqu13:
+    group: E
+    subgroups: []
+    permissions: []
+  rafajafa69:
+    group: E
+    subgroups: []
+    permissions: []
+  Ramon2000Kleijn:
+    group: C
+    subgroups: []
+    permissions: []
+  rasm076m:
+    group: D
+    subgroups: []
+    permissions: []
+  real_slasher:
+    group: D
+    subgroups: []
+    permissions: []
+  rickert9:
+    group: C
+    subgroups: []
+    permissions: []
+  RidersNitsuga:
+    group: D
+    subgroups: []
+    permissions: []
+  RikplayMinecraft:
+    group: E
+    subgroups: []
+    permissions: []
+  RileyRealms:
+    group: E
+    subgroups: []
+    permissions: []
+  robinkreuze:
+    group: E
+    subgroups: []
+    permissions: []
+  Rogi_98:
+    group: E
+    subgroups: []
+    permissions: []
+  rolol1:
+    group: E
+    subgroups: []
+    permissions: []
+  Sam2202:
+    group: E
+    subgroups: []
+    permissions: []
+  sammine10:
+    group: D
+    subgroups: []
+    permissions: []
+  scarybluelemon07:
+    group: C
+    subgroups: []
+    permissions: []
+  ScheelSchaapje:
+    group: E
+    subgroups: []
+    permissions: []
+  Sean9deCoolste:
+    group: C
+    subgroups: []
+    permissions:
+    - essentials.afk
+    - essentials.enderchest
+    - essentials.warps.DiamondVIP
+    - essentials.warps.EmeraldVIP
+    - essentials.warps.GoldVIP
+    - essentials.warps.IronVIP
+    - essentials.workbench
+    - playermagnet.magnet
+    - toolswap.off
+    - toolswap.on
+    - toolswap.ouse
+    info:
+      prefix: '&b[&9&lVIP&b] &9'
+  sebastiaan1981:
+    group: C
+    subgroups: []
+    permissions: []
+  Selasie:
+    group: C
+    subgroups: []
+    permissions: []
+  semamsing:
+    group: D
+    subgroups: []
+    permissions: []
+  sergeant:
+    group: E
+    subgroups: []
+    permissions: []
+  shadowjkill:
+    group: E
+    subgroups: []
+    permissions: []
+  sharewoods:
+    group: D
+    subgroups: []
+    permissions:
+    - commandlog.notice
+    - essentials.ban
+    - essentials.kick
+    - essentials.tp
+    - essentials.tp.others
+    - nametag.group.mod
+    - simpleregionmarket.admin
+    - staffsecure.staff
+    info:
+      prefix: '&9[&b&lMod&9] &b'
+  Sickinick:
+    group: C
+    subgroups: []
+    permissions: []
+  Silver_Wolf_27:
+    group: D
+    subgroups: []
+    permissions: []
+  SinaasAppelke:
+    group: D
+    subgroups: []
+    permissions:
+    - commandlog.notice
+    - essentials.ban
+    - essentials.kick
+    - essentials.tp
+    - essentials.tp.others
+    - nametag.group.mod
+    - staffsecure.staff
+    info:
+      prefix: '&9[&b&lMod&9] &b'
+  Sjarwo:
+    group: E
+    subgroups: []
+    permissions: []
+  sjskidmore:
+    group: D
+    subgroups: []
+    permissions: []
+  SkEletshU:
+    group: E
+    subgroups: []
+    permissions: []
+  skull4949:
+    group: C
+    subgroups: []
+    permissions: []
+  skyguynew:
+    group: E
+    subgroups: []
+    permissions: []
+  slienimon:
+    group: D
+    subgroups: []
+    permissions:
+    - nametag.group.admin
+    - staffsecure.staff
+    info:
+      prefix: '&4[&c&lAdmin&4] &c'
+  smewdog:
+    group: D
+    subgroups: []
+    permissions: []
+  SmithMiller:
+    group: E
+    subgroups: []
+    permissions: []
+  smore999:
+    group: D
+    subgroups: []
+    permissions: []
+  soldaatkevin2000:
+    group: D
+    subgroups: []
+    permissions: []
+  SpeederSam:
+    group: D
+    subgroups: []
+    permissions: []
+  Spooky_Guy_11:
+    group: C
+    subgroups: []
+    permissions: []
+  stan_spyro:
+    group: D
+    subgroups: []
+    permissions: []
+  StephenGreat:
+    group: Z
+    subgroups: []
+    permissions: []
+  sulan:
+    group: E
+    subgroups: []
+    permissions: []
+  superjojo2401:
+    group: E
+    subgroups: []
+    permissions: []
+  supermanneke123:
+    group: E
+    subgroups: []
+    permissions: []
+  supermega_cool:
+    group: E
+    subgroups: []
+    permissions: []
+  SupreGajGamer:
+    group: D
+    subgroups: []
+    permissions: []
+  sylvana2001:
+    group: D
+    subgroups: []
+    permissions: []
+  T_pro2001:
+    group: E
+    subgroups: []
+    permissions: []
+  Teleport1409:
+    group: D
+    subgroups: []
+    permissions: []
+  ter_Haar:
+    group: E
+    subgroups: []
+    permissions: []
+  TerminatorLVV:
+    group: D
+    subgroups: []
+    permissions: []
+  The_eagleeye:
+    group: D
+    subgroups: []
+    permissions: []
+  THE_GAMBLER_X:
+    group: E
+    subgroups: []
+    permissions: []
+  the_king_k47n3:
+    group: E
+    subgroups: []
+    permissions: []
+  TheHDGamers:
+    group: E
+    subgroups: []
+    permissions: []
+  TheLotteS:
+    group: C
+    subgroups: []
+    permissions: []
+  tiger123456:
+    group: E
+    subgroups: []
+    permissions: []
+  tim_de_doder:
+    group: C
+    subgroups: []
+    permissions: []
+  Timdebest7:
+    group: D
+    subgroups: []
+    permissions: []
+  timskijwalker:
+    group: D
+    subgroups: []
+    permissions: []
+  TomDriel:
+    group: C
+    subgroups: []
+    permissions: []
+  tornadoninja:
+    group: E
+    subgroups: []
+    permissions: []
+  tosde:
+    group: E
+    subgroups: []
+    permissions: []
+  Trick_shot_faz01:
+    group: E
+    subgroups: []
+    permissions: []
+  TrixXxCast:
+    group: C
+    subgroups: []
+    permissions: []
+  tyler303:
+    group: C
+    subgroups: []
+    permissions: []
+  unitjazz:
+    group: D
+    subgroups: []
+    permissions: []
+  UrGoNeLoL:
+    group: C
+    subgroups: []
+    permissions: []
+  VictorVeronica:
+    group: E
+    subgroups: []
+    permissions: []
+  VinccccccNL:
+    group: B
+    subgroups: []
+    permissions: []
+  voesthomas:
+    group: E
+    subgroups: []
+    permissions: []
+  Wabsickle:
+    group: C
+    subgroups: []
+    permissions: []
+  waesche:
+    group: D
+    subgroups: []
+    permissions: []
+  WalkingAngel:
+    group: C
+    subgroups: []
+    permissions: []
+  wilco375:
+    group: D
+    subgroups: []
+    permissions: []
+  williamprice1021:
+    group: E
+    subgroups: []
+    permissions: []
+  wizar11:
+    group: D
+    subgroups: []
+    permissions: []
+  WolvenPhoenix:
+    group: E
+    subgroups: []
+    permissions: []
+  Woutdika:
+    group: E
+    subgroups: []
+    permissions: []
+  WTFitsjackie:
+    group: E
+    subgroups: []
+    permissions: []
+  xChaChaa:
+    group: C
+    subgroups: []
+    permissions: []
+  XenonNova23:
+    group: E
+    subgroups: []
+    permissions: []
+  XilverSenne1:
+    group: E
+    subgroups: []
+    permissions: []
+  xmagic_funkzx:
+    group: E
+    subgroups: []
+    permissions: []
+  Xzero119:
+    group: B
+    subgroups: []
+    permissions: []
+  y0up0wn3d:
+    group: D
+    subgroups: []
+    permissions: []
+  YamiNoShiroiTora:
+    group: A
+    subgroups: []
+    permissions: []
+  yolo2k14:
+    group: E
+    subgroups: []
+    permissions: []
+  YoloSwagger137:
+    group: C
+    subgroups: []
+    permissions: []
+  yorib7:
+    group: E
+    subgroups: []
+    permissions: []
+  Zeemad:
+    group: E
+    subgroups: []
+    permissions: []
+  ZizZey:
+    group: E
+    subgroups: []
+    permissions: []
+  Zjoewie:
+    group: E
+    subgroups: []
+    permissions: []
+  zniv:
+    group: E
+    subgroups: []
+    permissions: []
+  zombie3110:
+    group: D
+    subgroups: []
+    permissions: []

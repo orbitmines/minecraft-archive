@@ -1,0 +1,192 @@
+# Citizens NPC Storage
+
+last-created-npc-id: 12
+npc:
+  '12':
+    name: §c§l> Paladin <
+    traits:
+      location:
+        world: Event
+        x: '571.5218009249018'
+        y: '5.0'
+        z: '-738.492255117811'
+        yaw: '-0.15005068480968475'
+        pitch: '8.699995040893555'
+      equipment:
+        hand:
+          type: IRON_SWORD
+          amount: 1
+          durability: 0
+          mdata: 0
+          meta: {}
+          enchantments:
+            DAMAGE_ALL: 1
+        helmet:
+          type: DIAMOND_HELMET
+          amount: 1
+          durability: 0
+          mdata: 0
+          meta: {}
+          enchantments:
+            PROTECTION_ENVIRONMENTAL: 1
+        chestplate:
+          type: DIAMOND_CHESTPLATE
+          amount: 1
+          durability: 0
+          mdata: 0
+          meta: {}
+          enchantments:
+            PROTECTION_ENVIRONMENTAL: 1
+        leggings:
+          type: DIAMOND_LEGGINGS
+          amount: 1
+          durability: 0
+          mdata: 0
+          meta: {}
+          enchantments:
+            PROTECTION_ENVIRONMENTAL: 1
+        boots:
+          type: DIAMOND_BOOTS
+          amount: 1
+          durability: 0
+          mdata: 0
+          meta: {}
+          enchantments:
+            PROTECTION_ENVIRONMENTAL: 1
+      spawned: true
+      owner: O_o_Fadi_o_O
+    traitnames: location,type,equipment,spawned,owner
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+  '11':
+    name: §c§l> Longbow <
+    traits:
+      location:
+        world: Event
+        x: '561.584078900653'
+        y: '5.0'
+        z: '-728.5109388450178'
+        yaw: '269.6999816894531'
+        pitch: '9.149994850158691'
+      equipment:
+        hand:
+          type: BOW
+          amount: 1
+          durability: 0
+          mdata: 0
+          meta: {}
+          enchantments:
+            ARROW_DAMAGE: 1
+        helmet:
+          type: LEATHER_HELMET
+          amount: 1
+          durability: 0
+          mdata: 0
+          meta:
+            armor:
+              color: 10511680
+          enchantments:
+            PROTECTION_ENVIRONMENTAL: 1
+        chestplate:
+          type: LEATHER_CHESTPLATE
+          amount: 1
+          durability: 0
+          mdata: 0
+          meta:
+            armor:
+              color: 10511680
+          enchantments:
+            PROTECTION_ENVIRONMENTAL: 1
+        leggings:
+          type: LEATHER_LEGGINGS
+          amount: 1
+          durability: 0
+          mdata: 0
+          meta:
+            armor:
+              color: 10511680
+          enchantments:
+            PROTECTION_ENVIRONMENTAL: 1
+        boots:
+          type: LEATHER_BOOTS
+          amount: 1
+          durability: 0
+          mdata: 0
+          meta:
+            armor:
+              color: 10511680
+          enchantments:
+            PROTECTION_ENVIRONMENTAL: 1
+      spawned: true
+      owner: O_o_Fadi_o_O
+    traitnames: location,type,equipment,owner,spawned
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+  '10':
+    name: §c§l> Rogue <
+    traits:
+      location:
+        world: Event
+        x: '571.5093349663983'
+        y: '5.0'
+        z: '-718.7187632912988'
+        yaw: '180.1500244140625'
+        pitch: '4.799997806549072'
+      equipment:
+        hand:
+          type: DIAMOND_SWORD
+          amount: 1
+          durability: 0
+          mdata: 0
+          meta: {}
+          enchantments:
+            DAMAGE_ALL: 1
+        helmet:
+          type: CHAINMAIL_HELMET
+          amount: 1
+          durability: 0
+          mdata: 0
+          meta: {}
+          enchantments:
+            PROTECTION_ENVIRONMENTAL: 1
+        chestplate:
+          type: CHAINMAIL_CHESTPLATE
+          amount: 1
+          durability: 0
+          mdata: 0
+          meta: {}
+          enchantments:
+            PROTECTION_ENVIRONMENTAL: 1
+        leggings:
+          type: CHAINMAIL_LEGGINGS
+          amount: 1
+          durability: 0
+          mdata: 0
+          meta: {}
+          enchantments:
+            PROTECTION_ENVIRONMENTAL: 1
+        boots:
+          type: CHAINMAIL_BOOTS
+          amount: 1
+          durability: 0
+          mdata: 0
+          meta: {}
+          enchantments:
+            PROTECTION_ENVIRONMENTAL: 1
+      spawned: true
+      owner: O_o_Fadi_o_O
+    traitnames: location,type,equipment,spawned,owner
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true

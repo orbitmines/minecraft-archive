@@ -1,0 +1,65 @@
+ShopName: Kit-Rogue
+signs:
+  text: '[Kit-Rogue]'
+  NeedPermissionToCreateSign: true
+shop:
+  Choose:
+    RewardType: command
+    PriceType: free
+    Reward:
+    - 'manuadd %player% Rogue'
+    - 'mvtp %player% Event'
+    - 'kit Rogue %player%'
+    - 'sudo O_o_Fadi_o_O pwrsay say event &f%player%&c has chosen the &fRogue Kit&c!'
+    MenuItem:
+    - id:351
+    - amount:1
+    - durability:10
+    - 'name:&bSelect: &aRogue'
+    InventoryLocation: 1
+    ExtraPermission: 'shops.waiting'
+  Rogue:
+    RewardType: shop
+    PriceType: free
+    Reward: Rogue
+    MenuItem:
+    - type:GOLD_INGOT
+    - amount:1
+    - 'name:&bShop: &aRogue'
+    - 'lore:&7View the Rogue Shop...'
+    - amount:1
+    InventoryLocation: 9
+    ExtraPermission: 'shops.waiting'
+  Boots:
+    RewardType: money
+    PriceType: free
+    Reward: 0
+    MenuItem:
+    - id:301
+    - amount:1
+    - 'name:&bTier 1 : &cRogue Boots'
+    - enchantment:DURABILITY#10
+    InventoryLocation: 13
+    ExtraPermission: 'shops.waiting'
+  Sword:
+    RewardType: money
+    PriceType: free
+    Reward: 0
+    MenuItem:
+    - id:268
+    - amount:1
+    - 'name:&bTier 1 : &cRogue Sword'
+    - enchantment:DURABILITY#10
+    - enchantment:KNOCKBACK#1
+    InventoryLocation: 6
+    ExtraPermission: 'shops.waiting'
+  Steak:
+    RewardType: money
+    PriceType: free
+    Reward: 0
+    MenuItem:
+    - id:364
+    - amount:5
+    InventoryLocation: 15
+    ExtraPermission: 'shops.waiting'
+

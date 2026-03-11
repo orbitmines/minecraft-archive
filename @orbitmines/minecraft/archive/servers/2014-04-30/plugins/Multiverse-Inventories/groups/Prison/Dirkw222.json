@@ -1,0 +1,1 @@
+{"SURVIVAL":{"enderChestContents":{},"balance":"0.0","inventoryContents":{"1":{"==":"org.bukkit.inventory.ItemStack","type":"COBBLESTONE","amount":20},"0":{"==":"org.bukkit.inventory.ItemStack","type":"TORCH"}},"potions":"[]","armorContents":{},"stats":{"ra":"300","ex":"1.9817476","hp":"18","fl":"0","txp":"0","el":"0","ma":"300","sa":"0.0","xp":"0.0","ft":"-20","fd":"0.0"}}}

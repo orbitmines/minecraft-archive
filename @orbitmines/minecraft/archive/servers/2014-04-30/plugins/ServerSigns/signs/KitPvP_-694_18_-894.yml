@@ -1,0 +1,16 @@
+permission: ''
+world: KitPvP
+X: -694
+Y: 18
+Z: -894
+price: 0.0
+cooldown: 0
+globalCooldown: 0
+confirmation: false
+commands:
+- '/KitPvPEnderchest '
+grantPermissions: []
+lastGlobalUse: 0
+lastUse: {}
+priceItems: []
+exp: 0

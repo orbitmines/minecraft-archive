@@ -1,0 +1,390 @@
+ShopName: PVoteShopSell3
+signs:
+  text: '[VoteShopSell3]'
+  NeedPermissionToCreateSign: true
+shop:
+  Redstone:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - type:REDSTONE
+      - amount:1
+    Reward: 20
+    MenuItem:
+    - 'type: REDSTONE'
+    - amount:1
+    - name:&4&L1 Redstone
+    - 'lore:&2&LReward: &4&m10$&b 20$'
+    - amount:1
+    InventoryLocation: 2
+    ExtraPermission: ''
+  Redstone16:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - type:REDSTONE
+      - amount:16
+    Reward: 320
+    MenuItem:
+    - 'type: REDSTONE'
+    - amount:16
+    - name:&4&L16 Redstone
+    - 'lore:&2&LReward: &4&m160$&b 320$'
+    - amount:16
+    InventoryLocation: 11
+    ExtraPermission: ''
+  Redstone32:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - type:REDSTONE
+      - amount:32
+    Reward: 640
+    MenuItem:
+    - 'type: REDSTONE'
+    - amount:32
+    - name:&4&L32 Redstone
+    - 'lore:&2&LReward: &4&m320$&b 640$'
+    - amount:32
+    InventoryLocation: 20
+    ExtraPermission: ''
+  Redstone64:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - type:REDSTONE
+      - amount:64
+    Reward: 1280
+    MenuItem:
+    - 'type: REDSTONE'
+    - amount:64
+    - name:&4&L64 Redstone
+    - 'lore:&2&LReward: &4&m640$&b 1280$'
+    - amount:64
+    InventoryLocation: 29
+    ExtraPermission: ''
+  Lapis:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - id:351
+      - amount:1
+      - durability:4
+    Reward: 30
+    MenuItem:
+    - 'id: 351'
+    - amount:1
+    - durability:4
+    - name:&1&L1 Lapis Lazuli
+    - 'lore:&2&LReward: &4&m15$&b 30$'
+    - amount:1
+    - durability:4
+    InventoryLocation: 3
+    ExtraPermission: ''
+  Lapis16:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - id:351
+      - amount:16
+      - durability:4
+    Reward: 480
+    MenuItem:
+    - 'id: 351'
+    - amount:16
+    - durability:4
+    - name:&1&L16 Lapis Lazuli
+    - 'lore:&2&LReward: &4&m240$&b 480$'
+    - amount:16
+    - durability:4
+    InventoryLocation: 12
+    ExtraPermission: ''
+  Lapis32:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - id:351
+      - amount:32
+      - durability:4
+    Reward: 960
+    MenuItem:
+    - 'id: 351'
+    - amount:32
+    - durability:4
+    - name:&1&L32 Lapis Lazuli
+    - 'lore:&2&LReward: &4&m480$&b 960$'
+    - amount:32
+    - durability:4
+    InventoryLocation: 21
+    ExtraPermission: ''
+  Lapis64:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - id:351
+      - amount:64
+      - durability:4
+    Reward: 1920
+    MenuItem:
+    - 'id: 351'
+    - amount:64
+    - durability:4
+    - name:&1&L64 Lapis Lazuli
+    - 'lore:&2&LReward: &4&m960$&b 1920$'
+    - amount:64
+    - durability:4
+    InventoryLocation: 30
+    ExtraPermission: ''
+  BlockRedstone:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - id:152
+      - amount:1
+    Reward: 200
+    MenuItem:
+    - 'id: 152'
+    - amount:1
+    - name:&4&L1 Redstone Block
+    - 'lore:&2&LReward: &4&m100$&b 200$'
+    - amount:1
+    InventoryLocation: 4
+    ExtraPermission: ''
+  BlockRedstone16:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - id:152
+      - amount:16
+    Reward: 3200
+    MenuItem:
+    - 'id: 152'
+    - amount:16
+    - name:&4&L16 Redstone Block
+    - 'lore:&2&LReward: &4&m1600$&b 3200$'
+    - amount:16
+    InventoryLocation: 13
+    ExtraPermission: ''
+  BlockRedstone32:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - id:152
+      - amount:32
+    Reward: 6400
+    MenuItem:
+    - 'id: 152'
+    - amount:32
+    - name:&4&L32 Redstone Block
+    - 'lore:&2&LReward: &4&m3200$&b 6400$'
+    - amount:32
+    InventoryLocation: 22
+    ExtraPermission: ''
+  BlockRedstone64:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - id:152
+      - amount:64
+    Reward: 12800
+    MenuItem:
+    - 'id: 152'
+    - amount:64
+    - name:&4&L64 Redstone Block
+    - 'lore:&2&LReward: &4&m6400$&b 12800$'
+    - amount:64
+    InventoryLocation: 31
+    ExtraPermission: ''
+  BlockLapis:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - id:22
+      - amount:1
+    Reward: 300
+    MenuItem:
+    - 'id: 22'
+    - amount:1
+    - name:&1&L1 Lapis Lazuli Block
+    - 'lore:&2&LReward: &4&m150$&b 300$'
+    - amount:1
+    InventoryLocation: 5
+    ExtraPermission: ''
+  BlockLapis16:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - id:22
+      - amount:16
+    Reward: 4800
+    MenuItem:
+    - 'id: 22'
+    - amount:16
+    - name:&1&L16 Lapis Lazuli Block
+    - 'lore:&2&LReward: &4&m2400$&b 4800$'
+    - amount:16
+    InventoryLocation: 14
+    ExtraPermission: ''
+  BlockLapis32:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - id:22
+      - amount:32
+    Reward: 9600
+    MenuItem:
+    - 'id: 22'
+    - amount:32
+    - name:&1&L32 Lapis Lazuli Block
+    - 'lore:&2&LReward: &4&m4800$&b 9600$'
+    - amount:32
+    InventoryLocation: 23
+    ExtraPermission: ''
+  BlockLapis64:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - id:22
+      - amount:64
+    Reward: 19200
+    MenuItem:
+    - 'id: 22'
+    - amount:64
+    - name:&1&L64 Lapis Lazuli Block
+    - 'lore:&2&LReward: &4&m9600$&b 19200$'
+    - amount:64
+    InventoryLocation: 32
+    ExtraPermission: ''
+  Stone:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - id:1
+      - amount:1
+    Reward: 3
+    MenuItem:
+    - 'id: 1'
+    - amount:1
+    - name:&7&L1 Stone
+    - 'lore:&2&LReward: &4&m1,5$&b 3$'
+    - amount:1
+    InventoryLocation: 6
+    ExtraPermission: ''
+  Stone16:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - id:1
+      - amount:16
+    Reward: 50
+    MenuItem:
+    - 'id: 1'
+    - amount:16
+    - name:&7&L16 Stone
+    - 'lore:&2&LReward: &4&m25$&b 50$'
+    - amount:16
+    InventoryLocation: 15
+    ExtraPermission: ''
+  Stone32:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - id:1
+      - amount:32
+    Reward: 100
+    MenuItem:
+    - 'id: 1'
+    - amount:32
+    - name:&7&L32 Stone
+    - 'lore:&2&LReward: &4&m50$&b 100$'
+    - amount:32
+    InventoryLocation: 24
+    ExtraPermission: ''
+  Stone64:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - id:1
+      - amount:64
+    Reward: 200
+    MenuItem:
+    - 'id: 1'
+    - amount:64
+    - name:&7&L64 Stone
+    - 'lore:&2&LReward: &4&m100$&b 200$'
+    - amount:64
+    InventoryLocation: 33
+    ExtraPermission: ''
+  WoodLog:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - id:17
+      - amount:1
+    Reward: 10
+    MenuItem:
+    - 'id: 17'
+    - amount:1
+    - name:&6&L1 Wood Log
+    - 'lore:&2&LReward: &4&m5$&b 10$'
+    - amount:1
+    InventoryLocation: 7
+    ExtraPermission: ''
+  WoodLog16:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - id:17
+      - amount:16
+    Reward: 160
+    MenuItem:
+    - 'id: 17'
+    - amount:16
+    - name:&6&L16 Wood Log
+    - 'lore:&2&LReward: &4&m80$&b 160$'
+    - amount:16
+    InventoryLocation: 16
+    ExtraPermission: ''
+  WoodLog32:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - id:17
+      - amount:32
+    Reward: 320
+    MenuItem:
+    - 'id: 17'
+    - amount:32
+    - name:&6&L32 Wood Log
+    - 'lore:&2&LReward: &4&m160$&b 320$'
+    - amount:32
+    InventoryLocation: 25
+    ExtraPermission: ''
+  WoodLog64:
+    RewardType: money
+    PriceType: item
+    Price:
+    - - id:17
+      - amount:64
+    Reward: 640
+    MenuItem:
+    - 'id: 17'
+    - amount:64
+    - name:&6&L64 Wood Log
+    - 'lore:&2&LReward: &4&m320$&b 640$'
+    - amount:64
+    InventoryLocation: 34
+    ExtraPermission: ''
+  PrisonPage2:
+    RewardType: shop
+    PriceType: free
+    Reward: PVoteShopSell2
+    MenuItem:
+    - type:REDSTONE_BLOCK
+    - amount:2
+    - name:&4&L<< Prison Sell Page 2
+    - lore:&8Open Page 2
+    - amount:2
+    InventoryLocation: 19
+    ExtraPermission: ''
+

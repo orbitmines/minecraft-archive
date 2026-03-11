@@ -1,0 +1,103 @@
+ShopName: SpawnEggs
+signs:
+  text: '[SpawnEggs]'
+  NeedPermissionToCreateSign: true
+shop:
+  Chicken:
+    RewardType: item
+    PriceType: money
+    Price: 200
+    Reward:
+    - - id:383
+      - durability:93
+      - amount:1
+    MenuItem:
+    - 'id:383'
+    - durability:93
+    - amount:1
+    - name:&7&L1 Chicken Spawn Egg
+    - 'lore:&c&LPrice: &b200 Money'
+    - amount:1
+    InventoryLocation: 1
+    ExtraPermission: ''
+  Pig:
+    RewardType: item
+    PriceType: money
+    Price: 350
+    Reward:
+    - - id:383
+      - durability:90
+      - amount:1
+    MenuItem:
+    - 'id:383'
+    - durability:90
+    - amount:1
+    - name:&d&L1 Pig Spawn Egg
+    - 'lore:&c&LPrice: &b350 Money'
+    - amount:1
+    InventoryLocation: 2
+    ExtraPermission: ''
+  Sheep:
+    RewardType: item
+    PriceType: money
+    Price: 400
+    Reward:
+    - - id:383
+      - durability:91
+      - amount:1
+    MenuItem:
+    - 'id:383'
+    - durability:91
+    - amount:1
+    - name:&f&L1 Sheep Spawn Egg
+    - 'lore:&c&LPrice: &b400 Money'
+    - amount:1
+    InventoryLocation: 3
+    ExtraPermission: ''
+  Cow:
+    RewardType: item
+    PriceType: money
+    Price: 500
+    Reward:
+    - - id:383
+      - durability:92
+      - amount:1
+    MenuItem:
+    - 'id:383'
+    - durability:92
+    - amount:1
+    - name:&8&L1 Cow Spawn Egg
+    - 'lore:&c&LPrice: &b500 Money'
+    - amount:1
+    InventoryLocation: 4
+    ExtraPermission: ''
+  Horse:
+    RewardType: item
+    PriceType: money
+    Price: 1000
+    Reward:
+    - - id:383
+      - durability:100
+      - amount:1
+    MenuItem:
+    - 'id:383'
+    - durability:100
+    - amount:1
+    - name:&e&L1 Horse Spawn Egg
+    - 'lore:&c&LPrice: &b1000 Money'
+    - amount:1
+    InventoryLocation: 5
+    ExtraPermission: ''
+  BackToMenu:
+    RewardType: shop
+    PriceType: free
+    Reward: Survival
+    MenuItem:
+    - type:REDSTONE_BLOCK
+    - amount:1
+    - name:&a&LSurvival Menu
+    - lore:&8Back to Survival Menu
+    - amount:1
+    InventoryLocation: 9
+    ExtraPermission: ''
+

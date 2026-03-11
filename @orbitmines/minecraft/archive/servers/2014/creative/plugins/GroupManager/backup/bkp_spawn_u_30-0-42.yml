@@ -1,0 +1,98 @@
+users:
+  basteti:
+    group: UserS
+    subgroups: []
+    permissions:
+    - commandlog.notice
+    - essentials.ban
+    - essentials.kick
+    - essentials.tp
+    - essentials.tp.others
+    - nametag.group.mod
+    - staffsecure.staff
+    info:
+      '&b[Mod]': '&b'
+      prefix: '&9[&b&lMod&9] &b'
+  BenYOmin_Mango:
+    group: UserS
+    subgroups: []
+    permissions:
+    - staffsecure.staff
+    info:
+      prefix: '&c[&4&lCo-Owner&c] &4'
+  eekhoorn2000:
+    group: UserS
+    subgroups: []
+    permissions:
+    - colorshuffle.restore
+    - commandlog.notice
+    - essenstials.ban
+    - essenstials.kick
+    - essenstials.tp
+    - essenstials.tp.others
+    - essentials.afk
+    - essentials.ban
+    - essentials.enderchest
+    - essentials.kick
+    - essentials.tp
+    - essentials.tp.others
+    - essentials.workbench
+    - mycommand.cmd.310
+    - playermagnet.magnet
+    - staffsecure.staff
+    - tc.aqua
+    - toolswap.off
+    - toolswap.on
+    - toolswap.use
+    info:
+      prefix: '&9[&b&lMod&9] &b'
+  O_o_Fadi_o_O:
+    group: UserS
+    subgroups: []
+    permissions:
+    - bossshop.open
+    - essentials.kits.Archer
+    - essentials.kits.Ores
+    - kit.kit
+    - kit.Starter
+    - staffsecure.staff
+    - worldedit.limit
+    info:
+      prefix: '&c[&4&lOwner&c] &4'
+  sharewoods:
+    group: UserS
+    subgroups: []
+    permissions:
+    - colorshuffle.restore
+    - commandlog.notice
+    - essentials.ban
+    - essentials.kick
+    - essentials.tp
+    - essentials.tp.others
+    - mycommand.cmd.310
+    - staffsecure.staff
+    info:
+      prefix: '&9[&b&lMod&9] &b'
+  SinaasAppelke:
+    group: UserS
+    subgroups: []
+    permissions:
+    - commandlog.notice
+    - essentials.ban
+    - essentials.kick
+    - essentials.tp
+    - essentials.tp.others
+    - nametag.group.mod
+    - staffsecure.staff
+    info:
+      prefix: '&9[&b&lMod&9] &b'
+  slienimon:
+    group: UserS
+    subgroups: []
+    permissions:
+    - -nametag.group.owner
+    - multiverse.teleport.self.*
+    - multiverse.teleport.self.TestWorld
+    - staffsecure.staff
+    info:
+      prefix: '&4[&c&lAdmin&4] &c'

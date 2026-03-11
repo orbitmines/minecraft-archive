@@ -1,0 +1,68 @@
+users:
+  avancoi:
+    group: Checkpoint6
+    subgroups: []
+    permissions: []
+  BajanCanadian5:
+    group: Checkpoint1
+    subgroups: []
+    permissions: []
+  basteti:
+    group: Checkpoint1
+    subgroups: []
+    permissions: []
+  Bryan20027:
+    group: Checkpoint4
+    subgroups: []
+    permissions: []
+  ElgarL:
+    group: Checkpoint0
+    subgroups: []
+    permissions:
+    - groupmanager.noofflineperms
+  firedraak:
+    group: Checkpoint7
+    subgroups: []
+    permissions: []
+  gigantmelvin:
+    group: Checkpoint1
+    subgroups: []
+    permissions: []
+  gwnluca:
+    group: Checkpoint6
+    subgroups: []
+    permissions: []
+  its_me_djimmi:
+    group: Checkpoint1
+    subgroups: []
+    permissions: []
+  jim5491158:
+    group: Checkpoint6
+    subgroups: []
+    permissions: []
+  KHobbits:
+    group: Checkpoint0
+    subgroups: []
+    permissions:
+    - groupmanager.noofflineperms
+  knufi360:
+    group: Checkpoint1
+    subgroups: []
+    permissions: []
+  O_o_Fadi_o_O:
+    group: Checkpoint7
+    subgroups: []
+    permissions: []
+  Pieguy123456:
+    group: Checkpoint1
+    subgroups: []
+    permissions: []
+  SinaasAppelke:
+    group: Checkpoint1
+    subgroups: []
+    permissions: []
+  snowleo:
+    group: Checkpoint0
+    subgroups: []
+    permissions:
+    - groupmanager.noofflineperms

@@ -1,0 +1,15 @@
+# Shall I notify people of a LibsDisguises update?
+NotifyUpdate: true
+Permission: libsdisguises.update
+DisguiseRadiusMax: 50
+UndisguiseRadiusMax: 50
+ViewSelfDisguises: false
+DisguiseSounds: true
+HearSelfDisguise: false
+SendVelocity: true
+RemoveArmor: true
+RemoveHeldItem: true
+AddEntityAnimations: true
+RemoveUnusedDisguises: true
+ShowNamesAboveDisguises: false
+NameAboveHeadAlwaysVisible: true

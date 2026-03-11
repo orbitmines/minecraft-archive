@@ -1,0 +1,270 @@
+#Prefix of the Message
+MessagePrefix: "&c[ &4KitPvP &c]"
+
+# %currency value (e.g. Dollar, Forint, Euro or symbol)
+Currency: "$"
+
+#If you reloaded the config, you will get this message
+MessageConfigReload: "The configuration file reloaded"
+
+# Command permission
+MessageNoPermission: "You have not permission for this command!"
+
+# Player message, if  the config is bad
+MessageConfigError: "Config Error! Please report to admin!"
+
+# Set True, if you want give money if the player kill mobs in the MobArena
+EarnMoneyInMobArena: false
+
+# Multiworld support, you can disable this plugin on some worlds. Use "," if you would like add more worlds. ( E.g.: world_nether,world_the_end )
+# Use "nothing" if you wouldn't like this feature.
+DisableOnThisWorlds: nothing
+
+# This option disable that the player get cash, if the mob spawned from spawner or spawner egg.
+DisableSpawnerFarming: true
+
+# You can enable or disable that, the players get message if he/she earn money.
+SendMessageWhenEarnMoney: true
+
+# 1st line: The mob's name, do not change it!
+# 2nd line (Enabled): If you want give money for this mob kill
+# 3rd line (Negative): If you want negative cash (withdraw) then set true
+# 4th line (MinMoney): The minimum money for kill
+# 5th line (MaxMoney): The maximum money for kill
+# 6th line (Message): The player get this message, if he/she killed a mob
+# 7th line (MessageNegative): If you set Negative to true, then this message will be send to player
+
+# String List:
+# %currency = Currency value
+# %money = Earned money
+# %playername = Killer player's name
+# %victim = Killed player's name
+
+# If you would like give fix money, then must MinMoney equal with MaxMoney!
+
+Pig:
+   Enabled: false
+   Negative: false
+   MinMoney: 1
+   MaxMoney: 2
+   Message: "&6Congratulation &7%playername&6! &7You killed a &6PIG&7! You earned: &6%currency%money"
+   MessageNegative: "&6Ops! &7%playername&6, &7you lost &6%currency%money"
+   
+Sheep:
+   Enabled: false
+   Negative: false
+   MinMoney: 1
+   MaxMoney: 2
+   Message: "&6Congratulation &7%playername&6! &7You killed a &6SHEEP&7! You earned: &6%currency%money"
+   MessageNegative: "&6Ops! &7%playername&6, &7you lost &6%currency%money"
+   
+Chicken:
+   Enabled: false
+   Negative: false
+   MinMoney: 1
+   MaxMoney: 2
+   Message: "&6Congratulation &7%playername&6! &7You killed a &6CHICKEN&7! You earned: &6%currency%money"
+   MessageNegative: "&6Ops! &7%playername&6, &7you lost &6%currency%money"
+   
+Cow:
+   Enabled: false
+   Negative: false
+   MinMoney: 1
+   MaxMoney: 2
+   Message: "&6Congratulation &7%playername&6! &7You killed a &6COW&7! You earned: &6%currency%money"
+   MessageNegative: "&6Ops! &7%playername&6, &7you lost &6%currency%money"
+
+Horse:
+   Enabled: false
+   Negative: false
+   MinMoney: 1
+   MaxMoney: 2
+   Message: "&6Congratulation &7%playername&6! &7You killed a &6HORSE&7! You earned: &6%currency%money"
+   MessageNegative: "&6Ops! &7%playername&6, &7you lost &6%currency%money"
+   
+Wolf:
+   Enabled: false
+   Negative: false
+   MinMoney: 1
+   MaxMoney: 2
+   Message: "&6Congratulation &7%playername&6! &7You killed a &6WOLF&7! You earned: &6%currency%money"
+   MessageNegative: "&6Ops! &7%playername&6, &7you lost &6%currency%money"
+   
+Ocelot:
+   Enabled: false
+   Negative: false
+   MinMoney: 1
+   MaxMoney: 2
+   Message: "&6Congratulation &7%playername&6! &7You killed an &6OCELOT&7! You earned: &6%currency%money"
+   MessageNegative: "&6Ops! &7%playername&6, &7you lost &6%currency%money"
+   
+Bat:
+   Enabled: false
+   Negative: false
+   MinMoney: 5
+   MaxMoney: 10
+   Message: "&6Congratulation &7%playername&6! &7You killed a &6BAT&7! You earned: &6%currency%money"
+   MessageNegative: "&6Ops! &7%playername&6, &7you lost &6%currency%money"
+   
+Blaze:
+   Enabled: false
+   Negative: false
+   MinMoney: 25
+   MaxMoney: 25
+   Message: "&6Congratulation &7%playername&6! &7You killed a &6BLAZE&7! You earned: &6%currency%money"
+   MessageNegative: "&6Ops! &7%playername&6, &7you lost &6%currency%money"
+   
+CaveSpider:
+   Enabled: false
+   Negative: false
+   MinMoney: 25
+   MaxMoney: 25
+   Message: "&6Congratulation &7%playername&6! &7You killed a &6CAVE SPIDER&7! You earned: &6%currency%money"
+   MessageNegative: "&6Ops! &7%playername&6, &7you lost &6%currency%money"
+   
+Creeper:
+   Enabled: false
+   Negative: false
+   MinMoney: 25
+   MaxMoney: 25
+   Message: "&6Congratulation &7%playername&6! &7You killed a &6CREEPER&7! You earned: &6%currency%money"
+   MessageNegative: "&6Ops! &7%playername&6, &7you lost &6%currency%money"
+   
+Enderdragon:
+   Enabled: false
+   Negative: false
+   MinMoney: 500
+   MaxMoney: 500
+   Message: "&6Congratulation &7%playername&6! &7You killed the &6ENDER DRAGON&7! You earned: &6%currency%money"
+   MessageNegative: "&6Ops! &7%playername&6, &7you lost &6%currency%money"
+   
+Enderman:
+   Enabled: false
+   Negative: false
+   MinMoney: 35
+   MaxMoney: 35
+   Message: "&6Congratulation &7%playername&6! &7You killed an &6ENDERMAN&7! You earned: &6%currency%money"
+   MessageNegative: "&6Ops! &7%playername&6, &7you lost &6%currency%money"
+   
+Ghast:
+   Enabled: false
+   Negative: false
+   MinMoney: 35
+   MaxMoney: 35
+   Message: "&6Congratulation &7%playername&6! &7You killed a &6GHAST&7! You earned: &6%currency%money"
+   MessageNegative: "&6Ops! &7%playername&6, &7you lost &6%currency%money"
+   
+Giant:
+   Enabled: false
+   Negative: false
+   MinMoney: 35
+   MaxMoney: 35
+   Message: "&6Congratulation &7%playername&6! &7You killed a &6GIANT&7! You earned: &6%currency%money"
+   MessageNegative: "&6Ops! &7%playername&6, &7you lost &6%currency%money"
+   
+MagmaCube:
+   Enabled: false
+   Negative: false
+   MinMoney: 25
+   MaxMoney: 25
+   Message: "&6Congratulation &7%playername&6! &7You killed a &6MAGMA CUBE&7! You earned: &6%currency%money"
+   MessageNegative: "&6Ops! &7%playername&6, &7you lost &6%currency%money"
+   
+MushroomCow:
+   Enabled: false
+   Negative: false
+   MinMoney: 5
+   MaxMoney: 5
+   Message: "&6Congratulation &7%playername&6! &7You killed a &6MUSHROOM COW&7! You earned: &6%currency%money"
+   MessageNegative: "&6Ops! &7%playername&6, &7you lost &6%currency%money"
+   
+PigZombie:
+   Enabled: false
+   Negative: false
+   MinMoney: 35
+   MaxMoney: 35
+   Message: "&6Congratulation &7%playername&6! &7You killed a &6PIG ZOMBIE&7! You earned: &6%currency%money"
+   MessageNegative: "&6Ops! &7%playername&6, &7you lost &6%currency%money"
+   
+Player:
+   Enabled: true
+   Negative: false
+   MinMoney: 50
+   MaxMoney: 50
+   # The killer take percent of victim money ( 0 disabled, max 100, default 10 )
+   CashTransmissionPercent: 0
+   Message: "&bGood Job &6%playername&6! &bYou killed &6%victim&b! You earned: &6%currency%money"
+   MessageNegative: "&cOuch! &4%playername&6, &cyou lost &4%currency%money"
+   MessageToVictimIfLostCash: "&7Ops&6! &7You lost &6%currency%lostmoney&7, because you killed by &6%playername&7!"
+   
+Silverfish:
+   Enabled: false
+   Negative: false
+   MinMoney: 15
+   MaxMoney: 15
+   Message: "&6Congratulation &7%playername&6! &7You killed a &6SILVERFISH&7! You earned: &6%currency%money"
+   MessageNegative: "&6Ops! &7%playername&6, &7you lost &6%currency%money"
+   
+Skeleton:
+   Enabled: false
+   Negative: false
+   MinMoney: 25
+   MaxMoney: 25
+   Message: "&6Congratulation &7%playername&6! &7You killed a &6SKELETON&7! You earned: &6%currency%money"
+   MessageNegative: "&6Ops! &7%playername&6, &7you lost &6%currency%money"
+   
+Slime:
+   Enabled: false
+   Negative: false
+   MinMoney: 25
+   MaxMoney: 25
+   Message: "&6Congratulation &7%playername&6! &7You killed a &6SLIME&7! You earned: &6%currency%money"
+   MessageNegative: "&6Ops! &7%playername&6, &7you lost &6%currency%money"
+   
+Spider:
+   Enabled: false
+   Negative: false
+   MinMoney: 25
+   MaxMoney: 25
+   Message: "&6Congratulation &7%playername&6! &7You killed a &6SPIDER&7! You earned: &6%currency%money"
+   MessageNegative: "&6Ops! &7%playername&6, &7you lost &6%currency%money"
+   
+Squid:
+   Enabled: false
+   Negative: false
+   MinMoney: 5
+   MaxMoney: 5
+   Message: "&6Congratulation &7%playername&6! &7You killed a &6SQUID&7! You earned: &6%currency%money"
+   MessageNegative: "&6Ops! &7%playername&6, &7you lost &6%currency%money"
+   
+Villager:
+   Enabled: false
+   Negative: true
+   MinMoney: 100
+   MaxMoney: 100
+   Message: "&6Congratulation &7%playername&6! &7You killed a &6VILLAGER&7! You earned: &6%currency%money"
+   MessageNegative: "&6Ops! &7%playername&6, &7you lost &6%currency%money"
+   
+Witch:
+   Enabled: false
+   Negative: false
+   MinMoney: 35
+   MaxMoney: 35
+   Message: "&6Congratulation &7%playername&6! &7You killed a &6WITCH&7! You earned: &6%currency%money"
+   MessageNegative: "&6Ops! &7%playername&6, &7you lost &6%currency%money"
+   
+Wither:
+   Enabled: false
+   Negative: false
+   MinMoney: 350
+   MaxMoney: 350
+   Message: "&6Congratulation &7%playername&6! &7You killed a &6WITHER&7! You earned: &6%currency%money"
+   MessageNegative: "&6Ops! &7%playername&6, &7you lost &6%currency%money"
+   
+Zombie:
+   Enabled: false
+   Negative: false
+   MinMoney: 25
+   MaxMoney: 25
+   Message: "&6Congratulation &7%playername&6! &7You killed a &6ZOMBIE&7! You earned: &6%currency%money"
+   MessageNegative: "&6Ops! &7%playername&6, &7you lost &6%currency%money"

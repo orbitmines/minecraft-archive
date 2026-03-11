@@ -1,0 +1,694 @@
+PrisonServer:
+  shop_34:
+    signs:
+      '0':
+        world: PrisonServer
+        X: -885.0
+        Y: 9.0
+        Z: 313.0
+    price: 500.0
+    hidden: true
+    renttime: 432000000
+    owner: gkleinlein
+    account: O_o_Fadi_o_O
+    taken: true
+    expiredate: 1399132349328
+  shop_35:
+    signs:
+      '0':
+        world: PrisonServer
+        X: -881.0
+        Y: 9.0
+        Z: 313.0
+    price: 500.0
+    renttime: 432000000
+    hidden: true
+    owner: xChaChaa
+    account: O_o_Fadi_o_O
+    taken: true
+    expiredate: 1399746908270
+  shop_33:
+    signs:
+      '0':
+        world: PrisonServer
+        X: -889.0
+        Y: 9.0
+        Z: 313.0
+    price: 500.0
+    hidden: true
+    renttime: 432000000
+    owner: Block_boy02
+    account: O_o_Fadi_o_O
+    taken: true
+    expiredate: 1398931143908
+  Shop_40:
+    signs:
+      '0':
+        world: PrisonServer
+        X: -863.0
+        Y: 9.0
+        Z: 287.0
+    price: 500.0
+    renttime: 432000000
+    hidden: false
+    account: O_o_Fadi_o_O
+    taken: false
+  Shop_41:
+    signs:
+      '0':
+        world: PrisonServer
+        X: -863.0
+        Y: 9.0
+        Z: 283.0
+    price: 500.0
+    renttime: 432000000
+    hidden: true
+    owner: Sickinick
+    account: O_o_Fadi_o_O
+    taken: true
+    expiredate: 1399240026669
+  Shop_42:
+    signs:
+      '0':
+        world: PrisonServer
+        X: -863.0
+        Y: 9.0
+        Z: 279.0
+    price: 500.0
+    renttime: 432000000
+    hidden: false
+    account: O_o_Fadi_o_O
+    taken: false
+  Shop_47:
+    signs:
+      '0':
+        world: PrisonServer
+        X: -861.0
+        Y: 9.0
+        Z: 295.0
+    price: 500.0
+    renttime: 432000000
+    hidden: true
+    owner: Sickinick
+    account: O_o_Fadi_o_O
+    expiredate: 1398966542591
+    taken: true
+  Shop_43:
+    signs:
+      '0':
+        world: PrisonServer
+        X: -861.0
+        Y: 9.0
+        Z: 279.0
+    price: 500.0
+    renttime: 432000000
+    hidden: true
+    owner: the_king_k47n3
+    account: O_o_Fadi_o_O
+    taken: true
+    expiredate: 1399127480160
+  Shop_44:
+    signs:
+      '0':
+        world: PrisonServer
+        X: -861.0
+        Y: 9.0
+        Z: 283.0
+    price: 500.0
+    renttime: 432000000
+    hidden: false
+    account: O_o_Fadi_o_O
+    taken: false
+  Shop_45:
+    signs:
+      '0':
+        world: PrisonServer
+        X: -861.0
+        Y: 9.0
+        Z: 287.0
+    price: 500.0
+    renttime: 432000000
+    hidden: false
+    account: O_o_Fadi_o_O
+    taken: false
+  Shop_46:
+    signs:
+      '0':
+        world: PrisonServer
+        X: -861.0
+        Y: 9.0
+        Z: 291.0
+    price: 500.0
+    renttime: 432000000
+    hidden: false
+    account: O_o_Fadi_o_O
+    taken: false
+  AnimalFarm5:
+    signs:
+      '0':
+        world: PrisonServer
+        X: -598.0
+        Y: 5.0
+        Z: 380.0
+    price: 5000.0
+    renttime: 3600000
+    account: O_o_Fadi_o_O
+    taken: false
+  AnimalFarm4:
+    signs:
+      '0':
+        world: PrisonServer
+        X: -598.0
+        Y: 5.0
+        Z: 368.0
+    price: 5000.0
+    renttime: 3600000
+    account: O_o_Fadi_o_O
+    taken: false
+  AnimalFarm3:
+    signs:
+      '0':
+        world: PrisonServer
+        X: -598.0
+        Y: 5.0
+        Z: 356.0
+    price: 5000.0
+    hidden: false
+    renttime: 3600000
+    account: O_o_Fadi_o_O
+    taken: false
+  AnimalFarm2:
+    signs:
+      '0':
+        world: PrisonServer
+        X: -583.0
+        Y: 5.0
+        Z: 350.0
+    price: 5000.0
+    renttime: 3600000
+    hidden: false
+    account: O_o_Fadi_o_O
+    taken: false
+  AnimalFarm9:
+    signs:
+      '0':
+        world: PrisonServer
+        X: -622.0
+        Y: 5.0
+        Z: 350.0
+    price: 5000.0
+    renttime: 3600000
+    account: O_o_Fadi_o_O
+    taken: false
+  AnimalFarm8:
+    signs:
+      '0':
+        world: PrisonServer
+        X: -610.0
+        Y: 5.0
+        Z: 350.0
+    price: 5000.0
+    renttime: 3600000
+    account: O_o_Fadi_o_O
+    taken: false
+  AnimalFarm7:
+    signs:
+      '0':
+        world: PrisonServer
+        X: -604.0
+        Y: 5.0
+        Z: 365.0
+    price: 5000.0
+    renttime: 3600000
+    account: O_o_Fadi_o_O
+    taken: false
+  AnimalFarm6:
+    signs:
+      '0':
+        world: PrisonServer
+        X: -604.0
+        Y: 5.0
+        Z: 377.0
+    price: 5000.0
+    renttime: 3600000
+    account: O_o_Fadi_o_O
+    taken: false
+  Shop_30:
+    signs:
+      '0':
+        world: PrisonServer
+        X: -897.0
+        Y: 9.0
+        Z: 315.0
+    price: 500.0
+    hidden: true
+    renttime: 432000000
+    owner: mcjelle2801
+    account: O_o_Fadi_o_O
+    taken: true
+    expiredate: 1399128317395
+  Shop_31:
+    signs:
+      '0':
+        world: PrisonServer
+        X: -897.0
+        Y: 9.0
+        Z: 313.0
+    price: 500.0
+    hidden: true
+    renttime: 432000000
+    owner: Sickinick
+    account: O_o_Fadi_o_O
+    taken: true
+    expiredate: 1399239976677
+  Shop_38:
+    signs:
+      '0':
+        world: PrisonServer
+        X: -863.0
+        Y: 9.0
+        Z: 295.0
+    price: 500.0
+    renttime: 432000000
+    hidden: true
+    owner: gkleinlein
+    account: O_o_Fadi_o_O
+    taken: true
+    expiredate: 1399132379002
+  Shop_39:
+    signs:
+      '0':
+        world: PrisonServer
+        X: -863.0
+        Y: 9.0
+        Z: 291.0
+    price: 500.0
+    hidden: true
+    renttime: 432000000
+    owner: gkleinlein
+    account: O_o_Fadi_o_O
+    taken: true
+    expiredate: 1399132380320
+  Shop_36:
+    signs:
+      '0':
+        world: PrisonServer
+        X: -877.0
+        Y: 9.0
+        Z: 313.0
+    price: 500.0
+    renttime: 432000000
+    hidden: true
+    owner: gkleinlein
+    account: O_o_Fadi_o_O
+    taken: true
+    expiredate: 1399132340783
+  Shop_18:
+    signs:
+      '0':
+        world: PrisonServer
+        X: -861.0
+        Y: 9.0
+        Z: 349.0
+    price: 500.0
+    hidden: false
+    renttime: 432000000
+    account: O_o_Fadi_o_O
+    taken: false
+  Shop_19:
+    signs:
+      '0':
+        world: PrisonServer
+        X: -863.0
+        Y: 9.0
+        Z: 349.0
+    price: 500.0
+    hidden: false
+    renttime: 432000000
+    account: O_o_Fadi_o_O
+    taken: false
+  Shop_9:
+    signs:
+      '0':
+        world: PrisonServer
+        X: -835.0
+        Y: 9.0
+        Z: 315.0
+    price: 500.0
+    hidden: false
+    renttime: 432000000
+    account: O_o_Fadi_o_O
+    taken: false
+  Shop_20:
+    signs:
+      '0':
+        world: PrisonServer
+        X: -863.0
+        Y: 9.0
+        Z: 345.0
+    price: 500.0
+    hidden: true
+    renttime: 432000000
+    owner: Xzero119
+    account: O_o_Fadi_o_O
+    taken: true
+    expiredate: 1399901298234
+  Shop_21:
+    signs:
+      '0':
+        world: PrisonServer
+        X: -863.0
+        Y: 9.0
+        Z: 341.0
+    price: 500.0
+    hidden: false
+    renttime: 432000000
+    account: O_o_Fadi_o_O
+    taken: false
+  Shop_22:
+    signs:
+      '0':
+        world: PrisonServer
+        X: -863.0
+        Y: 9.0
+        Z: 337.0
+    price: 500.0
+    renttime: 432000000
+    hidden: false
+    account: O_o_Fadi_o_O
+    taken: false
+  Shop_23:
+    signs:
+      '0':
+        world: PrisonServer
+        X: -863.0
+        Y: 9.0
+        Z: 333.0
+    price: 500.0
+    renttime: 432000000
+    hidden: true
+    owner: Teleport1409
+    account: O_o_Fadi_o_O
+    expiredate: 1398965706168
+    taken: true
+  Shop_24:
+    signs:
+      '0':
+        world: PrisonServer
+        X: -863.0
+        Y: 9.0
+        Z: 329.0
+    price: 500.0
+    renttime: 432000000
+    hidden: true
+    owner: coolala
+    account: O_o_Fadi_o_O
+    expiredate: 1398855770424
+    taken: true
+  Shop_25:
+    signs:
+      '0':
+        world: PrisonServer
+        X: -877.0
+        Y: 9.0
+        Z: 315.0
+    price: 500.0
+    hidden: true
+    renttime: 432000000
+    owner: gkleinlein
+    account: O_o_Fadi_o_O
+    taken: true
+    expiredate: 1399127153650
+  Shop_26:
+    signs:
+      '0':
+        world: PrisonServer
+        X: -881.0
+        Y: 9.0
+        Z: 315.0
+    price: 500.0
+    hidden: true
+    renttime: 432000000
+    owner: gkleinlein
+    account: O_o_Fadi_o_O
+    taken: true
+    expiredate: 1399132342587
+  Shop_27:
+    signs:
+      '0':
+        world: PrisonServer
+        X: -885.0
+        Y: 9.0
+        Z: 315.0
+    price: 500.0
+    hidden: true
+    renttime: 432000000
+    owner: gkleinlein
+    account: O_o_Fadi_o_O
+    taken: true
+    expiredate: 1399132347211
+  Shop_28:
+    signs:
+      '0':
+        world: PrisonServer
+        X: -889.0
+        Y: 9.0
+        Z: 315.0
+    price: 500.0
+    hidden: true
+    renttime: 432000000
+    owner: gkleinlein
+    account: O_o_Fadi_o_O
+    taken: true
+    expiredate: 1399132351880
+  Shop_29:
+    signs:
+      '0':
+        world: PrisonServer
+        X: -893.0
+        Y: 9.0
+        Z: 315.0
+    price: 500.0
+    hidden: true
+    renttime: 432000000
+    owner: gkleinlein
+    account: O_o_Fadi_o_O
+    taken: true
+    expiredate: 1399132353813
+  Shop_11:
+    signs:
+      '0':
+        world: PrisonServer
+        X: -843.0
+        Y: 9.0
+        Z: 315.0
+    price: 500.0
+    renttime: 432000000
+    hidden: true
+    owner: lorano123
+    account: O_o_Fadi_o_O
+    expiredate: 1399838727873
+    taken: true
+  Shop_8:
+    signs:
+      '0':
+        world: PrisonServer
+        X: -831.0
+        Y: 9.0
+        Z: 315.0
+    price: 500.0
+    renttime: 432000000
+    hidden: true
+    owner: Sickinick
+    account: O_o_Fadi_o_O
+    taken: true
+    expiredate: 1399240105938
+  Shop_10:
+    signs:
+      '0':
+        world: PrisonServer
+        X: -839.0
+        Y: 9.0
+        Z: 315.0
+    price: 500.0
+    hidden: true
+    renttime: 432000000
+    owner: Sickinick
+    account: O_o_Fadi_o_O
+    taken: true
+    expiredate: 1399240081144
+  Shop_7:
+    signs:
+      '0':
+        world: PrisonServer
+        X: -827.0
+        Y: 9.0
+        Z: 315.0
+    price: 500.0
+    renttime: 432000000
+    hidden: false
+    account: O_o_Fadi_o_O
+    taken: false
+  Shop_6:
+    signs:
+      '0':
+        world: PrisonServer
+        X: -827.0
+        Y: 9.0
+        Z: 313.0
+    price: 500.0
+    hidden: true
+    renttime: 432000000
+    owner: Sickinick
+    account: O_o_Fadi_o_O
+    taken: true
+    expiredate: 1399240144803
+  Shop_5:
+    signs:
+      '0':
+        world: PrisonServer
+        X: -831.0
+        Y: 9.0
+        Z: 313.0
+    price: 500.0
+    renttime: 432000000
+    hidden: true
+    owner: Sickinick
+    account: O_o_Fadi_o_O
+    taken: true
+    expiredate: 1399240104499
+  Shop_12:
+    signs:
+      '0':
+        world: PrisonServer
+        X: -847.0
+        Y: 9.0
+        Z: 315.0
+    price: 500.0
+    hidden: true
+    renttime: 432000000
+    owner: Bryan20027
+    account: O_o_Fadi_o_O
+    taken: true
+    expiredate: 1399559577730
+  Shop_15:
+    signs:
+      '0':
+        world: PrisonServer
+        X: -861.0
+        Y: 9.0
+        Z: 337.0
+    price: 500.0
+    renttime: 432000000
+    hidden: false
+    account: O_o_Fadi_o_O
+    taken: false
+  Shop_4:
+    signs:
+      '0':
+        world: PrisonServer
+        X: -835.0
+        Y: 9.0
+        Z: 313.0
+    price: 500.0
+    hidden: true
+    renttime: 432000000
+    owner: gwnluca
+    account: O_o_Fadi_o_O
+    taken: true
+    expiredate: 1401814554485
+  AnimalFarm1:
+    signs:
+      '0':
+        world: PrisonServer
+        X: -571.0
+        Y: 5.0
+        Z: 350.0
+    price: 5000.0
+    renttime: 3600000
+    account: O_o_Fadi_o_O
+    taken: false
+  Shop_3:
+    signs:
+      '0':
+        world: PrisonServer
+        X: -839.0
+        Y: 9.0
+        Z: 313.0
+    price: 500.0
+    hidden: true
+    renttime: 432000000
+    owner: Sickinick
+    account: O_o_Fadi_o_O
+    taken: true
+    expiredate: 1399240082403
+  Shop_14:
+    signs:
+      '0':
+        world: PrisonServer
+        X: -861.0
+        Y: 9.0
+        Z: 333.0
+    price: 500.0
+    hidden: true
+    renttime: 432000000
+    owner: Sickinick
+    account: O_o_Fadi_o_O
+    taken: true
+    expiredate: 1399240167954
+  Shop_2:
+    signs:
+      '0':
+        world: PrisonServer
+        X: -843.0
+        Y: 9.0
+        Z: 313.0
+    price: 500.0
+    renttime: 432000000
+    hidden: true
+    owner: Block_boy02
+    account: O_o_Fadi_o_O
+    taken: true
+    expiredate: 1399032576654
+  Shop_17:
+    signs:
+      '0':
+        world: PrisonServer
+        X: -861.0
+        Y: 9.0
+        Z: 345.0
+    price: 500.0
+    renttime: 432000000
+    hidden: true
+    owner: crazysantaclause
+    account: O_o_Fadi_o_O
+    taken: true
+    expiredate: 1400506613603
+  Shop_1:
+    signs:
+      '0':
+        world: PrisonServer
+        X: -847.0
+        Y: 9.0
+        Z: 313.0
+    price: 500.0
+    hidden: true
+    renttime: 432000000
+    owner: O_o_Fadi_o_O
+    account: O_o_Fadi_o_O
+    expiredate: 1407360840362
+    taken: true
+  Shop_16:
+    signs:
+      '0':
+        world: PrisonServer
+        X: -861.0
+        Y: 9.0
+        Z: 341.0
+    price: 500.0
+    renttime: 432000000
+    hidden: true
+    owner: Sickinick
+    account: O_o_Fadi_o_O
+    taken: true
+    expiredate: 1399244510208

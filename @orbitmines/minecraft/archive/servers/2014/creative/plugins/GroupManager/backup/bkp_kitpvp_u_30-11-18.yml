@@ -1,0 +1,1458 @@
+users:
+  123pika456:
+    group: UserKitPvP1-10
+    subgroups: []
+    permissions:
+    - archerkit.1
+    - kit.Archer
+  1stienie2:
+    group: UserKitPvP1-10
+    subgroups: []
+    permissions:
+    - archerkit.1
+    - kit.Archer
+  2000samsam2000:
+    group: UserKitPvP1-10
+    subgroups: []
+    permissions:
+    - archerkit.1
+    - kit.Archer
+  20damian07:
+    group: UserKitPvP21-30
+    subgroups: []
+    permissions:
+    - archerkit.1
+    - kingkit.kit
+    - kit.Archer
+    - kit.King
+    - kit.Soldier
+    - kit.Wizard
+    - soldierkit.1
+    - wizardkit.1
+  _McChouffe_:
+    group: UserKitPvP1-10
+    subgroups: []
+    permissions:
+    - archerkit.1
+    - kit.Archer
+  aaren10:
+    group: UserKitPvP1-10
+    subgroups: []
+    permissions:
+    - archerkit.1
+    - kit.Archer
+  AgZarp:
+    group: UserKitPvP11-20
+    subgroups: []
+    permissions:
+    - archerkit.1
+    - kit.Archer
+  aimsicles:
+    group: UserKitPvP1-10
+    subgroups: []
+    permissions:
+    - archerkit.1
+    - kit.Archer
+    - kit.Soldier
+    - soldierkit.1
+  AleristheSeeker:
+    group: UserKitPvP1-10
+    subgroups: []
+    permissions:
+    - archerkit.1
+    - kit.Archer
+  alexitron2001:
+    group: UserKitPvP11-20
+    subgroups: []
+    permissions:
+    - archerkit.1
+    - kit.Archer
+  alexrk03:
+    group: UserKitPvP1-10
+    subgroups: []
+    permissions:
+    - archerkit.1
+    - kit.Archer
+  animaldude10:
+    group: UserKitPvP11-20
+    subgroups: []
+    permissions:
+    - archerkit.1
+    - kit.Archer
+  avancoi:
+    group: UserKitPvP51-60
+    subgroups: []
+    permissions:
+    - archerkit.1
+    - kit.Archer
+    - kit.KnightLvL2
+    - kit.Soldier
+    - kit.Wizard
+    - knightkit.2
+    - soldierkit.1
+    - wizardkit.1
+  B00MAN2003:
+    group: UserKitPvP1-10
+    subgroups: []
+    permissions:
+    - kit.Soldier
+    - soldierkit.1
+  BajanCanadian5:
+    group: UserKitPvP1-10
+    subgroups: []
+    permissions:
+    - archerkit.1
+    - kit.Archer
+  basbobby:
+    group: UserKitPvP1-10
+    subgroups: []
+    permissions:
+    - archerkit.1
+    - kit.Archer
+  basteti:
+    group: UserKitPvP141-150
+    subgroups: []
+    permissions:
+    - archerkit.1
+    - blazekit.kit
+    - bunnykit.1
+    - commandlog.notice
+    - essentials.ban
+    - essentials.kick
+    - essentials.tp
+    - essentials.tp.others
+    - kingkit.kit
+    - kit.Archer
+    - kit.Blaze
+    - kit.Bunny
+    - kit.King
+    - nametag.group.mod
+    - staffsecure.staff
+    info:
+      prefix: '&9[&b&lMod&9] &b'
+  beerke12:
+    group: UserKitPvP1-10
+    subgroups: []
+    permissions:
+    - archerkit.1
+    - kit.Archer
+  BenYOmin_Mango:
+    group: UserKitPvP21-30
+    subgroups: []
+    permissions:
+    - archerkit.1
+    - archerkit.2
+    - bunnykit.1
+    - drunkkit.1
+    - drunkkit.2
+    - essentials.kits.Assassin
+    - kit.Archer
+    - kit.ArcherLvL2
+    - kit.ArcherLvL3
+    - kit.Assassin
+    - kit.Beast
+    - kit.Bunny
+    - kit.DarkMage
+    - kit.Drunk
+    - kit.DrunkLvL2
+    - kit.Fish
+    - kit.GrimReaper
+    - kit.Heavy
+    - kit.KnightLvL2
+    - kit.KnightLvL3
+    - kit.Lord
+    - kit.Miner
+    - kit.Necromancer
+    - kit.Pyro
+    - kit.PyroLvL2
+    - kit.Soldier
+    - kit.Tank
+    - kit.TankLvL2
+    - kit.Vampire
+    - kit.Wizard
+    - kit.WizardLvL2
+    - knightkit.2
+    - knightkit.3
+    - pyrokit.1
+    - pyrokit.2
+    - soldierkit.1
+    - staffsecure.staff
+    - tankkit.1
+    - tankkit.2
+    - wizardkit.1
+    - wizardkit.2
+    info:
+      prefix: '&c[&4&lCo-Owner&c] &4'
+  blackberry9900:
+    group: UserKitPvP1-10
+    subgroups: []
+    permissions:
+    - archerkit.1
+    - kit.Archer
+  Block_boy02:
+    group: UserKitPvP21-30
+    subgroups: []
+    permissions:
+    - archerkit.1
+    - kit.Archer
+    - kit.Assassin
+    - kit.Beast
+    - kit.DarkMage
+    - kit.Fish
+    - kit.GrimReaper
+    - kit.Heavy
+    - kit.Lord
+    - kit.Miner
+    - kit.Sniper
+    - kit.Vampire
+    - kit.Wizard
+    - libsdisguises.disguise.bat
+    - libsdisguises.disguise.cave_spider
+    - libsdisguises.disguise.chicken
+    - libsdisguises.disguise.cow
+    - libsdisguises.disguise.creeper
+    - libsdisguises.disguise.donkey
+    - libsdisguises.disguise.horse
+    - libsdisguises.disguise.iron_golem
+    - libsdisguises.disguise.magma_cube
+    - libsdisguises.disguise.mushroom_cow
+    - libsdisguises.disguise.ocelot
+    - libsdisguises.disguise.pig
+    - libsdisguises.disguise.pig_zombie
+    - libsdisguises.disguise.sheep
+    - libsdisguises.disguise.silverfish
+    - libsdisguises.disguise.skeleton
+    - libsdisguises.disguise.slime
+    - libsdisguises.disguise.snowman
+    - libsdisguises.disguise.spider
+    - libsdisguises.disguise.squid
+    - libsdisguises.disguise.villager
+    - libsdisguises.disguise.witch
+    - libsdisguises.disguise.wither_skeleton
+    - libsdisguises.disguise.wolf
+    - libsdisguises.disguise.zombie
+    - libsdisguises.disguise.zombie_villager
+    - nametag.group.VIPKitPvP
+    - VIP.kit
+    - wizardkit.1
+    info:
+      prefix: '&c&l[&6&lVIP&c&l] &6'
+  Boudewijn_Bout:
+    group: UserKitPvP1-10
+    subgroups: []
+    permissions:
+    - archerkit.1
+    - kit.Archer
+  bramskovic77:
+    group: UserKitPvP1-10
+    subgroups: []
+    permissions:
+    - archerkit.1
+    - kit.Archer
+  Bryan20027:
+    group: UserKitPvP41-50
+    subgroups: []
+    permissions:
+    - archerkit.1
+    - kit.Archer
+    - kit.Assassin
+    - kit.Beast
+    - kit.DarkMage
+    - kit.Fish
+    - kit.GrimReaper
+    - kit.Heavy
+    - kit.Lord
+    - kit.Miner
+    - kit.Necromancer
+    - kit.Vampire
+    - kit.Wizard
+    - kit.WizardLvL2
+    - libsdisguises.disguise.bat
+    - libsdisguises.disguise.cave_spider
+    - libsdisguises.disguise.chicken
+    - libsdisguises.disguise.cow
+    - libsdisguises.disguise.creeper
+    - libsdisguises.disguise.donkey
+    - libsdisguises.disguise.horse
+    - libsdisguises.disguise.iron_golem
+    - libsdisguises.disguise.magma_cube
+    - libsdisguises.disguise.mushroom_cow
+    - libsdisguises.disguise.ocelot
+    - libsdisguises.disguise.pig
+    - libsdisguises.disguise.pig_zombie
+    - libsdisguises.disguise.sheep
+    - libsdisguises.disguise.silverfish
+    - libsdisguises.disguise.skeleton
+    - libsdisguises.disguise.slime
+    - libsdisguises.disguise.snowman
+    - libsdisguises.disguise.spider
+    - libsdisguises.disguise.squid
+    - libsdisguises.disguise.villager
+    - libsdisguises.disguise.witch
+    - libsdisguises.disguise.wither_skeleton
+    - libsdisguises.disguise.wolf
+    - libsdisguises.disguise.zombie
+    - libsdisguises.disguise.zombie_villager
+    - nametag.group.VIPKitPvP
+    - necromancerkit.1
+    - VIP.kit
+    - wizardkit.1
+    - wizardkit.2
+    info:
+      prefix: '&c[&6&lVIP&c] &6'
+  BurnWeekVideo:
+    group: UserKitPvP31-40
+    subgroups: []
+    permissions:
+    - kit.Soldier
+    - soldierkit.1
+  bursyboy1999:
+    group: UserKitPvP1-10
+    subgroups: []
+    permissions:
+    - archerkit.1
+    - kit.Archer
+  casidas:
+    group: UserKitPvP11-20
+    subgroups: []
+    permissions:
+    - archerkit.1
+    - kit.Archer
+  Coaliton:
+    group: UserKitPvP31-40
+    subgroups: []
+    permissions: []
+  coole_bo:
+    group: UserKitPvP21-30
+    subgroups: []
+    permissions:
+    - archerkit.1
+    - kit.Archer
+  cooleromeo:
+    group: UserKitPvP1-10
+    subgroups: []
+    permissions:
+    - archerkit.1
+    - kit.Archer
+  crazysantaclause:
+    group: UserKitPvP11-20
+    subgroups: []
+    permissions:
+    - archerkit.1
+    - kit.Archer
+  CubeMan2001:
+    group: UserKitPvP1-10
+    subgroups: []
+    permissions:
+    - archerkit.1
+    - kit.Archer
+  Cyclopsfeo:
+    group: UserKitPvP1-10
+    subgroups: []
+    permissions:
+    - archerkit.1
+    - kit.Archer
+  daanms:
+    group: UserKitPvP1-10
+    subgroups: []
+    permissions:
+    - archerkit.1
+    - kit.Archer
+    - kit.Soldier
+    - soldierkit.1
+  Danielthehero123:
+    group: UserKitPvP1-10
+    subgroups: []
+    permissions:
+    - archerkit.1
+    - kit.Archer
+  deDMGgek:
+    group: UserKitPvP1-10
+    subgroups: []
+    permissions:
+    - archerkit.1
+    - kit.Archer
+  DeemsGames_nl:
+    group: UserKitPvP11-20
+    subgroups: []
+    permissions:
+    - archerkit.1
+    - kit.Archer
+    - kit.Soldier
+    - soldierkit.1
+  dekrits:
+    group: UserKitPvP11-20
+    subgroups: []
+    permissions:
+    - kit.Soldier
+    - soldierkit.1
+  Destroux:
+    group: UserKitPvP41-50
+    subgroups: []
+    permissions:
+    - archerkit.1
+    - drunkkit.1
+    - kit.Archer
+    - kit.Drunk
+    - kit.Tank
+    - tankkit.1
+  DiamondIDragon:
+    group: UserKitPvP1-10
+    subgroups: []
+    permissions:
+    - archerkit.1
+    - kit.Archer
+  Dirkw222:
+    group: UserKitPvP1-10
+    subgroups: []
+    permissions:
+    - archerkit.1
+    - kit.Archer
+  DJ__D:
+    group: UserKitPvP31-40
+    subgroups: []
+    permissions:
+    - kit.Pyro
+    - kit.Soldier
+    - pyrokit.1
+    - soldierkit.1
+  Domukas_Bond:
+    group: UserKitPvP1-10
+    subgroups: []
+    permissions:
+    - archerkit.1
+    - kit.Archer
+  Don3443:
+    group: UserKitPvP1-10
+    subgroups: []
+    permissions:
+    - archerkit.1
+    - kit.Archer
+  DonkeyDaan:
+    group: UserKitPvP1-10
+    subgroups: []
+    permissions:
+    - archerkit.1
+    - kit.Archer
+  donovan2649:
+    group: UserKitPvP1-10
+    subgroups: []
+    permissions:
+    - archerkit.1
+    - kit.Archer
+  dylangeordy:
+    group: UserKitPvP1-10
+    subgroups: []
+    permissions:
+    - kit.Wizard
+    - wizardkit.1
+  eekhoorn2000:
+    group: UserKitPvP61-70
+    subgroups: []
+    permissions:
+    - archerkit.1
+    - commandlog.notice
+    - essenstials.ban
+    - essenstials.kick
+    - essenstials.tp
+    - essenstials.tp.others
+    - essentials.ban
+    - essentials.kick
+    - essentials.tp
+    - essentials.tp.others
+    - kit.Archer
+    - kit.Pyro
+    - kit.Tank
+    - kit.Wizard
+    - nametag.group.mod
+    - pyrokit.1
+    - staffsecure.staff
+    - tankkit.1
+    - wizardkit.1
+    info:
+      prefix: '&9[&b&lMod&9] &b'
+  eliboycool:
+    group: UserKitPvP1-10
+    subgroups: []
+    permissions:
+    - archerkit.1
+    - kit.Archer
+  Elite_v12:
+    group: UserKitPvP11-20
+    subgroups: []
+    permissions:
+    - archerkit.1
+    - kit.Archer
+  elv112:
+    group: UserKitPvP1-10
+    subgroups: []
+    permissions:
+    - archerkit.1
+    - kit.Archer
+  EmircanXd:
+    group: UserKitPvP1-10
+    subgroups: []
+    permissions:
+    - archerkit.1
+    - kit.Archer
+  EnderShadow500:
+    group: UserKitPvP1-10
+    subgroups: []
+    permissions:
+    - archerkit.1
+    - kit.Archer
+  ExpertMurderer2:
+    group: UserKitPvP1-10
+    subgroups: []
+    permissions:
+    - archerkit.1
+    - kit.Archer
+  fangergo:
+    group: UserKitPvP21-30
+    subgroups: []
+    permissions:
+    - archerkit.1
+    - kit.Archer
+    - kit.Soldier
+    - soldierkit.1
+  Fastthomaz:
+    group: UserKitPvP51-60
+    subgroups: []
+    permissions:
+    - archerkit.1
+    - kit.Archer
+    - kit.KnightLvL2
+    - kit.Soldier
+    - kit.Tank
+    - kit.Wizard
+    - knightkit.2
+    - soldierkit.1
+    - tankkit.1
+    - wizardkit.1
+  firedraak:
+    group: UserKitPvP141-150
+    subgroups: []
+    permissions:
+    - archerkit.1
+    - drunkkit.1
+    - drunkkit.2
+    - kit.Archer
+    - kit.Drunk
+    - kit.DrunkLvL2
+    - kit.Pyro
+    - kit.Soldier
+    - pyrokit.1
+    - soldierkit.1
+  Flim2002:
+    group: UserKitPvP81-90
+    subgroups: []
+    permissions:
+    - archerkit.1
+    - bunnykit.1
+    - kingkit.kit
+    - kit.Archer
+    - kit.Bunny
+    - kit.King
+    - kit.Necromancer
+    - kit.Soldier
+    - kit.Tank
+    - kit.Wizard
+    - soldierkit.1
+    - tankkit.1
+    - wizardkit.1
+  FlipFlop113:
+    group: UserKitPvP1-10
+    subgroups: []
+    permissions:
+    - archerkit.1
+    - kit.Archer
+  FreshBast:
+    group: UserKitPvP1-10
+    subgroups: []
+    permissions:
+    - archerkit.1
+    - kit.Archer
+  GameEend:
+    group: UserKitPvP1-10
+    subgroups: []
+    permissions:
+    - archerkit.1
+    - kit.Archer
+  gamenmetbas:
+    group: UserKitPvP21-30
+    subgroups: []
+    permissions:
+    - archerkit.1
+    - kit.Archer
+    - kit.Soldier
+    - soldierkit.1
+  gangsterlx:
+    group: UserKitPvP11-20
+    subgroups: []
+    permissions:
+    - archerkit.1
+    - kit.Archer
+    - kit.Soldier
+    - soldierkit.1
+  gkleinlein:
+    group: UserKitPvP1-10
+    subgroups: []
+    permissions:
+    - archerkit.1
+    - drunkkit.1
+    - kit.Archer
+    - kit.Drunk
+  gwnluca:
+    group: UserKitPvP71-80
+    subgroups: []
+    permissions:
+    - archerkit.1
+    - kingkit.kit
+    - kit.Archer
+    - kit.King
+    - kit.Soldier
+    - kit.Tank
+    - kit.Wizard
+    - soldierkit.1
+    - tankkit.1
+    - wizardkit.1
+  hansje31:
+    group: UserKitPvP1-10
+    subgroups: []
+    permissions:
+    - archerkit.1
+    - kit.Archer
+  hega125:
+    group: UserKitPvP1-10
+    subgroups: []
+    permissions:
+    - archerkit.1
+    - kit.Archer
+  hendrik:
+    group: UserKitPvP11-20
+    subgroups: []
+    permissions:
+    - archerkit.1
+    - kit.Archer
+  iefke:
+    group: UserKitPvP11-20
+    subgroups: []
+    permissions: []
+  iggorsky:
+    group: UserKitPvP1-10
+    subgroups: []
+    permissions:
+    - archerkit.1
+    - kit.Archer
+  iRaphahell:
+    group: UserKitPvP21-30
+    subgroups: []
+    permissions:
+    - archerkit.1
+    - kit.Archer
+    - kit.Soldier
+    - soldierkit.1
+  ironmanduke:
+    group: UserKitPvP1-10
+    subgroups: []
+    permissions:
+    - archerkit.1
+    - kit.Archer
+  its_me_djimmi:
+    group: UserKitPvP1-10
+    subgroups: []
+    permissions:
+    - archerkit.1
+    - kit.Archer
+    - kit.Soldier
+    - soldierkit.1
+  ItsYasin:
+    group: UserKitPvP51-60
+    subgroups: []
+    permissions:
+    - archerkit.1
+    - kit.Archer
+    - kit.KnightLvL2
+    - kit.Soldier
+    - kit.Wizard
+    - knightkit.2
+    - soldierkit.1
+    - wizardkit.1
+  jaimet1:
+    group: UserKitPvP1-10
+    subgroups: []
+    permissions:
+    - archerkit.1
+    - kit.Archer
+  JamayX:
+    group: UserKitPvP1-10
+    subgroups: []
+    permissions:
+    - archerkit.1
+    - kit.Archer
+  jasperopw:
+    group: UserKitPvP1-10
+    subgroups: []
+    permissions:
+    - kit.Wizard
+    - wizardkit.1
+  jenskay:
+    group: UserKitPvP1-10
+    subgroups: []
+    permissions:
+    - archerkit.1
+    - kit.Archer
+  JeroenvdHoorn:
+    group: UserKitPvP41-50
+    subgroups: []
+    permissions:
+    - archerkit.1
+    - archerkit.2
+    - essentials.kits.Archer
+    - kit.Archer
+    - kit.ArcherLvL2
+    - kit.Tank
+    - tankkit.1
+    info:
+      '&8[&dBuilder&8]': '&6'
+      prefix: '&8[&dBuilder&8] &8'
+  jeshua2004:
+    group: UserKitPvP1-10
+    subgroups: []
+    permissions:
+    - archerkit.1
+    - kit.Archer
+    - kit.Soldier
+    - soldierkit.1
+  jhulsebosch:
+    group: UserKitPvP1-10
+    subgroups: []
+    permissions:
+    - archerkit.1
+    - kit.Archer
+  JikuJikuJin:
+    group: UserKitPvP41-50
+    subgroups: []
+    permissions:
+    - kit.Pyro
+    - pyrokit.1
+  jim5491158:
+    group: UserKitPvP111-120
+    subgroups: []
+    permissions:
+    - archerkit.1
+    - archerkit.2
+    - bunnykit.1
+    - kit.Archer
+    - kit.ArcherLvL2
+    - kit.Assassin
+    - kit.Beast
+    - kit.Bunny
+    - kit.DarkMage
+    - kit.Fish
+    - kit.GrimReaper
+    - kit.Heavy
+    - kit.Lord
+    - kit.Miner
+    - kit.Pyro
+    - kit.Soldier
+    - kit.Tank
+    - kit.Vampire
+    - nametag.group.VIPKitPvP
+    - pyrokit.1
+    - soldierkit.1
+    - tankkit.1
+    - VIP.kit
+    info:
+      prefix: '&c[&6&lVIP&c] &6'
+  jimdave:
+    group: UserKitPvP21-30
+    subgroups: []
+    permissions:
+    - kit.Pyro
+    - pyrokit.1
+  joeri100:
+    group: UserKitPvP11-20
+    subgroups: []
+    permissions:
+    - archerkit.1
+    - kit.Archer
+  joerib123:
+    group: UserKitPvP11-20
+    subgroups: []
+    permissions:
+    - archerkit.1
+    - kit.Archer
+    - kit.Soldier
+    - soldierkit.1
+  jomancool55:
+    group: UserKitPvP1-10
+    subgroups: []
+    permissions:
+    - archerkit.1
+    - kit.Archer
+  jonabuilder1998:
+    group: UserKitPvP31-40
+    subgroups: []
+    permissions:
+    - archerkit.1
+    - kit.Archer
+    - kit.KnightLvL2
+    - kit.Soldier
+    - knightkit.2
+    - soldierkit.1
+  joppie1405:
+    group: UserKitPvP1-10
+    subgroups: []
+    permissions:
+    - archerkit.1
+    - kit.Archer
+  jordycoolyboy56:
+    group: UserKitPvP1-10
+    subgroups: []
+    permissions:
+    - archerkit.1
+    - kit.Archer
+    - kit.Soldier
+    - soldierkit.1
+  Jorrit_Besters:
+    group: UserKitPvP1-10
+    subgroups: []
+    permissions:
+    - archerkit.1
+    - kit.Archer
+  juriaankoper:
+    group: UserKitPvP1-10
+    subgroups: []
+    permissions:
+    - archerkit.1
+    - kit.Archer
+  Jurre101:
+    group: UserKitPvP51-60
+    subgroups: []
+    permissions:
+    - archerkit.1
+    - archerkit.2
+    - kit.Archer
+    - kit.ArcherLvL2
+    - kit.Soldier
+    - soldierkit.1
+  justdouwe:
+    group: UserKitPvP1-10
+    subgroups: []
+    permissions:
+    - archerkit.1
+    - kit.Archer
+  JustxHarmen:
+    group: UserKitPvP11-20
+    subgroups: []
+    permissions:
+    - kit.Soldier
+    - soldierkit.1
+  Karatas076:
+    group: UserKitPvP1-10
+    subgroups: []
+    permissions:
+    - archerkit.1
+    - kit.Archer
+  Kebs3:
+    group: UserKitPvP11-20
+    subgroups: []
+    permissions:
+    - archerkit.1
+    - kit.Archer
+    - kit.Wizard
+    - wizardkit.1
+  knufi360:
+    group: UserKitPvP11-20
+    subgroups: []
+    permissions:
+    - archerkit.1
+    - kit.Archer
+  Kolkje30:
+    group: UserKitPvP11-20
+    subgroups: []
+    permissions:
+    - archerkit.1
+    - kit.Archer
+  korneto:
+    group: UserKitPvP1-10
+    subgroups: []
+    permissions:
+    - archerkit.1
+    - kit.Archer
+  krachtpatsertim:
+    group: UserKitPvP21-30
+    subgroups: []
+    permissions:
+    - archerkit.1
+    - kit.Archer
+  KWpudding:
+    group: UserKitPvP1-10
+    subgroups: []
+    permissions:
+    - archerkit.1
+    - kit.Archer
+  littel_me:
+    group: UserKitPvP1-10
+    subgroups: []
+    permissions:
+    - archerkit.1
+    - kit.Archer
+  magnus0311:
+    group: UserKitPvP91-100
+    subgroups: []
+    permissions:
+    - archerkit.1
+    - drunkkit.1
+    - kit.Archer
+    - kit.Assassin
+    - kit.Beast
+    - kit.DarkMage
+    - kit.Drunk
+    - kit.Fish
+    - kit.GrimReaper
+    - kit.Heavy
+    - kit.KnightLvL2
+    - kit.Lord
+    - kit.Miner
+    - kit.Soldier
+    - kit.Tank
+    - kit.Vampire
+    - kit.Wizard
+    - knightkit.2
+    - libsdisguises.disguise.bat
+    - libsdisguises.disguise.cave_spider
+    - libsdisguises.disguise.chicken
+    - libsdisguises.disguise.cow
+    - libsdisguises.disguise.creeper
+    - libsdisguises.disguise.donkey
+    - libsdisguises.disguise.horse
+    - libsdisguises.disguise.iron_golem
+    - libsdisguises.disguise.magma_cube
+    - libsdisguises.disguise.mushroom_cow
+    - libsdisguises.disguise.ocelot
+    - libsdisguises.disguise.pig
+    - libsdisguises.disguise.pig_zombie
+    - libsdisguises.disguise.sheep
+    - libsdisguises.disguise.silverfish
+    - libsdisguises.disguise.skeleton
+    - libsdisguises.disguise.slime
+    - libsdisguises.disguise.snowman
+    - libsdisguises.disguise.spider
+    - libsdisguises.disguise.squid
+    - libsdisguises.disguise.villager
+    - libsdisguises.disguise.witch
+    - libsdisguises.disguise.wither_skeleton
+    - libsdisguises.disguise.wolf
+    - libsdisguises.disguise.zombie
+    - libsdisguises.disguise.zombie_villager
+    - nametag.group.VIPKitPvP
+    - soldierkit.1
+    - tankkit.1
+    - VIP.kit
+    - wizardkit.1
+    info:
+      prefix: '&c&l[&6&lVIP&c&l] &6'
+  markfem3:
+    group: UserKitPvP11-20
+    subgroups: []
+    permissions: []
+  MartianKrafter:
+    group: UserKitPvP1-10
+    subgroups: []
+    permissions:
+    - essentials.kits.Archer
+    - kit.KnightLvL2
+    - knightkit.2
+  massie9:
+    group: UserKitPvP11-20
+    subgroups: []
+    permissions:
+    - archerkit.1
+    - kit.Archer
+    - kit.Tank
+    - tankkit.1
+  masterkock:
+    group: UserKitPvP31-40
+    subgroups: []
+    permissions:
+    - archerkit.1
+    - kit.Archer
+    - kit.KnightLvL2
+    - kit.Pyro
+    - kit.Soldier
+    - knightkit.2
+    - pyrokit.1
+    - soldierkit.1
+  matt20041:
+    group: UserKitPvP1-10
+    subgroups: []
+    permissions:
+    - archerkit.1
+    - kit.Archer
+  mcjelle2801:
+    group: UserKitPvP1-10
+    subgroups: []
+    permissions:
+    - archerkit.1
+    - kit.Archer
+  Merijn1_9:
+    group: UserKitPvP11-20
+    subgroups: []
+    permissions:
+    - archerkit.1
+    - kit.Archer
+    - kit.Soldier
+    - soldierkit.1
+  misterswag124:
+    group: UserKitPvP11-20
+    subgroups: []
+    permissions:
+    - archerkit.1
+    - kit.Archer
+    - kit.Wizard
+    - wizardkit.1
+  MOBSKILLER2000:
+    group: UserKitPvP1-10
+    subgroups: []
+    permissions:
+    - archerkit.1
+    - kit.Archer
+  Nanthonij:
+    group: UserKitPvP1-10
+    subgroups: []
+    permissions:
+    - archerkit.1
+    - kit.Archer
+  nicolajsej9:
+    group: UserKitPvP1-10
+    subgroups: []
+    permissions:
+    - kit.KnightLvL2
+    - knightkit.2
+  NielsSedaka:
+    group: UserKitPvP1-10
+    subgroups: []
+    permissions:
+    - archerkit.1
+    - kit.Archer
+  Niklas:
+    group: UserKitPvP1-10
+    subgroups: []
+    permissions:
+    - archerkit.1
+    - kit.Archer
+  NLBlackGhostNL:
+    group: UserKitPvP1-10
+    subgroups: []
+    permissions:
+    - archerkit.1
+    - kit.Archer
+  Nonojo_Geluk:
+    group: UserKitPvP1-10
+    subgroups: []
+    permissions:
+    - archerkit.1
+    - kit.Archer
+  O_o_Fadi_o_O:
+    group: UserKitPvP141-150
+    subgroups: []
+    permissions:
+    - archerkit.1
+    - drunkkit.1
+    - kit.11
+    - kit.Archer
+    - kit.ArcherLvL2
+    - kit.Drunk
+    - kit.KnightLvL2
+    - kit.Pyro
+    - kit.Soldier
+    - kit.Wizard
+    - pyrokit.1
+    - soldierkit.1
+    - staffsecure.staff
+    - test.test
+    - wizardkit.1
+    info:
+      prefix: '&c[&4&lOwner&c] &4'
+  oguzgvn:
+    group: UserKitPvP11-20
+    subgroups: []
+    permissions:
+    - archerkit.1
+    - kit.Archer
+    - kit.Soldier
+    - soldierkit.1
+  Pieguy123456:
+    group: UserKitPvP21-30
+    subgroups: []
+    permissions:
+    - archerkit.1
+    - kit.Archer
+  pkleinlein:
+    group: UserKitPvP1-10
+    subgroups: []
+    permissions:
+    - archerkit.1
+    - kit.Archer
+  poplijm:
+    group: UserKitPvP41-50
+    subgroups: []
+    permissions:
+    - kit.Pyro
+    - pyrokit.1
+  Pr0t0x99:
+    group: UserKitPvP1-10
+    subgroups: []
+    permissions:
+    - archerkit.1
+    - kit.Archer
+  ProMaster2014:
+    group: UserKitPvP1-10
+    subgroups: []
+    permissions:
+    - archerkit.1
+    - kit.Archer
+  protoman120:
+    group: UserKitPvP1-10
+    subgroups: []
+    permissions:
+    - kit.Wizard
+    - wizardkit.1
+  Ramon2000Kleijn:
+    group: UserKitPvP1-10
+    subgroups: []
+    permissions:
+    - archerkit.1
+    - kit.Archer
+  RDRevoHD:
+    group: UserKitPvP1-10
+    subgroups: []
+    permissions:
+    - archerkit.1
+    - kit.Archer
+  remanentant:
+    group: UserKitPvP21-30
+    subgroups: []
+    permissions:
+    - archerkit.1
+    - kingkit.kit
+    - kit.Archer
+    - kit.King
+  rickert9:
+    group: UserKitPvP11-20
+    subgroups: []
+    permissions:
+    - archerkit.1
+    - kit.Archer
+    - kit.Soldier
+    - kit.Wizard
+    - soldierkit.1
+    - wizardkit.1
+  Samhat2003:
+    group: UserKitPvP1-10
+    subgroups: []
+    permissions:
+    - kit.KnightLvL2
+    - knightkit.2
+  sammine10:
+    group: UserKitPvP11-20
+    subgroups: []
+    permissions:
+    - archerkit.1
+    - kit.Archer
+  Sean9deCoolste:
+    group: UserKitPvP21-30
+    subgroups: []
+    permissions:
+    - archerkit.1
+    - kit.Archer
+    - kit.KnightLvL2
+    - kit.Wizard
+    - knightkit.2
+    - wizardkit.1
+  sebastiaan1981:
+    group: UserKitPvP11-20
+    subgroups: []
+    permissions:
+    - archerkit.1
+    - kit.Archer
+  Selasie:
+    group: UserKitPvP11-20
+    subgroups: []
+    permissions:
+    - archerkit.1
+    - kit.Archer
+    - kit.Soldier
+    - soldierkit.1
+  semamsing:
+    group: UserKitPvP1-10
+    subgroups: []
+    permissions:
+    - archerkit.1
+    - kit.Archer
+  sharewoods:
+    group: UserKitPvP71-80
+    subgroups: []
+    permissions:
+    - essentials.ban
+    - essentials.kick
+    - essentials.kits.Pyro
+    - essentials.tp
+    - essentials.tp.others
+    - kit.Necromancer
+    - nametag.group.mod
+    - staffsecure.staff
+    info:
+      prefix: '&9[&b&lMod&9] &b'
+  SinaasAppelke:
+    group: UserKitPvP141-150
+    subgroups: []
+    permissions:
+    - archerkit.1
+    - archerkit.2
+    - bunnykit.1
+    - bunnykit.2
+    - commandlog.notice
+    - essentials.ban
+    - essentials.kick
+    - essentials.tp
+    - essentials.tp.others
+    - ExplodingEggs.ee
+    - kit.Archer
+    - kit.ArcherLvL2
+    - kit.Bunny
+    - kit.BunnyLvL2
+    - kit.Wizard
+    - kit.WizardLvL2
+    - nametag.group.mod
+    - staffsecure.staff
+    - wizardkit.1
+    - wizardkit.2
+    info:
+      prefix: '&9[&b&lMod&9] &b'
+  SkEletshU:
+    group: UserKitPvP1-10
+    subgroups: []
+    permissions:
+    - archerkit.1
+    - kit.Archer
+  SkyPoes:
+    group: UserKitPvP11-20
+    subgroups: []
+    permissions:
+    - archerkit.1
+    - kit.Archer
+    - kit.Wizard
+    - wizardkit.1
+  slienimon:
+    group: UserKitPvP31-40
+    subgroups: []
+    permissions:
+    - staffsecure.staff
+    info:
+      prefix: '&c[Admin] &c'
+  soldaatkevin2000:
+    group: UserKitPvP1-10
+    subgroups: []
+    permissions:
+    - archerkit.1
+    - kit.Archer
+  Spooky_Guy_11:
+    group: UserKitPvP1-10
+    subgroups: []
+    permissions:
+    - archerkit.1
+    - kit.Archer
+  spyrovictor:
+    group: UserKitPvP1-10
+    subgroups: []
+    permissions:
+    - archerkit.1
+    - kit.Archer
+  stan_spyro:
+    group: UserKitPvP11-20
+    subgroups: []
+    permissions:
+    - archerkit.1
+    - kit.Archer
+    - kit.Wizard
+    - wizardkit.1
+  Starkiller7654:
+    group: UserKitPvP41-50
+    subgroups: []
+    permissions:
+    - archerkit.1
+    - kit.Archer
+    - kit.Tank
+    - tankkit.1
+  supermanneke123:
+    group: UserKitPvP21-30
+    subgroups: []
+    permissions:
+    - archerkit.1
+    - kit.Archer
+    - kit.Soldier
+    - soldierkit.1
+  T_BUILD:
+    group: UserKitPvP11-20
+    subgroups: []
+    permissions: []
+  Teleport1409:
+    group: UserKitPvP41-50
+    subgroups: []
+    permissions:
+    - archerkit.1
+    - kingkit.kit
+    - kit.Archer
+    - kit.King
+    - kit.Soldier
+    - kit.Tank
+    - soldierkit.1
+    - tankkit.1
+  ter_Haar:
+    group: UserKitPvP1-10
+    subgroups: []
+    permissions:
+    - archerkit.1
+    - kit.Archer
+  The_eagleeye:
+    group: UserKitPvP1-10
+    subgroups: []
+    permissions:
+    - archerkit.1
+    - kit.Archer
+  TheHDGamers:
+    group: UserKitPvP1-10
+    subgroups: []
+    permissions:
+    - kit.Soldier
+    - soldierkit.1
+  thekny834556:
+    group: UserKitPvP1-10
+    subgroups: []
+    permissions:
+    - archerkit.1
+    - kit.Archer
+  TheLotteS:
+    group: UserKitPvP11-20
+    subgroups: []
+    permissions:
+    - kit.Soldier
+    - soldierkit.1
+  thijs1739:
+    group: UserKitPvP1-10
+    subgroups: []
+    permissions:
+    - archerkit.1
+    - kit.Archer
+  tido01:
+    group: UserKitPvP1-10
+    subgroups: []
+    permissions:
+    - archerkit.1
+    - kit.Archer
+  tim_de_doder:
+    group: UserKitPvP21-30
+    subgroups: []
+    permissions:
+    - archerkit.1
+    - kit.Archer
+    - kit.Soldier
+    - soldierkit.1
+  Timdebest7:
+    group: UserKitPvP11-20
+    subgroups: []
+    permissions:
+    - archerkit.1
+    - kit.Archer
+    - kit.Tank
+    - tankkit.1
+  tosde:
+    group: UserKitPvP1-10
+    subgroups: []
+    permissions:
+    - archerkit.1
+    - kit.Archer
+  Tristan11B:
+    group: UserKitPvP21-30
+    subgroups: []
+    permissions:
+    - archerkit.1
+    - kit.Archer
+    - kit.Soldier
+    - kit.Wizard
+    - soldierkit.1
+    - wizardkit.1
+  UrGoNeLoL:
+    group: UserKitPvP11-20
+    subgroups: []
+    permissions:
+    - archerkit.1
+    - kit.Archer
+  wizar11:
+    group: UserKitPvP1-10
+    subgroups: []
+    permissions:
+    - archerkit.1
+    - kit.Archer
+  xChaChaa:
+    group: UserKitPvP1-10
+    subgroups: []
+    permissions:
+    - archerkit.1
+    - kit.Archer
+  xmcoopsx1:
+    group: UserKitPvP1-10
+    subgroups: []
+    permissions:
+    - archerkit.1
+    - kit.Archer
+  XthobianX:
+    group: UserKitPvP1-10
+    subgroups: []
+    permissions:
+    - archerkit.1
+    - kit.Archer
+    - kit.Soldier
+    - soldierkit.1
+  xXPerjasXx:
+    group: UserKitPvP1-10
+    subgroups: []
+    permissions:
+    - archerkit.1
+    - kit.Archer
+  Xzero119:
+    group: UserKitPvP141-150
+    subgroups: []
+    permissions:
+    - archerkit.1
+    - archerkit.2
+    - bunnykit.1
+    - kit.Archer
+    - kit.ArcherLvL2
+    - kit.Bunny
+    - kit.Drunk
+    - kit.Necromancer
+    - kit.Soldier
+    - kit.Tank
+    - kit.Tree
+    - kit.Wizard
+    - soldierkit.1
+    - tankkit.1
+    - treekit.kit
+    - wizardkit.1
+  y0up0wn3d:
+    group: UserKitPvP1-10
+    subgroups: []
+    permissions:
+    - archerkit.1
+    - kit.Archer
+  YamiNoShiroiTora:
+    group: UserKitPvP21-30
+    subgroups: []
+    permissions:
+    - archerkit.1
+    - essentials.kits.Archer
+    - kit.Archer

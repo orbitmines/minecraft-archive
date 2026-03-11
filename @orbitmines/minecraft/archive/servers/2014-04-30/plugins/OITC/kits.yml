@@ -1,0 +1,20 @@
+Martyrdom:
+  Enabled: true
+  Price: 0
+  VIP: false
+Scout:
+  Enabled: true
+  Price: 0
+  VIP: false
+TwoArrows:
+  Enabled: true
+  Price: 0
+  VIP: false
+IronUpgrade:
+  Enabled: true
+  Price: 0
+  VIP: false
+Blaze:
+  Enabled: true
+  Price: 0
+  VIP: false

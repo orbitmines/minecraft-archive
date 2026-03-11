@@ -1,0 +1,16 @@
+permission: ''
+world: SurvivalTowny
+X: -239
+Y: 69
+Z: 422
+price: 0.0
+cooldown: 0
+globalCooldown: 0
+confirmation: false
+commands:
+- '/ClaimTutorial '
+grantPermissions: []
+lastGlobalUse: 0
+lastUse: {}
+priceItems: []
+exp: 0

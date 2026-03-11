@@ -1,0 +1,17 @@
+permission: ''
+world: Dropper
+X: 6
+Y: 47
+Z: 63
+price: 0.0
+cooldown: 0
+globalCooldown: 0
+confirmation: false
+commands:
+- 'warp arcade_spawn '
+- '/MissionLost_GuyComplete '
+grantPermissions: []
+lastGlobalUse: 0
+lastUse: {}
+priceItems: []
+exp: 0

@@ -1,0 +1,16 @@
+permission: ''
+world: Dropper
+X: 20
+Y: 101
+Z: -56
+price: 0.0
+cooldown: 0
+globalCooldown: 0
+confirmation: false
+commands:
+- 'warp arcade_spawn '
+grantPermissions: []
+lastGlobalUse: 0
+lastUse: {}
+priceItems: []
+exp: 0

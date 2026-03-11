@@ -1,0 +1,16 @@
+permission: ''
+world: Tutorial
+X: 41
+Y: 112
+Z: -19
+price: 0.0
+cooldown: 0
+globalCooldown: 0
+confirmation: false
+commands:
+- '/WrongAnswerTutorial '
+grantPermissions: []
+lastGlobalUse: 0
+lastUse: {}
+priceItems: []
+exp: 0

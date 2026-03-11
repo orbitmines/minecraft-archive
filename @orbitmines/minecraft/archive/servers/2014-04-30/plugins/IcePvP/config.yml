@@ -1,0 +1,48 @@
+default_pvp_status: false
+cooldown: 10
+Commands:
+  TP: /tp /call /warp /home /spawn
+DeathWait:
+  DeathWaitMinutes: 0
+PvPOnHit: false
+FlyingPvP:
+  enabled: true
+  height: 3
+NoPotionPvP: true
+EnforcePvPOnHit: true
+joinCooldown:
+  enabled: false
+  minutes: 1
+CooldownBlockItems:
+  enabled: true
+  IDList:
+  - 345
+LightningOnKill: false
+killPvPLoggers:
+  enabled: true
+  healthThreshold: 8
+  cooldownSecondsPassed: 5
+  distanceFromPlayers: 5
+  logToConsole: false
+disallowBlockUsageOutsidePvP:
+  enabled: true
+  distance: 5
+  IDList:
+  - 259
+  - 385
+  - 51
+useWGFlags: true
+useMetadata: true
+tagapi:
+  useTagAPI: false
+  enabledTag: §c
+  disabledTag: §a
+permissions:
+  pvpEnabled: ''
+  pvpDisabled: ''
+enabledWorlds:
+- all
+persistPvPData: true
+creative:
+  block_creative_pvp: true
+  revert_creative_pvp_to_survival: false
