@@ -269,6 +269,7 @@ worker_worlds() {
     fi
 
     if $need_dl; then
+        mkdir -p "$(dirname "$WORLDS_ZIP")"
         echo "DL:0" > "$sf"
         curl -fSL -o "$WORLDS_ZIP" "$WORLDS_URL" &
         local cpid=$!
