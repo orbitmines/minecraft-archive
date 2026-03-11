@@ -1,5 +1,12 @@
 # OrbitMines Minecraft Archive
-An archive and remaster of OrbitMines' Minecraft Server (2013-2019)
+
+<div align="center">
+
+![Legacy Logo](@orbitmines/minecraft/archive/visuals/logo/legacy_logo/OrbitMinesLogo.png)
+
+*An archive and remaster of OrbitMines' Minecraft Server (2013-2019)*
+
+</div>
 
 ---
 
