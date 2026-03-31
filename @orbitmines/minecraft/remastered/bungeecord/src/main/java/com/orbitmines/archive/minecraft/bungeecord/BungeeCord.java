@@ -1,8 +1,7 @@
 package com.orbitmines.archive.minecraft.bungeecord;
 
 import com.orbitmines.archive.minecraft.MinecraftServer;
-import net.md_5.bungee.api.connection.ProxiedPlayer;
-import net.md_5.bungee.api.event.ChatEvent;
+import com.orbitmines.archive.minecraft.bungeecord.commands.ServerCommand;
 import net.md_5.bungee.api.event.LoginEvent;
 import net.md_5.bungee.api.plugin.Listener;
 import net.md_5.bungee.api.plugin.Plugin;
@@ -20,7 +19,7 @@ public class BungeeCord extends Plugin implements Listener {
     @Override
     public void onEnable() {
 
-        MinecraftServer server = new MinecraftServer("archive", "1.21.11", "1G", 25566);
+        MinecraftServer server = new MinecraftServer("archive", "26.1", "1G", 25566);
 //        server.delete();
         server.run();
         this.registerServer(server);
@@ -36,6 +35,7 @@ public class BungeeCord extends Plugin implements Listener {
 
     public void registerServer(MinecraftServer server) {
         this.getProxy().getServers().put(server.getName(), this.getProxy().constructServerInfo(server.getName(), new InetSocketAddress(server.getIp(), server.getPort()), "0", true));
+        getProxy().getPluginManager().registerCommand(this, new ServerCommand(server));
     }
 
     @EventHandler

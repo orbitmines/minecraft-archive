@@ -31,12 +31,7 @@ public class MinecraftServer {
     }
 
     public Thread run() {
-        this.thread = new Thread(new Runnable() {
-            @Override
-            public void run() {
-                MinecraftServer.this.runSync();
-            }
-        });
+        this.thread = new Thread(MinecraftServer.this::runSync);
 
         this.thread.start();
         return this.thread;
@@ -157,9 +152,8 @@ public class MinecraftServer {
     public void sendCommand(String command) {
         OutputStream stream = this.process.getOutputStream();
         try {
-            stream.write(command.getBytes());
+            stream.write((command + "\n").getBytes());
             stream.flush();
-            stream.close();
         } catch (IOException e) {
             e.printStackTrace();
         }

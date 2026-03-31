@@ -112,6 +112,27 @@
             <scope>system</scope>
             <systemPath>${basedir}/../../../../.orbitmines/spigot/spigot-1.13.jar</systemPath>
         </dependency>
+        <dependency>
+            <groupId>com.orbitmines</groupId>
+            <artifactId>spigot-1.21.5</artifactId>
+            <version>LATEST</version>
+            <scope>system</scope>
+            <systemPath>${basedir}/../../../../.orbitmines/spigot/spigot-1.21.5.jar</systemPath>
+        </dependency>
+        <dependency>
+            <groupId>com.orbitmines</groupId>
+            <artifactId>spigot-1.21.11</artifactId>
+            <version>LATEST</version>
+            <scope>system</scope>
+            <systemPath>${basedir}/../../../../.orbitmines/spigot/spigot-1.21.11.jar</systemPath>
+        </dependency>
+        <dependency>
+            <groupId>com.orbitmines</groupId>
+            <artifactId>spigot-26.1</artifactId>
+            <version>LATEST</version>
+            <scope>system</scope>
+            <systemPath>${basedir}/../../../../.orbitmines/spigot/spigot-26.1.jar</systemPath>
+        </dependency>
     </dependencies>
 
     <build>
@@ -121,8 +142,8 @@
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>3.13.0</version>
                 <configuration>
-                    <source>1.8</source>
-                    <target>1.8</target>
+                    <source>25</source>
+                    <target>25</target>
                     <annotationProcessorPaths>
                         <path>
                             <groupId>org.projectlombok</groupId>

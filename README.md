@@ -14,11 +14,11 @@
 
 - Prerequisites
     ```
-    sudo apt install git maven openjdk-21-jdk
+    sudo apt install git maven openjdk-25-jdk
     ```
   - Install [Git](https://git-scm.com/downloads)
   - Install [Maven](https://maven.apache.org/install.html)
-  - Install [Java JDK 21](https://www.oracle.com/java/technologies/javase/jdk21-archive-downloads.html)
+  - Install [Java JDK 25](https://www.oracle.com/java/technologies/javase/jdk25-archive-downloads.html)
 
 - *Open Git Bash or a terminal*
 
