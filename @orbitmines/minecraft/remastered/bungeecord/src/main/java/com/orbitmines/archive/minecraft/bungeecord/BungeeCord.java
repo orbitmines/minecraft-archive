@@ -6,7 +6,11 @@ import com.orbitmines.archive.minecraft.bungeecord._2019.servers.bungeecord.libs
 import com.orbitmines.archive.minecraft.bungeecord.commands.ServerCommand;
 import net.md_5.bungee.api.plugin.Plugin;
 
+import java.io.IOException;
 import java.net.InetSocketAddress;
+import java.net.ServerSocket;
+import java.util.List;
+import java.util.concurrent.ThreadLocalRandom;
 
 public class BungeeCord extends Plugin {
 
@@ -22,10 +26,11 @@ public class BungeeCord extends Plugin {
     public void onEnable() {
         bungeecord.onEnable();
 
-        MinecraftServer server = new MinecraftServer(Server.HUB, "26.1", "1G", 25566);
-//        server.delete();
-        server.run();
-        this.registerServer(server);
+        for (Server type : List.of(Server.HUB, Server.KITPVP, Server.SURVIVAL)) {
+            MinecraftServer server = new MinecraftServer(type, "26.1", "1G", findAvailablePort());
+            server.run();
+            this.registerServer(server);
+        }
     }
 
     @Override
@@ -36,6 +41,17 @@ public class BungeeCord extends Plugin {
     public void registerServer(MinecraftServer server) {
         this.getProxy().getServers().put(server.getName(), this.getProxy().constructServerInfo(server.getName(), new InetSocketAddress(server.getIp(), server.getPort()), "0", true));
         getProxy().getPluginManager().registerCommand(this, new ServerCommand(server));
+    }
+
+    private static int findAvailablePort() {
+        for (int i = 0; i < 100; i++) {
+            int port = ThreadLocalRandom.current().nextInt(25566, 30001);
+            try (ServerSocket socket = new ServerSocket(port)) {
+                return port;
+            } catch (IOException ignored) {
+            }
+        }
+        throw new RuntimeException("Could not find an available port in range 25566-30000");
     }
 
 }
