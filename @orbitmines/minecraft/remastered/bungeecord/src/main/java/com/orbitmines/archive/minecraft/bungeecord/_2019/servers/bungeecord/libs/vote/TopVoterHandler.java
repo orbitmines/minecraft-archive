@@ -18,7 +18,7 @@ import com.orbitmines.archive.minecraft._2019.utils.DateUtils;
 import com.orbitmines.archive.minecraft._2019.utils.EnumUtils;
 import com.orbitmines.archive.minecraft._2019.utils.NumberUtils;
 import com.orbitmines.archive.minecraft._2019.utils.database.DatabaseManager;
-import com.orbitmines.archive.minecraft._2019.utils.database.MySQLDatabase;
+import com.orbitmines.archive.minecraft._2019.utils.database.SQLiteDatabase;
 import com.orbitmines.archive.minecraft._2019.utils.database.lib.Selectable;
 import com.orbitmines.archive.minecraft._2019.utils.database.lib.builder.mysql.MySQLQueryBuilder;
 import com.orbitmines.archive.minecraft._2019.utils.database.lib.operators.mysql.Order;
@@ -65,7 +65,7 @@ public class TopVoterHandler {
          */
         Selectable totalVotesSelectable = () -> "SUM(`monthly_votes`.`votes`) AS total_votes";
         Selectable voterCountSelectable = () -> "COUNT(*) AS count";
-        MySQLDatabase database = DatabaseManager.getInstance().getDefault();
+        SQLiteDatabase database = DatabaseManager.getInstance().getDefault();
         MySQLQueryBuilder builder = new MySQLQueryBuilder(MonthlyVotes.TABLE).
             where(MonthlyVotes.column.MONTH.getColumn(), prevMonth.toString()).
             where(MonthlyVotes.column.YEAR.getColumn(), prevYear + "");

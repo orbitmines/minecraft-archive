@@ -521,7 +521,7 @@ cmd_run() {
         printf '\n\n'
 
         cd "$SERVERS_DIR/BungeeCord"
-        exec java -jar server.jar
+        exec java "-DOM_ROOT=$SCRIPT_DIR" -jar server.jar
     fi
 
     printf '%s\e[2J' "$HIDE_CURSOR"   # hide cursor + full clear
@@ -623,7 +623,7 @@ cmd_run() {
     printf '\n\n'
 
     cd "$SERVERS_DIR/BungeeCord"
-    exec java -jar server.jar
+    exec java "-DOM_ROOT=$SCRIPT_DIR" -jar server.jar
 }
 
 # ─────────────────────────────────────────────────────────────────────────────

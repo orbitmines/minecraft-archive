@@ -14,7 +14,7 @@ import com.orbitmines.archive.minecraft._2019.utils.DateUtils;
 import com.orbitmines.archive.minecraft._2019.utils.database.AsyncChecker;
 import com.orbitmines.archive.minecraft._2019.utils.database.AsyncQuerier;
 import com.orbitmines.archive.minecraft._2019.utils.database.DatabaseManager;
-import com.orbitmines.archive.minecraft._2019.utils.database.MySQLDatabase;
+import com.orbitmines.archive.minecraft._2019.utils.database.SQLiteDatabase;
 import com.orbitmines.archive.minecraft._2019.utils.database.model.mysql.MySQLModel;
 import com.orbitmines.archive.minecraft._2019.utils.database.model.mysql.MySQLModelColumn;
 import com.orbitmines.archive.minecraft._2019.utils.database.model.mysql.MySQLModelSelector;
@@ -29,7 +29,7 @@ public abstract class OMMySQLModel<Model extends OMMySQLModel, C extends MySQLMo
     }
 
     @Override
-    protected MySQLDatabase getDatabase() {
+    protected SQLiteDatabase getDatabase() {
         return DatabaseManager.getInstance().getDefault();
     }
 

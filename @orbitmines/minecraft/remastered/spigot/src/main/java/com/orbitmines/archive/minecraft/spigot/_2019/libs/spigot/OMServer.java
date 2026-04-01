@@ -25,7 +25,7 @@ import com.orbitmines.archive.minecraft.spigot._2019.libs.spigot.pubsub.subscrib
 import com.orbitmines.archive.minecraft.spigot._2019.libs.spigot.runnables.*;
 import com.orbitmines.archive.minecraft._2019.utils.SkinLibrary;
 import com.orbitmines.archive.minecraft._2019.utils.database.DatabaseManager;
-import com.orbitmines.archive.minecraft._2019.utils.database.MySQLDatabase;
+import com.orbitmines.archive.minecraft._2019.utils.database.SQLiteDatabase;
 import com.orbitmines.archive.minecraft._2019.utils.database.exceptions.DatabaseConnectionException;
 import com.orbitmines.archive.minecraft._2019.utils.pubsub.PubSubBroker;
 import com.orbitmines.archive.minecraft._2019.utils.pubsub.SubscriberInstance;
@@ -143,13 +143,13 @@ public abstract class OMServer<S extends OMServer<S, P>, P extends OMPlayer<S, P
         setupPubSub();
 
         try {
-            MySQLDatabase database = DatabaseManager.getInstance().initializeDefaultDatabase();
+            SQLiteDatabase database = DatabaseManager.getInstance().initializeDefaultDatabase();
 
             database.checkConnection();
 
-            System.out.println("Successfully setup MySQL connection.");
+            System.out.println("Successfully setup SQLite connection.");
         } catch(DatabaseConnectionException ex) {
-            restart("Could not connect to mysql, restarting... (Caused by: " + ex.getClass().getSimpleName() + ": " + ex.getCause().getMessage() + ")", true);
+            restart("Could not connect to database, restarting... (Caused by: " + ex.getClass().getSimpleName() + ": " + ex.getCause().getMessage() + ")", true);
             return;
         } catch(Exception ex) {
             ex.printStackTrace();

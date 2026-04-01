@@ -23,7 +23,8 @@ import com.orbitmines.archive.minecraft.bungeecord._2019.servers.bungeecord.libs
 import com.orbitmines.archive.minecraft.bungeecord._2019.servers.bungeecord.utils.config.ConfigHandler;
 import com.orbitmines.archive.minecraft._2019.utils.SkinLibrary;
 import com.orbitmines.archive.minecraft._2019.utils.database.DatabaseManager;
-import com.orbitmines.archive.minecraft._2019.utils.database.MySQLDatabase;
+import com.orbitmines.archive.minecraft._2019.utils.database.MySQLDumpImporter;
+import com.orbitmines.archive.minecraft._2019.utils.database.SQLiteDatabase;
 import com.orbitmines.archive.minecraft._2019.utils.database.exceptions.DatabaseConnectionException;
 import com.orbitmines.archive.minecraft._2019.utils.pubsub.PubSubBroker;
 import com.orbitmines.archive.minecraft._2019.utils.pubsub.SubscriberInstance;
@@ -127,15 +128,23 @@ public class Bungeecord implements VoteHandler, VotifierPlugin {
         /* Setup Plugin Messaging and State */
         setupPubSub();
 
+        String root = Environment.get("OM_ROOT", ".");
+        String dbPath = Environment.get("OM_DB_PATH", root + "/.orbitmines/database/current");
+        boolean firstLoad = !java.nio.file.Files.exists(java.nio.file.Path.of(dbPath));
+
         try {
-            MySQLDatabase database = DatabaseManager.getInstance().initializeDefaultDatabase();
+            SQLiteDatabase database = DatabaseManager.getInstance().initializeDefaultDatabase();
 
             database.checkConnection();
 
-            getLogger().info("Successfully setup MySQL connection.");
+            getLogger().info("Successfully setup SQLite connection.");
+
+            if (firstLoad) {
+                importDump(database);
+            }
         } catch(DatabaseConnectionException ex) {
-            getLogger().severe("Failed to setup MySQL connection.");
-            restart("Could not connect to mysql, restarting... (Caused by: " + ex.getClass().getSimpleName() + ": " + ex.getCause().getMessage() + ")");
+            getLogger().severe("Failed to setup SQLite connection.");
+            restart("Could not connect to database, restarting... (Caused by: " + ex.getClass().getSimpleName() + ": " + ex.getCause().getMessage() + ")");
             return;
         } catch(Exception ex) {
             ex.printStackTrace();
@@ -329,6 +338,29 @@ public class Bungeecord implements VoteHandler, VotifierPlugin {
     private void registerSubscribers(SubscriberInstance... subscribers) {
         for (SubscriberInstance subscriber : subscribers) {
             subscriber.subscribe();
+        }
+    }
+
+    private void importDump(SQLiteDatabase database) {
+        String root = Environment.get("OM_ROOT", ".");
+        java.nio.file.Path privateDump = java.nio.file.Path.of(root, "@orbitmines/minecraft/archive/private/databases/2019-05-06_dump3.sql");
+        java.nio.file.Path publicDump = java.nio.file.Path.of(root, "@orbitmines/minecraft/archive/databases/2019-05-06_dump3.sql");
+
+        java.nio.file.Path dumpFile = java.nio.file.Files.exists(privateDump) ? privateDump : publicDump;
+
+        if (!java.nio.file.Files.exists(dumpFile)) {
+            getLogger().warning("No SQL dump file found at " + privateDump + " or " + publicDump);
+            return;
+        }
+
+        getLogger().info("First load detected. Importing dump from " + dumpFile + "...");
+
+        try {
+            MySQLDumpImporter.importDump(database, dumpFile);
+            getLogger().info("SQL dump imported successfully.");
+        } catch (Exception e) {
+            getLogger().severe("Failed to import SQL dump: " + e.getMessage());
+            e.printStackTrace();
         }
     }
 

@@ -474,7 +474,7 @@ public class OldDatabaseConverter {
             "password",
             "?useUnicode=true&amp;useJDBCCompliantTimezoneShift=true&amp;serverTimezone=UTC"
         );
-        DatabaseManager.getInstance().setDefaultDatabase(new_database);
+        // DatabaseManager.getInstance().setDefaultDatabase(new_database);
         registerTables();
     }
 

@@ -4,7 +4,7 @@ package com.orbitmines.archive.minecraft._2019.utils.database.model.mysql;
  * OrbitMines - @author Fadi Shawki - 2019
  */
 
-import com.orbitmines.archive.minecraft._2019.utils.database.MySQLDatabase;
+import com.orbitmines.archive.minecraft._2019.utils.database.SQLiteDatabase;
 import com.orbitmines.archive.minecraft._2019.utils.database.exceptions.DatabaseModelReloadException;
 import com.orbitmines.archive.minecraft._2019.utils.database.lib.builder.mysql.MySQLBaseQueryBuilder;
 import com.orbitmines.archive.minecraft._2019.utils.database.lib.builder.mysql.MySQLQueryBuilder;
@@ -17,7 +17,7 @@ import com.orbitmines.archive.minecraft._2019.utils.database.model.ModelSelector
 
 import java.util.List;
 
-public abstract class MySQLModel<Model extends MySQLModel, C extends MySQLModelColumn> extends DatabaseModel<MySQLDatabase, MySQLTable, MySQLQueryBuilder, MySQLQuerySetBuilder, MySQLQueryValueBuilder, Model, C> {
+public abstract class MySQLModel<Model extends MySQLModel, C extends MySQLModelColumn> extends DatabaseModel<SQLiteDatabase, MySQLTable, MySQLQueryBuilder, MySQLQuerySetBuilder, MySQLQueryValueBuilder, Model, C> {
 
     public MySQLModel() {
 
@@ -39,7 +39,7 @@ public abstract class MySQLModel<Model extends MySQLModel, C extends MySQLModelC
     }
 
     public void reloadAsLast(MySQLModelSelector... selectors) {
-        MySQLDatabase database = getDatabase();
+        SQLiteDatabase database = getDatabase();
         MySQLTable table = getTable();
         MySQLQueryBuilder queryBuilder = getQueryBuilder(table);
 
@@ -86,7 +86,7 @@ public abstract class MySQLModel<Model extends MySQLModel, C extends MySQLModelC
 
     private static <Model extends MySQLModel<Model, C>, C extends MySQLModelColumn> Model getSorted(Class<Model> clazz, Order order, MySQLModelSelector... selectors) {
         Model dummy = dummy(clazz);
-        MySQLDatabase database = dummy.getDatabase();
+        SQLiteDatabase database = dummy.getDatabase();
         MySQLTable table = dummy.getTable();
         MySQLQueryBuilder queryBuilder = dummy.getQueryBuilder(table);
 
@@ -110,7 +110,7 @@ public abstract class MySQLModel<Model extends MySQLModel, C extends MySQLModelC
 
     private static <Model extends MySQLModel<Model, C>, C extends MySQLModelColumn> List<Model> getSorted(Class<Model> clazz, Order order, int limit, MySQLModelSelector... selectors) {
         Model dummy = dummy(clazz);
-        MySQLDatabase database = dummy.getDatabase();
+        SQLiteDatabase database = dummy.getDatabase();
         MySQLTable table = dummy.getTable();
         MySQLQueryBuilder queryBuilder = dummy.getQueryBuilder(table);
 

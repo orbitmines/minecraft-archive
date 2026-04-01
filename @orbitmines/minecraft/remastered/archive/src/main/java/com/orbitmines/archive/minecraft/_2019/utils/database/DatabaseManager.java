@@ -16,7 +16,7 @@ import com.orbitmines.archive.minecraft._2019.libs.database.models.punishment.Re
 import com.orbitmines.archive.minecraft._2019.libs.database.models.vote.LastVote;
 import com.orbitmines.archive.minecraft._2019.libs.database.models.vote.MonthlyVotes;
 import com.orbitmines.archive.minecraft._2019.libs.database.models.vote.PendingVote;
-import com.orbitmines.archive.minecraft._2019.utils.database.lib.froms.MySQLTable;
+import com.orbitmines.archive.minecraft._2019.utils.database.lib.Table;
 import com.orbitmines.archive.minecraft._2019.utils.exceptions.SyncDatabaseAccessException;
 import lombok.Getter;
 import lombok.Setter;
@@ -40,7 +40,7 @@ public class DatabaseManager {
     @Getter private static DatabaseManager instance = new DatabaseManager();
 
     private HashMap<Integer, Database> databases = new HashMap<>();
-    @Setter private MySQLDatabase defaultDatabase;
+    @Setter private SQLiteDatabase defaultDatabase;
 
     @Getter @Setter private AsyncChecker asyncChecker;
     @Getter @Setter private AsyncQuerier asyncQuerier;
@@ -54,25 +54,21 @@ public class DatabaseManager {
     }
 
     /* Only initialization of database is allowed in sync, the rest has to be done async */
-    public MySQLDatabase getDefault() {
+    public SQLiteDatabase getDefault() {
         if (asyncChecker != null && !asyncChecker.isAsync())
             throw new SyncDatabaseAccessException();
 
         return defaultDatabase;
     }
 
-    public MySQLDatabase initializeDefaultDatabase() {
+    public SQLiteDatabase initializeDefaultDatabase() {
         if (asyncChecker != null && !asyncChecker.isAsync())
             throw new SyncDatabaseAccessException();
 
-        MySQLDatabase database = new MySQLDatabase(
-                Environment.get("OM_DB_HOST", "database-mysql"),
-                Environment.get("OM_DB_PORT", 3306),
-                Environment.get("OM_DB_NAME", "orbitmines_" + Environment.get().toString()),
-                Environment.get("OM_DB_USER", "root"),
-                Environment.get("OM_DB_PASSWORD", "password"),
-                Environment.get("OM_DB_OPTIONS", "?useUnicode=true&amp;useJDBCCompliantTimezoneShift=true&amp;serverTimezone=UTC")
-        );
+        String root = Environment.get("OM_ROOT", ".");
+        String dbPath = Environment.get("OM_DB_PATH", root + "/.orbitmines/database/current");
+
+        SQLiteDatabase database = new SQLiteDatabase(dbPath);
 
         register(database, DatabaseManager.DATABASE_ORBIT_MINES);
         defaultDatabase = database;
@@ -80,7 +76,7 @@ public class DatabaseManager {
         return database;
     }
 
-    public void setupDefaultDatabase(MySQLTable... tables) {
+    public void setupDefaultDatabase(Table... tables) {
         if (asyncChecker != null && !asyncChecker.isAsync())
             throw new SyncDatabaseAccessException();
 
