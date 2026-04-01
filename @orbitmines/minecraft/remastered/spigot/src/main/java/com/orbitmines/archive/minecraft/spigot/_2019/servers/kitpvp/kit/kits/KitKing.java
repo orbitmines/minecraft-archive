@@ -89,7 +89,7 @@ public class KitKing extends KitPvPKit {
             Kit<KitPvPPlayer> kit = new Kit<>();
 
             kit.setHelmet(player -> new KitItemBuilder(this, Material.DIAMOND_HELMET));
-            kit.setChestplate(player -> new KitItemBuilder(this, Material.GOLDEN_CHESTPLATE).addEnchantment(Enchantment.PROTECTION_ENVIRONMENTAL, 1));
+            kit.setChestplate(player -> new KitItemBuilder(this, Material.GOLDEN_CHESTPLATE).addEnchantment(Enchantment.PROTECTION, 1));
             kit.setLeggings(player -> new KitItemBuilder(this, Material.GOLDEN_LEGGINGS));
             kit.setBoots(player -> new KitItemBuilder(this, Material.GOLDEN_BOOTS));
 
@@ -125,7 +125,7 @@ public class KitKing extends KitPvPKit {
             Kit<KitPvPPlayer> kit = new Kit<>();
 
             kit.setHelmet(player -> new KitItemBuilder(this, Material.DIAMOND_HELMET));
-            kit.setChestplate(player -> new KitItemBuilder(this, Material.GOLDEN_CHESTPLATE).addEnchantment(Enchantment.PROTECTION_ENVIRONMENTAL, 2));
+            kit.setChestplate(player -> new KitItemBuilder(this, Material.GOLDEN_CHESTPLATE).addEnchantment(Enchantment.PROTECTION, 2));
             kit.setLeggings(player -> new KitItemBuilder(this, Material.GOLDEN_LEGGINGS));
             kit.setBoots(player -> new KitItemBuilder(this, Material.GOLDEN_BOOTS));
 

@@ -72,7 +72,7 @@ public class KitBunny extends KitPvPKit {
             kit.setBoots(player -> new KitLeatherArmorBuilder(this, LeatherArmorBuilder.Type.BOOTS, LEATHER_COLOR));
 
             kit.addPotionBuilder(new PotionBuilder(PotionEffectType.SPEED, Integer.MAX_VALUE, 0, true, false, true));
-            kit.addPotionBuilder(new PotionBuilder(PotionEffectType.JUMP, Integer.MAX_VALUE, 3, true, false, true));
+            kit.addPotionBuilder(new PotionBuilder(PotionEffectType.JUMP_BOOST, Integer.MAX_VALUE, 3, true, false, true));
 
             return kit;
         }
@@ -108,13 +108,13 @@ public class KitBunny extends KitPvPKit {
             kit.set(1, player -> new KitPotionItemBuilder(this, PotionItemBuilder.Type.SPLASH, new PotionBuilder(PotionEffectType.POISON, 45 * 20, 0)));
             kit.set(2, player -> new KitItemBuilder(this, Material.SUGAR).addActive(Active.SUGAR_RUSH, 1));
 
-            kit.setHelmet(player -> new KitItemBuilder(this, Material.IRON_HELMET).addEnchantment(Enchantment.PROTECTION_ENVIRONMENTAL, 1));
+            kit.setHelmet(player -> new KitItemBuilder(this, Material.IRON_HELMET).addEnchantment(Enchantment.PROTECTION, 1));
             kit.setChestplate(player -> new KitLeatherArmorBuilder(this, LeatherArmorBuilder.Type.CHESTPLATE, LEATHER_COLOR));
             kit.setLeggings(player -> new KitLeatherArmorBuilder(this, LeatherArmorBuilder.Type.LEGGINGS, LEATHER_COLOR));
             kit.setBoots(player -> new KitLeatherArmorBuilder(this, LeatherArmorBuilder.Type.BOOTS, LEATHER_COLOR));
 
             kit.addPotionBuilder(new PotionBuilder(PotionEffectType.SPEED, Integer.MAX_VALUE, 0, true, false, true));
-            kit.addPotionBuilder(new PotionBuilder(PotionEffectType.JUMP, Integer.MAX_VALUE, 3, true, false, true));
+            kit.addPotionBuilder(new PotionBuilder(PotionEffectType.JUMP_BOOST, Integer.MAX_VALUE, 3, true, false, true));
 
             return kit;
         }
@@ -149,15 +149,15 @@ public class KitBunny extends KitPvPKit {
             kit.set(0, player -> new KitItemBuilder(this, Material.STONE_SWORD));
             kit.set(1, player -> new KitPotionItemBuilder(this, PotionItemBuilder.Type.SPLASH, new PotionBuilder(PotionEffectType.POISON, 21 * 20, 1)));
             kit.set(2, player -> new KitItemBuilder(this, Material.SUGAR).addActive(Active.SUGAR_RUSH, 1));
-            kit.set(3, player -> new KitItemBuilder(this, Material.CARROT, 1, "§6§lKnockback Carrot").addEnchantment(Enchantment.KNOCKBACK, 3).addEnchantment(Enchantment.DAMAGE_ALL, 2));
+            kit.set(3, player -> new KitItemBuilder(this, Material.CARROT, 1, "§6§lKnockback Carrot").addEnchantment(Enchantment.KNOCKBACK, 3).addEnchantment(Enchantment.SHARPNESS, 2));
 
-            kit.setHelmet(player -> new KitItemBuilder(this, Material.IRON_HELMET).addEnchantment(Enchantment.PROTECTION_ENVIRONMENTAL, 1));
-            kit.setChestplate(player -> new KitLeatherArmorBuilder(this, LeatherArmorBuilder.Type.CHESTPLATE, LEATHER_COLOR).addEnchantment(Enchantment.PROTECTION_ENVIRONMENTAL, 1));
-            kit.setLeggings(player -> new KitLeatherArmorBuilder(this, LeatherArmorBuilder.Type.LEGGINGS, LEATHER_COLOR).addEnchantment(Enchantment.PROTECTION_ENVIRONMENTAL, 1));
-            kit.setBoots(player -> new KitLeatherArmorBuilder(this, LeatherArmorBuilder.Type.BOOTS, LEATHER_COLOR).addEnchantment(Enchantment.PROTECTION_ENVIRONMENTAL, 1));
+            kit.setHelmet(player -> new KitItemBuilder(this, Material.IRON_HELMET).addEnchantment(Enchantment.PROTECTION, 1));
+            kit.setChestplate(player -> new KitLeatherArmorBuilder(this, LeatherArmorBuilder.Type.CHESTPLATE, LEATHER_COLOR).addEnchantment(Enchantment.PROTECTION, 1));
+            kit.setLeggings(player -> new KitLeatherArmorBuilder(this, LeatherArmorBuilder.Type.LEGGINGS, LEATHER_COLOR).addEnchantment(Enchantment.PROTECTION, 1));
+            kit.setBoots(player -> new KitLeatherArmorBuilder(this, LeatherArmorBuilder.Type.BOOTS, LEATHER_COLOR).addEnchantment(Enchantment.PROTECTION, 1));
 
             kit.addPotionBuilder(new PotionBuilder(PotionEffectType.SPEED, Integer.MAX_VALUE, 0, true, false, true));
-            kit.addPotionBuilder(new PotionBuilder(PotionEffectType.JUMP, Integer.MAX_VALUE, 3, true, false, true));
+            kit.addPotionBuilder(new PotionBuilder(PotionEffectType.JUMP_BOOST, Integer.MAX_VALUE, 3, true, false, true));
 
             return kit;
         }

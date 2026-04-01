@@ -119,7 +119,7 @@ public abstract class CommandPardon<S extends OMServer<S, P>, P extends OMPlayer
             TextChannel channel = bot.getTextChannel(CustomChannel.PUNISHMENTS);
 
             channel.sendMessage(bot.getPlayerDisplay(pardoned, emote, pardoned.getRawName()) + " has been PARDONED!").queue();
-            channel.sendMessage(builder.build()).queue();
+            channel.sendMessageEmbeds(builder.build()).queue();
         });
     }
 

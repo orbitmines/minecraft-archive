@@ -56,10 +56,10 @@ public class KitEnchanter extends KitPvPKit {
 
             kit.set(0, player -> new KitItemBuilder(this, Material.ENCHANTED_BOOK).addPassive(Passive.ENCHANTING_TABLE, 1).addPassive(Passive.ATTACK_DAMAGE, 4));
 
-            kit.setHelmet(player -> new KitLeatherArmorBuilder(this, LeatherArmorBuilder.Type.HELMET, DEFAULT_COLOR).addEnchantment(Enchantment.PROTECTION_ENVIRONMENTAL, 1));
-            kit.setChestplate(player -> new KitLeatherArmorBuilder(this, LeatherArmorBuilder.Type.CHESTPLATE, DEFAULT_COLOR).addEnchantment(Enchantment.PROTECTION_ENVIRONMENTAL, 1));
-            kit.setLeggings(player -> new KitLeatherArmorBuilder(this, LeatherArmorBuilder.Type.LEGGINGS, DEFAULT_COLOR).addEnchantment(Enchantment.PROTECTION_ENVIRONMENTAL, 1));
-            kit.setBoots(player -> new KitLeatherArmorBuilder(this, LeatherArmorBuilder.Type.BOOTS, DEFAULT_COLOR).addEnchantment(Enchantment.PROTECTION_ENVIRONMENTAL, 1));
+            kit.setHelmet(player -> new KitLeatherArmorBuilder(this, LeatherArmorBuilder.Type.HELMET, DEFAULT_COLOR).addEnchantment(Enchantment.PROTECTION, 1));
+            kit.setChestplate(player -> new KitLeatherArmorBuilder(this, LeatherArmorBuilder.Type.CHESTPLATE, DEFAULT_COLOR).addEnchantment(Enchantment.PROTECTION, 1));
+            kit.setLeggings(player -> new KitLeatherArmorBuilder(this, LeatherArmorBuilder.Type.LEGGINGS, DEFAULT_COLOR).addEnchantment(Enchantment.PROTECTION, 1));
+            kit.setBoots(player -> new KitLeatherArmorBuilder(this, LeatherArmorBuilder.Type.BOOTS, DEFAULT_COLOR).addEnchantment(Enchantment.PROTECTION, 1));
 
             return kit;
         }
@@ -93,10 +93,10 @@ public class KitEnchanter extends KitPvPKit {
 
             kit.set(0, player -> new KitItemBuilder(this, Material.ENCHANTED_BOOK).addPassive(Passive.ENCHANTING_TABLE, 2).addPassive(Passive.ATTACK_DAMAGE, 4));
 
-            kit.setHelmet(player -> new KitLeatherArmorBuilder(this, LeatherArmorBuilder.Type.HELMET, DEFAULT_COLOR).addEnchantment(Enchantment.PROTECTION_ENVIRONMENTAL, 1));
-            kit.setChestplate(player -> new KitLeatherArmorBuilder(this, LeatherArmorBuilder.Type.CHESTPLATE, DEFAULT_COLOR).addEnchantment(Enchantment.PROTECTION_ENVIRONMENTAL, 1));
-            kit.setLeggings(player -> new KitLeatherArmorBuilder(this, LeatherArmorBuilder.Type.LEGGINGS, DEFAULT_COLOR).addEnchantment(Enchantment.PROTECTION_ENVIRONMENTAL, 1));
-            kit.setBoots(player -> new KitLeatherArmorBuilder(this, LeatherArmorBuilder.Type.BOOTS, DEFAULT_COLOR).addEnchantment(Enchantment.PROTECTION_ENVIRONMENTAL, 1));
+            kit.setHelmet(player -> new KitLeatherArmorBuilder(this, LeatherArmorBuilder.Type.HELMET, DEFAULT_COLOR).addEnchantment(Enchantment.PROTECTION, 1));
+            kit.setChestplate(player -> new KitLeatherArmorBuilder(this, LeatherArmorBuilder.Type.CHESTPLATE, DEFAULT_COLOR).addEnchantment(Enchantment.PROTECTION, 1));
+            kit.setLeggings(player -> new KitLeatherArmorBuilder(this, LeatherArmorBuilder.Type.LEGGINGS, DEFAULT_COLOR).addEnchantment(Enchantment.PROTECTION, 1));
+            kit.setBoots(player -> new KitLeatherArmorBuilder(this, LeatherArmorBuilder.Type.BOOTS, DEFAULT_COLOR).addEnchantment(Enchantment.PROTECTION, 1));
 
             return kit;
         }
@@ -130,10 +130,10 @@ public class KitEnchanter extends KitPvPKit {
 
             kit.set(0, player -> new KitItemBuilder(this, Material.ENCHANTED_BOOK).addPassive(Passive.ENCHANTING_TABLE, 3).addPassive(Passive.ATTACK_DAMAGE, 5));
 
-            kit.setHelmet(player -> new KitLeatherArmorBuilder(this, LeatherArmorBuilder.Type.HELMET, DEFAULT_COLOR).addEnchantment(Enchantment.PROTECTION_ENVIRONMENTAL, 2));
-            kit.setChestplate(player -> new KitLeatherArmorBuilder(this, LeatherArmorBuilder.Type.CHESTPLATE, DEFAULT_COLOR).addEnchantment(Enchantment.PROTECTION_ENVIRONMENTAL, 2));
-            kit.setLeggings(player -> new KitLeatherArmorBuilder(this, LeatherArmorBuilder.Type.LEGGINGS, DEFAULT_COLOR).addEnchantment(Enchantment.PROTECTION_ENVIRONMENTAL, 1));
-            kit.setBoots(player -> new KitLeatherArmorBuilder(this, LeatherArmorBuilder.Type.BOOTS, DEFAULT_COLOR).addEnchantment(Enchantment.PROTECTION_ENVIRONMENTAL, 1));
+            kit.setHelmet(player -> new KitLeatherArmorBuilder(this, LeatherArmorBuilder.Type.HELMET, DEFAULT_COLOR).addEnchantment(Enchantment.PROTECTION, 2));
+            kit.setChestplate(player -> new KitLeatherArmorBuilder(this, LeatherArmorBuilder.Type.CHESTPLATE, DEFAULT_COLOR).addEnchantment(Enchantment.PROTECTION, 2));
+            kit.setLeggings(player -> new KitLeatherArmorBuilder(this, LeatherArmorBuilder.Type.LEGGINGS, DEFAULT_COLOR).addEnchantment(Enchantment.PROTECTION, 1));
+            kit.setBoots(player -> new KitLeatherArmorBuilder(this, LeatherArmorBuilder.Type.BOOTS, DEFAULT_COLOR).addEnchantment(Enchantment.PROTECTION, 1));
 
             return kit;
         }

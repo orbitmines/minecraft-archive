@@ -57,7 +57,7 @@ public class SignLogEvent<S extends OMServer<S, P>, P extends OMPlayer<S, P>> im
 
             builder.setFooter(server.getType().getName() + " / " + Environment.get().toString() + " / " + DateUtils.format(date, DateUtils.DATE_TIME_FORMAT), Image.icon(server.getType()).getUrl());
 
-            channel.sendMessage(builder.build()).queue();
+            channel.sendMessageEmbeds(builder.build()).queue();
         });
     }
 }

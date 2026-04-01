@@ -207,7 +207,7 @@ public abstract class CommandPunish<S extends OMServer<S, P>, P extends OMPlayer
             TextChannel channel = bot.getTextChannel(CustomChannel.PUNISHMENTS);
 
             channel.sendMessage(bot.getPlayerDisplay(punished, emote, punished.getRawName()) + " has been " + getVerb() + "!").queue();
-            channel.sendMessage(builder.build()).queue();
+            channel.sendMessageEmbeds(builder.build()).queue();
         });
     }
 

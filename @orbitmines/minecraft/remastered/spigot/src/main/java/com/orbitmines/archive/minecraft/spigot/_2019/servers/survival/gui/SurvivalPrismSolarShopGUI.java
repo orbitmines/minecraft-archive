@@ -31,7 +31,7 @@ public class SurvivalPrismSolarShopGUI extends PrismSolarShopGUI<Survival, Survi
             }, "§9§l100 Claimblocks", "§2§l50 Credits"));
 
         set(3, 2, new PrismSolarShopGUI.ShopItem<>(viewer, this, Currency.PRISMS, 200,
-            () -> new ItemBuilder(Material.SCUTE, 1, "§2§lCredits Package"),
+            () -> new ItemBuilder(Material.TURTLE_SCUTE, 1, "§2§lCredits Package"),
             player -> {
                 player.addCredits(200);
                 player.update(SurvivalPlayerModel.column.CREDITS);

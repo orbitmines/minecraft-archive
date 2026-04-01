@@ -41,13 +41,13 @@ public class PassiveEnchantingTable implements Passive.Handler<PlayerDeathEvent>
         int newLevel = itemStack.getEnchantmentLevel(enchantment) + 1;
 
         /* Since 1.13 sharpness enchantment no longer applies on items it cannot enchant, so we do it ourselves. */
-        if (enchantment == Enchantment.DAMAGE_ALL && !enchantment.canEnchantItem(itemStack))
+        if (enchantment == Enchantment.SHARPNESS && !enchantment.canEnchantItem(itemStack))
             itemStack = Passive.ATTACK_DAMAGE.apply(passiveEvent.server().getNms().customItem(), itemStack, Passive.ATTACK_DAMAGE.getLevel(passiveEvent.server().getNms().customItem(), itemStack) + 1);
 
         /* Clear `glow` effect from item */
         ItemMeta meta = itemStack.getItemMeta();
         if (meta.hasItemFlag(ItemFlag.HIDE_ENCHANTS)) {
-            meta.removeEnchant(Enchantment.DURABILITY);
+            meta.removeEnchant(Enchantment.UNBREAKING);
             meta.removeItemFlags(ItemFlag.HIDE_ENCHANTS);
             itemStack.setItemMeta(meta);
         }
@@ -88,7 +88,7 @@ public class PassiveEnchantingTable implements Passive.Handler<PlayerDeathEvent>
     private enum Slot {
 
         WEAPON(new Enchantment[] {
-                Enchantment.DAMAGE_ALL,
+                Enchantment.SHARPNESS,
                 Enchantment.KNOCKBACK,
                 Enchantment.FIRE_ASPECT,
                 Enchantment.SWEEPING_EDGE
@@ -104,10 +104,10 @@ public class PassiveEnchantingTable implements Passive.Handler<PlayerDeathEvent>
             }
         },
         BOW(new Enchantment[] {
-                Enchantment.ARROW_DAMAGE,
-                Enchantment.ARROW_KNOCKBACK,
-                Enchantment.ARROW_FIRE,
-                Enchantment.ARROW_INFINITE
+                Enchantment.POWER,
+                Enchantment.PUNCH,
+                Enchantment.FLAME,
+                Enchantment.INFINITY
         }) {
             @Override
             public ItemStack getFor(Player player) {
@@ -129,10 +129,10 @@ public class PassiveEnchantingTable implements Passive.Handler<PlayerDeathEvent>
         },
 
         HELMET(new Enchantment[] {
-                Enchantment.PROTECTION_ENVIRONMENTAL,
-                Enchantment.PROTECTION_FIRE,
-                Enchantment.PROTECTION_EXPLOSIONS,
-                Enchantment.PROTECTION_PROJECTILE,
+                Enchantment.PROTECTION,
+                Enchantment.FIRE_PROTECTION,
+                Enchantment.BLAST_PROTECTION,
+                Enchantment.PROJECTILE_PROTECTION,
 
                 Enchantment.OXYGEN
         }) {
@@ -147,10 +147,10 @@ public class PassiveEnchantingTable implements Passive.Handler<PlayerDeathEvent>
             }
         },
         CHESTPLATE(new Enchantment[] {
-                Enchantment.PROTECTION_ENVIRONMENTAL,
-                Enchantment.PROTECTION_FIRE,
-                Enchantment.PROTECTION_EXPLOSIONS,
-                Enchantment.PROTECTION_PROJECTILE
+                Enchantment.PROTECTION,
+                Enchantment.FIRE_PROTECTION,
+                Enchantment.BLAST_PROTECTION,
+                Enchantment.PROJECTILE_PROTECTION
         }) {
             @Override
             public ItemStack getFor(Player player) {
@@ -163,10 +163,10 @@ public class PassiveEnchantingTable implements Passive.Handler<PlayerDeathEvent>
             }
         },
         LEGGINGS(new Enchantment[] {
-                Enchantment.PROTECTION_ENVIRONMENTAL,
-                Enchantment.PROTECTION_FIRE,
-                Enchantment.PROTECTION_EXPLOSIONS,
-                Enchantment.PROTECTION_PROJECTILE
+                Enchantment.PROTECTION,
+                Enchantment.FIRE_PROTECTION,
+                Enchantment.BLAST_PROTECTION,
+                Enchantment.PROJECTILE_PROTECTION
         }) {
             @Override
             public ItemStack getFor(Player player) {
@@ -179,12 +179,12 @@ public class PassiveEnchantingTable implements Passive.Handler<PlayerDeathEvent>
             }
         },
         BOOTS(new Enchantment[] {
-                Enchantment.PROTECTION_ENVIRONMENTAL,
-                Enchantment.PROTECTION_FIRE,
-                Enchantment.PROTECTION_EXPLOSIONS,
-                Enchantment.PROTECTION_PROJECTILE,
+                Enchantment.PROTECTION,
+                Enchantment.FIRE_PROTECTION,
+                Enchantment.BLAST_PROTECTION,
+                Enchantment.PROJECTILE_PROTECTION,
 
-                Enchantment.PROTECTION_FALL,
+                Enchantment.FEATHER_FALLING,
                 Enchantment.DEPTH_STRIDER,
                 Enchantment.FROST_WALKER
         }) {
@@ -229,18 +229,18 @@ public class PassiveEnchantingTable implements Passive.Handler<PlayerDeathEvent>
         }
 
         private int getMaxLevel(Enchantment enchantment) {
-            if (enchantment == Enchantment.ARROW_DAMAGE ||
-                enchantment == Enchantment.DAMAGE_ALL ||
-                enchantment == Enchantment.PROTECTION_ENVIRONMENTAL
+            if (enchantment == Enchantment.POWER ||
+                enchantment == Enchantment.SHARPNESS ||
+                enchantment == Enchantment.PROTECTION
             )
                 return 8;
             else if (enchantment == Enchantment.KNOCKBACK ||
                      enchantment == Enchantment.SWEEPING_EDGE ||
-                     enchantment == Enchantment.ARROW_KNOCKBACK ||
-                     enchantment == Enchantment.PROTECTION_FIRE ||
-                     enchantment == Enchantment.PROTECTION_EXPLOSIONS ||
-                     enchantment == Enchantment.PROTECTION_PROJECTILE ||
-                     enchantment == Enchantment.PROTECTION_FALL
+                     enchantment == Enchantment.PUNCH ||
+                     enchantment == Enchantment.FIRE_PROTECTION ||
+                     enchantment == Enchantment.BLAST_PROTECTION ||
+                     enchantment == Enchantment.PROJECTILE_PROTECTION ||
+                     enchantment == Enchantment.FEATHER_FALLING
             )
                 return 5;
             else if (enchantment == Enchantment.FIRE_ASPECT)

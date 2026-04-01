@@ -70,7 +70,7 @@ public class KitPvPDataPointLobbyKitInfo extends DataPointSign {
                 return String.format("%.1f", kit.getMaxHealth());
             }
         },
-        HEALTH_REGEN("Health Regen", Color.FUCHSIA, 1, 8, new PotionItemBuilder(PotionItemBuilder.Type.NORMAL, new PotionBuilder(PotionEffectType.REGENERATION, 1)).addFlag(ItemFlag.HIDE_POTION_EFFECTS)) {
+        HEALTH_REGEN("Health Regen", Color.FUCHSIA, 1, 8, new PotionItemBuilder(PotionItemBuilder.Type.NORMAL, new PotionBuilder(PotionEffectType.REGENERATION, 1)).addFlag(ItemFlag.HIDE_ADDITIONAL_TOOLTIP)) {
             @Override
             public String getDescription(KitPvPPlayer player, KitPvPKit.Level kit) {
                 return kit.getHealthRegen().getName() + " (" + String.format("%.1f", kit.getHealthRegen().getMultiplier() * 100) + "%)";

@@ -81,7 +81,7 @@ public class Survival extends OMServer<Survival, SurvivalPlayer> {
 
     public static ItemBuilder SPAWNER_MINER = new ItemBuilder(Material.DIAMOND_PICKAXE, 1, "§5§lSpawner Miner", "§7§oOne time use§4").addEnchantment(Enchantment.SILK_TOUCH, 1).unbreakable(true).addFlag(ItemFlag.HIDE_ATTRIBUTES);
 
-    public static ItemBuilder PET_TICKET = new ItemBuilder(Material.NAME_TAG, 1, "§6§lPet Ticket").addEnchantment(Enchantment.DURABILITY, 1).addFlag(ItemFlag.HIDE_ENCHANTS);
+    public static ItemBuilder PET_TICKET = new ItemBuilder(Material.NAME_TAG, 1, "§6§lPet Ticket").addEnchantment(Enchantment.UNBREAKING, 1).addFlag(ItemFlag.HIDE_ENCHANTS);
 
     public static long PHANTOM_DELAY_AFTER_BED_ENTER = TimeUnit.HOURS.toMillis(2);
 
@@ -132,20 +132,20 @@ public class Survival extends OMServer<Survival, SurvivalPlayer> {
         world.getWorldBorder().setSize(Region.WORLD_BORDER);
         world.setPVP(false);
         world.setAutoSave(false);
-        world.setGameRule(GameRule.DO_FIRE_TICK, false);
+        /* GameRule.DO_FIRE_TICK removed in 26.1 */
         world.setGameRule(GameRule.MAX_ENTITY_CRAMMING, MAX_ENTITY_CRAMMING);
         Region.WORLD = world;
 
         worldNether = Bukkit.getWorld("world_nether");
         worldNether.setPVP(false);
         worldNether.setAutoSave(false);
-        worldNether.setGameRule(GameRule.DO_FIRE_TICK, false);
+        /* GameRule.DO_FIRE_TICK removed in 26.1 */
         world.setGameRule(GameRule.MAX_ENTITY_CRAMMING, MAX_ENTITY_CRAMMING);
 
         worldTheEnd = Bukkit.getWorld("world_the_end");
         worldTheEnd.setPVP(false);
         worldTheEnd.setAutoSave(false);
-        worldTheEnd.setGameRule(GameRule.DO_FIRE_TICK, false);
+        /* GameRule.DO_FIRE_TICK removed in 26.1 */
         world.setGameRule(GameRule.MAX_ENTITY_CRAMMING, MAX_ENTITY_CRAMMING);
 
         registerEvents(

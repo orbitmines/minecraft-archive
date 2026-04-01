@@ -99,9 +99,9 @@ public class KitKnight extends KitPvPKit {
             kit.set(0, player -> new KitItemBuilder(this, Material.IRON_SWORD));
             kit.set(1, player -> new KitPotionItemBuilder(this, PotionItemBuilder.Type.SPLASH, new PotionBuilder(PotionEffectType.HEAL, 1)));
 
-            kit.setHelmet(player -> new KitItemBuilder(this, Material.CHAINMAIL_HELMET).addEnchantment(Enchantment.PROTECTION_ENVIRONMENTAL, 1));
+            kit.setHelmet(player -> new KitItemBuilder(this, Material.CHAINMAIL_HELMET).addEnchantment(Enchantment.PROTECTION, 1));
             kit.setChestplate(player -> new KitItemBuilder(this, Material.CHAINMAIL_CHESTPLATE));
-            kit.setLeggings(player -> new KitItemBuilder(this, Material.CHAINMAIL_LEGGINGS).addEnchantment(Enchantment.PROTECTION_ENVIRONMENTAL, 1));
+            kit.setLeggings(player -> new KitItemBuilder(this, Material.CHAINMAIL_LEGGINGS).addEnchantment(Enchantment.PROTECTION, 1));
             kit.setBoots(player -> new KitItemBuilder(this, Material.CHAINMAIL_BOOTS));
 
             return kit;
@@ -134,13 +134,13 @@ public class KitKnight extends KitPvPKit {
         protected Kit<KitPvPPlayer> registerKit() {
             Kit<KitPvPPlayer> kit = new Kit<>();
 
-            kit.set(0, player -> new KitItemBuilder(this, Material.IRON_SWORD).addEnchantment(Enchantment.DAMAGE_ALL, 1));
+            kit.set(0, player -> new KitItemBuilder(this, Material.IRON_SWORD).addEnchantment(Enchantment.SHARPNESS, 1));
             kit.set(1, player -> new KitPotionItemBuilder(this, PotionItemBuilder.Type.SPLASH, new PotionBuilder(PotionEffectType.HEAL, 1), 2));
 
-            kit.setHelmet(player -> new KitItemBuilder(this, Material.CHAINMAIL_HELMET).addEnchantment(Enchantment.PROTECTION_ENVIRONMENTAL, 1));
-            kit.setChestplate(player -> new KitItemBuilder(this, Material.CHAINMAIL_CHESTPLATE).addEnchantment(Enchantment.PROTECTION_ENVIRONMENTAL, 1));
-            kit.setLeggings(player -> new KitItemBuilder(this, Material.CHAINMAIL_LEGGINGS).addEnchantment(Enchantment.PROTECTION_ENVIRONMENTAL, 1));
-            kit.setBoots(player -> new KitItemBuilder(this, Material.CHAINMAIL_BOOTS).addEnchantment(Enchantment.PROTECTION_ENVIRONMENTAL, 1));
+            kit.setHelmet(player -> new KitItemBuilder(this, Material.CHAINMAIL_HELMET).addEnchantment(Enchantment.PROTECTION, 1));
+            kit.setChestplate(player -> new KitItemBuilder(this, Material.CHAINMAIL_CHESTPLATE).addEnchantment(Enchantment.PROTECTION, 1));
+            kit.setLeggings(player -> new KitItemBuilder(this, Material.CHAINMAIL_LEGGINGS).addEnchantment(Enchantment.PROTECTION, 1));
+            kit.setBoots(player -> new KitItemBuilder(this, Material.CHAINMAIL_BOOTS).addEnchantment(Enchantment.PROTECTION, 1));
 
             return kit;
         }

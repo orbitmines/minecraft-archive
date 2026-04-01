@@ -16,23 +16,11 @@ import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.Damageable;
 import org.bukkit.inventory.meta.ItemMeta;
 
-import java.lang.reflect.Field;
 import java.util.*;
 
 public abstract class ItemBuilderInstance<B extends ItemBuilderInstance, M extends ItemMeta> {
 
-    public static final GlowEnchantment GLOW_ENCHANTMENT = new GlowEnchantment(new NamespacedKey("orbitmines", "glow"));
-
-    static {
-        try {
-            Field field = Enchantment.class.getDeclaredField("acceptingNew");
-            field.setAccessible(true);
-            field.set(null, true);
-            Enchantment.registerEnchantment(GLOW_ENCHANTMENT);
-        } catch (Exception ex) {
-            ex.printStackTrace();
-        }
-    }
+    public static final GlowEnchantment GLOW_ENCHANTMENT = new GlowEnchantment();
 
     @Getter protected Material material;
     @Getter protected int amount;
@@ -175,8 +163,10 @@ public abstract class ItemBuilderInstance<B extends ItemBuilderInstance, M exten
             meta.addItemFlags(flag);
         }
 
-        if (this.enchantments.size() == 1 && this.enchantments.containsKey(GLOW_ENCHANTMENT))
+        if (this.enchantments.size() == 1 && this.enchantments.containsKey(GLOW_ENCHANTMENT)) {
             meta.addItemFlags(ItemFlag.HIDE_ENCHANTS);
+            meta.setEnchantmentGlintOverride(true);
+        }
 
         for (Attribute attribute : this.attributeModifiers.keySet()) {
             meta.getAttributeModifiers().put(attribute, this.attributeModifiers.get(attribute));

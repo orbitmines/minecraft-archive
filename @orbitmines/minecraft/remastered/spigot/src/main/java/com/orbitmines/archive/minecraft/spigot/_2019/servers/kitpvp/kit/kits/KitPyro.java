@@ -98,10 +98,10 @@ public class KitPyro extends KitPvPKit {
 
             kit.set(0, player -> new KitItemBuilder(this, Material.STONE_SWORD).addEnchantment(Enchantment.FIRE_ASPECT, 1));
 
-            kit.setHelmet(player -> new KitItemBuilder(this, Material.GOLDEN_HELMET).addEnchantment(Enchantment.PROTECTION_ENVIRONMENTAL, 1));
-            kit.setChestplate(player -> new KitItemBuilder(this, Material.GOLDEN_CHESTPLATE).addEnchantment(Enchantment.PROTECTION_ENVIRONMENTAL, 1));
-            kit.setLeggings(player -> new KitItemBuilder(this, Material.GOLDEN_LEGGINGS).addEnchantment(Enchantment.PROTECTION_ENVIRONMENTAL, 1));
-            kit.setBoots(player -> new KitItemBuilder(this, Material.GOLDEN_BOOTS).addEnchantment(Enchantment.PROTECTION_ENVIRONMENTAL, 1));
+            kit.setHelmet(player -> new KitItemBuilder(this, Material.GOLDEN_HELMET).addEnchantment(Enchantment.PROTECTION, 1));
+            kit.setChestplate(player -> new KitItemBuilder(this, Material.GOLDEN_CHESTPLATE).addEnchantment(Enchantment.PROTECTION, 1));
+            kit.setLeggings(player -> new KitItemBuilder(this, Material.GOLDEN_LEGGINGS).addEnchantment(Enchantment.PROTECTION, 1));
+            kit.setBoots(player -> new KitItemBuilder(this, Material.GOLDEN_BOOTS).addEnchantment(Enchantment.PROTECTION, 1));
 
             kit.addPotionBuilder(new PotionBuilder(PotionEffectType.FIRE_RESISTANCE, Integer.MAX_VALUE, 0, true, false, true));
 
@@ -136,13 +136,13 @@ public class KitPyro extends KitPvPKit {
             Kit<KitPvPPlayer> kit = new Kit<>();
 
             kit.set(0, player -> new KitItemBuilder(this, Material.IRON_SWORD).addEnchantment(Enchantment.FIRE_ASPECT, 1));
-            kit.set(1, player -> new KitItemBuilder(this, Material.BOW).addPassive(Passive.ARROW_REGEN, 20).addEnchantment(Enchantment.ARROW_FIRE, 1));
+            kit.set(1, player -> new KitItemBuilder(this, Material.BOW).addPassive(Passive.ARROW_REGEN, 20).addEnchantment(Enchantment.FLAME, 1));
             kit.set(2, player -> new KitItemBuilder(this, Material.ARROW, 5));
 
-            kit.setHelmet(player -> new KitItemBuilder(this, Material.GOLDEN_HELMET).addEnchantment(Enchantment.PROTECTION_ENVIRONMENTAL, 1));
-            kit.setChestplate(player -> new KitItemBuilder(this, Material.GOLDEN_CHESTPLATE).addEnchantment(Enchantment.PROTECTION_ENVIRONMENTAL, 1));
-            kit.setLeggings(player -> new KitItemBuilder(this, Material.GOLDEN_LEGGINGS).addEnchantment(Enchantment.PROTECTION_ENVIRONMENTAL, 1));
-            kit.setBoots(player -> new KitItemBuilder(this, Material.GOLDEN_BOOTS).addEnchantment(Enchantment.PROTECTION_ENVIRONMENTAL, 1));
+            kit.setHelmet(player -> new KitItemBuilder(this, Material.GOLDEN_HELMET).addEnchantment(Enchantment.PROTECTION, 1));
+            kit.setChestplate(player -> new KitItemBuilder(this, Material.GOLDEN_CHESTPLATE).addEnchantment(Enchantment.PROTECTION, 1));
+            kit.setLeggings(player -> new KitItemBuilder(this, Material.GOLDEN_LEGGINGS).addEnchantment(Enchantment.PROTECTION, 1));
+            kit.setBoots(player -> new KitItemBuilder(this, Material.GOLDEN_BOOTS).addEnchantment(Enchantment.PROTECTION, 1));
 
             kit.addPotionBuilder(new PotionBuilder(PotionEffectType.FIRE_RESISTANCE, Integer.MAX_VALUE, 0, true, false, true));
 

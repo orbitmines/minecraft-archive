@@ -1270,7 +1270,7 @@ public class ClaimEvents implements Listener {
             PotionEffectType effectType = effect.getType();
 
             /* Prevent griefers from stealing animals & villagers / killing them */
-            if (effectType == PotionEffectType.JUMP || effectType == PotionEffectType.POISON) {
+            if (effectType == PotionEffectType.JUMP_BOOST || effectType == PotionEffectType.POISON) {
                 Claim cached = null;
 
                 for (LivingEntity effected : event.getAffectedEntities()) {

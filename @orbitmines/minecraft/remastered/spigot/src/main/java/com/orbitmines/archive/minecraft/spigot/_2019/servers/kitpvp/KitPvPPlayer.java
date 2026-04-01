@@ -36,7 +36,6 @@ import org.bukkit.potion.PotionEffect;
 import org.bukkit.potion.PotionEffectType;
 import org.bukkit.scheduler.BukkitRunnable;
 
-import javax.annotation.Nullable;
 import java.util.List;
 import java.util.Map;
 import java.util.UUID;
@@ -256,7 +255,7 @@ public class KitPvPPlayer extends OMPlayer<KitPvP, KitPvPPlayer> {
         return (int) (current * (multiplier - 1));
     }
 
-    public void processDeath(PlayerDeathEvent event, @Nullable KitPvPPlayer killer) {
+    public void processDeath(PlayerDeathEvent event, /* @Nullable */KitPvPPlayer killer) {
         addDeath();
 
         /* Update damage dealt for current round */

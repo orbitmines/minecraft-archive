@@ -64,7 +64,7 @@ public class KitSoldier extends KitPvPKit {
 
             kit.setHelmet(player -> new KitLeatherArmorBuilder(this, LeatherArmorBuilder.Type.HELMET));
             kit.setChestplate(player -> new KitLeatherArmorBuilder(this, LeatherArmorBuilder.Type.CHESTPLATE));
-            kit.setLeggings(player -> new KitItemBuilder(this, Material.IRON_LEGGINGS).addEnchantment(Enchantment.PROTECTION_ENVIRONMENTAL, 1));
+            kit.setLeggings(player -> new KitItemBuilder(this, Material.IRON_LEGGINGS).addEnchantment(Enchantment.PROTECTION, 1));
             kit.setBoots(player -> new KitLeatherArmorBuilder(this, LeatherArmorBuilder.Type.BOOTS));
 
             return kit;
@@ -101,9 +101,9 @@ public class KitSoldier extends KitPvPKit {
             kit.set(1, player -> new KitItemBuilder(this, Material.BOW));
             kit.set(2, player -> new KitItemBuilder(this, Material.ARROW, 10));
 
-            kit.setHelmet(player -> new KitLeatherArmorBuilder(this, LeatherArmorBuilder.Type.HELMET).addEnchantment(Enchantment.PROTECTION_PROJECTILE, 1));
+            kit.setHelmet(player -> new KitLeatherArmorBuilder(this, LeatherArmorBuilder.Type.HELMET).addEnchantment(Enchantment.PROJECTILE_PROTECTION, 1));
             kit.setChestplate(player -> new KitLeatherArmorBuilder(this, LeatherArmorBuilder.Type.CHESTPLATE));
-            kit.setLeggings(player -> new KitItemBuilder(this, Material.IRON_LEGGINGS).addEnchantment(Enchantment.PROTECTION_ENVIRONMENTAL, 1));
+            kit.setLeggings(player -> new KitItemBuilder(this, Material.IRON_LEGGINGS).addEnchantment(Enchantment.PROTECTION, 1));
             kit.setBoots(player -> new KitLeatherArmorBuilder(this, LeatherArmorBuilder.Type.BOOTS));
 
             return kit;
@@ -140,9 +140,9 @@ public class KitSoldier extends KitPvPKit {
             kit.set(1, player -> new KitItemBuilder(this, Material.BOW));
             kit.set(2, player -> new KitItemBuilder(this, Material.ARROW, 10));
 
-            kit.setHelmet(player -> new KitLeatherArmorBuilder(this, LeatherArmorBuilder.Type.HELMET).addEnchantment(Enchantment.PROTECTION_PROJECTILE, 1));
+            kit.setHelmet(player -> new KitLeatherArmorBuilder(this, LeatherArmorBuilder.Type.HELMET).addEnchantment(Enchantment.PROJECTILE_PROTECTION, 1));
             kit.setChestplate(player -> new KitLeatherArmorBuilder(this, LeatherArmorBuilder.Type.CHESTPLATE));
-            kit.setLeggings(player -> new KitItemBuilder(this, Material.IRON_LEGGINGS).addEnchantment(Enchantment.PROTECTION_ENVIRONMENTAL, 1));
+            kit.setLeggings(player -> new KitItemBuilder(this, Material.IRON_LEGGINGS).addEnchantment(Enchantment.PROTECTION, 1));
             kit.setBoots(player -> new KitLeatherArmorBuilder(this, LeatherArmorBuilder.Type.BOOTS));
 
             return kit;

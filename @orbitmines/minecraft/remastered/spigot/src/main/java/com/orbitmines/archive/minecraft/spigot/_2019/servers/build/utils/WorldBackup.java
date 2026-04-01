@@ -9,12 +9,27 @@ import com.orbitmines.archive.minecraft._2019.libs.utils.Message;
 import com.orbitmines.archive.minecraft.spigot._2019.servers.build.Build;
 import com.orbitmines.archive.minecraft._2019.utils.DateUtils;
 import org.bukkit.Bukkit;
-import org.bukkit.craftbukkit.libs.org.apache.commons.io.FileUtils;
-
 import java.io.File;
 import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
 
 public class WorldBackup {
+
+    private static void copyDirectory(Path source, Path target) throws IOException {
+        Files.walk(source).forEach(s -> {
+            try {
+                Path t = target.resolve(source.relativize(s));
+                if (Files.isDirectory(s)) {
+                    Files.createDirectories(t);
+                } else {
+                    Files.copy(s, t);
+                }
+            } catch (IOException e) {
+                throw new RuntimeException(e);
+            }
+        });
+    }
 
     public static void create(File file) {
         String dataFolderPath = Build.getInstance().getDataFolder().getPath();
@@ -36,7 +51,7 @@ public class WorldBackup {
 
         try {
             backup.mkdir();
-            FileUtils.copyDirectory(file, backup);
+            copyDirectory(file.toPath(), backup.toPath());
         } catch (IOException e) {
             e.printStackTrace();
             Bukkit.broadcastMessage(Message.format("Backup", Color.FUCHSIA, "Failed to backup map '" + file.getName() + "'."));

@@ -164,7 +164,7 @@ public abstract class OMServer<S extends OMServer<S, P>, P extends OMPlayer<S, P
             EmbedBuilder builder = new EmbedBuilder();
             builder.setAuthor("Starting " + getType().getName() + "...");
             builder.setColor(Color.LIME.getAwtColor());
-            getDiscordBot().getTextChannel().sendMessage(builder.build()).queue();
+            getDiscordBot().getTextChannel().sendMessageEmbeds(builder.build()).queue();
 
             DatabaseManager.getInstance().setupDefaultDatabase(
                 OMMap.TABLE,
@@ -206,9 +206,9 @@ public abstract class OMServer<S extends OMServer<S, P>, P extends OMPlayer<S, P
                 lobby = OMMap.getLobby(getType());
 
                 World lobbyWorld = worldLoader.fromZip(lobby.getWorldFileName(), true, lobby.getWorldGenerator());
-                lobbyWorld.setGameRule(GameRule.DO_DAYLIGHT_CYCLE, false);
-                lobbyWorld.setGameRule(GameRule.DO_MOB_SPAWNING, false);
-                lobbyWorld.setGameRule(GameRule.DO_FIRE_TICK, false);
+                lobbyWorld.setGameRule(GameRule.ADVANCE_TIME, false);
+                lobbyWorld.setGameRule(GameRule.SPAWN_MOBS, false);
+                /* GameRule.DO_FIRE_TICK removed in 26.1 */
                 lobbyWorld.setTime(18000);
                 lobbyWorld.setAutoSave(false);
 
@@ -304,7 +304,7 @@ public abstract class OMServer<S extends OMServer<S, P>, P extends OMPlayer<S, P
         EmbedBuilder builder = new EmbedBuilder();
         builder.setAuthor("Shutting down " + getType().getName() + "...");
         builder.setColor(Color.RED.getAwtColor());
-        getDiscordBot().getTextChannel().sendMessage(builder.build()).queue();
+        getDiscordBot().getTextChannel().sendMessageEmbeds(builder.build()).queue();
 
     }
 
@@ -327,7 +327,7 @@ public abstract class OMServer<S extends OMServer<S, P>, P extends OMPlayer<S, P
                 EmbedBuilder builder = new EmbedBuilder();
                 builder.setAuthor("Saving " + getType().getName() + "...");
                 builder.setColor(Color.GRAY.getAwtColor());
-                getDiscordBot().getTextChannel().sendMessage(builder.build()).queue();
+                getDiscordBot().getTextChannel().sendMessageEmbeds(builder.build()).queue();
             }
 
             getType().setStatus(Server.Status.RESTARTING);
@@ -335,7 +335,7 @@ public abstract class OMServer<S extends OMServer<S, P>, P extends OMPlayer<S, P
             MinecraftServer server = MinecraftServer.getServer();
             if (!clearPlayerData()) {
                 System.out.println("Saving Players....");
-                server.getPlayerList().savePlayers();
+                server.getPlayerList().saveAll();
             }
 
             System.out.println("Kicking Players...");
@@ -351,7 +351,7 @@ public abstract class OMServer<S extends OMServer<S, P>, P extends OMPlayer<S, P
 
             if (saveChunksOnRestart()) {
                 System.out.println("Saving Chunks...");
-                boolean saved = server.saveChunks(true, false, true);
+                boolean saved = server.saveAllChunks(true, false, true);
 
                 if (!saved) /* Notify error tracker */
                     new ChunkSaveOnRestartException(message).printStackTrace();

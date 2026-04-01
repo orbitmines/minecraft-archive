@@ -24,6 +24,9 @@ import com.orbitmines.archive.minecraft.spigot._2019.utils.spigot.builders.chat.
 import com.orbitmines.archive.minecraft.spigot._2019.utils.spigot.builders.chat.text.TextComponent;
 import lombok.Setter;
 import net.dv8tion.jda.api.entities.*;
+import net.dv8tion.jda.api.entities.channel.concrete.TextChannel;
+import net.dv8tion.jda.api.entities.emoji.CustomEmoji;
+import net.dv8tion.jda.api.entities.emoji.RichCustomEmoji;
 import net.md_5.bungee.api.chat.ClickEvent;
 import net.md_5.bungee.api.chat.HoverEvent;
 
@@ -229,16 +232,16 @@ public class ChatHandler<S extends OMServer<S, P>, P extends OMPlayer<S, P>> {
     protected void filterMessageFromDiscord(Message discordMessage) {
         message = message.replaceAll("\\n", " ");
 
-        for (Role role : discordMessage.getMentionedRoles()) {
+        for (Role role : discordMessage.getMentions().getRoles()) {
             message = message.replaceAll(role.getAsMention(), "@" + role.getName());
         }
-        for (TextChannel textChannel : discordMessage.getMentionedChannels()) {
+        for (TextChannel textChannel : discordMessage.getMentions().getChannels(TextChannel.class)) {
             message = message.replaceAll(textChannel.getAsMention(), "#" + textChannel.getName());
         }
-        for (Member mem : discordMessage.getMentionedMembers()) {
+        for (Member mem : discordMessage.getMentions().getMembers()) {
             message = message.replaceAll(mem.getAsMention(), "@" + mem.getEffectiveName());
         }
-        for (RichCustomEmoji emote : discordMessage.getEmotes()) {
+        for (CustomEmoji emote : discordMessage.getMentions().getCustomEmojis()) {
             message = message.replaceAll(emote.getAsMention(), emote.getName());
         }
     }
@@ -259,7 +262,7 @@ public class ChatHandler<S extends OMServer<S, P>, P extends OMPlayer<S, P>> {
         for (Member member : guild.getMembers()) {
             message = message.replace("@" + member.getEffectiveName() + "#" + member.getUser().getDiscriminator(), member.getAsMention()).replaceAll("@" + member.getEffectiveName(), member.getAsMention()).replaceAll("@" + member.getNickname(), member.getAsMention());
         }
-        for (RichCustomEmoji emote : guild.getEmotes()) {
+        for (RichCustomEmoji emote : guild.getEmojis()) {
             message = message.replaceAll(":" + emote.getName() + ":", emote.getAsMention());
         }
 

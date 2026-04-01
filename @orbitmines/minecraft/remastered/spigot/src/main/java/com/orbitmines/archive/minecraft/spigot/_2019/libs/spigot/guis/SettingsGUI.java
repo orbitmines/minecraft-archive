@@ -63,7 +63,7 @@ public class SettingsGUI<P extends OMPlayer> extends GUI<P> {
         set(1, 7, new Item<P, MutableItemBuilder>(() -> {
             BannerBuilder builder = LanguageUtils.getBanner(settingsFor.getLanguage());
             builder.setDisplayName("§7§l" + viewer.translate("spigot", "word.language"));
-            builder.addFlag(ItemFlag.HIDE_POTION_EFFECTS);
+            builder.addFlag(ItemFlag.HIDE_ADDITIONAL_TOOLTIP);
 
             return builder;
         }));

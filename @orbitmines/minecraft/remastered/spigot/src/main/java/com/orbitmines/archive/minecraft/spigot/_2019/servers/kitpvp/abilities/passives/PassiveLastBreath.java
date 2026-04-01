@@ -13,7 +13,7 @@ import org.bukkit.potion.PotionEffectType;
 
 public class PassiveLastBreath implements Passive.LowHealthHandler {
 
-    private final PotionBuilder builder = new PotionBuilder(PotionEffectType.DAMAGE_RESISTANCE, Integer.MAX_VALUE, 0);
+    private final PotionBuilder builder = new PotionBuilder(PotionEffectType.RESISTANCE, Integer.MAX_VALUE, 0);
 
     @Override
     public void trigger(KitEvent<Event> passiveEvent, Event event, int level) {

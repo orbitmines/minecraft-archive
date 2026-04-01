@@ -104,7 +104,7 @@ public class KitDrunk extends KitPvPKit {
             kit.setHelmet(player -> new KitItemBuilder(this, Material.CHAINMAIL_HELMET).addPassive(Passive.LAST_BREATH, 1));
             kit.setChestplate(player -> new KitItemBuilder(this, Material.CHAINMAIL_CHESTPLATE));
             kit.setLeggings(player -> new KitItemBuilder(this, Material.CHAINMAIL_LEGGINGS));
-            kit.setBoots(player -> new KitItemBuilder(this, Material.CHAINMAIL_BOOTS).addEnchantment(Enchantment.PROTECTION_ENVIRONMENTAL, 1));
+            kit.setBoots(player -> new KitItemBuilder(this, Material.CHAINMAIL_BOOTS).addEnchantment(Enchantment.PROTECTION, 1));
 
             kit.addPotionBuilder(new PotionBuilder(PotionEffectType.CONFUSION, Integer.MAX_VALUE, 1, true, false, true));
 
@@ -145,7 +145,7 @@ public class KitDrunk extends KitPvPKit {
             kit.setHelmet(player -> new KitItemBuilder(this, Material.DIAMOND_HELMET).addPassive(Passive.LAST_BREATH, 1));
             kit.setChestplate(player -> new KitItemBuilder(this, Material.CHAINMAIL_CHESTPLATE));
             kit.setLeggings(player -> new KitItemBuilder(this, Material.CHAINMAIL_LEGGINGS));
-            kit.setBoots(player -> new KitItemBuilder(this, Material.DIAMOND_BOOTS).addEnchantment(Enchantment.PROTECTION_ENVIRONMENTAL, 1));
+            kit.setBoots(player -> new KitItemBuilder(this, Material.DIAMOND_BOOTS).addEnchantment(Enchantment.PROTECTION, 1));
 
             kit.addPotionBuilder(new PotionBuilder(PotionEffectType.CONFUSION, Integer.MAX_VALUE, 1, true, false, true));
 

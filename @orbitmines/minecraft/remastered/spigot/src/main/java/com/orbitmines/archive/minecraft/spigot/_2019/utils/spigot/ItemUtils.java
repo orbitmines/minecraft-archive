@@ -150,11 +150,11 @@ public class ItemUtils {
             return "Strength";
         } else if (effectType == PotionEffectType.HEAL) {
             return "Instant Health";
-        } else if (effectType == PotionEffectType.JUMP) {
+        } else if (effectType == PotionEffectType.JUMP_BOOST) {
             return "Jump Boost";
         } else if (effectType == PotionEffectType.REGENERATION) {
             return "Regeneration";
-        } else if (effectType == PotionEffectType.DAMAGE_RESISTANCE) {
+        } else if (effectType == PotionEffectType.RESISTANCE) {
             return "Resistance";
         } else if (effectType == PotionEffectType.FIRE_RESISTANCE) {
             return "Fire Resistance";
@@ -759,9 +759,9 @@ public class ItemUtils {
             PotionEffectType.FAST_DIGGING,
             PotionEffectType.INCREASE_DAMAGE,
             PotionEffectType.HEAL,
-            PotionEffectType.JUMP,
+            PotionEffectType.JUMP_BOOST,
             PotionEffectType.REGENERATION,
-            PotionEffectType.DAMAGE_RESISTANCE,
+            PotionEffectType.RESISTANCE,
             PotionEffectType.FIRE_RESISTANCE,
             PotionEffectType.WATER_BREATHING,
             PotionEffectType.INVISIBILITY,

@@ -24,7 +24,8 @@ import org.bukkit.World;
 import org.bukkit.boss.BarColor;
 import org.bukkit.boss.BarStyle;
 import org.bukkit.boss.BossBar;
-import org.bukkit.craftbukkit.libs.org.apache.commons.io.FileUtils;
+import java.nio.file.Files;
+import java.nio.file.Path;
 import org.bukkit.entity.Player;
 import java.io.File;
 import java.io.IOException;
@@ -255,6 +256,21 @@ public enum ResetTimer {
         }
     }
 
+    private static void copyDirectory(Path source, Path target) throws IOException {
+        Files.walk(source).forEach(s -> {
+            try {
+                Path t = target.resolve(source.relativize(s));
+                if (Files.isDirectory(s)) {
+                    Files.createDirectories(t);
+                } else {
+                    Files.copy(s, t);
+                }
+            } catch (IOException e) {
+                throw new RuntimeException(e);
+            }
+        });
+    }
+
     private void backup(Survival survival) {
         File file = getWorld(survival).getWorldFolder();
         File dataFolder = survival.getDataFolder();
@@ -276,7 +292,7 @@ public enum ResetTimer {
 
         try {
             backup.mkdir();
-            FileUtils.copyDirectory(file, backup);
+            copyDirectory(file.toPath(), backup.toPath());
         } catch (IOException e) {
             e.printStackTrace();
         }

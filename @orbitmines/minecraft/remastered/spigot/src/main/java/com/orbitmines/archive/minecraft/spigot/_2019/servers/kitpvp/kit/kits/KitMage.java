@@ -31,7 +31,7 @@ public class KitMage extends KitPvPKit {
                 ID, "Mage",
 
                 Color.YELLOW,
-                new PotionItemBuilder(PotionItemBuilder.Type.SPLASH, new PotionBuilder(PotionEffectType.HARM, 0)).addFlag(ItemFlag.HIDE_POTION_EFFECTS),
+                new PotionItemBuilder(PotionItemBuilder.Type.SPLASH, new PotionBuilder(PotionEffectType.HARM, 0)).addFlag(ItemFlag.HIDE_ADDITIONAL_TOOLTIP),
 
                 KitClass.SPELLCASTER
         );

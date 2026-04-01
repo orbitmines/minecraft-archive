@@ -11,8 +11,13 @@ import org.bukkit.inventory.ItemStack;
 
 public class GlowEnchantment extends Enchantment {
 
-    public GlowEnchantment(NamespacedKey key) {
-        super(key);
+    public GlowEnchantment() {
+        super();
+    }
+
+    @Override
+    public NamespacedKey getKey() {
+        return NamespacedKey.fromString("orbitmines:glow");
     }
 
     @Override

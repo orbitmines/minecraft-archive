@@ -134,10 +134,10 @@ public class DataPointNpc<S extends OMServer<S, P>, P extends OMPlayer<S, P>> ex
                 npc.create();
 
                 npc.setItemInMainHand(new ItemBuilder(Material.IRON_SWORD).build());
-                npc.setHelmet(new ItemBuilder(Material.CHAINMAIL_HELMET).addEnchantment(Enchantment.PROTECTION_ENVIRONMENTAL, 1).build());
-                npc.setChestPlate(new ItemBuilder(Material.CHAINMAIL_CHESTPLATE).addEnchantment(Enchantment.PROTECTION_ENVIRONMENTAL, 1).build());
-                npc.setLeggings(new ItemBuilder(Material.CHAINMAIL_LEGGINGS).addEnchantment(Enchantment.PROTECTION_ENVIRONMENTAL, 1).build());
-                npc.setBoots(new ItemBuilder(Material.CHAINMAIL_BOOTS).addEnchantment(Enchantment.PROTECTION_ENVIRONMENTAL, 1).build());
+                npc.setHelmet(new ItemBuilder(Material.CHAINMAIL_HELMET).addEnchantment(Enchantment.PROTECTION, 1).build());
+                npc.setChestPlate(new ItemBuilder(Material.CHAINMAIL_CHESTPLATE).addEnchantment(Enchantment.PROTECTION, 1).build());
+                npc.setLeggings(new ItemBuilder(Material.CHAINMAIL_LEGGINGS).addEnchantment(Enchantment.PROTECTION, 1).build());
+                npc.setBoots(new ItemBuilder(Material.CHAINMAIL_BOOTS).addEnchantment(Enchantment.PROTECTION, 1).build());
 
                 startUpdate(npc);
                 break;

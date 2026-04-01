@@ -95,7 +95,7 @@ public class ChunkLimiterRunnable extends PassiveRunnable<Survival> {
 
         message.setColor(Color.ORANGE.getAwtColor());
 
-        survival.getDiscordBot().getTextChannel(CustomChannel.ENTITY_CLEAR_LOG).sendMessage(message.build()).queue();
+        survival.getDiscordBot().getTextChannel(CustomChannel.ENTITY_CLEAR_LOG).sendMessageEmbeds(message.build()).queue();
     }
 
     public class EntitySearch {

@@ -101,7 +101,7 @@ public class KitTank extends KitPvPKit {
             kit.setHelmet(player -> new KitItemBuilder(this, Material.IRON_HELMET));
             kit.setChestplate(player -> new KitItemBuilder(this, Material.IRON_CHESTPLATE));
             kit.setLeggings(player -> new KitItemBuilder(this, Material.IRON_LEGGINGS));
-            kit.setBoots(player -> new KitItemBuilder(this, Material.DIAMOND_BOOTS).addEnchantment(Enchantment.PROTECTION_ENVIRONMENTAL, 2));
+            kit.setBoots(player -> new KitItemBuilder(this, Material.DIAMOND_BOOTS).addEnchantment(Enchantment.PROTECTION, 2));
 
             kit.addPotionBuilder(new PotionBuilder(PotionEffectType.SLOW, Integer.MAX_VALUE, 1, true, false, true));
 
@@ -139,8 +139,8 @@ public class KitTank extends KitPvPKit {
 
             kit.setHelmet(player -> new KitItemBuilder(this, Material.IRON_HELMET));
             kit.setChestplate(player -> new KitItemBuilder(this, Material.IRON_CHESTPLATE));
-            kit.setLeggings(player -> new KitItemBuilder(this, Material.IRON_LEGGINGS).addEnchantment(Enchantment.PROTECTION_ENVIRONMENTAL, 1).addEnchantment(Enchantment.PROTECTION_PROJECTILE, 2));
-            kit.setBoots(player -> new KitItemBuilder(this, Material.DIAMOND_BOOTS).addEnchantment(Enchantment.PROTECTION_ENVIRONMENTAL, 2));
+            kit.setLeggings(player -> new KitItemBuilder(this, Material.IRON_LEGGINGS).addEnchantment(Enchantment.PROTECTION, 1).addEnchantment(Enchantment.PROJECTILE_PROTECTION, 2));
+            kit.setBoots(player -> new KitItemBuilder(this, Material.DIAMOND_BOOTS).addEnchantment(Enchantment.PROTECTION, 2));
 
             kit.addPotionBuilder(new PotionBuilder(PotionEffectType.SLOW, Integer.MAX_VALUE, 1, true, false, true));
 

@@ -109,9 +109,9 @@ public class KitPvP extends OMServer<KitPvP, KitPvPPlayer> {
         /* Setup Map */
         map = KitPvPMap.load();
         World mapWorld = worldLoader.fromZip(map.getWorldFileName(), true, map.getWorldGenerator());
-        mapWorld.setGameRule(GameRule.DO_DAYLIGHT_CYCLE, false);
-        mapWorld.setGameRule(GameRule.DO_MOB_SPAWNING, false);
-        mapWorld.setGameRule(GameRule.DO_FIRE_TICK, false);
+        mapWorld.setGameRule(GameRule.ADVANCE_TIME, false);
+        mapWorld.setGameRule(GameRule.SPAWN_MOBS, false);
+        /* GameRule.DO_FIRE_TICK removed in 26.1 */
         mapWorld.setTime(18000);
         mapWorld.setAutoSave(false);
 

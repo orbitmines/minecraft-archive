@@ -14,6 +14,7 @@ import com.orbitmines.archive.minecraft.spigot._2019.utils.spigot.builders.chat.
 import com.orbitmines.archive.minecraft.spigot._2019.utils.spigot.builders.item.WrittenBookBuilder;
 import net.dv8tion.jda.api.EmbedBuilder;
 import net.dv8tion.jda.api.entities.channel.concrete.TextChannel;
+import net.dv8tion.jda.api.utils.FileUpload;
 import net.md_5.bungee.api.chat.ClickEvent;
 import net.md_5.bungee.api.chat.HoverEvent;
 import java.io.File;
@@ -854,7 +855,7 @@ public class PatchNotes {
             File file = image.getFile(image.toString().toLowerCase());
 
             if (file != null)
-                channel.sendFile(file).queue();
+                channel.sendFiles(FileUpload.fromData(file)).queue();
         }
         channel.sendMessage("**" + instance.getServer().getName() + " " + instance.getVersion() + "** has been released! » \"**" + instance.getName() + "**\"").queue();
         channel.sendMessage("_" + DateUtils.format(instance.getDate(), DateUtils.DATE_FORMAT) + ": " + instance.getDescription() + "_").queue();
@@ -868,7 +869,7 @@ public class PatchNotes {
             if (feature.getImageLink() != null)
                 builder.setImage(feature.getImageLink());
 
-            channel.sendMessage(builder.build()).queue();
+            channel.sendMessageEmbeds(builder.build()).queue();
         }
     }
 

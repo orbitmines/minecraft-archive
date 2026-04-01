@@ -107,7 +107,7 @@ public enum LootItemType {
 
         @Override
         public ItemBuilder getIcon(int count) {
-            return new ItemBuilder(Material.SCUTE);
+            return new ItemBuilder(Material.TURTLE_SCUTE);
         }
     },
     SURVIVAL_SPAWNER_MINER(Server.SURVIVAL) {

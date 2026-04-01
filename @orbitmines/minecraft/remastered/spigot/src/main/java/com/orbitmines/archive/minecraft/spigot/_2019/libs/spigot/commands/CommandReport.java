@@ -71,7 +71,7 @@ public class CommandReport<S extends OMServer<S, P>, P extends OMPlayer<S, P>> e
                 //TODO FIX BODY_3D
 //                builder.setThumbnail(SkinLibrary.getSkinUrl(SkinLibrary.Type.BODY_3D, player.getUUID()));
 
-                channel.sendMessage(builder.build()).queue();
+                channel.sendMessageEmbeds(builder.build()).queue();
             });
         });
     }

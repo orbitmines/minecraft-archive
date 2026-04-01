@@ -51,7 +51,7 @@ public class ChestShopEditorGUI extends GUI<SurvivalPlayer> {
         }));
 
         set(1, 3, new Item<SurvivalPlayer, MutableItemBuilder>(() -> {
-            return new ItemBuilder(Material.SCUTE, 1, "§7§l" + viewer.translate("survival", "player.chest_shop.price") + ": " + shop.getPriceDisplay(price));
+            return new ItemBuilder(Material.TURTLE_SCUTE, 1, "§7§l" + viewer.translate("survival", "player.chest_shop.price") + ": " + shop.getPriceDisplay(price));
         }, event -> {
             openPricePicker();
         }));
@@ -204,7 +204,7 @@ public class ChestShopEditorGUI extends GUI<SurvivalPlayer> {
             try {
                 price = Integer.parseInt(name);
             } catch (NumberFormatException ex) {
-                event.getAnvilNms().setSlot(AnvilNms.AnvilSlot.OUTPUT, new ItemBuilder(Material.SCUTE, 1, this.price + "").build());
+                event.getAnvilNms().setSlot(AnvilNms.AnvilSlot.OUTPUT, new ItemBuilder(Material.TURTLE_SCUTE, 1, this.price + "").build());
 
                 viewer.sendMessage("Shop", Color.RED, "survival", "player.chest_shop.invalid_price");
 
@@ -212,7 +212,7 @@ public class ChestShopEditorGUI extends GUI<SurvivalPlayer> {
             }
 
             if (price < 1 || price > ChestShop.MAX_PRICE) {
-                event.getAnvilNms().setSlot(AnvilNms.AnvilSlot.OUTPUT, new ItemBuilder(Material.SCUTE, 1, this.price + "").build());
+                event.getAnvilNms().setSlot(AnvilNms.AnvilSlot.OUTPUT, new ItemBuilder(Material.TURTLE_SCUTE, 1, this.price + "").build());
 
                 viewer.sendMessage("Shop", Color.RED, "survival", "player.chest_shop.max_price", ChestShop.MAX_PRICE);
 
@@ -243,7 +243,7 @@ public class ChestShopEditorGUI extends GUI<SurvivalPlayer> {
             }
         });
 
-        anvil.getItems().put(AnvilNms.AnvilSlot.INPUT_LEFT, new ItemBuilder(Material.SCUTE, 1, price + "").build());
+        anvil.getItems().put(AnvilNms.AnvilSlot.INPUT_LEFT, new ItemBuilder(Material.TURTLE_SCUTE, 1, price + "").build());
 
         SpigotServer.getInstance().runSync(anvil::open);
     }

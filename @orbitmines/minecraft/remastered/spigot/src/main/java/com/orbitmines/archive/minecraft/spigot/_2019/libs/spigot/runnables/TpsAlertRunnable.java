@@ -49,7 +49,7 @@ public class TpsAlertRunnable<S extends OMServer<S, ?>> extends SpigotRunnable<S
         TextChannel channel = bot.getTextChannel(CustomChannel.TPS_ALERT);
 
         channel.sendMessage(Environment.getEveryoneOrDev(bot) + " Low TPS in " + server.getType().getName() + ": " + humanReadableTps(recentTps[0])).queue();
-        channel.sendMessage(builder.build()).queue();
+        channel.sendMessageEmbeds(builder.build()).queue();
     }
 
     private String humanReadableTps(double tps) {
