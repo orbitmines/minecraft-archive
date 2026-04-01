@@ -72,7 +72,7 @@ public class SpigotDiscordBot extends OMDiscordBot {
             if (user.isBot())
                 return;
 
-            TextChannel channel = event.getTextChannel();
+            TextChannel channel = event.getChannel().asTextChannel();
             Category category = getServersCategory();
 
             if (channel.getIdLong() == getTextChannel(CustomChannel.STAFF).getIdLong()) {
@@ -93,7 +93,7 @@ public class SpigotDiscordBot extends OMDiscordBot {
                 return;
             }
 
-            if (channel.getParent().getIdLong() != category.getIdLong())
+            if (channel.getParentCategory() == null || channel.getParentCategory().getIdLong() != category.getIdLong())
                 return;
 
             if (!category.getTextChannels().contains(channel))
