@@ -57,7 +57,8 @@ public class SurvivalRegion extends OMMySQLModel<SurvivalRegion, SurvivalRegion.
         this.inventoryY = getInteger(column.INVENTORY_Y);
         this.underWater = getBoolean(column.UNDER_WATER);
         try {
-            this.biome = getEnum(column.BIOME, Biome.class);
+            String biomeStr = getString(column.BIOME);
+            this.biome = biomeStr != null ? Biome.valueOf(biomeStr) : null;
         } catch(IllegalArgumentException ex) {
             this.biome = location.getWorld().getBiome(location.getBlockX(), location.getBlockZ());
             update(column.BIOME);
@@ -97,7 +98,7 @@ public class SurvivalRegion extends OMMySQLModel<SurvivalRegion, SurvivalRegion.
             case UNDER_WATER:
                 return stringify(this.underWater);
             case BIOME:
-                return stringify(this.biome);
+                return this.biome != null ? this.biome.name() : null;
             case CREATED_ON:
                 return stringify(this.createdOn, DateUtils.DATE_TIME_FORMAT);
             default:

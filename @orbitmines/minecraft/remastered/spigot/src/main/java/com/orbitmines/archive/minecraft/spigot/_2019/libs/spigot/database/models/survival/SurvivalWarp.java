@@ -184,7 +184,7 @@ public class SurvivalWarp extends OMMySQLModel<SurvivalWarp, SurvivalWarp.column
         ELYTRA(new ItemBuilder(Material.ELYTRA)),
         TOTEM_OF_UNDYING(new ItemBuilder(Material.TOTEM_OF_UNDYING)),
         PUFFERFISH_BUCKET(new ItemBuilder(Material.PUFFERFISH_BUCKET)),
-        GRASS_BLOCK(new ItemBuilder(Material.GRASS)),
+        GRASS_BLOCK(new ItemBuilder(Material.GRASS_BLOCK)),
         HAY_BALE(new ItemBuilder(Material.HAY_BLOCK)),
         GRAY_GLAZED_TERRACOTTA(new ItemBuilder(Material.GRAY_GLAZED_TERRACOTTA)),
         LEATHER(new ItemBuilder(Material.LEATHER)),

@@ -59,4 +59,24 @@ public class GlowEnchantment extends Enchantment {
     public boolean canEnchantItem(ItemStack itemStack) {
         return true;
     }
+
+    @Override
+    public String getTranslationKey() {
+        return "enchantment.orbitmines.glow";
+    }
+
+    @Override
+    public NamespacedKey getKeyOrThrow() {
+        return getKey();
+    }
+
+    @Override
+    public NamespacedKey getKeyOrNull() {
+        return getKey();
+    }
+
+    @Override
+    public boolean isRegistered() {
+        return false;
+    }
 }

@@ -3,18 +3,14 @@ package com.orbitmines.archive.minecraft.spigot._2019.utils.spigot.nms.world;
 import com.orbitmines.archive.minecraft.spigot._2019.utils.spigot.entities.Mob;
 import com.orbitmines.archive.minecraft.spigot._2019.utils.spigot.placeholders.SpigotServer;
 import net.minecraft.core.BlockPos;
-import net.minecraft.core.registries.BuiltInRegistries;
-import net.minecraft.resources.Identifier;
 import net.minecraft.server.level.ServerLevel;
-import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.level.block.entity.ChestBlockEntity;
 import net.minecraft.world.level.block.entity.ConduitBlockEntity;
 import net.minecraft.world.level.block.entity.EnderChestBlockEntity;
-import net.minecraft.world.level.block.entity.SpawnerBlockEntity;
 import org.bukkit.Location;
+import org.bukkit.block.CreatureSpawner;
 import org.bukkit.craftbukkit.CraftWorld;
 import org.bukkit.entity.Player;
-import org.bukkit.scheduler.BukkitRunnable;
 
 import java.util.Collection;
 
@@ -51,44 +47,19 @@ public class WorldNms_26_1 implements WorldNms {
     public void setSpawner(Location location, Mob mob) {
         location.getBlock().setType(org.bukkit.Material.SPAWNER);
 
-        ServerLevel level = ((CraftWorld) location.getWorld()).getHandle();
-        BlockPos position = new BlockPos(location.getBlockX(), location.getBlockY(), location.getBlockZ());
-
-        SpawnerBlockEntity tileSpawner = (SpawnerBlockEntity) level.getBlockEntity(position);
-
-        net.minecraft.nbt.CompoundTag tag = new net.minecraft.nbt.CompoundTag();
-        tag.putString("id", getKey(mob));
-        tileSpawner.getSpawner().setNextSpawnData(null, null, new net.minecraft.world.level.SpawnData());
-        tileSpawner.setChanged();
-
-        new BukkitRunnable() {
-            @Override
-            public void run() {
-                tileSpawner.setChanged();
-            }
-        }.runTaskLater(SpigotServer.getInstance(), 1);
-    }
-
-    private String getKey(Mob mob) {
-        switch (mob) {
-            case PIG: return "minecraft:pig";
-            case CAVE_SPIDER: return "minecraft:cave_spider";
-            case SILVERFISH: return "minecraft:silverfish";
-            case ZOMBIE: return "minecraft:zombie";
-            case SKELETON: return "minecraft:skeleton";
-            case BLAZE: return "minecraft:blaze";
-            case SPIDER: return "minecraft:spider";
-            default: return "minecraft:pig";
-        }
+        CreatureSpawner spawner = (CreatureSpawner) location.getBlock().getState();
+        spawner.setSpawnedType(org.bukkit.entity.EntityType.valueOf(mob.name()));
+        spawner.update();
     }
 
     @Override
     public Mob getSpawner(Location location) {
-        ServerLevel level = ((CraftWorld) location.getWorld()).getHandle();
-        BlockPos position = new BlockPos(location.getBlockX(), location.getBlockY(), location.getBlockZ());
-
-        SpawnerBlockEntity tileSpawner = (SpawnerBlockEntity) level.getBlockEntity(position);
-        //TODO update for modern spawner API
-        return Mob.PIG;
+        CreatureSpawner spawner = (CreatureSpawner) location.getBlock().getState();
+        org.bukkit.entity.EntityType type = spawner.getSpawnedType();
+        try {
+            return Mob.valueOf(type.name());
+        } catch (IllegalArgumentException e) {
+            return Mob.PIG;
+        }
     }
 }

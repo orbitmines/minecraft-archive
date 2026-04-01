@@ -65,7 +65,7 @@ public class KitDrunk extends KitPvPKit {
             kit.setLeggings(player -> new KitItemBuilder(this, Material.CHAINMAIL_LEGGINGS));
             kit.setBoots(player -> new KitItemBuilder(this, Material.CHAINMAIL_BOOTS));
 
-            kit.addPotionBuilder(new PotionBuilder(PotionEffectType.CONFUSION, Integer.MAX_VALUE, 1, true, false, true));
+            kit.addPotionBuilder(new PotionBuilder(PotionEffectType.NAUSEA, Integer.MAX_VALUE, 1, true, false, true));
 
             return kit;
         }
@@ -106,7 +106,7 @@ public class KitDrunk extends KitPvPKit {
             kit.setLeggings(player -> new KitItemBuilder(this, Material.CHAINMAIL_LEGGINGS));
             kit.setBoots(player -> new KitItemBuilder(this, Material.CHAINMAIL_BOOTS).addEnchantment(Enchantment.PROTECTION, 1));
 
-            kit.addPotionBuilder(new PotionBuilder(PotionEffectType.CONFUSION, Integer.MAX_VALUE, 1, true, false, true));
+            kit.addPotionBuilder(new PotionBuilder(PotionEffectType.NAUSEA, Integer.MAX_VALUE, 1, true, false, true));
 
             return kit;
         }
@@ -147,7 +147,7 @@ public class KitDrunk extends KitPvPKit {
             kit.setLeggings(player -> new KitItemBuilder(this, Material.CHAINMAIL_LEGGINGS));
             kit.setBoots(player -> new KitItemBuilder(this, Material.DIAMOND_BOOTS).addEnchantment(Enchantment.PROTECTION, 1));
 
-            kit.addPotionBuilder(new PotionBuilder(PotionEffectType.CONFUSION, Integer.MAX_VALUE, 1, true, false, true));
+            kit.addPotionBuilder(new PotionBuilder(PotionEffectType.NAUSEA, Integer.MAX_VALUE, 1, true, false, true));
 
             return kit;
         }

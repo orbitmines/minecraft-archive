@@ -134,7 +134,7 @@ public class PassiveEnchantingTable implements Passive.Handler<PlayerDeathEvent>
                 Enchantment.BLAST_PROTECTION,
                 Enchantment.PROJECTILE_PROTECTION,
 
-                Enchantment.OXYGEN
+                Enchantment.RESPIRATION
         }) {
             @Override
             public ItemStack getFor(Player player) {

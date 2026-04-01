@@ -66,11 +66,12 @@ public abstract class Command<S extends OMServer<S, P>, P extends OMPlayer<S, P>
 
     /* Unregister command from Root */
     public void unregister() {
-        CommandDispatcher dispatcher = ReflectionUtils.getCommandDispatcher(false);
-
-        for (String alias : getAllCommands()) {
-            dispatcher.getRoot().removeCommand(alias);
-        }
+        // TODO: removeCommand was removed from RootCommandNode in 26.1
+        // CommandDispatcher dispatcher = ReflectionUtils.getCommandDispatcher(false);
+        //
+        // for (String alias : getAllCommands()) {
+        //     dispatcher.getRoot().removeCommand(alias);
+        // }
 
         commands.remove(this);
     }

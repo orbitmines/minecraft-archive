@@ -185,14 +185,14 @@ public class SurvivalDataPointSpawnShop extends DataPointSign {
         ),
         ROTATING_ENCHANTMENTS(
                 new RotationItem("Mending", new ItemBuilder(Material.ENCHANTED_BOOK).addEnchantment(Enchantment.MENDING, 1), 1, 10000),
-                new RotationItem("Efficiency IV", new ItemBuilder(Material.ENCHANTED_BOOK).addEnchantment(Enchantment.DIG_SPEED, 4), 1, 5000),
-                new RotationItem("Efficiency V", new ItemBuilder(Material.ENCHANTED_BOOK).addEnchantment(Enchantment.DIG_SPEED, 5), 1, 10000),
+                new RotationItem("Efficiency IV", new ItemBuilder(Material.ENCHANTED_BOOK).addEnchantment(Enchantment.EFFICIENCY, 4), 1, 5000),
+                new RotationItem("Efficiency V", new ItemBuilder(Material.ENCHANTED_BOOK).addEnchantment(Enchantment.EFFICIENCY, 5), 1, 10000),
                 new RotationItem("Sharpness IV", new ItemBuilder(Material.ENCHANTED_BOOK).addEnchantment(Enchantment.SHARPNESS, 4), 1, 4000),
                 new RotationItem("Protection IV", new ItemBuilder(Material.ENCHANTED_BOOK).addEnchantment(Enchantment.PROTECTION, 4), 1, 7500),
-                new RotationItem("Fortune II", new ItemBuilder(Material.ENCHANTED_BOOK).addEnchantment(Enchantment.LOOT_BONUS_BLOCKS, 2), 1, 4000),
-                new RotationItem("Fortune III", new ItemBuilder(Material.ENCHANTED_BOOK).addEnchantment(Enchantment.LOOT_BONUS_BLOCKS, 3), 1, 7500),
+                new RotationItem("Fortune II", new ItemBuilder(Material.ENCHANTED_BOOK).addEnchantment(Enchantment.FORTUNE, 2), 1, 4000),
+                new RotationItem("Fortune III", new ItemBuilder(Material.ENCHANTED_BOOK).addEnchantment(Enchantment.FORTUNE, 3), 1, 7500),
                 new RotationItem("Unbreaking III", new ItemBuilder(Material.ENCHANTED_BOOK).addEnchantment(Enchantment.UNBREAKING, 3), 1, 5000),
-                new RotationItem("Aqua Infinity", new ItemBuilder(Material.ENCHANTED_BOOK).addEnchantment(Enchantment.WATER_WORKER, 1), 1, 2500),
+                new RotationItem("Aqua Infinity", new ItemBuilder(Material.ENCHANTED_BOOK).addEnchantment(Enchantment.AQUA_AFFINITY, 1), 1, 2500),
                 new RotationItem("Silk Touch", new ItemBuilder(Material.ENCHANTED_BOOK).addEnchantment(Enchantment.SILK_TOUCH, 1), 1, 7500)
         ),
 

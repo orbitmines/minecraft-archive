@@ -23,7 +23,6 @@ public class NpcNms_26_1 implements NpcNms {
         nmsRideable.yRotO = nmsRideable.getYRot();
         nmsRideable.setYRot(nmsRideable.getPassengers().get(0).getYRot());
         nmsRideable.setXRot(nmsRideable.getPassengers().get(0).getXRot() * 0.5F);
-        nmsRideable.setRot(nmsRideable.getYRot(), nmsRideable.getXRot());
         nmsRideable.yBodyRot = nmsRideable.getYRot();
 
         float sideMot = ((LivingEntity) nmsRideable.getPassengers().get(0)).xxa * 0.5F;

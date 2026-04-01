@@ -225,7 +225,7 @@ public class MobNpc<P extends SpigotPlayer> extends Npc<MobNpc, P> {
             case PHANTOM:
             case POLAR_BEAR:
             case SHEEP:
-            case SNOWMAN:
+            case SNOW_GOLEM:
             case STRAY:
             case VILLAGER:
             case VINDICATOR:
@@ -236,7 +236,7 @@ public class MobNpc<P extends SpigotPlayer> extends Npc<MobNpc, P> {
 
             case HUSK:
             case MULE:
-            case PIG_ZOMBIE:
+            case ZOMBIFIED_PIGLIN:
             case SKELETON:
             case DROWNED:
                 return 2;

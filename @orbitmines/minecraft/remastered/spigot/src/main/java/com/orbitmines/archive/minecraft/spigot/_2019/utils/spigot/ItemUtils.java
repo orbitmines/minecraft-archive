@@ -144,11 +144,11 @@ public class ItemUtils {
     public static String getName(PotionEffectType effectType) {
         if (effectType == PotionEffectType.SPEED) {
             return "Speed";
-        } else if (effectType == PotionEffectType.FAST_DIGGING) {
+        } else if (effectType == PotionEffectType.HASTE) {
             return "Haste";
-        } else if (effectType == PotionEffectType.INCREASE_DAMAGE) {
+        } else if (effectType == PotionEffectType.STRENGTH) {
             return "Strength";
-        } else if (effectType == PotionEffectType.HEAL) {
+        } else if (effectType == PotionEffectType.INSTANT_HEALTH) {
             return "Instant Health";
         } else if (effectType == PotionEffectType.JUMP_BOOST) {
             return "Jump Boost";
@@ -178,13 +178,13 @@ public class ItemUtils {
             return "Conduit Power";
         } else if (effectType == PotionEffectType.DOLPHINS_GRACE) {
             return "Dolphins Grace";
-        } else if (effectType == PotionEffectType.SLOW) {
+        } else if (effectType == PotionEffectType.SLOWNESS) {
             return "Slowness";
-        } else if (effectType == PotionEffectType.SLOW_DIGGING) {
+        } else if (effectType == PotionEffectType.MINING_FATIGUE) {
             return "Mining Fatigue";
-        } else if (effectType == PotionEffectType.HARM) {
+        } else if (effectType == PotionEffectType.INSTANT_DAMAGE) {
             return "Harming";
-        } else if (effectType == PotionEffectType.CONFUSION) {
+        } else if (effectType == PotionEffectType.NAUSEA) {
             return "Nausea";
         } else if (effectType == PotionEffectType.BLINDNESS) {
             return "Blindness";
@@ -479,7 +479,7 @@ public class ItemUtils {
             Material.WITHER_SKELETON_SPAWN_EGG,
             Material.WOLF_SPAWN_EGG,
             Material.ZOMBIE_HORSE_SPAWN_EGG,
-            Material.ZOMBIE_PIGMAN_SPAWN_EGG,
+            Material.ZOMBIFIED_PIGLIN_SPAWN_EGG,
             Material.ZOMBIE_SPAWN_EGG,
             Material.ZOMBIE_VILLAGER_SPAWN_EGG,
             Material.CAT_SPAWN_EGG,
@@ -756,9 +756,9 @@ public class ItemUtils {
 
     public static final Set<PotionEffectType> POSITIVE_EFFECTS = new HashSet<>(Arrays.asList(
             PotionEffectType.SPEED,
-            PotionEffectType.FAST_DIGGING,
-            PotionEffectType.INCREASE_DAMAGE,
-            PotionEffectType.HEAL,
+            PotionEffectType.HASTE,
+            PotionEffectType.STRENGTH,
+            PotionEffectType.INSTANT_HEALTH,
             PotionEffectType.JUMP_BOOST,
             PotionEffectType.REGENERATION,
             PotionEffectType.RESISTANCE,
@@ -784,10 +784,10 @@ public class ItemUtils {
     }
 
     public static final Set<PotionEffectType> NEGATIVE_EFFECTS = new HashSet<>(Arrays.asList(
-            PotionEffectType.SLOW,
-            PotionEffectType.SLOW_DIGGING,
-            PotionEffectType.HARM,
-            PotionEffectType.CONFUSION,
+            PotionEffectType.SLOWNESS,
+            PotionEffectType.MINING_FATIGUE,
+            PotionEffectType.INSTANT_DAMAGE,
+            PotionEffectType.NAUSEA,
             PotionEffectType.BLINDNESS,
             PotionEffectType.HUNGER,
             PotionEffectType.WEAKNESS,

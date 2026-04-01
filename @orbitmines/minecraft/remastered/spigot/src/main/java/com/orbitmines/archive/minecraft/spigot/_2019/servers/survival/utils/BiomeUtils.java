@@ -10,140 +10,87 @@ import org.bukkit.block.Biome;
 public class BiomeUtils {
 
     public static boolean isOcean(Biome biome) {
-        switch (biome) {
-            case OCEAN:
-            case DEEP_OCEAN:
-            case WARM_OCEAN:
-            case FROZEN_OCEAN:
-            case LUKEWARM_OCEAN:
-            case COLD_OCEAN:
-            case DEEP_COLD_OCEAN:
-            case DEEP_WARM_OCEAN:
-            case DEEP_FROZEN_OCEAN:
-            case DEEP_LUKEWARM_OCEAN:
-                return true;
-        }
-        return false;
+        return biome == Biome.OCEAN
+            || biome == Biome.DEEP_OCEAN
+            || biome == Biome.WARM_OCEAN
+            || biome == Biome.FROZEN_OCEAN
+            || biome == Biome.LUKEWARM_OCEAN
+            || biome == Biome.COLD_OCEAN
+            || biome == Biome.DEEP_COLD_OCEAN
+            || biome == Biome.DEEP_FROZEN_OCEAN
+            || biome == Biome.DEEP_LUKEWARM_OCEAN;
     }
 
     public static boolean isOceanNotFrozen(Biome biome) {
-        switch (biome) {
-            case OCEAN:
-            case DEEP_OCEAN:
-            case WARM_OCEAN:
-            case LUKEWARM_OCEAN:
-            case COLD_OCEAN:
-            case DEEP_COLD_OCEAN:
-            case DEEP_WARM_OCEAN:
-            case DEEP_LUKEWARM_OCEAN:
-                return true;
-        }
-        return false;
+        return biome == Biome.OCEAN
+            || biome == Biome.DEEP_OCEAN
+            || biome == Biome.WARM_OCEAN
+            || biome == Biome.LUKEWARM_OCEAN
+            || biome == Biome.COLD_OCEAN
+            || biome == Biome.DEEP_COLD_OCEAN
+            || biome == Biome.DEEP_LUKEWARM_OCEAN;
     }
 
     public static Material material(Biome biome) {
-        switch (biome) {
-
-            case RIVER:
-                return Material.WATER_BUCKET;
-            case OCEAN:
-            case DEEP_OCEAN:
-                return Material.SEAGRASS;
-            case PLAINS:
-                return Material.GRASS_BLOCK;
-            case DESERT:
-            case BEACH:
-            case DESERT_HILLS:
-            case DESERT_LAKES:
-                return Material.SAND;
-            case MOUNTAINS:
-            case MOUNTAIN_EDGE:
-            case STONE_SHORE:
-                return Material.STONE;
-            case FOREST:
-            case WOODED_HILLS:
-            case WOODED_MOUNTAINS:
-                return Material.OAK_SAPLING;
-            case TAIGA:
-            case TAIGA_HILLS:
-            case SNOWY_TAIGA:
-            case SNOWY_TAIGA_HILLS:
-            case GIANT_TREE_TAIGA:
-            case GIANT_TREE_TAIGA_HILLS:
-            case TAIGA_MOUNTAINS:
-            case SNOWY_TAIGA_MOUNTAINS:
-            case GIANT_SPRUCE_TAIGA:
-            case GIANT_SPRUCE_TAIGA_HILLS:
-                return Material.SPRUCE_SAPLING;
-            case SWAMP:
-            case SWAMP_HILLS:
-                return Material.VINE;
-            case NETHER:
-                return Material.NETHERRACK;
-            case THE_END:
-            case SMALL_END_ISLANDS:
-            case END_MIDLANDS:
-            case END_HIGHLANDS:
-            case END_BARRENS:
-                return Material.END_STONE;
-            case FROZEN_RIVER:
-            case COLD_OCEAN:
-            case DEEP_COLD_OCEAN:
-                return Material.ICE;
-            case SNOWY_TUNDRA:
-            case SNOWY_MOUNTAINS:
-            case SNOWY_BEACH:
-                return Material.SNOW_BLOCK;
-            case MUSHROOM_FIELDS:
-            case MUSHROOM_FIELD_SHORE:
-                return Material.RED_MUSHROOM_BLOCK;
-            case JUNGLE:
-            case JUNGLE_HILLS:
-            case JUNGLE_EDGE:
-            case MODIFIED_JUNGLE:
-            case MODIFIED_JUNGLE_EDGE:
-                return Material.JUNGLE_SAPLING;
-            case BIRCH_FOREST:
-            case BIRCH_FOREST_HILLS:
-            case TALL_BIRCH_FOREST:
-            case TALL_BIRCH_HILLS:
-                return Material.BIRCH_SAPLING;
-            case DARK_FOREST:
-            case DARK_FOREST_HILLS:
-                return Material.DARK_OAK_SAPLING;
-            case SAVANNA:
-            case SAVANNA_PLATEAU:
-            case SHATTERED_SAVANNA:
-            case SHATTERED_SAVANNA_PLATEAU:
-                return Material.ACACIA_SAPLING;
-            case BADLANDS:
-            case WOODED_BADLANDS_PLATEAU:
-            case BADLANDS_PLATEAU:
-            case ERODED_BADLANDS:
-            case MODIFIED_BADLANDS_PLATEAU:
-            case MODIFIED_WOODED_BADLANDS_PLATEAU:
-                return Material.YELLOW_TERRACOTTA;
-            case WARM_OCEAN:
-            case LUKEWARM_OCEAN:
-            case DEEP_WARM_OCEAN:
-            case DEEP_LUKEWARM_OCEAN:
-                return Material.HORN_CORAL;
-            case THE_VOID:
-                return Material.BEDROCK;
-            case SUNFLOWER_PLAINS:
-                return Material.SUNFLOWER;
-            case GRAVELLY_MOUNTAINS:
-            case MODIFIED_GRAVELLY_MOUNTAINS:
-                return Material.GRAVEL;
-            case FLOWER_FOREST:
-                return Material.ROSE_BUSH;
-            case DEEP_FROZEN_OCEAN:
-            case ICE_SPIKES:
-            case FROZEN_OCEAN:
-                return Material.PACKED_ICE;
-            case BAMBOO_JUNGLE:
-            case BAMBOO_JUNGLE_HILLS:
-                return Material.BAMBOO;
+        if (biome == Biome.RIVER) {
+            return Material.WATER_BUCKET;
+        } else if (biome == Biome.OCEAN || biome == Biome.DEEP_OCEAN) {
+            return Material.SEAGRASS;
+        } else if (biome == Biome.PLAINS) {
+            return Material.GRASS_BLOCK;
+        } else if (biome == Biome.DESERT || biome == Biome.BEACH) {
+            return Material.SAND;
+        } else if (biome == Biome.WINDSWEPT_HILLS || biome == Biome.STONY_SHORE) {
+            return Material.STONE;
+        } else if (biome == Biome.FOREST || biome == Biome.WINDSWEPT_FOREST) {
+            return Material.OAK_SAPLING;
+        } else if (biome == Biome.TAIGA || biome == Biome.SNOWY_TAIGA
+                || biome == Biome.OLD_GROWTH_PINE_TAIGA
+                || biome == Biome.OLD_GROWTH_SPRUCE_TAIGA) {
+            return Material.SPRUCE_SAPLING;
+        } else if (biome == Biome.SWAMP || biome == Biome.MANGROVE_SWAMP) {
+            return Material.VINE;
+        } else if (biome == Biome.NETHER_WASTES) {
+            return Material.NETHERRACK;
+        } else if (biome == Biome.THE_END || biome == Biome.SMALL_END_ISLANDS
+                || biome == Biome.END_MIDLANDS || biome == Biome.END_HIGHLANDS
+                || biome == Biome.END_BARRENS) {
+            return Material.END_STONE;
+        } else if (biome == Biome.FROZEN_RIVER || biome == Biome.COLD_OCEAN
+                || biome == Biome.DEEP_COLD_OCEAN) {
+            return Material.ICE;
+        } else if (biome == Biome.SNOWY_PLAINS || biome == Biome.SNOWY_BEACH) {
+            return Material.SNOW_BLOCK;
+        } else if (biome == Biome.MUSHROOM_FIELDS) {
+            return Material.RED_MUSHROOM_BLOCK;
+        } else if (biome == Biome.JUNGLE || biome == Biome.SPARSE_JUNGLE) {
+            return Material.JUNGLE_SAPLING;
+        } else if (biome == Biome.BIRCH_FOREST || biome == Biome.OLD_GROWTH_BIRCH_FOREST) {
+            return Material.BIRCH_SAPLING;
+        } else if (biome == Biome.DARK_FOREST) {
+            return Material.DARK_OAK_SAPLING;
+        } else if (biome == Biome.SAVANNA || biome == Biome.SAVANNA_PLATEAU
+                || biome == Biome.WINDSWEPT_SAVANNA) {
+            return Material.ACACIA_SAPLING;
+        } else if (biome == Biome.BADLANDS || biome == Biome.WOODED_BADLANDS
+                || biome == Biome.ERODED_BADLANDS) {
+            return Material.YELLOW_TERRACOTTA;
+        } else if (biome == Biome.WARM_OCEAN || biome == Biome.LUKEWARM_OCEAN
+                || biome == Biome.DEEP_LUKEWARM_OCEAN) {
+            return Material.HORN_CORAL;
+        } else if (biome == Biome.THE_VOID) {
+            return Material.BEDROCK;
+        } else if (biome == Biome.SUNFLOWER_PLAINS) {
+            return Material.SUNFLOWER;
+        } else if (biome == Biome.WINDSWEPT_GRAVELLY_HILLS) {
+            return Material.GRAVEL;
+        } else if (biome == Biome.FLOWER_FOREST) {
+            return Material.ROSE_BUSH;
+        } else if (biome == Biome.DEEP_FROZEN_OCEAN || biome == Biome.ICE_SPIKES
+                || biome == Biome.FROZEN_OCEAN) {
+            return Material.PACKED_ICE;
+        } else if (biome == Biome.BAMBOO_JUNGLE) {
+            return Material.BAMBOO;
         }
         throw new IllegalArgumentException();
     }
@@ -151,7 +98,7 @@ public class BiomeUtils {
     public static String name(Biome biome) {
         StringBuilder stringBuilder = new StringBuilder();
 
-        String[] parts = biome.toString().split("_");
+        String[] parts = biome.name().split("_");
         for (int i = 0; i < parts.length; i++) {
             if (i != 0)
                 stringBuilder.append(" ");
@@ -164,107 +111,63 @@ public class BiomeUtils {
     }
 
     private static Color color(Biome biome) {
-        switch (biome) {
-
-            case OCEAN:
-            case RIVER:
-            case DEEP_OCEAN:
-                return Color.BLUE;
-            case PLAINS:
-                return Color.LIME;
-            case DESERT:
-            case BEACH:
-            case DESERT_HILLS:
-            case DESERT_LAKES:
-                return Color.YELLOW;
-            case MOUNTAINS:
-            case MOUNTAIN_EDGE:
-            case STONE_SHORE:
-                return Color.SILVER;
-            case FOREST:
-            case WOODED_HILLS:
-            case WOODED_MOUNTAINS:
-                return Color.LIME;
-            case TAIGA:
-            case TAIGA_HILLS:
-            case SNOWY_TAIGA:
-            case SNOWY_TAIGA_HILLS:
-            case GIANT_TREE_TAIGA:
-            case GIANT_TREE_TAIGA_HILLS:
-            case TAIGA_MOUNTAINS:
-            case SNOWY_TAIGA_MOUNTAINS:
-            case GIANT_SPRUCE_TAIGA:
-            case GIANT_SPRUCE_TAIGA_HILLS:
-                return Color.GREEN;
-            case SWAMP:
-            case SWAMP_HILLS:
-                return Color.GREEN;
-            case NETHER:
-                return Color.RED;
-            case THE_END:
-            case SMALL_END_ISLANDS:
-            case END_MIDLANDS:
-            case END_HIGHLANDS:
-            case END_BARRENS:
-                return Color.YELLOW;
-            case FROZEN_OCEAN:
-            case FROZEN_RIVER:
-            case COLD_OCEAN:
-            case DEEP_COLD_OCEAN:
-            case DEEP_FROZEN_OCEAN:
-                return Color.AQUA;
-            case SNOWY_TUNDRA:
-            case SNOWY_MOUNTAINS:
-            case SNOWY_BEACH:
-                return Color.WHITE;
-            case MUSHROOM_FIELDS:
-            case MUSHROOM_FIELD_SHORE:
-                return Color.RED;
-            case JUNGLE:
-            case JUNGLE_HILLS:
-            case JUNGLE_EDGE:
-            case MODIFIED_JUNGLE:
-            case MODIFIED_JUNGLE_EDGE:
-                return Color.GREEN;
-            case BIRCH_FOREST:
-            case BIRCH_FOREST_HILLS:
-            case TALL_BIRCH_FOREST:
-            case TALL_BIRCH_HILLS:
-                return Color.WHITE;
-            case DARK_FOREST:
-            case DARK_FOREST_HILLS:
-                return Color.GREEN;
-            case SAVANNA:
-            case SAVANNA_PLATEAU:
-            case SHATTERED_SAVANNA:
-            case SHATTERED_SAVANNA_PLATEAU:
-                return Color.ORANGE;
-            case BADLANDS:
-            case WOODED_BADLANDS_PLATEAU:
-            case BADLANDS_PLATEAU:
-            case ERODED_BADLANDS:
-            case MODIFIED_BADLANDS_PLATEAU:
-            case MODIFIED_WOODED_BADLANDS_PLATEAU:
-                return Color.ORANGE;
-            case WARM_OCEAN:
-            case LUKEWARM_OCEAN:
-            case DEEP_WARM_OCEAN:
-            case DEEP_LUKEWARM_OCEAN:
-                return Color.BLUE;
-            case THE_VOID:
-                return Color.GRAY;
-            case SUNFLOWER_PLAINS:
-                return Color.YELLOW;
-            case GRAVELLY_MOUNTAINS:
-            case MODIFIED_GRAVELLY_MOUNTAINS:
-                return Color.SILVER;
-            case FLOWER_FOREST:
-                return Color.RED;
-            case ICE_SPIKES:
-                return Color.AQUA;
-            case BAMBOO_JUNGLE:
-            case BAMBOO_JUNGLE_HILLS:
-                return Color.YELLOW;
+        if (biome == Biome.OCEAN || biome == Biome.RIVER || biome == Biome.DEEP_OCEAN) {
+            return Color.BLUE;
+        } else if (biome == Biome.PLAINS) {
+            return Color.LIME;
+        } else if (biome == Biome.DESERT || biome == Biome.BEACH) {
+            return Color.YELLOW;
+        } else if (biome == Biome.WINDSWEPT_HILLS || biome == Biome.STONY_SHORE) {
+            return Color.SILVER;
+        } else if (biome == Biome.FOREST || biome == Biome.WINDSWEPT_FOREST) {
+            return Color.LIME;
+        } else if (biome == Biome.TAIGA || biome == Biome.SNOWY_TAIGA
+                || biome == Biome.OLD_GROWTH_PINE_TAIGA
+                || biome == Biome.OLD_GROWTH_SPRUCE_TAIGA) {
+            return Color.GREEN;
+        } else if (biome == Biome.SWAMP || biome == Biome.MANGROVE_SWAMP) {
+            return Color.GREEN;
+        } else if (biome == Biome.NETHER_WASTES) {
+            return Color.RED;
+        } else if (biome == Biome.THE_END || biome == Biome.SMALL_END_ISLANDS
+                || biome == Biome.END_MIDLANDS || biome == Biome.END_HIGHLANDS
+                || biome == Biome.END_BARRENS) {
+            return Color.YELLOW;
+        } else if (biome == Biome.FROZEN_OCEAN || biome == Biome.FROZEN_RIVER
+                || biome == Biome.COLD_OCEAN || biome == Biome.DEEP_COLD_OCEAN
+                || biome == Biome.DEEP_FROZEN_OCEAN) {
+            return Color.AQUA;
+        } else if (biome == Biome.SNOWY_PLAINS || biome == Biome.SNOWY_BEACH) {
+            return Color.WHITE;
+        } else if (biome == Biome.MUSHROOM_FIELDS) {
+            return Color.RED;
+        } else if (biome == Biome.JUNGLE || biome == Biome.SPARSE_JUNGLE) {
+            return Color.GREEN;
+        } else if (biome == Biome.BIRCH_FOREST || biome == Biome.OLD_GROWTH_BIRCH_FOREST) {
+            return Color.WHITE;
+        } else if (biome == Biome.DARK_FOREST) {
+            return Color.GREEN;
+        } else if (biome == Biome.SAVANNA || biome == Biome.SAVANNA_PLATEAU
+                || biome == Biome.WINDSWEPT_SAVANNA) {
+            return Color.ORANGE;
+        } else if (biome == Biome.BADLANDS || biome == Biome.WOODED_BADLANDS
+                || biome == Biome.ERODED_BADLANDS) {
+            return Color.ORANGE;
+        } else if (biome == Biome.WARM_OCEAN || biome == Biome.LUKEWARM_OCEAN
+                || biome == Biome.DEEP_LUKEWARM_OCEAN) {
+            return Color.BLUE;
+        } else if (biome == Biome.THE_VOID) {
+            return Color.GRAY;
+        } else if (biome == Biome.SUNFLOWER_PLAINS) {
+            return Color.YELLOW;
+        } else if (biome == Biome.WINDSWEPT_GRAVELLY_HILLS) {
+            return Color.SILVER;
+        } else if (biome == Biome.FLOWER_FOREST) {
+            return Color.RED;
+        } else if (biome == Biome.ICE_SPIKES) {
+            return Color.AQUA;
+        } else if (biome == Biome.BAMBOO_JUNGLE) {
+            return Color.YELLOW;
         }
         throw new IllegalArgumentException();
     }

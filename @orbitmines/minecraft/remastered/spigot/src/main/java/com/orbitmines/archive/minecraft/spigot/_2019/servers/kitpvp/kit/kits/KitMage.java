@@ -31,7 +31,7 @@ public class KitMage extends KitPvPKit {
                 ID, "Mage",
 
                 Color.YELLOW,
-                new PotionItemBuilder(PotionItemBuilder.Type.SPLASH, new PotionBuilder(PotionEffectType.HARM, 0)).addFlag(ItemFlag.HIDE_ADDITIONAL_TOOLTIP),
+                new PotionItemBuilder(PotionItemBuilder.Type.SPLASH, new PotionBuilder(PotionEffectType.INSTANT_DAMAGE, 0)).addFlag(ItemFlag.HIDE_ADDITIONAL_TOOLTIP),
 
                 KitClass.SPELLCASTER
         );
@@ -60,7 +60,7 @@ public class KitMage extends KitPvPKit {
             kit.set(0, player -> new KitItemBuilder(this, Material.STONE_SWORD).addPassive(Passive.POTION_BREWER, 1));
             kit.set(1, player -> new KitPotionItemBuilder(this, PotionItemBuilder.Type.SPLASH, new PotionBuilder(PotionEffectType.FIRE_RESISTANCE, 30 * 20, 0)));
             kit.set(2, player -> new KitPotionItemBuilder(this, PotionItemBuilder.Type.SPLASH, new PotionBuilder(PotionEffectType.WEAKNESS, 15 * 20, 0)));
-            kit.set(3, player -> new KitPotionItemBuilder(this, PotionItemBuilder.Type.SPLASH, new PotionBuilder(PotionEffectType.HARM, 0)));
+            kit.set(3, player -> new KitPotionItemBuilder(this, PotionItemBuilder.Type.SPLASH, new PotionBuilder(PotionEffectType.INSTANT_DAMAGE, 0)));
             kit.set(4, player -> new KitPotionItemBuilder(this, PotionItemBuilder.Type.SPLASH, new PotionBuilder(PotionEffectType.SPEED, 60 * 20, 0)));
             kit.set(5, player -> new KitPotionItemBuilder(this, PotionItemBuilder.Type.SPLASH, new PotionBuilder(PotionEffectType.REGENERATION, 20 * 20, 0)));
 
@@ -102,7 +102,7 @@ public class KitMage extends KitPvPKit {
             kit.set(0, player -> new KitItemBuilder(this, Material.STONE_SWORD).addPassive(Passive.POTION_BREWER, 1));
             kit.set(1, player -> new KitPotionItemBuilder(this, PotionItemBuilder.Type.SPLASH, new PotionBuilder(PotionEffectType.FIRE_RESISTANCE, 35 * 20, 0)));
             kit.set(2, player -> new KitPotionItemBuilder(this, PotionItemBuilder.Type.SPLASH, new PotionBuilder(PotionEffectType.WEAKNESS, 17 * 20, 0)));
-            kit.set(3, player -> new KitPotionItemBuilder(this, PotionItemBuilder.Type.SPLASH, new PotionBuilder(PotionEffectType.HARM, 1)));
+            kit.set(3, player -> new KitPotionItemBuilder(this, PotionItemBuilder.Type.SPLASH, new PotionBuilder(PotionEffectType.INSTANT_DAMAGE, 1)));
             kit.set(4, player -> new KitPotionItemBuilder(this, PotionItemBuilder.Type.SPLASH, new PotionBuilder(PotionEffectType.SPEED, 60 * 20, 0)));
             kit.set(5, player -> new KitPotionItemBuilder(this, PotionItemBuilder.Type.SPLASH, new PotionBuilder(PotionEffectType.REGENERATION, 30 * 20, 0)));
             kit.set(6, player -> new KitPotionItemBuilder(this, PotionItemBuilder.Type.SPLASH, new PotionBuilder(PotionEffectType.SPEED, 10 * 20, 1)));
@@ -145,7 +145,7 @@ public class KitMage extends KitPvPKit {
             kit.set(0, player -> new KitItemBuilder(this, Material.STONE_SWORD).addPassive(Passive.POTION_BREWER, 1));
             kit.set(1, player -> new KitPotionItemBuilder(this, PotionItemBuilder.Type.SPLASH, new PotionBuilder(PotionEffectType.FIRE_RESISTANCE, 40 * 20, 0)));
             kit.set(2, player -> new KitPotionItemBuilder(this, PotionItemBuilder.Type.SPLASH, new PotionBuilder(PotionEffectType.WEAKNESS, 17 * 20, 0), 2));
-            kit.set(3, player -> new KitPotionItemBuilder(this, PotionItemBuilder.Type.SPLASH, new PotionBuilder(PotionEffectType.HARM, 1), 2));
+            kit.set(3, player -> new KitPotionItemBuilder(this, PotionItemBuilder.Type.SPLASH, new PotionBuilder(PotionEffectType.INSTANT_DAMAGE, 1), 2));
             kit.set(4, player -> new KitPotionItemBuilder(this, PotionItemBuilder.Type.SPLASH, new PotionBuilder(PotionEffectType.SPEED, 60 * 20, 0)));
             kit.set(5, player -> new KitPotionItemBuilder(this, PotionItemBuilder.Type.SPLASH, new PotionBuilder(PotionEffectType.REGENERATION, 32 * 20, 0)));
             kit.set(6, player -> new KitPotionItemBuilder(this, PotionItemBuilder.Type.SPLASH, new PotionBuilder(PotionEffectType.SPEED, 15 * 20, 1)));

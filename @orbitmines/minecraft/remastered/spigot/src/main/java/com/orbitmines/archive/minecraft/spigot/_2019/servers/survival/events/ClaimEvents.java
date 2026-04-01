@@ -1087,7 +1087,7 @@ public class ClaimEvents implements Listener {
             case ITEM_FRAME:
             case ARMOR_STAND:
             case VILLAGER:
-            case ENDER_CRYSTAL: {
+            case END_CRYSTAL: {
 
                 SurvivalPlayer player = null;
                 if (attacker != null)
@@ -1142,7 +1142,7 @@ public class ClaimEvents implements Listener {
                     && damager != null
                     && damager.getType() != EntityType.CREEPER
                     && damager.getType() != EntityType.WITHER
-                    && damager.getType() != EntityType.ENDER_CRYSTAL
+                    && damager.getType() != EntityType.END_CRYSTAL
                     && damager.getType() != EntityType.AREA_EFFECT_CLOUD
                     && damager.getType() != EntityType.WITCH
                     && !(damager instanceof Projectile)
@@ -1228,7 +1228,7 @@ public class ClaimEvents implements Listener {
             }
         }
 
-        if (attacker == null && damagerType != EntityType.CREEPER && damagerType != EntityType.WITHER && damagerType != EntityType.PRIMED_TNT)
+        if (attacker == null && damagerType != EntityType.CREEPER && damagerType != EntityType.WITHER && damagerType != EntityType.TNT)
             return;
 
         SurvivalPlayer player = attacker == null ? null : survival.getPlayer(attacker);

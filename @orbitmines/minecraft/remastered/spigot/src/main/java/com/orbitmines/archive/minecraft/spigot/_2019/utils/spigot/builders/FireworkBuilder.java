@@ -29,7 +29,7 @@ public class FireworkBuilder {
     @Getter private FireworkEffect.Builder builder;
 
     public FireworkBuilder(Location location) {
-        this.firework = (Firework) location.getWorld().spawnEntity(location, EntityType.FIREWORK);
+        this.firework = (Firework) location.getWorld().spawnEntity(location, EntityType.FIREWORK_ROCKET);
         this.fireworkMeta = firework.getFireworkMeta();
         this.builder = FireworkEffect.builder();
     }

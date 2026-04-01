@@ -64,7 +64,7 @@ public class KitTank extends KitPvPKit {
             kit.setLeggings(player -> new KitItemBuilder(this, Material.IRON_LEGGINGS));
             kit.setBoots(player -> new KitItemBuilder(this, Material.DIAMOND_BOOTS));
 
-            kit.addPotionBuilder(new PotionBuilder(PotionEffectType.SLOW, Integer.MAX_VALUE, 1, true, false, true));
+            kit.addPotionBuilder(new PotionBuilder(PotionEffectType.SLOWNESS, Integer.MAX_VALUE, 1, true, false, true));
 
             return kit;
         }
@@ -103,7 +103,7 @@ public class KitTank extends KitPvPKit {
             kit.setLeggings(player -> new KitItemBuilder(this, Material.IRON_LEGGINGS));
             kit.setBoots(player -> new KitItemBuilder(this, Material.DIAMOND_BOOTS).addEnchantment(Enchantment.PROTECTION, 2));
 
-            kit.addPotionBuilder(new PotionBuilder(PotionEffectType.SLOW, Integer.MAX_VALUE, 1, true, false, true));
+            kit.addPotionBuilder(new PotionBuilder(PotionEffectType.SLOWNESS, Integer.MAX_VALUE, 1, true, false, true));
 
             return kit;
         }
@@ -142,7 +142,7 @@ public class KitTank extends KitPvPKit {
             kit.setLeggings(player -> new KitItemBuilder(this, Material.IRON_LEGGINGS).addEnchantment(Enchantment.PROTECTION, 1).addEnchantment(Enchantment.PROJECTILE_PROTECTION, 2));
             kit.setBoots(player -> new KitItemBuilder(this, Material.DIAMOND_BOOTS).addEnchantment(Enchantment.PROTECTION, 2));
 
-            kit.addPotionBuilder(new PotionBuilder(PotionEffectType.SLOW, Integer.MAX_VALUE, 1, true, false, true));
+            kit.addPotionBuilder(new PotionBuilder(PotionEffectType.SLOWNESS, Integer.MAX_VALUE, 1, true, false, true));
 
             return kit;
         }
