@@ -24,14 +24,12 @@ import com.orbitmines.archive.minecraft._2019.utils.database.lib.froms.MySQLTabl
 import com.orbitmines.archive.minecraft._2019.utils.database.model.ModelSelector;
 import com.orbitmines.archive.minecraft._2019.utils.database.model.mysql.MySQLModelColumn;
 import com.orbitmines.archive.minecraft._2019.utils.discord.DiscordBot;
-import com.orbitmines.archive.minecraft._2019.utils.jedis.JedisManager;
+import com.orbitmines.archive.minecraft._2019.utils.state.StateProvider;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.Setter;
 import net.dv8tion.jda.api.entities.*;
 import net.dv8tion.jda.api.entities.channel.concrete.TextChannel;
-import redis.clients.jedis.Jedis;
-import redis.clients.jedis.Pipeline;
 
 import java.util.*;
 
@@ -255,7 +253,7 @@ public class DiscordUser extends OMMySQLModel<DiscordUser, DiscordUser.column> {
                 discordUser.updateDiscordRanks(bot);
             });
 
-            clearRedis(discordUser.getDiscordUserId(), discordUser.getUuid());
+            clearLinkingState(discordUser.getDiscordUserId(), discordUser.getUuid());
 
             return discordUser;
         }
@@ -278,44 +276,26 @@ public class DiscordUser extends OMMySQLModel<DiscordUser, DiscordUser.column> {
         }
 
         private Long getLinkingDiscordUserId(UUID uuid) {
-            try (Jedis jedis = JedisManager.get()) {
-                String discordUserId = jedis.get("discord_link:uuid:" + uuid.toString());
+            String discordUserId = StateProvider.getInstance().getString("discord_link:uuid:" + uuid.toString());
 
-                return discordUserId != null ? Long.parseLong(discordUserId) : null;
-            }
+            return discordUserId != null ? Long.parseLong(discordUserId) : null;
         }
 
         private String getLinkingUUID(long discordUserId) {
-            try (Jedis jedis = JedisManager.get()) {
-                return jedis.get("discord_link:discord_user_id:" + discordUserId);
-            }
+            return StateProvider.getInstance().getString("discord_link:discord_user_id:" + discordUserId);
         }
 
         private void setLinkingDiscordUserId(UUID uuid, long discordUserId) {
-            try (Jedis jedis = JedisManager.get()) {
-                Pipeline pipeline = jedis.pipelined();
-                pipeline.set("discord_link:uuid:" + uuid.toString(), discordUserId + "");
-                pipeline.expire("discord_link:uuid:" + uuid.toString(), 60 * 60);
-
-                pipeline.sync();
-            }
+            StateProvider.getInstance().setString("discord_link:uuid:" + uuid.toString(), discordUserId + "");
         }
 
         private void setLinkingUUID(long discordUserId, UUID uuid) {
-            try (Jedis jedis = JedisManager.get()) {
-                Pipeline pipeline = jedis.pipelined();
-                pipeline.set("discord_link:discord_user_id:" + discordUserId, uuid.toString());
-                pipeline.expire("discord_link:discord_user_id:" + discordUserId, 60 * 60);
-
-                pipeline.sync();
-            }
+            StateProvider.getInstance().setString("discord_link:discord_user_id:" + discordUserId, uuid.toString());
         }
 
-        private void clearRedis(long discordUserId, UUID uuid) {
-            try (Jedis jedis = JedisManager.get()) {
-                jedis.del("discord_link:discord_user_id:" + discordUserId);
-                jedis.del("discord_link:uuid:" + uuid.toString());
-            }
+        private void clearLinkingState(long discordUserId, UUID uuid) {
+            StateProvider.getInstance().deleteString("discord_link:discord_user_id:" + discordUserId);
+            StateProvider.getInstance().deleteString("discord_link:uuid:" + uuid.toString());
         }
     }
 

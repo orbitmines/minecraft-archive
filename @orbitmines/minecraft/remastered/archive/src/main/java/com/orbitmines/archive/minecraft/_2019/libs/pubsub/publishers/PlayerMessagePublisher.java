@@ -4,7 +4,7 @@ package com.orbitmines.archive.minecraft._2019.libs.pubsub.publishers;
  * OrbitMines - @author Fadi Shawki - 2019
  */
 
-import com.orbitmines.archive.minecraft._2019.utils.jedis.Publisher;
+import com.orbitmines.archive.minecraft._2019.utils.pubsub.Publisher;
 import lombok.AllArgsConstructor;
 
 import java.util.UUID;

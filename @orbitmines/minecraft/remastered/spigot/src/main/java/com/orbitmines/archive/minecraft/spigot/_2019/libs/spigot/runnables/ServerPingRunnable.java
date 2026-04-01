@@ -5,13 +5,11 @@ package com.orbitmines.archive.minecraft.spigot._2019.libs.spigot.runnables;
  */
 
 import com.orbitmines.archive.minecraft._2019.libs.Server;
+import com.orbitmines.archive.minecraft._2019.utils.state.StateProvider;
 import com.orbitmines.archive.minecraft.spigot._2019.libs.spigot.OMServer;
-import com.orbitmines.archive.minecraft._2019.utils.jedis.JedisManager;
 import com.orbitmines.archive.minecraft.spigot._2019.utils.spigot.runnable.Interval;
 import com.orbitmines.archive.minecraft.spigot._2019.utils.spigot.runnable.SpigotRunnable;
 import com.orbitmines.archive.minecraft.spigot._2019.utils.spigot.runnable.TimeUnit;
-import redis.clients.jedis.Jedis;
-import redis.clients.jedis.Pipeline;
 
 public class ServerPingRunnable extends SpigotRunnable<OMServer> {
 
@@ -29,14 +27,6 @@ public class ServerPingRunnable extends SpigotRunnable<OMServer> {
     }
 
     private void pingStatus() {
-        String key = "server:" + this.server.getPluginName() + ":status";
-
-        try (Jedis jedis = JedisManager.get()) {
-            Pipeline pipeline = jedis.pipelined();
-            jedis.set(key, plugin.getStatus().toString());
-            jedis.expire(key, 10);
-
-            pipeline.sync();
-        }
+        StateProvider.getInstance().setServerStatus(this.server.getPluginName(), plugin.getStatus().toString());
     }
 }

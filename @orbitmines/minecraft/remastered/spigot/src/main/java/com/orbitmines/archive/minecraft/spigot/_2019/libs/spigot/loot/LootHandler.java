@@ -16,10 +16,9 @@ import com.orbitmines.archive.minecraft.spigot._2019.libs.spigot.OMServer;
 import com.orbitmines.archive.minecraft.spigot._2019.libs.spigot.pubsub.publishers.PlayerVipGainedPublisher;
 import com.orbitmines.archive.minecraft._2019.utils.EnumUtils;
 import com.orbitmines.archive.minecraft._2019.utils.NumberUtils;
-import com.orbitmines.archive.minecraft._2019.utils.jedis.JedisManager;
+import com.orbitmines.archive.minecraft._2019.utils.state.StateProvider;
 import com.orbitmines.archive.minecraft.spigot._2019.utils.spigot.builders.chat.Title;
 import org.bukkit.Sound;
-import redis.clients.jedis.Jedis;
 
 public abstract class LootHandler<S extends OMServer<S, P>, P extends OMPlayer<S, P>> {
 
@@ -94,9 +93,7 @@ public abstract class LootHandler<S extends OMServer<S, P>, P extends OMPlayer<S
                         new PlayerVipGainedPublisher().publish(player, rank);
 
                         /* Update Online Player */
-                        try (Jedis jedis = JedisManager.get()) {
-                            jedis.hset("player:" + player.getUUID().toString(), "vip_rank", player.getVipRank().toString());
-                        }
+                        StateProvider.getInstance().setPlayerField(player.getUUID(), "vip_rank", player.getVipRank().toString());
 
                         break;
                     }

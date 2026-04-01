@@ -8,12 +8,8 @@ import com.orbitmines.archive.minecraft._2019.libs.player.PlayerInstance;
 import com.orbitmines.archive.minecraft._2019.libs.rank.Rank;
 import com.orbitmines.archive.minecraft._2019.libs.rank.StaffRank;
 import com.orbitmines.archive.minecraft._2019.libs.rank.VipRank;
-import com.orbitmines.archive.minecraft._2019.utils.UUIDUtils;
-import com.orbitmines.archive.minecraft._2019.utils.jedis.JedisManager;
+import com.orbitmines.archive.minecraft._2019.utils.state.StateProvider;
 import lombok.Getter;
-import redis.clients.jedis.Jedis;
-import redis.clients.jedis.Pipeline;
-import redis.clients.jedis.Response;
 
 import java.util.*;
 
@@ -57,50 +53,29 @@ public enum Server {
     }
 
     public long getOnline() {
-        try (Jedis jedis = JedisManager.get()) {
-            return jedis.scard(jedisNamespace() + ":players");
-        }
+        return StateProvider.getInstance().getServerPlayerCount(pluginName);
     }
 
     public Status getStatus() {
-        try (Jedis jedis = JedisManager.get()) {
-            String status = jedis.get(jedisNamespace() + ":status");
-
-            return status != null ? Status.valueOf(status) : Status.OFFLINE;
-        }
+        String status = StateProvider.getInstance().getServerStatus(pluginName);
+        return status != null ? Status.valueOf(status) : Status.OFFLINE;
     }
 
     public void setStatus(Status status) {
-        try (Jedis jedis = JedisManager.get()) {
-            jedis.set(jedisNamespace() + ":status", status.toString());
-        }
+        StateProvider.getInstance().setServerStatus(pluginName, status.toString());
     }
 
     /* Returns list of players currently online */
     public Set<String> getPlayers() {
-        try (Jedis jedis = JedisManager.get()) {
-            return jedis.smembers(jedisNamespace() + ":players");
-        }
+        return StateProvider.getInstance().getServerPlayers(pluginName);
     }
 
     public long getPlayerCount() {
-        try (Jedis jedis = JedisManager.get()) {
-            Long players = jedis.scard(jedisNamespace() + ":players");
-
-            return players != null ? players : 0;
-        }
+        return StateProvider.getInstance().getServerPlayerCount(pluginName);
     }
 
     public boolean isBlacklisted() {
-        try (Jedis jedis = JedisManager.get()) {
-            Boolean isMember = jedis.sismember("server:blacklist", toString());
-
-            return isMember != null && isMember;
-        }
-    }
-
-    private String jedisNamespace() {
-        return "server:" + this.pluginName;
+        return StateProvider.getInstance().isServerBlacklisted(toString());
     }
 
     public static Server getFromPluginName(String pluginName) {
@@ -112,15 +87,21 @@ public enum Server {
     }
 
     public static Server getPlayingOn(UUID uuid) {
-        return getPlayingOn(UUIDUtils.getName(uuid));
+        String server = StateProvider.getInstance().getPlayerField(uuid, "server");
+        return server != null ? Server.valueOf(server) : null;
     }
 
     public static Server getPlayingOn(String playerName) {
-        try (Jedis jedis = JedisManager.get()) {
-            String server = jedis.hget("player:" + playerName, "server");
-
-            return server != null ? Server.valueOf(server) : null;
+        /* Search through all player data to find by name */
+        StateProvider state = StateProvider.getInstance();
+        for (UUID uuid : state.getAllPlayerUUIDs()) {
+            Map<String, String> data = state.getPlayerData(uuid);
+            if (data != null && playerName.equals(data.get("name"))) {
+                String server = data.get("server");
+                return server != null ? Server.valueOf(server) : null;
+            }
         }
+        return null;
     }
 
     /* Returns list of Servers which are currently active */
@@ -143,64 +124,44 @@ public enum Server {
         }
         return active;
     }
-    private static Collection<Server> stringCollectionToServer(Collection<String> stringedServers) {
-        List<Server> servers = new ArrayList<>();
-        for (String server : stringedServers) {
-            servers.add(Server.valueOf(server));
-        }
-
-        return servers;
-    }
 
     /* Returns list of servers with the given status */
     public static Collection<Server> getWith(PlayerInstance player, Status... statuses) {
-        try (Jedis jedis = JedisManager.get()) {
-            Pipeline pipeline = jedis.pipelined();
-            Map<Server, Response<String>> responses = new HashMap<>();
-
-            for (Server server : getAllowed(player)) {
-                responses.put(server, pipeline.get(server.jedisNamespace() + ":status"));
-            }
-            pipeline.sync();
-
-            List<Server> servers = new ArrayList<>();
-            for (Server server : responses.keySet()) {
-                String statusString = responses.get(server).get();
-                Status status = statusString != null ? Status.valueOf(statusString) : Status.OFFLINE;
-
-                for (Status s : statuses) {
-                    if (status != s)
-                        continue;
-
-                    servers.add(server);
-                    break;
-                }
-            }
-
-            return servers;
+        Collection<Server> allowed = getAllowed(player);
+        List<String> pluginNames = new ArrayList<>();
+        for (Server server : allowed) {
+            pluginNames.add(server.pluginName);
         }
+
+        Map<String, String> statusMap = StateProvider.getInstance().getServerStatusBatch(pluginNames);
+
+        List<Server> servers = new ArrayList<>();
+        for (Server server : allowed) {
+            String statusString = statusMap.get(server.pluginName);
+            Status status = statusString != null ? Status.valueOf(statusString) : Status.OFFLINE;
+
+            for (Status s : statuses) {
+                if (status != s)
+                    continue;
+
+                servers.add(server);
+                break;
+            }
+        }
+
+        return servers;
     }
 
     /* Returns list of player names that are currently online */
     public static Set<String> getAllPlayers(PlayerInstance player) {
         Collection<Server> servers = getWith(player, Status.ONLINE, Status.MAINTENANCE);
 
-        try (Jedis jedis = JedisManager.get()) {
-            Pipeline pipeline = jedis.pipelined();
-            List<Response<Set<String>>> responses = new ArrayList<>();
-
-            for (Server server : servers) {
-                responses.add(pipeline.smembers(server.jedisNamespace() + ":players"));
-            }
-            pipeline.sync();
-
-            Set<String> players = new HashSet<>();
-            for (Response<Set<String>> response : responses) {
-                players.addAll(response.get());
-            }
-
-            return players;
+        Set<String> players = new HashSet<>();
+        for (Server server : servers) {
+            players.addAll(StateProvider.getInstance().getServerPlayers(server.pluginName));
         }
+
+        return players;
     }
 
     public static Set<Server> playable() {

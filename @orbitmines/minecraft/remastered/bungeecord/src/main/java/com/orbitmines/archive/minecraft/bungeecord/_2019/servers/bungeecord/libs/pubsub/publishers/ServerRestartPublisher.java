@@ -5,7 +5,7 @@ package com.orbitmines.archive.minecraft.bungeecord._2019.servers.bungeecord.lib
  */
 
 import com.orbitmines.archive.minecraft.bungeecord._2019.servers.bungeecord.libs.Bungeecord;
-import com.orbitmines.archive.minecraft.bungeecord._2019.servers.bungeecord.utils.jedis.BungeePublisher;
+import com.orbitmines.archive.minecraft.bungeecord._2019.servers.bungeecord.utils.pubsub.BungeePublisher;
 import com.orbitmines.archive.minecraft._2019.utils.DateUtils;
 import lombok.AllArgsConstructor;
 

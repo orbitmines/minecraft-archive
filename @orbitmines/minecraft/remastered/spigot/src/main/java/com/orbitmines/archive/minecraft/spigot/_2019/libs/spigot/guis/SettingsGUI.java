@@ -11,7 +11,7 @@ import com.orbitmines.archive.minecraft.spigot._2019.libs.spigot.pubsub.publishe
 import com.orbitmines.archive.minecraft.spigot._2019.libs.spigot.settings.PlayerVisibility;
 import com.orbitmines.archive.minecraft.spigot._2019.libs.spigot.utils.LanguageUtils;
 import com.orbitmines.archive.minecraft._2019.utils.EnumUtils;
-import com.orbitmines.archive.minecraft._2019.utils.jedis.JedisManager;
+import com.orbitmines.archive.minecraft._2019.utils.state.StateProvider;
 import com.orbitmines.archive.minecraft._2019.utils.language.Language;
 import com.orbitmines.archive.minecraft.spigot._2019.utils.spigot.ColorUtils;
 import com.orbitmines.archive.minecraft.spigot._2019.utils.spigot.builders.item.BannerBuilder;
@@ -21,7 +21,6 @@ import com.orbitmines.archive.minecraft.spigot._2019.utils.spigot.guis.GUI;
 import org.bukkit.Material;
 import org.bukkit.Sound;
 import org.bukkit.inventory.ItemFlag;
-import redis.clients.jedis.Jedis;
 
 import java.util.Arrays;
 
@@ -83,9 +82,7 @@ public class SettingsGUI<P extends OMPlayer> extends GUI<P> {
 
             new PlayerLanguageChangePublisher().publish(settingsFor, language);
 
-            try (Jedis jedis = JedisManager.get()) {
-                jedis.hset("player:" + settingsFor.getUUID().toString(), "language", language.toString());
-            }
+            StateProvider.getInstance().setPlayerField(settingsFor.getUUID(), "language", language.toString());
         }));
     }
 

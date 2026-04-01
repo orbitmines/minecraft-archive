@@ -1,4 +1,4 @@
-package com.orbitmines.archive.minecraft._2019.utils.jedis;
+package com.orbitmines.archive.minecraft._2019.utils.pubsub;
 
 /*
  * OrbitMines - @author Fadi Shawki - 2019
@@ -8,7 +8,6 @@ import com.google.gson.GsonBuilder;
 import com.orbitmines.archive.minecraft._2019.libs.Environment;
 import com.orbitmines.archive.minecraft._2019.utils.serializers.Serializer;
 import lombok.Getter;
-import redis.clients.jedis.Jedis;
 
 public abstract class Publisher<E, S extends Serializer<E>> {
 
@@ -31,9 +30,7 @@ public abstract class Publisher<E, S extends Serializer<E>> {
             if (Environment.get() == Environment.development)
                 System.out.println("[PubSub] Publishing message on channel '" + this.channel + "': '" + message + "'");
 
-            try (Jedis jedis = JedisManager.get()) {
-                jedis.publish(this.channel, message);
-            }
+            PubSubBroker.getInstance().send(this.channel, message);
 
             afterPublish(object);
         });
@@ -63,9 +60,7 @@ public abstract class Publisher<E, S extends Serializer<E>> {
                 if (Environment.get() == Environment.development)
                     System.out.println("[PubSub] Publishing message on channel '" + this.channel + "': '" + message + "'");
 
-                try (Jedis jedis = JedisManager.get()) {
-                    jedis.publish(this.channel, message);
-                }
+                PubSubBroker.getInstance().send(this.channel, message);
 
                 afterPublish(object);
             });

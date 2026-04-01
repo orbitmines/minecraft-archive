@@ -4,7 +4,7 @@ package com.orbitmines.archive.minecraft.spigot._2019.libs.spigot.pubsub.publish
  * OrbitMines - @author Fadi Shawki - 2019
  */
 
-import com.orbitmines.archive.minecraft.spigot._2019.utils.spigot.jedis.SpigotPublisher;
+import com.orbitmines.archive.minecraft.spigot._2019.utils.spigot.pubsub.SpigotPublisher;
 import lombok.AllArgsConstructor;
 
 import java.util.UUID;

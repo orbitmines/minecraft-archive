@@ -1,4 +1,4 @@
-package com.orbitmines.archive.minecraft._2019.utils.jedis;
+package com.orbitmines.archive.minecraft._2019.utils.pubsub;
 
 /*
  * ProjectX - @author Fadi Shawki - 2019

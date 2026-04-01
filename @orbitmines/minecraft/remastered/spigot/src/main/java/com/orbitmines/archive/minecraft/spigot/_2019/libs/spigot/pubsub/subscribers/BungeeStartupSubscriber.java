@@ -5,7 +5,7 @@ package com.orbitmines.archive.minecraft.spigot._2019.libs.spigot.pubsub.subscri
  */
 
 import com.orbitmines.archive.minecraft.spigot._2019.libs.spigot.OMServer;
-import com.orbitmines.archive.minecraft.spigot._2019.utils.spigot.jedis.SpigotSubscriber;
+import com.orbitmines.archive.minecraft.spigot._2019.utils.spigot.pubsub.SpigotSubscriber;
 import lombok.AllArgsConstructor;
 
 public class BungeeStartupSubscriber extends SpigotSubscriber.Simple<BungeeStartupSubscriber.Message> {

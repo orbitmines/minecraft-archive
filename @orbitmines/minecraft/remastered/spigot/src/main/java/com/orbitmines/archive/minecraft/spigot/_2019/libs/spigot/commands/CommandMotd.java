@@ -14,11 +14,10 @@ import com.orbitmines.archive.minecraft.spigot._2019.libs.spigot.commands.brigad
 import com.orbitmines.archive.minecraft.spigot._2019.libs.spigot.commands.brigadier.executors.Executor0;
 import com.orbitmines.archive.minecraft.spigot._2019.libs.spigot.commands.brigadier.executors.Executor1;
 import com.orbitmines.archive.minecraft._2019.libs.utils.Message;
-import com.orbitmines.archive.minecraft._2019.utils.jedis.JedisManager;
+import com.orbitmines.archive.minecraft._2019.utils.state.StateProvider;
 import com.orbitmines.archive.minecraft.spigot._2019.utils.spigot.builders.chat.text.TextBuilder;
 import net.md_5.bungee.api.chat.ClickEvent;
 import net.md_5.bungee.api.chat.HoverEvent;
-import redis.clients.jedis.Jedis;
 
 public class CommandMotd<S extends OMServer<S, P>, P extends OMPlayer<S, P>> extends Command<S, P> {
 
@@ -92,17 +91,13 @@ public class CommandMotd<S extends OMServer<S, P>, P extends OMPlayer<S, P>> ext
     }
 
     private void saveMotd(String motd) {
-        try (Jedis jedis = JedisManager.get()) {
-            jedis.set("motd", motd);
-        }
+        StateProvider.getInstance().setString("motd", motd);
     }
 
     private String getMotd() {
-        try (Jedis jedis = JedisManager.get()) {
-            String motd = jedis.get("motd");
+        String motd = StateProvider.getInstance().getString("motd");
 
-            return motd == null ? "" : motd;
-        }
+        return motd == null ? "" : motd;
     }
 
     private String getFirstLine(String motd) {

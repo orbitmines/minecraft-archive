@@ -41,7 +41,7 @@ import com.orbitmines.archive.minecraft._2019.utils.DateUtils;
 import com.orbitmines.archive.minecraft._2019.utils.NumberUtils;
 import com.orbitmines.archive.minecraft._2019.utils.database.DatabaseManager;
 import com.orbitmines.archive.minecraft._2019.utils.database.lib.operators.mysql.Order;
-import com.orbitmines.archive.minecraft._2019.utils.jedis.JedisManager;
+import com.orbitmines.archive.minecraft._2019.utils.state.StateProvider;
 import com.orbitmines.archive.minecraft._2019.utils.language.Language;
 import com.orbitmines.archive.minecraft.spigot._2019.utils.spigot.builders.chat.text.TextBuilder;
 import com.orbitmines.archive.minecraft.spigot._2019.utils.spigot.placeholders.SpigotPlayer;
@@ -56,8 +56,6 @@ import org.bukkit.entity.Player;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.potion.PotionEffect;
 import org.bukkit.scheduler.BukkitRunnable;
-import redis.clients.jedis.Jedis;
-import redis.clients.jedis.Pipeline;
 
 import java.util.*;
 
@@ -112,7 +110,7 @@ public abstract class OMPlayer<S extends OMServer, P extends OMPlayer<S, P>> ext
 
     @Override
     public boolean onJoin() {
-        joinToRedis();
+        joinToState();
 
         try {
             /* Make sure our database connection is available, otherwise kick the player */
@@ -174,7 +172,7 @@ public abstract class OMPlayer<S extends OMServer, P extends OMPlayer<S, P>> ext
 
     @Override
     public void afterQuitAsync() {
-        quitToRedis();
+        quitFromState();
 
         broadcastQuitMessage();
 
@@ -195,20 +193,13 @@ public abstract class OMPlayer<S extends OMServer, P extends OMPlayer<S, P>> ext
         played.insertOrUpdate(TimePlayed.column.SECONDS);
     }
 
-    private void joinToRedis() {
-        try (Jedis jedis = JedisManager.get()) {
-            Pipeline p = jedis.pipelined();
-            p.sadd("server:" + server.getType().getPluginName() + ":players", getName(Name.RAW));
-            p.hset("player:" + player.getUniqueId().toString(), "server", server.getType().toString());
-
-            p.sync();
-        }
+    private void joinToState() {
+        StateProvider.getInstance().addServerPlayer(server.getType().getPluginName(), getName(Name.RAW));
+        StateProvider.getInstance().setPlayerField(player.getUniqueId(), "server", server.getType().toString());
     }
 
-    private void quitToRedis() {
-        try (Jedis jedis = JedisManager.get()) {
-            jedis.srem("server:" + server.getType().getPluginName() + ":players", getName(Name.RAW));
-        }
+    private void quitFromState() {
+        StateProvider.getInstance().removeServerPlayer(server.getType().getPluginName(), getName(Name.RAW));
     }
 
     public void onVote(int votes) {

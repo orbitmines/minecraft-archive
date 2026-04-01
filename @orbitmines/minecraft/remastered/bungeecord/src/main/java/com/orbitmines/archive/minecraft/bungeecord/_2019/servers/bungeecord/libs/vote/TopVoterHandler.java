@@ -22,9 +22,8 @@ import com.orbitmines.archive.minecraft._2019.utils.database.MySQLDatabase;
 import com.orbitmines.archive.minecraft._2019.utils.database.lib.Selectable;
 import com.orbitmines.archive.minecraft._2019.utils.database.lib.builder.mysql.MySQLQueryBuilder;
 import com.orbitmines.archive.minecraft._2019.utils.database.lib.operators.mysql.Order;
-import com.orbitmines.archive.minecraft._2019.utils.jedis.JedisManager;
+import com.orbitmines.archive.minecraft._2019.utils.state.StateProvider;
 import net.dv8tion.jda.api.entities.channel.concrete.TextChannel;
-import redis.clients.jedis.Jedis;
 
 import java.math.BigDecimal;
 import java.time.Month;
@@ -112,9 +111,7 @@ public class TopVoterHandler {
     }
 
     private void setLastVoteMonth(String month, int year) {
-        try (Jedis jedis = JedisManager.get()) {
-            jedis.set("bungee:last_vote_month", toString(month, year));
-        }
+        StateProvider.getInstance().setString("bungee:last_vote_month", toString(month, year));
     }
 
     private void announceTopVoters(Month month, int year, boolean communityGoal, int totalVotes, int voterCount, ArrayList<MonthlyVotes> topVotes) {

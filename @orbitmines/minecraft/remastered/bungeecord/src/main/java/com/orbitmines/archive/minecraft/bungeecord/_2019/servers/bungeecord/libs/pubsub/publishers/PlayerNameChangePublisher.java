@@ -4,7 +4,7 @@ package com.orbitmines.archive.minecraft.bungeecord._2019.servers.bungeecord.lib
  * OrbitMines - @author Fadi Shawki - 2019
  */
 
-import com.orbitmines.archive.minecraft.bungeecord._2019.servers.bungeecord.utils.jedis.BungeePublisher;
+import com.orbitmines.archive.minecraft.bungeecord._2019.servers.bungeecord.utils.pubsub.BungeePublisher;
 import lombok.AllArgsConstructor;
 
 import java.util.UUID;

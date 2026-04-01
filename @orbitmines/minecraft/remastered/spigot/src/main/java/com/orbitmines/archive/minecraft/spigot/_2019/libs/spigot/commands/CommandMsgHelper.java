@@ -12,34 +12,24 @@ import com.orbitmines.archive.minecraft._2019.libs.jedis.exception.PlayerNoLonge
 import com.orbitmines.archive.minecraft._2019.libs.player.Name;
 import com.orbitmines.archive.minecraft._2019.libs.rank.StaffRank;
 import com.orbitmines.archive.minecraft.spigot._2019.libs.spigot.OMPlayer;
-import com.orbitmines.archive.minecraft._2019.utils.jedis.JedisManager;
-import redis.clients.jedis.Jedis;
-import redis.clients.jedis.Pipeline;
+import com.orbitmines.archive.minecraft._2019.utils.state.StateProvider;
 
 import java.util.UUID;
 
 public interface CommandMsgHelper {
 
     default void setLastMessage(UUID uuid, UUID uuid2) {
-        try (Jedis jedis = JedisManager.get()) {
-            Pipeline p = jedis.pipelined();
-
-            p.hset("player:" + uuid.toString(), "last_private_message", uuid2.toString());
-            p.hset("player:" + uuid2.toString(), "last_private_message", uuid.toString());
-
-            p.sync();
-        }
+        StateProvider.getInstance().setPlayerField(uuid, "last_private_message", uuid2.toString());
+        StateProvider.getInstance().setPlayerField(uuid2, "last_private_message", uuid.toString());
     }
 
     default OnlinePlayer getLastPrivateMessage(OMPlayer player) throws PlayerNoLongerOnlineException {
-        try (Jedis jedis = JedisManager.get()) {
-            String uuid = jedis.hget("player:" + player.getUUID().toString(), "last_private_message");
+        String uuid = StateProvider.getInstance().getPlayerField(player.getUUID(), "last_private_message");
 
-            if (uuid == null)
-                return null;
+        if (uuid == null)
+            return null;
 
-            return OnlinePlayer.get(UUID.fromString(uuid));
-        }
+        return OnlinePlayer.get(UUID.fromString(uuid));
     }
 
     default boolean allowedBySettings(OMPlayer player, OnlinePlayer target) {

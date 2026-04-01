@@ -25,9 +25,12 @@ import com.orbitmines.archive.minecraft._2019.utils.SkinLibrary;
 import com.orbitmines.archive.minecraft._2019.utils.database.DatabaseManager;
 import com.orbitmines.archive.minecraft._2019.utils.database.MySQLDatabase;
 import com.orbitmines.archive.minecraft._2019.utils.database.exceptions.DatabaseConnectionException;
-import com.orbitmines.archive.minecraft._2019.utils.jedis.JedisManager;
-import com.orbitmines.archive.minecraft._2019.utils.jedis.SubscriberInstance;
+import com.orbitmines.archive.minecraft._2019.utils.pubsub.PubSubBroker;
+import com.orbitmines.archive.minecraft._2019.utils.pubsub.SubscriberInstance;
+import com.orbitmines.archive.minecraft._2019.utils.state.StateProvider;
 import com.orbitmines.archive.minecraft._2019.utils.language.Language;
+import com.orbitmines.archive.minecraft.bungeecord._2019.servers.bungeecord.utils.pubsub.BungeePubSubBroker;
+import com.orbitmines.archive.minecraft.bungeecord._2019.servers.bungeecord.utils.state.BungeeStateManager;
 import com.vexsoftware.votifier.VoteHandler;
 import com.vexsoftware.votifier.VotifierPlugin;
 import com.vexsoftware.votifier.bungee.events.VotifierEvent;
@@ -69,10 +72,6 @@ import net.md_5.bungee.api.plugin.PluginManager;
 import net.md_5.bungee.config.Configuration;
 import net.md_5.bungee.config.ConfigurationProvider;
 import net.md_5.bungee.config.YamlConfiguration;
-import org.apache.commons.pool2.impl.GenericObjectPoolConfig;
-import redis.clients.jedis.*;
-import redis.clients.jedis.exceptions.JedisConnectionException;
-
 import java.io.File;
 import java.io.IOException;
 import java.net.InetAddress;
@@ -98,7 +97,8 @@ public class Bungeecord extends Plugin implements VoteHandler, VotifierPlugin {
     @Getter private ConfigHandler configHandler;
     @Getter private BungeeDiscordBot discordBot;
     @Getter private SkinLibrary skinLibrary;
-    
+    @Getter private BungeeStateManager stateManager;
+
     protected Map<UUID, BungeePlayer> players;
 
     @Override
@@ -114,17 +114,8 @@ public class Bungeecord extends Plugin implements VoteHandler, VotifierPlugin {
 
     @Override
     public void onEnable() {
-        try {
-            setupJedis();
-
-            JedisManager.checkConnection();
-
-            System.out.println("Successfully setup Redis connection.");
-        } catch(JedisConnectionException ex) {
-            System.out.println("Failed to setup Redis connection.");
-            restart("Could not connect to redis, restarting... (Caused by: " + ex.getClass().getSimpleName() + ": " + ex.getMessage() + ")");
-            return;
-        }
+        /* Setup Plugin Messaging and State */
+        setupPubSub();
 
         try {
             MySQLDatabase database = DatabaseManager.getInstance().initializeDefaultDatabase();
@@ -223,8 +214,6 @@ public class Bungeecord extends Plugin implements VoteHandler, VotifierPlugin {
             System.out.println("-------------------------------------------------------");
             return;
         }
-
-        closeJedis();
     }
 
     public void restart(String message) {
@@ -293,29 +282,23 @@ public class Bungeecord extends Plugin implements VoteHandler, VotifierPlugin {
     public void registerPlayer(BungeePlayer player) {
         this.players.put(player.getUniqueId(), player);
 
-        String key = "player:" + player.getUniqueId().toString();
-        try (Jedis jedis = JedisManager.get()) {
-            Pipeline p = jedis.pipelined();
+        Map<String, String> data = new HashMap<>();
+        data.put("name", player.getName(Name.RAW));
 
-            p.hset(key, "name", player.getName(Name.RAW));
+        if (player.hasNickName())
+            data.put("nick_name", player.getName(Name.NICK));
 
-            if (player.hasNickName())
-                p.hset(key, "nick_name", player.getName(Name.NICK));
+        data.put("staff_rank", player.getStaffRank().toString());
+        data.put("vip_rank", player.getVipRank().toString());
+        data.put("language", player.getLanguage().toString());
 
-            p.hset(key, "staff_rank", player.getStaffRank().toString());
-            p.hset(key, "vip_rank", player.getVipRank().toString());
-            p.hset(key, "language", player.getLanguage().toString());
-
-            p.sync();
-        }
+        stateManager.setPlayerData(player.getUniqueId(), data);
     }
 
     public void unregisterPlayer(BungeePlayer player) {
         this.players.remove(player.getUniqueId());
 
-        try (Jedis jedis = JedisManager.get()) {
-            jedis.del("player:" + player.getUniqueId().toString());
-        }
+        stateManager.removePlayerData(player.getUniqueId());
     }
 
     public Collection<BungeePlayer> getPlayers() {
@@ -342,33 +325,16 @@ public class Bungeecord extends Plugin implements VoteHandler, VotifierPlugin {
         }
     }
 
-    private void setupJedis() {
-        JedisPoolConfig config = new JedisPoolConfig();
-        config.setMaxTotal(Environment.get("OM_REDIS_MAX_POOL_SIZE", GenericObjectPoolConfig.DEFAULT_MAX_TOTAL));
-        config.setTestOnBorrow(Environment.get("OM_REDIS_TEST_ON_BORROW", true));
-        config.setTestOnReturn(Environment.get("OM_REDIS_TEST_ON_RETURN", true));
+    private void setupPubSub() {
+        /* Initialize state manager (in-memory state storage) */
+        stateManager = new BungeeStateManager();
+        StateProvider.initialize(stateManager);
 
-        JedisPool pool = new JedisPool(
-            config,
-            Environment.get("OM_REDIS_HOST", "redis"),
-            Environment.get("OM_REDIS_PORT", 6379),
-            Environment.get("OM_REDIS_TIMEOUT", Protocol.DEFAULT_TIMEOUT)
-        );
+        /* Initialize plugin messaging broker */
+        BungeePubSubBroker broker = new BungeePubSubBroker(this);
+        PubSubBroker.initialize(broker);
 
-        JedisManager.initialize(pool);
-
-        cleanupJedis();
-    }
-    private void cleanupJedis() {
-        try (Jedis jedis = JedisManager.get()) {
-            String[] keys = JedisManager.scanAll("player:*").toArray(new String[0]);
-
-            if (keys.length != 0)
-                jedis.del(keys);
-        }
-    }
-    private void closeJedis() {
-        JedisManager.getPool().close();
+        System.out.println("Successfully setup plugin messaging.");
     }
 
     private void setupSkinLibrary() {

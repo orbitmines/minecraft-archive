@@ -10,7 +10,7 @@ import com.orbitmines.archive.minecraft.spigot._2019.libs.spigot.database.models
 import com.orbitmines.archive.minecraft.spigot._2019.servers.survival.player.SurvivalPlayer;
 import com.orbitmines.archive.minecraft._2019.utils.DateUtils;
 import com.orbitmines.archive.minecraft._2019.utils.TimeUtils;
-import com.orbitmines.archive.minecraft._2019.utils.jedis.JedisManager;
+import com.orbitmines.archive.minecraft._2019.utils.state.StateProvider;
 import com.orbitmines.archive.minecraft._2019.utils.language.Language;
 import com.orbitmines.archive.minecraft.spigot._2019.utils.spigot.npcs.Hologram;
 import com.orbitmines.archive.minecraft.spigot._2019.utils.spigot.runnable.Interval;
@@ -26,8 +26,6 @@ import org.bukkit.boss.BarStyle;
 import org.bukkit.boss.BossBar;
 import org.bukkit.craftbukkit.libs.org.apache.commons.io.FileUtils;
 import org.bukkit.entity.Player;
-import redis.clients.jedis.Jedis;
-
 import java.io.File;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
@@ -123,20 +121,16 @@ public enum ResetTimer {
     }
 
     private Date getPlannedReset() {
-        try (Jedis jedis = JedisManager.get()) {
-            String date = jedis.get("survival:planned_reset:" + toString().toLowerCase());
+        String date = StateProvider.getInstance().getString("survival:planned_reset:" + toString().toLowerCase());
 
-            if (date == null)
-                return null;
+        if (date == null)
+            return null;
 
-            return DateUtils.parse(date, DateUtils.DATE_TIME_FORMAT);
-        }
+        return DateUtils.parse(date, DateUtils.DATE_TIME_FORMAT);
     }
 
     private void setPlannedReset(Date date) {
-        try (Jedis jedis = JedisManager.get()) {
-            jedis.set("survival:planned_reset:" + toString().toLowerCase(), DateUtils.format(date, DateUtils.DATE_TIME_FORMAT));
-        }
+        StateProvider.getInstance().setString("survival:planned_reset:" + toString().toLowerCase(), DateUtils.format(date, DateUtils.DATE_TIME_FORMAT));
     }
 
     private void reset(Survival survival) {

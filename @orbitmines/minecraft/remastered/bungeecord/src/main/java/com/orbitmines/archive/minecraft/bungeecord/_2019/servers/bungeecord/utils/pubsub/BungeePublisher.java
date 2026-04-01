@@ -1,11 +1,11 @@
-package com.orbitmines.archive.minecraft.bungeecord._2019.servers.bungeecord.utils.jedis;
+package com.orbitmines.archive.minecraft.bungeecord._2019.servers.bungeecord.utils.pubsub;
 
 /*
  * OrbitMines - @author Fadi Shawki - 2019
  */
 
 import com.orbitmines.archive.minecraft.bungeecord._2019.servers.bungeecord.libs.Bungeecord;
-import com.orbitmines.archive.minecraft._2019.utils.jedis.Publisher;
+import com.orbitmines.archive.minecraft._2019.utils.pubsub.Publisher;
 import com.orbitmines.archive.minecraft._2019.utils.serializers.Serializer;
 import net.md_5.bungee.api.plugin.Plugin;
 

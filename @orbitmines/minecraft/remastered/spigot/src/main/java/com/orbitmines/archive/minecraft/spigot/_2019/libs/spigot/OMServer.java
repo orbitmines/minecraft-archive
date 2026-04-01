@@ -27,8 +27,9 @@ import com.orbitmines.archive.minecraft._2019.utils.SkinLibrary;
 import com.orbitmines.archive.minecraft._2019.utils.database.DatabaseManager;
 import com.orbitmines.archive.minecraft._2019.utils.database.MySQLDatabase;
 import com.orbitmines.archive.minecraft._2019.utils.database.exceptions.DatabaseConnectionException;
-import com.orbitmines.archive.minecraft._2019.utils.jedis.JedisManager;
-import com.orbitmines.archive.minecraft._2019.utils.jedis.SubscriberInstance;
+import com.orbitmines.archive.minecraft._2019.utils.pubsub.PubSubBroker;
+import com.orbitmines.archive.minecraft._2019.utils.pubsub.SubscriberInstance;
+import com.orbitmines.archive.minecraft._2019.utils.state.StateProvider;
 import com.orbitmines.archive.minecraft._2019.utils.language.Language;
 import com.orbitmines.archive.minecraft._2019.utils.list.ScrollerList;
 import com.orbitmines.archive.minecraft.spigot._2019.utils.spigot.ReflectionUtils;
@@ -37,25 +38,21 @@ import com.orbitmines.archive.minecraft.spigot._2019.utils.spigot.guis.events.GU
 import com.orbitmines.archive.minecraft.spigot._2019.utils.spigot.item_handlers.events.ItemHandlerEvents;
 import com.orbitmines.archive.minecraft.spigot._2019.utils.spigot.npcs.events.NpcEvents;
 import com.orbitmines.archive.minecraft.spigot._2019.utils.spigot.placeholders.SpigotServer;
+import com.orbitmines.archive.minecraft.spigot._2019.utils.spigot.pubsub.SpigotPubSubBroker;
 import com.orbitmines.archive.minecraft.spigot._2019.utils.spigot.runnable.Interval;
 import com.orbitmines.archive.minecraft.spigot._2019.utils.spigot.runnable.TimeUnit;
+import com.orbitmines.archive.minecraft.spigot._2019.utils.spigot.state.SpigotStateCache;
 import com.orbitmines.archive.minecraft.spigot._2019.utils.spigot.worlds.WorldLoader;
 import com.orbitmines.archive.minecraft.spigot._2019.utils.spigot.worlds.maps.datapoints.DataPointHandler;
 import lombok.Getter;
 import net.dv8tion.jda.api.EmbedBuilder;
 import net.dv8tion.jda.api.OnlineStatus;
 import net.minecraft.server.v1_14_R1.MinecraftServer;
-import org.apache.commons.pool2.impl.GenericObjectPoolConfig;
 import org.bukkit.Bukkit;
 import org.bukkit.GameRule;
 import org.bukkit.Location;
 import org.bukkit.World;
 import org.bukkit.plugin.IllegalPluginAccessException;
-import redis.clients.jedis.Jedis;
-import redis.clients.jedis.JedisPool;
-import redis.clients.jedis.JedisPoolConfig;
-import redis.clients.jedis.Protocol;
-import redis.clients.jedis.exceptions.JedisConnectionException;
 
 public abstract class OMServer<S extends OMServer<S, P>, P extends OMPlayer<S, P>> extends SpigotServer<P> {
 
@@ -137,17 +134,8 @@ public abstract class OMServer<S extends OMServer<S, P>, P extends OMPlayer<S, P
         if (restarting)
             return;
 
-        /* Setup Jedis, and set server to restarting so players know it's starting */
-        try {
-            setupJedis();
-
-            JedisManager.checkConnection();
-
-            System.out.println("Successfully setup Redis connection.");
-        } catch(JedisConnectionException ex) {
-            restart("Could not connect to redis, restarting... (Caused by: " + ex.getClass().getSimpleName() + ": " + ex.getMessage() + ")", true);
-            return;
-        }
+        /* Setup Plugin Messaging and State */
+        setupPubSub();
 
         try {
             MySQLDatabase database = DatabaseManager.getInstance().initializeDefaultDatabase();
@@ -318,7 +306,6 @@ public abstract class OMServer<S extends OMServer<S, P>, P extends OMPlayer<S, P
         builder.setColor(Color.RED.getAwtColor());
         getDiscordBot().getTextChannel().sendMessage(builder.build()).queue();
 
-//        closeJedis();
     }
 
     public void restart(String message, boolean fallBackToServer) {
@@ -563,31 +550,22 @@ public abstract class OMServer<S extends OMServer<S, P>, P extends OMPlayer<S, P
         }
     }
 
-    private void setupJedis() {
-        JedisPoolConfig config = new JedisPoolConfig();
-        config.setMaxTotal(Environment.get("OM_REDIS_MAX_POOL_SIZE", GenericObjectPoolConfig.DEFAULT_MAX_TOTAL));
-        config.setTestOnBorrow(Environment.get("OM_REDIS_TEST_ON_BORROW", true));
-        config.setTestOnReturn(Environment.get("OM_REDIS_TEST_ON_RETURN", true));
+    private void setupPubSub() {
+        /* Initialize state cache */
+        SpigotStateCache stateCache = new SpigotStateCache();
+        StateProvider.initialize(stateCache);
 
-        JedisPool pool = new JedisPool(
-                config,
-                Environment.get("OM_REDIS_HOST", "redis"),
-                Environment.get("OM_REDIS_PORT", 6379),
-                Environment.get("OM_REDIS_TIMEOUT", Protocol.DEFAULT_TIMEOUT)
-        );
+        /* Initialize plugin messaging broker */
+        SpigotPubSubBroker broker = new SpigotPubSubBroker(this);
+        PubSubBroker.initialize(broker);
 
-        JedisManager.initialize(pool);
+        /* Register state sync handler to receive state updates from BungeeCord */
+        stateCache.registerStateSyncHandler();
 
-        cleanupJedis();
-    }
-    private void closeJedis() {
-        JedisManager.getPool().close();
-    }
+        /* Clear local server player data */
+        stateCache.clearServerPlayers(getType().getPluginName());
 
-    private void cleanupJedis() {
-        try (Jedis jedis = JedisManager.get()) {
-            jedis.del("server:" + getType().getPluginName() + ":players");
-        }
+        System.out.println("Successfully setup plugin messaging.");
     }
 
     private void setupSkinLibrary() {

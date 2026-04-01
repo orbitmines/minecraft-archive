@@ -6,7 +6,7 @@ package com.orbitmines.archive.minecraft.bungeecord._2019.servers.bungeecord.lib
 
 import com.orbitmines.archive.minecraft.bungeecord._2019.servers.bungeecord.libs.BungeePlayer;
 import com.orbitmines.archive.minecraft.bungeecord._2019.servers.bungeecord.libs.Bungeecord;
-import com.orbitmines.archive.minecraft.bungeecord._2019.servers.bungeecord.utils.jedis.BungeeSubscriber;
+import com.orbitmines.archive.minecraft.bungeecord._2019.servers.bungeecord.utils.pubsub.BungeeSubscriber;
 import lombok.AllArgsConstructor;
 import net.md_5.bungee.api.chat.TextComponent;
 

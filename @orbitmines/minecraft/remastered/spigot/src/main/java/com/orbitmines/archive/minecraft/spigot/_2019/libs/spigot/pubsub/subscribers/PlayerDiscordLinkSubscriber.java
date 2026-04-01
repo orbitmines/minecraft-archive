@@ -8,7 +8,7 @@ import com.orbitmines.archive.minecraft.spigot._2019.libs.spigot.OMPlayer;
 import com.orbitmines.archive.minecraft.spigot._2019.libs.spigot.OMServer;
 import com.orbitmines.archive.minecraft.spigot._2019.libs.spigot.achievements.EmptyAchievementHandler;
 import com.orbitmines.archive.minecraft.spigot._2019.libs.spigot.achievements.servers.HubAchievement;
-import com.orbitmines.archive.minecraft.spigot._2019.utils.spigot.jedis.SpigotSubscriber;
+import com.orbitmines.archive.minecraft.spigot._2019.utils.spigot.pubsub.SpigotSubscriber;
 import lombok.AllArgsConstructor;
 
 import java.util.UUID;

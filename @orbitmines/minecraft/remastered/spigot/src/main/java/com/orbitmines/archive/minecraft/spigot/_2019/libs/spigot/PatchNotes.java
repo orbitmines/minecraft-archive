@@ -9,15 +9,13 @@ import com.orbitmines.archive.minecraft._2019.libs.Image;
 import com.orbitmines.archive.minecraft._2019.libs.Server;
 import com.orbitmines.archive.minecraft._2019.libs.discord.CustomChannel;
 import com.orbitmines.archive.minecraft._2019.utils.DateUtils;
-import com.orbitmines.archive.minecraft._2019.utils.jedis.JedisManager;
+import com.orbitmines.archive.minecraft._2019.utils.state.StateProvider;
 import com.orbitmines.archive.minecraft.spigot._2019.utils.spigot.builders.chat.text.TextBuilder;
 import com.orbitmines.archive.minecraft.spigot._2019.utils.spigot.builders.item.WrittenBookBuilder;
 import net.dv8tion.jda.api.EmbedBuilder;
 import net.dv8tion.jda.api.entities.channel.concrete.TextChannel;
 import net.md_5.bungee.api.chat.ClickEvent;
 import net.md_5.bungee.api.chat.HoverEvent;
-import redis.clients.jedis.Jedis;
-
 import java.io.File;
 import java.util.*;
 import java.util.concurrent.TimeUnit;
@@ -783,7 +781,7 @@ public class PatchNotes {
 
         String version = getVersion(server);
         if (version == null) {
-            new NullPointerException("Could not get " + "server:" + server.getPluginName() + ":version" + " from redis, aborting patch notes check").printStackTrace();
+            new NullPointerException("Could not get " + "server:" + server.getPluginName() + ":version" + " from state, aborting patch notes check").printStackTrace();
             return;
         }
 
@@ -796,15 +794,11 @@ public class PatchNotes {
     }
 
     private String getVersion(Server server) {
-        try (Jedis jedis = JedisManager.get()) {
-            return jedis.get("server:" + server.getPluginName() + ":version");
-        }
+        return StateProvider.getInstance().getString("server:" + server.getPluginName() + ":version");
     }
 
     private void setVersion(String version) {
-        try (Jedis jedis = JedisManager.get()) {
-            jedis.set("server:" + server.getPluginName() + ":version", version);
-        }
+        StateProvider.getInstance().setString("server:" + server.getPluginName() + ":version", version);
     }
 
     public void open(OMPlayer omp, Server server, String version) {

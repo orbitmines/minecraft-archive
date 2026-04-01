@@ -17,13 +17,10 @@ import com.orbitmines.archive.minecraft._2019.libs.rank.Rank;
 import com.orbitmines.archive.minecraft._2019.libs.rank.StaffRank;
 import com.orbitmines.archive.minecraft._2019.libs.rank.VipRank;
 import com.orbitmines.archive.minecraft._2019.libs.utils.Message;
-import com.orbitmines.archive.minecraft._2019.utils.jedis.JedisManager;
+import com.orbitmines.archive.minecraft._2019.utils.state.StateProvider;
 import com.orbitmines.archive.minecraft._2019.utils.language.Language;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
-import redis.clients.jedis.Jedis;
-import redis.clients.jedis.Pipeline;
-import redis.clients.jedis.Response;
 
 import java.util.*;
 
@@ -45,14 +42,12 @@ public class OnlinePlayer implements PlayerInstance, Languageable {
     }
 
     public void update() throws PlayerNoLongerOnlineException {
-        try (Jedis jedis = JedisManager.get()) {
-            Map<String, String> map = jedis.hgetAll("player:" + this.uuid.toString());
+        Map<String, String> map = StateProvider.getInstance().getPlayerData(this.uuid);
 
-            if (map == null || !map.containsKey("server") || !map.containsKey("name"))
-                throw new PlayerNoLongerOnlineException();
+        if (map == null || !map.containsKey("server") || !map.containsKey("name"))
+            throw new PlayerNoLongerOnlineException();
 
-            update(map);
-        }
+        update(map);
     }
 
     private void update(Map<String, String> map) {
@@ -170,14 +165,12 @@ public class OnlinePlayer implements PlayerInstance, Languageable {
     }
 
     public static OnlinePlayer get(UUID uuid) {
-        try (Jedis jedis = JedisManager.get()) {
-            Map<String, String> map = jedis.hgetAll("player:" + uuid.toString());
+        Map<String, String> map = StateProvider.getInstance().getPlayerData(uuid);
 
-            if (map == null || !map.containsKey("server"))
-                return null;
+        if (map == null || !map.containsKey("server"))
+            return null;
 
-            return new OnlinePlayer(uuid, map);
-        }
+        return new OnlinePlayer(uuid, map);
     }
 
     public static Map<Server, List<OnlinePlayer>> getAllByServer(PlayerInstance playerInstance) {
@@ -201,91 +194,75 @@ public class OnlinePlayer implements PlayerInstance, Languageable {
     }
 
     public static List<OnlinePlayer> getAll(PlayerInstance player, Integer limit) {
-        Set<String> keys = JedisManager.scanAll("player:*", limit);
+        StateProvider state = StateProvider.getInstance();
+        Set<UUID> uuids = state.getAllPlayerUUIDs();
 
-        Map<UUID, Response<Map<String, String>>> response = new HashMap<>();
-
-        try (Jedis jedis = JedisManager.get()) {
-            Pipeline pipeline = jedis.pipelined();
-
-            for (String key : keys) {
-                UUID uuid = UUID.fromString(key.split(":")[1]);
-
-                response.put(uuid, pipeline.hgetAll("player:" + uuid.toString()));
+        if (limit != null && uuids.size() > limit) {
+            Set<UUID> limited = new HashSet<>();
+            int count = 0;
+            for (UUID uuid : uuids) {
+                limited.add(uuid);
+                if (++count >= limit) break;
             }
-
-            pipeline.sync();
+            uuids = limited;
         }
+
+        Map<UUID, Map<String, String>> response = state.getPlayerDataBatch(uuids);
 
         return fromResponse(player, response);
     }
 
     public static Map<Friend, OnlinePlayer> getFromFriendList(List<Friend> friends) {
-        Map<Friend, Response<Map<String, String>>> response = new HashMap<>();
-
-        /* Get Player server status from Redis through Pipeline */
-        try (Jedis jedis = JedisManager.get()) {
-            Pipeline pipeline = jedis.pipelined();
-
-            for (Friend friend : friends) {
-                response.put(friend, pipeline.hgetAll("player:" + friend.getFriendUuid().toString()));
-            }
-
-            pipeline.sync();
+        List<UUID> uuids = new ArrayList<>();
+        Map<UUID, Friend> friendMap = new HashMap<>();
+        for (Friend friend : friends) {
+            uuids.add(friend.getFriendUuid());
+            friendMap.put(friend.getFriendUuid(), friend);
         }
 
-        Map<Friend, OnlinePlayer> players = new HashMap<>();
+        Map<UUID, Map<String, String>> response = StateProvider.getInstance().getPlayerDataBatch(uuids);
 
-        for (Friend friend : response.keySet()) {
-            Map<String, String> map = response.get(friend).get();
+        Map<Friend, OnlinePlayer> players = new HashMap<>();
+        for (Map.Entry<UUID, Map<String, String>> entry : response.entrySet()) {
+            Map<String, String> map = entry.getValue();
 
             if (map == null || !map.containsKey("server") || !map.containsKey("name"))
                 continue;
 
-            players.put(friend, new OnlinePlayer(friend.getFriendUuid(), map));
+            Friend friend = friendMap.get(entry.getKey());
+            if (friend != null)
+                players.put(friend, new OnlinePlayer(entry.getKey(), map));
         }
 
         return players;
     }
 
     public static Map<UUID, OnlinePlayer> getFromUUIDList(List<UUID> friends) {
-        Map<UUID, Response<Map<String, String>>> response = new HashMap<>();
-
-        /* Get Player server status from Redis through Pipeline */
-        try (Jedis jedis = JedisManager.get()) {
-            Pipeline pipeline = jedis.pipelined();
-
-            for (UUID uuid : friends) {
-                response.put(uuid, pipeline.hgetAll("player:" + uuid.toString()));
-            }
-
-            pipeline.sync();
-        }
+        Map<UUID, Map<String, String>> response = StateProvider.getInstance().getPlayerDataBatch(friends);
 
         Map<UUID, OnlinePlayer> players = new HashMap<>();
-
-        for (UUID uuid : response.keySet()) {
-            Map<String, String> map = response.get(uuid).get();
+        for (Map.Entry<UUID, Map<String, String>> entry : response.entrySet()) {
+            Map<String, String> map = entry.getValue();
 
             if (map == null || !map.containsKey("server") || !map.containsKey("name"))
                 continue;
 
-            players.put(uuid, new OnlinePlayer(uuid, map));
+            players.put(entry.getKey(), new OnlinePlayer(entry.getKey(), map));
         }
 
         return players;
     }
 
-    private static List<OnlinePlayer> fromResponse(PlayerInstance player, Map<UUID, Response<Map<String, String>>> response) {
+    private static List<OnlinePlayer> fromResponse(PlayerInstance player, Map<UUID, Map<String, String>> response) {
         List<OnlinePlayer> players = new ArrayList<>();
 
-        for (UUID uuid : response.keySet()) {
-            Map<String, String> map = response.get(uuid).get();
+        for (Map.Entry<UUID, Map<String, String>> entry : response.entrySet()) {
+            Map<String, String> map = entry.getValue();
 
             if (map == null || !map.containsKey("server") || !map.containsKey("name"))
                 continue;
 
-            players.add(new OnlinePlayer(uuid, map));
+            players.add(new OnlinePlayer(entry.getKey(), map));
         }
 
         if (player == null)

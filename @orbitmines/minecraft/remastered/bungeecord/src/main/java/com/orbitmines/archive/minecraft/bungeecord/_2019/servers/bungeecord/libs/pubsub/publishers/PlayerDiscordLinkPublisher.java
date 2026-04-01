@@ -5,7 +5,7 @@ package com.orbitmines.archive.minecraft.bungeecord._2019.servers.bungeecord.lib
  */
 
 import com.orbitmines.archive.minecraft._2019.libs.database.models.discord.DiscordUser;
-import com.orbitmines.archive.minecraft.bungeecord._2019.servers.bungeecord.utils.jedis.BungeePublisher;
+import com.orbitmines.archive.minecraft.bungeecord._2019.servers.bungeecord.utils.pubsub.BungeePublisher;
 import lombok.AllArgsConstructor;
 
 public class PlayerDiscordLinkPublisher extends BungeePublisher.Simple<PlayerDiscordLinkPublisher.Message> {

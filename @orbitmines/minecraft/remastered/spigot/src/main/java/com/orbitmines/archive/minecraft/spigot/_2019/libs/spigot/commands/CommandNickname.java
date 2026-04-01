@@ -15,8 +15,9 @@ import com.orbitmines.archive.minecraft.spigot._2019.libs.spigot.commands.brigad
 import com.orbitmines.archive.minecraft.spigot._2019.libs.spigot.commands.brigadier.executors.Executor0;
 import com.orbitmines.archive.minecraft.spigot._2019.libs.spigot.commands.brigadier.executors.Executor1;
 import com.orbitmines.archive.minecraft.spigot._2019.libs.spigot.pubsub.publishers.PlayerNicknameChangePublisher;
-import com.orbitmines.archive.minecraft._2019.utils.jedis.JedisManager;
-import redis.clients.jedis.Jedis;
+import com.orbitmines.archive.minecraft._2019.utils.state.StateProvider;
+
+import java.util.Map;
 
 public class CommandNickname<S extends OMServer<S, P>, P extends OMPlayer<S, P>> extends Command<S, P> {
 
@@ -61,9 +62,7 @@ public class CommandNickname<S extends OMServer<S, P>, P extends OMPlayer<S, P>>
         );
 
         /* Update Online Player */
-        try (Jedis jedis = JedisManager.get()) {
-            jedis.hset("player:" + player.getUUID().toString(), "nick_name", nickName);
-        }
+        StateProvider.getInstance().setPlayerField(player.getUUID(), "nick_name", nickName);
     }
 
     private void clearNickName(P player) {
@@ -78,8 +77,10 @@ public class CommandNickname<S extends OMServer<S, P>, P extends OMPlayer<S, P>>
         );
 
         /* Update Online Player */
-        try (Jedis jedis = JedisManager.get()) {
-            jedis.hdel("player:" + player.getUUID().toString(), "nick_name");
+        Map<String, String> data = StateProvider.getInstance().getPlayerData(player.getUUID());
+        if (data != null) {
+            data.remove("nick_name");
+            StateProvider.getInstance().setPlayerData(player.getUUID(), data);
         }
     }
 }

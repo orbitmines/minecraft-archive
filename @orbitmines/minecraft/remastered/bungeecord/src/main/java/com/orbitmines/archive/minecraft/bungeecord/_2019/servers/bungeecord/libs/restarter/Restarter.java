@@ -15,11 +15,10 @@ import com.orbitmines.archive.minecraft.bungeecord._2019.servers.bungeecord.util
 import com.orbitmines.archive.minecraft.bungeecord._2019.servers.bungeecord.utils.runnable.TimeUnit;
 import com.orbitmines.archive.minecraft._2019.utils.DateUtils;
 import com.orbitmines.archive.minecraft._2019.utils.TimeUtils;
-import com.orbitmines.archive.minecraft._2019.utils.jedis.JedisManager;
 import com.orbitmines.archive.minecraft._2019.utils.language.Language;
+import com.orbitmines.archive.minecraft._2019.utils.state.StateProvider;
 import net.md_5.bungee.api.chat.TextComponent;
 import net.md_5.bungee.api.connection.ProxiedPlayer;
-import redis.clients.jedis.Jedis;
 
 @Deprecated /* Move Top Vote Handler logic elsewhere, and add language support */
 public class Restarter extends BungeeRunnable {
@@ -44,7 +43,7 @@ public class Restarter extends BungeeRunnable {
         String month = getLastVoteMonth();
 
         if (month == null) {
-            new NullPointerException("Could not get bungee:last_vote_month from redis, aborting top voter check").printStackTrace();
+            new NullPointerException("Could not get bungee:last_vote_month, aborting top voter check").printStackTrace();
             return;
         }
 
@@ -68,9 +67,7 @@ public class Restarter extends BungeeRunnable {
     }
 
     private String getLastVoteMonth() {
-        try (Jedis jedis = JedisManager.get()) {
-            return jedis.get("bungee:last_vote_month");
-        }
+        return StateProvider.getInstance().getString("bungee:last_vote_month");
     }
 
     private void initiateRestart() {

@@ -6,7 +6,7 @@ package com.orbitmines.archive.minecraft.spigot._2019.libs.spigot.pubsub.publish
 
 import com.orbitmines.archive.minecraft._2019.libs.rank.VipRank;
 import com.orbitmines.archive.minecraft.spigot._2019.libs.spigot.OMPlayer;
-import com.orbitmines.archive.minecraft.spigot._2019.utils.spigot.jedis.SpigotPublisher;
+import com.orbitmines.archive.minecraft.spigot._2019.utils.spigot.pubsub.SpigotPublisher;
 import lombok.AllArgsConstructor;
 
 public class PlayerVipGainedPublisher extends SpigotPublisher.Simple<PlayerVipGainedPublisher.Message> {

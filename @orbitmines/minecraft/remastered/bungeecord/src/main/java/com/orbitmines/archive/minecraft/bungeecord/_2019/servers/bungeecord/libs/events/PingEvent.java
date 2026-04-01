@@ -6,13 +6,12 @@ package com.orbitmines.archive.minecraft.bungeecord._2019.servers.bungeecord.lib
 
 import com.orbitmines.archive.minecraft._2019.libs.Color;
 import com.orbitmines.archive.minecraft._2019.libs.Environment;
-import com.orbitmines.archive.minecraft._2019.utils.jedis.JedisManager;
+import com.orbitmines.archive.minecraft._2019.utils.state.StateProvider;
 import net.md_5.bungee.api.ServerPing;
 import net.md_5.bungee.api.chat.TextComponent;
 import net.md_5.bungee.api.event.ProxyPingEvent;
 import net.md_5.bungee.api.plugin.Listener;
 import net.md_5.bungee.event.EventHandler;
-import redis.clients.jedis.Jedis;
 
 public class PingEvent implements Listener {
 
@@ -24,12 +23,10 @@ public class PingEvent implements Listener {
     }
 
     private String getMotd() {
-        try (Jedis jedis = JedisManager.get()) {
-            String motd = jedis.get("motd");
+        String motd = StateProvider.getInstance().getString("motd");
 
-            if (motd != null)
-                return Color.translateAlternateColorCodes('&', motd);
-        }
+        if (motd != null)
+            return Color.translateAlternateColorCodes('&', motd);
 
         /* Fallback motd */
         return "§8§lOrbit§7§lMines §8- §71.14.1\n§7In a galaxy far, far away.";
