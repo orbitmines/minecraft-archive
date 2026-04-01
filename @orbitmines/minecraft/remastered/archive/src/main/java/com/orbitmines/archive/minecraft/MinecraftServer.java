@@ -1,5 +1,6 @@
 package com.orbitmines.archive.minecraft;
 
+import com.orbitmines.archive.minecraft._2019.libs.Server;
 import lombok.Getter;
 import org.apache.commons.configuration.ConfigurationException;
 import org.apache.commons.configuration.PropertiesConfiguration;
@@ -12,7 +13,7 @@ public class MinecraftServer {
 
     static String PARENT_DIR = "./../..";
 
-    @Getter private String name;
+    @Getter private final Server type;
     @Getter private Thread thread;
     @Getter private Process process;
     @Getter private boolean running;
@@ -21,10 +22,11 @@ public class MinecraftServer {
     @Getter String version;
     @Getter int port;
 
+    public String getName() { return type.getPluginName(); }
     public String getIp() { return "127.0.0.1"; }
 
-    public MinecraftServer(String name, String version, String RAM, int port) {
-        this.name = name;
+    public MinecraftServer(Server type, String version, String RAM, int port) {
+        this.type = type;
         this.version = version;
         this.RAM = RAM;
         this.port = port;
@@ -45,7 +47,7 @@ public class MinecraftServer {
             this.process = Runtime.getRuntime().exec(
 // 1.8 - 1.13
 //                    "java -Xms" + this.RAM + " -Xmx" + this.RAM + " -XX:+UseG1GC -XX:+UnlockExperimentalVMOptions -XX:MaxGCPauseMillis=100 -XX:+DisableExplicitGC -XX:TargetSurvivorRatio=90 -XX:G1NewSizePercent=50 -XX:G1MaxNewSizePercent=80 -XX:InitiatingHeapOccupancyPercent=10 -XX:G1MixedGCLiveThresholdPercent=35 -XX:+AggressiveOpts -XX:+AlwaysPreTouch -XX:+ParallelRefProcEnabled -Dusing.aikars.flags=mcflags.emc.gs -Dfile.encoding=UTF-8 -Djline.terminal=jline.UnsupportedTerminal -jar server.jar",
-                    "java -Xms" + this.RAM + " -Xmx" + this.RAM + " -XX:+UseG1GC -XX:+UnlockExperimentalVMOptions -XX:MaxGCPauseMillis=100 -XX:+DisableExplicitGC -XX:TargetSurvivorRatio=90 -XX:G1NewSizePercent=50 -XX:G1MaxNewSizePercent=80 -XX:InitiatingHeapOccupancyPercent=10 -XX:G1MixedGCLiveThresholdPercent=35 -XX:+AlwaysPreTouch -XX:+ParallelRefProcEnabled -Dusing.aikars.flags=mcflags.emc.gs -Dfile.encoding=UTF-8 -Djline.terminal=jline.UnsupportedTerminal -jar server.jar nogui",
+                    "java -Xms" + this.RAM + " -Xmx" + this.RAM + " -XX:+UseG1GC -XX:+UnlockExperimentalVMOptions -XX:MaxGCPauseMillis=100 -XX:+DisableExplicitGC -XX:TargetSurvivorRatio=90 -XX:G1NewSizePercent=50 -XX:G1MaxNewSizePercent=80 -XX:InitiatingHeapOccupancyPercent=10 -XX:G1MixedGCLiveThresholdPercent=35 -XX:+AlwaysPreTouch -XX:+ParallelRefProcEnabled -Dusing.aikars.flags=mcflags.emc.gs -Dfile.encoding=UTF-8 -Djline.terminal=jline.UnsupportedTerminal -DOM_SERVER_TYPE=" + type.name() + " -jar server.jar nogui",
                     null,
                     this.getDirectory()
             );
@@ -55,11 +57,11 @@ public class MinecraftServer {
 
             String s;
             while ((s = input.readLine()) != null) {
-                System.out.print("[\033[1;32m" + this.name + "\033[0m] " + s);
+                System.out.print("[\033[1;32m" + getName() + "\033[0m] " + s);
                 System.out.flush();
             }
             while ((s = error.readLine()) != null) {
-                System.out.print("[\033[1;31m" + this.name + "\033[0m] " + s);
+                System.out.print("[\033[1;31m" + getName() + "\033[0m] " + s);
                 System.out.flush();
             }
         } catch (IOException | ConfigurationException e) {
@@ -142,7 +144,7 @@ public class MinecraftServer {
         );
     }
 
-    public File getDirectory() { return new File(PARENT_DIR + "/servers/" + this.name); }
+    public File getDirectory() { return new File(PARENT_DIR + "/servers/" + getName()); }
     public File getPluginDirectory() { return new File(getDirectory().getPath() + "/plugins"); }
 
     public File getServerJar() {

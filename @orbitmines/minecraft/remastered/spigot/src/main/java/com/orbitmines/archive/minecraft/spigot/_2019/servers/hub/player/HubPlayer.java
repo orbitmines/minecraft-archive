@@ -45,7 +45,7 @@ public class HubPlayer extends OMPlayer<Hub, HubPlayer> implements PlayerVisibil
                 else
                     sendMessage("Server", Color.BLUE, "hub", "player.welcome_back", getName(Name.RAW_COLORED) + "§7", "§3§lEnder Pearl§7");
             }
-        }.runTaskLaterAsynchronously(server, 20);
+        }.runTaskLaterAsynchronously(server.getPlugin(), 20);
 
         server.runSync(() -> {
             if (isFirstLogin())

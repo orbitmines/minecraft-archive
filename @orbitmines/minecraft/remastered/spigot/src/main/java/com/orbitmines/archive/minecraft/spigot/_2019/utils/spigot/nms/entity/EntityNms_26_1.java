@@ -28,7 +28,7 @@ public class EntityNms_26_1 implements EntityNms {
     private static JavaPlugin plugin;
 
     static {
-        plugin = SpigotServer.getInstance();
+        plugin = SpigotServer.getInstance().getPlugin();
     }
 
     @Override

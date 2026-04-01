@@ -99,7 +99,7 @@ public class FlyEvent implements Listener {
                     public void run() {
                         FlyEvent.this.noFall.remove(player);
                     }
-                }.runTaskLater(survival, 150));
+                }.runTaskLater(survival.getPlugin(), 150));
             }
 
             @Override

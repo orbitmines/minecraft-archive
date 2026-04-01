@@ -12,14 +12,14 @@ public class ConsoleUtils {
     }
 
     public static void msg(String msg) {
-        ProxyServer.getInstance().getConsole().sendMessage("[bungeecord] " + msg);
+        ProxyServer.getInstance().getLogger().info("[bungeecord] " + msg);
     }
 
     public static void warn(String msg) {
-        ProxyServer.getInstance().getConsole().sendMessage("[bungeecord] §c" + msg);
+        ProxyServer.getInstance().getLogger().warning("[bungeecord] " + msg);
     }
 
     public static void succes(String msg) {
-        ProxyServer.getInstance().getConsole().sendMessage("[bungeecord] §a" + msg);
+        ProxyServer.getInstance().getLogger().info("[bungeecord] " + msg);
     }
 }

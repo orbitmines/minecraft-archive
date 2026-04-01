@@ -66,7 +66,7 @@ public class AdvancementMessage<P extends SpigotPlayer> {
                 revoke(id, player);
                 Bukkit.getUnsafe().removeAdvancement(id);
             }
-        }.runTaskLater(server, 100);
+        }.runTaskLater(server.getPlugin(), 100);
     }
 
     public void send(P... players) {
@@ -82,7 +82,7 @@ public class AdvancementMessage<P extends SpigotPlayer> {
     }
 
     private NamespacedKey nextId() {
-        NamespacedKey id = new NamespacedKey(server, "msd-" + 3 + String.format("%09d", NEXT_ID));
+        NamespacedKey id = new NamespacedKey(server.getPlugin(), "msd-" + 3 + String.format("%09d", NEXT_ID));
         NEXT_ID++;
 
         return id;

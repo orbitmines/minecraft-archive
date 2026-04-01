@@ -62,6 +62,6 @@ public class DeathEvent implements Listener {
                 server.getLobbyKit().copyToInventory(player);
                 player.getInventory().setHeldItemSlot(4);
             }
-        }.runTaskLater(server, 1);
+        }.runTaskLater(server.getPlugin(), 1);
     }
 }

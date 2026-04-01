@@ -4,20 +4,21 @@ package com.orbitmines.archive.minecraft.spigot._2019.utils.spigot.runnable;
  * OrbitMines - @author Fadi Shawki - 2019
  */
 
+import com.orbitmines.archive.minecraft.spigot._2019.utils.spigot.placeholders.SpigotServer;
 import lombok.Getter;
-import org.bukkit.plugin.java.JavaPlugin;
+import org.bukkit.Bukkit;
 import org.bukkit.scheduler.BukkitScheduler;
 import org.bukkit.scheduler.BukkitTask;
 
-public abstract class SpigotRunnable<Plugin extends JavaPlugin> implements Runnable {
+public abstract class SpigotRunnable<S extends SpigotServer> implements Runnable {
 
-    protected Plugin plugin;
+    protected S server;
     @Getter protected Interval interval;
     @Getter protected BukkitTask task;
     @Getter protected boolean async;
 
-    public SpigotRunnable(Plugin plugin, Interval interval) {
-        this.plugin = plugin;
+    public SpigotRunnable(S server, Interval interval) {
+        this.server = server;
         this.interval = interval;
     }
 
@@ -36,22 +37,22 @@ public abstract class SpigotRunnable<Plugin extends JavaPlugin> implements Runna
     }
 
     public SpigotRunnable start(Interval delay) {
-        BukkitScheduler scheduler = plugin.getServer().getScheduler();
+        BukkitScheduler scheduler = Bukkit.getScheduler();
 
         if (async)
-            this.task = scheduler.runTaskTimerAsynchronously(plugin, this, delay.toTicks(), this.interval.toTicks());
+            this.task = scheduler.runTaskTimerAsynchronously(server.getPlugin(), this, delay.toTicks(), this.interval.toTicks());
         else
-            this.task = scheduler.runTaskTimer(plugin, this, delay.toTicks(), this.interval.toTicks());
+            this.task = scheduler.runTaskTimer(server.getPlugin(), this, delay.toTicks(), this.interval.toTicks());
 
         return this;
     }
 
     public void runSync(Runnable runnable) {
-        plugin.getServer().getScheduler().scheduleSyncDelayedTask(plugin, runnable);
+        Bukkit.getScheduler().scheduleSyncDelayedTask(server.getPlugin(), runnable);
     }
 
     public void runSync(Runnable runnable, long delay) {
-        plugin.getServer().getScheduler().scheduleSyncDelayedTask(plugin, runnable, delay);
+        Bukkit.getScheduler().scheduleSyncDelayedTask(server.getPlugin(), runnable, delay);
     }
 
     public void cancel() {

@@ -198,7 +198,7 @@ public class CommandInvSee<S extends OMServer<S, P>, P extends OMPlayer<S, P>> e
                     processSlotUpdate(slot);
                     onSlotUpdate(slot);
                 }
-            }.runTaskLater(viewer.server(), 0);
+            }.runTaskLater(viewer.server().getPlugin(), 0);
         }
 
         private void updateSlots(Collection<Integer> slots) {
@@ -210,7 +210,7 @@ public class CommandInvSee<S extends OMServer<S, P>, P extends OMPlayer<S, P>> e
                         onSlotUpdate(slot);
                     }
                 }
-            }.runTaskLater(viewer.server(), 0);
+            }.runTaskLater(viewer.server().getPlugin(), 0);
         }
 
         private void processSlotUpdate(int slot) {

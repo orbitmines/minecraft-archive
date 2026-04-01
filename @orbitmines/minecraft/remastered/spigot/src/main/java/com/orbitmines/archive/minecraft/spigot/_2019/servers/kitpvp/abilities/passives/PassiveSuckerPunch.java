@@ -42,7 +42,7 @@ public class PassiveSuckerPunch implements Passive.Handler<EntityDamageByEntityE
                     item.addEnchantment(Enchantment.KNOCKBACK, enchLevel);
                     equipment.setItemInMainHand(item);
                 }
-            }.runTaskLater(passiveEvent.server(), 1);
+            }.runTaskLater(passiveEvent.server().getPlugin(), 1);
         }
 
         /* Knockback gets applied */

@@ -32,12 +32,17 @@ import com.orbitmines.archive.minecraft.spigot._2019.utils.spigot.worlds.maps.da
 import lombok.Getter;
 import org.bukkit.Location;
 import org.bukkit.entity.Player;
+import org.bukkit.plugin.java.JavaPlugin;
 
 import java.util.List;
 import java.util.Map;
 import java.util.UUID;
 
 public class Hub extends OMServer<Hub, HubPlayer> {
+
+    public Hub(JavaPlugin plugin) {
+        super(plugin);
+    }
 
     @Getter private HubKit kit;
     @Getter private NewPlayerKit newPlayerKit;
@@ -57,7 +62,7 @@ public class Hub extends OMServer<Hub, HubPlayer> {
         this.kit = new HubKit(this);
         this.newPlayerKit = new NewPlayerKit(this);
 
-        Prevention.prevent(this, getLobby().getWorld(),
+        Prevention.prevent(plugin, getLobby().getWorld(),
             Prevention.BLOCK_BREAK,
             Prevention.BLOCK_INTERACTING,
             Prevention.BLOCK_PLACE,

@@ -26,7 +26,7 @@ public class WorldAdvancementsFix implements Listener {
 
     private void hideAdvancementsFor(World world) {
         world.setGameRule(GameRule.SHOW_ADVANCEMENT_MESSAGES, false);
-        server.getLogger().info("Achievements are now hidden for world '" + world.getName() + "'.");
+        Bukkit.getLogger().info("Achievements are now hidden for world '" + world.getName() + "'.");
     }
 
     @EventHandler

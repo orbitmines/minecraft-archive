@@ -1,5 +1,6 @@
 package com.orbitmines.archive.minecraft.spigot._2019.utils.spigot.nms;
 
+import org.bukkit.Bukkit;
 import com.orbitmines.archive.minecraft.spigot._2019.utils.spigot.ConsoleUtils;
 import com.orbitmines.archive.minecraft.spigot._2019.utils.spigot.nms.actionbar.ActionBarNms;
 import com.orbitmines.archive.minecraft.spigot._2019.utils.spigot.nms.actionbar.ActionBarNms_26_1;
@@ -332,7 +333,7 @@ public class Nms {
             ConsoleUtils.warn("Error while registering NMS!");
             ConsoleUtils.warn("Disabling plugin...");
             ConsoleUtils.empty();
-            server.getServer().getPluginManager().disablePlugin(server);
+            Bukkit.getPluginManager().disablePlugin(server.getPlugin());
         }
     }
 

@@ -35,7 +35,7 @@ public class PlayerFriendsUpdateSubscriber extends SpigotSubscriber.Simple<Playe
             public void run() {
                 update(player);
             }
-        }.runTaskLaterAsynchronously(plugin, 5);
+        }.runTaskLaterAsynchronously(plugin.getPlugin(), 5);
     }
 
     private void update(OMPlayer player) {

@@ -701,11 +701,11 @@ public abstract class OMPlayer<S extends OMServer, P extends OMPlayer<S, P>> ext
     }
 
     public void hidePlayer(Player player) {
-        hidePlayer(server, player);
+        hidePlayer(server.getPlugin(), player);
     }
 
     public void showPlayer(Player player) {
-        showPlayer(server, player);
+        showPlayer(server.getPlugin(), player);
     }
 
     public void setStaffRank(StaffRank staffRank) {
@@ -858,7 +858,7 @@ public abstract class OMPlayer<S extends OMServer, P extends OMPlayer<S, P>> ext
             public void run() {
                 player.updateInventory();
             }
-        }.runTaskLater(server, 1);
+        }.runTaskLater(server.getPlugin(), 1);
     }
 
     public void clearExperience() {

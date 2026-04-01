@@ -18,7 +18,7 @@ public final class OnlineForwardPluginMessagingForwardingSource extends Abstract
     public OnlineForwardPluginMessagingForwardingSource(String channel, Bungeecord nuVotifier, VoteCache cache, String fallbackServer) {
         super(channel, nuVotifier, cache);
         this.fallbackServer = fallbackServer;
-        ProxyServer.getInstance().getPluginManager().registerListener(nuVotifier, this);
+        ProxyServer.getInstance().getPluginManager().registerListener(nuVotifier.getPlugin(), this);
     }
 
     public void forward(Vote v) {

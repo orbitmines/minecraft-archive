@@ -7,6 +7,7 @@ package com.orbitmines.archive.minecraft.spigot._2019.utils.spigot.pubsub;
 import com.orbitmines.archive.minecraft._2019.utils.pubsub.Publisher;
 import com.orbitmines.archive.minecraft._2019.utils.serializers.Serializer;
 import com.orbitmines.archive.minecraft.spigot._2019.utils.spigot.placeholders.SpigotServer;
+import org.bukkit.Bukkit;
 import org.bukkit.plugin.java.JavaPlugin;
 
 public class SpigotPublisher<E, S extends Serializer<E>> extends Publisher<E, S> {
@@ -17,9 +18,9 @@ public class SpigotPublisher<E, S extends Serializer<E>> extends Publisher<E, S>
 
     @Override
     protected void publishAsync(Runnable runnable) {
-        JavaPlugin plugin = SpigotServer.getInstance();
+        JavaPlugin plugin = SpigotServer.getInstance().getPlugin();
 
-        plugin.getServer().getScheduler().runTaskAsynchronously(plugin, runnable);
+        Bukkit.getScheduler().runTaskAsynchronously(plugin, runnable);
     }
 
     public static class Simple<T> extends Publisher.Simple<T> {
@@ -30,9 +31,9 @@ public class SpigotPublisher<E, S extends Serializer<E>> extends Publisher<E, S>
 
         @Override
         protected void publishAsync(Runnable runnable) {
-            JavaPlugin plugin = SpigotServer.getInstance();
+            JavaPlugin plugin = SpigotServer.getInstance().getPlugin();
 
-            plugin.getServer().getScheduler().runTaskAsynchronously(plugin, runnable);
+            Bukkit.getScheduler().runTaskAsynchronously(plugin, runnable);
         }
     }
 }

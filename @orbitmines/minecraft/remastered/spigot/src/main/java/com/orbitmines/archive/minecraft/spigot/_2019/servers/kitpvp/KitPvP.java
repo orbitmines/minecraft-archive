@@ -46,6 +46,7 @@ import com.orbitmines.archive.minecraft.spigot._2019.utils.spigot.prevention.Pre
 import com.orbitmines.archive.minecraft.spigot._2019.utils.spigot.worlds.maps.datapoints.DataPointHandler;
 import lombok.Getter;
 import org.bukkit.GameRule;
+import org.bukkit.plugin.java.JavaPlugin;
 import org.bukkit.Location;
 import org.bukkit.Material;
 import org.bukkit.World;
@@ -58,6 +59,10 @@ import java.util.List;
 import java.util.Map;
 
 public class KitPvP extends OMServer<KitPvP, KitPvPPlayer> {
+
+    public KitPvP(JavaPlugin plugin) {
+        super(plugin);
+    }
 
     public static final int COINS_PER_KILL = 50;
     public static final int XP_PER_KILL = 10;
@@ -88,7 +93,7 @@ public class KitPvP extends OMServer<KitPvP, KitPvPPlayer> {
     @Override
     public void afterStartupSync() {
 
-        Prevention.prevent(this, getLobby().getWorld(),
+        Prevention.prevent(plugin, getLobby().getWorld(),
             Prevention.BLOCK_BREAK,
             Prevention.BLOCK_INTERACTING,
             Prevention.BLOCK_PLACE,
@@ -117,7 +122,7 @@ public class KitPvP extends OMServer<KitPvP, KitPvPPlayer> {
 
         map.setup(mapWorld, createDataPointHandler(OMMap.Type.GAMEMAP));
         
-        Prevention.prevent(this, mapWorld,
+        Prevention.prevent(plugin, mapWorld,
             Prevention.BLOCK_BREAK,
             Prevention.BLOCK_INTERACTING,
             Prevention.BLOCK_PLACE,

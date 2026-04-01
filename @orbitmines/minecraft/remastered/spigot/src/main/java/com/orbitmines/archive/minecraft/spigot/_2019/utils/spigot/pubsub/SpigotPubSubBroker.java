@@ -59,7 +59,7 @@ public class SpigotPubSubBroker extends PubSubBroker implements PluginMessageLis
             String jsonMessage = in.readUTF();
 
             /* Dispatch on async thread to avoid blocking the main thread */
-            plugin.getServer().getScheduler().runTaskAsynchronously(plugin, () -> dispatch(subchannel, jsonMessage));
+            Bukkit.getScheduler().runTaskAsynchronously(plugin, () -> dispatch(subchannel, jsonMessage));
         } catch (IOException e) {
             e.printStackTrace();
         }

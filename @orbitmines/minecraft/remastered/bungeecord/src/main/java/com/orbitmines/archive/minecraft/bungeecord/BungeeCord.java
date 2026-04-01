@@ -1,45 +1,41 @@
 package com.orbitmines.archive.minecraft.bungeecord;
 
+import com.orbitmines.archive.minecraft._2019.libs.Server;
 import com.orbitmines.archive.minecraft.MinecraftServer;
+import com.orbitmines.archive.minecraft.bungeecord._2019.servers.bungeecord.libs.Bungeecord;
 import com.orbitmines.archive.minecraft.bungeecord.commands.ServerCommand;
-import net.md_5.bungee.api.event.LoginEvent;
-import net.md_5.bungee.api.plugin.Listener;
 import net.md_5.bungee.api.plugin.Plugin;
-import net.md_5.bungee.event.EventHandler;
 
 import java.net.InetSocketAddress;
 
-public class BungeeCord extends Plugin implements Listener {
+public class BungeeCord extends Plugin {
+
+    private Bungeecord bungeecord;
 
     @Override
     public void onLoad() {
-
+        bungeecord = new Bungeecord(this);
+        bungeecord.onLoad();
     }
 
     @Override
     public void onEnable() {
+        bungeecord.onEnable();
 
-        MinecraftServer server = new MinecraftServer("archive", "26.1", "1G", 25566);
+        MinecraftServer server = new MinecraftServer(Server.HUB, "26.1", "1G", 25566);
 //        server.delete();
         server.run();
         this.registerServer(server);
-
-        getProxy().getPluginManager().registerListener(this, this);
-
     }
 
     @Override
     public void onDisable() {
-
+        bungeecord.onDisable();
     }
 
     public void registerServer(MinecraftServer server) {
         this.getProxy().getServers().put(server.getName(), this.getProxy().constructServerInfo(server.getName(), new InetSocketAddress(server.getIp(), server.getPort()), "0", true));
         getProxy().getPluginManager().registerCommand(this, new ServerCommand(server));
-    }
-
-    @EventHandler
-    public void onLogin(LoginEvent event) {
     }
 
 }

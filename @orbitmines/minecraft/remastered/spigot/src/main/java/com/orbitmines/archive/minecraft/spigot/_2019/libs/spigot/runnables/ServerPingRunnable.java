@@ -27,6 +27,6 @@ public class ServerPingRunnable extends SpigotRunnable<OMServer> {
     }
 
     private void pingStatus() {
-        StateProvider.getInstance().setServerStatus(this.server.getPluginName(), plugin.getStatus().toString());
+        StateProvider.getInstance().setServerStatus(this.server.getPluginName(), super.server.getStatus().toString());
     }
 }

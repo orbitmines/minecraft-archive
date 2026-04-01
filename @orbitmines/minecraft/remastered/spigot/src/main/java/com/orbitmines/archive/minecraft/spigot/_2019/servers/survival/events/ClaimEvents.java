@@ -1352,7 +1352,7 @@ public class ClaimEvents implements Listener {
             FallingBlock entity = (FallingBlock) event.getEntity();
 
             if (event.getTo() == Material.AIR) {
-                entity.setMetadata("SURVIVAL_FALLINGBLOCK", new FixedMetadataValue(survival, block.getLocation()));
+                entity.setMetadata("SURVIVAL_FALLINGBLOCK", new FixedMetadataValue(survival.getPlugin(), block.getLocation()));
             } else {
                 List<MetadataValue> values = entity.getMetadata("SURVIVAL_FALLINGBLOCK");
 
@@ -1382,7 +1382,7 @@ public class ClaimEvents implements Listener {
         if (!(event.getEntity() instanceof FallingBlock))
             return;
 
-        event.getEntity().removeMetadata("SURVIVAL_FALLINGBLOCK", survival);
+        event.getEntity().removeMetadata("SURVIVAL_FALLINGBLOCK", survival.getPlugin());
     }
 
     @EventHandler

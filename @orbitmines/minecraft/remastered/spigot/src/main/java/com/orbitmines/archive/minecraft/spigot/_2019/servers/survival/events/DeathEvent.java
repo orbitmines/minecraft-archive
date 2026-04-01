@@ -40,7 +40,7 @@ public class DeathEvent implements Listener {
                 player.clearExperience();
                 player.clearPotionEffects();
             }
-        }.runTaskLater(survival, 1);
+        }.runTaskLater(survival.getPlugin(), 1);
 
         SpigotDiscordBot bot = survival.getDiscordBot();
         bot.withPlayerEmote(player.getUUID(), player.getRawName(), false, emote -> {

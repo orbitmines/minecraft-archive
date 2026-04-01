@@ -99,7 +99,7 @@ public class ProxyForwardingVoteSource implements ForwardingVoteSource {
             plugin.getLogger().log(Level.SEVERE, msg);
 
         if (willRetry)
-            plugin.getProxy().getScheduler().schedule(plugin, () -> ProxyForwardingVoteSource.this.forwardVote(server, v, tries + 1), nextDelay, TimeUnit.SECONDS);
+            plugin.getProxy().getScheduler().schedule(plugin.getPlugin(), () -> ProxyForwardingVoteSource.this.forwardVote(server, v, tries + 1), nextDelay, TimeUnit.SECONDS);
     }
 
     public void halt() {}

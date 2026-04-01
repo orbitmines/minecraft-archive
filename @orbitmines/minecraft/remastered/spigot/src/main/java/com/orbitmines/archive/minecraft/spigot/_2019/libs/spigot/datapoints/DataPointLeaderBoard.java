@@ -44,7 +44,7 @@ public class DataPointLeaderBoard extends DataPointSign {
             public void run() {
                 LeaderBoard.setup(leaderboardData);
             }
-        }.runTaskLater(OMServer.getInstance(), 1);
+        }.runTaskLater(OMServer.getInstance().getPlugin(), 1);
 
         return true;
     }

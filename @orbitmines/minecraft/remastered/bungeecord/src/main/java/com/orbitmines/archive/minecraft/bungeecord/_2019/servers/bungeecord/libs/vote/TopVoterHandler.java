@@ -73,7 +73,7 @@ public class TopVoterHandler {
         LinkedHashMap<Selectable, Object> result = database.getEntry(builder, totalVotesSelectable, voterCountSelectable);
 
         if (result == null) {
-            System.out.println("No votes found.");
+            bungee.getLogger().info("No votes found.");
             return;
         }
 

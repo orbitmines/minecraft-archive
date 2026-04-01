@@ -46,12 +46,12 @@ public class CoinBooster {
         timer = new SpigotTimer(server, type.duration, Interval.of(TimeUnit.MINUTE, 5)) {
             @Override
             public void onInterval() {
-                server.broadcastRaw("", Color.ORANGE, name + "'s " + boosterName + " §7expires in §6" + TimeUtils.humanFriendlyTimer(Language.ENGLISH, getRemainingTicks() * 50) + "§7.");
+                CoinBooster.this.server.broadcastRaw("", Color.ORANGE, name + "'s " + boosterName + " §7expires in §6" + TimeUtils.humanFriendlyTimer(Language.ENGLISH, getRemainingTicks() * 50) + "§7.");
             }
 
             @Override
             public void onFinish() {
-                server.broadcastRaw("", Color.ORANGE, name + "'s " + boosterName + " §7has expired.");
+                CoinBooster.this.server.broadcastRaw("", Color.ORANGE, name + "'s " + boosterName + " §7has expired.");
                 ACTIVE = null;
             }
         };

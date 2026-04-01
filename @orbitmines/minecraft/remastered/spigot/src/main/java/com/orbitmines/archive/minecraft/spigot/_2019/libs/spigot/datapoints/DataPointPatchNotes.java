@@ -60,7 +60,7 @@ public class DataPointPatchNotes<S extends OMServer<S, P>, P extends OMPlayer<S,
 
                 items.add(item);
             }
-        }.runTaskLater(server, 1);
+        }.runTaskLater(server.getPlugin(), 1);
 
         return true;
     }

@@ -42,7 +42,7 @@ public class SpigotDiscordBot extends OMDiscordBot {
 
     @Override
     protected void withPlayerEmoteAsync(Runnable runnable) {
-        server.getServer().getScheduler().runTaskAsynchronously(server, runnable);
+        server.runAsync(runnable);
     }
 
     @Override

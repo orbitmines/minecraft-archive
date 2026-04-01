@@ -157,7 +157,7 @@ public interface DiscordSquadGUIInstance<S extends OMServer<S, P>, P extends OMP
                     public void run() {
                         gui.open();
                     }
-                }.runTaskLater(gui.getViewer().server(), 1);
+                }.runTaskLater(gui.getViewer().server().getPlugin(), 1);
             }
         });
 
@@ -198,7 +198,7 @@ public interface DiscordSquadGUIInstance<S extends OMServer<S, P>, P extends OMP
                     public void run() {
                         gui.open();
                     }
-                }.runTaskLater(gui.getViewer().server(), 1);
+                }.runTaskLater(gui.getViewer().server().getPlugin(), 1);
             }
         });
 

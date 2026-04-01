@@ -10,6 +10,7 @@ import com.orbitmines.archive.minecraft.spigot._2019.utils.spigot.nms.Nms;
 import com.orbitmines.archive.minecraft.spigot._2019.utils.spigot.placeholders.events.SpigotPlayerEvents;
 import com.orbitmines.archive.minecraft.spigot._2019.utils.spigot.worlds.events.WorldAdvancementsFix;
 import lombok.Getter;
+import org.bukkit.Bukkit;
 import org.bukkit.entity.Player;
 import org.bukkit.event.Listener;
 import org.bukkit.plugin.PluginManager;
@@ -20,11 +21,16 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.UUID;
 
-public abstract class SpigotServer<P extends SpigotPlayer> extends JavaPlugin {
+public abstract class SpigotServer<P extends SpigotPlayer> {
 
     @Getter protected static SpigotServer instance;
+    @Getter protected final JavaPlugin plugin;
     protected Map<UUID, P> players;
     @Getter protected Nms nms;
+
+    public SpigotServer(JavaPlugin plugin) {
+        this.plugin = plugin;
+    }
 
     public abstract P newPlayerInstance(Player player);
 
@@ -36,7 +42,6 @@ public abstract class SpigotServer<P extends SpigotPlayer> extends JavaPlugin {
 
     public abstract String getPluginName();
 
-    @Override
     public void onLoad() {
         instance = this;
         /* Setup Languages */
@@ -45,7 +50,6 @@ public abstract class SpigotServer<P extends SpigotPlayer> extends JavaPlugin {
         onStartup();
     }
 
-    @Override
     public void onEnable() {
         this.players = new HashMap<>();
 
@@ -62,7 +66,6 @@ public abstract class SpigotServer<P extends SpigotPlayer> extends JavaPlugin {
         onStart();
     }
 
-    @Override
     public void onDisable() {
         ConsoleUtils.msg("Stopping " + getPluginName() + "...");
 
@@ -70,11 +73,11 @@ public abstract class SpigotServer<P extends SpigotPlayer> extends JavaPlugin {
     }
 
     public void runAsync(Runnable runnable) {
-        getServer().getScheduler().runTaskAsynchronously(this, runnable);
+        Bukkit.getScheduler().runTaskAsynchronously(plugin, runnable);
     }
 
     public void runSync(Runnable runnable) {
-        getServer().getScheduler().scheduleSyncDelayedTask(this, runnable);
+        Bukkit.getScheduler().scheduleSyncDelayedTask(plugin, runnable);
     }
 
     public void triggerJoinEvent(Player player) {
@@ -113,10 +116,10 @@ public abstract class SpigotServer<P extends SpigotPlayer> extends JavaPlugin {
     }
 
     protected void registerEvents(Listener... listeners) {
-        PluginManager pluginManager = getServer().getPluginManager();
+        PluginManager pluginManager = Bukkit.getPluginManager();
 
         for (Listener l : listeners) {
-            pluginManager.registerEvents(l, this);
+            pluginManager.registerEvents(l, plugin);
         }
     }
 }

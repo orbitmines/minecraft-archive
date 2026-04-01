@@ -21,6 +21,7 @@ import com.orbitmines.archive.minecraft.spigot._2019.servers.build.loot.BuildLoo
 import com.orbitmines.archive.minecraft.spigot._2019.utils.spigot.worlds.maps.datapoints.DataPointHandler;
 import lombok.Getter;
 import org.bukkit.Bukkit;
+import org.bukkit.plugin.java.JavaPlugin;
 import org.bukkit.GameMode;
 import org.bukkit.Location;
 import org.bukkit.World;
@@ -29,6 +30,10 @@ import org.bukkit.entity.Player;
 import java.util.ArrayList;
 
 public class Build extends OMServer<Build, BuildPlayer> {
+
+    public Build(JavaPlugin plugin) {
+        super(plugin);
+    }
 
     public static final String tWE_PERMS = "worldedit.*";
 

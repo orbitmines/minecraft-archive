@@ -17,7 +17,7 @@ public class ReflectionUtils {
     private static String version;
 
     static {
-        version = SpigotServer.getInstance().getServer().getClass().getPackage().getName().split("\\.")[3];
+        version = Bukkit.getServer().getClass().getPackage().getName().split("\\.")[3];
     }
 
     public static void setMaxCapacity(int maxCapacity) {

@@ -127,7 +127,7 @@ public class WarpEditorGUI extends GUI<SurvivalPlayer> {
                     public void run() {
                         open();
                     }
-                }.runTaskLater(survival, 1);
+                }.runTaskLater(survival.getPlugin(),1);
             }
         });
 

@@ -161,9 +161,9 @@ public class ChestShop {
                         public void run() {
                             scroll = true;
                         }
-                    }.runTaskLaterAsynchronously(survival(), 60);
+                    }.runTaskLaterAsynchronously(survival().getPlugin(), 60);
                 }
-            }.runTaskLaterAsynchronously(survival(), 20);
+            }.runTaskLaterAsynchronously(survival().getPlugin(), 20);
         }
 
         update();

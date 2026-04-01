@@ -273,7 +273,7 @@ public enum ResetTimer {
 
     private void backup(Survival survival) {
         File file = getWorld(survival).getWorldFolder();
-        File dataFolder = survival.getDataFolder();
+        File dataFolder = survival.getPlugin().getDataFolder();
 
         File backupsFolder = new File(dataFolder.getPath() + "/WorldBackups");
 

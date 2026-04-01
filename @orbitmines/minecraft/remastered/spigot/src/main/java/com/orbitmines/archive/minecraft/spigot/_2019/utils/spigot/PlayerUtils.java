@@ -29,7 +29,7 @@ public class PlayerUtils {
     private static JavaPlugin plugin;
 
     static {
-        plugin = SpigotServer.getInstance();
+        plugin = SpigotServer.getInstance().getPlugin();
     }
 
     public static void updateInventory(Player player) {

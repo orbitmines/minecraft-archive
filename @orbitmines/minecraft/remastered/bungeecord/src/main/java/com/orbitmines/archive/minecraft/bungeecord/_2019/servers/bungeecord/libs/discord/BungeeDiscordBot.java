@@ -77,7 +77,7 @@ public class BungeeDiscordBot extends OMDiscordBot {
 
     @Override
     protected void withPlayerEmoteAsync(Runnable runnable) {
-        bungeecord.getProxy().getScheduler().runAsync(bungeecord, runnable);
+        bungeecord.getProxy().getScheduler().runAsync(bungeecord.getPlugin(), runnable);
     }
 
     @Override

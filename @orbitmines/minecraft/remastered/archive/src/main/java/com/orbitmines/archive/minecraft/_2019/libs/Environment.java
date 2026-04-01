@@ -25,6 +25,9 @@ public enum Environment {
     public static String get(String environmentVariable, String defaultValue) {
         String value = System.getenv(environmentVariable);
 
+        if (value == null)
+            value = System.getProperty(environmentVariable);
+
         return value == null ? defaultValue : value;
     }
 

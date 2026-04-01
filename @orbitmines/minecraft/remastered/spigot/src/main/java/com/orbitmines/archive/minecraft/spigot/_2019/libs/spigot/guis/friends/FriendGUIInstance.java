@@ -170,7 +170,7 @@ public interface FriendGUIInstance<S extends OMServer<S, P>, P extends OMPlayer<
                     public void run() {
                         new FriendGUI<>(getViewer(), getPlayer()).open();
                     }
-                }.runTaskLater(OMServer.getInstance(), 1);
+                }.runTaskLater(OMServer.getInstance().getPlugin(), 1);
             }
         });
 

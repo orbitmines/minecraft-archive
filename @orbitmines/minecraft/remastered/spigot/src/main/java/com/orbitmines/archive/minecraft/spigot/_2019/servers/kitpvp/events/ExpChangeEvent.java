@@ -30,6 +30,6 @@ public class ExpChangeEvent implements Listener {
             public void run() {
                 levelData.updateExperienceBar(player.bukkit());
             }
-        }.runTaskLater(server, 1);
+        }.runTaskLater(server.getPlugin(), 1);
     }
 }

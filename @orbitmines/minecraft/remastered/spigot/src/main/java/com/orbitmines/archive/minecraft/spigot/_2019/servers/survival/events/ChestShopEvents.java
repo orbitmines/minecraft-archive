@@ -145,6 +145,6 @@ public class ChestShopEvents implements Listener {
             public void run() {
                 shop.update();
             }
-        }.runTaskLater(survival, 1);
+        }.runTaskLater(survival.getPlugin(), 1);
     }
 }

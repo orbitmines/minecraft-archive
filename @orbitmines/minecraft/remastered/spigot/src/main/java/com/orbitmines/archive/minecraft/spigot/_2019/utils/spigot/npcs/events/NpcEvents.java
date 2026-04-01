@@ -135,7 +135,7 @@ public class NpcEvents<S extends SpigotServer<P>, P extends SpigotPlayer<S>> imp
                         npc.hideFor(player.bukkit());
                 }
             }
-        }.runTaskLater(server, 10);
+        }.runTaskLater(server.getPlugin(), 10);
     }
 
     /* Fix npcs catching on fire */

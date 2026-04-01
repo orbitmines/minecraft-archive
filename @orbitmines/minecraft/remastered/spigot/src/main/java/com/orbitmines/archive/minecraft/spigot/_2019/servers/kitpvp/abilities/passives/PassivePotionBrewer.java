@@ -74,7 +74,7 @@ public class PassivePotionBrewer implements Passive.Handler<PlayerDeathEvent> {
             public void run() {
                 hologram.destroy();
             }
-        }.runTaskLater(passiveEvent.server(), 60L);
+        }.runTaskLater(passiveEvent.server().getPlugin(), 60L);
     }
 
     public double getChance(int level) {

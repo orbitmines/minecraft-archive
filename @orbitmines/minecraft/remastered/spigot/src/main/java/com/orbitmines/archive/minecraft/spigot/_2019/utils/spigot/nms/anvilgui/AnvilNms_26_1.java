@@ -30,7 +30,7 @@ public class AnvilNms_26_1 implements AnvilNms {
     private static JavaPlugin plugin;
 
     static {
-        plugin = SpigotServer.getInstance();
+        plugin = SpigotServer.getInstance().getPlugin();
     }
 
     private class AnvilContainer extends AnvilMenu {

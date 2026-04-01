@@ -78,9 +78,9 @@ public class Visualization {
                             if (omp.getVisualization() == visualization)
                                 revert(omp);
                         }
-                    }.runTaskLaterAsynchronously(Survival.getInstance(), 60 * 20);
+                    }.runTaskLaterAsynchronously(Survival.getInstance().getPlugin(), 60 * 20);
                 }
-            }.runTaskLaterAsynchronously(Survival.getInstance(), 1);
+            }.runTaskLaterAsynchronously(Survival.getInstance().getPlugin(), 1);
         }
     }
 

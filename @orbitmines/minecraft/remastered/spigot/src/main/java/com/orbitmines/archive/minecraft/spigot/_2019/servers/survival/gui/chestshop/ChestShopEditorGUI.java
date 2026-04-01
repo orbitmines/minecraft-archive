@@ -118,7 +118,7 @@ public class ChestShopEditorGUI extends GUI<SurvivalPlayer> {
                     update();
                     open();
                 }
-            }.runTaskLater(server, 2);
+            }.runTaskLater(server.getPlugin(),2);
 
         }, new AnvilNms.AnvilCloseEvent() {
             @Override
@@ -128,7 +128,7 @@ public class ChestShopEditorGUI extends GUI<SurvivalPlayer> {
                     public void run() {
                         open();
                     }
-                }.runTaskLater(server, 1);
+                }.runTaskLater(server.getPlugin(),1);
             }
         });
 
@@ -173,7 +173,7 @@ public class ChestShopEditorGUI extends GUI<SurvivalPlayer> {
                     update();
                     open();
                 }
-            }.runTaskLater(server, 2);
+            }.runTaskLater(server.getPlugin(),2);
 
         }, new AnvilNms.AnvilCloseEvent() {
             @Override
@@ -183,7 +183,7 @@ public class ChestShopEditorGUI extends GUI<SurvivalPlayer> {
                     public void run() {
                         open();
                     }
-                }.runTaskLater(server, 1);
+                }.runTaskLater(server.getPlugin(),1);
             }
         });
 
@@ -229,7 +229,7 @@ public class ChestShopEditorGUI extends GUI<SurvivalPlayer> {
                     update();
                     open();
                 }
-            }.runTaskLater(server, 2);
+            }.runTaskLater(server.getPlugin(),2);
 
         }, new AnvilNms.AnvilCloseEvent() {
             @Override
@@ -239,7 +239,7 @@ public class ChestShopEditorGUI extends GUI<SurvivalPlayer> {
                     public void run() {
                         open();
                     }
-                }.runTaskLater(server, 1);
+                }.runTaskLater(server.getPlugin(),1);
             }
         });
 

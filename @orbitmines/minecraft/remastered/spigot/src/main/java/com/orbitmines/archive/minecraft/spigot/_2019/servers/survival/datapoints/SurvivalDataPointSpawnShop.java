@@ -40,7 +40,7 @@ public class SurvivalDataPointSpawnShop extends DataPointSign {
             public void run() {
                 create(location, face, ShopType.values()[ordinal]);
             }
-        }.runTaskLater(Survival.getInstance(), 1);
+        }.runTaskLater(Survival.getInstance().getPlugin(), 1);
 
         return true;
     }

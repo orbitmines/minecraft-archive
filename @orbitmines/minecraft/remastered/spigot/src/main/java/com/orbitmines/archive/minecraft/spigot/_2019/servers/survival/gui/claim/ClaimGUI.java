@@ -308,7 +308,7 @@ public class ClaimGUI extends PaginatableGUI<SurvivalPlayer, Claim, SurvivalClai
                     public void run() {
                         open();
                     }
-                }.runTaskLater(survival, 1);
+                }.runTaskLater(survival.getPlugin(),1);
             }
         });
 
@@ -349,7 +349,7 @@ public class ClaimGUI extends PaginatableGUI<SurvivalPlayer, Claim, SurvivalClai
 
                     new ClaimPlayerDetailsGUI(survival, viewer, key, member, player).open();
                 }
-            }.runTaskLater(survival, 2);
+            }.runTaskLater(survival.getPlugin(),2);
         }, new AnvilNms.AnvilCloseEvent() {
             @Override
             public void onClose() {
@@ -358,7 +358,7 @@ public class ClaimGUI extends PaginatableGUI<SurvivalPlayer, Claim, SurvivalClai
                     public void run() {
                         open();
                     }
-                }.runTaskLater(survival, 1);
+                }.runTaskLater(survival.getPlugin(),1);
             }
         });
 

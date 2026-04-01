@@ -5,15 +5,15 @@ package com.orbitmines.archive.minecraft.spigot._2019.utils.spigot.runnable;
  */
 
 import com.orbitmines.archive.minecraft.spigot._2019.utils.spigot.placeholders.SpigotPlayer;
-import org.bukkit.plugin.java.JavaPlugin;
+import com.orbitmines.archive.minecraft.spigot._2019.utils.spigot.placeholders.SpigotServer;
 
 import java.util.ArrayList;
 import java.util.Collection;
 
-public abstract class PlayerRunnable<Plugin extends JavaPlugin, P extends SpigotPlayer> extends SpigotRunnable {
+public abstract class PlayerRunnable<S extends SpigotServer, P extends SpigotPlayer> extends SpigotRunnable<S> {
 
-    public PlayerRunnable(Plugin plugin, Interval interval) {
-        super(plugin, interval);
+    public PlayerRunnable(S server, Interval interval) {
+        super(server, interval);
     }
 
     public abstract void run(P player);

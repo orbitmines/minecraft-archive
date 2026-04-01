@@ -14,12 +14,12 @@ public class PluginMessagingForwardingSource extends AbstractPluginMessagingForw
 
     public PluginMessagingForwardingSource(String channel, List<String> ignoredServers, Bungeecord nuVotifier, VoteCache cache) {
         super(channel, ignoredServers, nuVotifier, cache);
-        ProxyServer.getInstance().getPluginManager().registerListener(nuVotifier, this);
+        ProxyServer.getInstance().getPluginManager().registerListener(nuVotifier.getPlugin(), this);
     }
 
     protected PluginMessagingForwardingSource(String channel, Bungeecord nuVotifier, VoteCache voteCache) {
         super(channel, nuVotifier, voteCache);
-        ProxyServer.getInstance().getPluginManager().registerListener(nuVotifier, this);
+        ProxyServer.getInstance().getPluginManager().registerListener(nuVotifier.getPlugin(), this);
     }
 
     @EventHandler

@@ -52,7 +52,7 @@ public class AchievementEvents implements Listener {
             public void run() {
                 droppedItems.remove(item);
             }
-        }.runTaskLater(survival, 3);
+        }.runTaskLater(survival.getPlugin(), 3);
     }
 
     @EventHandler(priority = EventPriority.HIGHEST)

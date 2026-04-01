@@ -53,8 +53,13 @@ import org.bukkit.GameRule;
 import org.bukkit.Location;
 import org.bukkit.World;
 import org.bukkit.plugin.IllegalPluginAccessException;
+import org.bukkit.plugin.java.JavaPlugin;
 
 public abstract class OMServer<S extends OMServer<S, P>, P extends OMPlayer<S, P>> extends SpigotServer<P> {
+
+    public OMServer(JavaPlugin plugin) {
+        super(plugin);
+    }
 
     private boolean restarting = false;
 
@@ -121,11 +126,11 @@ public abstract class OMServer<S extends OMServer<S, P>, P extends OMPlayer<S, P
     /* Before Database is setup */
     @Override
     public void onStartup() {
-        configHandler = new ConfigHandler(this);
+        configHandler = new ConfigHandler(plugin);
         /* Setup Languages */
         Language.initialize(getPluginName(), true);
 
-        worldLoader = new WorldLoader(this.getServer().getWorldContainer().getAbsolutePath() + "/worlds", clearPlayerData());
+        worldLoader = new WorldLoader(Bukkit.getWorldContainer().getAbsolutePath() + "/worlds", clearPlayerData());
     }
 
     /* After Database is setup */
@@ -556,7 +561,7 @@ public abstract class OMServer<S extends OMServer<S, P>, P extends OMPlayer<S, P
         StateProvider.initialize(stateCache);
 
         /* Initialize plugin messaging broker */
-        SpigotPubSubBroker broker = new SpigotPubSubBroker(this);
+        SpigotPubSubBroker broker = new SpigotPubSubBroker(plugin);
         PubSubBroker.initialize(broker);
 
         /* Register state sync handler to receive state updates from BungeeCord */
@@ -569,10 +574,10 @@ public abstract class OMServer<S extends OMServer<S, P>, P extends OMPlayer<S, P
     }
 
     private void setupSkinLibrary() {
-        skinLibrary = new SkinLibrary(this.getServer().getWorldContainer().getAbsolutePath() + "/skins") {
+        skinLibrary = new SkinLibrary(Bukkit.getWorldContainer().getAbsolutePath() + "/skins") {
             @Override
             protected void updateLibraryAsync(Runnable runnable) {
-                getServer().getScheduler().runTaskAsynchronously(OMServer.this, runnable);
+                Bukkit.getScheduler().runTaskAsynchronously(plugin, runnable);
             }
         };
     }
@@ -585,7 +590,7 @@ public abstract class OMServer<S extends OMServer<S, P>, P extends OMPlayer<S, P
 
         String serverId = Environment.get("OM_DISCORD_SERVER_ID", "473472016092233746");
 
-        discordBot = new SpigotDiscordBot(token, serverId, this, this.skinLibrary);
+        discordBot = new SpigotDiscordBot(token, serverId, this, skinLibrary);
         discordBot.initialize(Environment.isProduction() ? OnlineStatus.IDLE : OnlineStatus.ONLINE);
     }
 

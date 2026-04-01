@@ -102,7 +102,7 @@ public class DataPointNpc<S extends OMServer<S, P>, P extends OMPlayer<S, P>> ex
             public void run() {
                 setupNpc(type, location);
             }
-        }.runTaskLater(OMServer.getInstance(), 1);
+        }.runTaskLater(OMServer.getInstance().getPlugin(), 1);
 
         return true;
     }

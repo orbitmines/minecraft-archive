@@ -107,7 +107,7 @@ public abstract class SpigotPlayer<S extends SpigotServer> {
                     }
                 }
             }
-        }.runTaskLaterAsynchronously(server, 10);
+        }.runTaskLaterAsynchronously(server.getPlugin(), 10);
     }
 
     protected void spawnPersonalizedNpcs() {

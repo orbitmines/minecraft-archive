@@ -147,7 +147,7 @@ public class KitPvPPlayer extends OMPlayer<KitPvP, KitPvPPlayer> {
                 public void run() {
                     server.broadcastRaw("", Color.PURPLE, getName(Name.RAW_COLORED) + " §7has a §5§l" + killStreak + " Kill Streak");
                 }
-            }.runTaskLater(server, 1);
+            }.runTaskLater(server.getPlugin(), 1);
 
         KitPvPPlayerKitModel kit = getKit((getSelectedKit() != null ? getSelectedKit() : server.getKit(getLastSelectedId(), getLastSelectedLevel())).getHandler(), false);
         if (this.killStreak > getBestStreak()) {
@@ -355,7 +355,7 @@ public class KitPvPPlayer extends OMPlayer<KitPvP, KitPvPPlayer> {
                 public void run() {
                     spawnProtection = false;
                 }
-            }.runTaskLater(server, 60);
+            }.runTaskLater(server.getPlugin(), 60);
         }
 
         /* Teleport sound */
@@ -476,7 +476,7 @@ public class KitPvPPlayer extends OMPlayer<KitPvP, KitPvPPlayer> {
                 public void run() {
                     sendRawMessage(message);
                 }
-            }.runTaskLater(server, 1);
+            }.runTaskLater(server.getPlugin(), 1);
         }
 
         addCoins(coins, false);

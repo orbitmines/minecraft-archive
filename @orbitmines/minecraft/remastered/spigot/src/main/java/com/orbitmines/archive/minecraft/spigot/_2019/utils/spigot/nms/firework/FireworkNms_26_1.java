@@ -19,6 +19,6 @@ public class FireworkNms_26_1 implements FireworkNms {
             public void run() {
                 ((CraftFirework) firework).getHandle().lifetime = 0;
             }
-        }.runTaskLater(server, 1);
+        }.runTaskLater(server.getPlugin(), 1);
     }
 }

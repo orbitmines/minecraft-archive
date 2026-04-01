@@ -4,8 +4,8 @@ package com.orbitmines.archive.minecraft.spigot._2019.utils.spigot.runnable;
  * OrbitMines - @author Fadi Shawki - 2019
  */
 
+import com.orbitmines.archive.minecraft.spigot._2019.utils.spigot.placeholders.SpigotServer;
 import lombok.Getter;
-import org.bukkit.plugin.java.JavaPlugin;
 
 public abstract class SpigotTimer extends SpigotRunnable {
 
@@ -17,8 +17,8 @@ public abstract class SpigotTimer extends SpigotRunnable {
     @Getter private long remainingTicks;
     private long intervalTicks;
 
-    public SpigotTimer(JavaPlugin plugin, Interval length, Interval timerInterval) {
-        super(plugin, ONE_TICK_INTERVAL);
+    public SpigotTimer(SpigotServer server, Interval length, Interval timerInterval) {
+        super(server, ONE_TICK_INTERVAL);
 
         this.length = length;
         this.timerInterval = timerInterval;

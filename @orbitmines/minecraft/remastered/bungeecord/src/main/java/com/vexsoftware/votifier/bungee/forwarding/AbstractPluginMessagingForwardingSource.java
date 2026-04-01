@@ -69,7 +69,7 @@ public abstract class AbstractPluginMessagingForwardingSource implements Forward
         final String serverName = e.getServer().getInfo().getName();
         final Collection<Vote> cachedVotes = cache.evict(serverName);
         if (!cachedVotes.isEmpty()) {
-            nuVotifier.getProxy().getScheduler().schedule(nuVotifier, () -> {
+            nuVotifier.getProxy().getScheduler().schedule(nuVotifier.getPlugin(), () -> {
                 int evicted = 0;
                 int unsuccessfulEvictions = 0;
                 for (Vote v : cachedVotes) {

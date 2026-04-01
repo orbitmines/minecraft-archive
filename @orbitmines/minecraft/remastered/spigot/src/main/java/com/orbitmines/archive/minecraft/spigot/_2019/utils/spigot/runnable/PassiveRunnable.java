@@ -4,19 +4,20 @@ package com.orbitmines.archive.minecraft.spigot._2019.utils.spigot.runnable;
  * OrbitMines - @author Fadi Shawki - 2019
  */
 
-import org.bukkit.plugin.java.JavaPlugin;
+import com.orbitmines.archive.minecraft.spigot._2019.utils.spigot.placeholders.SpigotServer;
+import org.bukkit.Bukkit;
 
-public abstract class PassiveRunnable<Plugin extends JavaPlugin> extends SpigotRunnable {
+public abstract class PassiveRunnable<S extends SpigotServer> extends SpigotRunnable<S> {
 
-    public PassiveRunnable(Plugin plugin, Interval interval) {
-        super(plugin, interval);
+    public PassiveRunnable(S server, Interval interval) {
+        super(server, interval);
     }
 
     public abstract void onRun();
 
     @Override
     public void run() {
-        if (plugin.getServer().getOnlinePlayers().size() == 0)
+        if (Bukkit.getOnlinePlayers().size() == 0)
             return;
 
         onRun();

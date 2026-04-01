@@ -40,7 +40,7 @@ public class ProjectileEvents implements Listener {
         Entity arrow = event.getProjectile();
 
         /* Apply to metadata so we can apply passive effects when the arrow hits. */
-        arrow.setMetadata("passive", new FixedMetadataValue(server, passives));
+        arrow.setMetadata("passive", new FixedMetadataValue(server.getPlugin(), passives));
     }
 
     @EventHandler

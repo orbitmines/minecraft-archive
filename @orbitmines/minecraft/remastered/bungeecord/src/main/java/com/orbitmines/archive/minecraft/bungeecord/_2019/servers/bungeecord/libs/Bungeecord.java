@@ -87,9 +87,11 @@ import java.util.concurrent.Executors;
 import java.util.concurrent.FutureTask;
 import java.util.logging.Level;
 
-public class Bungeecord extends Plugin implements VoteHandler, VotifierPlugin {
+public class Bungeecord implements VoteHandler, VotifierPlugin {
 
     @Getter private static Bungeecord instance;
+
+    @Getter private final Plugin plugin;
 
     private boolean restarting = false;
     private String restartingMessage = null;
@@ -101,18 +103,26 @@ public class Bungeecord extends Plugin implements VoteHandler, VotifierPlugin {
 
     protected Map<UUID, BungeePlayer> players;
 
-    @Override
+    public Bungeecord(Plugin plugin) {
+        this.plugin = plugin;
+    }
+
+    /* Convenience delegates to plugin */
+    public ProxyServer getProxy() { return plugin.getProxy(); }
+    public java.util.logging.Logger getLogger() { return plugin.getLogger(); }
+    public File getDataFolder() { return plugin.getDataFolder(); }
+    public java.io.InputStream getResourceAsStream(String name) { return plugin.getResourceAsStream(name); }
+
     public void onLoad() {
         instance = this;
 
-        configHandler = new ConfigHandler(this);
+        configHandler = new ConfigHandler(plugin);
         /* Setup Languages */
         Language.initialize("bungeecord", true);
 
         this.players = new HashMap<>();
     }
 
-    @Override
     public void onEnable() {
         /* Setup Plugin Messaging and State */
         setupPubSub();
@@ -122,9 +132,9 @@ public class Bungeecord extends Plugin implements VoteHandler, VotifierPlugin {
 
             database.checkConnection();
 
-            System.out.println("Successfully setup MySQL connection.");
+            getLogger().info("Successfully setup MySQL connection.");
         } catch(DatabaseConnectionException ex) {
-            System.out.println("Failed to setup MySQL connection.");
+            getLogger().severe("Failed to setup MySQL connection.");
             restart("Could not connect to mysql, restarting... (Caused by: " + ex.getClass().getSimpleName() + ": " + ex.getCause().getMessage() + ")");
             return;
         } catch(Exception ex) {
@@ -194,24 +204,21 @@ public class Bungeecord extends Plugin implements VoteHandler, VotifierPlugin {
         );
 
         /* Console Commands */
-        getProxy().getPluginManager().registerCommand(this, new CommandDonation(this));
+        getProxy().getPluginManager().registerCommand(plugin, new CommandDonation(this));
 
         /* Notify Servers we have started up (After ServerStartupSubscriber has been initialized) */
         publishBungeeStartup();
 
         setupVotifier();
 
-        new Restarter(this).async().start();
+        new Restarter(plugin, this).async().start();
     }
 
-    @Override
     public void onDisable() {
         if (restarting) {
-            System.out.println("-------------------------------------------------------");
-            System.out.println(" ");
-            System.out.println(restartingMessage);
-            System.out.println(" ");
-            System.out.println("-------------------------------------------------------");
+            getLogger().info("-------------------------------------------------------");
+            getLogger().info(restartingMessage);
+            getLogger().info("-------------------------------------------------------");
             return;
         }
     }
@@ -315,7 +322,7 @@ public class Bungeecord extends Plugin implements VoteHandler, VotifierPlugin {
         PluginManager pluginManager = getProxy().getPluginManager();
 
         for (Listener l : listeners) {
-            pluginManager.registerListener(this, l);
+            pluginManager.registerListener(plugin, l);
         }
     }
 
@@ -331,17 +338,17 @@ public class Bungeecord extends Plugin implements VoteHandler, VotifierPlugin {
         StateProvider.initialize(stateManager);
 
         /* Initialize plugin messaging broker */
-        BungeePubSubBroker broker = new BungeePubSubBroker(this);
+        BungeePubSubBroker broker = new BungeePubSubBroker(plugin);
         PubSubBroker.initialize(broker);
 
-        System.out.println("Successfully setup plugin messaging.");
+        getLogger().info("Successfully setup plugin messaging.");
     }
 
     private void setupSkinLibrary() {
         skinLibrary = new SkinLibrary("skins") {
             @Override
             protected void updateLibraryAsync(Runnable runnable) {
-                getProxy().getScheduler().runAsync(Bungeecord.this, runnable);
+                getProxy().getScheduler().runAsync(plugin, runnable);
             }
         };
     }
@@ -662,7 +669,7 @@ public class Bungeecord extends Plugin implements VoteHandler, VotifierPlugin {
                         });
             }
         }));
-        getProxy().getScheduler().runAsync(this, initTask);
+        getProxy().getScheduler().runAsync(plugin, initTask);
         try {
             initTask.get();
         } catch (InterruptedException | ExecutionException e) {
@@ -684,7 +691,7 @@ public class Bungeecord extends Plugin implements VoteHandler, VotifierPlugin {
                 getLogger().info("Using in-memory cache for votes that are not able to be delivered.");
             } else if ("file".equals(cacheMethod)) {
                 try {
-                    voteCache = new FileVoteCache(ProxyServer.getInstance().getServers().size(), this, new File(getDataFolder(),
+                    voteCache = new FileVoteCache(ProxyServer.getInstance().getServers().size(), plugin, new File(getDataFolder(),
                             fwdCfg.getString("pluginMessaging.file.name")));
                 } catch (IOException e) {
                     getLogger().log(Level.SEVERE, "Unload to load file cache. Votes will be lost!", e);
@@ -759,7 +766,7 @@ public class Bungeecord extends Plugin implements VoteHandler, VotifierPlugin {
 
     @Override
     public String getVersion() {
-        return getDescription().getVersion();
+        return plugin.getDescription().getVersion();
     }
 
     public boolean isDebug() {
@@ -776,10 +783,10 @@ public class Bungeecord extends Plugin implements VoteHandler, VotifierPlugin {
             }
         }
 
-        getProxy().getScheduler().runAsync(this, () -> getProxy().getPluginManager().callEvent(new VotifierEvent(vote)));
+        getProxy().getScheduler().runAsync(plugin, () -> getProxy().getPluginManager().callEvent(new VotifierEvent(vote)));
 
         if (forwardingMethod != null) {
-            getProxy().getScheduler().runAsync(this, () ->forwardingMethod.forward(vote));
+            getProxy().getScheduler().runAsync(plugin, () ->forwardingMethod.forward(vote));
         }
     }
 

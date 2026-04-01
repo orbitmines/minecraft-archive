@@ -32,8 +32,8 @@ public class Restarter extends BungeeRunnable {
 
     private boolean initiatedRestart = false;
 
-    public Restarter(Bungeecord bungee) {
-        super(bungee, Interval.of(TimeUnit.MINUTE, 5));
+    public Restarter(net.md_5.bungee.api.plugin.Plugin plugin, Bungeecord bungee) {
+        super(plugin, Interval.of(TimeUnit.MINUTE, 5));
 
         this.bungee = bungee;
         this.startUpMonth = DateUtils.humanFriendlyMonth();
@@ -71,7 +71,7 @@ public class Restarter extends BungeeRunnable {
     }
 
     private void initiateRestart() {
-        System.out.println("Initiating Restart...");
+        bungee.getLogger().info("Initiating Restart...");
         initiatedRestart = true;
 
         BossBar bossBar = new BossBar("§8§lOrbit§7§lMines §c§lRestarting in " + TimeUtils.humanFriendlyTimeUnit(Language.ENGLISH, RESTART_TIMER.toMillis()) + "...", BossBar.Color.RED, BossBar.Style.SOLID);
@@ -80,7 +80,7 @@ public class Restarter extends BungeeRunnable {
             bossBar.addPlayer(player);
         }
 
-        new BungeeTimer(bungee, RESTART_TIMER, Interval.of(TimeUnit.SECOND, 1)) {
+        new BungeeTimer(plugin, RESTART_TIMER, Interval.of(TimeUnit.SECOND, 1)) {
             @Override
             public void onFinish() {
                 /* Kick all Players */

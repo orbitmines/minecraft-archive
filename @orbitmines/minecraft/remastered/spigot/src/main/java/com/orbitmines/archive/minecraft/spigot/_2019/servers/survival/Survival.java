@@ -68,6 +68,7 @@ import com.orbitmines.archive.minecraft.spigot._2019.utils.spigot.worlds.maps.da
 import lombok.Getter;
 import lombok.Setter;
 import org.bukkit.*;
+import org.bukkit.plugin.java.JavaPlugin;
 import org.bukkit.block.Block;
 import org.bukkit.enchantments.Enchantment;
 import org.bukkit.entity.Player;
@@ -78,6 +79,10 @@ import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 public class Survival extends OMServer<Survival, SurvivalPlayer> {
+
+    public Survival(JavaPlugin plugin) {
+        super(plugin);
+    }
 
     public static ItemBuilder SPAWNER_MINER = new ItemBuilder(Material.DIAMOND_PICKAXE, 1, "§5§lSpawner Miner", "§7§oOne time use§4").addEnchantment(Enchantment.SILK_TOUCH, 1).unbreakable(true).addFlag(ItemFlag.HIDE_ATTRIBUTES);
 
@@ -111,7 +116,7 @@ public class Survival extends OMServer<Survival, SurvivalPlayer> {
 
         spawnTeleportable = new SurvivalSpawn(this);
 
-        Prevention.prevent(this, getLobby().getWorld(),
+        Prevention.prevent(plugin, getLobby().getWorld(),
             Prevention.BLOCK_BREAK,
             Prevention.BLOCK_INTERACTING,
             Prevention.BLOCK_PLACE,

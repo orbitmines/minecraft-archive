@@ -7,7 +7,6 @@ package com.orbitmines.archive.minecraft.bungeecord._2019.servers.bungeecord.uti
 import com.orbitmines.archive.minecraft.bungeecord._2019.servers.bungeecord.libs.Bungeecord;
 import com.orbitmines.archive.minecraft._2019.utils.pubsub.Publisher;
 import com.orbitmines.archive.minecraft._2019.utils.serializers.Serializer;
-import net.md_5.bungee.api.plugin.Plugin;
 
 public class BungeePublisher<E, S extends Serializer<E>> extends Publisher<E, S> {
 
@@ -17,9 +16,9 @@ public class BungeePublisher<E, S extends Serializer<E>> extends Publisher<E, S>
 
     @Override
     protected void publishAsync(Runnable runnable) {
-        Plugin plugin = Bungeecord.getInstance();
+        Bungeecord bungee = Bungeecord.getInstance();
 
-        plugin.getProxy().getScheduler().runAsync(plugin, runnable);
+        bungee.getProxy().getScheduler().runAsync(bungee.getPlugin(), runnable);
     }
 
     public static class Simple<T> extends Publisher.Simple<T> {
@@ -30,9 +29,9 @@ public class BungeePublisher<E, S extends Serializer<E>> extends Publisher<E, S>
 
         @Override
         protected void publishAsync(Runnable runnable) {
-            Plugin plugin = Bungeecord.getInstance();
+            Bungeecord bungee = Bungeecord.getInstance();
 
-            plugin.getProxy().getScheduler().runAsync(plugin, runnable);
+            bungee.getProxy().getScheduler().runAsync(bungee.getPlugin(), runnable);
         }
     }
 }

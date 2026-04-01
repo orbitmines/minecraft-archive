@@ -32,7 +32,7 @@ public class WorldBackup {
     }
 
     public static void create(File file) {
-        String dataFolderPath = Build.getInstance().getDataFolder().getPath();
+        String dataFolderPath = Build.getInstance().getPlugin().getDataFolder().getPath();
 
         File backupsFolder = new File(dataFolderPath + "/world_backups");
 
