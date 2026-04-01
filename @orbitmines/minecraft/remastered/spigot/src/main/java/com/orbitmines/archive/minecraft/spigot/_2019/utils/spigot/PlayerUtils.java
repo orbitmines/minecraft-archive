@@ -7,10 +7,9 @@ package com.orbitmines.archive.minecraft.spigot._2019.utils.spigot;
 import com.mojang.authlib.GameProfile;
 import com.orbitmines.archive.minecraft.spigot._2019.libs.spigot.OMServer;
 import com.orbitmines.archive.minecraft.spigot._2019.utils.spigot.placeholders.SpigotServer;
-import net.minecraft.server.v1_14_R1.DimensionManager;
-import net.minecraft.server.v1_14_R1.EntityPlayer;
-import net.minecraft.server.v1_14_R1.MinecraftServer;
-import net.minecraft.server.v1_14_R1.PlayerInteractManager;
+import net.minecraft.server.MinecraftServer;
+import net.minecraft.server.level.ClientInformation;
+import net.minecraft.server.level.ServerPlayer;
 import org.bukkit.Bukkit;
 import org.bukkit.Location;
 import org.bukkit.Material;
@@ -61,7 +60,7 @@ public class PlayerUtils {
 
         MinecraftServer minecraftserver = MinecraftServer.getServer();
         GameProfile gameprofile = new GameProfile(offlinePlayer.getUniqueId(), offlinePlayer.getName());
-        EntityPlayer entity = new EntityPlayer(minecraftserver, minecraftserver.getWorldServer(DimensionManager.OVERWORLD), gameprofile, new PlayerInteractManager(minecraftserver.getWorldServer(DimensionManager.OVERWORLD)));
+        ServerPlayer entity = new ServerPlayer(minecraftserver, minecraftserver.overworld(), gameprofile, ClientInformation.createDefault());
 
         Player player = entity.getBukkitEntity();
 

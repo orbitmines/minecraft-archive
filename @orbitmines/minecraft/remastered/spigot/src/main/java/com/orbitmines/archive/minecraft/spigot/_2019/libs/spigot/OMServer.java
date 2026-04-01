@@ -47,7 +47,7 @@ import com.orbitmines.archive.minecraft.spigot._2019.utils.spigot.worlds.maps.da
 import lombok.Getter;
 import net.dv8tion.jda.api.EmbedBuilder;
 import net.dv8tion.jda.api.OnlineStatus;
-import net.minecraft.server.v1_14_R1.MinecraftServer;
+import net.minecraft.server.MinecraftServer;
 import org.bukkit.Bukkit;
 import org.bukkit.GameRule;
 import org.bukkit.Location;

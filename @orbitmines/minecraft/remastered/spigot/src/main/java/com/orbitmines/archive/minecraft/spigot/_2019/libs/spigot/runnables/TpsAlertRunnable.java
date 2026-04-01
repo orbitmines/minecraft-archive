@@ -16,7 +16,7 @@ import com.orbitmines.archive.minecraft.spigot._2019.utils.spigot.runnable.Spigo
 import com.orbitmines.archive.minecraft.spigot._2019.utils.spigot.runnable.TimeUnit;
 import net.dv8tion.jda.api.EmbedBuilder;
 import net.dv8tion.jda.api.entities.channel.concrete.TextChannel;
-import net.minecraft.server.v1_14_R1.MinecraftServer;
+import net.minecraft.server.MinecraftServer;
 
 public class TpsAlertRunnable<S extends OMServer<S, ?>> extends SpigotRunnable<S> {
 

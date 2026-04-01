@@ -49,9 +49,9 @@ import com.orbitmines.archive.minecraft.spigot._2019.utils.spigot.scoreboards.Sc
 import com.orbitmines.archive.minecraft.spigot._2019.utils.spigot.scoreboards.SpigotScoreboard;
 import lombok.Getter;
 import lombok.Setter;
-import net.minecraft.server.v1_14_R1.MinecraftServer;
+import net.minecraft.server.MinecraftServer;
 import org.bukkit.Sound;
-import org.bukkit.craftbukkit.v1_14_R1.entity.CraftPlayer;
+import org.bukkit.craftbukkit.entity.CraftPlayer;
 import org.bukkit.entity.Player;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.potion.PotionEffect;
@@ -140,7 +140,7 @@ public abstract class OMPlayer<S extends OMServer, P extends OMPlayer<S, P>> ext
 
         /* TODO: Move to NMS */
         /* Send Command update after loading in player model & ranks */
-        server.runSync(() -> MinecraftServer.getServer().getCommandDispatcher().a(((CraftPlayer) bukkit()).getHandle()));
+        server.runSync(() -> MinecraftServer.getServer().getCommands().sendCommands(((CraftPlayer) bukkit()).getHandle()));
 
         /* Following reloads required */
             /* Reload Settings */

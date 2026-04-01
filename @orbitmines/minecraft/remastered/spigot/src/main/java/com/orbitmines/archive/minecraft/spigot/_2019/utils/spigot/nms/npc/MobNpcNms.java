@@ -12,17 +12,14 @@ public interface MobNpcNms {
 
     Entity spawn(Location location, Collection<Option> options);
 
-//    Entity spawnRideable(Location location, float speed, float backMultiplier, float sideMultiplier, float walkHeight, float jumpHeight);
-
     enum Option {
 
         DISABLE_MOVEMENT,
         DISABLE_ATTACK,
         DISABLE_COLLISION,
         DISABLE_SOUNDS,
-
-        //v1_10_R1+
-        DISABLE_GRAVITY
+        DISABLE_GRAVITY,
+        RIDEABLE
 
     }
 }
