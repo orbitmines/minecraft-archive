@@ -1,0 +1,8 @@
+name: survival
+main: com.orbitmines.servers.survival.Survival
+authors: [Fadi Shawki]
+version: 1.0.0
+api-version: 1.13
+commands:
+softdepend:
+  - Plan

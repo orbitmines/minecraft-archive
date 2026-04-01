@@ -1,0 +1,48 @@
+package com.orbitmines.archive.minecraft.spigot._2019.servers.kitpvp.abilities.actives;
+
+/*
+ * OrbitMines - @author Fadi Shawki - 2018
+ */
+
+import com.orbitmines.archive.minecraft._2019.libs.Color;
+import com.orbitmines.archive.minecraft.spigot._2019.servers.kitpvp.KitPvPPlayer;
+import com.orbitmines.archive.minecraft.spigot._2019.servers.kitpvp.abilities.Active;
+import com.orbitmines.archive.minecraft._2019.utils.cooldown.Cooldown;
+import com.orbitmines.archive.minecraft.spigot._2019.utils.spigot.builders.FireworkBuilder;
+import com.orbitmines.archive.minecraft.spigot._2019.utils.spigot.builders.PotionBuilder;
+import org.bukkit.FireworkEffect;
+import org.bukkit.Sound;
+import org.bukkit.event.player.PlayerInteractEvent;
+import org.bukkit.potion.PotionEffectType;
+
+public class ActiveSugarRush implements Active.Handler {
+
+    private final Cooldown cooldown = new Cooldown(10 * 1000);
+
+    private final PotionBuilder builder = new PotionBuilder(PotionEffectType.SPEED, 3 * 20, 2);
+
+    @Override
+    public void trigger(PlayerInteractEvent event, KitPvPPlayer omp, int level) {
+        omp.addPotionEffect(builder.build());
+        omp.playSound(Sound.ENTITY_PLAYER_BURP);
+
+        FireworkBuilder builder = new FireworkBuilder(omp.getLocation());
+        builder.withColor(Color.WHITE);
+        builder.withFade(Color.GRAY);
+        builder.withFade(Color.SILVER);
+        builder.with(FireworkEffect.Type.BURST);
+        builder.withTrail();
+        builder.build();
+        builder.setVelocity(omp.getVelocity().multiply(-1));
+        builder.explode();
+    }
+
+    @Override
+    public Cooldown getCooldown(int level) {
+        return cooldown;
+    }
+
+    public PotionBuilder getBuilder(int level) {
+        return builder;
+    }
+}

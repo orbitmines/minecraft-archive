@@ -1,0 +1,8 @@
+name: hub
+main: com.orbitmines.servers.hub.Hub
+authors: [Fadi Shawki]
+version: 1.0.0
+api-version: 1.13
+commands:
+softdepend:
+  - Plan

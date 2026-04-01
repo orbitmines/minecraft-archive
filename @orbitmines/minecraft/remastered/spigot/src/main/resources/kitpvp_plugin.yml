@@ -1,0 +1,8 @@
+name: kitpvp
+main: com.orbitmines.servers.kitpvp.KitPvP
+authors: [Fadi Shawki]
+version: 1.0.0
+api-version: 1.13
+commands:
+softdepend:
+  - Plan
