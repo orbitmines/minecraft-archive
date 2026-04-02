@@ -31,13 +31,27 @@ public class DataPointLoader {
     public void load() {
         Set<DataPoint.Type> types = dataPoints.keySet();
 
+        /* Ensure spawn chunks are loaded — in 26.1 they may not be loaded yet after world creation */
+        Location spawn = world.getSpawnLocation();
+        int spawnChunkX = spawn.getBlockX() >> 4;
+        int spawnChunkZ = spawn.getBlockZ() >> 4;
+        int radius = 8;
+        for (int cx = spawnChunkX - radius; cx <= spawnChunkX + radius; cx++) {
+            for (int cz = spawnChunkZ - radius; cz <= spawnChunkZ + radius; cz++) {
+                world.getChunkAt(cx, cz);
+            }
+        }
+
+        int minY = world.getMinHeight();
+        int maxY = world.getMaxHeight();
+
         for (Chunk chunk : world.getLoadedChunks()) {
             int cX = chunk.getX() << 4;
             int cZ = chunk.getZ() << 4;
 
             for (int x = cX; x < cX + 16; x++) {
                 for (int z = cZ; z < cZ + 16; z++) {
-                    for (int y = 0; y < 255; y++) {
+                    for (int y = minY; y < maxY; y++) {
                         Material material = world.getBlockAt(x, y, z).getType();
 
                         if (material == Material.AIR)

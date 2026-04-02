@@ -22,7 +22,6 @@ import com.orbitmines.archive.minecraft.spigot._2019.utils.spigot.runnable.Passi
 import com.orbitmines.archive.minecraft.spigot._2019.utils.spigot.runnable.TimeUnit;
 import com.orbitmines.archive.minecraft.spigot._2019.utils.spigot.worlds.maps.datapoints.DataPointLoader;
 import com.orbitmines.archive.minecraft.spigot._2019.utils.spigot.worlds.maps.datapoints.DataPointSign;
-import org.bukkit.Bukkit;
 import org.bukkit.Location;
 import org.bukkit.Material;
 import org.bukkit.enchantments.Enchantment;
@@ -278,15 +277,51 @@ public class DataPointNpc<S extends OMServer<S, P>, P extends OMPlayer<S, P>> ex
         }
     }
 
-    private void startUpdate(MobNpc npc) {
-        new PassiveRunnable(OMServer.getInstance(), Interval.of(TimeUnit.SECOND, 3)) {
-            @Override
-            public void onRun() {
-                npc.update();
-            }
-        }.async().start();
+    private static class NpcStatusCache {
+        final Server server;
+        final Server.Status[] status;
+        final long[] playerCount;
+
+        NpcStatusCache(Server server, Server.Status[] status, long[] playerCount) {
+            this.server = server;
+            this.status = status;
+            this.playerCount = playerCount;
+        }
     }
 
+    private final List<NpcStatusCache> npcStatusCaches = new ArrayList<>();
+    private boolean startedStatusUpdate = false;
+
+    private void startUpdate(MobNpc npc) {
+        if (!startedStatusUpdate) {
+            startedStatusUpdate = true;
+
+            /* Async: fetch status from database */
+            new PassiveRunnable(OMServer.getInstance(), Interval.of(TimeUnit.SECOND, 3)) {
+                @Override
+                public void onRun() {
+                    for (NpcStatusCache cache : npcStatusCaches) {
+                        cache.status[0] = cache.server.getStatus();
+                        cache.playerCount[0] = cache.server.getPlayerCount();
+                    }
+
+                    /* Sync: update hologram entities on main thread */
+                    new BukkitRunnable() {
+                        @Override
+                        public void run() {
+                            for (MobNpc tracked : trackedNpcs) {
+                                tracked.update();
+                            }
+                        }
+                    }.runTask(OMServer.getInstance().getPlugin());
+                }
+            }.async().start();
+        }
+
+        trackedNpcs.add(npc);
+    }
+
+    private final List<MobNpc> trackedNpcs = new ArrayList<>();
     private List<PersonalisedMobNpc<P>> lootNpcs = new ArrayList<>();
     private boolean startedLoot = false;
     private boolean color = false;
@@ -322,11 +357,17 @@ public class DataPointNpc<S extends OMServer<S, P>, P extends OMPlayer<S, P>> ex
 //                }
 //            };
 
+        /* Cache status fetched async — MutableString is evaluated on the main thread during hologram update */
+        final Server.Status[] cachedStatus = { Server.Status.OFFLINE };
+        final long[] cachedPlayerCount = { 0 };
+
+        npcStatusCaches.add(new NpcStatusCache(server, cachedStatus, cachedPlayerCount));
+
         return new MutableString[]{
                 () -> "§8§lOrbit§7§lMines " + server.getDisplayName(),
                 () -> {
-                    Server.Status status = Bukkit.isPrimaryThread() ? Server.Status.OFFLINE : server.getStatus();
-                    return status != Server.Status.ONLINE ? status.getColor().getCc() + "§l" + status.getName() : server.getColor().getCc() + "§l" + server.getPlayerCount() + " §7§l/ " + server.getMaxPlayers();
+                    Server.Status status = cachedStatus[0];
+                    return status != Server.Status.ONLINE ? status.getColor().getCc() + "§l" + status.getName() : server.getColor().getCc() + "§l" + cachedPlayerCount[0] + " §7§l/ " + server.getMaxPlayers();
                 }
         };
     }

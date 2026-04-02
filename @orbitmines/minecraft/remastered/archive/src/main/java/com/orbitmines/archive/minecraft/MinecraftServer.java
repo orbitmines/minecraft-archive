@@ -124,7 +124,7 @@ public class MinecraftServer {
         properties.setProperty("spawn-animals", "true");
         properties.setProperty("white-list", "false");
         properties.setProperty("generate-structures", "true");
-        properties.setProperty("online-mode", "true");
+        properties.setProperty("online-mode", "false");
         properties.setProperty("max-build-height", "256");
         properties.setProperty("level-seed", "");
         properties.setProperty("prevent-proxy-connections", "false");
@@ -132,6 +132,15 @@ public class MinecraftServer {
         properties.setProperty("enable-rcon", "false");
         properties.setProperty("motd", "A Minecraft Server");
         properties.save();
+
+        /* Generate spigot.yml with BungeeCord enabled — Spigot merges defaults on startup */
+        File spigotYml = new File(getDirectory().getPath() + "/spigot.yml");
+        if (!spigotYml.exists()) {
+            PrintWriter spigot = new PrintWriter(spigotYml, "UTF-8");
+            spigot.println("settings:");
+            spigot.println("  bungeecord: true");
+            spigot.close();
+        }
     }
 
     public void installPlugin(String file) throws IOException {

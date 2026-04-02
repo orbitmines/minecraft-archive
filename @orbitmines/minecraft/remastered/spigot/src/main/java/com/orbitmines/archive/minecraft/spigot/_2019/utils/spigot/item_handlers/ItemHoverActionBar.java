@@ -26,7 +26,12 @@ public abstract class ItemHoverActionBar<P extends SpigotPlayer> extends ItemHov
 
     @Override
     public void onEnter(P player, ItemStack item, int slot) {
-        ActionBar actionBar = actionBars.computeIfAbsent(player, key -> new ActionBar(player.bukkit(), () -> message.getMessage(player, player.getInventory().getItem(slot)), Long.MAX_VALUE));
+        ActionBar existing = actionBars.remove(player);
+        if (existing != null)
+            existing.forceStop();
+
+        ActionBar actionBar = new ActionBar(player.bukkit(), () -> message.getMessage(player, player.getInventory().getItem(slot)), Long.MAX_VALUE);
+        actionBars.put(player, actionBar);
         actionBar.send();
     }
 

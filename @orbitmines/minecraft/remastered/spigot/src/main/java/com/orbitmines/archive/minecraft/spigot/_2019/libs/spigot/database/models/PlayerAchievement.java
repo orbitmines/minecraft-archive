@@ -131,7 +131,7 @@ public class PlayerAchievement extends OMMySQLModel<PlayerAchievement, PlayerAch
             case KITPVP:
                 return KitPvPAchievement.values();
             default:
-                throw new IllegalStateException();
+                return new Achievement[0];
         }
     }
 }

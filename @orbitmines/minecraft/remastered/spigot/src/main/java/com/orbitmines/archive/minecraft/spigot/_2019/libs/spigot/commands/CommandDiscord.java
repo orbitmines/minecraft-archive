@@ -20,7 +20,7 @@ public class CommandDiscord<S extends OMServer<S, P>, P extends OMPlayer<S, P>> 
         super(plugin, "discord");
 
         executes((Executor0<S, P>) p -> {
-            String discordLink = Environment.get("OM_DISCORD_INVITE_LINK", "https://www.orbitmines.com/discord");
+            String discordLink = Environment.get("OM_DISCORD_INVITE_LINK", "https://www.discord.orbitmines.com/minecraft");
 
             TextBuilder<P> builder = new TextBuilder<P>();
             builder.

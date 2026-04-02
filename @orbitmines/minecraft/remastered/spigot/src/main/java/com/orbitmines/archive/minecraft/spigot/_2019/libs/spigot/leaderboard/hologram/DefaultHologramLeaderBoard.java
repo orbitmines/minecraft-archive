@@ -9,6 +9,8 @@ import com.orbitmines.archive.minecraft._2019.utils.database.lib.Table;
 import com.orbitmines.archive.minecraft._2019.utils.database.lib.builder.mysql.MySQLQueryBuilder;
 import com.orbitmines.archive.minecraft._2019.utils.database.lib.froms.MySQLColumnInstance;
 import com.orbitmines.archive.minecraft._2019.utils.mutable.MutableString;
+import com.orbitmines.archive.minecraft.spigot._2019.libs.spigot.OMServer;
+import org.bukkit.Bukkit;
 import org.bukkit.Location;
 
 import java.util.*;
@@ -20,7 +22,7 @@ public class DefaultHologramLeaderBoard extends HologramLeaderBoard {
 
     protected final int size;
 
-    protected ArrayList<LinkedHashMap<Selectable, Object>> ordered;
+    protected volatile String[] displayLines;
 
     public DefaultHologramLeaderBoard(Location location, double yOff, MutableString title, int size, Table table, MySQLColumnInstance uuidColumn, MySQLColumnInstance column, MySQLQueryBuilder queryBuilder) {
         this(location, yOff, new MutableString[] { title }, size, table, uuidColumn, column, queryBuilder);
@@ -30,7 +32,7 @@ public class DefaultHologramLeaderBoard extends HologramLeaderBoard {
         super(location, yOff, table, uuidColumn, column, queryBuilder);
 
         this.size = size;
-        this.ordered = new ArrayList<>();
+        this.displayLines = new String[size];
 
         for (MutableString string : title) {
             hologram.addLine(string, true);
@@ -41,37 +43,40 @@ public class DefaultHologramLeaderBoard extends HologramLeaderBoard {
         for (int i = 0; i < size; i++) {
             int index = i;
 
-            hologram.addLine(() -> {
-                if (ordered.size() < index + 1)
-                    return null; /* Empty Line */
-
-                LinkedHashMap<Selectable, Object> entry = ordered.get(index);
-
-                UUID uuid = UUID.fromString((String) entry.get(columnArray[0]));
-                OfflinePlayer player = OfflinePlayer.get(uuid);
-
-                int count = asInteger(entry.get(columnArray[1]));
-
-                if (player == null)
-                    return "§7" + (index + 1) + ". " + VipRank.NONE.getPrefixColor().getCc() + "UNKNOWN PLAYER" + "  " + getValue(null, count);
-
-                return "§7" + (index + 1) + ". " + player.getName(Name.RAW_COLORED) + "  " + getValue(player, count);
-            }, true);
+            hologram.addLine(() -> displayLines[index], true);
         }
     }
 
     @Override
     public void update() {
-        /* Clear from previous update */
-        this.ordered.clear();
-
-        /* Update top {size} players */
+        /* Query DB and resolve display strings on async thread */
         ArrayList<LinkedHashMap<Selectable, Object>> entries = DatabaseManager.getInstance().getDefault().getEntries(queryBuilder, columnArray[0], columnArray[1]);
 
-        this.ordered = getOnLeaderBoard(entries);
+        ArrayList<LinkedHashMap<Selectable, Object>> ordered = getOnLeaderBoard(entries);
 
-        /* Update Hologram */
-        hologram.update();
+        String[] lines = new String[size];
+        for (int i = 0; i < size; i++) {
+            if (ordered.size() < i + 1) {
+                lines[i] = null;
+                continue;
+            }
+
+            LinkedHashMap<Selectable, Object> entry = ordered.get(i);
+
+            UUID uuid = UUID.fromString((String) entry.get(columnArray[0]));
+            OfflinePlayer player = OfflinePlayer.get(uuid);
+
+            int count = asInteger(entry.get(columnArray[1]));
+
+            if (player == null)
+                lines[i] = "§7" + (i + 1) + ". " + VipRank.NONE.getPrefixColor().getCc() + "UNKNOWN PLAYER" + "  " + getValue(null, count);
+            else
+                lines[i] = "§7" + (i + 1) + ". " + player.getName(Name.RAW_COLORED) + "  " + getValue(player, count);
+        }
+        this.displayLines = lines;
+
+        /* Update Hologram on main thread — ArmorStand metadata must be set synchronously */
+        Bukkit.getScheduler().runTask(OMServer.getInstance().getPlugin(), () -> hologram.update());
     }
 
     public int getSize() {

@@ -162,10 +162,22 @@ public abstract class Npc<E extends Npc, P extends SpigotPlayer> {
             return null;
 
         for (Npc npc : getNpcsIn(entity.getWorld())) {
-            if (npc.getEntities().contains(entity))
+            if (containsEntity(npc.getEntities(), entity))
                 return npc;
         }
         return null;
+    }
+
+    /* Use UUID comparison instead of reference equality — NMS entity handles can be replaced in 26.1 */
+    static boolean containsEntity(Collection<Entity> entities, Entity target) {
+        if (target == null)
+            return false;
+
+        for (Entity e : entities) {
+            if (e != null && e.getUniqueId().equals(target.getUniqueId()))
+                return true;
+        }
+        return false;
     }
 
     public static List<Npc> getNpcsIn(World world) {

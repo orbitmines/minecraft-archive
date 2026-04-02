@@ -134,23 +134,25 @@ public class BungeePlayer implements Languageable, PlayerInstance {
         ServerInfo fallbackServer = null;
         Server currentServer = getServer() != null ? plugin.getServer(getServer().getInfo()) : null;
 
-        /* Motd of server is the connection priority of the server, select the server with the highest priority */
+        /* Motd of server is the connection priority of the server, select the server with the lowest priority value */
         for (ServerInfo info : plugin.getProxy().getServers().values()) {
-            if (fallbackServer == null || Integer.parseInt(fallbackServer.getMotd()) > Integer.parseInt(fallbackServer.getMotd())) {
-                Server server = plugin.getServer(info);
+            Server server = plugin.getServer(info);
 
-                /* We want to fallback to a server, so the current server does not apply */
-                if (server == currentServer)
-                    continue;
+            if (server == null)
+                continue;
 
-                if (!isEligible(server.getRank()))
-                    continue;
+            /* We want to fallback to a server, so the current server does not apply */
+            if (server == currentServer)
+                continue;
 
-                if (server.getStatus() != Server.Status.ONLINE)
-                    continue;
+            if (!isEligible(server.getRank()))
+                continue;
 
+            if (server.getStatus() != Server.Status.ONLINE)
+                continue;
+
+            if (fallbackServer == null || Integer.parseInt(info.getMotd()) < Integer.parseInt(fallbackServer.getMotd()))
                 fallbackServer = info;
-            }
         }
 
         return fallbackServer;

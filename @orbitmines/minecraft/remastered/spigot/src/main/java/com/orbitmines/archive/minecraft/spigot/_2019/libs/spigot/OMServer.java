@@ -153,6 +153,8 @@ public abstract class OMServer<S extends OMServer<S, P>, P extends OMPlayer<S, P
             database.checkConnection();
 
             System.out.println("Successfully setup SQLite connection.");
+
+            clearStaleState();
         } catch(DatabaseConnectionException ex) {
             restart("Could not connect to database, restarting... (Caused by: " + ex.getClass().getSimpleName() + ": " + ex.getCause().getMessage() + ")", true);
             return;
@@ -223,7 +225,7 @@ public abstract class OMServer<S extends OMServer<S, P>, P extends OMPlayer<S, P
                 lobbyWorld.setGameRule(GameRule.ADVANCE_TIME, false);
                 lobbyWorld.setGameRule(GameRule.SPAWN_MOBS, false);
                 /* GameRule.DO_FIRE_TICK removed in 26.1 */
-                lobbyWorld.setTime(18000);
+                lobbyWorld.setTime(18000); /* Midnight */
                 lobbyWorld.setAutoSave(false);
 
                 lobby.setup(lobbyWorld, createDataPointHandler(OMMap.Type.LOBBY));
@@ -400,7 +402,7 @@ public abstract class OMServer<S extends OMServer<S, P>, P extends OMPlayer<S, P
     /* Called Async */
     public void onStartupFinish() {
         if (Environment.isProduction())
-            discordBot.setStatus(OnlineStatus.ONLINE);
+            discord(bot -> bot.setStatus(OnlineStatus.ONLINE));
 
         getType().setStatus(Server.Status.ONLINE);
     }
@@ -580,10 +582,12 @@ public abstract class OMServer<S extends OMServer<S, P>, P extends OMPlayer<S, P
         /* Register state sync handler to receive state updates from BungeeCord */
         stateCache.registerStateSyncHandler();
 
-        /* Clear local server player data */
-        stateCache.clearServerPlayers(getType().getPluginName());
-
         System.out.println("Successfully setup plugin messaging.");
+    }
+
+    /* Called after database is initialized to clear stale state */
+    private void clearStaleState() {
+        StateProvider.getInstance().clearServerPlayers(getType().getPluginName());
     }
 
     private void setupSkinLibrary() {

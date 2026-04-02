@@ -27,8 +27,8 @@ public class KitPvPPlayerKitModel extends OMMySQLModel<KitPvPPlayerKitModel, Kit
     @Getter private UUID uuid;
     @Getter private long kitId;
     @Getter @Setter private int unlockedLevel;
-    @Getter @Setter private int kills;
-    @Getter @Setter private int deaths;
+    @Getter @Setter private volatile int kills;
+    @Getter @Setter private volatile int deaths;
     @Getter @Setter private int bestStreak;
     @Getter @Setter private Date bestStreakAt;
     @Getter @Setter private double damageDealt;

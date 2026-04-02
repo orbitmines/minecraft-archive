@@ -145,7 +145,13 @@ public abstract class ItemBuilderInstance<B extends ItemBuilderInstance, M exten
         ItemStack itemStack = new ItemStack(getMaterial(), getAmount());
         itemStack.setItemMeta(buildMeta((M) itemStack.getItemMeta()));
 
-        itemStack.addUnsafeEnchantments(new HashMap<>(this.enchantments));
+        /* Add enchantments, but skip GlowEnchantment — it's not a real registry enchantment in 26.1.
+           The visual glow is handled via setEnchantmentGlintOverride(true) in buildMeta(). */
+        for (Map.Entry<Enchantment, Integer> entry : this.enchantments.entrySet()) {
+            if (entry.getKey() instanceof GlowEnchantment)
+                continue;
+            itemStack.addUnsafeEnchantment(entry.getKey(), entry.getValue());
+        }
 
         return itemStack;
     }

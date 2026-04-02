@@ -276,7 +276,7 @@ public class ArmorStandNpc<P extends SpigotPlayer> extends Npc<ArmorStandNpc, P>
             return null;
 
         for (ArmorStandNpc npc : getArmorStandNpcsIn(entity.getWorld())) {
-            if (npc.getEntities().contains(entity))
+            if (Npc.containsEntity(npc.getEntities(), entity))
                 return npc;
         }
         return null;

@@ -1,9 +1,11 @@
 package com.orbitmines.archive.minecraft.spigot._2019.libs.spigot.leaderboard.hologram;
 
 import com.orbitmines.archive.minecraft.spigot._2019.libs.spigot.OMPlayer;
+import com.orbitmines.archive.minecraft.spigot._2019.libs.spigot.OMServer;
 import com.orbitmines.archive.minecraft.spigot._2019.libs.spigot.leaderboard.LeaderBoard;
 import com.orbitmines.archive.minecraft.spigot._2019.utils.spigot.mutable.MutablePlayerString;
 import com.orbitmines.archive.minecraft.spigot._2019.utils.spigot.npcs.Hologram;
+import org.bukkit.Bukkit;
 import org.bukkit.Location;
 
 import java.util.HashMap;
@@ -26,9 +28,11 @@ public abstract class PlayerHologramLeaderBoard<P extends OMPlayer<?, P>> extend
 
     @Override
     public void update() {
-        for (Hologram hologram : holograms.values()) {
-            hologram.update();
-        }
+        Bukkit.getScheduler().runTask(OMServer.getInstance().getPlugin(), () -> {
+            for (Hologram hologram : holograms.values()) {
+                hologram.update();
+            }
+        });
     }
 
     public void onLogin(P omp) {

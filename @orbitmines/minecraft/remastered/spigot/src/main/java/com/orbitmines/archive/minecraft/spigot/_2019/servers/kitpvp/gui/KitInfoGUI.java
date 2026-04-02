@@ -68,7 +68,12 @@ public class KitInfoGUI extends GUI<KitPvPPlayer> implements GUICenterHelper<Kit
 
         /* Info */
         for (KitPvPDataPointLobbyKitInfo.KitInfo info : KitPvPDataPointLobbyKitInfo.KitInfo.values()) {
-            set(info.getRow(), info.getSlot(), new Item<KitPvPPlayer, MutableItemBuilder>(() -> info.getIcon().setDisplayName(info.getDisplayName()).addLore("§7§o" + info.getDescription(viewer, kit))));
+            set(info.getRow(), info.getSlot(), new Item<KitPvPPlayer, MutableItemBuilder>(() -> {
+                ItemBuilderInstance icon = info.getIcon().setDisplayName(info.getDisplayName()).addLore("§7§o" + info.getDescription(viewer, kit));
+                if (info == KitPvPDataPointLobbyKitInfo.KitInfo.MAX_HEALTH)
+                    icon.setAmount((int) kit.getMaxHealth());
+                return icon;
+            }));
         }
 
         center(5, () -> Arrays.asList(kit.getHandler().getLevels()));

@@ -83,17 +83,19 @@ public class HubKit extends InteractiveKit<Hub, HubPlayer> {
             )
         );
 
-        set(7,
-            player -> new PlayerSkullBuilder("Discord Skull", SpigotDiscordBot.SKULL_TEXTURE, 1, "§6 "),
+        if (hub.getDiscordBot() != null) {
+            set(7,
+                player -> new PlayerSkullBuilder("Discord Skull", SpigotDiscordBot.SKULL_TEXTURE, 1, "§6 "),
 
-            new Interaction<Hub, HubPlayer>(hub) {
-                @Override
-                public void onInteract(HubPlayer player, PlayerInteractEvent event, ItemStack itemStack) {
-                    hub.runAsync(() -> new DiscordSquadGUI<>(player, player).open());
-                }
-            }.onActionBarHover(
-                (player, item) -> "§9§lDiscord Squad§r §8- §e§l" + player.translate("spigot", "player.mouse.right_click")
-            )
-        );
+                new Interaction<Hub, HubPlayer>(hub) {
+                    @Override
+                    public void onInteract(HubPlayer player, PlayerInteractEvent event, ItemStack itemStack) {
+                        hub.runAsync(() -> new DiscordSquadGUI<>(player, player).open());
+                    }
+                }.onActionBarHover(
+                    (player, item) -> "§9§lDiscord Squad§r §8- §e§l" + player.translate("spigot", "player.mouse.right_click")
+                )
+            );
+        }
     }
 }

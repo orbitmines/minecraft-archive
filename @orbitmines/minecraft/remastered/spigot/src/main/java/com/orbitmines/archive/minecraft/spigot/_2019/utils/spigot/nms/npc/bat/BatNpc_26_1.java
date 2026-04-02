@@ -4,7 +4,9 @@ import com.orbitmines.archive.minecraft.spigot._2019.utils.spigot.nms.npc.NpcNms
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.ambient.Bat;
+import net.minecraft.server.level.ServerLevel;
 import net.minecraft.world.level.Level;
+import org.bukkit.event.entity.CreatureSpawnEvent;
 import net.minecraft.world.phys.Vec3;
 import org.bukkit.Location;
 import org.bukkit.craftbukkit.CraftWorld;
@@ -25,11 +27,11 @@ public class BatNpc_26_1 implements BatNpc {
 
     @Override
     public Entity spawn(Location location, Collection<Option> options) {
-        Level level = ((CraftWorld) location.getWorld()).getHandle();
+        ServerLevel level = ((CraftWorld) location.getWorld()).getHandle();
         CustomBatNpc entity = new CustomBatNpc(level, options, npcNms);
 
         entity.absSnapTo(location.getX(), location.getY(), location.getZ(), location.getYaw(), location.getPitch());
-        level.addFreshEntity(entity);
+        level.addFreshEntity(entity, CreatureSpawnEvent.SpawnReason.CUSTOM);
 
         CraftEntity craftEntity = entity.getBukkitEntity();
         ((CraftBat) craftEntity).setRemoveWhenFarAway(false);

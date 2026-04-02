@@ -39,7 +39,7 @@ public class BungeeCord extends Plugin {
     }
 
     public void registerServer(MinecraftServer server) {
-        this.getProxy().getServers().put(server.getName(), this.getProxy().constructServerInfo(server.getName(), new InetSocketAddress(server.getIp(), server.getPort()), "0", true));
+        this.getProxy().getServers().put(server.getName(), this.getProxy().constructServerInfo(server.getName(), new InetSocketAddress(server.getIp(), server.getPort()), server.getType().ordinal() + "", false));
         getProxy().getPluginManager().registerCommand(this, new ServerCommand(server));
     }
 

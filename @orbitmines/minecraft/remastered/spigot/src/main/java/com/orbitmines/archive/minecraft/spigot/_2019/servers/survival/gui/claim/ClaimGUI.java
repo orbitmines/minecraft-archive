@@ -183,9 +183,12 @@ public class ClaimGUI extends PaginatableGUI<SurvivalPlayer, Claim, SurvivalClai
                 builder.addLore("§7Server: " + server.getDisplayName());
             } else {
                 IPEntry entry = memberInstance.getLastIPEntry();
-                Date lastSeen = entry.getLogoutAt() != null ? entry.getLogoutAt() : entry.getLoginAt();
 
-                builder.addLore("§7" + viewer.translate("spigot", "player.friends.last_seen", "§b§l" + TimeUtils.humanFriendlyTimer(viewer.getLanguage(), System.currentTimeMillis() - lastSeen.getTime()) + "§7"));
+                if (entry != null) {
+                    Date lastSeen = entry.getLogoutAt() != null ? entry.getLogoutAt() : entry.getLoginAt();
+
+                    builder.addLore("§7" + viewer.translate("spigot", "player.friends.last_seen", "§b§l" + TimeUtils.humanFriendlyTimer(viewer.getLanguage(), System.currentTimeMillis() - lastSeen.getTime()) + "§7"));
+                }
             }
             builder.addLore("");
             builder.addLore("§a" + viewer.translate("survival", "player.claim.gui.player.hover"));

@@ -341,7 +341,7 @@ public class MobNpc<P extends SpigotPlayer> extends Npc<MobNpc, P> {
             return null;
 
         for (MobNpc npc : getMobNpcsIn(entity.getWorld())) {
-            if (npc.getEntities().contains(entity))
+            if (Npc.containsEntity(npc.getEntities(), entity))
                 return npc;
         }
         return null;

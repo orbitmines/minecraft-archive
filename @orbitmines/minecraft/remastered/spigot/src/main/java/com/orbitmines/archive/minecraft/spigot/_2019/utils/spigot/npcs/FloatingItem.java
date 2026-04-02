@@ -50,6 +50,7 @@ public class FloatingItem<P extends SpigotPlayer> extends Hologram<P> {
 
         item = spawnLocation.getWorld().dropItem(spawnLocation, itemBuilder.toItemStack());
         item.setPickupDelay(Integer.MAX_VALUE);
+        item.setUnlimitedLifetime(true);
         item.setInvulnerable(true);
 
         lines.get(0).getArmorStand().addPassenger(item);
@@ -101,7 +102,7 @@ public class FloatingItem<P extends SpigotPlayer> extends Hologram<P> {
             return null;
 
         for (FloatingItem npc : getFloatingItemsIn(entity.getWorld())) {
-            if (npc.getEntities().contains(entity))
+            if (Npc.containsEntity(npc.getEntities(), entity))
                 return npc;
         }
         return null;

@@ -359,7 +359,21 @@ public class ItemUtils {
             Material.PURPLE_SHULKER_BOX,
             Material.RED_SHULKER_BOX,
             Material.WHITE_SHULKER_BOX,
-            Material.YELLOW_SHULKER_BOX
+            Material.YELLOW_SHULKER_BOX,
+
+            Material.ACACIA_SIGN,
+            Material.BIRCH_SIGN,
+            Material.DARK_OAK_SIGN,
+            Material.JUNGLE_SIGN,
+            Material.OAK_SIGN,
+            Material.SPRUCE_SIGN,
+
+            Material.ACACIA_WALL_SIGN,
+            Material.BIRCH_WALL_SIGN,
+            Material.DARK_OAK_WALL_SIGN,
+            Material.JUNGLE_WALL_SIGN,
+            Material.OAK_WALL_SIGN,
+            Material.SPRUCE_WALL_SIGN
     ));
 
     public static boolean isInteractable(Material material) {

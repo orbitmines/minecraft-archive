@@ -130,7 +130,7 @@ public class Survival extends OMServer<Survival, SurvivalPlayer> {
             Prevention.FOOD_CHANGE
         );
         getLobby().getWorld().setPVP(false);
-        getLobby().getWorld().setTime(6000);
+        getLobby().getWorld().setTime(12000); /* Noon — day cycle doubled from 24000 to 48000 ticks in 26.1 */
 
         world = Bukkit.getWorld("world");
         world.getWorldBorder().setCenter(0.5, 0.5);

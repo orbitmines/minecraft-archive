@@ -128,7 +128,7 @@ public class DefaultPodiumLeaderBoard extends LeaderBoard {
                 if (player != null) {
                     return player.getName(Name.NICK_COLORED);
                 } else {
-                    return VipRank.NONE.getPrefixColor() + "UNKNOWN PLAYER";
+                    return VipRank.NONE.getPrefixColor().getCc() + "UNKNOWN PLAYER";
                 }
             }, false);
 

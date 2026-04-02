@@ -31,7 +31,11 @@ public class ReflectionUtils {
 
             Object commands;
             if (vanilla) {
-                commands = getDeclaredField(server.getClass(), "vanillaCommandDispatcher").get(server);
+                /* vanillaCommandDispatcher was removed in 26.1 */
+                Field field = getDeclaredField(server.getClass(), "vanillaCommandDispatcher");
+                if (field == null)
+                    return null;
+                commands = field.get(server);
             } else {
                 commands = server.getClass().getMethod("getCommands").invoke(server);
             }
@@ -70,6 +74,8 @@ public class ReflectionUtils {
             Field field = clazz.getDeclaredField(name);
             field.setAccessible(true);
             return field;
+        } catch (NoSuchFieldException e) {
+            return null;
         } catch (Exception e) {
             e.printStackTrace();
             return null;

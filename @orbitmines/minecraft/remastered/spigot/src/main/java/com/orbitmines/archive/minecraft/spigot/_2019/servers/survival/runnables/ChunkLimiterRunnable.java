@@ -33,29 +33,29 @@ public class ChunkLimiterRunnable extends PassiveRunnable<Survival> {
 
     @Override
     public void onRun() {
-        Map<Chunk, List<Entity>> searches = new HashMap<>();
-
-        for (World world : worlds) {
-            for (Chunk chunk : world.getLoadedChunks()) {
-                Entity[] inChunk = chunk.getEntities();
-                int count = inChunk.length;
-
-                if (count <= Survival.MAX_ENTITY_PER_CHUNK)
-                    continue;
-
-                List<Entity> entities = new EntitySearch(inChunk).search(count - Survival.MAX_ENTITY_PER_CHUNK);
-
-                if (entities.size() == 0)
-                    continue;
-
-                searches.put(chunk, entities);
-            }
-        }
-
-        if (searches.size() == 0)
-            return;
-
         survival.runSync(() -> {
+            Map<Chunk, List<Entity>> searches = new HashMap<>();
+
+            for (World world : worlds) {
+                for (Chunk chunk : world.getLoadedChunks()) {
+                    Entity[] inChunk = chunk.getEntities();
+                    int count = inChunk.length;
+
+                    if (count <= Survival.MAX_ENTITY_PER_CHUNK)
+                        continue;
+
+                    List<Entity> entities = new EntitySearch(inChunk).search(count - Survival.MAX_ENTITY_PER_CHUNK);
+
+                    if (entities.size() == 0)
+                        continue;
+
+                    searches.put(chunk, entities);
+                }
+            }
+
+            if (searches.size() == 0)
+                return;
+
             for (Chunk chunk : searches.keySet()) {
                 if (!chunk.isLoaded())
                     return;

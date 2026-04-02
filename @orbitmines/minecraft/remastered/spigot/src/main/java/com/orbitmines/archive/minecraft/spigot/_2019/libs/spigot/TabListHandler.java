@@ -28,7 +28,7 @@ public class TabListHandler<S extends OMServer<S, P>, P extends OMPlayer<S, P>> 
     public String getFooter() {
         String websiteLink = URLUtils.humanReadableLink(Environment.get("OM_WEBSITE_LINK", "https://www.orbitmines.com"));
         String shopLink = URLUtils.humanReadableLink(Environment.get("OM_SHOP_LINK", "https://shop.orbitmines.com"));
-        String discordLink = URLUtils.humanReadableLink(Environment.get("OM_DISCORD_INVITE_LINK", "https://www.orbitmines.com/discord"));
+        String discordLink = URLUtils.humanReadableLink(Environment.get("OM_DISCORD_INVITE_LINK", "https://www.discord.orbitmines.com/minecraft"));
 
         return "\n" +
                 "    §7Website: §6§l" + websiteLink + "§r    \n" +

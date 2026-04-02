@@ -36,6 +36,7 @@ public class AnvilNms_26_1 implements AnvilNms {
     private class AnvilContainer extends AnvilMenu {
         public AnvilContainer(ServerPlayer player, int containerId) {
             super(containerId, player.getInventory(), ContainerLevelAccess.create(player.level(), player.blockPosition()));
+            setTitle(Component.translatable("container.repair"));
         }
 
         @Override

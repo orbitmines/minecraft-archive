@@ -18,6 +18,8 @@ import com.orbitmines.archive.minecraft.spigot._2019.libs.spigot.commands.brigad
 import com.orbitmines.archive.minecraft.spigot._2019.libs.spigot.commands.brigadier.Executor;
 import com.orbitmines.archive.minecraft.spigot._2019.libs.spigot.commands.brigadier.Namespace;
 import lombok.Getter;
+import org.bukkit.command.CommandSender;
+import org.bukkit.entity.Player;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -133,6 +135,10 @@ public abstract class ArgumentBuilder<S extends OMServer<S, P>, P extends OMPlay
             parent.requires((context) -> {
                 if (this.rank.isNone())
                     return true;
+
+                CommandSender sender = OMServer.getInstance().getNms().brigadier().getSender(context);
+                if (!(sender instanceof Player))
+                    return false;
 
                 P player = executor.getPlayer(plugin, context);
 

@@ -151,9 +151,11 @@ public class FriendGUI<S extends OMServer<S, P>, P extends OMPlayer<S, P>> exten
                         builder.addLore("§7Status: " + Server.Status.OFFLINE.getDisplayName());
 
                         IPEntry entry = friend.getLastIPEntry();
-                        Date lastSeen = entry.getLogoutAt() != null ? entry.getLogoutAt() : entry.getLoginAt();
-
-                        builder.addLore("§7" + viewer.translate("spigot", "player.friends.last_seen", "§b§l" + TimeUtils.humanFriendlyTimer(viewer.getLanguage(), System.currentTimeMillis() - lastSeen.getTime()) + "§7"));
+                        if (entry != null) {
+                            Date lastSeen = entry.getLogoutAt() != null ? entry.getLogoutAt() : entry.getLoginAt();
+                            if (lastSeen != null)
+                                builder.addLore("§7" + viewer.translate("spigot", "player.friends.last_seen", "§b§l" + TimeUtils.humanFriendlyTimer(viewer.getLanguage(), System.currentTimeMillis() - lastSeen.getTime()) + "§7"));
+                        }
                     }
                     break;
                 case REMOVE:
