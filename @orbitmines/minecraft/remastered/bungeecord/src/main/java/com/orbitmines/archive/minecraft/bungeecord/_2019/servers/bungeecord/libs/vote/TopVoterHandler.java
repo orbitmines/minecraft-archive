@@ -118,23 +118,24 @@ public class TopVoterHandler {
         if (topVotes.size() == 0)
             return;
 
-        BungeeDiscordBot bot = bungee.getDiscordBot();
-        TextChannel channel = bot.getTextChannel(CustomChannel.ANNOUNCEMENTS);
+        bungee.discord(bot -> {
+            TextChannel channel = bot.getTextChannel(CustomChannel.ANNOUNCEMENTS);
 
-        channel.sendMessage("@everyone **TOP VOTERS OF " + month.toString() + " " + year + "**").queue();
+            channel.sendMessage("@everyone **TOP VOTERS OF " + month.toString() + " " + year + "**").queue();
 
-        String message = "Another month of voting is concluded. We received a total of **" + NumberUtils.locale(totalVotes) + " Votes** from **" + NumberUtils.locale(voterCount) + " Players** this month.\n";
+            String message = "Another month of voting is concluded. We received a total of **" + NumberUtils.locale(totalVotes) + " Votes** from **" + NumberUtils.locale(voterCount) + " Players** this month.\n";
 
-        if (communityGoal)
-            message += " The **Community Goal** has been achieved (a total of " + NumberUtils.locale(TopVoterReward.COMMUNITY_GOAL) + " Votes). All **" + NumberUtils.locale(voterCount) + " Players** have received **" + TopVoterReward.COMMUNITY_GOAL_SOLARS_PER_VOTE + " Solars per Vote** (**" + NumberUtils.locale(totalVotes * TopVoterReward.COMMUNITY_GOAL_SOLARS_PER_VOTE) + " Solars** in total).\n";
+            if (communityGoal)
+                message += " The **Community Goal** has been achieved (a total of " + NumberUtils.locale(TopVoterReward.COMMUNITY_GOAL) + " Votes). All **" + NumberUtils.locale(voterCount) + " Players** have received **" + TopVoterReward.COMMUNITY_GOAL_SOLARS_PER_VOTE + " Solars per Vote** (**" + NumberUtils.locale(totalVotes * TopVoterReward.COMMUNITY_GOAL_SOLARS_PER_VOTE) + " Solars** in total).\n";
 
-        message += "_We would like to thank everyone on behalf of the **OrbitMines Team** for voting, not only does this give you rewards in game, it also helps our server immensely!_\n";
+            message += "_We would like to thank everyone on behalf of the **OrbitMines Team** for voting, not only does this give you rewards in game, it also helps our server immensely!_\n";
 
-        message += "The Top Voters of this month are:";
+            message += "The Top Voters of this month are:";
 
-        channel.sendMessage(message).queue();
+            channel.sendMessage(message).queue();
 
-        sendTopVoter(bot, channel, topVotes, 0, CustomRole.TOP_VOTER_1, TopVoterReward.FIRST_PLACE);
+            sendTopVoter(bot, channel, topVotes, 0, CustomRole.TOP_VOTER_1, TopVoterReward.FIRST_PLACE);
+        });
     }
 
     private void sendTopVoter(BungeeDiscordBot bot, TextChannel channel, ArrayList<MonthlyVotes> topVoters, int index, CustomRole role, TopVoterReward topVoterReward) {

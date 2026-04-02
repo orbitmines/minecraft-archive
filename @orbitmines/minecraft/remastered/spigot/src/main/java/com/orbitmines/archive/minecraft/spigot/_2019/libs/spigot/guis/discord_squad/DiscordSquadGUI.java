@@ -41,6 +41,11 @@ public class DiscordSquadGUI<S extends OMServer<S, P>, P extends OMPlayer<S, P>>
         this.squad = DiscordSquad.findBy(DiscordSquad.class, DiscordSquad.column.UUID.is(key.getUUID()));
         this.bot = viewer.server().getDiscordBot();
 
+        if (this.bot == null) {
+            viewer.sendMessage("Discord", com.orbitmines.archive.minecraft._2019.libs.Color.ERROR, "spigot", "discord.not_enabled");
+            return;
+        }
+
         set(1, 2, new Item<P, MutableItemBuilder>(() -> {
             DiscordSquad selected = DiscordSquad.getSelected(key.getUUID());
             PlayerSkullBuilder item = new PlayerSkullBuilder("Discord Skull", SpigotDiscordBot.SKULL_TEXTURE, 1, "§7§l" + viewer.translate("spigot", "player.discord_squad.gui.selected"));

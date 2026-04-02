@@ -12,6 +12,7 @@ import com.orbitmines.archive.minecraft.spigot._2019.libs.spigot.achievements.Em
 import com.orbitmines.archive.minecraft.spigot._2019.libs.spigot.achievements.servers.HubAchievement;
 import com.orbitmines.archive.minecraft.spigot._2019.libs.spigot.commands.arguments.DiscordMemberArgument;
 import com.orbitmines.archive.minecraft.spigot._2019.libs.spigot.commands.brigadier.Command;
+import com.orbitmines.archive.minecraft.spigot._2019.libs.spigot.commands.brigadier.executors.Executor0;
 import com.orbitmines.archive.minecraft.spigot._2019.libs.spigot.commands.brigadier.executors.Executor1;
 import net.dv8tion.jda.api.entities.Member;
 
@@ -19,6 +20,13 @@ public class CommandDiscordLink<S extends OMServer<S, P>, P extends OMPlayer<S, 
 
     public CommandDiscordLink(S plugin) {
         super(plugin, "discordlink", "link");
+
+        if (plugin.getDiscordBot() == null) {
+            executes((Executor0<S, P>) (player) -> {
+                player.sendMessage("Discord", Color.ERROR, "spigot", "discord.not_enabled");
+            });
+            return;
+        }
 
         withArg(
             new DiscordMemberArgument<S, P>(plugin.getDiscordBot(), "name#id").executes((Executor1<S, P,

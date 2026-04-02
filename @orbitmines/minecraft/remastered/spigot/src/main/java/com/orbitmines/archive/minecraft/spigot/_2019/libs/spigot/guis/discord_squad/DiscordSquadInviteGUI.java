@@ -32,6 +32,9 @@ public class DiscordSquadInviteGUI<S extends OMServer<S, P>, P extends OMPlayer<
         this.squad = key;
         this.bot = viewer.server().getDiscordBot();
 
+        if (this.bot == null)
+            return;
+
         set(0, 4, new Item<P, MutableItemBuilder>(() -> {
             return new PlayerSkullBuilder(this.key.getUuid(), 1, "§9« " + viewer.translate("spigot", "player.discord_squad.gui.back_to_overview"));
         }, event -> {

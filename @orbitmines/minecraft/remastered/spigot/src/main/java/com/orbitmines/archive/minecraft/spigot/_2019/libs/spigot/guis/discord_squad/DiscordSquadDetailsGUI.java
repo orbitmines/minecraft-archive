@@ -28,6 +28,9 @@ public class DiscordSquadDetailsGUI<S extends OMServer<S, P>, P extends OMPlayer
         this.squad = squad;
         this.bot = viewer.server().getDiscordBot();
 
+        if (this.bot == null)
+            return;
+
         set(1, 1, new Item<P, MutableItemBuilder>(() -> {
             ItemBuilder item = new ItemBuilder(Material.EMERALD, 1, "§a§l" + viewer.translate("spigot", "player.discord_squad.gui.set_as_selected"));
 

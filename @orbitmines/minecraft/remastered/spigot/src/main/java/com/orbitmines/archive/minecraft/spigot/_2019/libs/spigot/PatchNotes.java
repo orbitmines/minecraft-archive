@@ -8,6 +8,7 @@ import com.orbitmines.archive.minecraft._2019.libs.Color;
 import com.orbitmines.archive.minecraft._2019.libs.Image;
 import com.orbitmines.archive.minecraft._2019.libs.Server;
 import com.orbitmines.archive.minecraft._2019.libs.discord.CustomChannel;
+import com.orbitmines.archive.minecraft.spigot._2019.libs.spigot.discord.SpigotDiscordBot;
 import com.orbitmines.archive.minecraft._2019.utils.DateUtils;
 import com.orbitmines.archive.minecraft._2019.utils.state.StateProvider;
 import com.orbitmines.archive.minecraft.spigot._2019.utils.spigot.builders.chat.text.TextBuilder;
@@ -847,7 +848,15 @@ public class PatchNotes {
     }
 
     private void broadcastToDiscord(Instance instance) {
-        TextChannel channel = server.getDiscordBot().getTextChannel(CustomChannel.PATCH_NOTES);
+        SpigotDiscordBot bot = server.getDiscordBot();
+        if (bot == null)
+            return;
+
+        broadcastToDiscord(bot, instance);
+    }
+
+    private void broadcastToDiscord(SpigotDiscordBot bot, Instance instance) {
+        TextChannel channel = bot.getTextChannel(CustomChannel.PATCH_NOTES);
 
         Image image = Image.logoFrom(server.getType());
 

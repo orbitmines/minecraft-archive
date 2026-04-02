@@ -1,8 +1,0 @@
-name: prison
-main: com.orbitmines.servers.prison.Prison
-authors: [Fadi Shawki, Robin Egberts]
-version: 1.0.0
-api-version: 1.13
-commands:
-softdepend:
-  - Plan

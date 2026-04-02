@@ -73,7 +73,7 @@ public class StatsGUI<S extends OMServer<S, P>, P extends OMPlayer<S, P>> extend
 
             /* Discord */
             DiscordUser discordUser = key.getDiscordUser();
-            User user = discordUser != null ? discordUser.getDiscordUser(server.getDiscordBot()) : null;
+            User user = discordUser != null && server.getDiscordBot() != null ? discordUser.getDiscordUser(server.getDiscordBot()) : null;
             item.addLore("§7Discord: " + (user != null ? "§9§l" + user.getName() + "#" + user.getDiscriminator() : StaffRank.NONE.getDisplayName()));
 
             /* Time Played */

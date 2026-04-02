@@ -28,6 +28,9 @@ public class DiscordSquadInviteDetailsGUI<S extends OMServer<S, P>, P extends OM
         this.squad = squad;
         this.bot = viewer.server().getDiscordBot();
 
+        if (this.bot == null)
+            return;
+
         set(1, 1, new Item<P, MutableItemBuilder>(() -> {
             return new ItemBuilder(Material.BOOK, 1, "§a§l" + viewer.translate("spigot", "player.discord_squad.gui.invite.accept"));
         }, event -> {

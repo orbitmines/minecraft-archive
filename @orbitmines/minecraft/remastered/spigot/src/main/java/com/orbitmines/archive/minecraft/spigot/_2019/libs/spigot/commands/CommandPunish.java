@@ -201,14 +201,12 @@ public abstract class CommandPunish<S extends OMServer<S, P>, P extends OMPlayer
 //                e.printStackTrace();
 //            }
 
-        OMDiscordBot bot = getPlugin().getDiscordBot();
-
-        bot.withPlayerEmote(punished.getUUID(), punished.getRawName(), false, emote -> {
+        getPlugin().discord(bot -> bot.withPlayerEmote(punished.getUUID(), punished.getRawName(), false, emote -> {
             TextChannel channel = bot.getTextChannel(CustomChannel.PUNISHMENTS);
 
             channel.sendMessage(bot.getPlayerDisplay(punished, emote, punished.getRawName()) + " has been " + getVerb() + "!").queue();
             channel.sendMessageEmbeds(builder.build()).queue();
-        });
+        }));
     }
 
     public static class Ban<S extends OMServer<S, P>, P extends OMPlayer<S, P>> extends CommandPunish<S, P> {

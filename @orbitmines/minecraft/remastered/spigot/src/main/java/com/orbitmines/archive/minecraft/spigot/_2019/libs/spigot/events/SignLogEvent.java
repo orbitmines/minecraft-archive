@@ -10,7 +10,6 @@ import com.orbitmines.archive.minecraft._2019.libs.Image;
 import com.orbitmines.archive.minecraft._2019.libs.discord.CustomChannel;
 import com.orbitmines.archive.minecraft.spigot._2019.libs.spigot.OMPlayer;
 import com.orbitmines.archive.minecraft.spigot._2019.libs.spigot.OMServer;
-import com.orbitmines.archive.minecraft.spigot._2019.libs.spigot.discord.SpigotDiscordBot;
 import com.orbitmines.archive.minecraft._2019.utils.DateUtils;
 import com.orbitmines.archive.minecraft.spigot._2019.utils.spigot.LocationUtils;
 import net.dv8tion.jda.api.EmbedBuilder;
@@ -33,10 +32,9 @@ public class SignLogEvent<S extends OMServer<S, P>, P extends OMPlayer<S, P>> im
     public void onSignPlace(SignChangeEvent event) {
         P player = server.getPlayer(event.getPlayer());
 
-        SpigotDiscordBot bot = server.getDiscordBot();
         Date date = DateUtils.now();
 
-        bot.withPlayerEmote(player.getUUID(), player.getRawName(), false, emote -> {
+        server.discord(bot -> bot.withPlayerEmote(player.getUUID(), player.getRawName(), false, emote -> {
             TextChannel channel = bot.getTextChannel(CustomChannel.SIGN_LOG);
 
             channel.sendMessage(bot.getPlayerDisplay(player, emote, player.getRawName()) + " has placed a sign.").queue();
@@ -58,6 +56,6 @@ public class SignLogEvent<S extends OMServer<S, P>, P extends OMPlayer<S, P>> im
             builder.setFooter(server.getType().getName() + " / " + Environment.get().toString() + " / " + DateUtils.format(date, DateUtils.DATE_TIME_FORMAT), Image.icon(server.getType()).getUrl());
 
             channel.sendMessageEmbeds(builder.build()).queue();
-        });
+        }));
     }
 }

@@ -112,11 +112,13 @@ public class BungeePlayer implements Languageable, PlayerInstance {
         }
 
         /* Update Discord Ranks */
-        DiscordUser user = getDiscordUser();
-        if (user == null)
-            user = new DiscordUser(getUUID(), null);
+        plugin.discord(bot -> {
+            DiscordUser discordUser = getDiscordUser();
+            if (discordUser == null)
+                discordUser = new DiscordUser(getUUID(), null);
 
-        user.updateDiscordRanks(plugin.getDiscordBot());
+            discordUser.updateDiscordRanks(bot);
+        });
     }
 
     public void processQuitEvent(PlayerDisconnectEvent event) {
@@ -160,12 +162,11 @@ public class BungeePlayer implements Languageable, PlayerInstance {
         item.insert();
 
         /* New Players Mention */
-        OMDiscordBot bot = plugin.getDiscordBot();
-        bot.withPlayerEmote(getUUID(), getName(Name.RAW), false, (emote) -> {
+        plugin.discord(bot -> bot.withPlayerEmote(getUUID(), getName(Name.RAW), false, (emote) -> {
             bot.getTextChannel(CustomChannel.NEW_PLAYERS).sendMessage(
                 bot.getPlayerDisplay(BungeePlayer.this, emote, getName(Name.RAW)) + " has joined OrbitMines for the first time!"
             ).queue();
-        });
+        }));
     }
 
     private void checkNameChange() {
@@ -198,7 +199,7 @@ public class BungeePlayer implements Languageable, PlayerInstance {
         /* Update DiscordSquad Category */
         DiscordSquad squad = DiscordSquad.findBy(DiscordSquad.class, DiscordSquad.column.UUID.is(getUUID()));
         if (squad != null)
-            squad.onNameChange(plugin.getDiscordBot());
+            plugin.discord(bot -> squad.onNameChange(bot));
 
         /* Clear Name Cache */
         UUIDUtils.clearCacheFor(model.getUUID());
@@ -209,12 +210,11 @@ public class BungeePlayer implements Languageable, PlayerInstance {
         new PlayerNameChangePublisher().publish(model.getUUID(), previousName, newName);
 
         /* Notify Discord of Name Change */
-        BungeeDiscordBot bot = plugin.getDiscordBot();
-        bot.withPlayerEmote(model.getUUID(), newName, false, (emote) -> {
+        plugin.discord(bot -> bot.withPlayerEmote(model.getUUID(), newName, false, (emote) -> {
             bot.getTextChannel(CustomChannel.NAME_CHANGE).sendMessage(
                 bot.getPlayerDisplay(model, emote, previousName) + " » " + bot.getPlayerDisplay(model, emote, newName)
             ).queue();
-        });
+        }));
     }
 
     private void kickUnsupportedVersion(int version) {

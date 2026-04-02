@@ -8,7 +8,6 @@ import com.orbitmines.archive.minecraft._2019.libs.loot.Rarity;
 import com.orbitmines.archive.minecraft._2019.libs.player.OfflinePlayer;
 import com.orbitmines.archive.minecraft.bungeecord._2019.servers.bungeecord.libs.BungeePlayer;
 import com.orbitmines.archive.minecraft.bungeecord._2019.servers.bungeecord.libs.Bungeecord;
-import com.orbitmines.archive.minecraft.bungeecord._2019.servers.bungeecord.libs.discord.BungeeDiscordBot;
 import com.orbitmines.archive.minecraft.bungeecord._2019.servers.bungeecord.libs.pubsub.publishers.PlayerDonationPublisher;
 import com.orbitmines.archive.minecraft.bungeecord._2019.servers.bungeecord.utils.command.ConsoleCommand;
 import com.orbitmines.archive.minecraft._2019.utils.DateUtils;
@@ -25,13 +24,11 @@ import java.util.UUID;
 public class CommandDonation extends ConsoleCommand {
 
     private final Bungeecord bungee;
-    private final BungeeDiscordBot bot;
 
     public CommandDonation(Bungeecord bungee) {
         super("donation");
 
         this.bungee = bungee;
-        this.bot = bungee.getDiscordBot();
     }
 
     /*
@@ -69,7 +66,7 @@ public class CommandDonation extends ConsoleCommand {
 
         new PlayerDonationPublisher().publish(uuid, donationModel);
 
-        bot.withPlayerEmote(uuid, name, false, emote -> {
+        bungee.discord(bot -> bot.withPlayerEmote(uuid, name, false, emote -> {
             TextChannel channel = bot.getTextChannel(CustomChannel.DONATIONS);
 
             OfflinePlayer player = OfflinePlayer.get(uuid);
@@ -85,7 +82,7 @@ public class CommandDonation extends ConsoleCommand {
 
             builder.setThumbnail(donation.getImage().getUrl());
 
-            channel.sendMessageEmbeds(builder.build()).queue(); 
-        });
+            channel.sendMessageEmbeds(builder.build()).queue();
+        }));
     }
 }

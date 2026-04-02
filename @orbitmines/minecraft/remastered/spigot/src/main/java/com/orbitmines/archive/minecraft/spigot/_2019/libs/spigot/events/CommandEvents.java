@@ -7,11 +7,9 @@ package com.orbitmines.archive.minecraft.spigot._2019.libs.spigot.events;
 import com.orbitmines.brigadier.ExecuteCommandExceptionEvent;
 import com.orbitmines.archive.minecraft._2019.libs.Color;
 import com.orbitmines.archive.minecraft._2019.libs.discord.CustomChannel;
-import com.orbitmines.archive.minecraft._2019.libs.discord.OMDiscordBot;
 import com.orbitmines.archive.minecraft.spigot._2019.libs.spigot.OMPlayer;
 import com.orbitmines.archive.minecraft.spigot._2019.libs.spigot.OMServer;
 import com.orbitmines.archive.minecraft.spigot._2019.libs.spigot.commands.brigadier.Command;
-import net.dv8tion.jda.api.entities.channel.concrete.TextChannel;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
@@ -51,12 +49,9 @@ public class CommandEvents<S extends OMServer<S, P>, P extends OMPlayer<S, P>> i
         P player = plugin.getPlayer(event.getPlayer());
 
         if (commands.contains(event.getMessage().split(" ")[0].substring(1).toLowerCase())) {
-            OMDiscordBot bot = plugin.getDiscordBot();
-
-            bot.withPlayerEmote(player.getUUID(), player.getRawName(), false, emote -> {
-                TextChannel channel = bot.getTextChannel(CustomChannel.COMMAND_LOG);
-                channel.sendMessage(bot.getPlayerDisplay(player, emote, player.getRawName()) + " executed command **" + event.getMessage() + "**.").queue();
-            });
+            plugin.discord(bot -> bot.withPlayerEmote(player.getUUID(), player.getRawName(), false, emote -> {
+                bot.getTextChannel(CustomChannel.COMMAND_LOG).sendMessage(bot.getPlayerDisplay(player, emote, player.getRawName()) + " executed command **" + event.getMessage() + "**.").queue();
+            }));
 
             return;
         }

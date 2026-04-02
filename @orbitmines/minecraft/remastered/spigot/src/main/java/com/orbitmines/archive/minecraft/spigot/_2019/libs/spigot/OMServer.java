@@ -67,6 +67,11 @@ public abstract class OMServer<S extends OMServer<S, P>, P extends OMPlayer<S, P
     @Getter protected WorldLoader worldLoader;
 
     @Getter protected SpigotDiscordBot discordBot;
+
+    public void discord(java.util.function.Consumer<SpigotDiscordBot> callback) {
+        if (discordBot != null)
+            callback.accept(discordBot);
+    }
     @Getter protected SkinLibrary skinLibrary;
 
     @Getter private PatchNotes patchNotes;
@@ -166,10 +171,12 @@ public abstract class OMServer<S extends OMServer<S, P>, P extends OMPlayer<S, P
             publishServerStartup();
 
             /* Discord Startup Message */
-            EmbedBuilder builder = new EmbedBuilder();
-            builder.setAuthor("Starting " + getType().getName() + "...");
-            builder.setColor(Color.LIME.getAwtColor());
-            getDiscordBot().getTextChannel().sendMessageEmbeds(builder.build()).queue();
+            discord(bot -> {
+                EmbedBuilder builder = new EmbedBuilder();
+                builder.setAuthor("Starting " + getType().getName() + "...");
+                builder.setColor(Color.LIME.getAwtColor());
+                bot.getTextChannel().sendMessageEmbeds(builder.build()).queue();
+            });
 
             DatabaseManager.getInstance().setupDefaultDatabase(
                 OMMap.TABLE,
@@ -306,10 +313,12 @@ public abstract class OMServer<S extends OMServer<S, P>, P extends OMPlayer<S, P
             worldLoader.cleanUp();
 
         /* Discord Shutdown Message */
-        EmbedBuilder builder = new EmbedBuilder();
-        builder.setAuthor("Shutting down " + getType().getName() + "...");
-        builder.setColor(Color.RED.getAwtColor());
-        getDiscordBot().getTextChannel().sendMessageEmbeds(builder.build()).queue();
+        discord(bot -> {
+            EmbedBuilder builder = new EmbedBuilder();
+            builder.setAuthor("Shutting down " + getType().getName() + "...");
+            builder.setColor(Color.RED.getAwtColor());
+            bot.getTextChannel().sendMessageEmbeds(builder.build()).queue();
+        });
 
     }
 
@@ -329,10 +338,12 @@ public abstract class OMServer<S extends OMServer<S, P>, P extends OMPlayer<S, P
             System.out.println("-------------------------------------------------------");
 
             if (broadcastWhenSaving()) {
-                EmbedBuilder builder = new EmbedBuilder();
-                builder.setAuthor("Saving " + getType().getName() + "...");
-                builder.setColor(Color.GRAY.getAwtColor());
-                getDiscordBot().getTextChannel().sendMessageEmbeds(builder.build()).queue();
+                discord(bot -> {
+                    EmbedBuilder builder = new EmbedBuilder();
+                    builder.setAuthor("Saving " + getType().getName() + "...");
+                    builder.setColor(Color.GRAY.getAwtColor());
+                    bot.getTextChannel().sendMessageEmbeds(builder.build()).queue();
+                });
             }
 
             getType().setStatus(Server.Status.RESTARTING);

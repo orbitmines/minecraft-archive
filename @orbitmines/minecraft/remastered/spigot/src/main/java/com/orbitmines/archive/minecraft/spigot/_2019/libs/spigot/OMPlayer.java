@@ -254,11 +254,13 @@ public abstract class OMPlayer<S extends OMServer, P extends OMPlayer<S, P>> ext
         builder.send(server.getPlayers());
 
         SpigotDiscordBot bot = server.getDiscordBot();
-        bot.withPlayerEmote(getUUID(), getName(Name.RAW), false, (emote) -> {
-            bot.getTextChannel().sendMessage(
-                bot.getRole(CustomRole.JOIN).getAsMention() + " " + bot.getPlayerDisplay(OMPlayer.this, emote, getName(Name.RAW) + " has joined.")
-            ).queue();
-        });
+        if (bot != null) {
+            bot.withPlayerEmote(getUUID(), getName(Name.RAW), false, (emote) -> {
+                bot.getTextChannel().sendMessage(
+                    bot.getRole(CustomRole.JOIN).getAsMention() + " " + bot.getPlayerDisplay(OMPlayer.this, emote, getName(Name.RAW) + " has joined.")
+                ).queue();
+            });
+        }
     }
 
     protected void broadcastQuitMessage() {
@@ -269,12 +271,14 @@ public abstract class OMPlayer<S extends OMServer, P extends OMPlayer<S, P>> ext
 
         builder.send(server.getPlayers());
 
-        SpigotDiscordBot bot = server.getDiscordBot();
-        bot.withPlayerEmote(getUUID(), getName(Name.RAW), false, (emote) -> {
-            bot.getTextChannel().sendMessage(
-                bot.getRole(CustomRole.LEAVE).getAsMention() + " " + bot.getPlayerDisplay(OMPlayer.this, emote, getName(Name.RAW) + " has left.")
-            ).queue();
-        });
+        SpigotDiscordBot quitBot = server.getDiscordBot();
+        if (quitBot != null) {
+            quitBot.withPlayerEmote(getUUID(), getName(Name.RAW), false, (emote) -> {
+                quitBot.getTextChannel().sendMessage(
+                    quitBot.getRole(CustomRole.LEAVE).getAsMention() + " " + quitBot.getPlayerDisplay(OMPlayer.this, emote, getName(Name.RAW) + " has left.")
+                ).queue();
+            });
+        }
     }
 
     /*

@@ -256,11 +256,14 @@ public interface DiscordSquadGUIInstance<S extends OMServer<S, P>, P extends OMP
         squadMember.insert();
 
         DiscordUser user = member.getDiscordUser();
-        String name = member.getRawName() + (user != null ?  " (" + user.getDiscordUser(getBot()).getAsMention() + ")" : "");
+        OMDiscordBot bot = getBot();
+        String name = member.getRawName() + (user != null && bot != null ?  " (" + user.getDiscordUser(bot).getAsMention() + ")" : "");
 
-        getBot().withPlayerEmote(invite.getUuid(), member.getRawName(), false, emote -> {
-            squad.getTextChannel(getBot()).sendMessage(getBot().getRole(CustomRole.JOIN).getAsMention() + " " + getBot().getPlayerDisplay(member, emote, name) + " has joined " + squad.getRole(getBot()).getAsMention() + ".").queue();
-        });
+        if (bot != null) {
+            bot.withPlayerEmote(invite.getUuid(), member.getRawName(), false, emote -> {
+                squad.getTextChannel(bot).sendMessage(bot.getRole(CustomRole.JOIN).getAsMention() + " " + bot.getPlayerDisplay(member, emote, name) + " has joined " + squad.getRole(bot).getAsMention() + ".").queue();
+            });
+        }
     }
 
     default void leave(DiscordSquad squad, DiscordSquadMember member) {
@@ -276,12 +279,15 @@ public interface DiscordSquadGUIInstance<S extends OMServer<S, P>, P extends OMP
         if (memberPlayer instanceof OnlinePlayer)
             ((OnlinePlayer) memberPlayer).sendMessage("Discord", Color.RED, "player.discord_squad.left.self", squad.getDisplayName() + "§7");
 
-        DiscordUser user = memberPlayer.getDiscordUser();
-        String name = memberPlayer.getRawName() + (user != null ?  " (" + user.getDiscordUser(getBot()).getAsMention() + ")" : "");
+        OMDiscordBot bot = getBot();
+        if (bot != null) {
+            DiscordUser user = memberPlayer.getDiscordUser();
+            String name = memberPlayer.getRawName() + (user != null ?  " (" + user.getDiscordUser(bot).getAsMention() + ")" : "");
 
-        getBot().withPlayerEmote(memberPlayer.getUUID(), memberPlayer.getRawName(), false, emote -> {
-            squad.getTextChannel(getBot()).sendMessage(getBot().getRole(CustomRole.LEAVE).getAsMention() + " " + getBot().getPlayerDisplay(memberPlayer, emote, name) + " has left " + squad.getRole(getBot()).getAsMention() + ".").queue();
-        });
+            bot.withPlayerEmote(memberPlayer.getUUID(), memberPlayer.getRawName(), false, emote -> {
+                squad.getTextChannel(bot).sendMessage(bot.getRole(CustomRole.LEAVE).getAsMention() + " " + bot.getPlayerDisplay(memberPlayer, emote, name) + " has left " + squad.getRole(bot).getAsMention() + ".").queue();
+            });
+        }
     }
 
     default void removeMember(DiscordSquad squad, DiscordSquadMember member) {
@@ -297,12 +303,15 @@ public interface DiscordSquadGUIInstance<S extends OMServer<S, P>, P extends OMP
         if (memberPlayer instanceof OnlinePlayer)
             ((OnlinePlayer) memberPlayer).sendMessage("Discord", Color.RED, "player.discord_squad.removed.self", squad.getDisplayName() + "§7");
 
-        DiscordUser user = memberPlayer.getDiscordUser();
-        String name = memberPlayer.getRawName() + (user != null ?  " (" + user.getDiscordUser(getBot()).getAsMention() + ")" : "");
+        OMDiscordBot bot = getBot();
+        if (bot != null) {
+            DiscordUser user = memberPlayer.getDiscordUser();
+            String name = memberPlayer.getRawName() + (user != null ?  " (" + user.getDiscordUser(bot).getAsMention() + ")" : "");
 
-        getBot().withPlayerEmote(memberPlayer.getUUID(), memberPlayer.getRawName(), false, emote -> {
-            squad.getTextChannel(getBot()).sendMessage(getBot().getRole(CustomRole.LEAVE).getAsMention() + " " + getBot().getPlayerDisplay(memberPlayer, emote, name) + " has been removed from " + squad.getRole(getBot()).getAsMention() + ".").queue();
-        });
+            bot.withPlayerEmote(memberPlayer.getUUID(), memberPlayer.getRawName(), false, emote -> {
+                squad.getTextChannel(bot).sendMessage(bot.getRole(CustomRole.LEAVE).getAsMention() + " " + bot.getPlayerDisplay(memberPlayer, emote, name) + " has been removed from " + squad.getRole(bot).getAsMention() + ".").queue();
+            });
+        }
     }
 
     default PlayerInstance getMemberPlayer(DiscordSquadMember member) {

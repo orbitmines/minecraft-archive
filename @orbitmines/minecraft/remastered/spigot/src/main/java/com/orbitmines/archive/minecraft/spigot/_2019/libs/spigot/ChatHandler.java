@@ -56,7 +56,7 @@ public class ChatHandler<S extends OMServer<S, P>, P extends OMPlayer<S, P>> {
         this.server = server;
         this.type = type;
         this.bot = server.getDiscordBot();
-        this.guild = this.bot.getGuild();
+        this.guild = this.bot != null ? this.bot.getGuild() : null;
         this.sender = sender;
         this.message = message;
     }
@@ -113,42 +113,44 @@ public class ChatHandler<S extends OMServer<S, P>, P extends OMPlayer<S, P>> {
     }
 
     protected void minecraftToDiscord() {
-        UUID uuid = sender.getUUID();
-        String playerName = sender.getName(Name.RAW);
+        server.discord(bot -> {
+            UUID uuid = sender.getUUID();
+            String playerName = sender.getName(Name.RAW);
 
-        filterMessageToDiscord();
+            filterMessageToDiscord();
 
-        String prefix;
+            String prefix;
 
-        if (this.type == Type.STAFF_CHAT || this.type == Type.DISCORD_SQUAD)
-            prefix = bot.getEmote(CustomEmote.from(server.getType())).getAsMention();
-        else
-            prefix = "";
+            if (this.type == Type.STAFF_CHAT || this.type == Type.DISCORD_SQUAD)
+                prefix = bot.getEmote(CustomEmote.from(server.getType())).getAsMention();
+            else
+                prefix = "";
 
-        TextChannel channel;
-        switch (this.type) {
+            TextChannel channel;
+            switch (this.type) {
 
-            case NORMAL:
-                channel = bot.getTextChannel();
-                break;
-            case STAFF_CHAT:
-                channel = bot.getTextChannel(CustomChannel.STAFF);
-                break;
-            case BUILDER_CHAT:
-                channel = bot.getTextChannel(CustomChannel.BUILDER);
-                break;
-            case DISCORD_SQUAD:
-                channel = squad.getTextChannel(bot);
-                break;
-            default:
-                throw new IllegalStateException();
-        }
+                case NORMAL:
+                    channel = bot.getTextChannel();
+                    break;
+                case STAFF_CHAT:
+                    channel = bot.getTextChannel(CustomChannel.STAFF);
+                    break;
+                case BUILDER_CHAT:
+                    channel = bot.getTextChannel(CustomChannel.BUILDER);
+                    break;
+                case DISCORD_SQUAD:
+                    channel = squad.getTextChannel(bot);
+                    break;
+                default:
+                    throw new IllegalStateException();
+            }
 
-        bot.withPlayerEmote(uuid, playerName, false, (emote) ->
-            channel.sendMessage(
-                prefix + bot.getPlayerDisplay(sender, emote, playerName) + " » " + this.message
-            ).queue()
-        );
+            bot.withPlayerEmote(uuid, playerName, false, (emote) ->
+                channel.sendMessage(
+                    prefix + bot.getPlayerDisplay(sender, emote, playerName) + " » " + this.message
+                ).queue()
+            );
+        });
     }
 
     /*
@@ -253,6 +255,9 @@ public class ChatHandler<S extends OMServer<S, P>, P extends OMPlayer<S, P>> {
      */
 
     protected void filterMessageToDiscord() {
+        if (guild == null)
+            return;
+
         for (Role role : guild.getRoles()) {
             message = message.replaceAll("@" + role.getName(), role.getAsMention());
         }
@@ -294,7 +299,7 @@ public class ChatHandler<S extends OMServer<S, P>, P extends OMPlayer<S, P>> {
         }
 
         /* Discord */
-        if (!(sender instanceof UnknownPlayer)) {
+        if (!(sender instanceof UnknownPlayer) && bot != null) {
             hover.append("\n");
 
             DiscordUser discordUser = sender.getDiscordUser();

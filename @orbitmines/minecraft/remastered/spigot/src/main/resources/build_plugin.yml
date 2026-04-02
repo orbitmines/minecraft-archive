@@ -1,8 +1,0 @@
-name: build
-main: com.orbitmines.servers.build.Build
-authors: [Fadi Shawki]
-version: 1.0.0
-api-version: 1.13
-commands:
-softdepend:
-  - Plan

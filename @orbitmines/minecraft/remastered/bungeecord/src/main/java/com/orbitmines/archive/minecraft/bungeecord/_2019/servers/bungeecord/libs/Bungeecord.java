@@ -99,6 +99,11 @@ public class Bungeecord implements VoteHandler, VotifierPlugin {
 
     @Getter private ConfigHandler configHandler;
     @Getter private BungeeDiscordBot discordBot;
+
+    public void discord(java.util.function.Consumer<BungeeDiscordBot> callback) {
+        if (discordBot != null)
+            callback.accept(discordBot);
+    }
     @Getter private SkinLibrary skinLibrary;
     @Getter private BungeeStateManager stateManager;
 

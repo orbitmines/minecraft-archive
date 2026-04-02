@@ -28,6 +28,9 @@ public class DiscordSquadColorGUI<S extends OMServer<S, P>, P extends OMPlayer<S
         this.squad = squad;
         this.bot = viewer.server().getDiscordBot();
 
+        if (this.bot == null)
+            return;
+
 
         Color[] colors = Color.values();
         int i = 0;

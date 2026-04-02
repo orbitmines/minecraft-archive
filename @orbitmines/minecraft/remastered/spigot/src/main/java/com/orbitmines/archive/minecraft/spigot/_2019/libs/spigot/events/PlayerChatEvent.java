@@ -7,7 +7,6 @@ package com.orbitmines.archive.minecraft.spigot._2019.libs.spigot.events;
 import com.orbitmines.archive.minecraft._2019.libs.Color;
 import com.orbitmines.archive.minecraft._2019.libs.database.models.discord.squad.DiscordSquad;
 import com.orbitmines.archive.minecraft._2019.libs.database.models.punishment.Punishment;
-import com.orbitmines.archive.minecraft._2019.libs.discord.OMDiscordBot;
 import com.orbitmines.archive.minecraft._2019.libs.rank.StaffRank;
 import com.orbitmines.archive.minecraft.spigot._2019.libs.spigot.ChatHandler;
 import com.orbitmines.archive.minecraft.spigot._2019.libs.spigot.OMPlayer;
@@ -20,11 +19,9 @@ import org.bukkit.event.player.AsyncPlayerChatEvent;
 public class PlayerChatEvent<S extends OMServer<S, P>, P extends OMPlayer<S, P>> implements Listener {
 
     private final S server;
-    private final OMDiscordBot bot;
 
     public PlayerChatEvent(S server) {
         this.server = server;
-        this.bot = server.getDiscordBot();
     }
 
     @EventHandler(priority = EventPriority.LOWEST)
@@ -51,6 +48,11 @@ public class PlayerChatEvent<S extends OMServer<S, P>, P extends OMPlayer<S, P>>
             server.newChatHandler(player, ChatHandler.Type.STAFF_CHAT, message.substring(1)).handleChatMessage();
             return;
         } else if (message.startsWith("!")) {
+            if (server.getDiscordBot() == null) {
+                player.sendMessage("Discord", Color.ERROR, "spigot", "discord.not_enabled");
+                return;
+            }
+
             if (event.getMessage().length() == 1) {
                 player.sendMessage("Discord", Color.ERROR, "spigot", "player.group_chat", "§9!<message>§7");
                 return;

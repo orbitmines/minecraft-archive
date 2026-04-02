@@ -45,6 +45,9 @@ public class DiscordSquadManageGUI<S extends OMServer<S, P>, P extends OMPlayer<
         this.squad = key;
         this.bot = viewer.server().getDiscordBot();
 
+        if (this.bot == null)
+            return;
+
         set(0, 1, new Item<P, MutableItemBuilder>(() -> {
             int size = squad.getInvites().size();
             ItemBuilder item = new ItemBuilder(Material.BOOK, 1, "§7§l" + viewer.translate("spigot", "player.discord_squad.gui.invites", "§9§l" + size + "§7§l"));
@@ -133,7 +136,7 @@ public class DiscordSquadManageGUI<S extends OMServer<S, P>, P extends OMPlayer<
                 builder = new ItemBuilder(Material.WITHER_SKELETON_SKULL, 1, member.getName(Name.RAW_COLORED));
 
             DiscordUser discordUser = member.getDiscordUser();
-            User user = discordUser != null ? discordUser.getDiscordUser(bot) : null;
+            User user = discordUser != null && bot != null ? discordUser.getDiscordUser(bot) : null;
             builder.addLore("§7Discord: " + (user != null ? "§9§l" + user.getName() + "#" + user.getDiscriminator() : VipRank.NONE.getDisplayName()));
 
             builder.addLore("");

@@ -4,7 +4,6 @@ package com.orbitmines.archive.minecraft.spigot._2019.servers.survival.events;
  * OrbitMines - @author Fadi Shawki - 2018
  */
 
-import com.orbitmines.archive.minecraft.spigot._2019.libs.spigot.discord.SpigotDiscordBot;
 import com.orbitmines.archive.minecraft.spigot._2019.servers.survival.Survival;
 import com.orbitmines.archive.minecraft.spigot._2019.servers.survival.player.SurvivalPlayer;
 import org.bukkit.event.EventHandler;
@@ -42,9 +41,8 @@ public class DeathEvent implements Listener {
             }
         }.runTaskLater(survival.getPlugin(), 1);
 
-        SpigotDiscordBot bot = survival.getDiscordBot();
-        bot.withPlayerEmote(player.getUUID(), player.getRawName(), false, emote -> {
+        survival.discord(bot -> bot.withPlayerEmote(player.getUUID(), player.getRawName(), false, emote -> {
             bot.getTextChannel().sendMessage(":skull_crossbones:" + event.getDeathMessage().replaceAll(player.getRawName(), bot.getPlayerDisplay(player, emote, player.getRawName()))).queue();
-        });
+        }));
     }
 }

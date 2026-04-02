@@ -4,6 +4,7 @@ package com.orbitmines.archive.minecraft.spigot._2019.libs.spigot.commands;
  * OrbitMines - @author Fadi Shawki - 2019
  */
 
+import com.orbitmines.archive.minecraft._2019.libs.Color;
 import com.orbitmines.archive.minecraft.spigot._2019.libs.spigot.OMPlayer;
 import com.orbitmines.archive.minecraft.spigot._2019.libs.spigot.OMServer;
 import com.orbitmines.archive.minecraft.spigot._2019.libs.spigot.commands.brigadier.Command;
@@ -16,6 +17,11 @@ public class CommandDiscordSquad<S extends OMServer<S, P>, P extends OMPlayer<S,
         super(plugin, "discordsquad", "squad");
 
         executes((Executor0<S, P>) player -> {
+            if (plugin.getDiscordBot() == null) {
+                player.sendMessage("Discord", Color.ERROR, "spigot", "discord.not_enabled");
+                return;
+            }
+
             new DiscordSquadGUI<>(player, player).open();
         });
     }

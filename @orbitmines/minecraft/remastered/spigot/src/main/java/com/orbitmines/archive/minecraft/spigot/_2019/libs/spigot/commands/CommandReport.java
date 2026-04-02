@@ -49,29 +49,30 @@ public class CommandReport<S extends OMServer<S, P>, P extends OMPlayer<S, P>> e
     }
 
     private void sendToDiscord(Report report, OMPlayer player, OnlinePlayer target) {
-        SpigotDiscordBot bot = getPlugin().getDiscordBot();
-        TextChannel channel = bot.getTextChannel(CustomChannel.REPORTS);
+        getPlugin().discord(bot -> {
+            TextChannel channel = bot.getTextChannel(CustomChannel.REPORTS);
 
-        bot.withPlayerEmote(player.getUUID(), player.getRawName(), false, playerEmote -> {
-            bot.withPlayerEmote(target.getUUID(), target.getRawName(), false, targetEmote -> {
-                channel.sendMessage("@everyone " + bot.getPlayerDisplay(player, playerEmote, player.getRawName()) + " has reported " + bot.getPlayerDisplay(target, targetEmote, target.getRawName()) + "!").queue();
+            bot.withPlayerEmote(player.getUUID(), player.getRawName(), false, playerEmote -> {
+                bot.withPlayerEmote(target.getUUID(), target.getRawName(), false, targetEmote -> {
+                    channel.sendMessage("@everyone " + bot.getPlayerDisplay(player, playerEmote, player.getRawName()) + " has reported " + bot.getPlayerDisplay(target, targetEmote, target.getRawName()) + "!").queue();
 
-                EmbedBuilder builder = new EmbedBuilder();
-                builder.setAuthor("REPORT");
-                builder.setDescription("");
-                builder.setColor(Color.RED.getAwtColor());
+                    EmbedBuilder builder = new EmbedBuilder();
+                    builder.setAuthor("REPORT");
+                    builder.setDescription("");
+                    builder.setColor(Color.RED.getAwtColor());
 
-                builder.addField("Id", report.getId() + "", true);
-                builder.addField("Player", target.getRawName(), true);
-                builder.addField("Server", this.getPlugin().getType().getName(), true);
-                builder.addField("Date", DateUtils.format(report.getReportedAt(), DateUtils.DATE_TIME_FORMAT), true);
-                builder.addField("Reported By", player.getRawName(), true);
-                builder.addField("Reason", report.getReason(), true);
+                    builder.addField("Id", report.getId() + "", true);
+                    builder.addField("Player", target.getRawName(), true);
+                    builder.addField("Server", this.getPlugin().getType().getName(), true);
+                    builder.addField("Date", DateUtils.format(report.getReportedAt(), DateUtils.DATE_TIME_FORMAT), true);
+                    builder.addField("Reported By", player.getRawName(), true);
+                    builder.addField("Reason", report.getReason(), true);
 
-                //TODO FIX BODY_3D
-//                builder.setThumbnail(SkinLibrary.getSkinUrl(SkinLibrary.Type.BODY_3D, player.getUUID()));
+                    //TODO FIX BODY_3D
+//                    builder.setThumbnail(SkinLibrary.getSkinUrl(SkinLibrary.Type.BODY_3D, player.getUUID()));
 
-                channel.sendMessageEmbeds(builder.build()).queue();
+                    channel.sendMessageEmbeds(builder.build()).queue();
+                });
             });
         });
     }

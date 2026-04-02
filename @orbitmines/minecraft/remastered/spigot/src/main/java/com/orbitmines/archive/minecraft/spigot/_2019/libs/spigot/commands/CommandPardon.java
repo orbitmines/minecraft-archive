@@ -113,14 +113,12 @@ public abstract class CommandPardon<S extends OMServer<S, P>, P extends OMPlayer
 //                e.printStackTrace();
 //            }
 
-        OMDiscordBot bot = getPlugin().getDiscordBot();
-
-        bot.withPlayerEmote(pardoned.getUUID(), pardoned.getRawName(), false, emote -> {
+        getPlugin().discord(bot -> bot.withPlayerEmote(pardoned.getUUID(), pardoned.getRawName(), false, emote -> {
             TextChannel channel = bot.getTextChannel(CustomChannel.PUNISHMENTS);
 
             channel.sendMessage(bot.getPlayerDisplay(pardoned, emote, pardoned.getRawName()) + " has been PARDONED!").queue();
             channel.sendMessageEmbeds(builder.build()).queue();
-        });
+        }));
     }
 
     public static class Unban<S extends OMServer<S, P>, P extends OMPlayer<S, P>> extends CommandPardon<S, P> {

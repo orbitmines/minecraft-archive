@@ -10,7 +10,6 @@ import com.orbitmines.archive.minecraft._2019.libs.Image;
 import com.orbitmines.archive.minecraft._2019.libs.discord.CustomChannel;
 import com.orbitmines.archive.minecraft.spigot._2019.libs.spigot.OMServer;
 import com.orbitmines.archive.minecraft._2019.utils.DateUtils;
-import com.orbitmines.archive.minecraft._2019.utils.discord.DiscordBot;
 import com.orbitmines.archive.minecraft.spigot._2019.utils.spigot.runnable.Interval;
 import com.orbitmines.archive.minecraft.spigot._2019.utils.spigot.runnable.SpigotRunnable;
 import com.orbitmines.archive.minecraft.spigot._2019.utils.spigot.runnable.TimeUnit;
@@ -45,11 +44,12 @@ public class TpsAlertRunnable<S extends OMServer<S, ?>> extends SpigotRunnable<S
 
         builder.setFooter(server.getType().getName() + " / " + Environment.get().toString() + " / " + DateUtils.format(DateUtils.now(), DateUtils.DATE_TIME_FORMAT), Image.icon(server.getType()).getUrl());
 
-        DiscordBot bot = server.getDiscordBot();
-        TextChannel channel = bot.getTextChannel(CustomChannel.TPS_ALERT);
+        server.discord(bot -> {
+            TextChannel channel = bot.getTextChannel(CustomChannel.TPS_ALERT);
 
-        channel.sendMessage(Environment.getEveryoneOrDev(bot) + " Low TPS in " + server.getType().getName() + ": " + humanReadableTps(recentTps[0])).queue();
-        channel.sendMessageEmbeds(builder.build()).queue();
+            channel.sendMessage(Environment.getEveryoneOrDev(bot) + " Low TPS in " + server.getType().getName() + ": " + humanReadableTps(recentTps[0])).queue();
+            channel.sendMessageEmbeds(builder.build()).queue();
+        });
     }
 
     private String humanReadableTps(double tps) {

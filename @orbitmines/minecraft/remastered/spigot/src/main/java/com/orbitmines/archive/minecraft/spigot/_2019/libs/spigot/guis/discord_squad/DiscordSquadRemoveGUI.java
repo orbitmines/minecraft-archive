@@ -26,6 +26,9 @@ public class DiscordSquadRemoveGUI<S extends OMServer<S, P>, P extends OMPlayer<
         this.squad = squad;
         this.bot = viewer.server().getDiscordBot();
 
+        if (this.bot == null)
+            return;
+
         set(2, 4, new Item<P, MutableItemBuilder>(() -> new ItemBuilder(Material.BARRIER, 1, "§c§l" + viewer.translate("spigot", "player.discord_squad.gui.delete"))));
 
         set(3, 4, new Item<P, MutableItemBuilder>(() -> {
