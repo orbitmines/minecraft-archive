@@ -396,7 +396,8 @@ public class Bungeecord implements VoteHandler, VotifierPlugin {
     }
 
     private void setupSkinLibrary() {
-        skinLibrary = new SkinLibrary("skins") {
+        String root = Environment.get("OM_ROOT", ".");
+        skinLibrary = new SkinLibrary(root + "/.orbitmines/skins") {
             @Override
             protected void updateLibraryAsync(Runnable runnable) {
                 getProxy().getScheduler().runAsync(plugin, runnable);

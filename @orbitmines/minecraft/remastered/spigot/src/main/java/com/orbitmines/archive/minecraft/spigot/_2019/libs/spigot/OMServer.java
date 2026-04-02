@@ -587,7 +587,8 @@ public abstract class OMServer<S extends OMServer<S, P>, P extends OMPlayer<S, P
     }
 
     private void setupSkinLibrary() {
-        skinLibrary = new SkinLibrary(Bukkit.getWorldContainer().getAbsolutePath() + "/skins") {
+        String root = System.getProperty("OM_ROOT", ".");
+        skinLibrary = new SkinLibrary(root + "/.orbitmines/skins") {
             @Override
             protected void updateLibraryAsync(Runnable runnable) {
                 Bukkit.getScheduler().runTaskAsynchronously(plugin, runnable);
