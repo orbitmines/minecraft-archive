@@ -142,11 +142,107 @@ public class IPEntry extends OMMySQLModel<IPEntry, IPEntry.column> {
         public static final int MINECRAFT_1_13_2 = 404;
         public static final int MINECRAFT_1_14 = 477;
         public static final int MINECRAFT_1_14_1 = 480;
+        public static final int MINECRAFT_1_14_2 = 485;
+        public static final int MINECRAFT_1_14_3 = 490;
+        public static final int MINECRAFT_1_14_4 = 498;
+        public static final int MINECRAFT_1_15 = 573;
+        public static final int MINECRAFT_1_15_1 = 575;
+        public static final int MINECRAFT_1_15_2 = 578;
+        public static final int MINECRAFT_1_16 = 735;
+        public static final int MINECRAFT_1_16_1 = 736;
+        public static final int MINECRAFT_1_16_2 = 751;
+        public static final int MINECRAFT_1_16_3 = 753;
+        public static final int MINECRAFT_1_16_4 = 754;
+        public static final int MINECRAFT_1_17 = 755;
+        public static final int MINECRAFT_1_17_1 = 756;
+        public static final int MINECRAFT_1_18 = 757;
+        public static final int MINECRAFT_1_18_2 = 758;
+        public static final int MINECRAFT_1_19 = 759;
+        public static final int MINECRAFT_1_19_1 = 760;
+        public static final int MINECRAFT_1_19_3 = 761;
+        public static final int MINECRAFT_1_19_4 = 762;
+        public static final int MINECRAFT_1_20 = 763;
+        public static final int MINECRAFT_1_20_2 = 764;
+        public static final int MINECRAFT_1_20_3 = 765;
+        public static final int MINECRAFT_1_20_5 = 766;
+        public static final int MINECRAFT_1_21 = 767;
+        public static final int MINECRAFT_1_21_2 = 768;
+        public static final int MINECRAFT_1_21_4 = 769;
+        public static final int MINECRAFT_1_21_5 = 770;
+        public static final int MINECRAFT_1_21_6 = 771;
+        public static final int MINECRAFT_1_21_7 = 772;
+        public static final int MINECRAFT_1_21_9 = 773;
+        public static final int MINECRAFT_1_21_11 = 774;
+        public static final int MINECRAFT_26_1 = 775;
 
-        public static final int FIRST_SUPPORTED_VERSION = MINECRAFT_1_14_1;
+        public static final int FIRST_SUPPORTED_VERSION = MINECRAFT_26_1;
 
         public static String humanReadableVersion(int version) {
-            if (version >= MINECRAFT_1_14_1)
+            if (version >= MINECRAFT_26_1)
+                return "26.1";
+            else if (version >= MINECRAFT_1_21_11)
+                return "1.21.11";
+            else if (version >= MINECRAFT_1_21_9)
+                return "1.21.9";
+            else if (version >= MINECRAFT_1_21_7)
+                return "1.21.7";
+            else if (version >= MINECRAFT_1_21_6)
+                return "1.21.6";
+            else if (version >= MINECRAFT_1_21_5)
+                return "1.21.5";
+            else if (version >= MINECRAFT_1_21_4)
+                return "1.21.4";
+            else if (version >= MINECRAFT_1_21_2)
+                return "1.21.2";
+            else if (version >= MINECRAFT_1_21)
+                return "1.21";
+            else if (version >= MINECRAFT_1_20_5)
+                return "1.20.5";
+            else if (version >= MINECRAFT_1_20_3)
+                return "1.20.3";
+            else if (version >= MINECRAFT_1_20_2)
+                return "1.20.2";
+            else if (version >= MINECRAFT_1_20)
+                return "1.20";
+            else if (version >= MINECRAFT_1_19_4)
+                return "1.19.4";
+            else if (version >= MINECRAFT_1_19_3)
+                return "1.19.3";
+            else if (version >= MINECRAFT_1_19_1)
+                return "1.19.1";
+            else if (version >= MINECRAFT_1_19)
+                return "1.19";
+            else if (version >= MINECRAFT_1_18_2)
+                return "1.18.2";
+            else if (version >= MINECRAFT_1_18)
+                return "1.18";
+            else if (version >= MINECRAFT_1_17_1)
+                return "1.17.1";
+            else if (version >= MINECRAFT_1_17)
+                return "1.17";
+            else if (version >= MINECRAFT_1_16_4)
+                return "1.16.4";
+            else if (version >= MINECRAFT_1_16_3)
+                return "1.16.3";
+            else if (version >= MINECRAFT_1_16_2)
+                return "1.16.2";
+            else if (version >= MINECRAFT_1_16_1)
+                return "1.16.1";
+            else if (version >= MINECRAFT_1_16)
+                return "1.16";
+            else if (version >= MINECRAFT_1_15_2)
+                return "1.15.2";
+            else if (version >= MINECRAFT_1_15_1)
+                return "1.15.1";
+            else if (version >= MINECRAFT_1_15)
+                return "1.15";
+            else if (version >= MINECRAFT_1_14_4)
+                return "1.14.4";
+            else if (version >= MINECRAFT_1_14_3)
+                return "1.14.3";
+            else if (version >= MINECRAFT_1_14_2)
+                return "1.14.2";
+            else if (version >= MINECRAFT_1_14_1)
                 return "1.14.1";
             else if (version >= MINECRAFT_1_14)
                 return "1.14";

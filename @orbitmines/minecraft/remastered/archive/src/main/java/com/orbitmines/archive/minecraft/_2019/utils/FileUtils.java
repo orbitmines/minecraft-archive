@@ -28,6 +28,34 @@ public class FileUtils {
         return directory.delete();
     }
 
+    public static void copyDirectory(File source, File dest) throws IOException {
+        if (!source.exists())
+            throw new IOException("Source directory does not exist: " + source);
+
+        if (!dest.exists())
+            dest.mkdirs();
+
+        File[] files = source.listFiles();
+        if (files == null)
+            return;
+
+        for (File file : files) {
+            File destFile = new File(dest, file.getName());
+            if (file.isDirectory()) {
+                copyDirectory(file, destFile);
+            } else {
+                try (InputStream in = new FileInputStream(file);
+                     OutputStream out = new FileOutputStream(destFile)) {
+                    byte[] buffer = new byte[16384];
+                    int len;
+                    while ((len = in.read(buffer)) > 0) {
+                        out.write(buffer, 0, len);
+                    }
+                }
+            }
+        }
+    }
+
     public static void extractZip(File archive, File destDir) throws IOException {
         if (!destDir.exists())
             destDir.mkdirs();

@@ -90,10 +90,22 @@ public abstract class DatabaseModel<DB extends Database<QB, QSB, QVB>, T extends
         Object value = get(column);
         if (value == null) return null;
         if (value instanceof Date) return (Date) value;
+        /* SQLite may return numeric types for DATETIME columns — treat as Unix timestamp (ms) */
+        if (value instanceof Number) {
+            long ts = ((Number) value).longValue();
+            return ts > 0 ? new Date(ts) : null;
+        }
+        String str = value.toString().trim();
+        if (str.isEmpty()) return null;
+        /* Strip fractional seconds only on date-like strings (e.g., "2019-04-25 12:34:56.0") */
+        if (str.length() > 10 && str.charAt(4) == '-') {
+            int dotIndex = str.indexOf('.');
+            if (dotIndex > 0) str = str.substring(0, dotIndex);
+        }
         try {
-            return format.parse(value.toString());
+            return format.parse(str);
         } catch (Exception e) {
-            e.printStackTrace();
+            /* Silently return null for unparseable date values (common with SQLite type coercion) */
             return null;
         }
     }

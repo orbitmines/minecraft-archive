@@ -31,7 +31,7 @@ public class MySQLQuerySetBuilder extends MySQLBaseQueryBuilder<MySQLQuerySetBui
         if (hasSet())
             set += ", ";
 
-        set += column.toString() + "=" + (value != null ? "'" + value.toString() + "'" : "NULL");
+        set += "`" + column.getName() + "`=" + (value != null ? "'" + value.toString() + "'" : "NULL");
 
         return getInstance();
     }

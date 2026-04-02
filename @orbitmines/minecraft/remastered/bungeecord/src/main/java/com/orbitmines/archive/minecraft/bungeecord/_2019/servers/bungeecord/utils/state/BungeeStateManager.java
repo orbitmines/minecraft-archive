@@ -5,6 +5,7 @@ package com.orbitmines.archive.minecraft.bungeecord._2019.servers.bungeecord.uti
  */
 
 import com.google.gson.Gson;
+import com.orbitmines.archive.minecraft._2019.libs.database.models.StateEntry;
 import com.orbitmines.archive.minecraft._2019.utils.pubsub.PubSubBroker;
 import com.orbitmines.archive.minecraft._2019.utils.state.StateProvider;
 
@@ -16,16 +17,16 @@ public class BungeeStateManager extends StateProvider {
     private static final String STATE_SYNC_CHANNEL = "state_sync";
     private static final Gson GSON = new Gson();
 
+    /* In-memory caches for volatile data (player sessions, server status) */
     private final Map<UUID, Map<String, String>> playerData = new ConcurrentHashMap<>();
     private final Map<String, String> serverStatus = new ConcurrentHashMap<>();
     private final Map<String, Set<String>> serverPlayers = new ConcurrentHashMap<>();
     private final Set<String> blacklist = ConcurrentHashMap.newKeySet();
-    private final Map<String, String> keyValueStore = new ConcurrentHashMap<>();
 
     public BungeeStateManager() {
     }
 
-    /* Player data */
+    /* Player data - in-memory (volatile session data) */
 
     @Override
     public Map<String, String> getPlayerData(UUID uuid) {
@@ -63,7 +64,7 @@ public class BungeeStateManager extends StateProvider {
         return data != null ? data.get(field) : null;
     }
 
-    /* Server state */
+    /* Server state - in-memory (volatile runtime data) */
 
     @Override
     public long getServerPlayerCount(String pluginName) {
@@ -134,21 +135,21 @@ public class BungeeStateManager extends StateProvider {
         return result;
     }
 
-    /* Generic key-value storage */
+    /* Generic key-value storage - database-backed via StateEntry */
 
     @Override
     public String getString(String key) {
-        return keyValueStore.get(key);
+        return StateEntry.get(key);
     }
 
     @Override
     public void setString(String key, String value) {
-        keyValueStore.put(key, value);
+        StateEntry.set(key, value);
     }
 
     @Override
     public void deleteString(String key) {
-        keyValueStore.remove(key);
+        StateEntry.remove(key);
     }
 
     /* Cleanup */

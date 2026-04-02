@@ -79,6 +79,26 @@ public class WorldLoader {
         fromZip : Pre-configured worlds.
      */
 
+    public World fromDirectory(File sourceDir, String worldName, boolean removeEntities, WorldType type) {
+        cleanUpPreviousWorld(worldName);
+
+        try {
+            File destDir = new File(Bukkit.getWorldContainer().getAbsoluteFile(), worldName);
+            FileUtils.copyDirectory(sourceDir, destDir);
+
+            World world = Bukkit.createWorld(type.getWorldCreator().getConstructor(String.class).newInstance(worldName).generateStructures(false).environment(type.getEnvironment()));
+            worlds.add(world);
+
+            if (removeEntities)
+                WorldUtils.removeEntities(world);
+
+            return world;
+        } catch (Exception e) {
+            e.printStackTrace();
+            return null;
+        }
+    }
+
     public World fromZip(String worldFile) {
         return fromZip(worldFile, false);
     }

@@ -91,8 +91,35 @@ public class BiomeUtils {
             return Material.PACKED_ICE;
         } else if (biome == Biome.BAMBOO_JUNGLE) {
             return Material.BAMBOO;
+        } else if (biome == Biome.SOUL_SAND_VALLEY) {
+            return Material.SOUL_SAND;
+        } else if (biome == Biome.CRIMSON_FOREST) {
+            return Material.CRIMSON_NYLIUM;
+        } else if (biome == Biome.WARPED_FOREST) {
+            return Material.WARPED_NYLIUM;
+        } else if (biome == Biome.BASALT_DELTAS) {
+            return Material.BASALT;
+        } else if (biome == Biome.DRIPSTONE_CAVES) {
+            return Material.POINTED_DRIPSTONE;
+        } else if (biome == Biome.LUSH_CAVES) {
+            return Material.MOSS_BLOCK;
+        } else if (biome == Biome.DEEP_DARK) {
+            return Material.SCULK;
+        } else if (biome == Biome.MEADOW) {
+            return Material.SHORT_GRASS;
+        } else if (biome == Biome.GROVE) {
+            return Material.SPRUCE_SAPLING;
+        } else if (biome == Biome.SNOWY_SLOPES) {
+            return Material.POWDER_SNOW_BUCKET;
+        } else if (biome == Biome.FROZEN_PEAKS || biome == Biome.JAGGED_PEAKS
+                || biome == Biome.STONY_PEAKS) {
+            return Material.STONE;
+        } else if (biome == Biome.CHERRY_GROVE) {
+            return Material.CHERRY_SAPLING;
+        } else if (biome == Biome.PALE_GARDEN) {
+            return Material.PALE_OAK_SAPLING;
         }
-        throw new IllegalArgumentException();
+        return Material.BARRIER;
     }
 
     public static String name(Biome biome) {
@@ -168,7 +195,32 @@ public class BiomeUtils {
             return Color.AQUA;
         } else if (biome == Biome.BAMBOO_JUNGLE) {
             return Color.YELLOW;
+        } else if (biome == Biome.SOUL_SAND_VALLEY) {
+            return Color.MAROON;
+        } else if (biome == Biome.CRIMSON_FOREST) {
+            return Color.RED;
+        } else if (biome == Biome.WARPED_FOREST) {
+            return Color.TEAL;
+        } else if (biome == Biome.BASALT_DELTAS) {
+            return Color.GRAY;
+        } else if (biome == Biome.DRIPSTONE_CAVES) {
+            return Color.ORANGE;
+        } else if (biome == Biome.LUSH_CAVES) {
+            return Color.LIME;
+        } else if (biome == Biome.DEEP_DARK) {
+            return Color.GRAY;
+        } else if (biome == Biome.MEADOW) {
+            return Color.LIME;
+        } else if (biome == Biome.GROVE || biome == Biome.SNOWY_SLOPES
+                || biome == Biome.FROZEN_PEAKS) {
+            return Color.WHITE;
+        } else if (biome == Biome.JAGGED_PEAKS || biome == Biome.STONY_PEAKS) {
+            return Color.SILVER;
+        } else if (biome == Biome.CHERRY_GROVE) {
+            return Color.FUCHSIA;
+        } else if (biome == Biome.PALE_GARDEN) {
+            return Color.SILVER;
         }
-        throw new IllegalArgumentException();
+        return Color.WHITE;
     }
 }

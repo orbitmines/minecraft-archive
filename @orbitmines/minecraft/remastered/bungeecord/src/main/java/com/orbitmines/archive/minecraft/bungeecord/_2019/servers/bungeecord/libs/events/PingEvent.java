@@ -29,7 +29,7 @@ public class PingEvent implements Listener {
             return Color.translateAlternateColorCodes('&', motd);
 
         /* Fallback motd */
-        return "§8§lOrbit§7§lMines §8- §71.14.1\n§7In a galaxy far, far away.";
+        return "§8§lOrbit§7§lMines §8- §726.1 §8- §e§lremastered\n§7Join us @ §9§ldiscord.orbitmines.com/minecraft";
     }
 
     private int getMaxPlayers() {

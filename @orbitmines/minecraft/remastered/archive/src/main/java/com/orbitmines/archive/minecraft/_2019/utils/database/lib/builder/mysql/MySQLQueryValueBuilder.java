@@ -36,7 +36,7 @@ public class MySQLQueryValueBuilder extends MySQLBaseQueryBuilder<MySQLQueryValu
             this.values += ", ";
         }
 
-        this.columnValues += column.toString();
+        this.columnValues += "`" + column.getName() + "`";
         this.values += value != null ? "'" + value.toString() + "'" : "NULL";
 
         return getInstance();

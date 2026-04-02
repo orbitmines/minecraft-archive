@@ -20,12 +20,12 @@ public enum Server {
     HUB(Color.TEAL, "Hub", "hub", 100, VipRank.NONE),
     SURVIVAL(Color.LIME, "Survival", "survival", 100, VipRank.NONE),
     KITPVP(Color.RED, "KitPvP", "kitpvp", 100, VipRank.NONE),
-    BUILD(Color.FUCHSIA, "Build", "build", 100, StaffRank.PROVISIONAL_BUILDER);
-//    PRISON(Color.MAROON, "Prison", "prison", 100),
-//    CREATIVE(Color.FUCHSIA, "Creative", "creative", 100),
-//    SKYBLOCK(Color.PURPLE, "SkyBlock", "skyblock", 100),
-//    FOG(Color.YELLOW, "Fractals of the Galaxy", "fog", 100),
-//    MINIGAMES(Color.WHITE, "Minigames", "minigames", 100),
+    BUILD(Color.FUCHSIA, "Build", "build", 100, StaffRank.PROVISIONAL_BUILDER),
+    PRISON(Color.MAROON, "Prison", "prison", 100),
+    CREATIVE(Color.FUCHSIA, "Creative", "creative", 100),
+    SKYBLOCK(Color.PURPLE, "SkyBlock", "skyblock", 100),
+    FOG(Color.YELLOW, "Fractals of the Galaxy", "fog", 100),
+    MINIGAMES(Color.WHITE, "Minigames", "minigames", 100);
 //    UHSURVIVAL(Color.GREEN, "UHSurvival", "uhsurvival", 100);
 
     public static final String SERVER_DISPLAY_NAME = "§8§lOrbit§7§lMines";

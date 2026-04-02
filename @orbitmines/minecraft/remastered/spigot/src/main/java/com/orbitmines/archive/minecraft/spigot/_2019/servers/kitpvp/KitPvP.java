@@ -113,7 +113,9 @@ public class KitPvP extends OMServer<KitPvP, KitPvPPlayer> {
         
         /* Setup Map */
         map = KitPvPMap.load();
-        World mapWorld = worldLoader.fromZip(map.getWorldFileName(), true, map.getWorldGenerator());
+        String root = System.getProperty("OM_ROOT", ".");
+        java.io.File mapSourceDir = new java.io.File(root, "@orbitmines/minecraft/archive/worlds/" + map.getName());
+        World mapWorld = worldLoader.fromDirectory(mapSourceDir, map.getWorldFileName(), true, map.getWorldGenerator());
         mapWorld.setGameRule(GameRule.ADVANCE_TIME, false);
         mapWorld.setGameRule(GameRule.SPAWN_MOBS, false);
         /* GameRule.DO_FIRE_TICK removed in 26.1 */

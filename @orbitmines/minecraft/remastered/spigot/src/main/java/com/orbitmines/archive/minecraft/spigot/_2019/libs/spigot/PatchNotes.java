@@ -782,10 +782,10 @@ public class PatchNotes {
         Instance latest = getLatest(server);
 
         String version = getVersion(server);
-        if (version == null) {
-            new NullPointerException("Could not get " + "server:" + server.getPluginName() + ":version" + " from state, aborting patch notes check").printStackTrace();
-            return;
-        }
+//        if (version == null) {
+//            new NullPointerException("Could not get " + "server:" + server.getPluginName() + ":version" + " from state, aborting patch notes check").printStackTrace();
+//            return;
+//        }
 
         if (latest.version.equals(version))
             return;

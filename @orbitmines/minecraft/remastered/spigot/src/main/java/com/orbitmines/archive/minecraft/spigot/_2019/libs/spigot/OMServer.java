@@ -217,7 +217,9 @@ public abstract class OMServer<S extends OMServer<S, P>, P extends OMPlayer<S, P
             if (shouldSetupLobby()) {
                 lobby = OMMap.getLobby(getType());
 
-                World lobbyWorld = worldLoader.fromZip(lobby.getWorldFileName(), true, lobby.getWorldGenerator());
+                String root = System.getProperty("OM_ROOT", ".");
+                java.io.File worldSourceDir = new java.io.File(root, "@orbitmines/minecraft/archive/worlds/" + lobby.getName());
+                World lobbyWorld = worldLoader.fromDirectory(worldSourceDir, lobby.getWorldFileName(), true, lobby.getWorldGenerator());
                 lobbyWorld.setGameRule(GameRule.ADVANCE_TIME, false);
                 lobbyWorld.setGameRule(GameRule.SPAWN_MOBS, false);
                 /* GameRule.DO_FIRE_TICK removed in 26.1 */

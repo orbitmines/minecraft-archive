@@ -106,7 +106,8 @@ public class DatabaseManager {
                 IPEntry.TABLE,
                 PlayerAuth.TABLE,
                 PlayerSettings.TABLE,
-                TimePlayed.TABLE
+                TimePlayed.TABLE,
+                StateEntry.TABLE
         );
         defaultDatabase.registerTables(tables);
 

@@ -324,7 +324,7 @@ public class BungeePlayer implements Languageable, PlayerInstance {
         if (fallBack == null) {
             disconnect(new TextComponent(
                 "§8§lOrbit§7§lMines\n" +
-                    "§71.14.1\n" +
+                    "§7" + IPEntry.ProtocolVersion.humanReadableVersion(IPEntry.ProtocolVersion.FIRST_SUPPORTED_VERSION) + "\n" +
                     "\n" +
                     "§7" + translate("bungeecord", "connection.no_fallback_server")
             ));

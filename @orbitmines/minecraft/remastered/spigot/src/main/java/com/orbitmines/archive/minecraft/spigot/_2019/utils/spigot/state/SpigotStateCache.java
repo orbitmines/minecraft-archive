@@ -6,6 +6,7 @@ package com.orbitmines.archive.minecraft.spigot._2019.utils.spigot.state;
 
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
+import com.orbitmines.archive.minecraft._2019.libs.database.models.StateEntry;
 import com.orbitmines.archive.minecraft._2019.utils.pubsub.PubSubBroker;
 import com.orbitmines.archive.minecraft._2019.utils.state.StateProvider;
 
@@ -21,7 +22,6 @@ public class SpigotStateCache extends StateProvider {
     private final Map<String, String> serverStatus = new ConcurrentHashMap<>();
     private final Map<String, Set<String>> serverPlayers = new ConcurrentHashMap<>();
     private final Set<String> blacklist = ConcurrentHashMap.newKeySet();
-    private final Map<String, String> keyValueStore = new ConcurrentHashMap<>();
 
     /* Register handler for state sync messages from BungeeCord */
     public void registerStateSyncHandler() {
@@ -170,21 +170,21 @@ public class SpigotStateCache extends StateProvider {
         return blacklist.contains(serverName);
     }
 
-    /* Generic key-value storage */
+    /* Generic key-value storage - database-backed via StateEntry */
 
     @Override
     public String getString(String key) {
-        return keyValueStore.get(key);
+        return StateEntry.get(key);
     }
 
     @Override
     public void setString(String key, String value) {
-        keyValueStore.put(key, value);
+        StateEntry.set(key, value);
     }
 
     @Override
     public void deleteString(String key) {
-        keyValueStore.remove(key);
+        StateEntry.remove(key);
     }
 
     /* Batch operations */

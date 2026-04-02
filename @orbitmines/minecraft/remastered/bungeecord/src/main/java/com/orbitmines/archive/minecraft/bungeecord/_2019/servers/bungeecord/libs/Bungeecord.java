@@ -10,6 +10,7 @@ import com.google.common.io.Files;
 import com.orbitmines.archive.minecraft._2019.libs.Color;
 import com.orbitmines.archive.minecraft._2019.libs.Environment;
 import com.orbitmines.archive.minecraft._2019.libs.Server;
+import com.orbitmines.archive.minecraft._2019.libs.database.models.IPEntry;
 import com.orbitmines.archive.minecraft._2019.libs.player.Name;
 import com.orbitmines.archive.minecraft.bungeecord._2019.servers.bungeecord.libs.commands.CommandDonation;
 import com.orbitmines.archive.minecraft.bungeecord._2019.servers.bungeecord.libs.discord.BungeeDiscordBot;
@@ -24,6 +25,7 @@ import com.orbitmines.archive.minecraft.bungeecord._2019.servers.bungeecord.util
 import com.orbitmines.archive.minecraft._2019.utils.SkinLibrary;
 import com.orbitmines.archive.minecraft._2019.utils.database.DatabaseManager;
 import com.orbitmines.archive.minecraft._2019.utils.database.MySQLDumpImporter;
+import com.orbitmines.archive.minecraft._2019.utils.database.WorldSeeder;
 import com.orbitmines.archive.minecraft._2019.utils.database.SQLiteDatabase;
 import com.orbitmines.archive.minecraft._2019.utils.database.exceptions.DatabaseConnectionException;
 import com.orbitmines.archive.minecraft._2019.utils.pubsub.PubSubBroker;
@@ -147,6 +149,8 @@ public class Bungeecord implements VoteHandler, VotifierPlugin {
             if (firstLoad) {
                 importDump(database);
             }
+
+            seedMaps(database, root);
         } catch(DatabaseConnectionException ex) {
             getLogger().severe("Failed to setup SQLite connection.");
             restart("Could not connect to database, restarting... (Caused by: " + ex.getClass().getSimpleName() + ": " + ex.getCause().getMessage() + ")");
@@ -181,7 +185,7 @@ public class Bungeecord implements VoteHandler, VotifierPlugin {
                 if (info == null)
                     player.disconnect(new TextComponent(
                         "§8§lOrbit§7§lMines\n" +
-                        "§71.14.1\n" +
+                        "§7" + IPEntry.ProtocolVersion.humanReadableVersion(IPEntry.ProtocolVersion.FIRST_SUPPORTED_VERSION) + "\n" +
                         "\n" +
                         "§7" + player.translate("bungeecord", "connection.no_fallback_server")
                     ));
@@ -365,6 +369,16 @@ public class Bungeecord implements VoteHandler, VotifierPlugin {
             getLogger().info("SQL dump imported successfully.");
         } catch (Exception e) {
             getLogger().severe("Failed to import SQL dump: " + e.getMessage());
+            e.printStackTrace();
+        }
+    }
+
+    private void seedMaps(SQLiteDatabase database, String root) {
+        String worldsPath = root + "/@orbitmines/minecraft/archive/worlds";
+        try {
+            WorldSeeder.seed(database, worldsPath);
+        } catch (Exception e) {
+            getLogger().severe("Failed to seed maps from worlds directory: " + e.getMessage());
             e.printStackTrace();
         }
     }
