@@ -155,11 +155,72 @@ public class MySQLDumpImporter {
             return sql;
         }
 
-        // INSERT statements pass through (MySQL INSERT syntax is compatible with SQLite)
+        // INSERT statements: unescape MySQL-specific escape sequences inside single-quoted strings.
+        // MySQL's mysqldump uses \" inside single-quoted strings to escape double quotes,
+        // but SQLite treats backslashes literally, storing them as-is.
         if (sql.toUpperCase().startsWith("INSERT INTO"))
-            return sql;
+            return unescapeMySQLStrings(sql);
 
         // Skip anything else
         return null;
+    }
+
+    /**
+     * Converts MySQL escape sequences inside single-quoted string literals to SQLite equivalents.
+     * MySQL uses backslash escapes (\", \\, \') while SQLite uses '' for quotes and treats \ literally.
+     */
+    private static String unescapeMySQLStrings(String sql) {
+        StringBuilder result = new StringBuilder(sql.length());
+        boolean inString = false;
+
+        for (int i = 0; i < sql.length(); i++) {
+            char c = sql.charAt(i);
+
+            if (!inString) {
+                result.append(c);
+                if (c == '\'')
+                    inString = true;
+            } else {
+                if (c == '\\' && i + 1 < sql.length()) {
+                    char next = sql.charAt(i + 1);
+                    switch (next) {
+                        case '"':
+                            result.append('"');
+                            i++;
+                            break;
+                        case '\\':
+                            result.append('\\');
+                            i++;
+                            break;
+                        case '\'':
+                            result.append("''");
+                            i++;
+                            break;
+                        case 'n':
+                            result.append('\n');
+                            i++;
+                            break;
+                        case 'r':
+                            result.append('\r');
+                            i++;
+                            break;
+                        case '0':
+                            result.append('\0');
+                            i++;
+                            break;
+                        default:
+                            result.append(c);
+                            break;
+                    }
+                } else if (c == '\'') {
+                    result.append(c);
+                    inString = false;
+                } else {
+                    result.append(c);
+                }
+            }
+        }
+
+        return result.toString();
     }
 }

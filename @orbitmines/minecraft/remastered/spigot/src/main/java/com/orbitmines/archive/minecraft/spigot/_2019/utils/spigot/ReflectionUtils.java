@@ -1,10 +1,8 @@
 package com.orbitmines.archive.minecraft.spigot._2019.utils.spigot;
 
 import com.mojang.brigadier.CommandDispatcher;
-import com.orbitmines.archive.minecraft.spigot._2019.utils.spigot.placeholders.SpigotServer;
 import org.bukkit.Bukkit;
 import org.bukkit.Server;
-import org.bukkit.inventory.ItemStack;
 
 import java.lang.reflect.Field;
 import java.lang.reflect.Method;
@@ -17,41 +15,30 @@ public class ReflectionUtils {
     private static String version;
 
     static {
-        version = Bukkit.getServer().getClass().getPackage().getName().split("\\.")[3];
+        String[] parts = Bukkit.getServer().getClass().getPackage().getName().split("\\.");
+        version = parts.length > 3 ? parts[3] : null;
     }
 
     public static void setMaxCapacity(int maxCapacity) {
-        try {
-            Object server = getOBCClass("CraftServer").getMethod("getHandle").invoke(Bukkit.getServer());
-            getDeclaredField(server.getClass().getSuperclass(), "maxPlayers").set(server, maxCapacity);
-        } catch (Exception ex) {
-            ex.printStackTrace();
-            return;
-        }
+        Bukkit.getServer().setMaxPlayers(maxCapacity);
     }
 
     public static CommandDispatcher getCommandDispatcher(boolean vanilla) {
         Server bukkitServer = Bukkit.getServer();
         try {
             Object server = bukkitServer.getClass().getDeclaredMethod("getServer").invoke(bukkitServer);
-            Object dispatcher = getDeclaredField(getNMSClass("MinecraftServer"), vanilla ? "vanillaCommandDispatcher" : "commandDispatcher").get(server);
+            Class<?> commandsClass = Class.forName("net.minecraft.commands.Commands");
 
-            return (CommandDispatcher) getNMSClass("CommandDispatcher").getDeclaredMethod("a").invoke(dispatcher);
+            Object commands;
+            if (vanilla) {
+                commands = getDeclaredField(server.getClass(), "vanillaCommandDispatcher").get(server);
+            } else {
+                commands = server.getClass().getMethod("getCommands").invoke(server);
+            }
+
+            return (CommandDispatcher) commandsClass.getMethod("getDispatcher").invoke(commands);
         } catch (Exception ex) {
             ex.printStackTrace();
-            return null;
-        }
-    }
-
-    public static String serializeItemStack(ItemStack item) {
-        Method asNMSCopyMethod = getDeclaredMethod(getOBCClass("inventory.CraftItemStack"), "asNMSCopy", ItemStack.class);
-
-        Class<?> nbtTagCompoundClass = getNMSClass("NBTTagCompound");
-        Method saveNmsItemStackMethod = getDeclaredMethod(getNMSClass("ItemStack"), "save", nbtTagCompoundClass);
-
-        try {
-            return saveNmsItemStackMethod.invoke(asNMSCopyMethod.invoke(null, item), nbtTagCompoundClass.newInstance()).toString();
-        } catch (Exception ex) {
             return null;
         }
     }
@@ -102,7 +89,7 @@ public class ReflectionUtils {
 
     public static Class<?> getNMSClass(String name) {
         try {
-            return Class.forName("net.minecraft.server." + version + "." + name);
+            return Class.forName(getNMSClassName(name));
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
             return null;
@@ -110,12 +97,17 @@ public class ReflectionUtils {
     }
 
     public static String getNMSClassName(String name) {
+        if (version == null)
+            return "net.minecraft.server." + name;
         return "net.minecraft.server." + version + "." + name;
     }
 
     public static Class<?> getOBCClass(String name) {
         try {
-            return Class.forName("org.bukkit.craftbukkit." + version + "." + name);
+            String className = version == null
+                    ? "org.bukkit.craftbukkit." + name
+                    : "org.bukkit.craftbukkit." + version + "." + name;
+            return Class.forName(className);
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
             return null;

@@ -58,19 +58,28 @@ public abstract class DatabaseModel<DB extends Database<QB, QSB, QVB>, T extends
     }
 
     protected Boolean getBoolean(C column) {
-        return (Boolean) get(column);
+        Object value = get(column);
+        if (value == null) return null;
+        if (value instanceof Boolean) return (Boolean) value;
+        return ((Number) value).intValue() != 0;
     }
 
     protected Long getLong(C column) {
-        return (Long) get(column);
+        Object value = get(column);
+        if (value == null) return null;
+        return ((Number) value).longValue();
     }
 
     protected Integer getInteger(C column) {
-        return (Integer) get(column);
+        Object value = get(column);
+        if (value == null) return null;
+        return ((Number) value).intValue();
     }
 
     protected Double getDouble(C column) {
-        return (Double) get(column);
+        Object value = get(column);
+        if (value == null) return null;
+        return ((Number) value).doubleValue();
     }
 
     protected UUID getUUID(C column) {
@@ -78,7 +87,15 @@ public abstract class DatabaseModel<DB extends Database<QB, QSB, QVB>, T extends
     }
 
     protected Date getDate(C column, SimpleDateFormat format) {
-        return (Date) get(column);
+        Object value = get(column);
+        if (value == null) return null;
+        if (value instanceof Date) return (Date) value;
+        try {
+            return format.parse(value.toString());
+        } catch (Exception e) {
+            e.printStackTrace();
+            return null;
+        }
     }
 
     protected JsonElement getJson(C column) {
