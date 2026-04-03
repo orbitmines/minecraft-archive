@@ -53,8 +53,6 @@ public class GUI<P extends SpigotPlayer> {
 
                 if (open)
                     viewer.openInventory(inventory);
-
-                PlayerUtils.updateInventory(viewer.bukkit());
             });
 
             afterUpdateAsync();

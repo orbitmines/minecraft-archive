@@ -179,7 +179,7 @@ public class IPEntry extends OMMySQLModel<IPEntry, IPEntry.column> {
 
         public static String humanReadableVersion(int version) {
             if (version >= MINECRAFT_26_1)
-                return "26.1";
+                return "26.1.1";
             else if (version >= MINECRAFT_1_21_11)
                 return "1.21.11";
             else if (version >= MINECRAFT_1_21_9)

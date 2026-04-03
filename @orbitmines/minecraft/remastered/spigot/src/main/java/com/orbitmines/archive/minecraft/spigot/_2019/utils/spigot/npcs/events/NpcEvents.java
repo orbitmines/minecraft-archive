@@ -76,8 +76,6 @@ public class NpcEvents<S extends SpigotServer<P>, P extends SpigotPlayer<S>> imp
             player.resetCooldown(INTERACT_COOLDOWN);
         }
 
-        if (event.getRightClicked() instanceof ArmorStand)
-            PlayerUtils.updateInventory(event.getPlayer());
     }
 
     @EventHandler(priority = EventPriority.LOWEST)

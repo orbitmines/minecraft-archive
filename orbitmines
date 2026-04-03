@@ -22,7 +22,7 @@ WORLDS_ZIP_SIZE=40851743399
 # ── Spigot config ───────────────────────────────────────────────────────────
 BUNGEECORD_URL="https://ci.md-5.net/job/BungeeCord/lastSuccessfulBuild/artifact/bootstrap/target/BungeeCord.jar"
 BUILDTOOLS_URL="https://hub.spigotmc.org/jenkins/job/BuildTools/lastSuccessfulBuild/artifact/target/BuildTools.jar"
-SPIGOT_VERSIONS=("26.1")
+SPIGOT_VERSIONS=("26.1.1")
 
 # ── Theme ────────────────────────────────────────────────────────────────────
 RST=$'\e[0m'

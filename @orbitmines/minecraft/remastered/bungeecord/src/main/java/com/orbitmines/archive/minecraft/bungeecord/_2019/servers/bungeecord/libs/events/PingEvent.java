@@ -6,6 +6,7 @@ package com.orbitmines.archive.minecraft.bungeecord._2019.servers.bungeecord.lib
 
 import com.orbitmines.archive.minecraft._2019.libs.Color;
 import com.orbitmines.archive.minecraft._2019.libs.Environment;
+import com.orbitmines.archive.minecraft._2019.libs.database.models.IPEntry;
 import com.orbitmines.archive.minecraft._2019.utils.state.StateProvider;
 import net.md_5.bungee.api.ServerPing;
 import net.md_5.bungee.api.chat.TextComponent;
@@ -29,7 +30,7 @@ public class PingEvent implements Listener {
             return Color.translateAlternateColorCodes('&', motd);
 
         /* Fallback motd */
-        return "§8§lOrbit§7§lMines §8- §726.1 §8- §e§lremastered\n§7Join us @ §9§ldiscord.orbitmines.com/minecraft";
+        return "§8§lOrbit§7§lMines §8- §7" + IPEntry.ProtocolVersion.humanReadableVersion(IPEntry.ProtocolVersion.FIRST_SUPPORTED_VERSION) + " §8- §e§lremastered\n§7Join us @ §9§ldiscord.orbitmines.com/minecraft";
     }
 
     private int getMaxPlayers() {
