@@ -6,9 +6,11 @@ package com.orbitmines.archive.minecraft.spigot._2019.servers.survival.events;
 
 import com.orbitmines.archive.minecraft.spigot._2019.servers.survival.Survival;
 import com.orbitmines.archive.minecraft.spigot._2019.servers.survival.player.SurvivalPlayer;
+import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
+import org.bukkit.event.EventPriority;
 import org.bukkit.event.Listener;
-import org.bukkit.event.entity.PlayerDeathEvent;
+import org.bukkit.event.entity.EntityDamageEvent;
 import org.bukkit.scheduler.BukkitRunnable;
 import org.bukkit.util.Vector;
 
@@ -20,9 +22,21 @@ public class DeathEvent implements Listener {
         this.survival = survival;
     }
 
-    @EventHandler
-    public void onDeath(PlayerDeathEvent event) {
-        SurvivalPlayer player = survival.getPlayer(event.getEntity());
+    /* Intercept lethal damage to prevent actual death — in 26.1 PlayerDeathEvent + setHealth
+       leaves the entity in a corrupt state where the tracker stops sending movement updates. */
+    @EventHandler(priority = EventPriority.HIGHEST)
+    public void onLethalDamage(EntityDamageEvent event) {
+        if (!(event.getEntity() instanceof Player))
+            return;
+
+        Player bukkit = (Player) event.getEntity();
+        if (bukkit.getHealth() - event.getFinalDamage() > 0)
+            return;
+
+        /* This hit would kill — prevent it */
+        event.setCancelled(true);
+
+        SurvivalPlayer player = survival.getPlayer(bukkit);
 
         player.setHealth(player.getMaxHealth());
         player.setFoodLevel(20);
@@ -42,7 +56,7 @@ public class DeathEvent implements Listener {
         }.runTaskLater(survival.getPlugin(), 1);
 
         survival.discord(bot -> bot.withPlayerEmote(player.getUUID(), player.getRawName(), false, emote -> {
-            bot.getTextChannel().sendMessage(":skull_crossbones:" + event.getDeathMessage().replaceAll(player.getRawName(), bot.getPlayerDisplay(player, emote, player.getRawName()))).queue();
+            bot.getTextChannel().sendMessage(":skull_crossbones: " + player.getRawName() + " died").queue();
         }));
     }
 }

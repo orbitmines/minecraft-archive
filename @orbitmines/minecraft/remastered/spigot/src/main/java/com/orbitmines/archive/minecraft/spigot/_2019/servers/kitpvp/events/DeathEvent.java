@@ -8,9 +8,13 @@ import com.orbitmines.archive.minecraft.spigot._2019.servers.kitpvp.KitPvP;
 import com.orbitmines.archive.minecraft.spigot._2019.servers.kitpvp.KitPvPPlayer;
 import com.orbitmines.archive.minecraft._2019.utils.RandomUtils;
 import com.orbitmines.archive.minecraft.spigot._2019.utils.spigot.nms.entity.EntityNms;
+import org.bukkit.entity.Arrow;
+import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
+import org.bukkit.event.EventPriority;
 import org.bukkit.event.Listener;
-import org.bukkit.event.entity.PlayerDeathEvent;
+import org.bukkit.event.entity.EntityDamageByEntityEvent;
+import org.bukkit.event.entity.EntityDamageEvent;
 import org.bukkit.scheduler.BukkitRunnable;
 import org.bukkit.util.Vector;
 
@@ -22,29 +26,55 @@ public class DeathEvent implements Listener {
         this.server = server;
     }
 
-    @EventHandler
-    public void onDeath(PlayerDeathEvent event) {
-        /* Clear Drops */
-        event.setDroppedExp(0);
-        event.getDrops().clear();
+    /* Intercept lethal damage to prevent actual death — in 26.1 PlayerDeathEvent + setHealth
+       leaves the entity in a corrupt state where the tracker stops sending movement updates. */
+    @EventHandler(priority = EventPriority.HIGHEST)
+    public void onLethalDamage(EntityDamageEvent event) {
+        if (!(event.getEntity() instanceof Player))
+            return;
 
-        KitPvPPlayer player = server.getPlayer(event.getEntity());
+        Player bukkit = (Player) event.getEntity();
+        if (bukkit.getHealth() - event.getFinalDamage() > 0)
+            return;
 
-        KitPvPPlayer playerKiller = player.getKiller() != null ? server.getPlayer(player.getKiller()) : null;
+        /* This hit would kill — prevent it */
+        event.setCancelled(true);
+
+        KitPvPPlayer player = server.getPlayer(bukkit);
+
+        if (player.getSelectedKit() == null || player.isSpectator())
+            return;
+
+        /* Find killer */
+        KitPvPPlayer playerKiller = null;
+        boolean shotByArrow = false;
+        if (event instanceof EntityDamageByEntityEvent) {
+            EntityDamageByEntityEvent edbee = (EntityDamageByEntityEvent) event;
+            if (edbee.getDamager() instanceof Player) {
+                playerKiller = server.getPlayer((Player) edbee.getDamager());
+            } else if (edbee.getDamager() instanceof Arrow) {
+                Arrow arrow = (Arrow) edbee.getDamager();
+                if (arrow.getShooter() instanceof Player) {
+                    playerKiller = server.getPlayer((Player) arrow.getShooter());
+                    shotByArrow = true;
+                }
+            }
+        }
+
         /* Handle Kill */
         if (playerKiller != null)
-            playerKiller.processKill(event, player);
+            playerKiller.processKill(null, player);
 
         /* Handle Death */
-        player.processDeath(event, playerKiller);
+        player.processDeath(null, playerKiller, shotByArrow);
 
-        /* Clear Inventory & Potion Effects */
+        /* Clear Drops & Inventory */
         player.clearFullInventory();
         player.clearPotionEffects();
 
         /* Set Health */
-        server.getNms().entity().setAttribute(player.bukkit(), EntityNms.Attribute.MAX_HEALTH, 20D);
-        player.setHealth(20D);
+        server.getNms().entity().setAttribute(bukkit, EntityNms.Attribute.MAX_HEALTH, 20D);
+        bukkit.setHealth(20D);
 
         new BukkitRunnable() {
             @Override
@@ -55,9 +85,6 @@ public class DeathEvent implements Listener {
                 player.setVelocity(new Vector(0, 0, 0));
                 /* Clear Fire ticks */
                 player.setFireTicks(0);
-                /* Clear Arrows */
-                //TODO
-//                server.getNms().entity().clearArrowsInBody(player.bukkit());
                 /* Give Lobby Kit */
                 server.getLobbyKit().copyToInventory(player);
                 player.getInventory().setHeldItemSlot(4);

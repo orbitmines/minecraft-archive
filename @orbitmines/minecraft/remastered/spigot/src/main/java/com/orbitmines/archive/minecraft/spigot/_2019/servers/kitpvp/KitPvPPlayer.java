@@ -257,7 +257,11 @@ public class KitPvPPlayer extends OMPlayer<KitPvP, KitPvPPlayer> {
         return (int) (current * (multiplier - 1));
     }
 
-    public void processDeath(PlayerDeathEvent event, /* @Nullable */KitPvPPlayer killer) {
+    public void processDeath(PlayerDeathEvent event, KitPvPPlayer killer) {
+        processDeath(event, killer, false);
+    }
+
+    public void processDeath(PlayerDeathEvent event, KitPvPPlayer killer, boolean shotByArrow) {
         addDeath();
 
         /* Update damage dealt for current round */
@@ -271,16 +275,17 @@ public class KitPvPPlayer extends OMPlayer<KitPvP, KitPvPPlayer> {
         levelData.updateExperienceBar(player);
 
         if (killer != null) {
-            if (player.getLastDamageCause().getEntity() instanceof Arrow) {
+            if (shotByArrow) {
                 server.broadcastRaw("", Color.MAROON, getName(Name.RAW_COLORED) + "§7 was shot by " + killer.getName(Name.RAW_COLORED) + "§7!");
             } else {
                 server.broadcastRaw("", Color.MAROON, getName(Name.RAW_COLORED) + "§7 was killed by " + killer.getName(Name.RAW_COLORED) + "§7!");
             }
         } else {
-            server.broadcastRaw("§7" + event.getDeathMessage().replaceAll(getRawName(), getName(Name.RAW_COLORED) + "§7"));
+            server.broadcastRaw("", Color.MAROON, getName(Name.RAW_COLORED) + "§7 died.");
         }
 
-        event.setDeathMessage(null);
+        if (event != null)
+            event.setDeathMessage(null);
 
         //TODO SPAWN BED
     }
