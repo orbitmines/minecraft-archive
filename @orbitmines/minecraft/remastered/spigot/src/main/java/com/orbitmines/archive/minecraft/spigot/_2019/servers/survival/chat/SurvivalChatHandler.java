@@ -4,7 +4,6 @@ package com.orbitmines.archive.minecraft.spigot._2019.servers.survival.chat;
  * OrbitMines - @author Fadi Shawki - 2019
  */
 
-import com.google.gson.GsonBuilder;
 import com.orbitmines.archive.minecraft._2019.libs.Color;
 import com.orbitmines.archive.minecraft._2019.libs.player.PlayerInstance;
 import com.orbitmines.archive.minecraft.spigot._2019.libs.spigot.ChatHandler;
@@ -13,7 +12,6 @@ import com.orbitmines.archive.minecraft.spigot._2019.servers.survival.player.Sur
 import com.orbitmines.archive.minecraft.spigot._2019.utils.spigot.ItemUtils;
 import com.orbitmines.archive.minecraft.spigot._2019.utils.spigot.builders.chat.text.TextBuilder;
 import com.orbitmines.archive.minecraft.spigot._2019.utils.spigot.builders.chat.text.TextComponent;
-import com.orbitmines.archive.minecraft.spigot._2019.utils.spigot.serializers.ItemStackSerializer;
 import net.md_5.bungee.api.chat.HoverEvent;
 import org.bukkit.ChatColor;
 import org.bukkit.Material;
@@ -58,10 +56,8 @@ public class SurvivalChatHandler extends ChatHandler<Survival, SurvivalPlayer> {
                 return;
             }
 
-            String serialized = new GsonBuilder().create().toJson(new ItemStackSerializer().serialize(item));
-
             builder.add(Color.LIME, p -> "[")
-                .hover(HoverEvent.Action.SHOW_ITEM, p -> serialized);
+                .hoverItem(item);
 
             if (item.getItemMeta() != null && item.getItemMeta().getDisplayName() != null && !item.getItemMeta().getDisplayName().isEmpty()) {
                 String displayName = item.getItemMeta().getDisplayName();
@@ -90,8 +86,7 @@ public class SurvivalChatHandler extends ChatHandler<Survival, SurvivalPlayer> {
 
                     int fI = i;
                     TextComponent<SurvivalPlayer> component = new TextComponent<SurvivalPlayer>(color, p -> space + (fI == 0 ? item.getAmount() + "x " : "") +  part)
-                        .hover(HoverEvent.Action.SHOW_ITEM, p -> serialized);
-
+                        .hoverItem(item);
 
                     component.bold(lastColors.contains("§l"));
                     component.italic(lastColors.contains("§o") || lastColors.isEmpty() /* Item Renamed */);
@@ -103,11 +98,11 @@ public class SurvivalChatHandler extends ChatHandler<Survival, SurvivalPlayer> {
                 }
             } else {
                 builder.add(Color.WHITE, p -> item.getAmount() + "x " + ItemUtils.getName(item.getType()))
-                    .hover(HoverEvent.Action.SHOW_ITEM, p -> serialized);
+                    .hoverItem(item);
             }
 
             builder.add(Color.LIME, p -> "]")
-                .hover(HoverEvent.Action.SHOW_ITEM, p -> serialized);
+                .hoverItem(item);
         } catch(Exception ex) {
             ex.printStackTrace();
             super.appendWord(builder, receiver, mentioned, messageColor, word);

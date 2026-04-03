@@ -13,6 +13,9 @@ import net.md_5.bungee.api.ChatColor;
 import net.md_5.bungee.api.chat.ClickEvent;
 import net.md_5.bungee.api.chat.ComponentBuilder;
 import net.md_5.bungee.api.chat.HoverEvent;
+import net.md_5.bungee.api.chat.hover.content.Item;
+import net.md_5.bungee.api.chat.hover.content.Text;
+import org.bukkit.inventory.ItemStack;
 
 public class TextComponent<P extends SpigotPlayer> {
 
@@ -26,6 +29,7 @@ public class TextComponent<P extends SpigotPlayer> {
 
     @Getter private HoverEvent.Action hoverAction;
     @Getter private MutablePlayerString<P> hoverEvent;
+    @Getter private ItemStack hoverItemStack;
 
     @Getter private boolean bold;
     @Getter private boolean italic;
@@ -64,6 +68,7 @@ public class TextComponent<P extends SpigotPlayer> {
         this.clickEvent = textComponent.clickEvent;
         this.hoverAction = textComponent.hoverAction;
         this.hoverEvent = textComponent.hoverEvent;
+        this.hoverItemStack = textComponent.hoverItemStack;
         this.bold = textComponent.bold;
         this.italic = textComponent.italic;
         this.obfuscated = textComponent.obfuscated;
@@ -104,6 +109,13 @@ public class TextComponent<P extends SpigotPlayer> {
     public TextComponent<P> hover(HoverEvent.Action hoverAction, MutablePlayerString<P> hoverEvent) {
         this.hoverAction = hoverAction;
         this.hoverEvent = hoverEvent;
+
+        return this;
+    }
+
+    public TextComponent<P> hoverItem(ItemStack itemStack) {
+        this.hoverAction = HoverEvent.Action.SHOW_ITEM;
+        this.hoverItemStack = itemStack;
 
         return this;
     }
@@ -164,8 +176,15 @@ public class TextComponent<P extends SpigotPlayer> {
 
         if (clickAction != null)
             component.setClickEvent(new ClickEvent(this.clickAction, this.clickEvent.toString(player)));
-        if (hoverAction != null)
-            component.setHoverEvent(new HoverEvent(this.hoverAction, new ComponentBuilder(this.hoverEvent.toString(player)).create()));
+        if (hoverAction != null) {
+            if (hoverItemStack != null) {
+                String itemId = hoverItemStack.getType().getKey().toString();
+                int count = hoverItemStack.getAmount();
+                component.setHoverEvent(new HoverEvent(HoverEvent.Action.SHOW_ITEM, new Item(itemId, count, null)));
+            } else {
+                component.setHoverEvent(new HoverEvent(this.hoverAction, new Text(this.hoverEvent.toString(player))));
+            }
+        }
 
         component.setBold(this.bold);
         component.setItalic(this.italic);

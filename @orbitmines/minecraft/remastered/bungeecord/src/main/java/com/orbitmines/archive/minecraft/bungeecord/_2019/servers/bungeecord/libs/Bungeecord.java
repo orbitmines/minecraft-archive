@@ -20,6 +20,7 @@ import com.orbitmines.archive.minecraft.bungeecord._2019.servers.bungeecord.libs
 import com.orbitmines.archive.minecraft.bungeecord._2019.servers.bungeecord.libs.events.VoteEvent;
 import com.orbitmines.archive.minecraft.bungeecord._2019.servers.bungeecord.libs.pubsub.publishers.BungeeStartupPublisher;
 import com.orbitmines.archive.minecraft.bungeecord._2019.servers.bungeecord.libs.pubsub.subscribers.*;
+import com.orbitmines.archive.minecraft.bungeecord._2019.servers.bungeecord.libs.error_tracker.ErrorTracker;
 import com.orbitmines.archive.minecraft.bungeecord._2019.servers.bungeecord.libs.restarter.Restarter;
 import com.orbitmines.archive.minecraft.bungeecord._2019.servers.bungeecord.utils.config.ConfigHandler;
 import com.orbitmines.archive.minecraft._2019.utils.SkinLibrary;
@@ -108,6 +109,7 @@ public class Bungeecord implements VoteHandler, VotifierPlugin {
     }
     @Getter private SkinLibrary skinLibrary;
     @Getter private BungeeStateManager stateManager;
+    @Getter private ErrorTracker errorTracker;
 
     protected Map<UUID, BungeePlayer> players;
 
@@ -231,9 +233,15 @@ public class Bungeecord implements VoteHandler, VotifierPlugin {
         setupVotifier();
 
         new Restarter(plugin, this).async().start();
+
+        errorTracker = new ErrorTracker(this);
+        errorTracker.start();
     }
 
     public void onDisable() {
+        if (errorTracker != null)
+            errorTracker.stop();
+
         if (restarting) {
             getLogger().info("-------------------------------------------------------");
             getLogger().info(restartingMessage);
