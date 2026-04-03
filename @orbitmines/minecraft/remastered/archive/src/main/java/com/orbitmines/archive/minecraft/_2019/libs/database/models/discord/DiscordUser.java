@@ -264,7 +264,8 @@ public class DiscordUser extends OMMySQLModel<DiscordUser, DiscordUser.column> {
             OfflinePlayer player = OfflinePlayer.get(discordUser.getUuid());
             User user = discordUser.getDiscordUser(bot);
             bot.withPlayerEmote(player.getUUID(), player.getName(Name.RAW), false, emote -> {
-                getChannel().sendMessage("Unlinking " + user.getAsMention() + " (Id: " + user.getId() + ") from " + bot.getPlayerDisplay(player, emote, player.getName(Name.RAW)) + "...").queue();
+                String userDisplay = user != null ? user.getAsMention() + " (Id: " + user.getId() + ")" : "(Id: " + discordUser.getDiscordUserId() + ")";
+                getChannel().sendMessage("Unlinking " + userDisplay + " from " + bot.getPlayerDisplay(player, emote, player.getName(Name.RAW)) + "...").queue();
             });
 
             discordUser.setUuid(null);

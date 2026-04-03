@@ -36,7 +36,7 @@ public class MessageListener extends ListenerAdapter {
             Command command = Command.parse(a[0]);
 
             if (command == null) {
-                if (Environment.get("OM_DISCORD_BOT_MAIN", "false").equals("true"))
+                if (Environment.BUNGEECORD)
                     channel.sendMessage(user.getAsMention() + " that command doesn't exist. Use **!help** for help.").queue();
 
                 return;

@@ -14,6 +14,8 @@ public enum Environment {
     staging,
     development;
 
+    public static boolean BUNGEECORD = false;
+
     public static boolean isProduction() {
         return Environment.production == get();
     }

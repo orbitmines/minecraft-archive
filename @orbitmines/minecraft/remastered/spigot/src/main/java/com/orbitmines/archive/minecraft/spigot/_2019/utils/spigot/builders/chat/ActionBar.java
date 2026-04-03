@@ -8,17 +8,16 @@ import com.orbitmines.archive.minecraft.spigot._2019.utils.spigot.runnable.Spigo
 import com.orbitmines.archive.minecraft.spigot._2019.utils.spigot.runnable.TimeUnit;
 import org.bukkit.entity.Player;
 
-import java.util.ArrayList;
 import java.util.Collections;
-import java.util.Iterator;
-import java.util.NoSuchElementException;
+import java.util.List;
+import java.util.concurrent.CopyOnWriteArrayList;
 
 /*
 * OrbitMines - @author Fadi Shawki - 29-7-2017
 */
 public class ActionBar {
 
-    private static ArrayList<ActionBar> actionBars = new ArrayList<>();
+    private static List<ActionBar> actionBars = new CopyOnWriteArrayList<>();
     
     private static SpigotServer plugin;
     
@@ -123,24 +122,12 @@ public class ActionBar {
         if (last == this)
             /* Clear ActionBar, if we no longer need to display any action bar */
             plugin.getNms().actionBar().send(Collections.singletonList(player.getPlayer()), "");
-
-        actionBars.remove(this);
     }
 
     private ActionBar getLastActionBar(Player player) {
-        // TODO: Fix this
-        try {
-            Iterator<ActionBar> iterator = new ArrayList<>(actionBars).iterator();
-            while (iterator.hasNext()) {
-                ActionBar next = iterator.next();
-
-                if (next != null && next.getPlayer().equals(player))
-                    return next;
-            }
-        } catch (NoSuchElementException ex) {
-
-        } catch (NegativeArraySizeException | ArrayIndexOutOfBoundsException ex) {
-            actionBars = new ArrayList<>();
+        for (ActionBar next : actionBars) {
+            if (next != null && next.getPlayer().equals(player))
+                return next;
         }
 
         return null;

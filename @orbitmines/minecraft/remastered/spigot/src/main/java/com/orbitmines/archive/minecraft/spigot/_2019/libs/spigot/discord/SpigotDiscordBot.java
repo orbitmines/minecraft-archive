@@ -115,7 +115,7 @@ public class SpigotDiscordBot extends OMDiscordBot {
     }
 
     private void initializeCategory() {
-        getController().createCategory("SERVERS").queue(category -> initializeChannel(getServersCategory()));
+        getController().createCategory("Servers").queue(category -> initializeChannel(getServersCategory()));
     }
 
     private void initializeChannel(Category category) {
@@ -123,7 +123,7 @@ public class SpigotDiscordBot extends OMDiscordBot {
     }
 
     private String getChannelName() {
-        return server.getType().toString().toLowerCase() + "_chat";
+        return server.getType().toString().toLowerCase(); //+ "_chat";
     }
 
     private String getChannelTopic() {
@@ -131,7 +131,7 @@ public class SpigotDiscordBot extends OMDiscordBot {
     }
 
     public Category getServersCategory() {
-        return getCategory("SERVERS");
+        return getCategory("Servers");
     }
 
     public TextChannel getTextChannel() {

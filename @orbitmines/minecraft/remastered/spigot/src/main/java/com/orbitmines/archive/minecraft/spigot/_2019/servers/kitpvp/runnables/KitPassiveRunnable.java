@@ -35,7 +35,7 @@ public class KitPassiveRunnable extends PassiveRunnable<KitPvP> {
         for (KitPvPPlayer player : server.getPlayers()) {
 
             if (player.getSelectedKit() == null || player.isSpectator())
-                return;
+                continue;
 
             for (ItemStack item : player.getInventory().getContents()) {
                 if (item == null || item.getType() == Material.AIR)

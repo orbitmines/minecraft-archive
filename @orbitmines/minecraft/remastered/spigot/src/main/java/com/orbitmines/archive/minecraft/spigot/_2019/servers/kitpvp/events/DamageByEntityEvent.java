@@ -68,7 +68,7 @@ public class DamageByEntityEvent implements Listener {
                 arrow.getWorld().playEffect(arrow.getLocation(), Effect.STEP_SOUND, Material.REDSTONE_BLOCK);
 
                 if (arrow.getShooter() instanceof Player) {
-                    KitPvPPlayer shooter = server.getPlayer((Player) arrow);
+                    KitPvPPlayer shooter = server.getPlayer((Player) arrow.getShooter());
                     new ActionBar(shooter.bukkit(), () -> "§c§lHead Shot!", 60).send();
                 }
             }

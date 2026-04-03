@@ -387,6 +387,7 @@ public class Survival extends OMServer<Survival, SurvivalPlayer> {
 
         int count = Environment.get() == Environment.development ? 25 : Region.REGION_COUNT;
 
+        boolean generated = false;
         loop:
         for (int i = 1; i <= count; i++) {
             for (SurvivalRegion region : loaded) {
@@ -413,7 +414,9 @@ public class Survival extends OMServer<Survival, SurvivalPlayer> {
 
             new Region(newRegion);
 
-            world.save();
+            /* Save and unload the chunk to avoid OOM when generating many regions */
+            Chunk chunk = world.getChunkAt(location);
+            chunk.unload(true);
         }
     }
 }

@@ -1,5 +1,6 @@
 package com.orbitmines.archive.minecraft.bungeecord;
 
+import com.orbitmines.archive.minecraft._2019.libs.Environment;
 import com.orbitmines.archive.minecraft._2019.libs.Server;
 import com.orbitmines.archive.minecraft.MinecraftServer;
 import com.orbitmines.archive.minecraft.bungeecord._2019.servers.bungeecord.libs.Bungeecord;
@@ -18,6 +19,8 @@ public class BungeeCord extends Plugin {
 
     @Override
     public void onLoad() {
+        Environment.BUNGEECORD = true;
+
         bungeecord = new Bungeecord(this);
         bungeecord.onLoad();
     }
@@ -27,7 +30,7 @@ public class BungeeCord extends Plugin {
         bungeecord.onEnable();
 
         for (Server type : List.of(Server.HUB, Server.KITPVP, Server.SURVIVAL)) {
-            MinecraftServer server = new MinecraftServer(type, "26.1", "1G", findAvailablePort());
+            MinecraftServer server = new MinecraftServer(type, "26.1", type == Server.SURVIVAL ? Environment.get("OM_RAM_SURVIVAL", "8G") : Environment.get("OM_RAM_DEFAULT", "2G"), findAvailablePort());
             server.run();
             this.registerServer(server);
         }

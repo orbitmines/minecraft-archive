@@ -207,7 +207,7 @@ public class Hologram<P extends SpigotPlayer> extends Npc<Hologram, P> {
             return null;
 
         for (Hologram npc : getHologramsIn(entity.getWorld())) {
-            if (npc.getEntities().contains(entity))
+            if (Npc.containsEntity(npc.getEntities(), entity))
                 return npc;
         }
         return null;

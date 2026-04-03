@@ -25,6 +25,7 @@ import com.orbitmines.archive.minecraft.spigot._2019.utils.spigot.builders.chat.
 import com.orbitmines.archive.minecraft.spigot._2019.utils.spigot.nms.entity.EntityNms;
 import com.orbitmines.archive.minecraft.spigot._2019.utils.spigot.nms.itemstack.ItemStackNms;
 import lombok.Getter;
+import lombok.Setter;
 import org.bukkit.GameMode;
 import org.bukkit.Material;
 import org.bukkit.Sound;
@@ -47,7 +48,7 @@ public class KitPvPPlayer extends OMPlayer<KitPvP, KitPvPPlayer> {
 
     @Getter private KitPvPPlayerModel.LevelData levelData;
 
-    @Getter private boolean spectator;
+    @Getter @Setter private boolean spectator;
     @Getter private boolean spawnProtection;
     @Getter private KitPvPKit.Level selectedKit;
     @Getter private int killStreak;
@@ -113,7 +114,8 @@ public class KitPvPPlayer extends OMPlayer<KitPvP, KitPvPPlayer> {
     public void beforeQuitSync() {
         super.beforeQuitSync();
 
-        if (selectedKit == null)
+        KitPvPKit.Level kit = selectedKit;
+        if (kit == null)
             return;
 
         EntityNms nms = server.getNms().entity();
@@ -122,8 +124,8 @@ public class KitPvPPlayer extends OMPlayer<KitPvP, KitPvPPlayer> {
             player.damage(nms.getAttribute(player, EntityNms.Attribute.MAX_HEALTH), player.getLastDamageCause().getEntity());
 
         /* Update damage dealt for current round */
-        KitPvPPlayerKitModel kit = getKit(selectedKit.getHandler(), false);
-        kit.insertOrUpdate(KitPvPPlayerKitModel.column.DAMAGE_DEALT);
+        KitPvPPlayerKitModel kitModel = getKit(kit.getHandler(), false);
+        kitModel.insertOrUpdate(KitPvPPlayerKitModel.column.DAMAGE_DEALT);
     }
 
     @Override
@@ -263,6 +265,7 @@ public class KitPvPPlayer extends OMPlayer<KitPvP, KitPvPPlayer> {
         kit.insertOrUpdate(KitPvPPlayerKitModel.column.DAMAGE_DEALT);
 
         this.selectedKit = null;
+        this.spectator = true;
         this.killStreak = 0;
 
         levelData.updateExperienceBar(player);
@@ -287,7 +290,9 @@ public class KitPvPPlayer extends OMPlayer<KitPvP, KitPvPPlayer> {
     }
 
     public void joinMap(KitPvPKit.Level selectedKit) {
+        this.spectator = false;
         teleportToMap();
+
         setSelectedKit(selectedKit);
         player.getInventory().setHeldItemSlot(0);
     }

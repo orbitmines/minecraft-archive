@@ -17,6 +17,7 @@ import net.dv8tion.jda.api.entities.channel.middleman.MessageChannel;
 import net.dv8tion.jda.api.entities.channel.Channel;
 import net.dv8tion.jda.api.entities.emoji.RichCustomEmoji;
 import net.dv8tion.jda.api.events.message.MessageReceivedEvent;
+import net.dv8tion.jda.api.requests.GatewayIntent;
 
 import javax.security.auth.login.LoginException;
 import java.util.List;
@@ -49,9 +50,10 @@ public abstract class DiscordBot {
 
     private JDA buildJda(String token, OnlineStatus status) {
         JDABuilder jdaBuilder = JDABuilder.createDefault(token).
-                setAutoReconnect(true).
-                setActivity(null).
-                setStatus(status);
+            enableIntents(GatewayIntent.getIntents(GatewayIntent.ALL_INTENTS)).
+            setAutoReconnect(true).
+            setActivity(null).
+            setStatus(status);
 
         try {
             return jdaBuilder.build().awaitReady();
@@ -104,10 +106,14 @@ public abstract class DiscordBot {
 
     public TextChannel getTextChannel(DiscordChannel channel) {
         List<TextChannel> list = getGuild().getTextChannelsByName(channel.getName(), true);
+        if (list.size() == 1) return list.get(0);
+
         for (TextChannel c : list) {
             if (c.getParentCategory() != null && c.getParentCategory().getName().equals(channel.getCategoryName()))
                 return c;
         }
+
+        if (!list.isEmpty()) return list.get(0);
 
         return null;
     }

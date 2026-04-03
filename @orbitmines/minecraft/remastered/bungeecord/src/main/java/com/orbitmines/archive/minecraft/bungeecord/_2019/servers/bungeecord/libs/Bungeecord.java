@@ -148,6 +148,7 @@ public class Bungeecord implements VoteHandler, VotifierPlugin {
 
             if (firstLoad) {
                 importDump(database);
+                clearSurvivalData(database);
             }
 
             seedMaps(database, root);
@@ -371,6 +372,24 @@ public class Bungeecord implements VoteHandler, VotifierPlugin {
             getLogger().severe("Failed to import SQL dump: " + e.getMessage());
             e.printStackTrace();
         }
+    }
+
+    private void clearSurvivalData(SQLiteDatabase database) {
+        getLogger().info("Clearing survival data (keeping survival_players)...");
+        database.executeQuery("DELETE FROM `survival_homes`");
+        database.executeQuery("DELETE FROM `survival_warps`");
+        database.executeQuery("DELETE FROM `survival_favorite_warps`");
+        database.executeQuery("DELETE FROM `survival_claims`");
+        database.executeQuery("DELETE FROM `survival_claim_members`");
+        database.executeQuery("DELETE FROM `survival_chest_shops`");
+        database.executeQuery("DELETE FROM `survival_regions`");
+        database.executeQuery("UPDATE `survival_players` SET `back_location` = NULL, `logout_location` = NULL");
+
+        database.executeQuery("DELETE FROM `discord_squad_members`");
+        database.executeQuery("DELETE FROM `discord_squad_invites`");
+        database.executeQuery("DELETE FROM `discord_squads`");
+
+        getLogger().info("Survival and discord squad data cleared.");
     }
 
     private void seedMaps(SQLiteDatabase database, String root) {

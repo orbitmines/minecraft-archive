@@ -105,36 +105,38 @@ public class GlobalPlayerArgument<S extends OMServer<S, P>, P extends OMPlayer<S
 
     @Override
     public CompletableFuture<Suggestions> getSuggestions(P p, CommandContext context, SuggestionsBuilder builder) throws CommandSyntaxException {
-        String remaining = builder.getRemaining().toLowerCase();
+        return CompletableFuture.supplyAsync(() -> {
+            String remaining = builder.getRemaining().toLowerCase();
 
-        Set<String> players = Server.getAllPlayers(p);
+            Set<String> players = Server.getAllPlayers(p);
 
-        int count = 0;
-        for (String player : players) {
-            if (!player.toLowerCase().startsWith(remaining))
-                continue;
+            int count = 0;
+            for (String player : players) {
+                if (!player.toLowerCase().startsWith(remaining))
+                    continue;
 
-            if (!allowSelfSuggestion && p.getRawName().equals(player))
-                continue;
+                if (!allowSelfSuggestion && p.getRawName().equals(player))
+                    continue;
 
-            UUID uuid = UUIDUtils.getUUID(player);
-            if (uuid == null)
-                continue;
+                UUID uuid = UUIDUtils.getUUID(player);
+                if (uuid == null)
+                    continue;
 
-            OnlinePlayer onlinePlayer = OnlinePlayer.get(uuid);
-            if (onlinePlayer == null)
-                continue;
+                OnlinePlayer onlinePlayer = OnlinePlayer.get(uuid);
+                if (onlinePlayer == null)
+                    continue;
 
-            Message tooltip = getTooltip(onlinePlayer);
+                Message tooltip = getTooltip(onlinePlayer);
 
-            builder.suggest(player, tooltip);
-            count++;
+                builder.suggest(player, tooltip);
+                count++;
 
-            if (count == LIMIT)
-                break;
-        }
+                if (count == LIMIT)
+                    break;
+            }
 
-        return builder.buildFuture();
+            return builder.build();
+        });
     }
 
     @Override

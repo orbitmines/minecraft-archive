@@ -632,8 +632,8 @@ public class DiscordSquad extends OMMySQLModel<DiscordSquad, DiscordSquad.column
             voiceChannel.delete().queue(voiceChannel -> {
                 player.sendMessage("Discord", Color.INFO, "global", "player.discord_squad.deletion.deleted_voice_channel");
 
-                DiscordSquad.this.setRoleId(null);
-                DiscordSquad.this.update(column.ROLE_ID);
+                DiscordSquad.this.setVoiceChannelId(null);
+                DiscordSquad.this.update(column.VOICE_CHANNEL_ID);
 
                 archiveTextChannel();
             }, throwable -> onError(throwable, "Voice Channel"));
