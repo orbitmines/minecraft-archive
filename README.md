@@ -14,7 +14,7 @@
 
 - Prerequisites
     ```
-    sudo apt install git maven openjdk-25-jdk
+    sudo apt install git maven unzip openjdk-25-jdk
     ```
   - Install [Git](https://git-scm.com/downloads)
   - Install [Maven](https://maven.apache.org/install.html)

@@ -960,7 +960,7 @@ public class PatchNotes {
         }
 
         public void open(PatchNotes patchNotes, OMPlayer omp) {
-            OMServer.getInstance().getNms().customItem().openBook(omp.bukkit(), getBook(patchNotes));
+            omp.bukkit().openBook(getBook(patchNotes).build(omp));
         }
 
         public WrittenBookBuilder getBook(PatchNotes patchNotes) {

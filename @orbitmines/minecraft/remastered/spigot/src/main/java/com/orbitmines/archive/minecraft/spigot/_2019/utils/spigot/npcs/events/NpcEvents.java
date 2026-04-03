@@ -59,25 +59,25 @@ public class NpcEvents<S extends SpigotServer<P>, P extends SpigotPlayer<S>> imp
             event.setCancelled(true);
     }
 
+    /* In 26.1 the client sends INTERACT_AT instead of INTERACT for all entities,
+       so this handler now covers both mob NPCs and ArmorStand-based NPCs. */
     @EventHandler(priority = EventPriority.LOWEST)
     public void onInteractAtEntityEvent(PlayerInteractAtEntityEvent event) {
-        if (!(event.getRightClicked() instanceof ArmorStand))
+        Npc<?, P> npc = Npc.getNpc(event.getRightClicked());
+        if (npc == null)
             return;
 
-        ArmorStand armorStand = (ArmorStand) event.getRightClicked();
+        event.setCancelled(true);
 
-        Player player = event.getPlayer();
+        P player = server.getPlayer(event.getPlayer());
+        if (npc.isClickable() && !player.onCooldown(INTERACT_COOLDOWN)) {
+            npc.getInteractAction().onInteract(event, player);
 
-        Npc<?, P> npc = Npc.getNpc(armorStand);
-
-        if (npc != null) {
-            event.setCancelled(true);
-
-            if (npc.isClickable())
-                npc.getInteractAction().onInteract(event, server.getPlayer(player));
-
-            PlayerUtils.updateInventory(player);
+            player.resetCooldown(INTERACT_COOLDOWN);
         }
+
+        if (event.getRightClicked() instanceof ArmorStand)
+            PlayerUtils.updateInventory(event.getPlayer());
     }
 
     @EventHandler(priority = EventPriority.LOWEST)

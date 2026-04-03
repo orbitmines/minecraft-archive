@@ -105,6 +105,7 @@ public class WrittenBookBuilder<P extends SpigotPlayer> extends ItemBuilderInsta
 
         meta.setGeneration(this.generation);
 
+        itemStack.setItemMeta(meta);
         return itemStack;
     }
 }
