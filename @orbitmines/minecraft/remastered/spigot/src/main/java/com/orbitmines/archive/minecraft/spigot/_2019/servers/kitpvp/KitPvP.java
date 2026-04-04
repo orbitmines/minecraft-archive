@@ -32,6 +32,7 @@ import com.orbitmines.archive.minecraft.spigot._2019.servers.kitpvp.item_handler
 import com.orbitmines.archive.minecraft.spigot._2019.servers.kitpvp.kit.KitPvPKit;
 import com.orbitmines.archive.minecraft.spigot._2019.servers.kitpvp.kit.LobbyKit;
 import com.orbitmines.archive.minecraft.spigot._2019.servers.kitpvp.kit.kits.*;
+import com.orbitmines.archive.minecraft.spigot._2019.servers.kitpvp.kit.kits._2015.*;
 import com.orbitmines.archive.minecraft.spigot._2019.servers.kitpvp.leaderboards.TopKillsLeaderBoard;
 import com.orbitmines.archive.minecraft.spigot._2019.servers.kitpvp.loot.KitPvPLootHandler;
 import com.orbitmines.archive.minecraft.spigot._2019.servers.kitpvp.runnables.KitPassiveRunnable;
@@ -44,7 +45,9 @@ import com.orbitmines.archive.minecraft.spigot._2019.utils.spigot.npcs.Personali
 import com.orbitmines.archive.minecraft.spigot._2019.utils.spigot.npcs.PersonalisedMobNpc;
 import com.orbitmines.archive.minecraft.spigot._2019.utils.spigot.prevention.Prevention;
 import com.orbitmines.archive.minecraft.spigot._2019.utils.spigot.worlds.maps.datapoints.DataPointHandler;
+import com.orbitmines.archive.minecraft.spigot._2019.servers.kitpvp.commands.CommandFreeKitSaturday;
 import lombok.Getter;
+import lombok.Setter;
 import org.bukkit.GameRule;
 import org.bukkit.plugin.java.JavaPlugin;
 import org.bukkit.Location;
@@ -68,6 +71,8 @@ public class KitPvP extends OMServer<KitPvP, KitPvPPlayer> {
     public static final int XP_PER_KILL = 10;
 
     public static final KitItemBuilder PLAYER_TRACKER = new KitItemBuilder(null, Material.COMPASS, 1, "§c§lPlayer Tracker").addPassive(Passive.PLAYER_TRACKING, 1);
+
+    @Getter @Setter private boolean freeKitSaturday = false;
 
     @Getter private LobbyKit lobbyKit;
     @Getter private KitPvPMap map;
@@ -217,7 +222,8 @@ public class KitPvP extends OMServer<KitPvP, KitPvPPlayer> {
         );
         
         registerCommands(
-            new CommandPrismShop(this)
+            new CommandPrismShop(this),
+            new CommandFreeKitSaturday(this)
         );
     }
 
@@ -228,7 +234,7 @@ public class KitPvP extends OMServer<KitPvP, KitPvPPlayer> {
     }
     
     public boolean isSaturday() {
-        return Calendar.getInstance().get(Calendar.DAY_OF_WEEK) == Calendar.SATURDAY;
+        return freeKitSaturday || Calendar.getInstance().get(Calendar.DAY_OF_WEEK) == Calendar.SATURDAY;
     }
 
     private void registerKits() {
@@ -244,7 +250,27 @@ public class KitPvP extends OMServer<KitPvP, KitPvPPlayer> {
             new KitDrunk(this),
             new KitPyro(this),
             new KitBunny(this),
-            new KitEnchanter(this)
+            new KitEnchanter(this),
+            /* 2015 kits */
+            new KitAssassin(this),
+            new KitBeast(this),
+            new KitBlaze(this),
+            new KitDarkMage(this),
+            new KitFish(this),
+            new KitFisherman(this),
+            new KitGrimReaper(this),
+            new KitHeavy(this),
+            new KitLibrarian(this),
+            new KitLord(this),
+            new KitMiner(this),
+            new KitNecromancer(this),
+            new KitSnowGolem(this),
+            new KitSpider(this),
+            new KitTNT(this),
+            new KitTree(this),
+            new KitVampire(this),
+            new KitVillager(this),
+            new KitWizard(this)
         );
     }
 

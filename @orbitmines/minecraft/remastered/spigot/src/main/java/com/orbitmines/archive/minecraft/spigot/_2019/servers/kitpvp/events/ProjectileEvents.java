@@ -6,6 +6,7 @@ package com.orbitmines.archive.minecraft.spigot._2019.servers.kitpvp.events;
 
 import com.orbitmines.archive.minecraft.spigot._2019.servers.kitpvp.KitPvP;
 import com.orbitmines.archive.minecraft.spigot._2019.servers.kitpvp.abilities.Passive;
+import com.orbitmines.archive.minecraft.spigot._2019.servers.kitpvp.abilities.passives.PassiveArrowSplit;
 import org.bukkit.entity.Arrow;
 import org.bukkit.entity.Entity;
 import org.bukkit.entity.Player;
@@ -37,10 +38,17 @@ public class ProjectileEvents implements Listener {
         if (passives == null)
             return;
 
+        /* Handle ARROW_SPLIT at shoot time (not hit time) */
+        if (passives.containsKey(Passive.ARROW_SPLIT)) {
+            ((PassiveArrowSplit) Passive.ARROW_SPLIT.getHandler()).triggerOnShoot(event, passives.get(Passive.ARROW_SPLIT));
+            passives.remove(Passive.ARROW_SPLIT);
+        }
+
         Entity arrow = event.getProjectile();
 
-        /* Apply to metadata so we can apply passive effects when the arrow hits. */
-        arrow.setMetadata("passive", new FixedMetadataValue(server.getPlugin(), passives));
+        /* Apply remaining passives to metadata for hit-time triggering */
+        if (!passives.isEmpty())
+            arrow.setMetadata("passive", new FixedMetadataValue(server.getPlugin(), passives));
     }
 
     @EventHandler

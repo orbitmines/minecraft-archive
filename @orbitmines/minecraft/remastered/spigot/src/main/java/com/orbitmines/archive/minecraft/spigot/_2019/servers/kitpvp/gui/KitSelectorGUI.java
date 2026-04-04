@@ -16,7 +16,7 @@ import org.bukkit.Sound;
 public class KitSelectorGUI extends GUI<KitPvPPlayer> {
 
     public KitSelectorGUI(KitPvPPlayer viewer) {
-        super(18, "§0§lKit Selector", viewer);
+        super(36, "§0§lKit Selector", viewer);
         
         boolean saturday = viewer.server().isSaturday();
 

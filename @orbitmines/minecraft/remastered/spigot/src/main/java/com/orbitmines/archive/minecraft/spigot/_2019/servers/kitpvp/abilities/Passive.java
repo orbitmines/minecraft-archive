@@ -171,6 +171,109 @@ public enum Passive {
 //            return super.getDescription(level);
 //        }
 //    }
+
+    /* 2015 Kits */
+    KNOCKUP("Knockup", Color.RED, Interaction.HIT_OTHER, new PassiveKnockup()) {
+        @Override
+        public String[] getDescription(int level) {
+            PassiveKnockup passive = (PassiveKnockup) getHandler();
+
+            return new String[] {
+                    "  §3§o" + String.format("%.1f", passive.getChance(level) * 100) + "% §7§ochance to launch",
+                    "  §7§oyour opponent into the air."
+            };
+        }
+    },
+    LIFESTEAL("Lifesteal", Color.PURPLE, Interaction.HIT_OTHER, new PassiveLifesteal()) {
+        @Override
+        public String[] getDescription(int level) {
+            PassiveLifesteal passive = (PassiveLifesteal) getHandler();
+
+            return new String[] {
+                    "  §7§oHeal §c§o" + String.format("%.1f", passive.getHealAmount(level)) + " health §7§oper hit."
+            };
+        }
+    },
+    WITHER_HIT("Magic", Color.PURPLE, Interaction.HIT_OTHER, new PassiveWitherHit()) {
+        @Override
+        public String[] getDescription(int level) {
+            PassiveWitherHit passive = (PassiveWitherHit) getHandler();
+
+            return new String[] {
+                    "  §7§oApply §8§oWither " + NumberUtils.toRoman(passive.getAmplifier(level) + 1),
+                    "  §7§ofor §9§o" + (passive.getDuration(level) / 20) + " seconds§7§o."
+            };
+        }
+    },
+    WITHER_ARMOR("Wither Armor", Color.GRAY, Interaction.ON_HIT, new PassiveWitherArmor()) {
+        @Override
+        public String[] getDescription(int level) {
+            PassiveWitherArmor passive = (PassiveWitherArmor) getHandler();
+
+            return new String[] {
+                    "  §7§oApply §8§oWither " + NumberUtils.toRoman(passive.getAmplifier(level) + 1),
+                    "  §7§oto attackers for §9§o" + (passive.getDuration(level) / 20) + " seconds§7§o."
+            };
+        }
+    },
+    ARTHROPODS("Arthropods", Color.GREEN, Interaction.HIT_OTHER, new PassiveArthropods()) {
+        @Override
+        public String[] getDescription(int level) {
+            PassiveArthropods passive = (PassiveArthropods) getHandler();
+
+            return new String[] {
+                    "  §3§o" + String.format("%.1f", passive.getChance(level) * 100) + "% §7§ochance to summon",
+                    "  §7§ospiders and apply §a§oPoison§7§o."
+            };
+        }
+    },
+    UNDEATH("Undeath", Color.MAROON, Interaction.APPLY_TO_ARROW, new PassiveUndeath()) {
+        @Override
+        public String[] getDescription(int level) {
+            return new String[] {
+                    "  §7§oSummon undead minions",
+                    "  §7§owhere your arrow lands."
+            };
+        }
+    },
+    ARROW_SPLIT("Arrow Split", Color.SILVER, Interaction.APPLY_TO_ARROW, new PassiveArrowSplit()) {
+        @Override
+        public String[] getDescription(int level) {
+            PassiveArrowSplit passive = (PassiveArrowSplit) getHandler();
+
+            return new String[] {
+                    "  §7§oFire §3§o" + passive.getExtraArrows(level) + " additional arrows",
+                    "  §7§oin a spread pattern."
+            };
+        }
+    },
+    EXPLODE("Explosive Arrow", Color.RED, Interaction.APPLY_TO_ARROW, new PassiveExplode()) {
+        @Override
+        public String[] getDescription(int level) {
+            return new String[] {
+                    "  §7§oSpawn §c§oTNT §7§owhere",
+                    "  §7§oyour arrow lands."
+            };
+        }
+    },
+    TRADE("Trade", Color.GREEN, Interaction.HIT_OTHER, new PassiveTrade()) {
+        @Override
+        public String[] getDescription(int level) {
+            return new String[] {
+                    "  §7§oHit an opponent to steal",
+                    "  §7§otheir held item. Consumes §6§o1 bread§7§o."
+            };
+        }
+    },
+    SOUL_REAP("Soul Reap", Color.PURPLE, Interaction.KILL_PLAYER, new PassiveSoulReap()) {
+        @Override
+        public String[] getDescription(int level) {
+            return new String[] {
+                    "  §7§oGain §d§o" + level + " Soul§7§o per kill",
+                    "  §7§ofor the §8§oWither Staff§7§o."
+            };
+        }
+    },
     ;
 
     @Getter private final String name;

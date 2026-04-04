@@ -6,8 +6,7 @@ package com.orbitmines.archive.minecraft.spigot._2019.servers.kitpvp.abilities;
 
 import com.orbitmines.archive.minecraft._2019.libs.Color;
 import com.orbitmines.archive.minecraft.spigot._2019.servers.kitpvp.KitPvPPlayer;
-import com.orbitmines.archive.minecraft.spigot._2019.servers.kitpvp.abilities.actives.ActiveHealing;
-import com.orbitmines.archive.minecraft.spigot._2019.servers.kitpvp.abilities.actives.ActiveSugarRush;
+import com.orbitmines.archive.minecraft.spigot._2019.servers.kitpvp.abilities.actives.*;
 import com.orbitmines.archive.minecraft._2019.utils.NumberUtils;
 import com.orbitmines.archive.minecraft._2019.utils.cooldown.Cooldown;
 import com.orbitmines.archive.minecraft.spigot._2019.utils.spigot.ItemUtils;
@@ -45,6 +44,102 @@ public enum Active {
                     "  §7§oReceive §e§o" + ItemUtils.getName(builder.getType()) + " " + NumberUtils.toRoman(builder.getAmplifier() + 1),
                     "  §7§ofor §9§o" + (builder.getDuration() / 20) + " seconds§7§o on a",
                     "  §b§o" + ((int) (active.getCooldown(level).getCooldown() / 1000)) + " second cooldown§7."
+            };
+        }
+    },
+
+    /* 2015 Kits */
+    FIRE_SPELL("Fire Spell", Color.ORANGE, new ActiveFireSpell()) {
+        @Override
+        public String[] getDescription(int level) {
+            return new String[]{
+                    "  §7§oShoot §6§ofire projectiles",
+                    "  §7§oin a spread pattern on a",
+                    "  §b§o" + ((int) (getHandler().getCooldown(level).getCooldown() / 1000)) + " second cooldown§7."
+            };
+        }
+    },
+    POTION_LAUNCHER("Potion Launcher", Color.PURPLE, new ActivePotionLauncher()) {
+        @Override
+        public String[] getDescription(int level) {
+            return new String[]{
+                    "  §7§oLaunch a §5§osplash potion",
+                    "  §7§oof §c§oInstant Damage §7§oon a",
+                    "  §b§o" + ((int) (getHandler().getCooldown(level).getCooldown() / 1000)) + " second cooldown§7."
+            };
+        }
+    },
+    MAGIC_SPELL("Magic Spell", Color.PURPLE, new ActiveMagicSpell()) {
+        @Override
+        public String[] getDescription(int level) {
+            return new String[]{
+                    "  §7§oApply §8§oWither §7§oto all",
+                    "  §7§onearby players on a",
+                    "  §b§o" + ((int) (getHandler().getCooldown(level).getCooldown() / 1000)) + " second cooldown§7."
+            };
+        }
+    },
+    FISH_ATTACK("Fish Attack", Color.AQUA, new ActiveFishAttack()) {
+        @Override
+        public String[] getDescription(int level) {
+            return new String[]{
+                    "  §7§oPoison §a§onearby players",
+                    "  §7§oin a splash on a",
+                    "  §b§o" + ((int) (getHandler().getCooldown(level).getCooldown() / 1000)) + " second cooldown§7."
+            };
+        }
+    },
+    SHIELD("Shield", Color.SILVER, new ActiveShield()) {
+        @Override
+        public String[] getDescription(int level) {
+            ActiveShield active = (ActiveShield) getHandler();
+            PotionBuilder builder = active.getBuilder(level);
+
+            return new String[]{
+                    "  §7§oReceive §e§o" + ItemUtils.getName(builder.getType()) + " " + NumberUtils.toRoman(builder.getAmplifier() + 1),
+                    "  §7§ofor §9§o" + (builder.getDuration() / 20) + " seconds§7§o on a",
+                    "  §b§o" + ((int) (active.getCooldown(level).getCooldown() / 1000)) + " second cooldown§7."
+            };
+        }
+    },
+    HEALING_KIT("Healing Kit", Color.GREEN, new ActiveHealingKit()) {
+        @Override
+        public String[] getDescription(int level) {
+            return new String[]{
+                    "  §7§oFully heal yourself.",
+                    "  §7§o§cConsumes the item§7§o."
+            };
+        }
+    },
+    TNT_LAUNCHER("TNT Launcher", Color.RED, new ActiveTNTLauncher()) {
+        @Override
+        public String[] getDescription(int level) {
+            return new String[]{
+                    "  §7§oLaunch §c§oTNT §7§oforward on a",
+                    "  §b§o" + ((int) (getHandler().getCooldown(level).getCooldown() / 1000)) + " second cooldown§7."
+            };
+        }
+    },
+    BARRIER("Barrier", Color.GREEN, new ActiveBarrier()) {
+        @Override
+        public String[] getDescription(int level) {
+            ActiveBarrier active = (ActiveBarrier) getHandler();
+            PotionBuilder builder = active.getBuilder(level);
+
+            return new String[]{
+                    "  §7§oSpawn a protective barrier",
+                    "  §7§oand gain §e§o" + ItemUtils.getName(builder.getType()) + " " + NumberUtils.toRoman(builder.getAmplifier() + 1),
+                    "  §7§oon a §b§o" + ((int) (active.getCooldown(level).getCooldown() / 1000)) + " second cooldown§7."
+            };
+        }
+    },
+    WITHER_STAFF("Wither Staff", Color.GRAY, new ActiveWitherStaff()) {
+        @Override
+        public String[] getDescription(int level) {
+            return new String[]{
+                    "  §7§oShoot §8§oWither Skulls§7§o.",
+                    "  §7§oConsumes §d§o1 Soul §7§oper use on a",
+                    "  §b§o" + ((int) (getHandler().getCooldown(level).getCooldown() / 1000)) + " second cooldown§7."
             };
         }
     };
