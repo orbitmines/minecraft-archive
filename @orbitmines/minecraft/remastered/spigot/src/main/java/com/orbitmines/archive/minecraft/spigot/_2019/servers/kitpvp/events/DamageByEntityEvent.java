@@ -77,11 +77,29 @@ public class DamageByEntityEvent implements Listener {
 
     @EventHandler(priority = EventPriority.MONITOR)
     public void afterOnDamage(EntityDamageByEntityEvent event) {
-        if (event.isCancelled() || !(event.getDamager() instanceof Player))
+        if (event.isCancelled())
             return;
 
-        Player damager = (Player) event.getDamager();
-        KitPvPPlayer playerDamager = server.getPlayer(damager);
+        KitPvPPlayer playerDamager = null;
+
+        if (event.getDamager() instanceof Player) {
+            playerDamager = server.getPlayer((Player) event.getDamager());
+        } else if (event.getDamager() instanceof Arrow) {
+            Arrow arrow = (Arrow) event.getDamager();
+            if (arrow.getShooter() instanceof Player)
+                playerDamager = server.getPlayer((Player) arrow.getShooter());
+        }
+
+        if (playerDamager == null)
+            return;
+
         playerDamager.addDamageDealt(event.getFinalDamage());
+
+        /* Track last damager for bleed/fire kill attribution */
+        if (event.getEntity() instanceof Player) {
+            KitPvPPlayer victim = server.getPlayer((Player) event.getEntity());
+            if (victim != null)
+                victim.setLastDamager(playerDamager);
+        }
     }
 }

@@ -6,12 +6,9 @@ package com.orbitmines.archive.minecraft.spigot._2019.servers.kitpvp.abilities.p
 
 import com.orbitmines.archive.minecraft.spigot._2019.servers.kitpvp.abilities.Passive;
 import com.orbitmines.archive.minecraft.spigot._2019.servers.kitpvp.events.KitEvent;
-import org.bukkit.Bukkit;
 import org.bukkit.entity.Entity;
 import org.bukkit.entity.LivingEntity;
 import org.bukkit.event.entity.EntityDamageByEntityEvent;
-import org.bukkit.event.entity.EntityDamageEvent;
-import org.bukkit.plugin.PluginManager;
 
 import java.util.List;
 
@@ -39,17 +36,14 @@ public class PassiveWreckerOfWorlds implements Passive.Handler<EntityDamageByEnt
         entity.getWorld().strikeLightningEffect(entity.getLocation());
 
         /* Damage nearby */
-        PluginManager pluginManager = Bukkit.getServer().getPluginManager();
         List<Entity> entities = entity.getNearbyEntities(0.5, 0.5, 0.5);
         entities.add(entity);
 
         for (Entity en : entities) {
-            if (!(en instanceof LivingEntity) || entity == damager /* Damager doesn't get damaged by the lightning */)
+            if (!(en instanceof LivingEntity) || en == damager /* Damager doesn't get damaged by the lightning */)
                 continue;
 
-            EntityDamageEvent e = new EntityDamageEvent(entity, EntityDamageEvent.DamageCause.LIGHTNING, damage);
-            entity.setLastDamageCause(e);
-            pluginManager.callEvent(e);
+            ((LivingEntity) en).damage(damage, damager);
         }
     }
 

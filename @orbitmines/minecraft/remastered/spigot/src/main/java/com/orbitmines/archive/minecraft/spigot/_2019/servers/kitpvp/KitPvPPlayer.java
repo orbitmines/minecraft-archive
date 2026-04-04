@@ -53,6 +53,9 @@ public class KitPvPPlayer extends OMPlayer<KitPvP, KitPvPPlayer> {
     @Getter private KitPvPKit.Level selectedKit;
     @Getter private int killStreak;
 
+    @Getter private KitPvPPlayer lastDamager;
+    @Getter private long lastDamagerTime;
+
     public KitPvPPlayer(Player player, KitPvP server) {
         super(player, server);
 
@@ -182,7 +185,7 @@ public class KitPvPPlayer extends OMPlayer<KitPvP, KitPvPPlayer> {
                     continue;
 
                 for (Passive passive : passives.keySet()) {
-                    passive.getHandler().trigger(new KitEvent<>(this, event), event, passives.get(passive));
+                    passive.getHandler().trigger(new KitEvent<>(this, killed, event), event, passives.get(passive));
                 }
             }
         }
@@ -269,7 +272,6 @@ public class KitPvPPlayer extends OMPlayer<KitPvP, KitPvPPlayer> {
         kit.insertOrUpdate(KitPvPPlayerKitModel.column.DAMAGE_DEALT);
 
         this.selectedKit = null;
-        this.spectator = true;
         this.killStreak = 0;
 
         levelData.updateExperienceBar(player);
@@ -378,6 +380,22 @@ public class KitPvPPlayer extends OMPlayer<KitPvP, KitPvPPlayer> {
 
         getKit(selectedKit.getHandler(), false).addDamageDealt(amount);
     }
+
+    public void setLastDamager(KitPvPPlayer damager) {
+        this.lastDamager = damager;
+        this.lastDamagerTime = System.currentTimeMillis();
+    }
+
+    public KitPvPPlayer getRecentDamager() {
+        if (lastDamager == null)
+            return null;
+
+        /* Only credit if damage was within last 10 seconds */
+        if (System.currentTimeMillis() - lastDamagerTime > 10_000)
+            return null;
+
+        return lastDamager;
+    }
     
     public int getBestStreak() {
         return kitPvPModel.getBestStreak(getKits(false));
@@ -412,6 +430,9 @@ public class KitPvPPlayer extends OMPlayer<KitPvP, KitPvPPlayer> {
     @Override
     public void removePotionEffect(PotionEffectType effectType) {
         super.removePotionEffect(effectType);
+
+        if (selectedKit == null)
+            return;
 
         for (PotionBuilder potionBuilder : selectedKit.getKit().getPotionBuilders()) {
             if (potionBuilder.getType() == effectType)

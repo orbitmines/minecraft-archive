@@ -66,7 +66,7 @@ public class KitEnchanter extends KitPvPKit {
 
         @Override
         public double getMaxHealth() {
-            return 21;
+            return 42;
         }
 
         @Override
@@ -103,7 +103,7 @@ public class KitEnchanter extends KitPvPKit {
 
         @Override
         public double getMaxHealth() {
-            return 21;
+            return 42;
         }
 
         @Override
@@ -140,7 +140,7 @@ public class KitEnchanter extends KitPvPKit {
 
         @Override
         public double getMaxHealth() {
-            return 21;
+            return 42;
         }
 
         @Override

@@ -9,6 +9,8 @@ import org.bukkit.World;
 import org.bukkit.entity.ArmorStand;
 import org.bukkit.entity.Entity;
 
+import org.bukkit.Bukkit;
+
 import java.util.*;
 import java.util.stream.Collectors;
 
@@ -64,7 +66,7 @@ public class Hologram<P extends SpigotPlayer> extends Npc<Hologram, P> {
     @Override
     public Collection<Entity> getEntities() {
         return lines.stream().
-                map(line -> line.armorStand).
+                map(Line::freshHandle).
                 collect(Collectors.toList());
     }
 
@@ -220,6 +222,7 @@ public class Hologram<P extends SpigotPlayer> extends Npc<Hologram, P> {
     protected class Line {
 
         @Getter private ArmorStand armorStand;
+        private UUID armorStandUid;
         @Getter @Setter private MutableString line;
 
         @Getter @Setter private boolean hidden;
@@ -229,8 +232,28 @@ public class Hologram<P extends SpigotPlayer> extends Npc<Hologram, P> {
             this.hidden = false;
         }
 
+        /* In 26.1 entity handles can become stale after chunk unload/reload.
+           Re-fetch from the world by UUID to get a live reference. */
+        private ArmorStand freshHandle() {
+            if (armorStand != null && armorStand.isValid())
+                return armorStand;
+
+            if (armorStandUid == null || !Bukkit.isPrimaryThread())
+                return armorStand;
+
+            for (Entity e : spawnLocation.getWorld().getEntities()) {
+                if (e.getUniqueId().equals(armorStandUid) && e instanceof ArmorStand) {
+                    armorStand = (ArmorStand) e;
+                    return armorStand;
+                }
+            }
+
+            return armorStand;
+        }
+
         public void spawn(boolean updateWatchers) {
             armorStand = nms.armorStand().spawn(new Location(spawnLocation.getWorld(), spawnLocation.getX(), spawnLocation.getY() - (getIndexOf(this) * Y_OFFSET_PER_LINE * face.getMultiplier()), spawnLocation.getZ()), false);
+            armorStandUid = armorStand.getUniqueId();
             armorStand.setMarker(true);
             armorStand.setRemoveWhenFarAway(false);
             armorStand.setGravity(false);
@@ -248,23 +271,25 @@ public class Hologram<P extends SpigotPlayer> extends Npc<Hologram, P> {
         }
 
         public void update() {
-            if (armorStand == null)
+            ArmorStand as = freshHandle();
+            if (as == null)
                 return;
 
             if (hidden || line == null || line.getString() == null) {
-                armorStand.setCustomName(null);
-                armorStand.setCustomNameVisible(false);
+                as.setCustomName(null);
+                as.setCustomNameVisible(false);
             } else {
-                armorStand.setCustomName(line.getString());
-                armorStand.setCustomNameVisible(true);
+                as.setCustomName(line.getString());
+                as.setCustomNameVisible(true);
             }
         }
 
         public void move(Face face) {
-            if (armorStand == null)
+            ArmorStand as = freshHandle();
+            if (as == null)
                 return;
 
-            armorStand.teleport(armorStand.getLocation().add(0, Y_OFFSET_PER_LINE * face.reverse().getMultiplier(), 0));
+            as.teleport(as.getLocation().add(0, Y_OFFSET_PER_LINE * face.reverse().getMultiplier(), 0));
         }
     }
 

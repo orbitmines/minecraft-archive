@@ -71,7 +71,7 @@ public class KitPyro extends KitPvPKit {
 
         @Override
         public double getMaxHealth() {
-            return 19D;
+            return 38D;
         }
 
         @Override
@@ -110,7 +110,7 @@ public class KitPyro extends KitPvPKit {
 
         @Override
         public double getMaxHealth() {
-            return 19D;
+            return 38D;
         }
 
         @Override
@@ -151,7 +151,7 @@ public class KitPyro extends KitPvPKit {
 
         @Override
         public double getMaxHealth() {
-            return 19D;
+            return 38D;
         }
 
         @Override

@@ -63,7 +63,7 @@ public class KitKing extends KitPvPKit {
 
         @Override
         public double getMaxHealth() {
-            return 20D;
+            return 40D;
         }
 
         @Override
@@ -100,7 +100,7 @@ public class KitKing extends KitPvPKit {
 
         @Override
         public double getMaxHealth() {
-            return 20D;
+            return 40D;
         }
 
         @Override
@@ -136,7 +136,7 @@ public class KitKing extends KitPvPKit {
 
         @Override
         public double getMaxHealth() {
-            return 20D;
+            return 40D;
         }
 
         @Override

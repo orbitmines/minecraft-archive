@@ -90,6 +90,8 @@ public class SurvivalPlayer extends OMPlayer<Survival, SurvivalPlayer> {
             setFlying(true);
         }
 
+        reloadHomes();
+
         server.runSync(() -> {
             resetScoreboard();
             setScoreboard(new SurvivalScoreboard(server, this));
@@ -207,6 +209,9 @@ public class SurvivalPlayer extends OMPlayer<Survival, SurvivalPlayer> {
     }
 
     public List<Home> getHomes(boolean reload) {
+        if (this.homes == null && !reload)
+            return Collections.emptyList();
+
         if (reload || this.homes == null)
             reloadHomes();
 

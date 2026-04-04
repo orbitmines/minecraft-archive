@@ -12,10 +12,16 @@ import org.bukkit.event.Event;
 public class KitEvent<E extends Event> {
 
     @Getter private final KitPvPPlayer player;
+    @Getter private final KitPvPPlayer target;
     @Getter private E event;
 
     public KitEvent(KitPvPPlayer player, E event) {
+        this(player, null, event);
+    }
+
+    public KitEvent(KitPvPPlayer player, KitPvPPlayer target, E event) {
         this.player = player;
+        this.target = target;
         this.event = event;
     }
 

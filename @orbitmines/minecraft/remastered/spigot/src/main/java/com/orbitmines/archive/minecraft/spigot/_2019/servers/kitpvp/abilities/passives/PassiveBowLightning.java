@@ -6,12 +6,10 @@ package com.orbitmines.archive.minecraft.spigot._2019.servers.kitpvp.abilities.p
 
 import com.orbitmines.archive.minecraft.spigot._2019.servers.kitpvp.abilities.Passive;
 import com.orbitmines.archive.minecraft.spigot._2019.servers.kitpvp.events.KitEvent;
-import org.bukkit.Bukkit;
 import org.bukkit.entity.Entity;
 import org.bukkit.entity.LivingEntity;
-import org.bukkit.event.entity.EntityDamageEvent;
+import org.bukkit.entity.Player;
 import org.bukkit.event.entity.ProjectileHitEvent;
-import org.bukkit.plugin.PluginManager;
 
 import java.util.List;
 
@@ -35,7 +33,7 @@ public class PassiveBowLightning implements Passive.Handler<ProjectileHitEvent> 
         entity.getWorld().strikeLightningEffect(entity.getLocation());
 
         /* Damage nearby */
-        PluginManager pluginManager = Bukkit.getServer().getPluginManager();
+        Player shooter = passiveEvent.getPlayer().bukkit();
         List<Entity> entities = entity.getNearbyEntities(0.5, 0.5, 0.5);
         entities.add(entity);
 
@@ -43,9 +41,7 @@ public class PassiveBowLightning implements Passive.Handler<ProjectileHitEvent> 
             if (!(en instanceof LivingEntity))
                 continue;
 
-            EntityDamageEvent e = new EntityDamageEvent(entity, EntityDamageEvent.DamageCause.LIGHTNING, damage);
-            entity.setLastDamageCause(e);
-            pluginManager.callEvent(e);
+            ((LivingEntity) en).damage(damage, shooter);
         }
     }
 

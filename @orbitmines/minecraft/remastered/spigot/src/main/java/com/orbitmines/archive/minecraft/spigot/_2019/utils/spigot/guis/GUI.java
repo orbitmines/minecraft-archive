@@ -22,11 +22,13 @@ import java.util.Arrays;
 public class GUI<P extends SpigotPlayer> {
 
     @Getter protected Inventory inventory;
+    @Getter protected String title;
     @Getter protected Item<P, ?>[] items;
     @Getter protected P viewer;
 
     public GUI(int size, String title, P viewer) {
         this.inventory = Bukkit.createInventory(null, size, title);
+        this.title = title;
         this.items = new Item[size];
         this.viewer = viewer;
     }
@@ -118,24 +120,15 @@ public class GUI<P extends SpigotPlayer> {
 
     public void processClickEvent(InventoryClickEvent event) {
         InventoryView view = event.getView();
-        Inventory clicked = event.getClickedInventory();
 
-        if (clicked == null || !event.getClickedInventory().equals(this.inventory)) {
-            Inventory topInventory = view.getTopInventory();
+        if (!title.equals(view.getTitle()))
+            return;
 
-            if (!topInventory.equals(this.inventory)) {
-                try {
-                    if (view.getTitle().startsWith("§0§l")) {
-                        /* TODO: Temp Fix */
-                        event.setCancelled(true);
-                        return;
-                    }
-                } catch (IllegalStateException ex) {}
+        int rawSlot = event.getRawSlot();
 
-                return;
-            }
-
-            /* Cancel items being put in the GUI */
+        /* Click outside the GUI (player inventory or outside window) */
+        if (rawSlot < 0 || rawSlot >= this.inventory.getSize()) {
+            /* Cancel items being shift-clicked into the GUI */
             if (event.isShiftClick())
                 event.setCancelled(true);
 
@@ -144,7 +137,7 @@ public class GUI<P extends SpigotPlayer> {
 
         event.setCancelled(true);
 
-        Item<P, ?> item = this.items[event.getSlot()];
+        Item<P, ?> item = this.items[rawSlot];
         if (item == null || item.clickEvent == null)
             return;
 
@@ -160,9 +153,7 @@ public class GUI<P extends SpigotPlayer> {
     }
 
     public void processDragEvent(InventoryDragEvent event) {
-        Inventory clicked = event.getInventory();
-
-        if (!clicked.equals(this.inventory))
+        if (!title.equals(event.getView().getTitle()))
             return;
 
         event.setCancelled(true);

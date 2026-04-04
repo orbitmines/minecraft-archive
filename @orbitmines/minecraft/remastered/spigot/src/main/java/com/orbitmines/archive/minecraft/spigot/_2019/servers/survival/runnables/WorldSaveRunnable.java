@@ -7,10 +7,10 @@ package com.orbitmines.archive.minecraft.spigot._2019.servers.survival.runnables
 import com.orbitmines.archive.minecraft._2019.libs.Color;
 import com.orbitmines.archive.minecraft.spigot._2019.servers.survival.Survival;
 import com.orbitmines.archive.minecraft.spigot._2019.utils.spigot.runnable.Interval;
-import com.orbitmines.archive.minecraft.spigot._2019.utils.spigot.runnable.PassiveRunnable;
+import com.orbitmines.archive.minecraft.spigot._2019.utils.spigot.runnable.SpigotRunnable;
 import com.orbitmines.archive.minecraft.spigot._2019.utils.spigot.runnable.TimeUnit;
 
-public class WorldSaveRunnable extends PassiveRunnable<Survival> {
+public class WorldSaveRunnable extends SpigotRunnable<Survival> {
 
     private Survival survival;
 
@@ -21,7 +21,7 @@ public class WorldSaveRunnable extends PassiveRunnable<Survival> {
     }
 
     @Override
-    public void onRun() {
+    public void run() {
         survival.broadcast("World", Color.INFO, "survival", "player.save_worlds");
 
         survival.getWorld().save();

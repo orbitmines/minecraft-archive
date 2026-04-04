@@ -76,13 +76,14 @@ public class PersonalisedMobNpc<P extends SpigotPlayer> extends MobNpc<P> {
     }
 
     public void toggle(P player) {
-        if (!player.getWorld().equals(getSpawnLocation().getWorld())) {
-            afterLogout(player);
+        if (!player.getWorld().equals(getSpawnLocation().getWorld()))
+            return;
+
+        if (nameTags.containsKey(player)) {
+            /* Refresh text lines when returning to this world */
+            nameTags.get(player).update();
             return;
         }
-
-        if (nameTags.containsKey(player))
-            return;
 
         afterLogin(player);
     }

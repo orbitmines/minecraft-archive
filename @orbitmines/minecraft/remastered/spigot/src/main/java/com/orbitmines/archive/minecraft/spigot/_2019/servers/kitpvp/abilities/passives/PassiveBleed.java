@@ -62,7 +62,7 @@ public class PassiveBleed implements Passive.Handler<EntityDamageByEntityEvent> 
                     return;
                 }
 
-                entity.damage(damagePerTick);
+                entity.damage(damagePerTick, damager);
                 entity.getWorld().playEffect(entity.getLocation(), Effect.STEP_SOUND, Material.REDSTONE_BLOCK);
 
                 /* Redstone effect on ground */

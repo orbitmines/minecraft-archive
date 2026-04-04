@@ -74,7 +74,7 @@ public class KitMage extends KitPvPKit {
 
         @Override
         public double getMaxHealth() {
-            return 22D;
+            return 44D;
         }
 
         @Override
@@ -117,7 +117,7 @@ public class KitMage extends KitPvPKit {
 
         @Override
         public double getMaxHealth() {
-            return 22D;
+            return 44D;
         }
 
         @Override
@@ -160,7 +160,7 @@ public class KitMage extends KitPvPKit {
 
         @Override
         public double getMaxHealth() {
-            return 22D;
+            return 44D;
         }
 
         @Override

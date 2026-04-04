@@ -22,8 +22,11 @@ public class PassiveEnchantingTable implements Passive.Handler<PlayerDeathEvent>
 
     @Override
     public void trigger(KitEvent<PlayerDeathEvent> passiveEvent, PlayerDeathEvent event, int level) {
-        Player entity = event.getEntity();
-        Player killer = entity.getKiller();
+        Player killer = passiveEvent.getPlayer().bukkit();
+        Player killed = passiveEvent.getTarget() != null ? passiveEvent.getTarget().bukkit() : null;
+
+        if (killed == null)
+            return;
 
         /* There's a chance of the lightning hitting, otherwise move on */
         if (Math.random() >= getChance(level))
@@ -59,7 +62,7 @@ public class PassiveEnchantingTable implements Passive.Handler<PlayerDeathEvent>
 
         /* Build Item Hologram */
         ItemStack fItemstack = itemStack;
-        FloatingItem hologram = new FloatingItem(() -> new ItemStack(fItemstack), entity.getLocation());
+        FloatingItem hologram = new FloatingItem(() -> new ItemStack(fItemstack), killed.getLocation());
         hologram.addLine(() -> Passive.ENCHANTING_TABLE.getColor().getCc() + "§l" + Passive.ENCHANTING_TABLE.getName(), false);
         hologram.addLine(() -> "§e§o+ " + ChatColor.stripColor(ItemUtils.getName(enchantment, newLevel)), false);
         hologram.create(killer);

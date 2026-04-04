@@ -72,7 +72,7 @@ public class KitArcher extends KitPvPKit {
 
         @Override
         public double getMaxHealth() {
-            return 16D;
+            return 32D;
         }
 
         @Override
@@ -111,7 +111,7 @@ public class KitArcher extends KitPvPKit {
 
         @Override
         public double getMaxHealth() {
-            return 16D;
+            return 32D;
         }
 
         @Override
@@ -150,7 +150,7 @@ public class KitArcher extends KitPvPKit {
 
         @Override
         public double getMaxHealth() {
-            return 16D;
+            return 32D;
         }
 
         @Override

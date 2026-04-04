@@ -61,6 +61,10 @@ public class DeathEvent implements Listener {
             }
         }
 
+        /* Fallback: attribute to last damager for indirect kills (bleed, fire, etc.) */
+        if (playerKiller == null)
+            playerKiller = player.getRecentDamager();
+
         /* Handle Kill */
         if (playerKiller != null)
             playerKiller.processKill(null, player);

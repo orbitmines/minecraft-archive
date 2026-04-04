@@ -71,7 +71,7 @@ public class KitTank extends KitPvPKit {
 
         @Override
         public double getMaxHealth() {
-            return 25D;
+            return 50D;
         }
 
         @Override
@@ -110,7 +110,7 @@ public class KitTank extends KitPvPKit {
 
         @Override
         public double getMaxHealth() {
-            return 25D;
+            return 50D;
         }
 
         @Override
@@ -149,7 +149,7 @@ public class KitTank extends KitPvPKit {
 
         @Override
         public double getMaxHealth() {
-            return 25D;
+            return 50D;
         }
 
         @Override

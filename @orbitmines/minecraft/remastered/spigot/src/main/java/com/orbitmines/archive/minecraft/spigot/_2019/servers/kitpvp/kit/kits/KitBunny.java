@@ -79,7 +79,7 @@ public class KitBunny extends KitPvPKit {
 
         @Override
         public double getMaxHealth() {
-            return 18D;
+            return 36D;
         }
 
         @Override
@@ -121,7 +121,7 @@ public class KitBunny extends KitPvPKit {
 
         @Override
         public double getMaxHealth() {
-            return 18D;
+            return 36D;
         }
 
         @Override
@@ -164,7 +164,7 @@ public class KitBunny extends KitPvPKit {
 
         @Override
         public double getMaxHealth() {
-            return 18D;
+            return 36D;
         }
 
         @Override
