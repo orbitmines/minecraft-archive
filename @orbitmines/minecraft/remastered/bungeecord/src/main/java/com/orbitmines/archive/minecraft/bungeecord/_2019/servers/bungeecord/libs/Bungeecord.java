@@ -232,7 +232,7 @@ public class Bungeecord implements VoteHandler, VotifierPlugin {
 
         setupVotifier();
 
-        new Restarter(plugin, this).async().start();
+//        new Restarter(plugin, this).async().start();
 
         errorTracker = new ErrorTracker(this);
         errorTracker.start();
