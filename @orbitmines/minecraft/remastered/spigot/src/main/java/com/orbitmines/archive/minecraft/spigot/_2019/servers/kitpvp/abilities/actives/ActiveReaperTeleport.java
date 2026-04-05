@@ -12,6 +12,7 @@ import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerItemHeldEvent;
 import org.bukkit.event.player.PlayerInteractEvent;
 import org.bukkit.inventory.ItemStack;
+import org.bukkit.plugin.Plugin;
 import org.bukkit.scheduler.BukkitRunnable;
 import org.bukkit.util.RayTraceResult;
 
@@ -43,8 +44,8 @@ public class ActiveReaperTeleport implements Active.Handler {
         targetLoc.setYaw(player.getLocation().getYaw());
         targetLoc.setPitch(player.getLocation().getPitch());
 
-        /* Particle burst at arrival */
-        targetLoc.getWorld().spawnParticle(Particle.PORTAL, targetLoc.clone().add(0, 1, 0), 30, 0.5, 1.0, 0.5, 0.5);
+        /* Particle burst at arrival — only visible to the teleporting player */
+        player.spawnParticle(Particle.PORTAL, targetLoc.clone().add(0, 1, 0), 30, 0.5, 1.0, 0.5, 0.5);
 
         player.teleport(targetLoc);
         omp.playSound(Sound.ENTITY_ENDERMAN_TELEPORT);
@@ -104,25 +105,32 @@ public class ActiveReaperTeleport implements Active.Handler {
                         state.preview.getEquipment().setBoots(player.getInventory().getBoots().clone());
 
                     state.preview.getEquipment().setItemInMainHand(new ItemStack(Material.STONE_HOE));
+
+                    /* Hide from all other players — only visible to the owner */
+                    Plugin plugin = kitPvP.getPlugin();
+                    for (Player online : Bukkit.getOnlinePlayers()) {
+                        if (!online.getUniqueId().equals(player.getUniqueId()))
+                            online.hideEntity(plugin, state.preview);
+                    }
                 } else {
                     /* Update position */
                     state.preview.teleport(targetLoc);
                 }
 
-                /* Particle orbits around preview */
+                /* Particle orbits around preview — only visible to the owner */
                 double angle = (System.currentTimeMillis() / 50.0) * 0.3;
                 double radius = 1.2;
                 double tilt = Math.toRadians(30);
                 double x1 = Math.cos(angle) * radius;
                 double y1 = Math.sin(angle) * Math.cos(tilt) * radius;
                 double z1 = Math.sin(angle) * Math.sin(tilt) * radius;
-                targetLoc.getWorld().spawnParticle(Particle.WITCH,
+                player.spawnParticle(Particle.WITCH,
                         targetLoc.getX() + x1, targetLoc.getY() + 1.0 + y1, targetLoc.getZ() + z1,
                         1, 0, 0, 0, 0);
                 double x2 = Math.cos(angle + Math.PI) * Math.cos(-tilt) * radius;
                 double y2 = Math.sin(angle + Math.PI) * radius;
                 double z2 = Math.cos(angle + Math.PI) * Math.sin(-tilt) * radius;
-                targetLoc.getWorld().spawnParticle(Particle.WITCH,
+                player.spawnParticle(Particle.WITCH,
                         targetLoc.getX() + x2, targetLoc.getY() + 1.0 + y2, targetLoc.getZ() + z2,
                         1, 0, 0, 0, 0);
             }

@@ -239,7 +239,7 @@ public class KitPvPPlayerModel extends OMMySQLModel<KitPvPPlayerModel, KitPvPPla
                         player.playSound(Sound.ENTITY_PLAYER_LEVELUP);
 
                         int fLevel = level;
-                        Title<OMPlayer> title = new Title<>(p -> "", p -> "§e§lLevel up! §7You are now " + getColor(fLevel) + "§lLevel " + fLevel + "§7!", 30, 60, 30);
+                        Title<OMPlayer> title = new Title<>(p -> "", p -> "§e§lLevel up! §7You are now " + getColor(fLevel).getCc() + "§lLevel " + fLevel + "§7!", 30, 60, 30);
                         title.send(player);
                     }
 

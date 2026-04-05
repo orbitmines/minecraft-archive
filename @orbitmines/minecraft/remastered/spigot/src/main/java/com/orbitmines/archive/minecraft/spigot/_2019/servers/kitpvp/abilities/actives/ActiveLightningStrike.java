@@ -13,9 +13,9 @@ import org.bukkit.scheduler.BukkitRunnable;
 public class ActiveLightningStrike implements Active.Handler {
 
     private final Cooldown[] cooldowns = new Cooldown[] {
-            new Cooldown(20 * 1000),
-            new Cooldown(18 * 1000),
-            new Cooldown(15 * 1000)
+            new Cooldown(2500),
+            new Cooldown(2500),
+            new Cooldown(2500)
     };
 
     private static final double AOE_RADIUS = 5.0;

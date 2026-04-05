@@ -23,7 +23,11 @@ public class PassivePull implements Passive.Handler<EntityDamageByEntityEvent> {
             if (victim.isDead() || (victim instanceof Player && !((Player) victim).isOnline()))
                 return;
 
-            Vector pull = damager.getLocation().toVector().subtract(victim.getLocation().toVector()).normalize().multiply(getStrength(level));
+            Vector pull = damager.getLocation().toVector().subtract(victim.getLocation().toVector());
+            if (pull.length() < 1.0)
+                return;
+
+            pull.normalize().multiply(getStrength(level));
             pull.setY(0.15);
 
             victim.setVelocity(pull);

@@ -10,14 +10,19 @@ import com.orbitmines.archive.minecraft.spigot._2019.servers.kitpvp.abilities.ac
 import com.orbitmines.archive.minecraft._2019.utils.RandomUtils;
 import com.orbitmines.archive.minecraft.spigot._2019.utils.spigot.nms.entity.EntityNms;
 import org.bukkit.entity.Arrow;
+import org.bukkit.entity.IronGolem;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.EventPriority;
 import org.bukkit.event.Listener;
 import org.bukkit.event.entity.EntityDamageByEntityEvent;
 import org.bukkit.event.entity.EntityDamageEvent;
+import org.bukkit.metadata.MetadataValue;
 import org.bukkit.scheduler.BukkitRunnable;
 import org.bukkit.util.Vector;
+
+import java.util.List;
+import java.util.UUID;
 
 public class DeathEvent implements Listener {
 
@@ -59,6 +64,19 @@ public class DeathEvent implements Listener {
                     playerKiller = server.getPlayer((Player) arrow.getShooter());
                     shotByArrow = true;
                 }
+            } else if (edbee.getDamager() instanceof IronGolem) {
+                /* Iron Guardian kill credit goes to the owner */
+                IronGolem golem = (IronGolem) edbee.getDamager();
+                List<MetadataValue> meta = golem.getMetadata("kitpvp_owner");
+                if (!meta.isEmpty()) {
+                    try {
+                        UUID ownerUUID = UUID.fromString(meta.get(0).asString());
+                        Player owner = server.getPlugin().getServer().getPlayer(ownerUUID);
+                        if (owner != null && owner.isOnline()) {
+                            playerKiller = server.getPlayer(owner);
+                        }
+                    } catch (IllegalArgumentException ignored) {}
+                }
             }
         }
 
@@ -87,6 +105,9 @@ public class DeathEvent implements Listener {
         new BukkitRunnable() {
             @Override
             public void run() {
+                /* Clear potion effects again — the first clear can be ignored
+                   if Bukkit re-applies effects during event processing */
+                player.clearPotionEffects();
                 /* Teleport to Spawn */
                 player.teleport(RandomUtils.randomFrom(server.getSpawns()));
                 /* Clear Velocity */

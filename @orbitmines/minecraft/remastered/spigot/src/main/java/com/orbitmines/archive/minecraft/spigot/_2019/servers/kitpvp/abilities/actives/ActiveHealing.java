@@ -18,7 +18,7 @@ public class ActiveHealing implements Active.Handler {
     public void trigger(PlayerInteractEvent event, KitPvPPlayer omp, int level) {
         omp.playSound(Sound.ENTITY_GENERIC_DRINK);
 
-        builder.setDuration((level + 1) * 20);
+        builder.setDuration((level + 1) * 40);
         omp.addPotionEffect(builder.build());
     }
 
@@ -28,7 +28,7 @@ public class ActiveHealing implements Active.Handler {
     }
 
     public PotionBuilder getBuilder(int level){
-        builder.setDuration((level + 1) * 20);
+        builder.setDuration((level + 1) * 40);
         return builder;
     }
 }

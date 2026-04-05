@@ -69,7 +69,7 @@ public class KitBunny extends KitPvPKit {
             kit.setHelmet(player -> new KitItemBuilder(this, Material.IRON_HELMET));
             kit.setChestplate(player -> new KitLeatherArmorBuilder(this, LeatherArmorBuilder.Type.CHESTPLATE, LEATHER_COLOR));
             kit.setLeggings(player -> new KitLeatherArmorBuilder(this, LeatherArmorBuilder.Type.LEGGINGS, LEATHER_COLOR));
-            kit.setBoots(player -> new KitLeatherArmorBuilder(this, LeatherArmorBuilder.Type.BOOTS, LEATHER_COLOR));
+            kit.setBoots(player -> new KitLeatherArmorBuilder(this, LeatherArmorBuilder.Type.BOOTS, LEATHER_COLOR).addEnchantment(Enchantment.FEATHER_FALLING, 5));
 
             kit.addPotionBuilder(new PotionBuilder(PotionEffectType.SPEED, Integer.MAX_VALUE, 0, true, false, true));
             kit.addPotionBuilder(new PotionBuilder(PotionEffectType.JUMP_BOOST, Integer.MAX_VALUE, 3, true, false, true));
@@ -111,7 +111,7 @@ public class KitBunny extends KitPvPKit {
             kit.setHelmet(player -> new KitItemBuilder(this, Material.IRON_HELMET).addEnchantment(Enchantment.PROTECTION, 1));
             kit.setChestplate(player -> new KitLeatherArmorBuilder(this, LeatherArmorBuilder.Type.CHESTPLATE, LEATHER_COLOR));
             kit.setLeggings(player -> new KitLeatherArmorBuilder(this, LeatherArmorBuilder.Type.LEGGINGS, LEATHER_COLOR));
-            kit.setBoots(player -> new KitLeatherArmorBuilder(this, LeatherArmorBuilder.Type.BOOTS, LEATHER_COLOR));
+            kit.setBoots(player -> new KitLeatherArmorBuilder(this, LeatherArmorBuilder.Type.BOOTS, LEATHER_COLOR).addEnchantment(Enchantment.FEATHER_FALLING, 5));
 
             kit.addPotionBuilder(new PotionBuilder(PotionEffectType.SPEED, Integer.MAX_VALUE, 0, true, false, true));
             kit.addPotionBuilder(new PotionBuilder(PotionEffectType.JUMP_BOOST, Integer.MAX_VALUE, 3, true, false, true));
@@ -154,7 +154,7 @@ public class KitBunny extends KitPvPKit {
             kit.setHelmet(player -> new KitItemBuilder(this, Material.IRON_HELMET).addEnchantment(Enchantment.PROTECTION, 1));
             kit.setChestplate(player -> new KitLeatherArmorBuilder(this, LeatherArmorBuilder.Type.CHESTPLATE, LEATHER_COLOR).addEnchantment(Enchantment.PROTECTION, 1));
             kit.setLeggings(player -> new KitLeatherArmorBuilder(this, LeatherArmorBuilder.Type.LEGGINGS, LEATHER_COLOR).addEnchantment(Enchantment.PROTECTION, 1));
-            kit.setBoots(player -> new KitLeatherArmorBuilder(this, LeatherArmorBuilder.Type.BOOTS, LEATHER_COLOR).addEnchantment(Enchantment.PROTECTION, 1));
+            kit.setBoots(player -> new KitLeatherArmorBuilder(this, LeatherArmorBuilder.Type.BOOTS, LEATHER_COLOR).addEnchantment(Enchantment.FEATHER_FALLING, 5).addEnchantment(Enchantment.PROTECTION, 1));
 
             kit.addPotionBuilder(new PotionBuilder(PotionEffectType.SPEED, Integer.MAX_VALUE, 0, true, false, true));
             kit.addPotionBuilder(new PotionBuilder(PotionEffectType.JUMP_BOOST, Integer.MAX_VALUE, 3, true, false, true));

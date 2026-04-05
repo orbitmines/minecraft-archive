@@ -29,7 +29,7 @@ public class ActiveBarrier implements Active.Handler {
 
         /* Spawn spherical cage of leaves */
         List<Block> placedBlocks = new ArrayList<>();
-        int radius = 3;
+        int radius = 4;
 
         for (int x = -radius; x <= radius; x++) {
             for (int y = -1; y <= radius * 2; y++) {

@@ -38,13 +38,13 @@ public class FishermanRodEvent implements Listener {
         Player caught = (Player) event.getCaught();
 
         if (event.getState() == PlayerFishEvent.State.CAUGHT_ENTITY) {
-            /* Bobber hit — knockback the caught player away from the fisherman */
+            /* Bobber hit — knockback the caught player upward and away */
             Vector direction = caught.getLocation().toVector().subtract(fisher.getLocation().toVector()).normalize();
-            direction.setY(0.4);
-            caught.setVelocity(direction.multiply(1.2));
+            direction.setY(0.8);
+            caught.setVelocity(direction.multiply(2.4));
             caught.getWorld().playSound(caught.getLocation(), Sound.ENTITY_FISHING_BOBBER_RETRIEVE, 1.0f, 0.8f);
 
-            /* Strong pull toward the fisherman */
+            /* Pull toward the fisherman after a delay */
             server.getPlugin().getServer().getScheduler().runTaskLater(server.getPlugin(), () -> {
                 if (!caught.isOnline() || !fisher.isOnline())
                     return;
@@ -54,10 +54,9 @@ public class FishermanRodEvent implements Listener {
 
                 if (distance > 0.5) {
                     pull.normalize();
-                    /* Scale pull strength with distance for strong ping-pong effect */
-                    double strength = Math.min(2.5, 0.8 + distance * 0.15);
+                    double strength = Math.min(1.25, 0.4 + distance * 0.075);
                     pull.multiply(strength);
-                    pull.setY(0.5);
+                    pull.setY(0.25);
                     caught.setVelocity(pull);
                     caught.getWorld().playSound(caught.getLocation(), Sound.ENTITY_FISHING_BOBBER_RETRIEVE, 1.0f, 1.2f);
                 }

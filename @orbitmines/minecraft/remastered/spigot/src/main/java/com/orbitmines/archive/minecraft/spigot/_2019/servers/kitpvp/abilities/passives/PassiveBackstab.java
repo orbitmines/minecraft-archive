@@ -3,8 +3,8 @@ package com.orbitmines.archive.minecraft.spigot._2019.servers.kitpvp.abilities.p
 import com.orbitmines.archive.minecraft.spigot._2019.servers.kitpvp.abilities.Passive;
 import com.orbitmines.archive.minecraft.spigot._2019.servers.kitpvp.events.KitEvent;
 import org.bukkit.Location;
+import org.bukkit.Effect;
 import org.bukkit.Material;
-import org.bukkit.Particle;
 import org.bukkit.Sound;
 import org.bukkit.entity.Player;
 import org.bukkit.event.entity.EntityDamageByEntityEvent;
@@ -33,7 +33,8 @@ public class PassiveBackstab implements Passive.Handler<EntityDamageByEntityEven
 
         /* Blood particle effect (redstone block break) — visible to all */
         Location victimLoc = victim.getLocation().add(0, 1, 0);
-        victim.getWorld().spawnParticle(Particle.BLOCK, victimLoc, 20, 0.3, 0.5, 0.3, 0.1, Material.REDSTONE_BLOCK.createBlockData());
+        for (int i = 0; i < 5; i++)
+            victim.getWorld().playEffect(victimLoc, Effect.STEP_SOUND, Material.REDSTONE_BLOCK);
 
         /* Redstone block break sound — audible to all */
         victim.getWorld().playSound(victimLoc, Sound.BLOCK_STONE_BREAK, 1.5f, 0.5f);

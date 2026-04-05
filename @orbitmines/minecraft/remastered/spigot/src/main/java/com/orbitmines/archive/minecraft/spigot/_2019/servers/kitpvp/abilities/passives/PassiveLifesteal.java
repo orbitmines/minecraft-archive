@@ -22,9 +22,9 @@ public class PassiveLifesteal implements Passive.Handler<EntityDamageByEntityEve
 
     public double getHealAmount(int level) {
         switch (level) {
-            case 1: return 1.5D;
-            case 2: return 2.0D;
-            case 3: return 2.5D;
+            case 1: return 0.75D;
+            case 2: return 1.0D;
+            case 3: return 1.25D;
             default: throw new ArrayIndexOutOfBoundsException();
         }
     }
