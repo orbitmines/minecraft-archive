@@ -8,13 +8,11 @@ import com.orbitmines.archive.minecraft.spigot._2019.servers.kitpvp.item_builder
 import com.orbitmines.archive.minecraft.spigot._2019.servers.kitpvp.kit.HealthRegen;
 import com.orbitmines.archive.minecraft.spigot._2019.servers.kitpvp.kit.KitClass;
 import com.orbitmines.archive.minecraft.spigot._2019.servers.kitpvp.kit.KitPvPKit;
-import com.orbitmines.archive.minecraft.spigot._2019.utils.spigot.builders.PotionBuilder;
 import com.orbitmines.archive.minecraft.spigot._2019.utils.spigot.builders.item.ItemBuilder;
 import com.orbitmines.archive.minecraft.spigot._2019.utils.spigot.kits.Kit;
 import org.bukkit.Material;
 import org.bukkit.enchantments.Enchantment;
 import org.bukkit.inventory.ItemFlag;
-import org.bukkit.potion.PotionEffectType;
 
 public class KitKing extends KitPvPKit {
 
@@ -60,8 +58,6 @@ public class KitKing extends KitPvPKit {
 
             kit.set(0, player -> new KitItemBuilder(this, Material.STONE_SWORD));
 
-            kit.addPotionBuilder(new PotionBuilder(PotionEffectType.REGENERATION, Integer.MAX_VALUE, 4, true, false, true));
-
             return kit;
         }
 
@@ -77,7 +73,7 @@ public class KitKing extends KitPvPKit {
 
         @Override
         public HealthRegen getHealthRegen() {
-            return HealthRegen.NORMAL;
+            return HealthRegen.INSANE;
         }
     }
 
@@ -99,8 +95,6 @@ public class KitKing extends KitPvPKit {
 
             kit.set(0, player -> new KitItemBuilder(this, Material.STONE_SWORD).addActive(Active.HEAL, 1));
 
-            kit.addPotionBuilder(new PotionBuilder(PotionEffectType.REGENERATION, Integer.MAX_VALUE, 4, true, false, true));
-
             return kit;
         }
 
@@ -116,7 +110,7 @@ public class KitKing extends KitPvPKit {
 
         @Override
         public HealthRegen getHealthRegen() {
-            return HealthRegen.NORMAL;
+            return HealthRegen.INSANE;
         }
     }
     private class Level3 extends Level {
@@ -137,8 +131,6 @@ public class KitKing extends KitPvPKit {
 
             kit.set(0, player -> new KitItemBuilder(this, Material.STONE_SWORD).addActive(Active.HEAL, 2));
 
-            kit.addPotionBuilder(new PotionBuilder(PotionEffectType.REGENERATION, Integer.MAX_VALUE, 4, true, false, true));
-
             return kit;
         }
 
@@ -154,7 +146,7 @@ public class KitKing extends KitPvPKit {
 
         @Override
         public HealthRegen getHealthRegen() {
-            return HealthRegen.NORMAL;
+            return HealthRegen.INSANE;
         }
     }
 }

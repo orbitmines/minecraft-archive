@@ -60,8 +60,8 @@ public class KitDarkMage extends KitPvPKit {
         protected Kit<KitPvPPlayer> registerKit() {
             Kit<KitPvPPlayer> kit = new Kit<>();
 
-            kit.set(0, player -> new KitItemBuilder(this, Material.STONE_SWORD).addPassive(Passive.WITHER_HIT, 1).addPassive(Passive.SELF_KNOCKBACK, 1).addActive(Active.MAGIC_SPELL, 1).addEnchantment(Enchantment.SHARPNESS, 1));
-            kit.set(1, player -> new KitItemBuilder(this, Material.BREWING_STAND, 1, "\u00a75\u00a7lPotion Launcher").addActive(Active.POTION_LAUNCHER, 1));
+            kit.set(0, player -> new KitItemBuilder(this, Material.STONE_SWORD).addPassive(Passive.WITHER_HIT, 1).addActive(Active.MAGIC_SPELL, 1).addEnchantment(Enchantment.SHARPNESS, 1));
+            kit.set(1, player -> new KitItemBuilder(this, Material.BREWING_STAND, 1, "\u00a75\u00a7lPotion Launcher").addPassive(Passive.SELF_KNOCKBACK, 1).addActive(Active.POTION_LAUNCHER, 1));
 
             kit.setHelmet(player -> new KitLeatherArmorBuilder(this, LeatherArmorBuilder.Type.HELMET, LEATHER_COLOR).addEnchantment(Enchantment.PROTECTION, 1));
             kit.setChestplate(player -> new KitLeatherArmorBuilder(this, LeatherArmorBuilder.Type.CHESTPLATE, LEATHER_COLOR).addPassive(Passive.WITHER_ARMOR, 1).addEnchantment(Enchantment.PROTECTION, 2));
@@ -98,8 +98,8 @@ public class KitDarkMage extends KitPvPKit {
         protected Kit<KitPvPPlayer> registerKit() {
             Kit<KitPvPPlayer> kit = new Kit<>();
 
-            kit.set(0, player -> new KitItemBuilder(this, Material.STONE_SWORD).addPassive(Passive.WITHER_HIT, 2).addPassive(Passive.SELF_KNOCKBACK, 2).addActive(Active.MAGIC_SPELL, 2).addEnchantment(Enchantment.SHARPNESS, 2));
-            kit.set(1, player -> new KitItemBuilder(this, Material.BREWING_STAND, 1, "\u00a75\u00a7lPotion Launcher").addActive(Active.POTION_LAUNCHER, 1));
+            kit.set(0, player -> new KitItemBuilder(this, Material.STONE_SWORD).addPassive(Passive.WITHER_HIT, 2).addActive(Active.MAGIC_SPELL, 2).addEnchantment(Enchantment.SHARPNESS, 2));
+            kit.set(1, player -> new KitItemBuilder(this, Material.BREWING_STAND, 1, "\u00a75\u00a7lPotion Launcher").addPassive(Passive.SELF_KNOCKBACK, 2).addActive(Active.POTION_LAUNCHER, 1));
 
             kit.setHelmet(player -> new KitLeatherArmorBuilder(this, LeatherArmorBuilder.Type.HELMET, LEATHER_COLOR).addEnchantment(Enchantment.PROTECTION, 2));
             kit.setChestplate(player -> new KitLeatherArmorBuilder(this, LeatherArmorBuilder.Type.CHESTPLATE, LEATHER_COLOR).addPassive(Passive.WITHER_ARMOR, 1).addEnchantment(Enchantment.PROTECTION, 2));
@@ -136,8 +136,8 @@ public class KitDarkMage extends KitPvPKit {
         protected Kit<KitPvPPlayer> registerKit() {
             Kit<KitPvPPlayer> kit = new Kit<>();
 
-            kit.set(0, player -> new KitItemBuilder(this, Material.IRON_SWORD).addPassive(Passive.WITHER_HIT, 3).addPassive(Passive.SELF_KNOCKBACK, 3).addActive(Active.MAGIC_SPELL, 3).addEnchantment(Enchantment.SHARPNESS, 1));
-            kit.set(1, player -> new KitItemBuilder(this, Material.BREWING_STAND, 1, "\u00a75\u00a7lPotion Launcher").addActive(Active.POTION_LAUNCHER, 2));
+            kit.set(0, player -> new KitItemBuilder(this, Material.IRON_SWORD).addPassive(Passive.WITHER_HIT, 3).addActive(Active.MAGIC_SPELL, 3).addEnchantment(Enchantment.SHARPNESS, 1));
+            kit.set(1, player -> new KitItemBuilder(this, Material.BREWING_STAND, 1, "\u00a75\u00a7lPotion Launcher").addPassive(Passive.SELF_KNOCKBACK, 3).addActive(Active.POTION_LAUNCHER, 2));
 
             kit.setHelmet(player -> new KitLeatherArmorBuilder(this, LeatherArmorBuilder.Type.HELMET, LEATHER_COLOR).addEnchantment(Enchantment.PROTECTION, 2));
             kit.setChestplate(player -> new KitLeatherArmorBuilder(this, LeatherArmorBuilder.Type.CHESTPLATE, LEATHER_COLOR).addPassive(Passive.WITHER_ARMOR, 1).addEnchantment(Enchantment.PROTECTION, 2));

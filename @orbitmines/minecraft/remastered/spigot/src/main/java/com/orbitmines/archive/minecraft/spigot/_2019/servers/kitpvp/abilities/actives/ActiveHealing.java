@@ -12,7 +12,7 @@ public class ActiveHealing implements Active.Handler {
 
     private Cooldown cooldown = new Cooldown(10 * 1000);
 
-    private PotionBuilder builder = new PotionBuilder(PotionEffectType.REGENERATION, 2);
+    private PotionBuilder builder = new PotionBuilder(PotionEffectType.REGENERATION, 4);
 
     @Override
     public void trigger(PlayerInteractEvent event, KitPvPPlayer omp, int level) {

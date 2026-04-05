@@ -16,7 +16,9 @@ public class PreventExplosionDamage extends PreventionEvent<EntityExplodeEvent> 
 
     @Override
     protected boolean shouldBeCancelled(EntityExplodeEvent event, World world) {
-        return true;
+        /* Clear block list so blocks aren't destroyed, but let the explosion still deal entity damage */
+        event.blockList().clear();
+        return false;
     }
 
     @Override

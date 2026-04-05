@@ -142,6 +142,8 @@ public class PassiveEnchantingTable implements Passive.Handler<PlayerDeathEvent>
             return false;
 
         Passive chosen = RandomUtils.randomFrom(candidates);
+        if (chosen == null)
+            return false;
         int currentLevel = currentPassives.getOrDefault(chosen, 0);
         int newLevel = currentLevel + 1;
 

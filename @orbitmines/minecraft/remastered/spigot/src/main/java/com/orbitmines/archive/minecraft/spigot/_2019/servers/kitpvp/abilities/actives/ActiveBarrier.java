@@ -29,7 +29,8 @@ public class ActiveBarrier implements Active.Handler {
 
         /* Spawn spherical cage of leaves */
         List<Block> placedBlocks = new ArrayList<>();
-        int radius = 4;
+        int radius = 5;
+        Location spawnCenter = center.clone().add(0, -2, 0);
 
         for (int x = -radius; x <= radius; x++) {
             for (int y = -1; y <= radius * 2; y++) {
@@ -40,10 +41,10 @@ public class ActiveBarrier implements Active.Handler {
                     if (dist < radius - 0.5 || dist > radius + 0.5)
                         continue;
 
-                    Block block = center.getWorld().getBlockAt(
-                        center.getBlockX() + x,
-                        center.getBlockY() + y,
-                        center.getBlockZ() + z
+                    Block block = spawnCenter.getWorld().getBlockAt(
+                        spawnCenter.getBlockX() + x,
+                        spawnCenter.getBlockY() + y,
+                        spawnCenter.getBlockZ() + z
                     );
                     if (block.getType() == Material.AIR) {
                         block.setType(Material.OAK_LEAVES);

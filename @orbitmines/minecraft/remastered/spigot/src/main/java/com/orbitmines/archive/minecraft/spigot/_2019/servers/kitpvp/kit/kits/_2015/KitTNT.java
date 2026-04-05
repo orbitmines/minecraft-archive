@@ -58,6 +58,7 @@ public class KitTNT extends KitPvPKit {
             kit.set(0, player -> new KitItemBuilder(this, Material.TNT).addPassive(Passive.ATTACK_DAMAGE, 5).addEnchantment(Enchantment.KNOCKBACK, 3));
             kit.set(1, player -> new KitItemBuilder(this, Material.REDSTONE_TORCH, 1, "§c§lTNT Launcher").addActive(Active.TNT_LAUNCHER, 1));
 
+            kit.setHelmet(player -> new KitItemBuilder(this, Material.TNT));
             kit.setChestplate(player -> new KitItemBuilder(this, Material.GOLDEN_CHESTPLATE).addEnchantment(Enchantment.BLAST_PROTECTION, 1));
             kit.setLeggings(player -> new KitItemBuilder(this, Material.GOLDEN_LEGGINGS).addEnchantment(Enchantment.BLAST_PROTECTION, 1));
             kit.setBoots(player -> new KitItemBuilder(this, Material.GOLDEN_BOOTS).addEnchantment(Enchantment.BLAST_PROTECTION, 1));
@@ -97,6 +98,7 @@ public class KitTNT extends KitPvPKit {
             kit.set(2, player -> new KitItemBuilder(this, Material.REDSTONE_TORCH, 1, "§c§lTNT Launcher").addActive(Active.TNT_LAUNCHER, 2));
             kit.set(3, player -> new KitItemBuilder(this, Material.ARROW, 2));
 
+            kit.setHelmet(player -> new KitItemBuilder(this, Material.TNT));
             kit.setChestplate(player -> new KitItemBuilder(this, Material.GOLDEN_CHESTPLATE).addEnchantment(Enchantment.BLAST_PROTECTION, 2).addEnchantment(Enchantment.PROTECTION, 1));
             kit.setLeggings(player -> new KitItemBuilder(this, Material.GOLDEN_LEGGINGS).addEnchantment(Enchantment.BLAST_PROTECTION, 2));
             kit.setBoots(player -> new KitItemBuilder(this, Material.GOLDEN_BOOTS).addEnchantment(Enchantment.BLAST_PROTECTION, 2));
@@ -136,6 +138,7 @@ public class KitTNT extends KitPvPKit {
             kit.set(2, player -> new KitItemBuilder(this, Material.REDSTONE_TORCH, 1, "§c§lTNT Launcher").addActive(Active.TNT_LAUNCHER, 3));
             kit.set(3, player -> new KitItemBuilder(this, Material.ARROW, 4));
 
+            kit.setHelmet(player -> new KitItemBuilder(this, Material.TNT));
             kit.setChestplate(player -> new KitItemBuilder(this, Material.GOLDEN_CHESTPLATE).addEnchantment(Enchantment.BLAST_PROTECTION, 3).addEnchantment(Enchantment.PROTECTION, 1));
             kit.setLeggings(player -> new KitItemBuilder(this, Material.GOLDEN_LEGGINGS).addEnchantment(Enchantment.BLAST_PROTECTION, 3).addEnchantment(Enchantment.PROTECTION, 1));
             kit.setBoots(player -> new KitItemBuilder(this, Material.GOLDEN_BOOTS).addEnchantment(Enchantment.BLAST_PROTECTION, 3).addEnchantment(Enchantment.PROTECTION, 1));
