@@ -173,6 +173,37 @@ public enum Active {
             };
         }
     },
+    TORNADO("Cyclone", Color.WHITE, new ActiveTornado()) {
+        @Override
+        public String[] getDescription(int level) {
+            int duration = level == 1 ? 15 : level == 2 ? 17 : 20;
+            return new String[]{
+                    "  §7§oSummon a §f§otornado §7§othat",
+                    "  §7§opulls in nearby players for §9§o" + duration + " seconds",
+                    "  §7§oon a §b§o" + ((int) (getHandler().getCooldown(level).getCooldown() / 1000)) + " second cooldown§7."
+            };
+        }
+    },
+    LIGHTNING_STRIKE("Arcane Bolt", Color.YELLOW, new ActiveLightningStrike()) {
+        @Override
+        public String[] getDescription(int level) {
+            return new String[]{
+                    "  §7§oStrike §e§olightning §7§oin an area,",
+                    "  §7§odamaging nearby players on a",
+                    "  §b§o" + ((int) (getHandler().getCooldown(level).getCooldown() / 1000)) + " second cooldown§7."
+            };
+        }
+    },
+    INVISIBILITY("Vanishing Act", Color.SILVER, new ActiveInvisibility()) {
+        @Override
+        public String[] getDescription(int level) {
+            return new String[]{
+                    "  §7§oBecome §f§oinvisible §7§ofor",
+                    "  §9§o6 seconds §7§oon a",
+                    "  §b§o" + ((int) (getHandler().getCooldown(level).getCooldown() / 1000)) + " second cooldown§7."
+            };
+        }
+    },
     WITHER_STAFF("Wither Staff", Color.GRAY, new ActiveWitherStaff()) {
         @Override
         public String[] getDescription(int level) {

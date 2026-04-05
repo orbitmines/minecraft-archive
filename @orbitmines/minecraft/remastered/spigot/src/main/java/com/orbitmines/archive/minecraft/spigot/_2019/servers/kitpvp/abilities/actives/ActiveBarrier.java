@@ -19,8 +19,7 @@ import java.util.List;
 
 public class ActiveBarrier implements Active.Handler {
 
-    private final Cooldown cooldownLow = new Cooldown(100 * 1000);
-    private final Cooldown cooldownHigh = new Cooldown(80 * 1000);
+    private final Cooldown cooldown = new Cooldown(25 * 1000);
 
     @Override
     public void trigger(PlayerInteractEvent event, KitPvPPlayer omp, int level) {
@@ -28,19 +27,17 @@ public class ActiveBarrier implements Active.Handler {
         Location center = player.getLocation();
         KitPvP kitPvP = (KitPvP) KitPvP.getInstance();
 
-        /* Spawn cage: walls (3 high) + ceiling */
+        /* Spawn spherical cage of leaves */
         List<Block> placedBlocks = new ArrayList<>();
-        int radius = 2;
+        int radius = 3;
 
-        for (int y = 0; y <= 3; y++) {
-            for (int x = -radius; x <= radius; x++) {
+        for (int x = -radius; x <= radius; x++) {
+            for (int y = -1; y <= radius * 2; y++) {
                 for (int z = -radius; z <= radius; z++) {
-                    boolean isWall = (Math.abs(x) == radius || Math.abs(z) == radius);
-                    boolean isCeiling = (y == 3 && Math.abs(x) <= radius && Math.abs(z) <= radius);
+                    double dist = Math.sqrt(x * x + Math.pow(y - radius + 1, 2) + z * z);
 
-                    if (y < 3 && !isWall)
-                        continue;
-                    if (y == 3 && !isCeiling)
+                    /* Only place blocks on the shell of the sphere */
+                    if (dist < radius - 0.5 || dist > radius + 0.5)
                         continue;
 
                     Block block = center.getWorld().getBlockAt(
@@ -91,6 +88,6 @@ public class ActiveBarrier implements Active.Handler {
 
     @Override
     public Cooldown getCooldown(int level) {
-        return level >= 3 ? cooldownHigh : cooldownLow;
+        return cooldown;
     }
 }

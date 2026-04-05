@@ -63,7 +63,6 @@ public class KitBlaze extends KitPvPKit {
 
             kit.set(0, player -> new KitItemBuilder(this, Material.BLAZE_POWDER).addPassive(Passive.ATTACK_DAMAGE, 4).addEnchantment(Enchantment.FIRE_ASPECT, 2));
             kit.set(1, player -> new KitItemBuilder(this, Material.BLAZE_ROD, 1, "§6§lFire Spell").addActive(Active.FIRE_SPELL, 1));
-            kit.set(2, player -> new KitItemBuilder(this, Material.FIRE_CHARGE, 1, "§6§lBlaze Inferno").addActive(Active.BLAZE_INFERNO, 1));
 
             kit.setHelmet(player -> new KitLeatherArmorBuilder(this, LeatherArmorBuilder.Type.HELMET, LEATHER_COLOR).addEnchantment(Enchantment.PROTECTION, 1).addEnchantment(Enchantment.FIRE_PROTECTION, 3));
             kit.setChestplate(player -> new KitLeatherArmorBuilder(this, LeatherArmorBuilder.Type.CHESTPLATE, LEATHER_COLOR).addEnchantment(Enchantment.PROTECTION, 1).addEnchantment(Enchantment.FIRE_PROTECTION, 3));

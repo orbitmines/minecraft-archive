@@ -29,10 +29,17 @@ public class KitSelectorGUI extends GUI<KitPvPPlayer> {
                 int level = data.getUnlockedLevel();
 
                 if (level != 0 || saturday) {
+                    int displayLevel = saturday ? Math.max(level, freeLevel) : level;
                     icon.glow();
 
                     if (level == 0) {
-                        icon.setDisplayName(icon.getDisplayName() + " §d§l§mLOCKED");
+                        icon.setAmount(displayLevel);
+                        icon.setDisplayName(icon.getDisplayName() + " §d§lFREE Lvl " + displayLevel);
+
+                        icon.addLore("§d§lFREE KIT SATURDAY");
+                    } else if (saturday && freeLevel > level) {
+                        icon.setAmount(displayLevel);
+                        icon.setDisplayName(icon.getDisplayName() + " §d§lFREE Lvl " + displayLevel);
 
                         icon.addLore("§d§lFREE KIT SATURDAY");
                     } else {
@@ -64,15 +71,17 @@ public class KitSelectorGUI extends GUI<KitPvPPlayer> {
                 int level = data.getUnlockedLevel();
 
                 if (level != 0 || saturday) {
+                    int effectiveLevel = saturday ? Math.max(level, freeLevel) : level;
+
                     switch (event.getAction()) {
                         /* Right Click */
                         case PICKUP_HALF:
-                            viewer.server().runSync(() -> viewer.joinMap(kit.getLevel(level == 0 ? freeLevel : level)));
+                            viewer.server().runSync(() -> viewer.joinMap(kit.getLevel(effectiveLevel)));
                             break;
 
                         /* Left Click */
                         case PICKUP_ALL:
-                            new KitInfoGUI(viewer, kit.getLevel(level == 0 ? freeLevel : level)).open();
+                            new KitInfoGUI(viewer, kit.getLevel(effectiveLevel)).open();
                             break;
                     }
                 } else {

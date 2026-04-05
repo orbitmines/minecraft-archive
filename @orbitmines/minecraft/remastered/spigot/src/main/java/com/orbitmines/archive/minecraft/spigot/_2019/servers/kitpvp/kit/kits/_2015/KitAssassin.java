@@ -7,6 +7,7 @@ package com.orbitmines.archive.minecraft.spigot._2019.servers.kitpvp.kit.kits._2
 import com.orbitmines.archive.minecraft._2019.libs.Color;
 import com.orbitmines.archive.minecraft.spigot._2019.servers.kitpvp.KitPvP;
 import com.orbitmines.archive.minecraft.spigot._2019.servers.kitpvp.KitPvPPlayer;
+import com.orbitmines.archive.minecraft.spigot._2019.servers.kitpvp.abilities.Passive;
 import com.orbitmines.archive.minecraft.spigot._2019.servers.kitpvp.item_builders.KitItemBuilder;
 import com.orbitmines.archive.minecraft.spigot._2019.servers.kitpvp.item_builders.KitLeatherArmorBuilder;
 import com.orbitmines.archive.minecraft.spigot._2019.servers.kitpvp.kit.HealthRegen;
@@ -58,7 +59,7 @@ public class KitAssassin extends KitPvPKit {
         protected Kit<KitPvPPlayer> registerKit() {
             Kit<KitPvPPlayer> kit = new Kit<>();
 
-            kit.set(0, player -> new KitItemBuilder(this, Material.DIAMOND_SWORD).addEnchantment(Enchantment.SHARPNESS, 1));
+            kit.set(0, player -> new KitItemBuilder(this, Material.DIAMOND_SWORD).addPassive(Passive.BACKSTAB, 1).addEnchantment(Enchantment.SHARPNESS, 1));
 
             kit.setHelmet(player -> new KitLeatherArmorBuilder(this, LeatherArmorBuilder.Type.HELMET));
             kit.setChestplate(player -> new KitLeatherArmorBuilder(this, LeatherArmorBuilder.Type.CHESTPLATE));
@@ -97,7 +98,7 @@ public class KitAssassin extends KitPvPKit {
         protected Kit<KitPvPPlayer> registerKit() {
             Kit<KitPvPPlayer> kit = new Kit<>();
 
-            kit.set(0, player -> new KitItemBuilder(this, Material.DIAMOND_SWORD).addEnchantment(Enchantment.SHARPNESS, 2));
+            kit.set(0, player -> new KitItemBuilder(this, Material.DIAMOND_SWORD).addPassive(Passive.BACKSTAB, 1).addEnchantment(Enchantment.SHARPNESS, 2));
 
             kit.setHelmet(player -> new KitLeatherArmorBuilder(this, LeatherArmorBuilder.Type.HELMET).addEnchantment(Enchantment.PROTECTION, 1));
             kit.setChestplate(player -> new KitLeatherArmorBuilder(this, LeatherArmorBuilder.Type.CHESTPLATE));
@@ -136,7 +137,7 @@ public class KitAssassin extends KitPvPKit {
         protected Kit<KitPvPPlayer> registerKit() {
             Kit<KitPvPPlayer> kit = new Kit<>();
 
-            kit.set(0, player -> new KitItemBuilder(this, Material.DIAMOND_SWORD).addEnchantment(Enchantment.SHARPNESS, 2));
+            kit.set(0, player -> new KitItemBuilder(this, Material.DIAMOND_SWORD).addPassive(Passive.BACKSTAB, 1).addEnchantment(Enchantment.SHARPNESS, 2));
 
             kit.setHelmet(player -> new KitLeatherArmorBuilder(this, LeatherArmorBuilder.Type.HELMET).addEnchantment(Enchantment.PROTECTION, 1));
             kit.setChestplate(player -> new KitLeatherArmorBuilder(this, LeatherArmorBuilder.Type.CHESTPLATE).addEnchantment(Enchantment.PROTECTION, 1));

@@ -209,6 +209,19 @@ public class ItemStackNms_26_1 implements ItemStackNms {
     }
 
     @Override
+    public ItemStack removeMetaData(ItemStack item, String namespace, String key) {
+        net.minecraft.world.item.ItemStack nmsStack = CraftItemStack.asNMSCopy(item);
+        CompoundTag customData = getOrCreateCustomData(nmsStack);
+        CompoundTag namespaceTag = customData.getCompoundOrEmpty(namespace);
+
+        namespaceTag.remove(key);
+        customData.put(namespace, namespaceTag);
+        setCustomData(nmsStack, customData);
+
+        return CraftItemStack.asCraftMirror(nmsStack);
+    }
+
+    @Override
     public HashMap<String, String> getMetaDataKeys(ItemStack item, String tagName) {
         CompoundTag namespaceTag = getMetaDataTag(item, tagName);
 

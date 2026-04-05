@@ -27,6 +27,7 @@ import com.orbitmines.archive.minecraft.spigot._2019.servers.kitpvp.datapoints.m
 import com.orbitmines.archive.minecraft.spigot._2019.servers.kitpvp.events.*;
 import com.orbitmines.archive.minecraft.spigot._2019.servers.kitpvp.gui.KitSelectorGUI;
 import com.orbitmines.archive.minecraft.spigot._2019.servers.kitpvp.item_builders.KitItemBuilder;
+import com.orbitmines.archive.minecraft.spigot._2019.servers.kitpvp.abilities.actives.ActiveReaperTeleport;
 import com.orbitmines.archive.minecraft.spigot._2019.servers.kitpvp.item_handlers.ItemHoverActiveHandler;
 import com.orbitmines.archive.minecraft.spigot._2019.servers.kitpvp.item_handlers.ItemHoverPlayerTracker;
 import com.orbitmines.archive.minecraft.spigot._2019.servers.kitpvp.kit.KitPvPKit;
@@ -147,7 +148,8 @@ public class KitPvP extends OMServer<KitPvP, KitPvPPlayer> {
             Prevention.BLOCK_SPREAD,
             Prevention.MONSTER_EGG_USAGE,
             Prevention.BUCKET_USAGE,
-            Prevention.PHYSICAL_INTERACTING_EXCEPT_PLATES
+            Prevention.PHYSICAL_INTERACTING_EXCEPT_PLATES,
+            Prevention.EXPLOSION_DAMAGE
         );
 
         /* Datapoints */
@@ -220,7 +222,10 @@ public class KitPvP extends OMServer<KitPvP, KitPvPPlayer> {
             new MovementEvent(this),
             new ProjectileEvents(this),
             new RegainHealthEvent(this),
-            new SpectatorEvents(this)
+            new SpectatorEvents(this),
+            new ActiveReaperTeleport.ShadowStepListener(),
+            new FireBreakEvent(this),
+            new FishermanRodEvent(this)
         );
         
         registerCommands(
@@ -271,7 +276,8 @@ public class KitPvP extends OMServer<KitPvP, KitPvPPlayer> {
             new KitTNT(this),
             new KitTree(this),
             new KitVampire(this),
-            new KitVillager(this)
+            new KitVillager(this),
+            new KitWizard(this)
         );
     }
 

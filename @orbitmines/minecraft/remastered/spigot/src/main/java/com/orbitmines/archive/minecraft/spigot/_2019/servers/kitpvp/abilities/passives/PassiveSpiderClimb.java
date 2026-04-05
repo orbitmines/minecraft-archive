@@ -15,13 +15,30 @@ public class PassiveSpiderClimb implements Passive.Handler<PlayerMoveEvent> {
     public void trigger(KitEvent<PlayerMoveEvent> passiveEvent, PlayerMoveEvent event, int level) {
         Player player = passiveEvent.getPlayer().bukkit();
 
-        /* Check if player is next to a wall and sneaking/moving against it */
         if (!isNextToWall(player))
             return;
 
-        /* Allow climbing: if the player is touching a wall, give upward velocity */
+            /* Only climb when the player is not on ground (holding space/jump) */
+        if (player.isOnGround())
+            return;
+
+        /* Apply ladder-like climbing: steady upward speed, cancel gravity */
         Vector velocity = player.getVelocity();
-        velocity.setY(getClimbSpeed(level));
+        double climbSpeed = getClimbSpeed(level);
+
+        /* If player is looking up, climb faster; looking down, descend */
+        double pitch = player.getLocation().getPitch();
+        if (pitch < -10) {
+            /* Looking up: climb */
+            velocity.setY(climbSpeed);
+        } else if (pitch > 45) {
+            /* Looking steeply down: descend slowly */
+            velocity.setY(-0.1);
+        } else {
+            /* Neutral: hold position (hover against wall) */
+            velocity.setY(0.0);
+        }
+
         player.setVelocity(velocity);
         player.setFallDistance(0);
     }
@@ -29,19 +46,12 @@ public class PassiveSpiderClimb implements Passive.Handler<PlayerMoveEvent> {
     private boolean isNextToWall(Player player) {
         Location loc = player.getLocation();
 
-        /* Check 4 cardinal directions for solid blocks */
-        int[][] checks = {{1, 0}, {-1, 0}, {0, 1}, {0, -1}};
-        for (int[] check : checks) {
-            Block block = loc.getWorld().getBlockAt(
-                loc.getBlockX() + check[0],
-                loc.getBlockY(),
-                loc.getBlockZ() + check[1]
-            );
-            Block blockAbove = loc.getWorld().getBlockAt(
-                loc.getBlockX() + check[0],
-                loc.getBlockY() + 1,
-                loc.getBlockZ() + check[1]
-            );
+        /* Check 4 cardinal directions for solid blocks at body or head level */
+        double[][] checks = {{0.4, 0}, {-0.4, 0}, {0, 0.4}, {0, -0.4}};
+        for (double[] check : checks) {
+            Location checkLoc = loc.clone().add(check[0], 0, check[1]);
+            Block block = checkLoc.getBlock();
+            Block blockAbove = loc.clone().add(check[0], 1, check[1]).getBlock();
 
             if (block.getType().isSolid() || blockAbove.getType().isSolid())
                 return true;
@@ -51,9 +61,9 @@ public class PassiveSpiderClimb implements Passive.Handler<PlayerMoveEvent> {
 
     private double getClimbSpeed(int level) {
         switch (level) {
-            case 1: return 0.2D;
-            case 2: return 0.25D;
-            case 3: return 0.3D;
+            case 1: return 0.25D;
+            case 2: return 0.3D;
+            case 3: return 0.35D;
             default: throw new ArrayIndexOutOfBoundsException();
         }
     }

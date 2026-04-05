@@ -6,6 +6,7 @@ package com.orbitmines.archive.minecraft.spigot._2019.servers.kitpvp.events;
 
 import com.orbitmines.archive.minecraft.spigot._2019.servers.kitpvp.KitPvP;
 import com.orbitmines.archive.minecraft.spigot._2019.servers.kitpvp.KitPvPPlayer;
+import com.orbitmines.archive.minecraft.spigot._2019.servers.kitpvp.abilities.actives.ActiveReaperTeleport;
 import com.orbitmines.archive.minecraft._2019.utils.RandomUtils;
 import com.orbitmines.archive.minecraft.spigot._2019.utils.spigot.nms.entity.EntityNms;
 import org.bukkit.entity.Arrow;
@@ -71,6 +72,9 @@ public class DeathEvent implements Listener {
 
         /* Handle Death */
         player.processDeath(null, playerKiller, shotByArrow);
+
+        /* Clear Shadow Step preview */
+        ActiveReaperTeleport.removePreview(bukkit.getUniqueId());
 
         /* Clear Drops & Inventory */
         player.clearFullInventory();

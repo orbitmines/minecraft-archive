@@ -7,11 +7,17 @@ import com.orbitmines.archive.minecraft._2019.utils.cooldown.Cooldown;
 import org.bukkit.*;
 import org.bukkit.entity.ArmorStand;
 import org.bukkit.entity.Player;
+import org.bukkit.event.EventHandler;
+import org.bukkit.event.Listener;
+import org.bukkit.event.player.PlayerItemHeldEvent;
 import org.bukkit.event.player.PlayerInteractEvent;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.scheduler.BukkitRunnable;
 import org.bukkit.util.RayTraceResult;
-import org.bukkit.util.Vector;
+
+import java.util.HashMap;
+import java.util.Map;
+import java.util.UUID;
 
 public class ActiveReaperTeleport implements Active.Handler {
 
@@ -21,100 +27,160 @@ public class ActiveReaperTeleport implements Active.Handler {
             new Cooldown(11 * 1000)
     };
 
+    private static final Map<UUID, PreviewState> previews = new HashMap<>();
+
     @Override
     public void trigger(PlayerInteractEvent event, KitPvPPlayer omp, int level) {
         Player player = omp.bukkit();
         KitPvP kitPvP = (KitPvP) KitPvP.getInstance();
 
-        /* Raycast up to 15 blocks */
-        RayTraceResult result = player.getWorld().rayTraceBlocks(
-                player.getEyeLocation(), player.getEyeLocation().getDirection(), 15,
-                FluidCollisionMode.NEVER, true
-        );
+        PreviewState state = previews.get(player.getUniqueId());
+        if (state == null || state.preview == null || state.preview.isDead())
+            return;
 
-        Location targetLoc;
-        if (result != null && result.getHitBlock() != null) {
-            targetLoc = result.getHitBlock().getLocation().add(0.5, 1, 0.5);
-        } else {
-            targetLoc = player.getEyeLocation().add(player.getEyeLocation().getDirection().multiply(15));
-        }
-
+        /* Confirm teleport */
+        Location targetLoc = state.preview.getLocation().clone();
         targetLoc.setYaw(player.getLocation().getYaw());
         targetLoc.setPitch(player.getLocation().getPitch());
 
-        /* Spawn armorstand preview with same armor */
-        ArmorStand preview = player.getWorld().spawn(targetLoc, ArmorStand.class);
-        preview.setGravity(false);
-        preview.setVisible(true);
-        preview.setInvulnerable(true);
-        preview.setCustomName("§8§lGrim Reaper");
-        preview.setCustomNameVisible(true);
+        /* Particle burst at arrival */
+        targetLoc.getWorld().spawnParticle(Particle.PORTAL, targetLoc.clone().add(0, 1, 0), 30, 0.5, 1.0, 0.5, 0.5);
 
-        /* Copy armor from player */
-        if (player.getInventory().getHelmet() != null)
-            preview.getEquipment().setHelmet(player.getInventory().getHelmet().clone());
-        if (player.getInventory().getChestplate() != null)
-            preview.getEquipment().setChestplate(player.getInventory().getChestplate().clone());
-        if (player.getInventory().getLeggings() != null)
-            preview.getEquipment().setLeggings(player.getInventory().getLeggings().clone());
-        if (player.getInventory().getBoots() != null)
-            preview.getEquipment().setBoots(player.getInventory().getBoots().clone());
-
-        /* Give it a stone hoe */
-        preview.getEquipment().setItemInMainHand(new ItemStack(Material.STONE_HOE));
-
+        player.teleport(targetLoc);
         omp.playSound(Sound.ENTITY_ENDERMAN_TELEPORT);
 
-        /* Dual tilted particle orbits */
-        final Location particleCenter = targetLoc.clone();
+        /* Clean up preview */
+        removePreview(player.getUniqueId());
+    }
 
-        new BukkitRunnable() {
-            int tick = 0;
+    public static void startPreview(Player player, KitPvP kitPvP) {
+        removePreview(player.getUniqueId());
 
+        PreviewState state = new PreviewState();
+        previews.put(player.getUniqueId(), state);
+
+        state.task = new BukkitRunnable() {
             @Override
             public void run() {
-                if (tick >= 30) {
+                if (!player.isOnline() || player.isDead()) {
+                    removePreview(player.getUniqueId());
                     cancel();
-
-                    /* Teleport player and remove preview */
-                    player.teleport(targetLoc);
-                    preview.remove();
-                    omp.playSound(Sound.ENTITY_ENDERMAN_TELEPORT);
-
-                    /* Burst of particles at arrival */
-                    particleCenter.getWorld().spawnParticle(Particle.PORTAL, particleCenter, 30, 0.5, 1.0, 0.5, 0.5);
                     return;
                 }
 
-                double angle = (tick * Math.PI * 2) / 15;
+                /* Raycast from eye */
+                RayTraceResult result = player.getWorld().rayTraceBlocks(
+                        player.getEyeLocation(), player.getEyeLocation().getDirection(), 15,
+                        FluidCollisionMode.NEVER, true
+                );
+
+                Location targetLoc;
+                if (result != null && result.getHitBlock() != null) {
+                    targetLoc = result.getHitBlock().getLocation().add(0.5, 1, 0.5);
+                } else {
+                    targetLoc = player.getEyeLocation().add(player.getEyeLocation().getDirection().multiply(15));
+                }
+                targetLoc.setYaw(player.getLocation().getYaw());
+                targetLoc.setPitch(player.getLocation().getPitch());
+
+                if (state.preview == null || state.preview.isDead()) {
+                    /* Spawn armorstand preview */
+                    state.preview = player.getWorld().spawn(targetLoc, ArmorStand.class);
+                    state.preview.setGravity(false);
+                    state.preview.setVisible(true);
+                    state.preview.setInvulnerable(true);
+                    state.preview.setCustomName("§8§lGrim Reaper");
+                    state.preview.setCustomNameVisible(true);
+                    state.preview.setMarker(true);
+
+                    /* Copy armor from player */
+                    if (player.getInventory().getHelmet() != null)
+                        state.preview.getEquipment().setHelmet(player.getInventory().getHelmet().clone());
+                    if (player.getInventory().getChestplate() != null)
+                        state.preview.getEquipment().setChestplate(player.getInventory().getChestplate().clone());
+                    if (player.getInventory().getLeggings() != null)
+                        state.preview.getEquipment().setLeggings(player.getInventory().getLeggings().clone());
+                    if (player.getInventory().getBoots() != null)
+                        state.preview.getEquipment().setBoots(player.getInventory().getBoots().clone());
+
+                    state.preview.getEquipment().setItemInMainHand(new ItemStack(Material.STONE_HOE));
+                } else {
+                    /* Update position */
+                    state.preview.teleport(targetLoc);
+                }
+
+                /* Particle orbits around preview */
+                double angle = (System.currentTimeMillis() / 50.0) * 0.3;
                 double radius = 1.2;
-
-                /* Circle 1: tilted 30 degrees on X axis */
-                double tilt1 = Math.toRadians(30);
+                double tilt = Math.toRadians(30);
                 double x1 = Math.cos(angle) * radius;
-                double y1 = Math.sin(angle) * Math.cos(tilt1) * radius;
-                double z1 = Math.sin(angle) * Math.sin(tilt1) * radius;
-
-                /* Circle 2: tilted -30 degrees on Z axis (crossing the first) */
-                double tilt2 = Math.toRadians(-30);
-                double x2 = Math.cos(angle + Math.PI) * Math.cos(tilt2) * radius;
+                double y1 = Math.sin(angle) * Math.cos(tilt) * radius;
+                double z1 = Math.sin(angle) * Math.sin(tilt) * radius;
+                targetLoc.getWorld().spawnParticle(Particle.WITCH,
+                        targetLoc.getX() + x1, targetLoc.getY() + 1.0 + y1, targetLoc.getZ() + z1,
+                        1, 0, 0, 0, 0);
+                double x2 = Math.cos(angle + Math.PI) * Math.cos(-tilt) * radius;
                 double y2 = Math.sin(angle + Math.PI) * radius;
-                double z2 = Math.cos(angle + Math.PI) * Math.sin(tilt2) * radius;
-
-                particleCenter.getWorld().spawnParticle(Particle.WITCH,
-                        particleCenter.getX() + x1, particleCenter.getY() + 1.0 + y1, particleCenter.getZ() + z1,
+                double z2 = Math.cos(angle + Math.PI) * Math.sin(-tilt) * radius;
+                targetLoc.getWorld().spawnParticle(Particle.WITCH,
+                        targetLoc.getX() + x2, targetLoc.getY() + 1.0 + y2, targetLoc.getZ() + z2,
                         1, 0, 0, 0, 0);
-                particleCenter.getWorld().spawnParticle(Particle.WITCH,
-                        particleCenter.getX() + x2, particleCenter.getY() + 1.0 + y2, particleCenter.getZ() + z2,
-                        1, 0, 0, 0, 0);
-
-                tick++;
             }
-        }.runTaskTimer(kitPvP.getPlugin(), 0, 1);
+        };
+        state.task.runTaskTimer(kitPvP.getPlugin(), 0, 1);
+    }
+
+    public static void removePreview(UUID uuid) {
+        PreviewState state = previews.remove(uuid);
+        if (state != null) {
+            if (state.preview != null && !state.preview.isDead()) {
+                state.preview.remove();
+            }
+            if (state.task != null) {
+                state.task.cancel();
+            }
+        }
+    }
+
+    public static boolean hasPreview(UUID uuid) {
+        return previews.containsKey(uuid);
     }
 
     @Override
     public Cooldown getCooldown(int level) {
         return cooldowns[level - 1];
+    }
+
+    private static class PreviewState {
+        ArmorStand preview;
+        BukkitRunnable task;
+    }
+
+    public static class ShadowStepListener implements Listener {
+
+        @EventHandler
+        public void onItemSwitch(PlayerItemHeldEvent event) {
+            Player player = event.getPlayer();
+            KitPvP kitPvP = (KitPvP) KitPvP.getInstance();
+
+            /* Check if the new slot has the shadow step item */
+            ItemStack newItem = player.getInventory().getItem(event.getNewSlot());
+            boolean newSlotIsShadowStep = newItem != null && isShadowStepItem(kitPvP, newItem);
+
+            if (newSlotIsShadowStep) {
+                if (!hasPreview(player.getUniqueId())) {
+                    startPreview(player, kitPvP);
+                }
+            } else {
+                if (hasPreview(player.getUniqueId())) {
+                    removePreview(player.getUniqueId());
+                }
+            }
+        }
+
+        private boolean isShadowStepItem(KitPvP kitPvP, ItemStack item) {
+            java.util.Map<String, String> keys = kitPvP.getNms().customItem().getMetaData(item).getKeys("active");
+            return keys != null && keys.containsKey(Active.REAPER_TELEPORT.toString());
+        }
     }
 }

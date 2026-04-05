@@ -18,12 +18,17 @@ public class PassivePull implements Passive.Handler<EntityDamageByEntityEvent> {
         Player damager = (Player) event.getDamager();
         LivingEntity victim = (LivingEntity) event.getEntity();
 
-        /* Pull victim towards attacker */
-        Vector pull = damager.getLocation().toVector().subtract(victim.getLocation().toVector()).normalize().multiply(getStrength(level));
-        pull.setY(0.15);
+        /* Delay by 1 tick to override Minecraft's built-in knockback */
+        passiveEvent.server().getPlugin().getServer().getScheduler().runTaskLater(passiveEvent.server().getPlugin(), () -> {
+            if (victim.isDead() || (victim instanceof Player && !((Player) victim).isOnline()))
+                return;
 
-        victim.setVelocity(pull);
-        victim.getWorld().playSound(victim.getLocation(), Sound.ENTITY_FISHING_BOBBER_RETRIEVE, 0.8f, 0.6f);
+            Vector pull = damager.getLocation().toVector().subtract(victim.getLocation().toVector()).normalize().multiply(getStrength(level));
+            pull.setY(0.15);
+
+            victim.setVelocity(pull);
+            victim.getWorld().playSound(victim.getLocation(), Sound.ENTITY_FISHING_BOBBER_RETRIEVE, 0.8f, 0.6f);
+        }, 1L);
     }
 
     public double getStrength(int level) {

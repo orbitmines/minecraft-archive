@@ -59,7 +59,7 @@ public class KitKnight extends KitPvPKit {
             Kit<KitPvPPlayer> kit = new Kit<>();
 
             kit.set(0, player -> new KitItemBuilder(this, Material.IRON_SWORD));
-            kit.set(1, player -> new KitPotionItemBuilder(this, PotionItemBuilder.Type.SPLASH, new PotionBuilder(PotionEffectType.INSTANT_HEALTH, 0)));
+            kit.set(1, player -> new KitPotionItemBuilder(this, PotionItemBuilder.Type.SPLASH, new PotionBuilder(PotionEffectType.INSTANT_HEALTH, 1)));
 
             kit.setHelmet(player -> new KitItemBuilder(this, Material.CHAINMAIL_HELMET));
             kit.setChestplate(player -> new KitItemBuilder(this, Material.CHAINMAIL_CHESTPLATE));
@@ -97,7 +97,7 @@ public class KitKnight extends KitPvPKit {
             Kit<KitPvPPlayer> kit = new Kit<>();
 
             kit.set(0, player -> new KitItemBuilder(this, Material.IRON_SWORD));
-            kit.set(1, player -> new KitPotionItemBuilder(this, PotionItemBuilder.Type.SPLASH, new PotionBuilder(PotionEffectType.INSTANT_HEALTH, 1)));
+            kit.set(1, player -> new KitPotionItemBuilder(this, PotionItemBuilder.Type.SPLASH, new PotionBuilder(PotionEffectType.INSTANT_HEALTH, 2)));
 
             kit.setHelmet(player -> new KitItemBuilder(this, Material.CHAINMAIL_HELMET).addEnchantment(Enchantment.PROTECTION, 1));
             kit.setChestplate(player -> new KitItemBuilder(this, Material.CHAINMAIL_CHESTPLATE));
@@ -135,7 +135,7 @@ public class KitKnight extends KitPvPKit {
             Kit<KitPvPPlayer> kit = new Kit<>();
 
             kit.set(0, player -> new KitItemBuilder(this, Material.IRON_SWORD).addEnchantment(Enchantment.SHARPNESS, 1));
-            kit.set(1, player -> new KitPotionItemBuilder(this, PotionItemBuilder.Type.SPLASH, new PotionBuilder(PotionEffectType.INSTANT_HEALTH, 1), 2));
+            kit.set(1, player -> new KitPotionItemBuilder(this, PotionItemBuilder.Type.SPLASH, new PotionBuilder(PotionEffectType.INSTANT_HEALTH, 2), 2));
 
             kit.setHelmet(player -> new KitItemBuilder(this, Material.CHAINMAIL_HELMET).addEnchantment(Enchantment.PROTECTION, 1));
             kit.setChestplate(player -> new KitItemBuilder(this, Material.CHAINMAIL_CHESTPLATE).addEnchantment(Enchantment.PROTECTION, 1));

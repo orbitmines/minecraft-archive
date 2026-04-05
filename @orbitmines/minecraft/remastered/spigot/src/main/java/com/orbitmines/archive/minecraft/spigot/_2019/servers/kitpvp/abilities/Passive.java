@@ -92,9 +92,8 @@ public enum Passive {
 
             return new String[] {
                     "  §3§o" + String.format("%.1f", passive.getChance(level) * 100) + "% §7§ochance to receive",
-                    "  §3§oa random enchantment §7§oon",
-                    "  §7§oyour weapon or armor",
-                    "  §7§owhen killing an opponent."
+                    "  §3§oa random enchantment§7§o, §3§opassive",
+                    "  §7§oor §d§oactive ability §7§oon kill."
             };
         }
     },
@@ -164,10 +163,13 @@ public enum Passive {
             return getColor().getCc() + "§oTrack nearby players.";
         }
     },
-    SPIDER_CLIMB("Spider Climb", Color.GRAY, Interaction.MOVEMENT, false, true, new PassiveSpiderClimb()){
+    SPIDER_CLIMB("Wall Climb", Color.GRAY, Interaction.MOVEMENT, new PassiveSpiderClimb()){
         @Override
-        public String getDisplayName(int level) {
-            return getColor().getCc() + "§oClimb walls like a spider.";
+        public String[] getDescription(int level) {
+            return new String[] {
+                    "  §7§oAllows §8§owall climbing",
+                    "  §7§owhen jumping near walls."
+            };
         }
     },
 
@@ -264,6 +266,15 @@ public enum Passive {
             };
         }
     },
+    BACKSTAB("Shadow Strike", Color.AQUA, Interaction.HIT_OTHER, new PassiveBackstab()) {
+        @Override
+        public String[] getDescription(int level) {
+            return new String[] {
+                    "  §7§oDeal §c§odouble damage §7§owhen",
+                    "  §7§ostriking from §3§obehind§7§o."
+            };
+        }
+    },
     SELF_KNOCKBACK("Recoil", Color.PURPLE, Interaction.HIT_OTHER, new PassiveSelfKnockback()) {
         @Override
         public String[] getDescription(int level) {
@@ -284,10 +295,13 @@ public enum Passive {
             };
         }
     },
-    FIRE_TRAIL("Scorched Earth", Color.ORANGE, Interaction.MOVEMENT, false, true, new PassiveFireTrail()) {
+    FIRE_TRAIL("Scorched Earth", Color.ORANGE, Interaction.MOVEMENT, new PassiveFireTrail()) {
         @Override
-        public String getDisplayName(int level) {
-            return getColor().getCc() + "§oLeave a trail of fire.";
+        public String[] getDescription(int level) {
+            return new String[] {
+                    "  §7§oLeave a §6§otrail of fire",
+                    "  §7§obehind you as you walk."
+            };
         }
     },
     HEAL_ON_KILL("Soul Harvest", Color.GRAY, Interaction.KILL_PLAYER, new PassiveHealOnKill()) {

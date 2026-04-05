@@ -35,22 +35,66 @@ public class PassiveIronGolemSummon implements Passive.Handler<Event> {
         }
 
         IronGolem golem = player.getWorld().spawn(player.getLocation().add(1, 0, 1), IronGolem.class);
-        golem.setPlayerCreated(true);
+        golem.setPlayerCreated(false);
         golem.setMetadata("kitpvp_owner", new FixedMetadataValue(kitPvP.getPlugin(), player.getUniqueId().toString()));
         golems.put(player.getUniqueId(), golem);
 
         new BukkitRunnable() {
+            private int deathTicks = -1;
+
             @Override
             public void run() {
-                if (!player.isOnline() || player.isDead() || golem.isDead() || !golem.isValid()) {
+                if (golem.isDead() || !golem.isValid()) {
+                    golems.remove(player.getUniqueId());
+                    cancel();
+                    return;
+                }
+
+                if (!player.isOnline()) {
                     removeGolem(player.getUniqueId());
                     cancel();
                     return;
                 }
 
+                /* Despawn 5 seconds after owner dies */
+                KitPvPPlayer omp2 = kitPvP.getPlayer(player);
+                if (omp2.getSelectedKit() == null) {
+                    if (deathTicks < 0) deathTicks = 0;
+                    deathTicks++;
+                    if (deathTicks >= 5) {
+                        removeGolem(player.getUniqueId());
+                        cancel();
+                    }
+                    return;
+                } else {
+                    deathTicks = -1;
+                }
+
+                /* Teleport if too far */
                 double distance = golem.getLocation().distance(player.getLocation());
                 if (distance > 15) {
                     golem.teleport(player.getLocation().add(1, 0, 1));
+                }
+
+                /* Auto-target nearest non-owner player within 10 blocks */
+                if (golem.getTarget() == null || golem.getTarget().isDead()) {
+                    Player nearest = null;
+                    double nearestDist = 10.0;
+                    for (Player nearby : golem.getWorld().getPlayers()) {
+                        if (nearby.equals(player))
+                            continue;
+                        KitPvPPlayer nearbyOmp = kitPvP.getPlayer(nearby);
+                        if (nearbyOmp.getSelectedKit() == null || nearbyOmp.isSpectator())
+                            continue;
+                        double d = nearby.getLocation().distance(golem.getLocation());
+                        if (d < nearestDist) {
+                            nearestDist = d;
+                            nearest = nearby;
+                        }
+                    }
+                    if (nearest != null) {
+                        golem.setTarget(nearest);
+                    }
                 }
             }
         }.runTaskTimer(kitPvP.getPlugin(), 20, 20);
@@ -89,7 +133,7 @@ public class PassiveIronGolemSummon implements Passive.Handler<Event> {
             LivingEntity target = (LivingEntity) event.getHitEntity();
 
             /* Deal damage to the target */
-            target.damage(3.0, shooter);
+            target.damage(6.0, shooter);
 
             IronGolem golem = getGolem(shooter.getUniqueId());
             if (golem == null)

@@ -61,7 +61,7 @@ public class KitNecromancer extends KitPvPKit {
             Kit<KitPvPPlayer> kit = new Kit<>();
 
             kit.set(0, player -> new KitItemBuilder(this, Material.GOLDEN_HOE).addPassive(Passive.ATTACK_DAMAGE, 8));
-            kit.set(1, player -> new KitItemBuilder(this, Material.BOW).addEnchantment(Enchantment.POWER, 1));
+            kit.set(1, player -> new KitItemBuilder(this, Material.BOW).addPassive(Passive.UNDEATH, 1).addEnchantment(Enchantment.POWER, 1));
             kit.set(2, player -> new KitItemBuilder(this, Material.ARROW, 5));
 
             kit.setHelmet(player -> new KitLeatherArmorBuilder(this, LeatherArmorBuilder.Type.HELMET, LEATHER_COLOR).addEnchantment(Enchantment.PROTECTION, 1));
@@ -99,7 +99,7 @@ public class KitNecromancer extends KitPvPKit {
         protected Kit<KitPvPPlayer> registerKit() {
             Kit<KitPvPPlayer> kit = new Kit<>();
 
-            kit.set(0, player -> new KitItemBuilder(this, Material.GOLDEN_HOE).addPassive(Passive.ATTACK_DAMAGE, 8));
+            kit.set(0, player -> new KitItemBuilder(this, Material.GOLDEN_HOE).addPassive(Passive.ATTACK_DAMAGE, 8).addPassive(Passive.SOUL_REAP, 1));
             kit.set(1, player -> new KitItemBuilder(this, Material.BOW).addPassive(Passive.ARROW_REGEN, 27).addPassive(Passive.UNDEATH, 1).addEnchantment(Enchantment.POWER, 1));
             kit.set(2, player -> new KitItemBuilder(this, Material.STICK, 1, "§8§lWither Staff").addActive(Active.WITHER_STAFF, 1));
             kit.set(3, player -> new KitItemBuilder(this, Material.ARROW, 10));

@@ -17,6 +17,8 @@ import org.bukkit.Material;
 import org.bukkit.block.Block;
 import org.bukkit.block.Skull;
 
+import org.bukkit.Bukkit;
+
 import java.util.ArrayList;
 import java.util.LinkedHashMap;
 import java.util.List;
@@ -180,7 +182,7 @@ public class DefaultPodiumLeaderBoard extends LeaderBoard {
                 Block block = BlockDataUtils.setBlock(location.getWorld(), location.getBlockX(), location.getBlockY(), location.getBlockZ(), Material.PLAYER_HEAD);
 
                 Skull skull = (Skull) block.getState();
-                skull.setOwner(player.getRawName());
+                skull.setOwningPlayer(Bukkit.getOfflinePlayer(uuid));
                 skull.setRotation(BlockUtils.getBlockFaceFromYaw(yaw).getOppositeFace());
 
                 skull.update(true, true);

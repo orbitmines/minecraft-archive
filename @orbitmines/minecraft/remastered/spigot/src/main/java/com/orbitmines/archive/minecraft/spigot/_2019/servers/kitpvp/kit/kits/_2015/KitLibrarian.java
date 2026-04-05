@@ -68,6 +68,7 @@ public class KitLibrarian extends KitPvPKit {
             Kit<KitPvPPlayer> kit = new Kit<>();
 
             kit.set(0, player -> new KitItemBuilder(this, Material.PAPER).addPassive(Passive.ATTACK_DAMAGE, 8).addPassive(Passive.ENCHANTING_TABLE, 1));
+            kit.set(1, player -> randomWeapon(player));
 
             kit.setHelmet(player -> new KitItemBuilder(this, Material.CHAINMAIL_HELMET));
             kit.setChestplate(player -> new KitItemBuilder(this, Material.CHAINMAIL_CHESTPLATE));
@@ -106,6 +107,7 @@ public class KitLibrarian extends KitPvPKit {
 
             kit.set(0, player -> new KitItemBuilder(this, Material.PAPER).addPassive(Passive.ATTACK_DAMAGE, 8).addPassive(Passive.ENCHANTING_TABLE, 1));
             kit.set(1, player -> randomWeapon(player));
+            kit.set(2, player -> randomWeapon(player));
 
             kit.setHelmet(player -> new KitItemBuilder(this, Material.CHAINMAIL_HELMET));
             kit.setChestplate(player -> new KitItemBuilder(this, Material.CHAINMAIL_CHESTPLATE));
@@ -145,6 +147,7 @@ public class KitLibrarian extends KitPvPKit {
             kit.set(0, player -> new KitItemBuilder(this, Material.PAPER).addPassive(Passive.ATTACK_DAMAGE, 8).addPassive(Passive.ENCHANTING_TABLE, 1));
             kit.set(1, player -> randomWeapon(player));
             kit.set(2, player -> randomWeapon(player));
+            kit.set(3, player -> randomWeapon(player));
 
             kit.setHelmet(player -> new KitItemBuilder(this, Material.CHAINMAIL_HELMET));
             kit.setChestplate(player -> new KitItemBuilder(this, Material.CHAINMAIL_CHESTPLATE).addEnchantment(Enchantment.PROTECTION, 2));

@@ -18,13 +18,13 @@ import java.util.List;
 
 public class ActiveBlazeInferno implements Active.Handler {
 
-    private final Cooldown cooldown = new Cooldown(60 * 1000);
+    private final Cooldown cooldown = new Cooldown(35 * 1000);
 
     @Override
     public void trigger(PlayerInteractEvent event, KitPvPPlayer omp, int level) {
         Player player = omp.bukkit();
         KitPvP kitPvP = (KitPvP) KitPvP.getInstance();
-        Location startLoc = player.getLocation().clone();
+        Location center = player.getLocation().clone();
 
         /* Make invulnerable */
         player.setInvulnerable(true);
@@ -36,7 +36,9 @@ public class ActiveBlazeInferno implements Active.Handler {
 
         omp.playSound(Sound.ENTITY_BLAZE_AMBIENT);
 
-        /* Fly up animation with expanding fire particle circle */
+        List<Block> fireBlocks = new ArrayList<>();
+
+        /* Fly up with expanding particle circle, then spread fire from center */
         new BukkitRunnable() {
             int tick = 0;
 
@@ -45,8 +47,8 @@ public class ActiveBlazeInferno implements Active.Handler {
                 if (tick >= 30) {
                     cancel();
 
-                    /* After flying up, create fire ring */
-                    createFireRing(player, kitPvP, 5);
+                    /* Spread fire outward from center over time */
+                    spreadFire(player, kitPvP, center, fireBlocks);
 
                     /* End invulnerability after a short delay */
                     new BukkitRunnable() {
@@ -68,13 +70,13 @@ public class ActiveBlazeInferno implements Active.Handler {
 
                 /* Expanding fire particle circle */
                 double radius = 1.0 + (tick * 0.15);
-                Location center = player.getLocation();
+                Location pLoc = player.getLocation();
                 int particles = 16 + tick;
                 for (int i = 0; i < particles; i++) {
                     double angle = (2 * Math.PI * i) / particles;
                     double x = Math.cos(angle) * radius;
                     double z = Math.sin(angle) * radius;
-                    center.getWorld().spawnParticle(Particle.FLAME, center.getX() + x, center.getY(), center.getZ() + z, 0, 0, 0, 0, 0);
+                    pLoc.getWorld().spawnParticle(Particle.FLAME, pLoc.getX() + x, pLoc.getY(), pLoc.getZ() + z, 0, 0, 0, 0, 0);
                 }
 
                 tick++;
@@ -82,61 +84,69 @@ public class ActiveBlazeInferno implements Active.Handler {
         }.runTaskTimer(kitPvP.getPlugin(), 0, 1);
     }
 
-    private void createFireRing(Player player, KitPvP kitPvP, int radius) {
-        Location center = player.getLocation();
-        List<Block> fireBlocks = new ArrayList<>();
+    private void spreadFire(Player player, KitPvP kitPvP, Location center, List<Block> fireBlocks) {
+        int maxRadius = 5;
 
-        /* Create ring of fire at the radius */
-        int diameter = radius * 2 + 1;
-        for (int x = -radius; x <= radius; x++) {
-            for (int z = -radius; z <= radius; z++) {
-                double dist = Math.sqrt(x * x + z * z);
-
-                /* Ring: only at ~radius distance (between radius-1 and radius) */
-                if (dist < radius - 1 || dist > radius + 0.5)
-                    continue;
-
-                Block block = center.getWorld().getBlockAt(
-                    center.getBlockX() + x,
-                    center.getBlockY(),
-                    center.getBlockZ() + z
-                );
-
-                /* Find ground level */
-                for (int y = 2; y >= -2; y--) {
-                    Block check = center.getWorld().getBlockAt(
-                        center.getBlockX() + x,
-                        center.getBlockY() + y,
-                        center.getBlockZ() + z
-                    );
-                    Block above = center.getWorld().getBlockAt(
-                        center.getBlockX() + x,
-                        center.getBlockY() + y + 1,
-                        center.getBlockZ() + z
-                    );
-
-                    if (check.getType().isSolid() && above.getType() == Material.AIR) {
-                        above.setType(Material.FIRE);
-                        fireBlocks.add(above);
-                        break;
-                    }
-                }
-            }
-        }
-
-        player.getWorld().playSound(center, Sound.ENTITY_BLAZE_SHOOT, 2.0f, 0.5f);
-
-        /* Extinguish fire after 100 ticks */
+        /* Spread fire ring by ring every 3 ticks */
         new BukkitRunnable() {
+            int currentRadius = 0;
+
             @Override
             public void run() {
-                for (Block block : fireBlocks) {
-                    if (block.getType() == Material.FIRE) {
-                        block.setType(Material.AIR);
+                if (currentRadius > maxRadius) {
+                    cancel();
+
+                    /* Extinguish all fire after 100 ticks */
+                    new BukkitRunnable() {
+                        @Override
+                        public void run() {
+                            for (Block block : fireBlocks) {
+                                if (block.getType() == Material.FIRE) {
+                                    block.setType(Material.AIR);
+                                }
+                            }
+                        }
+                    }.runTaskLater(kitPvP.getPlugin(), 100);
+                    return;
+                }
+
+                /* Place fire at this radius ring */
+                for (int x = -currentRadius; x <= currentRadius; x++) {
+                    for (int z = -currentRadius; z <= currentRadius; z++) {
+                        double dist = Math.sqrt(x * x + z * z);
+
+                        /* Only this ring (between currentRadius-1 and currentRadius) */
+                        if (currentRadius > 0 && dist < currentRadius - 1)
+                            continue;
+                        if (dist > currentRadius + 0.5)
+                            continue;
+
+                        /* Find ground level */
+                        for (int y = 2; y >= -2; y--) {
+                            Block check = center.getWorld().getBlockAt(
+                                    center.getBlockX() + x,
+                                    center.getBlockY() + y,
+                                    center.getBlockZ() + z
+                            );
+                            Block above = center.getWorld().getBlockAt(
+                                    center.getBlockX() + x,
+                                    center.getBlockY() + y + 1,
+                                    center.getBlockZ() + z
+                            );
+
+                            if (check.getType().isSolid() && above.getType() == Material.AIR) {
+                                above.setType(Material.FIRE);
+                                fireBlocks.add(above);
+                                break;
+                            }
+                        }
                     }
                 }
+
+                center.getWorld().playSound(center, Sound.ENTITY_BLAZE_SHOOT, 1.0f, 0.5f + currentRadius * 0.1f);
+                currentRadius++;
             }
-        }.runTaskLater(kitPvP.getPlugin(), 100);
+        }.runTaskTimer(kitPvP.getPlugin(), 0, 3);
     }
 
     @Override

@@ -27,6 +27,8 @@ public interface ItemStackNms {
     ItemStack setMetaData(ItemStack item, String namespace, String key, float value);
     ItemStack setMetaData(ItemStack item, String namespace, String key, boolean value);
 
+    ItemStack removeMetaData(ItemStack item, String namespace, String key);
+
     String getMetaDataString(ItemStack item, String namespace, String key);
     Integer getMetaDataInt(ItemStack item, String namespace, String key);
     Long getMetaDataLong(ItemStack item, String namespace, String key);

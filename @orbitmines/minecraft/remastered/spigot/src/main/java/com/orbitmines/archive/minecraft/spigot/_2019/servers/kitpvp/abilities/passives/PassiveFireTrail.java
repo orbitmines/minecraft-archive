@@ -40,9 +40,9 @@ public class PassiveFireTrail implements Passive.Handler<PlayerMoveEvent> {
 
     public int getDuration(int level) {
         switch (level) {
-            case 1: return 20;
-            case 2: return 30;
-            case 3: return 40;
+            case 1: return 30;
+            case 2: return 45;
+            case 3: return 60;
             default: throw new ArrayIndexOutOfBoundsException();
         }
     }
