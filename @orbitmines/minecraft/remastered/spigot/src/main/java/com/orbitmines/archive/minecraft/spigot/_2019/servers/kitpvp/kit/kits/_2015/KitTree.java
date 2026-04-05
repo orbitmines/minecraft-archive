@@ -57,6 +57,7 @@ public class KitTree extends KitPvPKit {
 
             kit.set(0, player -> new KitItemBuilder(this, Material.OAK_LEAVES).addPassive(Passive.ATTACK_DAMAGE, 4));
 
+            kit.setHelmet(player -> new KitItemBuilder(this, Material.OAK_LEAVES));
             kit.setChestplate(player -> new KitItemBuilder(this, Material.CHAINMAIL_CHESTPLATE));
             kit.setLeggings(player -> new KitItemBuilder(this, Material.CHAINMAIL_LEGGINGS));
             kit.setBoots(player -> new KitItemBuilder(this, Material.CHAINMAIL_BOOTS));
@@ -94,6 +95,7 @@ public class KitTree extends KitPvPKit {
             kit.set(0, player -> new KitItemBuilder(this, Material.OAK_LEAVES).addPassive(Passive.ATTACK_DAMAGE, 5));
             kit.set(1, player -> new KitItemBuilder(this, Material.OAK_LOG, 1, "§2§lBarrier").addActive(Active.BARRIER, 1));
 
+            kit.setHelmet(player -> new KitItemBuilder(this, Material.OAK_LEAVES));
             kit.setChestplate(player -> new KitItemBuilder(this, Material.CHAINMAIL_CHESTPLATE));
             kit.setLeggings(player -> new KitItemBuilder(this, Material.CHAINMAIL_LEGGINGS));
             kit.setBoots(player -> new KitItemBuilder(this, Material.CHAINMAIL_BOOTS).addEnchantment(Enchantment.PROTECTION, 1));
@@ -131,6 +133,7 @@ public class KitTree extends KitPvPKit {
             kit.set(0, player -> new KitItemBuilder(this, Material.OAK_LEAVES).addPassive(Passive.ATTACK_DAMAGE, 5));
             kit.set(1, player -> new KitItemBuilder(this, Material.OAK_LOG, 1, "§2§lBarrier").addActive(Active.BARRIER, 2));
 
+            kit.setHelmet(player -> new KitItemBuilder(this, Material.OAK_LEAVES));
             kit.setChestplate(player -> new KitItemBuilder(this, Material.CHAINMAIL_CHESTPLATE).addEnchantment(Enchantment.PROTECTION, 1));
             kit.setLeggings(player -> new KitItemBuilder(this, Material.CHAINMAIL_LEGGINGS).addEnchantment(Enchantment.PROTECTION, 1));
             kit.setBoots(player -> new KitItemBuilder(this, Material.CHAINMAIL_BOOTS).addEnchantment(Enchantment.PROTECTION, 1));

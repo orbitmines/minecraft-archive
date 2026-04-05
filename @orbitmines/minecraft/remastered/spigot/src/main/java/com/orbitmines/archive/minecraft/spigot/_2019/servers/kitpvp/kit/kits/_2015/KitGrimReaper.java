@@ -7,6 +7,7 @@ package com.orbitmines.archive.minecraft.spigot._2019.servers.kitpvp.kit.kits._2
 import com.orbitmines.archive.minecraft._2019.libs.Color;
 import com.orbitmines.archive.minecraft.spigot._2019.servers.kitpvp.KitPvP;
 import com.orbitmines.archive.minecraft.spigot._2019.servers.kitpvp.KitPvPPlayer;
+import com.orbitmines.archive.minecraft.spigot._2019.servers.kitpvp.abilities.Active;
 import com.orbitmines.archive.minecraft.spigot._2019.servers.kitpvp.abilities.Passive;
 import com.orbitmines.archive.minecraft.spigot._2019.servers.kitpvp.item_builders.KitItemBuilder;
 import com.orbitmines.archive.minecraft.spigot._2019.servers.kitpvp.item_builders.KitLeatherArmorBuilder;
@@ -35,7 +36,7 @@ public class KitGrimReaper extends KitPvPKit {
                 ID, "Grim Reaper",
 
                 Color.GRAY,
-                new ItemBuilder(Material.STONE_AXE).addFlag(ItemFlag.HIDE_ATTRIBUTES),
+                new ItemBuilder(Material.STONE_HOE).addFlag(ItemFlag.HIDE_ATTRIBUTES),
 
                 KitClass.MELEE
         );
@@ -61,9 +62,10 @@ public class KitGrimReaper extends KitPvPKit {
         protected Kit<KitPvPPlayer> registerKit() {
             Kit<KitPvPPlayer> kit = new Kit<>();
 
-            kit.set(0, player -> new KitItemBuilder(this, Material.STONE_AXE).addPassive(Passive.ATTACK_DAMAGE, 3));
+            kit.set(0, player -> new KitItemBuilder(this, Material.STONE_HOE).addPassive(Passive.ATTACK_DAMAGE, 9).addEnchantment(Enchantment.SHARPNESS, 1));
+            kit.set(1, player -> new KitItemBuilder(this, Material.ENDER_EYE, 1, "§8§lShadow Step").addActive(Active.REAPER_TELEPORT, 1));
 
-            kit.setHelmet(player -> new KitLeatherArmorBuilder(this, LeatherArmorBuilder.Type.HELMET, LEATHER_COLOR).addEnchantment(Enchantment.PROTECTION, 1));
+            kit.setHelmet(player -> new KitLeatherArmorBuilder(this, LeatherArmorBuilder.Type.HELMET, LEATHER_COLOR).addPassive(Passive.HEAL_ON_KILL, 1).addEnchantment(Enchantment.PROTECTION, 1));
             kit.setChestplate(player -> new KitLeatherArmorBuilder(this, LeatherArmorBuilder.Type.CHESTPLATE, LEATHER_COLOR).addEnchantment(Enchantment.PROTECTION, 1));
             kit.setLeggings(player -> new KitLeatherArmorBuilder(this, LeatherArmorBuilder.Type.LEGGINGS, LEATHER_COLOR).addEnchantment(Enchantment.PROTECTION, 1));
             kit.setBoots(player -> new KitLeatherArmorBuilder(this, LeatherArmorBuilder.Type.BOOTS, LEATHER_COLOR).addEnchantment(Enchantment.PROTECTION, 1));
@@ -100,9 +102,10 @@ public class KitGrimReaper extends KitPvPKit {
         protected Kit<KitPvPPlayer> registerKit() {
             Kit<KitPvPPlayer> kit = new Kit<>();
 
-            kit.set(0, player -> new KitItemBuilder(this, Material.STONE_AXE).addPassive(Passive.ATTACK_DAMAGE, 4).addPassive(Passive.BLEED, 1));
+            kit.set(0, player -> new KitItemBuilder(this, Material.STONE_HOE).addPassive(Passive.ATTACK_DAMAGE, 10).addPassive(Passive.BLEED, 1).addEnchantment(Enchantment.SHARPNESS, 2));
+            kit.set(1, player -> new KitItemBuilder(this, Material.ENDER_EYE, 1, "§8§lShadow Step").addActive(Active.REAPER_TELEPORT, 2));
 
-            kit.setHelmet(player -> new KitLeatherArmorBuilder(this, LeatherArmorBuilder.Type.HELMET, LEATHER_COLOR).addEnchantment(Enchantment.PROTECTION, 2));
+            kit.setHelmet(player -> new KitLeatherArmorBuilder(this, LeatherArmorBuilder.Type.HELMET, LEATHER_COLOR).addPassive(Passive.HEAL_ON_KILL, 2).addEnchantment(Enchantment.PROTECTION, 2));
             kit.setChestplate(player -> new KitLeatherArmorBuilder(this, LeatherArmorBuilder.Type.CHESTPLATE, LEATHER_COLOR).addEnchantment(Enchantment.PROTECTION, 2));
             kit.setLeggings(player -> new KitLeatherArmorBuilder(this, LeatherArmorBuilder.Type.LEGGINGS, LEATHER_COLOR).addEnchantment(Enchantment.PROTECTION, 2));
             kit.setBoots(player -> new KitLeatherArmorBuilder(this, LeatherArmorBuilder.Type.BOOTS, LEATHER_COLOR).addEnchantment(Enchantment.PROTECTION, 2));
@@ -139,9 +142,10 @@ public class KitGrimReaper extends KitPvPKit {
         protected Kit<KitPvPPlayer> registerKit() {
             Kit<KitPvPPlayer> kit = new Kit<>();
 
-            kit.set(0, player -> new KitItemBuilder(this, Material.IRON_AXE).addPassive(Passive.ATTACK_DAMAGE, 3).addPassive(Passive.BLEED, 2));
+            kit.set(0, player -> new KitItemBuilder(this, Material.STONE_HOE).addPassive(Passive.ATTACK_DAMAGE, 10).addPassive(Passive.BLEED, 2).addEnchantment(Enchantment.SHARPNESS, 2));
+            kit.set(1, player -> new KitItemBuilder(this, Material.ENDER_EYE, 1, "§8§lShadow Step").addActive(Active.REAPER_TELEPORT, 3));
 
-            kit.setHelmet(player -> new KitLeatherArmorBuilder(this, LeatherArmorBuilder.Type.HELMET, LEATHER_COLOR).addEnchantment(Enchantment.PROTECTION, 2));
+            kit.setHelmet(player -> new KitLeatherArmorBuilder(this, LeatherArmorBuilder.Type.HELMET, LEATHER_COLOR).addPassive(Passive.HEAL_ON_KILL, 3).addEnchantment(Enchantment.PROTECTION, 2));
             kit.setChestplate(player -> new KitLeatherArmorBuilder(this, LeatherArmorBuilder.Type.CHESTPLATE, LEATHER_COLOR).addEnchantment(Enchantment.PROTECTION, 2));
             kit.setLeggings(player -> new KitLeatherArmorBuilder(this, LeatherArmorBuilder.Type.LEGGINGS, LEATHER_COLOR).addEnchantment(Enchantment.PROTECTION, 2));
             kit.setBoots(player -> new KitLeatherArmorBuilder(this, LeatherArmorBuilder.Type.BOOTS, LEATHER_COLOR).addEnchantment(Enchantment.PROTECTION, 2));

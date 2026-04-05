@@ -73,6 +73,7 @@ public class KitPvP extends OMServer<KitPvP, KitPvPPlayer> {
     public static final KitItemBuilder PLAYER_TRACKER = new KitItemBuilder(null, Material.COMPASS, 1, "§c§lPlayer Tracker").addPassive(Passive.PLAYER_TRACKING, 1);
 
     @Getter @Setter private boolean freeKitSaturday = false;
+    @Getter @Setter private int freeKitLevel = 1;
 
     @Getter private LobbyKit lobbyKit;
     @Getter private KitPvPMap map;
@@ -123,6 +124,7 @@ public class KitPvP extends OMServer<KitPvP, KitPvPPlayer> {
         World mapWorld = worldLoader.fromDirectory(mapSourceDir, map.getWorldFileName(), true, map.getWorldGenerator());
         mapWorld.setGameRule(GameRule.ADVANCE_TIME, false);
         mapWorld.setGameRule(GameRule.SPAWN_MOBS, false);
+        mapWorld.setGameRule(GameRule.DROWNING_DAMAGE, true);
         /* GameRule.DO_FIRE_TICK removed in 26.1 */
         mapWorld.setTime(18000);
         mapWorld.setAutoSave(false);
@@ -269,8 +271,7 @@ public class KitPvP extends OMServer<KitPvP, KitPvPPlayer> {
             new KitTNT(this),
             new KitTree(this),
             new KitVampire(this),
-            new KitVillager(this),
-            new KitWizard(this)
+            new KitVillager(this)
         );
     }
 

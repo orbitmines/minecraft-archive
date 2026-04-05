@@ -20,11 +20,17 @@ import org.bukkit.event.Listener;
 import org.bukkit.event.entity.EntityDamageByEntityEvent;
 import org.bukkit.inventory.ItemStack;
 
+import java.util.HashSet;
 import java.util.Map;
+import java.util.Set;
+import java.util.UUID;
 
 public class DamageByEntityEvent implements Listener {
 
     private final KitPvP server;
+
+    /* Prevent recursive passive triggers from damage() calls inside passives */
+    private static final Set<UUID> processingPassives = new HashSet<>();
 
     public DamageByEntityEvent(KitPvP server) {
         this.server = server;
@@ -41,6 +47,10 @@ public class DamageByEntityEvent implements Listener {
                 return;
             }
 
+            /* Skip passive processing if already inside a passive trigger */
+            if (processingPassives.contains(damager.getUniqueId()))
+                return;
+
             ItemStack item = damager.getInventory().getItemInMainHand();
 
             if (item == null)
@@ -52,8 +62,13 @@ public class DamageByEntityEvent implements Listener {
             if (passives == null)
                 return;
 
-            for (Passive passive : passives.keySet()) {
-                passive.getHandler().trigger(new KitEvent<>(playerDamager, event), event, passives.get(passive));
+            processingPassives.add(damager.getUniqueId());
+            try {
+                for (Passive passive : passives.keySet()) {
+                    passive.getHandler().trigger(new KitEvent<>(playerDamager, event), event, passives.get(passive));
+                }
+            } finally {
+                processingPassives.remove(damager.getUniqueId());
             }
         } else if (event.getDamager() instanceof Firework) {
             event.setCancelled(true);

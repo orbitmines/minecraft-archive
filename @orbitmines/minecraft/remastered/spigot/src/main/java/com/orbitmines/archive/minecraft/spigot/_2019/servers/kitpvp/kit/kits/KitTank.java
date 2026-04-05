@@ -57,7 +57,7 @@ public class KitTank extends KitPvPKit {
         protected Kit<KitPvPPlayer> registerKit() {
             Kit<KitPvPPlayer> kit = new Kit<>();
 
-            kit.set(0, player -> new KitItemBuilder(this, Material.WOODEN_SWORD).addPassive(Passive.SUCKER_PUNCH, 1).addEnchantment(Enchantment.KNOCKBACK, 1));
+            kit.set(0, player -> new KitItemBuilder(this, Material.WOODEN_SWORD).addPassive(Passive.PULL, 1));
 
             kit.setHelmet(player -> new KitItemBuilder(this, Material.IRON_HELMET));
             kit.setChestplate(player -> new KitItemBuilder(this, Material.IRON_CHESTPLATE));
@@ -96,7 +96,7 @@ public class KitTank extends KitPvPKit {
         protected Kit<KitPvPPlayer> registerKit() {
             Kit<KitPvPPlayer> kit = new Kit<>();
 
-            kit.set(0, player -> new KitItemBuilder(this, Material.WOODEN_SWORD).addPassive(Passive.SUCKER_PUNCH, 2).addEnchantment(Enchantment.KNOCKBACK, 1));
+            kit.set(0, player -> new KitItemBuilder(this, Material.WOODEN_SWORD).addPassive(Passive.PULL, 2));
 
             kit.setHelmet(player -> new KitItemBuilder(this, Material.IRON_HELMET));
             kit.setChestplate(player -> new KitItemBuilder(this, Material.IRON_CHESTPLATE));
@@ -135,7 +135,7 @@ public class KitTank extends KitPvPKit {
         protected Kit<KitPvPPlayer> registerKit() {
             Kit<KitPvPPlayer> kit = new Kit<>();
 
-            kit.set(0, player -> new KitItemBuilder(this, Material.STONE_SWORD).addPassive(Passive.SUCKER_PUNCH, 3).addEnchantment(Enchantment.KNOCKBACK, 2));
+            kit.set(0, player -> new KitItemBuilder(this, Material.STONE_SWORD).addPassive(Passive.PULL, 3));
 
             kit.setHelmet(player -> new KitItemBuilder(this, Material.IRON_HELMET));
             kit.setChestplate(player -> new KitItemBuilder(this, Material.IRON_CHESTPLATE));

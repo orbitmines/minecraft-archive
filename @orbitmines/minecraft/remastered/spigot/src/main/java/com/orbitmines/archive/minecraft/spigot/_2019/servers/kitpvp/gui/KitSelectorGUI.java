@@ -19,6 +19,7 @@ public class KitSelectorGUI extends GUI<KitPvPPlayer> {
         super(36, "§0§lKit Selector", viewer);
         
         boolean saturday = viewer.server().isSaturday();
+        int freeLevel = viewer.server().getFreeKitLevel();
 
         for (KitPvPKit kit : KitPvPKit.getKits()) {
             KitPvPPlayerKitModel data = viewer.getKit(kit, false);
@@ -66,12 +67,12 @@ public class KitSelectorGUI extends GUI<KitPvPPlayer> {
                     switch (event.getAction()) {
                         /* Right Click */
                         case PICKUP_HALF:
-                            viewer.server().runSync(() -> viewer.joinMap(kit.getLevel(level == 0 ? 1 : level)));
+                            viewer.server().runSync(() -> viewer.joinMap(kit.getLevel(level == 0 ? freeLevel : level)));
                             break;
 
                         /* Left Click */
                         case PICKUP_ALL:
-                            new KitInfoGUI(viewer, kit.getLevel(level == 0 ? 1 : level)).open();
+                            new KitInfoGUI(viewer, kit.getLevel(level == 0 ? freeLevel : level)).open();
                             break;
                     }
                 } else {

@@ -28,26 +28,31 @@ public class ActiveBarrier implements Active.Handler {
         Location center = player.getLocation();
         KitPvP kitPvP = (KitPvP) KitPvP.getInstance();
 
-        /* Spawn barrier blocks */
+        /* Spawn cage: walls (3 high) + ceiling */
         List<Block> placedBlocks = new ArrayList<>();
-        int[][] offsets = {
-            {-2, 0, -2}, {-1, 0, -2}, {0, 0, -2}, {1, 0, -2}, {2, 0, -2},
-            {-2, 0, -1}, {2, 0, -1},
-            {-2, 0, 0}, {2, 0, 0},
-            {-2, 0, 1}, {2, 0, 1},
-            {-2, 0, 2}, {-1, 0, 2}, {0, 0, 2}, {1, 0, 2}, {2, 0, 2},
-            {-1, 3, 0}, {1, 3, 0}, {0, 3, -1}, {0, 3, 1}
-        };
+        int radius = 2;
 
-        for (int[] offset : offsets) {
-            Block block = center.getWorld().getBlockAt(
-                center.getBlockX() + offset[0],
-                center.getBlockY() + offset[1],
-                center.getBlockZ() + offset[2]
-            );
-            if (block.getType() == Material.AIR) {
-                block.setType(Material.OAK_LEAVES);
-                placedBlocks.add(block);
+        for (int y = 0; y <= 3; y++) {
+            for (int x = -radius; x <= radius; x++) {
+                for (int z = -radius; z <= radius; z++) {
+                    boolean isWall = (Math.abs(x) == radius || Math.abs(z) == radius);
+                    boolean isCeiling = (y == 3 && Math.abs(x) <= radius && Math.abs(z) <= radius);
+
+                    if (y < 3 && !isWall)
+                        continue;
+                    if (y == 3 && !isCeiling)
+                        continue;
+
+                    Block block = center.getWorld().getBlockAt(
+                        center.getBlockX() + x,
+                        center.getBlockY() + y,
+                        center.getBlockZ() + z
+                    );
+                    if (block.getType() == Material.AIR) {
+                        block.setType(Material.OAK_LEAVES);
+                        placedBlocks.add(block);
+                    }
+                }
             }
         }
 

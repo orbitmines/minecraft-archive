@@ -73,7 +73,7 @@ public class KitKing extends KitPvPKit {
 
         @Override
         public HealthRegen getHealthRegen() {
-            return HealthRegen.MEDIUM;
+            return HealthRegen.INSANE;
         }
     }
 
@@ -110,7 +110,7 @@ public class KitKing extends KitPvPKit {
 
         @Override
         public HealthRegen getHealthRegen() {
-            return HealthRegen.MEDIUM;
+            return HealthRegen.INSANE;
         }
     }
     private class Level3 extends Level {
@@ -146,7 +146,7 @@ public class KitKing extends KitPvPKit {
 
         @Override
         public HealthRegen getHealthRegen() {
-            return HealthRegen.MEDIUM;
+            return HealthRegen.INSANE;
         }
     }
 }

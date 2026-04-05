@@ -7,6 +7,7 @@ package com.orbitmines.archive.minecraft.spigot._2019.servers.kitpvp.kit.kits;
 import com.orbitmines.archive.minecraft._2019.libs.Color;
 import com.orbitmines.archive.minecraft.spigot._2019.servers.kitpvp.KitPvP;
 import com.orbitmines.archive.minecraft.spigot._2019.servers.kitpvp.KitPvPPlayer;
+import com.orbitmines.archive.minecraft.spigot._2019.servers.kitpvp.abilities.Active;
 import com.orbitmines.archive.minecraft.spigot._2019.servers.kitpvp.abilities.Passive;
 import com.orbitmines.archive.minecraft.spigot._2019.servers.kitpvp.item_builders.KitItemBuilder;
 import com.orbitmines.archive.minecraft.spigot._2019.servers.kitpvp.item_builders.KitPotionItemBuilder;
@@ -57,7 +58,7 @@ public class KitMage extends KitPvPKit {
         protected Kit<KitPvPPlayer> registerKit() {
             Kit<KitPvPPlayer> kit = new Kit<>();
 
-            kit.set(0, player -> new KitItemBuilder(this, Material.STONE_SWORD).addPassive(Passive.POTION_BREWER, 1));
+            kit.set(0, player -> new KitItemBuilder(this, Material.STONE_SWORD).addPassive(Passive.POTION_BREWER, 1).addActive(Active.HEAL, 1));
             kit.set(1, player -> new KitPotionItemBuilder(this, PotionItemBuilder.Type.SPLASH, new PotionBuilder(PotionEffectType.FIRE_RESISTANCE, 30 * 20, 0)));
             kit.set(2, player -> new KitPotionItemBuilder(this, PotionItemBuilder.Type.SPLASH, new PotionBuilder(PotionEffectType.WEAKNESS, 15 * 20, 0)));
             kit.set(3, player -> new KitPotionItemBuilder(this, PotionItemBuilder.Type.SPLASH, new PotionBuilder(PotionEffectType.INSTANT_DAMAGE, 0)));
@@ -99,7 +100,7 @@ public class KitMage extends KitPvPKit {
         protected Kit<KitPvPPlayer> registerKit() {
             Kit<KitPvPPlayer> kit = new Kit<>();
 
-            kit.set(0, player -> new KitItemBuilder(this, Material.STONE_SWORD).addPassive(Passive.POTION_BREWER, 1));
+            kit.set(0, player -> new KitItemBuilder(this, Material.STONE_SWORD).addPassive(Passive.POTION_BREWER, 1).addActive(Active.HEAL, 2));
             kit.set(1, player -> new KitPotionItemBuilder(this, PotionItemBuilder.Type.SPLASH, new PotionBuilder(PotionEffectType.FIRE_RESISTANCE, 35 * 20, 0)));
             kit.set(2, player -> new KitPotionItemBuilder(this, PotionItemBuilder.Type.SPLASH, new PotionBuilder(PotionEffectType.WEAKNESS, 17 * 20, 0)));
             kit.set(3, player -> new KitPotionItemBuilder(this, PotionItemBuilder.Type.SPLASH, new PotionBuilder(PotionEffectType.INSTANT_DAMAGE, 1)));
@@ -142,7 +143,7 @@ public class KitMage extends KitPvPKit {
         protected Kit<KitPvPPlayer> registerKit() {
             Kit<KitPvPPlayer> kit = new Kit<>();
 
-            kit.set(0, player -> new KitItemBuilder(this, Material.STONE_SWORD).addPassive(Passive.POTION_BREWER, 1));
+            kit.set(0, player -> new KitItemBuilder(this, Material.STONE_SWORD).addPassive(Passive.POTION_BREWER, 1).addActive(Active.HEAL, 3));
             kit.set(1, player -> new KitPotionItemBuilder(this, PotionItemBuilder.Type.SPLASH, new PotionBuilder(PotionEffectType.FIRE_RESISTANCE, 40 * 20, 0)));
             kit.set(2, player -> new KitPotionItemBuilder(this, PotionItemBuilder.Type.SPLASH, new PotionBuilder(PotionEffectType.WEAKNESS, 17 * 20, 0), 2));
             kit.set(3, player -> new KitPotionItemBuilder(this, PotionItemBuilder.Type.SPLASH, new PotionBuilder(PotionEffectType.INSTANT_DAMAGE, 1), 2));

@@ -62,7 +62,7 @@ public class KitPyro extends KitPvPKit {
             kit.setHelmet(player -> new KitItemBuilder(this, Material.GOLDEN_HELMET));
             kit.setChestplate(player -> new KitItemBuilder(this, Material.GOLDEN_CHESTPLATE));
             kit.setLeggings(player -> new KitItemBuilder(this, Material.GOLDEN_LEGGINGS));
-            kit.setBoots(player -> new KitItemBuilder(this, Material.GOLDEN_BOOTS));
+            kit.setBoots(player -> new KitItemBuilder(this, Material.GOLDEN_BOOTS).addPassive(Passive.FIRE_TRAIL, 1));
 
             kit.addPotionBuilder(new PotionBuilder(PotionEffectType.FIRE_RESISTANCE, Integer.MAX_VALUE, 0, true, false, true));
 
@@ -101,7 +101,7 @@ public class KitPyro extends KitPvPKit {
             kit.setHelmet(player -> new KitItemBuilder(this, Material.GOLDEN_HELMET).addEnchantment(Enchantment.PROTECTION, 1));
             kit.setChestplate(player -> new KitItemBuilder(this, Material.GOLDEN_CHESTPLATE).addEnchantment(Enchantment.PROTECTION, 1));
             kit.setLeggings(player -> new KitItemBuilder(this, Material.GOLDEN_LEGGINGS).addEnchantment(Enchantment.PROTECTION, 1));
-            kit.setBoots(player -> new KitItemBuilder(this, Material.GOLDEN_BOOTS).addEnchantment(Enchantment.PROTECTION, 1));
+            kit.setBoots(player -> new KitItemBuilder(this, Material.GOLDEN_BOOTS).addPassive(Passive.FIRE_TRAIL, 2).addEnchantment(Enchantment.PROTECTION, 1));
 
             kit.addPotionBuilder(new PotionBuilder(PotionEffectType.FIRE_RESISTANCE, Integer.MAX_VALUE, 0, true, false, true));
 
@@ -142,7 +142,7 @@ public class KitPyro extends KitPvPKit {
             kit.setHelmet(player -> new KitItemBuilder(this, Material.GOLDEN_HELMET).addEnchantment(Enchantment.PROTECTION, 1));
             kit.setChestplate(player -> new KitItemBuilder(this, Material.GOLDEN_CHESTPLATE).addEnchantment(Enchantment.PROTECTION, 1));
             kit.setLeggings(player -> new KitItemBuilder(this, Material.GOLDEN_LEGGINGS).addEnchantment(Enchantment.PROTECTION, 1));
-            kit.setBoots(player -> new KitItemBuilder(this, Material.GOLDEN_BOOTS).addEnchantment(Enchantment.PROTECTION, 1));
+            kit.setBoots(player -> new KitItemBuilder(this, Material.GOLDEN_BOOTS).addPassive(Passive.FIRE_TRAIL, 3).addEnchantment(Enchantment.PROTECTION, 1));
 
             kit.addPotionBuilder(new PotionBuilder(PotionEffectType.FIRE_RESISTANCE, Integer.MAX_VALUE, 0, true, false, true));
 

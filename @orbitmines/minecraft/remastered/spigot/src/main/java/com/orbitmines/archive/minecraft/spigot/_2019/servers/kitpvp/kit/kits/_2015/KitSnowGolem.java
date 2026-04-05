@@ -7,6 +7,7 @@ package com.orbitmines.archive.minecraft.spigot._2019.servers.kitpvp.kit.kits._2
 import com.orbitmines.archive.minecraft._2019.libs.Color;
 import com.orbitmines.archive.minecraft.spigot._2019.servers.kitpvp.KitPvP;
 import com.orbitmines.archive.minecraft.spigot._2019.servers.kitpvp.KitPvPPlayer;
+import com.orbitmines.archive.minecraft.spigot._2019.servers.kitpvp.abilities.Active;
 import com.orbitmines.archive.minecraft.spigot._2019.servers.kitpvp.abilities.Passive;
 import com.orbitmines.archive.minecraft.spigot._2019.servers.kitpvp.item_builders.KitItemBuilder;
 import com.orbitmines.archive.minecraft.spigot._2019.servers.kitpvp.item_builders.KitLeatherArmorBuilder;
@@ -60,7 +61,7 @@ public class KitSnowGolem extends KitPvPKit {
         protected Kit<KitPvPPlayer> registerKit() {
             Kit<KitPvPPlayer> kit = new Kit<>();
 
-            kit.set(0, player -> new KitItemBuilder(this, Material.SNOWBALL).addPassive(Passive.ATTACK_DAMAGE, 6).addEnchantment(Enchantment.KNOCKBACK, 2));
+            kit.set(0, player -> new KitItemBuilder(this, Material.SNOWBALL).addPassive(Passive.ATTACK_DAMAGE, 6).addPassive(Passive.IRON_GOLEM_SUMMON, 1).addActive(Active.SNOWBALL_THROW, 1));
 
             kit.setHelmet(player -> new KitItemBuilder(this, Material.CARVED_PUMPKIN));
             kit.setChestplate(player -> new KitLeatherArmorBuilder(this, LeatherArmorBuilder.Type.CHESTPLATE, LEATHER_COLOR).addEnchantment(Enchantment.PROTECTION, 2));
@@ -99,7 +100,8 @@ public class KitSnowGolem extends KitPvPKit {
         protected Kit<KitPvPPlayer> registerKit() {
             Kit<KitPvPPlayer> kit = new Kit<>();
 
-            kit.set(0, player -> new KitItemBuilder(this, Material.SNOWBALL).addPassive(Passive.ATTACK_DAMAGE, 7).addEnchantment(Enchantment.KNOCKBACK, 2));
+            kit.set(0, player -> new KitItemBuilder(this, Material.SNOWBALL).addPassive(Passive.ATTACK_DAMAGE, 7).addPassive(Passive.IRON_GOLEM_SUMMON, 1).addActive(Active.SNOWBALL_THROW, 2));
+            kit.set(1, player -> new KitItemBuilder(this, Material.IRON_INGOT, 1, "§f§lIron Surge").addActive(Active.GOLEM_SPEED, 1));
 
             kit.setHelmet(player -> new KitItemBuilder(this, Material.CARVED_PUMPKIN));
             kit.setChestplate(player -> new KitLeatherArmorBuilder(this, LeatherArmorBuilder.Type.CHESTPLATE, LEATHER_COLOR).addEnchantment(Enchantment.PROTECTION, 2));
@@ -138,7 +140,8 @@ public class KitSnowGolem extends KitPvPKit {
         protected Kit<KitPvPPlayer> registerKit() {
             Kit<KitPvPPlayer> kit = new Kit<>();
 
-            kit.set(0, player -> new KitItemBuilder(this, Material.SNOWBALL).addPassive(Passive.ATTACK_DAMAGE, 8).addEnchantment(Enchantment.KNOCKBACK, 3));
+            kit.set(0, player -> new KitItemBuilder(this, Material.SNOWBALL).addPassive(Passive.ATTACK_DAMAGE, 8).addPassive(Passive.IRON_GOLEM_SUMMON, 1).addActive(Active.SNOWBALL_THROW, 3));
+            kit.set(1, player -> new KitItemBuilder(this, Material.IRON_INGOT, 1, "§f§lIron Surge").addActive(Active.GOLEM_SPEED, 1));
 
             kit.setHelmet(player -> new KitItemBuilder(this, Material.CARVED_PUMPKIN));
             kit.setChestplate(player -> new KitLeatherArmorBuilder(this, LeatherArmorBuilder.Type.CHESTPLATE, LEATHER_COLOR).addEnchantment(Enchantment.PROTECTION, 2));

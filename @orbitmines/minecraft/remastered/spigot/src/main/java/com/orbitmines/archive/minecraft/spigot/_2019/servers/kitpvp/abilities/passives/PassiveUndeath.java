@@ -7,6 +7,7 @@ import org.bukkit.Location;
 import org.bukkit.Sound;
 import org.bukkit.entity.*;
 import org.bukkit.event.entity.ProjectileHitEvent;
+import org.bukkit.metadata.FixedMetadataValue;
 import org.bukkit.scheduler.BukkitRunnable;
 
 import java.util.ArrayList;
@@ -19,6 +20,7 @@ public class PassiveUndeath implements Passive.Handler<ProjectileHitEvent> {
         Location loc = event.getEntity().getLocation();
         KitPvP kitPvP = (KitPvP) KitPvP.getInstance();
         LivingEntity target = event.getHitEntity() instanceof LivingEntity ? (LivingEntity) event.getHitEntity() : null;
+        String ownerUuid = passiveEvent.getPlayer() != null ? passiveEvent.getPlayer().bukkit().getUniqueId().toString() : null;
 
         List<Entity> spawned = new ArrayList<>();
 
@@ -29,6 +31,8 @@ public class PassiveUndeath implements Passive.Handler<ProjectileHitEvent> {
             zombie.setCustomNameVisible(true);
             zombie.setAdult();
             if (target != null) zombie.setTarget(target);
+            if (ownerUuid != null)
+                zombie.setMetadata("kitpvp_owner", new FixedMetadataValue(kitPvP.getPlugin(), ownerUuid));
             spawned.add(zombie);
         }
 
@@ -39,6 +43,8 @@ public class PassiveUndeath implements Passive.Handler<ProjectileHitEvent> {
             skeleton.setCustomName("§4Undeath Archer");
             skeleton.setCustomNameVisible(true);
             if (target != null) skeleton.setTarget(target);
+            if (ownerUuid != null)
+                skeleton.setMetadata("kitpvp_owner", new FixedMetadataValue(kitPvP.getPlugin(), ownerUuid));
             spawned.add(skeleton);
         }
 

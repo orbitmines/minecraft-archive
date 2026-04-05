@@ -164,13 +164,12 @@ public enum Passive {
             return getColor().getCc() + "§oTrack nearby players.";
         }
     },
-//    SPIDER_CLIMB("Spider Climb", Color.PURPLE, Interaction.MOVEMENT, false, true, new PassiveSpiderClimb()){
-//        @Override
-//        public String[] getDescription(int level) {
-//            //TODO: PROVIDE DESCRIPTION!
-//            return super.getDescription(level);
-//        }
-//    }
+    SPIDER_CLIMB("Spider Climb", Color.GRAY, Interaction.MOVEMENT, false, true, new PassiveSpiderClimb()){
+        @Override
+        public String getDisplayName(int level) {
+            return getColor().getCc() + "§oClimb walls like a spider.";
+        }
+    },
 
     /* 2015 Kits */
     KNOCKUP("Knockup", Color.RED, Interaction.HIT_OTHER, new PassiveKnockup()) {
@@ -263,6 +262,48 @@ public enum Passive {
                     "  §7§oHit an opponent to steal",
                     "  §7§otheir held item. Consumes §6§o1 bread§7§o."
             };
+        }
+    },
+    SELF_KNOCKBACK("Recoil", Color.PURPLE, Interaction.HIT_OTHER, new PassiveSelfKnockback()) {
+        @Override
+        public String[] getDescription(int level) {
+            return new String[] {
+                    "  §7§oKnock yourself §5§obackwards",
+                    "  §7§oon hit, allowing small jumps."
+            };
+        }
+    },
+    PULL("Pull", Color.YELLOW, Interaction.HIT_OTHER, new PassivePull()) {
+        @Override
+        public String[] getDescription(int level) {
+            PassivePull passive = (PassivePull) getHandler();
+
+            return new String[] {
+                    "  §7§oPull opponents §e§otowards you",
+                    "  §7§oon each hit."
+            };
+        }
+    },
+    FIRE_TRAIL("Scorched Earth", Color.ORANGE, Interaction.MOVEMENT, false, true, new PassiveFireTrail()) {
+        @Override
+        public String getDisplayName(int level) {
+            return getColor().getCc() + "§oLeave a trail of fire.";
+        }
+    },
+    HEAL_ON_KILL("Soul Harvest", Color.GRAY, Interaction.KILL_PLAYER, new PassiveHealOnKill()) {
+        @Override
+        public String[] getDescription(int level) {
+            PassiveHealOnKill passive = (PassiveHealOnKill) getHandler();
+
+            return new String[] {
+                    "  §7§oHeal §c§o" + String.format("%.0f", passive.getHealAmount(level) / 2) + " hearts §7§oon kill."
+            };
+        }
+    },
+    IRON_GOLEM_SUMMON("Iron Guardian", Color.WHITE, Interaction.ON_SELECT, false, true, new PassiveIronGolemSummon()) {
+        @Override
+        public String getDisplayName(int level) {
+            return getColor().getCc() + "§oSummon an Iron Golem.";
         }
     },
     SOUL_REAP("Soul Reap", Color.PURPLE, Interaction.KILL_PLAYER, new PassiveSoulReap()) {

@@ -133,6 +133,46 @@ public enum Active {
             };
         }
     },
+    BLAZE_INFERNO("Blaze Inferno", Color.ORANGE, new ActiveBlazeInferno()) {
+        @Override
+        public String[] getDescription(int level) {
+            return new String[]{
+                    "  §7§oBecome §6§oinvulnerable §7§oand fly up,",
+                    "  §7§ospreading a §c§oring of fire §7§oon a",
+                    "  §b§o" + ((int) (getHandler().getCooldown(level).getCooldown() / 1000)) + " second cooldown§7."
+            };
+        }
+    },
+    REAPER_TELEPORT("Shadow Step", Color.GRAY, new ActiveReaperTeleport()) {
+        @Override
+        public String[] getDescription(int level) {
+            return new String[]{
+                    "  §7§oTeleport to a location",
+                    "  §7§oup to §8§o15 blocks §7§oaway on a",
+                    "  §b§o" + ((int) (getHandler().getCooldown(level).getCooldown() / 1000)) + " second cooldown§7."
+            };
+        }
+    },
+    SNOWBALL_THROW("Frost Shot", Color.WHITE, new ActiveSnowballThrow()) {
+        @Override
+        public String[] getDescription(int level) {
+            return new String[]{
+                    "  §7§oThrow a §f§osnowball §7§othat",
+                    "  §7§odirects your §f§oIron Golem",
+                    "  §7§oto attack the target."
+            };
+        }
+    },
+    GOLEM_SPEED("Iron Surge", Color.WHITE, new ActiveGolemSpeed()) {
+        @Override
+        public String[] getDescription(int level) {
+            return new String[]{
+                    "  §7§oGive your §f§oIron Golem",
+                    "  §e§oSpeed II §7§ofor §9§o4 seconds§7§o on a",
+                    "  §b§o" + ((int) (getHandler().getCooldown(level).getCooldown() / 1000)) + " second cooldown§7."
+            };
+        }
+    },
     WITHER_STAFF("Wither Staff", Color.GRAY, new ActiveWitherStaff()) {
         @Override
         public String[] getDescription(int level) {

@@ -10,6 +10,7 @@ import java.util.Collection;
 public class ActionBarNms_26_1 implements ActionBarNms {
 
     public void send(Collection<? extends Player> players, String actionBar) {
+        if (actionBar == null) actionBar = "";
         Component component = Component.literal(actionBar);
         ClientboundSystemChatPacket packet = new ClientboundSystemChatPacket(component, true);
 

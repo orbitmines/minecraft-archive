@@ -3,14 +3,16 @@ package com.orbitmines.archive.minecraft.spigot._2019.servers.kitpvp.abilities.a
 import com.orbitmines.archive.minecraft.spigot._2019.servers.kitpvp.KitPvPPlayer;
 import com.orbitmines.archive.minecraft.spigot._2019.servers.kitpvp.abilities.Active;
 import com.orbitmines.archive.minecraft._2019.utils.cooldown.Cooldown;
+import com.orbitmines.archive.minecraft.spigot._2019.utils.spigot.builders.chat.ActionBar;
 import org.bukkit.Location;
 import org.bukkit.Material;
 import org.bukkit.Sound;
-import org.bukkit.entity.Player;
-import org.bukkit.entity.WitherSkull;
+import org.bukkit.entity.*;
 import org.bukkit.event.player.PlayerInteractEvent;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
+import org.bukkit.potion.PotionEffect;
+import org.bukkit.potion.PotionEffectType;
 import org.bukkit.util.Vector;
 
 import java.util.concurrent.ThreadLocalRandom;
@@ -19,14 +21,19 @@ public class ActiveWitherStaff implements Active.Handler {
 
     private final Cooldown cooldown = new Cooldown(5 * 1000);
 
+    /* Separate "no soul" cooldown so it doesn't consume the real cooldown */
+    private final Cooldown noSoulCooldown = new Cooldown(0);
+
     @Override
     public void trigger(PlayerInteractEvent event, KitPvPPlayer omp, int level) {
         Player player = omp.bukkit();
 
         /* Check for soul */
         int soulSlot = findSoulSlot(player);
-        if (soulSlot == -1)
+        if (soulSlot == -1) {
+            new ActionBar(player, () -> "§c§lNo Soul available!", 40).send();
             return;
+        }
 
         /* Consume soul */
         ItemStack soul = player.getInventory().getItem(soulSlot);
@@ -52,6 +59,21 @@ public class ActiveWitherStaff implements Active.Handler {
             launchSkull(player, eyeLoc, spray);
         }
 
+        /* Apply wither effect to nearby enemies hit by skulls */
+        for (Entity entity : player.getNearbyEntities(10, 10, 10)) {
+            if (entity instanceof LivingEntity && entity != player) {
+                LivingEntity target = (LivingEntity) entity;
+                Location targetLoc = target.getLocation();
+                Vector toTarget = targetLoc.toVector().subtract(eyeLoc.toVector()).normalize();
+                double dot = direction.normalize().dot(toTarget);
+
+                /* Only affect entities roughly in the direction the skulls are going */
+                if (dot > 0.8 && targetLoc.distance(eyeLoc) <= 8) {
+                    target.addPotionEffect(new PotionEffect(PotionEffectType.WITHER, getWitherDuration(level), getWitherAmplifier(level)));
+                }
+            }
+        }
+
         omp.playSound(Sound.ENTITY_WITHER_SHOOT);
     }
 
@@ -74,6 +96,19 @@ public class ActiveWitherStaff implements Active.Handler {
             }
         }
         return -1;
+    }
+
+    private int getWitherDuration(int level) {
+        switch (level) {
+            case 1: return 60;
+            case 2: return 80;
+            case 3: return 100;
+            default: throw new ArrayIndexOutOfBoundsException();
+        }
+    }
+
+    private int getWitherAmplifier(int level) {
+        return level >= 2 ? 1 : 0;
     }
 
     @Override

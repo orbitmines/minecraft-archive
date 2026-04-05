@@ -13,9 +13,14 @@ import com.orbitmines.archive.minecraft.spigot._2019.servers.kitpvp.kit.HealthRe
 import com.orbitmines.archive.minecraft.spigot._2019.servers.kitpvp.kit.KitClass;
 import com.orbitmines.archive.minecraft.spigot._2019.servers.kitpvp.kit.KitPvPKit;
 import com.orbitmines.archive.minecraft.spigot._2019.utils.spigot.builders.item.ItemBuilder;
+import com.orbitmines.archive.minecraft.spigot._2019.utils.spigot.builders.item.ItemBuilderInstance;
 import com.orbitmines.archive.minecraft.spigot._2019.utils.spigot.kits.Kit;
 import org.bukkit.Material;
 import org.bukkit.enchantments.Enchantment;
+
+import java.util.List;
+import java.util.concurrent.ThreadLocalRandom;
+import java.util.stream.Collectors;
 
 public class KitLibrarian extends KitPvPKit {
 
@@ -43,6 +48,14 @@ public class KitLibrarian extends KitPvPKit {
         };
     }
 
+    private static ItemBuilderInstance randomWeapon(KitPvPPlayer player) {
+        List<KitPvPKit> otherKits = KitPvPKit.getKits().stream()
+                .filter(k -> k.getId() != ID)
+                .collect(Collectors.toList());
+        KitPvPKit randomKit = otherKits.get(ThreadLocalRandom.current().nextInt(otherKits.size()));
+        return randomKit.getLevel(1).getKit().get(0).toBuilder(player);
+    }
+
     protected class Level1 extends Level {
 
         @Override
@@ -54,7 +67,7 @@ public class KitLibrarian extends KitPvPKit {
         protected Kit<KitPvPPlayer> registerKit() {
             Kit<KitPvPPlayer> kit = new Kit<>();
 
-            kit.set(0, player -> new KitItemBuilder(this, Material.PAPER).addPassive(Passive.ATTACK_DAMAGE, 8));
+            kit.set(0, player -> new KitItemBuilder(this, Material.PAPER).addPassive(Passive.ATTACK_DAMAGE, 8).addPassive(Passive.ENCHANTING_TABLE, 1));
 
             kit.setHelmet(player -> new KitItemBuilder(this, Material.CHAINMAIL_HELMET));
             kit.setChestplate(player -> new KitItemBuilder(this, Material.CHAINMAIL_CHESTPLATE));
@@ -91,8 +104,8 @@ public class KitLibrarian extends KitPvPKit {
         protected Kit<KitPvPPlayer> registerKit() {
             Kit<KitPvPPlayer> kit = new Kit<>();
 
-            kit.set(0, player -> new KitItemBuilder(this, Material.PAPER).addPassive(Passive.ATTACK_DAMAGE, 8));
-            kit.set(1, player -> new KitItemBuilder(this, Material.BOOK).addPassive(Passive.ATTACK_DAMAGE, 1).addEnchantment(Enchantment.KNOCKBACK, 5));
+            kit.set(0, player -> new KitItemBuilder(this, Material.PAPER).addPassive(Passive.ATTACK_DAMAGE, 8).addPassive(Passive.ENCHANTING_TABLE, 1));
+            kit.set(1, player -> randomWeapon(player));
 
             kit.setHelmet(player -> new KitItemBuilder(this, Material.CHAINMAIL_HELMET));
             kit.setChestplate(player -> new KitItemBuilder(this, Material.CHAINMAIL_CHESTPLATE));
@@ -129,8 +142,9 @@ public class KitLibrarian extends KitPvPKit {
         protected Kit<KitPvPPlayer> registerKit() {
             Kit<KitPvPPlayer> kit = new Kit<>();
 
-            kit.set(0, player -> new KitItemBuilder(this, Material.PAPER).addPassive(Passive.ATTACK_DAMAGE, 8));
-            kit.set(1, player -> new KitItemBuilder(this, Material.BOOK).addPassive(Passive.ATTACK_DAMAGE, 1).addEnchantment(Enchantment.KNOCKBACK, 6));
+            kit.set(0, player -> new KitItemBuilder(this, Material.PAPER).addPassive(Passive.ATTACK_DAMAGE, 8).addPassive(Passive.ENCHANTING_TABLE, 1));
+            kit.set(1, player -> randomWeapon(player));
+            kit.set(2, player -> randomWeapon(player));
 
             kit.setHelmet(player -> new KitItemBuilder(this, Material.CHAINMAIL_HELMET));
             kit.setChestplate(player -> new KitItemBuilder(this, Material.CHAINMAIL_CHESTPLATE).addEnchantment(Enchantment.PROTECTION, 2));

@@ -76,16 +76,7 @@ public class PassiveEnchantingTable implements Passive.Handler<PlayerDeathEvent>
     }
 
     public double getChance(int level) {
-        switch (level) {
-            case 1:
-                return 0.5D;
-            case 2:
-                return 0.6D;
-            case 3:
-                return 0.7D;
-            default:
-                throw new ArrayIndexOutOfBoundsException();
-        }
+        return 1.0D;
     }
 
     private enum Slot {
