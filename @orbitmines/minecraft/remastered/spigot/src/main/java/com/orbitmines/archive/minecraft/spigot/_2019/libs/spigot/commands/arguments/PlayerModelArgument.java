@@ -96,19 +96,21 @@ public class PlayerModelArgument<S extends OMServer<S, P>, P extends OMPlayer<S,
     public CompletableFuture<Suggestions> getSuggestions(P p, CommandContext context, SuggestionsBuilder builder) throws CommandSyntaxException {
         String remaining = builder.getRemaining().toLowerCase();
 
-        for (PlayerModel player : PlayerModel.getAll(PlayerModel.class,
-            PlayerModel.column.NAME.is(Where.LIKE, remaining + "%"),
-            PlayerModel.limitedTo(LIMIT))
-        ) {
-            if (!allowSelfSuggestion && p.getRawName().equals(player.getRawName()))
-                continue;
+        return CompletableFuture.supplyAsync(() -> {
+            for (PlayerModel player : PlayerModel.getAll(PlayerModel.class,
+                PlayerModel.column.NAME.is(Where.LIKE, remaining + "%"),
+                PlayerModel.limitedTo(LIMIT))
+            ) {
+                if (!allowSelfSuggestion && p.getRawName().equals(player.getRawName()))
+                    continue;
 
-            Message tooltip = getTooltip(player);
+                Message tooltip = getTooltip(player);
 
-            builder.suggest(player.getRawName(), tooltip);
-        }
+                builder.suggest(player.getRawName(), tooltip);
+            }
 
-        return builder.buildFuture();
+            return builder.build();
+        });
     }
 
     @Override

@@ -93,7 +93,7 @@ public abstract class OMDiscordBot extends DiscordBot {
                     File skin = normal ? skinLibrary.getSkin(SkinLibrary.Type.HEAD_FLAT, uuid) : skinLibrary.getSkinAsGif(SkinLibrary.Type.HEAD_FLAT, uuid);
 
                     icon = Icon.from(skin);
-                } catch (IOException | NullPointerException e) {
+                } catch (IOException | NullPointerException | IllegalArgumentException e) {
                     e.printStackTrace();
 
                     /* Return default player emote if icon creation failed */

@@ -49,7 +49,7 @@ public class LastVote extends OMMySQLModel<LastVote, LastVote.column> {
         if (lastVoteAt == null)
             return 0L;
 
-        return TimeUnit.DAYS.toMillis(1) - (System.currentTimeMillis() - lastVoteAt.getTime());
+        return Math.max(0L, TimeUnit.DAYS.toMillis(1) - (System.currentTimeMillis() - lastVoteAt.getTime()));
     }
 
     @Override

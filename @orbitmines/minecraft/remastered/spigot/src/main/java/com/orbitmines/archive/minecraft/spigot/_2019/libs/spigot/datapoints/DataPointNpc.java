@@ -235,7 +235,13 @@ public class DataPointNpc<S extends OMServer<S, P>, P extends OMPlayer<S, P>> ex
 
                         LastVote next = null;
                         for (LastVote lastVote : new ArrayList<>(player.getLastVotes(false))) {
-                            if (next == null || next.getLastVoteAt().before(lastVote.getLastVoteAt()))
+                            if (!lastVote.getServerList().isActive())
+                                continue;
+
+                            if (lastVote.canVote())
+                                continue;
+
+                            if (next == null || next.getLastVoteAt().after(lastVote.getLastVoteAt()))
                                 next = lastVote;
                         }
 

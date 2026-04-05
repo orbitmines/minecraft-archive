@@ -97,7 +97,7 @@ public class SurvivalPrismSolarShopGUI extends PrismSolarShopGUI<Survival, Survi
                 player.update(SurvivalPlayerModel.column.BACK_CHARGES);
             }, "§6§l10 Back Charges"));
 
-        set(3, 7, new PrismSolarShopGUI.ShopItem<>(viewer, this, Currency.SOLARS, 1500,
+        set(3, 7, new PrismSolarShopGUI.ShopItem<>(viewer, this, Currency.SOLARS, 600,
             () -> {
                 return new ItemBuilder(Material.DIAMOND_PICKAXE, 1, "§5§lSpawner Miner Package").addFlag(ItemFlag.HIDE_ATTRIBUTES);
             }, new ShopHandler<Survival, SurvivalPlayer>() {
