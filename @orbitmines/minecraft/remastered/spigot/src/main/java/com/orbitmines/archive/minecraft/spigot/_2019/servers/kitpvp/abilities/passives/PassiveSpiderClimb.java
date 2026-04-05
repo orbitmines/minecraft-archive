@@ -17,6 +17,11 @@ public class PassiveSpiderClimb implements Passive.Handler<PlayerMoveEvent> {
         if (player.isOnGround())
             return;
 
+        /* Only engage climbing when the player is falling or stationary in air.
+           This lets normal jumps near walls complete their upward arc unaffected. */
+        if (player.getVelocity().getY() > 0.1)
+            return;
+
         if (!isNextToWall(player))
             return;
 

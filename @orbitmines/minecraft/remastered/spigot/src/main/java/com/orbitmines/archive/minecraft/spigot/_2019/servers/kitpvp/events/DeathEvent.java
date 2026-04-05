@@ -12,6 +12,7 @@ import com.orbitmines.archive.minecraft.spigot._2019.utils.spigot.nms.entity.Ent
 import org.bukkit.entity.Arrow;
 import org.bukkit.entity.IronGolem;
 import org.bukkit.entity.Player;
+import org.bukkit.entity.TNTPrimed;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.EventPriority;
 import org.bukkit.event.Listener;
@@ -63,6 +64,12 @@ public class DeathEvent implements Listener {
                 if (arrow.getShooter() instanceof Player) {
                     playerKiller = server.getPlayer((Player) arrow.getShooter());
                     shotByArrow = true;
+                }
+            } else if (edbee.getDamager() instanceof TNTPrimed) {
+                /* TNT kill credit goes to the source player */
+                TNTPrimed tnt = (TNTPrimed) edbee.getDamager();
+                if (tnt.getSource() instanceof Player) {
+                    playerKiller = server.getPlayer((Player) tnt.getSource());
                 }
             } else if (edbee.getDamager() instanceof IronGolem) {
                 /* Iron Guardian kill credit goes to the owner */

@@ -4,6 +4,7 @@ import com.orbitmines.archive.minecraft.spigot._2019.servers.kitpvp.abilities.Pa
 import com.orbitmines.archive.minecraft.spigot._2019.servers.kitpvp.events.KitEvent;
 import org.bukkit.Location;
 import org.bukkit.entity.Player;
+import org.bukkit.entity.TNTPrimed;
 import org.bukkit.event.entity.ProjectileHitEvent;
 
 public class PassiveExplode implements Passive.Handler<ProjectileHitEvent> {
@@ -13,7 +14,11 @@ public class PassiveExplode implements Passive.Handler<ProjectileHitEvent> {
         Location loc = event.getEntity().getLocation();
         Player source = passiveEvent.getPlayer() != null ? passiveEvent.getPlayer().bukkit() : null;
 
-        /* Explosion effect only - no block damage */
-        loc.getWorld().createExplosion(loc, 3.0f, false, false, source);
+        /* Spawn TNT at arrow impact location */
+        TNTPrimed tnt = loc.getWorld().spawn(loc, TNTPrimed.class);
+        tnt.setFuseTicks(0);
+        tnt.setIsIncendiary(false);
+        if (source != null)
+            tnt.setSource(source);
     }
 }

@@ -70,9 +70,9 @@ public class PassiveKnockup implements Passive.Handler<EntityDamageByEntityEvent
 
     public double getVelocityY(int level) {
         switch (level) {
-            case 1: return 0.3D;
-            case 2: return 0.33D;
-            case 3: return 0.37D;
+            case 1: return 0.55D;
+            case 2: return 0.55D;
+            case 3: return 0.55D;
             default: throw new ArrayIndexOutOfBoundsException();
         }
     }

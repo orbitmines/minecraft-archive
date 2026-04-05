@@ -50,15 +50,9 @@ public class PassiveIronGolemSummon implements Passive.Handler<Event> {
                     return;
                 }
 
-                if (!player.isOnline()) {
-                    removeGolem(player.getUniqueId());
-                    cancel();
-                    return;
-                }
-
-                /* Despawn 5 seconds after owner dies */
-                KitPvPPlayer omp2 = kitPvP.getPlayer(player);
-                if (omp2.getSelectedKit() == null) {
+                /* Despawn 5 seconds after owner dies or disconnects */
+                KitPvPPlayer omp2 = player.isOnline() ? kitPvP.getPlayer(player) : null;
+                if (!player.isOnline() || omp2 == null || omp2.getSelectedKit() == null) {
                     if (deathTicks < 0) deathTicks = 0;
                     deathTicks++;
                     if (deathTicks >= 5) {
