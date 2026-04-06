@@ -8,11 +8,15 @@ import org.bukkit.entity.*;
 import org.bukkit.event.Event;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
+import org.bukkit.event.entity.EntityDamageByEntityEvent;
+import org.bukkit.event.entity.EntityTargetEvent;
 import org.bukkit.event.entity.ProjectileHitEvent;
 import org.bukkit.metadata.FixedMetadataValue;
+import org.bukkit.metadata.MetadataValue;
 import org.bukkit.scheduler.BukkitRunnable;
 
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 import java.util.UUID;
 
@@ -126,6 +130,10 @@ public class PassiveIronGolemSummon implements Passive.Handler<Event> {
             Player shooter = (Player) event.getEntity().getShooter();
             LivingEntity target = (LivingEntity) event.getHitEntity();
 
+            /* Don't damage own golem */
+            if (target instanceof IronGolem && target.equals(getGolem(shooter.getUniqueId())))
+                return;
+
             /* Deal damage to the target */
             target.damage(6.0, shooter);
 
@@ -134,6 +142,44 @@ public class PassiveIronGolemSummon implements Passive.Handler<Event> {
                 return;
 
             golem.setTarget(target);
+        }
+
+        /* Prevent golem from ever targeting its owner */
+        @EventHandler
+        public void onGolemTarget(EntityTargetEvent event) {
+            if (!(event.getEntity() instanceof IronGolem))
+                return;
+
+            if (!(event.getTarget() instanceof Player))
+                return;
+
+            IronGolem golem = (IronGolem) event.getEntity();
+            Player target = (Player) event.getTarget();
+
+            List<MetadataValue> meta = golem.getMetadata("kitpvp_owner");
+            if (!meta.isEmpty() && meta.get(0).asString().equals(target.getUniqueId().toString()))
+                event.setCancelled(true);
+        }
+
+        /* Cancel damage from owner to their own golem (punching) */
+        @EventHandler
+        public void onOwnerDamageGolem(EntityDamageByEntityEvent event) {
+            if (!(event.getEntity() instanceof IronGolem))
+                return;
+
+            Player damager = null;
+            if (event.getDamager() instanceof Player)
+                damager = (Player) event.getDamager();
+            else if (event.getDamager() instanceof Snowball && ((Snowball) event.getDamager()).getShooter() instanceof Player)
+                damager = (Player) ((Snowball) event.getDamager()).getShooter();
+
+            if (damager == null)
+                return;
+
+            IronGolem golem = (IronGolem) event.getEntity();
+            List<MetadataValue> meta = golem.getMetadata("kitpvp_owner");
+            if (!meta.isEmpty() && meta.get(0).asString().equals(damager.getUniqueId().toString()))
+                event.setCancelled(true);
         }
     }
 }

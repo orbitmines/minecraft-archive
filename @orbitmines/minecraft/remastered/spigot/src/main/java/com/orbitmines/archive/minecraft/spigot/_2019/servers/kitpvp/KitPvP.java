@@ -276,7 +276,8 @@ public class KitPvP extends OMServer<KitPvP, KitPvPPlayer> {
             new KitTree(this),
             new KitVampire(this),
             new KitVillager(this),
-            new KitWizard(this)
+            new KitWizard(this),
+            new KitJavelin(this)
         );
     }
 

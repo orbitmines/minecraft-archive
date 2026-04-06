@@ -68,8 +68,10 @@ public class InteractEvent implements Listener {
                     omp.getInventory().setItem(slot, item);
 
                     /* Trigger active */
-                    String name = active.getColor().getCc() + "§l" + active.getName();
-                    omp.sendRawMessage("Active", Color.BLUE, "You have used " + name + "§7.");
+                    if (active != Active.SPEAR_TOSS) {
+                        String name = active.getColor().getCc() + "§l" + active.getName();
+                        omp.sendRawMessage("Active", Color.BLUE, "You have used " + name + "§7.");
+                    }
                     handler.trigger(event, omp, level);
                 }
             }

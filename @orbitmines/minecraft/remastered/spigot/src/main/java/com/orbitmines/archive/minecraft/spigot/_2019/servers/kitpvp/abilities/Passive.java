@@ -329,6 +329,15 @@ public enum Passive {
             };
         }
     },
+    SOUL_COLLECTOR("Soul Collector", Color.RED, Interaction.KILL_PLAYER, new PassiveSoulCollector()) {
+        @Override
+        public String[] getDescription(int level) {
+            return new String[] {
+                    "  §7§oCollect §c§oskulls §7§oon kill.",
+                    "  §7§oGain §c§o+2 hearts §7§oper skull (max +20)."
+            };
+        }
+    },
     HOOKED("Hooked", Color.TEAL, null, false, true, new PassiveHooked()) {
         @Override
         public String getDisplayName(int level) {

@@ -7,6 +7,8 @@ package com.orbitmines.archive.minecraft.spigot._2019.servers.kitpvp.events;
 import com.orbitmines.archive.minecraft.spigot._2019.servers.kitpvp.KitPvP;
 import com.orbitmines.archive.minecraft.spigot._2019.servers.kitpvp.KitPvPPlayer;
 import com.orbitmines.archive.minecraft.spigot._2019.servers.kitpvp.abilities.actives.ActiveReaperTeleport;
+import com.orbitmines.archive.minecraft.spigot._2019.servers.kitpvp.abilities.actives.ActiveSpearToss;
+import com.orbitmines.archive.minecraft.spigot._2019.servers.kitpvp.abilities.passives.PassiveIronGolemSummon;
 import com.orbitmines.archive.minecraft._2019.utils.RandomUtils;
 import com.orbitmines.archive.minecraft.spigot._2019.utils.spigot.nms.entity.EntityNms;
 import org.bukkit.entity.Arrow;
@@ -100,6 +102,17 @@ public class DeathEvent implements Listener {
 
         /* Clear Shadow Step preview */
         ActiveReaperTeleport.removePreview(bukkit.getUniqueId());
+
+        /* Clear Javelin skull collection */
+        ActiveSpearToss.clearSkulls(bukkit.getUniqueId());
+
+        /* Despawn iron golem after 5 seconds */
+        new BukkitRunnable() {
+            @Override
+            public void run() {
+                PassiveIronGolemSummon.removeGolem(bukkit.getUniqueId());
+            }
+        }.runTaskLater(server.getPlugin(), 100);
 
         /* Clear Drops & Inventory */
         player.clearFullInventory();

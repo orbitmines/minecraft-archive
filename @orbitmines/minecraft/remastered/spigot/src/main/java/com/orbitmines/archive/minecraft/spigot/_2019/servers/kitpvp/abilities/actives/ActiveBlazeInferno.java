@@ -7,18 +7,23 @@ import com.orbitmines.archive.minecraft._2019.utils.cooldown.Cooldown;
 import org.bukkit.*;
 import org.bukkit.block.Block;
 import org.bukkit.entity.Player;
+import org.bukkit.event.EventHandler;
+import org.bukkit.event.Listener;
+import org.bukkit.event.entity.EntityDamageEvent;
 import org.bukkit.event.player.PlayerInteractEvent;
 import org.bukkit.potion.PotionEffect;
 import org.bukkit.potion.PotionEffectType;
 import org.bukkit.scheduler.BukkitRunnable;
 import org.bukkit.util.Vector;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.*;
 
 public class ActiveBlazeInferno implements Active.Handler {
 
     private final Cooldown cooldown = new Cooldown(35 * 1000);
+
+    private static final Set<UUID> fallDamageImmune = new HashSet<>();
+    private static boolean listenerRegistered = false;
 
     @Override
     public void trigger(PlayerInteractEvent event, KitPvPPlayer omp, int level) {
@@ -26,10 +31,18 @@ public class ActiveBlazeInferno implements Active.Handler {
         KitPvP kitPvP = (KitPvP) KitPvP.getInstance();
         Location center = player.getLocation().clone();
 
+        if (!listenerRegistered) {
+            kitPvP.getPlugin().getServer().getPluginManager().registerEvents(new FallDamageListener(), kitPvP.getPlugin());
+            listenerRegistered = true;
+        }
+
         /* Make invulnerable */
         player.setInvulnerable(true);
         player.setAllowFlight(true);
         player.setFlying(true);
+
+        /* Immune to fall damage until grounded */
+        fallDamageImmune.add(player.getUniqueId());
 
         /* Apply regeneration */
         player.addPotionEffect(new PotionEffect(PotionEffectType.REGENERATION, 60, 1));
@@ -38,18 +51,18 @@ public class ActiveBlazeInferno implements Active.Handler {
 
         List<Block> fireBlocks = new ArrayList<>();
 
-        /* Fly up with expanding particle circle, then spread fire from center */
+        /* Fly up with expanding particle circle, fire trail underneath, then spread fire from center */
         new BukkitRunnable() {
             int tick = 0;
 
             @Override
             public void run() {
-                if (tick >= 30) {
-                    cancel();
-
+                if (tick >= 5) {
                     /* Spread fire outward from center over time */
                     spreadFire(player, kitPvP, center, fireBlocks);
-
+                }
+                if (tick >= 30) {
+                    cancel();
                     /* End invulnerability after a short delay */
                     new BukkitRunnable() {
                         @Override
@@ -60,6 +73,20 @@ public class ActiveBlazeInferno implements Active.Handler {
                         }
                     }.runTaskLater(kitPvP.getPlugin(), 20);
 
+                    /* Continue particle trail and remove fall damage immunity once grounded */
+                    new BukkitRunnable() {
+                        @Override
+                        public void run() {
+                            if (!player.isOnline() || player.isOnGround()) {
+                                fallDamageImmune.remove(player.getUniqueId());
+                                cancel();
+                                return;
+                            }
+                            Location loc = player.getLocation();
+                            loc.getWorld().spawnParticle(Particle.FLAME, loc.getX(), loc.getY(), loc.getZ(), 5, 0.2, 0.1, 0.2, 0.02);
+                        }
+                    }.runTaskTimer(kitPvP.getPlugin(), 1, 1);
+
                     return;
                 }
 
@@ -67,6 +94,10 @@ public class ActiveBlazeInferno implements Active.Handler {
                 if (tick < 20) {
                     player.setVelocity(new Vector(0, 0.3, 0));
                 }
+
+                /* Flame particle trail under the player */
+                Location trailLoc = player.getLocation();
+                trailLoc.getWorld().spawnParticle(Particle.FLAME, trailLoc.getX(), trailLoc.getY(), trailLoc.getZ(), 5, 0.2, 0.1, 0.2, 0.02);
 
                 /* Expanding fire particle circle */
                 double radius = 1.0 + (tick * 0.15);
@@ -152,5 +183,18 @@ public class ActiveBlazeInferno implements Active.Handler {
     @Override
     public Cooldown getCooldown(int level) {
         return cooldown;
+    }
+
+    public static class FallDamageListener implements Listener {
+
+        @EventHandler
+        public void onFallDamage(EntityDamageEvent event) {
+            if (event.getCause() != EntityDamageEvent.DamageCause.FALL)
+                return;
+            if (!(event.getEntity() instanceof Player))
+                return;
+            if (fallDamageImmune.contains(event.getEntity().getUniqueId()))
+                event.setCancelled(true);
+        }
     }
 }

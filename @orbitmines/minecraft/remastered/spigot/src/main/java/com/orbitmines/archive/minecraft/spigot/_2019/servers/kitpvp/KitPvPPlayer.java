@@ -314,6 +314,8 @@ public class KitPvPPlayer extends OMPlayer<KitPvP, KitPvPPlayer> {
         EntityNms nms = server.getNms().entity();
         nms.setAttribute(player, EntityNms.Attribute.MAX_HEALTH, selectedKit.getMaxHealth());
         player.setHealth(selectedKit.getMaxHealth());
+        player.setFoodLevel(20);
+        player.setSaturation(20f);
         nms.setAttribute(player, EntityNms.Attribute.KNOCKBACK_RESISTANCE, selectedKit.getKnockbackResistance());
         nms.setAttribute(player, EntityNms.Attribute.ATTACK_DAMAGE, 2.0D);
 

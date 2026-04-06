@@ -212,6 +212,17 @@ public enum Active {
                     "  §b§o" + ((int) (getHandler().getCooldown(level).getCooldown() / 1000)) + " second cooldown§7."
             };
         }
+    },
+    SPEAR_TOSS("Toss", Color.RED, new ActiveSpearToss()) {
+        @Override
+        public String[] getDescription(int level) {
+            return new String[]{
+                    "  §7§oThrow your §4§ojavelin §7§othrough",
+                    "  §7§oplayers at §c§ofull damage§7§o.",
+                    "  §7§oDeals §c§ohalf damage §7§oin melee.",
+                    "  §cNo cooldown§7§o."
+            };
+        }
     };
 
     @Getter private final String name;

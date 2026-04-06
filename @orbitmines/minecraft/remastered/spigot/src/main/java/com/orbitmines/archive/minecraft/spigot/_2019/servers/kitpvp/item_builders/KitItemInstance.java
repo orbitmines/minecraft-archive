@@ -51,7 +51,10 @@ public class KitItemInstance<B extends ItemBuilderInstance> {
         this.actives.put(active, level);
 
         builder.glow();
-        builder.setDisplayName(active.getColor().getCc() + "§l" + active.getName());
+        /* Only set display name if the builder doesn't already have a custom one */
+        if (builder.getLocalizedName() == null) {
+            builder.setDisplayName(active.getColor().getCc() + "§l" + active.getName());
+        }
 
         return builder;
     }
