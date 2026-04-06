@@ -108,7 +108,13 @@ public class ActiveSpearToss implements Active.Handler {
             public void run() {
                 if (!player.isOnline() || spear.isDead()) {
                     cleanup();
-                    returnSpearToInventory(player, spearItem);
+                    return;
+                }
+
+                /* If player died, just remove the spear */
+                KitPvPPlayer omp2 = kitPvP.getPlayer(player);
+                if (omp2.getSelectedKit() == null || omp2.isSpectator()) {
+                    cleanup();
                     return;
                 }
 
