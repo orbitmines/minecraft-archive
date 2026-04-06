@@ -25,6 +25,10 @@ public class EntityUtils {
         if (entityCache.containsKey(uuid))
             return (T) entityCache.get(uuid);
 
+        /* World entity iteration is not allowed from async threads */
+        if (!Bukkit.isPrimaryThread())
+            return null;
+
         for (World world : Bukkit.getWorlds()) {
             for (T entity : world.getEntitiesByClass(aClass)) {
                 if (entity.getUniqueId().equals(uuid)) {

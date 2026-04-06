@@ -8,6 +8,7 @@ import com.orbitmines.archive.minecraft._2019.libs.Color;
 import com.orbitmines.archive.minecraft.spigot._2019.utils.spigot.mutable.MutablePlayerString;
 import com.orbitmines.archive.minecraft.spigot._2019.utils.spigot.placeholders.SpigotPlayer;
 import net.md_5.bungee.api.ChatColor;
+import org.bukkit.craftbukkit.util.CraftChatMessage;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -79,7 +80,33 @@ public class TextBuilder<P extends SpigotPlayer> {
     }
 
     public void send(P player) {
-        player.spigot().sendMessage(build(player));
+        boolean hasItemHover = this.textComponents.stream().anyMatch(TextComponent::hasItemHover);
+
+        if (!hasItemHover) {
+            player.spigot().sendMessage(build(player));
+            return;
+        }
+
+        /* Build via NMS to properly handle item hover events with full component data */
+        sendNms(player);
+    }
+
+    private void sendNms(P player) {
+        net.minecraft.network.chat.MutableComponent root = net.minecraft.network.chat.Component.empty();
+
+        for (TextComponent<P> c : this.textComponents) {
+            net.md_5.bungee.api.chat.TextComponent bungee = c.toBungee(player);
+            String json = CraftChatMessage.getBungee().toString(bungee);
+            net.minecraft.network.chat.MutableComponent nmsChild = (net.minecraft.network.chat.MutableComponent) CraftChatMessage.fromJSON(json);
+
+            /* Apply NMS-level item hover if present */
+            c.applyNmsHover(nmsChild);
+
+            root.append(nmsChild);
+        }
+
+        org.bukkit.craftbukkit.entity.CraftPlayer craftPlayer = (org.bukkit.craftbukkit.entity.CraftPlayer) player.bukkit();
+        craftPlayer.getHandle().sendSystemMessage(root);
     }
 
     public void send(P... players) {

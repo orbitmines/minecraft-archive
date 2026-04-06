@@ -177,13 +177,10 @@ public class TextComponent<P extends SpigotPlayer> {
         if (clickAction != null)
             component.setClickEvent(new ClickEvent(this.clickAction, this.clickEvent.toString(player)));
         if (hoverAction != null) {
-            if (hoverItemStack != null) {
-                String itemId = hoverItemStack.getType().getKey().toString();
-                int count = hoverItemStack.getAmount();
-                component.setHoverEvent(new HoverEvent(HoverEvent.Action.SHOW_ITEM, new Item(itemId, count, null)));
-            } else {
+            if (hoverItemStack == null) {
                 component.setHoverEvent(new HoverEvent(this.hoverAction, new Text(this.hoverEvent.toString(player))));
             }
+            /* Item hover is applied at the NMS level in applyNmsHover() */
         }
 
         component.setBold(this.bold);
@@ -193,6 +190,25 @@ public class TextComponent<P extends SpigotPlayer> {
         component.setUnderlined(this.underlined);
 
         return component;
+    }
+
+    /**
+     * Applies item hover events at the NMS level, bypassing BungeeCord's old-format ItemTag.
+     * Must be called on the NMS component after toBungee() conversion.
+     */
+    public void applyNmsHover(net.minecraft.network.chat.MutableComponent nmsComponent) {
+        if (hoverItemStack == null)
+            return;
+
+        net.minecraft.world.item.ItemStack nmsStack = org.bukkit.craftbukkit.inventory.CraftItemStack.asNMSCopy(hoverItemStack);
+        net.minecraft.network.chat.HoverEvent nmsHover = new net.minecraft.network.chat.HoverEvent.ShowItem(
+                net.minecraft.world.item.ItemStackTemplate.fromNonEmptyStack(nmsStack)
+        );
+        nmsComponent.setStyle(nmsComponent.getStyle().withHoverEvent(nmsHover));
+    }
+
+    public boolean hasItemHover() {
+        return hoverItemStack != null;
     }
 
     public TextComponent<P> copyTo(TextBuilder<P> builder) {
