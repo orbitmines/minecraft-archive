@@ -154,6 +154,9 @@ public class Bungeecord implements VoteHandler, VotifierPlugin {
             }
 
             seedMaps(database, root);
+
+            /* Clean up vote entries with timestamps in the future (caused by millisecond vs second bugs) */
+            database.executeQuery("DELETE FROM `last_votes` WHERE `last_vote_at` > datetime('now')");
         } catch(DatabaseConnectionException ex) {
             getLogger().severe("Failed to setup SQLite connection.");
             restart("Could not connect to database, restarting... (Caused by: " + ex.getClass().getSimpleName() + ": " + ex.getCause().getMessage() + ")");

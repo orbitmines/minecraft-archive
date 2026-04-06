@@ -17,14 +17,15 @@ public class KitSelectorGUI extends GUI<KitPvPPlayer> {
 
     public KitSelectorGUI(KitPvPPlayer viewer) {
         super(36, "§0§lKit Selector", viewer);
-        
+
         boolean saturday = viewer.server().isSaturday();
         int freeLevel = viewer.server().getFreeKitLevel();
 
+        int slot = 0;
         for (KitPvPKit kit : KitPvPKit.getKits()) {
             KitPvPPlayerKitModel data = viewer.getKit(kit, false);
 
-            set((int) kit.getId(), new Item<KitPvPPlayer, MutableItemBuilder>(() -> {
+            set(slot++, new Item<KitPvPPlayer, MutableItemBuilder>(() -> {
                 ItemBuilderInstance icon = kit.getIcon().setDisplayName(kit.getColor().getCc() + "§l" + kit.getName());
                 int level = data.getUnlockedLevel();
 

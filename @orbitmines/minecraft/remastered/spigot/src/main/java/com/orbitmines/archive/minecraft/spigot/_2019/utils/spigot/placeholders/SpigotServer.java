@@ -73,6 +73,9 @@ public abstract class SpigotServer<P extends SpigotPlayer> {
     }
 
     public void runAsync(Runnable runnable) {
+        if (!plugin.isEnabled())
+            return;
+
         Bukkit.getScheduler().runTaskAsynchronously(plugin, runnable);
     }
 

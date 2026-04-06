@@ -58,7 +58,7 @@ public class KitFisherman extends KitPvPKit {
         protected Kit<KitPvPPlayer> registerKit() {
             Kit<KitPvPPlayer> kit = new Kit<>();
 
-            kit.set(0, player -> new KitItemBuilder(this, Material.FISHING_ROD).addPassive(Passive.ATTACK_DAMAGE, 6).addEnchantment(Enchantment.KNOCKBACK, 2));
+            kit.set(0, player -> new KitItemBuilder(this, Material.FISHING_ROD).addPassive(Passive.ATTACK_DAMAGE, 6).addPassive(Passive.HOOKED, 1).addEnchantment(Enchantment.KNOCKBACK, 2));
 
             kit.setHelmet(player -> new KitLeatherArmorBuilder(this, LeatherArmorBuilder.Type.HELMET, LEATHER_COLOR).addEnchantment(Enchantment.PROTECTION, 2));
             kit.setChestplate(player -> new KitLeatherArmorBuilder(this, LeatherArmorBuilder.Type.CHESTPLATE, LEATHER_COLOR).addEnchantment(Enchantment.PROTECTION, 1));
@@ -95,7 +95,7 @@ public class KitFisherman extends KitPvPKit {
         protected Kit<KitPvPPlayer> registerKit() {
             Kit<KitPvPPlayer> kit = new Kit<>();
 
-            kit.set(0, player -> new KitItemBuilder(this, Material.FISHING_ROD).addPassive(Passive.ATTACK_DAMAGE, 7).addEnchantment(Enchantment.KNOCKBACK, 3));
+            kit.set(0, player -> new KitItemBuilder(this, Material.FISHING_ROD).addPassive(Passive.ATTACK_DAMAGE, 7).addPassive(Passive.HOOKED, 1).addEnchantment(Enchantment.KNOCKBACK, 3));
             kit.set(1, player -> new KitItemBuilder(this, Material.COD).addPassive(Passive.ATTACK_DAMAGE, 1).addEnchantment(Enchantment.KNOCKBACK, 4).addEnchantment(Enchantment.FIRE_ASPECT, 2));
 
             kit.setHelmet(player -> new KitLeatherArmorBuilder(this, LeatherArmorBuilder.Type.HELMET, LEATHER_COLOR).addEnchantment(Enchantment.PROTECTION, 2));
@@ -133,7 +133,7 @@ public class KitFisherman extends KitPvPKit {
         protected Kit<KitPvPPlayer> registerKit() {
             Kit<KitPvPPlayer> kit = new Kit<>();
 
-            kit.set(0, player -> new KitItemBuilder(this, Material.FISHING_ROD).addPassive(Passive.ATTACK_DAMAGE, 8).addEnchantment(Enchantment.KNOCKBACK, 3));
+            kit.set(0, player -> new KitItemBuilder(this, Material.FISHING_ROD).addPassive(Passive.ATTACK_DAMAGE, 8).addPassive(Passive.HOOKED, 1).addEnchantment(Enchantment.KNOCKBACK, 3));
             kit.set(1, player -> new KitItemBuilder(this, Material.COD).addPassive(Passive.ATTACK_DAMAGE, 1).addEnchantment(Enchantment.KNOCKBACK, 5).addEnchantment(Enchantment.FIRE_ASPECT, 2));
 
             kit.setHelmet(player -> new KitLeatherArmorBuilder(this, LeatherArmorBuilder.Type.HELMET, LEATHER_COLOR).addEnchantment(Enchantment.PROTECTION, 3));

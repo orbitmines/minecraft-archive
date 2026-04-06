@@ -10,6 +10,7 @@ import org.bukkit.craftbukkit.inventory.CraftItemStack;
 import org.bukkit.entity.Player;
 import org.bukkit.inventory.ItemStack;
 
+import java.util.Collection;
 import java.util.HashMap;
 import java.util.UUID;
 
@@ -238,23 +239,28 @@ public class ItemStackNms_26_1 implements ItemStackNms {
 
     @Override
     public ItemStack setAttackDamage(ItemStack item, int damage) {
-        net.minecraft.world.item.ItemStack nmsStack = CraftItemStack.asNMSCopy(item);
-        CompoundTag customData = getOrCreateCustomData(nmsStack);
+        org.bukkit.inventory.meta.ItemMeta meta = item.getItemMeta();
+        org.bukkit.NamespacedKey key = org.bukkit.NamespacedKey.minecraft("generic.attack_damage");
 
-        net.minecraft.nbt.ListTag attributes = new net.minecraft.nbt.ListTag();
-        CompoundTag damageAttribute = new CompoundTag();
-        damageAttribute.put("AttributeName", net.minecraft.nbt.StringTag.valueOf("generic.attackDamage"));
-        damageAttribute.put("Name", net.minecraft.nbt.StringTag.valueOf("generic.attackDamage"));
-        damageAttribute.put("Amount", net.minecraft.nbt.IntTag.valueOf(damage));
-        damageAttribute.put("Operation", net.minecraft.nbt.IntTag.valueOf(0));
-        damageAttribute.put("UUIDLeast", net.minecraft.nbt.IntTag.valueOf(894654));
-        damageAttribute.put("UUIDMost", net.minecraft.nbt.IntTag.valueOf(2872));
-        damageAttribute.put("Slot", net.minecraft.nbt.StringTag.valueOf("mainhand"));
-        attributes.add(damageAttribute);
+        /* Remove existing modifier with the same key before adding */
+        if (meta.getAttributeModifiers() != null) {
+            Collection<org.bukkit.attribute.AttributeModifier> existing = meta.getAttributeModifiers(org.bukkit.attribute.Attribute.ATTACK_DAMAGE);
+            if (existing != null)
+                for (org.bukkit.attribute.AttributeModifier mod : existing)
+                    if (mod.getKey().equals(key))
+                        meta.removeAttributeModifier(org.bukkit.attribute.Attribute.ATTACK_DAMAGE, mod);
+        }
 
-        customData.put("AttributeModifiers", attributes);
-        setCustomData(nmsStack, customData);
-
-        return CraftItemStack.asCraftMirror(nmsStack);
+        meta.addAttributeModifier(
+                org.bukkit.attribute.Attribute.ATTACK_DAMAGE,
+                new org.bukkit.attribute.AttributeModifier(
+                        key,
+                        damage,
+                        org.bukkit.attribute.AttributeModifier.Operation.ADD_NUMBER,
+                        org.bukkit.inventory.EquipmentSlotGroup.MAINHAND
+                )
+        );
+        item.setItemMeta(meta);
+        return item;
     }
 }

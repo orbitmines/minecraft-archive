@@ -329,6 +329,20 @@ public enum Passive {
             };
         }
     },
+    HOOKED("Hooked", Color.TEAL, null, false, true, new PassiveHooked()) {
+        @Override
+        public String getDisplayName(int level) {
+            return getColor().getCc() + "§oHooked";
+        }
+
+        @Override
+        public String[] getDescription(int level) {
+            return new String[] {
+                    "  §7§oCast your line to §b§osnare",
+                    "  §7§oopponents and §b§oreel §7§othem in."
+            };
+        }
+    },
     ;
 
     @Getter private final String name;

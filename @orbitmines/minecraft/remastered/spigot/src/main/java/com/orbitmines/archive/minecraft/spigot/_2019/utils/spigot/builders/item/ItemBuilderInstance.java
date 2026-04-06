@@ -160,6 +160,10 @@ public abstract class ItemBuilderInstance<B extends ItemBuilderInstance, M exten
         /* Set both display and localized name to localizedName, as DisplayName is client side, LocalizedName server side */
         meta.setDisplayName(this.localizedName);
         meta.setLocalizedName(this.localizedName);
+
+        /* Override max stack size when amount exceeds the material's default (e.g. potions, swords in GUIs) */
+        if (this.amount > 1 && this.amount > material.getMaxStackSize())
+            meta.setMaxStackSize(this.amount);
         meta.setLore(this.lore == null ? new ArrayList<>() : new ArrayList<>(this.lore));
 
         if (meta instanceof Damageable)

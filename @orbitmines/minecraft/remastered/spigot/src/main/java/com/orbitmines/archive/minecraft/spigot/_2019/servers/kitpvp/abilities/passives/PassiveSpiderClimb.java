@@ -6,7 +6,9 @@ import org.bukkit.Location;
 import org.bukkit.block.Block;
 import org.bukkit.entity.Player;
 import org.bukkit.event.player.PlayerMoveEvent;
+import org.bukkit.util.BoundingBox;
 import org.bukkit.util.Vector;
+import org.bukkit.util.VoxelShape;
 
 public class PassiveSpiderClimb implements Passive.Handler<PlayerMoveEvent> {
 
@@ -42,20 +44,18 @@ public class PassiveSpiderClimb implements Passive.Handler<PlayerMoveEvent> {
             targetY = climbSpeed;
         } else if (pitch <= 20) {
             /* Neutral zone: interpolate from climbSpeed to a slow slide */
-            /* At -20: targetY = climbSpeed, at +20: targetY = -0.04 (gentle slide) */
+            /* At -20: targetY = climbSpeed, at +20: targetY = 0 (cling) */
             double t = (pitch + 20.0) / 40.0; /* 0.0 at -20, 1.0 at +20 */
-            targetY = climbSpeed * (1.0 - t) + (-0.04) * t;
+            targetY = climbSpeed * (1.0 - t);
         } else {
-            /* Looking down: slide down, faster the steeper you look */
+            /* Looking down: descend smoothly, faster the steeper you look */
             double t = (pitch - 20.0) / 70.0; /* 0.0 at +20, 1.0 at +90 */
-            targetY = -0.04 - t * 0.25;
+            targetY = -climbSpeed * t;
         }
 
-        /* Smooth the velocity toward target to prevent jerky bouncing */
+        /* Set velocity directly for smooth, consistent movement */
         Vector velocity = player.getVelocity();
-        double currentY = velocity.getY();
-        double smoothed = currentY + (targetY - currentY) * 0.4;
-        velocity.setY(smoothed);
+        velocity.setY(targetY);
 
         player.setVelocity(velocity);
         player.setFallDistance(0);
@@ -63,14 +63,30 @@ public class PassiveSpiderClimb implements Passive.Handler<PlayerMoveEvent> {
 
     private boolean isNextToWall(Player player) {
         Location loc = player.getLocation();
+        double feetY = loc.getY();
 
         /* Check 4 cardinal directions for solid blocks at body or head level */
         double[][] checks = {{0.4, 0}, {-0.4, 0}, {0, 0.4}, {0, -0.4}};
         for (double[] check : checks) {
-            Block block = loc.clone().add(check[0], 0, check[1]).getBlock();
-            Block blockAbove = loc.clone().add(check[0], 1, check[1]).getBlock();
+            if (isWallBlock(loc.clone().add(check[0], 0, check[1]).getBlock(), feetY))
+                return true;
+            if (isWallBlock(loc.clone().add(check[0], 1, check[1]).getBlock(), feetY))
+                return true;
+        }
+        return false;
+    }
 
-            if (block.getType().isSolid() || blockAbove.getType().isSolid())
+    private boolean isWallBlock(Block block, double feetY) {
+        if (!block.getType().isSolid())
+            return false;
+
+        /* A block is only a wall if its collision box extends well above the player's feet.
+           A threshold of 0.4 excludes bottom slabs (0.5 tall, so only 0.0 above feet when
+           standing on them) and stair steps, while keeping full blocks detectable even when
+           the player's feet are near the top of the block. */
+        VoxelShape shape = block.getCollisionShape();
+        for (BoundingBox box : shape.getBoundingBoxes()) {
+            if (block.getY() + box.getMaxY() > feetY + 0.4)
                 return true;
         }
         return false;

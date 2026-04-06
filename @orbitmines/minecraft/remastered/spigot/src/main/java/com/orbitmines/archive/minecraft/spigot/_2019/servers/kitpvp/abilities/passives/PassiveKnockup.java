@@ -6,9 +6,11 @@ import org.bukkit.Location;
 import org.bukkit.Material;
 import org.bukkit.Sound;
 import org.bukkit.block.Block;
+import org.bukkit.enchantments.Enchantment;
 import org.bukkit.entity.FallingBlock;
 import org.bukkit.entity.LivingEntity;
 import org.bukkit.event.entity.EntityDamageByEntityEvent;
+import org.bukkit.scheduler.BukkitRunnable;
 import org.bukkit.util.Vector;
 
 import java.util.concurrent.ThreadLocalRandom;
@@ -25,9 +27,15 @@ public class PassiveKnockup implements Passive.Handler<EntityDamageByEntityEvent
 
         LivingEntity entity = (LivingEntity) event.getEntity();
 
-        /* Launch victim upward */
-        entity.setVelocity(entity.getVelocity().add(new Vector(0, getVelocityY(level), 0)));
         entity.getWorld().playSound(entity.getLocation(), Sound.ENTITY_IRON_GOLEM_ATTACK, 1.0f, 1.0f);
+
+        new BukkitRunnable() {
+            @Override
+            public void run() {
+                /* Launch victim upward */
+                entity.setVelocity(entity.getVelocity().add(new Vector(0, getVelocityY(level), 0)));
+            }
+        }.runTaskLater(passiveEvent.server().getPlugin(), 1);
 
         /* Throw falling blocks from the environment around the hit player */
         Location center = entity.getLocation();
@@ -70,9 +78,9 @@ public class PassiveKnockup implements Passive.Handler<EntityDamageByEntityEvent
 
     public double getVelocityY(int level) {
         switch (level) {
-            case 1: return 0.55D;
-            case 2: return 0.55D;
-            case 3: return 0.55D;
+            case 1: return 1D;
+            case 2: return 1D;
+            case 3: return 1D;
             default: throw new ArrayIndexOutOfBoundsException();
         }
     }

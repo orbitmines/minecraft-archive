@@ -3,9 +3,13 @@ package com.orbitmines.archive.minecraft.spigot._2019.servers.kitpvp.abilities.p
 import com.orbitmines.archive.minecraft.spigot._2019.servers.kitpvp.abilities.Active;
 import com.orbitmines.archive.minecraft.spigot._2019.servers.kitpvp.abilities.Passive;
 import com.orbitmines.archive.minecraft.spigot._2019.servers.kitpvp.events.KitEvent;
+import com.orbitmines.archive.minecraft.spigot._2019.servers.kitpvp.item_builders.KitItemBuilderInstance;
+import com.orbitmines.archive.minecraft.spigot._2019.servers.kitpvp.kit.KitPvPKit;
 import com.orbitmines.archive.minecraft._2019.utils.NumberUtils;
 import com.orbitmines.archive.minecraft._2019.utils.RandomUtils;
 import com.orbitmines.archive.minecraft.spigot._2019.utils.spigot.ItemUtils;
+import com.orbitmines.archive.minecraft.spigot._2019.utils.spigot.builders.item.ItemBuilderInstance;
+import com.orbitmines.archive.minecraft.spigot._2019.utils.spigot.builders.item.mutable.MutablePlayerItemBuilder;
 import com.orbitmines.archive.minecraft.spigot._2019.utils.spigot.npcs.FloatingItem;
 import com.orbitmines.archive.minecraft.spigot._2019.utils.spigot.nms.itemstack.ItemStackNms;
 import org.bukkit.ChatColor;
@@ -44,6 +48,10 @@ public class PassiveEnchantingTable implements Passive.Handler<PlayerDeathEvent>
             Active.LIGHTNING_STRIKE,
             Active.TORNADO
     };
+
+    /* Lazily built maps from ability → source kit, inferred from kit item definitions */
+    private static Map<Passive, KitPvPKit> passiveKitMap;
+    private static Map<Active, KitPvPKit> activeKitMap;
 
     private static final int MAX_PASSIVE_LEVEL = 3;
 
@@ -96,10 +104,6 @@ public class PassiveEnchantingTable implements Passive.Handler<PlayerDeathEvent>
             return false;
 
         int newLevel = itemStack.getEnchantmentLevel(enchantment) + 1;
-
-        /* Since 1.13 sharpness enchantment no longer applies on items it cannot enchant, so we do it ourselves. */
-        if (enchantment == Enchantment.SHARPNESS && !enchantment.canEnchantItem(itemStack))
-            itemStack = Passive.ATTACK_DAMAGE.apply(nms, itemStack, Passive.ATTACK_DAMAGE.getLevel(nms, itemStack) + 1);
 
         /* Clear `glow` effect from item */
         ItemMeta meta = itemStack.getItemMeta();
@@ -202,7 +206,8 @@ public class PassiveEnchantingTable implements Passive.Handler<PlayerDeathEvent>
 
         killer.getInventory().setItemInMainHand(weapon);
 
-        showHologram(killer, killed, weapon, passiveEvent,
+        ItemStack icon = getKitIcon(chosen);
+        showHologram(killer, killed, icon != null ? icon : weapon, passiveEvent,
                 "§e§o+ " + ChatColor.stripColor(chosen.getDisplayName(newLevel)));
 
         return true;
@@ -255,7 +260,8 @@ public class PassiveEnchantingTable implements Passive.Handler<PlayerDeathEvent>
                     weapon.setItemMeta(meta);
                     killer.getInventory().setItemInMainHand(weapon);
 
-                    showHologram(killer, killed, weapon, passiveEvent,
+                    ItemStack activeIcon = getKitIcon(chosen);
+                    showHologram(killer, killed, activeIcon != null ? activeIcon : weapon, passiveEvent,
                             "§e§o+ " + ChatColor.stripColor(chosen.getDisplayName(newLevel)));
                     return true;
                 }
@@ -289,10 +295,53 @@ public class PassiveEnchantingTable implements Passive.Handler<PlayerDeathEvent>
 
         killer.getInventory().setItemInMainHand(weapon);
 
-        showHologram(killer, killed, weapon, passiveEvent,
+        ItemStack activeIcon = getKitIcon(chosen);
+        showHologram(killer, killed, activeIcon != null ? activeIcon : weapon, passiveEvent,
                 "§e§o+ " + ChatColor.stripColor(chosen.getDisplayName(1)));
 
         return true;
+    }
+
+    private static void buildAbilityKitMaps() {
+        passiveKitMap = new HashMap<>();
+        activeKitMap = new HashMap<>();
+
+        for (KitPvPKit kit : KitPvPKit.getKits()) {
+            for (KitPvPKit.Level level : kit.getLevels()) {
+                for (MutablePlayerItemBuilder<? extends ItemBuilderInstance, ?> builder : level.getKit().getAll()) {
+                    ItemBuilderInstance<?, ?> item = builder.toBuilder(null);
+
+                    if (!(item instanceof KitItemBuilderInstance))
+                        continue;
+
+                    KitItemBuilderInstance kitItem = (KitItemBuilderInstance) item;
+                    Map<Passive, Integer> passives = kitItem.getKitItem().getPassives();
+                    Map<Active, Integer> actives = kitItem.getKitItem().getActives();
+
+                    for (Passive passive : passives.keySet())
+                        passiveKitMap.putIfAbsent(passive, kit);
+
+                    for (Active active : actives.keySet())
+                        activeKitMap.putIfAbsent(active, kit);
+                }
+            }
+        }
+    }
+
+    private ItemStack getKitIcon(Passive passive) {
+        if (passiveKitMap == null)
+            buildAbilityKitMaps();
+
+        KitPvPKit kit = passiveKitMap.get(passive);
+        return kit != null ? kit.getIcon().build() : null;
+    }
+
+    private ItemStack getKitIcon(Active active) {
+        if (activeKitMap == null)
+            buildAbilityKitMaps();
+
+        KitPvPKit kit = activeKitMap.get(active);
+        return kit != null ? kit.getIcon().build() : null;
     }
 
     private void showHologram(Player killer, Player killed, ItemStack itemStack, KitEvent<PlayerDeathEvent> passiveEvent, String bonusLine) {

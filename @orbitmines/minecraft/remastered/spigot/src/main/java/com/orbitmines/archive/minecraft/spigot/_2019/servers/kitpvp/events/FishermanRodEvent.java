@@ -47,8 +47,8 @@ public class FishermanRodEvent implements Listener {
         Player hit = (Player) event.getHitEntity();
 
         Vector direction = hit.getLocation().toVector().subtract(fisher.getLocation().toVector()).normalize();
-        direction.setY(0.8);
-        hit.setVelocity(direction.multiply(2.4));
+        direction.setY(0.5);
+        hit.setVelocity(direction.multiply(1.1));
         hit.getWorld().playSound(hit.getLocation(), Sound.ENTITY_FISHING_BOBBER_RETRIEVE, 1.0f, 0.8f);
     }
 
