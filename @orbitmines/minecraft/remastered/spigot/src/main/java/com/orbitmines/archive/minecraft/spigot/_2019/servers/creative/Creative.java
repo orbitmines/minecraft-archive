@@ -261,6 +261,8 @@ public class Creative extends OMServer<Creative, CreativePlayer> {
         String now = com.orbitmines.archive.minecraft._2019.utils.DateUtils.DATE_TIME_FORMAT.format(com.orbitmines.archive.minecraft._2019.utils.DateUtils.now());
         List<String> savedWorldFileNames = new ArrayList<>();
         for (CreativeWorld world : allWorlds) {
+            if (world == null)
+                continue;
             if (world.isLoaded()) {
                 try {
                     world.getWorld().save();
@@ -306,6 +308,8 @@ public class Creative extends OMServer<Creative, CreativePlayer> {
 
     public CreativeWorld getWorldByFileName(String worldFileName) {
         for (CreativeWorld world : allWorlds) {
+            if (world == null)
+                continue;
             if (world.getWorldFileName().equals(worldFileName))
                 return world;
         }
