@@ -42,6 +42,11 @@ public class ServerTracker extends Tracker {
     private static final Pattern CAUSED_BY_EXCEPTION_PATTERN = Pattern.compile(PREFIX_PATTERN_STRING + CAUSED_BY_PATTERN_STRING + EXCEPTION_PATTERN_STRING);
     private static final Pattern STACKTRACE_PATTERN = Pattern.compile(PREFIX_PATTERN_STRING + STACKTRACE_PATTERN_STRING);
 
+    /** Exception messages to silently ignore (substring match). */
+    private static final String[] IGNORED_MESSAGES = {
+        "Chunk found in invalid location",
+    };
+
     public ServerTracker(File errorsDir, File file, Bungeecord bungeecord, Server server) {
         super(errorsDir, file, bungeecord, server.getPluginName(), server.getName(), Image.icon(server));
     }
@@ -70,6 +75,19 @@ public class ServerTracker extends Tracker {
             String clazz = clazz(exception);
 
             String message = group(exceptionMatcher, 8);
+
+            if (message != null) {
+                boolean ignored = false;
+                for (String ignoredMessage : IGNORED_MESSAGES) {
+                    if (message.contains(ignoredMessage)) {
+                        ignored = true;
+                        break;
+                    }
+                }
+                if (ignored)
+                    return;
+            }
+
             String header = header(clazz, message);
 
             bungeecord.getLogger().info("ErrorTracker: Found error for " + this.getServiceName() + " '" + clazz + "' [" + errorId + "] at line " + NumberUtils.locale(lineNumber));
