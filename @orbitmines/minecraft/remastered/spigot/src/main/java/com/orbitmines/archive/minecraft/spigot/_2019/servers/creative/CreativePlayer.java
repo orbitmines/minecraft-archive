@@ -19,6 +19,7 @@ import org.bukkit.Bukkit;
 import org.bukkit.GameMode;
 import org.bukkit.Location;
 import org.bukkit.Material;
+import org.bukkit.World;
 import org.bukkit.entity.Player;
 import org.bukkit.inventory.PlayerInventory;
 
@@ -119,12 +120,16 @@ public class CreativePlayer extends OMPlayer<Creative, CreativePlayer> {
             model.update(CreativePlayerModel.column.LOGOUT_LOCATION);
 
         /* Unload worlds where this player is the last one */
-        for (CreativeWorld world : server.getAllWorlds()) {
-            if (!world.isLoaded())
+        for (CreativeWorld cw : server.getAllWorlds()) {
+            if (cw == null || !cw.isLoaded())
+                continue;
+
+            World w = cw.getWorld();
+            if (w == null)
                 continue;
 
             boolean hasOtherPlayers = false;
-            for (Player p : world.getWorld().getPlayers()) {
+            for (Player p : w.getPlayers()) {
                 if (!p.getUniqueId().equals(getUUID())) {
                     hasOtherPlayers = true;
                     break;
@@ -132,7 +137,7 @@ public class CreativePlayer extends OMPlayer<Creative, CreativePlayer> {
             }
 
             if (!hasOtherPlayers)
-                world.unload();
+                cw.unload();
         }
 
         super.beforeQuitSync();
