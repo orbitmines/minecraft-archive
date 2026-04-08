@@ -44,7 +44,7 @@ public class Kit<P extends SpigotPlayer> {
     public Kit setPotionBuilders(List<PotionBuilder> potionBuilders) { this.potionBuilders = potionBuilders; return this; }
     public Kit addPotionBuilder(PotionBuilder potionBuilder) { this.potionBuilders.add(potionBuilder); return this; }
 
-    protected ItemStack build(MutablePlayerItemBuilder<? extends ItemBuilderInstance, P> builder, P player) {
+    public ItemStack build(MutablePlayerItemBuilder<? extends ItemBuilderInstance, P> builder, P player) {
         return builder.toBuilder(player).build();
     }
 

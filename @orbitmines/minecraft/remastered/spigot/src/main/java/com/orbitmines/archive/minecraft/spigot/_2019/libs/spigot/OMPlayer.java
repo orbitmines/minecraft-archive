@@ -29,6 +29,8 @@ import com.orbitmines.archive.minecraft._2019.libs.rank.VipRank;
 import com.orbitmines.archive.minecraft.spigot._2019.libs.spigot.achievements.Achievement;
 import com.orbitmines.archive.minecraft.spigot._2019.libs.spigot.achievements.StoredProgressAchievement;
 import com.orbitmines.archive.minecraft.spigot._2019.libs.spigot.achievements.servers.HubAchievement;
+import com.orbitmines.archive.minecraft.spigot._2019.libs.spigot.database.models.LobbyPreference;
+import com.orbitmines.archive.minecraft.spigot._2019.libs.spigot.database.models.OMMap;
 import com.orbitmines.archive.minecraft.spigot._2019.libs.spigot.database.models.PlayerAchievement;
 import com.orbitmines.archive.minecraft.spigot._2019.libs.spigot.discord.SpigotDiscordBot;
 import com.orbitmines.archive.minecraft.spigot._2019.libs.spigot.exceptions.ProcessVoteException;
@@ -50,6 +52,7 @@ import com.orbitmines.archive.minecraft.spigot._2019.utils.spigot.scoreboards.Sp
 import lombok.Getter;
 import lombok.Setter;
 import net.minecraft.server.MinecraftServer;
+import org.bukkit.Location;
 import org.bukkit.Sound;
 import org.bukkit.craftbukkit.entity.CraftPlayer;
 import org.bukkit.entity.Player;
@@ -73,6 +76,18 @@ public abstract class OMPlayer<S extends OMServer, P extends OMPlayer<S, P>> ext
     protected List<PlayerAchievement> achievements;
     protected List<TimePlayed> timePlayed;
     protected DiscordUser discordUser;
+
+    @Getter protected LobbyPreference lobbyPreference;
+    @Getter protected OMMap lobbyPreferenceMap;
+    @Getter protected String lobbyLastEdit;
+
+    public void setLobbyPreference(LobbyPreference pref, OMMap map) {
+        this.lobbyPreference = pref;
+        this.lobbyPreferenceMap = map;
+    }
+
+    @Getter private final Set<String> tpRequests = new HashSet<>();
+    @Getter private final Set<String> tpHereRequests = new HashSet<>();
 
     @Getter protected Date loginAt;
 
@@ -152,7 +167,33 @@ public abstract class OMPlayer<S extends OMServer, P extends OMPlayer<S, P>> ext
             loadLootItems();
             loadPeriodLootItems();
             handleVotes();
+            /* Lobby Preference */
+            LobbyPreference loadedPref = LobbyPreference.findByPlayerAndServer(getUUID(), server.getType());
+            OMMap loadedMap = null;
 
+            /* Resolve the OMMap (case-insensitive, since OMMap lowercases on load but DB stores original case).
+               Query all LOBBY maps for this server and match by worldFileName. */
+            if (loadedPref != null) {
+                String prefFileName = loadedPref.getWorldFileName();
+                for (OMMap candidate : OMMap.getAll(OMMap.class, OMMap.column.WORLD_TYPE.is(OMMap.Type.LOBBY), OMMap.column.SERVER.is(server.getType()))) {
+                    if (candidate.getWorldFileName().equalsIgnoreCase(prefFileName)) {
+                        loadedMap = candidate;
+                        break;
+                    }
+                }
+            }
+
+            /* If the preferred map no longer exists, clear the preference */
+            if (loadedPref != null && loadedMap == null) {
+                loadedPref.delete();
+                loadedPref = null;
+            }
+
+            setLobbyPreference(loadedPref, loadedMap);
+
+            /* Pre-fetch last_edit timestamp (async-safe) for stale lobby detection */
+            if (loadedPref != null)
+                this.lobbyLastEdit = StateProvider.getInstance().getString("world:" + loadedPref.getWorldFileName() + ":last_edit");
 
         /* Spawn Leaderboards */
         for (LeaderBoard leaderBoard : LeaderBoard.getLeaderBoards()) {
@@ -167,7 +208,7 @@ public abstract class OMPlayer<S extends OMServer, P extends OMPlayer<S, P>> ext
 
     @Override
     public void beforeQuitSync() {
-
+        server.unloadEmptyCustomLobbies();
     }
 
     @Override
@@ -524,7 +565,7 @@ public abstract class OMPlayer<S extends OMServer, P extends OMPlayer<S, P>> ext
 
         /* Add absent achievements */
         for (Server server : servers) {
-            if (server == Server.BUILD)
+            if (server == Server.CREATIVE)
                 continue;
 
             loop:
@@ -654,6 +695,14 @@ public abstract class OMPlayer<S extends OMServer, P extends OMPlayer<S, P>> ext
     @Override
     public String getRawName() {
         return player.getName();
+    }
+
+    public boolean hasTpRequestFrom(String name) {
+        return tpRequests.contains(name);
+    }
+
+    public boolean hasTpHereRequestFrom(String name) {
+        return tpHereRequests.contains(name);
     }
 
     public void reloadDiscordUser() {

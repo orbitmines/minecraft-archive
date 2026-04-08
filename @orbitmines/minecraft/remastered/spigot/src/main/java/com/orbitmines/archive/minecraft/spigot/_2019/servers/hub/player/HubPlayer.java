@@ -55,6 +55,10 @@ public class HubPlayer extends OMPlayer<Hub, HubPlayer> implements PlayerVisibil
 
             resetScoreboard();
             setScoreboard(new HubScoreboard(server, this));
+
+            /* Custom lobby teleport — after all default setup */
+            if (getLobbyPreferenceMap() != null)
+                server.teleportToPlayerLobby(this, null);
         });
 
         return true;

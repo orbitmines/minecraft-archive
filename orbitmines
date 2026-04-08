@@ -24,6 +24,9 @@ BUNGEECORD_URL="https://ci.md-5.net/job/BungeeCord/lastSuccessfulBuild/artifact/
 BUILDTOOLS_URL="https://hub.spigotmc.org/jenkins/job/BuildTools/lastSuccessfulBuild/artifact/target/BuildTools.jar"
 SPIGOT_VERSIONS=("26.1.1")
 
+# ── Creative plugins ────────────────────────────────────────────────────────
+FAWE_CI="https://ci.athion.net/job/FastAsyncWorldEdit/lastSuccessfulBuild"
+
 # ── Theme ────────────────────────────────────────────────────────────────────
 RST=$'\e[0m'
 BOLD=$'\e[1m'
@@ -368,6 +371,24 @@ worker_compile() {
     echo "OK:" > "$sf"
 }
 
+worker_plugins() {
+    local sf=$1 log=$2
+    exec >>"$log" 2>&1
+    set +e
+
+    mkdir -p "$PLUGINS_DIR"
+
+    if [[ ! -f "$PLUGINS_DIR/fawe.jar" ]]; then
+        echo "ST:Downloading FastAsyncWorldEdit..." > "$sf"
+        local fawe_jar; fawe_jar=$(curl -fsSL "$FAWE_CI/api/json" | python3 -c "import sys,json; [print(a['relativePath']) for a in json.load(sys.stdin)['artifacts'] if 'Bukkit' in a['fileName']]" 2>/dev/null | head -1)
+        if [[ -z "$fawe_jar" ]] || ! curl -fsSL -o "$PLUGINS_DIR/fawe.jar" "$FAWE_CI/artifact/$fawe_jar"; then
+            echo "ERR:Failed to download FastAsyncWorldEdit" > "$sf"; exit 1
+        fi
+    fi
+
+    echo "OK:" > "$sf"
+}
+
 # ── Pollers ──────────────────────────────────────────────────────────────────
 
 poll_worlds() {
@@ -418,6 +439,17 @@ poll_compile() {
     case "$k" in
         ST)  T_MSG[$i]="$v" ;;
         OK)  T_MSG[$i]="Plugins compiled" ;;
+        ERR) T_MSG[$i]="$v" ;;
+    esac
+}
+
+poll_plugins() {
+    local i=$1 sf=$2
+    local line; line=$(head -1 "$sf" 2>/dev/null) || return
+    local k="${line%%:*}" v="${line#*:}"
+    case "$k" in
+        ST)  T_MSG[$i]="$v" ;;
+        OK)  T_MSG[$i]="Plugins ready" ;;
         ERR) T_MSG[$i]="$v" ;;
     esac
 }
@@ -486,6 +518,11 @@ compile_needed() {
     return 1
 }
 
+plugins_needed() {
+    [[ ! -f "$PLUGINS_DIR/fawe.jar" ]] && return 0
+    return 1
+}
+
 # ─────────────────────────────────────────────────────────────────────────────
 # minecraft run
 # ─────────────────────────────────────────────────────────────────────────────
@@ -500,15 +537,16 @@ cmd_run() {
     done
 
     local t0; t0=$(date +%s)
-    local need_worlds=false need_spigot=false need_compile=false
+    local need_worlds=false need_spigot=false need_compile=false need_plugins=false
 
     worlds_needed && need_worlds=true
     spigot_needed && need_spigot=true
     $force_compile && need_compile=true
     ! $force_compile && compile_needed && need_compile=true
+    plugins_needed && need_plugins=true
 
     # If nothing to do, skip straight to launch
-    if ! $need_worlds && ! $need_spigot && ! $need_compile; then
+    if ! $need_worlds && ! $need_spigot && ! $need_compile && ! $need_plugins; then
         printf '%s' "$SHOW_CURSOR"
         # Jump to launch
         cp "$SPIGOT_DIR/BungeeCord.jar" "$SERVERS_DIR/BungeeCord/server.jar"
@@ -528,7 +566,7 @@ cmd_run() {
     refresh_cols
     NEXT_ROW=5
 
-    local si=-1 wi=-1 ci=-1
+    local si=-1 wi=-1 ci=-1 pi=-1
     local compile_started=false
 
     # ── Register all tasks up front ──────────────────────────────────────
@@ -545,6 +583,13 @@ cmd_run() {
         wi=$(( ${#T_NAME[@]} - 1 ))
         worker_worlds "${T_SF[$wi]}" "${T_LOG[$wi]}" &
         T_PID[$wi]=$!
+    fi
+
+    if $need_plugins; then
+        new_task "Download plugins" poll_plugins
+        pi=$(( ${#T_NAME[@]} - 1 ))
+        worker_plugins "${T_SF[$pi]}" "${T_LOG[$pi]}" &
+        T_PID[$pi]=$!
     fi
 
     if $need_compile; then

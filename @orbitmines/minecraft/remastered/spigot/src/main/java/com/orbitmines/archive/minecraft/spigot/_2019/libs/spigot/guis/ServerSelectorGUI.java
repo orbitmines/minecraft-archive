@@ -35,6 +35,8 @@ public class ServerSelectorGUI<S extends OMServer<S, P>, P extends OMPlayer<S, P
                 setItem(i, Server.HUB);
             else if (i == (4 * 9) + 4)
                 setItem(i, Server.SURVIVAL);
+            else if (i == (3 * 9) + 5)
+                setItem(i, Server.CREATIVE);
             else if (i == (3 * 9) + 3)
                 setItem(i, Server.KITPVP);
             else if (unknownGalaxies.contains(i))

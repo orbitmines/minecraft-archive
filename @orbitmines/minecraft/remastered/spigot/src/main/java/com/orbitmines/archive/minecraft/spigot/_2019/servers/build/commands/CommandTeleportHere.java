@@ -5,37 +5,54 @@ package com.orbitmines.archive.minecraft.spigot._2019.servers.build.commands;
  */
 
 import com.orbitmines.archive.minecraft._2019.libs.Color;
-import com.orbitmines.archive.minecraft._2019.libs.Server;
 import com.orbitmines.archive.minecraft._2019.libs.player.Name;
+import com.orbitmines.archive.minecraft._2019.libs.rank.Rank;
 import com.orbitmines.archive.minecraft._2019.libs.rank.StaffRank;
+import com.orbitmines.archive.minecraft._2019.libs.utils.Message;
+import com.orbitmines.archive.minecraft.spigot._2019.libs.spigot.OMPlayer;
+import com.orbitmines.archive.minecraft.spigot._2019.libs.spigot.OMServer;
 import com.orbitmines.archive.minecraft.spigot._2019.libs.spigot.commands.arguments.PlayerArgument;
 import com.orbitmines.archive.minecraft.spigot._2019.libs.spigot.commands.brigadier.Command;
 import com.orbitmines.archive.minecraft.spigot._2019.libs.spigot.commands.brigadier.executors.Executor1;
-import com.orbitmines.archive.minecraft.spigot._2019.servers.build.Build;
-import com.orbitmines.archive.minecraft.spigot._2019.servers.build.BuildPlayer;
+import com.orbitmines.archive.minecraft.spigot._2019.utils.spigot.builders.chat.text.TextBuilder;
+import net.md_5.bungee.api.chat.ClickEvent;
+import net.md_5.bungee.api.chat.HoverEvent;
 
-public class CommandTeleportHere extends Command<Build, BuildPlayer> {
+public class CommandTeleportHere<S extends OMServer<S, P>, P extends OMPlayer<S, P>> extends Command<S, P> {
 
-    public CommandTeleportHere(Build plugin) {
-        super(plugin, Server.BUILD, "tphere", "tph", "teleporthere");
+    public CommandTeleportHere(S plugin) {
+        this(plugin, StaffRank.NONE);
+    }
+
+    public CommandTeleportHere(S plugin, Rank rank) {
+        super(plugin, "tphere", "tph", "teleporthere");
 
         withArg(
-            new PlayerArgument<Build, BuildPlayer>(plugin, false).executes((Executor1<Build, BuildPlayer,
-                BuildPlayer, PlayerArgument<Build, BuildPlayer>>
+            new PlayerArgument<S, P>(plugin, false).executes((Executor1<S, P,
+                P, PlayerArgument<S, P>>
             ) (player, target) -> {
-                plugin.runSync(() -> {
-                    target.teleport(player.getLocation());
-                    player.sendMessage("Teleporter", Color.LIME, "build", "player.command.tphere.player", target.getName(Name.RAW_COLORED) + "§7");
-                    target.sendMessage("Teleporter", Color.LIME, "build", "player.command.tphere.teleported", player.getName(Name.RAW_COLORED) + "§7");
-                });
+                target.getTpHereRequests().add(player.getRawName());
+                target.getTpRequests().remove(player.getRawName());
+
+                player.sendMessage("Teleport", Color.LIME, "spigot", "player.command.tphere.sent", target.getName(Name.RAW_COLORED) + "§7");
+
+                target.sendRawMessage("");
+                target.sendMessage("Teleport", Color.BLUE, "spigot", "player.command.tphere.received", player.getName(Name.RAW_COLORED) + "§7");
+
+                TextBuilder<P> builder = new TextBuilder<>();
+                builder.add(Color.SILVER, p -> Message.format("Teleport", Color.LIME, "  " + target.translate("spigot", "player.command.tp.click_to_accept", "§a" + target.translate("spigot", "player.command.tp.accept"))))
+                    .click(ClickEvent.Action.RUN_COMMAND, p -> "/tpaccept " + player.getRawName())
+                    .hover(HoverEvent.Action.SHOW_TEXT, p -> "§7" + target.translate("spigot", "player.teleport_to", player.getName(Name.RAW_COLORED) + "§7"));
+
+                builder.send(target);
             })
         );
 
-        requires(StaffRank.PROVISIONAL_BUILDER);
+        requires(rank);
     }
 
     @Override
-    public String getDescription(BuildPlayer player) {
-        return player.translate("build", "player.command.tphere.description");
+    public String getDescription(P player) {
+        return player.translate("spigot", "player.command.tphere.description");
     }
 }

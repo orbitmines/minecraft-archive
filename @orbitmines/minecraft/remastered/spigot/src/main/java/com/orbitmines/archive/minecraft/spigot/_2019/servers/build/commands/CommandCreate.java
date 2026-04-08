@@ -22,7 +22,7 @@ import com.orbitmines.archive.minecraft.spigot._2019.utils.spigot.worlds.generat
 public class CommandCreate extends Command<Build, BuildPlayer> {
 
     public CommandCreate(Build plugin) {
-        super(plugin, Server.BUILD, "create");
+        super(plugin, Server.CREATIVE, "create");
 
         withArg(
             new ServerArgument<Build, BuildPlayer>().withArg(

@@ -172,6 +172,26 @@ public class Hub extends OMServer<Hub, HubPlayer> {
     }
 
     @Override
+    public Prevention[] getLobbyPreventions() {
+        return new Prevention[]{
+            Prevention.BLOCK_BREAK,
+            Prevention.BLOCK_INTERACTING,
+            Prevention.BLOCK_PLACE,
+            Prevention.MONSTER_EGG_USAGE,
+            Prevention.BUCKET_USAGE,
+            Prevention.CLICK_PLAYER_INVENTORY,
+            Prevention.ENTITY_INTERACTING,
+            Prevention.FOOD_CHANGE,
+            Prevention.ITEM_DROP,
+            Prevention.LEAF_DECAY,
+            Prevention.PLAYER_DAMAGE,
+            Prevention.ITEM_PICKUP,
+            Prevention.SWAP_HAND_ITEMS,
+            Prevention.WEATHER_CHANGE
+        };
+    }
+
+    @Override
     public void setupNpc(String string, Location location) {
 
     }

@@ -45,6 +45,9 @@ public class DataPointPatchNotes<S extends OMServer<S, P>, P extends OMPlayer<S,
                 Server server = DataPointPatchNotes.this.server.getType();
                 PatchNotes patchNotes = DataPointPatchNotes.this.server.getPatchNotes();
 
+                if (patchNotes == null)
+                    return;
+
                 List<PatchNotes.Instance> latest = server == Server.HUB ? patchNotes.getLatest() : Collections.singletonList(patchNotes.getLatest(server));
 
                 for (PatchNotes.Instance instance : latest) {

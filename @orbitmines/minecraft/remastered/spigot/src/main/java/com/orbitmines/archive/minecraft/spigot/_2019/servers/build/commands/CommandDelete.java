@@ -17,7 +17,7 @@ import com.orbitmines.archive.minecraft.spigot._2019.servers.build.database.mode
 public class CommandDelete extends Command<Build, BuildPlayer> {
 
     public CommandDelete(Build plugin) {
-        super(plugin, Server.BUILD, "delete");
+        super(plugin, Server.CREATIVE, "delete");
 
         withArg(
             new MapArgument(plugin).executes((Executor1<Build, BuildPlayer,

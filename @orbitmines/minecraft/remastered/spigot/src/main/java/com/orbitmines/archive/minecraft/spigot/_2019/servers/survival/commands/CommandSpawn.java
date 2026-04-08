@@ -16,10 +16,13 @@ public class CommandSpawn extends Command<Survival, SurvivalPlayer> {
         super(plugin, Server.SURVIVAL, "spawn");
 
         executes((Executor0<Survival, SurvivalPlayer>) (player) -> {
-            if (player.getWorld().equals(plugin.getLobby().getWorld()))
+            if (player.getLobbyPreference() != null) {
+                plugin.runSync(() -> plugin.teleportToPlayerLobby(player, null));
+            } else if (player.getWorld().equals(plugin.getLobby().getWorld())) {
                 plugin.runSync(() -> player.teleport(plugin.getSpawn()));
-            else
+            } else {
                 plugin.getSpawnTeleportable().teleport(player);
+            }
         });
     }
 

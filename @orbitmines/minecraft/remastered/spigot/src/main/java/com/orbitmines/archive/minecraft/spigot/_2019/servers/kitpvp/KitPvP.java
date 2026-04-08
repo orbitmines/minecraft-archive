@@ -120,8 +120,9 @@ public class KitPvP extends OMServer<KitPvP, KitPvPPlayer> {
         
         /* Setup Map */
         map = KitPvPMap.load();
-        String root = System.getProperty("OM_ROOT", ".");
-        java.io.File mapSourceDir = new java.io.File(root, "@orbitmines/minecraft/archive/worlds/" + map.getName());
+        java.io.File mapSourceDir = findWorldSource(map.getWorldFileName());
+        if (mapSourceDir == null)
+            throw new IllegalStateException("KitPvP map source not found: " + map.getWorldFileName());
         World mapWorld = worldLoader.fromDirectory(mapSourceDir, map.getWorldFileName(), true, map.getWorldGenerator());
         mapWorld.setGameRule(GameRule.ADVANCE_TIME, false);
         mapWorld.setGameRule(GameRule.SPAWN_MOBS, false);
@@ -360,6 +361,26 @@ public class KitPvP extends OMServer<KitPvP, KitPvPPlayer> {
             default:
                 throw new IllegalStateException();
         }
+    }
+
+    @Override
+    public Prevention[] getLobbyPreventions() {
+        return new Prevention[]{
+            Prevention.BLOCK_BREAK,
+            Prevention.BLOCK_INTERACTING,
+            Prevention.BLOCK_PLACE,
+            Prevention.CLICK_PLAYER_INVENTORY,
+            Prevention.ENTITY_INTERACTING,
+            Prevention.FOOD_CHANGE,
+            Prevention.ITEM_DROP,
+            Prevention.LEAF_DECAY,
+            Prevention.PLAYER_DAMAGE,
+            Prevention.ITEM_PICKUP,
+            Prevention.SWAP_HAND_ITEMS,
+            Prevention.WEATHER_CHANGE,
+            Prevention.MONSTER_EGG_USAGE,
+            Prevention.BUCKET_USAGE
+        };
     }
 
     @Override

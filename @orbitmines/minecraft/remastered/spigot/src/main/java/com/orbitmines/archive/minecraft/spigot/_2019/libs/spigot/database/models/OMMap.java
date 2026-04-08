@@ -35,7 +35,7 @@ public class OMMap extends OMMySQLModel<OMMap, OMMap.column> {
     @Getter @Setter private String name;
     @Getter @Setter private String worldFileName;
     @Getter private DefaultWorldType worldGenerator;
-    @Getter private Type worldType;
+    @Getter @Setter private Type worldType;
     @Getter @Setter private Boolean enabled;
     @Getter private JsonArray authors;
     @Getter private Date createdAt;
@@ -179,8 +179,14 @@ public class OMMap extends OMMySQLModel<OMMap, OMMap.column> {
     public enum Type {
 
         LOBBY,
-        GAMEMAP;
+        GAMEMAP,
+        GAMEMAP_CHICKEN_FIGHT,
+        GAMEMAP_SKY_WARS,
+        GAMEMAP_SURVIVAL_GAMES;
 
+        public boolean isGameMap() {
+            return this != LOBBY;
+        }
     }
 
     public static OMMap getLobby(Server server) {

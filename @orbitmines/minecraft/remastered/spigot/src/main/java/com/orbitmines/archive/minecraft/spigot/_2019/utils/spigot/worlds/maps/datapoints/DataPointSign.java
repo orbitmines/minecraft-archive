@@ -8,6 +8,7 @@ import org.bukkit.block.BlockState;
 import org.bukkit.block.Sign;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 /*
@@ -53,6 +54,10 @@ public  abstract class DataPointSign extends DataPoint {
         }
 
         return buildAt(loader, location, data.toArray(new String[0]));
+    }
+
+    public List<Location> getSpawns() {
+        return Collections.emptyList();
     }
 
     @Override

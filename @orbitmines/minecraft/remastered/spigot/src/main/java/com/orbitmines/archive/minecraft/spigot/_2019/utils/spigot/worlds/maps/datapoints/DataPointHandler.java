@@ -1,5 +1,6 @@
 package com.orbitmines.archive.minecraft.spigot._2019.utils.spigot.worlds.maps.datapoints;
 
+import com.orbitmines.archive.minecraft._2019.libs.Environment;
 import com.orbitmines.archive.minecraft.spigot._2019.utils.spigot.worlds.maps.WorldMapType;
 import org.bukkit.Bukkit;
 
@@ -32,8 +33,11 @@ public class DataPointHandler {
 
     public void setup() {
         for (DataPoint dataPoint : instances.values()) {
-            if (!dataPoint.setup())
-                Bukkit.broadcastMessage(dataPoint.failureMessage);
+            if (!dataPoint.setup()) {
+                Bukkit.getLogger().warning(dataPoint.failureMessage);
+                if (!Environment.isProduction())
+                    Bukkit.broadcastMessage(dataPoint.failureMessage);
+            }
         }
     }
 

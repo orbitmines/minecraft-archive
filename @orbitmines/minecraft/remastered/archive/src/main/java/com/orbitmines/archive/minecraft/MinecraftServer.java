@@ -89,6 +89,11 @@ public class MinecraftServer {
 
         this.installPlugin(PARENT_DIR + "/plugins/archive-spigot.jar");
 
+        // TODO: Re-enable when FAWE supports this Spigot version
+        // if (type == Server.CREATIVE) {
+        //     this.installPlugin(PARENT_DIR + "/plugins/fawe.jar");
+        // }
+
         PrintWriter eula = new PrintWriter(getDirectory().getPath() + "/eula.txt", "UTF-8");
         eula.println("eula=true");
         eula.close();
@@ -102,7 +107,7 @@ public class MinecraftServer {
         properties.setProperty("gamemode", "0");
         properties.setProperty("enable-query", "false");
         properties.setProperty("player-idle-timeout", "0");
-        properties.setProperty("difficulty", "1");
+        properties.setProperty("difficulty", "hard");
         properties.setProperty("spawn-monsters", "true");
         properties.setProperty("op-permission-level", "4");
         properties.setProperty("pvp", "true");
@@ -119,7 +124,7 @@ public class MinecraftServer {
         properties.setProperty("spawn-npcs", "true");
         properties.setProperty("allow-flight", "false");
         properties.setProperty("level-name", "world");
-        properties.setProperty("view-distance", "10");
+        properties.setProperty("view-distance", "16");
         properties.setProperty("resource-pack", "");
         properties.setProperty("spawn-animals", "true");
         properties.setProperty("white-list", "false");

@@ -16,7 +16,7 @@ import com.orbitmines.archive.minecraft.spigot._2019.servers.build.database.mode
 public class CommandMapList extends Command<Build, BuildPlayer> {
 
     public CommandMapList(Build plugin) {
-        super(plugin, Server.BUILD, "maps", "maplist");
+        super(plugin, Server.CREATIVE, "maps", "maplist");
 
         executes((Executor0<Build, BuildPlayer>) (player) -> {
             StringBuilder builder = new StringBuilder();

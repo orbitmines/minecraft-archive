@@ -20,7 +20,7 @@ public enum Server {
     HUB(Color.TEAL, "Hub", "hub", 100, VipRank.NONE),
     SURVIVAL(Color.LIME, "Survival", "survival", 100, VipRank.NONE),
     KITPVP(Color.RED, "KitPvP", "kitpvp", 100, VipRank.NONE),
-    BUILD(Color.FUCHSIA, "Build", "build", 100, StaffRank.PROVISIONAL_BUILDER),
+//    BUILD(Color.FUCHSIA, "Build", "build", 100, StaffRank.PROVISIONAL_BUILDER),
     PRISON(Color.MAROON, "Prison", "prison", 100),
     CREATIVE(Color.FUCHSIA, "Creative", "creative", 100),
     SKYBLOCK(Color.PURPLE, "SkyBlock", "skyblock", 100),
@@ -167,7 +167,6 @@ public enum Server {
     public static Set<Server> playable() {
         Set<Server> servers = new HashSet<>(Arrays.asList(values()));
         servers.remove(BUNGEECORD);
-        servers.remove(BUILD);
 
         return servers;
     }

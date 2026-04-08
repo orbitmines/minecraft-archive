@@ -5,56 +5,52 @@ package com.orbitmines.archive.minecraft.spigot._2019.servers.build.commands;
  */
 
 import com.orbitmines.archive.minecraft._2019.libs.Color;
-import com.orbitmines.archive.minecraft._2019.libs.Server;
 import com.orbitmines.archive.minecraft._2019.libs.player.Name;
+import com.orbitmines.archive.minecraft._2019.libs.rank.Rank;
 import com.orbitmines.archive.minecraft._2019.libs.rank.StaffRank;
-import com.orbitmines.archive.minecraft.spigot._2019.libs.spigot.commands.arguments.IntegerArgument;
+import com.orbitmines.archive.minecraft._2019.libs.utils.Message;
+import com.orbitmines.archive.minecraft.spigot._2019.libs.spigot.OMPlayer;
+import com.orbitmines.archive.minecraft.spigot._2019.libs.spigot.OMServer;
 import com.orbitmines.archive.minecraft.spigot._2019.libs.spigot.commands.arguments.PlayerArgument;
 import com.orbitmines.archive.minecraft.spigot._2019.libs.spigot.commands.brigadier.Command;
 import com.orbitmines.archive.minecraft.spigot._2019.libs.spigot.commands.brigadier.executors.Executor1;
-import com.orbitmines.archive.minecraft.spigot._2019.libs.spigot.commands.brigadier.executors.Executor3;
-import com.orbitmines.archive.minecraft.spigot._2019.servers.build.Build;
-import com.orbitmines.archive.minecraft.spigot._2019.servers.build.BuildPlayer;
-import org.bukkit.Location;
+import com.orbitmines.archive.minecraft.spigot._2019.utils.spigot.builders.chat.text.TextBuilder;
+import net.md_5.bungee.api.chat.ClickEvent;
+import net.md_5.bungee.api.chat.HoverEvent;
 
-public class CommandTeleport extends Command<Build, BuildPlayer> {
+public class CommandTeleport<S extends OMServer<S, P>, P extends OMPlayer<S, P>> extends Command<S, P> {
 
-    public CommandTeleport(Build plugin) {
-        super(plugin, Server.BUILD, "tp", "teleport");
+    public CommandTeleport(S plugin) {
+        this(plugin, StaffRank.NONE);
+    }
+
+    public CommandTeleport(S plugin, Rank rank) {
+        super(plugin, "tp", "teleport");
 
         withArg(
-            new PlayerArgument<Build, BuildPlayer>(plugin, false).executes((Executor1<Build, BuildPlayer,
-                BuildPlayer, PlayerArgument<Build, BuildPlayer>>
+            new PlayerArgument<S, P>(plugin, false).executes((Executor1<S, P,
+                P, PlayerArgument<S, P>>
             ) (player, target) -> {
-                plugin.runSync(() -> {
-                    player.teleport(target.getLocation());
-                    player.sendMessage("Teleporter", Color.LIME, "spigot", "player.command.tpto.to_player", target.getName(Name.RAW_COLORED) + "§7");
-                });
+                target.getTpRequests().add(player.getRawName());
+                target.getTpHereRequests().remove(player.getRawName());
+
+                player.sendMessage("Teleport", Color.LIME, "spigot", "player.command.tp.sent", target.getName(Name.RAW_COLORED) + "§7");
+                target.sendMessage("Teleport", Color.BLUE, "spigot", "player.command.tp.received", player.getName(Name.RAW_COLORED) + "§7");
+
+                TextBuilder<P> builder = new TextBuilder<>();
+                builder.add(Color.SILVER, p -> Message.format("Teleport", Color.LIME, "  " + target.translate("spigot", "player.command.tp.click_to_accept", "§a" + target.translate("spigot", "player.command.tp.accept"))))
+                    .click(ClickEvent.Action.RUN_COMMAND, p -> "/tpaccept " + player.getRawName())
+                    .hover(HoverEvent.Action.SHOW_TEXT, p -> "§7" + target.translate("spigot", "player.teleport_to", player.getName(Name.RAW_COLORED) + "§7"));
+
+                builder.send(target);
             })
         );
 
-        withArg(
-            new IntegerArgument<Build, BuildPlayer>("x").withArg(
-                new IntegerArgument<Build, BuildPlayer>("y").withArg(
-                    new IntegerArgument<Build, BuildPlayer>("z").executes((Executor3<Build, BuildPlayer,
-                        Integer, IntegerArgument<Build, BuildPlayer>,
-                        Integer, IntegerArgument<Build, BuildPlayer>,
-                        Integer, IntegerArgument<Build, BuildPlayer>>
-                    ) (player, x, y, z) -> {
-                        plugin.runSync(() -> {
-                            player.teleport(new Location(player.getWorld(), x, y, z));
-                            player.sendMessage("Teleporter", Color.LIME, "spigot", "player.command.tpto.to_location", "§6" + x + "§7", "§6" + y + "§7", "§6" + z + "§7");
-                        });
-                    })
-                )
-            )
-        );
-
-        requires(StaffRank.PROVISIONAL_BUILDER);
+        requires(rank);
     }
 
     @Override
-    public String getDescription(BuildPlayer player) {
-        return player.translate("spigot", "player.command.tpto.description");
+    public String getDescription(P player) {
+        return player.translate("spigot", "player.command.tp.description");
     }
 }

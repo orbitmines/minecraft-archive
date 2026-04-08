@@ -58,7 +58,7 @@ public class InteractiveKit<S extends SpigotServer<P>, P extends SpigotPlayer> e
     }
 
     @Override
-    protected ItemStack build(MutablePlayerItemBuilder<? extends ItemBuilderInstance, P> builder, P player) {
+    public ItemStack build(MutablePlayerItemBuilder<? extends ItemBuilderInstance, P> builder, P player) {
         ItemStack itemStack = super.build(builder, player);
 
         if (!interactions.containsKey(builder))

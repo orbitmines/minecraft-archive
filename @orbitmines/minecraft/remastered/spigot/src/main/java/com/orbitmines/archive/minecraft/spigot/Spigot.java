@@ -3,6 +3,7 @@ package com.orbitmines.archive.minecraft.spigot;
 import com.orbitmines.archive.minecraft._2019.libs.Environment;
 import com.orbitmines.archive.minecraft._2019.libs.Server;
 import com.orbitmines.archive.minecraft.spigot._2019.servers.build.Build;
+import com.orbitmines.archive.minecraft.spigot._2019.servers.creative.Creative;
 import com.orbitmines.archive.minecraft.spigot._2019.servers.hub.Hub;
 import com.orbitmines.archive.minecraft.spigot._2019.servers.kitpvp.KitPvP;
 import com.orbitmines.archive.minecraft.spigot._2019.servers.survival.Survival;
@@ -21,7 +22,7 @@ public class Spigot extends JavaPlugin {
             case SURVIVAL -> new Survival(this);
             case HUB -> new Hub(this);
             case KITPVP -> new KitPvP(this);
-            case BUILD -> new Build(this);
+            case CREATIVE -> new Creative(this);
             default -> throw new IllegalArgumentException("Unsupported server type: " + type);
         };
 

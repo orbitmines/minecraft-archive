@@ -49,7 +49,7 @@ public class SpigotDiscordBot extends OMDiscordBot {
     public void initialize(OnlineStatus status) {
         super.initialize(status);
 
-        if (server.getType() == Server.BUILD)
+        if (server.getType() == Server.CREATIVE)
             return;
 
         Category category = getServersCategory();
@@ -80,7 +80,7 @@ public class SpigotDiscordBot extends OMDiscordBot {
                 return;
             }
 
-            if (server.getType() == Server.BUILD && channel.getIdLong() == getTextChannel(CustomChannel.BUILDER).getIdLong()) {
+            if (server.getType() == Server.CREATIVE && channel.getIdLong() == getTextChannel(CustomChannel.BUILDER).getIdLong()) {
                 newChatHandler(user, ChatHandler.Type.BUILDER_CHAT, event.getMessage()).handleDiscordMessage(event.getMessage());
                 return;
             }
@@ -135,7 +135,7 @@ public class SpigotDiscordBot extends OMDiscordBot {
     }
 
     public TextChannel getTextChannel() {
-        if (server.getType() == Server.BUILD)
+        if (server.getType() == Server.CREATIVE)
             return getTextChannel(CustomChannel.BUILDER);
 
         String channelName = getChannelName();

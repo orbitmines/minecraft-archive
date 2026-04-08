@@ -17,7 +17,7 @@ import com.orbitmines.archive.minecraft.spigot._2019.servers.build.database.mode
 public class CommandMap extends Command<Build, BuildPlayer> {
 
     public CommandMap(Build plugin) {
-        super(plugin, Server.BUILD, "map");
+        super(plugin, Server.CREATIVE, "map");
 
         withArg(
             new MapArgument(plugin).executes((Executor1<Build, BuildPlayer,

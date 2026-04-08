@@ -49,16 +49,10 @@ public class SurvivalPlayer extends OMPlayer<Survival, SurvivalPlayer> {
     @Getter @Setter private Claim resizingClaim;
     @Getter @Setter private Location lastClaimToolLocation;
 
-    @Getter private Set<String> tpRequests;
-    @Getter private Set<String> tpHereRequests;
-
     public SurvivalPlayer(Player player, Survival server) {
         super(player, server);
 
         setGameMode(GameMode.SURVIVAL);
-
-        tpRequests = new HashSet<>();
-        tpHereRequests = new HashSet<>();
     }
 
     @Override
@@ -96,11 +90,20 @@ public class SurvivalPlayer extends OMPlayer<Survival, SurvivalPlayer> {
             resetScoreboard();
             setScoreboard(new SurvivalScoreboard(server, this));
 
-            /* Survival Lobby gets deleted and after restart it's not recognized as the same world due to no session.lock, so we teleport them to their logoutlocation */
-            if (getLogoutLocation() == null || !getLogoutLocation().getWorld().equals(server.getLobby().getWorld()))
-                return;
+            /* Check if the player logged out in a lobby world (default or custom).
+               The world reference may be null after restart (custom lobby not loaded yet). */
+            Location logout = getLogoutLocation();
+            boolean wasInLobby = logout != null && logout.getWorld() != null && logout.getWorld().equals(server.getLobby().getWorld());
+            boolean wasInCustomLobby = logout != null && logout.getWorld() == null && getLobbyPreferenceMap() != null;
 
-            this.bukkit().teleport(getLogoutLocation());
+            if (wasInLobby) {
+                /* Survival Lobby gets deleted and after restart it's not recognized as the same world due to no session.lock, so we teleport them to their logoutlocation */
+                this.bukkit().teleport(logout);
+            }
+
+            /* Custom lobby teleport — only if they were in a lobby world when they logged out */
+            if ((wasInLobby || wasInCustomLobby) && getLobbyPreferenceMap() != null)
+                server.teleportToPlayerLobby(this, null);
         });
 
         return true;
@@ -184,14 +187,6 @@ public class SurvivalPlayer extends OMPlayer<Survival, SurvivalPlayer> {
 
     public int getWarpsAllowed() {
         return (isEligible(VipRank.EMERALD) ? 1 : 0) + (isWarpSlotShop() ? 1 : 0) + (isWarpSlotPrisms() ? 1 : 0);
-    }
-
-    public boolean hasTpRequestFrom(String name) {
-        return tpRequests.contains(name);
-    }
-
-    public boolean hasTpHereRequestFrom(String name) {
-        return tpHereRequests.contains(name);
     }
 
     /*

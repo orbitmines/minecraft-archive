@@ -7,6 +7,9 @@ package com.orbitmines.archive.minecraft.spigot._2019.libs.spigot.guis;
 import com.orbitmines.archive.minecraft._2019.libs.database.models.PlayerModel;
 import com.orbitmines.archive.minecraft._2019.libs.database.models.PlayerSettings;
 import com.orbitmines.archive.minecraft.spigot._2019.libs.spigot.OMPlayer;
+import com.orbitmines.archive.minecraft.spigot._2019.libs.spigot.OMServer;
+import com.orbitmines.archive.minecraft.spigot._2019.libs.spigot.database.models.LobbyPreference;
+import com.orbitmines.archive.minecraft.spigot._2019.libs.spigot.database.models.OMMap;
 import com.orbitmines.archive.minecraft.spigot._2019.libs.spigot.pubsub.publishers.PlayerLanguageChangePublisher;
 import com.orbitmines.archive.minecraft.spigot._2019.libs.spigot.settings.PlayerVisibility;
 import com.orbitmines.archive.minecraft.spigot._2019.libs.spigot.utils.LanguageUtils;
@@ -83,6 +86,25 @@ public class SettingsGUI<P extends OMPlayer> extends GUI<P> {
             new PlayerLanguageChangePublisher().publish(settingsFor, language);
 
             StateProvider.getInstance().setPlayerField(settingsFor.getUUID(), "language", language.toString());
+        }));
+
+        /* Lobby Preference */
+        set(1, 8, new Item<P, MutableItemBuilder>(() -> new ItemBuilder(Material.COMPASS).setDisplayName("§7§l" + viewer.translate("spigot", "settings.lobby.title"))));
+
+        set(2, 8, new Item<P, MutableItemBuilder>(() -> {
+            LobbyPreference pref = settingsFor.getLobbyPreference();
+            String lobbyName;
+            if (pref != null) {
+                OMMap map = settingsFor.getLobbyPreferenceMap();
+                lobbyName = "§d" + (map != null ? map.getName() : pref.getWorldFileName());
+            } else {
+                lobbyName = "§a" + viewer.translate("spigot", "settings.lobby.default");
+            }
+
+            return new ItemBuilder(Material.MAGENTA_STAINED_GLASS, 1, lobbyName);
+        }, event -> {
+            viewer.playSound(Sound.UI_BUTTON_CLICK);
+            new LobbySelectGUI((OMServer) com.orbitmines.archive.minecraft.spigot._2019.utils.spigot.placeholders.SpigotServer.getInstance(), settingsFor).open();
         }));
     }
 

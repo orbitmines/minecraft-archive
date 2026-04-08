@@ -19,7 +19,7 @@ import org.bukkit.inventory.meta.ItemMeta;
 public class CommandRename extends Command<Build, BuildPlayer> {
 
     public CommandRename(Build plugin) {
-        super(plugin, Server.BUILD, "rename", "name");
+        super(plugin, Server.CREATIVE, "rename", "name");
 
         withArg(
             new MessageArgument<Build, BuildPlayer>("name").executes((Executor1<Build, BuildPlayer,

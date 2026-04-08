@@ -151,9 +151,8 @@ public class Bungeecord implements VoteHandler, VotifierPlugin {
             if (firstLoad) {
                 importDump(database);
                 clearSurvivalData(database);
+                seedMaps(database, root);
             }
-
-            seedMaps(database, root);
 
             /* Clean up vote entries with timestamps in the future (caused by millisecond vs second bugs) */
             database.executeQuery("DELETE FROM `last_votes` WHERE `last_vote_at` > datetime('now')");

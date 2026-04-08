@@ -5,22 +5,26 @@ package com.orbitmines.archive.minecraft.spigot._2019.servers.build.commands;
  */
 
 import com.orbitmines.archive.minecraft._2019.libs.Color;
-import com.orbitmines.archive.minecraft._2019.libs.Server;
+import com.orbitmines.archive.minecraft._2019.libs.rank.Rank;
 import com.orbitmines.archive.minecraft._2019.libs.rank.StaffRank;
+import com.orbitmines.archive.minecraft.spigot._2019.libs.spigot.OMPlayer;
+import com.orbitmines.archive.minecraft.spigot._2019.libs.spigot.OMServer;
 import com.orbitmines.archive.minecraft.spigot._2019.libs.spigot.commands.arguments.IntegerArgument;
 import com.orbitmines.archive.minecraft.spigot._2019.libs.spigot.commands.brigadier.Command;
 import com.orbitmines.archive.minecraft.spigot._2019.libs.spigot.commands.brigadier.executors.Executor1;
-import com.orbitmines.archive.minecraft.spigot._2019.servers.build.Build;
-import com.orbitmines.archive.minecraft.spigot._2019.servers.build.BuildPlayer;
 
-public class CommandSpeed extends Command<Build, BuildPlayer> {
+public class CommandSpeed<S extends OMServer<S, P>, P extends OMPlayer<S, P>> extends Command<S, P> {
 
-    public CommandSpeed(Build plugin) {
-        super(plugin, Server.BUILD, "speed");
+    public CommandSpeed(S plugin) {
+        this(plugin, StaffRank.NONE);
+    }
+
+    public CommandSpeed(S plugin, Rank rank) {
+        super(plugin, "speed");
 
         withArg(
-            new IntegerArgument<Build, BuildPlayer>("speed").executes((Executor1<Build, BuildPlayer,
-                Integer, IntegerArgument<Build, BuildPlayer>>
+            new IntegerArgument<S, P>("speed").executes((Executor1<S, P,
+                Integer, IntegerArgument<S, P>>
             ) (player, speed) -> {
                 float actualSpeed = speed * 0.1F;
 
@@ -32,11 +36,11 @@ public class CommandSpeed extends Command<Build, BuildPlayer> {
             })
         );
 
-        requires(StaffRank.PROVISIONAL_BUILDER);
+        requires(rank);
     }
 
     @Override
-    public String getDescription(BuildPlayer player) {
+    public String getDescription(P player) {
         return player.translate("build", "player.command.speed.description");
     }
 }

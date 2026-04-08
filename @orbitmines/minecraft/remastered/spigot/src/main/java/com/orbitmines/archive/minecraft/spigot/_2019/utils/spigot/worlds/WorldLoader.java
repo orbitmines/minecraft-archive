@@ -86,6 +86,11 @@ public class WorldLoader {
             File destDir = new File(Bukkit.getWorldContainer().getAbsoluteFile(), worldName);
             FileUtils.copyDirectory(sourceDir, destDir);
 
+            /* Delete uid.dat so Minecraft generates a fresh unique world ID (avoids duplicate world rejection) */
+            File uidFile = new File(destDir, "uid.dat");
+            if (uidFile.exists())
+                uidFile.delete();
+
             World world = Bukkit.createWorld(type.getWorldCreator().getConstructor(String.class).newInstance(worldName).generateStructures(false).environment(type.getEnvironment()));
             worlds.add(world);
 

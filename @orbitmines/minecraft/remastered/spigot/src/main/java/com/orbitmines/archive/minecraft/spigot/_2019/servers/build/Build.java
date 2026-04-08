@@ -9,6 +9,7 @@ import com.orbitmines.archive.minecraft._2019.libs.player.PlayerInstance;
 import com.orbitmines.archive.minecraft.spigot._2019.libs.spigot.ChatHandler;
 import com.orbitmines.archive.minecraft.spigot._2019.libs.spigot.OMServer;
 import com.orbitmines.archive.minecraft.spigot._2019.libs.spigot.TabListHandler;
+import com.orbitmines.archive.minecraft.spigot._2019.utils.spigot.prevention.Prevention;
 import com.orbitmines.archive.minecraft.spigot._2019.libs.spigot.commands.brigadier.Command;
 import com.orbitmines.archive.minecraft.spigot._2019.libs.spigot.database.models.OMMap;
 import com.orbitmines.archive.minecraft.spigot._2019.libs.spigot.events.CommandEvents;
@@ -113,7 +114,7 @@ public class Build extends OMServer<Build, BuildPlayer> {
 
     public World getFallbackWorld() {
         for (BuildMap map : maps) {
-            if (map.getServer() == Server.BUILD && map.getWorldFileName().equals("build_lobby"))
+            if (map.getServer() == Server.CREATIVE && map.getWorldFileName().equals("build_lobby"))
                 return map.getWorld();
         }
         return Bukkit.getWorlds().get(0);
@@ -127,7 +128,7 @@ public class Build extends OMServer<Build, BuildPlayer> {
 
     @Override
     public Server getType() {
-        return Server.BUILD;
+        return Server.CREATIVE;
     }
 
     @Override
@@ -172,6 +173,11 @@ public class Build extends OMServer<Build, BuildPlayer> {
 
     @Override
     public DataPointHandler createDataPointHandler(OMMap.Type type) {
+        return null;
+    }
+
+    @Override
+    public Prevention[] getLobbyPreventions() {
         return null;
     }
 

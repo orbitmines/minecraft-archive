@@ -103,11 +103,15 @@ public class KitPvPPlayer extends OMPlayer<KitPvP, KitPvPPlayer> {
 
         server.runSync(() -> {
             levelData.updateExperienceBar(player);
-            
+
             server.getLobbyKit().copyToInventory(this);
 
             resetScoreboard();
             setScoreboard(new KitPvPScoreboard(server, this));
+
+            /* Custom lobby teleport — after all default setup */
+            if (getLobbyPreferenceMap() != null)
+                server.teleportToPlayerLobby(this, null);
         });
 
         return true;

@@ -95,7 +95,8 @@ public class WorldSeeder {
     private static final Set<String> ENABLED_LOBBIES = Set.of(
         "2019-06-17_Lobby_HUB",
         "2019-06-17_lobby_kitpvp",
-        "2019-06-17_lobby_survival"
+        "2019-06-17_lobby_survival",
+        "2015-08-02_CreativeLobby"
     );
 
     private static final Set<String> ENABLED_KITPVP_GAMEMAPS = Set.of(

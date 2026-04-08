@@ -333,6 +333,22 @@ public class Survival extends OMServer<Survival, SurvivalPlayer> {
     }
 
     @Override
+    public Prevention[] getLobbyPreventions() {
+        return new Prevention[]{
+            Prevention.BLOCK_BREAK,
+            Prevention.BLOCK_INTERACTING,
+            Prevention.BLOCK_PLACE,
+            Prevention.ENTITY_INTERACTING,
+            Prevention.LEAF_DECAY,
+            Prevention.PLAYER_DAMAGE,
+            Prevention.WEATHER_CHANGE,
+            Prevention.MONSTER_EGG_USAGE,
+            Prevention.BUCKET_USAGE,
+            Prevention.FOOD_CHANGE
+        };
+    }
+
+    @Override
     public void setupNpc(String string, Location location) {
         switch (string.toUpperCase()) {
             case "SURVIVAL_SHOP": {
