@@ -41,6 +41,9 @@ public class MinecraftServer {
 
     public void runSync() {
         try {
+            System.out.print("[" + getName() + "] Starting server...\n");
+            System.out.flush();
+
             this.create();
 
             this.running = true;
@@ -57,14 +60,16 @@ public class MinecraftServer {
 
             String s;
             while ((s = input.readLine()) != null) {
-                System.out.print("[\033[1;32m" + getName() + "\033[0m] " + s);
+                System.out.print("[\033[1;32m" + getName() + "\033[0m] " + s + "\n");
                 System.out.flush();
             }
             while ((s = error.readLine()) != null) {
-                System.out.print("[\033[1;31m" + getName() + "\033[0m] " + s);
+                System.out.print("[\033[1;31m" + getName() + "\033[0m] " + s + "\n");
                 System.out.flush();
             }
-        } catch (IOException | ConfigurationException e) {
+        } catch (Exception e) {
+            System.out.print("[\033[1;31m" + getName() + "\033[0m] Failed to start: " + e.getMessage() + "\n");
+            System.out.flush();
             e.printStackTrace();
         }
         this.running = false;
