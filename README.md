@@ -35,7 +35,7 @@
   
   *On first install, this will (1) Download Spigot, (2) Compile the code in `@orbitmines/minecraft/remastered` and (3) download all worlds (40.9 GB compressed, 74.3 GB on disk) from `archive.orbitmines.com`.*
     ```
-    ./orbitmines minecraft run
+    ./orbitmines minecraft run --compile
     ```
   
 ---
