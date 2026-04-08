@@ -135,9 +135,6 @@ public class SpigotDiscordBot extends OMDiscordBot {
     }
 
     public TextChannel getTextChannel() {
-        if (server.getType() == Server.CREATIVE)
-            return getTextChannel(CustomChannel.BUILDER);
-
         String channelName = getChannelName();
 
         for (TextChannel channel : getServersCategory().getTextChannels()) {

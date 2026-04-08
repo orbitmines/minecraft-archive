@@ -140,10 +140,10 @@ public class CreativePlayer extends OMPlayer<Creative, CreativePlayer> {
 
     @Override
     public void onFirstLogin() {
-        server.teleportToPlayerLobby(this, () -> {
+        server.runSync(() -> server.teleportToPlayerLobby(this, () -> {
             giveSpawnInventory();
             bukkit().getInventory().setHeldItemSlot(4);
-        });
+        }));
     }
 
     public void giveSpawnInventory() {
