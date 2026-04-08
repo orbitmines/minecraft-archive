@@ -49,7 +49,7 @@ public class Creative extends OMServer<Creative, CreativePlayer> {
     /** Pattern matching a UUID prefix (xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx_). */
     private static final Pattern UUID_PREFIX = Pattern.compile("^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}_", Pattern.CASE_INSENSITIVE);
 
-    @Getter private List<CreativeWorld> allWorlds = new ArrayList<>();
+    @Getter private List<CreativeWorld> allWorlds = new java.util.concurrent.CopyOnWriteArrayList<>();
     @Getter private CreativeLobbyKit lobbyKit;
 
     public Creative(JavaPlugin plugin) {
@@ -314,7 +314,7 @@ public class Creative extends OMServer<Creative, CreativePlayer> {
 
     public CreativeWorld getWorldByBukkitWorld(World world) {
         for (CreativeWorld cw : allWorlds) {
-            if (cw.isLoaded() && cw.getWorld().equals(world))
+            if (cw != null && cw.isLoaded() && cw.getWorld().equals(world))
                 return cw;
         }
         return null;

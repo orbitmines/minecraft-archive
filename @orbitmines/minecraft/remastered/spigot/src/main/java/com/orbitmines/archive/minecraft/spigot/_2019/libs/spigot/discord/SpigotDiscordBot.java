@@ -72,7 +72,10 @@ public class SpigotDiscordBot extends OMDiscordBot {
             if (user.isBot())
                 return;
 
-            TextChannel channel = event.getChannel().asTextChannel();
+            if (!(event.getChannel() instanceof TextChannel))
+                return;
+
+            TextChannel channel = (TextChannel) event.getChannel();
             Category category = getServersCategory();
 
             if (channel.getIdLong() == getTextChannel(CustomChannel.STAFF).getIdLong()) {
