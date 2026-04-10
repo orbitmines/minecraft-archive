@@ -451,6 +451,12 @@ public class DiscordSquad extends OMMySQLModel<DiscordSquad, DiscordSquad.column
         }
 
         public void start() {
+            DiscordUser discordUser = DiscordUser.findBy(DiscordUser.class, DiscordUser.column.UUID.is(player.getUUID()));
+            if (discordUser == null || discordUser.getDiscordUser(bot) == null) {
+                player.sendMessage("Discord", Color.ERROR, "global", "player.discord_squad.setup.no_linked_account");
+                return;
+            }
+
             player.sendMessage("Discord", Color.INFO, "global", "player.discord_squad.setup.start");
 
             if (!DiscordSquad.this.isInserted())

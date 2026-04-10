@@ -202,12 +202,9 @@ public class Visualization {
     }
 
     private void removeElementsOutOfRange(int minX, int minZ, int maxX, int maxZ) {
-        for (int i = 0; i < elements.size(); i++) {
-            Location location = elements.get(i).location;
-            if (location.getX() < minX || location.getX() > maxX || location.getZ() < minZ || location.getZ() > maxZ) {
-                elements.remove(i--);
-            }
-        }
+        elements.removeIf(element -> element == null || element.location == null ||
+                element.location.getX() < minX || element.location.getX() > maxX ||
+                element.location.getZ() < minZ || element.location.getZ() > maxZ);
     }
 
     private Location getVisibleLocation(World world, int x, int y, int z, boolean waterIsTransparent) {
