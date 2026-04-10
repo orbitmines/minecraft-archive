@@ -30,7 +30,7 @@ public class BungeeCord extends Plugin {
         bungeecord.onEnable();
 
         for (Server type : List.of(Server.HUB, Server.KITPVP, Server.SURVIVAL, Server.CREATIVE)) {
-            MinecraftServer server = new MinecraftServer(type, "26.1.1", Environment.get("OM_RAM_" + type.toString(), Environment.get("OM_RAM_DEFAULT", "2G")), findAvailablePort());
+            MinecraftServer server = new MinecraftServer(type, "26.1.2", Environment.get("OM_RAM_" + type.toString(), Environment.get("OM_RAM_DEFAULT", "2G")), findAvailablePort());
             server.run();
             this.registerServer(server);
         }
