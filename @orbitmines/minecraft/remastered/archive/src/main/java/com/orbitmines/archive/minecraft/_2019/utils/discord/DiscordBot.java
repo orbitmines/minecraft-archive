@@ -20,6 +20,8 @@ import net.dv8tion.jda.api.entities.channel.Channel;
 import net.dv8tion.jda.api.entities.emoji.RichCustomEmoji;
 import net.dv8tion.jda.api.events.message.MessageReceivedEvent;
 import net.dv8tion.jda.api.requests.GatewayIntent;
+import net.dv8tion.jda.api.utils.ChunkingFilter;
+import net.dv8tion.jda.api.utils.MemberCachePolicy;
 
 import javax.security.auth.login.LoginException;
 import java.util.List;
@@ -53,6 +55,8 @@ public abstract class DiscordBot {
     private JDA buildJda(String token, OnlineStatus status) {
         JDABuilder jdaBuilder = JDABuilder.createDefault(token).
             enableIntents(GatewayIntent.getIntents(GatewayIntent.ALL_INTENTS)).
+            setMemberCachePolicy(MemberCachePolicy.ALL).
+            setChunkingFilter(ChunkingFilter.ALL).
             setAutoReconnect(true).
             setActivity(null).
             setStatus(status);

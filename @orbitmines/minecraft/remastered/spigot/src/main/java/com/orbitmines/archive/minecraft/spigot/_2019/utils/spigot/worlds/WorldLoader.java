@@ -131,8 +131,12 @@ public class WorldLoader {
     }
 
     private void cleanUpPreviousWorld(String worldFile) {
-        File file = new File(resourceFolder + "/" + worldFile);
+        /* If still loaded from a previous run, unload it first so we can wipe the folder. */
+        World existing = Bukkit.getWorld(worldFile);
+        if (existing != null)
+            Bukkit.unloadWorld(existing, false);
 
+        File file = new File(Bukkit.getWorldContainer().getAbsoluteFile(), worldFile);
         if (file.exists())
             FileUtils.deleteDirectory(file);
     }

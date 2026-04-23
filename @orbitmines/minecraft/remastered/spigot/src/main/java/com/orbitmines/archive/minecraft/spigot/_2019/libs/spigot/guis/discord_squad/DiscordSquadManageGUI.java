@@ -137,7 +137,7 @@ public class DiscordSquadManageGUI<S extends OMServer<S, P>, P extends OMPlayer<
 
             DiscordUser discordUser = member.getDiscordUser();
             User user = discordUser != null && bot != null ? discordUser.getDiscordUser(bot) : null;
-            builder.addLore("§7Discord: " + (user != null ? "§9§l" + user.getName() + "#" + user.getDiscriminator() : VipRank.NONE.getDisplayName()));
+            builder.addLore("§7Discord: " + (user != null ? "§9§l" + user.getName() : VipRank.NONE.getDisplayName()));
 
             builder.addLore("");
 

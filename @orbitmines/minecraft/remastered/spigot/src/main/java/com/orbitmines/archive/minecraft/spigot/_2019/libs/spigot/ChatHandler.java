@@ -265,7 +265,9 @@ public class ChatHandler<S extends OMServer<S, P>, P extends OMPlayer<S, P>> {
             message = message.replaceAll("#" + textChannel.getName(), textChannel.getAsMention());
         }
         for (Member member : guild.getMembers()) {
-            message = message.replace("@" + member.getEffectiveName() + "#" + member.getUser().getDiscriminator(), member.getAsMention()).replaceAll("@" + member.getEffectiveName(), member.getAsMention()).replaceAll("@" + member.getNickname(), member.getAsMention());
+            message = message.replaceAll("@" + member.getEffectiveName(), member.getAsMention());
+            if (member.getNickname() != null)
+                message = message.replaceAll("@" + member.getNickname(), member.getAsMention());
         }
         for (RichCustomEmoji emote : guild.getEmojis()) {
             message = message.replaceAll(":" + emote.getName() + ":", emote.getAsMention());
@@ -310,7 +312,7 @@ public class ChatHandler<S extends OMServer<S, P>, P extends OMPlayer<S, P>> {
                 User user = discordUser.getDiscordUser(bot);
 
                 if (user != null)
-                    hover.append(sender.getRankColor().getCc() + user.getName() + "#" + user.getDiscriminator());
+                    hover.append(sender.getRankColor().getCc() + user.getName());
                 else
                     hover.append("§f§l" + Rank.NONE);
             } else {
