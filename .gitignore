@@ -1,3 +1,9 @@
-./.orbitmines/spigot
-./.orbitmines/servers
-./**/target
+/.orbitmines/
+/@orbitmines/minecraft/archive/worlds.zip
+/@orbitmines/minecraft/archive/worlds
+/**/target
+/**/.idea
+/**/.vscode
+/**/.claude
+@orbitmines/minecraft/archive/code & workspace/arcs/
+/om
