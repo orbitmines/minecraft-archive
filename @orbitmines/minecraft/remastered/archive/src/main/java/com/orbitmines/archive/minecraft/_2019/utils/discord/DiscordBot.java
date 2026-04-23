@@ -11,8 +11,10 @@ import net.dv8tion.jda.api.JDABuilder;
 import net.dv8tion.jda.api.OnlineStatus;
 import net.dv8tion.jda.api.entities.*;
 import net.dv8tion.jda.api.entities.channel.concrete.Category;
+import net.dv8tion.jda.api.entities.channel.concrete.NewsChannel;
 import net.dv8tion.jda.api.entities.channel.concrete.TextChannel;
 import net.dv8tion.jda.api.entities.channel.concrete.VoiceChannel;
+import net.dv8tion.jda.api.entities.channel.middleman.GuildMessageChannel;
 import net.dv8tion.jda.api.entities.channel.middleman.MessageChannel;
 import net.dv8tion.jda.api.entities.channel.Channel;
 import net.dv8tion.jda.api.entities.emoji.RichCustomEmoji;
@@ -89,8 +91,21 @@ public abstract class DiscordBot {
 
             case TEXT:
                 return getTextChannel(channel);
+            case NEWS:
+                return getNewsChannel(channel);
             case VOICE:
                 return getVoiceChannel(channel);
+            default:
+                return null;
+        }
+    }
+
+    public GuildMessageChannel getMessageChannel(DiscordChannel channel) {
+        switch (channel.getChannelType()) {
+            case TEXT:
+                return getTextChannel(channel);
+            case NEWS:
+                return getNewsChannel(channel);
             default:
                 return null;
         }
@@ -109,6 +124,20 @@ public abstract class DiscordBot {
         if (list.size() == 1) return list.get(0);
 
         for (TextChannel c : list) {
+            if (c.getParentCategory() != null && c.getParentCategory().getName().equals(channel.getCategoryName()))
+                return c;
+        }
+
+        if (!list.isEmpty()) return list.get(0);
+
+        return null;
+    }
+
+    public NewsChannel getNewsChannel(DiscordChannel channel) {
+        List<NewsChannel> list = getGuild().getNewsChannelsByName(channel.getName(), true);
+        if (list.size() == 1) return list.get(0);
+
+        for (NewsChannel c : list) {
             if (c.getParentCategory() != null && c.getParentCategory().getName().equals(channel.getCategoryName()))
                 return c;
         }

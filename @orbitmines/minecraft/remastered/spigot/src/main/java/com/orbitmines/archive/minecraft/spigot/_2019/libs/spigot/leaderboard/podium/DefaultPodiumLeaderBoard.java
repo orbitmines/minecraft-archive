@@ -10,6 +10,7 @@ import com.orbitmines.archive.minecraft._2019.utils.database.lib.Table;
 import com.orbitmines.archive.minecraft._2019.utils.database.lib.builder.mysql.MySQLQueryBuilder;
 import com.orbitmines.archive.minecraft.spigot._2019.utils.spigot.BlockDataUtils;
 import com.orbitmines.archive.minecraft.spigot._2019.utils.spigot.BlockUtils;
+import com.orbitmines.archive.minecraft.spigot._2019.utils.spigot.SkullTextures;
 import com.orbitmines.archive.minecraft.spigot._2019.utils.spigot.npcs.Hologram;
 import com.orbitmines.archive.minecraft.spigot._2019.utils.spigot.placeholders.SpigotServer;
 import org.bukkit.Location;
@@ -182,7 +183,13 @@ public class DefaultPodiumLeaderBoard extends LeaderBoard {
                 Block block = BlockDataUtils.setBlock(location.getWorld(), location.getBlockX(), location.getBlockY(), location.getBlockZ(), Material.PLAYER_HEAD);
 
                 Skull skull = (Skull) block.getState();
-                skull.setOwningPlayer(Bukkit.getOfflinePlayer(uuid));
+                SkullTextures.applyTo(skull, uuid, () -> SpigotServer.getInstance().runSync(() -> {
+                    Block refreshed = location.getBlock();
+                    if (refreshed.getState() instanceof Skull s) {
+                        SkullTextures.applyTo(s, uuid, null);
+                        s.update(true, true);
+                    }
+                }));
                 skull.setRotation(BlockUtils.getBlockFaceFromYaw(yaw).getOppositeFace());
 
                 skull.update(true, true);

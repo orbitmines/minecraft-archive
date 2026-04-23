@@ -13,7 +13,7 @@ import net.dv8tion.jda.api.entities.channel.ChannelType;
 public enum CustomChannel implements DiscordChannel {
 
     WELCOME(null, "welcome", ChannelType.TEXT),
-    ANNOUNCEMENTS(null, "announcements", ChannelType.TEXT),
+    ANNOUNCEMENTS(null, "announcements", ChannelType.NEWS),
 
     PATCH_NOTES("General", "patch_notes", ChannelType.TEXT),
     COMMUNITY("General", "general", ChannelType.TEXT),

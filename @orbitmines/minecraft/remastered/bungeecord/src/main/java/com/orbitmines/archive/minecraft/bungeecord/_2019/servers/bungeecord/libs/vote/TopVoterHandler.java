@@ -23,7 +23,7 @@ import com.orbitmines.archive.minecraft._2019.utils.database.lib.Selectable;
 import com.orbitmines.archive.minecraft._2019.utils.database.lib.builder.mysql.MySQLQueryBuilder;
 import com.orbitmines.archive.minecraft._2019.utils.database.lib.operators.mysql.Order;
 import com.orbitmines.archive.minecraft._2019.utils.state.StateProvider;
-import net.dv8tion.jda.api.entities.channel.concrete.TextChannel;
+import net.dv8tion.jda.api.entities.channel.middleman.GuildMessageChannel;
 
 import java.math.BigDecimal;
 import java.time.Month;
@@ -119,7 +119,7 @@ public class TopVoterHandler {
             return;
 
         bungee.discord(bot -> {
-            TextChannel channel = bot.getTextChannel(CustomChannel.ANNOUNCEMENTS);
+            GuildMessageChannel channel = bot.getMessageChannel(CustomChannel.ANNOUNCEMENTS);
 
             channel.sendMessage("@everyone **TOP VOTERS OF " + month.toString() + " " + year + "**").queue();
 
@@ -138,7 +138,7 @@ public class TopVoterHandler {
         });
     }
 
-    private void sendTopVoter(BungeeDiscordBot bot, TextChannel channel, ArrayList<MonthlyVotes> topVoters, int index, CustomRole role, TopVoterReward topVoterReward) {
+    private void sendTopVoter(BungeeDiscordBot bot, GuildMessageChannel channel, ArrayList<MonthlyVotes> topVoters, int index, CustomRole role, TopVoterReward topVoterReward) {
         if (topVoters.size() <= index || index >= 3)
             return;
 

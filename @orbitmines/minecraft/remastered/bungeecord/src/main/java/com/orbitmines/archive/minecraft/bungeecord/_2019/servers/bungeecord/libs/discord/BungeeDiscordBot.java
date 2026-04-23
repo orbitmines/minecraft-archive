@@ -179,21 +179,30 @@ public class BungeeDiscordBot extends OMDiscordBot {
                         category = categoryMap.get(cc.getCategoryName());
                     }
 
-                    if (cc.getChannelType() == ChannelType.TEXT) {
-                        Channel discordChannel = getChannel(cc);
-                        if (discordChannel != null) {
-                            continue;
-                        }
+                    Channel discordChannel = getChannel(cc);
+                    if (discordChannel != null) {
+                        continue;
+                    }
 
-                        ConsoleUtils.msg("Adding " + cc.getName() + " channel to the Discord Server...");
+                    ConsoleUtils.msg("Adding " + cc.getName() + " channel to the Discord Server...");
 
-                        if (category != null) {
-                            category.createTextChannel(cc.getName()).queue((channel) -> ConsoleUtils.msg("Successfully added " + channel.getName() + " channel to the Discord Server."));
-                        } else {
-                            getGuild().createTextChannel(cc.getName()).queue((channel) -> ConsoleUtils.msg("Successfully added " + channel.getName() + " channel to the Discord Server."));
-                        }
-                    } else {
-                        throw new NotImplementedException();
+                    switch (cc.getChannelType()) {
+                        case TEXT:
+                            if (category != null) {
+                                category.createTextChannel(cc.getName()).queue((channel) -> ConsoleUtils.msg("Successfully added " + channel.getName() + " channel to the Discord Server."));
+                            } else {
+                                getGuild().createTextChannel(cc.getName()).queue((channel) -> ConsoleUtils.msg("Successfully added " + channel.getName() + " channel to the Discord Server."));
+                            }
+                            break;
+                        case NEWS:
+                            if (category != null) {
+                                category.createNewsChannel(cc.getName()).queue((channel) -> ConsoleUtils.msg("Successfully added " + channel.getName() + " announcement channel to the Discord Server."));
+                            } else {
+                                getGuild().createNewsChannel(cc.getName()).queue((channel) -> ConsoleUtils.msg("Successfully added " + channel.getName() + " announcement channel to the Discord Server."));
+                            }
+                            break;
+                        default:
+                            throw new NotImplementedException();
                     }
                 }
             });

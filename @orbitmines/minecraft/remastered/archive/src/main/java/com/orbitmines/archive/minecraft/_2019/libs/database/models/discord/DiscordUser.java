@@ -202,37 +202,37 @@ public class DiscordUser extends OMMySQLModel<DiscordUser, DiscordUser.column> {
             this.bot = bot;
         }
 
-        public DiscordUser link(Member member, PlayerInstance linkingTo) {
-            DiscordUser user = DiscordUser.findBy(DiscordUser.class, column.DISCORD_USER_ID.is(member.getUser().getIdLong()));
+        public DiscordUser link(User discordUser, PlayerInstance linkingTo) {
+            DiscordUser user = DiscordUser.findBy(DiscordUser.class, column.DISCORD_USER_ID.is(discordUser.getIdLong()));
 
             if (user != null && user.getUuid().equals(linkingTo.getUUID()))
-                return new DiscordUser(user.getUuid(), member.getUser().getIdLong(), MinecraftLinkResult.ALREADY_LINKED);
+                return new DiscordUser(user.getUuid(), discordUser.getIdLong(), MinecraftLinkResult.ALREADY_LINKED);
 
             Long linkingDiscordId = getLinkingDiscordUserId(linkingTo.getUUID());
-            if (linkingDiscordId == null || !linkingDiscordId.equals(member.getUser().getIdLong())) {
-                setLinkingUUID(member.getUser().getIdLong(), linkingTo.getUUID());
+            if (linkingDiscordId == null || !linkingDiscordId.equals(discordUser.getIdLong())) {
+                setLinkingUUID(discordUser.getIdLong(), linkingTo.getUUID());
 
-                return new DiscordUser(linkingTo.getUUID(), member.getUser().getIdLong(), MinecraftLinkResult.SETTING_UP);
+                return new DiscordUser(linkingTo.getUUID(), discordUser.getIdLong(), MinecraftLinkResult.SETTING_UP);
             }
 
             /* Revert previous link */
             if (user != null)
                 revertRanks(user);
 
-            return finalizeLink(linkingTo, member);
+            return finalizeLink(linkingTo, discordUser);
         }
 
-        public DiscordUser link(PlayerInstance player, Member linkingTo) {
+        public DiscordUser link(PlayerInstance player, User linkingTo) {
             DiscordUser user = DiscordUser.findBy(DiscordUser.class, column.UUID.is(player.getUUID()));
 
-            if (user != null && user.getDiscordUserId() == linkingTo.getUser().getIdLong())
-                return new DiscordUser(user.getUuid(), linkingTo.getUser().getIdLong(), MinecraftLinkResult.ALREADY_LINKED);
+            if (user != null && user.getDiscordUserId() == linkingTo.getIdLong())
+                return new DiscordUser(user.getUuid(), linkingTo.getIdLong(), MinecraftLinkResult.ALREADY_LINKED);
 
-            String linkingUuid = getLinkingUUID(linkingTo.getUser().getIdLong());
+            String linkingUuid = getLinkingUUID(linkingTo.getIdLong());
             if (linkingUuid == null || !linkingUuid.equals(player.getUUID().toString())) {
-                setLinkingDiscordUserId(player.getUUID(), linkingTo.getUser().getIdLong());
+                setLinkingDiscordUserId(player.getUUID(), linkingTo.getIdLong());
 
-                return new DiscordUser(player.getUUID(), linkingTo.getUser().getIdLong(), MinecraftLinkResult.SETTING_UP);
+                return new DiscordUser(player.getUUID(), linkingTo.getIdLong(), MinecraftLinkResult.SETTING_UP);
             }
 
             /* Revert previous link */
@@ -242,20 +242,19 @@ public class DiscordUser extends OMMySQLModel<DiscordUser, DiscordUser.column> {
             return finalizeLink(player, linkingTo);
         }
 
-        private DiscordUser finalizeLink(PlayerInstance player, Member member) {
-            DiscordUser discordUser = new DiscordUser(player.getUUID(), member.getUser().getIdLong());
-            discordUser.insert();
+        private DiscordUser finalizeLink(PlayerInstance player, User discordUser) {
+            DiscordUser link = new DiscordUser(player.getUUID(), discordUser.getIdLong());
+            link.insert();
 
-            User user = discordUser.getDiscordUser(bot);
             bot.withPlayerEmote(player.getUUID(), player.getName(Name.RAW), false, emote -> {
-                getChannel().sendMessage("Linking " + user.getAsMention() + " (Id: " + user.getId() + ") to " + bot.getPlayerDisplay(player, emote, player.getName(Name.RAW)) + "...").queue();
+                getChannel().sendMessage("Linking " + discordUser.getAsMention() + " (Id: " + discordUser.getId() + ") to " + bot.getPlayerDisplay(player, emote, player.getName(Name.RAW)) + "...").queue();
 
-                discordUser.updateDiscordRanks(bot);
+                link.updateDiscordRanks(bot);
             });
 
-            clearLinkingState(discordUser.getDiscordUserId(), discordUser.getUuid());
+            clearLinkingState(link.getDiscordUserId(), link.getUuid());
 
-            return discordUser;
+            return link;
         }
 
         private void revertRanks(DiscordUser discordUser) {

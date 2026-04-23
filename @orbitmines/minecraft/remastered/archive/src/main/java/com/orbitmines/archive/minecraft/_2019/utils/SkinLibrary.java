@@ -111,6 +111,19 @@ public abstract class SkinLibrary {
     private static final String SESSION_URL = "https://sessionserver.mojang.com/session/minecraft/profile/";
 
     private BufferedImage fetchSkinTexture(UUID uuid) throws Exception {
+        String skinUrl = fetchSkinUrl(uuid);
+        if (skinUrl == null)
+            return null;
+
+        try {
+            checkDirs(uuid);
+            Files.writeString(new File(getParentPath(uuid) + "/texture.url").toPath(), skinUrl);
+        } catch (IOException ignored) {}
+
+        return ImageIO.read(new URL(skinUrl));
+    }
+
+    private String fetchSkinUrl(UUID uuid) throws Exception {
         String uuidStr = uuid.toString().replace("-", "");
         HttpURLConnection connection = (HttpURLConnection) new URL(SESSION_URL + uuidStr).openConnection();
         connection.setRequestMethod("GET");
@@ -133,12 +146,39 @@ public abstract class SkinLibrary {
             if ("textures".equals(property.get("name").getAsString())) {
                 String decoded = new String(Base64.getDecoder().decode(property.get("value").getAsString()), StandardCharsets.UTF_8);
                 JsonObject textures = new JsonParser().parse(decoded).getAsJsonObject();
-                String skinUrl = textures.getAsJsonObject("textures").getAsJsonObject("SKIN").get("url").getAsString();
-                return ImageIO.read(new URL(skinUrl));
+                return textures.getAsJsonObject("textures").getAsJsonObject("SKIN").get("url").getAsString();
             }
         }
 
         return null;
+    }
+
+    /** Returns the cached Mojang skin URL for a UUID, or null if not cached. */
+    public String getCachedSkinUrl(UUID uuid) {
+        File file = new File(getParentPath(uuid) + "/texture.url");
+        if (!file.exists())
+            return null;
+        try {
+            return Files.readString(file.toPath()).trim();
+        } catch (IOException e) {
+            return null;
+        }
+    }
+
+    /** Resolves the skin URL from Mojang's session server asynchronously and caches it. */
+    public void updateSkinUrlAsync(UUID uuid, Runnable afterUpdate) {
+        updateLibraryAsync(() -> {
+            try {
+                String url = fetchSkinUrl(uuid);
+                if (url != null) {
+                    checkDirs(uuid);
+                    Files.writeString(new File(getParentPath(uuid) + "/texture.url").toPath(), url);
+                }
+            } catch (Exception ignored) {
+            } finally {
+                if (afterUpdate != null) afterUpdate.run();
+            }
+        });
     }
 
     public File getSkin(Type type, UUID uuid) {

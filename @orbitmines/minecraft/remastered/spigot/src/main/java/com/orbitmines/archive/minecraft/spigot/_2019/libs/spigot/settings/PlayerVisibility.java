@@ -21,16 +21,18 @@ public interface PlayerVisibility<S extends OMServer<S, P>, P extends OMPlayer<S
     default void updateVisibility() {
         P watcher = getInstance();
 
-        // TODO FIX
-        for (P player : new ArrayList<>(watcher.server().getPlayers())) {
-            player.getSettings(false);
-        }
-
-        SpigotServer.getInstance().runSync(() -> {
-            for (P player : watcher.server().getPlayers()) {
-                updateVisibility(player);
-                player.updateVisibility(watcher);
+        SpigotServer.getInstance().runAsync(() -> {
+            watcher.getSettings(false);
+            for (P player : new ArrayList<>(watcher.server().getPlayers())) {
+                player.getSettings(false);
             }
+
+            SpigotServer.getInstance().runSync(() -> {
+                for (P player : watcher.server().getPlayers()) {
+                    updateVisibility(player);
+                    player.updateVisibility(watcher);
+                }
+            });
         });
     }
 

@@ -4,7 +4,7 @@ package com.orbitmines.archive.minecraft.spigot._2019.utils.spigot.builders.item
  * OrbitMines - @author Fadi Shawki - 2019
  */
 
-import com.orbitmines.archive.minecraft.spigot._2019.utils.spigot.PlayerUtils;
+import com.orbitmines.archive.minecraft.spigot._2019.utils.spigot.SkullTextures;
 import com.orbitmines.archive.minecraft.spigot._2019.utils.spigot.nms.itemstack.ItemStackNms;
 import com.orbitmines.archive.minecraft.spigot._2019.utils.spigot.placeholders.SpigotServer;
 import lombok.Getter;
@@ -128,7 +128,7 @@ public class PlayerSkullBuilder extends ItemBuilderInstance<PlayerSkullBuilder, 
         meta = super.buildMeta(meta);
 
         if (this.uuid != null)
-            meta.setOwningPlayer(PlayerUtils.getOfflinePlayer(this.uuid));
+            SkullTextures.applyTo(meta, this.uuid);
 
         return meta;
     }

@@ -4,6 +4,9 @@ package com.orbitmines.archive.minecraft.spigot._2019.libs.spigot.events;
  * OrbitMines - @author Fadi Shawki - 2019
  */
 
+import com.orbitmines.archive.minecraft.spigot._2019.libs.spigot.OMServer;
+import com.orbitmines.archive.minecraft.spigot._2019.libs.spigot.leaderboard.LeaderBoard;
+import org.bukkit.Bukkit;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerJoinEvent;
@@ -14,6 +17,12 @@ public class PlayerJoinQuitEvents implements Listener {
     @EventHandler
     public void onJoin(PlayerJoinEvent event) {
         event.setJoinMessage(null);
+
+        Bukkit.getScheduler().runTaskAsynchronously(OMServer.getInstance().getPlugin(), () -> {
+            for (LeaderBoard leaderBoard : LeaderBoard.getLeaderBoards()) {
+                try { leaderBoard.update(); } catch (Exception ignored) {}
+            }
+        });
     }
 
     @EventHandler

@@ -48,9 +48,23 @@ public class MinecraftServer {
 
             this.running = true;
             this.process = Runtime.getRuntime().exec(
-// 1.8 - 1.13
-//                    "java -Xms" + this.RAM + " -Xmx" + this.RAM + " -XX:+UseG1GC -XX:+UnlockExperimentalVMOptions -XX:MaxGCPauseMillis=100 -XX:+DisableExplicitGC -XX:TargetSurvivorRatio=90 -XX:G1NewSizePercent=50 -XX:G1MaxNewSizePercent=80 -XX:InitiatingHeapOccupancyPercent=10 -XX:G1MixedGCLiveThresholdPercent=35 -XX:+AggressiveOpts -XX:+AlwaysPreTouch -XX:+ParallelRefProcEnabled -Dusing.aikars.flags=mcflags.emc.gs -Dfile.encoding=UTF-8 -Djline.terminal=jline.UnsupportedTerminal -jar server.jar",
-                    "java -Xms" + this.RAM + " -Xmx" + this.RAM + " -XX:+UseG1GC -XX:+UnlockExperimentalVMOptions -XX:MaxGCPauseMillis=100 -XX:+DisableExplicitGC -XX:TargetSurvivorRatio=90 -XX:G1NewSizePercent=50 -XX:G1MaxNewSizePercent=80 -XX:InitiatingHeapOccupancyPercent=10 -XX:G1MixedGCLiveThresholdPercent=35 -XX:+AlwaysPreTouch -XX:+ParallelRefProcEnabled -Dusing.aikars.flags=mcflags.emc.gs -Dfile.encoding=UTF-8 -Djline.terminal=jline.UnsupportedTerminal -DOM_SERVER_TYPE=" + type.name() + " -DOM_ROOT=" + System.getProperty("OM_ROOT", ".") + " -jar server.jar nogui",
+                    new String[] {
+                            "setpriv", "--pdeathsig", "SIGKILL",
+                            "java",
+                            "-Xms" + this.RAM, "-Xmx" + this.RAM,
+                            "-XX:+UseG1GC", "-XX:+UnlockExperimentalVMOptions",
+                            "-XX:MaxGCPauseMillis=100", "-XX:+DisableExplicitGC",
+                            "-XX:TargetSurvivorRatio=90", "-XX:G1NewSizePercent=50",
+                            "-XX:G1MaxNewSizePercent=80", "-XX:InitiatingHeapOccupancyPercent=10",
+                            "-XX:G1MixedGCLiveThresholdPercent=35", "-XX:+AlwaysPreTouch",
+                            "-XX:+ParallelRefProcEnabled",
+                            "-Dusing.aikars.flags=mcflags.emc.gs",
+                            "-Dfile.encoding=UTF-8",
+                            "-Djline.terminal=jline.UnsupportedTerminal",
+                            "-DOM_SERVER_TYPE=" + type.name(),
+                            "-DOM_ROOT=" + System.getProperty("OM_ROOT", "."),
+                            "-jar", "server.jar", "nogui"
+                    },
                     null,
                     this.getDirectory()
             );

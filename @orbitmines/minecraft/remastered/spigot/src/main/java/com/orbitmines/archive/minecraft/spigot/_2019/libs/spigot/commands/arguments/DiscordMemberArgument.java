@@ -42,32 +42,24 @@ public class DiscordMemberArgument<S extends OMServer<S, P>, P extends OMPlayer<
 
     @Override
     public Member getValue(P player, String string) {
-        String[] s = string.split("#");
-        String name = s[0];
-        String discriminator = s.length > 1 ? s[1] : "";
-
-        Member member = getFromDiscriminator(discriminator, bot.getGuild().getMembersByEffectiveName(name, true));
+        Member member = firstOrNull(bot.getGuild().getMembersByEffectiveName(string, true));
         if (member != null)
             return member;
 
-        member = getFromDiscriminator(discriminator, bot.getGuild().getMembersByName(name, true));
+        member = firstOrNull(bot.getGuild().getMembersByName(string, true));
         if (member != null)
             return member;
 
-        member = getFromDiscriminator(discriminator, bot.getGuild().getMembersByNickname(name, true));
+        member = firstOrNull(bot.getGuild().getMembersByNickname(string, true));
         if (member != null)
             return member;
 
-        player.sendMessage("Commands", Color.ERROR, "spigot", "player.command.argument.discord_member.invalid");
+        player.sendMessage("Commands", Color.ERROR, "spigot", "player.command.argument.discord_member.invalid", string);
         return null;
     }
 
-    private Member getFromDiscriminator(String discriminator, List<Member> group) {
-        for (Member member : group) {
-            if (member.getUser().getDiscriminator().equals(discriminator))
-                return member;
-        }
-        return null;
+    private Member firstOrNull(List<Member> group) {
+        return group.isEmpty() ? null : group.get(0);
     }
 
     @Override
@@ -91,7 +83,7 @@ public class DiscordMemberArgument<S extends OMServer<S, P>, P extends OMPlayer<
             if (member.getUser().isBot())
                 continue;
 
-            examples.add(member.getEffectiveName() + "#" + member.getUser().getDiscriminator());
+            examples.add(member.getEffectiveName());
 
             if (examples.size() == limit)
                 break;
@@ -109,16 +101,14 @@ public class DiscordMemberArgument<S extends OMServer<S, P>, P extends OMPlayer<
             if (member.getUser().isBot())
                 continue;
 
-            String discriminator = member.getUser().getDiscriminator();
-
-            if (stringify(member.getEffectiveName().toLowerCase(), discriminator).startsWith(remaining)) {
-                builder.suggest(member.getEffectiveName() + "#" + member.getUser().getDiscriminator(), getTooltip(member));
+            if (member.getEffectiveName().toLowerCase().startsWith(remaining)) {
+                builder.suggest(member.getEffectiveName(), getTooltip(member));
                 count++;
-            } else if (stringify(member.getUser().getName().toLowerCase(), discriminator).startsWith(remaining)) {
-                builder.suggest(member.getUser().getName() + "#" + member.getUser().getDiscriminator(), getTooltip(member));
+            } else if (member.getUser().getName().toLowerCase().startsWith(remaining)) {
+                builder.suggest(member.getUser().getName(), getTooltip(member));
                 count++;
-            } else if (member.getNickname() != null && stringify(member.getNickname().toLowerCase(), discriminator).startsWith(remaining)) {
-                builder.suggest(member.getNickname() + "#" + member.getUser().getDiscriminator(), getTooltip(member));
+            } else if (member.getNickname() != null && member.getNickname().toLowerCase().startsWith(remaining)) {
+                builder.suggest(member.getNickname(), getTooltip(member));
                 count++;
             }
 
@@ -127,10 +117,6 @@ public class DiscordMemberArgument<S extends OMServer<S, P>, P extends OMPlayer<
         }
 
         return builder.buildFuture();
-    }
-
-    private String stringify(String name, String discriminator) {
-        return name + "#" + discriminator;
     }
 
     @Override

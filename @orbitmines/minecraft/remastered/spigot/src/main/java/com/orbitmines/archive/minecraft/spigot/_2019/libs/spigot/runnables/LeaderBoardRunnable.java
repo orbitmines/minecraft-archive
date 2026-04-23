@@ -13,7 +13,7 @@ import com.orbitmines.archive.minecraft.spigot._2019.utils.spigot.runnable.TimeU
 public class LeaderBoardRunnable extends SpigotRunnable<OMServer> {
 
     public LeaderBoardRunnable(OMServer plugin) {
-        super(plugin, Interval.of(TimeUnit.MINUTE, 10));
+        super(plugin, Interval.of(TimeUnit.MINUTE, 1));
     }
 
     @Override

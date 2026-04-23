@@ -29,12 +29,12 @@ public class CommandDiscordLink<S extends OMServer<S, P>, P extends OMPlayer<S, 
         }
 
         withArg(
-            new DiscordMemberArgument<S, P>(plugin.getDiscordBot(), "name#id").executes((Executor1<S, P,
+            new DiscordMemberArgument<S, P>(plugin.getDiscordBot(), "name").executes((Executor1<S, P,
                 Member, DiscordMemberArgument<S, P>>
             ) (player, member) -> {
                 DiscordUser.Linker linker = new DiscordUser.Linker(plugin.getDiscordBot());
 
-                DiscordUser user = linker.link(player, member);
+                DiscordUser user = linker.link(player, member.getUser());
                 switch (user.getResult()) {
 
                     case SETTING_UP:

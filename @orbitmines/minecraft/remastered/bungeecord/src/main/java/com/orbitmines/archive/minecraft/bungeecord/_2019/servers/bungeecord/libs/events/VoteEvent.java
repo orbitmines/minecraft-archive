@@ -57,8 +57,10 @@ public class VoteEvent implements Listener {
             String playerName = UUIDUtils.getName(uuid);
 
             long timestamp = Long.parseLong(vote.getTimeStamp());
-            /* MinecraftServers.org sends timestamps in milliseconds, all others send seconds */
-            long millis = serverList == ServerList.MINECRAFT_SERVERS_ORG ? timestamp : timestamp * 1000L;
+            /* MinecraftServers.org and Minecraft-Serverlist.com send timestamps in milliseconds, all others send seconds */
+            boolean alreadyMillis = serverList == ServerList.MINECRAFT_SERVERS_ORG
+                    || serverList == ServerList.MINECRAFT_SERVERLIST_COM;
+            long millis = alreadyMillis ? timestamp : timestamp * 1000L;
             Date date = new Date(millis);
 
             LastVote lastVote = LastVote.findOrInitializeBy(uuid, serverList);

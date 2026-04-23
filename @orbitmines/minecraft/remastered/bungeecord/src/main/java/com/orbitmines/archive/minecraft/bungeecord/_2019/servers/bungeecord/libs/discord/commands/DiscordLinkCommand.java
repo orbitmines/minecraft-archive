@@ -37,11 +37,11 @@ public class DiscordLinkCommand extends DiscordCommand {
 
         DiscordUser.Linker linker = new DiscordUser.Linker(bot);
 
-        DiscordUser discordUser = linker.link(member, model);
+        DiscordUser discordUser = linker.link(user, model);
         switch (discordUser.getResult()) {
 
             case SETTING_UP:
-                channel.sendMessage(user.getAsMention() + " Setting up Discord Link... Use **/discordlink " + user.getName() + "#" + user.getDiscriminator() + "** on the server.").queue();
+                channel.sendMessage(user.getAsMention() + " Setting up Discord Link... Use **/discordlink " + user.getName() + "** on the server.").queue();
                 break;
             case ALREADY_LINKED:
                 channel.sendMessage(user.getAsMention() + " That OrbitMines account has already been linked to your Discord account.").queue();
