@@ -26,26 +26,24 @@ public class PassiveSuckerPunch implements Passive.Handler<EntityDamageByEntityE
         EntityEquipment equipment = damager.getEquipment();
         ItemStack item = equipment.getItemInMainHand();
 
-        /* No knockback on item */
+        /* Skip if no item, or Knockback already present (don't stack over an existing enchant) */
         if (item == null || item.getEnchantments().containsKey(Enchantment.KNOCKBACK))
             return;
 
-        /* There's a chance of the knockback applying */
-        if (Math.random() >= getChance(level)) {
-            int enchLevel = item.getEnchantmentLevel(Enchantment.KNOCKBACK);
-            item.getEnchantments().remove(Enchantment.KNOCKBACK);
-            equipment.setItemInMainHand(item);
+        if (Math.random() >= getChance(level))
+            return;
 
-            new BukkitRunnable() {
-                @Override
-                public void run() {
-                    item.addEnchantment(Enchantment.KNOCKBACK, enchLevel);
-                    equipment.setItemInMainHand(item);
-                }
-            }.runTaskLater(passiveEvent.server().getPlugin(), 1);
-        }
+        /* Apply knockback for this hit, remove next tick */
+        item.addEnchantment(Enchantment.KNOCKBACK, 1);
+        equipment.setItemInMainHand(item);
 
-        /* Knockback gets applied */
+        new BukkitRunnable() {
+            @Override
+            public void run() {
+                item.removeEnchantment(Enchantment.KNOCKBACK);
+                equipment.setItemInMainHand(item);
+            }
+        }.runTaskLater(passiveEvent.server().getPlugin(), 1);
     }
 
     public double getChance(int level) {

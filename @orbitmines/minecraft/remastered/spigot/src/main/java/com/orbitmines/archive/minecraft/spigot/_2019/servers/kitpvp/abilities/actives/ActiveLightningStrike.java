@@ -57,10 +57,16 @@ public class ActiveLightningStrike implements Active.Handler {
                 if (!player.isOnline())
                     return;
 
-                player.getWorld().strikeLightningEffect(targetLoc);
+                if (targetLoc.getWorld() == null)
+                    return;
 
-                for (Player nearby : player.getWorld().getPlayers()) {
+                targetLoc.getWorld().strikeLightningEffect(targetLoc);
+
+                for (Player nearby : targetLoc.getWorld().getPlayers()) {
                     if (nearby.equals(player))
+                        continue;
+
+                    if (!nearby.getWorld().equals(targetLoc.getWorld()))
                         continue;
 
                     if (nearby.getLocation().distance(targetLoc) > AOE_RADIUS)
