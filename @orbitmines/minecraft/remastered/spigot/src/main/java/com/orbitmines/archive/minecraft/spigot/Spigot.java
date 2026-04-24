@@ -8,6 +8,7 @@ import com.orbitmines.archive.minecraft.spigot._2019.servers.hub.Hub;
 import com.orbitmines.archive.minecraft.spigot._2019.servers.kitpvp.KitPvP;
 import com.orbitmines.archive.minecraft.spigot._2019.servers.survival.Survival;
 import com.orbitmines.archive.minecraft.spigot._2019.utils.spigot.placeholders.SpigotServer;
+import com.orbitmines.minecraft.spigot.servers.fog.FoG;
 import org.bukkit.plugin.java.JavaPlugin;
 
 public class Spigot extends JavaPlugin {
@@ -23,6 +24,7 @@ public class Spigot extends JavaPlugin {
             case HUB -> new Hub(this);
             case KITPVP -> new KitPvP(this);
             case CREATIVE -> new Creative(this);
+            case FOG -> new FoG(this);
             default -> throw new IllegalArgumentException("Unsupported server type: " + type);
         };
 

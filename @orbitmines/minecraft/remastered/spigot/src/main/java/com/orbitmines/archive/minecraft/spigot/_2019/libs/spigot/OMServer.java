@@ -19,6 +19,8 @@ import com.orbitmines.archive.minecraft.spigot._2019.libs.spigot.database.models
 import com.orbitmines.archive.minecraft.spigot._2019.libs.spigot.database.models.survival.*;
 import com.orbitmines.archive.minecraft.spigot._2019.libs.spigot.database.models.creative.CreativePlayerModel;
 import com.orbitmines.archive.minecraft.spigot._2019.servers.creative.CreativeWorldMember;
+import com.orbitmines.minecraft.spigot.servers.fog.database.FoGPlayerModel;
+import com.orbitmines.minecraft.spigot.servers.fog.database.FoGRunModel;
 import com.orbitmines.archive.minecraft.spigot._2019.libs.spigot.discord.SpigotDiscordBot;
 import com.orbitmines.archive.minecraft.spigot._2019.libs.spigot.events.*;
 import com.orbitmines.archive.minecraft.spigot._2019.utils.spigot.prevention.Prevention;
@@ -221,7 +223,11 @@ public abstract class OMServer<S extends OMServer<S, P>, P extends OMPlayer<S, P
 
                 /* Creative */
                 CreativePlayerModel.TABLE,
-                CreativeWorldMember.TABLE
+                CreativeWorldMember.TABLE,
+
+                /* FoG */
+                FoGPlayerModel.TABLE,
+                FoGRunModel.TABLE
             );
 
             /* Register to bungeecord startup subscriber first, in case it is starting up/down */

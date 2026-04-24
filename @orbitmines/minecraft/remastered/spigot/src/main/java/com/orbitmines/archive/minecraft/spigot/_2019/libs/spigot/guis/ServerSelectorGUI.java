@@ -21,7 +21,6 @@ public class ServerSelectorGUI<S extends OMServer<S, P>, P extends OMPlayer<S, P
 
     private static final List<Integer> unknownGalaxies = Arrays.asList(
         (3 * 9) + 1,
-        (3 * 9) + 5,
         (3 * 9) + 7,
         (4 * 9) + 2,
         (4 * 9) + 6
@@ -39,6 +38,8 @@ public class ServerSelectorGUI<S extends OMServer<S, P>, P extends OMPlayer<S, P
                 setItem(i, Server.CREATIVE);
             else if (i == (3 * 9) + 3)
                 setItem(i, Server.KITPVP);
+            else if (i == (2 * 9) + 4)
+                setItem(i, Server.FOG);
             else if (unknownGalaxies.contains(i))
                 set(i, new Item<P, MutableItemBuilder>(() -> new ItemBuilder(Material.RED_STAINED_GLASS_PANE, 1, "§c" + viewer.translate("spigot", "player.unknown_galaxies"))));
             else
