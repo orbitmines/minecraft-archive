@@ -22,6 +22,8 @@ public class ServerUtils {
                 return new ItemBuilder(Material.IRON_SWORD).addFlag(ItemFlag.HIDE_ATTRIBUTES);
             case CREATIVE:
                 return new ItemBuilder(Material.WOODEN_AXE).addFlag(ItemFlag.HIDE_ATTRIBUTES);
+            case FOG:
+                return new ItemBuilder(Material.NETHER_STAR).addFlag(ItemFlag.HIDE_ATTRIBUTES);
             default:
                 throw new IllegalStateException();
         }
